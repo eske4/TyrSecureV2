@@ -11,7 +11,7 @@ int main() {
 
     std::cout << "Remember to set game path inside app/daemon/main.cpp and edit data_path and binary path" << std::endl;
 
-    sys::CGroup cgroup = sys::CGManager::create("tyrsecure");
+    sys::CGroup cgroup = sys::CGManager::create("Tyrsecure");
 
     const char* data_path = "/home/eske/Downloads/AssaultCube_v1.3.0.2_LockdownEdition_RC1/"; // Use something simple like 'ls' for testing
     const char* binary_path = "/home/eske/Downloads/AssaultCube_v1.3.0.2_LockdownEdition_RC1/bin_unix/linux_64_client"; // Use something simple like 'ls' for testing
