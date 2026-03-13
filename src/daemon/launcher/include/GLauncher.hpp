@@ -35,16 +35,16 @@ namespace Launcher {
          * @param game_root_dir Path to the working directory.
          * @param cgroup_name The name/path for the new CGroup.
          */
-        void setup(const std::filesystem::path &bin_path,
-                     const std::filesystem::path &game_working_dir_path,
-                     const sys::CGroup& cgroup_parent);
+        [[nodiscard]] bool setup(const std::filesystem::path &bin_path,
+                                 const std::filesystem::path &game_working_dir_path,
+                                 const sys::CGroup& cgroup_parent);
         void start();
         void stop();
     
-        bool isActive() const { return ctx.has_value() && gpid != -1; }
-        bool isPrepared() const { return ctx.has_value() && gpid == -1; }
-        pid_t getGpid() const { return gpid; }
-        const LContext* getSessionInfo() const;
+        [[nodiscard]] bool isActive() const { return ctx.has_value() && gpid != -1; }
+        [[nodiscard]] bool isPrepared() const { return ctx.has_value() && gpid == -1; }
+        [[nodiscard]] pid_t getGpid() const { return gpid; }
+        [[nodiscard]] const LContext* getSessionInfo() const;
     
     private:
     

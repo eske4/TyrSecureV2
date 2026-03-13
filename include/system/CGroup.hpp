@@ -73,9 +73,9 @@ namespace sys {
         }
     
         // Accessors
-        int get_fd() const { return fd.get(); }
-        const std::string& getName() const { return name; }
-        uint64_t getID() const { return this->id; }
+        [[nodiscard]] int get_fd() const { return fd.get(); }
+        [[nodiscard]] const std::string& getName() const { return name; }
+        [[nodiscard]] uint64_t getID() const { return this->id; }
     
     private:
         std::string name;

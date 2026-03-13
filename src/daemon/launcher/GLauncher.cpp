@@ -18,7 +18,7 @@
 
 namespace Launcher {
 
-void GLauncher::setup(const std::filesystem::path &bin_path,
+bool GLauncher::setup(const std::filesystem::path &bin_path,
                       const std::filesystem::path &game_working_dir_path,
                       const sys::CGroup& cgroup_parent) {
     
@@ -34,7 +34,7 @@ void GLauncher::setup(const std::filesystem::path &bin_path,
 
     if (!exec_fd || !work_fd) {
         std::cerr << "Launcher Error: Failed to acquire directory/binary handles." << std::endl;
-        return; 
+        return false; 
     }
 
     this->ctx.emplace(LContext{
@@ -47,6 +47,8 @@ void GLauncher::setup(const std::filesystem::path &bin_path,
         .envp = sys::SessionManager::getUserEnvironment(uid),
         .argv = { std::string(bin_path) }
     });
+
+    return true;
 }
 
 void GLauncher::launch(const LContext &ctx) {

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <fcntl.h>
+#include <iostream>
 #include <string>
 #include <sys/types.h>
 #include <unistd.h>
@@ -14,7 +15,10 @@ namespace sys {
     
         // Direct initialization from path
         explicit FD(const std::string& path, int flags, mode_t mode = 0) {
-            open(path.c_str(), flags, mode);
+            bool result = open(path.c_str(), flags, mode);
+            if(!result){
+                std::cout << "[ERROR] Failed to open file descriptor in FD object" << std::endl;
+            }
         }
     
         // Wrap an existing raw descriptor
@@ -37,7 +41,7 @@ namespace sys {
     
         ~FD() { reset(); }
     
-        bool open(const char* path, int flags, mode_t mode = 0) {
+        [[nodiscard]] bool open(const char* path, int flags, mode_t mode = 0) {
             reset();
             fd = ::open(path, flags | O_CLOEXEC, mode);
             return isValid();
@@ -50,13 +54,13 @@ namespace sys {
             }
         }
     
-        int release() {
+        [[nodiscard]] int release() {
             return std::exchange(fd, -1);
         }
     
         // Accessors
-        bool isValid() const { return fd >= 0; }
-        int get() const      { return fd; }
+        [[nodiscard]] bool isValid() const { return fd >= 0; }
+        [[nodiscard]] int get() const      { return fd; }
     
         // Operators
         operator int() const           { return fd; }

@@ -9,7 +9,7 @@ namespace CInterop {
      * The resulting vector is NULL-terminated for compatibility with fexecve.
      * @warning The pointers point directly to the memory owned by the input vector.
      */
-    inline std::vector<char*> toCStringVector(const std::vector<std::string> &items) {
+    [[nodiscard]] inline std::vector<char*> toCStringVector(const std::vector<std::string> &items) {
         std::vector<char*> raw;
     
         raw.reserve(items.size() + 1);
