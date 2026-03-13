@@ -17,7 +17,7 @@ int main() {
     const char* binary_path = "/home/eske/Downloads/AssaultCube_v1.3.0.2_LockdownEdition_RC1/bin_unix/linux_64_client"; // Use something simple like 'ls' for testing
 
 
-    Launcher::GLauncher launcher;
+    GLauncher launcher;
     launcher.setup(binary_path, data_path, cgroup);
     launcher.start();
 
