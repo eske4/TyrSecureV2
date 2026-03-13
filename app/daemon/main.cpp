@@ -21,7 +21,7 @@ int main() {
     launcher.setup(binary_path, data_path, cgroup);
     launcher.start();
 
-    if (launcher.getGpid() == -1) {
+    if (!launcher.isActive() && launcher.getGpid() == -1) {
         std::cerr << "Failed to launch in cgroup. Check dmesg or errno." << std::endl;
     } else {
         std::cout << "Child started with PID: " << launcher.getGpid() << " With the name: " << launcher.getSessionInfo()->game_name << ". The cgroup id is: " << launcher.getSessionInfo()->cg.getID() << std::endl;
