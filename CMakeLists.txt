@@ -21,5 +21,7 @@ include(Compiler)
 include(BPF)
 include(CPM)
 
+set(GLOBAL_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
 add_subdirectory(src)
 add_subdirectory(app)
