@@ -1,7 +1,7 @@
 #include "IdentityProvider.hpp"
 #include "CGService.hpp"
 #include "GLauncher.hpp"
-#include "common/LauncherStatus.h"
+#include "common/LauncherStatus.hpp"
 #include "utils/StringUtil.hpp"
 #include "GameWhitelist.hpp"
 

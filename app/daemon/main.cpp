@@ -1,6 +1,6 @@
 #include "CGService.hpp"
 #include "GLauncher.hpp"
-#include "common/GameID.h"
+#include "common/GameID.hpp"
 #include <fcntl.h>
 #include <iostream>
 #include <string_view>

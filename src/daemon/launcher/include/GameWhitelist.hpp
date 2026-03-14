@@ -1,6 +1,6 @@
 #pragma once
 
-#include "common/GameID.h"
+#include "common/GameID.hpp"
 #include <filesystem>
 #include <optional>
 
