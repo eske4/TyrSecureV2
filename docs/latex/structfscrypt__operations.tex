@@ -1,0 +1,43 @@
+\doxysection{fscrypt\+\_\+operations Struct Reference}
+\hypertarget{structfscrypt__operations}{}\label{structfscrypt__operations}\index{fscrypt\_operations@{fscrypt\_operations}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfscrypt__operations_aa894b977b2257cd84b817e370c327fa6}\label{structfscrypt__operations_aa894b977b2257cd84b817e370c327fa6} 
+ptrdiff\+\_\+t {\bfseries inode\+\_\+info\+\_\+offs}
+\item 
+\Hypertarget{structfscrypt__operations_af9be1b9e81a6495f99f6aef6e857a98c}\label{structfscrypt__operations_af9be1b9e81a6495f99f6aef6e857a98c} 
+unsigned int {\bfseries needs\+\_\+bounce\+\_\+pages}:\+ 1
+\item 
+\Hypertarget{structfscrypt__operations_a44310e5ed3bea9a0cef486b178aeb5fd}\label{structfscrypt__operations_a44310e5ed3bea9a0cef486b178aeb5fd} 
+unsigned int {\bfseries has\+\_\+32bit\+\_\+inodes}:\+ 1
+\item 
+\Hypertarget{structfscrypt__operations_aa9b87ca0e081a3acb0eb28677df91c70}\label{structfscrypt__operations_aa9b87ca0e081a3acb0eb28677df91c70} 
+unsigned int {\bfseries supports\+\_\+subblock\+\_\+data\+\_\+units}:\+ 1
+\item 
+\Hypertarget{structfscrypt__operations_ac2de79303ef064ed59526c5a6db2eb41}\label{structfscrypt__operations_ac2de79303ef064ed59526c5a6db2eb41} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries legacy\+\_\+key\+\_\+prefix}
+\item 
+\Hypertarget{structfscrypt__operations_a74dd446b9713ec5d74c5a48c140fc646}\label{structfscrypt__operations_a74dd446b9713ec5d74c5a48c140fc646} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+context} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structfscrypt__operations_a2c5ca833ea3853bad7c72ea2ac6f6cc0}\label{structfscrypt__operations_a2c5ca833ea3853bad7c72ea2ac6f6cc0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+context} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfscrypt__operations_a5a32140dbe46c09a03e1792914c2a3d8}\label{structfscrypt__operations_a5a32140dbe46c09a03e1792914c2a3d8} 
+const union \doxymbox{\hyperlink{unionfscrypt__policy}{fscrypt\+\_\+policy}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+dummy\+\_\+policy} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfscrypt__operations_ad94faf216b2a2fb90f71a4eafd56ca1d}\label{structfscrypt__operations_ad94faf216b2a2fb90f71a4eafd56ca1d} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries empty\+\_\+dir} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfscrypt__operations_aff5045ed4235f54e6b3135d18a9a948f}\label{structfscrypt__operations_aff5045ed4235f54e6b3135d18a9a948f} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries has\+\_\+stable\+\_\+inodes} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfscrypt__operations_a2a09901cb79d2f220d3064e013ac7a1a}\label{structfscrypt__operations_a2a09901cb79d2f220d3064e013ac7a1a} 
+struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+devices} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\doxysection{bpf\+\_\+func\+\_\+proto Struct Reference}
+\hypertarget{structbpf__func__proto}{}\label{structbpf__func__proto}\index{bpf\_func\_proto@{bpf\_func\_proto}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__func__proto_aec22ddc88c49a260f12a68d81833263d}\label{structbpf__func__proto_aec22ddc88c49a260f12a68d81833263d} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries func} )(u64, u64, u64, u64, u64)
+\item 
+\Hypertarget{structbpf__func__proto_a24a185bd785342da8749fb64ebcdf362}\label{structbpf__func__proto_a24a185bd785342da8749fb64ebcdf362} 
+bool {\bfseries gpl\+\_\+only}
+\item 
+\Hypertarget{structbpf__func__proto_a92f3c3ab34c1e108b3f6e7e4261a4524}\label{structbpf__func__proto_a92f3c3ab34c1e108b3f6e7e4261a4524} 
+bool {\bfseries pkt\+\_\+access}
+\item 
+\Hypertarget{structbpf__func__proto_ad8ad657dc3845a0e72e7f643ec12bcef}\label{structbpf__func__proto_ad8ad657dc3845a0e72e7f643ec12bcef} 
+bool {\bfseries might\+\_\+sleep}
+\item 
+\Hypertarget{structbpf__func__proto_a47f614b40a0f09b1fee4f590523579f3}\label{structbpf__func__proto_a47f614b40a0f09b1fee4f590523579f3} 
+bool {\bfseries allow\+\_\+fastcall}
+\item 
+\Hypertarget{structbpf__func__proto_aed3d606d35da05e4b276b7f175a0679b}\label{structbpf__func__proto_aed3d606d35da05e4b276b7f175a0679b} 
+enum bpf\+\_\+return\+\_\+type {\bfseries ret\+\_\+type}
+\item 
+\Hypertarget{structbpf__func__proto_a048645a2515aa0e4418df8d318de6cc7}\label{structbpf__func__proto_a048645a2515aa0e4418df8d318de6cc7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionbpf__func__proto_1_1_0d335341032157147030156137347244326257122007134003_a21d1767cceda8a0681a25f0b089bf05a}\label{unionbpf__func__proto_1_1_0d335341032157147030156137347244326257122007134003_a21d1767cceda8a0681a25f0b089bf05a} 
+\>struct \{\\
+\>\>enum bpf\_arg\_type {\bfseries arg1\_type}\\
+\>\>enum bpf\_arg\_type {\bfseries arg2\_type}\\
+\>\>enum bpf\_arg\_type {\bfseries arg3\_type}\\
+\>\>enum bpf\_arg\_type {\bfseries arg4\_type}\\
+\>\>enum bpf\_arg\_type {\bfseries arg5\_type}\\
+\>\} \\
+\>enum bpf\_arg\_type {\bfseries arg\_type} \+[5]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__func__proto_ae0ce693974822527deedada08d933001}\label{structbpf__func__proto_ae0ce693974822527deedada08d933001} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionbpf__func__proto_1_1_0d310071264004233141332014103120256213177070144303_a51ee2075af0d6c6481de0437f3153dd3}\label{unionbpf__func__proto_1_1_0d310071264004233141332014103120256213177070144303_a51ee2075af0d6c6481de0437f3153dd3} 
+\>struct \{\\
+\>\>u32 \texorpdfstring{$\ast$}{*} {\bfseries arg1\_btf\_id}\\
+\>\>u32 \texorpdfstring{$\ast$}{*} {\bfseries arg2\_btf\_id}\\
+\>\>u32 \texorpdfstring{$\ast$}{*} {\bfseries arg3\_btf\_id}\\
+\>\>u32 \texorpdfstring{$\ast$}{*} {\bfseries arg4\_btf\_id}\\
+\>\>u32 \texorpdfstring{$\ast$}{*} {\bfseries arg5\_btf\_id}\\
+\>\} \\
+\>u32 \texorpdfstring{$\ast$}{*} {\bfseries arg\_btf\_id} \+[5]\+\\
+\Hypertarget{unionbpf__func__proto_1_1_0d310071264004233141332014103120256213177070144303_a89c9defcce9095fd1cfde067fbae2768}\label{unionbpf__func__proto_1_1_0d310071264004233141332014103120256213177070144303_a89c9defcce9095fd1cfde067fbae2768} 
+\>struct \{\\
+\>\>size\_t {\bfseries arg1\_size}\\
+\>\>size\_t {\bfseries arg2\_size}\\
+\>\>size\_t {\bfseries arg3\_size}\\
+\>\>size\_t {\bfseries arg4\_size}\\
+\>\>size\_t {\bfseries arg5\_size}\\
+\>\} \\
+\>size\_t {\bfseries arg\_size} \+[5]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__func__proto_abb850ca324ce4d3400135af869f738c8}\label{structbpf__func__proto_abb850ca324ce4d3400135af869f738c8} 
+int \texorpdfstring{$\ast$}{*} {\bfseries ret\+\_\+btf\+\_\+id}
+\item 
+\Hypertarget{structbpf__func__proto_ae83be52e0ea0212c537618f3a669b91a}\label{structbpf__func__proto_ae83be52e0ea0212c537618f3a669b91a} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries allowed} )(const struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

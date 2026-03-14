@@ -1,0 +1,52 @@
+\doxysection{kernfs\+\_\+root Struct Reference}
+\hypertarget{structkernfs__root}{}\label{structkernfs__root}\index{kernfs\_root@{kernfs\_root}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkernfs__root_af8fc9aae9e7d9ba6ece228786024b9c3}\label{structkernfs__root_af8fc9aae9e7d9ba6ece228786024b9c3} 
+struct \doxymbox{\hyperlink{structkernfs__node}{kernfs\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries kn}
+\item 
+\Hypertarget{structkernfs__root_adb926334e0e6087a3db707043f81d1b1}\label{structkernfs__root_adb926334e0e6087a3db707043f81d1b1} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structkernfs__root_afe142d4568496075f3514da2c187114e}\label{structkernfs__root_afe142d4568496075f3514da2c187114e} 
+struct \doxymbox{\hyperlink{structidr}{idr}} {\bfseries ino\+\_\+idr}
+\item 
+\Hypertarget{structkernfs__root_aef788c291c7303f9ce750684e5339835}\label{structkernfs__root_aef788c291c7303f9ce750684e5339835} 
+spinlock\+\_\+t {\bfseries kernfs\+\_\+idr\+\_\+lock}
+\item 
+\Hypertarget{structkernfs__root_a0dee44997248d8931be8f63c08e5bc57}\label{structkernfs__root_a0dee44997248d8931be8f63c08e5bc57} 
+u32 {\bfseries last\+\_\+id\+\_\+lowbits}
+\item 
+\Hypertarget{structkernfs__root_a0d42c4c8e51b1cd543fa82d862483de4}\label{structkernfs__root_a0d42c4c8e51b1cd543fa82d862483de4} 
+u32 {\bfseries id\+\_\+highbits}
+\item 
+\Hypertarget{structkernfs__root_aa8944ed6346a75d5ad9e870d7df953be}\label{structkernfs__root_aa8944ed6346a75d5ad9e870d7df953be} 
+struct \doxymbox{\hyperlink{structkernfs__syscall__ops}{kernfs\+\_\+syscall\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries syscall\+\_\+ops}
+\item 
+\Hypertarget{structkernfs__root_a4ea37d2be5b2a2f98c666732a772b903}\label{structkernfs__root_a4ea37d2be5b2a2f98c666732a772b903} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries supers}
+\item 
+\Hypertarget{structkernfs__root_a311a1728ee3854c33d015fea2cbd073f}\label{structkernfs__root_a311a1728ee3854c33d015fea2cbd073f} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries deactivate\+\_\+waitq}
+\item 
+\Hypertarget{structkernfs__root_a88ff8b5c57e20ac046867e4b4dd5c181}\label{structkernfs__root_a88ff8b5c57e20ac046867e4b4dd5c181} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries kernfs\+\_\+rwsem}
+\item 
+\Hypertarget{structkernfs__root_a7adf1829d00b550c6b9e92b32fc377f2}\label{structkernfs__root_a7adf1829d00b550c6b9e92b32fc377f2} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries kernfs\+\_\+iattr\+\_\+rwsem}
+\item 
+\Hypertarget{structkernfs__root_aaf5ebfc1080201c11b02355afa2ff665}\label{structkernfs__root_aaf5ebfc1080201c11b02355afa2ff665} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries kernfs\+\_\+supers\+\_\+rwsem}
+\item 
+\Hypertarget{structkernfs__root_a7fc31b74d515ab27ae26a2e9edd05626}\label{structkernfs__root_a7fc31b74d515ab27ae26a2e9edd05626} 
+\doxymbox{\hyperlink{structrwlock__t}{rwlock\+\_\+t}} {\bfseries kernfs\+\_\+rename\+\_\+lock}
+\item 
+\Hypertarget{structkernfs__root_aa7ce96926a1d25bf03e89bf6f12b6a2b}\label{structkernfs__root_aa7ce96926a1d25bf03e89bf6f12b6a2b} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

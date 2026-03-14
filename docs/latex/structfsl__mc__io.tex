@@ -1,0 +1,37 @@
+\doxysection{fsl\+\_\+mc\+\_\+io Struct Reference}
+\hypertarget{structfsl__mc__io}{}\label{structfsl__mc__io}\index{fsl\_mc\_io@{fsl\_mc\_io}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfsl__mc__io_acda256b7a97c5e78ed28257843dbc93c}\label{structfsl__mc__io_acda256b7a97c5e78ed28257843dbc93c} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structfsl__mc__io_a76eaa69e5f6d2ee8ac6bdc11457c124c}\label{structfsl__mc__io_a76eaa69e5f6d2ee8ac6bdc11457c124c} 
+u16 {\bfseries flags}
+\item 
+\Hypertarget{structfsl__mc__io_ae2fdbbe1c3242c7dc23735284dc07eef}\label{structfsl__mc__io_ae2fdbbe1c3242c7dc23735284dc07eef} 
+u32 {\bfseries portal\+\_\+size}
+\item 
+\Hypertarget{structfsl__mc__io_a928b2d5335ba846b965ba198feba98ea}\label{structfsl__mc__io_a928b2d5335ba846b965ba198feba98ea} 
+phys\+\_\+addr\+\_\+t {\bfseries portal\+\_\+phys\+\_\+addr}
+\item 
+\Hypertarget{structfsl__mc__io_a248b91aedf525c2936d48980657970eb}\label{structfsl__mc__io_a248b91aedf525c2936d48980657970eb} 
+void \texorpdfstring{$\ast$}{*} {\bfseries portal\+\_\+virt\+\_\+addr}
+\item 
+\Hypertarget{structfsl__mc__io_ada4b54d5cdd711daba2b96edc9394b96}\label{structfsl__mc__io_ada4b54d5cdd711daba2b96edc9394b96} 
+struct \doxymbox{\hyperlink{structfsl__mc__device}{fsl\+\_\+mc\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dpmcp\+\_\+dev}
+\item 
+\Hypertarget{structfsl__mc__io_aa6f9923f9d4b0300d83a5f012b66063b}\label{structfsl__mc__io_aa6f9923f9d4b0300d83a5f012b66063b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}\\
+\>raw\_spinlock\_t {\bfseries spinlock}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

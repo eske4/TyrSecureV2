@@ -1,0 +1,46 @@
+\doxysection{timer\+\_\+base Struct Reference}
+\hypertarget{structtimer__base}{}\label{structtimer__base}\index{timer\_base@{timer\_base}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtimer__base_aa67ebea49f28fe27594f6478948fe326}\label{structtimer__base_aa67ebea49f28fe27594f6478948fe326} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structtimer__base_a223a1245085025de94ff8a3c3dc23167}\label{structtimer__base_a223a1245085025de94ff8a3c3dc23167} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} \texorpdfstring{$\ast$}{*} {\bfseries running\+\_\+timer}
+\item 
+\Hypertarget{structtimer__base_a218fd020aa81126e2f5c12fc174d7029}\label{structtimer__base_a218fd020aa81126e2f5c12fc174d7029} 
+long unsigned int {\bfseries clk}
+\item 
+\Hypertarget{structtimer__base_a741fb5edce63753ba7f5a6eae01078dd}\label{structtimer__base_a741fb5edce63753ba7f5a6eae01078dd} 
+long unsigned int {\bfseries next\+\_\+expiry}
+\item 
+\Hypertarget{structtimer__base_ac1fa68646f970860e8e25d1d9cefdc64}\label{structtimer__base_ac1fa68646f970860e8e25d1d9cefdc64} 
+unsigned int {\bfseries cpu}
+\item 
+\Hypertarget{structtimer__base_a389d9e8753e758c22b78b56aa144bc17}\label{structtimer__base_a389d9e8753e758c22b78b56aa144bc17} 
+bool {\bfseries next\+\_\+expiry\+\_\+recalc}
+\item 
+\Hypertarget{structtimer__base_a75cdbb8d79ec6f551e5d1e528c79ac00}\label{structtimer__base_a75cdbb8d79ec6f551e5d1e528c79ac00} 
+bool {\bfseries is\+\_\+idle}
+\item 
+\Hypertarget{structtimer__base_abc8986bcb10dda5018a692df6e7e3a3a}\label{structtimer__base_abc8986bcb10dda5018a692df6e7e3a3a} 
+bool {\bfseries timers\+\_\+pending}
+\item 
+\Hypertarget{structtimer__base_adca2af398ba5d43be3de48403918c1b6}\label{structtimer__base_adca2af398ba5d43be3de48403918c1b6} 
+long unsigned int {\bfseries pending\+\_\+map} \+[9]\+
+\item 
+\Hypertarget{structtimer__base_aa235847cc6bde4b45d12e3781444d67c}\label{structtimer__base_aa235847cc6bde4b45d12e3781444d67c} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries vectors} \+[576]\+
+\item 
+\Hypertarget{structtimer__base_adae6b11d0e44c1d9dde2e8f5de1bd699}\label{structtimer__base_adae6b11d0e44c1d9dde2e8f5de1bd699} 
+long :\+ 64
+\item 
+\Hypertarget{structtimer__base_ae9d5c092d4671aa18c8e017e12c76bcb}\label{structtimer__base_ae9d5c092d4671aa18c8e017e12c76bcb} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

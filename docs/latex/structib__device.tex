@@ -1,0 +1,160 @@
+\doxysection{ib\+\_\+device Struct Reference}
+\hypertarget{structib__device}{}\label{structib__device}\index{ib\_device@{ib\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structib__device_ad911ce1d4d0df30c7964e1aa4e00c677}\label{structib__device_ad911ce1d4d0df30c7964e1aa4e00c677} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+device}
+\item 
+\Hypertarget{structib__device_a04e1991ccb373de5541428f7a0d54968}\label{structib__device_a04e1991ccb373de5541428f7a0d54968} 
+struct \doxymbox{\hyperlink{structib__device__ops}{ib\+\_\+device\+\_\+ops}} {\bfseries ops}
+\item 
+\Hypertarget{structib__device_a5e80752b8c61671b294682036da275a0}\label{structib__device_a5e80752b8c61671b294682036da275a0} 
+char {\bfseries name} \+[64]\+
+\item 
+\Hypertarget{structib__device_aa45e4ca33514efd56328d8336654dbfd}\label{structib__device_aa45e4ca33514efd56328d8336654dbfd} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries callback\+\_\+head}
+\item 
+\Hypertarget{structib__device_a5dfb7aed83276b12d31cf5819ead0a07}\label{structib__device_a5dfb7aed83276b12d31cf5819ead0a07} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries event\+\_\+handler\+\_\+list}
+\item 
+\Hypertarget{structib__device_a1185e732d778ee660790412507ea1a0e}\label{structib__device_a1185e732d778ee660790412507ea1a0e} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries event\+\_\+handler\+\_\+rwsem}
+\item 
+\Hypertarget{structib__device_a066b5d7848eac151a92ad56a343f52b7}\label{structib__device_a066b5d7848eac151a92ad56a343f52b7} 
+spinlock\+\_\+t {\bfseries qp\+\_\+open\+\_\+list\+\_\+lock}
+\item 
+\Hypertarget{structib__device_a3a180d6bfbc2dc853fafb7aa00dd7e06}\label{structib__device_a3a180d6bfbc2dc853fafb7aa00dd7e06} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries client\+\_\+data\+\_\+rwsem}
+\item 
+\Hypertarget{structib__device_a01213c56bcca11f63f4c4024531bc399}\label{structib__device_a01213c56bcca11f63f4c4024531bc399} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries client\+\_\+data}
+\item 
+\Hypertarget{structib__device_a177f24748f01c317e56829ac2dc764d0}\label{structib__device_a177f24748f01c317e56829ac2dc764d0} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries unregistration\+\_\+lock}
+\item 
+\Hypertarget{structib__device_ac5e5822cb93645b5a484adfbcc125d9f}\label{structib__device_ac5e5822cb93645b5a484adfbcc125d9f} 
+\doxymbox{\hyperlink{structrwlock__t}{rwlock\+\_\+t}} {\bfseries cache\+\_\+lock}
+\item 
+\Hypertarget{structib__device_a5f6b8b1154cd20968100537ed994ebfc}\label{structib__device_a5f6b8b1154cd20968100537ed994ebfc} 
+struct \doxymbox{\hyperlink{structib__port__data}{ib\+\_\+port\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+data}
+\item 
+\Hypertarget{structib__device_a1ed779a4030cc57a41d4fe379c198a08}\label{structib__device_a1ed779a4030cc57a41d4fe379c198a08} 
+int {\bfseries num\+\_\+comp\+\_\+vectors}
+\item 
+\Hypertarget{structib__device_ae0f9d7010d3f63f0c2a70206aa38589f}\label{structib__device_ae0f9d7010d3f63f0c2a70206aa38589f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}\\
+\>struct \doxymbox{\hyperlink{structib__core__device}{ib\_core\_device}} {\bfseries coredev}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structib__device_a9d539424ab49cc84ba26a52be7db14a5}\label{structib__device_a9d539424ab49cc84ba26a52be7db14a5} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries groups} \+[4]\+
+\item 
+\Hypertarget{structib__device_afe30d6b0b9313cc38b7dc5d256097818}\label{structib__device_afe30d6b0b9313cc38b7dc5d256097818} 
+u8 {\bfseries hw\+\_\+stats\+\_\+attr\+\_\+index}
+\item 
+\Hypertarget{structib__device_a521da0b80b9856460c3e2552cfdc528f}\label{structib__device_a521da0b80b9856460c3e2552cfdc528f} 
+u64 {\bfseries uverbs\+\_\+cmd\+\_\+mask}
+\item 
+\Hypertarget{structib__device_a7e67050df0f5cf86e3faa66ae02eb819}\label{structib__device_a7e67050df0f5cf86e3faa66ae02eb819} 
+char {\bfseries node\+\_\+desc} \+[64]\+
+\item 
+\Hypertarget{structib__device_a0fea26d8de6f71f15c50d478562c4d25}\label{structib__device_a0fea26d8de6f71f15c50d478562c4d25} 
+\+\_\+\+\_\+be64 {\bfseries node\+\_\+guid}
+\item 
+\Hypertarget{structib__device_ae465791c898a9fa38b5fa95af627953d}\label{structib__device_ae465791c898a9fa38b5fa95af627953d} 
+u32 {\bfseries local\+\_\+dma\+\_\+lkey}
+\item 
+\Hypertarget{structib__device_ae2d736cd7c3551a4cc7ec110d53adb8b}\label{structib__device_ae2d736cd7c3551a4cc7ec110d53adb8b} 
+u16 {\bfseries is\+\_\+switch}:\+ 1
+\item 
+\Hypertarget{structib__device_aad1af0e95d4bb30f1d039381348dac12}\label{structib__device_aad1af0e95d4bb30f1d039381348dac12} 
+u16 {\bfseries kverbs\+\_\+provider}:\+ 1
+\item 
+\Hypertarget{structib__device_a68e4e54279bb980a6badb53509d5d2ec}\label{structib__device_a68e4e54279bb980a6badb53509d5d2ec} 
+u16 {\bfseries use\+\_\+cq\+\_\+dim}:\+ 1
+\item 
+\Hypertarget{structib__device_a1b0136eea8ffb2a6a2cac50b89a6128f}\label{structib__device_a1b0136eea8ffb2a6a2cac50b89a6128f} 
+u8 {\bfseries node\+\_\+type}
+\item 
+\Hypertarget{structib__device_a69a7a0616db33a13002c4eee2ff1abd3}\label{structib__device_a69a7a0616db33a13002c4eee2ff1abd3} 
+u32 {\bfseries phys\+\_\+port\+\_\+cnt}
+\item 
+\Hypertarget{structib__device_a1c557db7cf2cad87f0d5939c8fa9299b}\label{structib__device_a1c557db7cf2cad87f0d5939c8fa9299b} 
+struct \doxymbox{\hyperlink{structib__device__attr}{ib\+\_\+device\+\_\+attr}} {\bfseries attrs}
+\item 
+\Hypertarget{structib__device_aeb75d885d1a06047c55fd426981559a9}\label{structib__device_aeb75d885d1a06047c55fd426981559a9} 
+struct hw\+\_\+stats\+\_\+device\+\_\+data \texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+stats\+\_\+data}
+\item 
+\Hypertarget{structib__device_a023f8d3bfffe33ac1eeb87c8e6b89e9f}\label{structib__device_a023f8d3bfffe33ac1eeb87c8e6b89e9f} 
+struct \doxymbox{\hyperlink{structrdmacg__device}{rdmacg\+\_\+device}} {\bfseries cg\+\_\+device}
+\item 
+\Hypertarget{structib__device_a62803192a966b6da03bfe7bc13cad772}\label{structib__device_a62803192a966b6da03bfe7bc13cad772} 
+u32 {\bfseries index}
+\item 
+\Hypertarget{structib__device_a605d65c38655d78b38c83c46e1a917f9}\label{structib__device_a605d65c38655d78b38c83c46e1a917f9} 
+spinlock\+\_\+t {\bfseries cq\+\_\+pools\+\_\+lock}
+\item 
+\Hypertarget{structib__device_a719b4d2306bec040c8217b060e94e000}\label{structib__device_a719b4d2306bec040c8217b060e94e000} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cq\+\_\+pools} \+[3]\+
+\item 
+\Hypertarget{structib__device_a50104279ef065ec5d3b7520eae116726}\label{structib__device_a50104279ef065ec5d3b7520eae116726} 
+struct rdma\+\_\+restrack\+\_\+root \texorpdfstring{$\ast$}{*} {\bfseries res}
+\item 
+\Hypertarget{structib__device_a299e3ee42182f617cc56db800c7ed95e}\label{structib__device_a299e3ee42182f617cc56db800c7ed95e} 
+const struct uapi\+\_\+definition \texorpdfstring{$\ast$}{*} {\bfseries driver\+\_\+def}
+\item 
+\Hypertarget{structib__device_aa2b9ba691a6b536d515409075549a624}\label{structib__device_aa2b9ba691a6b536d515409075549a624} 
+refcount\+\_\+t {\bfseries refcount}
+\item 
+\Hypertarget{structib__device_a447264dbdb5cfa1816d2038c1accc213}\label{structib__device_a447264dbdb5cfa1816d2038c1accc213} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries unreg\+\_\+completion}
+\item 
+\Hypertarget{structib__device_a1d97c3cd946bf9fe9c1a415e76e1dba2}\label{structib__device_a1d97c3cd946bf9fe9c1a415e76e1dba2} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries unregistration\+\_\+work}
+\item 
+\Hypertarget{structib__device_abc081e01222c80fb1228f4a87ea4b5fe}\label{structib__device_abc081e01222c80fb1228f4a87ea4b5fe} 
+const struct \doxymbox{\hyperlink{structrdma__link__ops}{rdma\+\_\+link\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries link\+\_\+ops}
+\item 
+\Hypertarget{structib__device_a78e2b256046cbc9404ddc9fbcd34b9e7}\label{structib__device_a78e2b256046cbc9404ddc9fbcd34b9e7} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries compat\+\_\+devs\+\_\+mutex}
+\item 
+\Hypertarget{structib__device_a2b2c8f30c8b1f766b7592e67864bac37}\label{structib__device_a2b2c8f30c8b1f766b7592e67864bac37} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries compat\+\_\+devs}
+\item 
+\Hypertarget{structib__device_a7e10905242c4708f06a2d7c85a3596fc}\label{structib__device_a7e10905242c4708f06a2d7c85a3596fc} 
+char {\bfseries iw\+\_\+ifname} \+[16]\+
+\item 
+\Hypertarget{structib__device_a140cb76b0d5ac7bf62e8068699817f84}\label{structib__device_a140cb76b0d5ac7bf62e8068699817f84} 
+u32 {\bfseries iw\+\_\+driver\+\_\+flags}
+\item 
+\Hypertarget{structib__device_a6bc6f852224cc561bf43db2a58a3c694}\label{structib__device_a6bc6f852224cc561bf43db2a58a3c694} 
+u32 {\bfseries lag\+\_\+flags}
+\item 
+\Hypertarget{structib__device_a0d7f854b24e282932ce85432910e132a}\label{structib__device_a0d7f854b24e282932ce85432910e132a} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries subdev\+\_\+lock}
+\item 
+\Hypertarget{structib__device_a5e0d354c566702fe933139a3d0653352}\label{structib__device_a5e0d354c566702fe933139a3d0653352} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries subdev\+\_\+list\+\_\+head}
+\item 
+\Hypertarget{structib__device_a80311dc3e0c1638f9fc772b7cdd2b3b9}\label{structib__device_a80311dc3e0c1638f9fc772b7cdd2b3b9} 
+enum rdma\+\_\+nl\+\_\+dev\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structib__device_aad438039c828c496dcb7814a1e8ad9f3}\label{structib__device_aad438039c828c496dcb7814a1e8ad9f3} 
+struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structib__device_ab3d530e8f0a2842a4744aa3a4057128b}\label{structib__device_ab3d530e8f0a2842a4744aa3a4057128b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries subdev\+\_\+list}
+\item 
+\Hypertarget{structib__device_a889c63ab3faeea0f21ddf28e16f441cb}\label{structib__device_a889c63ab3faeea0f21ddf28e16f441cb} 
+enum rdma\+\_\+nl\+\_\+name\+\_\+assign\+\_\+type {\bfseries name\+\_\+assign\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

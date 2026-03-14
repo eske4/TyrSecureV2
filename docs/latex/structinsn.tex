@@ -1,0 +1,83 @@
+\doxysection{insn Struct Reference}
+\hypertarget{structinsn}{}\label{structinsn}\index{insn@{insn}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinsn_a10e262fe57fbe3ac4021a721f02a1127}\label{structinsn_a10e262fe57fbe3ac4021a721f02a1127} 
+struct \doxymbox{\hyperlink{structinsn__field}{insn\+\_\+field}} {\bfseries prefixes}
+\item 
+\Hypertarget{structinsn_afb5fd4750015c9742f6dffd0ad5bffb0}\label{structinsn_afb5fd4750015c9742f6dffd0ad5bffb0} 
+struct \doxymbox{\hyperlink{structinsn__field}{insn\+\_\+field}} {\bfseries rex\+\_\+prefix}
+\item 
+\Hypertarget{structinsn_a06f6f8c35c3dfb8ff7b91bd4626f3fde}\label{structinsn_a06f6f8c35c3dfb8ff7b91bd4626f3fde} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structinsn__field}{insn\_field}} {\bfseries vex\_prefix}\\
+\>struct \doxymbox{\hyperlink{structinsn__field}{insn\_field}} {\bfseries xop\_prefix}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinsn_a887f351ca98c0a0e6ea53c9834037f51}\label{structinsn_a887f351ca98c0a0e6ea53c9834037f51} 
+struct \doxymbox{\hyperlink{structinsn__field}{insn\+\_\+field}} {\bfseries opcode}
+\item 
+\Hypertarget{structinsn_a48873414510c98f5c75c029c2a4c1df2}\label{structinsn_a48873414510c98f5c75c029c2a4c1df2} 
+struct \doxymbox{\hyperlink{structinsn__field}{insn\+\_\+field}} {\bfseries modrm}
+\item 
+\Hypertarget{structinsn_af7a4601d60972471c12b660a67723e8b}\label{structinsn_af7a4601d60972471c12b660a67723e8b} 
+struct \doxymbox{\hyperlink{structinsn__field}{insn\+\_\+field}} {\bfseries sib}
+\item 
+\Hypertarget{structinsn_a46e2459d6995d58eb829f1505c21aa05}\label{structinsn_a46e2459d6995d58eb829f1505c21aa05} 
+struct \doxymbox{\hyperlink{structinsn__field}{insn\+\_\+field}} {\bfseries displacement}
+\item 
+\Hypertarget{structinsn_a488fe04678800f0daf4289a4a00e39b4}\label{structinsn_a488fe04678800f0daf4289a4a00e39b4} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structinsn__field}{insn\_field}} {\bfseries immediate}\\
+\>struct \doxymbox{\hyperlink{structinsn__field}{insn\_field}} {\bfseries moffset1}\\
+\>struct \doxymbox{\hyperlink{structinsn__field}{insn\_field}} {\bfseries immediate1}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinsn_ac04e9887ffa2c079e768f2f7cbe46aae}\label{structinsn_ac04e9887ffa2c079e768f2f7cbe46aae} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structinsn__field}{insn\_field}} {\bfseries moffset2}\\
+\>struct \doxymbox{\hyperlink{structinsn__field}{insn\_field}} {\bfseries immediate2}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinsn_a6c0cff112b06039355e3ba70b3641348}\label{structinsn_a6c0cff112b06039355e3ba70b3641348} 
+int {\bfseries emulate\+\_\+prefix\+\_\+size}
+\item 
+\Hypertarget{structinsn_ae95db953168c4527da9aa7406df8823b}\label{structinsn_ae95db953168c4527da9aa7406df8823b} 
+insn\+\_\+attr\+\_\+t {\bfseries attr}
+\item 
+\Hypertarget{structinsn_a3027834ab618ff950f7e403db863416a}\label{structinsn_a3027834ab618ff950f7e403db863416a} 
+unsigned char {\bfseries opnd\+\_\+bytes}
+\item 
+\Hypertarget{structinsn_a356d2dc7fd0e1c5a60e346891c28eb18}\label{structinsn_a356d2dc7fd0e1c5a60e346891c28eb18} 
+unsigned char {\bfseries addr\+\_\+bytes}
+\item 
+\Hypertarget{structinsn_a7146048486db18ded69c32d8fe83decd}\label{structinsn_a7146048486db18ded69c32d8fe83decd} 
+unsigned char {\bfseries length}
+\item 
+\Hypertarget{structinsn_a4e83ff0698850b9494425d42bb75393b}\label{structinsn_a4e83ff0698850b9494425d42bb75393b} 
+unsigned char {\bfseries x86\+\_\+64}
+\item 
+\Hypertarget{structinsn_a012bbed79f7d54986b12184c2f06fce1}\label{structinsn_a012bbed79f7d54986b12184c2f06fce1} 
+const insn\+\_\+byte\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries kaddr}
+\item 
+\Hypertarget{structinsn_af72a10fa51dd824dffe21dd4b5f43e37}\label{structinsn_af72a10fa51dd824dffe21dd4b5f43e37} 
+const insn\+\_\+byte\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+kaddr}
+\item 
+\Hypertarget{structinsn_a82078d5a2dc4c2855b41c2f7585ffb7f}\label{structinsn_a82078d5a2dc4c2855b41c2f7585ffb7f} 
+const insn\+\_\+byte\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries next\+\_\+byte}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

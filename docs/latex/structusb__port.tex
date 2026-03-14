@@ -1,0 +1,67 @@
+\doxysection{usb\+\_\+port Struct Reference}
+\hypertarget{structusb__port}{}\label{structusb__port}\index{usb\_port@{usb\_port}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusb__port_afad6616803945c9ed1fe0cd7b1d8b612}\label{structusb__port_afad6616803945c9ed1fe0cd7b1d8b612} 
+struct \doxymbox{\hyperlink{structusb__device}{usb\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries child}
+\item 
+\Hypertarget{structusb__port_a031e10d6cd546541926c3fe37e51d6cf}\label{structusb__port_a031e10d6cd546541926c3fe37e51d6cf} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structusb__port_afa63ec4f3e43508282ed58bec982e090}\label{structusb__port_afa63ec4f3e43508282ed58bec982e090} 
+struct \doxymbox{\hyperlink{structusb__dev__state}{usb\+\_\+dev\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+owner}
+\item 
+\Hypertarget{structusb__port_a52c82fcd68a52935a5118678b0779c5e}\label{structusb__port_a52c82fcd68a52935a5118678b0779c5e} 
+struct \doxymbox{\hyperlink{structusb__port}{usb\+\_\+port}} \texorpdfstring{$\ast$}{*} {\bfseries peer}
+\item 
+\Hypertarget{structusb__port_a8a95d240f3cce082d50d238464da0181}\label{structusb__port_a8a95d240f3cce082d50d238464da0181} 
+struct \doxymbox{\hyperlink{structtypec__connector}{typec\+\_\+connector}} \texorpdfstring{$\ast$}{*} {\bfseries connector}
+\item 
+\Hypertarget{structusb__port_a6873fab41ea91c1a00dd6e5f9eb8c665}\label{structusb__port_a6873fab41ea91c1a00dd6e5f9eb8c665} 
+struct \doxymbox{\hyperlink{structdev__pm__qos__request}{dev\+\_\+pm\+\_\+qos\+\_\+request}} \texorpdfstring{$\ast$}{*} {\bfseries req}
+\item 
+\Hypertarget{structusb__port_a84718829ea46131f0b077fe9ee65c15c}\label{structusb__port_a84718829ea46131f0b077fe9ee65c15c} 
+enum usb\+\_\+port\+\_\+connect\+\_\+type {\bfseries connect\+\_\+type}
+\item 
+\Hypertarget{structusb__port_addb0b88f24d78ff11364a5436fed0918}\label{structusb__port_addb0b88f24d78ff11364a5436fed0918} 
+enum usb\+\_\+device\+\_\+state {\bfseries state}
+\item 
+\Hypertarget{structusb__port_ac4e6c2c1e43ca156fddb6da273ad4b1c}\label{structusb__port_ac4e6c2c1e43ca156fddb6da273ad4b1c} 
+struct \doxymbox{\hyperlink{structkernfs__node}{kernfs\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries state\+\_\+kn}
+\item 
+\Hypertarget{structusb__port_aa065430e7b168fdd6af21dde45e19ced}\label{structusb__port_aa065430e7b168fdd6af21dde45e19ced} 
+usb\+\_\+port\+\_\+location\+\_\+t {\bfseries location}
+\item 
+\Hypertarget{structusb__port_a3a68aee6f29956653df7ba7c3f578e77}\label{structusb__port_a3a68aee6f29956653df7ba7c3f578e77} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries status\+\_\+lock}
+\item 
+\Hypertarget{structusb__port_ab0ada8e9efa38773ff9aa29735003c72}\label{structusb__port_ab0ada8e9efa38773ff9aa29735003c72} 
+u32 {\bfseries over\+\_\+current\+\_\+count}
+\item 
+\Hypertarget{structusb__port_aaa9f678da2f9d7d54da7b110fb44abff}\label{structusb__port_aaa9f678da2f9d7d54da7b110fb44abff} 
+u8 {\bfseries portnum}
+\item 
+\Hypertarget{structusb__port_a08592f0c316c14a03a77db00d0f89a52}\label{structusb__port_a08592f0c316c14a03a77db00d0f89a52} 
+u32 {\bfseries quirks}
+\item 
+\Hypertarget{structusb__port_ac1c30cf74a5001199c9b55a38d45d333}\label{structusb__port_ac1c30cf74a5001199c9b55a38d45d333} 
+unsigned int {\bfseries early\+\_\+stop}:\+ 1
+\item 
+\Hypertarget{structusb__port_a6e9f73c8d43cf1efb660c3fe35a53f9c}\label{structusb__port_a6e9f73c8d43cf1efb660c3fe35a53f9c} 
+unsigned int {\bfseries ignore\+\_\+event}:\+ 1
+\item 
+\Hypertarget{structusb__port_a5701ae2a5c6fb31089bc807c1ca8f5f1}\label{structusb__port_a5701ae2a5c6fb31089bc807c1ca8f5f1} 
+unsigned int {\bfseries is\+\_\+superspeed}:\+ 1
+\item 
+\Hypertarget{structusb__port_a53c250180e6caeff8bcb9c343ddb9975}\label{structusb__port_a53c250180e6caeff8bcb9c343ddb9975} 
+unsigned int {\bfseries usb3\+\_\+lpm\+\_\+u1\+\_\+permit}:\+ 1
+\item 
+\Hypertarget{structusb__port_a8b7ced44ba1d860ee93e03e03e303a67}\label{structusb__port_a8b7ced44ba1d860ee93e03e03e303a67} 
+unsigned int {\bfseries usb3\+\_\+lpm\+\_\+u2\+\_\+permit}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

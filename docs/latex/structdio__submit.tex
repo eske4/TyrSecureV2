@@ -1,0 +1,82 @@
+\doxysection{dio\+\_\+submit Struct Reference}
+\hypertarget{structdio__submit}{}\label{structdio__submit}\index{dio\_submit@{dio\_submit}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdio__submit_a670bde0ac0af6a7d1775bf213dddb03f}\label{structdio__submit_a670bde0ac0af6a7d1775bf213dddb03f} 
+struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*} {\bfseries bio}
+\item 
+\Hypertarget{structdio__submit_a958efda8f834b418bbb0840e7434f182}\label{structdio__submit_a958efda8f834b418bbb0840e7434f182} 
+unsigned int {\bfseries blkbits}
+\item 
+\Hypertarget{structdio__submit_af69f26e2129516d07fb01a926eaf9dad}\label{structdio__submit_af69f26e2129516d07fb01a926eaf9dad} 
+unsigned int {\bfseries blkfactor}
+\item 
+\Hypertarget{structdio__submit_a84003dc6a324eec6731ffa6ef1d8fc55}\label{structdio__submit_a84003dc6a324eec6731ffa6ef1d8fc55} 
+unsigned int {\bfseries start\+\_\+zero\+\_\+done}
+\item 
+\Hypertarget{structdio__submit_a2719b4d1b046fb9412458157f6b7dd65}\label{structdio__submit_a2719b4d1b046fb9412458157f6b7dd65} 
+int {\bfseries pages\+\_\+in\+\_\+io}
+\item 
+\Hypertarget{structdio__submit_a26c08d409fa54058c894adad9468583a}\label{structdio__submit_a26c08d409fa54058c894adad9468583a} 
+sector\+\_\+t {\bfseries block\+\_\+in\+\_\+file}
+\item 
+\Hypertarget{structdio__submit_ab7c9737eb863d9033cfae4c1c35f343a}\label{structdio__submit_ab7c9737eb863d9033cfae4c1c35f343a} 
+unsigned int {\bfseries blocks\+\_\+available}
+\item 
+\Hypertarget{structdio__submit_a484276ed88af26bd0eb2e914f14e74d9}\label{structdio__submit_a484276ed88af26bd0eb2e914f14e74d9} 
+int {\bfseries reap\+\_\+counter}
+\item 
+\Hypertarget{structdio__submit_a3be0ef6347e6f3851e87e14fe0d2d9d1}\label{structdio__submit_a3be0ef6347e6f3851e87e14fe0d2d9d1} 
+sector\+\_\+t {\bfseries final\+\_\+block\+\_\+in\+\_\+request}
+\item 
+\Hypertarget{structdio__submit_a6c02a0c8acfd767b804e45b1f893bf59}\label{structdio__submit_a6c02a0c8acfd767b804e45b1f893bf59} 
+int {\bfseries boundary}
+\item 
+\Hypertarget{structdio__submit_a2e85fc0808f7735828bdd28d5668812d}\label{structdio__submit_a2e85fc0808f7735828bdd28d5668812d} 
+get\+\_\+block\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+block}
+\item 
+\Hypertarget{structdio__submit_a16a5883d0b47714847232d2042a9d1c1}\label{structdio__submit_a16a5883d0b47714847232d2042a9d1c1} 
+loff\+\_\+t {\bfseries logical\+\_\+offset\+\_\+in\+\_\+bio}
+\item 
+\Hypertarget{structdio__submit_ad2beb5eff533063f02e4ea0dc925aece}\label{structdio__submit_ad2beb5eff533063f02e4ea0dc925aece} 
+sector\+\_\+t {\bfseries final\+\_\+block\+\_\+in\+\_\+bio}
+\item 
+\Hypertarget{structdio__submit_a75ddcea515c4820ec68e06aab102eb9e}\label{structdio__submit_a75ddcea515c4820ec68e06aab102eb9e} 
+sector\+\_\+t {\bfseries next\+\_\+block\+\_\+for\+\_\+io}
+\item 
+\Hypertarget{structdio__submit_af231c1544238315c6c1f288903c4c654}\label{structdio__submit_af231c1544238315c6c1f288903c4c654} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+\_\+page}
+\item 
+\Hypertarget{structdio__submit_a54d1d5c91b8ebe54155828777a610576}\label{structdio__submit_a54d1d5c91b8ebe54155828777a610576} 
+unsigned int {\bfseries cur\+\_\+page\+\_\+offset}
+\item 
+\Hypertarget{structdio__submit_a22dd010b0d8f6437335c9e62a03d0855}\label{structdio__submit_a22dd010b0d8f6437335c9e62a03d0855} 
+unsigned int {\bfseries cur\+\_\+page\+\_\+len}
+\item 
+\Hypertarget{structdio__submit_aa00869af775054c7568ee36bb5baf909}\label{structdio__submit_aa00869af775054c7568ee36bb5baf909} 
+sector\+\_\+t {\bfseries cur\+\_\+page\+\_\+block}
+\item 
+\Hypertarget{structdio__submit_a16fad6842db93c4752005595a719c940}\label{structdio__submit_a16fad6842db93c4752005595a719c940} 
+loff\+\_\+t {\bfseries cur\+\_\+page\+\_\+fs\+\_\+offset}
+\item 
+\Hypertarget{structdio__submit_a7684ab2bba6db635fb71c294c65f5c6a}\label{structdio__submit_a7684ab2bba6db635fb71c294c65f5c6a} 
+struct \doxymbox{\hyperlink{structiov__iter}{iov\+\_\+iter}} \texorpdfstring{$\ast$}{*} {\bfseries iter}
+\item 
+\Hypertarget{structdio__submit_a1d83182e02a60cfc88a2c46d09fa18fa}\label{structdio__submit_a1d83182e02a60cfc88a2c46d09fa18fa} 
+unsigned int {\bfseries head}
+\item 
+\Hypertarget{structdio__submit_a6ee83bfd5e65aedc0c2dec7bccf8b7b0}\label{structdio__submit_a6ee83bfd5e65aedc0c2dec7bccf8b7b0} 
+unsigned int {\bfseries tail}
+\item 
+\Hypertarget{structdio__submit_a0901133972d015fb2152dcadccd655fe}\label{structdio__submit_a0901133972d015fb2152dcadccd655fe} 
+size\+\_\+t {\bfseries from}
+\item 
+\Hypertarget{structdio__submit_a5c8258d580fbdf19f4ff21bf77bc972f}\label{structdio__submit_a5c8258d580fbdf19f4ff21bf77bc972f} 
+size\+\_\+t {\bfseries to}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

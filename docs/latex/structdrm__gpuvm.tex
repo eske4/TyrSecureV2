@@ -1,0 +1,69 @@
+\doxysection{drm\+\_\+gpuvm Struct Reference}
+\hypertarget{structdrm__gpuvm}{}\label{structdrm__gpuvm}\index{drm\_gpuvm@{drm\_gpuvm}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__gpuvm_a703645af010d41cad3bd00b981ffae9a}\label{structdrm__gpuvm_a703645af010d41cad3bd00b981ffae9a} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structdrm__gpuvm_a170956b1fb1157346cb03e07e6fbd088}\label{structdrm__gpuvm_a170956b1fb1157346cb03e07e6fbd088} 
+enum drm\+\_\+gpuvm\+\_\+flags {\bfseries flags}
+\item 
+\Hypertarget{structdrm__gpuvm_af48273568fd1b7da37e20b6825cfa8af}\label{structdrm__gpuvm_af48273568fd1b7da37e20b6825cfa8af} 
+struct \doxymbox{\hyperlink{structdrm__device}{drm\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries drm}
+\item 
+\Hypertarget{structdrm__gpuvm_ae5ac00d06971cfc15441b6fd4e7498f1}\label{structdrm__gpuvm_ae5ac00d06971cfc15441b6fd4e7498f1} 
+u64 {\bfseries mm\+\_\+start}
+\item 
+\Hypertarget{structdrm__gpuvm_a3ab618cd5181a75d700a523d4e934920}\label{structdrm__gpuvm_a3ab618cd5181a75d700a523d4e934920} 
+u64 {\bfseries mm\+\_\+range}
+\item 
+\Hypertarget{structdrm__gpuvm_a2b28f1c81529796e1a1afaf37195f37a}\label{structdrm__gpuvm_a2b28f1c81529796e1a1afaf37195f37a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structrb__root__cached}{rb\_root\_cached}} {\bfseries tree}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries list}\\
+\} {\bfseries rb}\\
+
+\end{tabbing}\item 
+\Hypertarget{structdrm__gpuvm_a93ef28c1eb31a79fe78efa0705480461}\label{structdrm__gpuvm_a93ef28c1eb31a79fe78efa0705480461} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries kref}
+\item 
+\Hypertarget{structdrm__gpuvm_a3886ba27ae11093a7e393262498275c3}\label{structdrm__gpuvm_a3886ba27ae11093a7e393262498275c3} 
+struct \doxymbox{\hyperlink{structdrm__gpuva}{drm\+\_\+gpuva}} {\bfseries kernel\+\_\+alloc\+\_\+node}
+\item 
+\Hypertarget{structdrm__gpuvm_a2f102067f174e06003eb76e7e7d412b4}\label{structdrm__gpuvm_a2f102067f174e06003eb76e7e7d412b4} 
+const struct \doxymbox{\hyperlink{structdrm__gpuvm__ops}{drm\+\_\+gpuvm\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structdrm__gpuvm_ae2242e86b5b3d63fc139cc73de4c70d1}\label{structdrm__gpuvm_ae2242e86b5b3d63fc139cc73de4c70d1} 
+struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*} {\bfseries r\+\_\+obj}
+\item 
+\Hypertarget{structdrm__gpuvm_a3594856f32303318fdfe5748e4225f5b}\label{structdrm__gpuvm_a3594856f32303318fdfe5748e4225f5b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries list}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} \texorpdfstring{$\ast$}{*} {\bfseries local\_list}\\
+\>spinlock\_t {\bfseries lock}\\
+\} {\bfseries extobj}\\
+
+\end{tabbing}\item 
+\Hypertarget{structdrm__gpuvm_aba2fe2cd3ce891d9acec7956f2e73efc}\label{structdrm__gpuvm_aba2fe2cd3ce891d9acec7956f2e73efc} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries list}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} \texorpdfstring{$\ast$}{*} {\bfseries local\_list}\\
+\>spinlock\_t {\bfseries lock}\\
+\} {\bfseries evict}\\
+
+\end{tabbing}\item 
+\Hypertarget{structdrm__gpuvm_ae9756ca003434fc08aca54792af627ff}\label{structdrm__gpuvm_ae9756ca003434fc08aca54792af627ff} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries bo\+\_\+defer}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

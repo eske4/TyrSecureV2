@@ -1,0 +1,130 @@
+\doxysection{pool\+\_\+workqueue Struct Reference}
+\hypertarget{structpool__workqueue}{}\label{structpool__workqueue}\index{pool\_workqueue@{pool\_workqueue}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpool__workqueue_a68303ae17a9ae05e97d925c522d67e52}\label{structpool__workqueue_a68303ae17a9ae05e97d925c522d67e52} 
+struct \doxymbox{\hyperlink{structworker__pool}{worker\+\_\+pool}} \texorpdfstring{$\ast$}{*} {\bfseries pool}
+\item 
+\Hypertarget{structpool__workqueue_ac353aa8a5aa0b484d9f6c887d8db8297}\label{structpool__workqueue_ac353aa8a5aa0b484d9f6c887d8db8297} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries wq}
+\item 
+\Hypertarget{structpool__workqueue_aece19dcd0f36bdd6ecd0d0af5ccb1cac}\label{structpool__workqueue_aece19dcd0f36bdd6ecd0d0af5ccb1cac} 
+int {\bfseries work\+\_\+color}
+\item 
+\Hypertarget{structpool__workqueue_a84a4564c782313676324b082d2d46b27}\label{structpool__workqueue_a84a4564c782313676324b082d2d46b27} 
+int {\bfseries flush\+\_\+color}
+\item 
+\Hypertarget{structpool__workqueue_ae67ffbdb6a96b9ac057e0120b262d0b0}\label{structpool__workqueue_ae67ffbdb6a96b9ac057e0120b262d0b0} 
+int {\bfseries refcnt}
+\item 
+\Hypertarget{structpool__workqueue_ab55ac8cd363adb2c59fc8a025ff973e6}\label{structpool__workqueue_ab55ac8cd363adb2c59fc8a025ff973e6} 
+int {\bfseries nr\+\_\+in\+\_\+flight} \+[16]\+
+\item 
+\Hypertarget{structpool__workqueue_a9d1415341993f030d0105d6042f461a1}\label{structpool__workqueue_a9d1415341993f030d0105d6042f461a1} 
+bool {\bfseries plugged}
+\item 
+\Hypertarget{structpool__workqueue_a4d8fa104beb653e33b5be13637b72975}\label{structpool__workqueue_a4d8fa104beb653e33b5be13637b72975} 
+int {\bfseries nr\+\_\+active}
+\item 
+\Hypertarget{structpool__workqueue_a46e8f550c7031353850af767dee20e4b}\label{structpool__workqueue_a46e8f550c7031353850af767dee20e4b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries inactive\+\_\+works}
+\item 
+\Hypertarget{structpool__workqueue_ab8fc1012e956c06bc268e03c4b5206ea}\label{structpool__workqueue_ab8fc1012e956c06bc268e03c4b5206ea} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pending\+\_\+node}
+\item 
+\Hypertarget{structpool__workqueue_a39210b341687a43598e32fc549f60eb9}\label{structpool__workqueue_a39210b341687a43598e32fc549f60eb9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pwqs\+\_\+node}
+\item 
+\Hypertarget{structpool__workqueue_a64ef46e90205c96f3af0d78953d165cf}\label{structpool__workqueue_a64ef46e90205c96f3af0d78953d165cf} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries mayday\+\_\+node}
+\item 
+\Hypertarget{structpool__workqueue_ac2b82255d60b5e099d37f31bc960f18c}\label{structpool__workqueue_ac2b82255d60b5e099d37f31bc960f18c} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries mayday\+\_\+cursor}
+\item 
+\Hypertarget{structpool__workqueue_ae67f3968fc0fabb79d67a4ef1fcf2615}\label{structpool__workqueue_ae67f3968fc0fabb79d67a4ef1fcf2615} 
+u64 {\bfseries stats} \+[8]\+
+\item 
+\Hypertarget{structpool__workqueue_acf7d477822c57e2c99266c0c965f4903}\label{structpool__workqueue_acf7d477822c57e2c99266c0c965f4903} 
+struct \doxymbox{\hyperlink{structkthread__work}{kthread\+\_\+work}} {\bfseries release\+\_\+work}
+\item 
+\Hypertarget{structpool__workqueue_ad013859a95342cdc364cb0e8a819120b}\label{structpool__workqueue_ad013859a95342cdc364cb0e8a819120b} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structpool__workqueue_a71aace5ceee74fcd0ca503161273ee71}\label{structpool__workqueue_a71aace5ceee74fcd0ca503161273ee71} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a5dfc77804e74a9ec4d5271534c8967ba}\label{structpool__workqueue_a5dfc77804e74a9ec4d5271534c8967ba} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_adb0e5b87ed7a5c4f70c90f3c3d59c88b}\label{structpool__workqueue_adb0e5b87ed7a5c4f70c90f3c3d59c88b} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a245d24882adf5b09b32a15f81b08c9ce}\label{structpool__workqueue_a245d24882adf5b09b32a15f81b08c9ce} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a96ba5778b8bce7ab815d7d5a14cae0f6}\label{structpool__workqueue_a96ba5778b8bce7ab815d7d5a14cae0f6} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a0ea8499e470e2c373bdb955b263c0c0e}\label{structpool__workqueue_a0ea8499e470e2c373bdb955b263c0c0e} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a1c341b5e16f7d88fd3baa1ae070f7c26}\label{structpool__workqueue_a1c341b5e16f7d88fd3baa1ae070f7c26} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_ad354a1076f74d693044325bf454d5921}\label{structpool__workqueue_ad354a1076f74d693044325bf454d5921} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a5d0032051208ca6fd6d67b0098d81b6e}\label{structpool__workqueue_a5d0032051208ca6fd6d67b0098d81b6e} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_acd73cc5adfbf0f3c7513f95f6cf69dad}\label{structpool__workqueue_acd73cc5adfbf0f3c7513f95f6cf69dad} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a87a2732099a020cb7bed6c249b914707}\label{structpool__workqueue_a87a2732099a020cb7bed6c249b914707} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_ae1130f745d0b701953de0ef62994d0cd}\label{structpool__workqueue_ae1130f745d0b701953de0ef62994d0cd} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_aed6ad4851dd2f847eac8dff7979355ae}\label{structpool__workqueue_aed6ad4851dd2f847eac8dff7979355ae} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a30753a7bc6fb39c058e38114ed45125a}\label{structpool__workqueue_a30753a7bc6fb39c058e38114ed45125a} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a7c626593f92ddc091818c50d102902fe}\label{structpool__workqueue_a7c626593f92ddc091818c50d102902fe} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_ac9630695f2fc4a1abcba9e953f1f92bb}\label{structpool__workqueue_ac9630695f2fc4a1abcba9e953f1f92bb} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a2f2b953ea7ee5aacd4cfab5723e74fed}\label{structpool__workqueue_a2f2b953ea7ee5aacd4cfab5723e74fed} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a13df70eeb6fc83d3b98285a8916116d9}\label{structpool__workqueue_a13df70eeb6fc83d3b98285a8916116d9} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_aaed67cacf8ea2d621d41c0b3cc485cc5}\label{structpool__workqueue_aaed67cacf8ea2d621d41c0b3cc485cc5} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a6b66f5e9458f4902f5105a9d9f9b2340}\label{structpool__workqueue_a6b66f5e9458f4902f5105a9d9f9b2340} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_abe81dc664888931b165e4a16b84f3e6a}\label{structpool__workqueue_abe81dc664888931b165e4a16b84f3e6a} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a518e43c9bdd0e34a487799048ec7cd82}\label{structpool__workqueue_a518e43c9bdd0e34a487799048ec7cd82} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a248fc45ef3944742233ce250f26bee3c}\label{structpool__workqueue_a248fc45ef3944742233ce250f26bee3c} 
+long :\+ 64
+\item 
+\Hypertarget{structpool__workqueue_a798e3bb096ca333cf6a794011d2f7199}\label{structpool__workqueue_a798e3bb096ca333cf6a794011d2f7199} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

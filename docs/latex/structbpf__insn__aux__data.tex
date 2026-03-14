@@ -1,0 +1,117 @@
+\doxysection{bpf\+\_\+insn\+\_\+aux\+\_\+data Struct Reference}
+\hypertarget{structbpf__insn__aux__data}{}\label{structbpf__insn__aux__data}\index{bpf\_insn\_aux\_data@{bpf\_insn\_aux\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__insn__aux__data_af44f5d80b225864bdec3b98ab54405da}\label{structbpf__insn__aux__data_af44f5d80b225864bdec3b98ab54405da} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>enum bpf\_reg\_type {\bfseries ptr\_type}\\
+\>struct \doxymbox{\hyperlink{structbpf__map__ptr__state}{bpf\_map\_ptr\_state}} {\bfseries map\_ptr\_state}\\
+\>s32 {\bfseries call\_imm}\\
+\>u32 {\bfseries alu\_limit}\\
+\Hypertarget{unionbpf__insn__aux__data_1_1_0d336344231220232323176145004074375062345172257337_a8c94a482b8405f485629f5cb1da0304a}\label{unionbpf__insn__aux__data_1_1_0d336344231220232323176145004074375062345172257337_a8c94a482b8405f485629f5cb1da0304a} 
+\>struct \{\\
+\>\>u32 {\bfseries map\_index}\\
+\>\>u32 {\bfseries map\_off}\\
+\>\} \\
+\>struct \{\\
+\>\>enum bpf\_reg\_type {\bfseries reg\_type}\\
+\Hypertarget{structbpf__insn__aux__data_1_1_0d336344231220232323176145004074375062345172257337_1_1_0d01602511d13db158237012adab1255320d4d0f34_a48325be861efb109fe54af2347ad66d1}\label{structbpf__insn__aux__data_1_1_0d336344231220232323176145004074375062345172257337_1_1_0d01602511d13db158237012adab1255320d4d0f34_a48325be861efb109fe54af2347ad66d1} 
+\>\>union \{\\
+\Hypertarget{unionbpf__insn__aux__data_1_1_0d336344231220232323176145004074375062345172257337_1_1_0d0160251163fefb6788de92d23b8802201cea328d8_ac637933c228ea61a583ddc544b03ac9e}\label{unionbpf__insn__aux__data_1_1_0d336344231220232323176145004074375062345172257337_1_1_0d0160251163fefb6788de92d23b8802201cea328d8_ac637933c228ea61a583ddc544b03ac9e} 
+\>\>\>struct \{\\
+\>\>\>\>struct \doxymbox{\hyperlink{structbtf}{btf}} \texorpdfstring{$\ast$}{*} {\bfseries btf}\\
+\>\>\>\>u32 {\bfseries btf\_id}\\
+\>\>\>\} \\
+\>\>\>u32 {\bfseries mem\_size}\\
+\>\>\} \\
+\>\} {\bfseries btf\_var}\\
+\>struct \doxymbox{\hyperlink{structbpf__loop__inline__state}{bpf\_loop\_inline\_state}} {\bfseries loop\_inline\_state}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__insn__aux__data_aa1d867caccdd2a83cc193cb5c8b6a6c7}\label{structbpf__insn__aux__data_aa1d867caccdd2a83cc193cb5c8b6a6c7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries obj\_new\_size}\\
+\>u64 {\bfseries insert\_off}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__insn__aux__data_ae2bd8761c4a1d5aebf2afa32e48d129e}\label{structbpf__insn__aux__data_ae2bd8761c4a1d5aebf2afa32e48d129e} 
+struct \doxymbox{\hyperlink{structbpf__iarray}{bpf\+\_\+iarray}} \texorpdfstring{$\ast$}{*} {\bfseries jt}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a15cd02b9ada2e57d51dd0a5d9b51a31a}\label{structbpf__insn__aux__data_a15cd02b9ada2e57d51dd0a5d9b51a31a} 
+struct \doxymbox{\hyperlink{structbtf__struct__meta}{btf\+\_\+struct\+\_\+meta}} \texorpdfstring{$\ast$}{*} {\bfseries kptr\+\_\+struct\+\_\+meta}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a926f1afde4c84e71f8f8b9efa9003847}\label{structbpf__insn__aux__data_a926f1afde4c84e71f8f8b9efa9003847} 
+u64 {\bfseries map\+\_\+key\+\_\+state}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a740feb8021b76ab91ff43d62e07c610e}\label{structbpf__insn__aux__data_a740feb8021b76ab91ff43d62e07c610e} 
+int {\bfseries ctx\+\_\+field\+\_\+size}
+\item 
+\Hypertarget{structbpf__insn__aux__data_ae558c00219a32ef31b3f43a095206c33}\label{structbpf__insn__aux__data_ae558c00219a32ef31b3f43a095206c33} 
+u32 {\bfseries seen}
+\item 
+\Hypertarget{structbpf__insn__aux__data_ae37e0237f7cc6cc8dc7f22ea6250a6b6}\label{structbpf__insn__aux__data_ae37e0237f7cc6cc8dc7f22ea6250a6b6} 
+bool {\bfseries nospec}
+\item 
+\Hypertarget{structbpf__insn__aux__data_acf73e63c931ebdb269f79744743e09f7}\label{structbpf__insn__aux__data_acf73e63c931ebdb269f79744743e09f7} 
+bool {\bfseries nospec\+\_\+result}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a766b340e97d8a6ac6a3e34787983eaf0}\label{structbpf__insn__aux__data_a766b340e97d8a6ac6a3e34787983eaf0} 
+bool {\bfseries zext\+\_\+dst}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a86c6f33f0798dfb78bdf1566b91cfddb}\label{structbpf__insn__aux__data_a86c6f33f0798dfb78bdf1566b91cfddb} 
+bool {\bfseries needs\+\_\+zext}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a7f1e09bc52695c7a6b95bb559264fb51}\label{structbpf__insn__aux__data_a7f1e09bc52695c7a6b95bb559264fb51} 
+bool {\bfseries non\+\_\+sleepable}
+\item 
+\Hypertarget{structbpf__insn__aux__data_af2ee2a933af2fac1af0ce5af2d00d2bb}\label{structbpf__insn__aux__data_af2ee2a933af2fac1af0ce5af2d00d2bb} 
+bool {\bfseries is\+\_\+iter\+\_\+next}
+\item 
+\Hypertarget{structbpf__insn__aux__data_af76552d47f54a9358abe1e033ab09dd8}\label{structbpf__insn__aux__data_af76552d47f54a9358abe1e033ab09dd8} 
+bool {\bfseries call\+\_\+with\+\_\+percpu\+\_\+alloc\+\_\+ptr}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a79ad2f7cccb2e1edc8f7c92499c4ebbd}\label{structbpf__insn__aux__data_a79ad2f7cccb2e1edc8f7c92499c4ebbd} 
+u8 {\bfseries alu\+\_\+state}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a3ae00461b911e350ce57fac22bb11269}\label{structbpf__insn__aux__data_a3ae00461b911e350ce57fac22bb11269} 
+u8 {\bfseries fastcall\+\_\+pattern}:\+ 1
+\item 
+\Hypertarget{structbpf__insn__aux__data_a92179791c5afdb69c8f5067e039a520e}\label{structbpf__insn__aux__data_a92179791c5afdb69c8f5067e039a520e} 
+u8 {\bfseries fastcall\+\_\+spills\+\_\+num}:\+ 3
+\item 
+\Hypertarget{structbpf__insn__aux__data_a0f3f2352d7d8703072c5e8fab3c305bb}\label{structbpf__insn__aux__data_a0f3f2352d7d8703072c5e8fab3c305bb} 
+u8 {\bfseries arg\+\_\+prog}:\+ 4
+\item 
+\Hypertarget{structbpf__insn__aux__data_a550913ca6e11d0d25c9b4433c1208a18}\label{structbpf__insn__aux__data_a550913ca6e11d0d25c9b4433c1208a18} 
+unsigned int {\bfseries orig\+\_\+idx}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a2b29066e4ba021e73c8d92a1ebb90f90}\label{structbpf__insn__aux__data_a2b29066e4ba021e73c8d92a1ebb90f90} 
+bool {\bfseries jmp\+\_\+point}
+\item 
+\Hypertarget{structbpf__insn__aux__data_af875a5f7c13cc2f3b4cf12ca7769d373}\label{structbpf__insn__aux__data_af875a5f7c13cc2f3b4cf12ca7769d373} 
+bool {\bfseries prune\+\_\+point}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a31be499181d00f66f7fc53d04237ce71}\label{structbpf__insn__aux__data_a31be499181d00f66f7fc53d04237ce71} 
+bool {\bfseries force\+\_\+checkpoint}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a1f4fedabd12500912d2610ff99b17996}\label{structbpf__insn__aux__data_a1f4fedabd12500912d2610ff99b17996} 
+bool {\bfseries calls\+\_\+callback}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a4c4544f2a16fec6b77417d3e6ae9d905}\label{structbpf__insn__aux__data_a4c4544f2a16fec6b77417d3e6ae9d905} 
+u32 {\bfseries scc}
+\item 
+\Hypertarget{structbpf__insn__aux__data_a56a13cf2c97e9c9fc83573d6b14c012d}\label{structbpf__insn__aux__data_a56a13cf2c97e9c9fc83573d6b14c012d} 
+u16 {\bfseries live\+\_\+regs\+\_\+before}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

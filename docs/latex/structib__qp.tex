@@ -1,0 +1,103 @@
+\doxysection{ib\+\_\+qp Struct Reference}
+\hypertarget{structib__qp}{}\label{structib__qp}\index{ib\_qp@{ib\_qp}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structib__qp_a9936b9e35dfdef64e8514c6132a9e7ca}\label{structib__qp_a9936b9e35dfdef64e8514c6132a9e7ca} 
+struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries device}
+\item 
+\Hypertarget{structib__qp_ab8a6c75b296bd71b342236e1a910d314}\label{structib__qp_ab8a6c75b296bd71b342236e1a910d314} 
+struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*} {\bfseries pd}
+\item 
+\Hypertarget{structib__qp_a76d8ca94032287ab2b5598cfbc866fdd}\label{structib__qp_a76d8ca94032287ab2b5598cfbc866fdd} 
+struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+cq}
+\item 
+\Hypertarget{structib__qp_a497c49594c1afebc93f8a76c2edcc27b}\label{structib__qp_a497c49594c1afebc93f8a76c2edcc27b} 
+struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*} {\bfseries recv\+\_\+cq}
+\item 
+\Hypertarget{structib__qp_a95c9f7289104e29c8331a6475a8a21d8}\label{structib__qp_a95c9f7289104e29c8331a6475a8a21d8} 
+spinlock\+\_\+t {\bfseries mr\+\_\+lock}
+\item 
+\Hypertarget{structib__qp_ad5b457fde865308ae528305c88d26c9a}\label{structib__qp_ad5b457fde865308ae528305c88d26c9a} 
+int {\bfseries mrs\+\_\+used}
+\item 
+\Hypertarget{structib__qp_a39a272b61208f9a89d42bdcc88d83980}\label{structib__qp_a39a272b61208f9a89d42bdcc88d83980} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rdma\+\_\+mrs}
+\item 
+\Hypertarget{structib__qp_a42feb137a9280ba56db55efdcdd03ef3}\label{structib__qp_a42feb137a9280ba56db55efdcdd03ef3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries sig\+\_\+mrs}
+\item 
+\Hypertarget{structib__qp_a0957d78cdeca38aca8a96f4bd62d010a}\label{structib__qp_a0957d78cdeca38aca8a96f4bd62d010a} 
+struct \doxymbox{\hyperlink{structib__srq}{ib\+\_\+srq}} \texorpdfstring{$\ast$}{*} {\bfseries srq}
+\item 
+\Hypertarget{structib__qp_a0bd7d3de21f9d0a117ff628ebd949609}\label{structib__qp_a0bd7d3de21f9d0a117ff628ebd949609} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries srq\+\_\+completion}
+\item 
+\Hypertarget{structib__qp_a981cc2ffa5ef41487b38097d1482caf2}\label{structib__qp_a981cc2ffa5ef41487b38097d1482caf2} 
+struct \doxymbox{\hyperlink{structib__xrcd}{ib\+\_\+xrcd}} \texorpdfstring{$\ast$}{*} {\bfseries xrcd}
+\item 
+\Hypertarget{structib__qp_af5a302b477fc6fae58d86f867c30b6e2}\label{structib__qp_af5a302b477fc6fae58d86f867c30b6e2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries xrcd\+\_\+list}
+\item 
+\Hypertarget{structib__qp_a2aa80a2bdf8966b673693555afc335b0}\label{structib__qp_a2aa80a2bdf8966b673693555afc335b0} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries usecnt}
+\item 
+\Hypertarget{structib__qp_a8e3008a305e6ac5ffcb6fd7fcbad8b63}\label{structib__qp_a8e3008a305e6ac5ffcb6fd7fcbad8b63} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries open\+\_\+list}
+\item 
+\Hypertarget{structib__qp_ae614534eb38bc159be56ffa7b8e4bf1a}\label{structib__qp_ae614534eb38bc159be56ffa7b8e4bf1a} 
+struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*} {\bfseries real\+\_\+qp}
+\item 
+\Hypertarget{structib__qp_a15bc1850d6dbb1a925f40537c7e42987}\label{structib__qp_a15bc1850d6dbb1a925f40537c7e42987} 
+struct ib\+\_\+uqp\+\_\+object \texorpdfstring{$\ast$}{*} {\bfseries uobject}
+\item 
+\Hypertarget{structib__qp_ac43285c4f8d48b88651bd868b5e6c667}\label{structib__qp_ac43285c4f8d48b88651bd868b5e6c667} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+handler} )(struct \doxymbox{\hyperlink{structib__event}{ib\+\_\+event}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__qp_abfe7908a86dfcb532903b0183ed94e4f}\label{structib__qp_abfe7908a86dfcb532903b0183ed94e4f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries registered\+\_\+event\+\_\+handler} )(struct \doxymbox{\hyperlink{structib__event}{ib\+\_\+event}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__qp_ad98932bff2170226951eed28ece5c610}\label{structib__qp_ad98932bff2170226951eed28ece5c610} 
+void \texorpdfstring{$\ast$}{*} {\bfseries qp\+\_\+context}
+\item 
+\Hypertarget{structib__qp_a84b4e1a96450a7d73d5709809166a8be}\label{structib__qp_a84b4e1a96450a7d73d5709809166a8be} 
+const struct \doxymbox{\hyperlink{structib__gid__attr}{ib\+\_\+gid\+\_\+attr}} \texorpdfstring{$\ast$}{*} {\bfseries av\+\_\+sgid\+\_\+attr}
+\item 
+\Hypertarget{structib__qp_ab7496d268748b415a1049444eb58bd28}\label{structib__qp_ab7496d268748b415a1049444eb58bd28} 
+const struct \doxymbox{\hyperlink{structib__gid__attr}{ib\+\_\+gid\+\_\+attr}} \texorpdfstring{$\ast$}{*} {\bfseries alt\+\_\+path\+\_\+sgid\+\_\+attr}
+\item 
+\Hypertarget{structib__qp_aeedd4555b2dc86ccc325d857119ccdeb}\label{structib__qp_aeedd4555b2dc86ccc325d857119ccdeb} 
+u32 {\bfseries qp\+\_\+num}
+\item 
+\Hypertarget{structib__qp_a3a612632b9f230860bca92d7338901a6}\label{structib__qp_a3a612632b9f230860bca92d7338901a6} 
+u32 {\bfseries max\+\_\+write\+\_\+sge}
+\item 
+\Hypertarget{structib__qp_a70b0add6616bdafc3bb6c5cbff83fc6c}\label{structib__qp_a70b0add6616bdafc3bb6c5cbff83fc6c} 
+u32 {\bfseries max\+\_\+read\+\_\+sge}
+\item 
+\Hypertarget{structib__qp_a0b765ed568a9c7955b86267f141d640d}\label{structib__qp_a0b765ed568a9c7955b86267f141d640d} 
+enum ib\+\_\+qp\+\_\+type {\bfseries qp\+\_\+type}
+\item 
+\Hypertarget{structib__qp_aae267e02b8b78bb2913de25377e4ba96}\label{structib__qp_aae267e02b8b78bb2913de25377e4ba96} 
+struct \doxymbox{\hyperlink{structib__rwq__ind__table}{ib\+\_\+rwq\+\_\+ind\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries rwq\+\_\+ind\+\_\+tbl}
+\item 
+\Hypertarget{structib__qp_a841fcba75e28ae6f3acc1c9065e21791}\label{structib__qp_a841fcba75e28ae6f3acc1c9065e21791} 
+struct \doxymbox{\hyperlink{structib__qp__security}{ib\+\_\+qp\+\_\+security}} \texorpdfstring{$\ast$}{*} {\bfseries qp\+\_\+sec}
+\item 
+\Hypertarget{structib__qp_a6adda1b8ee34ba4a3d988ee5db7aa760}\label{structib__qp_a6adda1b8ee34ba4a3d988ee5db7aa760} 
+u32 {\bfseries port}
+\item 
+\Hypertarget{structib__qp_aa328a4394cf9bf75380d9c3d3fd16b20}\label{structib__qp_aa328a4394cf9bf75380d9c3d3fd16b20} 
+bool {\bfseries integrity\+\_\+en}
+\item 
+\Hypertarget{structib__qp_a498c4a9995fdbd1e69e57aa208980463}\label{structib__qp_a498c4a9995fdbd1e69e57aa208980463} 
+struct \doxymbox{\hyperlink{structrdma__restrack__entry}{rdma\+\_\+restrack\+\_\+entry}} {\bfseries res}
+\item 
+\Hypertarget{structib__qp_a09e75817edce135b00e36c2ec4ef8a68}\label{structib__qp_a09e75817edce135b00e36c2ec4ef8a68} 
+struct \doxymbox{\hyperlink{structrdma__counter}{rdma\+\_\+counter}} \texorpdfstring{$\ast$}{*} {\bfseries counter}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\doxysection{fxregs\+\_\+state Struct Reference}
+\hypertarget{structfxregs__state}{}\label{structfxregs__state}\index{fxregs\_state@{fxregs\_state}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfxregs__state_a4b67262746f164378842aea50331cabf}\label{structfxregs__state_a4b67262746f164378842aea50331cabf} 
+u16 {\bfseries cwd}
+\item 
+\Hypertarget{structfxregs__state_a31007a6ea3138c074bcc226b17f2550f}\label{structfxregs__state_a31007a6ea3138c074bcc226b17f2550f} 
+u16 {\bfseries swd}
+\item 
+\Hypertarget{structfxregs__state_a427ac8d1cbc48703ab90775e8191599c}\label{structfxregs__state_a427ac8d1cbc48703ab90775e8191599c} 
+u16 {\bfseries twd}
+\item 
+\Hypertarget{structfxregs__state_aef90a59d4bd651c524c6726a603fd245}\label{structfxregs__state_aef90a59d4bd651c524c6726a603fd245} 
+u16 {\bfseries fop}
+\item 
+\Hypertarget{structfxregs__state_a4965f6d54c97de24594a334c635e7ea7}\label{structfxregs__state_a4965f6d54c97de24594a334c635e7ea7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionfxregs__state_1_1_0d342171303071053206220021230255202151072247047040_a74c0ab63ed1040e7c2df3bc9577c962c}\label{unionfxregs__state_1_1_0d342171303071053206220021230255202151072247047040_a74c0ab63ed1040e7c2df3bc9577c962c} 
+\>struct \{\\
+\>\>u64 {\bfseries rip}\\
+\>\>u64 {\bfseries rdp}\\
+\>\} \\
+\Hypertarget{unionfxregs__state_1_1_0d342171303071053206220021230255202151072247047040_ae4e3481ed246a0eb09f7fcac5810c093}\label{unionfxregs__state_1_1_0d342171303071053206220021230255202151072247047040_ae4e3481ed246a0eb09f7fcac5810c093} 
+\>struct \{\\
+\>\>u32 {\bfseries fip}\\
+\>\>u32 {\bfseries fcs}\\
+\>\>u32 {\bfseries foo}\\
+\>\>u32 {\bfseries fos}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structfxregs__state_a428d06003ddf4c3b7a13e75b8968ffe3}\label{structfxregs__state_a428d06003ddf4c3b7a13e75b8968ffe3} 
+u32 {\bfseries mxcsr}
+\item 
+\Hypertarget{structfxregs__state_a51d2e34172673791088a096206c619fb}\label{structfxregs__state_a51d2e34172673791088a096206c619fb} 
+u32 {\bfseries mxcsr\+\_\+mask}
+\item 
+\Hypertarget{structfxregs__state_a9f8a2b38c8fee370ca76c17bbd197772}\label{structfxregs__state_a9f8a2b38c8fee370ca76c17bbd197772} 
+u32 {\bfseries st\+\_\+space} \+[32]\+
+\item 
+\Hypertarget{structfxregs__state_a85f5ec49574ec28727ddbecac8803e77}\label{structfxregs__state_a85f5ec49574ec28727ddbecac8803e77} 
+u32 {\bfseries xmm\+\_\+space} \+[64]\+
+\item 
+\Hypertarget{structfxregs__state_a72291f7afaed11d54e9b778ba5610667}\label{structfxregs__state_a72291f7afaed11d54e9b778ba5610667} 
+u32 {\bfseries padding} \+[12]\+
+\item 
+\Hypertarget{structfxregs__state_a3f0d31512a5a06120ff86b9a9286b94b}\label{structfxregs__state_a3f0d31512a5a06120ff86b9a9286b94b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries padding1} \+[12]\+\\
+\>u32 {\bfseries sw\_reserved} \+[12]\+\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

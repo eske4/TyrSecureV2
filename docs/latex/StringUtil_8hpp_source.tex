@@ -1,0 +1,26 @@
+\doxysection{String\+Util.\+hpp}
+\hypertarget{StringUtil_8hpp_source}{}\label{StringUtil_8hpp_source}\index{/home/eske/Documents/git/TyrSecureV2/include/utils/StringUtil.hpp@{/home/eske/Documents/git/TyrSecureV2/include/utils/StringUtil.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }CInterop\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{inline}\ std::vector<char*>\ toCStringVector(\textcolor{keyword}{const}\ std::vector<std::string>\ \&items)\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std::vector<char*>\ raw;}
+\DoxyCodeLine{00014\ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ raw.reserve(items.size()\ +\ 1);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&str\ :\ items)\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ str.c\_str()\ returns\ const\ char*,\ so\ we\ cast\ to\ char*\ for\ C\ APIs}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ raw.emplace\_back(\textcolor{keyword}{const\_cast<}\textcolor{keywordtype}{char}*\textcolor{keyword}{>}(str.c\_str()));}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ raw.emplace\_back(\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ raw;}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \}}
+
+\end{DoxyCode}

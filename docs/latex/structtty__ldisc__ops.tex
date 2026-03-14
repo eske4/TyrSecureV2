@@ -1,0 +1,64 @@
+\doxysection{tty\+\_\+ldisc\+\_\+ops Struct Reference}
+\hypertarget{structtty__ldisc__ops}{}\label{structtty__ldisc__ops}\index{tty\_ldisc\_ops@{tty\_ldisc\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtty__ldisc__ops_aceca7cf58b2915f5212fda5cc936fd7a}\label{structtty__ldisc__ops_aceca7cf58b2915f5212fda5cc936fd7a} 
+char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structtty__ldisc__ops_a317bffdc06236c0d7c21becbdda17246}\label{structtty__ldisc__ops_a317bffdc06236c0d7c21becbdda17246} 
+int {\bfseries num}
+\item 
+\Hypertarget{structtty__ldisc__ops_af7a51845fa54c69a44473ca4f51a126d}\label{structtty__ldisc__ops_af7a51845fa54c69a44473ca4f51a126d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__ldisc__ops_a1368e18f079e5e6f77c1c112a8fd094b}\label{structtty__ldisc__ops_a1368e18f079e5e6f77c1c112a8fd094b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries close} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__ldisc__ops_a034ad3d8b2815a72c58023d9ca056c85}\label{structtty__ldisc__ops_a034ad3d8b2815a72c58023d9ca056c85} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+buffer} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__ldisc__ops_a41aa5baf05cb7912be9601c464d2c63b}\label{structtty__ldisc__ops_a41aa5baf05cb7912be9601c464d2c63b} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*}, size\+\_\+t, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structtty__ldisc__ops_a56f4f9c6af1524b5df8cf2f6e683584a}\label{structtty__ldisc__ops_a56f4f9c6af1524b5df8cf2f6e683584a} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, const u8 \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structtty__ldisc__ops_a3e0a80163c477cf9965752231dd33727}\label{structtty__ldisc__ops_a3e0a80163c477cf9965752231dd33727} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ioctl} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structtty__ldisc__ops_a861c39a52a8562acba816f2ba529dc46}\label{structtty__ldisc__ops_a861c39a52a8562acba816f2ba529dc46} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries compat\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structtty__ldisc__ops_a1c533b8911a693c89dc65fcf01338e28}\label{structtty__ldisc__ops_a1c533b8911a693c89dc65fcf01338e28} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+termios} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structktermios}{ktermios}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__ldisc__ops_ac21bbda5b5a21dbcb1e80c3ad7fef705}\label{structtty__ldisc__ops_ac21bbda5b5a21dbcb1e80c3ad7fef705} 
+\+\_\+\+\_\+poll\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries poll} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpoll__table__struct}{poll\+\_\+table\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__ldisc__ops_afaf305e4866b42646db72ff9f2b043b4}\label{structtty__ldisc__ops_afaf305e4866b42646db72ff9f2b043b4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hangup} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__ldisc__ops_a715b34901803296f3efaf7481a932bc9}\label{structtty__ldisc__ops_a715b34901803296f3efaf7481a932bc9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries receive\+\_\+buf} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, const u8 \texorpdfstring{$\ast$}{*}, const u8 \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structtty__ldisc__ops_abeeb018c40a0c4fc63eac35b8ee8df45}\label{structtty__ldisc__ops_abeeb018c40a0c4fc63eac35b8ee8df45} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+wakeup} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__ldisc__ops_aef6b9f49a07e9b27bebc37ec3ef5ce05}\label{structtty__ldisc__ops_aef6b9f49a07e9b27bebc37ec3ef5ce05} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dcd\+\_\+change} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structtty__ldisc__ops_ac3c9803c9575e4c2232048ea365a9e23}\label{structtty__ldisc__ops_ac3c9803c9575e4c2232048ea365a9e23} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries receive\+\_\+buf2} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, const u8 \texorpdfstring{$\ast$}{*}, const u8 \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structtty__ldisc__ops_a15de401b8435cf63082af5e5c590ef2d}\label{structtty__ldisc__ops_a15de401b8435cf63082af5e5c590ef2d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries lookahead\+\_\+buf} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, const u8 \texorpdfstring{$\ast$}{*}, const u8 \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structtty__ldisc__ops_aef6c788b94dcdcc2e0c4e3c6de0b5d59}\label{structtty__ldisc__ops_aef6c788b94dcdcc2e0c4e3c6de0b5d59} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

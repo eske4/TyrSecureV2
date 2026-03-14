@@ -1,0 +1,147 @@
+\doxysection{sock\+\_\+common Struct Reference}
+\hypertarget{structsock__common}{}\label{structsock__common}\index{sock\_common@{sock\_common}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsock__common_a71b77c59d5c9a370a0858d780314d3c2}\label{structsock__common_a71b77c59d5c9a370a0858d780314d3c2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_addrpair {\bfseries skc\_addrpair}\\
+\Hypertarget{unionsock__common_1_1_0d201306204273165247240245360176264057031315045376_a6bd57b5c97319129a740f8b82c37169a}\label{unionsock__common_1_1_0d201306204273165247240245360176264057031315045376_a6bd57b5c97319129a740f8b82c37169a} 
+\>struct \{\\
+\>\>\_\_be32 {\bfseries skc\_daddr}\\
+\>\>\_\_be32 {\bfseries skc\_rcv\_saddr}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsock__common_a90d04add131e17e06ac18fc4eecc7c32}\label{structsock__common_a90d04add131e17e06ac18fc4eecc7c32} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>unsigned int {\bfseries skc\_hash}\\
+\>\_\_u16 {\bfseries skc\_u16hashes} \+[2]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsock__common_a36a252a8d45ca13634fb57e5052a5231}\label{structsock__common_a36a252a8d45ca13634fb57e5052a5231} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_portpair {\bfseries skc\_portpair}\\
+\Hypertarget{unionsock__common_1_1_0d033316224034317011051243372044332360071131200017_aa3b58923227337012849a81d1c8ac60d}\label{unionsock__common_1_1_0d033316224034317011051243372044332360071131200017_aa3b58923227337012849a81d1c8ac60d} 
+\>struct \{\\
+\>\>\_\_be16 {\bfseries skc\_dport}\\
+\>\>\_\_u16 {\bfseries skc\_num}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsock__common_a1d2b19879292f9348d5647feedb91cc0}\label{structsock__common_a1d2b19879292f9348d5647feedb91cc0} 
+short unsigned int {\bfseries skc\+\_\+family}
+\item 
+\Hypertarget{structsock__common_a85e11c7e7d68efa18d2a81cc63e56d54}\label{structsock__common_a85e11c7e7d68efa18d2a81cc63e56d54} 
+volatile unsigned char {\bfseries skc\+\_\+state}
+\item 
+\Hypertarget{structsock__common_aef40035eda9f6e004b7e444412d9c90b}\label{structsock__common_aef40035eda9f6e004b7e444412d9c90b} 
+unsigned char {\bfseries skc\+\_\+reuse}:\+ 4
+\item 
+\Hypertarget{structsock__common_a8eb912052a6f14928c09af87518b1052}\label{structsock__common_a8eb912052a6f14928c09af87518b1052} 
+unsigned char {\bfseries skc\+\_\+reuseport}:\+ 1
+\item 
+\Hypertarget{structsock__common_a61f5e7f41550444d865d9d7c542c4ec7}\label{structsock__common_a61f5e7f41550444d865d9d7c542c4ec7} 
+unsigned char {\bfseries skc\+\_\+ipv6only}:\+ 1
+\item 
+\Hypertarget{structsock__common_a00fce93e0c2ded904da385adbd62a25c}\label{structsock__common_a00fce93e0c2ded904da385adbd62a25c} 
+unsigned char {\bfseries skc\+\_\+net\+\_\+refcnt}:\+ 1
+\item 
+\Hypertarget{structsock__common_a0c978c02ed6da0fc939a81eab34ffcda}\label{structsock__common_a0c978c02ed6da0fc939a81eab34ffcda} 
+unsigned char {\bfseries skc\+\_\+bypass\+\_\+prot\+\_\+mem}:\+ 1
+\item 
+\Hypertarget{structsock__common_ae4975ae71b0027572829f15e294d2f40}\label{structsock__common_ae4975ae71b0027572829f15e294d2f40} 
+int {\bfseries skc\+\_\+bound\+\_\+dev\+\_\+if}
+\item 
+\Hypertarget{structsock__common_a94122e678bf27e6dc7771127a615f19e}\label{structsock__common_a94122e678bf27e6dc7771127a615f19e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries skc\_bind\_node}\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries skc\_portaddr\_node}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsock__common_a03f47b539ff26ba455f8ee44d20038c4}\label{structsock__common_a03f47b539ff26ba455f8ee44d20038c4} 
+struct \doxymbox{\hyperlink{structproto}{proto}} \texorpdfstring{$\ast$}{*} {\bfseries skc\+\_\+prot}
+\item 
+\Hypertarget{structsock__common_affb796bcc383fb9f0736677f1cf0ce3e}\label{structsock__common_affb796bcc383fb9f0736677f1cf0ce3e} 
+\doxymbox{\hyperlink{structpossible__net__t}{possible\+\_\+net\+\_\+t}} {\bfseries skc\+\_\+net}
+\item 
+\Hypertarget{structsock__common_a17668962921f9d40ba87a197332be044}\label{structsock__common_a17668962921f9d40ba87a197332be044} 
+struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} {\bfseries skc\+\_\+v6\+\_\+daddr}
+\item 
+\Hypertarget{structsock__common_a895b510736ef341f448ac064e9fd1d57}\label{structsock__common_a895b510736ef341f448ac064e9fd1d57} 
+struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} {\bfseries skc\+\_\+v6\+\_\+rcv\+\_\+saddr}
+\item 
+\Hypertarget{structsock__common_ac8ad7acbc1d570fd84d5204591e4291c}\label{structsock__common_ac8ad7acbc1d570fd84d5204591e4291c} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries skc\+\_\+cookie}
+\item 
+\Hypertarget{structsock__common_a3bcfaed5fea17168d3cf529abb013ba6}\label{structsock__common_a3bcfaed5fea17168d3cf529abb013ba6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int {\bfseries skc\_flags}\\
+\>struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries skc\_listener}\\
+\>struct \doxymbox{\hyperlink{structinet__timewait__death__row}{inet\_timewait\_death\_row}} \texorpdfstring{$\ast$}{*} {\bfseries skc\_tw\_dr}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsock__common_aa13bb07bacbcc921cf8a998ffc97ec43}\label{structsock__common_aa13bb07bacbcc921cf8a998ffc97ec43} 
+int {\bfseries skc\+\_\+dontcopy\+\_\+begin} \+[0]\+
+\item 
+\Hypertarget{structsock__common_aab791921c84e5d0be6357a69f92f3c56}\label{structsock__common_aab791921c84e5d0be6357a69f92f3c56} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries skc\_node}\\
+\>struct \doxymbox{\hyperlink{structhlist__nulls__node}{hlist\_nulls\_node}} {\bfseries skc\_nulls\_node}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsock__common_a6926ba8c286fa14925c02e81edb95cdf}\label{structsock__common_a6926ba8c286fa14925c02e81edb95cdf} 
+short unsigned int {\bfseries skc\+\_\+tx\+\_\+queue\+\_\+mapping}
+\item 
+\Hypertarget{structsock__common_a03a8cd29b62e3fba66d0ff48edd906f0}\label{structsock__common_a03a8cd29b62e3fba66d0ff48edd906f0} 
+short unsigned int {\bfseries skc\+\_\+rx\+\_\+queue\+\_\+mapping}
+\item 
+\Hypertarget{structsock__common_a8963570de6d94ffd1732e8451a5ce891}\label{structsock__common_a8963570de6d94ffd1732e8451a5ce891} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int {\bfseries skc\_incoming\_cpu}\\
+\>u32 {\bfseries skc\_rcv\_wnd}\\
+\>u32 {\bfseries skc\_tw\_rcv\_nxt}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsock__common_aebf020ce5ad80e7516f68d4526474f8f}\label{structsock__common_aebf020ce5ad80e7516f68d4526474f8f} 
+refcount\+\_\+t {\bfseries skc\+\_\+refcnt}
+\item 
+\Hypertarget{structsock__common_aaf786f17e47cfdf35b0ec1b44cb1a2cb}\label{structsock__common_aaf786f17e47cfdf35b0ec1b44cb1a2cb} 
+int {\bfseries skc\+\_\+dontcopy\+\_\+end} \+[0]\+
+\item 
+\Hypertarget{structsock__common_a584422b6c73da36bfb511777fa8c686b}\label{structsock__common_a584422b6c73da36bfb511777fa8c686b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries skc\_rxhash}\\
+\>u32 {\bfseries skc\_window\_clamp}\\
+\>u32 {\bfseries skc\_tw\_snd\_nxt}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

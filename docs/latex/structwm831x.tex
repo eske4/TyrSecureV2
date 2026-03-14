@@ -1,0 +1,82 @@
+\doxysection{wm831x Struct Reference}
+\hypertarget{structwm831x}{}\label{structwm831x}\index{wm831x@{wm831x}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structwm831x_aff2cf07e13dc9006edecf35866cf9ce2}\label{structwm831x_aff2cf07e13dc9006edecf35866cf9ce2} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries io\+\_\+lock}
+\item 
+\Hypertarget{structwm831x_ae41a0b14898e651caf6d07126c19dd30}\label{structwm831x_ae41a0b14898e651caf6d07126c19dd30} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structwm831x_a91f0547876d6dab1bc86b4e2d2c91065}\label{structwm831x_a91f0547876d6dab1bc86b4e2d2c91065} 
+struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*} {\bfseries regmap}
+\item 
+\Hypertarget{structwm831x_a0c5dc1306e22a862d90d95ec65839700}\label{structwm831x_a0c5dc1306e22a862d90d95ec65839700} 
+struct \doxymbox{\hyperlink{structwm831x__pdata}{wm831x\+\_\+pdata}} {\bfseries pdata}
+\item 
+\Hypertarget{structwm831x_aebac7c2941d8838c7c9dc145bd8f6712}\label{structwm831x_aebac7c2941d8838c7c9dc145bd8f6712} 
+enum wm831x\+\_\+parent {\bfseries type}
+\item 
+\Hypertarget{structwm831x_a890f1114e85da383cda09614847dbcd3}\label{structwm831x_a890f1114e85da383cda09614847dbcd3} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structwm831x_aae00862a6d5b0c66e754d1a4a5d1c8bc}\label{structwm831x_aae00862a6d5b0c66e754d1a4a5d1c8bc} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries irq\+\_\+lock}
+\item 
+\Hypertarget{structwm831x_ad8e0ee5a18ba5d74d19d3ee61b700264}\label{structwm831x_ad8e0ee5a18ba5d74d19d3ee61b700264} 
+struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+domain}
+\item 
+\Hypertarget{structwm831x_afc1fb37274fa156ba3a3832e98564d8c}\label{structwm831x_afc1fb37274fa156ba3a3832e98564d8c} 
+int {\bfseries irq\+\_\+masks\+\_\+cur} \+[5]\+
+\item 
+\Hypertarget{structwm831x_af1dfeedc5a7eef92bd7afa7304a3558e}\label{structwm831x_af1dfeedc5a7eef92bd7afa7304a3558e} 
+int {\bfseries irq\+\_\+masks\+\_\+cache} \+[5]\+
+\item 
+\Hypertarget{structwm831x_a83c708af1d4f88efa51f3b5e1033b4a7}\label{structwm831x_a83c708af1d4f88efa51f3b5e1033b4a7} 
+bool {\bfseries soft\+\_\+shutdown}
+\item 
+\Hypertarget{structwm831x_a5d0878822b59a10360c8aa1cec637cb1}\label{structwm831x_a5d0878822b59a10360c8aa1cec637cb1} 
+unsigned int {\bfseries has\+\_\+gpio\+\_\+ena}:\+ 1
+\item 
+\Hypertarget{structwm831x_a5e83cc7ea05015b3becbc81a90e3025e}\label{structwm831x_a5e83cc7ea05015b3becbc81a90e3025e} 
+unsigned int {\bfseries has\+\_\+cs\+\_\+sts}:\+ 1
+\item 
+\Hypertarget{structwm831x_afa89e7ff7bf3feb8229bbbe8243b0248}\label{structwm831x_afa89e7ff7bf3feb8229bbbe8243b0248} 
+unsigned int {\bfseries charger\+\_\+irq\+\_\+wake}:\+ 1
+\item 
+\Hypertarget{structwm831x_ac9267b4098b682c88369a34fe14a93fa}\label{structwm831x_ac9267b4098b682c88369a34fe14a93fa} 
+int {\bfseries num\+\_\+gpio}
+\item 
+\Hypertarget{structwm831x_a1aee0e0eecb8bf511b71b146f5febd1a}\label{structwm831x_a1aee0e0eecb8bf511b71b146f5febd1a} 
+int {\bfseries gpio\+\_\+update} \+[16]\+
+\item 
+\Hypertarget{structwm831x_aaa9af089bc21811b156bd9a737a74ecc}\label{structwm831x_aaa9af089bc21811b156bd9a737a74ecc} 
+bool {\bfseries gpio\+\_\+level\+\_\+high} \+[16]\+
+\item 
+\Hypertarget{structwm831x_af6d767166a14918e5324fdcd9e45aad2}\label{structwm831x_af6d767166a14918e5324fdcd9e45aad2} 
+bool {\bfseries gpio\+\_\+level\+\_\+low} \+[16]\+
+\item 
+\Hypertarget{structwm831x_a69e3bb55230293188f94cbec90863d3d}\label{structwm831x_a69e3bb55230293188f94cbec90863d3d} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries auxadc\+\_\+lock}
+\item 
+\Hypertarget{structwm831x_a12ac21bf503f2cf1d6e6b2e10c51bcf1}\label{structwm831x_a12ac21bf503f2cf1d6e6b2e10c51bcf1} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries auxadc\+\_\+pending}
+\item 
+\Hypertarget{structwm831x_a1051bd459595b45c6857910b5e68400c}\label{structwm831x_a1051bd459595b45c6857910b5e68400c} 
+u16 {\bfseries auxadc\+\_\+active}
+\item 
+\Hypertarget{structwm831x_a63ca73634b93b46c204325a0e57ad80b}\label{structwm831x_a63ca73634b93b46c204325a0e57ad80b} 
+wm831x\+\_\+auxadc\+\_\+read\+\_\+fn {\bfseries auxadc\+\_\+read}
+\item 
+\Hypertarget{structwm831x_a07832365b76fac1433328c3e561816de}\label{structwm831x_a07832365b76fac1433328c3e561816de} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries key\+\_\+lock}
+\item 
+\Hypertarget{structwm831x_afca182ede34ef1f18ea052d0fb9828ed}\label{structwm831x_afca182ede34ef1f18ea052d0fb9828ed} 
+unsigned int {\bfseries locked}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\doxysection{arch\+\_\+uprobe Struct Reference}
+\hypertarget{structarch__uprobe}{}\label{structarch__uprobe}\index{arch\_uprobe@{arch\_uprobe}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structarch__uprobe_a9386e3288d7a64e0e9035efb6af11ae1}\label{structarch__uprobe_a9386e3288d7a64e0e9035efb6af11ae1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u8 {\bfseries insn} \+[16]\+\\
+\>u8 {\bfseries ixol} \+[16]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structarch__uprobe_a74b064e1c0221e5592d3a0fbd5c8f177}\label{structarch__uprobe_a74b064e1c0221e5592d3a0fbd5c8f177} 
+const struct \doxymbox{\hyperlink{structuprobe__xol__ops}{uprobe\+\_\+xol\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structarch__uprobe_a5f4aed0b0cea05256d8d9e72b2d3c166}\label{structarch__uprobe_a5f4aed0b0cea05256d8d9e72b2d3c166} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>s32 {\bfseries offs}\\
+\>\>u8 {\bfseries ilen}\\
+\>\>u8 {\bfseries opc1}\\
+\>\} {\bfseries branch}\\
+\>struct \{\\
+\>\>u8 {\bfseries fixups}\\
+\>\>u8 {\bfseries ilen}\\
+\>\} {\bfseries defparam}\\
+\>struct \{\\
+\>\>u8 {\bfseries reg\_offset}\\
+\>\>u8 {\bfseries ilen}\\
+\>\} {\bfseries push}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structarch__uprobe_a223907fed197e797a52bd4bb0f2c7ecb}\label{structarch__uprobe_a223907fed197e797a52bd4bb0f2c7ecb} 
+long unsigned int {\bfseries flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

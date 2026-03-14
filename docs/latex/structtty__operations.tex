@@ -1,0 +1,112 @@
+\doxysection{tty\+\_\+operations Struct Reference}
+\hypertarget{structtty__operations}{}\label{structtty__operations}\index{tty\_operations@{tty\_operations}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtty__operations_aa4a49ede2ee89ea0696bcb529e44da7a}\label{structtty__operations_aa4a49ede2ee89ea0696bcb529e44da7a} 
+struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries lookup} )(struct \doxymbox{\hyperlink{structtty__driver}{tty\+\_\+driver}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structtty__operations_a4ad6a3a2bf3120ee9ff76b69cde81749}\label{structtty__operations_a4ad6a3a2bf3120ee9ff76b69cde81749} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries install} )(struct \doxymbox{\hyperlink{structtty__driver}{tty\+\_\+driver}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_acc5a28fbef9a5f5dd57a29852168490c}\label{structtty__operations_acc5a28fbef9a5f5dd57a29852168490c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(struct \doxymbox{\hyperlink{structtty__driver}{tty\+\_\+driver}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_ae842e86d85487e1f33136030f814407e}\label{structtty__operations_ae842e86d85487e1f33136030f814407e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a5853a397707a276d32caa89217900a8f}\label{structtty__operations_a5853a397707a276d32caa89217900a8f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries close} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a2fc85adcf78f178d3d8988dbe989ee4a}\label{structtty__operations_a2fc85adcf78f178d3d8988dbe989ee4a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries shutdown} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a9e456d821916c100ab8abaa8164405c6}\label{structtty__operations_a9e456d821916c100ab8abaa8164405c6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a7e78f36b80fefff0050ff296ddf71e8a}\label{structtty__operations_a7e78f36b80fefff0050ff296ddf71e8a} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, const u8 \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structtty__operations_a432411570f73ea7381fea141dfe81b03}\label{structtty__operations_a432411570f73ea7381fea141dfe81b03} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries put\+\_\+char} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structtty__operations_ab023a47f5efeb246ce364e92ea1bc3d8}\label{structtty__operations_ab023a47f5efeb246ce364e92ea1bc3d8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+chars} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_accf469055f815c5268d9786443c3784e}\label{structtty__operations_accf469055f815c5268d9786443c3784e} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+room} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a818d81640a69e531c3c9dc1e63d1359a}\label{structtty__operations_a818d81640a69e531c3c9dc1e63d1359a} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries chars\+\_\+in\+\_\+buffer} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_ac6cca5c7a304508db1ee253965197d51}\label{structtty__operations_ac6cca5c7a304508db1ee253965197d51} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ioctl} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structtty__operations_a474ae251f832d51056c0131ddac3321e}\label{structtty__operations_a474ae251f832d51056c0131ddac3321e} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries compat\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structtty__operations_a1a1339cc63abe4f8dbf43b966afbdf54}\label{structtty__operations_a1a1339cc63abe4f8dbf43b966afbdf54} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+termios} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structktermios}{ktermios}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a52d713a254770e043cca837f6960ca02}\label{structtty__operations_a52d713a254770e043cca837f6960ca02} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries throttle} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a0bed4927555a9eec947cd3b1d137d29e}\label{structtty__operations_a0bed4927555a9eec947cd3b1d137d29e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unthrottle} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a7c890f951a8fd91dcbf08b9647e51739}\label{structtty__operations_a7c890f951a8fd91dcbf08b9647e51739} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries stop} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_aa6087dc44f920609f61cca76b5d68a3d}\label{structtty__operations_aa6087dc44f920609f61cca76b5d68a3d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries start} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a9d9f031f62fed207c33eb46c52d02603}\label{structtty__operations_a9d9f031f62fed207c33eb46c52d02603} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hangup} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a195070517a6a9c5a575e113f486f521c}\label{structtty__operations_a195070517a6a9c5a575e113f486f521c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries break\+\_\+ctl} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structtty__operations_a026ada6cf5245b78906c75ab6a928c04}\label{structtty__operations_a026ada6cf5245b78906c75ab6a928c04} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+buffer} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a07863c170c4c3c7057154cc0647a0fdd}\label{structtty__operations_a07863c170c4c3c7057154cc0647a0fdd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ldisc\+\_\+ok} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structtty__operations_a10f1236e819a876258ad603b546c19ae}\label{structtty__operations_a10f1236e819a876258ad603b546c19ae} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+ldisc} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_aa18aebc256e8eab642ba1dfd482c5081}\label{structtty__operations_aa18aebc256e8eab642ba1dfd482c5081} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries wait\+\_\+until\+\_\+sent} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structtty__operations_aca3b36ad9c764a6761c58d6a74b543ca}\label{structtty__operations_aca3b36ad9c764a6761c58d6a74b543ca} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+xchar} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structtty__operations_a9754a1fc8b5df82f5d18cd64990dad36}\label{structtty__operations_a9754a1fc8b5df82f5d18cd64990dad36} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tiocmget} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a65b6bf69edd41b31ae4dd46690444954}\label{structtty__operations_a65b6bf69edd41b31ae4dd46690444954} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tiocmset} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structtty__operations_ad1d5f1c4b13670175ab637e8d56ad5cb}\label{structtty__operations_ad1d5f1c4b13670175ab637e8d56ad5cb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resize} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structwinsize}{winsize}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_abb5cd32b89377ace67384ebc68252d94}\label{structtty__operations_abb5cd32b89377ace67384ebc68252d94} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+icount} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structserial__icounter__struct}{serial\+\_\+icounter\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_aad0ad810b76ac8135d050968d726266a}\label{structtty__operations_aad0ad810b76ac8135d050968d726266a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+serial} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structserial__struct}{serial\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a31a5937fafceedf8832fec6de98932d2}\label{structtty__operations_a31a5937fafceedf8832fec6de98932d2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+serial} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structserial__struct}{serial\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a8435da5a52c85d755495e80af6d4ffaa}\label{structtty__operations_a8435da5a52c85d755495e80af6d4ffaa} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries show\+\_\+fdinfo} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtty__operations_a5926b45d67dd0cabeb16367ad5a5e3f6}\label{structtty__operations_a5926b45d67dd0cabeb16367ad5a5e3f6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+show} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

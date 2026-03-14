@@ -1,0 +1,43 @@
+\doxysection{irq\+\_\+domain\+\_\+ops Struct Reference}
+\hypertarget{structirq__domain__ops}{}\label{structirq__domain__ops}\index{irq\_domain\_ops@{irq\_domain\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structirq__domain__ops_a40bc9e667a0cc051c30055f3c5c556a2}\label{structirq__domain__ops_a40bc9e667a0cc051c30055f3c5c556a2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries match} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevice__node}{device\+\_\+node}} \texorpdfstring{$\ast$}{*}, enum irq\+\_\+domain\+\_\+bus\+\_\+token)
+\item 
+\Hypertarget{structirq__domain__ops_a63a0419803cbfaaee8db7261d538d922}\label{structirq__domain__ops_a63a0419803cbfaaee8db7261d538d922} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries select} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structirq__fwspec}{irq\+\_\+fwspec}} \texorpdfstring{$\ast$}{*}, enum irq\+\_\+domain\+\_\+bus\+\_\+token)
+\item 
+\Hypertarget{structirq__domain__ops_a2ab0057ed53181377b0fca2f5176dc67}\label{structirq__domain__ops_a2ab0057ed53181377b0fca2f5176dc67} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, unsigned int, irq\+\_\+hw\+\_\+number\+\_\+t)
+\item 
+\Hypertarget{structirq__domain__ops_a4e94fd63ef203a2b39830fdeda64a714}\label{structirq__domain__ops_a4e94fd63ef203a2b39830fdeda64a714} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unmap} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structirq__domain__ops_aeb0b77b427134698a3ab3cc5853eb942}\label{structirq__domain__ops_aeb0b77b427134698a3ab3cc5853eb942} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xlate} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevice__node}{device\+\_\+node}} \texorpdfstring{$\ast$}{*}, const u32 \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structirq__domain__ops_ab15a5c46b7864b4983c66978468ac21e}\label{structirq__domain__ops_ab15a5c46b7864b4983c66978468ac21e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries alloc} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structirq__domain__ops_acbde4cf96dd870d6adb5b18faebe3559}\label{structirq__domain__ops_acbde4cf96dd870d6adb5b18faebe3559} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structirq__domain__ops_a27455839529a6445ee127f1bccc857c9}\label{structirq__domain__ops_a27455839529a6445ee127f1bccc857c9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries activate} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structirq__data}{irq\+\_\+data}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structirq__domain__ops_aff749cf7db0f14de6acc68728a555d23}\label{structirq__domain__ops_aff749cf7db0f14de6acc68728a555d23} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries deactivate} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structirq__data}{irq\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structirq__domain__ops_a13fcef65265f4ecc734285d7a4e4c796}\label{structirq__domain__ops_a13fcef65265f4ecc734285d7a4e4c796} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries translate} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structirq__fwspec}{irq\+\_\+fwspec}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structirq__domain__ops_a2777cd3de3f72b9d8d97820aeb0e04ca}\label{structirq__domain__ops_a2777cd3de3f72b9d8d97820aeb0e04ca} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+fwspec\+\_\+info} )(struct \doxymbox{\hyperlink{structirq__fwspec}{irq\+\_\+fwspec}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structirq__fwspec__info}{irq\+\_\+fwspec\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

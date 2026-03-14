@@ -1,0 +1,31 @@
+\doxysection{request\+\_\+sock\+\_\+ops Struct Reference}
+\hypertarget{structrequest__sock__ops}{}\label{structrequest__sock__ops}\index{request\_sock\_ops@{request\_sock\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrequest__sock__ops_a87b8d070d356579a2b3ebfb0a3df8f68}\label{structrequest__sock__ops_a87b8d070d356579a2b3ebfb0a3df8f68} 
+int {\bfseries family}
+\item 
+\Hypertarget{structrequest__sock__ops_af85cd11a1e7113edb8449f7d43201fd3}\label{structrequest__sock__ops_af85cd11a1e7113edb8449f7d43201fd3} 
+unsigned int {\bfseries obj\+\_\+size}
+\item 
+\Hypertarget{structrequest__sock__ops_a7fd1dcf2807ed680ca57f023ada2e8e2}\label{structrequest__sock__ops_a7fd1dcf2807ed680ca57f023ada2e8e2} 
+struct \doxymbox{\hyperlink{structkmem__cache}{kmem\+\_\+cache}} \texorpdfstring{$\ast$}{*} {\bfseries slab}
+\item 
+\Hypertarget{structrequest__sock__ops_a25b7018481ed343790cbf74ad3f130b5}\label{structrequest__sock__ops_a25b7018481ed343790cbf74ad3f130b5} 
+char \texorpdfstring{$\ast$}{*} {\bfseries slab\+\_\+name}
+\item 
+\Hypertarget{structrequest__sock__ops_a85b9c0498b1476e0852e7aa98747fcb4}\label{structrequest__sock__ops_a85b9c0498b1476e0852e7aa98747fcb4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+ack} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrequest__sock__ops_a63af2e8dd6e273337c9ab3493925b309}\label{structrequest__sock__ops_a63af2e8dd6e273337c9ab3493925b309} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+reset} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, enum sk\+\_\+rst\+\_\+reason)
+\item 
+\Hypertarget{structrequest__sock__ops_af4f0b89a8225b0ae4a04866952207728}\label{structrequest__sock__ops_af4f0b89a8225b0ae4a04866952207728} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destructor} )(struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

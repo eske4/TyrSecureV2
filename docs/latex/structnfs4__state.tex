@@ -1,0 +1,61 @@
+\doxysection{nfs4\+\_\+state Struct Reference}
+\hypertarget{structnfs4__state}{}\label{structnfs4__state}\index{nfs4\_state@{nfs4\_state}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs4__state_a09bdc2108c6684c93fa985218f8074b3}\label{structnfs4__state_a09bdc2108c6684c93fa985218f8074b3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries open\+\_\+states}
+\item 
+\Hypertarget{structnfs4__state_a5f8be64f35188a5afe03573433275198}\label{structnfs4__state_a5f8be64f35188a5afe03573433275198} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries inode\+\_\+states}
+\item 
+\Hypertarget{structnfs4__state_af207d56dd06ef39734dfc4fb9b76aa39}\label{structnfs4__state_af207d56dd06ef39734dfc4fb9b76aa39} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries lock\+\_\+states}
+\item 
+\Hypertarget{structnfs4__state_a4899f2d5d2c7a8b15eb06db29562168f}\label{structnfs4__state_a4899f2d5d2c7a8b15eb06db29562168f} 
+struct \doxymbox{\hyperlink{structnfs4__state__owner}{nfs4\+\_\+state\+\_\+owner}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structnfs4__state_ae3b9448d127051ac59eda1846337e215}\label{structnfs4__state_ae3b9448d127051ac59eda1846337e215} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries inode}
+\item 
+\Hypertarget{structnfs4__state_ac52a2ef68fdb435312adc55323496522}\label{structnfs4__state_ac52a2ef68fdb435312adc55323496522} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structnfs4__state_aa7d5b2a322390d42ccd1662ae85ac473}\label{structnfs4__state_aa7d5b2a322390d42ccd1662ae85ac473} 
+spinlock\+\_\+t {\bfseries state\+\_\+lock}
+\item 
+\Hypertarget{structnfs4__state_a28b9797bf6c8dd4b40f4b0278efbc1eb}\label{structnfs4__state_a28b9797bf6c8dd4b40f4b0278efbc1eb} 
+\doxymbox{\hyperlink{structseqlock__t}{seqlock\+\_\+t}} {\bfseries seqlock}
+\item 
+\Hypertarget{structnfs4__state_a35820609490fe86ec01b0d5d56dd2ecf}\label{structnfs4__state_a35820609490fe86ec01b0d5d56dd2ecf} 
+nfs4\+\_\+stateid {\bfseries stateid}
+\item 
+\Hypertarget{structnfs4__state_ad0b6433e8af779dbd7a9c093aff87c55}\label{structnfs4__state_ad0b6433e8af779dbd7a9c093aff87c55} 
+nfs4\+\_\+stateid {\bfseries open\+\_\+stateid}
+\item 
+\Hypertarget{structnfs4__state_a4e0dc52833720dde0d26f10090dcff3d}\label{structnfs4__state_a4e0dc52833720dde0d26f10090dcff3d} 
+unsigned int {\bfseries n\+\_\+rdonly}
+\item 
+\Hypertarget{structnfs4__state_a2fc41871171a1ef699e911865fb74789}\label{structnfs4__state_a2fc41871171a1ef699e911865fb74789} 
+unsigned int {\bfseries n\+\_\+wronly}
+\item 
+\Hypertarget{structnfs4__state_a1cfbe6e2c605bb1eb215f699c6a3fa98}\label{structnfs4__state_a1cfbe6e2c605bb1eb215f699c6a3fa98} 
+unsigned int {\bfseries n\+\_\+rdwr}
+\item 
+\Hypertarget{structnfs4__state_abfad4fb6d503e202ed85f1a5cfb22f4b}\label{structnfs4__state_abfad4fb6d503e202ed85f1a5cfb22f4b} 
+fmode\+\_\+t {\bfseries state}
+\item 
+\Hypertarget{structnfs4__state_a08b34971166df6b5ae8422694c132970}\label{structnfs4__state_a08b34971166df6b5ae8422694c132970} 
+refcount\+\_\+t {\bfseries count}
+\item 
+\Hypertarget{structnfs4__state_a21c375e5bb62f517340dd96316904397}\label{structnfs4__state_a21c375e5bb62f517340dd96316904397} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries waitq}
+\item 
+\Hypertarget{structnfs4__state_aa34f11ee17091389874db4989f482810}\label{structnfs4__state_aa34f11ee17091389874db4989f482810} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries callback\+\_\+head}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

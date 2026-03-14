@@ -1,0 +1,58 @@
+\doxysection{k\+\_\+clock Struct Reference}
+\hypertarget{structk__clock}{}\label{structk__clock}\index{k\_clock@{k\_clock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structk__clock_a43840e7bc35a5faaf20cdbedafe8a54c}\label{structk__clock_a43840e7bc35a5faaf20cdbedafe8a54c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries clock\+\_\+getres} )(const clockid\+\_\+t, struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_a0a699a7eecc1d56344171791fa9c4acd}\label{structk__clock_a0a699a7eecc1d56344171791fa9c4acd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries clock\+\_\+set} )(const clockid\+\_\+t, const struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_a02d4efd3891976825bf2abd8b9c7a8ea}\label{structk__clock_a02d4efd3891976825bf2abd8b9c7a8ea} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries clock\+\_\+get\+\_\+timespec} )(const clockid\+\_\+t, struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_a1c19799352c66576085e9bb59c57adbe}\label{structk__clock_a1c19799352c66576085e9bb59c57adbe} 
+ktime\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries clock\+\_\+get\+\_\+ktime} )(const clockid\+\_\+t)
+\item 
+\Hypertarget{structk__clock_a96788959e8f0d3002d9833054f0d4838}\label{structk__clock_a96788959e8f0d3002d9833054f0d4838} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries clock\+\_\+adj} )(const clockid\+\_\+t, struct \doxymbox{\hyperlink{struct____kernel__timex}{\+\_\+\+\_\+kernel\+\_\+timex}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_ac37ad9814c7a5d6319ac03053e2b28ae}\label{structk__clock_ac37ad9814c7a5d6319ac03053e2b28ae} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+create} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_a8d19a58701fecd847522f6ac66bf6f50}\label{structk__clock_a8d19a58701fecd847522f6ac66bf6f50} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries nsleep} )(const clockid\+\_\+t, int, const struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_adb6c557167c937acd0730dc79050dac3}\label{structk__clock_adb6c557167c937acd0730dc79050dac3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+set} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structitimerspec64}{itimerspec64}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structitimerspec64}{itimerspec64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_aa5506c85379c5368e8199fda40d68b88}\label{structk__clock_aa5506c85379c5368e8199fda40d68b88} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+del} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_a2dc378c29d169225c4f4d5f2b485b25d}\label{structk__clock_a2dc378c29d169225c4f4d5f2b485b25d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+get} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structitimerspec64}{itimerspec64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_a6a51fd17c253d37ee8f0e29833c6a5b4}\label{structk__clock_a6a51fd17c253d37ee8f0e29833c6a5b4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+rearm} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_a733fe2adc7b0c4ff6ce917be7c6bde75}\label{structk__clock_a733fe2adc7b0c4ff6ce917be7c6bde75} 
+s64(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+forward} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*}, ktime\+\_\+t)
+\item 
+\Hypertarget{structk__clock_ab26c7482997fef592fe46bb42f5a2f23}\label{structk__clock_ab26c7482997fef592fe46bb42f5a2f23} 
+ktime\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+remaining} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*}, ktime\+\_\+t)
+\item 
+\Hypertarget{structk__clock_ae4b6c36b76bbe6af147b386399212b3f}\label{structk__clock_ae4b6c36b76bbe6af147b386399212b3f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+try\+\_\+to\+\_\+cancel} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structk__clock_a934f32b1a5c7822d94ed94ef134d1f71}\label{structk__clock_a934f32b1a5c7822d94ed94ef134d1f71} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+arm} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*}, ktime\+\_\+t, bool, bool)
+\item 
+\Hypertarget{structk__clock_a103288658e9fea20f3d4fff821815f12}\label{structk__clock_a103288658e9fea20f3d4fff821815f12} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries timer\+\_\+wait\+\_\+running} )(struct \doxymbox{\hyperlink{structk__itimer}{k\+\_\+itimer}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

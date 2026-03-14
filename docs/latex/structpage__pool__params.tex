@@ -1,0 +1,45 @@
+\doxysection{page\+\_\+pool\+\_\+params Struct Reference}
+\hypertarget{structpage__pool__params}{}\label{structpage__pool__params}\index{page\_pool\_params@{page\_pool\_params}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpage__pool__params_a2f0ff1d9c8765a0f942bc9a85c0d8e29}\label{structpage__pool__params_a2f0ff1d9c8765a0f942bc9a85c0d8e29} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionpage__pool__params_1_1_0d126221063221303047061313350043157202143113274327_aef47b75947639db4b6e46853ab5a50df}\label{unionpage__pool__params_1_1_0d126221063221303047061313350043157202143113274327_aef47b75947639db4b6e46853ab5a50df} 
+\>struct \{\\
+\>\>unsigned int {\bfseries order}\\
+\>\>unsigned int {\bfseries pool\_size}\\
+\>\>int {\bfseries nid}\\
+\>\>struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}\\
+\>\>struct \doxymbox{\hyperlink{structnapi__struct}{napi\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries napi}\\
+\>\>enum dma\_data\_direction {\bfseries dma\_dir}\\
+\>\>unsigned int {\bfseries max\_len}\\
+\>\>unsigned int {\bfseries offset}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structpage__pool__params__fast}{page\_pool\_params\_fast}} {\bfseries fast}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structpage__pool__params_a9d557c08cc47fe4b5671545cec00a16c}\label{structpage__pool__params_a9d557c08cc47fe4b5671545cec00a16c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionpage__pool__params_1_1_0d115351035331356333351121170220002317140151070014_a705c1feb4083e17d75112d8d58f5cd2f}\label{unionpage__pool__params_1_1_0d115351035331356333351121170220002317140151070014_a705c1feb4083e17d75112d8d58f5cd2f} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structnet__device}{net\_device}} \texorpdfstring{$\ast$}{*} {\bfseries netdev}\\
+\>\>unsigned int {\bfseries queue\_idx}\\
+\>\>unsigned int {\bfseries flags}\\
+\>\>void(\texorpdfstring{$\ast$}{*} {\bfseries init\_callback} )(netmem\_ref, void \texorpdfstring{$\ast$}{*})\\
+\>\>void \texorpdfstring{$\ast$}{*} {\bfseries init\_arg}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structpage__pool__params__slow}{page\_pool\_params\_slow}} {\bfseries slow}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

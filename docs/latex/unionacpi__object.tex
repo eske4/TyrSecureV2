@@ -1,0 +1,83 @@
+\doxysection{acpi\+\_\+object Union Reference}
+\hypertarget{unionacpi__object}{}\label{unionacpi__object}\index{acpi\_object@{acpi\_object}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionacpi__object_a6458fbbffa9215eb2b23444a928a6680}\label{unionacpi__object_a6458fbbffa9215eb2b23444a928a6680} 
+acpi\+\_\+object\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{unionacpi__object_a1ae65157466a03d4b58925efa470c6f4}\label{unionacpi__object_a1ae65157466a03d4b58925efa470c6f4} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>acpi\_object\_type {\bfseries type}\\
+\>u64 {\bfseries value}\\
+\} {\bfseries integer}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionacpi__object_ae35352156162061e150f7e109bf643bf}\label{unionacpi__object_ae35352156162061e150f7e109bf643bf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>acpi\_object\_type {\bfseries type}\\
+\>u32 {\bfseries length}\\
+\>char \texorpdfstring{$\ast$}{*} {\bfseries pointer}\\
+\} {\bfseries string}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionacpi__object_a3b32ff20f7b4685d7eb478aa951d10c2}\label{unionacpi__object_a3b32ff20f7b4685d7eb478aa951d10c2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>acpi\_object\_type {\bfseries type}\\
+\>u32 {\bfseries length}\\
+\>u8 \texorpdfstring{$\ast$}{*} {\bfseries pointer}\\
+\} {\bfseries buffer}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionacpi__object_aca62dc00a7050479f3ff60065d6591b0}\label{unionacpi__object_aca62dc00a7050479f3ff60065d6591b0} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>acpi\_object\_type {\bfseries type}\\
+\>u32 {\bfseries count}\\
+\>union \doxymbox{\hyperlink{unionacpi__object}{acpi\_object}} \texorpdfstring{$\ast$}{*} {\bfseries elements}\\
+\} {\bfseries package}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionacpi__object_a087b568c8edfbe00f8e3da93732b2457}\label{unionacpi__object_a087b568c8edfbe00f8e3da93732b2457} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>acpi\_object\_type {\bfseries type}\\
+\>acpi\_object\_type {\bfseries actual\_type}\\
+\>acpi\_handle {\bfseries handle}\\
+\} {\bfseries reference}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionacpi__object_a03defaedd0d95fd809de3a76ffefedb2}\label{unionacpi__object_a03defaedd0d95fd809de3a76ffefedb2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>acpi\_object\_type {\bfseries type}\\
+\>u32 {\bfseries proc\_id}\\
+\>acpi\_io\_address {\bfseries pblk\_address}\\
+\>u32 {\bfseries pblk\_length}\\
+\} {\bfseries processor}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionacpi__object_a255c38d9a41b5bab166a8348c46ef1d6}\label{unionacpi__object_a255c38d9a41b5bab166a8348c46ef1d6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>acpi\_object\_type {\bfseries type}\\
+\>u32 {\bfseries system\_level}\\
+\>u32 {\bfseries resource\_order}\\
+\} {\bfseries power\_resource}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

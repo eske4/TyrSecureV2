@@ -1,0 +1,43 @@
+\doxysection{xhci\+\_\+port Struct Reference}
+\hypertarget{structxhci__port}{}\label{structxhci__port}\index{xhci\_port@{xhci\_port}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxhci__port_ae9a82dbf7b9cfd6abcc9b6bdc0aaa3ff}\label{structxhci__port_ae9a82dbf7b9cfd6abcc9b6bdc0aaa3ff} 
+struct \doxymbox{\hyperlink{structxhci__port__regs}{xhci\+\_\+port\+\_\+regs}} \texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+reg}
+\item 
+\Hypertarget{structxhci__port_a579780be0400b78902d0932327a5f4a1}\label{structxhci__port_a579780be0400b78902d0932327a5f4a1} 
+int {\bfseries hw\+\_\+portnum}
+\item 
+\Hypertarget{structxhci__port_adb5cc46bda2a8beeb2c26fa8bb5f9a40}\label{structxhci__port_adb5cc46bda2a8beeb2c26fa8bb5f9a40} 
+int {\bfseries hcd\+\_\+portnum}
+\item 
+\Hypertarget{structxhci__port_a7b501e329dc9660c030d0e79c052b2e0}\label{structxhci__port_a7b501e329dc9660c030d0e79c052b2e0} 
+struct \doxymbox{\hyperlink{structxhci__hub}{xhci\+\_\+hub}} \texorpdfstring{$\ast$}{*} {\bfseries rhub}
+\item 
+\Hypertarget{structxhci__port_aa9c05ad0cf06ce35a05d26ea55a70457}\label{structxhci__port_aa9c05ad0cf06ce35a05d26ea55a70457} 
+struct \doxymbox{\hyperlink{structxhci__port__cap}{xhci\+\_\+port\+\_\+cap}} \texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+cap}
+\item 
+\Hypertarget{structxhci__port_a1f8ae173e4202edfe986cdeb10f49fcf}\label{structxhci__port_a1f8ae173e4202edfe986cdeb10f49fcf} 
+unsigned int {\bfseries lpm\+\_\+incapable}:\+ 1
+\item 
+\Hypertarget{structxhci__port_a43b07d59a43aed77036db1f7561f0842}\label{structxhci__port_a43b07d59a43aed77036db1f7561f0842} 
+long unsigned int {\bfseries resume\+\_\+timestamp}
+\item 
+\Hypertarget{structxhci__port_aa300806b6dc1f987a7a78dfc422a513e}\label{structxhci__port_aa300806b6dc1f987a7a78dfc422a513e} 
+bool {\bfseries rexit\+\_\+active}
+\item 
+\Hypertarget{structxhci__port_a2fdc89aaf5a86ff4902775f10db79a6c}\label{structxhci__port_a2fdc89aaf5a86ff4902775f10db79a6c} 
+int {\bfseries slot\+\_\+id}
+\item 
+\Hypertarget{structxhci__port_a26237b1b57e9a42a8ce5a6fe470cf3d0}\label{structxhci__port_a26237b1b57e9a42a8ce5a6fe470cf3d0} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries rexit\+\_\+done}
+\item 
+\Hypertarget{structxhci__port_adbe8897fd519d08d1ed67de5f57c6fda}\label{structxhci__port_adbe8897fd519d08d1ed67de5f57c6fda} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries u3exit\+\_\+done}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

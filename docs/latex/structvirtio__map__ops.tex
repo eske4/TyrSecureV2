@@ -1,0 +1,37 @@
+\doxysection{virtio\+\_\+map\+\_\+ops Struct Reference}
+\hypertarget{structvirtio__map__ops}{}\label{structvirtio__map__ops}\index{virtio\_map\_ops@{virtio\_map\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtio__map__ops_ad2a52a8ad47f98c6f97fcdc5e12a5bb9}\label{structvirtio__map__ops_ad2a52a8ad47f98c6f97fcdc5e12a5bb9} 
+dma\+\_\+addr\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+page} )(union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}}, struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}, long unsigned int, size\+\_\+t, enum dma\+\_\+data\+\_\+direction, long unsigned int)
+\item 
+\Hypertarget{structvirtio__map__ops_aa37559a208aa1dace0d92c09cfce10b7}\label{structvirtio__map__ops_aa37559a208aa1dace0d92c09cfce10b7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unmap\+\_\+page} )(union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}}, dma\+\_\+addr\+\_\+t, size\+\_\+t, enum dma\+\_\+data\+\_\+direction, long unsigned int)
+\item 
+\Hypertarget{structvirtio__map__ops_a35b909e374313926fbd60b57cfa5a955}\label{structvirtio__map__ops_a35b909e374313926fbd60b57cfa5a955} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+single\+\_\+for\+\_\+cpu} )(union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}}, dma\+\_\+addr\+\_\+t, size\+\_\+t, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structvirtio__map__ops_a7e85ab4cad75f345a8d62cae73acb013}\label{structvirtio__map__ops_a7e85ab4cad75f345a8d62cae73acb013} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+single\+\_\+for\+\_\+device} )(union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}}, dma\+\_\+addr\+\_\+t, size\+\_\+t, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structvirtio__map__ops_ac155e48fbae28e7b782066272f4c3cae}\label{structvirtio__map__ops_ac155e48fbae28e7b782066272f4c3cae} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc} )(union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}}, size\+\_\+t, dma\+\_\+addr\+\_\+t \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{structvirtio__map__ops_a142834e64c8188031e24ee56534b1239}\label{structvirtio__map__ops_a142834e64c8188031e24ee56534b1239} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free} )(union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}}, size\+\_\+t, void \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t, long unsigned int)
+\item 
+\Hypertarget{structvirtio__map__ops_a91b9a7a679a89ec7caae4805a3921c32}\label{structvirtio__map__ops_a91b9a7a679a89ec7caae4805a3921c32} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries need\+\_\+sync} )(union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}}, dma\+\_\+addr\+\_\+t)
+\item 
+\Hypertarget{structvirtio__map__ops_a97e171cbe6b87bb6948cceede4630ed7}\label{structvirtio__map__ops_a97e171cbe6b87bb6948cceede4630ed7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mapping\+\_\+error} )(union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}}, dma\+\_\+addr\+\_\+t)
+\item 
+\Hypertarget{structvirtio__map__ops_a1a3988da18f8af64746be67d8b6ac7d0}\label{structvirtio__map__ops_a1a3988da18f8af64746be67d8b6ac7d0} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries max\+\_\+mapping\+\_\+size} )(union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

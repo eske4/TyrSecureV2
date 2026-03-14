@@ -1,0 +1,52 @@
+\doxysection{net\+\_\+rate\+\_\+estimator Struct Reference}
+\hypertarget{structnet__rate__estimator}{}\label{structnet__rate__estimator}\index{net\_rate\_estimator@{net\_rate\_estimator}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnet__rate__estimator_a2f360284e988c5199f37e1a63715781a}\label{structnet__rate__estimator_a2f360284e988c5199f37e1a63715781a} 
+struct \doxymbox{\hyperlink{structgnet__stats__basic__sync}{gnet\+\_\+stats\+\_\+basic\+\_\+sync}} \texorpdfstring{$\ast$}{*} {\bfseries bstats}
+\item 
+\Hypertarget{structnet__rate__estimator_aae67257a65f75d5665af5bcf5c2c76f6}\label{structnet__rate__estimator_aae67257a65f75d5665af5bcf5c2c76f6} 
+spinlock\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries stats\+\_\+lock}
+\item 
+\Hypertarget{structnet__rate__estimator_a014c225f795b0aaeaee71f93088c72f5}\label{structnet__rate__estimator_a014c225f795b0aaeaee71f93088c72f5} 
+bool {\bfseries running}
+\item 
+\Hypertarget{structnet__rate__estimator_a765a9a394aa16edaca9fcd03ebf879a0}\label{structnet__rate__estimator_a765a9a394aa16edaca9fcd03ebf879a0} 
+struct \doxymbox{\hyperlink{structgnet__stats__basic__sync}{gnet\+\_\+stats\+\_\+basic\+\_\+sync}} \texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+bstats}
+\item 
+\Hypertarget{structnet__rate__estimator_a5c84835357d4c481a47c68da793f9be1}\label{structnet__rate__estimator_a5c84835357d4c481a47c68da793f9be1} 
+u8 {\bfseries ewma\+\_\+log}
+\item 
+\Hypertarget{structnet__rate__estimator_af74f2d2b26108f6c91bcd35efc8dc87d}\label{structnet__rate__estimator_af74f2d2b26108f6c91bcd35efc8dc87d} 
+u8 {\bfseries intvl\+\_\+log}
+\item 
+\Hypertarget{structnet__rate__estimator_a28cf8a074e9f1e10f312e1d86e3ee32b}\label{structnet__rate__estimator_a28cf8a074e9f1e10f312e1d86e3ee32b} 
+seqcount\+\_\+t {\bfseries seq}
+\item 
+\Hypertarget{structnet__rate__estimator_a86340e7ee3e7d096499464b8870c2007}\label{structnet__rate__estimator_a86340e7ee3e7d096499464b8870c2007} 
+u64 {\bfseries last\+\_\+packets}
+\item 
+\Hypertarget{structnet__rate__estimator_ac3ee36f1fb7f28546c7f00a0c78eeebb}\label{structnet__rate__estimator_ac3ee36f1fb7f28546c7f00a0c78eeebb} 
+u64 {\bfseries last\+\_\+bytes}
+\item 
+\Hypertarget{structnet__rate__estimator_a908349ffaa6507fc9b9915a7a5551ab2}\label{structnet__rate__estimator_a908349ffaa6507fc9b9915a7a5551ab2} 
+u64 {\bfseries avpps}
+\item 
+\Hypertarget{structnet__rate__estimator_a0389fda950a7f757bdf1b3ab6d328fbc}\label{structnet__rate__estimator_a0389fda950a7f757bdf1b3ab6d328fbc} 
+u64 {\bfseries avbps}
+\item 
+\Hypertarget{structnet__rate__estimator_a27366d4f8c8f9712e6377a16b9a75941}\label{structnet__rate__estimator_a27366d4f8c8f9712e6377a16b9a75941} 
+long unsigned int {\bfseries next\+\_\+jiffies}
+\item 
+\Hypertarget{structnet__rate__estimator_a9f5373efe1db8101b6edfe5b95984d8f}\label{structnet__rate__estimator_a9f5373efe1db8101b6edfe5b95984d8f} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries timer}
+\item 
+\Hypertarget{structnet__rate__estimator_a0611248c5ce46d1490f80e8df7e8ede2}\label{structnet__rate__estimator_a0611248c5ce46d1490f80e8df7e8ede2} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\doxysection{btrfs\+\_\+discard\+\_\+ctl Struct Reference}
+\hypertarget{structbtrfs__discard__ctl}{}\label{structbtrfs__discard__ctl}\index{btrfs\_discard\_ctl@{btrfs\_discard\_ctl}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a5209c1da1a355eb2546bf150c7d9f9f0}\label{structbtrfs__discard__ctl_a5209c1da1a355eb2546bf150c7d9f9f0} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries discard\+\_\+workers}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_af894e6035dba9b2688e6ffb3157e130d}\label{structbtrfs__discard__ctl_af894e6035dba9b2688e6ffb3157e130d} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries work}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a33bdecb952b080ef14389c625da0ef6c}\label{structbtrfs__discard__ctl_a33bdecb952b080ef14389c625da0ef6c} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_aa392f65a9f6abd9b930726827d91a4d0}\label{structbtrfs__discard__ctl_aa392f65a9f6abd9b930726827d91a4d0} 
+struct \doxymbox{\hyperlink{structbtrfs__block__group}{btrfs\+\_\+block\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries block\+\_\+group}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_ab9910e7d62ae304196812e69720222c8}\label{structbtrfs__discard__ctl_ab9910e7d62ae304196812e69720222c8} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries discard\+\_\+list} \+[3]\+
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a914d7c4cb2362fdb965a4b673a36514f}\label{structbtrfs__discard__ctl_a914d7c4cb2362fdb965a4b673a36514f} 
+u64 {\bfseries prev\+\_\+discard}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a940d7566cf9fc05a1347843e8b6868ff}\label{structbtrfs__discard__ctl_a940d7566cf9fc05a1347843e8b6868ff} 
+u64 {\bfseries prev\+\_\+discard\+\_\+time}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_aebda572b5fddac39fbf23a0e86c3d013}\label{structbtrfs__discard__ctl_aebda572b5fddac39fbf23a0e86c3d013} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries discardable\+\_\+extents}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_aec4c7e8b02d3337a903cceed9020ec4d}\label{structbtrfs__discard__ctl_aec4c7e8b02d3337a903cceed9020ec4d} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries discardable\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a5fcac9a8f7f82dfac0ebf2d8cc759c07}\label{structbtrfs__discard__ctl_a5fcac9a8f7f82dfac0ebf2d8cc759c07} 
+u64 {\bfseries max\+\_\+discard\+\_\+size}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_aa62af2198767b65e6477eada70cfa623}\label{structbtrfs__discard__ctl_aa62af2198767b65e6477eada70cfa623} 
+u64 {\bfseries delay\+\_\+ms}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a6cf4b1273a4e9ef27b2b0d95846e7321}\label{structbtrfs__discard__ctl_a6cf4b1273a4e9ef27b2b0d95846e7321} 
+u32 {\bfseries iops\+\_\+limit}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a7c95196341d6c94ccc7bf4b868b7e181}\label{structbtrfs__discard__ctl_a7c95196341d6c94ccc7bf4b868b7e181} 
+u32 {\bfseries kbps\+\_\+limit}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a8019c322c2d920cbc84fc9ebd9771f2c}\label{structbtrfs__discard__ctl_a8019c322c2d920cbc84fc9ebd9771f2c} 
+u64 {\bfseries discard\+\_\+extent\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a727444f104b8d7f34bb6020d4cac9cab}\label{structbtrfs__discard__ctl_a727444f104b8d7f34bb6020d4cac9cab} 
+u64 {\bfseries discard\+\_\+bitmap\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__discard__ctl_a3431878f5ddd43b1f3d5a1f51a152382}\label{structbtrfs__discard__ctl_a3431878f5ddd43b1f3d5a1f51a152382} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries discard\+\_\+bytes\+\_\+saved}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

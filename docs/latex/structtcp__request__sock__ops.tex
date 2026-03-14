@@ -1,0 +1,43 @@
+\doxysection{tcp\+\_\+request\+\_\+sock\+\_\+ops Struct Reference}
+\hypertarget{structtcp__request__sock__ops}{}\label{structtcp__request__sock__ops}\index{tcp\_request\_sock\_ops@{tcp\_request\_sock\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtcp__request__sock__ops_a2411ec0a0b1c513e25d8babde6e64ba4}\label{structtcp__request__sock__ops_a2411ec0a0b1c513e25d8babde6e64ba4} 
+u16 {\bfseries mss\+\_\+clamp}
+\item 
+\Hypertarget{structtcp__request__sock__ops_a44c98c942ae472b0c1f52bd15ced075d}\label{structtcp__request__sock__ops_a44c98c942ae472b0c1f52bd15ced075d} 
+struct \doxymbox{\hyperlink{structtcp__md5sig__key}{tcp\+\_\+md5sig\+\_\+key}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries req\+\_\+md5\+\_\+lookup} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__request__sock__ops_a65a55e8039719ec389e5716daa334d17}\label{structtcp__request__sock__ops_a65a55e8039719ec389e5716daa334d17} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries calc\+\_\+md5\+\_\+hash} )(char \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structtcp__md5sig__key}{tcp\+\_\+md5sig\+\_\+key}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__request__sock__ops_a7f2cfac1b64cd64d47b20c4c6d699d6e}\label{structtcp__request__sock__ops_a7f2cfac1b64cd64d47b20c4c6d699d6e} 
+struct \doxymbox{\hyperlink{structtcp__ao__key}{tcp\+\_\+ao\+\_\+key}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries ao\+\_\+lookup} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structtcp__request__sock__ops_ad9eaa186db445bdc4cee958b7355a0ec}\label{structtcp__request__sock__ops_ad9eaa186db445bdc4cee958b7355a0ec} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ao\+\_\+calc\+\_\+key} )(struct \doxymbox{\hyperlink{structtcp__ao__key}{tcp\+\_\+ao\+\_\+key}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__request__sock__ops_a2cc2101f08125c8c6226cbaec6c99d3a}\label{structtcp__request__sock__ops_a2cc2101f08125c8c6226cbaec6c99d3a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ao\+\_\+synack\+\_\+hash} )(char \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcp__ao__key}{tcp\+\_\+ao\+\_\+key}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, int, u32)
+\item 
+\Hypertarget{structtcp__request__sock__ops_a55f7d0db83097575f84598e0f69968e6}\label{structtcp__request__sock__ops_a55f7d0db83097575f84598e0f69968e6} 
+\+\_\+\+\_\+u32(\texorpdfstring{$\ast$}{*} {\bfseries cookie\+\_\+init\+\_\+seq} )(const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+u16 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__request__sock__ops_a3d92a2ceb0267ac1ce24f3464d4c3b55}\label{structtcp__request__sock__ops_a3d92a2ceb0267ac1ce24f3464d4c3b55} 
+struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries route\+\_\+req} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi}{flowi}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structtcp__request__sock__ops_a574d1aec2949e8abed46bac828bd92df}\label{structtcp__request__sock__ops_a574d1aec2949e8abed46bac828bd92df} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+seq} )(const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__request__sock__ops_adce71900d67025098e319ce343267341}\label{structtcp__request__sock__ops_adce71900d67025098e319ce343267341} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+ts\+\_\+off} )(const struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__request__sock__ops_acc393a5e60543801c9e232a19261f816}\label{structtcp__request__sock__ops_acc393a5e60543801c9e232a19261f816} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+synack} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi}{flowi}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcp__fastopen__cookie}{tcp\+\_\+fastopen\+\_\+cookie}} \texorpdfstring{$\ast$}{*}, enum tcp\+\_\+synack\+\_\+type, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

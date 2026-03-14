@@ -1,0 +1,367 @@
+\doxysection{dsa\+\_\+switch\+\_\+ops Struct Reference}
+\hypertarget{structdsa__switch__ops}{}\label{structdsa__switch__ops}\index{dsa\_switch\_ops@{dsa\_switch\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdsa__switch__ops_a674535d519873ec86d96b976dd374354}\label{structdsa__switch__ops_a674535d519873ec86d96b976dd374354} 
+enum dsa\+\_\+tag\+\_\+protocol(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+tag\+\_\+protocol} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, enum dsa\+\_\+tag\+\_\+protocol)
+\item 
+\Hypertarget{structdsa__switch__ops_a6d2a8a051ab6ccb82694b2addffa14d7}\label{structdsa__switch__ops_a6d2a8a051ab6ccb82694b2addffa14d7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries change\+\_\+tag\+\_\+protocol} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, enum dsa\+\_\+tag\+\_\+protocol)
+\item 
+\Hypertarget{structdsa__switch__ops_a90964b9ddbfd537cf65e1829ea24890b}\label{structdsa__switch__ops_a90964b9ddbfd537cf65e1829ea24890b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries connect\+\_\+tag\+\_\+protocol} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, enum dsa\+\_\+tag\+\_\+protocol)
+\item 
+\Hypertarget{structdsa__switch__ops_a5f65cf63a70d2e20e287344dcc2091d2}\label{structdsa__switch__ops_a5f65cf63a70d2e20e287344dcc2091d2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+change\+\_\+conduit} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_aea86c01586eb52f79249d7bcdccd44e4}\label{structdsa__switch__ops_aea86c01586eb52f79249d7bcdccd44e4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setup} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a07615df21cf8f535b5dde87741267eb8}\label{structdsa__switch__ops_a07615df21cf8f535b5dde87741267eb8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries teardown} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a8e592c91e2eec49ed5f136ba2baca559}\label{structdsa__switch__ops_a8e592c91e2eec49ed5f136ba2baca559} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+setup} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a2e768a755ce9d41f296d3a5d0a183863}\label{structdsa__switch__ops_a2e768a755ce9d41f296d3a5d0a183863} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+teardown} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_ac0df7880faee8aec0dee051f3eca5185}\label{structdsa__switch__ops_ac0df7880faee8aec0dee051f3eca5185} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+phy\+\_\+flags} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a81ca0c70d1393b03c3d59d852c6680e4}\label{structdsa__switch__ops_a81ca0c70d1393b03c3d59d852c6680e4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries phy\+\_\+read} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a945952d1ba784bea18b14dc42bfcc801}\label{structdsa__switch__ops_a945952d1ba784bea18b14dc42bfcc801} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries phy\+\_\+write} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, int, u16)
+\item 
+\Hypertarget{structdsa__switch__ops_a3bfaeed167e2648de90413f93b3e68c7}\label{structdsa__switch__ops_a3bfaeed167e2648de90413f93b3e68c7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries phylink\+\_\+get\+\_\+caps} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structphylink__config}{phylink\+\_\+config}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a27547ae821f24769b98a624bc5f8161b}\label{structdsa__switch__ops_a27547ae821f24769b98a624bc5f8161b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries phylink\+\_\+fixed\+\_\+state} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structphylink__link__state}{phylink\+\_\+link\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a7d9bff558b47c8617559323d30f03311}\label{structdsa__switch__ops_a7d9bff558b47c8617559323d30f03311} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+strings} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u32, uint8\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a7f4ec35cb2339eacd3e1cc3e42ddadea}\label{structdsa__switch__ops_a7f4ec35cb2339eacd3e1cc3e42ddadea} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+ethtool\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, uint64\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_af1e39fc01601ca5672d04dae4f0225e4}\label{structdsa__switch__ops_af1e39fc01601ca5672d04dae4f0225e4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+sset\+\_\+count} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a4d343c606a1f6b36d90e84d8f0e63b89}\label{structdsa__switch__ops_a4d343c606a1f6b36d90e84d8f0e63b89} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+ethtool\+\_\+phy\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, uint64\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a6c82e5b181c4f18501ef6cc3fa6f73ed}\label{structdsa__switch__ops_a6c82e5b181c4f18501ef6cc3fa6f73ed} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+eth\+\_\+phy\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__eth__phy__stats}{ethtool\+\_\+eth\+\_\+phy\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a6b453157030815496c3ea084e89d93fa}\label{structdsa__switch__ops_a6b453157030815496c3ea084e89d93fa} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+eth\+\_\+mac\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__eth__mac__stats}{ethtool\+\_\+eth\+\_\+mac\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a1490be7a8015c0ab2f8c7c54cb42a4f3}\label{structdsa__switch__ops_a1490be7a8015c0ab2f8c7c54cb42a4f3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+eth\+\_\+ctrl\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__eth__ctrl__stats}{ethtool\+\_\+eth\+\_\+ctrl\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a12b99ffff4c7191faebf8ec5b1ac470d}\label{structdsa__switch__ops_a12b99ffff4c7191faebf8ec5b1ac470d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+rmon\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__rmon__stats}{ethtool\+\_\+rmon\+\_\+stats}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structethtool__rmon__hist__range}{ethtool\+\_\+rmon\+\_\+hist\+\_\+range}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_aa40173c49f44496b952197ce0ba43441}\label{structdsa__switch__ops_aa40173c49f44496b952197ce0ba43441} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+ts\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__ts__stats}{ethtool\+\_\+ts\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_acfbcf4e365dfb822a9d8958b10234bce}\label{structdsa__switch__ops_acfbcf4e365dfb822a9d8958b10234bce} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+stats64} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structrtnl__link__stats64}{rtnl\+\_\+link\+\_\+stats64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a27250fe2c0f2b05289340a292f8b49c3}\label{structdsa__switch__ops_a27250fe2c0f2b05289340a292f8b49c3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+pause\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__pause__stats}{ethtool\+\_\+pause\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a6fb179504eec5720bd645f397d601c36}\label{structdsa__switch__ops_a6fb179504eec5720bd645f397d601c36} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries self\+\_\+test} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__test}{ethtool\+\_\+test}} \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a858aaff7538b487e35f2895a688f37ec}\label{structdsa__switch__ops_a858aaff7538b487e35f2895a688f37ec} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+wol} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__wolinfo}{ethtool\+\_\+wolinfo}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a672a73bed6af568f839f705e0fc27146}\label{structdsa__switch__ops_a672a73bed6af568f839f705e0fc27146} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+wol} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__wolinfo}{ethtool\+\_\+wolinfo}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a4e8a1f4d5216a7b7a1f1dca1ece21e39}\label{structdsa__switch__ops_a4e8a1f4d5216a7b7a1f1dca1ece21e39} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+ts\+\_\+info} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structkernel__ethtool__ts__info}{kernel\+\_\+ethtool\+\_\+ts\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ab3b0a59a7d4dc4f2959f2fbb8167e392}\label{structdsa__switch__ops_ab3b0a59a7d4dc4f2959f2fbb8167e392} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+mm} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__mm__state}{ethtool\+\_\+mm\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a812332f9e1b8155f5c976d2c543e7c02}\label{structdsa__switch__ops_a812332f9e1b8155f5c976d2c543e7c02} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+mm} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__mm__cfg}{ethtool\+\_\+mm\+\_\+cfg}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ad7f3be11a31f043e98f7b88cbb0da3c6}\label{structdsa__switch__ops_ad7f3be11a31f043e98f7b88cbb0da3c6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+mm\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__mm__stats}{ethtool\+\_\+mm\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a0ed87c803f7c1c11ec5c22a87fc84331}\label{structdsa__switch__ops_a0ed87c803f7c1c11ec5c22a87fc84331} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+get\+\_\+default\+\_\+prio} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a2f82d4ca96cd1b40a48905d068daa07f}\label{structdsa__switch__ops_a2f82d4ca96cd1b40a48905d068daa07f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+set\+\_\+default\+\_\+prio} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u8)
+\item 
+\Hypertarget{structdsa__switch__ops_a758b8978ac90d63bdf4fed5524cb173a}\label{structdsa__switch__ops_a758b8978ac90d63bdf4fed5524cb173a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+get\+\_\+dscp\+\_\+prio} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u8)
+\item 
+\Hypertarget{structdsa__switch__ops_a64c1f4b4e1e3d938fce866d5015a00f7}\label{structdsa__switch__ops_a64c1f4b4e1e3d938fce866d5015a00f7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+add\+\_\+dscp\+\_\+prio} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u8, u8)
+\item 
+\Hypertarget{structdsa__switch__ops_a921e7df6c54f0aba7f3a671304091c50}\label{structdsa__switch__ops_a921e7df6c54f0aba7f3a671304091c50} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+del\+\_\+dscp\+\_\+prio} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u8, u8)
+\item 
+\Hypertarget{structdsa__switch__ops_ac9ee0dc9137fad6734bc0098615d12bd}\label{structdsa__switch__ops_ac9ee0dc9137fad6734bc0098615d12bd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+set\+\_\+apptrust} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const u8 \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a266231e2b109ce5fe29f45c5b5a1cb6a}\label{structdsa__switch__ops_a266231e2b109ce5fe29f45c5b5a1cb6a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+get\+\_\+apptrust} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u8 \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a0e7bb17a28c76f9e526609fe82a20e8c}\label{structdsa__switch__ops_a0e7bb17a28c76f9e526609fe82a20e8c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a151c41e29d5af49035a415197fa61360}\label{structdsa__switch__ops_a151c41e29d5af49035a415197fa61360} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a47517dee46a884b864ca1cb3c4505001}\label{structdsa__switch__ops_a47517dee46a884b864ca1cb3c4505001} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+enable} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a9883b08d9e5287fb4910f7b056098988}\label{structdsa__switch__ops_a9883b08d9e5287fb4910f7b056098988} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+disable} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_ae366bd7f7c42a65a0a6b79484d560229}\label{structdsa__switch__ops_ae366bd7f7c42a65a0a6b79484d560229} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+set\+\_\+mac\+\_\+address} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const unsigned char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ab322f50317c5f60e8d11af19e15d6e94}\label{structdsa__switch__ops_ab322f50317c5f60e8d11af19e15d6e94} 
+struct \doxymbox{\hyperlink{structdsa__port}{dsa\+\_\+port}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries preferred\+\_\+default\+\_\+local\+\_\+cpu\+\_\+port} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_acbac1967db710cf9e60a9bcea37621fc}\label{structdsa__switch__ops_acbac1967db710cf9e60a9bcea37621fc} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries support\+\_\+eee} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a020ca213f0e9f8cb29ee980e56033edc}\label{structdsa__switch__ops_a020ca213f0e9f8cb29ee980e56033edc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+mac\+\_\+eee} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__keee}{ethtool\+\_\+keee}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ab864358958313ddf9d3328a7afa853c2}\label{structdsa__switch__ops_ab864358958313ddf9d3328a7afa853c2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+eeprom\+\_\+len} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a0795a602c3c0fb3ba3a9e745c8b3c554}\label{structdsa__switch__ops_a0795a602c3c0fb3ba3a9e745c8b3c554} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+eeprom} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__eeprom}{ethtool\+\_\+eeprom}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a34cf672a5eae69588f3a9f80df3b930c}\label{structdsa__switch__ops_a34cf672a5eae69588f3a9f80df3b930c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+eeprom} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__eeprom}{ethtool\+\_\+eeprom}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a898d0ae7f3b13619630484db6dc70869}\label{structdsa__switch__ops_a898d0ae7f3b13619630484db6dc70869} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+regs\+\_\+len} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a7d750ee28f0a43e44c5bb9ef1df31d75}\label{structdsa__switch__ops_a7d750ee28f0a43e44c5bb9ef1df31d75} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+regs} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__regs}{ethtool\+\_\+regs}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a7d71c9aba93241d1c88f6d504dc93cc0}\label{structdsa__switch__ops_a7d71c9aba93241d1c88f6d504dc93cc0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+prechangeupper} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structnetdev__notifier__changeupper__info}{netdev\+\_\+notifier\+\_\+changeupper\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a615cbb3d9cf8f623582eda2c8dee50bc}\label{structdsa__switch__ops_a615cbb3d9cf8f623582eda2c8dee50bc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+ageing\+\_\+time} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structdsa__switch__ops_ac374b0a9cb09c22ab1c60ee443abdc9d}\label{structdsa__switch__ops_ac374b0a9cb09c22ab1c60ee443abdc9d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+bridge\+\_\+join} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structdsa__bridge}{dsa\+\_\+bridge}}, bool \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ad9e4716502628e929c0f70fee1e045df}\label{structdsa__switch__ops_ad9e4716502628e929c0f70fee1e045df} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+bridge\+\_\+leave} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structdsa__bridge}{dsa\+\_\+bridge}})
+\item 
+\Hypertarget{structdsa__switch__ops_a15ca3a8078efc8d2b752922bc04aad06}\label{structdsa__switch__ops_a15ca3a8078efc8d2b752922bc04aad06} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+stp\+\_\+state\+\_\+set} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u8)
+\item 
+\Hypertarget{structdsa__switch__ops_ae008862e8e7f152b0a4a7590386f5df5}\label{structdsa__switch__ops_ae008862e8e7f152b0a4a7590386f5df5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+mst\+\_\+state\+\_\+set} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structswitchdev__mst__state}{switchdev\+\_\+mst\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a3046baae4d96c6372ca299117938d9cc}\label{structdsa__switch__ops_a3046baae4d96c6372ca299117938d9cc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+fast\+\_\+age} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a2374d4ffd272e9d97f491b72e83c4293}\label{structdsa__switch__ops_a2374d4ffd272e9d97f491b72e83c4293} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+vlan\+\_\+fast\+\_\+age} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u16)
+\item 
+\Hypertarget{structdsa__switch__ops_accf7f1b90b8bade0855b59def8d2a643}\label{structdsa__switch__ops_accf7f1b90b8bade0855b59def8d2a643} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+pre\+\_\+bridge\+\_\+flags} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structswitchdev__brport__flags}{switchdev\+\_\+brport\+\_\+flags}}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_aca695360c71aa69db0c2be9a5b38c8b6}\label{structdsa__switch__ops_aca695360c71aa69db0c2be9a5b38c8b6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+bridge\+\_\+flags} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structswitchdev__brport__flags}{switchdev\+\_\+brport\+\_\+flags}}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_aa9eb362f5eade58d6d077d7110c97b32}\label{structdsa__switch__ops_aa9eb362f5eade58d6d077d7110c97b32} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+set\+\_\+host\+\_\+flood} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, bool, bool)
+\item 
+\Hypertarget{structdsa__switch__ops_a76573c5f2a4d006a823a8a90dbd2e27a}\label{structdsa__switch__ops_a76573c5f2a4d006a823a8a90dbd2e27a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+vlan\+\_\+filtering} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, bool, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a4ab99957ebaec322cbaaabf66633ebcf}\label{structdsa__switch__ops_a4ab99957ebaec322cbaaabf66633ebcf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+vlan\+\_\+add} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structswitchdev__obj__port__vlan}{switchdev\+\_\+obj\+\_\+port\+\_\+vlan}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a52c1fc97bf5ccf06f4c5acdc3a446bc4}\label{structdsa__switch__ops_a52c1fc97bf5ccf06f4c5acdc3a446bc4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+vlan\+\_\+del} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structswitchdev__obj__port__vlan}{switchdev\+\_\+obj\+\_\+port\+\_\+vlan}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_afac856b9a3cfac84d82a29bf9fe590f9}\label{structdsa__switch__ops_afac856b9a3cfac84d82a29bf9fe590f9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vlan\+\_\+msti\+\_\+set} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdsa__bridge}{dsa\+\_\+bridge}}, const struct \doxymbox{\hyperlink{structswitchdev__vlan__msti}{switchdev\+\_\+vlan\+\_\+msti}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ad64d8977e5c30a8e346d1de79ce9328c}\label{structdsa__switch__ops_ad64d8977e5c30a8e346d1de79ce9328c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+fdb\+\_\+add} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const unsigned char \texorpdfstring{$\ast$}{*}, u16, struct \doxymbox{\hyperlink{structdsa__db}{dsa\+\_\+db}})
+\item 
+\Hypertarget{structdsa__switch__ops_a011c2b0156b29864f0da6c46c3afec03}\label{structdsa__switch__ops_a011c2b0156b29864f0da6c46c3afec03} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+fdb\+\_\+del} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const unsigned char \texorpdfstring{$\ast$}{*}, u16, struct \doxymbox{\hyperlink{structdsa__db}{dsa\+\_\+db}})
+\item 
+\Hypertarget{structdsa__switch__ops_aa1de13a66847367ab535aa6400412a55}\label{structdsa__switch__ops_aa1de13a66847367ab535aa6400412a55} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+fdb\+\_\+dump} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, dsa\+\_\+fdb\+\_\+dump\+\_\+cb\+\_\+t \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a37abf3b6ea31cfa4a36af1a533fb76e5}\label{structdsa__switch__ops_a37abf3b6ea31cfa4a36af1a533fb76e5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries lag\+\_\+fdb\+\_\+add} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdsa__lag}{dsa\+\_\+lag}}, const unsigned char \texorpdfstring{$\ast$}{*}, u16, struct \doxymbox{\hyperlink{structdsa__db}{dsa\+\_\+db}})
+\item 
+\Hypertarget{structdsa__switch__ops_ab6833612d56bc0b8863d5723e5382828}\label{structdsa__switch__ops_ab6833612d56bc0b8863d5723e5382828} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries lag\+\_\+fdb\+\_\+del} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdsa__lag}{dsa\+\_\+lag}}, const unsigned char \texorpdfstring{$\ast$}{*}, u16, struct \doxymbox{\hyperlink{structdsa__db}{dsa\+\_\+db}})
+\item 
+\Hypertarget{structdsa__switch__ops_ab02f87869d30f6b6ec1f9fcd363babe0}\label{structdsa__switch__ops_ab02f87869d30f6b6ec1f9fcd363babe0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+mdb\+\_\+add} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structswitchdev__obj__port__mdb}{switchdev\+\_\+obj\+\_\+port\+\_\+mdb}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdsa__db}{dsa\+\_\+db}})
+\item 
+\Hypertarget{structdsa__switch__ops_ac129340aab1649311bbfb3bfd9815d93}\label{structdsa__switch__ops_ac129340aab1649311bbfb3bfd9815d93} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+mdb\+\_\+del} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structswitchdev__obj__port__mdb}{switchdev\+\_\+obj\+\_\+port\+\_\+mdb}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdsa__db}{dsa\+\_\+db}})
+\item 
+\Hypertarget{structdsa__switch__ops_ac829554daced2c4ae3ffb2dd2adf661a}\label{structdsa__switch__ops_ac829554daced2c4ae3ffb2dd2adf661a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+rxnfc} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__rxnfc}{ethtool\+\_\+rxnfc}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a10a554c77f90bbfd96bca69cd8461b53}\label{structdsa__switch__ops_a10a554c77f90bbfd96bca69cd8461b53} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+rxnfc} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structethtool__rxnfc}{ethtool\+\_\+rxnfc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a8e0c54ef9a75b5fdf14f34faa0ef80e3}\label{structdsa__switch__ops_a8e0c54ef9a75b5fdf14f34faa0ef80e3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cls\+\_\+flower\+\_\+add} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structflow__cls__offload}{flow\+\_\+cls\+\_\+offload}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structdsa__switch__ops_a9b49749d9dab4d0e125ed7f6e31ebaef}\label{structdsa__switch__ops_a9b49749d9dab4d0e125ed7f6e31ebaef} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cls\+\_\+flower\+\_\+del} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structflow__cls__offload}{flow\+\_\+cls\+\_\+offload}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structdsa__switch__ops_a07f6954e0831b85dc80911b53edf5fc4}\label{structdsa__switch__ops_a07f6954e0831b85dc80911b53edf5fc4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cls\+\_\+flower\+\_\+stats} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structflow__cls__offload}{flow\+\_\+cls\+\_\+offload}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structdsa__switch__ops_a0eefc375159051ec9426e7e97eb91cf7}\label{structdsa__switch__ops_a0eefc375159051ec9426e7e97eb91cf7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+mirror\+\_\+add} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structdsa__mall__mirror__tc__entry}{dsa\+\_\+mall\+\_\+mirror\+\_\+tc\+\_\+entry}} \texorpdfstring{$\ast$}{*}, bool, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a1b422b8d72c48b4715af02abda22ea9f}\label{structdsa__switch__ops_a1b422b8d72c48b4715af02abda22ea9f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+mirror\+\_\+del} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structdsa__mall__mirror__tc__entry}{dsa\+\_\+mall\+\_\+mirror\+\_\+tc\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a0ca9f5126f5fb0334258c7a90b7517a9}\label{structdsa__switch__ops_a0ca9f5126f5fb0334258c7a90b7517a9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+policer\+\_\+add} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structdsa__mall__policer__tc__entry}{dsa\+\_\+mall\+\_\+policer\+\_\+tc\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a98eed630926852870ccd5827b3e0327e}\label{structdsa__switch__ops_a98eed630926852870ccd5827b3e0327e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+policer\+\_\+del} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a240dd456cae36a61fb6ff8629e85c1d9}\label{structdsa__switch__ops_a240dd456cae36a61fb6ff8629e85c1d9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+setup\+\_\+tc} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, enum tc\+\_\+setup\+\_\+type, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ab54b1b5e5201b8037d825c50f308222e}\label{structdsa__switch__ops_ab54b1b5e5201b8037d825c50f308222e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crosschip\+\_\+bridge\+\_\+join} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, int, int, struct \doxymbox{\hyperlink{structdsa__bridge}{dsa\+\_\+bridge}}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a5f79a8937c2ccec340e119529d28ce26}\label{structdsa__switch__ops_a5f79a8937c2ccec340e119529d28ce26} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries crosschip\+\_\+bridge\+\_\+leave} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, int, int, struct \doxymbox{\hyperlink{structdsa__bridge}{dsa\+\_\+bridge}})
+\item 
+\Hypertarget{structdsa__switch__ops_a4f21149f4d6920963daa3b0d5a379097}\label{structdsa__switch__ops_a4f21149f4d6920963daa3b0d5a379097} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crosschip\+\_\+lag\+\_\+change} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a91ccd72b1f9d4d60f9d287a64f9c0110}\label{structdsa__switch__ops_a91ccd72b1f9d4d60f9d287a64f9c0110} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crosschip\+\_\+lag\+\_\+join} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, int, struct \doxymbox{\hyperlink{structdsa__lag}{dsa\+\_\+lag}}, struct \doxymbox{\hyperlink{structnetdev__lag__upper__info}{netdev\+\_\+lag\+\_\+upper\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a1ba6a3ece6507474be74563de5f7a417}\label{structdsa__switch__ops_a1ba6a3ece6507474be74563de5f7a417} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crosschip\+\_\+lag\+\_\+leave} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, int, struct \doxymbox{\hyperlink{structdsa__lag}{dsa\+\_\+lag}})
+\item 
+\Hypertarget{structdsa__switch__ops_aecddf10370d4c57faf0623bfe804dd24}\label{structdsa__switch__ops_aecddf10370d4c57faf0623bfe804dd24} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+hwtstamp\+\_\+get} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structkernel__hwtstamp__config}{kernel\+\_\+hwtstamp\+\_\+config}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ad73e7765279e60a5b79ac2d17e1944ac}\label{structdsa__switch__ops_ad73e7765279e60a5b79ac2d17e1944ac} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+hwtstamp\+\_\+set} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structkernel__hwtstamp__config}{kernel\+\_\+hwtstamp\+\_\+config}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ad394a2a7a63221e624b6386a3c0309c6}\label{structdsa__switch__ops_ad394a2a7a63221e624b6386a3c0309c6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+txtstamp} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a371ab3346b7d77224a4455f3f214e212}\label{structdsa__switch__ops_a371ab3346b7d77224a4455f3f214e212} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+rxtstamp} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structdsa__switch__ops_afba30b962b8a839b76a090fc1a96f8bb}\label{structdsa__switch__ops_afba30b962b8a839b76a090fc1a96f8bb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+param\+\_\+get} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structdevlink__param__gset__ctx}{devlink\+\_\+param\+\_\+gset\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_abee2f715ef39d64066465b255329a401}\label{structdsa__switch__ops_abee2f715ef39d64066465b255329a401} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+param\+\_\+set} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structdevlink__param__gset__ctx}{devlink\+\_\+param\+\_\+gset\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a455259babe90d4027084a185a6305c97}\label{structdsa__switch__ops_a455259babe90d4027084a185a6305c97} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+info\+\_\+get} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevlink__info__req}{devlink\+\_\+info\+\_\+req}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ab7a1bc07b81248e3bffc37393c258cab}\label{structdsa__switch__ops_ab7a1bc07b81248e3bffc37393c258cab} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+pool\+\_\+get} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, struct \doxymbox{\hyperlink{structdevlink__sb__pool__info}{devlink\+\_\+sb\+\_\+pool\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a6e8a7fe2bb430170769734c0271982cf}\label{structdsa__switch__ops_a6e8a7fe2bb430170769734c0271982cf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+pool\+\_\+set} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, u32, enum devlink\+\_\+sb\+\_\+threshold\+\_\+type, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a170205f3f72869df454bf168e2c992c9}\label{structdsa__switch__ops_a170205f3f72869df454bf168e2c992c9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+port\+\_\+pool\+\_\+get} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, unsigned int, u16, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a2758dc2df912fa2c20de6c60c3fe2ef3}\label{structdsa__switch__ops_a2758dc2df912fa2c20de6c60c3fe2ef3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+port\+\_\+pool\+\_\+set} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, unsigned int, u16, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a766110314b1421fcd47ad428976b270a}\label{structdsa__switch__ops_a766110314b1421fcd47ad428976b270a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+tc\+\_\+pool\+\_\+bind\+\_\+get} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, unsigned int, u16, enum devlink\+\_\+sb\+\_\+pool\+\_\+type, u16 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a494d697067ee6881e34baa7f14a82d23}\label{structdsa__switch__ops_a494d697067ee6881e34baa7f14a82d23} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+tc\+\_\+pool\+\_\+bind\+\_\+set} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, unsigned int, u16, enum devlink\+\_\+sb\+\_\+pool\+\_\+type, u16, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_ae93798412bf2d3fb0735af9297c11ed3}\label{structdsa__switch__ops_ae93798412bf2d3fb0735af9297c11ed3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+occ\+\_\+snapshot} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structdsa__switch__ops_a2c00c8035b1b13202facf68b7a0548d2}\label{structdsa__switch__ops_a2c00c8035b1b13202facf68b7a0548d2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+occ\+\_\+max\+\_\+clear} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structdsa__switch__ops_a466ac22045a61bc1d99aef06444de0ec}\label{structdsa__switch__ops_a466ac22045a61bc1d99aef06444de0ec} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+occ\+\_\+port\+\_\+pool\+\_\+get} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, unsigned int, u16, u32 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a3dc5dda42519560a6783b48ac0cbcfb8}\label{structdsa__switch__ops_a3dc5dda42519560a6783b48ac0cbcfb8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+sb\+\_\+occ\+\_\+tc\+\_\+port\+\_\+bind\+\_\+get} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, unsigned int, u16, enum devlink\+\_\+sb\+\_\+pool\+\_\+type, u32 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a69d322a92ba9c4a4f2ae1bbff32819d6}\label{structdsa__switch__ops_a69d322a92ba9c4a4f2ae1bbff32819d6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+change\+\_\+mtu} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structdsa__switch__ops_acae58bf621f4fced54f0b85bda1e2e0a}\label{structdsa__switch__ops_acae58bf621f4fced54f0b85bda1e2e0a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+max\+\_\+mtu} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_ab1ed01cff7ca210e42056f4e98e3678d}\label{structdsa__switch__ops_ab1ed01cff7ca210e42056f4e98e3678d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+lag\+\_\+change} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdsa__switch__ops_a3ce295047f5d1d29e030e5f6dfd7a188}\label{structdsa__switch__ops_a3ce295047f5d1d29e030e5f6dfd7a188} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+lag\+\_\+join} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structdsa__lag}{dsa\+\_\+lag}}, struct \doxymbox{\hyperlink{structnetdev__lag__upper__info}{netdev\+\_\+lag\+\_\+upper\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a3dd6c0800fe654c6bf8e81a96aa38d9a}\label{structdsa__switch__ops_a3dd6c0800fe654c6bf8e81a96aa38d9a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+lag\+\_\+leave} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structdsa__lag}{dsa\+\_\+lag}})
+\item 
+\Hypertarget{structdsa__switch__ops_a59e24eb1395225aa5ff9590faec88b0b}\label{structdsa__switch__ops_a59e24eb1395225aa5ff9590faec88b0b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+hsr\+\_\+join} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_aafab665cd47016ec1f6779e6fce05b24}\label{structdsa__switch__ops_aafab665cd47016ec1f6779e6fce05b24} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+hsr\+\_\+leave} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a29d7ccb5e6ac6853668bac98cd7dbdf6}\label{structdsa__switch__ops_a29d7ccb5e6ac6853668bac98cd7dbdf6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+mrp\+\_\+add} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structswitchdev__obj__mrp}{switchdev\+\_\+obj\+\_\+mrp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a3777eb80e3d494bb644c8ea345b6eed7}\label{structdsa__switch__ops_a3777eb80e3d494bb644c8ea345b6eed7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+mrp\+\_\+del} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structswitchdev__obj__mrp}{switchdev\+\_\+obj\+\_\+mrp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a8c91ad002bf17ba877a2701ecf37fe0a}\label{structdsa__switch__ops_a8c91ad002bf17ba877a2701ecf37fe0a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+mrp\+\_\+add\+\_\+ring\+\_\+role} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structswitchdev__obj__ring__role__mrp}{switchdev\+\_\+obj\+\_\+ring\+\_\+role\+\_\+mrp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_afb230c43df3270ae677753cfad5efa88}\label{structdsa__switch__ops_afb230c43df3270ae677753cfad5efa88} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+mrp\+\_\+del\+\_\+ring\+\_\+role} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structswitchdev__obj__ring__role__mrp}{switchdev\+\_\+obj\+\_\+ring\+\_\+role\+\_\+mrp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__switch__ops_a4e3ec4f47ff43cfb2df0c741f76d0e0c}\label{structdsa__switch__ops_a4e3ec4f47ff43cfb2df0c741f76d0e0c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tag\+\_\+8021q\+\_\+vlan\+\_\+add} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u16, u16)
+\item 
+\Hypertarget{structdsa__switch__ops_a320e59692a58777b98143f2538fb29bd}\label{structdsa__switch__ops_a320e59692a58777b98143f2538fb29bd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tag\+\_\+8021q\+\_\+vlan\+\_\+del} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, int, u16)
+\item 
+\Hypertarget{structdsa__switch__ops_a9c7e82fd6a8e8d203940dc88600ce37d}\label{structdsa__switch__ops_a9c7e82fd6a8e8d203940dc88600ce37d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries conduit\+\_\+state\+\_\+change} )(struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, bool)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

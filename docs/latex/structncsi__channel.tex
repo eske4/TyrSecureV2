@@ -1,0 +1,59 @@
+\doxysection{ncsi\+\_\+channel Struct Reference}
+\hypertarget{structncsi__channel}{}\label{structncsi__channel}\index{ncsi\_channel@{ncsi\_channel}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structncsi__channel_ac7641c6881ed6a28681bf3d78121d639}\label{structncsi__channel_ac7641c6881ed6a28681bf3d78121d639} 
+unsigned char {\bfseries id}
+\item 
+\Hypertarget{structncsi__channel_acc4c45c04306810359710beb44adb6a2}\label{structncsi__channel_acc4c45c04306810359710beb44adb6a2} 
+int {\bfseries state}
+\item 
+\Hypertarget{structncsi__channel_a661707d2b5aef8fd545841e16acf9ebc}\label{structncsi__channel_a661707d2b5aef8fd545841e16acf9ebc} 
+bool {\bfseries reconfigure\+\_\+needed}
+\item 
+\Hypertarget{structncsi__channel_a686d7b873d401fd4bd192fa15780da26}\label{structncsi__channel_a686d7b873d401fd4bd192fa15780da26} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structncsi__channel_ac6324d448808f187f5bb0e15464607d5}\label{structncsi__channel_ac6324d448808f187f5bb0e15464607d5} 
+struct \doxymbox{\hyperlink{structncsi__package}{ncsi\+\_\+package}} \texorpdfstring{$\ast$}{*} {\bfseries package}
+\item 
+\Hypertarget{structncsi__channel_ab2ee662d3cb230f274f367131b161cc9}\label{structncsi__channel_ab2ee662d3cb230f274f367131b161cc9} 
+struct \doxymbox{\hyperlink{structncsi__channel__version}{ncsi\+\_\+channel\+\_\+version}} {\bfseries version}
+\item 
+\Hypertarget{structncsi__channel_a87326326978c4b2d6eccebbaf7427e50}\label{structncsi__channel_a87326326978c4b2d6eccebbaf7427e50} 
+struct \doxymbox{\hyperlink{structncsi__channel__cap}{ncsi\+\_\+channel\+\_\+cap}} {\bfseries caps} \+[6]\+
+\item 
+\Hypertarget{structncsi__channel_a07cca9a5cd1477e3567207ed4a0991b5}\label{structncsi__channel_a07cca9a5cd1477e3567207ed4a0991b5} 
+struct \doxymbox{\hyperlink{structncsi__channel__mode}{ncsi\+\_\+channel\+\_\+mode}} {\bfseries modes} \+[8]\+
+\item 
+\Hypertarget{structncsi__channel_a6248fddd2f4842ac572f7648b2ce1783}\label{structncsi__channel_a6248fddd2f4842ac572f7648b2ce1783} 
+struct \doxymbox{\hyperlink{structncsi__channel__mac__filter}{ncsi\+\_\+channel\+\_\+mac\+\_\+filter}} {\bfseries mac\+\_\+filter}
+\item 
+\Hypertarget{structncsi__channel_aff42705d0faf23dcd9db7839edc94628}\label{structncsi__channel_aff42705d0faf23dcd9db7839edc94628} 
+struct \doxymbox{\hyperlink{structncsi__channel__vlan__filter}{ncsi\+\_\+channel\+\_\+vlan\+\_\+filter}} {\bfseries vlan\+\_\+filter}
+\item 
+\Hypertarget{structncsi__channel_aa0d2b2792eb50b2c094dea9fc07fe243}\label{structncsi__channel_aa0d2b2792eb50b2c094dea9fc07fe243} 
+struct \doxymbox{\hyperlink{structncsi__channel__stats}{ncsi\+\_\+channel\+\_\+stats}} {\bfseries stats}
+\item 
+\Hypertarget{structncsi__channel_aea4a5a7ab4f6293be9d7b73133f8596e}\label{structncsi__channel_aea4a5a7ab4f6293be9d7b73133f8596e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structtimer__list}{timer\_list}} {\bfseries timer}\\
+\>bool {\bfseries enabled}\\
+\>unsigned int {\bfseries state}\\
+\} {\bfseries monitor}\\
+
+\end{tabbing}\item 
+\Hypertarget{structncsi__channel_a8b89fbce16d9d90308041f9fc0ff1cfb}\label{structncsi__channel_a8b89fbce16d9d90308041f9fc0ff1cfb} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structncsi__channel_a332020f6a4a243860d720046b1b3ad62}\label{structncsi__channel_a332020f6a4a243860d720046b1b3ad62} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries link}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

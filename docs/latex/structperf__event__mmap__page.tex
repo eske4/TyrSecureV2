@@ -1,0 +1,103 @@
+\doxysection{perf\+\_\+event\+\_\+mmap\+\_\+page Struct Reference}
+\hypertarget{structperf__event__mmap__page}{}\label{structperf__event__mmap__page}\index{perf\_event\_mmap\_page@{perf\_event\_mmap\_page}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structperf__event__mmap__page_ac75e61d6b9ac4b5d0fc99d977e295922}\label{structperf__event__mmap__page_ac75e61d6b9ac4b5d0fc99d977e295922} 
+\+\_\+\+\_\+u32 {\bfseries version}
+\item 
+\Hypertarget{structperf__event__mmap__page_ae3ae6610e7cde7dcb1e7a13ad9d6e8be}\label{structperf__event__mmap__page_ae3ae6610e7cde7dcb1e7a13ad9d6e8be} 
+\+\_\+\+\_\+u32 {\bfseries compat\+\_\+version}
+\item 
+\Hypertarget{structperf__event__mmap__page_ae1920c7359f2432da7533329d4c26e95}\label{structperf__event__mmap__page_ae1920c7359f2432da7533329d4c26e95} 
+\+\_\+\+\_\+u32 {\bfseries lock}
+\item 
+\Hypertarget{structperf__event__mmap__page_a14c863a8d8d7888a1c567cd41f288afa}\label{structperf__event__mmap__page_a14c863a8d8d7888a1c567cd41f288afa} 
+\+\_\+\+\_\+u32 {\bfseries index}
+\item 
+\Hypertarget{structperf__event__mmap__page_ab2f0c01fe285ef3750b9f768000dbeef}\label{structperf__event__mmap__page_ab2f0c01fe285ef3750b9f768000dbeef} 
+\+\_\+\+\_\+s64 {\bfseries offset}
+\item 
+\Hypertarget{structperf__event__mmap__page_a61afeca61f90dd71d50165828fcc16bc}\label{structperf__event__mmap__page_a61afeca61f90dd71d50165828fcc16bc} 
+\+\_\+\+\_\+u64 {\bfseries time\+\_\+enabled}
+\item 
+\Hypertarget{structperf__event__mmap__page_a12d384b4266580ac00ab450afec2e32e}\label{structperf__event__mmap__page_a12d384b4266580ac00ab450afec2e32e} 
+\+\_\+\+\_\+u64 {\bfseries time\+\_\+running}
+\item 
+\Hypertarget{structperf__event__mmap__page_a13c0f1aa1e08913d8927eafe7ee4e1c2}\label{structperf__event__mmap__page_a13c0f1aa1e08913d8927eafe7ee4e1c2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u64 {\bfseries capabilities}\\
+\Hypertarget{unionperf__event__mmap__page_1_1_0d145367353237011176003161254060137155103175124101_aa0d555cd5d59d59ddfa66cc1d33430f9}\label{unionperf__event__mmap__page_1_1_0d145367353237011176003161254060137155103175124101_aa0d555cd5d59d59ddfa66cc1d33430f9} 
+\>struct \{\\
+\>\>\_\_u64 {\bfseries cap\_bit0}: 1\\
+\>\>\_\_u64 {\bfseries cap\_bit0\_is\_deprecated}: 1\\
+\>\>\_\_u64 {\bfseries cap\_user\_rdpmc}: 1\\
+\>\>\_\_u64 {\bfseries cap\_user\_time}: 1\\
+\>\>\_\_u64 {\bfseries cap\_user\_time\_zero}: 1\\
+\>\>\_\_u64 {\bfseries cap\_user\_time\_short}: 1\\
+\>\>\_\_u64 {\bfseries cap\_\_\_\_\_res}: 58\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structperf__event__mmap__page_abcbf4fcd82088073d7aff8c5ead1ac2b}\label{structperf__event__mmap__page_abcbf4fcd82088073d7aff8c5ead1ac2b} 
+\+\_\+\+\_\+u16 {\bfseries pmc\+\_\+width}
+\item 
+\Hypertarget{structperf__event__mmap__page_a96f2fa14b9916b8370fafc17a71835cd}\label{structperf__event__mmap__page_a96f2fa14b9916b8370fafc17a71835cd} 
+\+\_\+\+\_\+u16 {\bfseries time\+\_\+shift}
+\item 
+\Hypertarget{structperf__event__mmap__page_a245d2ba9fd12f8c5de82438bb389e049}\label{structperf__event__mmap__page_a245d2ba9fd12f8c5de82438bb389e049} 
+\+\_\+\+\_\+u32 {\bfseries time\+\_\+mult}
+\item 
+\Hypertarget{structperf__event__mmap__page_afa128cd2a30b7109031c85ce88bc6195}\label{structperf__event__mmap__page_afa128cd2a30b7109031c85ce88bc6195} 
+\+\_\+\+\_\+u64 {\bfseries time\+\_\+offset}
+\item 
+\Hypertarget{structperf__event__mmap__page_a9299aa2296e4f9cd200e34209691c3b6}\label{structperf__event__mmap__page_a9299aa2296e4f9cd200e34209691c3b6} 
+\+\_\+\+\_\+u64 {\bfseries time\+\_\+zero}
+\item 
+\Hypertarget{structperf__event__mmap__page_a88f07766be5a67a66df0a4bbd4ed837a}\label{structperf__event__mmap__page_a88f07766be5a67a66df0a4bbd4ed837a} 
+\+\_\+\+\_\+u32 {\bfseries size}
+\item 
+\Hypertarget{structperf__event__mmap__page_aa44fadd45b8e05ca5f5b63cbaa105148}\label{structperf__event__mmap__page_aa44fadd45b8e05ca5f5b63cbaa105148} 
+\+\_\+\+\_\+u32 {\bfseries \+\_\+\+\_\+reserved\+\_\+1}
+\item 
+\Hypertarget{structperf__event__mmap__page_a9f619e0f2497ba459aae31c62976f00f}\label{structperf__event__mmap__page_a9f619e0f2497ba459aae31c62976f00f} 
+\+\_\+\+\_\+u64 {\bfseries time\+\_\+cycles}
+\item 
+\Hypertarget{structperf__event__mmap__page_ab25ca016a54e75346abc5a0ff1948de2}\label{structperf__event__mmap__page_ab25ca016a54e75346abc5a0ff1948de2} 
+\+\_\+\+\_\+u64 {\bfseries time\+\_\+mask}
+\item 
+\Hypertarget{structperf__event__mmap__page_afe35ca2a4e18c49645d4039b75a8e791}\label{structperf__event__mmap__page_afe35ca2a4e18c49645d4039b75a8e791} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+reserved} \+[928]\+
+\item 
+\Hypertarget{structperf__event__mmap__page_a030d0fccedd320417f2c53f966b0a4c7}\label{structperf__event__mmap__page_a030d0fccedd320417f2c53f966b0a4c7} 
+\+\_\+\+\_\+u64 {\bfseries data\+\_\+head}
+\item 
+\Hypertarget{structperf__event__mmap__page_a3c83d1f1ce1ddf3927ed879c352bf5cc}\label{structperf__event__mmap__page_a3c83d1f1ce1ddf3927ed879c352bf5cc} 
+\+\_\+\+\_\+u64 {\bfseries data\+\_\+tail}
+\item 
+\Hypertarget{structperf__event__mmap__page_ae1383008d7eaf7c51dab20a0c3c7c142}\label{structperf__event__mmap__page_ae1383008d7eaf7c51dab20a0c3c7c142} 
+\+\_\+\+\_\+u64 {\bfseries data\+\_\+offset}
+\item 
+\Hypertarget{structperf__event__mmap__page_a0e92b4f8604b9c091b9bcff4ce02c0b1}\label{structperf__event__mmap__page_a0e92b4f8604b9c091b9bcff4ce02c0b1} 
+\+\_\+\+\_\+u64 {\bfseries data\+\_\+size}
+\item 
+\Hypertarget{structperf__event__mmap__page_a1348cfc954d4c135b506710e99c1f115}\label{structperf__event__mmap__page_a1348cfc954d4c135b506710e99c1f115} 
+\+\_\+\+\_\+u64 {\bfseries aux\+\_\+head}
+\item 
+\Hypertarget{structperf__event__mmap__page_aea026d2b10ac15f6d91d1d876c4c9d72}\label{structperf__event__mmap__page_aea026d2b10ac15f6d91d1d876c4c9d72} 
+\+\_\+\+\_\+u64 {\bfseries aux\+\_\+tail}
+\item 
+\Hypertarget{structperf__event__mmap__page_aa6cb9c3a943f47d417608cc50a0e1800}\label{structperf__event__mmap__page_aa6cb9c3a943f47d417608cc50a0e1800} 
+\+\_\+\+\_\+u64 {\bfseries aux\+\_\+offset}
+\item 
+\Hypertarget{structperf__event__mmap__page_a06fb9f7e49ef1079c421d96c653e616a}\label{structperf__event__mmap__page_a06fb9f7e49ef1079c421d96c653e616a} 
+\+\_\+\+\_\+u64 {\bfseries aux\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

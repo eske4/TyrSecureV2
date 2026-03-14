@@ -1,0 +1,118 @@
+\doxysection{regulator\+\_\+ops Struct Reference}
+\hypertarget{structregulator__ops}{}\label{structregulator__ops}\index{regulator\_ops@{regulator\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structregulator__ops_a19d167133239a05872d664788e53f648}\label{structregulator__ops_a19d167133239a05872d664788e53f648} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries list\+\_\+voltage} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregulator__ops_adb2a8b67895cd794317de4827c785f0e}\label{structregulator__ops_adb2a8b67895cd794317de4827c785f0e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+voltage} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int, int, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_a768a2525d675d1d1acb6a2b2c3cc5bc9}\label{structregulator__ops_a768a2525d675d1d1acb6a2b2c3cc5bc9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+voltage} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structregulator__ops_a9a3413c675c0ca0c1da4c224f271b46b}\label{structregulator__ops_a9a3413c675c0ca0c1da4c224f271b46b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+voltage\+\_\+sel} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregulator__ops_a4089d687a0633dc151dc88df6a6921b0}\label{structregulator__ops_a4089d687a0633dc151dc88df6a6921b0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+voltage} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_afcff0c2153621cb36043112056831bbc}\label{structregulator__ops_afcff0c2153621cb36043112056831bbc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+voltage\+\_\+sel} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_adc84cb889d9e4ec75f27617af83f419a}\label{structregulator__ops_adc84cb889d9e4ec75f27617af83f419a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+current\+\_\+limit} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structregulator__ops_af2e0e061e3f94c2c1f6f539573e70bbf}\label{structregulator__ops_af2e0e061e3f94c2c1f6f539573e70bbf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+current\+\_\+limit} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_a392a496bf9d83c099acd237f0b402e34}\label{structregulator__ops_a392a496bf9d83c099acd237f0b402e34} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+input\+\_\+current\+\_\+limit} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structregulator__ops_a2647af313f5ece89c85743607bacb212}\label{structregulator__ops_a2647af313f5ece89c85743607bacb212} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+over\+\_\+current\+\_\+protection} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int, int, bool)
+\item 
+\Hypertarget{structregulator__ops_a4a0dcb6a707ea5d2327f2828ccf61b59}\label{structregulator__ops_a4a0dcb6a707ea5d2327f2828ccf61b59} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+over\+\_\+voltage\+\_\+protection} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int, int, bool)
+\item 
+\Hypertarget{structregulator__ops_a1c93bcd48e79e38b43428337fdb1d6b0}\label{structregulator__ops_a1c93bcd48e79e38b43428337fdb1d6b0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+under\+\_\+voltage\+\_\+protection} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int, int, bool)
+\item 
+\Hypertarget{structregulator__ops_a6b7912e3b295de1f60e4c0d3e925d34d}\label{structregulator__ops_a6b7912e3b295de1f60e4c0d3e925d34d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+thermal\+\_\+protection} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int, int, bool)
+\item 
+\Hypertarget{structregulator__ops_ad2a6735def9205f7d284ccca0efb88f5}\label{structregulator__ops_ad2a6735def9205f7d284ccca0efb88f5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+active\+\_\+discharge} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structregulator__ops_a4b87ecd2c43faaba086f49a596f86c89}\label{structregulator__ops_a4b87ecd2c43faaba086f49a596f86c89} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_a013929dc08f03573868546463dfe0f88}\label{structregulator__ops_a013929dc08f03573868546463dfe0f88} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries disable} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_a4eb5dfb4f757baf4fde229e8f39025a8}\label{structregulator__ops_a4eb5dfb4f757baf4fde229e8f39025a8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+enabled} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_a4f649a985ecf24f3b2c07816a2eec421}\label{structregulator__ops_a4f649a985ecf24f3b2c07816a2eec421} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+mode} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregulator__ops_a6d735df36487e044efc7ce199e58efb0}\label{structregulator__ops_a6d735df36487e044efc7ce199e58efb0} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+mode} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_aa0b9a7a5a45cfd8ee6e1bdacb47fd7d6}\label{structregulator__ops_aa0b9a7a5a45cfd8ee6e1bdacb47fd7d6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+error\+\_\+flags} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_a081456bb8b0b32d22880f03fec98b868}\label{structregulator__ops_a081456bb8b0b32d22880f03fec98b868} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+time} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_a2edba39e493d4cb3cdbdf5620dc54a01}\label{structregulator__ops_a2edba39e493d4cb3cdbdf5620dc54a01} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+ramp\+\_\+delay} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structregulator__ops_ab24e827b1b059bd644123108edf01d3a}\label{structregulator__ops_ab24e827b1b059bd644123108edf01d3a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+voltage\+\_\+time} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structregulator__ops_a843430f0159e6053971a4f4e770cc46d}\label{structregulator__ops_a843430f0159e6053971a4f4e770cc46d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+voltage\+\_\+time\+\_\+sel} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structregulator__ops_ac75b11bfea94e01e5b8be8a611acfee9}\label{structregulator__ops_ac75b11bfea94e01e5b8be8a611acfee9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+soft\+\_\+start} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_af03b20c211edbb249c9afb9311d8c4a7}\label{structregulator__ops_af03b20c211edbb249c9afb9311d8c4a7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+status} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_a87aeb7cc5dc3f4ae6101c83bfe34e36e}\label{structregulator__ops_a87aeb7cc5dc3f4ae6101c83bfe34e36e} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+optimum\+\_\+mode} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int, int, int)
+\item 
+\Hypertarget{structregulator__ops_a2ca2d6cfc2a936c43ca1bd50d851aa60}\label{structregulator__ops_a2ca2d6cfc2a936c43ca1bd50d851aa60} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+load} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structregulator__ops_a01d85edb83e436901ec06eb737eb5204}\label{structregulator__ops_a01d85edb83e436901ec06eb737eb5204} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+bypass} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structregulator__ops_a9f134939b337eccd596f3549f8896b63}\label{structregulator__ops_a9f134939b337eccd596f3549f8896b63} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+bypass} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, bool \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_a19283877fa02f3dee3d0a06441baf435}\label{structregulator__ops_a19283877fa02f3dee3d0a06441baf435} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+suspend\+\_\+voltage} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structregulator__ops_a5802d066812db02110ede6f736e368a2}\label{structregulator__ops_a5802d066812db02110ede6f736e368a2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+suspend\+\_\+enable} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_ad1acf191baba13375b5070a1a21f7787}\label{structregulator__ops_ad1acf191baba13375b5070a1a21f7787} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+suspend\+\_\+disable} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_adbfbedc455479f63a89978c558c78f29}\label{structregulator__ops_adbfbedc455479f63a89978c558c78f29} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+suspend\+\_\+mode} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregulator__ops_ab91cf0077948e5bda1ab428f783d10ef}\label{structregulator__ops_ab91cf0077948e5bda1ab428f783d10ef} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__ops_ae86e6418b4d886fda7dbb46c55e724a2}\label{structregulator__ops_ae86e6418b4d886fda7dbb46c55e724a2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+pull\+\_\+down} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

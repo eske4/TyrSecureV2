@@ -1,0 +1,28 @@
+\doxysection{landlock\+\_\+object Struct Reference}
+\hypertarget{structlandlock__object}{}\label{structlandlock__object}\index{landlock\_object@{landlock\_object}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structlandlock__object_a8b3ce64d9c4cdee02895a8c248b90521}\label{structlandlock__object_a8b3ce64d9c4cdee02895a8c248b90521} 
+refcount\+\_\+t {\bfseries usage}
+\item 
+\Hypertarget{structlandlock__object_a5693a5ddd6f0c1a74ba9f57fc80a4a9a}\label{structlandlock__object_a5693a5ddd6f0c1a74ba9f57fc80a4a9a} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structlandlock__object_a677d18fb0de0973da82fae630ad84dcc}\label{structlandlock__object_a677d18fb0de0973da82fae630ad84dcc} 
+void \texorpdfstring{$\ast$}{*} {\bfseries underobj}
+\item 
+\Hypertarget{structlandlock__object_ad0c6a8f9f449d5662428652658a218cf}\label{structlandlock__object_ad0c6a8f9f449d5662428652658a218cf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries rcu\_free}\\
+\>const struct \doxymbox{\hyperlink{structlandlock__object__underops}{landlock\_object\_underops}} \texorpdfstring{$\ast$}{*} {\bfseries underops}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

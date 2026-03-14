@@ -1,0 +1,55 @@
+\doxysection{usbdevfs\+\_\+urb Struct Reference}
+\hypertarget{structusbdevfs__urb}{}\label{structusbdevfs__urb}\index{usbdevfs\_urb@{usbdevfs\_urb}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusbdevfs__urb_a73af1ab082a66b8e486ad4289540801c}\label{structusbdevfs__urb_a73af1ab082a66b8e486ad4289540801c} 
+unsigned char {\bfseries type}
+\item 
+\Hypertarget{structusbdevfs__urb_a944bed858d6e13d32cefc56d405ca6a8}\label{structusbdevfs__urb_a944bed858d6e13d32cefc56d405ca6a8} 
+unsigned char {\bfseries endpoint}
+\item 
+\Hypertarget{structusbdevfs__urb_a3f21e96fd5167659ca0f1d9ae1c904bf}\label{structusbdevfs__urb_a3f21e96fd5167659ca0f1d9ae1c904bf} 
+int {\bfseries status}
+\item 
+\Hypertarget{structusbdevfs__urb_a25a5d25b256397c3d1beddfa29d46702}\label{structusbdevfs__urb_a25a5d25b256397c3d1beddfa29d46702} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structusbdevfs__urb_a44b7cd56e086d3e0cdc78170f9598189}\label{structusbdevfs__urb_a44b7cd56e086d3e0cdc78170f9598189} 
+void \texorpdfstring{$\ast$}{*} {\bfseries buffer}
+\item 
+\Hypertarget{structusbdevfs__urb_a87cf7c80943f36464ba3eb4bf81514c4}\label{structusbdevfs__urb_a87cf7c80943f36464ba3eb4bf81514c4} 
+int {\bfseries buffer\+\_\+length}
+\item 
+\Hypertarget{structusbdevfs__urb_af30a87ac6704a0e7da43bed528137f3b}\label{structusbdevfs__urb_af30a87ac6704a0e7da43bed528137f3b} 
+int {\bfseries actual\+\_\+length}
+\item 
+\Hypertarget{structusbdevfs__urb_a2197485dcf832f41d70f060160554328}\label{structusbdevfs__urb_a2197485dcf832f41d70f060160554328} 
+int {\bfseries start\+\_\+frame}
+\item 
+\Hypertarget{structusbdevfs__urb_acad1e62eac5ed219f19b37b6e35bef9f}\label{structusbdevfs__urb_acad1e62eac5ed219f19b37b6e35bef9f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int {\bfseries number\_of\_packets}\\
+\>unsigned int {\bfseries stream\_id}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structusbdevfs__urb_aa1c5fe31578a88c1f3d87cc3c6ca3204}\label{structusbdevfs__urb_aa1c5fe31578a88c1f3d87cc3c6ca3204} 
+int {\bfseries error\+\_\+count}
+\item 
+\Hypertarget{structusbdevfs__urb_a373b6b1ff18170e1d32d883962697a0f}\label{structusbdevfs__urb_a373b6b1ff18170e1d32d883962697a0f} 
+unsigned int {\bfseries signr}
+\item 
+\Hypertarget{structusbdevfs__urb_a7ef4b5552487409939663dd7f1662d87}\label{structusbdevfs__urb_a7ef4b5552487409939663dd7f1662d87} 
+void \texorpdfstring{$\ast$}{*} {\bfseries usercontext}
+\item 
+\Hypertarget{structusbdevfs__urb_a4d7755ed2f4771fdfcfd80e7ddc76105}\label{structusbdevfs__urb_a4d7755ed2f4771fdfcfd80e7ddc76105} 
+struct \doxymbox{\hyperlink{structusbdevfs__iso__packet__desc}{usbdevfs\+\_\+iso\+\_\+packet\+\_\+desc}} {\bfseries iso\+\_\+frame\+\_\+desc} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{tcp\+\_\+key Struct Reference}
+\hypertarget{structtcp__key}{}\label{structtcp__key}\index{tcp\_key@{tcp\_key}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtcp__key_a7005566dead8de143d8b2cee26fdff23}\label{structtcp__key_a7005566dead8de143d8b2cee26fdff23} 
+enum \{ {\bfseries TCP\+\_\+\+KEY\+\_\+\+NONE} = 0
+, {\bfseries TCP\+\_\+\+KEY\+\_\+\+MD5} = 1
+, {\bfseries TCP\+\_\+\+KEY\+\_\+\+AO} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtcp__key_a055bfe4e8e044bc15b6a28d33cc041ed}\label{structtcp__key_a055bfe4e8e044bc15b6a28d33cc041ed} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{uniontcp__key_1_1_0d245371037317107275357213244274365064203271253130_a42f3af067da0af5a983bb4edac36d199}\label{uniontcp__key_1_1_0d245371037317107275357213244274365064203271253130_a42f3af067da0af5a983bb4edac36d199} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structtcp__ao__key}{tcp\_ao\_key}} \texorpdfstring{$\ast$}{*} {\bfseries ao\_key}\\
+\>\>char \texorpdfstring{$\ast$}{*} {\bfseries traffic\_key}\\
+\>\>u32 {\bfseries sne}\\
+\>\>u8 {\bfseries rcv\_next}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structtcp__md5sig__key}{tcp\_md5sig\_key}} \texorpdfstring{$\ast$}{*} {\bfseries md5\_key}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structtcp__key_a5a32b8c52c042a8c74eb2f30309077d8}\label{structtcp__key_a5a32b8c52c042a8c74eb2f30309077d8} 
+enum tcp\+\_\+key::\+ \{ ... \}  {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

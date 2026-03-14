@@ -1,0 +1,112 @@
+\doxysection{ohci\+\_\+hcd Struct Reference}
+\hypertarget{structohci__hcd}{}\label{structohci__hcd}\index{ohci\_hcd@{ohci\_hcd}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structohci__hcd_ae9a00febe0625b7ae5dad5ec6d1b3edc}\label{structohci__hcd_ae9a00febe0625b7ae5dad5ec6d1b3edc} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structohci__hcd_af73bf8f3de1f2595187af85d926b2e76}\label{structohci__hcd_af73bf8f3de1f2595187af85d926b2e76} 
+struct \doxymbox{\hyperlink{structohci__regs}{ohci\+\_\+regs}} \texorpdfstring{$\ast$}{*} {\bfseries regs}
+\item 
+\Hypertarget{structohci__hcd_a36b8d58de8045563a70bd4fd6eb8afe5}\label{structohci__hcd_a36b8d58de8045563a70bd4fd6eb8afe5} 
+struct \doxymbox{\hyperlink{structohci__hcca}{ohci\+\_\+hcca}} \texorpdfstring{$\ast$}{*} {\bfseries hcca}
+\item 
+\Hypertarget{structohci__hcd_a309d0c316a2b823126ac7d0306d338b0}\label{structohci__hcd_a309d0c316a2b823126ac7d0306d338b0} 
+dma\+\_\+addr\+\_\+t {\bfseries hcca\+\_\+dma}
+\item 
+\Hypertarget{structohci__hcd_a3d1c6eec44db8851f2398effed5e029a}\label{structohci__hcd_a3d1c6eec44db8851f2398effed5e029a} 
+struct \doxymbox{\hyperlink{structed}{ed}} \texorpdfstring{$\ast$}{*} {\bfseries ed\+\_\+rm\+\_\+list}
+\item 
+\Hypertarget{structohci__hcd_abbbaec5f06d9133e7d091af493e8b4e0}\label{structohci__hcd_abbbaec5f06d9133e7d091af493e8b4e0} 
+struct \doxymbox{\hyperlink{structed}{ed}} \texorpdfstring{$\ast$}{*} {\bfseries ed\+\_\+bulktail}
+\item 
+\Hypertarget{structohci__hcd_a03e426269a9fb64e2af0f098a8acb3e8}\label{structohci__hcd_a03e426269a9fb64e2af0f098a8acb3e8} 
+struct \doxymbox{\hyperlink{structed}{ed}} \texorpdfstring{$\ast$}{*} {\bfseries ed\+\_\+controltail}
+\item 
+\Hypertarget{structohci__hcd_a391df449d2d52851c05359c7a1cdcb3c}\label{structohci__hcd_a391df449d2d52851c05359c7a1cdcb3c} 
+struct \doxymbox{\hyperlink{structed}{ed}} \texorpdfstring{$\ast$}{*} {\bfseries periodic} \+[32]\+
+\item 
+\Hypertarget{structohci__hcd_a315d08e4903ef8ec66e190895fba151e}\label{structohci__hcd_a315d08e4903ef8ec66e190895fba151e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries start\+\_\+hnp} )(struct \doxymbox{\hyperlink{structohci__hcd}{ohci\+\_\+hcd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structohci__hcd_a55a93d32f9ef226de74531347a771da4}\label{structohci__hcd_a55a93d32f9ef226de74531347a771da4} 
+struct \doxymbox{\hyperlink{structdma__pool}{dma\+\_\+pool}} \texorpdfstring{$\ast$}{*} {\bfseries td\+\_\+cache}
+\item 
+\Hypertarget{structohci__hcd_a18d7343802ede507172ff85b3053694d}\label{structohci__hcd_a18d7343802ede507172ff85b3053694d} 
+struct \doxymbox{\hyperlink{structdma__pool}{dma\+\_\+pool}} \texorpdfstring{$\ast$}{*} {\bfseries ed\+\_\+cache}
+\item 
+\Hypertarget{structohci__hcd_a09b539ec6d051aabe8599be2e5e4fc96}\label{structohci__hcd_a09b539ec6d051aabe8599be2e5e4fc96} 
+struct \doxymbox{\hyperlink{structtd}{td}} \texorpdfstring{$\ast$}{*} {\bfseries td\+\_\+hash} \+[64]\+
+\item 
+\Hypertarget{structohci__hcd_ac0aadfcbff3c8102f58eb4aa4d1c2c93}\label{structohci__hcd_ac0aadfcbff3c8102f58eb4aa4d1c2c93} 
+struct \doxymbox{\hyperlink{structtd}{td}} \texorpdfstring{$\ast$}{*} {\bfseries dl\+\_\+start}
+\item 
+\Hypertarget{structohci__hcd_a3bbc7887a6c67762e82c4be8dac11226}\label{structohci__hcd_a3bbc7887a6c67762e82c4be8dac11226} 
+struct \doxymbox{\hyperlink{structtd}{td}} \texorpdfstring{$\ast$}{*} {\bfseries dl\+\_\+end}
+\item 
+\Hypertarget{structohci__hcd_ada0619f380b8a0a3f22061ef0136233f}\label{structohci__hcd_ada0619f380b8a0a3f22061ef0136233f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pending}
+\item 
+\Hypertarget{structohci__hcd_ae93a6b3a1d94adaedbd7f9537a34e7ae}\label{structohci__hcd_ae93a6b3a1d94adaedbd7f9537a34e7ae} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries eds\+\_\+in\+\_\+use}
+\item 
+\Hypertarget{structohci__hcd_a349ac58e322203f7608de7899b378884}\label{structohci__hcd_a349ac58e322203f7608de7899b378884} 
+enum ohci\+\_\+rh\+\_\+state {\bfseries rh\+\_\+state}
+\item 
+\Hypertarget{structohci__hcd_a8b0b3464998fdacdc6a05b9a480b8c1a}\label{structohci__hcd_a8b0b3464998fdacdc6a05b9a480b8c1a} 
+int {\bfseries num\+\_\+ports}
+\item 
+\Hypertarget{structohci__hcd_a35e1aa91f388718f67336beec565eda5}\label{structohci__hcd_a35e1aa91f388718f67336beec565eda5} 
+int {\bfseries load} \+[32]\+
+\item 
+\Hypertarget{structohci__hcd_a42ac97385a93ecfd4700ad7788d973a5}\label{structohci__hcd_a42ac97385a93ecfd4700ad7788d973a5} 
+u32 {\bfseries hc\+\_\+control}
+\item 
+\Hypertarget{structohci__hcd_aef46030f484bef30b946bfe494ad3dd0}\label{structohci__hcd_aef46030f484bef30b946bfe494ad3dd0} 
+long unsigned int {\bfseries next\+\_\+statechange}
+\item 
+\Hypertarget{structohci__hcd_a97311bb141ceb54ca3d4640059049360}\label{structohci__hcd_a97311bb141ceb54ca3d4640059049360} 
+u32 {\bfseries fminterval}
+\item 
+\Hypertarget{structohci__hcd_a56b36b70d5ae9597cb6b68e247ca35ed}\label{structohci__hcd_a56b36b70d5ae9597cb6b68e247ca35ed} 
+unsigned int {\bfseries autostop}:\+ 1
+\item 
+\Hypertarget{structohci__hcd_a684e174f04fb85224427fddad8aa8716}\label{structohci__hcd_a684e174f04fb85224427fddad8aa8716} 
+unsigned int {\bfseries working}:\+ 1
+\item 
+\Hypertarget{structohci__hcd_ad7190ea6b2e012f7e2db1baaf5199b1f}\label{structohci__hcd_ad7190ea6b2e012f7e2db1baaf5199b1f} 
+unsigned int {\bfseries restart\+\_\+work}:\+ 1
+\item 
+\Hypertarget{structohci__hcd_aed208b82ffabd3258349cb07ec2e2607}\label{structohci__hcd_aed208b82ffabd3258349cb07ec2e2607} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structohci__hcd_aca2afd0bafe7283a1b460d4c3170b2b1}\label{structohci__hcd_aca2afd0bafe7283a1b460d4c3170b2b1} 
+unsigned int {\bfseries prev\+\_\+frame\+\_\+no}
+\item 
+\Hypertarget{structohci__hcd_a300b0da03a975f4e202d7a978d9ef0fa}\label{structohci__hcd_a300b0da03a975f4e202d7a978d9ef0fa} 
+unsigned int {\bfseries wdh\+\_\+cnt}
+\item 
+\Hypertarget{structohci__hcd_a49c582d71c0d14e0be112834d2d04d15}\label{structohci__hcd_a49c582d71c0d14e0be112834d2d04d15} 
+unsigned int {\bfseries prev\+\_\+wdh\+\_\+cnt}
+\item 
+\Hypertarget{structohci__hcd_aa6e256f5f2444e7faa25c6899136a243}\label{structohci__hcd_aa6e256f5f2444e7faa25c6899136a243} 
+u32 {\bfseries prev\+\_\+donehead}
+\item 
+\Hypertarget{structohci__hcd_a36d845a58553fa77a5781d7ff514d307}\label{structohci__hcd_a36d845a58553fa77a5781d7ff514d307} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries io\+\_\+watchdog}
+\item 
+\Hypertarget{structohci__hcd_a8ccc4cb92b9c33ab82ac623a8e097084}\label{structohci__hcd_a8ccc4cb92b9c33ab82ac623a8e097084} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries nec\+\_\+work}
+\item 
+\Hypertarget{structohci__hcd_ab3e9cd82983a8080ee83637a251bbd21}\label{structohci__hcd_ab3e9cd82983a8080ee83637a251bbd21} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debug\+\_\+dir}
+\item 
+\Hypertarget{structohci__hcd_af46acf5f288accbe770d8976d5bc1b0e}\label{structohci__hcd_af46acf5f288accbe770d8976d5bc1b0e} 
+long unsigned int {\bfseries priv} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

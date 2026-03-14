@@ -1,0 +1,82 @@
+\doxysection{drm\+\_\+crtc\+\_\+funcs Struct Reference}
+\hypertarget{structdrm__crtc__funcs}{}\label{structdrm__crtc__funcs}\index{drm\_crtc\_funcs@{drm\_crtc\_funcs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__crtc__funcs_a3b10a29745e878358042e2c31a95f6bb}\label{structdrm__crtc__funcs_a3b10a29745e878358042e2c31a95f6bb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries reset} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_aa9313634875e344082b8e0430cc73fe3}\label{structdrm__crtc__funcs_aa9313634875e344082b8e0430cc73fe3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cursor\+\_\+set} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__file}{drm\+\_\+file}} \texorpdfstring{$\ast$}{*}, uint32\+\_\+t, uint32\+\_\+t, uint32\+\_\+t)
+\item 
+\Hypertarget{structdrm__crtc__funcs_aa30386ddec976d5e3d5fbed5c25e2610}\label{structdrm__crtc__funcs_aa30386ddec976d5e3d5fbed5c25e2610} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cursor\+\_\+set2} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__file}{drm\+\_\+file}} \texorpdfstring{$\ast$}{*}, uint32\+\_\+t, uint32\+\_\+t, uint32\+\_\+t, int32\+\_\+t, int32\+\_\+t)
+\item 
+\Hypertarget{structdrm__crtc__funcs_afbfd77b982d81d953662dae1c02b8e04}\label{structdrm__crtc__funcs_afbfd77b982d81d953662dae1c02b8e04} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cursor\+\_\+move} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structdrm__crtc__funcs_ace1fd44ac78f2b7076709579904e031f}\label{structdrm__crtc__funcs_ace1fd44ac78f2b7076709579904e031f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries gamma\+\_\+set} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, u16 \texorpdfstring{$\ast$}{*}, u16 \texorpdfstring{$\ast$}{*}, u16 \texorpdfstring{$\ast$}{*}, uint32\+\_\+t, struct \doxymbox{\hyperlink{structdrm__modeset__acquire__ctx}{drm\+\_\+modeset\+\_\+acquire\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_af1ff26e3c0a7b740fba5cea768d90e97}\label{structdrm__crtc__funcs_af1ff26e3c0a7b740fba5cea768d90e97} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a8e322ad2834f3efaa9bfc4fcc0f76ae0}\label{structdrm__crtc__funcs_a8e322ad2834f3efaa9bfc4fcc0f76ae0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+config} )(struct \doxymbox{\hyperlink{structdrm__mode__set}{drm\+\_\+mode\+\_\+set}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__modeset__acquire__ctx}{drm\+\_\+modeset\+\_\+acquire\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a9a2178ba8013e5ca9a47f747f7bfbf79}\label{structdrm__crtc__funcs_a9a2178ba8013e5ca9a47f747f7bfbf79} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries page\+\_\+flip} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__framebuffer}{drm\+\_\+framebuffer}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__pending__vblank__event}{drm\+\_\+pending\+\_\+vblank\+\_\+event}} \texorpdfstring{$\ast$}{*}, uint32\+\_\+t, struct \doxymbox{\hyperlink{structdrm__modeset__acquire__ctx}{drm\+\_\+modeset\+\_\+acquire\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a0f581694935d84b4f04bc7ba42849f9b}\label{structdrm__crtc__funcs_a0f581694935d84b4f04bc7ba42849f9b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries page\+\_\+flip\+\_\+target} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__framebuffer}{drm\+\_\+framebuffer}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__pending__vblank__event}{drm\+\_\+pending\+\_\+vblank\+\_\+event}} \texorpdfstring{$\ast$}{*}, uint32\+\_\+t, uint32\+\_\+t, struct \doxymbox{\hyperlink{structdrm__modeset__acquire__ctx}{drm\+\_\+modeset\+\_\+acquire\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a2279451974a4b8159b00e9a13c0c36d5}\label{structdrm__crtc__funcs_a2279451974a4b8159b00e9a13c0c36d5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+property} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*}, uint64\+\_\+t)
+\item 
+\Hypertarget{structdrm__crtc__funcs_ad755d9d31e08daf12e159e9cfee953b5}\label{structdrm__crtc__funcs_ad755d9d31e08daf12e159e9cfee953b5} 
+struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+duplicate\+\_\+state} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a7076e57a2a42d184237ce91b55ead29b}\label{structdrm__crtc__funcs_a7076e57a2a42d184237ce91b55ead29b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+destroy\+\_\+state} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a0e387d072053380172232820f5b6fd87}\label{structdrm__crtc__funcs_a0e387d072053380172232820f5b6fd87} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+set\+\_\+property} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*}, uint64\+\_\+t)
+\item 
+\Hypertarget{structdrm__crtc__funcs_a2d7d69f47b498ae26b5c7ca05cece946}\label{structdrm__crtc__funcs_a2d7d69f47b498ae26b5c7ca05cece946} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+get\+\_\+property} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*}, uint64\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a85660b19c7aa6088589c8f8ee8405d4e}\label{structdrm__crtc__funcs_a85660b19c7aa6088589c8f8ee8405d4e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries late\+\_\+register} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a94233f002196d57c75cfe2d0aef45223}\label{structdrm__crtc__funcs_a94233f002196d57c75cfe2d0aef45223} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries early\+\_\+unregister} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_ac3eeaedbc4b97f7a44eaec5584ceb1e7}\label{structdrm__crtc__funcs_ac3eeaedbc4b97f7a44eaec5584ceb1e7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+crc\+\_\+source} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a0074ffbbcc2fcfbfb868d2a0634363b2}\label{structdrm__crtc__funcs_a0074ffbbcc2fcfbfb868d2a0634363b2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries verify\+\_\+crc\+\_\+source} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, size\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a343b5460a9cdfff032b6f18acbf46527}\label{structdrm__crtc__funcs_a343b5460a9cdfff032b6f18acbf46527} 
+const char \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+crc\+\_\+sources} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, size\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a299392d7d68ed18bb75045dfbcc30b7e}\label{structdrm__crtc__funcs_a299392d7d68ed18bb75045dfbcc30b7e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+print\+\_\+state} )(struct \doxymbox{\hyperlink{structdrm__printer}{drm\+\_\+printer}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a5cbd0c0b17b8aac7a23a46c70973e379}\label{structdrm__crtc__funcs_a5cbd0c0b17b8aac7a23a46c70973e379} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+vblank\+\_\+counter} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a8cb16cd571d64a4bce3b8fa8c6ded794}\label{structdrm__crtc__funcs_a8cb16cd571d64a4bce3b8fa8c6ded794} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+vblank} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a49fb9ffe39b8230abe691d567e0bf1d6}\label{structdrm__crtc__funcs_a49fb9ffe39b8230abe691d567e0bf1d6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable\+\_\+vblank} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__crtc__funcs_a8cfac18759f592094109dc0bbb4ded95}\label{structdrm__crtc__funcs_a8cfac18759f592094109dc0bbb4ded95} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+vblank\+\_\+timestamp} )(struct \doxymbox{\hyperlink{structdrm__crtc}{drm\+\_\+crtc}} \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*}, ktime\+\_\+t \texorpdfstring{$\ast$}{*}, bool)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\doxysection{dentry Struct Reference}
+\hypertarget{structdentry}{}\label{structdentry}\index{dentry@{dentry}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdentry_a43c2c03e0e7a051e4c26fadf15165250}\label{structdentry_a43c2c03e0e7a051e4c26fadf15165250} 
+unsigned int {\bfseries d\+\_\+flags}
+\item 
+\Hypertarget{structdentry_ac6018917de2af59094eeb9d35d1969ab}\label{structdentry_ac6018917de2af59094eeb9d35d1969ab} 
+seqcount\+\_\+spinlock\+\_\+t {\bfseries d\+\_\+seq}
+\item 
+\Hypertarget{structdentry_a3f2404a959fb4eb173c5037860366998}\label{structdentry_a3f2404a959fb4eb173c5037860366998} 
+struct \doxymbox{\hyperlink{structhlist__bl__node}{hlist\+\_\+bl\+\_\+node}} {\bfseries d\+\_\+hash}
+\item 
+\Hypertarget{structdentry_a876c1dd6ae73dd90b5fb81f11ed0cf8d}\label{structdentry_a876c1dd6ae73dd90b5fb81f11ed0cf8d} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+parent}
+\item 
+\Hypertarget{structdentry_a80e91e66460a2112932b8259e84e057b}\label{structdentry_a80e91e66460a2112932b8259e84e057b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structqstr}{qstr}} {\bfseries \_\_d\_name}\\
+\>const struct \doxymbox{\hyperlink{structqstr}{qstr}} {\bfseries d\_name}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdentry_a517538c2ca34b95014556dfad2871697}\label{structdentry_a517538c2ca34b95014556dfad2871697} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+inode}
+\item 
+\Hypertarget{structdentry_ace19ea569e55f9e1eb45b95c60409ff6}\label{structdentry_ace19ea569e55f9e1eb45b95c60409ff6} 
+union \doxymbox{\hyperlink{unionshortname__store}{shortname\+\_\+store}} {\bfseries d\+\_\+shortname}
+\item 
+\Hypertarget{structdentry_a6d1745f0e67775784f5f266f9e15688a}\label{structdentry_a6d1745f0e67775784f5f266f9e15688a} 
+const struct \doxymbox{\hyperlink{structdentry__operations}{dentry\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+op}
+\item 
+\Hypertarget{structdentry_a6ca1879b0030933da3dd372d0030589a}\label{structdentry_a6ca1879b0030933da3dd372d0030589a} 
+struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+sb}
+\item 
+\Hypertarget{structdentry_a244bcd2430cf4c819c539e736bf1f07d}\label{structdentry_a244bcd2430cf4c819c539e736bf1f07d} 
+long unsigned int {\bfseries d\+\_\+time}
+\item 
+\Hypertarget{structdentry_abdbac41f199bb6d3aac67ba405bfca3c}\label{structdentry_abdbac41f199bb6d3aac67ba405bfca3c} 
+void \texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+fsdata}
+\item 
+\Hypertarget{structdentry_a6cb6576df5794ee724d0dc7bef5ca193}\label{structdentry_a6cb6576df5794ee724d0dc7bef5ca193} 
+struct \doxymbox{\hyperlink{structlockref}{lockref}} {\bfseries d\+\_\+lockref}
+\item 
+\Hypertarget{structdentry_a030ff5fa783ce642aa730c4bbc31d1ed}\label{structdentry_a030ff5fa783ce642aa730c4bbc31d1ed} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries d\_lru}\\
+\>wait\_queue\_head\_t \texorpdfstring{$\ast$}{*} {\bfseries d\_wait}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdentry_a0e1734d0e272de85a23bb3229d1383df}\label{structdentry_a0e1734d0e272de85a23bb3229d1383df} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries d\+\_\+sib}
+\item 
+\Hypertarget{structdentry_a20c2cef209279cd7f8e91cbe3f29946d}\label{structdentry_a20c2cef209279cd7f8e91cbe3f29946d} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries d\+\_\+children}
+\item 
+\Hypertarget{structdentry_aff6350606795daa8aa93a67b7d39be3c}\label{structdentry_aff6350606795daa8aa93a67b7d39be3c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries d\_alias}\\
+\>struct \doxymbox{\hyperlink{structhlist__bl__node}{hlist\_bl\_node}} {\bfseries d\_in\_lookup\_hash}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries d\_rcu}\\
+\} {\bfseries d\_u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

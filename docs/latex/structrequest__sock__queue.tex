@@ -1,0 +1,34 @@
+\doxysection{request\+\_\+sock\+\_\+queue Struct Reference}
+\hypertarget{structrequest__sock__queue}{}\label{structrequest__sock__queue}\index{request\_sock\_queue@{request\_sock\_queue}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrequest__sock__queue_ab16ff423f320c56007515e263fa07835}\label{structrequest__sock__queue_ab16ff423f320c56007515e263fa07835} 
+spinlock\+\_\+t {\bfseries rskq\+\_\+lock}
+\item 
+\Hypertarget{structrequest__sock__queue_ac281cc40037d6d05d948ff096b6e9570}\label{structrequest__sock__queue_ac281cc40037d6d05d948ff096b6e9570} 
+u8 {\bfseries rskq\+\_\+defer\+\_\+accept}
+\item 
+\Hypertarget{structrequest__sock__queue_a2d208da472952258c5330feb1d842d7b}\label{structrequest__sock__queue_a2d208da472952258c5330feb1d842d7b} 
+u8 {\bfseries synflood\+\_\+warned}
+\item 
+\Hypertarget{structrequest__sock__queue_af91476ed5651c9199e7a99775759824d}\label{structrequest__sock__queue_af91476ed5651c9199e7a99775759824d} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries qlen}
+\item 
+\Hypertarget{structrequest__sock__queue_afa4e9f373cbdc4cb9704146d84019255}\label{structrequest__sock__queue_afa4e9f373cbdc4cb9704146d84019255} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries young}
+\item 
+\Hypertarget{structrequest__sock__queue_a18810cb065f58aee42599d1b1eb90aa8}\label{structrequest__sock__queue_a18810cb065f58aee42599d1b1eb90aa8} 
+struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*} {\bfseries rskq\+\_\+accept\+\_\+head}
+\item 
+\Hypertarget{structrequest__sock__queue_a643667deaae7aafe31b8ff724b730e4b}\label{structrequest__sock__queue_a643667deaae7aafe31b8ff724b730e4b} 
+struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*} {\bfseries rskq\+\_\+accept\+\_\+tail}
+\item 
+\Hypertarget{structrequest__sock__queue_a7ac47fe5117e0a12d815fdfdabf9e703}\label{structrequest__sock__queue_a7ac47fe5117e0a12d815fdfdabf9e703} 
+struct \doxymbox{\hyperlink{structfastopen__queue}{fastopen\+\_\+queue}} {\bfseries fastopenq}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

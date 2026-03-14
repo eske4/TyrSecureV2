@@ -1,0 +1,79 @@
+\doxysection{uart\+\_\+8250\+\_\+dma Struct Reference}
+\hypertarget{structuart__8250__dma}{}\label{structuart__8250__dma}\index{uart\_8250\_dma@{uart\_8250\_dma}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structuart__8250__dma_aae547b88e7d2ab658abac106468d79f6}\label{structuart__8250__dma_aae547b88e7d2ab658abac106468d79f6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tx\+\_\+dma} )(struct \doxymbox{\hyperlink{structuart__8250__port}{uart\+\_\+8250\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__8250__dma_a4e7ea1decbb8c0010142c9e13b40c48d}\label{structuart__8250__dma_a4e7ea1decbb8c0010142c9e13b40c48d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+dma} )(struct \doxymbox{\hyperlink{structuart__8250__port}{uart\+\_\+8250\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__8250__dma_a3f25b2d819172b4c540da26c3466bb7d}\label{structuart__8250__dma_a3f25b2d819172b4c540da26c3466bb7d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+tx\+\_\+dma} )(struct \doxymbox{\hyperlink{structuart__8250__port}{uart\+\_\+8250\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__8250__dma_acf5353b4eb1ff7c0b9683f1955aec0e8}\label{structuart__8250__dma_acf5353b4eb1ff7c0b9683f1955aec0e8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+rx\+\_\+dma} )(struct \doxymbox{\hyperlink{structuart__8250__port}{uart\+\_\+8250\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__8250__dma_a5db8dd781283de9cecee2dfbf0bbfad9}\label{structuart__8250__dma_a5db8dd781283de9cecee2dfbf0bbfad9} 
+dma\+\_\+filter\+\_\+fn {\bfseries fn}
+\item 
+\Hypertarget{structuart__8250__dma_a0657ce2548df7e627f671ce21e099909}\label{structuart__8250__dma_a0657ce2548df7e627f671ce21e099909} 
+void \texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+param}
+\item 
+\Hypertarget{structuart__8250__dma_ac23050852c4176476aa078ea7e4d21a0}\label{structuart__8250__dma_ac23050852c4176476aa078ea7e4d21a0} 
+void \texorpdfstring{$\ast$}{*} {\bfseries tx\+\_\+param}
+\item 
+\Hypertarget{structuart__8250__dma_a98e3a4881d9580bd02ac377f0d27641e}\label{structuart__8250__dma_a98e3a4881d9580bd02ac377f0d27641e} 
+struct \doxymbox{\hyperlink{structdma__slave__config}{dma\+\_\+slave\+\_\+config}} {\bfseries rxconf}
+\item 
+\Hypertarget{structuart__8250__dma_a4695587b67e0eab5e03bb0ed28c137b0}\label{structuart__8250__dma_a4695587b67e0eab5e03bb0ed28c137b0} 
+struct \doxymbox{\hyperlink{structdma__slave__config}{dma\+\_\+slave\+\_\+config}} {\bfseries txconf}
+\item 
+\Hypertarget{structuart__8250__dma_a1e1c4f0fb26638459d9b80436f22f86b}\label{structuart__8250__dma_a1e1c4f0fb26638459d9b80436f22f86b} 
+struct \doxymbox{\hyperlink{structdma__chan}{dma\+\_\+chan}} \texorpdfstring{$\ast$}{*} {\bfseries rxchan}
+\item 
+\Hypertarget{structuart__8250__dma_a46350730d76946388a1bd82a4fd0da1a}\label{structuart__8250__dma_a46350730d76946388a1bd82a4fd0da1a} 
+struct \doxymbox{\hyperlink{structdma__chan}{dma\+\_\+chan}} \texorpdfstring{$\ast$}{*} {\bfseries txchan}
+\item 
+\Hypertarget{structuart__8250__dma_a939bac2cb17462596c3b2bc04152b2d5}\label{structuart__8250__dma_a939bac2cb17462596c3b2bc04152b2d5} 
+phys\+\_\+addr\+\_\+t {\bfseries rx\+\_\+dma\+\_\+addr}
+\item 
+\Hypertarget{structuart__8250__dma_a706895702553282fa80469b6ef1386d9}\label{structuart__8250__dma_a706895702553282fa80469b6ef1386d9} 
+phys\+\_\+addr\+\_\+t {\bfseries tx\+\_\+dma\+\_\+addr}
+\item 
+\Hypertarget{structuart__8250__dma_ae85d50259ae82ed14855110739b463c8}\label{structuart__8250__dma_ae85d50259ae82ed14855110739b463c8} 
+dma\+\_\+addr\+\_\+t {\bfseries rx\+\_\+addr}
+\item 
+\Hypertarget{structuart__8250__dma_a30f7c5c0b2aef506e19bdf4d66712131}\label{structuart__8250__dma_a30f7c5c0b2aef506e19bdf4d66712131} 
+dma\+\_\+addr\+\_\+t {\bfseries tx\+\_\+addr}
+\item 
+\Hypertarget{structuart__8250__dma_a1b1745dc365e7e0f59a96be01c0013df}\label{structuart__8250__dma_a1b1745dc365e7e0f59a96be01c0013df} 
+dma\+\_\+cookie\+\_\+t {\bfseries rx\+\_\+cookie}
+\item 
+\Hypertarget{structuart__8250__dma_a80efd8c6d05baf86a554df78d91323ce}\label{structuart__8250__dma_a80efd8c6d05baf86a554df78d91323ce} 
+dma\+\_\+cookie\+\_\+t {\bfseries tx\+\_\+cookie}
+\item 
+\Hypertarget{structuart__8250__dma_a0d5e69719ee181943d71982f0f01f830}\label{structuart__8250__dma_a0d5e69719ee181943d71982f0f01f830} 
+void \texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+buf}
+\item 
+\Hypertarget{structuart__8250__dma_acbadba371c5b839d61199a6a21942f12}\label{structuart__8250__dma_acbadba371c5b839d61199a6a21942f12} 
+size\+\_\+t {\bfseries rx\+\_\+size}
+\item 
+\Hypertarget{structuart__8250__dma_a731b7d198ee8bc8a2b597dd40e9e3985}\label{structuart__8250__dma_a731b7d198ee8bc8a2b597dd40e9e3985} 
+size\+\_\+t {\bfseries tx\+\_\+size}
+\item 
+\Hypertarget{structuart__8250__dma_abbb762c7416a82b87535f05f3e1541e1}\label{structuart__8250__dma_abbb762c7416a82b87535f05f3e1541e1} 
+unsigned char {\bfseries tx\+\_\+running}
+\item 
+\Hypertarget{structuart__8250__dma_a35346b9ec56cf148c9dde42051ec741b}\label{structuart__8250__dma_a35346b9ec56cf148c9dde42051ec741b} 
+unsigned char {\bfseries tx\+\_\+err}
+\item 
+\Hypertarget{structuart__8250__dma_a0df53fcee2797fc5759c13c2d87ff6aa}\label{structuart__8250__dma_a0df53fcee2797fc5759c13c2d87ff6aa} 
+unsigned char {\bfseries rx\+\_\+running}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

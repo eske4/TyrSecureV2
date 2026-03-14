@@ -1,0 +1,52 @@
+\doxysection{sctp\+\_\+stream\+\_\+interleave Struct Reference}
+\hypertarget{structsctp__stream__interleave}{}\label{structsctp__stream__interleave}\index{sctp\_stream\_interleave@{sctp\_stream\_interleave}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsctp__stream__interleave_a56c317809444d7d0a58cc119db9a2120}\label{structsctp__stream__interleave_a56c317809444d7d0a58cc119db9a2120} 
+\+\_\+\+\_\+u16 {\bfseries data\+\_\+chunk\+\_\+len}
+\item 
+\Hypertarget{structsctp__stream__interleave_a6f8e0ffd6f12cdb5632e853edf3bc71d}\label{structsctp__stream__interleave_a6f8e0ffd6f12cdb5632e853edf3bc71d} 
+\+\_\+\+\_\+u16 {\bfseries ftsn\+\_\+chunk\+\_\+len}
+\item 
+\Hypertarget{structsctp__stream__interleave_a36eb5a6b900d9aa9b93d25b5aaa136d9}\label{structsctp__stream__interleave_a36eb5a6b900d9aa9b93d25b5aaa136d9} 
+struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries make\+\_\+datafrag} )(const struct \doxymbox{\hyperlink{structsctp__association}{sctp\+\_\+association}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsctp__sndrcvinfo}{sctp\+\_\+sndrcvinfo}} \texorpdfstring{$\ast$}{*}, int, \+\_\+\+\_\+u8, gfp\+\_\+t)
+\item 
+\Hypertarget{structsctp__stream__interleave_ad724357a5ff56593b91a142eab175700}\label{structsctp__stream__interleave_ad724357a5ff56593b91a142eab175700} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries assign\+\_\+number} )(struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__stream__interleave_a6421e675e17a113678dab46e3fbfaf53}\label{structsctp__stream__interleave_a6421e675e17a113678dab46e3fbfaf53} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries validate\+\_\+data} )(struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__stream__interleave_a1486dec6fa932433435fa505514c3879}\label{structsctp__stream__interleave_a1486dec6fa932433435fa505514c3879} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ulpevent\+\_\+data} )(struct \doxymbox{\hyperlink{structsctp__ulpq}{sctp\+\_\+ulpq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{structsctp__stream__interleave_a47dfe116b568ee8eb43ee10fdf35ec3b}\label{structsctp__stream__interleave_a47dfe116b568ee8eb43ee10fdf35ec3b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enqueue\+\_\+event} )(struct \doxymbox{\hyperlink{structsctp__ulpq}{sctp\+\_\+ulpq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsctp__ulpevent}{sctp\+\_\+ulpevent}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__stream__interleave_a85af2d559a1c80b066e1e8b5705e636b}\label{structsctp__stream__interleave_a85af2d559a1c80b066e1e8b5705e636b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries renege\+\_\+events} )(struct \doxymbox{\hyperlink{structsctp__ulpq}{sctp\+\_\+ulpq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{structsctp__stream__interleave_ae94ad76b877298c9d819c6bddb0749b8}\label{structsctp__stream__interleave_ae94ad76b877298c9d819c6bddb0749b8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries start\+\_\+pd} )(struct \doxymbox{\hyperlink{structsctp__ulpq}{sctp\+\_\+ulpq}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{structsctp__stream__interleave_afada1fedc7f249792104ba1ffd536858}\label{structsctp__stream__interleave_afada1fedc7f249792104ba1ffd536858} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries abort\+\_\+pd} )(struct \doxymbox{\hyperlink{structsctp__ulpq}{sctp\+\_\+ulpq}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{structsctp__stream__interleave_a3d6210b0b29dbe860af8deb6a47610c0}\label{structsctp__stream__interleave_a3d6210b0b29dbe860af8deb6a47610c0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries generate\+\_\+ftsn} )(struct \doxymbox{\hyperlink{structsctp__outq}{sctp\+\_\+outq}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+u32)
+\item 
+\Hypertarget{structsctp__stream__interleave_a3dbf66f90ea6e2ec4c29c89f79830ad9}\label{structsctp__stream__interleave_a3dbf66f90ea6e2ec4c29c89f79830ad9} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries validate\+\_\+ftsn} )(struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__stream__interleave_a1f4c20ebb899d069d8f36857ccad1644}\label{structsctp__stream__interleave_a1f4c20ebb899d069d8f36857ccad1644} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries report\+\_\+ftsn} )(struct \doxymbox{\hyperlink{structsctp__ulpq}{sctp\+\_\+ulpq}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+u32)
+\item 
+\Hypertarget{structsctp__stream__interleave_a1c9b6ed488febb1bdc0396c088763a62}\label{structsctp__stream__interleave_a1c9b6ed488febb1bdc0396c088763a62} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+ftsn} )(struct \doxymbox{\hyperlink{structsctp__ulpq}{sctp\+\_\+ulpq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

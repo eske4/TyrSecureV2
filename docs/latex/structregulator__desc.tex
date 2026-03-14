@@ -1,0 +1,199 @@
+\doxysection{regulator\+\_\+desc Struct Reference}
+\hypertarget{structregulator__desc}{}\label{structregulator__desc}\index{regulator\_desc@{regulator\_desc}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structregulator__desc_a6bf0ee999d910d6a3ed8814d546f4c79}\label{structregulator__desc_a6bf0ee999d910d6a3ed8814d546f4c79} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structregulator__desc_a4b7cdec3debcd1e812b54a39fdf8e16e}\label{structregulator__desc_a4b7cdec3debcd1e812b54a39fdf8e16e} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries supply\+\_\+name}
+\item 
+\Hypertarget{structregulator__desc_a687ac767aaf747526a20fbad13f2e1ce}\label{structregulator__desc_a687ac767aaf747526a20fbad13f2e1ce} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries of\+\_\+match}
+\item 
+\Hypertarget{structregulator__desc_ad2e93616d16e682966c1b774bbff6587}\label{structregulator__desc_ad2e93616d16e682966c1b774bbff6587} 
+bool {\bfseries of\+\_\+match\+\_\+full\+\_\+name}
+\item 
+\Hypertarget{structregulator__desc_ac7aed6c9c3f5fd228bc28b838e02bb3e}\label{structregulator__desc_ac7aed6c9c3f5fd228bc28b838e02bb3e} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries regulators\+\_\+node}
+\item 
+\Hypertarget{structregulator__desc_a9bd4784a7eddd6f28a660786893d7562}\label{structregulator__desc_a9bd4784a7eddd6f28a660786893d7562} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries of\+\_\+parse\+\_\+cb} )(struct \doxymbox{\hyperlink{structdevice__node}{device\+\_\+node}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structregulator__desc}{regulator\+\_\+desc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structregulator__config}{regulator\+\_\+config}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__desc_a92ce339baf1314e8f02c7233d00d5e93}\label{structregulator__desc_a92ce339baf1314e8f02c7233d00d5e93} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+cb} )(struct \doxymbox{\hyperlink{structregulator__dev}{regulator\+\_\+dev}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structregulator__config}{regulator\+\_\+config}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregulator__desc_a25b664fde13934f920b6f2f16adf05d0}\label{structregulator__desc_a25b664fde13934f920b6f2f16adf05d0} 
+int {\bfseries id}
+\item 
+\Hypertarget{structregulator__desc_a044804b19a20b0e0f51c7e50f5bf541b}\label{structregulator__desc_a044804b19a20b0e0f51c7e50f5bf541b} 
+unsigned int {\bfseries continuous\+\_\+voltage\+\_\+range}:\+ 1
+\item 
+\Hypertarget{structregulator__desc_a6b524e36ca0044d782c4578824313cb7}\label{structregulator__desc_a6b524e36ca0044d782c4578824313cb7} 
+unsigned int {\bfseries n\+\_\+voltages}
+\item 
+\Hypertarget{structregulator__desc_a5c86cd77d731df68a2c5bf763e00f43c}\label{structregulator__desc_a5c86cd77d731df68a2c5bf763e00f43c} 
+unsigned int {\bfseries n\+\_\+current\+\_\+limits}
+\item 
+\Hypertarget{structregulator__desc_a2bb5a326c166d48a28caf73d517516cb}\label{structregulator__desc_a2bb5a326c166d48a28caf73d517516cb} 
+const struct \doxymbox{\hyperlink{structregulator__ops}{regulator\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structregulator__desc_a08d45f2f33d84a20afe78de7f218a553}\label{structregulator__desc_a08d45f2f33d84a20afe78de7f218a553} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structregulator__desc_a3d712e33b44e336aa6354c84dcaecc53}\label{structregulator__desc_a3d712e33b44e336aa6354c84dcaecc53} 
+enum regulator\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structregulator__desc_af14a3a16987d67f169e0a6234f604795}\label{structregulator__desc_af14a3a16987d67f169e0a6234f604795} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structregulator__desc_afc3bb6fc54fc7e022da368c021118a8d}\label{structregulator__desc_afc3bb6fc54fc7e022da368c021118a8d} 
+unsigned int {\bfseries min\+\_\+uV}
+\item 
+\Hypertarget{structregulator__desc_a9e602033c8892b07eb34be1c739f5eb7}\label{structregulator__desc_a9e602033c8892b07eb34be1c739f5eb7} 
+unsigned int {\bfseries u\+V\+\_\+step}
+\item 
+\Hypertarget{structregulator__desc_a44cd5ded16f7a5c54a2ae7696040a3ca}\label{structregulator__desc_a44cd5ded16f7a5c54a2ae7696040a3ca} 
+unsigned int {\bfseries linear\+\_\+min\+\_\+sel}
+\item 
+\Hypertarget{structregulator__desc_a954948bb7a1425cbf71006aa0da51d20}\label{structregulator__desc_a954948bb7a1425cbf71006aa0da51d20} 
+int {\bfseries fixed\+\_\+uV}
+\item 
+\Hypertarget{structregulator__desc_a3bbded03d87a81e5a4745e971f1b0c96}\label{structregulator__desc_a3bbded03d87a81e5a4745e971f1b0c96} 
+unsigned int {\bfseries ramp\+\_\+delay}
+\item 
+\Hypertarget{structregulator__desc_a6502d46397a68bd9b25757ade11f4456}\label{structregulator__desc_a6502d46397a68bd9b25757ade11f4456} 
+int {\bfseries min\+\_\+dropout\+\_\+uV}
+\item 
+\Hypertarget{structregulator__desc_a39e2f937cb0287fec5f5c7649a1ec4ca}\label{structregulator__desc_a39e2f937cb0287fec5f5c7649a1ec4ca} 
+const struct \doxymbox{\hyperlink{structlinear__range}{linear\+\_\+range}} \texorpdfstring{$\ast$}{*} {\bfseries linear\+\_\+ranges}
+\item 
+\Hypertarget{structregulator__desc_a4032244cc9aae2ac3ec3ce0f367aa06a}\label{structregulator__desc_a4032244cc9aae2ac3ec3ce0f367aa06a} 
+const unsigned int \texorpdfstring{$\ast$}{*} {\bfseries linear\+\_\+range\+\_\+selectors\+\_\+bitfield}
+\item 
+\Hypertarget{structregulator__desc_a4573b48ca5e2c89a3b2ab116f373d76d}\label{structregulator__desc_a4573b48ca5e2c89a3b2ab116f373d76d} 
+int {\bfseries n\+\_\+linear\+\_\+ranges}
+\item 
+\Hypertarget{structregulator__desc_abfd8ce4267b000d86c28872c03a47041}\label{structregulator__desc_abfd8ce4267b000d86c28872c03a47041} 
+const unsigned int \texorpdfstring{$\ast$}{*} {\bfseries volt\+\_\+table}
+\item 
+\Hypertarget{structregulator__desc_a1537ed2b4746e09079d7edbd70161397}\label{structregulator__desc_a1537ed2b4746e09079d7edbd70161397} 
+const unsigned int \texorpdfstring{$\ast$}{*} {\bfseries curr\+\_\+table}
+\item 
+\Hypertarget{structregulator__desc_add2ab652c7199f35f3a5066d212db94d}\label{structregulator__desc_add2ab652c7199f35f3a5066d212db94d} 
+unsigned int {\bfseries vsel\+\_\+range\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_affe9a5f04d0fcc1ae235593f7563b8d0}\label{structregulator__desc_affe9a5f04d0fcc1ae235593f7563b8d0} 
+unsigned int {\bfseries vsel\+\_\+range\+\_\+mask}
+\item 
+\Hypertarget{structregulator__desc_aded0db3870194877fd1a10cdd8b8c131}\label{structregulator__desc_aded0db3870194877fd1a10cdd8b8c131} 
+bool {\bfseries range\+\_\+applied\+\_\+by\+\_\+vsel}
+\item 
+\Hypertarget{structregulator__desc_afbc9fa81c9d7efb2a7d6d2a2fcb34487}\label{structregulator__desc_afbc9fa81c9d7efb2a7d6d2a2fcb34487} 
+unsigned int {\bfseries vsel\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_a1eb91118859ff69f8eef081e0f1f1148}\label{structregulator__desc_a1eb91118859ff69f8eef081e0f1f1148} 
+unsigned int {\bfseries vsel\+\_\+mask}
+\item 
+\Hypertarget{structregulator__desc_a7ebf992603c4845deae54d201e823f22}\label{structregulator__desc_a7ebf992603c4845deae54d201e823f22} 
+unsigned int {\bfseries vsel\+\_\+step}
+\item 
+\Hypertarget{structregulator__desc_ad196ac498fbfc9e0f97433e915bb7211}\label{structregulator__desc_ad196ac498fbfc9e0f97433e915bb7211} 
+unsigned int {\bfseries csel\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_ada90c114daafaa5ca0838d38cd4cf530}\label{structregulator__desc_ada90c114daafaa5ca0838d38cd4cf530} 
+unsigned int {\bfseries csel\+\_\+mask}
+\item 
+\Hypertarget{structregulator__desc_ad0ecc909a2b99054ee50e3eaf27faeb9}\label{structregulator__desc_ad0ecc909a2b99054ee50e3eaf27faeb9} 
+unsigned int {\bfseries apply\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_abc24f84fba21dc325f72cf0910b1feb8}\label{structregulator__desc_abc24f84fba21dc325f72cf0910b1feb8} 
+unsigned int {\bfseries apply\+\_\+bit}
+\item 
+\Hypertarget{structregulator__desc_a445bf6fa70f597c1a0a1fcd1a864c362}\label{structregulator__desc_a445bf6fa70f597c1a0a1fcd1a864c362} 
+unsigned int {\bfseries enable\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_a11bcedafaff89e344c543447cadfb99b}\label{structregulator__desc_a11bcedafaff89e344c543447cadfb99b} 
+unsigned int {\bfseries enable\+\_\+mask}
+\item 
+\Hypertarget{structregulator__desc_a306557d917fef1c3cf86613d56eb424a}\label{structregulator__desc_a306557d917fef1c3cf86613d56eb424a} 
+unsigned int {\bfseries enable\+\_\+val}
+\item 
+\Hypertarget{structregulator__desc_ae576925a6efc268a50a33504b795fd8a}\label{structregulator__desc_ae576925a6efc268a50a33504b795fd8a} 
+unsigned int {\bfseries disable\+\_\+val}
+\item 
+\Hypertarget{structregulator__desc_abe35e481cf72b30ff56c037e3ea4313f}\label{structregulator__desc_abe35e481cf72b30ff56c037e3ea4313f} 
+bool {\bfseries enable\+\_\+is\+\_\+inverted}
+\item 
+\Hypertarget{structregulator__desc_ad648fe9b9ed5435653357460c50176f1}\label{structregulator__desc_ad648fe9b9ed5435653357460c50176f1} 
+unsigned int {\bfseries bypass\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_a50eafac5296d92b0e289d7d4fba8527c}\label{structregulator__desc_a50eafac5296d92b0e289d7d4fba8527c} 
+unsigned int {\bfseries bypass\+\_\+mask}
+\item 
+\Hypertarget{structregulator__desc_a341453a23dec56a0d92fdfa4d795556d}\label{structregulator__desc_a341453a23dec56a0d92fdfa4d795556d} 
+unsigned int {\bfseries bypass\+\_\+val\+\_\+on}
+\item 
+\Hypertarget{structregulator__desc_ad7a91b96aaa3a1c56e3505d711d4a9b6}\label{structregulator__desc_ad7a91b96aaa3a1c56e3505d711d4a9b6} 
+unsigned int {\bfseries bypass\+\_\+val\+\_\+off}
+\item 
+\Hypertarget{structregulator__desc_afd0d27cecb6d7378aecc7fb3bb576ed1}\label{structregulator__desc_afd0d27cecb6d7378aecc7fb3bb576ed1} 
+unsigned int {\bfseries active\+\_\+discharge\+\_\+on}
+\item 
+\Hypertarget{structregulator__desc_a9a05bf4f6f43b5ec7af16b95a5c9e949}\label{structregulator__desc_a9a05bf4f6f43b5ec7af16b95a5c9e949} 
+unsigned int {\bfseries active\+\_\+discharge\+\_\+off}
+\item 
+\Hypertarget{structregulator__desc_aacc9c4689023162fee325dccf8178a2b}\label{structregulator__desc_aacc9c4689023162fee325dccf8178a2b} 
+unsigned int {\bfseries active\+\_\+discharge\+\_\+mask}
+\item 
+\Hypertarget{structregulator__desc_a5bbe7f548d7a4072a75e1232dae4e8f2}\label{structregulator__desc_a5bbe7f548d7a4072a75e1232dae4e8f2} 
+unsigned int {\bfseries active\+\_\+discharge\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_a23e08a5bcf4e8f95e3cf4292bad1d533}\label{structregulator__desc_a23e08a5bcf4e8f95e3cf4292bad1d533} 
+unsigned int {\bfseries soft\+\_\+start\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_a269d93988003dcc6d820ba1ceeb0dcc3}\label{structregulator__desc_a269d93988003dcc6d820ba1ceeb0dcc3} 
+unsigned int {\bfseries soft\+\_\+start\+\_\+mask}
+\item 
+\Hypertarget{structregulator__desc_ab8ec666498a923c9833a58354f662558}\label{structregulator__desc_ab8ec666498a923c9833a58354f662558} 
+unsigned int {\bfseries soft\+\_\+start\+\_\+val\+\_\+on}
+\item 
+\Hypertarget{structregulator__desc_a81930d10a9573cfa7ade3b3c2c80f898}\label{structregulator__desc_a81930d10a9573cfa7ade3b3c2c80f898} 
+unsigned int {\bfseries pull\+\_\+down\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_a9f2f8ae0c4a84a3c6e255c2156a4faea}\label{structregulator__desc_a9f2f8ae0c4a84a3c6e255c2156a4faea} 
+unsigned int {\bfseries pull\+\_\+down\+\_\+mask}
+\item 
+\Hypertarget{structregulator__desc_ad2517dafd515596dab8996552df7e9e7}\label{structregulator__desc_ad2517dafd515596dab8996552df7e9e7} 
+unsigned int {\bfseries pull\+\_\+down\+\_\+val\+\_\+on}
+\item 
+\Hypertarget{structregulator__desc_af2a73f03feaf1834734940821107fcd1}\label{structregulator__desc_af2a73f03feaf1834734940821107fcd1} 
+unsigned int {\bfseries ramp\+\_\+reg}
+\item 
+\Hypertarget{structregulator__desc_a6e1df9bfb1155621f8a4567497b9a5ca}\label{structregulator__desc_a6e1df9bfb1155621f8a4567497b9a5ca} 
+unsigned int {\bfseries ramp\+\_\+mask}
+\item 
+\Hypertarget{structregulator__desc_a059ab5ba48a6ee84c4a7f6bf6e01b38e}\label{structregulator__desc_a059ab5ba48a6ee84c4a7f6bf6e01b38e} 
+const unsigned int \texorpdfstring{$\ast$}{*} {\bfseries ramp\+\_\+delay\+\_\+table}
+\item 
+\Hypertarget{structregulator__desc_a92acbca534740f346fa26b9f859df169}\label{structregulator__desc_a92acbca534740f346fa26b9f859df169} 
+unsigned int {\bfseries n\+\_\+ramp\+\_\+values}
+\item 
+\Hypertarget{structregulator__desc_af39b262fbe8f1e72ea3757b1dde302f0}\label{structregulator__desc_af39b262fbe8f1e72ea3757b1dde302f0} 
+unsigned int {\bfseries enable\+\_\+time}
+\item 
+\Hypertarget{structregulator__desc_aecb3da346d6629d3cfa627022dc79c29}\label{structregulator__desc_aecb3da346d6629d3cfa627022dc79c29} 
+unsigned int {\bfseries off\+\_\+on\+\_\+delay}
+\item 
+\Hypertarget{structregulator__desc_a8cb5fa9b209bc0333db264b24ad56a22}\label{structregulator__desc_a8cb5fa9b209bc0333db264b24ad56a22} 
+unsigned int {\bfseries poll\+\_\+enabled\+\_\+time}
+\item 
+\Hypertarget{structregulator__desc_a02ad5b7717db25214d3312cf0cf8be96}\label{structregulator__desc_a02ad5b7717db25214d3312cf0cf8be96} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries of\+\_\+map\+\_\+mode} )(unsigned int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

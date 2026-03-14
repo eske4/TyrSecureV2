@@ -1,0 +1,76 @@
+\doxysection{usb\+\_\+bus Struct Reference}
+\hypertarget{structusb__bus}{}\label{structusb__bus}\index{usb\_bus@{usb\_bus}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusb__bus_ad0ee0c4a4a5d9dc75cdf323cfbf92014}\label{structusb__bus_ad0ee0c4a4a5d9dc75cdf323cfbf92014} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries controller}
+\item 
+\Hypertarget{structusb__bus_a01308edbfd74435e535e0850c7635195}\label{structusb__bus_a01308edbfd74435e535e0850c7635195} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries sysdev}
+\item 
+\Hypertarget{structusb__bus_a2f689cd977242aca8254ced1eb35b064}\label{structusb__bus_a2f689cd977242aca8254ced1eb35b064} 
+int {\bfseries busnum}
+\item 
+\Hypertarget{structusb__bus_a262a678f3911dedbb8d0962f89d1e958}\label{structusb__bus_a262a678f3911dedbb8d0962f89d1e958} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries bus\+\_\+name}
+\item 
+\Hypertarget{structusb__bus_aadc184cbe25a71e54162c20a70e5c9a8}\label{structusb__bus_aadc184cbe25a71e54162c20a70e5c9a8} 
+u8 {\bfseries uses\+\_\+pio\+\_\+for\+\_\+control}
+\item 
+\Hypertarget{structusb__bus_a065877920f64efe9a53fffeead8ad45e}\label{structusb__bus_a065877920f64efe9a53fffeead8ad45e} 
+u8 {\bfseries otg\+\_\+port}
+\item 
+\Hypertarget{structusb__bus_a77c2c339187b4fd542b47ba4a79c70f0}\label{structusb__bus_a77c2c339187b4fd542b47ba4a79c70f0} 
+unsigned int {\bfseries is\+\_\+b\+\_\+host}:\+ 1
+\item 
+\Hypertarget{structusb__bus_a8e49eacfead9282fbc8977aa1c94012e}\label{structusb__bus_a8e49eacfead9282fbc8977aa1c94012e} 
+unsigned int {\bfseries b\+\_\+hnp\+\_\+enable}:\+ 1
+\item 
+\Hypertarget{structusb__bus_a8ceea2954615321af39078777535d91b}\label{structusb__bus_a8ceea2954615321af39078777535d91b} 
+unsigned int {\bfseries no\+\_\+stop\+\_\+on\+\_\+short}:\+ 1
+\item 
+\Hypertarget{structusb__bus_ae7cadd5230d8a1ca335e1fbde8d62073}\label{structusb__bus_ae7cadd5230d8a1ca335e1fbde8d62073} 
+unsigned int {\bfseries no\+\_\+sg\+\_\+constraint}:\+ 1
+\item 
+\Hypertarget{structusb__bus_a563d5fb863d8f22816cadb294c641ad9}\label{structusb__bus_a563d5fb863d8f22816cadb294c641ad9} 
+unsigned int {\bfseries sg\+\_\+tablesize}
+\item 
+\Hypertarget{structusb__bus_aedd525755938554e9cb660502422be3b}\label{structusb__bus_aedd525755938554e9cb660502422be3b} 
+int {\bfseries devnum\+\_\+next}
+\item 
+\Hypertarget{structusb__bus_aca3c84fbb324ed7f6e3ea5f5983f5a2e}\label{structusb__bus_aca3c84fbb324ed7f6e3ea5f5983f5a2e} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries devnum\+\_\+next\+\_\+mutex}
+\item 
+\Hypertarget{structusb__bus_acef39880f9ed39f0dd36d71f3cd1eca8}\label{structusb__bus_acef39880f9ed39f0dd36d71f3cd1eca8} 
+long unsigned int {\bfseries devmap} \+[2]\+
+\item 
+\Hypertarget{structusb__bus_ae2e9879c9c35766b19aed6999a782689}\label{structusb__bus_ae2e9879c9c35766b19aed6999a782689} 
+struct \doxymbox{\hyperlink{structusb__device}{usb\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries root\+\_\+hub}
+\item 
+\Hypertarget{structusb__bus_a3cd397b5636f72feee3331e222948830}\label{structusb__bus_a3cd397b5636f72feee3331e222948830} 
+struct \doxymbox{\hyperlink{structusb__bus}{usb\+\_\+bus}} \texorpdfstring{$\ast$}{*} {\bfseries hs\+\_\+companion}
+\item 
+\Hypertarget{structusb__bus_a77cf8495c01642e3557e14775c8d7e29}\label{structusb__bus_a77cf8495c01642e3557e14775c8d7e29} 
+int {\bfseries bandwidth\+\_\+allocated}
+\item 
+\Hypertarget{structusb__bus_aff944e6d5bc252fc47c80dc024552977}\label{structusb__bus_aff944e6d5bc252fc47c80dc024552977} 
+int {\bfseries bandwidth\+\_\+int\+\_\+reqs}
+\item 
+\Hypertarget{structusb__bus_a96fe0014e75711d2dd5aa2cfdd92851f}\label{structusb__bus_a96fe0014e75711d2dd5aa2cfdd92851f} 
+int {\bfseries bandwidth\+\_\+isoc\+\_\+reqs}
+\item 
+\Hypertarget{structusb__bus_a0c5e50f0a0860484f7a5d6dc9666ccf3}\label{structusb__bus_a0c5e50f0a0860484f7a5d6dc9666ccf3} 
+unsigned int {\bfseries resuming\+\_\+ports}
+\item 
+\Hypertarget{structusb__bus_adc8c26fa888ecf3de705253ed005993e}\label{structusb__bus_adc8c26fa888ecf3de705253ed005993e} 
+struct mon\+\_\+bus \texorpdfstring{$\ast$}{*} {\bfseries mon\+\_\+bus}
+\item 
+\Hypertarget{structusb__bus_a64e5ef6e2e02ce827c6bf29142ef5b64}\label{structusb__bus_a64e5ef6e2e02ce827c6bf29142ef5b64} 
+int {\bfseries monitored}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

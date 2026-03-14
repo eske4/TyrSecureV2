@@ -1,0 +1,55 @@
+\doxysection{pstore\+\_\+info Struct Reference}
+\hypertarget{structpstore__info}{}\label{structpstore__info}\index{pstore\_info@{pstore\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpstore__info_aabbe2193e10177188779afc58536d31c}\label{structpstore__info_aabbe2193e10177188779afc58536d31c} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structpstore__info_ace479975bc56dcb510e6217c8f1d8aef}\label{structpstore__info_ace479975bc56dcb510e6217c8f1d8aef} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structpstore__info_ae9043fc51a1fdc570584869227221a09}\label{structpstore__info_ae9043fc51a1fdc570584869227221a09} 
+raw\+\_\+spinlock\+\_\+t {\bfseries buf\+\_\+lock}
+\item 
+\Hypertarget{structpstore__info_a21594c1b1347faa17e6c1265154111c0}\label{structpstore__info_a21594c1b1347faa17e6c1265154111c0} 
+char \texorpdfstring{$\ast$}{*} {\bfseries buf}
+\item 
+\Hypertarget{structpstore__info_ae1cacc9ebec20edf934fda682d79d819}\label{structpstore__info_ae1cacc9ebec20edf934fda682d79d819} 
+size\+\_\+t {\bfseries bufsize}
+\item 
+\Hypertarget{structpstore__info_a7ffebb7ea907be66c0ac9d87f809cf2a}\label{structpstore__info_a7ffebb7ea907be66c0ac9d87f809cf2a} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries read\+\_\+mutex}
+\item 
+\Hypertarget{structpstore__info_a8c63e6dddd62fc274b53ab32e14cfaa3}\label{structpstore__info_a8c63e6dddd62fc274b53ab32e14cfaa3} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structpstore__info_abf20ce8fdd085f166bd4d2d4bf38f74c}\label{structpstore__info_abf20ce8fdd085f166bd4d2d4bf38f74c} 
+int {\bfseries max\+\_\+reason}
+\item 
+\Hypertarget{structpstore__info_a7e6c766ae5c7a97815fbea81b9bd72e5}\label{structpstore__info_a7e6c766ae5c7a97815fbea81b9bd72e5} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structpstore__info_af099c64408cc4904df67e9c158eef1e1}\label{structpstore__info_af099c64408cc4904df67e9c158eef1e1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structpstore__info}{pstore\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpstore__info_a0ab7ccfdd457698cd904ceb667b92121}\label{structpstore__info_a0ab7ccfdd457698cd904ceb667b92121} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries close} )(struct \doxymbox{\hyperlink{structpstore__info}{pstore\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpstore__info_a1cfeaa39f83d6656c4c152c17e7ef856}\label{structpstore__info_a1cfeaa39f83d6656c4c152c17e7ef856} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structpstore__record}{pstore\+\_\+record}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpstore__info_a4d944ce26dad666acc54e91cef6ae12f}\label{structpstore__info_a4d944ce26dad666acc54e91cef6ae12f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structpstore__record}{pstore\+\_\+record}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpstore__info_ad1272a353eb5857ccac0b123caba97e1}\label{structpstore__info_ad1272a353eb5857ccac0b123caba97e1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+user} )(struct \doxymbox{\hyperlink{structpstore__record}{pstore\+\_\+record}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpstore__info_adef338a9c59cbe165650c2fb6ea606db}\label{structpstore__info_adef338a9c59cbe165650c2fb6ea606db} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries erase} )(struct \doxymbox{\hyperlink{structpstore__record}{pstore\+\_\+record}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

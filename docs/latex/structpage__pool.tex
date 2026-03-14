@@ -1,0 +1,168 @@
+\doxysection{page\+\_\+pool Struct Reference}
+\hypertarget{structpage__pool}{}\label{structpage__pool}\index{page\_pool@{page\_pool}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpage__pool_a8dfe8abaaa38b5933dfe319e08a8dfdd}\label{structpage__pool_a8dfe8abaaa38b5933dfe319e08a8dfdd} 
+struct \doxymbox{\hyperlink{structpage__pool__params__fast}{page\+\_\+pool\+\_\+params\+\_\+fast}} {\bfseries p}
+\item 
+\Hypertarget{structpage__pool_a1a7c2511e1f71839f463d2645ca19a32}\label{structpage__pool_a1a7c2511e1f71839f463d2645ca19a32} 
+int {\bfseries cpuid}
+\item 
+\Hypertarget{structpage__pool_a986e44e7844f3364488a51a6c78fa426}\label{structpage__pool_a986e44e7844f3364488a51a6c78fa426} 
+u32 {\bfseries pages\+\_\+state\+\_\+hold\+\_\+cnt}
+\item 
+\Hypertarget{structpage__pool_adf7a27bf7f92a1e4d987064333959c75}\label{structpage__pool_adf7a27bf7f92a1e4d987064333959c75} 
+bool {\bfseries has\+\_\+init\+\_\+callback}:\+ 1
+\item 
+\Hypertarget{structpage__pool_ac74a199d1c0dca47bdc36e5d28b0f1bc}\label{structpage__pool_ac74a199d1c0dca47bdc36e5d28b0f1bc} 
+bool {\bfseries dma\+\_\+map}:\+ 1
+\item 
+\Hypertarget{structpage__pool_ae51c2de40c3d00cd50f9e02cd827b0a9}\label{structpage__pool_ae51c2de40c3d00cd50f9e02cd827b0a9} 
+bool {\bfseries dma\+\_\+sync}:\+ 1
+\item 
+\Hypertarget{structpage__pool_ac2475fb1883a5011ef6df6bcb12a82b0}\label{structpage__pool_ac2475fb1883a5011ef6df6bcb12a82b0} 
+bool {\bfseries dma\+\_\+sync\+\_\+for\+\_\+cpu}:\+ 1
+\item 
+\Hypertarget{structpage__pool_abf5fda21df6efeb6740ab9ba7d3766dc}\label{structpage__pool_abf5fda21df6efeb6740ab9ba7d3766dc} 
+bool {\bfseries system}:\+ 1
+\item 
+\Hypertarget{structpage__pool_a77b35529a69871d3a3d562bd60c476db}\label{structpage__pool_a77b35529a69871d3a3d562bd60c476db} 
+long :\+ 0
+\item 
+\Hypertarget{structpage__pool_a303a0312a85d231390a4bc71e42beaa1}\label{structpage__pool_a303a0312a85d231390a4bc71e42beaa1} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+frag} \+[0]\+
+\item 
+\Hypertarget{structpage__pool_aa9ff6abfb845cced318514aff01a77e7}\label{structpage__pool_aa9ff6abfb845cced318514aff01a77e7} 
+long int {\bfseries frag\+\_\+users}
+\item 
+\Hypertarget{structpage__pool_ab2b5b55f9adb70bd1fcaf84e26d04a6a}\label{structpage__pool_ab2b5b55f9adb70bd1fcaf84e26d04a6a} 
+netmem\+\_\+ref {\bfseries frag\+\_\+page}
+\item 
+\Hypertarget{structpage__pool_a199b696ddd174114b9bea952b8da5a11}\label{structpage__pool_a199b696ddd174114b9bea952b8da5a11} 
+unsigned int {\bfseries frag\+\_\+offset}
+\item 
+\Hypertarget{structpage__pool_a16725ba1bd12a8d84f089b0ca062b659}\label{structpage__pool_a16725ba1bd12a8d84f089b0ca062b659} 
+long :\+ 0
+\item 
+\Hypertarget{structpage__pool_aafa4e99b646791032c2a4d17c5a5d612}\label{structpage__pool_aafa4e99b646791032c2a4d17c5a5d612} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+frag} \+[0]\+
+\item 
+\Hypertarget{structpage__pool_a1c2e67ad42c6e79f4dd6b0acd78675cb}\label{structpage__pool_a1c2e67ad42c6e79f4dd6b0acd78675cb} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a5ba68de223b7b1d19c6224cc1f249e79}\label{structpage__pool_a5ba68de223b7b1d19c6224cc1f249e79} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\} {\bfseries \_\_cacheline\_group\_pad\_\_frag}\\
+
+\end{tabbing}\item 
+\Hypertarget{structpage__pool_ad541fc3af91aa331095ca6b307e52ab6}\label{structpage__pool_ad541fc3af91aa331095ca6b307e52ab6} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries release\+\_\+dw}
+\item 
+\Hypertarget{structpage__pool_a30a08084242db52fa29bc0b0fb71193e}\label{structpage__pool_a30a08084242db52fa29bc0b0fb71193e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disconnect} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpage__pool_a26b25fb73fd89b8a2f8de59b592761e4}\label{structpage__pool_a26b25fb73fd89b8a2f8de59b592761e4} 
+long unsigned int {\bfseries defer\+\_\+start}
+\item 
+\Hypertarget{structpage__pool_ab2a20dbf1acae816af4c30d8ecd9939a}\label{structpage__pool_ab2a20dbf1acae816af4c30d8ecd9939a} 
+long unsigned int {\bfseries defer\+\_\+warn}
+\item 
+\Hypertarget{structpage__pool_a7367bb583b3b5a90a37bce2172eacc59}\label{structpage__pool_a7367bb583b3b5a90a37bce2172eacc59} 
+struct \doxymbox{\hyperlink{structpage__pool__alloc__stats}{page\+\_\+pool\+\_\+alloc\+\_\+stats}} {\bfseries alloc\+\_\+stats}
+\item 
+\Hypertarget{structpage__pool_a5096b87456b8ef1d9d9a40355bb87a33}\label{structpage__pool_a5096b87456b8ef1d9d9a40355bb87a33} 
+u32 {\bfseries xdp\+\_\+mem\+\_\+id}
+\item 
+\Hypertarget{structpage__pool_ae2dbab539a29b203f7bf91b0c06ba577}\label{structpage__pool_ae2dbab539a29b203f7bf91b0c06ba577} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a629401770fe18679c6aaf4461b6af543}\label{structpage__pool_a629401770fe18679c6aaf4461b6af543} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a99ab0424748a9fee9996749c7295896d}\label{structpage__pool_a99ab0424748a9fee9996749c7295896d} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a50442c4cbbf1e491f8494af8fd0e8693}\label{structpage__pool_a50442c4cbbf1e491f8494af8fd0e8693} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_abd77f963b6f044817c11fc1ad545f411}\label{structpage__pool_abd77f963b6f044817c11fc1ad545f411} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a9cc40d5ad0ad17b94a277f6fe864c994}\label{structpage__pool_a9cc40d5ad0ad17b94a277f6fe864c994} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a628c71c2feb3531fc57f233c58f81857}\label{structpage__pool_a628c71c2feb3531fc57f233c58f81857} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_aff19244c8a61e7537a4d5fcbab4fe483}\label{structpage__pool_aff19244c8a61e7537a4d5fcbab4fe483} 
+struct \doxymbox{\hyperlink{structpp__alloc__cache}{pp\+\_\+alloc\+\_\+cache}} {\bfseries alloc}
+\item 
+\Hypertarget{structpage__pool_a28c2eafec32d8167e67d82621d202bfc}\label{structpage__pool_a28c2eafec32d8167e67d82621d202bfc} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_ac8b0e5855545db38144af3df4da1a708}\label{structpage__pool_ac8b0e5855545db38144af3df4da1a708} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a53cfcf52075b9a547d053153b37e2087}\label{structpage__pool_a53cfcf52075b9a547d053153b37e2087} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a340fb5ffc2d028b3566870be8a8b8e9a}\label{structpage__pool_a340fb5ffc2d028b3566870be8a8b8e9a} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_ab4e3e85923a9649bf9c11db6ff091ba8}\label{structpage__pool_ab4e3e85923a9649bf9c11db6ff091ba8} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a7748a90aa4b681c8c49c1b9f6a03a0b6}\label{structpage__pool_a7748a90aa4b681c8c49c1b9f6a03a0b6} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_aa545571d0ec00d10ea8f0b231490acc3}\label{structpage__pool_aa545571d0ec00d10ea8f0b231490acc3} 
+long :\+ 64
+\item 
+\Hypertarget{structpage__pool_a37c112d07ea71096d9c7e996b5f120bf}\label{structpage__pool_a37c112d07ea71096d9c7e996b5f120bf} 
+struct \doxymbox{\hyperlink{structptr__ring}{ptr\+\_\+ring}} {\bfseries ring}
+\item 
+\Hypertarget{structpage__pool_a392a0f9fa56721c5c0d664b52600512d}\label{structpage__pool_a392a0f9fa56721c5c0d664b52600512d} 
+void \texorpdfstring{$\ast$}{*} {\bfseries mp\+\_\+priv}
+\item 
+\Hypertarget{structpage__pool_a5c14d5be06114cd7a2b2ba2e8fce339a}\label{structpage__pool_a5c14d5be06114cd7a2b2ba2e8fce339a} 
+const struct \doxymbox{\hyperlink{structmemory__provider__ops}{memory\+\_\+provider\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries mp\+\_\+ops}
+\item 
+\Hypertarget{structpage__pool_a6cf93a84fe8ed51e803c740c00fffcc6}\label{structpage__pool_a6cf93a84fe8ed51e803c740c00fffcc6} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries dma\+\_\+mapped}
+\item 
+\Hypertarget{structpage__pool_a9c6996accdbabff2afb5e4d20eda678c}\label{structpage__pool_a9c6996accdbabff2afb5e4d20eda678c} 
+struct \doxymbox{\hyperlink{structpage__pool__recycle__stats}{page\+\_\+pool\+\_\+recycle\+\_\+stats}} \texorpdfstring{$\ast$}{*} {\bfseries recycle\+\_\+stats}
+\item 
+\Hypertarget{structpage__pool_af5ea5040066db6b837659aa00d866d90}\label{structpage__pool_af5ea5040066db6b837659aa00d866d90} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries pages\+\_\+state\+\_\+release\+\_\+cnt}
+\item 
+\Hypertarget{structpage__pool_abfd50f165536c8dd773bfe3d53b6fb4f}\label{structpage__pool_abfd50f165536c8dd773bfe3d53b6fb4f} 
+refcount\+\_\+t {\bfseries user\+\_\+cnt}
+\item 
+\Hypertarget{structpage__pool_aa3847b8577a547543278c180b9f302c5}\label{structpage__pool_aa3847b8577a547543278c180b9f302c5} 
+u64 {\bfseries destroy\+\_\+cnt}
+\item 
+\Hypertarget{structpage__pool_ad7bac97a589d16196ac70062fbfad060}\label{structpage__pool_ad7bac97a589d16196ac70062fbfad060} 
+struct \doxymbox{\hyperlink{structpage__pool__params__slow}{page\+\_\+pool\+\_\+params\+\_\+slow}} {\bfseries slow}
+\item 
+\Hypertarget{structpage__pool_a5314287fcee37e497c71ebf4d5bc293f}\label{structpage__pool_a5314287fcee37e497c71ebf4d5bc293f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries list}\\
+\>u64 {\bfseries detach\_time}\\
+\>u32 {\bfseries id}\\
+\} {\bfseries user}\\
+
+\end{tabbing}\item 
+\Hypertarget{structpage__pool_a5745ecd618cb4b4c7313bc7e1878dba8}\label{structpage__pool_a5745ecd618cb4b4c7313bc7e1878dba8} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

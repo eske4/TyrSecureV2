@@ -1,0 +1,124 @@
+\doxysection{xsk\+\_\+buff\+\_\+pool Struct Reference}
+\hypertarget{structxsk__buff__pool}{}\label{structxsk__buff__pool}\index{xsk\_buff\_pool@{xsk\_buff\_pool}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxsk__buff__pool_a0d14f4cb9834b8fedb0f561bd8e7e296}\label{structxsk__buff__pool_a0d14f4cb9834b8fedb0f561bd8e7e296} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structxsk__buff__pool_a9792c0b16e12d93ea6920da646cfaa5d}\label{structxsk__buff__pool_a9792c0b16e12d93ea6920da646cfaa5d} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries netdev}
+\item 
+\Hypertarget{structxsk__buff__pool_a5e6aaf251aa3e115706ba2e1284143f4}\label{structxsk__buff__pool_a5e6aaf251aa3e115706ba2e1284143f4} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries xsk\+\_\+tx\+\_\+list}
+\item 
+\Hypertarget{structxsk__buff__pool_a0169a730d9bb0ff4efb702b3ddace8bf}\label{structxsk__buff__pool_a0169a730d9bb0ff4efb702b3ddace8bf} 
+spinlock\+\_\+t {\bfseries xsk\+\_\+tx\+\_\+list\+\_\+lock}
+\item 
+\Hypertarget{structxsk__buff__pool_ad6ddcc1796fb10808d23e0655cc85bbd}\label{structxsk__buff__pool_ad6ddcc1796fb10808d23e0655cc85bbd} 
+refcount\+\_\+t {\bfseries users}
+\item 
+\Hypertarget{structxsk__buff__pool_a51eebed6ec725b89c0dd88c0afb5fceb}\label{structxsk__buff__pool_a51eebed6ec725b89c0dd88c0afb5fceb} 
+struct \doxymbox{\hyperlink{structxdp__umem}{xdp\+\_\+umem}} \texorpdfstring{$\ast$}{*} {\bfseries umem}
+\item 
+\Hypertarget{structxsk__buff__pool_a6d50a715df511eed5a80c929f86139e8}\label{structxsk__buff__pool_a6d50a715df511eed5a80c929f86139e8} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries work}
+\item 
+\Hypertarget{structxsk__buff__pool_a1edcb9ecc091a6cf9b2b07e096b3f7f3}\label{structxsk__buff__pool_a1edcb9ecc091a6cf9b2b07e096b3f7f3} 
+spinlock\+\_\+t {\bfseries rx\+\_\+lock}
+\item 
+\Hypertarget{structxsk__buff__pool_a129b5d7cc5ba9228f6194a496e9f20a8}\label{structxsk__buff__pool_a129b5d7cc5ba9228f6194a496e9f20a8} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries free\+\_\+list}
+\item 
+\Hypertarget{structxsk__buff__pool_a13d609bf9ac857fb20f0376c013e973f}\label{structxsk__buff__pool_a13d609bf9ac857fb20f0376c013e973f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries xskb\+\_\+list}
+\item 
+\Hypertarget{structxsk__buff__pool_ae28816f4c3625006d04f61780d044b38}\label{structxsk__buff__pool_ae28816f4c3625006d04f61780d044b38} 
+u32 {\bfseries heads\+\_\+cnt}
+\item 
+\Hypertarget{structxsk__buff__pool_ae360db2afb1ee4ca6c5700c38a9cf93a}\label{structxsk__buff__pool_ae360db2afb1ee4ca6c5700c38a9cf93a} 
+u16 {\bfseries queue\+\_\+id}
+\item 
+\Hypertarget{structxsk__buff__pool_a1b0f6129d53d37f35c2f79312f673289}\label{structxsk__buff__pool_a1b0f6129d53d37f35c2f79312f673289} 
+struct \doxymbox{\hyperlink{structxsk__queue}{xsk\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries fq}
+\item 
+\Hypertarget{structxsk__buff__pool_a473273716f1450723de83e26ae8f04d9}\label{structxsk__buff__pool_a473273716f1450723de83e26ae8f04d9} 
+struct \doxymbox{\hyperlink{structxsk__queue}{xsk\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries cq}
+\item 
+\Hypertarget{structxsk__buff__pool_a42c0bd15ce9a274213da83e0e91ec65a}\label{structxsk__buff__pool_a42c0bd15ce9a274213da83e0e91ec65a} 
+dma\+\_\+addr\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+pages}
+\item 
+\Hypertarget{structxsk__buff__pool_a02e1b4cd5d33bf93678cdaf67d3dffe6}\label{structxsk__buff__pool_a02e1b4cd5d33bf93678cdaf67d3dffe6} 
+struct \doxymbox{\hyperlink{structxdp__buff__xsk}{xdp\+\_\+buff\+\_\+xsk}} \texorpdfstring{$\ast$}{*} {\bfseries heads}
+\item 
+\Hypertarget{structxsk__buff__pool_aa50d22ff4f668cea4d7b428951540353}\label{structxsk__buff__pool_aa50d22ff4f668cea4d7b428951540353} 
+struct \doxymbox{\hyperlink{structxdp__desc}{xdp\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries tx\+\_\+descs}
+\item 
+\Hypertarget{structxsk__buff__pool_a16d48ca48ba391b5b1155117266ecc68}\label{structxsk__buff__pool_a16d48ca48ba391b5b1155117266ecc68} 
+u64 {\bfseries chunk\+\_\+mask}
+\item 
+\Hypertarget{structxsk__buff__pool_a291f9e027cf66c80e3ef45591b230654}\label{structxsk__buff__pool_a291f9e027cf66c80e3ef45591b230654} 
+u64 {\bfseries addrs\+\_\+cnt}
+\item 
+\Hypertarget{structxsk__buff__pool_aac90b8b544f5144159eb4f7f99bc33fc}\label{structxsk__buff__pool_aac90b8b544f5144159eb4f7f99bc33fc} 
+u32 {\bfseries free\+\_\+list\+\_\+cnt}
+\item 
+\Hypertarget{structxsk__buff__pool_af0b3c41df26289bbfef7d38b8e5a6f2d}\label{structxsk__buff__pool_af0b3c41df26289bbfef7d38b8e5a6f2d} 
+u32 {\bfseries dma\+\_\+pages\+\_\+cnt}
+\item 
+\Hypertarget{structxsk__buff__pool_ab87063a017535097b05948eeb40e089f}\label{structxsk__buff__pool_ab87063a017535097b05948eeb40e089f} 
+u32 {\bfseries free\+\_\+heads\+\_\+cnt}
+\item 
+\Hypertarget{structxsk__buff__pool_a3e5df32fdfd50372ce2024e7688ff01a}\label{structxsk__buff__pool_a3e5df32fdfd50372ce2024e7688ff01a} 
+u32 {\bfseries headroom}
+\item 
+\Hypertarget{structxsk__buff__pool_ac7dea118d66eaaa37635755b45eeacef}\label{structxsk__buff__pool_ac7dea118d66eaaa37635755b45eeacef} 
+u32 {\bfseries chunk\+\_\+size}
+\item 
+\Hypertarget{structxsk__buff__pool_a37b5636a5cd8e6dccc4a6466f1ddf185}\label{structxsk__buff__pool_a37b5636a5cd8e6dccc4a6466f1ddf185} 
+u32 {\bfseries chunk\+\_\+shift}
+\item 
+\Hypertarget{structxsk__buff__pool_ad402941dbc6f873ebc88cacf263c5e0d}\label{structxsk__buff__pool_ad402941dbc6f873ebc88cacf263c5e0d} 
+u32 {\bfseries frame\+\_\+len}
+\item 
+\Hypertarget{structxsk__buff__pool_a350e063b710d561170025a8b005905ff}\label{structxsk__buff__pool_a350e063b710d561170025a8b005905ff} 
+u32 {\bfseries xdp\+\_\+zc\+\_\+max\+\_\+segs}
+\item 
+\Hypertarget{structxsk__buff__pool_a93df40e9d5fd82e858e50f78431e8b5e}\label{structxsk__buff__pool_a93df40e9d5fd82e858e50f78431e8b5e} 
+u8 {\bfseries tx\+\_\+metadata\+\_\+len}
+\item 
+\Hypertarget{structxsk__buff__pool_ad05b8635b0e61eafe0e804e32f3ed0fe}\label{structxsk__buff__pool_ad05b8635b0e61eafe0e804e32f3ed0fe} 
+u8 {\bfseries cached\+\_\+need\+\_\+wakeup}
+\item 
+\Hypertarget{structxsk__buff__pool_a76bfb73c4098cd986d77756359f5b3b4}\label{structxsk__buff__pool_a76bfb73c4098cd986d77756359f5b3b4} 
+bool {\bfseries uses\+\_\+need\+\_\+wakeup}
+\item 
+\Hypertarget{structxsk__buff__pool_a566b15df63cc881b74d44fcafa30e957}\label{structxsk__buff__pool_a566b15df63cc881b74d44fcafa30e957} 
+bool {\bfseries unaligned}
+\item 
+\Hypertarget{structxsk__buff__pool_a672aed8e0adc6a12195be31af68ee2a3}\label{structxsk__buff__pool_a672aed8e0adc6a12195be31af68ee2a3} 
+bool {\bfseries tx\+\_\+sw\+\_\+csum}
+\item 
+\Hypertarget{structxsk__buff__pool_ad8184e4b0143bf07f3a85dfab5247614}\label{structxsk__buff__pool_ad8184e4b0143bf07f3a85dfab5247614} 
+void \texorpdfstring{$\ast$}{*} {\bfseries addrs}
+\item 
+\Hypertarget{structxsk__buff__pool_abc52b3ff37d66175d345151d219de48e}\label{structxsk__buff__pool_abc52b3ff37d66175d345151d219de48e} 
+spinlock\+\_\+t {\bfseries cq\+\_\+prod\+\_\+lock}
+\item 
+\Hypertarget{structxsk__buff__pool_ae251f86be50ba15585a9e9f46dc4ad72}\label{structxsk__buff__pool_ae251f86be50ba15585a9e9f46dc4ad72} 
+spinlock\+\_\+t {\bfseries cq\+\_\+cached\+\_\+prod\+\_\+lock}
+\item 
+\Hypertarget{structxsk__buff__pool_a10b1e445908a07d77a1e241b5ec21c38}\label{structxsk__buff__pool_a10b1e445908a07d77a1e241b5ec21c38} 
+struct \doxymbox{\hyperlink{structxdp__buff__xsk}{xdp\+\_\+buff\+\_\+xsk}} \texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+heads} \+[0]\+
+\item 
+\Hypertarget{structxsk__buff__pool_a3b8dabf025886141227c2da536eafb9e}\label{structxsk__buff__pool_a3b8dabf025886141227c2da536eafb9e} 
+long :\+ 64
+\item 
+\Hypertarget{structxsk__buff__pool_afa0b1aa7bae476d1632d90938729f87f}\label{structxsk__buff__pool_afa0b1aa7bae476d1632d90938729f87f} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

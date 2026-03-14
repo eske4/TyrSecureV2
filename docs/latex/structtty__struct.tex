@@ -1,0 +1,137 @@
+\doxysection{tty\+\_\+struct Struct Reference}
+\hypertarget{structtty__struct}{}\label{structtty__struct}\index{tty\_struct@{tty\_struct}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtty__struct_ab57d7ec61f96aeab36e8a7aa52183440}\label{structtty__struct_ab57d7ec61f96aeab36e8a7aa52183440} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries kref}
+\item 
+\Hypertarget{structtty__struct_a7ab2b0ab4f84d1f41293747c70105056}\label{structtty__struct_a7ab2b0ab4f84d1f41293747c70105056} 
+int {\bfseries index}
+\item 
+\Hypertarget{structtty__struct_ad9715451a10ae704429824e8bd3887af}\label{structtty__struct_ad9715451a10ae704429824e8bd3887af} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structtty__struct_a347a443c1625aad21943c5f9fbf69b45}\label{structtty__struct_a347a443c1625aad21943c5f9fbf69b45} 
+struct \doxymbox{\hyperlink{structtty__driver}{tty\+\_\+driver}} \texorpdfstring{$\ast$}{*} {\bfseries driver}
+\item 
+\Hypertarget{structtty__struct_aeba5c445aa7ac8b3b2b73b1f0029c7f7}\label{structtty__struct_aeba5c445aa7ac8b3b2b73b1f0029c7f7} 
+struct \doxymbox{\hyperlink{structtty__port}{tty\+\_\+port}} \texorpdfstring{$\ast$}{*} {\bfseries port}
+\item 
+\Hypertarget{structtty__struct_ab004634e5f42e91e6b65b21fc0ffedc1}\label{structtty__struct_ab004634e5f42e91e6b65b21fc0ffedc1} 
+const struct \doxymbox{\hyperlink{structtty__operations}{tty\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structtty__struct_ae5500cb89f5a7556ea505760ba7cc07b}\label{structtty__struct_ae5500cb89f5a7556ea505760ba7cc07b} 
+struct \doxymbox{\hyperlink{structtty__ldisc}{tty\+\_\+ldisc}} \texorpdfstring{$\ast$}{*} {\bfseries ldisc}
+\item 
+\Hypertarget{structtty__struct_a56735ee2f2eefdfb2a76b0ac3d54fa2b}\label{structtty__struct_a56735ee2f2eefdfb2a76b0ac3d54fa2b} 
+struct \doxymbox{\hyperlink{structld__semaphore}{ld\+\_\+semaphore}} {\bfseries ldisc\+\_\+sem}
+\item 
+\Hypertarget{structtty__struct_a4bd3c278eeb76a9d79f65cca7f0ae49e}\label{structtty__struct_a4bd3c278eeb76a9d79f65cca7f0ae49e} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries atomic\+\_\+write\+\_\+lock}
+\item 
+\Hypertarget{structtty__struct_a43b9e01f7d8632ede543e2fb592e5606}\label{structtty__struct_a43b9e01f7d8632ede543e2fb592e5606} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries legacy\+\_\+mutex}
+\item 
+\Hypertarget{structtty__struct_a4ec94bf52983131934f14475c5471913}\label{structtty__struct_a4ec94bf52983131934f14475c5471913} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries throttle\+\_\+mutex}
+\item 
+\Hypertarget{structtty__struct_ac363c93ca90729dc78d306409a3862bf}\label{structtty__struct_ac363c93ca90729dc78d306409a3862bf} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries termios\+\_\+rwsem}
+\item 
+\Hypertarget{structtty__struct_a930a3e2b70fcb880c5fdd8914bfd1557}\label{structtty__struct_a930a3e2b70fcb880c5fdd8914bfd1557} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries winsize\+\_\+mutex}
+\item 
+\Hypertarget{structtty__struct_aec46511d5a962e5279229c702746ea87}\label{structtty__struct_aec46511d5a962e5279229c702746ea87} 
+struct \doxymbox{\hyperlink{structktermios}{ktermios}} {\bfseries termios}
+\item 
+\Hypertarget{structtty__struct_a2b822a38c8ba04bfd42396096ffd3731}\label{structtty__struct_a2b822a38c8ba04bfd42396096ffd3731} 
+struct \doxymbox{\hyperlink{structktermios}{ktermios}} {\bfseries termios\+\_\+locked}
+\item 
+\Hypertarget{structtty__struct_a4921c1cf49732274a166a566ac989848}\label{structtty__struct_a4921c1cf49732274a166a566ac989848} 
+char {\bfseries name} \+[64]\+
+\item 
+\Hypertarget{structtty__struct_abe24e1d705a2b45bea1df00dc29bd113}\label{structtty__struct_abe24e1d705a2b45bea1df00dc29bd113} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structtty__struct_a3419cc2dfe66d42a3fd5ec40ce6b4dba}\label{structtty__struct_a3419cc2dfe66d42a3fd5ec40ce6b4dba} 
+int {\bfseries count}
+\item 
+\Hypertarget{structtty__struct_a30d93a3f876128147111af87631e9460}\label{structtty__struct_a30d93a3f876128147111af87631e9460} 
+unsigned int {\bfseries receive\+\_\+room}
+\item 
+\Hypertarget{structtty__struct_a2360a614de0652525385b739d8db30f4}\label{structtty__struct_a2360a614de0652525385b739d8db30f4} 
+struct \doxymbox{\hyperlink{structwinsize}{winsize}} {\bfseries winsize}
+\item 
+\Hypertarget{structtty__struct_a317d91c16119ef300a2fcd7dee380648}\label{structtty__struct_a317d91c16119ef300a2fcd7dee380648} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>spinlock\_t {\bfseries lock}\\
+\>bool {\bfseries stopped}\\
+\>bool {\bfseries tco\_stopped}\\
+\} {\bfseries flow}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtty__struct_a076702c671af6982631dbae6963b9006}\label{structtty__struct_a076702c671af6982631dbae6963b9006} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structpid}{pid}} \texorpdfstring{$\ast$}{*} {\bfseries pgrp}\\
+\>struct \doxymbox{\hyperlink{structpid}{pid}} \texorpdfstring{$\ast$}{*} {\bfseries session}\\
+\>spinlock\_t {\bfseries lock}\\
+\>unsigned char {\bfseries pktstatus}\\
+\>bool {\bfseries packet}\\
+\} {\bfseries ctrl}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtty__struct_ac87adf06f79069a5fd03e3fb3984f09e}\label{structtty__struct_ac87adf06f79069a5fd03e3fb3984f09e} 
+bool {\bfseries hw\+\_\+stopped}
+\item 
+\Hypertarget{structtty__struct_acee73de737e4c8e63524a361f0613aa3}\label{structtty__struct_acee73de737e4c8e63524a361f0613aa3} 
+bool {\bfseries closing}
+\item 
+\Hypertarget{structtty__struct_a6e061a4b77d3c0a512e1af8ce623ce51}\label{structtty__struct_a6e061a4b77d3c0a512e1af8ce623ce51} 
+int {\bfseries flow\+\_\+change}
+\item 
+\Hypertarget{structtty__struct_aa8c49790f49faf7c28e22af7a98f75c1}\label{structtty__struct_aa8c49790f49faf7c28e22af7a98f75c1} 
+struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries link}
+\item 
+\Hypertarget{structtty__struct_a1ca514eefd94c0fb8c9d071cd9002a39}\label{structtty__struct_a1ca514eefd94c0fb8c9d071cd9002a39} 
+struct \doxymbox{\hyperlink{structfasync__struct}{fasync\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries fasync}
+\item 
+\Hypertarget{structtty__struct_ad2478892578dedcd981570a325bba053}\label{structtty__struct_ad2478892578dedcd981570a325bba053} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries write\+\_\+wait}
+\item 
+\Hypertarget{structtty__struct_a8fa3f3baf2ace68e61521d1ae65ba5e7}\label{structtty__struct_a8fa3f3baf2ace68e61521d1ae65ba5e7} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries read\+\_\+wait}
+\item 
+\Hypertarget{structtty__struct_a931eb8d36f060d9f8e3b960ad519282e}\label{structtty__struct_a931eb8d36f060d9f8e3b960ad519282e} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries hangup\+\_\+work}
+\item 
+\Hypertarget{structtty__struct_a61d1ee0a7f2a3483b79ff573ca11da9d}\label{structtty__struct_a61d1ee0a7f2a3483b79ff573ca11da9d} 
+void \texorpdfstring{$\ast$}{*} {\bfseries disc\+\_\+data}
+\item 
+\Hypertarget{structtty__struct_ac8a81a1328f21986b509b022d7a190cb}\label{structtty__struct_ac8a81a1328f21986b509b022d7a190cb} 
+void \texorpdfstring{$\ast$}{*} {\bfseries driver\+\_\+data}
+\item 
+\Hypertarget{structtty__struct_a1b6dfbfef6860a2c39778e2c7b21dd96}\label{structtty__struct_a1b6dfbfef6860a2c39778e2c7b21dd96} 
+spinlock\+\_\+t {\bfseries files\+\_\+lock}
+\item 
+\Hypertarget{structtty__struct_aeb70fe8e5e8edf59c9b6db6435534f82}\label{structtty__struct_aeb70fe8e5e8edf59c9b6db6435534f82} 
+int {\bfseries write\+\_\+cnt}
+\item 
+\Hypertarget{structtty__struct_a66901d7d7223801fdc12cefac7b4a02b}\label{structtty__struct_a66901d7d7223801fdc12cefac7b4a02b} 
+u8 \texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+buf}
+\item 
+\Hypertarget{structtty__struct_a7fa4f4890db7df8e1832d523b181d000}\label{structtty__struct_a7fa4f4890db7df8e1832d523b181d000} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tty\+\_\+files}
+\item 
+\Hypertarget{structtty__struct_a617e85fd4938505438514114afa79296}\label{structtty__struct_a617e85fd4938505438514114afa79296} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries SAK\+\_\+work}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

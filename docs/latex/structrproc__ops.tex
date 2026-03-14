@@ -1,0 +1,61 @@
+\doxysection{rproc\+\_\+ops Struct Reference}
+\hypertarget{structrproc__ops}{}\label{structrproc__ops}\index{rproc\_ops@{rproc\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrproc__ops_a055c443a855a28658103898e2b5c676a}\label{structrproc__ops_a055c443a855a28658103898e2b5c676a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries prepare} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a9d7436dbe36afe5c884f90d808b6ef05}\label{structrproc__ops_a9d7436dbe36afe5c884f90d808b6ef05} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries unprepare} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_aec78105f53288d128737e9047e8e88c4}\label{structrproc__ops_aec78105f53288d128737e9047e8e88c4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries start} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a6a6cf404c028bca01c6d3b3b316c3e04}\label{structrproc__ops_a6a6cf404c028bca01c6d3b3b316c3e04} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries stop} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a691400b476ba1c6318a73cfaf5294c02}\label{structrproc__ops_a691400b476ba1c6318a73cfaf5294c02} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries attach} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a3c8eeb7df144aadc7c65c2d9fde726ae}\label{structrproc__ops_a3c8eeb7df144aadc7c65c2d9fde726ae} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries detach} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a284642c87a0d332e16c1ff08b7ede0e5}\label{structrproc__ops_a284642c87a0d332e16c1ff08b7ede0e5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries kick} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structrproc__ops_ac2de6c84fdc6c469124edf2ffe8685fd}\label{structrproc__ops_ac2de6c84fdc6c469124edf2ffe8685fd} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries da\+\_\+to\+\_\+va} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*}, u64, size\+\_\+t, bool \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a6642b09b77355d09a7da8b551ba7f6c1}\label{structrproc__ops_a6642b09b77355d09a7da8b551ba7f6c1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries parse\+\_\+fw} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfirmware}{firmware}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a860a88f7a0907b2616e76d0c4786cdaf}\label{structrproc__ops_a860a88f7a0907b2616e76d0c4786cdaf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+rsc} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*}, u32, void \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structrproc__ops_ade6dda4d8321c346182bff4554035a1d}\label{structrproc__ops_ade6dda4d8321c346182bff4554035a1d} 
+struct \doxymbox{\hyperlink{structresource__table}{resource\+\_\+table}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries find\+\_\+loaded\+\_\+rsc\+\_\+table} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfirmware}{firmware}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a5f6e2dd8c7e86230cde3d8048f525b13}\label{structrproc__ops_a5f6e2dd8c7e86230cde3d8048f525b13} 
+struct \doxymbox{\hyperlink{structresource__table}{resource\+\_\+table}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+loaded\+\_\+rsc\+\_\+table} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*}, size\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_ae2e7857976cae0e809300729610c525d}\label{structrproc__ops_ae2e7857976cae0e809300729610c525d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries load} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfirmware}{firmware}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a7a83dad104b43e590edd2b8ce4e0821d}\label{structrproc__ops_a7a83dad104b43e590edd2b8ce4e0821d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sanity\+\_\+check} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfirmware}{firmware}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a1fc7f971569ab7e72f2cd5bb89dbdc7f}\label{structrproc__ops_a1fc7f971569ab7e72f2cd5bb89dbdc7f} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+boot\+\_\+addr} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfirmware}{firmware}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a570ba6b407c9b0fd660a48386727b0d9}\label{structrproc__ops_a570ba6b407c9b0fd660a48386727b0d9} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries panic} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrproc__ops_a9246ff353f876e6c70e52a62dbc0f4a6}\label{structrproc__ops_a9246ff353f876e6c70e52a62dbc0f4a6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries coredump} )(struct \doxymbox{\hyperlink{structrproc}{rproc}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

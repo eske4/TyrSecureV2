@@ -1,0 +1,52 @@
+\doxysection{msghdr Struct Reference}
+\hypertarget{structmsghdr}{}\label{structmsghdr}\index{msghdr@{msghdr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmsghdr_a691a8866b21c7083974a2ff1e7987ce1}\label{structmsghdr_a691a8866b21c7083974a2ff1e7987ce1} 
+void \texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+name}
+\item 
+\Hypertarget{structmsghdr_a8d5b5be3ce710ed39fc66824757407ff}\label{structmsghdr_a8d5b5be3ce710ed39fc66824757407ff} 
+int {\bfseries msg\+\_\+namelen}
+\item 
+\Hypertarget{structmsghdr_a3cae76d03079c61fbc4de223e2223619}\label{structmsghdr_a3cae76d03079c61fbc4de223e2223619} 
+int {\bfseries msg\+\_\+inq}
+\item 
+\Hypertarget{structmsghdr_a6fb0aacb27b54e400968ef467262e50f}\label{structmsghdr_a6fb0aacb27b54e400968ef467262e50f} 
+struct \doxymbox{\hyperlink{structiov__iter}{iov\+\_\+iter}} {\bfseries msg\+\_\+iter}
+\item 
+\Hypertarget{structmsghdr_ad6842b2d3ebaea1d763de8e35bbce829}\label{structmsghdr_ad6842b2d3ebaea1d763de8e35bbce829} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries msg\_control}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries msg\_control\_user}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmsghdr_a7cfce4b59329e58d1d759680211d82a4}\label{structmsghdr_a7cfce4b59329e58d1d759680211d82a4} 
+bool {\bfseries msg\+\_\+control\+\_\+is\+\_\+user}:\+ 1
+\item 
+\Hypertarget{structmsghdr_a1d274e20b33129ba2ac40c21def86a1b}\label{structmsghdr_a1d274e20b33129ba2ac40c21def86a1b} 
+bool {\bfseries msg\+\_\+get\+\_\+inq}:\+ 1
+\item 
+\Hypertarget{structmsghdr_af28f965d7807c72c5aade356eb4155de}\label{structmsghdr_af28f965d7807c72c5aade356eb4155de} 
+unsigned int {\bfseries msg\+\_\+flags}
+\item 
+\Hypertarget{structmsghdr_a85b2b49e45e656b0af23095d0e73900e}\label{structmsghdr_a85b2b49e45e656b0af23095d0e73900e} 
+\+\_\+\+\_\+kernel\+\_\+size\+\_\+t {\bfseries msg\+\_\+controllen}
+\item 
+\Hypertarget{structmsghdr_ac5cd4b890d039a43a04eff5644799298}\label{structmsghdr_ac5cd4b890d039a43a04eff5644799298} 
+struct \doxymbox{\hyperlink{structkiocb}{kiocb}} \texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+iocb}
+\item 
+\Hypertarget{structmsghdr_a7bdb657ddc5ef2b110e074a3cd822465}\label{structmsghdr_a7bdb657ddc5ef2b110e074a3cd822465} 
+struct \doxymbox{\hyperlink{structubuf__info}{ubuf\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+ubuf}
+\item 
+\Hypertarget{structmsghdr_ac99dc02fddf2481b9f68d760bfb1702d}\label{structmsghdr_ac99dc02fddf2481b9f68d760bfb1702d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sg\+\_\+from\+\_\+iter} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiov__iter}{iov\+\_\+iter}} \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

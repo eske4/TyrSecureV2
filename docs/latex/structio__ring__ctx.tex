@@ -1,0 +1,246 @@
+\doxysection{io\+\_\+ring\+\_\+ctx Struct Reference}
+\hypertarget{structio__ring__ctx}{}\label{structio__ring__ctx}\index{io\_ring\_ctx@{io\_ring\_ctx}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__ring__ctx_a8f89d7cd017901d91bf40830388c16b8}\label{structio__ring__ctx_a8f89d7cd017901d91bf40830388c16b8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries flags}\\
+\>unsigned int {\bfseries drain\_next}: 1\\
+\>unsigned int {\bfseries restricted}: 1\\
+\>unsigned int {\bfseries off\_timeout\_used}: 1\\
+\>unsigned int {\bfseries drain\_active}: 1\\
+\>unsigned int {\bfseries has\_evfd}: 1\\
+\>unsigned int {\bfseries task\_complete}: 1\\
+\>unsigned int {\bfseries lockless\_cq}: 1\\
+\>unsigned int {\bfseries syscall\_iopoll}: 1\\
+\>unsigned int {\bfseries poll\_activated}: 1\\
+\>unsigned int {\bfseries drain\_disabled}: 1\\
+\>unsigned int {\bfseries compat}: 1\\
+\>unsigned int {\bfseries iowq\_limits\_set}: 1\\
+\>struct \doxymbox{\hyperlink{structtask__struct}{task\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries submitter\_task}\\
+\>struct \doxymbox{\hyperlink{structio__rings}{io\_rings}} \texorpdfstring{$\ast$}{*} {\bfseries rings}\\
+\>struct \doxymbox{\hyperlink{structpercpu__ref}{percpu\_ref}} {\bfseries refs}\\
+\>clockid\_t {\bfseries clockid}\\
+\>enum tk\_offsets {\bfseries clock\_offset}\\
+\>enum task\_work\_notify\_mode {\bfseries notify\_method}\\
+\>unsigned int {\bfseries sq\_thread\_idle}\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__ring__ctx_a31a87e147d7b9b8f987f9170809dea48}\label{structio__ring__ctx_a31a87e147d7b9b8f987f9170809dea48} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries uring\_lock}\\
+\>u32 \texorpdfstring{$\ast$}{*} {\bfseries sq\_array}\\
+\>struct \doxymbox{\hyperlink{structio__uring__sqe}{io\_uring\_sqe}} \texorpdfstring{$\ast$}{*} {\bfseries sq\_sqes}\\
+\>unsigned int {\bfseries cached\_sq\_head}\\
+\>unsigned int {\bfseries sq\_entries}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries cancel\_seq}\\
+\>bool {\bfseries poll\_multi\_queue}\\
+\>struct \doxymbox{\hyperlink{structio__wq__work__list}{io\_wq\_work\_list}} {\bfseries iopoll\_list}\\
+\>struct \doxymbox{\hyperlink{structio__file__table}{io\_file\_table}} {\bfseries file\_table}\\
+\>struct \doxymbox{\hyperlink{structio__rsrc__data}{io\_rsrc\_data}} {\bfseries buf\_table}\\
+\>struct \doxymbox{\hyperlink{structio__alloc__cache}{io\_alloc\_cache}} {\bfseries node\_cache}\\
+\>struct \doxymbox{\hyperlink{structio__alloc__cache}{io\_alloc\_cache}} {\bfseries imu\_cache}\\
+\>struct \doxymbox{\hyperlink{structio__submit__state}{io\_submit\_state}} {\bfseries submit\_state}\\
+\>struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries io\_bl\_xa}\\
+\>struct \doxymbox{\hyperlink{structio__hash__table}{io\_hash\_table}} {\bfseries cancel\_table}\\
+\>struct \doxymbox{\hyperlink{structio__alloc__cache}{io\_alloc\_cache}} {\bfseries apoll\_cache}\\
+\>struct \doxymbox{\hyperlink{structio__alloc__cache}{io\_alloc\_cache}} {\bfseries netmsg\_cache}\\
+\>struct \doxymbox{\hyperlink{structio__alloc__cache}{io\_alloc\_cache}} {\bfseries rw\_cache}\\
+\>struct \doxymbox{\hyperlink{structio__alloc__cache}{io\_alloc\_cache}} {\bfseries cmd\_cache}\\
+\>struct \doxymbox{\hyperlink{structhlist__head}{hlist\_head}} {\bfseries cancelable\_uring\_cmd}\\
+\>u64 {\bfseries hybrid\_poll\_time}\\
+\>long : 64\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__ring__ctx_aa5f6626fe14613075687437cb4af1f32}\label{structio__ring__ctx_aa5f6626fe14613075687437cb4af1f32} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structio__uring__cqe}{io\_uring\_cqe}} \texorpdfstring{$\ast$}{*} {\bfseries cqe\_cached}\\
+\>struct \doxymbox{\hyperlink{structio__uring__cqe}{io\_uring\_cqe}} \texorpdfstring{$\ast$}{*} {\bfseries cqe\_sentinel}\\
+\>unsigned int {\bfseries cached\_cq\_tail}\\
+\>unsigned int {\bfseries cq\_entries}\\
+\>struct \doxymbox{\hyperlink{structio__ev__fd}{io\_ev\_fd}} \texorpdfstring{$\ast$}{*} {\bfseries io\_ev\_fd}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries cq\_wait\_arg}\\
+\>size\_t {\bfseries cq\_wait\_size}\\
+\>long : 64\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__ring__ctx_a936f8be32976a48b3f0ec3259f0a2c7f}\label{structio__ring__ctx_a936f8be32976a48b3f0ec3259f0a2c7f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structllist__head}{llist\_head}} {\bfseries work\_llist}\\
+\>struct \doxymbox{\hyperlink{structllist__head}{llist\_head}} {\bfseries retry\_llist}\\
+\>long unsigned int {\bfseries check\_cq}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries cq\_wait\_nr}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries cq\_timeouts}\\
+\>struct \doxymbox{\hyperlink{structwait__queue__head}{wait\_queue\_head}} {\bfseries cq\_wait}\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__ring__ctx_a322bf1f8abf9eb85f6128df11483d37d}\label{structio__ring__ctx_a322bf1f8abf9eb85f6128df11483d37d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>raw\_spinlock\_t {\bfseries timeout\_lock}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries timeout\_list}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries ltimeout\_list}\\
+\>unsigned int {\bfseries cq\_last\_tm\_flush}\\
+\>long : 64\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__ring__ctx_a8a34b4e1ea5e0922e61846abe527325d}\label{structio__ring__ctx_a8a34b4e1ea5e0922e61846abe527325d} 
+spinlock\+\_\+t {\bfseries completion\+\_\+lock}
+\item 
+\Hypertarget{structio__ring__ctx_a88d3af38c9b22590ff08a354b7ddc900}\label{structio__ring__ctx_a88d3af38c9b22590ff08a354b7ddc900} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cq\+\_\+overflow\+\_\+list}
+\item 
+\Hypertarget{structio__ring__ctx_a6b6de7fdf3b669fdaad52d746916db7f}\label{structio__ring__ctx_a6b6de7fdf3b669fdaad52d746916db7f} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries waitid\+\_\+list}
+\item 
+\Hypertarget{structio__ring__ctx_a4a37eb29a6023af7aff60cf46e294041}\label{structio__ring__ctx_a4a37eb29a6023af7aff60cf46e294041} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries futex\+\_\+list}
+\item 
+\Hypertarget{structio__ring__ctx_a2c75be8fb531eec2b4ac61124b324fcc}\label{structio__ring__ctx_a2c75be8fb531eec2b4ac61124b324fcc} 
+struct \doxymbox{\hyperlink{structio__alloc__cache}{io\+\_\+alloc\+\_\+cache}} {\bfseries futex\+\_\+cache}
+\item 
+\Hypertarget{structio__ring__ctx_ab6eae1a8ca9bfa904ef0b3d8fe015af8}\label{structio__ring__ctx_ab6eae1a8ca9bfa904ef0b3d8fe015af8} 
+const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*} {\bfseries sq\+\_\+creds}
+\item 
+\Hypertarget{structio__ring__ctx_ac4657961d86dd0621fe97cc2b942a8d0}\label{structio__ring__ctx_ac4657961d86dd0621fe97cc2b942a8d0} 
+struct \doxymbox{\hyperlink{structio__sq__data}{io\+\_\+sq\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries sq\+\_\+data}
+\item 
+\Hypertarget{structio__ring__ctx_a58ceae4692c41d9a412970836948efd7}\label{structio__ring__ctx_a58ceae4692c41d9a412970836948efd7} 
+struct \doxymbox{\hyperlink{structwait__queue__head}{wait\+\_\+queue\+\_\+head}} {\bfseries sqo\+\_\+sq\+\_\+wait}
+\item 
+\Hypertarget{structio__ring__ctx_a4b14153fc513f9962e242371edfe4b8b}\label{structio__ring__ctx_a4b14153fc513f9962e242371edfe4b8b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries sqd\+\_\+list}
+\item 
+\Hypertarget{structio__ring__ctx_a12af3ec78bb535f7697393aee3a52b9d}\label{structio__ring__ctx_a12af3ec78bb535f7697393aee3a52b9d} 
+unsigned int {\bfseries file\+\_\+alloc\+\_\+start}
+\item 
+\Hypertarget{structio__ring__ctx_a182d1b1bdf0d0e4dd5214ce3fe39302c}\label{structio__ring__ctx_a182d1b1bdf0d0e4dd5214ce3fe39302c} 
+unsigned int {\bfseries file\+\_\+alloc\+\_\+end}
+\item 
+\Hypertarget{structio__ring__ctx_ae9c22c285a7d6abc4f47feff6201f60f}\label{structio__ring__ctx_ae9c22c285a7d6abc4f47feff6201f60f} 
+struct \doxymbox{\hyperlink{structwait__queue__head}{wait\+\_\+queue\+\_\+head}} {\bfseries poll\+\_\+wq}
+\item 
+\Hypertarget{structio__ring__ctx_ac7c2f4258b57106e65aca0ec800c988a}\label{structio__ring__ctx_ac7c2f4258b57106e65aca0ec800c988a} 
+struct \doxymbox{\hyperlink{structio__restriction}{io\+\_\+restriction}} {\bfseries restrictions}
+\item 
+\Hypertarget{structio__ring__ctx_ade26322866ee4924c23be9bbd4bea39a}\label{structio__ring__ctx_ade26322866ee4924c23be9bbd4bea39a} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries zcrx\+\_\+ctxs}
+\item 
+\Hypertarget{structio__ring__ctx_a40b248ef6a6beb02aaf17ce904ac8a84}\label{structio__ring__ctx_a40b248ef6a6beb02aaf17ce904ac8a84} 
+u32 {\bfseries pers\+\_\+next}
+\item 
+\Hypertarget{structio__ring__ctx_a3ccd65ea27af12a0ce3039608719d9d3}\label{structio__ring__ctx_a3ccd65ea27af12a0ce3039608719d9d3} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries personalities}
+\item 
+\Hypertarget{structio__ring__ctx_a06b0700a988b869b4572f3d0ac4dcdad}\label{structio__ring__ctx_a06b0700a988b869b4572f3d0ac4dcdad} 
+struct \doxymbox{\hyperlink{structio__wq__hash}{io\+\_\+wq\+\_\+hash}} \texorpdfstring{$\ast$}{*} {\bfseries hash\+\_\+map}
+\item 
+\Hypertarget{structio__ring__ctx_a94b35644b779c5a74521c97f9e3d3b8f}\label{structio__ring__ctx_a94b35644b779c5a74521c97f9e3d3b8f} 
+struct \doxymbox{\hyperlink{structuser__struct}{user\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries user}
+\item 
+\Hypertarget{structio__ring__ctx_a2d0c6db4482d07d58977fff5369d51ed}\label{structio__ring__ctx_a2d0c6db4482d07d58977fff5369d51ed} 
+struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries mm\+\_\+account}
+\item 
+\Hypertarget{structio__ring__ctx_a19cc0147a346cb164200ed978017810e}\label{structio__ring__ctx_a19cc0147a346cb164200ed978017810e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tctx\+\_\+list}
+\item 
+\Hypertarget{structio__ring__ctx_a6ad0ead4e929beec00e4679394746bfb}\label{structio__ring__ctx_a6ad0ead4e929beec00e4679394746bfb} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries tctx\+\_\+lock}
+\item 
+\Hypertarget{structio__ring__ctx_a92beba5a5dda4897af1c5e980e48d424}\label{structio__ring__ctx_a92beba5a5dda4897af1c5e980e48d424} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries fallback\+\_\+llist}
+\item 
+\Hypertarget{structio__ring__ctx_a3af0b107b6195e56600f0a60e60baa06}\label{structio__ring__ctx_a3af0b107b6195e56600f0a60e60baa06} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries fallback\+\_\+work}
+\item 
+\Hypertarget{structio__ring__ctx_a046fe9246671e8763a6e1a2b51c2baa4}\label{structio__ring__ctx_a046fe9246671e8763a6e1a2b51c2baa4} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries exit\+\_\+work}
+\item 
+\Hypertarget{structio__ring__ctx_a544e67a7fd22249b66fd99fb706048af}\label{structio__ring__ctx_a544e67a7fd22249b66fd99fb706048af} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries ref\+\_\+comp}
+\item 
+\Hypertarget{structio__ring__ctx_ab5e9807cc56236513ccc5e716374bf53}\label{structio__ring__ctx_ab5e9807cc56236513ccc5e716374bf53} 
+u32 {\bfseries iowq\+\_\+limits} \+[2]\+
+\item 
+\Hypertarget{structio__ring__ctx_a5c8dc5e7fc820d8b9ee458589104ee86}\label{structio__ring__ctx_a5c8dc5e7fc820d8b9ee458589104ee86} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries poll\+\_\+wq\+\_\+task\+\_\+work}
+\item 
+\Hypertarget{structio__ring__ctx_a0e4825e54deae867b6b44c90e7369418}\label{structio__ring__ctx_a0e4825e54deae867b6b44c90e7369418} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries defer\+\_\+list}
+\item 
+\Hypertarget{structio__ring__ctx_aa8542ae6b348730d66fe06354563c987}\label{structio__ring__ctx_aa8542ae6b348730d66fe06354563c987} 
+unsigned int {\bfseries nr\+\_\+drained}
+\item 
+\Hypertarget{structio__ring__ctx_a792b469c242f7b6bb14ff902797c2472}\label{structio__ring__ctx_a792b469c242f7b6bb14ff902797c2472} 
+unsigned int {\bfseries nr\+\_\+req\+\_\+allocated}
+\item 
+\Hypertarget{structio__ring__ctx_a79c6839c95fecd40a41f15336751fb88}\label{structio__ring__ctx_a79c6839c95fecd40a41f15336751fb88} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries napi\+\_\+list}
+\item 
+\Hypertarget{structio__ring__ctx_a279ea27cd93763a779d7eb3861236977}\label{structio__ring__ctx_a279ea27cd93763a779d7eb3861236977} 
+spinlock\+\_\+t {\bfseries napi\+\_\+lock}
+\item 
+\Hypertarget{structio__ring__ctx_a7cf096117cd70909321cff27bbe55729}\label{structio__ring__ctx_a7cf096117cd70909321cff27bbe55729} 
+ktime\+\_\+t {\bfseries napi\+\_\+busy\+\_\+poll\+\_\+dt}
+\item 
+\Hypertarget{structio__ring__ctx_a0fedb686cf93aacfe72b9fe74fc016e8}\label{structio__ring__ctx_a0fedb686cf93aacfe72b9fe74fc016e8} 
+bool {\bfseries napi\+\_\+prefer\+\_\+busy\+\_\+poll}
+\item 
+\Hypertarget{structio__ring__ctx_a279ed49d23154dc66056f2fee56c7c93}\label{structio__ring__ctx_a279ed49d23154dc66056f2fee56c7c93} 
+u8 {\bfseries napi\+\_\+track\+\_\+mode}
+\item 
+\Hypertarget{structio__ring__ctx_a90243cc01fb0d69c8c30e6895ff7292b}\label{structio__ring__ctx_a90243cc01fb0d69c8c30e6895ff7292b} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries napi\+\_\+ht} \+[16]\+
+\item 
+\Hypertarget{structio__ring__ctx_a1b5f5cd70cee35a5ba21e86f160d2f1a}\label{structio__ring__ctx_a1b5f5cd70cee35a5ba21e86f160d2f1a} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mmap\+\_\+lock}
+\item 
+\Hypertarget{structio__ring__ctx_af5d6fc51d929cc30ca1db50cd799ef8e}\label{structio__ring__ctx_af5d6fc51d929cc30ca1db50cd799ef8e} 
+struct \doxymbox{\hyperlink{structio__mapped__region}{io\+\_\+mapped\+\_\+region}} {\bfseries sq\+\_\+region}
+\item 
+\Hypertarget{structio__ring__ctx_ae61c239c7ce04e3727ccd8fbf8e86be2}\label{structio__ring__ctx_ae61c239c7ce04e3727ccd8fbf8e86be2} 
+struct \doxymbox{\hyperlink{structio__mapped__region}{io\+\_\+mapped\+\_\+region}} {\bfseries ring\+\_\+region}
+\item 
+\Hypertarget{structio__ring__ctx_a86839306c175a8f7539e5ba632927921}\label{structio__ring__ctx_a86839306c175a8f7539e5ba632927921} 
+struct \doxymbox{\hyperlink{structio__mapped__region}{io\+\_\+mapped\+\_\+region}} {\bfseries param\+\_\+region}
+\item 
+\Hypertarget{structio__ring__ctx_a68d3e71a02b70594d199393aee0e68fb}\label{structio__ring__ctx_a68d3e71a02b70594d199393aee0e68fb} 
+long :\+ 64
+\item 
+\Hypertarget{structio__ring__ctx_a838a3f3b366aa67c590a956b207c6d16}\label{structio__ring__ctx_a838a3f3b366aa67c590a956b207c6d16} 
+long :\+ 64
+\item 
+\Hypertarget{structio__ring__ctx_a65bc9e0782e3b44524515573cfda7854}\label{structio__ring__ctx_a65bc9e0782e3b44524515573cfda7854} 
+long :\+ 64
+\item 
+\Hypertarget{structio__ring__ctx_a83fdbe33ba7a53bec7f7558ed123d2f5}\label{structio__ring__ctx_a83fdbe33ba7a53bec7f7558ed123d2f5} 
+long :\+ 64
+\item 
+\Hypertarget{structio__ring__ctx_a10f020361181a74893d5c87655a2d194}\label{structio__ring__ctx_a10f020361181a74893d5c87655a2d194} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

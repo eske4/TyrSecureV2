@@ -1,0 +1,74 @@
+\doxysection{fsnotify\+\_\+group Struct Reference}
+\hypertarget{structfsnotify__group}{}\label{structfsnotify__group}\index{fsnotify\_group@{fsnotify\_group}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfsnotify__group_a7fbb9464932dc4527a909716fcdae235}\label{structfsnotify__group_a7fbb9464932dc4527a909716fcdae235} 
+const struct \doxymbox{\hyperlink{structfsnotify__ops}{fsnotify\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structfsnotify__group_a5149630ba14cee79c1d76ef7718cd800}\label{structfsnotify__group_a5149630ba14cee79c1d76ef7718cd800} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structfsnotify__group_a6b430c4dfb714e9479596e0c08c7d9c1}\label{structfsnotify__group_a6b430c4dfb714e9479596e0c08c7d9c1} 
+spinlock\+\_\+t {\bfseries notification\+\_\+lock}
+\item 
+\Hypertarget{structfsnotify__group_a0501d45dececc0979dbce453605c01bc}\label{structfsnotify__group_a0501d45dececc0979dbce453605c01bc} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries notification\+\_\+list}
+\item 
+\Hypertarget{structfsnotify__group_a4dc91aea21a43ac3f543f1cf4c17ad9c}\label{structfsnotify__group_a4dc91aea21a43ac3f543f1cf4c17ad9c} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries notification\+\_\+waitq}
+\item 
+\Hypertarget{structfsnotify__group_ae734e807d368acc158eaf1996b04b84f}\label{structfsnotify__group_ae734e807d368acc158eaf1996b04b84f} 
+unsigned int {\bfseries q\+\_\+len}
+\item 
+\Hypertarget{structfsnotify__group_a81422bdd49e6938a9f3adc19fa0289d3}\label{structfsnotify__group_a81422bdd49e6938a9f3adc19fa0289d3} 
+unsigned int {\bfseries max\+\_\+events}
+\item 
+\Hypertarget{structfsnotify__group_a731f2f0afda846525e63aa22da6ec510}\label{structfsnotify__group_a731f2f0afda846525e63aa22da6ec510} 
+enum fsnotify\+\_\+group\+\_\+prio {\bfseries priority}
+\item 
+\Hypertarget{structfsnotify__group_a2c2e99ef3731376f913b3d7935820266}\label{structfsnotify__group_a2c2e99ef3731376f913b3d7935820266} 
+bool {\bfseries shutdown}
+\item 
+\Hypertarget{structfsnotify__group_a2ba12f951c3044a743f5c7c250a4dda0}\label{structfsnotify__group_a2ba12f951c3044a743f5c7c250a4dda0} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structfsnotify__group_a191c876b3922f616fca7d2b3abe16aea}\label{structfsnotify__group_a191c876b3922f616fca7d2b3abe16aea} 
+unsigned int {\bfseries owner\+\_\+flags}
+\item 
+\Hypertarget{structfsnotify__group_a871c3f8775ae04a5411dc2889341b4de}\label{structfsnotify__group_a871c3f8775ae04a5411dc2889341b4de} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mark\+\_\+mutex}
+\item 
+\Hypertarget{structfsnotify__group_adbea3d8a25a95770689b82cb5d2afbf0}\label{structfsnotify__group_adbea3d8a25a95770689b82cb5d2afbf0} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries user\+\_\+waits}
+\item 
+\Hypertarget{structfsnotify__group_affffd4e1b3bab6008f537c729a0ff12b}\label{structfsnotify__group_affffd4e1b3bab6008f537c729a0ff12b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries marks\+\_\+list}
+\item 
+\Hypertarget{structfsnotify__group_a21b37a1b5585833aa993b3c96ae2c15d}\label{structfsnotify__group_a21b37a1b5585833aa993b3c96ae2c15d} 
+struct \doxymbox{\hyperlink{structfasync__struct}{fasync\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries fsn\+\_\+fa}
+\item 
+\Hypertarget{structfsnotify__group_ab1d86b81db4b5a27d39784690bec5da3}\label{structfsnotify__group_ab1d86b81db4b5a27d39784690bec5da3} 
+struct \doxymbox{\hyperlink{structfsnotify__event}{fsnotify\+\_\+event}} \texorpdfstring{$\ast$}{*} {\bfseries overflow\+\_\+event}
+\item 
+\Hypertarget{structfsnotify__group_a42d6eeac7c6052de3d0134090efe6644}\label{structfsnotify__group_a42d6eeac7c6052de3d0134090efe6644} 
+struct \doxymbox{\hyperlink{structmem__cgroup}{mem\+\_\+cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries memcg}
+\item 
+\Hypertarget{structfsnotify__group_a916fd689086133c225adb1450246a17d}\label{structfsnotify__group_a916fd689086133c225adb1450246a17d} 
+struct \doxymbox{\hyperlink{structuser__namespace}{user\+\_\+namespace}} \texorpdfstring{$\ast$}{*} {\bfseries user\+\_\+ns}
+\item 
+\Hypertarget{structfsnotify__group_a01780f10d1a9ebda85b408b663d3f2b8}\label{structfsnotify__group_a01780f10d1a9ebda85b408b663d3f2b8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries private}\\
+\>struct \doxymbox{\hyperlink{structinotify__group__private__data}{inotify\_group\_private\_data}} {\bfseries inotify\_data}\\
+\>struct \doxymbox{\hyperlink{structfanotify__group__private__data}{fanotify\_group\_private\_data}} {\bfseries fanotify\_data}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

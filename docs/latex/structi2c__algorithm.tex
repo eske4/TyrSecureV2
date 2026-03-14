@@ -1,0 +1,59 @@
+\doxysection{i2c\+\_\+algorithm Struct Reference}
+\hypertarget{structi2c__algorithm}{}\label{structi2c__algorithm}\index{i2c\_algorithm@{i2c\_algorithm}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structi2c__algorithm_a0431af085fc970cea882bb4ddabea1fb}\label{structi2c__algorithm_a0431af085fc970cea882bb4ddabea1fb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries xfer} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\_adapter}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\doxymbox{\hyperlink{structi2c__msg}{i2c\_msg}} \texorpdfstring{$\ast$}{*}, int)\\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries master\_xfer} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\_adapter}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\doxymbox{\hyperlink{structi2c__msg}{i2c\_msg}} \texorpdfstring{$\ast$}{*}, int)\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structi2c__algorithm_a4f79bed06d2e7366bbdc585157b05d49}\label{structi2c__algorithm_a4f79bed06d2e7366bbdc585157b05d49} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries xfer\_atomic} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\_adapter}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\doxymbox{\hyperlink{structi2c__msg}{i2c\_msg}} \texorpdfstring{$\ast$}{*}, int)\\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries master\_xfer\_atomic} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\_adapter}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\doxymbox{\hyperlink{structi2c__msg}{i2c\_msg}} \texorpdfstring{$\ast$}{*}, int)\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structi2c__algorithm_aaa7c9d5d7f0308a97e90c700b83c5888}\label{structi2c__algorithm_aaa7c9d5d7f0308a97e90c700b83c5888} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries smbus\+\_\+xfer} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*}, u16, short unsigned int, char, u8, int, union \doxymbox{\hyperlink{unioni2c__smbus__data}{i2c\+\_\+smbus\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__algorithm_aa9b32941c871bbf76d63aab9bf06e0c8}\label{structi2c__algorithm_aa9b32941c871bbf76d63aab9bf06e0c8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries smbus\+\_\+xfer\+\_\+atomic} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*}, u16, short unsigned int, char, u8, int, union \doxymbox{\hyperlink{unioni2c__smbus__data}{i2c\+\_\+smbus\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__algorithm_a96b6bcd5d4ec0fdd3c009982b850498a}\label{structi2c__algorithm_a96b6bcd5d4ec0fdd3c009982b850498a} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries functionality} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__algorithm_a5843af861a55ed2d2075c9c972655473}\label{structi2c__algorithm_a5843af861a55ed2d2075c9c972655473} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries reg\_target} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\_client}} \texorpdfstring{$\ast$}{*})\\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries reg\_slave} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\_client}} \texorpdfstring{$\ast$}{*})\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structi2c__algorithm_a7984ac423384df5f8a8b9d3ab655fe11}\label{structi2c__algorithm_a7984ac423384df5f8a8b9d3ab655fe11} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries unreg\_target} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\_client}} \texorpdfstring{$\ast$}{*})\\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries unreg\_slave} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\_client}} \texorpdfstring{$\ast$}{*})\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

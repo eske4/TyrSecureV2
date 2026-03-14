@@ -1,0 +1,67 @@
+\doxysection{mptcp\+\_\+out\+\_\+options Struct Reference}
+\hypertarget{structmptcp__out__options}{}\label{structmptcp__out__options}\index{mptcp\_out\_options@{mptcp\_out\_options}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmptcp__out__options_aa1d5acdbd19043f40bd868ba684a4709}\label{structmptcp__out__options_aa1d5acdbd19043f40bd868ba684a4709} 
+u16 {\bfseries suboptions}
+\item 
+\Hypertarget{structmptcp__out__options_a37d1433674f00b5b872bc75ba26a6fbd}\label{structmptcp__out__options_a37d1433674f00b5b872bc75ba26a6fbd} 
+struct \doxymbox{\hyperlink{structmptcp__rm__list}{mptcp\+\_\+rm\+\_\+list}} {\bfseries rm\+\_\+list}
+\item 
+\Hypertarget{structmptcp__out__options_a97e87a8e103387ae1cf1f9c1b4d4ed16}\label{structmptcp__out__options_a97e87a8e103387ae1cf1f9c1b4d4ed16} 
+u8 {\bfseries join\+\_\+id}
+\item 
+\Hypertarget{structmptcp__out__options_a83f51339ad12ccd129c07b0d6530b812}\label{structmptcp__out__options_a83f51339ad12ccd129c07b0d6530b812} 
+u8 {\bfseries backup}
+\item 
+\Hypertarget{structmptcp__out__options_a3c9ebfd165db508b9f51315948385fc4}\label{structmptcp__out__options_a3c9ebfd165db508b9f51315948385fc4} 
+u8 {\bfseries reset\+\_\+reason}:\+ 4
+\item 
+\Hypertarget{structmptcp__out__options_a540bfbaf8ef2837889546ab4ff88ae18}\label{structmptcp__out__options_a540bfbaf8ef2837889546ab4ff88ae18} 
+u8 {\bfseries reset\+\_\+transient}:\+ 1
+\item 
+\Hypertarget{structmptcp__out__options_a07c3e737c3366879df586c14628de182}\label{structmptcp__out__options_a07c3e737c3366879df586c14628de182} 
+u8 {\bfseries csum\+\_\+reqd}:\+ 1
+\item 
+\Hypertarget{structmptcp__out__options_a975f336f11adf94d657fde226c27feb1}\label{structmptcp__out__options_a975f336f11adf94d657fde226c27feb1} 
+u8 {\bfseries allow\+\_\+join\+\_\+id0}:\+ 1
+\item 
+\Hypertarget{structmptcp__out__options_a114c433c792d033e857d8e1afdd6f0f8}\label{structmptcp__out__options_a114c433c792d033e857d8e1afdd6f0f8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionmptcp__out__options_1_1_0d235274354032055112332010112330274044040070223035_ade370e4b47cc7aaaa3b7cce80abf06f5}\label{unionmptcp__out__options_1_1_0d235274354032055112332010112330274044040070223035_ade370e4b47cc7aaaa3b7cce80abf06f5} 
+\>struct \{\\
+\>\>u64 {\bfseries sndr\_key}\\
+\>\>u64 {\bfseries rcvr\_key}\\
+\>\>u64 {\bfseries data\_seq}\\
+\>\>u32 {\bfseries subflow\_seq}\\
+\>\>u16 {\bfseries data\_len}\\
+\>\>\_\_sum16 {\bfseries csum}\\
+\>\} \\
+\Hypertarget{unionmptcp__out__options_1_1_0d235274354032055112332010112330274044040070223035_a53c979c1376576c2251f19904fe9d95b}\label{unionmptcp__out__options_1_1_0d235274354032055112332010112330274044040070223035_a53c979c1376576c2251f19904fe9d95b} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structmptcp__addr__info}{mptcp\_addr\_info}} {\bfseries addr}\\
+\>\>u64 {\bfseries ahmac}\\
+\>\} \\
+\Hypertarget{unionmptcp__out__options_1_1_0d235274354032055112332010112330274044040070223035_ad02ecbcd7fc08601fcee256c64866bff}\label{unionmptcp__out__options_1_1_0d235274354032055112332010112330274044040070223035_ad02ecbcd7fc08601fcee256c64866bff} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structmptcp__ext}{mptcp\_ext}} {\bfseries ext\_copy}\\
+\>\>u64 {\bfseries fail\_seq}\\
+\>\} \\
+\Hypertarget{unionmptcp__out__options_1_1_0d235274354032055112332010112330274044040070223035_aa6fbb94820e42412ca2924dc36f1aa58}\label{unionmptcp__out__options_1_1_0d235274354032055112332010112330274044040070223035_aa6fbb94820e42412ca2924dc36f1aa58} 
+\>struct \{\\
+\>\>u32 {\bfseries nonce}\\
+\>\>u32 {\bfseries token}\\
+\>\>u64 {\bfseries thmac}\\
+\>\>u8 {\bfseries hmac} \+[20]\+\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

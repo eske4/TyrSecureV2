@@ -1,0 +1,130 @@
+\doxysection{efi\+\_\+rts\+\_\+args Union Reference}
+\hypertarget{unionefi__rts__args}{}\label{unionefi__rts__args}\index{efi\_rts\_args@{efi\_rts\_args}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionefi__rts__args_aa9f74b3f928328cf8da67ae8d8e82d85}\label{unionefi__rts__args_aa9f74b3f928328cf8da67ae8d8e82d85} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\doxymbox{\hyperlink{structefi__time__t}{efi\_time\_t}} \texorpdfstring{$\ast$}{*} {\bfseries time}\\
+\>\doxymbox{\hyperlink{structefi__time__cap__t}{efi\_time\_cap\_t}} \texorpdfstring{$\ast$}{*} {\bfseries capabilities}\\
+\} {\bfseries GET\_TIME}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_ad792467d81584760cc50edc17a8c7f80}\label{unionefi__rts__args_ad792467d81584760cc50edc17a8c7f80} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\doxymbox{\hyperlink{structefi__time__t}{efi\_time\_t}} \texorpdfstring{$\ast$}{*} {\bfseries time}\\
+\} {\bfseries SET\_TIME}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_a1faa73b3c87821f65523439d0d4ea8bc}\label{unionefi__rts__args_a1faa73b3c87821f65523439d0d4ea8bc} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>efi\_bool\_t \texorpdfstring{$\ast$}{*} {\bfseries enabled}\\
+\>efi\_bool\_t \texorpdfstring{$\ast$}{*} {\bfseries pending}\\
+\>\doxymbox{\hyperlink{structefi__time__t}{efi\_time\_t}} \texorpdfstring{$\ast$}{*} {\bfseries time}\\
+\} {\bfseries GET\_WAKEUP\_TIME}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_afd32fd58c6390477bbbf6007667dc4a1}\label{unionefi__rts__args_afd32fd58c6390477bbbf6007667dc4a1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>efi\_bool\_t {\bfseries enable}\\
+\>\doxymbox{\hyperlink{structefi__time__t}{efi\_time\_t}} \texorpdfstring{$\ast$}{*} {\bfseries time}\\
+\} {\bfseries SET\_WAKEUP\_TIME}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_aac5c61d44394dab009ca63f6e68cdce1}\label{unionefi__rts__args_aac5c61d44394dab009ca63f6e68cdce1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>efi\_char16\_t \texorpdfstring{$\ast$}{*} {\bfseries name}\\
+\>efi\_guid\_t \texorpdfstring{$\ast$}{*} {\bfseries vendor}\\
+\>u32 \texorpdfstring{$\ast$}{*} {\bfseries attr}\\
+\>long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries data\_size}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries data}\\
+\} {\bfseries GET\_VARIABLE}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_aa7885162740667afaf62413ca67ce443}\label{unionefi__rts__args_aa7885162740667afaf62413ca67ce443} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries name\_size}\\
+\>efi\_char16\_t \texorpdfstring{$\ast$}{*} {\bfseries name}\\
+\>efi\_guid\_t \texorpdfstring{$\ast$}{*} {\bfseries vendor}\\
+\} {\bfseries GET\_NEXT\_VARIABLE}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_af054db4624a18d3aa293b48a1783d8ad}\label{unionefi__rts__args_af054db4624a18d3aa293b48a1783d8ad} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>efi\_char16\_t \texorpdfstring{$\ast$}{*} {\bfseries name}\\
+\>efi\_guid\_t \texorpdfstring{$\ast$}{*} {\bfseries vendor}\\
+\>u32 {\bfseries attr}\\
+\>long unsigned int {\bfseries data\_size}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries data}\\
+\} {\bfseries SET\_VARIABLE}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_a181d0f92cce2b018e7a9ad0dcb4e5cd5}\label{unionefi__rts__args_a181d0f92cce2b018e7a9ad0dcb4e5cd5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries attr}\\
+\>u64 \texorpdfstring{$\ast$}{*} {\bfseries storage\_space}\\
+\>u64 \texorpdfstring{$\ast$}{*} {\bfseries remaining\_space}\\
+\>u64 \texorpdfstring{$\ast$}{*} {\bfseries max\_variable\_size}\\
+\} {\bfseries QUERY\_VARIABLE\_INFO}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_aae84eab2ae2d397e13a4dc3bfeabce2c}\label{unionefi__rts__args_aae84eab2ae2d397e13a4dc3bfeabce2c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 \texorpdfstring{$\ast$}{*} {\bfseries high\_count}\\
+\} {\bfseries GET\_NEXT\_HIGH\_MONO\_COUNT}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_a81522b574eb979d38f98e6dc1305fae3}\label{unionefi__rts__args_a81522b574eb979d38f98e6dc1305fae3} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\doxymbox{\hyperlink{structefi__capsule__header__t}{efi\_capsule\_header\_t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries capsules}\\
+\>long unsigned int {\bfseries count}\\
+\>long unsigned int {\bfseries sg\_list}\\
+\} {\bfseries UPDATE\_CAPSULE}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_a72816a2b3a993c93b5f024bd327eb767}\label{unionefi__rts__args_a72816a2b3a993c93b5f024bd327eb767} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\doxymbox{\hyperlink{structefi__capsule__header__t}{efi\_capsule\_header\_t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries capsules}\\
+\>long unsigned int {\bfseries count}\\
+\>u64 \texorpdfstring{$\ast$}{*} {\bfseries max\_size}\\
+\>int \texorpdfstring{$\ast$}{*} {\bfseries reset\_type}\\
+\} {\bfseries QUERY\_CAPSULE\_CAPS}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__rts__args_af5731662526be8b8ff9f6530df622f64}\label{unionefi__rts__args_af5731662526be8b8ff9f6530df622f64} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries acpi\_prm\_handler} )(u64, void \texorpdfstring{$\ast$}{*})\\
+\>u64 {\bfseries param\_buffer\_addr}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries context}\\
+\} {\bfseries ACPI\_PRM\_HANDLER}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

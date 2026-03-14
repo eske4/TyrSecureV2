@@ -1,0 +1,490 @@
+\doxysection{pci\+\_\+dev Struct Reference}
+\hypertarget{structpci__dev}{}\label{structpci__dev}\index{pci\_dev@{pci\_dev}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpci__dev_ad6a542e4c39f172c88308cb6c69a7b6f}\label{structpci__dev_ad6a542e4c39f172c88308cb6c69a7b6f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries bus\+\_\+list}
+\item 
+\Hypertarget{structpci__dev_af45adc35b1e9cdff71aa9e499a40d938}\label{structpci__dev_af45adc35b1e9cdff71aa9e499a40d938} 
+struct \doxymbox{\hyperlink{structpci__bus}{pci\+\_\+bus}} \texorpdfstring{$\ast$}{*} {\bfseries bus}
+\item 
+\Hypertarget{structpci__dev_aee8ddd4d88d618221f72aed4b3f9fb27}\label{structpci__dev_aee8ddd4d88d618221f72aed4b3f9fb27} 
+struct \doxymbox{\hyperlink{structpci__bus}{pci\+\_\+bus}} \texorpdfstring{$\ast$}{*} {\bfseries subordinate}
+\item 
+\Hypertarget{structpci__dev_aa496512da41f4b64a532031e5c1e361f}\label{structpci__dev_aa496512da41f4b64a532031e5c1e361f} 
+void \texorpdfstring{$\ast$}{*} {\bfseries sysdata}
+\item 
+\Hypertarget{structpci__dev_aefc1c94339f61ededd7a5e73d141968f}\label{structpci__dev_aefc1c94339f61ededd7a5e73d141968f} 
+struct \doxymbox{\hyperlink{structproc__dir__entry}{proc\+\_\+dir\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries procent}
+\item 
+\Hypertarget{structpci__dev_a0979daab189539633b5c3e8c2740a8da}\label{structpci__dev_a0979daab189539633b5c3e8c2740a8da} 
+struct \doxymbox{\hyperlink{structpci__slot}{pci\+\_\+slot}} \texorpdfstring{$\ast$}{*} {\bfseries slot}
+\item 
+\Hypertarget{structpci__dev_a1120396fd6a9a1051584ca3b967715e1}\label{structpci__dev_a1120396fd6a9a1051584ca3b967715e1} 
+unsigned int {\bfseries devfn}
+\item 
+\Hypertarget{structpci__dev_ae7feca516a31d5b3599d332917a44dff}\label{structpci__dev_ae7feca516a31d5b3599d332917a44dff} 
+short unsigned int {\bfseries vendor}
+\item 
+\Hypertarget{structpci__dev_a4121f46d5c1c5168de7b0c0b93394303}\label{structpci__dev_a4121f46d5c1c5168de7b0c0b93394303} 
+short unsigned int {\bfseries device}
+\item 
+\Hypertarget{structpci__dev_af49bcc2e58e24463da8e893e1c4ab794}\label{structpci__dev_af49bcc2e58e24463da8e893e1c4ab794} 
+short unsigned int {\bfseries subsystem\+\_\+vendor}
+\item 
+\Hypertarget{structpci__dev_af6c4c8660c4e7c9704cb945ce619ef42}\label{structpci__dev_af6c4c8660c4e7c9704cb945ce619ef42} 
+short unsigned int {\bfseries subsystem\+\_\+device}
+\item 
+\Hypertarget{structpci__dev_a9e55f6b3a8bcd079edaf343c698bc615}\label{structpci__dev_a9e55f6b3a8bcd079edaf343c698bc615} 
+unsigned int {\bfseries class}
+\item 
+\Hypertarget{structpci__dev_ab2102dd2f58bdedf229eb99eb463bd4e}\label{structpci__dev_ab2102dd2f58bdedf229eb99eb463bd4e} 
+u8 {\bfseries revision}
+\item 
+\Hypertarget{structpci__dev_adc11dd9c490d0a1c576d72015ea7966e}\label{structpci__dev_adc11dd9c490d0a1c576d72015ea7966e} 
+u8 {\bfseries hdr\+\_\+type}
+\item 
+\Hypertarget{structpci__dev_a3df1a8c8c38495e55fd7d2ef97ecc501}\label{structpci__dev_a3df1a8c8c38495e55fd7d2ef97ecc501} 
+u16 {\bfseries aer\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_ae99637086f1ba60e1be18e9a6d4e3925}\label{structpci__dev_ae99637086f1ba60e1be18e9a6d4e3925} 
+struct \doxymbox{\hyperlink{structaer__info}{aer\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries aer\+\_\+info}
+\item 
+\Hypertarget{structpci__dev_aed2e33d47e139951be802ce0709252bd}\label{structpci__dev_aed2e33d47e139951be802ce0709252bd} 
+struct \doxymbox{\hyperlink{structrcec__ea}{rcec\+\_\+ea}} \texorpdfstring{$\ast$}{*} {\bfseries rcec\+\_\+ea}
+\item 
+\Hypertarget{structpci__dev_a4939b125360737ac09b521a730b2d215}\label{structpci__dev_a4939b125360737ac09b521a730b2d215} 
+struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries rcec}
+\item 
+\Hypertarget{structpci__dev_a26c89454fd0d1a0a1c1ed9cdec9ae092}\label{structpci__dev_a26c89454fd0d1a0a1c1ed9cdec9ae092} 
+u32 {\bfseries devcap}
+\item 
+\Hypertarget{structpci__dev_ac26656ab0716616a5cc5552f02304ec5}\label{structpci__dev_ac26656ab0716616a5cc5552f02304ec5} 
+u16 {\bfseries rebar\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a06c3a1427490642970f905038b3697e7}\label{structpci__dev_a06c3a1427490642970f905038b3697e7} 
+u8 {\bfseries pcie\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a1b8381a22e19e618d8800dbaa4d354b0}\label{structpci__dev_a1b8381a22e19e618d8800dbaa4d354b0} 
+u8 {\bfseries msi\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_aa6c6d0f34d9543a4f940391267111bb1}\label{structpci__dev_aa6c6d0f34d9543a4f940391267111bb1} 
+u8 {\bfseries msix\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a3e8c1a6cd59c62d8a5c908205ebaed6f}\label{structpci__dev_a3e8c1a6cd59c62d8a5c908205ebaed6f} 
+u8 {\bfseries pcie\+\_\+mpss}:\+ 3
+\item 
+\Hypertarget{structpci__dev_a79ad94ef13816d3c83c1b017b591df8f}\label{structpci__dev_a79ad94ef13816d3c83c1b017b591df8f} 
+u8 {\bfseries rom\+\_\+base\+\_\+reg}
+\item 
+\Hypertarget{structpci__dev_aacea907b62fe581451585ffa3c4b9b58}\label{structpci__dev_aacea907b62fe581451585ffa3c4b9b58} 
+u8 {\bfseries pin}
+\item 
+\Hypertarget{structpci__dev_ad111570e50ea03530d1e101adc8a5055}\label{structpci__dev_ad111570e50ea03530d1e101adc8a5055} 
+u16 {\bfseries pcie\+\_\+flags\+\_\+reg}
+\item 
+\Hypertarget{structpci__dev_a86ba9b9688be44f27ef4e38c42e44241}\label{structpci__dev_a86ba9b9688be44f27ef4e38c42e44241} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+alias\+\_\+mask}
+\item 
+\Hypertarget{structpci__dev_a578d358cdf41743617bf656a9de7cf37}\label{structpci__dev_a578d358cdf41743617bf656a9de7cf37} 
+struct \doxymbox{\hyperlink{structpci__driver}{pci\+\_\+driver}} \texorpdfstring{$\ast$}{*} {\bfseries driver}
+\item 
+\Hypertarget{structpci__dev_a1f86543a9fd809465a77cb9350ec1ca4}\label{structpci__dev_a1f86543a9fd809465a77cb9350ec1ca4} 
+u64 {\bfseries dma\+\_\+mask}
+\item 
+\Hypertarget{structpci__dev_a90890f8721ca9bd83578838015d2c31f}\label{structpci__dev_a90890f8721ca9bd83578838015d2c31f} 
+struct \doxymbox{\hyperlink{structdevice__dma__parameters}{device\+\_\+dma\+\_\+parameters}} {\bfseries dma\+\_\+parms}
+\item 
+\Hypertarget{structpci__dev_a5a05b6487ef0e5d872b62d4d584c9ca3}\label{structpci__dev_a5a05b6487ef0e5d872b62d4d584c9ca3} 
+pci\+\_\+power\+\_\+t {\bfseries current\+\_\+state}
+\item 
+\Hypertarget{structpci__dev_a83a940e7734a07b93151f812f177a4a6}\label{structpci__dev_a83a940e7734a07b93151f812f177a4a6} 
+u8 {\bfseries pm\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a3b275c100d0f4d653bf1d9ab4dac36da}\label{structpci__dev_a3b275c100d0f4d653bf1d9ab4dac36da} 
+unsigned int {\bfseries pme\+\_\+support}:\+ 5
+\item 
+\Hypertarget{structpci__dev_a89a2cdb9bad97d187f02049135bd6bab}\label{structpci__dev_a89a2cdb9bad97d187f02049135bd6bab} 
+unsigned int {\bfseries pme\+\_\+poll}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a60ad336a5f337705d5a7e780e0ea1723}\label{structpci__dev_a60ad336a5f337705d5a7e780e0ea1723} 
+unsigned int {\bfseries pinned}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a93492916c90bcef74b8aa9a215faf5f7}\label{structpci__dev_a93492916c90bcef74b8aa9a215faf5f7} 
+unsigned int {\bfseries config\+\_\+rrs\+\_\+sv}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a26f688a89e9edde3f20fc684ba4752b1}\label{structpci__dev_a26f688a89e9edde3f20fc684ba4752b1} 
+unsigned int {\bfseries imm\+\_\+ready}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ad7262b240b5faa637b47669fd0b0d816}\label{structpci__dev_ad7262b240b5faa637b47669fd0b0d816} 
+unsigned int {\bfseries d1\+\_\+support}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ac4f2e73a78a992b1336881609f15908e}\label{structpci__dev_ac4f2e73a78a992b1336881609f15908e} 
+unsigned int {\bfseries d2\+\_\+support}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a7766ee6c0ccc87d93a56b28903c17803}\label{structpci__dev_a7766ee6c0ccc87d93a56b28903c17803} 
+unsigned int {\bfseries no\+\_\+d1d2}:\+ 1
+\item 
+\Hypertarget{structpci__dev_add771fe14b9c11ea7458a0e01e5a3051}\label{structpci__dev_add771fe14b9c11ea7458a0e01e5a3051} 
+unsigned int {\bfseries no\+\_\+d3cold}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a0a9a540628bc423714e30110dd5ee838}\label{structpci__dev_a0a9a540628bc423714e30110dd5ee838} 
+unsigned int {\bfseries bridge\+\_\+d3}:\+ 1
+\item 
+\Hypertarget{structpci__dev_aa57a9ffe5a83f8da55d197f2822ea720}\label{structpci__dev_aa57a9ffe5a83f8da55d197f2822ea720} 
+unsigned int {\bfseries d3cold\+\_\+allowed}:\+ 1
+\item 
+\Hypertarget{structpci__dev_aacb4dda9c06ffd9cb03aec7ca16c6ef9}\label{structpci__dev_aacb4dda9c06ffd9cb03aec7ca16c6ef9} 
+unsigned int {\bfseries mmio\+\_\+always\+\_\+on}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a8e2de630b383a90b53ad9fbcac1c1c0a}\label{structpci__dev_a8e2de630b383a90b53ad9fbcac1c1c0a} 
+unsigned int {\bfseries wakeup\+\_\+prepared}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a466afcc287cb362fcb96a2d33a45b3f3}\label{structpci__dev_a466afcc287cb362fcb96a2d33a45b3f3} 
+unsigned int {\bfseries skip\+\_\+bus\+\_\+pm}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ad748f037d34753d8807971fe9b2a53ad}\label{structpci__dev_ad748f037d34753d8807971fe9b2a53ad} 
+unsigned int {\bfseries ignore\+\_\+hotplug}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a28eb7b6dab6d4b066236c94161aa8792}\label{structpci__dev_a28eb7b6dab6d4b066236c94161aa8792} 
+unsigned int {\bfseries hotplug\+\_\+user\+\_\+indicators}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a673a0c6073ec880df73ce59831976ffd}\label{structpci__dev_a673a0c6073ec880df73ce59831976ffd} 
+unsigned int {\bfseries clear\+\_\+retrain\+\_\+link}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a3b303c589ae7002ef964ebe1b74d96c9}\label{structpci__dev_a3b303c589ae7002ef964ebe1b74d96c9} 
+unsigned int {\bfseries no\+\_\+bw\+\_\+notif}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ab0d93fe56d3bf5f5a9d30b38eb1d7a0f}\label{structpci__dev_ab0d93fe56d3bf5f5a9d30b38eb1d7a0f} 
+unsigned int {\bfseries d3hot\+\_\+delay}
+\item 
+\Hypertarget{structpci__dev_ab80e01544c918e7ff87de2ef8d56e8af}\label{structpci__dev_ab80e01544c918e7ff87de2ef8d56e8af} 
+unsigned int {\bfseries d3cold\+\_\+delay}
+\item 
+\Hypertarget{structpci__dev_aebe66bc27c771b0ecccc4ab9d5c3979c}\label{structpci__dev_aebe66bc27c771b0ecccc4ab9d5c3979c} 
+u16 {\bfseries l1ss}
+\item 
+\Hypertarget{structpci__dev_af98c13ce353303ac47fa2218e5a4fa32}\label{structpci__dev_af98c13ce353303ac47fa2218e5a4fa32} 
+struct \doxymbox{\hyperlink{structpcie__link__state}{pcie\+\_\+link\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries link\+\_\+state}
+\item 
+\Hypertarget{structpci__dev_a58e41e3a13022514db31c25319899c88}\label{structpci__dev_a58e41e3a13022514db31c25319899c88} 
+unsigned int {\bfseries aspm\+\_\+l0s\+\_\+support}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a6bc43e634346b4c5033a0db272c7270f}\label{structpci__dev_a6bc43e634346b4c5033a0db272c7270f} 
+unsigned int {\bfseries aspm\+\_\+l1\+\_\+support}:\+ 1
+\item 
+\Hypertarget{structpci__dev_af2800014c28c2b13443e20766320bc53}\label{structpci__dev_af2800014c28c2b13443e20766320bc53} 
+unsigned int {\bfseries ltr\+\_\+path}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a3f10d6f938a55f5bfae93b6246a69688}\label{structpci__dev_a3f10d6f938a55f5bfae93b6246a69688} 
+unsigned int {\bfseries pasid\+\_\+no\+\_\+tlp}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a4900750017f3f436b087bf20d46d26c6}\label{structpci__dev_a4900750017f3f436b087bf20d46d26c6} 
+unsigned int {\bfseries eetlp\+\_\+prefix\+\_\+max}:\+ 3
+\item 
+\Hypertarget{structpci__dev_ae3179d4ce48861f89f2e3f45edf910f7}\label{structpci__dev_ae3179d4ce48861f89f2e3f45edf910f7} 
+pci\+\_\+channel\+\_\+state\+\_\+t {\bfseries error\+\_\+state}
+\item 
+\Hypertarget{structpci__dev_a41b248114b5e51dd3266144d6e49f5e8}\label{structpci__dev_a41b248114b5e51dd3266144d6e49f5e8} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structpci__dev_a7d9d4e208068631ab50ab62054684ad7}\label{structpci__dev_a7d9d4e208068631ab50ab62054684ad7} 
+int {\bfseries cfg\+\_\+size}
+\item 
+\Hypertarget{structpci__dev_a3a87ba81ff1aa98b3d6d42e68c72c5a0}\label{structpci__dev_a3a87ba81ff1aa98b3d6d42e68c72c5a0} 
+unsigned int {\bfseries irq}
+\item 
+\Hypertarget{structpci__dev_a3c3ade85a1f497859c91f5126a65fd6f}\label{structpci__dev_a3c3ade85a1f497859c91f5126a65fd6f} 
+struct \doxymbox{\hyperlink{structresource}{resource}} {\bfseries resource} \+[17]\+
+\item 
+\Hypertarget{structpci__dev_a38445b7ebb20c862bee271e525374fed}\label{structpci__dev_a38445b7ebb20c862bee271e525374fed} 
+struct \doxymbox{\hyperlink{structresource}{resource}} {\bfseries driver\+\_\+exclusive\+\_\+resource}
+\item 
+\Hypertarget{structpci__dev_a853c06d3ba6d5f68da7a2072d814cfc3}\label{structpci__dev_a853c06d3ba6d5f68da7a2072d814cfc3} 
+unsigned int {\bfseries transparent}:\+ 1
+\item 
+\Hypertarget{structpci__dev_aca51eaca41557527f1009078d9bb9cce}\label{structpci__dev_aca51eaca41557527f1009078d9bb9cce} 
+unsigned int {\bfseries io\+\_\+window}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a244b326490cbb89a208283adb7321243}\label{structpci__dev_a244b326490cbb89a208283adb7321243} 
+unsigned int {\bfseries pref\+\_\+window}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a68bdf27bca0c3868a6992c95f53c0a94}\label{structpci__dev_a68bdf27bca0c3868a6992c95f53c0a94} 
+unsigned int {\bfseries pref\+\_\+64\+\_\+window}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a27b1c7323fd2dd9da4be1df6b0af239e}\label{structpci__dev_a27b1c7323fd2dd9da4be1df6b0af239e} 
+unsigned int {\bfseries multifunction}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a833de0ddf01dc3ef8d18c5d35d0bd83f}\label{structpci__dev_a833de0ddf01dc3ef8d18c5d35d0bd83f} 
+unsigned int {\bfseries is\+\_\+busmaster}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a9b1057e29bddec6ddb76b9b31bdde5b2}\label{structpci__dev_a9b1057e29bddec6ddb76b9b31bdde5b2} 
+unsigned int {\bfseries no\+\_\+msi}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a8a2499c87ed3bd102a8c5e16ac1e3bcf}\label{structpci__dev_a8a2499c87ed3bd102a8c5e16ac1e3bcf} 
+unsigned int {\bfseries no\+\_\+64bit\+\_\+msi}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a74d5e3d120aa26593e8b72e67450fec7}\label{structpci__dev_a74d5e3d120aa26593e8b72e67450fec7} 
+unsigned int {\bfseries block\+\_\+cfg\+\_\+access}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a639c419b178f6fc5ea2f4fd6be1d15b2}\label{structpci__dev_a639c419b178f6fc5ea2f4fd6be1d15b2} 
+unsigned int {\bfseries broken\+\_\+parity\+\_\+status}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a4b21dc61d6326b9db11b3e35c25b8e05}\label{structpci__dev_a4b21dc61d6326b9db11b3e35c25b8e05} 
+unsigned int {\bfseries irq\+\_\+reroute\+\_\+variant}:\+ 2
+\item 
+\Hypertarget{structpci__dev_aa65c43b00833b36e4a719b07ab43c0c3}\label{structpci__dev_aa65c43b00833b36e4a719b07ab43c0c3} 
+unsigned int {\bfseries msi\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a84519bbf096fb51d8fd963dbc050f2aa}\label{structpci__dev_a84519bbf096fb51d8fd963dbc050f2aa} 
+unsigned int {\bfseries msix\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a95044812e8403d8aefc6f73dd6b0d79e}\label{structpci__dev_a95044812e8403d8aefc6f73dd6b0d79e} 
+unsigned int {\bfseries ari\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a233a3d7f8072936dc3fca518be4d8c16}\label{structpci__dev_a233a3d7f8072936dc3fca518be4d8c16} 
+unsigned int {\bfseries ats\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a2b8b5a3e3fe942199e7796415eb9a3c1}\label{structpci__dev_a2b8b5a3e3fe942199e7796415eb9a3c1} 
+unsigned int {\bfseries pasid\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ab71990de374419b71be44decabba7eb2}\label{structpci__dev_ab71990de374419b71be44decabba7eb2} 
+unsigned int {\bfseries pri\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a647f8d4d6cd055ce52204791c1b8b77e}\label{structpci__dev_a647f8d4d6cd055ce52204791c1b8b77e} 
+unsigned int {\bfseries tph\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ab38e02453b6dabf902fa58c1c7bff99d}\label{structpci__dev_ab38e02453b6dabf902fa58c1c7bff99d} 
+unsigned int {\bfseries fm\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_acda755097c9056284ed13feb4db5dc8b}\label{structpci__dev_acda755097c9056284ed13feb4db5dc8b} 
+unsigned int {\bfseries is\+\_\+managed}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a00976dc7426d65820390926c95c5df94}\label{structpci__dev_a00976dc7426d65820390926c95c5df94} 
+unsigned int {\bfseries is\+\_\+msi\+\_\+managed}:\+ 1
+\item 
+\Hypertarget{structpci__dev_adf0465a7cb9565280c1335f29dcf524f}\label{structpci__dev_adf0465a7cb9565280c1335f29dcf524f} 
+unsigned int {\bfseries needs\+\_\+freset}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a7036f13ff55b3a17f0376ce8fc972774}\label{structpci__dev_a7036f13ff55b3a17f0376ce8fc972774} 
+unsigned int {\bfseries state\+\_\+saved}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ac9ea4af5de6d71c4f2df1d35e4a783ce}\label{structpci__dev_ac9ea4af5de6d71c4f2df1d35e4a783ce} 
+unsigned int {\bfseries is\+\_\+physfn}:\+ 1
+\item 
+\Hypertarget{structpci__dev_af70b7e2d07728e00014c3846ab72f664}\label{structpci__dev_af70b7e2d07728e00014c3846ab72f664} 
+unsigned int {\bfseries is\+\_\+virtfn}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a367849ff65721ff1a3992c89886b58e2}\label{structpci__dev_a367849ff65721ff1a3992c89886b58e2} 
+unsigned int {\bfseries is\+\_\+hotplug\+\_\+bridge}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a5006aef0fc5a72e6c6bdfdafbf66d78b}\label{structpci__dev_a5006aef0fc5a72e6c6bdfdafbf66d78b} 
+unsigned int {\bfseries is\+\_\+pciehp}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a7a89eb3e165672dd10180aa7452df2b4}\label{structpci__dev_a7a89eb3e165672dd10180aa7452df2b4} 
+unsigned int {\bfseries shpc\+\_\+managed}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a8f2f7e3f222bf2c4ed59bd0648653e23}\label{structpci__dev_a8f2f7e3f222bf2c4ed59bd0648653e23} 
+unsigned int {\bfseries is\+\_\+thunderbolt}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a6913aa2250b53d35a46ccfbe793eab30}\label{structpci__dev_a6913aa2250b53d35a46ccfbe793eab30} 
+unsigned int {\bfseries untrusted}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ac0e6abd4b5d1422ca65976eee4e9d428}\label{structpci__dev_ac0e6abd4b5d1422ca65976eee4e9d428} 
+unsigned int {\bfseries external\+\_\+facing}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ae0d5341ebebd4ded3092c3dd82537455}\label{structpci__dev_ae0d5341ebebd4ded3092c3dd82537455} 
+unsigned int {\bfseries broken\+\_\+intx\+\_\+masking}:\+ 1
+\item 
+\Hypertarget{structpci__dev_afdfe71027e5de1e7c4b13759f2b077a7}\label{structpci__dev_afdfe71027e5de1e7c4b13759f2b077a7} 
+unsigned int {\bfseries io\+\_\+window\+\_\+1k}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a436622975961658bb9b5abb58bd21214}\label{structpci__dev_a436622975961658bb9b5abb58bd21214} 
+unsigned int {\bfseries irq\+\_\+managed}:\+ 1
+\item 
+\Hypertarget{structpci__dev_ac06902fe019de7cda241bbc17038a872}\label{structpci__dev_ac06902fe019de7cda241bbc17038a872} 
+unsigned int {\bfseries non\+\_\+compliant\+\_\+bars}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a448bf76bc021dca8e07d901fb13bb3ad}\label{structpci__dev_a448bf76bc021dca8e07d901fb13bb3ad} 
+unsigned int {\bfseries is\+\_\+probed}:\+ 1
+\item 
+\Hypertarget{structpci__dev_aa3aff1cd1d09d5d7b3aa946e1b4228fb}\label{structpci__dev_aa3aff1cd1d09d5d7b3aa946e1b4228fb} 
+unsigned int {\bfseries link\+\_\+active\+\_\+reporting}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a2205b0b1777da9d7e329ce070a1a256b}\label{structpci__dev_a2205b0b1777da9d7e329ce070a1a256b} 
+unsigned int {\bfseries no\+\_\+vf\+\_\+scan}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a6e619eabde158edb9f05f46452ad9f3f}\label{structpci__dev_a6e619eabde158edb9f05f46452ad9f3f} 
+unsigned int {\bfseries no\+\_\+command\+\_\+memory}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a76a4a668306864e2ebec9e4019d7c0fb}\label{structpci__dev_a76a4a668306864e2ebec9e4019d7c0fb} 
+unsigned int {\bfseries rom\+\_\+bar\+\_\+overlap}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a37d1e7bfdb08f5eb844734340c238654}\label{structpci__dev_a37d1e7bfdb08f5eb844734340c238654} 
+unsigned int {\bfseries rom\+\_\+attr\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a7fbc0ab799c793d89d66c736e82172f0}\label{structpci__dev_a7fbc0ab799c793d89d66c736e82172f0} 
+unsigned int {\bfseries non\+\_\+mappable\+\_\+bars}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a0f23049a63eafdf74a5d1e26e8325565}\label{structpci__dev_a0f23049a63eafdf74a5d1e26e8325565} 
+pci\+\_\+dev\+\_\+flags\+\_\+t {\bfseries dev\+\_\+flags}
+\item 
+\Hypertarget{structpci__dev_a0e221052f203f5055c8a3ff3dc079831}\label{structpci__dev_a0e221052f203f5055c8a3ff3dc079831} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries enable\+\_\+cnt}
+\item 
+\Hypertarget{structpci__dev_a284ec7a6e774f3ce528846070c12b903}\label{structpci__dev_a284ec7a6e774f3ce528846070c12b903} 
+spinlock\+\_\+t {\bfseries pcie\+\_\+cap\+\_\+lock}
+\item 
+\Hypertarget{structpci__dev_ad0144a220ada696972998cb2560bf544}\label{structpci__dev_ad0144a220ada696972998cb2560bf544} 
+u32 {\bfseries saved\+\_\+config\+\_\+space} \+[16]\+
+\item 
+\Hypertarget{structpci__dev_a0d5ecc33f687b5bdd64d17086c088d95}\label{structpci__dev_a0d5ecc33f687b5bdd64d17086c088d95} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries saved\+\_\+cap\+\_\+space}
+\item 
+\Hypertarget{structpci__dev_ad10c5763705ca640a36340dfe59abcbe}\label{structpci__dev_ad10c5763705ca640a36340dfe59abcbe} 
+struct \doxymbox{\hyperlink{structbin__attribute}{bin\+\_\+attribute}} \texorpdfstring{$\ast$}{*} {\bfseries res\+\_\+attr} \+[17]\+
+\item 
+\Hypertarget{structpci__dev_ab1d4747ab4850e90d82dbd6b7469a7b2}\label{structpci__dev_ab1d4747ab4850e90d82dbd6b7469a7b2} 
+struct \doxymbox{\hyperlink{structbin__attribute}{bin\+\_\+attribute}} \texorpdfstring{$\ast$}{*} {\bfseries res\+\_\+attr\+\_\+wc} \+[17]\+
+\item 
+\Hypertarget{structpci__dev_a94dd674b297ca5af139479151ae10383}\label{structpci__dev_a94dd674b297ca5af139479151ae10383} 
+unsigned int {\bfseries broken\+\_\+cmd\+\_\+compl}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a8980da983e14a10eb74e860483ded20a}\label{structpci__dev_a8980da983e14a10eb74e860483ded20a} 
+u16 {\bfseries ptm\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a94610913ba11db383e4ae10b44adde80}\label{structpci__dev_a94610913ba11db383e4ae10b44adde80} 
+unsigned int {\bfseries ptm\+\_\+root}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a49bb4fbf58e9d0f7014037c8def1f429}\label{structpci__dev_a49bb4fbf58e9d0f7014037c8def1f429} 
+unsigned int {\bfseries ptm\+\_\+responder}:\+ 1
+\item 
+\Hypertarget{structpci__dev_aa95373ec652e255ad2943b3ae196dbe7}\label{structpci__dev_aa95373ec652e255ad2943b3ae196dbe7} 
+unsigned int {\bfseries ptm\+\_\+requester}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a3e93f10e787e7fb27e0f90a3b292e9a5}\label{structpci__dev_a3e93f10e787e7fb27e0f90a3b292e9a5} 
+unsigned int {\bfseries ptm\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a6d6a0748837480e8c6ccbb63db4b69a9}\label{structpci__dev_a6d6a0748837480e8c6ccbb63db4b69a9} 
+u8 {\bfseries ptm\+\_\+granularity}
+\item 
+\Hypertarget{structpci__dev_a2b7d71e71ef8143b0ffed7c1d77c7358}\label{structpci__dev_a2b7d71e71ef8143b0ffed7c1d77c7358} 
+void \texorpdfstring{$\ast$}{*} {\bfseries msix\+\_\+base}
+\item 
+\Hypertarget{structpci__dev_af981e9b15bd5acb381f089fe0ef309e4}\label{structpci__dev_af981e9b15bd5acb381f089fe0ef309e4} 
+raw\+\_\+spinlock\+\_\+t {\bfseries msi\+\_\+lock}
+\item 
+\Hypertarget{structpci__dev_a86593df524187e9c1cfa7ef5dbad1ba9}\label{structpci__dev_a86593df524187e9c1cfa7ef5dbad1ba9} 
+struct \doxymbox{\hyperlink{structpci__vpd}{pci\+\_\+vpd}} {\bfseries vpd}
+\item 
+\Hypertarget{structpci__dev_af0212e911d2dd9201ecace5d4c11ae2b}\label{structpci__dev_af0212e911d2dd9201ecace5d4c11ae2b} 
+u16 {\bfseries dpc\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a3baaadab150a0dc0765375339430f2be}\label{structpci__dev_a3baaadab150a0dc0765375339430f2be} 
+unsigned int {\bfseries dpc\+\_\+rp\+\_\+extensions}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a82b249a5e4df7c7319a8a3fa8190173c}\label{structpci__dev_a82b249a5e4df7c7319a8a3fa8190173c} 
+u8 {\bfseries dpc\+\_\+rp\+\_\+log\+\_\+size}
+\item 
+\Hypertarget{structpci__dev_a0d105c1b78a4b0b8041336ef9d574a69}\label{structpci__dev_a0d105c1b78a4b0b8041336ef9d574a69} 
+struct \doxymbox{\hyperlink{structpcie__bwctrl__data}{pcie\+\_\+bwctrl\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries link\+\_\+bwctrl}
+\item 
+\Hypertarget{structpci__dev_a43245b08c14f09e94c72cf37cdaba388}\label{structpci__dev_a43245b08c14f09e94c72cf37cdaba388} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpci__sriov}{pci\_sriov}} \texorpdfstring{$\ast$}{*} {\bfseries sriov}\\
+\>struct \doxymbox{\hyperlink{structpci__dev}{pci\_dev}} \texorpdfstring{$\ast$}{*} {\bfseries physfn}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structpci__dev_a2cd3f8fd558cdb1d58751fba32111ea3}\label{structpci__dev_a2cd3f8fd558cdb1d58751fba32111ea3} 
+u16 {\bfseries ats\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a8f14327050a7951ddcb859e13d7be6e5}\label{structpci__dev_a8f14327050a7951ddcb859e13d7be6e5} 
+u8 {\bfseries ats\+\_\+stu}
+\item 
+\Hypertarget{structpci__dev_a6acf8f5839278bc00c35089a6ed27d2e}\label{structpci__dev_a6acf8f5839278bc00c35089a6ed27d2e} 
+u16 {\bfseries pri\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a28f0c49f4a3d9c84692ff2a6dbba100e}\label{structpci__dev_a28f0c49f4a3d9c84692ff2a6dbba100e} 
+u32 {\bfseries pri\+\_\+reqs\+\_\+alloc}
+\item 
+\Hypertarget{structpci__dev_a713332a2eab2047c14db38da6d664ffd}\label{structpci__dev_a713332a2eab2047c14db38da6d664ffd} 
+unsigned int {\bfseries pasid\+\_\+required}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a8eeacdc64b1abf10e80ac1da8faef5a4}\label{structpci__dev_a8eeacdc64b1abf10e80ac1da8faef5a4} 
+u16 {\bfseries pasid\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_af35ad9fe699564af344aad8104c57119}\label{structpci__dev_af35ad9fe699564af344aad8104c57119} 
+u16 {\bfseries pasid\+\_\+features}
+\item 
+\Hypertarget{structpci__dev_aeba3925ac5ace2c722672aeeea99f831}\label{structpci__dev_aeba3925ac5ace2c722672aeeea99f831} 
+struct \doxymbox{\hyperlink{structpci__p2pdma}{pci\+\_\+p2pdma}} \texorpdfstring{$\ast$}{*} {\bfseries p2pdma}
+\item 
+\Hypertarget{structpci__dev_a769be18bbe08ab9e99bd5d17fa1da342}\label{structpci__dev_a769be18bbe08ab9e99bd5d17fa1da342} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries doe\+\_\+mbs}
+\item 
+\Hypertarget{structpci__dev_a2ea50a67f1bdaf6cc876c84000910737}\label{structpci__dev_a2ea50a67f1bdaf6cc876c84000910737} 
+struct \doxymbox{\hyperlink{structnpem}{npem}} \texorpdfstring{$\ast$}{*} {\bfseries npem}
+\item 
+\Hypertarget{structpci__dev_ac27ac9848f93737308d5b000e657b503}\label{structpci__dev_ac27ac9848f93737308d5b000e657b503} 
+u16 {\bfseries ide\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a4339d86a64c43eb9c81c987bf1f9cf8e}\label{structpci__dev_a4339d86a64c43eb9c81c987bf1f9cf8e} 
+u8 {\bfseries nr\+\_\+ide\+\_\+mem}
+\item 
+\Hypertarget{structpci__dev_aa59ff6ea0079c5f998ea9cae69157db3}\label{structpci__dev_aa59ff6ea0079c5f998ea9cae69157db3} 
+u8 {\bfseries nr\+\_\+link\+\_\+ide}
+\item 
+\Hypertarget{structpci__dev_a834258f861001d99861f3992861929f2}\label{structpci__dev_a834258f861001d99861f3992861929f2} 
+u16 {\bfseries nr\+\_\+sel\+\_\+ide}
+\item 
+\Hypertarget{structpci__dev_a6b6c8ba1288ea5f69026973fcea0ee5a}\label{structpci__dev_a6b6c8ba1288ea5f69026973fcea0ee5a} 
+struct \doxymbox{\hyperlink{structida}{ida}} {\bfseries ide\+\_\+stream\+\_\+ida}
+\item 
+\Hypertarget{structpci__dev_af1e4ebef977eeed3ae51bba554404682}\label{structpci__dev_af1e4ebef977eeed3ae51bba554404682} 
+unsigned int {\bfseries ide\+\_\+cfg}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a217be510e18eddc72ea446700eebc465}\label{structpci__dev_a217be510e18eddc72ea446700eebc465} 
+unsigned int {\bfseries ide\+\_\+tee\+\_\+limit}:\+ 1
+\item 
+\Hypertarget{structpci__dev_a48aa379549057307febb3ff30ec9f78f}\label{structpci__dev_a48aa379549057307febb3ff30ec9f78f} 
+struct \doxymbox{\hyperlink{structpci__tsm}{pci\+\_\+tsm}} \texorpdfstring{$\ast$}{*} {\bfseries tsm}
+\item 
+\Hypertarget{structpci__dev_ace630d810de3e744d1b99110d7dbb82b}\label{structpci__dev_ace630d810de3e744d1b99110d7dbb82b} 
+u16 {\bfseries acs\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_a01357e43a3949922d404178e9a682d74}\label{structpci__dev_a01357e43a3949922d404178e9a682d74} 
+u8 {\bfseries supported\+\_\+speeds}
+\item 
+\Hypertarget{structpci__dev_a6ae69e8249f032fc569c6a3a919da436}\label{structpci__dev_a6ae69e8249f032fc569c6a3a919da436} 
+phys\+\_\+addr\+\_\+t {\bfseries rom}
+\item 
+\Hypertarget{structpci__dev_a701bf806b10daf13094c40cde0e0aef9}\label{structpci__dev_a701bf806b10daf13094c40cde0e0aef9} 
+size\+\_\+t {\bfseries romlen}
+\item 
+\Hypertarget{structpci__dev_a89e7e87834a3bce87553e4e21a49c8b9}\label{structpci__dev_a89e7e87834a3bce87553e4e21a49c8b9} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries driver\+\_\+override}
+\item 
+\Hypertarget{structpci__dev_abcc2d0934795b6d1c546757a9e0075bf}\label{structpci__dev_abcc2d0934795b6d1c546757a9e0075bf} 
+long unsigned int {\bfseries priv\+\_\+flags}
+\item 
+\Hypertarget{structpci__dev_a0ca1f5cb71ab56f6ab336e3270d5c84c}\label{structpci__dev_a0ca1f5cb71ab56f6ab336e3270d5c84c} 
+u8 {\bfseries reset\+\_\+methods} \+[8]\+
+\item 
+\Hypertarget{structpci__dev_ab442fcdd6ec5d702589a5123b86a7752}\label{structpci__dev_ab442fcdd6ec5d702589a5123b86a7752} 
+u16 {\bfseries tph\+\_\+cap}
+\item 
+\Hypertarget{structpci__dev_ae1acd4ed8438bd1efebb0187de670f91}\label{structpci__dev_ae1acd4ed8438bd1efebb0187de670f91} 
+u8 {\bfseries tph\+\_\+mode}
+\item 
+\Hypertarget{structpci__dev_ab2db8a57dda4264ab00c9fadf15ea333}\label{structpci__dev_ab2db8a57dda4264ab00c9fadf15ea333} 
+u8 {\bfseries tph\+\_\+req\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\doxysection{pcap\+\_\+chip Struct Reference}
+\hypertarget{structpcap__chip}{}\label{structpcap__chip}\index{pcap\_chip@{pcap\_chip}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpcap__chip_a9a8b211d381578a9ebd5f28a5b6a6c80}\label{structpcap__chip_a9a8b211d381578a9ebd5f28a5b6a6c80} 
+struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries spi}
+\item 
+\Hypertarget{structpcap__chip_a2debcff4dc4c8cecdb74abf4af5c4505}\label{structpcap__chip_a2debcff4dc4c8cecdb74abf4af5c4505} 
+u32 {\bfseries buf}
+\item 
+\Hypertarget{structpcap__chip_abe0f9cac1b25b447b7fc02bd0ec6b463}\label{structpcap__chip_abe0f9cac1b25b447b7fc02bd0ec6b463} 
+spinlock\+\_\+t {\bfseries io\+\_\+lock}
+\item 
+\Hypertarget{structpcap__chip_ab5df5e72851187c1270b4e218d405d69}\label{structpcap__chip_ab5df5e72851187c1270b4e218d405d69} 
+unsigned int {\bfseries irq\+\_\+base}
+\item 
+\Hypertarget{structpcap__chip_a2804576e0dcfbeb998cb4c8a23c29d6a}\label{structpcap__chip_a2804576e0dcfbeb998cb4c8a23c29d6a} 
+u32 {\bfseries msr}
+\item 
+\Hypertarget{structpcap__chip_a9b92f6a38066cd3f4f23097b7957738a}\label{structpcap__chip_a9b92f6a38066cd3f4f23097b7957738a} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries isr\+\_\+work}
+\item 
+\Hypertarget{structpcap__chip_a9a732f63d6e077c8524b8ae98f9ecfed}\label{structpcap__chip_a9a732f63d6e077c8524b8ae98f9ecfed} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries msr\+\_\+work}
+\item 
+\Hypertarget{structpcap__chip_ae38e451f8ba9e56dc062b9eda9bb7f77}\label{structpcap__chip_ae38e451f8ba9e56dc062b9eda9bb7f77} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries workqueue}
+\item 
+\Hypertarget{structpcap__chip_a86ce1c0fb5586d511f40a32d00709fed}\label{structpcap__chip_a86ce1c0fb5586d511f40a32d00709fed} 
+struct \doxymbox{\hyperlink{structpcap__adc__request}{pcap\+\_\+adc\+\_\+request}} \texorpdfstring{$\ast$}{*} {\bfseries adc\+\_\+queue} \+[8]\+
+\item 
+\Hypertarget{structpcap__chip_ae90f80d7b4b8dc30c0bce3e1f46fd181}\label{structpcap__chip_ae90f80d7b4b8dc30c0bce3e1f46fd181} 
+u8 {\bfseries adc\+\_\+head}
+\item 
+\Hypertarget{structpcap__chip_af3adf0efe63146eda061841521e61acf}\label{structpcap__chip_af3adf0efe63146eda061841521e61acf} 
+u8 {\bfseries adc\+\_\+tail}
+\item 
+\Hypertarget{structpcap__chip_afb64857282eb4c1b83c7cdd65769c42e}\label{structpcap__chip_afb64857282eb4c1b83c7cdd65769c42e} 
+spinlock\+\_\+t {\bfseries adc\+\_\+lock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

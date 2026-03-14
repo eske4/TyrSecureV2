@@ -1,0 +1,97 @@
+\doxysection{pv\+\_\+cpu\+\_\+ops Struct Reference}
+\hypertarget{structpv__cpu__ops}{}\label{structpv__cpu__ops}\index{pv\_cpu\_ops@{pv\_cpu\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpv__cpu__ops_a1f37d9cbc3d9094c3bed3df27d370384}\label{structpv__cpu__ops_a1f37d9cbc3d9094c3bed3df27d370384} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries io\+\_\+delay} )(void)
+\item 
+\Hypertarget{structpv__cpu__ops_a709165db12e9d2482b9804ded3c2d91f}\label{structpv__cpu__ops_a709165db12e9d2482b9804ded3c2d91f} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+debugreg} )(int)
+\item 
+\Hypertarget{structpv__cpu__ops_aaf37a04d087a8dea56128996e09380d2}\label{structpv__cpu__ops_aaf37a04d087a8dea56128996e09380d2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+debugreg} )(int, long unsigned int)
+\item 
+\Hypertarget{structpv__cpu__ops_a682469c6b143dd30a48a10a8da335c8d}\label{structpv__cpu__ops_a682469c6b143dd30a48a10a8da335c8d} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+cr0} )(void)
+\item 
+\Hypertarget{structpv__cpu__ops_a1fffaa06db0d2a79a09d7b4ffbecd0eb}\label{structpv__cpu__ops_a1fffaa06db0d2a79a09d7b4ffbecd0eb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+cr0} )(long unsigned int)
+\item 
+\Hypertarget{structpv__cpu__ops_a426fc8194ddd0de9f31c359abaf75bc6}\label{structpv__cpu__ops_a426fc8194ddd0de9f31c359abaf75bc6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+cr4} )(long unsigned int)
+\item 
+\Hypertarget{structpv__cpu__ops_ae639870feb5be7f39d6f79763ae3564e}\label{structpv__cpu__ops_ae639870feb5be7f39d6f79763ae3564e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries load\+\_\+tr\+\_\+desc} )(void)
+\item 
+\Hypertarget{structpv__cpu__ops_a61d0fbee316cb183ed7b0dded1ac6bd5}\label{structpv__cpu__ops_a61d0fbee316cb183ed7b0dded1ac6bd5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries load\+\_\+gdt} )(const struct \doxymbox{\hyperlink{structdesc__ptr}{desc\+\_\+ptr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__cpu__ops_a52d24408a17dd7318084d41eb4faee17}\label{structpv__cpu__ops_a52d24408a17dd7318084d41eb4faee17} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries load\+\_\+idt} )(const struct \doxymbox{\hyperlink{structdesc__ptr}{desc\+\_\+ptr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__cpu__ops_aff4222e868063e94a36ec71dbf464f53}\label{structpv__cpu__ops_aff4222e868063e94a36ec71dbf464f53} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+ldt} )(const void \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpv__cpu__ops_a1255ce2b0fa06e69a55ae5e35f321fd0}\label{structpv__cpu__ops_a1255ce2b0fa06e69a55ae5e35f321fd0} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries store\+\_\+tr} )(void)
+\item 
+\Hypertarget{structpv__cpu__ops_a4bd6b63ab116004eabdb7a8c65e59165}\label{structpv__cpu__ops_a4bd6b63ab116004eabdb7a8c65e59165} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries load\+\_\+tls} )(struct \doxymbox{\hyperlink{structthread__struct}{thread\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpv__cpu__ops_ad320b95749b3bf6c70893f0213b5d66d}\label{structpv__cpu__ops_ad320b95749b3bf6c70893f0213b5d66d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries load\+\_\+gs\+\_\+index} )(unsigned int)
+\item 
+\Hypertarget{structpv__cpu__ops_aa1482360b5ce987e783045651a98324b}\label{structpv__cpu__ops_aa1482360b5ce987e783045651a98324b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+ldt\+\_\+entry} )(struct \doxymbox{\hyperlink{structdesc__struct}{desc\+\_\+struct}} \texorpdfstring{$\ast$}{*}, int, const void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__cpu__ops_ab6225d58d1d05e0a33972544c6799f50}\label{structpv__cpu__ops_ab6225d58d1d05e0a33972544c6799f50} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+gdt\+\_\+entry} )(struct \doxymbox{\hyperlink{structdesc__struct}{desc\+\_\+struct}} \texorpdfstring{$\ast$}{*}, int, const void \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structpv__cpu__ops_a18bed880eb8fc5a45b77b7153dae8664}\label{structpv__cpu__ops_a18bed880eb8fc5a45b77b7153dae8664} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+idt\+\_\+entry} )(gate\+\_\+desc \texorpdfstring{$\ast$}{*}, int, const gate\+\_\+desc \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__cpu__ops_a2106e183bb5cc3858cb6c215a6cc0100}\label{structpv__cpu__ops_a2106e183bb5cc3858cb6c215a6cc0100} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+ldt} )(struct \doxymbox{\hyperlink{structdesc__struct}{desc\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpv__cpu__ops_a0b544959a747dbe3450c8fa0d6b69315}\label{structpv__cpu__ops_a0b544959a747dbe3450c8fa0d6b69315} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+ldt} )(struct \doxymbox{\hyperlink{structdesc__struct}{desc\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpv__cpu__ops_ac558f06c32c973bda82b6783da0a6330}\label{structpv__cpu__ops_ac558f06c32c973bda82b6783da0a6330} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries load\+\_\+sp0} )(long unsigned int)
+\item 
+\Hypertarget{structpv__cpu__ops_ab43ef8ac6e3fb86674d47afc172877fd}\label{structpv__cpu__ops_ab43ef8ac6e3fb86674d47afc172877fd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries invalidate\+\_\+io\+\_\+bitmap} )(void)
+\item 
+\Hypertarget{structpv__cpu__ops_a857ae166b5f02c98dce036409f7bf470}\label{structpv__cpu__ops_a857ae166b5f02c98dce036409f7bf470} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+io\+\_\+bitmap} )(void)
+\item 
+\Hypertarget{structpv__cpu__ops_a1650bfd12083bbde1cd0b207b4c76289}\label{structpv__cpu__ops_a1650bfd12083bbde1cd0b207b4c76289} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cpuid} )(unsigned int \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__cpu__ops_a27ad5d9c1e3d1bacdb6860b0a1527972}\label{structpv__cpu__ops_a27ad5d9c1e3d1bacdb6860b0a1527972} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+msr} )(u32)
+\item 
+\Hypertarget{structpv__cpu__ops_a53b0b577d748dcf79a3b1110d223bcf7}\label{structpv__cpu__ops_a53b0b577d748dcf79a3b1110d223bcf7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+msr} )(u32, u64)
+\item 
+\Hypertarget{structpv__cpu__ops_ac47af61de7f2052347276fe4a4dd85de}\label{structpv__cpu__ops_ac47af61de7f2052347276fe4a4dd85de} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+msr\+\_\+safe} )(u32, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__cpu__ops_af4dea0aa1652cd9282e0969f845df046}\label{structpv__cpu__ops_af4dea0aa1652cd9282e0969f845df046} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+msr\+\_\+safe} )(u32, u64)
+\item 
+\Hypertarget{structpv__cpu__ops_a23e6935a477c284094f0c70c99a7281c}\label{structpv__cpu__ops_a23e6935a477c284094f0c70c99a7281c} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+pmc} )(int)
+\item 
+\Hypertarget{structpv__cpu__ops_a85a0ae38568dccf3269e57a47e36b9ac}\label{structpv__cpu__ops_a85a0ae38568dccf3269e57a47e36b9ac} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries start\+\_\+context\+\_\+switch} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__cpu__ops_aa6ca5ebc51605c5c2f51ce0db1da3797}\label{structpv__cpu__ops_aa6ca5ebc51605c5c2f51ce0db1da3797} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+context\+\_\+switch} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

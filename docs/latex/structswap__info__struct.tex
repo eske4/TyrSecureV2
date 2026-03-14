@@ -1,0 +1,91 @@
+\doxysection{swap\+\_\+info\+\_\+struct Struct Reference}
+\hypertarget{structswap__info__struct}{}\label{structswap__info__struct}\index{swap\_info\_struct@{swap\_info\_struct}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structswap__info__struct_a5a2653900b11cdbf9b6de5712d3655b0}\label{structswap__info__struct_a5a2653900b11cdbf9b6de5712d3655b0} 
+struct \doxymbox{\hyperlink{structpercpu__ref}{percpu\+\_\+ref}} {\bfseries users}
+\item 
+\Hypertarget{structswap__info__struct_a7704b91f0c904c1c5678c0afc66ac970}\label{structswap__info__struct_a7704b91f0c904c1c5678c0afc66ac970} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structswap__info__struct_a941983323a45ad2a8dce3f72890d8c50}\label{structswap__info__struct_a941983323a45ad2a8dce3f72890d8c50} 
+short int {\bfseries prio}
+\item 
+\Hypertarget{structswap__info__struct_a68e851f09daa3528505513aba3ad4cf3}\label{structswap__info__struct_a68e851f09daa3528505513aba3ad4cf3} 
+struct \doxymbox{\hyperlink{structplist__node}{plist\+\_\+node}} {\bfseries list}
+\item 
+\Hypertarget{structswap__info__struct_aa1f43c2bf6795ba8cc9164442ef3057a}\label{structswap__info__struct_aa1f43c2bf6795ba8cc9164442ef3057a} 
+signed char {\bfseries type}
+\item 
+\Hypertarget{structswap__info__struct_a1e1944f5fa6d5a979138017d88481739}\label{structswap__info__struct_a1e1944f5fa6d5a979138017d88481739} 
+unsigned int {\bfseries max}
+\item 
+\Hypertarget{structswap__info__struct_a8ad996c9c99fd52a415d4e935029c711}\label{structswap__info__struct_a8ad996c9c99fd52a415d4e935029c711} 
+unsigned char \texorpdfstring{$\ast$}{*} {\bfseries swap\+\_\+map}
+\item 
+\Hypertarget{structswap__info__struct_ac4e30f44c7f480142ffd9fe5828e07ea}\label{structswap__info__struct_ac4e30f44c7f480142ffd9fe5828e07ea} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries zeromap}
+\item 
+\Hypertarget{structswap__info__struct_a469eb08159dd5bc5beaf944ebe3a08f1}\label{structswap__info__struct_a469eb08159dd5bc5beaf944ebe3a08f1} 
+struct \doxymbox{\hyperlink{structswap__cluster__info}{swap\+\_\+cluster\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries cluster\+\_\+info}
+\item 
+\Hypertarget{structswap__info__struct_a97ca0fe02a9f126533a8252f74abf8ec}\label{structswap__info__struct_a97ca0fe02a9f126533a8252f74abf8ec} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries free\+\_\+clusters}
+\item 
+\Hypertarget{structswap__info__struct_a51adbacda16cffc5130fd9493ca88ce0}\label{structswap__info__struct_a51adbacda16cffc5130fd9493ca88ce0} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries full\+\_\+clusters}
+\item 
+\Hypertarget{structswap__info__struct_a4fa0a1490843cd2fcb19d929c9aa3818}\label{structswap__info__struct_a4fa0a1490843cd2fcb19d929c9aa3818} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries nonfull\+\_\+clusters} \+[10]\+
+\item 
+\Hypertarget{structswap__info__struct_a84d5f9d2d1da5629c17e2bd54f2b8a64}\label{structswap__info__struct_a84d5f9d2d1da5629c17e2bd54f2b8a64} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries frag\+\_\+clusters} \+[10]\+
+\item 
+\Hypertarget{structswap__info__struct_a74689c0efeeee6910bdea3813ea1df80}\label{structswap__info__struct_a74689c0efeeee6910bdea3813ea1df80} 
+unsigned int {\bfseries pages}
+\item 
+\Hypertarget{structswap__info__struct_abf7efe0b9e84085335d0b27bdd9823f7}\label{structswap__info__struct_abf7efe0b9e84085335d0b27bdd9823f7} 
+atomic\+\_\+long\+\_\+t {\bfseries inuse\+\_\+pages}
+\item 
+\Hypertarget{structswap__info__struct_aff8ac149d5eff806e1abca342b550c45}\label{structswap__info__struct_aff8ac149d5eff806e1abca342b550c45} 
+struct \doxymbox{\hyperlink{structswap__sequential__cluster}{swap\+\_\+sequential\+\_\+cluster}} \texorpdfstring{$\ast$}{*} {\bfseries global\+\_\+cluster}
+\item 
+\Hypertarget{structswap__info__struct_a540d06c21aa85fbe6dfa06929fdbe488}\label{structswap__info__struct_a540d06c21aa85fbe6dfa06929fdbe488} 
+spinlock\+\_\+t {\bfseries global\+\_\+cluster\+\_\+lock}
+\item 
+\Hypertarget{structswap__info__struct_a51ce8b257fa0cf130c948994e50df132}\label{structswap__info__struct_a51ce8b257fa0cf130c948994e50df132} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries swap\+\_\+extent\+\_\+root}
+\item 
+\Hypertarget{structswap__info__struct_ae012d5a4321873cb42caa9bb86884b55}\label{structswap__info__struct_ae012d5a4321873cb42caa9bb86884b55} 
+struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries bdev}
+\item 
+\Hypertarget{structswap__info__struct_a66d916de8bbb05d255b7203b06832279}\label{structswap__info__struct_a66d916de8bbb05d255b7203b06832279} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries swap\+\_\+file}
+\item 
+\Hypertarget{structswap__info__struct_a11358fa1ca6b3f45d87c1a938682df40}\label{structswap__info__struct_a11358fa1ca6b3f45d87c1a938682df40} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries comp}
+\item 
+\Hypertarget{structswap__info__struct_a8ccf4c166c66e17334b541b8580403ac}\label{structswap__info__struct_a8ccf4c166c66e17334b541b8580403ac} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structswap__info__struct_aa4e6add1620554861fb712d501473ca3}\label{structswap__info__struct_aa4e6add1620554861fb712d501473ca3} 
+spinlock\+\_\+t {\bfseries cont\+\_\+lock}
+\item 
+\Hypertarget{structswap__info__struct_a63d51b05a92c501e4637c19318544fcf}\label{structswap__info__struct_a63d51b05a92c501e4637c19318544fcf} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries discard\+\_\+work}
+\item 
+\Hypertarget{structswap__info__struct_a095422539b9e6cda231b11e1277d29b8}\label{structswap__info__struct_a095422539b9e6cda231b11e1277d29b8} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries reclaim\+\_\+work}
+\item 
+\Hypertarget{structswap__info__struct_a5330155dbbd12558fadf13d3e93c92a7}\label{structswap__info__struct_a5330155dbbd12558fadf13d3e93c92a7} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries discard\+\_\+clusters}
+\item 
+\Hypertarget{structswap__info__struct_a7d7c45d1d0826b3f5cfd407f35ed26f1}\label{structswap__info__struct_a7d7c45d1d0826b3f5cfd407f35ed26f1} 
+struct \doxymbox{\hyperlink{structplist__node}{plist\+\_\+node}} {\bfseries avail\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

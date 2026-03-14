@@ -1,0 +1,51 @@
+\doxysection{lineevent\+\_\+state Struct Reference}
+\hypertarget{structlineevent__state}{}\label{structlineevent__state}\index{lineevent\_state@{lineevent\_state}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structlineevent__state_ab5704678ca0b8b1229a72a6b17074b05}\label{structlineevent__state_ab5704678ca0b8b1229a72a6b17074b05} 
+struct \doxymbox{\hyperlink{structgpio__device}{gpio\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries gdev}
+\item 
+\Hypertarget{structlineevent__state_afc2e17f1e0571edcdafb4a0c3e08d480}\label{structlineevent__state_afc2e17f1e0571edcdafb4a0c3e08d480} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries label}
+\item 
+\Hypertarget{structlineevent__state_a729db9af5ad952e8af591f5ccec43953}\label{structlineevent__state_a729db9af5ad952e8af591f5ccec43953} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries desc}
+\item 
+\Hypertarget{structlineevent__state_a3e0a5ef40b4c6ac2faf037425db80090}\label{structlineevent__state_a3e0a5ef40b4c6ac2faf037425db80090} 
+u32 {\bfseries eflags}
+\item 
+\Hypertarget{structlineevent__state_a9cbca0de942a2765c736c7fec1c9bd15}\label{structlineevent__state_a9cbca0de942a2765c736c7fec1c9bd15} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structlineevent__state_a336e7694921e762487f2118e0f9d0066}\label{structlineevent__state_a336e7694921e762487f2118e0f9d0066} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\item 
+\Hypertarget{structlineevent__state_a298d0c67c82b20163e4d15d4ebbe684a}\label{structlineevent__state_a298d0c67c82b20163e4d15d4ebbe684a} 
+struct \doxymbox{\hyperlink{structnotifier__block}{notifier\+\_\+block}} {\bfseries device\+\_\+unregistered\+\_\+nb}
+\item 
+\Hypertarget{structlineevent__state_ae98553bfadbc00a5b1354f357f0a4aa9}\label{structlineevent__state_ae98553bfadbc00a5b1354f357f0a4aa9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structlineevent__state_1_1_0d136070217202204050144212225154277201104312267047_a6e2f809c4aeb588d569ea54b8be37d74}\label{structlineevent__state_1_1_0d136070217202204050144212225154277201104312267047_a6e2f809c4aeb588d569ea54b8be37d74} 
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{struct____kfifo}{\_\_kfifo}} {\bfseries kfifo}\\
+\>\>struct \doxymbox{\hyperlink{structgpioevent__data}{gpioevent\_data}} \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>const struct \doxymbox{\hyperlink{structgpioevent__data}{gpioevent\_data}} \texorpdfstring{$\ast$}{*} {\bfseries const\_type}\\
+\>\>char(\texorpdfstring{$\ast$}{*} {\bfseries rectype} )\+[0]\+\\
+\>\>struct \doxymbox{\hyperlink{structgpioevent__data}{gpioevent\_data}} \texorpdfstring{$\ast$}{*} {\bfseries ptr}\\
+\>\>const struct \doxymbox{\hyperlink{structgpioevent__data}{gpioevent\_data}} \texorpdfstring{$\ast$}{*} {\bfseries ptr\_const}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structgpioevent__data}{gpioevent\_data}} {\bfseries buf} \+[16]\+\\
+\} {\bfseries events}\\
+
+\end{tabbing}\item 
+\Hypertarget{structlineevent__state_a7dc67ff49d532cc41fa7c5368edcc954}\label{structlineevent__state_a7dc67ff49d532cc41fa7c5368edcc954} 
+u64 {\bfseries timestamp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\doxysection{evtchn\+\_\+ops Struct Reference}
+\hypertarget{structevtchn__ops}{}\label{structevtchn__ops}\index{evtchn\_ops@{evtchn\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structevtchn__ops_a78bbd50d515a3d48d5484eac1da014cd}\label{structevtchn__ops_a78bbd50d515a3d48d5484eac1da014cd} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries max\+\_\+channels} )(void)
+\item 
+\Hypertarget{structevtchn__ops_afff218ff7576113cb9f0881397e97d3a}\label{structevtchn__ops_afff218ff7576113cb9f0881397e97d3a} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries nr\+\_\+channels} )(void)
+\item 
+\Hypertarget{structevtchn__ops_aed550e1e22f3d6070280e4de0dd91646}\label{structevtchn__ops_aed550e1e22f3d6070280e4de0dd91646} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setup} )(evtchn\+\_\+port\+\_\+t)
+\item 
+\Hypertarget{structevtchn__ops_a9d932aba498fa5eb0bf60d6d74021b70}\label{structevtchn__ops_a9d932aba498fa5eb0bf60d6d74021b70} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(evtchn\+\_\+port\+\_\+t, unsigned int)
+\item 
+\Hypertarget{structevtchn__ops_a2f3ea05e68ecdd176aeff7c6823a0c62}\label{structevtchn__ops_a2f3ea05e68ecdd176aeff7c6823a0c62} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bind\+\_\+to\+\_\+cpu} )(evtchn\+\_\+port\+\_\+t, unsigned int, unsigned int)
+\item 
+\Hypertarget{structevtchn__ops_a4d7652cbdd40c543e793ec9f9bd29fb6}\label{structevtchn__ops_a4d7652cbdd40c543e793ec9f9bd29fb6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries clear\+\_\+pending} )(evtchn\+\_\+port\+\_\+t)
+\item 
+\Hypertarget{structevtchn__ops_a6c5c5d7b0cedb851cb619e52b997fa12}\label{structevtchn__ops_a6c5c5d7b0cedb851cb619e52b997fa12} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+pending} )(evtchn\+\_\+port\+\_\+t)
+\item 
+\Hypertarget{structevtchn__ops_afb56fb505d2a0bd2e69a9c138414e341}\label{structevtchn__ops_afb56fb505d2a0bd2e69a9c138414e341} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+pending} )(evtchn\+\_\+port\+\_\+t)
+\item 
+\Hypertarget{structevtchn__ops_aa13444074cb5db95024d82a777220a44}\label{structevtchn__ops_aa13444074cb5db95024d82a777220a44} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries mask} )(evtchn\+\_\+port\+\_\+t)
+\item 
+\Hypertarget{structevtchn__ops_ae66eaf0f0961eddbbd614abffc42de8c}\label{structevtchn__ops_ae66eaf0f0961eddbbd614abffc42de8c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unmask} )(evtchn\+\_\+port\+\_\+t)
+\item 
+\Hypertarget{structevtchn__ops_ad8401622105056eb395c5f7c2e2f5611}\label{structevtchn__ops_ad8401622105056eb395c5f7c2e2f5611} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+events} )(unsigned int, struct \doxymbox{\hyperlink{structevtchn__loop__ctrl}{evtchn\+\_\+loop\+\_\+ctrl}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevtchn__ops_ac2f9a4ff6bffc44be0111b965fe9cb87}\label{structevtchn__ops_ac2f9a4ff6bffc44be0111b965fe9cb87} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(void)
+\item 
+\Hypertarget{structevtchn__ops_addb124cbc9b8d64c1e2ed58773806f26}\label{structevtchn__ops_addb124cbc9b8d64c1e2ed58773806f26} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries percpu\+\_\+init} )(unsigned int)
+\item 
+\Hypertarget{structevtchn__ops_aafd2fa9c974daf86cce103db35336830}\label{structevtchn__ops_aafd2fa9c974daf86cce103db35336830} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries percpu\+\_\+deinit} )(unsigned int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

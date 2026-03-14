@@ -1,0 +1,52 @@
+\doxysection{apic\+\_\+override Struct Reference}
+\hypertarget{structapic__override}{}\label{structapic__override}\index{apic\_override@{apic\_override}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structapic__override_aa5e20594d016d7e0cad32a1a3eb08aeb}\label{structapic__override_aa5e20594d016d7e0cad32a1a3eb08aeb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries eoi} )(void)
+\item 
+\Hypertarget{structapic__override_a1630e26666433757b75c314479a48800}\label{structapic__override_a1630e26666433757b75c314479a48800} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries native\+\_\+eoi} )(void)
+\item 
+\Hypertarget{structapic__override_ab5a5fe70bd0c3ab277cc332508b9f296}\label{structapic__override_ab5a5fe70bd0c3ab277cc332508b9f296} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write} )(u32, u32)
+\item 
+\Hypertarget{structapic__override_a23ad480043915a6f1f25b40fb2e5e06a}\label{structapic__override_a23ad480043915a6f1f25b40fb2e5e06a} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries read} )(u32)
+\item 
+\Hypertarget{structapic__override_af9f6cb71b6d383d56b0db19f1d4ccc87}\label{structapic__override_af9f6cb71b6d383d56b0db19f1d4ccc87} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI} )(int, int)
+\item 
+\Hypertarget{structapic__override_a38e1cb26877e422aef4d3bf009fb5303}\label{structapic__override_a38e1cb26877e422aef4d3bf009fb5303} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+mask} )(const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structapic__override_a4d51258e27c66894da26b2c406b5c34d}\label{structapic__override_a4d51258e27c66894da26b2c406b5c34d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+mask\+\_\+allbutself} )(const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structapic__override_a8785a978aea8196dcfc3efbac28c108d}\label{structapic__override_a8785a978aea8196dcfc3efbac28c108d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+allbutself} )(int)
+\item 
+\Hypertarget{structapic__override_a00c61db67db7ecb809c53da64d67b42a}\label{structapic__override_a00c61db67db7ecb809c53da64d67b42a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+all} )(int)
+\item 
+\Hypertarget{structapic__override_ac5215f4b6b2313c9560afad5fc14256a}\label{structapic__override_ac5215f4b6b2313c9560afad5fc14256a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+self} )(int)
+\item 
+\Hypertarget{structapic__override_ad22607ada02ed8b9006d8938786565bd}\label{structapic__override_ad22607ada02ed8b9006d8938786565bd} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries icr\+\_\+read} )(void)
+\item 
+\Hypertarget{structapic__override_aeb7764ff39b46aeff73658c1f4211a0b}\label{structapic__override_aeb7764ff39b46aeff73658c1f4211a0b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries icr\+\_\+write} )(u32, u32)
+\item 
+\Hypertarget{structapic__override_aeafbd0b5334c65f6eb94739833f09bf7}\label{structapic__override_aeafbd0b5334c65f6eb94739833f09bf7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries wakeup\+\_\+secondary\+\_\+cpu} )(u32, long unsigned int, unsigned int)
+\item 
+\Hypertarget{structapic__override_a40797f17c8ce1c84c73d157277211f3c}\label{structapic__override_a40797f17c8ce1c84c73d157277211f3c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries wakeup\+\_\+secondary\+\_\+cpu\+\_\+64} )(u32, long unsigned int, unsigned int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

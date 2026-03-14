@@ -1,0 +1,46 @@
+\doxysection{kvm\+\_\+x86\+\_\+nested\+\_\+ops Struct Reference}
+\hypertarget{structkvm__x86__nested__ops}{}\label{structkvm__x86__nested__ops}\index{kvm\_x86\_nested\_ops@{kvm\_x86\_nested\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__x86__nested__ops_ac567d36e77b195323c0a1f991bf948ac}\label{structkvm__x86__nested__ops_ac567d36e77b195323c0a1f991bf948ac} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries leave\+\_\+nested} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__nested__ops_a25fcae8fc6c702b84862485465feb541}\label{structkvm__x86__nested__ops_a25fcae8fc6c702b84862485465feb541} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+exception\+\_\+vmexit} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, u8, u32)
+\item 
+\Hypertarget{structkvm__x86__nested__ops_a455771ba7429ad654162e2a2f97d6e44}\label{structkvm__x86__nested__ops_a455771ba7429ad654162e2a2f97d6e44} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+events} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__nested__ops_a3fb5f6723f127d38e1092852a1fbd870}\label{structkvm__x86__nested__ops_a3fb5f6723f127d38e1092852a1fbd870} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries has\+\_\+events} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structkvm__x86__nested__ops_ad30243871c3b08b687fcf4e5342fdf60}\label{structkvm__x86__nested__ops_ad30243871c3b08b687fcf4e5342fdf60} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries triple\+\_\+fault} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__nested__ops_ae7b027aa65533d6edbcaec0113b6a773}\label{structkvm__x86__nested__ops_ae7b027aa65533d6edbcaec0113b6a773} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+state} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm__nested__state}{kvm\+\_\+nested\+\_\+state}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structkvm__x86__nested__ops_a230a2fd8fb411ab28b583c07c219b336}\label{structkvm__x86__nested__ops_a230a2fd8fb411ab28b583c07c219b336} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+state} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm__nested__state}{kvm\+\_\+nested\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm__nested__state}{kvm\+\_\+nested\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__nested__ops_ab0c1d5aa51fb64f27b400d621e3faece}\label{structkvm__x86__nested__ops_ab0c1d5aa51fb64f27b400d621e3faece} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+nested\+\_\+state\+\_\+pages} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__nested__ops_abcf472ef271f4b2ce9fab6997e94b99c}\label{structkvm__x86__nested__ops_abcf472ef271f4b2ce9fab6997e94b99c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+log\+\_\+dirty} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, gpa\+\_\+t)
+\item 
+\Hypertarget{structkvm__x86__nested__ops_afc946244d2d206a2fede2215629a23d3}\label{structkvm__x86__nested__ops_afc946244d2d206a2fede2215629a23d3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+evmcs} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, uint16\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__nested__ops_a419d9d98ebbf8c494efcd98527c53b8b}\label{structkvm__x86__nested__ops_a419d9d98ebbf8c494efcd98527c53b8b} 
+uint16\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+evmcs\+\_\+version} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__nested__ops_afe7084ed68e4148a9862b8e9cb4080b1}\label{structkvm__x86__nested__ops_afe7084ed68e4148a9862b8e9cb4080b1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hv\+\_\+inject\+\_\+synthetic\+\_\+vmexit\+\_\+post\+\_\+tlb\+\_\+flush} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

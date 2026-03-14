@@ -1,0 +1,64 @@
+\doxysection{xhci\+\_\+virt\+\_\+ep Struct Reference}
+\hypertarget{structxhci__virt__ep}{}\label{structxhci__virt__ep}\index{xhci\_virt\_ep@{xhci\_virt\_ep}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxhci__virt__ep_a3debe434fdf67197564c17e43378a7f9}\label{structxhci__virt__ep_a3debe434fdf67197564c17e43378a7f9} 
+struct \doxymbox{\hyperlink{structxhci__virt__device}{xhci\+\_\+virt\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries vdev}
+\item 
+\Hypertarget{structxhci__virt__ep_aec0da0af5bb4d8d8d8c3e6e19c8c2e29}\label{structxhci__virt__ep_aec0da0af5bb4d8d8d8c3e6e19c8c2e29} 
+unsigned int {\bfseries ep\+\_\+index}
+\item 
+\Hypertarget{structxhci__virt__ep_a0474259f412148d0bd2d995323c778c5}\label{structxhci__virt__ep_a0474259f412148d0bd2d995323c778c5} 
+struct \doxymbox{\hyperlink{structxhci__ring}{xhci\+\_\+ring}} \texorpdfstring{$\ast$}{*} {\bfseries ring}
+\item 
+\Hypertarget{structxhci__virt__ep_a5f05a127b8d935b2863c8454301f1f5f}\label{structxhci__virt__ep_a5f05a127b8d935b2863c8454301f1f5f} 
+struct \doxymbox{\hyperlink{structxhci__stream__info}{xhci\+\_\+stream\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries stream\+\_\+info}
+\item 
+\Hypertarget{structxhci__virt__ep_a84dc49284db7c968d465b06c8d366f65}\label{structxhci__virt__ep_a84dc49284db7c968d465b06c8d366f65} 
+struct \doxymbox{\hyperlink{structxhci__ring}{xhci\+\_\+ring}} \texorpdfstring{$\ast$}{*} {\bfseries new\+\_\+ring}
+\item 
+\Hypertarget{structxhci__virt__ep_ad44d2850816453ba5847ae24e2999710}\label{structxhci__virt__ep_ad44d2850816453ba5847ae24e2999710} 
+unsigned int {\bfseries err\+\_\+count}
+\item 
+\Hypertarget{structxhci__virt__ep_a6de46ca14477277e15188e5f87fec8fd}\label{structxhci__virt__ep_a6de46ca14477277e15188e5f87fec8fd} 
+unsigned int {\bfseries ep\+\_\+state}
+\item 
+\Hypertarget{structxhci__virt__ep_a5fcf52e6b3b016c0c045672be6f52edf}\label{structxhci__virt__ep_a5fcf52e6b3b016c0c045672be6f52edf} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cancelled\+\_\+td\+\_\+list}
+\item 
+\Hypertarget{structxhci__virt__ep_a0bb216575525e3eacfc895cdc2f8b426}\label{structxhci__virt__ep_a0bb216575525e3eacfc895cdc2f8b426} 
+struct \doxymbox{\hyperlink{structxhci__hcd}{xhci\+\_\+hcd}} \texorpdfstring{$\ast$}{*} {\bfseries xhci}
+\item 
+\Hypertarget{structxhci__virt__ep_aee2e4f352ab71e77f899da7930ec5a44}\label{structxhci__virt__ep_aee2e4f352ab71e77f899da7930ec5a44} 
+struct \doxymbox{\hyperlink{structxhci__segment}{xhci\+\_\+segment}} \texorpdfstring{$\ast$}{*} {\bfseries queued\+\_\+deq\+\_\+seg}
+\item 
+\Hypertarget{structxhci__virt__ep_a9323ec0f87c57fa7ae85dde70ac9a7c2}\label{structxhci__virt__ep_a9323ec0f87c57fa7ae85dde70ac9a7c2} 
+union \doxymbox{\hyperlink{unionxhci__trb}{xhci\+\_\+trb}} \texorpdfstring{$\ast$}{*} {\bfseries queued\+\_\+deq\+\_\+ptr}
+\item 
+\Hypertarget{structxhci__virt__ep_a1f600d2b06a20eff2f3da2ada5c460bf}\label{structxhci__virt__ep_a1f600d2b06a20eff2f3da2ada5c460bf} 
+bool {\bfseries skip}
+\item 
+\Hypertarget{structxhci__virt__ep_a436aaa2c852f681df43c8a1c663a2684}\label{structxhci__virt__ep_a436aaa2c852f681df43c8a1c663a2684} 
+struct \doxymbox{\hyperlink{structxhci__bw__info}{xhci\+\_\+bw\+\_\+info}} {\bfseries bw\+\_\+info}
+\item 
+\Hypertarget{structxhci__virt__ep_a44b629794da4ad66015f3d1ccf6ea5e4}\label{structxhci__virt__ep_a44b629794da4ad66015f3d1ccf6ea5e4} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries bw\+\_\+endpoint\+\_\+list}
+\item 
+\Hypertarget{structxhci__virt__ep_a5c3d961c7bb7aee8b1905a5eae6889db}\label{structxhci__virt__ep_a5c3d961c7bb7aee8b1905a5eae6889db} 
+long unsigned int {\bfseries stop\+\_\+time}
+\item 
+\Hypertarget{structxhci__virt__ep_a85cfd58c9088d944f5ce667adb71b889}\label{structxhci__virt__ep_a85cfd58c9088d944f5ce667adb71b889} 
+int {\bfseries next\+\_\+frame\+\_\+id}
+\item 
+\Hypertarget{structxhci__virt__ep_a13aa11a98ab2cab0df912af37ddfa6fe}\label{structxhci__virt__ep_a13aa11a98ab2cab0df912af37ddfa6fe} 
+bool {\bfseries use\+\_\+extended\+\_\+tbc}
+\item 
+\Hypertarget{structxhci__virt__ep_a37dfea7bdefe258ca4de51348da7052c}\label{structxhci__virt__ep_a37dfea7bdefe258ca4de51348da7052c} 
+struct \doxymbox{\hyperlink{structxhci__sideband}{xhci\+\_\+sideband}} \texorpdfstring{$\ast$}{*} {\bfseries sideband}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

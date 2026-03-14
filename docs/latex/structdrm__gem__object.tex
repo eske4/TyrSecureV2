@@ -1,0 +1,61 @@
+\doxysection{drm\+\_\+gem\+\_\+object Struct Reference}
+\hypertarget{structdrm__gem__object}{}\label{structdrm__gem__object}\index{drm\_gem\_object@{drm\_gem\_object}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__gem__object_a3c9997c4c4d02ada1f9d1ebf3c7ce1f8}\label{structdrm__gem__object_a3c9997c4c4d02ada1f9d1ebf3c7ce1f8} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries refcount}
+\item 
+\Hypertarget{structdrm__gem__object_aaf5d77437304dcf0ffc55316b7835840}\label{structdrm__gem__object_aaf5d77437304dcf0ffc55316b7835840} 
+unsigned int {\bfseries handle\+\_\+count}
+\item 
+\Hypertarget{structdrm__gem__object_a18e60ef9380fd8b78f5aa1ab51f70189}\label{structdrm__gem__object_a18e60ef9380fd8b78f5aa1ab51f70189} 
+struct \doxymbox{\hyperlink{structdrm__device}{drm\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structdrm__gem__object_a27c3a036700640d2890bfc1b50a8cedd}\label{structdrm__gem__object_a27c3a036700640d2890bfc1b50a8cedd} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries filp}
+\item 
+\Hypertarget{structdrm__gem__object_ace2a648e89bbe06ec2924de26d22c975}\label{structdrm__gem__object_ace2a648e89bbe06ec2924de26d22c975} 
+struct \doxymbox{\hyperlink{structdrm__vma__offset__node}{drm\+\_\+vma\+\_\+offset\+\_\+node}} {\bfseries vma\+\_\+node}
+\item 
+\Hypertarget{structdrm__gem__object_a8173413e1faef99d8d3176cded327bee}\label{structdrm__gem__object_a8173413e1faef99d8d3176cded327bee} 
+size\+\_\+t {\bfseries size}
+\item 
+\Hypertarget{structdrm__gem__object_a0dc1dedfed59555cfd360359ca2f03e4}\label{structdrm__gem__object_a0dc1dedfed59555cfd360359ca2f03e4} 
+int {\bfseries name}
+\item 
+\Hypertarget{structdrm__gem__object_a9265aa3967deb6730a041d9e89599b9e}\label{structdrm__gem__object_a9265aa3967deb6730a041d9e89599b9e} 
+struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+buf}
+\item 
+\Hypertarget{structdrm__gem__object_a0cfdf012463f10030d18be4a99eb5bde}\label{structdrm__gem__object_a0cfdf012463f10030d18be4a99eb5bde} 
+struct \doxymbox{\hyperlink{structdma__buf__attachment}{dma\+\_\+buf\+\_\+attachment}} \texorpdfstring{$\ast$}{*} {\bfseries import\+\_\+attach}
+\item 
+\Hypertarget{structdrm__gem__object_a5816d7662807df191d53575cbbd694bf}\label{structdrm__gem__object_a5816d7662807df191d53575cbbd694bf} 
+struct \doxymbox{\hyperlink{structdma__resv}{dma\+\_\+resv}} \texorpdfstring{$\ast$}{*} {\bfseries resv}
+\item 
+\Hypertarget{structdrm__gem__object_ae49230daf192bedc50b58006af2e0533}\label{structdrm__gem__object_ae49230daf192bedc50b58006af2e0533} 
+struct \doxymbox{\hyperlink{structdma__resv}{dma\+\_\+resv}} {\bfseries \+\_\+resv}
+\item 
+\Hypertarget{structdrm__gem__object_a85037cf45279765abd2a6dea2f02aab0}\label{structdrm__gem__object_a85037cf45279765abd2a6dea2f02aab0} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries list}\\
+\>struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries lock}\\
+\} {\bfseries gpuva}\\
+
+\end{tabbing}\item 
+\Hypertarget{structdrm__gem__object_a8a02552e07eff056f3b7aa400b2385fe}\label{structdrm__gem__object_a8a02552e07eff056f3b7aa400b2385fe} 
+const struct \doxymbox{\hyperlink{structdrm__gem__object__funcs}{drm\+\_\+gem\+\_\+object\+\_\+funcs}} \texorpdfstring{$\ast$}{*} {\bfseries funcs}
+\item 
+\Hypertarget{structdrm__gem__object_a30b3f53bd96b08180be3b36a100671bd}\label{structdrm__gem__object_a30b3f53bd96b08180be3b36a100671bd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries lru\+\_\+node}
+\item 
+\Hypertarget{structdrm__gem__object_a9f2eef17d35ceab33353e75bbf4c8eb7}\label{structdrm__gem__object_a9f2eef17d35ceab33353e75bbf4c8eb7} 
+struct \doxymbox{\hyperlink{structdrm__gem__lru}{drm\+\_\+gem\+\_\+lru}} \texorpdfstring{$\ast$}{*} {\bfseries lru}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

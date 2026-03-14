@@ -1,0 +1,112 @@
+\doxysection{clock\+\_\+event\+\_\+device Struct Reference}
+\hypertarget{structclock__event__device}{}\label{structclock__event__device}\index{clock\_event\_device@{clock\_event\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structclock__event__device_aa545aa3412b0b8b8b151210cc3eab596}\label{structclock__event__device_aa545aa3412b0b8b8b151210cc3eab596} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+handler} )(struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_a4fd8de50bc68cc47675df2635aa75280}\label{structclock__event__device_a4fd8de50bc68cc47675df2635aa75280} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+next\+\_\+event} )(long unsigned int, struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_a63793a5e780fee4f3a9237251f5af405}\label{structclock__event__device_a63793a5e780fee4f3a9237251f5af405} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+next\+\_\+ktime} )(ktime\+\_\+t, struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_aa4bd8311cd59c6a196be81c87340fe8b}\label{structclock__event__device_aa4bd8311cd59c6a196be81c87340fe8b} 
+ktime\+\_\+t {\bfseries next\+\_\+event}
+\item 
+\Hypertarget{structclock__event__device_acf04923225c30295f9a25cd849217787}\label{structclock__event__device_acf04923225c30295f9a25cd849217787} 
+u64 {\bfseries max\+\_\+delta\+\_\+ns}
+\item 
+\Hypertarget{structclock__event__device_acb6740d47a091b4e64fd2ebe7f306e14}\label{structclock__event__device_acb6740d47a091b4e64fd2ebe7f306e14} 
+u64 {\bfseries min\+\_\+delta\+\_\+ns}
+\item 
+\Hypertarget{structclock__event__device_a67c2521df0ea7532f37a1a9b16daf19e}\label{structclock__event__device_a67c2521df0ea7532f37a1a9b16daf19e} 
+u32 {\bfseries mult}
+\item 
+\Hypertarget{structclock__event__device_ab6554da18de70164ac8028aef87ed686}\label{structclock__event__device_ab6554da18de70164ac8028aef87ed686} 
+u32 {\bfseries shift}
+\item 
+\Hypertarget{structclock__event__device_af03872fe663506e7a414f9f436ea0d56}\label{structclock__event__device_af03872fe663506e7a414f9f436ea0d56} 
+enum clock\+\_\+event\+\_\+state {\bfseries state\+\_\+use\+\_\+accessors}
+\item 
+\Hypertarget{structclock__event__device_ac85b68a84a9128d9dc6d410360b4d4d6}\label{structclock__event__device_ac85b68a84a9128d9dc6d410360b4d4d6} 
+unsigned int {\bfseries features}
+\item 
+\Hypertarget{structclock__event__device_aec614feacf7a922abb360b7ce6d1ef58}\label{structclock__event__device_aec614feacf7a922abb360b7ce6d1ef58} 
+long unsigned int {\bfseries retries}
+\item 
+\Hypertarget{structclock__event__device_a6ec256eb8ef4759abdd416b181f5585d}\label{structclock__event__device_a6ec256eb8ef4759abdd416b181f5585d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+state\+\_\+periodic} )(struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_a7caa5a4ec19fee5c0268ffcb050f7a86}\label{structclock__event__device_a7caa5a4ec19fee5c0268ffcb050f7a86} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+state\+\_\+oneshot} )(struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_acea125161c3915ce6897a07a101253aa}\label{structclock__event__device_acea125161c3915ce6897a07a101253aa} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+state\+\_\+oneshot\+\_\+stopped} )(struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_aaffefaf331a0fd8d2afe5eac9ee5bd16}\label{structclock__event__device_aaffefaf331a0fd8d2afe5eac9ee5bd16} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+state\+\_\+shutdown} )(struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_a98517963c1019433297dda87efcc072c}\label{structclock__event__device_a98517963c1019433297dda87efcc072c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tick\+\_\+resume} )(struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_a7efed84ecf2d142a21147b9dde30e384}\label{structclock__event__device_a7efed84ecf2d142a21147b9dde30e384} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries broadcast} )(const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_aa6762c0a3d54438d14a97380e371d560}\label{structclock__event__device_aa6762c0a3d54438d14a97380e371d560} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_a2341f34332ac2b00149bd14f5ac71784}\label{structclock__event__device_a2341f34332ac2b00149bd14f5ac71784} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structclock__event__device}{clock\+\_\+event\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structclock__event__device_a4cf97be6a97142f3c92290b5a1f71fba}\label{structclock__event__device_a4cf97be6a97142f3c92290b5a1f71fba} 
+long unsigned int {\bfseries min\+\_\+delta\+\_\+ticks}
+\item 
+\Hypertarget{structclock__event__device_a93c032ae9c9effd6a1581c6de6c30754}\label{structclock__event__device_a93c032ae9c9effd6a1581c6de6c30754} 
+long unsigned int {\bfseries max\+\_\+delta\+\_\+ticks}
+\item 
+\Hypertarget{structclock__event__device_a8ad48f6ae15c92a028086e9ad67d43d9}\label{structclock__event__device_a8ad48f6ae15c92a028086e9ad67d43d9} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structclock__event__device_a3239f6a48254143a9af927df4eddeca5}\label{structclock__event__device_a3239f6a48254143a9af927df4eddeca5} 
+int {\bfseries rating}
+\item 
+\Hypertarget{structclock__event__device_a20ea5f16ceb3d3592ebfa20408a84554}\label{structclock__event__device_a20ea5f16ceb3d3592ebfa20408a84554} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structclock__event__device_a92f390852924bb454875f60fa20dec4c}\label{structclock__event__device_a92f390852924bb454875f60fa20dec4c} 
+int {\bfseries bound\+\_\+on}
+\item 
+\Hypertarget{structclock__event__device_a7a9b51c66670bd219a90a713b338b47a}\label{structclock__event__device_a7a9b51c66670bd219a90a713b338b47a} 
+const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*} {\bfseries cpumask}
+\item 
+\Hypertarget{structclock__event__device_adae37cba4df19b68fa315f6b760311a6}\label{structclock__event__device_adae37cba4df19b68fa315f6b760311a6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structclock__event__device_a394af2a3e981bfa24ff2fb0750415c99}\label{structclock__event__device_a394af2a3e981bfa24ff2fb0750415c99} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structclock__event__device_a6e3f6c9a6e798439629b1613591c33c7}\label{structclock__event__device_a6e3f6c9a6e798439629b1613591c33c7} 
+long :\+ 64
+\item 
+\Hypertarget{structclock__event__device_aadc831bb51d515468d4569afef63395d}\label{structclock__event__device_aadc831bb51d515468d4569afef63395d} 
+long :\+ 64
+\item 
+\Hypertarget{structclock__event__device_aa2fed74509910be89551e720db040b13}\label{structclock__event__device_aa2fed74509910be89551e720db040b13} 
+long :\+ 64
+\item 
+\Hypertarget{structclock__event__device_ae13c9ea18c1d233083c0092f61b79c77}\label{structclock__event__device_ae13c9ea18c1d233083c0092f61b79c77} 
+long :\+ 64
+\item 
+\Hypertarget{structclock__event__device_af8d7933789de17ac2ea9b1952def51f8}\label{structclock__event__device_af8d7933789de17ac2ea9b1952def51f8} 
+long :\+ 64
+\item 
+\Hypertarget{structclock__event__device_ab4b9dc574894ebe5ed97cad3ced119a6}\label{structclock__event__device_ab4b9dc574894ebe5ed97cad3ced119a6} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

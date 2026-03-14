@@ -1,0 +1,34 @@
+\doxysection{netdev\+\_\+bpf Struct Reference}
+\hypertarget{structnetdev__bpf}{}\label{structnetdev__bpf}\index{netdev\_bpf@{netdev\_bpf}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnetdev__bpf_a163a5ddcb4f2c41426ee33dc3f810e9d}\label{structnetdev__bpf_a163a5ddcb4f2c41426ee33dc3f810e9d} 
+enum bpf\+\_\+netdev\+\_\+command {\bfseries command}
+\item 
+\Hypertarget{structnetdev__bpf_a614b837cd593325a95e5c56a09b82c7c}\label{structnetdev__bpf_a614b837cd593325a95e5c56a09b82c7c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionnetdev__bpf_1_1_0d024374057344076014226267240047336311044014040342_a6e86e27fd5bf2648b8d23921861a6923}\label{unionnetdev__bpf_1_1_0d024374057344076014226267240047336311044014040342_a6e86e27fd5bf2648b8d23921861a6923} 
+\>struct \{\\
+\>\>u32 {\bfseries flags}\\
+\>\>struct \doxymbox{\hyperlink{structbpf__prog}{bpf\_prog}} \texorpdfstring{$\ast$}{*} {\bfseries prog}\\
+\>\>struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\_ext\_ack}} \texorpdfstring{$\ast$}{*} {\bfseries extack}\\
+\>\} \\
+\Hypertarget{unionnetdev__bpf_1_1_0d024374057344076014226267240047336311044014040342_a5a3c8a814dae9a4343d71531bfcb6901}\label{unionnetdev__bpf_1_1_0d024374057344076014226267240047336311044014040342_a5a3c8a814dae9a4343d71531bfcb6901} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structbpf__offloaded__map}{bpf\_offloaded\_map}} \texorpdfstring{$\ast$}{*} {\bfseries offmap}\\
+\>\} \\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structxsk__buff__pool}{xsk\_buff\_pool}} \texorpdfstring{$\ast$}{*} {\bfseries pool}\\
+\>\>u16 {\bfseries queue\_id}\\
+\>\} {\bfseries xsk}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

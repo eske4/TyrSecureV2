@@ -1,0 +1,79 @@
+\doxysection{fb\+\_\+ops Struct Reference}
+\hypertarget{structfb__ops}{}\label{structfb__ops}\index{fb\_ops@{fb\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfb__ops_aebe83c88e78f54f1ecf72047cde131b9}\label{structfb__ops_aebe83c88e78f54f1ecf72047cde131b9} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structfb__ops_a644d57e5f5ac4b7bf7d6d032ae63088a}\label{structfb__ops_a644d57e5f5ac4b7bf7d6d032ae63088a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+open} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structfb__ops_a6b7d26c379b6b962f6d822acf084182c}\label{structfb__ops_a6b7d26c379b6b962f6d822acf084182c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+release} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structfb__ops_a82b90186e9c652900aef1b02f3bf027a}\label{structfb__ops_a82b90186e9c652900aef1b02f3bf027a} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+read} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, size\+\_\+t, loff\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_abf53de4ed9e82b6832910ec8cd20191c}\label{structfb__ops_abf53de4ed9e82b6832910ec8cd20191c} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+write} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, size\+\_\+t, loff\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_aaaacfc5272d3e9502656a6e7f1bf8bb8}\label{structfb__ops_aaaacfc5272d3e9502656a6e7f1bf8bb8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+check\+\_\+var} )(struct \doxymbox{\hyperlink{structfb__var__screeninfo}{fb\+\_\+var\+\_\+screeninfo}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a6696a1f43ce9acc48e95ea7b1d8e388a}\label{structfb__ops_a6696a1f43ce9acc48e95ea7b1d8e388a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+set\+\_\+par} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a692928744bc4b1e857c5554ed7cf4c90}\label{structfb__ops_a692928744bc4b1e857c5554ed7cf4c90} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+setcolreg} )(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_ab9f3a243d2d9b9eae2ac55d620eeb04d}\label{structfb__ops_ab9f3a243d2d9b9eae2ac55d620eeb04d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+setcmap} )(struct \doxymbox{\hyperlink{structfb__cmap}{fb\+\_\+cmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a99b38b4bc5d31bdc66e7fcfeb57809e9}\label{structfb__ops_a99b38b4bc5d31bdc66e7fcfeb57809e9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+blank} )(int, struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a4ccc3f42f109938ebeec031bcc9a388a}\label{structfb__ops_a4ccc3f42f109938ebeec031bcc9a388a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+pan\+\_\+display} )(struct \doxymbox{\hyperlink{structfb__var__screeninfo}{fb\+\_\+var\+\_\+screeninfo}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_af7968ffed7ee9f0255743c7bf02195e1}\label{structfb__ops_af7968ffed7ee9f0255743c7bf02195e1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+fillrect} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfb__fillrect}{fb\+\_\+fillrect}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a354401e811a59edb25c15dc429eaf142}\label{structfb__ops_a354401e811a59edb25c15dc429eaf142} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+copyarea} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfb__copyarea}{fb\+\_\+copyarea}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a151b3afe2d4c3ef4b3b24f33a3a300b6}\label{structfb__ops_a151b3afe2d4c3ef4b3b24f33a3a300b6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+imageblit} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfb__image}{fb\+\_\+image}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a6f1c1c64fe3149a2e70e02965d9a661d}\label{structfb__ops_a6f1c1c64fe3149a2e70e02965d9a661d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+cursor} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfb__cursor}{fb\+\_\+cursor}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a2df621a6e87dd8f97d920cfbcaf56b41}\label{structfb__ops_a2df621a6e87dd8f97d920cfbcaf56b41} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+sync} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a78f0b53eca53ad3dc7cd99f848345325}\label{structfb__ops_a78f0b53eca53ad3dc7cd99f848345325} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structfb__ops_a801e014e154c826b5c71ad941be6b625}\label{structfb__ops_a801e014e154c826b5c71ad941be6b625} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+compat\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structfb__ops_ac58d47ceadbc74c0422668ed6b1218ca}\label{structfb__ops_ac58d47ceadbc74c0422668ed6b1218ca} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+mmap} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_af819cc27fe4ed7be83a90a97e2c58c4a}\label{structfb__ops_af819cc27fe4ed7be83a90a97e2c58c4a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+get\+\_\+caps} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfb__blit__caps}{fb\+\_\+blit\+\_\+caps}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfb__var__screeninfo}{fb\+\_\+var\+\_\+screeninfo}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_aaea94a4a89ae19825a80351d626071ea}\label{structfb__ops_aaea94a4a89ae19825a80351d626071ea} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+destroy} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_ac48a3d7bbab4c85aed19f967932c9a60}\label{structfb__ops_ac48a3d7bbab4c85aed19f967932c9a60} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+debug\+\_\+enter} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfb__ops_a761c27031faf2f2821d952caa336ec9c}\label{structfb__ops_a761c27031faf2f2821d952caa336ec9c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+debug\+\_\+leave} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

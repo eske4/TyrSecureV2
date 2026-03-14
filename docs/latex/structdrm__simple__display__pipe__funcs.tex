@@ -1,0 +1,61 @@
+\doxysection{drm\+\_\+simple\+\_\+display\+\_\+pipe\+\_\+funcs Struct Reference}
+\hypertarget{structdrm__simple__display__pipe__funcs}{}\label{structdrm__simple__display__pipe__funcs}\index{drm\_simple\_display\_pipe\_funcs@{drm\_simple\_display\_pipe\_funcs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a00644866d5d0d2d9a54908c0a38ac942}\label{structdrm__simple__display__pipe__funcs_a00644866d5d0d2d9a54908c0a38ac942} 
+enum drm\+\_\+mode\+\_\+status(\texorpdfstring{$\ast$}{*} {\bfseries mode\+\_\+valid} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a2e4a5a139f1304bf193e31e5a991c0df}\label{structdrm__simple__display__pipe__funcs_a2e4a5a139f1304bf193e31e5a991c0df} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__plane__state}{drm\+\_\+plane\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_ae0a0bda03f020bb181e8c3fdda61ea41}\label{structdrm__simple__display__pipe__funcs_ae0a0bda03f020bb181e8c3fdda61ea41} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a10501563da24c5714695016b32b09e06}\label{structdrm__simple__display__pipe__funcs_a10501563da24c5714695016b32b09e06} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__plane__state}{drm\+\_\+plane\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a3e6c8326c2b04455bdee1cf774bd51b8}\label{structdrm__simple__display__pipe__funcs_a3e6c8326c2b04455bdee1cf774bd51b8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__plane__state}{drm\+\_\+plane\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a91067147f027cd7f812b0c42981045e3}\label{structdrm__simple__display__pipe__funcs_a91067147f027cd7f812b0c42981045e3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+fb} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__plane__state}{drm\+\_\+plane\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a16fdbc963f7a8d7cd6fc69ce65125d1f}\label{structdrm__simple__display__pipe__funcs_a16fdbc963f7a8d7cd6fc69ce65125d1f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup\+\_\+fb} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__plane__state}{drm\+\_\+plane\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a4cab57621be7b1095b183bd2df290b84}\label{structdrm__simple__display__pipe__funcs_a4cab57621be7b1095b183bd2df290b84} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries begin\+\_\+fb\+\_\+access} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__plane__state}{drm\+\_\+plane\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_ae6b5634cde46681af852ebee545300e6}\label{structdrm__simple__display__pipe__funcs_ae6b5634cde46681af852ebee545300e6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+fb\+\_\+access} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__plane__state}{drm\+\_\+plane\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a7b63126ab6fd29bf92fefb9a9ddbf50a}\label{structdrm__simple__display__pipe__funcs_a7b63126ab6fd29bf92fefb9a9ddbf50a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+vblank} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_ac02c20b2f2f3ba142a84f25a972671fe}\label{structdrm__simple__display__pipe__funcs_ac02c20b2f2f3ba142a84f25a972671fe} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable\+\_\+vblank} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_addfee1fd2033e4a341734d64e1d5cbd8}\label{structdrm__simple__display__pipe__funcs_addfee1fd2033e4a341734d64e1d5cbd8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+crtc} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_ad85c4956f27c3d360586b33427fe6fe9}\label{structdrm__simple__display__pipe__funcs_ad85c4956f27c3d360586b33427fe6fe9} 
+struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries duplicate\+\_\+crtc\+\_\+state} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_abb22188c4c2bb4be64f1921510e292de}\label{structdrm__simple__display__pipe__funcs_abb22188c4c2bb4be64f1921510e292de} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+crtc\+\_\+state} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_ac470e87bb142c8fb74f246305ac6bb77}\label{structdrm__simple__display__pipe__funcs_ac470e87bb142c8fb74f246305ac6bb77} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+plane} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a1b27a37f284fbf00a1d16420d2719724}\label{structdrm__simple__display__pipe__funcs_a1b27a37f284fbf00a1d16420d2719724} 
+struct \doxymbox{\hyperlink{structdrm__plane__state}{drm\+\_\+plane\+\_\+state}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries duplicate\+\_\+plane\+\_\+state} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__simple__display__pipe__funcs_a26ca3bb2f1673cf0a5caf436b8b765f7}\label{structdrm__simple__display__pipe__funcs_a26ca3bb2f1673cf0a5caf436b8b765f7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+plane\+\_\+state} )(struct \doxymbox{\hyperlink{structdrm__simple__display__pipe}{drm\+\_\+simple\+\_\+display\+\_\+pipe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__plane__state}{drm\+\_\+plane\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

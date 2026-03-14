@@ -1,0 +1,58 @@
+\doxysection{pci\+\_\+driver Struct Reference}
+\hypertarget{structpci__driver}{}\label{structpci__driver}\index{pci\_driver@{pci\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpci__driver_a05cc3c788ae87a07ae4d92ce603ce211}\label{structpci__driver_a05cc3c788ae87a07ae4d92ce603ce211} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structpci__driver_a263fd4894aba0879014a3075c01f5150}\label{structpci__driver_a263fd4894aba0879014a3075c01f5150} 
+const struct \doxymbox{\hyperlink{structpci__device__id}{pci\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries id\+\_\+table}
+\item 
+\Hypertarget{structpci__driver_aebd296565214171297bafc206083a7f0}\label{structpci__driver_aebd296565214171297bafc206083a7f0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structpci__device__id}{pci\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpci__driver_ab3d2ff9f07efb29a7da84b90a6026db0}\label{structpci__driver_ab3d2ff9f07efb29a7da84b90a6026db0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpci__driver_a68bfbda7d304b98dab7c01ff038dd1dd}\label{structpci__driver_a68bfbda7d304b98dab7c01ff038dd1dd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*}, pm\+\_\+message\+\_\+t)
+\item 
+\Hypertarget{structpci__driver_a2275e3652ff270589f63a4cd41586b3b}\label{structpci__driver_a2275e3652ff270589f63a4cd41586b3b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpci__driver_a5e47d02e5c5315d0b599aaafcc25aee7}\label{structpci__driver_a5e47d02e5c5315d0b599aaafcc25aee7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries shutdown} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpci__driver_a55a429115555e4899e08619510377ac1}\label{structpci__driver_a55a429115555e4899e08619510377ac1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sriov\+\_\+configure} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structpci__driver_aa53f296159f0751aa9a7e30e49b10795}\label{structpci__driver_aa53f296159f0751aa9a7e30e49b10795} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sriov\+\_\+set\+\_\+msix\+\_\+vec\+\_\+count} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structpci__driver_aca264b86ce15f4cd6f07d6709af6fc67}\label{structpci__driver_aca264b86ce15f4cd6f07d6709af6fc67} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries sriov\+\_\+get\+\_\+vf\+\_\+total\+\_\+msix} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpci__driver_a373f0ca694ae9361a89d792b7649a3f8}\label{structpci__driver_a373f0ca694ae9361a89d792b7649a3f8} 
+const struct \doxymbox{\hyperlink{structpci__error__handlers}{pci\+\_\+error\+\_\+handlers}} \texorpdfstring{$\ast$}{*} {\bfseries err\+\_\+handler}
+\item 
+\Hypertarget{structpci__driver_adba9846dd6edf9e08c954d98db0458d8}\label{structpci__driver_adba9846dd6edf9e08c954d98db0458d8} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries groups}
+\item 
+\Hypertarget{structpci__driver_a1fcb22deb0ab1b30bd87bd5d27ffc44b}\label{structpci__driver_a1fcb22deb0ab1b30bd87bd5d27ffc44b} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+groups}
+\item 
+\Hypertarget{structpci__driver_a6b329052c93194bf30649fc26e498c98}\label{structpci__driver_a6b329052c93194bf30649fc26e498c98} 
+struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} {\bfseries driver}
+\item 
+\Hypertarget{structpci__driver_a76f302d4ca7a494536b2c2c5650d6477}\label{structpci__driver_a76f302d4ca7a494536b2c2c5650d6477} 
+struct \doxymbox{\hyperlink{structpci__dynids}{pci\+\_\+dynids}} {\bfseries dynids}
+\item 
+\Hypertarget{structpci__driver_a7a4a71830e5669df720d49d09e7ec228}\label{structpci__driver_a7a4a71830e5669df720d49d09e7ec228} 
+bool {\bfseries driver\+\_\+managed\+\_\+dma}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

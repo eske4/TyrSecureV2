@@ -1,0 +1,131 @@
+\doxysection{kioctx Struct Reference}
+\hypertarget{structkioctx}{}\label{structkioctx}\index{kioctx@{kioctx}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkioctx_a914f7965e4cfe36a0fc29c8f97273077}\label{structkioctx_a914f7965e4cfe36a0fc29c8f97273077} 
+struct \doxymbox{\hyperlink{structpercpu__ref}{percpu\+\_\+ref}} {\bfseries users}
+\item 
+\Hypertarget{structkioctx_a613469a7d6a17bac6f54c328055a23d7}\label{structkioctx_a613469a7d6a17bac6f54c328055a23d7} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries dead}
+\item 
+\Hypertarget{structkioctx_acac34f2b3110790a9a9a24bf6e5499cb}\label{structkioctx_acac34f2b3110790a9a9a24bf6e5499cb} 
+struct \doxymbox{\hyperlink{structpercpu__ref}{percpu\+\_\+ref}} {\bfseries reqs}
+\item 
+\Hypertarget{structkioctx_a8621f68733255d61f5093b733d5e3415}\label{structkioctx_a8621f68733255d61f5093b733d5e3415} 
+long unsigned int {\bfseries user\+\_\+id}
+\item 
+\Hypertarget{structkioctx_a5155f2907df77c92dc6af259f5fbb95b}\label{structkioctx_a5155f2907df77c92dc6af259f5fbb95b} 
+struct \doxymbox{\hyperlink{structkioctx__cpu}{kioctx\+\_\+cpu}} \texorpdfstring{$\ast$}{*} {\bfseries cpu}
+\item 
+\Hypertarget{structkioctx_a04f832b8f5ed163c8495859bb3c058b3}\label{structkioctx_a04f832b8f5ed163c8495859bb3c058b3} 
+unsigned int {\bfseries req\+\_\+batch}
+\item 
+\Hypertarget{structkioctx_a234c362a97982b36988f6919dfd1b43b}\label{structkioctx_a234c362a97982b36988f6919dfd1b43b} 
+unsigned int {\bfseries max\+\_\+reqs}
+\item 
+\Hypertarget{structkioctx_a32149d2db007fc0f398a0196a41b4401}\label{structkioctx_a32149d2db007fc0f398a0196a41b4401} 
+unsigned int {\bfseries nr\+\_\+events}
+\item 
+\Hypertarget{structkioctx_a932e75a08eab77e991b12c634af69f0c}\label{structkioctx_a932e75a08eab77e991b12c634af69f0c} 
+long unsigned int {\bfseries mmap\+\_\+base}
+\item 
+\Hypertarget{structkioctx_a226894844560e08abb45b963803c44e5}\label{structkioctx_a226894844560e08abb45b963803c44e5} 
+long unsigned int {\bfseries mmap\+\_\+size}
+\item 
+\Hypertarget{structkioctx_ad2cfd3d7d13a8cf6ac51442b6c1c8d57}\label{structkioctx_ad2cfd3d7d13a8cf6ac51442b6c1c8d57} 
+struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries ring\+\_\+folios}
+\item 
+\Hypertarget{structkioctx_ad4d73f1c12746c1f264042d9b170bc5f}\label{structkioctx_ad4d73f1c12746c1f264042d9b170bc5f} 
+long int {\bfseries nr\+\_\+pages}
+\item 
+\Hypertarget{structkioctx_a9c3ebbcc113a98f22dbfc698be87c1df}\label{structkioctx_a9c3ebbcc113a98f22dbfc698be87c1df} 
+struct \doxymbox{\hyperlink{structrcu__work}{rcu\+\_\+work}} {\bfseries free\+\_\+rwork}
+\item 
+\Hypertarget{structkioctx_a6d702971b35b5ecfff7cba33d147dcfc}\label{structkioctx_a6d702971b35b5ecfff7cba33d147dcfc} 
+struct \doxymbox{\hyperlink{structctx__rq__wait}{ctx\+\_\+rq\+\_\+wait}} \texorpdfstring{$\ast$}{*} {\bfseries rq\+\_\+wait}
+\item 
+\Hypertarget{structkioctx_a64f0d470576c564aa890b5cb3636ec1e}\label{structkioctx_a64f0d470576c564aa890b5cb3636ec1e} 
+long :\+ 64
+\item 
+\Hypertarget{structkioctx_a103b41b5b7cb089f53c599dca61f62b5}\label{structkioctx_a103b41b5b7cb089f53c599dca61f62b5} 
+long :\+ 64
+\item 
+\Hypertarget{structkioctx_adb81224f1321b0e134cdbe110d84bfc2}\label{structkioctx_adb81224f1321b0e134cdbe110d84bfc2} 
+long :\+ 64
+\item 
+\Hypertarget{structkioctx_a51fd07d6f60f8688fc234dc290761b33}\label{structkioctx_a51fd07d6f60f8688fc234dc290761b33} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries reqs\_available}\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkioctx_a37b2fab016be9242651a72c6806a787e}\label{structkioctx_a37b2fab016be9242651a72c6806a787e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>spinlock\_t {\bfseries ctx\_lock}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries active\_reqs}\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkioctx_acd486c6aba9b39b8f715e746c180abd9}\label{structkioctx_acd486c6aba9b39b8f715e746c180abd9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries ring\_lock}\\
+\>wait\_queue\_head\_t {\bfseries wait}\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkioctx_acaa8ff15c06d6c751ae47aee5212d3a0}\label{structkioctx_acaa8ff15c06d6c751ae47aee5212d3a0} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries tail}\\
+\>unsigned int {\bfseries completed\_events}\\
+\>spinlock\_t {\bfseries completion\_lock}\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkioctx_a241270c181ada10c35bcb2a8e300c025}\label{structkioctx_a241270c181ada10c35bcb2a8e300c025} 
+struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*} {\bfseries internal\+\_\+folios} \+[8]\+
+\item 
+\Hypertarget{structkioctx_a0f96418f8536e1bb6343b3923804f12c}\label{structkioctx_a0f96418f8536e1bb6343b3923804f12c} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries aio\+\_\+ring\+\_\+file}
+\item 
+\Hypertarget{structkioctx_a1efe96246b6dc5870478640db4331733}\label{structkioctx_a1efe96246b6dc5870478640db4331733} 
+unsigned int {\bfseries id}
+\item 
+\Hypertarget{structkioctx_a82df5d69cd80b6db55cc9b1891ca89e6}\label{structkioctx_a82df5d69cd80b6db55cc9b1891ca89e6} 
+long :\+ 64
+\item 
+\Hypertarget{structkioctx_a8b7a9b328a1c8581ef507a12e3cbce54}\label{structkioctx_a8b7a9b328a1c8581ef507a12e3cbce54} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

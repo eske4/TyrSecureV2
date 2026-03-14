@@ -1,0 +1,184 @@
+\doxysection{scsi\+\_\+disk Struct Reference}
+\hypertarget{structscsi__disk}{}\label{structscsi__disk}\index{scsi\_disk@{scsi\_disk}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structscsi__disk_ac5525e54fcf336410d2351c312edc71b}\label{structscsi__disk_ac5525e54fcf336410d2351c312edc71b} 
+struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries device}
+\item 
+\Hypertarget{structscsi__disk_ac9c05148c3d8e6b7d23fda3905cda9bc}\label{structscsi__disk_ac9c05148c3d8e6b7d23fda3905cda9bc} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries disk\+\_\+dev}
+\item 
+\Hypertarget{structscsi__disk_a6da16cb3d266b936bd5d362771f3283d}\label{structscsi__disk_a6da16cb3d266b936bd5d362771f3283d} 
+struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*} {\bfseries disk}
+\item 
+\Hypertarget{structscsi__disk_ae4a3f08a902b67a3165420957616989b}\label{structscsi__disk_ae4a3f08a902b67a3165420957616989b} 
+struct \doxymbox{\hyperlink{structopal__dev}{opal\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries opal\+\_\+dev}
+\item 
+\Hypertarget{structscsi__disk_ad8ccfd57d51dcbf036c6975ad2bbde62}\label{structscsi__disk_ad8ccfd57d51dcbf036c6975ad2bbde62} 
+struct \doxymbox{\hyperlink{structzoned__disk__info}{zoned\+\_\+disk\+\_\+info}} {\bfseries early\+\_\+zone\+\_\+info}
+\item 
+\Hypertarget{structscsi__disk_a368e1d40bd42e16b6daa9e3bdd884ed6}\label{structscsi__disk_a368e1d40bd42e16b6daa9e3bdd884ed6} 
+struct \doxymbox{\hyperlink{structzoned__disk__info}{zoned\+\_\+disk\+\_\+info}} {\bfseries zone\+\_\+info}
+\item 
+\Hypertarget{structscsi__disk_aa175690ef288ad3f3fd0e7b3056d4598}\label{structscsi__disk_aa175690ef288ad3f3fd0e7b3056d4598} 
+u32 {\bfseries zones\+\_\+optimal\+\_\+open}
+\item 
+\Hypertarget{structscsi__disk_aaf2740ec7f483d1d691bba5ce6b25da7}\label{structscsi__disk_aaf2740ec7f483d1d691bba5ce6b25da7} 
+u32 {\bfseries zones\+\_\+optimal\+\_\+nonseq}
+\item 
+\Hypertarget{structscsi__disk_a6e96c4d9ca91e1435ca8544e7faef280}\label{structscsi__disk_a6e96c4d9ca91e1435ca8544e7faef280} 
+u32 {\bfseries zones\+\_\+max\+\_\+open}
+\item 
+\Hypertarget{structscsi__disk_af49e77d8b02f8005933d75e5f916913c}\label{structscsi__disk_af49e77d8b02f8005933d75e5f916913c} 
+u32 {\bfseries zone\+\_\+starting\+\_\+lba\+\_\+gran}
+\item 
+\Hypertarget{structscsi__disk_a7a83978fd86d4a617fc8b7b63094a2f0}\label{structscsi__disk_a7a83978fd86d4a617fc8b7b63094a2f0} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries openers}
+\item 
+\Hypertarget{structscsi__disk_a7919f793054fa04803b4c5ecca67678e}\label{structscsi__disk_a7919f793054fa04803b4c5ecca67678e} 
+sector\+\_\+t {\bfseries capacity}
+\item 
+\Hypertarget{structscsi__disk_a376b0c4ccb8519b2ddeedfe431808d24}\label{structscsi__disk_a376b0c4ccb8519b2ddeedfe431808d24} 
+int {\bfseries max\+\_\+retries}
+\item 
+\Hypertarget{structscsi__disk_a9852fd19bb95f170845840c7bc64e86a}\label{structscsi__disk_a9852fd19bb95f170845840c7bc64e86a} 
+u32 {\bfseries min\+\_\+xfer\+\_\+blocks}
+\item 
+\Hypertarget{structscsi__disk_af026b3d050ec9c7cdb5f06252af9732e}\label{structscsi__disk_af026b3d050ec9c7cdb5f06252af9732e} 
+u32 {\bfseries max\+\_\+xfer\+\_\+blocks}
+\item 
+\Hypertarget{structscsi__disk_ab682db02c803090ed9d1c73b712841a2}\label{structscsi__disk_ab682db02c803090ed9d1c73b712841a2} 
+u32 {\bfseries opt\+\_\+xfer\+\_\+blocks}
+\item 
+\Hypertarget{structscsi__disk_a5dcbfd19dfb4f800e375bfbed93b7be7}\label{structscsi__disk_a5dcbfd19dfb4f800e375bfbed93b7be7} 
+u32 {\bfseries max\+\_\+ws\+\_\+blocks}
+\item 
+\Hypertarget{structscsi__disk_aa1ae6f938613d8d4d92e13263bc4b6b5}\label{structscsi__disk_aa1ae6f938613d8d4d92e13263bc4b6b5} 
+u32 {\bfseries max\+\_\+unmap\+\_\+blocks}
+\item 
+\Hypertarget{structscsi__disk_a521ab285fbe39e00a856abda5b95e346}\label{structscsi__disk_a521ab285fbe39e00a856abda5b95e346} 
+u32 {\bfseries unmap\+\_\+granularity}
+\item 
+\Hypertarget{structscsi__disk_a21840c9740f42d31bb88a60dc4b09a1a}\label{structscsi__disk_a21840c9740f42d31bb88a60dc4b09a1a} 
+u32 {\bfseries unmap\+\_\+alignment}
+\item 
+\Hypertarget{structscsi__disk_acbd3b3af7cfdfbded2d539c56af64c8f}\label{structscsi__disk_acbd3b3af7cfdfbded2d539c56af64c8f} 
+u32 {\bfseries max\+\_\+atomic}
+\item 
+\Hypertarget{structscsi__disk_a789e7dcf9bcca1324c93febb254aeb59}\label{structscsi__disk_a789e7dcf9bcca1324c93febb254aeb59} 
+u32 {\bfseries atomic\+\_\+alignment}
+\item 
+\Hypertarget{structscsi__disk_acdaf793d49e50d87d951d8a1c04f534c}\label{structscsi__disk_acdaf793d49e50d87d951d8a1c04f534c} 
+u32 {\bfseries atomic\+\_\+granularity}
+\item 
+\Hypertarget{structscsi__disk_a7c5bc81f4d32c54f0d652061845a739c}\label{structscsi__disk_a7c5bc81f4d32c54f0d652061845a739c} 
+u32 {\bfseries max\+\_\+atomic\+\_\+with\+\_\+boundary}
+\item 
+\Hypertarget{structscsi__disk_ac67caa5fc040cde341a9688a67189c81}\label{structscsi__disk_ac67caa5fc040cde341a9688a67189c81} 
+u32 {\bfseries max\+\_\+atomic\+\_\+boundary}
+\item 
+\Hypertarget{structscsi__disk_a0bb65259ac16d731f1e9cf26d171ba7d}\label{structscsi__disk_a0bb65259ac16d731f1e9cf26d171ba7d} 
+u32 {\bfseries index}
+\item 
+\Hypertarget{structscsi__disk_adea28b62198f693a8c5a4ba778d6868f}\label{structscsi__disk_adea28b62198f693a8c5a4ba778d6868f} 
+unsigned int {\bfseries physical\+\_\+block\+\_\+size}
+\item 
+\Hypertarget{structscsi__disk_abb745482fb21cee3686d54604d24e39b}\label{structscsi__disk_abb745482fb21cee3686d54604d24e39b} 
+unsigned int {\bfseries max\+\_\+medium\+\_\+access\+\_\+timeouts}
+\item 
+\Hypertarget{structscsi__disk_a8167362da277d9c87f19464bdb0d17cd}\label{structscsi__disk_a8167362da277d9c87f19464bdb0d17cd} 
+unsigned int {\bfseries medium\+\_\+access\+\_\+timed\+\_\+out}
+\item 
+\Hypertarget{structscsi__disk_a02645fba926b84b2ec402ccb245ec95b}\label{structscsi__disk_a02645fba926b84b2ec402ccb245ec95b} 
+u16 {\bfseries permanent\+\_\+stream\+\_\+count}
+\item 
+\Hypertarget{structscsi__disk_a222d375a705f51f4a3cade67edd7fc20}\label{structscsi__disk_a222d375a705f51f4a3cade67edd7fc20} 
+u8 {\bfseries media\+\_\+present}
+\item 
+\Hypertarget{structscsi__disk_ad1cba86e72c147dcf6936b8b1c7fce2a}\label{structscsi__disk_ad1cba86e72c147dcf6936b8b1c7fce2a} 
+u8 {\bfseries write\+\_\+prot}
+\item 
+\Hypertarget{structscsi__disk_a4c7a093e1928b1a20e46440335960452}\label{structscsi__disk_a4c7a093e1928b1a20e46440335960452} 
+u8 {\bfseries protection\+\_\+type}
+\item 
+\Hypertarget{structscsi__disk_a2924d8761ac532225a3111cf5d6d3b82}\label{structscsi__disk_a2924d8761ac532225a3111cf5d6d3b82} 
+u8 {\bfseries provisioning\+\_\+mode}
+\item 
+\Hypertarget{structscsi__disk_a4a8015b2bc2d8897921c79d6bcb3a2db}\label{structscsi__disk_a4a8015b2bc2d8897921c79d6bcb3a2db} 
+u8 {\bfseries zeroing\+\_\+mode}
+\item 
+\Hypertarget{structscsi__disk_a9f9660b34727fa76219529da76b36732}\label{structscsi__disk_a9f9660b34727fa76219529da76b36732} 
+u8 {\bfseries nr\+\_\+actuators}
+\item 
+\Hypertarget{structscsi__disk_a59610f3c661698448494eaa230066b4b}\label{structscsi__disk_a59610f3c661698448494eaa230066b4b} 
+bool {\bfseries suspended}
+\item 
+\Hypertarget{structscsi__disk_ace42815cf6e9bf60c16da1f20b862979}\label{structscsi__disk_ace42815cf6e9bf60c16da1f20b862979} 
+unsigned int {\bfseries ATO}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_af048d0958d2be7e674d5c7f618a683a2}\label{structscsi__disk_af048d0958d2be7e674d5c7f618a683a2} 
+unsigned int {\bfseries cache\+\_\+override}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_aec16b9e1b816e6312190cf71a1089cbc}\label{structscsi__disk_aec16b9e1b816e6312190cf71a1089cbc} 
+unsigned int {\bfseries WCE}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a7a56a9d871db59bd08b85adfca9f74d6}\label{structscsi__disk_a7a56a9d871db59bd08b85adfca9f74d6} 
+unsigned int {\bfseries RCD}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a929763688bc56e0313db3d17a60adce4}\label{structscsi__disk_a929763688bc56e0313db3d17a60adce4} 
+unsigned int {\bfseries DPOFUA}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a05d731eab228d60a8c59fc4c3d88d1ee}\label{structscsi__disk_a05d731eab228d60a8c59fc4c3d88d1ee} 
+unsigned int {\bfseries first\+\_\+scan}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_aff8ab4d41b9fbe209643dca343c1ac17}\label{structscsi__disk_aff8ab4d41b9fbe209643dca343c1ac17} 
+unsigned int {\bfseries lbpme}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_ab8a84b95cd28ad540eda7d6571c61ea4}\label{structscsi__disk_ab8a84b95cd28ad540eda7d6571c61ea4} 
+unsigned int {\bfseries lbprz}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_ade52a740fd274ed1e5cab333ce62f1b4}\label{structscsi__disk_ade52a740fd274ed1e5cab333ce62f1b4} 
+unsigned int {\bfseries lbpu}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a461891aa1c336b15537785914ba68e02}\label{structscsi__disk_a461891aa1c336b15537785914ba68e02} 
+unsigned int {\bfseries lbpws}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a0215c0cc755ee3dbff0edb0fe6a73dc3}\label{structscsi__disk_a0215c0cc755ee3dbff0edb0fe6a73dc3} 
+unsigned int {\bfseries lbpws10}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a11c4948d99f9ecc358b63e6b309f0406}\label{structscsi__disk_a11c4948d99f9ecc358b63e6b309f0406} 
+unsigned int {\bfseries lbpvpd}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a2c7b3790737ae126bbc86bcecc802136}\label{structscsi__disk_a2c7b3790737ae126bbc86bcecc802136} 
+unsigned int {\bfseries ws10}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_aa3435f330acbbc2979f3cee17fe4d9d4}\label{structscsi__disk_aa3435f330acbbc2979f3cee17fe4d9d4} 
+unsigned int {\bfseries ws16}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a19d736b019a6868f3d659bf843c09985}\label{structscsi__disk_a19d736b019a6868f3d659bf843c09985} 
+unsigned int {\bfseries rc\+\_\+basis}:\+ 2
+\item 
+\Hypertarget{structscsi__disk_a2d7b498a32c644f2dee49387587c8a96}\label{structscsi__disk_a2d7b498a32c644f2dee49387587c8a96} 
+unsigned int {\bfseries zoned}:\+ 2
+\item 
+\Hypertarget{structscsi__disk_a0e267fe07a7a7d0885f718e92e5a5acd}\label{structscsi__disk_a0e267fe07a7a7d0885f718e92e5a5acd} 
+unsigned int {\bfseries urswrz}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a753bd09d7e2b0e4653318f5cc60524c7}\label{structscsi__disk_a753bd09d7e2b0e4653318f5cc60524c7} 
+unsigned int {\bfseries security}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_a4872eb6c8be86aa81473d61cb5db4240}\label{structscsi__disk_a4872eb6c8be86aa81473d61cb5db4240} 
+unsigned int {\bfseries ignore\+\_\+medium\+\_\+access\+\_\+errors}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_afdc958ff1264d1336e5cf04e523bf406}\label{structscsi__disk_afdc958ff1264d1336e5cf04e523bf406} 
+unsigned int {\bfseries rscs}:\+ 1
+\item 
+\Hypertarget{structscsi__disk_ad6eb1961391fc96cc504df119205b2ef}\label{structscsi__disk_ad6eb1961391fc96cc504df119205b2ef} 
+unsigned int {\bfseries use\+\_\+atomic\+\_\+write\+\_\+boundary}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

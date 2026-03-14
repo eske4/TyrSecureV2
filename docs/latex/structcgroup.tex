@@ -1,0 +1,177 @@
+\doxysection{cgroup Struct Reference}
+\hypertarget{structcgroup}{}\label{structcgroup}\index{cgroup@{cgroup}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcgroup_a2873e9bf47be8dafe93e04fe3a83ef39}\label{structcgroup_a2873e9bf47be8dafe93e04fe3a83ef39} 
+struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} {\bfseries self}
+\item 
+\Hypertarget{structcgroup_a4bc9b63984b2c427e614f4bd5d181b37}\label{structcgroup_a4bc9b63984b2c427e614f4bd5d181b37} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structcgroup_a2da899e2028d203a2c302744edd2e089}\label{structcgroup_a2da899e2028d203a2c302744edd2e089} 
+int {\bfseries level}
+\item 
+\Hypertarget{structcgroup_a653737371a00e26844470ed087b5e8bb}\label{structcgroup_a653737371a00e26844470ed087b5e8bb} 
+int {\bfseries max\+\_\+depth}
+\item 
+\Hypertarget{structcgroup_ad28444995edc85d7066f904551baf29a}\label{structcgroup_ad28444995edc85d7066f904551baf29a} 
+int {\bfseries nr\+\_\+descendants}
+\item 
+\Hypertarget{structcgroup_a9866135753e2f9b88993cb18ce01a535}\label{structcgroup_a9866135753e2f9b88993cb18ce01a535} 
+int {\bfseries nr\+\_\+dying\+\_\+descendants}
+\item 
+\Hypertarget{structcgroup_a21846af88087e4eade6b0b347326efd5}\label{structcgroup_a21846af88087e4eade6b0b347326efd5} 
+int {\bfseries max\+\_\+descendants}
+\item 
+\Hypertarget{structcgroup_a2cf55b3e9a3ca809ed76f8e2583171bc}\label{structcgroup_a2cf55b3e9a3ca809ed76f8e2583171bc} 
+int {\bfseries nr\+\_\+populated\+\_\+csets}
+\item 
+\Hypertarget{structcgroup_ae47f5feb97a9fb2dc1be31fa8d386c78}\label{structcgroup_ae47f5feb97a9fb2dc1be31fa8d386c78} 
+int {\bfseries nr\+\_\+populated\+\_\+domain\+\_\+children}
+\item 
+\Hypertarget{structcgroup_a8a7ccc8073b8587a9e718ce3b96850a5}\label{structcgroup_a8a7ccc8073b8587a9e718ce3b96850a5} 
+int {\bfseries nr\+\_\+populated\+\_\+threaded\+\_\+children}
+\item 
+\Hypertarget{structcgroup_a309f5c5a3a8a00e147aab2bbe8813805}\label{structcgroup_a309f5c5a3a8a00e147aab2bbe8813805} 
+int {\bfseries nr\+\_\+threaded\+\_\+children}
+\item 
+\Hypertarget{structcgroup_ab2951f82c277d9adf35122b4a3db51a4}\label{structcgroup_ab2951f82c277d9adf35122b4a3db51a4} 
+unsigned int {\bfseries kill\+\_\+seq}
+\item 
+\Hypertarget{structcgroup_aa638eb5b97d28c7bfdac71d0af724b05}\label{structcgroup_aa638eb5b97d28c7bfdac71d0af724b05} 
+struct \doxymbox{\hyperlink{structkernfs__node}{kernfs\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries kn}
+\item 
+\Hypertarget{structcgroup_a835975e23d97cfd7c8f25843e1ad0adc}\label{structcgroup_a835975e23d97cfd7c8f25843e1ad0adc} 
+struct \doxymbox{\hyperlink{structcgroup__file}{cgroup\+\_\+file}} {\bfseries procs\+\_\+file}
+\item 
+\Hypertarget{structcgroup_a5f8765299781a3abb0ee6d25a8361903}\label{structcgroup_a5f8765299781a3abb0ee6d25a8361903} 
+struct \doxymbox{\hyperlink{structcgroup__file}{cgroup\+\_\+file}} {\bfseries events\+\_\+file}
+\item 
+\Hypertarget{structcgroup_af30c2dfc02c1b55508524bcd38fed0dc}\label{structcgroup_af30c2dfc02c1b55508524bcd38fed0dc} 
+struct \doxymbox{\hyperlink{structcgroup__file}{cgroup\+\_\+file}} {\bfseries psi\+\_\+files} \+[4]\+
+\item 
+\Hypertarget{structcgroup_a60958271c3e4b72807ee253cd8b50a69}\label{structcgroup_a60958271c3e4b72807ee253cd8b50a69} 
+u16 {\bfseries subtree\+\_\+control}
+\item 
+\Hypertarget{structcgroup_a74e47af10af69b3d7918b434256f2f71}\label{structcgroup_a74e47af10af69b3d7918b434256f2f71} 
+u16 {\bfseries subtree\+\_\+ss\+\_\+mask}
+\item 
+\Hypertarget{structcgroup_a6386e97e64e220e969bb13e04e65586e}\label{structcgroup_a6386e97e64e220e969bb13e04e65586e} 
+u16 {\bfseries old\+\_\+subtree\+\_\+control}
+\item 
+\Hypertarget{structcgroup_a5a8344fc5eb90cd9c3b2f3eea81345ba}\label{structcgroup_a5a8344fc5eb90cd9c3b2f3eea81345ba} 
+u16 {\bfseries old\+\_\+subtree\+\_\+ss\+\_\+mask}
+\item 
+\Hypertarget{structcgroup_a77d805585ab45fd7bccf26fbbe8e3965}\label{structcgroup_a77d805585ab45fd7bccf26fbbe8e3965} 
+struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries subsys} \+[15]\+
+\item 
+\Hypertarget{structcgroup_afa6ec93c3939815fb981e87f41c1d7da}\label{structcgroup_afa6ec93c3939815fb981e87f41c1d7da} 
+int {\bfseries nr\+\_\+dying\+\_\+subsys} \+[15]\+
+\item 
+\Hypertarget{structcgroup_ab654ce7c623688ebc5ef112accf70869}\label{structcgroup_ab654ce7c623688ebc5ef112accf70869} 
+struct \doxymbox{\hyperlink{structcgroup__root}{cgroup\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries root}
+\item 
+\Hypertarget{structcgroup_a6edf28ee4535bede1d505925dd84063e}\label{structcgroup_a6edf28ee4535bede1d505925dd84063e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cset\+\_\+links}
+\item 
+\Hypertarget{structcgroup_ab135b55af209ac87ad17deada35bf09d}\label{structcgroup_ab135b55af209ac87ad17deada35bf09d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries e\+\_\+csets} \+[15]\+
+\item 
+\Hypertarget{structcgroup_ad1bcdf291b2746d6145367debaf3be97}\label{structcgroup_ad1bcdf291b2746d6145367debaf3be97} 
+struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries dom\+\_\+cgrp}
+\item 
+\Hypertarget{structcgroup_aef47ae22f9ab18b838404b40761bb740}\label{structcgroup_aef47ae22f9ab18b838404b40761bb740} 
+struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries old\+\_\+dom\+\_\+cgrp}
+\item 
+\Hypertarget{structcgroup_a72fc7e2b3ec452abe109736c07ad3f64}\label{structcgroup_a72fc7e2b3ec452abe109736c07ad3f64} 
+struct \doxymbox{\hyperlink{structcgroup__rstat__base__cpu}{cgroup\+\_\+rstat\+\_\+base\+\_\+cpu}} \texorpdfstring{$\ast$}{*} {\bfseries rstat\+\_\+base\+\_\+cpu}
+\item 
+\Hypertarget{structcgroup_a6b7eac852b60b302bb6dc9de844824dd}\label{structcgroup_a6b7eac852b60b302bb6dc9de844824dd} 
+long :\+ 64
+\item 
+\Hypertarget{structcgroup_a2f05ba0c25c13a1abbc4471a1835567d}\label{structcgroup_a2f05ba0c25c13a1abbc4471a1835567d} 
+struct \doxymbox{\hyperlink{structcacheline__padding}{cacheline\+\_\+padding}} {\bfseries \+\_\+pad\+\_\+}
+\item 
+\Hypertarget{structcgroup_a46004127aac9c6e490a908d7145ec15d}\label{structcgroup_a46004127aac9c6e490a908d7145ec15d} 
+struct \doxymbox{\hyperlink{structcgroup__base__stat}{cgroup\+\_\+base\+\_\+stat}} {\bfseries last\+\_\+bstat}
+\item 
+\Hypertarget{structcgroup_a2ef8902e789f0de444dba868442d9292}\label{structcgroup_a2ef8902e789f0de444dba868442d9292} 
+struct \doxymbox{\hyperlink{structcgroup__base__stat}{cgroup\+\_\+base\+\_\+stat}} {\bfseries bstat}
+\item 
+\Hypertarget{structcgroup_a8dd1270ef3af572af6f0e3628dcb1b76}\label{structcgroup_a8dd1270ef3af572af6f0e3628dcb1b76} 
+struct \doxymbox{\hyperlink{structprev__cputime}{prev\+\_\+cputime}} {\bfseries prev\+\_\+cputime}
+\item 
+\Hypertarget{structcgroup_a147d46ede9baa2e7dae86693a0cd162f}\label{structcgroup_a147d46ede9baa2e7dae86693a0cd162f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pidlists}
+\item 
+\Hypertarget{structcgroup_a3b80255446d4bc2424ada002ae723f13}\label{structcgroup_a3b80255446d4bc2424ada002ae723f13} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries pidlist\+\_\+mutex}
+\item 
+\Hypertarget{structcgroup_a28743816e602f3f14a77fd03698b10b0}\label{structcgroup_a28743816e602f3f14a77fd03698b10b0} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries offline\+\_\+waitq}
+\item 
+\Hypertarget{structcgroup_a7039b500a40d3a006d20f37e1c125ec3}\label{structcgroup_a7039b500a40d3a006d20f37e1c125ec3} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries release\+\_\+agent\+\_\+work}
+\item 
+\Hypertarget{structcgroup_a97ebac59e89ebae26add674c844cbc22}\label{structcgroup_a97ebac59e89ebae26add674c844cbc22} 
+struct \doxymbox{\hyperlink{structpsi__group}{psi\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries psi}
+\item 
+\Hypertarget{structcgroup_a2741c0b543a729109d690c3ee11dbad4}\label{structcgroup_a2741c0b543a729109d690c3ee11dbad4} 
+struct \doxymbox{\hyperlink{structcgroup__bpf}{cgroup\+\_\+bpf}} {\bfseries bpf}
+\item 
+\Hypertarget{structcgroup_ab84d9eca8ba405faaa45ac5b5d618b49}\label{structcgroup_ab84d9eca8ba405faaa45ac5b5d618b49} 
+struct \doxymbox{\hyperlink{structcgroup__freezer__state}{cgroup\+\_\+freezer\+\_\+state}} {\bfseries freezer}
+\item 
+\Hypertarget{structcgroup_ab3b15e22e5c377a3a3635fdde2e7c27e}\label{structcgroup_ab3b15e22e5c377a3a3635fdde2e7c27e} 
+struct \doxymbox{\hyperlink{structbpf__local__storage}{bpf\+\_\+local\+\_\+storage}} \texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+cgrp\+\_\+storage}
+\item 
+\Hypertarget{structcgroup_a2d06b25f4713182b9b71503db3be8e18}\label{structcgroup_a2d06b25f4713182b9b71503db3be8e18} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unioncgroup_1_1_0d001237051047215223167253137070016174107065014170_a413471a21fea44910978ad36a4343997}\label{unioncgroup_1_1_0d001237051047215223167253137070016174107065014170_a413471a21fea44910978ad36a4343997} 
+\>struct \{\\
+\>\>struct \{\\
+\>\>\} {\bfseries \_\_empty\_ancestors}\\
+\>\>struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries ancestors} \+[0]\+\\
+\>\} \\
+\Hypertarget{unioncgroup_1_1_0d001237051047215223167253137070016174107065014170_a6c8762267784d7c0643f579f57eb2323}\label{unioncgroup_1_1_0d001237051047215223167253137070016174107065014170_a6c8762267784d7c0643f579f57eb2323} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries \_root\_ancestor}\\
+\Hypertarget{structcgroup_1_1_0d001237051047215223167253137070016174107065014170_1_1_0d213203142305256215177177242252167020065152357074_ac0f9ec3558626068a74519629be05fcc}\label{structcgroup_1_1_0d001237051047215223167253137070016174107065014170_1_1_0d213203142305256215177177242252167020065152357074_ac0f9ec3558626068a74519629be05fcc} 
+\>\>struct \{\\
+\>\>\>struct \{\\
+\>\>\>\} {\bfseries \_\_empty\_\_low\_ancestors}\\
+\>\>\>struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries \_low\_ancestors} \+[0]\+\\
+\>\>\} \\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structcgroup_a8bce0c70e89479a388bdd8ffac61470d}\label{structcgroup_a8bce0c70e89479a388bdd8ffac61470d} 
+long :\+ 64
+\item 
+\Hypertarget{structcgroup_a582856bd9527799667acf0cf4758ef6b}\label{structcgroup_a582856bd9527799667acf0cf4758ef6b} 
+long :\+ 64
+\item 
+\Hypertarget{structcgroup_a69d79c714895152dbed6061be852939b}\label{structcgroup_a69d79c714895152dbed6061be852939b} 
+long :\+ 64
+\item 
+\Hypertarget{structcgroup_ae335fbff48f699c225a72143b415894a}\label{structcgroup_ae335fbff48f699c225a72143b415894a} 
+long :\+ 64
+\item 
+\Hypertarget{structcgroup_a4bdd4171c285a041429f42a2623c2291}\label{structcgroup_a4bdd4171c285a041429f42a2623c2291} 
+long :\+ 64
+\item 
+\Hypertarget{structcgroup_acf30de19f00cb5cf276e2f00e25a96b2}\label{structcgroup_acf30de19f00cb5cf276e2f00e25a96b2} 
+long :\+ 64
+\item 
+\Hypertarget{structcgroup_ae7877c840e27c731691465b378490fd4}\label{structcgroup_ae7877c840e27c731691465b378490fd4} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

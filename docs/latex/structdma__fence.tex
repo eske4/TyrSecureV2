@@ -1,0 +1,41 @@
+\doxysection{dma\+\_\+fence Struct Reference}
+\hypertarget{structdma__fence}{}\label{structdma__fence}\index{dma\_fence@{dma\_fence}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdma__fence_a036b1b3b4969ed1bf8ebfe9dde8d7de1}\label{structdma__fence_a036b1b3b4969ed1bf8ebfe9dde8d7de1} 
+spinlock\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries lock}
+\item 
+\Hypertarget{structdma__fence_aebcddcdf8bbefe2a1f16ee4c1efcae84}\label{structdma__fence_aebcddcdf8bbefe2a1f16ee4c1efcae84} 
+const struct \doxymbox{\hyperlink{structdma__fence__ops}{dma\+\_\+fence\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structdma__fence_a7c609b7211dd69b994b70db691269ef9}\label{structdma__fence_a7c609b7211dd69b994b70db691269ef9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries cb\_list}\\
+\>ktime\_t {\bfseries timestamp}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries rcu}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdma__fence_aecb2f5cc12cc20ff59571ed0996f01bd}\label{structdma__fence_aecb2f5cc12cc20ff59571ed0996f01bd} 
+u64 {\bfseries context}
+\item 
+\Hypertarget{structdma__fence_af2d9b272d90504751d55986116107f6d}\label{structdma__fence_af2d9b272d90504751d55986116107f6d} 
+u64 {\bfseries seqno}
+\item 
+\Hypertarget{structdma__fence_a9cb6db84e405e1145a955be2f89e87dd}\label{structdma__fence_a9cb6db84e405e1145a955be2f89e87dd} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structdma__fence_a4c61fc32caa09beaaf530528bb3032e6}\label{structdma__fence_a4c61fc32caa09beaaf530528bb3032e6} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries refcount}
+\item 
+\Hypertarget{structdma__fence_a6cf3526486b0e3c56113535699df85fb}\label{structdma__fence_a6cf3526486b0e3c56113535699df85fb} 
+int {\bfseries error}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

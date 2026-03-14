@@ -1,0 +1,160 @@
+\doxysection{usb\+\_\+serial\+\_\+driver Struct Reference}
+\hypertarget{structusb__serial__driver}{}\label{structusb__serial__driver}\index{usb\_serial\_driver@{usb\_serial\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusb__serial__driver_a77e2dc5c2749b1479f6a89b1d3cb7d6c}\label{structusb__serial__driver_a77e2dc5c2749b1479f6a89b1d3cb7d6c} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries description}
+\item 
+\Hypertarget{structusb__serial__driver_adc2bee625c1aa592937f0d2888ce2cde}\label{structusb__serial__driver_adc2bee625c1aa592937f0d2888ce2cde} 
+const struct \doxymbox{\hyperlink{structusb__device__id}{usb\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries id\+\_\+table}
+\item 
+\Hypertarget{structusb__serial__driver_a127cbd33c97922677611accf90cb5016}\label{structusb__serial__driver_a127cbd33c97922677611accf90cb5016} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries driver\+\_\+list}
+\item 
+\Hypertarget{structusb__serial__driver_ace02c7bba3a32c01707b8f2b5bfc5eb5}\label{structusb__serial__driver_ace02c7bba3a32c01707b8f2b5bfc5eb5} 
+struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} {\bfseries driver}
+\item 
+\Hypertarget{structusb__serial__driver_a2341d6954683417dce85cdda1c450deb}\label{structusb__serial__driver_a2341d6954683417dce85cdda1c450deb} 
+struct \doxymbox{\hyperlink{structusb__driver}{usb\+\_\+driver}} \texorpdfstring{$\ast$}{*} {\bfseries usb\+\_\+driver}
+\item 
+\Hypertarget{structusb__serial__driver_af6224b1d11f8c018a8fa114b2994f4f0}\label{structusb__serial__driver_af6224b1d11f8c018a8fa114b2994f4f0} 
+struct \doxymbox{\hyperlink{structusb__dynids}{usb\+\_\+dynids}} {\bfseries dynids}
+\item 
+\Hypertarget{structusb__serial__driver_a305bfc50473fcfca8f5093f761713d24}\label{structusb__serial__driver_a305bfc50473fcfca8f5093f761713d24} 
+unsigned char {\bfseries num\+\_\+ports}
+\item 
+\Hypertarget{structusb__serial__driver_a1845d6f4fd9ba29ba3154e98393f4a90}\label{structusb__serial__driver_a1845d6f4fd9ba29ba3154e98393f4a90} 
+unsigned char {\bfseries num\+\_\+bulk\+\_\+in}
+\item 
+\Hypertarget{structusb__serial__driver_ac383cf33b9eeb828443955fd31331649}\label{structusb__serial__driver_ac383cf33b9eeb828443955fd31331649} 
+unsigned char {\bfseries num\+\_\+bulk\+\_\+out}
+\item 
+\Hypertarget{structusb__serial__driver_a23bbf42b8e039075417d83fafdfb8eb9}\label{structusb__serial__driver_a23bbf42b8e039075417d83fafdfb8eb9} 
+unsigned char {\bfseries num\+\_\+interrupt\+\_\+in}
+\item 
+\Hypertarget{structusb__serial__driver_ae902c8e2bfa55d6a802207998edc979a}\label{structusb__serial__driver_ae902c8e2bfa55d6a802207998edc979a} 
+unsigned char {\bfseries num\+\_\+interrupt\+\_\+out}
+\item 
+\Hypertarget{structusb__serial__driver_a86a863e01daba9371c5a7f73a83aca79}\label{structusb__serial__driver_a86a863e01daba9371c5a7f73a83aca79} 
+size\+\_\+t {\bfseries bulk\+\_\+in\+\_\+size}
+\item 
+\Hypertarget{structusb__serial__driver_ac6b9ecdba0ca7d46464fe0499e70e1d3}\label{structusb__serial__driver_ac6b9ecdba0ca7d46464fe0499e70e1d3} 
+size\+\_\+t {\bfseries bulk\+\_\+out\+\_\+size}
+\item 
+\Hypertarget{structusb__serial__driver_abb506eb6fc11212dcb32c3aa2d647633}\label{structusb__serial__driver_abb506eb6fc11212dcb32c3aa2d647633} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structusb__serial}{usb\+\_\+serial}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structusb__device__id}{usb\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ad06cf115dbf5a276df4bbfe26b75f4a7}\label{structusb__serial__driver_ad06cf115dbf5a276df4bbfe26b75f4a7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries attach} )(struct \doxymbox{\hyperlink{structusb__serial}{usb\+\_\+serial}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ab74fce70703d5a0d4fe4056e058c3934}\label{structusb__serial__driver_ab74fce70703d5a0d4fe4056e058c3934} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries calc\+\_\+num\+\_\+ports} )(struct \doxymbox{\hyperlink{structusb__serial}{usb\+\_\+serial}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structusb__serial__endpoints}{usb\+\_\+serial\+\_\+endpoints}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ad8328dd3e062c226b48476fe7528e429}\label{structusb__serial__driver_ad8328dd3e062c226b48476fe7528e429} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disconnect} )(struct \doxymbox{\hyperlink{structusb__serial}{usb\+\_\+serial}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_aa5845b50fb73d584e6be6265a204e0dd}\label{structusb__serial__driver_aa5845b50fb73d584e6be6265a204e0dd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structusb__serial}{usb\+\_\+serial}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a583fc2522e7b4359b79ac2eae1a889d3}\label{structusb__serial__driver_a583fc2522e7b4359b79ac2eae1a889d3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+probe} )(struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a82f218933ad2fac744f473a41ab5f248}\label{structusb__serial__driver_a82f218933ad2fac744f473a41ab5f248} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+remove} )(struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_afcced5a6cb7f7a294fa1bcd77adeb846}\label{structusb__serial__driver_afcced5a6cb7f7a294fa1bcd77adeb846} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structusb__serial}{usb\+\_\+serial}} \texorpdfstring{$\ast$}{*}, pm\+\_\+message\+\_\+t)
+\item 
+\Hypertarget{structusb__serial__driver_a41b14e8fce48523ed7bf30a8f6e6b2ff}\label{structusb__serial__driver_a41b14e8fce48523ed7bf30a8f6e6b2ff} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structusb__serial}{usb\+\_\+serial}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a87376d0fadc3b9f42420df43fc899fb7}\label{structusb__serial__driver_a87376d0fadc3b9f42420df43fc899fb7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+resume} )(struct \doxymbox{\hyperlink{structusb__serial}{usb\+\_\+serial}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a5a067e108e946042afd007a009d9893e}\label{structusb__serial__driver_a5a067e108e946042afd007a009d9893e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_aa7b50e7eacf45ba19e22defc753fa8f6}\label{structusb__serial__driver_aa7b50e7eacf45ba19e22defc753fa8f6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries close} )(struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_af2e2772196952e51c328968da306eee2}\label{structusb__serial__driver_af2e2772196952e51c328968da306eee2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*}, const unsigned char \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structusb__serial__driver_a60b16333393d35eb21eb4920dd2d9c83}\label{structusb__serial__driver_a60b16333393d35eb21eb4920dd2d9c83} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+room} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_abb5258b4aa216bfc5be964ba0644bac7}\label{structusb__serial__driver_abb5258b4aa216bfc5be964ba0644bac7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ioctl} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structusb__serial__driver_aaa6511551ab74b7a27a46586fd5996e3}\label{structusb__serial__driver_aaa6511551ab74b7a27a46586fd5996e3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+serial} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structserial__struct}{serial\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ad15cbf515ae3428443147ee75ff703f7}\label{structusb__serial__driver_ad15cbf515ae3428443147ee75ff703f7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+serial} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structserial__struct}{serial\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a9b08811b650bab7a358d7de0933bb0c7}\label{structusb__serial__driver_a9b08811b650bab7a358d7de0933bb0c7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+termios} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structktermios}{ktermios}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ae8f666de097ef92f29efcd5a426e1f17}\label{structusb__serial__driver_ae8f666de097ef92f29efcd5a426e1f17} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries break\+\_\+ctl} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structusb__serial__driver_ac9fb2eac6966af56c859af9a8f65792e}\label{structusb__serial__driver_ac9fb2eac6966af56c859af9a8f65792e} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries chars\+\_\+in\+\_\+buffer} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_aee5d13e4a9c53e07a10a6513da1da1c7}\label{structusb__serial__driver_aee5d13e4a9c53e07a10a6513da1da1c7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries wait\+\_\+until\+\_\+sent} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long int)
+\item 
+\Hypertarget{structusb__serial__driver_a7de7a0d3b490e2dd431ff266d82230ee}\label{structusb__serial__driver_a7de7a0d3b490e2dd431ff266d82230ee} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries tx\+\_\+empty} )(struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ac8938f728076d1969fecc7049956ea93}\label{structusb__serial__driver_ac8938f728076d1969fecc7049956ea93} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries throttle} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_aa178a4c5b0b0fd3e3aecca962adea4e0}\label{structusb__serial__driver_aa178a4c5b0b0fd3e3aecca962adea4e0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unthrottle} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ad817be31dd10397d287c79438d67b05d}\label{structusb__serial__driver_ad817be31dd10397d287c79438d67b05d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tiocmget} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a9d13c4b77e9f71fb4e3420083405ebb6}\label{structusb__serial__driver_a9d13c4b77e9f71fb4e3420083405ebb6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tiocmset} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structusb__serial__driver_a28ba97ed67a773b91d6016b989ada25b}\label{structusb__serial__driver_a28ba97ed67a773b91d6016b989ada25b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tiocmiwait} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structusb__serial__driver_abcfd8126c040e8ab33e22a04de7bc132}\label{structusb__serial__driver_abcfd8126c040e8ab33e22a04de7bc132} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+icount} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structserial__icounter__struct}{serial\+\_\+icounter\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ab904f83fd76b8114327cc28775d2ac77}\label{structusb__serial__driver_ab904f83fd76b8114327cc28775d2ac77} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dtr\+\_\+rts} )(struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structusb__serial__driver_a90b0941571a491503d8f0986b43b0d6e}\label{structusb__serial__driver_a90b0941571a491503d8f0986b43b0d6e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries carrier\+\_\+raised} )(struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_abebaf0bec8a182193e3432a451f154a1}\label{structusb__serial__driver_abebaf0bec8a182193e3432a451f154a1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+termios} )(struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a464e1f3db6833039976bd6f3ccbc78b3}\label{structusb__serial__driver_a464e1f3db6833039976bd6f3ccbc78b3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+int\+\_\+callback} )(struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a795197f92ddb92ad981ec16f51d4f843}\label{structusb__serial__driver_a795197f92ddb92ad981ec16f51d4f843} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+int\+\_\+callback} )(struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a846dd34b7c9a68a49232e02dc28152ff}\label{structusb__serial__driver_a846dd34b7c9a68a49232e02dc28152ff} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+bulk\+\_\+callback} )(struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_a00666bd927488161d538c7c110b2b0a9}\label{structusb__serial__driver_a00666bd927488161d538c7c110b2b0a9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+bulk\+\_\+callback} )(struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ab8d5dc01c39727935e156749fee9aa80}\label{structusb__serial__driver_ab8d5dc01c39727935e156749fee9aa80} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries process\+\_\+read\+\_\+urb} )(struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__serial__driver_ada4587b31fd5f8b07747737931345f94}\label{structusb__serial__driver_ada4587b31fd5f8b07747737931345f94} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+write\+\_\+buffer} )(struct \doxymbox{\hyperlink{structusb__serial__port}{usb\+\_\+serial\+\_\+port}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

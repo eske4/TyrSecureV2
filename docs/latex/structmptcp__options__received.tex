@@ -1,0 +1,96 @@
+\doxysection{mptcp\+\_\+options\+\_\+received Struct Reference}
+\hypertarget{structmptcp__options__received}{}\label{structmptcp__options__received}\index{mptcp\_options\_received@{mptcp\_options\_received}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmptcp__options__received_a8a13250a3e233418b3ba40db3eda5144}\label{structmptcp__options__received_a8a13250a3e233418b3ba40db3eda5144} 
+u64 {\bfseries sndr\+\_\+key}
+\item 
+\Hypertarget{structmptcp__options__received_a39faaccddf082d4db5439684d66de134}\label{structmptcp__options__received_a39faaccddf082d4db5439684d66de134} 
+u64 {\bfseries rcvr\+\_\+key}
+\item 
+\Hypertarget{structmptcp__options__received_a1bf97707fa9d7ef147953d9da563ec07}\label{structmptcp__options__received_a1bf97707fa9d7ef147953d9da563ec07} 
+u64 {\bfseries data\+\_\+ack}
+\item 
+\Hypertarget{structmptcp__options__received_a3deb4244ab54f27eca8445ed2e639c5f}\label{structmptcp__options__received_a3deb4244ab54f27eca8445ed2e639c5f} 
+u64 {\bfseries data\+\_\+seq}
+\item 
+\Hypertarget{structmptcp__options__received_a1c01aa00cfd3380c1bdd234a0b29ceef}\label{structmptcp__options__received_a1c01aa00cfd3380c1bdd234a0b29ceef} 
+u32 {\bfseries subflow\+\_\+seq}
+\item 
+\Hypertarget{structmptcp__options__received_a2594d193995eed9652137451c150aae5}\label{structmptcp__options__received_a2594d193995eed9652137451c150aae5} 
+u16 {\bfseries data\+\_\+len}
+\item 
+\Hypertarget{structmptcp__options__received_adf05c365ccd95e2d6be35a91f3659a1b}\label{structmptcp__options__received_adf05c365ccd95e2d6be35a91f3659a1b} 
+\+\_\+\+\_\+sum16 {\bfseries csum}
+\item 
+\Hypertarget{structmptcp__options__received_a4e7ee188f63aab1070f88cdd8062b7fa}\label{structmptcp__options__received_a4e7ee188f63aab1070f88cdd8062b7fa} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionmptcp__options__received_1_1_0d164154204344332036162041222105113052337344116347_ad5dddc9f0d379894ae5da07d27aeec7c}\label{unionmptcp__options__received_1_1_0d164154204344332036162041222105113052337344116347_ad5dddc9f0d379894ae5da07d27aeec7c} 
+\>struct \{\\
+\>\>u16 {\bfseries suboptions}\\
+\>\>u16 {\bfseries use\_map}: 1\\
+\>\>u16 {\bfseries dsn64}: 1\\
+\>\>u16 {\bfseries data\_fin}: 1\\
+\>\>u16 {\bfseries use\_ack}: 1\\
+\>\>u16 {\bfseries ack64}: 1\\
+\>\>u16 {\bfseries mpc\_map}: 1\\
+\>\>u16 {\bfseries reset\_reason}: 4\\
+\>\>u16 {\bfseries reset\_transient}: 1\\
+\>\>u16 {\bfseries echo}: 1\\
+\>\>u16 {\bfseries backup}: 1\\
+\>\>u16 {\bfseries deny\_join\_id0}: 1\\
+\>\>u16 {\bfseries \_\_unused}: 2\\
+\>\} \\
+\>struct \{\\
+\>\>u16 {\bfseries suboptions}\\
+\>\>u16 {\bfseries use\_map}: 1\\
+\>\>u16 {\bfseries dsn64}: 1\\
+\>\>u16 {\bfseries data\_fin}: 1\\
+\>\>u16 {\bfseries use\_ack}: 1\\
+\>\>u16 {\bfseries ack64}: 1\\
+\>\>u16 {\bfseries mpc\_map}: 1\\
+\>\>u16 {\bfseries reset\_reason}: 4\\
+\>\>u16 {\bfseries reset\_transient}: 1\\
+\>\>u16 {\bfseries echo}: 1\\
+\>\>u16 {\bfseries backup}: 1\\
+\>\>u16 {\bfseries deny\_join\_id0}: 1\\
+\>\>u16 {\bfseries \_\_unused}: 2\\
+\>\} {\bfseries status}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmptcp__options__received_a356c9b4a6724535789ce727be53a6b9c}\label{structmptcp__options__received_a356c9b4a6724535789ce727be53a6b9c} 
+u8 {\bfseries join\+\_\+id}
+\item 
+\Hypertarget{structmptcp__options__received_a94e0718eb325b0b324776e9acec2a1b8}\label{structmptcp__options__received_a94e0718eb325b0b324776e9acec2a1b8} 
+u32 {\bfseries token}
+\item 
+\Hypertarget{structmptcp__options__received_afe7b0d163aad78bb9e454d603f5d7a44}\label{structmptcp__options__received_afe7b0d163aad78bb9e454d603f5d7a44} 
+u32 {\bfseries nonce}
+\item 
+\Hypertarget{structmptcp__options__received_aedb2399ba5bd6cc7828380fb29b17935}\label{structmptcp__options__received_aedb2399ba5bd6cc7828380fb29b17935} 
+u64 {\bfseries thmac}
+\item 
+\Hypertarget{structmptcp__options__received_a271daf28bc97f07eef45c66cae20751e}\label{structmptcp__options__received_a271daf28bc97f07eef45c66cae20751e} 
+u8 {\bfseries hmac} \+[20]\+
+\item 
+\Hypertarget{structmptcp__options__received_a37e446970f38644141085d9d5da0f6f7}\label{structmptcp__options__received_a37e446970f38644141085d9d5da0f6f7} 
+struct \doxymbox{\hyperlink{structmptcp__addr__info}{mptcp\+\_\+addr\+\_\+info}} {\bfseries addr}
+\item 
+\Hypertarget{structmptcp__options__received_a45eae14f25517f588ca5ed6e30478883}\label{structmptcp__options__received_a45eae14f25517f588ca5ed6e30478883} 
+struct \doxymbox{\hyperlink{structmptcp__rm__list}{mptcp\+\_\+rm\+\_\+list}} {\bfseries rm\+\_\+list}
+\item 
+\Hypertarget{structmptcp__options__received_ab31e828905a47f64476252cda5012daf}\label{structmptcp__options__received_ab31e828905a47f64476252cda5012daf} 
+u64 {\bfseries ahmac}
+\item 
+\Hypertarget{structmptcp__options__received_a768006767c241a24bd89489a064d2716}\label{structmptcp__options__received_a768006767c241a24bd89489a064d2716} 
+u64 {\bfseries fail\+\_\+seq}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

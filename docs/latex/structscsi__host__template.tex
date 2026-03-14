@@ -1,0 +1,184 @@
+\doxysection{scsi\+\_\+host\+\_\+template Struct Reference}
+\hypertarget{structscsi__host__template}{}\label{structscsi__host__template}\index{scsi\_host\_template@{scsi\_host\_template}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structscsi__host__template_a1ab1db1a0e07ababd3d87abc87b28593}\label{structscsi__host__template_a1ab1db1a0e07ababd3d87abc87b28593} 
+unsigned int {\bfseries cmd\+\_\+size}
+\item 
+\Hypertarget{structscsi__host__template_a6d4c6ad59af18658e3b204208143b055}\label{structscsi__host__template_a6d4c6ad59af18658e3b204208143b055} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries queuecommand} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a471c777717d66a42ade0d2aa5b71b78d}\label{structscsi__host__template_a471c777717d66a42ade0d2aa5b71b78d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries queue\+\_\+reserved\+\_\+command} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a238b319c5f136f3f4571734d55fb6e28}\label{structscsi__host__template_a238b319c5f136f3f4571734d55fb6e28} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries commit\+\_\+rqs} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*}, u16)
+\item 
+\Hypertarget{structscsi__host__template_aedac4eb36da7d6aa316c5630e2033069}\label{structscsi__host__template_aedac4eb36da7d6aa316c5630e2033069} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries module}
+\item 
+\Hypertarget{structscsi__host__template_af690220a12281c381731fab8968c5bc3}\label{structscsi__host__template_af690220a12281c381731fab8968c5bc3} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structscsi__host__template_a540ef1903c874d4102d2d82c73e257c7}\label{structscsi__host__template_a540ef1903c874d4102d2d82c73e257c7} 
+const char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries info} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_aaff7e7e668be9abbd2eb9135f78c9d41}\label{structscsi__host__template_aaff7e7e668be9abbd2eb9135f78c9d41} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ioctl} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*}, unsigned int, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a4ad52a122640b4181906a3ef671f5d87}\label{structscsi__host__template_a4ad52a122640b4181906a3ef671f5d87} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries compat\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*}, unsigned int, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a490b6e265c5424dd54991d5f2bac4fff}\label{structscsi__host__template_a490b6e265c5424dd54991d5f2bac4fff} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+cmd\+\_\+priv} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a206a1424f2c5fd5af8d7766c6c690987}\label{structscsi__host__template_a206a1424f2c5fd5af8d7766c6c690987} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries exit\+\_\+cmd\+\_\+priv} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_aa5cac3869f00f0397f5bece8d3900940}\label{structscsi__host__template_aa5cac3869f00f0397f5bece8d3900940} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+abort\+\_\+handler} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a69bdfec262ced210ab152c80242c90cd}\label{structscsi__host__template_a69bdfec262ced210ab152c80242c90cd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+device\+\_\+reset\+\_\+handler} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_adabe6ed236f22174cb7c4f072e5dc8f9}\label{structscsi__host__template_adabe6ed236f22174cb7c4f072e5dc8f9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+target\+\_\+reset\+\_\+handler} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_abfc0dd2abd92b8308bb10543835e0163}\label{structscsi__host__template_abfc0dd2abd92b8308bb10543835e0163} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+bus\+\_\+reset\+\_\+handler} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_ad8beaaf9863cf1a7bcf59d386390871e}\label{structscsi__host__template_ad8beaaf9863cf1a7bcf59d386390871e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+host\+\_\+reset\+\_\+handler} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a105d1d5ed2d6c7decbfdc30895f1896c}\label{structscsi__host__template_a105d1d5ed2d6c7decbfdc30895f1896c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sdev\+\_\+init} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_adf2b27ee0067e0d4e67f1ec6be0661d7}\label{structscsi__host__template_adf2b27ee0067e0d4e67f1ec6be0661d7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sdev\+\_\+configure} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structqueue__limits}{queue\+\_\+limits}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a5b9d46ecd26f24eaf029a769785084ca}\label{structscsi__host__template_a5b9d46ecd26f24eaf029a769785084ca} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sdev\+\_\+destroy} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_afcb292f5d0d9b18ee1baa6c0c385743b}\label{structscsi__host__template_afcb292f5d0d9b18ee1baa6c0c385743b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries target\+\_\+alloc} )(struct \doxymbox{\hyperlink{structscsi__target}{scsi\+\_\+target}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a81119048f842b117a17e861292b6c446}\label{structscsi__host__template_a81119048f842b117a17e861292b6c446} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries target\+\_\+destroy} )(struct \doxymbox{\hyperlink{structscsi__target}{scsi\+\_\+target}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_ad28f704b4dab93606d4eca2bac69545a}\label{structscsi__host__template_ad28f704b4dab93606d4eca2bac69545a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries scan\+\_\+finished} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structscsi__host__template_a8232fe5f5119bee385329c3f1ef476b5}\label{structscsi__host__template_a8232fe5f5119bee385329c3f1ef476b5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries scan\+\_\+start} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a1579ddccfe34cd2477a15bb3f9e7dc0f}\label{structscsi__host__template_a1579ddccfe34cd2477a15bb3f9e7dc0f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries change\+\_\+queue\+\_\+depth} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structscsi__host__template_a95c3098b425d32c8ff91bc55a820b02b}\label{structscsi__host__template_a95c3098b425d32c8ff91bc55a820b02b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+queues} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_af3f15a6d46baf5c943b036f095439f68}\label{structscsi__host__template_af3f15a6d46baf5c943b036f095439f68} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mq\+\_\+poll} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structscsi__host__template_acba0eec7ffbeadee066c0f23941427c8}\label{structscsi__host__template_acba0eec7ffbeadee066c0f23941427c8} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+need\+\_\+drain} )(struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_af5b0b3dcdabd3ff2299ef8b59ef6f6f8}\label{structscsi__host__template_af5b0b3dcdabd3ff2299ef8b59ef6f6f8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bios\+\_\+param} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*}, sector\+\_\+t, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a45914d72e2f12dae3d27be8ba4fd4dbf}\label{structscsi__host__template_a45914d72e2f12dae3d27be8ba4fd4dbf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unlock\+\_\+native\+\_\+capacity} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a4fdd584517647885f24360530d948129}\label{structscsi__host__template_a4fdd584517647885f24360530d948129} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries show\+\_\+info} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a8c61312e916e512fbb0d6d24d5655a59}\label{structscsi__host__template_a8c61312e916e512fbb0d6d24d5655a59} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+info} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structscsi__host__template_aac9b7220ebc99156869a0d2d1b891aba}\label{structscsi__host__template_aac9b7220ebc99156869a0d2d1b891aba} 
+enum scsi\+\_\+timeout\+\_\+action(\texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+timed\+\_\+out} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_a15f46e6923e1c382f25a069dbae76102}\label{structscsi__host__template_a15f46e6923e1c382f25a069dbae76102} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+should\+\_\+retry\+\_\+cmd} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__host__template_aed2dfbc7a4adea2b8a5520b777f63c39}\label{structscsi__host__template_aed2dfbc7a4adea2b8a5520b777f63c39} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries host\+\_\+reset} )(struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structscsi__host__template_a94ee9150a375d0653c71b865581f3aab}\label{structscsi__host__template_a94ee9150a375d0653c71b865581f3aab} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+name}
+\item 
+\Hypertarget{structscsi__host__template_afc30a2aa02f20b7d53537d0b9056d313}\label{structscsi__host__template_afc30a2aa02f20b7d53537d0b9056d313} 
+int {\bfseries can\+\_\+queue}
+\item 
+\Hypertarget{structscsi__host__template_a4e9b41830ae5f411b1cdefdce8f385f3}\label{structscsi__host__template_a4e9b41830ae5f411b1cdefdce8f385f3} 
+int {\bfseries nr\+\_\+reserved\+\_\+cmds}
+\item 
+\Hypertarget{structscsi__host__template_ab92ca6e60978a2778cd3afefa47d090d}\label{structscsi__host__template_ab92ca6e60978a2778cd3afefa47d090d} 
+int {\bfseries this\+\_\+id}
+\item 
+\Hypertarget{structscsi__host__template_accc5f32c05247b0440ade09503714fb3}\label{structscsi__host__template_accc5f32c05247b0440ade09503714fb3} 
+short unsigned int {\bfseries sg\+\_\+tablesize}
+\item 
+\Hypertarget{structscsi__host__template_aa0d09f716e5fc6f4439f19a540f5f498}\label{structscsi__host__template_aa0d09f716e5fc6f4439f19a540f5f498} 
+short unsigned int {\bfseries sg\+\_\+prot\+\_\+tablesize}
+\item 
+\Hypertarget{structscsi__host__template_a5edb8f470795b094a923f0a3f3eb9f33}\label{structscsi__host__template_a5edb8f470795b094a923f0a3f3eb9f33} 
+unsigned int {\bfseries max\+\_\+sectors}
+\item 
+\Hypertarget{structscsi__host__template_a8e29c7e2decb48830f47efd35223d563}\label{structscsi__host__template_a8e29c7e2decb48830f47efd35223d563} 
+unsigned int {\bfseries max\+\_\+segment\+\_\+size}
+\item 
+\Hypertarget{structscsi__host__template_ac1e26ed87dba7b3fe08f88fbcef840c1}\label{structscsi__host__template_ac1e26ed87dba7b3fe08f88fbcef840c1} 
+unsigned int {\bfseries dma\+\_\+alignment}
+\item 
+\Hypertarget{structscsi__host__template_a2ee86de7d526f7d925100df4837ff9b5}\label{structscsi__host__template_a2ee86de7d526f7d925100df4837ff9b5} 
+long unsigned int {\bfseries dma\+\_\+boundary}
+\item 
+\Hypertarget{structscsi__host__template_ab2236196a0f7064110cd0267eafdacb9}\label{structscsi__host__template_ab2236196a0f7064110cd0267eafdacb9} 
+long unsigned int {\bfseries virt\+\_\+boundary\+\_\+mask}
+\item 
+\Hypertarget{structscsi__host__template_af3bc2f0790ed2ee36572dabf63c38651}\label{structscsi__host__template_af3bc2f0790ed2ee36572dabf63c38651} 
+short int {\bfseries cmd\+\_\+per\+\_\+lun}
+\item 
+\Hypertarget{structscsi__host__template_a89a74d5e305514beae4e5efdb433e8fa}\label{structscsi__host__template_a89a74d5e305514beae4e5efdb433e8fa} 
+bool {\bfseries tag\+\_\+alloc\+\_\+policy\+\_\+rr}:\+ 1
+\item 
+\Hypertarget{structscsi__host__template_addc79fd1fc55f2dcb250ed68e9adfd2c}\label{structscsi__host__template_addc79fd1fc55f2dcb250ed68e9adfd2c} 
+unsigned int {\bfseries track\+\_\+queue\+\_\+depth}:\+ 1
+\item 
+\Hypertarget{structscsi__host__template_a9ec52702e90e2c1203bc1931ea412d29}\label{structscsi__host__template_a9ec52702e90e2c1203bc1931ea412d29} 
+unsigned int {\bfseries supported\+\_\+mode}:\+ 2
+\item 
+\Hypertarget{structscsi__host__template_a2ff098953a8885db69abc6cd5af31d34}\label{structscsi__host__template_a2ff098953a8885db69abc6cd5af31d34} 
+unsigned int {\bfseries emulated}:\+ 1
+\item 
+\Hypertarget{structscsi__host__template_ab102532aaa3cca65ee6f977f1dc66b07}\label{structscsi__host__template_ab102532aaa3cca65ee6f977f1dc66b07} 
+unsigned int {\bfseries skip\+\_\+settle\+\_\+delay}:\+ 1
+\item 
+\Hypertarget{structscsi__host__template_a8226ebbfd77f0f4521b07b29fbabd1bc}\label{structscsi__host__template_a8226ebbfd77f0f4521b07b29fbabd1bc} 
+unsigned int {\bfseries no\+\_\+write\+\_\+same}:\+ 1
+\item 
+\Hypertarget{structscsi__host__template_ad4aeee70d67ee26069b0c4bf664374ab}\label{structscsi__host__template_ad4aeee70d67ee26069b0c4bf664374ab} 
+unsigned int {\bfseries host\+\_\+tagset}:\+ 1
+\item 
+\Hypertarget{structscsi__host__template_a9fd6cb1a060b868b42268fce6b04a9d6}\label{structscsi__host__template_a9fd6cb1a060b868b42268fce6b04a9d6} 
+unsigned int {\bfseries queuecommand\+\_\+may\+\_\+block}:\+ 1
+\item 
+\Hypertarget{structscsi__host__template_a61f1c3579ca2aac78feb991ec90f88ae}\label{structscsi__host__template_a61f1c3579ca2aac78feb991ec90f88ae} 
+unsigned int {\bfseries max\+\_\+host\+\_\+blocked}
+\item 
+\Hypertarget{structscsi__host__template_a0ba0d35284d638a40d87e7495dbbf430}\label{structscsi__host__template_a0ba0d35284d638a40d87e7495dbbf430} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries shost\+\_\+groups}
+\item 
+\Hypertarget{structscsi__host__template_a6684a64b9081bd6da9c31eeb309af0bc}\label{structscsi__host__template_a6684a64b9081bd6da9c31eeb309af0bc} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries sdev\+\_\+groups}
+\item 
+\Hypertarget{structscsi__host__template_a9b7ae4c8c86cf64d1ded31f15ab808ad}\label{structscsi__host__template_a9b7ae4c8c86cf64d1ded31f15ab808ad} 
+u64 {\bfseries vendor\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

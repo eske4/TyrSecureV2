@@ -1,0 +1,328 @@
+\doxysection{sctp\+\_\+association Struct Reference}
+\hypertarget{structsctp__association}{}\label{structsctp__association}\index{sctp\_association@{sctp\_association}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsctp__association_a3149150e39430abebbe87d3ffbb0c714}\label{structsctp__association_a3149150e39430abebbe87d3ffbb0c714} 
+struct \doxymbox{\hyperlink{structsctp__ep__common}{sctp\+\_\+ep\+\_\+common}} {\bfseries base}
+\item 
+\Hypertarget{structsctp__association_a3348321126726d064632cdf6af18f579}\label{structsctp__association_a3348321126726d064632cdf6af18f579} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries asocs}
+\item 
+\Hypertarget{structsctp__association_a99d1e9d964fb1a09b917f395743e7a78}\label{structsctp__association_a99d1e9d964fb1a09b917f395743e7a78} 
+sctp\+\_\+assoc\+\_\+t {\bfseries assoc\+\_\+id}
+\item 
+\Hypertarget{structsctp__association_adc02d5b0fc40fd5d951f8788ab0a8378}\label{structsctp__association_adc02d5b0fc40fd5d951f8788ab0a8378} 
+struct \doxymbox{\hyperlink{structsctp__endpoint}{sctp\+\_\+endpoint}} \texorpdfstring{$\ast$}{*} {\bfseries ep}
+\item 
+\Hypertarget{structsctp__association_a31c930c39ce48628d17b4956fc988240}\label{structsctp__association_a31c930c39ce48628d17b4956fc988240} 
+struct \doxymbox{\hyperlink{structsctp__cookie}{sctp\+\_\+cookie}} {\bfseries c}
+\item 
+\Hypertarget{structsctp__association_ad9f71e41837333300099e044c3fbdfcf}\label{structsctp__association_ad9f71e41837333300099e044c3fbdfcf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries transport\_addr\_list}\\
+\>\_\_u32 {\bfseries rwnd}\\
+\>\_\_u16 {\bfseries transport\_count}\\
+\>\_\_u16 {\bfseries port}\\
+\>struct \doxymbox{\hyperlink{structsctp__transport}{sctp\_transport}} \texorpdfstring{$\ast$}{*} {\bfseries primary\_path}\\
+\>union \doxymbox{\hyperlink{unionsctp__addr}{sctp\_addr}} {\bfseries primary\_addr}\\
+\>struct \doxymbox{\hyperlink{structsctp__transport}{sctp\_transport}} \texorpdfstring{$\ast$}{*} {\bfseries active\_path}\\
+\>struct \doxymbox{\hyperlink{structsctp__transport}{sctp\_transport}} \texorpdfstring{$\ast$}{*} {\bfseries retran\_path}\\
+\>struct \doxymbox{\hyperlink{structsctp__transport}{sctp\_transport}} \texorpdfstring{$\ast$}{*} {\bfseries last\_sent\_to}\\
+\>struct \doxymbox{\hyperlink{structsctp__transport}{sctp\_transport}} \texorpdfstring{$\ast$}{*} {\bfseries last\_data\_from}\\
+\>struct \doxymbox{\hyperlink{structsctp__tsnmap}{sctp\_tsnmap}} {\bfseries tsn\_map}\\
+\>\_\_be16 {\bfseries addip\_disabled\_mask}\\
+\>\_\_u16 {\bfseries ecn\_capable}: 1\\
+\>\_\_u16 {\bfseries ipv4\_address}: 1\\
+\>\_\_u16 {\bfseries ipv6\_address}: 1\\
+\>\_\_u16 {\bfseries asconf\_capable}: 1\\
+\>\_\_u16 {\bfseries prsctp\_capable}: 1\\
+\>\_\_u16 {\bfseries reconf\_capable}: 1\\
+\>\_\_u16 {\bfseries intl\_capable}: 1\\
+\>\_\_u16 {\bfseries auth\_capable}: 1\\
+\>\_\_u16 {\bfseries sack\_needed}: 1\\
+\>\_\_u16 {\bfseries sack\_generation}: 1\\
+\>\_\_u16 {\bfseries zero\_window\_announced}: 1\\
+\>\_\_u32 {\bfseries sack\_cnt}\\
+\>\_\_u32 {\bfseries adaptation\_ind}\\
+\>struct \doxymbox{\hyperlink{structsctp__inithdr__host}{sctp\_inithdr\_host}} {\bfseries i}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries cookie}\\
+\>int {\bfseries cookie\_len}\\
+\>\_\_u32 {\bfseries addip\_serial}\\
+\>struct \doxymbox{\hyperlink{structsctp__random__param}{sctp\_random\_param}} \texorpdfstring{$\ast$}{*} {\bfseries peer\_random}\\
+\>struct \doxymbox{\hyperlink{structsctp__chunks__param}{sctp\_chunks\_param}} \texorpdfstring{$\ast$}{*} {\bfseries peer\_chunks}\\
+\>struct \doxymbox{\hyperlink{structsctp__hmac__algo__param}{sctp\_hmac\_algo\_param}} \texorpdfstring{$\ast$}{*} {\bfseries peer\_hmacs}\\
+\} {\bfseries peer}\\
+
+\end{tabbing}\item 
+\Hypertarget{structsctp__association_aa71210977e523fd9b7a0a80578b8b8af}\label{structsctp__association_aa71210977e523fd9b7a0a80578b8b8af} 
+enum sctp\+\_\+state {\bfseries state}
+\item 
+\Hypertarget{structsctp__association_af594765c05c7a6b59b1b6096c5da541a}\label{structsctp__association_af594765c05c7a6b59b1b6096c5da541a} 
+int {\bfseries overall\+\_\+error\+\_\+count}
+\item 
+\Hypertarget{structsctp__association_acac63398b029bc30ecd99720b8e3fd60}\label{structsctp__association_acac63398b029bc30ecd99720b8e3fd60} 
+ktime\+\_\+t {\bfseries cookie\+\_\+life}
+\item 
+\Hypertarget{structsctp__association_a20f0c47bed80e44da9afba6a23cfef2f}\label{structsctp__association_a20f0c47bed80e44da9afba6a23cfef2f} 
+long unsigned int {\bfseries rto\+\_\+initial}
+\item 
+\Hypertarget{structsctp__association_a6ce140d880043b15002539cac108e311}\label{structsctp__association_a6ce140d880043b15002539cac108e311} 
+long unsigned int {\bfseries rto\+\_\+max}
+\item 
+\Hypertarget{structsctp__association_a7e55a166e38c1d48cf0b474bc3af0ac9}\label{structsctp__association_a7e55a166e38c1d48cf0b474bc3af0ac9} 
+long unsigned int {\bfseries rto\+\_\+min}
+\item 
+\Hypertarget{structsctp__association_ad282a934f4cba16e426e31ce99433a29}\label{structsctp__association_ad282a934f4cba16e426e31ce99433a29} 
+int {\bfseries max\+\_\+burst}
+\item 
+\Hypertarget{structsctp__association_ab0024a419399d30e08d083e7f0b64111}\label{structsctp__association_ab0024a419399d30e08d083e7f0b64111} 
+int {\bfseries max\+\_\+retrans}
+\item 
+\Hypertarget{structsctp__association_a5674f7e53f119fef084f2349955b37d6}\label{structsctp__association_a5674f7e53f119fef084f2349955b37d6} 
+\+\_\+\+\_\+u16 {\bfseries pf\+\_\+retrans}
+\item 
+\Hypertarget{structsctp__association_a42cb49da9063968a810558f395bedfe7}\label{structsctp__association_a42cb49da9063968a810558f395bedfe7} 
+\+\_\+\+\_\+u16 {\bfseries ps\+\_\+retrans}
+\item 
+\Hypertarget{structsctp__association_a24aac6d59b2e229de8fbe6358a897049}\label{structsctp__association_a24aac6d59b2e229de8fbe6358a897049} 
+\+\_\+\+\_\+u16 {\bfseries max\+\_\+init\+\_\+attempts}
+\item 
+\Hypertarget{structsctp__association_ad1475e4722c0dac6d4dd8ebab941f2d2}\label{structsctp__association_ad1475e4722c0dac6d4dd8ebab941f2d2} 
+\+\_\+\+\_\+u16 {\bfseries init\+\_\+retries}
+\item 
+\Hypertarget{structsctp__association_a95cccc07badaca6300b99fb2d4f6437b}\label{structsctp__association_a95cccc07badaca6300b99fb2d4f6437b} 
+long unsigned int {\bfseries max\+\_\+init\+\_\+timeo}
+\item 
+\Hypertarget{structsctp__association_ab30c1b29bb486dbbc3b6af5a1d6ddc7b}\label{structsctp__association_ab30c1b29bb486dbbc3b6af5a1d6ddc7b} 
+long unsigned int {\bfseries hbinterval}
+\item 
+\Hypertarget{structsctp__association_ad942f82371a8139938e31df858f50e7d}\label{structsctp__association_ad942f82371a8139938e31df858f50e7d} 
+long unsigned int {\bfseries probe\+\_\+interval}
+\item 
+\Hypertarget{structsctp__association_ad54754e6d8fb8648b100fabcae9881c1}\label{structsctp__association_ad54754e6d8fb8648b100fabcae9881c1} 
+\+\_\+\+\_\+be16 {\bfseries encap\+\_\+port}
+\item 
+\Hypertarget{structsctp__association_a218f876e721f0781ff9769aab1fee0db}\label{structsctp__association_a218f876e721f0781ff9769aab1fee0db} 
+\+\_\+\+\_\+u16 {\bfseries pathmaxrxt}
+\item 
+\Hypertarget{structsctp__association_a13558bacfe3e96ac92c8f66f2bc5fccd}\label{structsctp__association_a13558bacfe3e96ac92c8f66f2bc5fccd} 
+\+\_\+\+\_\+u32 {\bfseries flowlabel}
+\item 
+\Hypertarget{structsctp__association_a5f92729a134a97ce4f661d969230e035}\label{structsctp__association_a5f92729a134a97ce4f661d969230e035} 
+\+\_\+\+\_\+u8 {\bfseries dscp}
+\item 
+\Hypertarget{structsctp__association_a89bcb949fe58dd8f38b0b494646bb5c3}\label{structsctp__association_a89bcb949fe58dd8f38b0b494646bb5c3} 
+\+\_\+\+\_\+u8 {\bfseries pmtu\+\_\+pending}
+\item 
+\Hypertarget{structsctp__association_a6950aee116f25730c4086c1a05ea2d75}\label{structsctp__association_a6950aee116f25730c4086c1a05ea2d75} 
+\+\_\+\+\_\+u32 {\bfseries pathmtu}
+\item 
+\Hypertarget{structsctp__association_aab15fa16207d58a82561651fd8325027}\label{structsctp__association_aab15fa16207d58a82561651fd8325027} 
+\+\_\+\+\_\+u32 {\bfseries param\+\_\+flags}
+\item 
+\Hypertarget{structsctp__association_a5a73615b275d97de2fee851dd5e6748d}\label{structsctp__association_a5a73615b275d97de2fee851dd5e6748d} 
+\+\_\+\+\_\+u32 {\bfseries sackfreq}
+\item 
+\Hypertarget{structsctp__association_a50136a5ed8f1653633f376aebdc0df30}\label{structsctp__association_a50136a5ed8f1653633f376aebdc0df30} 
+long unsigned int {\bfseries sackdelay}
+\item 
+\Hypertarget{structsctp__association_aeb26f84e6ac88a9455a0efd27f96169d}\label{structsctp__association_aeb26f84e6ac88a9455a0efd27f96169d} 
+long unsigned int {\bfseries timeouts} \+[12]\+
+\item 
+\Hypertarget{structsctp__association_a0c2099fda38c0ef59d3854a9759b6a42}\label{structsctp__association_a0c2099fda38c0ef59d3854a9759b6a42} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries timers} \+[12]\+
+\item 
+\Hypertarget{structsctp__association_a4dd67605cc7bd2b3546e9cc67335360f}\label{structsctp__association_a4dd67605cc7bd2b3546e9cc67335360f} 
+struct \doxymbox{\hyperlink{structsctp__transport}{sctp\+\_\+transport}} \texorpdfstring{$\ast$}{*} {\bfseries shutdown\+\_\+last\+\_\+sent\+\_\+to}
+\item 
+\Hypertarget{structsctp__association_a754dfc628281fd4ed8ccf29d01e49052}\label{structsctp__association_a754dfc628281fd4ed8ccf29d01e49052} 
+struct \doxymbox{\hyperlink{structsctp__transport}{sctp\+\_\+transport}} \texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+last\+\_\+sent\+\_\+to}
+\item 
+\Hypertarget{structsctp__association_a392f5854990cccf582e28109239eab4a}\label{structsctp__association_a392f5854990cccf582e28109239eab4a} 
+int {\bfseries shutdown\+\_\+retries}
+\item 
+\Hypertarget{structsctp__association_abf67765a7e1ba9558081155073c6bbeb}\label{structsctp__association_abf67765a7e1ba9558081155073c6bbeb} 
+\+\_\+\+\_\+u32 {\bfseries next\+\_\+tsn}
+\item 
+\Hypertarget{structsctp__association_a123d95768654668da98a63cb9d4ec467}\label{structsctp__association_a123d95768654668da98a63cb9d4ec467} 
+\+\_\+\+\_\+u32 {\bfseries ctsn\+\_\+ack\+\_\+point}
+\item 
+\Hypertarget{structsctp__association_a3195695d4456d90fe73ad3ae184e057e}\label{structsctp__association_a3195695d4456d90fe73ad3ae184e057e} 
+\+\_\+\+\_\+u32 {\bfseries adv\+\_\+peer\+\_\+ack\+\_\+point}
+\item 
+\Hypertarget{structsctp__association_a0b1dafeb53f20a8df5a24186799584f5}\label{structsctp__association_a0b1dafeb53f20a8df5a24186799584f5} 
+\+\_\+\+\_\+u32 {\bfseries highest\+\_\+sacked}
+\item 
+\Hypertarget{structsctp__association_a55a541ea26ad1e79e0d48198f4035795}\label{structsctp__association_a55a541ea26ad1e79e0d48198f4035795} 
+\+\_\+\+\_\+u32 {\bfseries fast\+\_\+recovery\+\_\+exit}
+\item 
+\Hypertarget{structsctp__association_abbadd8a67b685f58a9ff7e65bb283f67}\label{structsctp__association_abbadd8a67b685f58a9ff7e65bb283f67} 
+\+\_\+\+\_\+u8 {\bfseries fast\+\_\+recovery}
+\item 
+\Hypertarget{structsctp__association_a8e5fa2e6576e466d6b94dc46bee26142}\label{structsctp__association_a8e5fa2e6576e466d6b94dc46bee26142} 
+\+\_\+\+\_\+u16 {\bfseries unack\+\_\+data}
+\item 
+\Hypertarget{structsctp__association_a55085c4a158d105470da9c2e5d941d84}\label{structsctp__association_a55085c4a158d105470da9c2e5d941d84} 
+\+\_\+\+\_\+u32 {\bfseries rtx\+\_\+data\+\_\+chunks}
+\item 
+\Hypertarget{structsctp__association_af25091dd7bfbfb7afd9ec4a6f979790d}\label{structsctp__association_af25091dd7bfbfb7afd9ec4a6f979790d} 
+\+\_\+\+\_\+u32 {\bfseries a\+\_\+rwnd}
+\item 
+\Hypertarget{structsctp__association_a0d58d3e6012c4e382d386a6b35edccd7}\label{structsctp__association_a0d58d3e6012c4e382d386a6b35edccd7} 
+\+\_\+\+\_\+u32 {\bfseries rwnd\+\_\+over}
+\item 
+\Hypertarget{structsctp__association_a2626e542f9f5ff64c3a97e58bb848f74}\label{structsctp__association_a2626e542f9f5ff64c3a97e58bb848f74} 
+\+\_\+\+\_\+u32 {\bfseries rwnd\+\_\+press}
+\item 
+\Hypertarget{structsctp__association_acdd78f75f46ab98a82f39b7437d93f8e}\label{structsctp__association_acdd78f75f46ab98a82f39b7437d93f8e} 
+int {\bfseries sndbuf\+\_\+used}
+\item 
+\Hypertarget{structsctp__association_a67df17e1eb7cd0cdacbd81db26e80b22}\label{structsctp__association_a67df17e1eb7cd0cdacbd81db26e80b22} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries rmem\+\_\+alloc}
+\item 
+\Hypertarget{structsctp__association_a2b10879c60ee2ecdce620a15d5cd07ad}\label{structsctp__association_a2b10879c60ee2ecdce620a15d5cd07ad} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\item 
+\Hypertarget{structsctp__association_aeba9b5cde0dc642292584a6831e058fe}\label{structsctp__association_aeba9b5cde0dc642292584a6831e058fe} 
+\+\_\+\+\_\+u32 {\bfseries frag\+\_\+point}
+\item 
+\Hypertarget{structsctp__association_a9eb9002fb2aac6c45911f7ef5d7912ab}\label{structsctp__association_a9eb9002fb2aac6c45911f7ef5d7912ab} 
+\+\_\+\+\_\+u32 {\bfseries user\+\_\+frag}
+\item 
+\Hypertarget{structsctp__association_a562078e1b30fb2dc39379f46202b2147}\label{structsctp__association_a562078e1b30fb2dc39379f46202b2147} 
+int {\bfseries init\+\_\+err\+\_\+counter}
+\item 
+\Hypertarget{structsctp__association_ac0ee833b5527ea7016fd1c3f55d30a0a}\label{structsctp__association_ac0ee833b5527ea7016fd1c3f55d30a0a} 
+int {\bfseries init\+\_\+cycle}
+\item 
+\Hypertarget{structsctp__association_a85dc5e7a12dc2c40576583444c1bff6a}\label{structsctp__association_a85dc5e7a12dc2c40576583444c1bff6a} 
+\+\_\+\+\_\+u16 {\bfseries default\+\_\+stream}
+\item 
+\Hypertarget{structsctp__association_a7de99acab8d395fcebe20d8ce22055f7}\label{structsctp__association_a7de99acab8d395fcebe20d8ce22055f7} 
+\+\_\+\+\_\+u16 {\bfseries default\+\_\+flags}
+\item 
+\Hypertarget{structsctp__association_a0694a68f2519c84054403ba544521bf6}\label{structsctp__association_a0694a68f2519c84054403ba544521bf6} 
+\+\_\+\+\_\+u32 {\bfseries default\+\_\+ppid}
+\item 
+\Hypertarget{structsctp__association_a7581db311bac1ff07359a09b20fccffc}\label{structsctp__association_a7581db311bac1ff07359a09b20fccffc} 
+\+\_\+\+\_\+u32 {\bfseries default\+\_\+context}
+\item 
+\Hypertarget{structsctp__association_aa3c42e98ad8c3c62e4420fe7e11ec279}\label{structsctp__association_aa3c42e98ad8c3c62e4420fe7e11ec279} 
+\+\_\+\+\_\+u32 {\bfseries default\+\_\+timetolive}
+\item 
+\Hypertarget{structsctp__association_a729eeed93f9cb24993f9f5322e7cf031}\label{structsctp__association_a729eeed93f9cb24993f9f5322e7cf031} 
+\+\_\+\+\_\+u32 {\bfseries default\+\_\+rcv\+\_\+context}
+\item 
+\Hypertarget{structsctp__association_a38e11cff31386bab1624693ce68633d5}\label{structsctp__association_a38e11cff31386bab1624693ce68633d5} 
+struct \doxymbox{\hyperlink{structsctp__stream}{sctp\+\_\+stream}} {\bfseries stream}
+\item 
+\Hypertarget{structsctp__association_a22df12ac4b1520dca73f3438de0a0e1a}\label{structsctp__association_a22df12ac4b1520dca73f3438de0a0e1a} 
+struct \doxymbox{\hyperlink{structsctp__outq}{sctp\+\_\+outq}} {\bfseries outqueue}
+\item 
+\Hypertarget{structsctp__association_a390d69c769af3792625c2a9c3b11fa6f}\label{structsctp__association_a390d69c769af3792625c2a9c3b11fa6f} 
+struct \doxymbox{\hyperlink{structsctp__ulpq}{sctp\+\_\+ulpq}} {\bfseries ulpq}
+\item 
+\Hypertarget{structsctp__association_aa57ed96004e329566a006e803958f082}\label{structsctp__association_aa57ed96004e329566a006e803958f082} 
+\+\_\+\+\_\+u32 {\bfseries last\+\_\+ecne\+\_\+tsn}
+\item 
+\Hypertarget{structsctp__association_afdf571e72f4d49347ee1d122212d38b8}\label{structsctp__association_afdf571e72f4d49347ee1d122212d38b8} 
+\+\_\+\+\_\+u32 {\bfseries last\+\_\+cwr\+\_\+tsn}
+\item 
+\Hypertarget{structsctp__association_a32b59425a4f6c935b1f8f04adef2bc1b}\label{structsctp__association_a32b59425a4f6c935b1f8f04adef2bc1b} 
+int {\bfseries numduptsns}
+\item 
+\Hypertarget{structsctp__association_afcf9286c7a116eb0f98373438cf2aee6}\label{structsctp__association_afcf9286c7a116eb0f98373438cf2aee6} 
+struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*} {\bfseries addip\+\_\+last\+\_\+asconf}
+\item 
+\Hypertarget{structsctp__association_a61739ffec3543e23c1b345b5cdadfd01}\label{structsctp__association_a61739ffec3543e23c1b345b5cdadfd01} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries asconf\+\_\+ack\+\_\+list}
+\item 
+\Hypertarget{structsctp__association_a4dd5244c12ad910614c12a642180260e}\label{structsctp__association_a4dd5244c12ad910614c12a642180260e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries addip\+\_\+chunk\+\_\+list}
+\item 
+\Hypertarget{structsctp__association_addab8cbed9eb9e4c1fc0c0867a690ce4}\label{structsctp__association_addab8cbed9eb9e4c1fc0c0867a690ce4} 
+int {\bfseries src\+\_\+out\+\_\+of\+\_\+asoc\+\_\+ok}
+\item 
+\Hypertarget{structsctp__association_abcbe6dccb19867963e59b0fb250925bd}\label{structsctp__association_abcbe6dccb19867963e59b0fb250925bd} 
+union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*} {\bfseries asconf\+\_\+addr\+\_\+del\+\_\+pending}
+\item 
+\Hypertarget{structsctp__association_a39c7ae7912973a96ef893b72d0490d11}\label{structsctp__association_a39c7ae7912973a96ef893b72d0490d11} 
+struct \doxymbox{\hyperlink{structsctp__transport}{sctp\+\_\+transport}} \texorpdfstring{$\ast$}{*} {\bfseries new\+\_\+transport}
+\item 
+\Hypertarget{structsctp__association_adc7e3fa7c99ad13ec15bb48a7b27fa1c}\label{structsctp__association_adc7e3fa7c99ad13ec15bb48a7b27fa1c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries endpoint\+\_\+shared\+\_\+keys}
+\item 
+\Hypertarget{structsctp__association_aaf0f621d1d40400d0cadfbd98761e4e1}\label{structsctp__association_aaf0f621d1d40400d0cadfbd98761e4e1} 
+struct \doxymbox{\hyperlink{structsctp__auth__bytes}{sctp\+\_\+auth\+\_\+bytes}} \texorpdfstring{$\ast$}{*} {\bfseries asoc\+\_\+shared\+\_\+key}
+\item 
+\Hypertarget{structsctp__association_ae92f37a07effc0c9e910bf2afe491d52}\label{structsctp__association_ae92f37a07effc0c9e910bf2afe491d52} 
+struct \doxymbox{\hyperlink{structsctp__shared__key}{sctp\+\_\+shared\+\_\+key}} \texorpdfstring{$\ast$}{*} {\bfseries shkey}
+\item 
+\Hypertarget{structsctp__association_ac75096fe19a3287761b388937e5646e0}\label{structsctp__association_ac75096fe19a3287761b388937e5646e0} 
+\+\_\+\+\_\+u16 {\bfseries default\+\_\+hmac\+\_\+id}
+\item 
+\Hypertarget{structsctp__association_ac33b6793a21982ac9cc27a2b7ff49905}\label{structsctp__association_ac33b6793a21982ac9cc27a2b7ff49905} 
+\+\_\+\+\_\+u16 {\bfseries active\+\_\+key\+\_\+id}
+\item 
+\Hypertarget{structsctp__association_aa018372b976a0fb469fea516ea35fdf2}\label{structsctp__association_aa018372b976a0fb469fea516ea35fdf2} 
+\+\_\+\+\_\+u8 {\bfseries need\+\_\+ecne}:\+ 1
+\item 
+\Hypertarget{structsctp__association_a5841dded2b76b5ba43e7a960e1a1f4b6}\label{structsctp__association_a5841dded2b76b5ba43e7a960e1a1f4b6} 
+\+\_\+\+\_\+u8 {\bfseries temp}:\+ 1
+\item 
+\Hypertarget{structsctp__association_a15bf312fa002ba87dccb5eaaad9b87c6}\label{structsctp__association_a15bf312fa002ba87dccb5eaaad9b87c6} 
+\+\_\+\+\_\+u8 {\bfseries pf\+\_\+expose}:\+ 2
+\item 
+\Hypertarget{structsctp__association_aaa006cf00cb087b94bd27fd9abfb25f1}\label{structsctp__association_aaa006cf00cb087b94bd27fd9abfb25f1} 
+\+\_\+\+\_\+u8 {\bfseries force\+\_\+delay}:\+ 1
+\item 
+\Hypertarget{structsctp__association_ad3c67cb01005c9023ff14b0221251afe}\label{structsctp__association_ad3c67cb01005c9023ff14b0221251afe} 
+\+\_\+\+\_\+u8 {\bfseries strreset\+\_\+enable}
+\item 
+\Hypertarget{structsctp__association_a41124485bc162a62d06158325d1572d3}\label{structsctp__association_a41124485bc162a62d06158325d1572d3} 
+\+\_\+\+\_\+u8 {\bfseries strreset\+\_\+outstanding}
+\item 
+\Hypertarget{structsctp__association_a99f718cc75a2b69c255ea240d714e863}\label{structsctp__association_a99f718cc75a2b69c255ea240d714e863} 
+\+\_\+\+\_\+u32 {\bfseries strreset\+\_\+outseq}
+\item 
+\Hypertarget{structsctp__association_a5fafdcbb2ea33c74b6cdaf840d2ea734}\label{structsctp__association_a5fafdcbb2ea33c74b6cdaf840d2ea734} 
+\+\_\+\+\_\+u32 {\bfseries strreset\+\_\+inseq}
+\item 
+\Hypertarget{structsctp__association_a0c50ecaf3a9ef37a7071931db99af1e4}\label{structsctp__association_a0c50ecaf3a9ef37a7071931db99af1e4} 
+\+\_\+\+\_\+u32 {\bfseries strreset\+\_\+result} \+[2]\+
+\item 
+\Hypertarget{structsctp__association_a6e5affde7b6e28938d092a342160ef30}\label{structsctp__association_a6e5affde7b6e28938d092a342160ef30} 
+struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*} {\bfseries strreset\+\_\+chunk}
+\item 
+\Hypertarget{structsctp__association_a8c1985e59c141b31ea7b19e4c664939e}\label{structsctp__association_a8c1985e59c141b31ea7b19e4c664939e} 
+struct \doxymbox{\hyperlink{structsctp__priv__assoc__stats}{sctp\+\_\+priv\+\_\+assoc\+\_\+stats}} {\bfseries stats}
+\item 
+\Hypertarget{structsctp__association_a869ed6ebcbef4333aef7ea5221554c46}\label{structsctp__association_a869ed6ebcbef4333aef7ea5221554c46} 
+int {\bfseries sent\+\_\+cnt\+\_\+removable}
+\item 
+\Hypertarget{structsctp__association_aaa18f1860fab49e16102f099828879f3}\label{structsctp__association_aaa18f1860fab49e16102f099828879f3} 
+\+\_\+\+\_\+u16 {\bfseries subscribe}
+\item 
+\Hypertarget{structsctp__association_afcabf7e98002a351ef830b0c8b818bff}\label{structsctp__association_afcabf7e98002a351ef830b0c8b818bff} 
+\+\_\+\+\_\+u64 {\bfseries abandoned\+\_\+unsent} \+[3]\+
+\item 
+\Hypertarget{structsctp__association_a1fe22dedbf00d8930f42b556fa2686d1}\label{structsctp__association_a1fe22dedbf00d8930f42b556fa2686d1} 
+\+\_\+\+\_\+u64 {\bfseries abandoned\+\_\+sent} \+[3]\+
+\item 
+\Hypertarget{structsctp__association_a293cf171890905168acd114862ef8d1f}\label{structsctp__association_a293cf171890905168acd114862ef8d1f} 
+u32 {\bfseries secid}
+\item 
+\Hypertarget{structsctp__association_a9a525cf9e3e80207affb5834429fed05}\label{structsctp__association_a9a525cf9e3e80207affb5834429fed05} 
+u32 {\bfseries peer\+\_\+secid}
+\item 
+\Hypertarget{structsctp__association_aa1a85229d9eb5fdda9b927b0d00a63fa}\label{structsctp__association_aa1a85229d9eb5fdda9b927b0d00a63fa} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\doxysection{nh\+\_\+config Struct Reference}
+\hypertarget{structnh__config}{}\label{structnh__config}\index{nh\_config@{nh\_config}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnh__config_a871f080dd34c66a5c39ccd72c59f049b}\label{structnh__config_a871f080dd34c66a5c39ccd72c59f049b} 
+u32 {\bfseries nh\+\_\+id}
+\item 
+\Hypertarget{structnh__config_ae722ac35dda1f8801397bed0dcdcd82c}\label{structnh__config_ae722ac35dda1f8801397bed0dcdcd82c} 
+u8 {\bfseries nh\+\_\+family}
+\item 
+\Hypertarget{structnh__config_a79a95222a2904948a79d2aa6ef3e5752}\label{structnh__config_a79a95222a2904948a79d2aa6ef3e5752} 
+u8 {\bfseries nh\+\_\+protocol}
+\item 
+\Hypertarget{structnh__config_ae438a42bf72c9137dfff928f7e5eaae3}\label{structnh__config_ae438a42bf72c9137dfff928f7e5eaae3} 
+u8 {\bfseries nh\+\_\+blackhole}
+\item 
+\Hypertarget{structnh__config_a44e163909a5c26b462b57f3a9a335d51}\label{structnh__config_a44e163909a5c26b462b57f3a9a335d51} 
+u8 {\bfseries nh\+\_\+fdb}
+\item 
+\Hypertarget{structnh__config_a84beba6d539b915a3ebb62f79f0bad63}\label{structnh__config_a84beba6d539b915a3ebb62f79f0bad63} 
+u32 {\bfseries nh\+\_\+flags}
+\item 
+\Hypertarget{structnh__config_a7cd6db18fa0806444af9b18c53d610b6}\label{structnh__config_a7cd6db18fa0806444af9b18c53d610b6} 
+int {\bfseries nh\+\_\+ifindex}
+\item 
+\Hypertarget{structnh__config_a0667898bf0a8e861fd89d2bf3b3c45c5}\label{structnh__config_a0667898bf0a8e861fd89d2bf3b3c45c5} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structnh__config_a5c75dc11243ae617a79c03ba3bc44ca7}\label{structnh__config_a5c75dc11243ae617a79c03ba3bc44ca7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries ipv4}\\
+\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries ipv6}\\
+\} {\bfseries gw}\\
+
+\end{tabbing}\item 
+\Hypertarget{structnh__config_a744938762d9476214d1b0252165881c4}\label{structnh__config_a744938762d9476214d1b0252165881c4} 
+struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*} {\bfseries nh\+\_\+grp}
+\item 
+\Hypertarget{structnh__config_a75e7c8ef5da4a664df65a36d29215c2e}\label{structnh__config_a75e7c8ef5da4a664df65a36d29215c2e} 
+u16 {\bfseries nh\+\_\+grp\+\_\+type}
+\item 
+\Hypertarget{structnh__config_a308e6840c36f9653265eee81f1375b42}\label{structnh__config_a308e6840c36f9653265eee81f1375b42} 
+u16 {\bfseries nh\+\_\+grp\+\_\+res\+\_\+num\+\_\+buckets}
+\item 
+\Hypertarget{structnh__config_a2d259fcbae0700e03e1463d37cf6b013}\label{structnh__config_a2d259fcbae0700e03e1463d37cf6b013} 
+long unsigned int {\bfseries nh\+\_\+grp\+\_\+res\+\_\+idle\+\_\+timer}
+\item 
+\Hypertarget{structnh__config_a02208a14698caa481c180c5e5b003942}\label{structnh__config_a02208a14698caa481c180c5e5b003942} 
+long unsigned int {\bfseries nh\+\_\+grp\+\_\+res\+\_\+unbalanced\+\_\+timer}
+\item 
+\Hypertarget{structnh__config_a147bbf83f9c4b65cc5a66456d689915d}\label{structnh__config_a147bbf83f9c4b65cc5a66456d689915d} 
+bool {\bfseries nh\+\_\+grp\+\_\+res\+\_\+has\+\_\+num\+\_\+buckets}
+\item 
+\Hypertarget{structnh__config_a33062e36f20e3179ef74c2665b8f7da5}\label{structnh__config_a33062e36f20e3179ef74c2665b8f7da5} 
+bool {\bfseries nh\+\_\+grp\+\_\+res\+\_\+has\+\_\+idle\+\_\+timer}
+\item 
+\Hypertarget{structnh__config_a86e040d3f4bca66a220aa3107530d129}\label{structnh__config_a86e040d3f4bca66a220aa3107530d129} 
+bool {\bfseries nh\+\_\+grp\+\_\+res\+\_\+has\+\_\+unbalanced\+\_\+timer}
+\item 
+\Hypertarget{structnh__config_a72ab4ba492ce4e9435a5007af947d9fc}\label{structnh__config_a72ab4ba492ce4e9435a5007af947d9fc} 
+bool {\bfseries nh\+\_\+hw\+\_\+stats}
+\item 
+\Hypertarget{structnh__config_aec1207dfa8ed5310fb3a4d86e7e16d17}\label{structnh__config_aec1207dfa8ed5310fb3a4d86e7e16d17} 
+struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*} {\bfseries nh\+\_\+encap}
+\item 
+\Hypertarget{structnh__config_a1599817d8029534f284e6b96375c1246}\label{structnh__config_a1599817d8029534f284e6b96375c1246} 
+u16 {\bfseries nh\+\_\+encap\+\_\+type}
+\item 
+\Hypertarget{structnh__config_ad8ba4443c09ff0493f227a77834e16fb}\label{structnh__config_ad8ba4443c09ff0493f227a77834e16fb} 
+u32 {\bfseries nlflags}
+\item 
+\Hypertarget{structnh__config_a59e7092a89c464990156f7d7b77b374a}\label{structnh__config_a59e7092a89c464990156f7d7b77b374a} 
+struct \doxymbox{\hyperlink{structnl__info}{nl\+\_\+info}} {\bfseries nlinfo}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

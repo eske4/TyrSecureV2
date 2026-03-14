@@ -1,0 +1,51 @@
+\doxysection{skcipher\+\_\+alg Struct Reference}
+\hypertarget{structskcipher__alg}{}\label{structskcipher__alg}\index{skcipher\_alg@{skcipher\_alg}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structskcipher__alg_ac121c39dccc9cf06a3550fc561785caf}\label{structskcipher__alg_ac121c39dccc9cf06a3550fc561785caf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setkey} )(struct \doxymbox{\hyperlink{structcrypto__skcipher}{crypto\+\_\+skcipher}} \texorpdfstring{$\ast$}{*}, const u8 \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structskcipher__alg_adba944213936d593381ade5cc2a15998}\label{structskcipher__alg_adba944213936d593381ade5cc2a15998} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries encrypt} )(struct \doxymbox{\hyperlink{structskcipher__request}{skcipher\+\_\+request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structskcipher__alg_a43bfc9a6d53504eb9682baa3d32466cb}\label{structskcipher__alg_a43bfc9a6d53504eb9682baa3d32466cb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries decrypt} )(struct \doxymbox{\hyperlink{structskcipher__request}{skcipher\+\_\+request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structskcipher__alg_ac0a62ae036f19162c288bd07e7944e66}\label{structskcipher__alg_ac0a62ae036f19162c288bd07e7944e66} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries export} )(struct \doxymbox{\hyperlink{structskcipher__request}{skcipher\+\_\+request}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structskcipher__alg_a26c2b5b3eaa92f607e79941af6f66219}\label{structskcipher__alg_a26c2b5b3eaa92f607e79941af6f66219} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries import} )(struct \doxymbox{\hyperlink{structskcipher__request}{skcipher\+\_\+request}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structskcipher__alg_ad6a5eb29a683a928ac6f0fa1f69847a0}\label{structskcipher__alg_ad6a5eb29a683a928ac6f0fa1f69847a0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structcrypto__skcipher}{crypto\+\_\+skcipher}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structskcipher__alg_a5c8b0295a0ac2f62ab78a92071ec3e9a}\label{structskcipher__alg_a5c8b0295a0ac2f62ab78a92071ec3e9a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit} )(struct \doxymbox{\hyperlink{structcrypto__skcipher}{crypto\+\_\+skcipher}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structskcipher__alg_ae14905b79bad6902b48df5e812828830}\label{structskcipher__alg_ae14905b79bad6902b48df5e812828830} 
+unsigned int {\bfseries walksize}
+\item 
+\Hypertarget{structskcipher__alg_a5f35d658da44e7f20f4d450540bf4f77}\label{structskcipher__alg_a5f35d658da44e7f20f4d450540bf4f77} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionskcipher__alg_1_1_0d077156165153074157141217273314167151044267212060_a37ca479d66c5ad6e1bff1526cd533647}\label{unionskcipher__alg_1_1_0d077156165153074157141217273314167151044267212060_a37ca479d66c5ad6e1bff1526cd533647} 
+\>struct \{\\
+\>\>unsigned int {\bfseries min\_keysize}\\
+\>\>unsigned int {\bfseries max\_keysize}\\
+\>\>unsigned int {\bfseries ivsize}\\
+\>\>unsigned int {\bfseries chunksize}\\
+\>\>unsigned int {\bfseries statesize}\\
+\>\>struct \doxymbox{\hyperlink{structcrypto__alg}{crypto\_alg}} {\bfseries base}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structskcipher__alg__common}{skcipher\_alg\_common}} {\bfseries co}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

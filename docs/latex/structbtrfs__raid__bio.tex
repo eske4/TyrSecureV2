@@ -1,0 +1,103 @@
+\doxysection{btrfs\+\_\+raid\+\_\+bio Struct Reference}
+\hypertarget{structbtrfs__raid__bio}{}\label{structbtrfs__raid__bio}\index{btrfs\_raid\_bio@{btrfs\_raid\_bio}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__raid__bio_ae86cb2b3c3b8e2adeddf3b44094c8e2e}\label{structbtrfs__raid__bio_ae86cb2b3c3b8e2adeddf3b44094c8e2e} 
+struct \doxymbox{\hyperlink{structbtrfs__io__context}{btrfs\+\_\+io\+\_\+context}} \texorpdfstring{$\ast$}{*} {\bfseries bioc}
+\item 
+\Hypertarget{structbtrfs__raid__bio_aa3c523bedc19a300212165e7498bfcca}\label{structbtrfs__raid__bio_aa3c523bedc19a300212165e7498bfcca} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries hash\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a4576c0f1d88d456562701166b18b3ee5}\label{structbtrfs__raid__bio_a4576c0f1d88d456562701166b18b3ee5} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries stripe\+\_\+cache}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a7b150806e24f99ca421996fcb48526d9}\label{structbtrfs__raid__bio_a7b150806e24f99ca421996fcb48526d9} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries work}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a166a6027d23e007cd4ecc7096b4d4a14}\label{structbtrfs__raid__bio_a166a6027d23e007cd4ecc7096b4d4a14} 
+struct \doxymbox{\hyperlink{structbio__list}{bio\+\_\+list}} {\bfseries bio\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__raid__bio_adb2e9095934574859984a5e37f554d66}\label{structbtrfs__raid__bio_adb2e9095934574859984a5e37f554d66} 
+spinlock\+\_\+t {\bfseries bio\+\_\+list\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a54268e8289dda23b976216b29bfc4947}\label{structbtrfs__raid__bio_a54268e8289dda23b976216b29bfc4947} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries plug\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__raid__bio_ac68c4406e9208c251e5b8e506cfcdf6d}\label{structbtrfs__raid__bio_ac68c4406e9208c251e5b8e506cfcdf6d} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a5eed6ea7005b37039445486c88d2c4da}\label{structbtrfs__raid__bio_a5eed6ea7005b37039445486c88d2c4da} 
+enum btrfs\+\_\+rbio\+\_\+ops {\bfseries operation}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a373629d6046f4d78e52c7bacb7c05afd}\label{structbtrfs__raid__bio_a373629d6046f4d78e52c7bacb7c05afd} 
+u16 {\bfseries nr\+\_\+pages}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a1c1e69fcc032d87fa79a17d10164632c}\label{structbtrfs__raid__bio_a1c1e69fcc032d87fa79a17d10164632c} 
+u16 {\bfseries nr\+\_\+sectors}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a66300bb79d19eaffeaadafb348a19bd7}\label{structbtrfs__raid__bio_a66300bb79d19eaffeaadafb348a19bd7} 
+u8 {\bfseries nr\+\_\+data}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a87f3241d42685fbcb1bd8d2abad83244}\label{structbtrfs__raid__bio_a87f3241d42685fbcb1bd8d2abad83244} 
+u8 {\bfseries real\+\_\+stripes}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a684df0a6f365e7364bd56ab4880636da}\label{structbtrfs__raid__bio_a684df0a6f365e7364bd56ab4880636da} 
+u8 {\bfseries stripe\+\_\+npages}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a0e98822f7cb2e7589737061d7a247fc3}\label{structbtrfs__raid__bio_a0e98822f7cb2e7589737061d7a247fc3} 
+u8 {\bfseries stripe\+\_\+nsectors}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a6c822f546452a8367f60d9ac79b76f80}\label{structbtrfs__raid__bio_a6c822f546452a8367f60d9ac79b76f80} 
+u8 {\bfseries sector\+\_\+nsteps}
+\item 
+\Hypertarget{structbtrfs__raid__bio_aa9b581bd9d35a52192955a813857f5ae}\label{structbtrfs__raid__bio_aa9b581bd9d35a52192955a813857f5ae} 
+u8 {\bfseries scrubp}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a5837f57b8d33f3097bce15a1ac887283}\label{structbtrfs__raid__bio_a5837f57b8d33f3097bce15a1ac887283} 
+int {\bfseries bio\+\_\+list\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a7354a21d129446b5062967489ac468ff}\label{structbtrfs__raid__bio_a7354a21d129446b5062967489ac468ff} 
+refcount\+\_\+t {\bfseries refs}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a79bf517c6c8757f783c58cc1838dbe73}\label{structbtrfs__raid__bio_a79bf517c6c8757f783c58cc1838dbe73} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries stripes\+\_\+pending}
+\item 
+\Hypertarget{structbtrfs__raid__bio_ac33d541d7dbab551857577518d06d89e}\label{structbtrfs__raid__bio_ac33d541d7dbab551857577518d06d89e} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries io\+\_\+wait}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a5340b89db5710583a2e625026109f02d}\label{structbtrfs__raid__bio_a5340b89db5710583a2e625026109f02d} 
+long unsigned int {\bfseries dbitmap}
+\item 
+\Hypertarget{structbtrfs__raid__bio_afa06b9b8b318f8f4ed2f96ec1eec0c95}\label{structbtrfs__raid__bio_afa06b9b8b318f8f4ed2f96ec1eec0c95} 
+long unsigned int {\bfseries finish\+\_\+pbitmap}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a9d93f66973f766ee53dbaba3ac84f51f}\label{structbtrfs__raid__bio_a9d93f66973f766ee53dbaba3ac84f51f} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries stripe\+\_\+pages}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a484d7f8c0b2978e7ace61e8f6ec3aa67}\label{structbtrfs__raid__bio_a484d7f8c0b2978e7ace61e8f6ec3aa67} 
+phys\+\_\+addr\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries bio\+\_\+paddrs}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a56af190f2debcfcb750a5ed667c64ab7}\label{structbtrfs__raid__bio_a56af190f2debcfcb750a5ed667c64ab7} 
+phys\+\_\+addr\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries stripe\+\_\+paddrs}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a5aadef616cb98edaae6f750e9742a5b8}\label{structbtrfs__raid__bio_a5aadef616cb98edaae6f750e9742a5b8} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries stripe\+\_\+uptodate\+\_\+bitmap}
+\item 
+\Hypertarget{structbtrfs__raid__bio_aca5736962ae7d55bf0af72793cd37edb}\label{structbtrfs__raid__bio_aca5736962ae7d55bf0af72793cd37edb} 
+void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries finish\+\_\+pointers}
+\item 
+\Hypertarget{structbtrfs__raid__bio_aa865e23f684f42fc5b49b1f07b295323}\label{structbtrfs__raid__bio_aa865e23f684f42fc5b49b1f07b295323} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries error\+\_\+bitmap}
+\item 
+\Hypertarget{structbtrfs__raid__bio_aeedeaad214f864873106ffd945405992}\label{structbtrfs__raid__bio_aeedeaad214f864873106ffd945405992} 
+u8 \texorpdfstring{$\ast$}{*} {\bfseries csum\+\_\+buf}
+\item 
+\Hypertarget{structbtrfs__raid__bio_a9e717a1a1cab44b59e10532c0ccfafea}\label{structbtrfs__raid__bio_a9e717a1a1cab44b59e10532c0ccfafea} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries csum\+\_\+bitmap}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

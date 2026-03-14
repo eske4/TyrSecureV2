@@ -1,0 +1,70 @@
+\doxysection{virtio\+\_\+device Struct Reference}
+\hypertarget{structvirtio__device}{}\label{structvirtio__device}\index{virtio\_device@{virtio\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtio__device_a4510406431a3c64243f022414f122b54}\label{structvirtio__device_a4510406431a3c64243f022414f122b54} 
+int {\bfseries index}
+\item 
+\Hypertarget{structvirtio__device_aa34062096113e1c6b9b008413504db99}\label{structvirtio__device_aa34062096113e1c6b9b008413504db99} 
+bool {\bfseries failed}
+\item 
+\Hypertarget{structvirtio__device_a958c22f6b2712d6d15113ee77d703ec6}\label{structvirtio__device_a958c22f6b2712d6d15113ee77d703ec6} 
+bool {\bfseries config\+\_\+core\+\_\+enabled}
+\item 
+\Hypertarget{structvirtio__device_adbfe79dce0fc7a0b6489f5e0f7ba8b84}\label{structvirtio__device_adbfe79dce0fc7a0b6489f5e0f7ba8b84} 
+bool {\bfseries config\+\_\+driver\+\_\+disabled}
+\item 
+\Hypertarget{structvirtio__device_a57e24380c06ac2d6bc002f11414ef443}\label{structvirtio__device_a57e24380c06ac2d6bc002f11414ef443} 
+bool {\bfseries config\+\_\+change\+\_\+pending}
+\item 
+\Hypertarget{structvirtio__device_a042fc324d7569bf159563687555589da}\label{structvirtio__device_a042fc324d7569bf159563687555589da} 
+spinlock\+\_\+t {\bfseries config\+\_\+lock}
+\item 
+\Hypertarget{structvirtio__device_a417f394bf63d3a7c31dadc26eabf01db}\label{structvirtio__device_a417f394bf63d3a7c31dadc26eabf01db} 
+spinlock\+\_\+t {\bfseries vqs\+\_\+list\+\_\+lock}
+\item 
+\Hypertarget{structvirtio__device_a45f17d9910902a14c7202350c405ff65}\label{structvirtio__device_a45f17d9910902a14c7202350c405ff65} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structvirtio__device_a9c261ac7351c91dc2eca22d506f28f89}\label{structvirtio__device_a9c261ac7351c91dc2eca22d506f28f89} 
+struct \doxymbox{\hyperlink{structvirtio__device__id}{virtio\+\_\+device\+\_\+id}} {\bfseries id}
+\item 
+\Hypertarget{structvirtio__device_abb6c04da1157b316389c1c016aeb323c}\label{structvirtio__device_abb6c04da1157b316389c1c016aeb323c} 
+const struct \doxymbox{\hyperlink{structvirtio__config__ops}{virtio\+\_\+config\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries config}
+\item 
+\Hypertarget{structvirtio__device_ab2c6df37d523dc295e821d8b5cd543a8}\label{structvirtio__device_ab2c6df37d523dc295e821d8b5cd543a8} 
+const struct vringh\+\_\+config\+\_\+ops \texorpdfstring{$\ast$}{*} {\bfseries vringh\+\_\+config}
+\item 
+\Hypertarget{structvirtio__device_aede1e740c03ba654aa4cce8ee238ec94}\label{structvirtio__device_aede1e740c03ba654aa4cce8ee238ec94} 
+const struct \doxymbox{\hyperlink{structvirtio__map__ops}{virtio\+\_\+map\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries map}
+\item 
+\Hypertarget{structvirtio__device_a63356a32c8791e5d3e12843f75c856b1}\label{structvirtio__device_a63356a32c8791e5d3e12843f75c856b1} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries vqs}
+\item 
+\Hypertarget{structvirtio__device_a1d53833452edefa2d539da02d8845cdf}\label{structvirtio__device_a1d53833452edefa2d539da02d8845cdf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries features}\\
+\>u64 {\bfseries features\_array} \+[2]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structvirtio__device_a3b0873506c074a6c1ab77cc3404a17b6}\label{structvirtio__device_a3b0873506c074a6c1ab77cc3404a17b6} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv}
+\item 
+\Hypertarget{structvirtio__device_a07dde9e5aef08380ae918dbacc752930}\label{structvirtio__device_a07dde9e5aef08380ae918dbacc752930} 
+union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}} {\bfseries vmap}
+\item 
+\Hypertarget{structvirtio__device_af8fe3af9511fe7b170b5ad319e70da49}\label{structvirtio__device_af8fe3af9511fe7b170b5ad319e70da49} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+dir}
+\item 
+\Hypertarget{structvirtio__device_ae1541d1b18b34638db42650a139675fc}\label{structvirtio__device_ae1541d1b18b34638db42650a139675fc} 
+u64 {\bfseries debugfs\+\_\+filter\+\_\+features} \+[2]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

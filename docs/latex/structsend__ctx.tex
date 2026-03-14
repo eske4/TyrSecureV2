@@ -1,0 +1,154 @@
+\doxysection{send\+\_\+ctx Struct Reference}
+\hypertarget{structsend__ctx}{}\label{structsend__ctx}\index{send\_ctx@{send\_ctx}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsend__ctx_a496aa65ddb1c74c0ea5656e675af0908}\label{structsend__ctx_a496aa65ddb1c74c0ea5656e675af0908} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+filp}
+\item 
+\Hypertarget{structsend__ctx_a7b1d5546e24466b19f4bfe111048e174}\label{structsend__ctx_a7b1d5546e24466b19f4bfe111048e174} 
+loff\+\_\+t {\bfseries send\+\_\+off}
+\item 
+\Hypertarget{structsend__ctx_a8b59f08bd93d3bbbd68a7240a3d097fc}\label{structsend__ctx_a8b59f08bd93d3bbbd68a7240a3d097fc} 
+char \texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+buf}
+\item 
+\Hypertarget{structsend__ctx_a1fb1b9cd7c6b9e39363b5f5a43e744e3}\label{structsend__ctx_a1fb1b9cd7c6b9e39363b5f5a43e744e3} 
+u32 {\bfseries send\+\_\+size}
+\item 
+\Hypertarget{structsend__ctx_a807603ef24a528d8f4e87bdb078dee37}\label{structsend__ctx_a807603ef24a528d8f4e87bdb078dee37} 
+u32 {\bfseries send\+\_\+max\+\_\+size}
+\item 
+\Hypertarget{structsend__ctx_a28a1a2c9425e480faf9e084d07b07f16}\label{structsend__ctx_a28a1a2c9425e480faf9e084d07b07f16} 
+bool {\bfseries put\+\_\+data}
+\item 
+\Hypertarget{structsend__ctx_a7ec2217477f46b47d9aeb6aa66f3940c}\label{structsend__ctx_a7ec2217477f46b47d9aeb6aa66f3940c} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+buf\+\_\+pages}
+\item 
+\Hypertarget{structsend__ctx_aa43166a522cb5916cb99e3252d8173d9}\label{structsend__ctx_aa43166a522cb5916cb99e3252d8173d9} 
+u64 {\bfseries flags}
+\item 
+\Hypertarget{structsend__ctx_a69fba30e2375ed3c14f0fd0e83f8016b}\label{structsend__ctx_a69fba30e2375ed3c14f0fd0e83f8016b} 
+u32 {\bfseries proto}
+\item 
+\Hypertarget{structsend__ctx_a46e1fecb5e03c83a4f0e15f4c33cf407}\label{structsend__ctx_a46e1fecb5e03c83a4f0e15f4c33cf407} 
+struct \doxymbox{\hyperlink{structbtrfs__root}{btrfs\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+root}
+\item 
+\Hypertarget{structsend__ctx_af7aa6a5f1014f5b4c99b27dc70d648f8}\label{structsend__ctx_af7aa6a5f1014f5b4c99b27dc70d648f8} 
+struct \doxymbox{\hyperlink{structbtrfs__root}{btrfs\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries parent\+\_\+root}
+\item 
+\Hypertarget{structsend__ctx_a84b63c98c0538cbabca14ea0254a917b}\label{structsend__ctx_a84b63c98c0538cbabca14ea0254a917b} 
+struct \doxymbox{\hyperlink{structclone__root}{clone\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries clone\+\_\+roots}
+\item 
+\Hypertarget{structsend__ctx_ad8e3428a77964963cc2fb8b4e25a2293}\label{structsend__ctx_ad8e3428a77964963cc2fb8b4e25a2293} 
+int {\bfseries clone\+\_\+roots\+\_\+cnt}
+\item 
+\Hypertarget{structsend__ctx_aa7a78ab10e2287896ce4e4db6ddbf882}\label{structsend__ctx_aa7a78ab10e2287896ce4e4db6ddbf882} 
+struct \doxymbox{\hyperlink{structbtrfs__path}{btrfs\+\_\+path}} \texorpdfstring{$\ast$}{*} {\bfseries left\+\_\+path}
+\item 
+\Hypertarget{structsend__ctx_ac32100e9a9bc733878835b2e4b4c4ef3}\label{structsend__ctx_ac32100e9a9bc733878835b2e4b4c4ef3} 
+struct \doxymbox{\hyperlink{structbtrfs__path}{btrfs\+\_\+path}} \texorpdfstring{$\ast$}{*} {\bfseries right\+\_\+path}
+\item 
+\Hypertarget{structsend__ctx_a0af6efbddc0a723968a4dff7de0d4b3a}\label{structsend__ctx_a0af6efbddc0a723968a4dff7de0d4b3a} 
+struct \doxymbox{\hyperlink{structbtrfs__key}{btrfs\+\_\+key}} \texorpdfstring{$\ast$}{*} {\bfseries cmp\+\_\+key}
+\item 
+\Hypertarget{structsend__ctx_a2c7ae50848195c74de97775324dba8d9}\label{structsend__ctx_a2c7ae50848195c74de97775324dba8d9} 
+u64 {\bfseries last\+\_\+reloc\+\_\+trans}
+\item 
+\Hypertarget{structsend__ctx_ade074e83c3c2ed92741c2c7f9412a22a}\label{structsend__ctx_ade074e83c3c2ed92741c2c7f9412a22a} 
+u64 {\bfseries cur\+\_\+ino}
+\item 
+\Hypertarget{structsend__ctx_a89886fb7f3c24c856f1639a19774e5d7}\label{structsend__ctx_a89886fb7f3c24c856f1639a19774e5d7} 
+u64 {\bfseries cur\+\_\+inode\+\_\+gen}
+\item 
+\Hypertarget{structsend__ctx_a79bf37f03a340007518b181408e72aaf}\label{structsend__ctx_a79bf37f03a340007518b181408e72aaf} 
+u64 {\bfseries cur\+\_\+inode\+\_\+size}
+\item 
+\Hypertarget{structsend__ctx_abfc602479b5e10bca246f0c362dccf92}\label{structsend__ctx_abfc602479b5e10bca246f0c362dccf92} 
+u64 {\bfseries cur\+\_\+inode\+\_\+mode}
+\item 
+\Hypertarget{structsend__ctx_a081b713ec8da30b4eed5b72c491b5bf4}\label{structsend__ctx_a081b713ec8da30b4eed5b72c491b5bf4} 
+u64 {\bfseries cur\+\_\+inode\+\_\+rdev}
+\item 
+\Hypertarget{structsend__ctx_a8d023a6245f0cc535cde4e335eb64c3a}\label{structsend__ctx_a8d023a6245f0cc535cde4e335eb64c3a} 
+u64 {\bfseries cur\+\_\+inode\+\_\+last\+\_\+extent}
+\item 
+\Hypertarget{structsend__ctx_add120496ef34d933e571d4bf37860dfd}\label{structsend__ctx_add120496ef34d933e571d4bf37860dfd} 
+u64 {\bfseries cur\+\_\+inode\+\_\+next\+\_\+write\+\_\+offset}
+\item 
+\Hypertarget{structsend__ctx_a37cd9c938bf97a420567be6b91446ce1}\label{structsend__ctx_a37cd9c938bf97a420567be6b91446ce1} 
+bool {\bfseries cur\+\_\+inode\+\_\+new}
+\item 
+\Hypertarget{structsend__ctx_a39067a06a032d19e7b2a19bf0ea8d1d0}\label{structsend__ctx_a39067a06a032d19e7b2a19bf0ea8d1d0} 
+bool {\bfseries cur\+\_\+inode\+\_\+new\+\_\+gen}
+\item 
+\Hypertarget{structsend__ctx_a3b29f0911e9588656153b3a0dbb8e78b}\label{structsend__ctx_a3b29f0911e9588656153b3a0dbb8e78b} 
+bool {\bfseries cur\+\_\+inode\+\_\+deleted}
+\item 
+\Hypertarget{structsend__ctx_a0331b296e44fc051e4fe03c9b3cb98ec}\label{structsend__ctx_a0331b296e44fc051e4fe03c9b3cb98ec} 
+bool {\bfseries ignore\+\_\+cur\+\_\+inode}
+\item 
+\Hypertarget{structsend__ctx_a956d86ff930acecc79cdf596ad1bf453}\label{structsend__ctx_a956d86ff930acecc79cdf596ad1bf453} 
+bool {\bfseries cur\+\_\+inode\+\_\+needs\+\_\+verity}
+\item 
+\Hypertarget{structsend__ctx_a4afe5708c7c216014f9642e4cd0b60b9}\label{structsend__ctx_a4afe5708c7c216014f9642e4cd0b60b9} 
+void \texorpdfstring{$\ast$}{*} {\bfseries verity\+\_\+descriptor}
+\item 
+\Hypertarget{structsend__ctx_a5225ebdab443421604114bc9803ea606}\label{structsend__ctx_a5225ebdab443421604114bc9803ea606} 
+u64 {\bfseries send\+\_\+progress}
+\item 
+\Hypertarget{structsend__ctx_af3d6c616c39935becd6ea29b5cf7e53c}\label{structsend__ctx_af3d6c616c39935becd6ea29b5cf7e53c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries new\+\_\+refs}
+\item 
+\Hypertarget{structsend__ctx_a1c55e239f08fb4ecac7976f021db23a4}\label{structsend__ctx_a1c55e239f08fb4ecac7976f021db23a4} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries deleted\+\_\+refs}
+\item 
+\Hypertarget{structsend__ctx_a03466684bd1f45000db893dc1a1d2968}\label{structsend__ctx_a03466684bd1f45000db893dc1a1d2968} 
+struct \doxymbox{\hyperlink{structbtrfs__lru__cache}{btrfs\+\_\+lru\+\_\+cache}} {\bfseries name\+\_\+cache}
+\item 
+\Hypertarget{structsend__ctx_ab252b81320814e0edb3cc2564e0f12b8}\label{structsend__ctx_ab252b81320814e0edb3cc2564e0f12b8} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+\_\+inode}
+\item 
+\Hypertarget{structsend__ctx_a8a890f3ac3f2ca45a507a73f72d522d9}\label{structsend__ctx_a8a890f3ac3f2ca45a507a73f72d522d9} 
+struct \doxymbox{\hyperlink{structfile__ra__state}{file\+\_\+ra\+\_\+state}} {\bfseries ra}
+\item 
+\Hypertarget{structsend__ctx_ab57ada3a619a622d39b9824e5ad3982b}\label{structsend__ctx_ab57ada3a619a622d39b9824e5ad3982b} 
+u64 {\bfseries page\+\_\+cache\+\_\+clear\+\_\+start}
+\item 
+\Hypertarget{structsend__ctx_a673cd3a764d6dde399385aecd0b92776}\label{structsend__ctx_a673cd3a764d6dde399385aecd0b92776} 
+bool {\bfseries clean\+\_\+page\+\_\+cache}
+\item 
+\Hypertarget{structsend__ctx_aaf808ffe706a00c61b273274e747f427}\label{structsend__ctx_aaf808ffe706a00c61b273274e747f427} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries pending\+\_\+dir\+\_\+moves}
+\item 
+\Hypertarget{structsend__ctx_a9d18fdb409db67e6ee1bd72b58fa6493}\label{structsend__ctx_a9d18fdb409db67e6ee1bd72b58fa6493} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries waiting\+\_\+dir\+\_\+moves}
+\item 
+\Hypertarget{structsend__ctx_abb2da4fda0343b286fa17fc802186623}\label{structsend__ctx_abb2da4fda0343b286fa17fc802186623} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries orphan\+\_\+dirs}
+\item 
+\Hypertarget{structsend__ctx_a9ac2cfddbe885ac87fca92e61749a5bb}\label{structsend__ctx_a9ac2cfddbe885ac87fca92e61749a5bb} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries rbtree\+\_\+new\+\_\+refs}
+\item 
+\Hypertarget{structsend__ctx_aec551d20354cb77f1081d3c1530e4237}\label{structsend__ctx_aec551d20354cb77f1081d3c1530e4237} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries rbtree\+\_\+deleted\+\_\+refs}
+\item 
+\Hypertarget{structsend__ctx_a7e5d3c3c108c520ed383c2ba26480804}\label{structsend__ctx_a7e5d3c3c108c520ed383c2ba26480804} 
+struct \doxymbox{\hyperlink{structbtrfs__lru__cache}{btrfs\+\_\+lru\+\_\+cache}} {\bfseries backref\+\_\+cache}
+\item 
+\Hypertarget{structsend__ctx_af0aede9c9b05f7d9245c2e6e3ef3bdbe}\label{structsend__ctx_af0aede9c9b05f7d9245c2e6e3ef3bdbe} 
+u64 {\bfseries backref\+\_\+cache\+\_\+last\+\_\+reloc\+\_\+trans}
+\item 
+\Hypertarget{structsend__ctx_ac2119573b9c4f97605f0cb69a7a2d110}\label{structsend__ctx_ac2119573b9c4f97605f0cb69a7a2d110} 
+struct \doxymbox{\hyperlink{structbtrfs__lru__cache}{btrfs\+\_\+lru\+\_\+cache}} {\bfseries dir\+\_\+created\+\_\+cache}
+\item 
+\Hypertarget{structsend__ctx_a89b064c8f0f4390705418d310f95f396}\label{structsend__ctx_a89b064c8f0f4390705418d310f95f396} 
+struct \doxymbox{\hyperlink{structbtrfs__lru__cache}{btrfs\+\_\+lru\+\_\+cache}} {\bfseries dir\+\_\+utimes\+\_\+cache}
+\item 
+\Hypertarget{structsend__ctx_ac7c28dce69babd985741361c49bed839}\label{structsend__ctx_ac7c28dce69babd985741361c49bed839} 
+struct \doxymbox{\hyperlink{structfs__path}{fs\+\_\+path}} {\bfseries cur\+\_\+inode\+\_\+path}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

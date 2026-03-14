@@ -1,0 +1,70 @@
+\doxysection{drm\+\_\+vblank\+\_\+crtc Struct Reference}
+\hypertarget{structdrm__vblank__crtc}{}\label{structdrm__vblank__crtc}\index{drm\_vblank\_crtc@{drm\_vblank\_crtc}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__vblank__crtc_ab611ed9fe8167614fa6e4be40c5f52ad}\label{structdrm__vblank__crtc_ab611ed9fe8167614fa6e4be40c5f52ad} 
+struct \doxymbox{\hyperlink{structdrm__device}{drm\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a653c0a7766945f7e833cc4cbd35c9ed9}\label{structdrm__vblank__crtc_a653c0a7766945f7e833cc4cbd35c9ed9} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries queue}
+\item 
+\Hypertarget{structdrm__vblank__crtc_aa4ce3ab4ed0b54af8f740e762d0c9736}\label{structdrm__vblank__crtc_aa4ce3ab4ed0b54af8f740e762d0c9736} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries disable\+\_\+timer}
+\item 
+\Hypertarget{structdrm__vblank__crtc_ab8cc53437de07191552eddca71853f0d}\label{structdrm__vblank__crtc_ab8cc53437de07191552eddca71853f0d} 
+\doxymbox{\hyperlink{structseqlock__t}{seqlock\+\_\+t}} {\bfseries seqlock}
+\item 
+\Hypertarget{structdrm__vblank__crtc_abe04ae176c7d805c7cf6087d3f5f9ffd}\label{structdrm__vblank__crtc_abe04ae176c7d805c7cf6087d3f5f9ffd} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries count}
+\item 
+\Hypertarget{structdrm__vblank__crtc_aa7add008757d62824da2e8b66128cb3b}\label{structdrm__vblank__crtc_aa7add008757d62824da2e8b66128cb3b} 
+ktime\+\_\+t {\bfseries time}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a34ba62abe1bd97f8ea13424ffd676589}\label{structdrm__vblank__crtc_a34ba62abe1bd97f8ea13424ffd676589} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries refcount}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a42f94dc62a4e80fa94a527087968dcb1}\label{structdrm__vblank__crtc_a42f94dc62a4e80fa94a527087968dcb1} 
+u32 {\bfseries last}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a27c610d00da1bc0799bb1e7c9378afde}\label{structdrm__vblank__crtc_a27c610d00da1bc0799bb1e7c9378afde} 
+u32 {\bfseries max\+\_\+vblank\+\_\+count}
+\item 
+\Hypertarget{structdrm__vblank__crtc_ab8b7a7223195a21a659469118c7ba328}\label{structdrm__vblank__crtc_ab8b7a7223195a21a659469118c7ba328} 
+unsigned int {\bfseries inmodeset}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a0c66de99a92450d856e6260f6ec6f043}\label{structdrm__vblank__crtc_a0c66de99a92450d856e6260f6ec6f043} 
+unsigned int {\bfseries pipe}
+\item 
+\Hypertarget{structdrm__vblank__crtc_aba57934c81cd4f147623d691dab71c95}\label{structdrm__vblank__crtc_aba57934c81cd4f147623d691dab71c95} 
+int {\bfseries framedur\+\_\+ns}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a8362c7022058a03c3914eb117bd097a8}\label{structdrm__vblank__crtc_a8362c7022058a03c3914eb117bd097a8} 
+int {\bfseries linedur\+\_\+ns}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a6f98609744e58b1cc88eca41b67d371c}\label{structdrm__vblank__crtc_a6f98609744e58b1cc88eca41b67d371c} 
+struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} {\bfseries hwmode}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a5ce845cab60c0d2926cd9e0cd4a8b369}\label{structdrm__vblank__crtc_a5ce845cab60c0d2926cd9e0cd4a8b369} 
+struct \doxymbox{\hyperlink{structdrm__vblank__crtc__config}{drm\+\_\+vblank\+\_\+crtc\+\_\+config}} {\bfseries config}
+\item 
+\Hypertarget{structdrm__vblank__crtc_abb7562da443ec0a1556581c190e4f8b3}\label{structdrm__vblank__crtc_abb7562da443ec0a1556581c190e4f8b3} 
+bool {\bfseries enabled}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a423ded9d545ed05ab4a9d30f9ba553b7}\label{structdrm__vblank__crtc_a423ded9d545ed05ab4a9d30f9ba553b7} 
+struct \doxymbox{\hyperlink{structkthread__worker}{kthread\+\_\+worker}} \texorpdfstring{$\ast$}{*} {\bfseries worker}
+\item 
+\Hypertarget{structdrm__vblank__crtc_aa84cb65ad1c4834d995edd7d925db5e6}\label{structdrm__vblank__crtc_aa84cb65ad1c4834d995edd7d925db5e6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pending\+\_\+work}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a094d1c1118bf27383a4773d472289de1}\label{structdrm__vblank__crtc_a094d1c1118bf27383a4773d472289de1} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries work\+\_\+wait\+\_\+queue}
+\item 
+\Hypertarget{structdrm__vblank__crtc_a3900a8530a7b53557b67a852aab40afd}\label{structdrm__vblank__crtc_a3900a8530a7b53557b67a852aab40afd} 
+struct \doxymbox{\hyperlink{structdrm__vblank__crtc__timer}{drm\+\_\+vblank\+\_\+crtc\+\_\+timer}} {\bfseries vblank\+\_\+timer}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

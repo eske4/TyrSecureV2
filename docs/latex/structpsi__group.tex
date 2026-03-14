@@ -1,0 +1,85 @@
+\doxysection{psi\+\_\+group Struct Reference}
+\hypertarget{structpsi__group}{}\label{structpsi__group}\index{psi\_group@{psi\_group}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpsi__group_a2c9254d7ff722cb0e0c34ed3d412f186}\label{structpsi__group_a2c9254d7ff722cb0e0c34ed3d412f186} 
+struct \doxymbox{\hyperlink{structpsi__group}{psi\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structpsi__group_aebedcd0df89c284a3d895265dee36c34}\label{structpsi__group_aebedcd0df89c284a3d895265dee36c34} 
+bool {\bfseries enabled}
+\item 
+\Hypertarget{structpsi__group_a7903d52907d7114c0f46747cc292bc20}\label{structpsi__group_a7903d52907d7114c0f46747cc292bc20} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries avgs\+\_\+lock}
+\item 
+\Hypertarget{structpsi__group_aebf16337cc02f9109f92b198e428405f}\label{structpsi__group_aebf16337cc02f9109f92b198e428405f} 
+struct \doxymbox{\hyperlink{structpsi__group__cpu}{psi\+\_\+group\+\_\+cpu}} \texorpdfstring{$\ast$}{*} {\bfseries pcpu}
+\item 
+\Hypertarget{structpsi__group_aae6cea246c0d0b83ee2fa07c6e516c96}\label{structpsi__group_aae6cea246c0d0b83ee2fa07c6e516c96} 
+u64 {\bfseries avg\+\_\+total} \+[7]\+
+\item 
+\Hypertarget{structpsi__group_a13a9293c2ac5d77ad39b14d4e1e4fe16}\label{structpsi__group_a13a9293c2ac5d77ad39b14d4e1e4fe16} 
+u64 {\bfseries avg\+\_\+last\+\_\+update}
+\item 
+\Hypertarget{structpsi__group_af0620d01ddb4f957cc4ad5dcef5bf3e9}\label{structpsi__group_af0620d01ddb4f957cc4ad5dcef5bf3e9} 
+u64 {\bfseries avg\+\_\+next\+\_\+update}
+\item 
+\Hypertarget{structpsi__group_a49c45df7e757bda31699007838f450c7}\label{structpsi__group_a49c45df7e757bda31699007838f450c7} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries avgs\+\_\+work}
+\item 
+\Hypertarget{structpsi__group_a1db1eb193addb0f45ee03b5d62dff5b0}\label{structpsi__group_a1db1eb193addb0f45ee03b5d62dff5b0} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries avg\+\_\+triggers}
+\item 
+\Hypertarget{structpsi__group_a29b515894d2b133de045865c248e33b3}\label{structpsi__group_a29b515894d2b133de045865c248e33b3} 
+u32 {\bfseries avg\+\_\+nr\+\_\+triggers} \+[7]\+
+\item 
+\Hypertarget{structpsi__group_af62fd49c03ad822ad9dafde37db1738b}\label{structpsi__group_af62fd49c03ad822ad9dafde37db1738b} 
+u64 {\bfseries total} \+[14]\+
+\item 
+\Hypertarget{structpsi__group_abed94dc345d31f8f976ac409ba1bc6eb}\label{structpsi__group_abed94dc345d31f8f976ac409ba1bc6eb} 
+long unsigned int {\bfseries avg} \+[21]\+
+\item 
+\Hypertarget{structpsi__group_a2a3f89e191b1352a2ddbddc1655485fc}\label{structpsi__group_a2a3f89e191b1352a2ddbddc1655485fc} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries rtpoll\+\_\+task}
+\item 
+\Hypertarget{structpsi__group_ac162f6b5a7436284de13db61e58ffbd2}\label{structpsi__group_ac162f6b5a7436284de13db61e58ffbd2} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries rtpoll\+\_\+timer}
+\item 
+\Hypertarget{structpsi__group_a1695beb5ba9fd7d91121011cf3f17963}\label{structpsi__group_a1695beb5ba9fd7d91121011cf3f17963} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries rtpoll\+\_\+wait}
+\item 
+\Hypertarget{structpsi__group_a8d5777aa44573f25ac51aa313f9a2a0d}\label{structpsi__group_a8d5777aa44573f25ac51aa313f9a2a0d} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries rtpoll\+\_\+wakeup}
+\item 
+\Hypertarget{structpsi__group_ac81830ffd0e7c0c2f66a694dee61019d}\label{structpsi__group_ac81830ffd0e7c0c2f66a694dee61019d} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries rtpoll\+\_\+scheduled}
+\item 
+\Hypertarget{structpsi__group_abce5dcf118a7364dc905351e880ae650}\label{structpsi__group_abce5dcf118a7364dc905351e880ae650} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries rtpoll\+\_\+trigger\+\_\+lock}
+\item 
+\Hypertarget{structpsi__group_a198f5578f107e89f5f30aa028e987cdf}\label{structpsi__group_a198f5578f107e89f5f30aa028e987cdf} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rtpoll\+\_\+triggers}
+\item 
+\Hypertarget{structpsi__group_adc2c05565ba25de9e2a1f8338ac3315b}\label{structpsi__group_adc2c05565ba25de9e2a1f8338ac3315b} 
+u32 {\bfseries rtpoll\+\_\+nr\+\_\+triggers} \+[7]\+
+\item 
+\Hypertarget{structpsi__group_a5ada70496c31f66191dc116454e8c7ae}\label{structpsi__group_a5ada70496c31f66191dc116454e8c7ae} 
+u32 {\bfseries rtpoll\+\_\+states}
+\item 
+\Hypertarget{structpsi__group_a1472ab188e11b4016232743095798616}\label{structpsi__group_a1472ab188e11b4016232743095798616} 
+u64 {\bfseries rtpoll\+\_\+min\+\_\+period}
+\item 
+\Hypertarget{structpsi__group_ad51502f1965b157779d0965c542912e0}\label{structpsi__group_ad51502f1965b157779d0965c542912e0} 
+u64 {\bfseries rtpoll\+\_\+total} \+[7]\+
+\item 
+\Hypertarget{structpsi__group_ac168e35bb92d98a80987c5c45078d765}\label{structpsi__group_ac168e35bb92d98a80987c5c45078d765} 
+u64 {\bfseries rtpoll\+\_\+next\+\_\+update}
+\item 
+\Hypertarget{structpsi__group_aa7038cdd2187521538ff9d2cbe2eb21b}\label{structpsi__group_aa7038cdd2187521538ff9d2cbe2eb21b} 
+u64 {\bfseries rtpoll\+\_\+until}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

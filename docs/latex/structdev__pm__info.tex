@@ -1,0 +1,184 @@
+\doxysection{dev\+\_\+pm\+\_\+info Struct Reference}
+\hypertarget{structdev__pm__info}{}\label{structdev__pm__info}\index{dev\_pm\_info@{dev\_pm\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdev__pm__info_a53919e734b1a18bd0ca8b7a368645573}\label{structdev__pm__info_a53919e734b1a18bd0ca8b7a368645573} 
+pm\+\_\+message\+\_\+t {\bfseries power\+\_\+state}
+\item 
+\Hypertarget{structdev__pm__info_a548d46dad371fdbeccd4344851681cc1}\label{structdev__pm__info_a548d46dad371fdbeccd4344851681cc1} 
+bool {\bfseries can\+\_\+wakeup}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_ae09b748009c12839deabdcefa16cc731}\label{structdev__pm__info_ae09b748009c12839deabdcefa16cc731} 
+bool {\bfseries async\+\_\+suspend}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_afa1c74a556e1298ab57c9fbf2dfa9efe}\label{structdev__pm__info_afa1c74a556e1298ab57c9fbf2dfa9efe} 
+bool {\bfseries in\+\_\+dpm\+\_\+list}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a49e93e7394838d04b641bb342168a113}\label{structdev__pm__info_a49e93e7394838d04b641bb342168a113} 
+bool {\bfseries is\+\_\+prepared}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_abb9b00b4a3e19cce730b0c19f390461f}\label{structdev__pm__info_abb9b00b4a3e19cce730b0c19f390461f} 
+bool {\bfseries is\+\_\+suspended}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_ac19d701d753c00d8779f89908feec9d0}\label{structdev__pm__info_ac19d701d753c00d8779f89908feec9d0} 
+bool {\bfseries is\+\_\+noirq\+\_\+suspended}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a0becbc1b197d7ce29b2fe0e3672cf379}\label{structdev__pm__info_a0becbc1b197d7ce29b2fe0e3672cf379} 
+bool {\bfseries is\+\_\+late\+\_\+suspended}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_af1ed78028af0f6a3c0005bb6a39a6215}\label{structdev__pm__info_af1ed78028af0f6a3c0005bb6a39a6215} 
+bool {\bfseries no\+\_\+pm}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a1877b724f6622b8d83b8c96df829806d}\label{structdev__pm__info_a1877b724f6622b8d83b8c96df829806d} 
+bool {\bfseries early\+\_\+init}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_aabc19ff5784c02cdc075e2ed6caf0362}\label{structdev__pm__info_aabc19ff5784c02cdc075e2ed6caf0362} 
+bool {\bfseries direct\+\_\+complete}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a5c56352ca3cbdf65fafbcef00b2d0864}\label{structdev__pm__info_a5c56352ca3cbdf65fafbcef00b2d0864} 
+u32 {\bfseries driver\+\_\+flags}
+\item 
+\Hypertarget{structdev__pm__info_a83aa5b3defff5ecd940887a6e3277e0c}\label{structdev__pm__info_a83aa5b3defff5ecd940887a6e3277e0c} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structdev__pm__info_a3bad220c23a6173203b918026789c4fd}\label{structdev__pm__info_a3bad220c23a6173203b918026789c4fd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries entry}
+\item 
+\Hypertarget{structdev__pm__info_a980460b9597d0b243bc1406e8fb2568d}\label{structdev__pm__info_a980460b9597d0b243bc1406e8fb2568d} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries completion}
+\item 
+\Hypertarget{structdev__pm__info_a62b0d90715c6d144c45e24b805389ca1}\label{structdev__pm__info_a62b0d90715c6d144c45e24b805389ca1} 
+struct \doxymbox{\hyperlink{structwakeup__source}{wakeup\+\_\+source}} \texorpdfstring{$\ast$}{*} {\bfseries wakeup}
+\item 
+\Hypertarget{structdev__pm__info_a1c7042acdccafc3efb80269421324ef4}\label{structdev__pm__info_a1c7042acdccafc3efb80269421324ef4} 
+bool {\bfseries work\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structdev__pm__info_a37415fdd5a131d564f10e3e6d43f2986}\label{structdev__pm__info_a37415fdd5a131d564f10e3e6d43f2986} 
+bool {\bfseries wakeup\+\_\+path}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_acbe381ab94a5b622a16db621a55b1a2b}\label{structdev__pm__info_acbe381ab94a5b622a16db621a55b1a2b} 
+bool {\bfseries syscore}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a063c2764bf5489f9cf23805f9ae464e5}\label{structdev__pm__info_a063c2764bf5489f9cf23805f9ae464e5} 
+bool {\bfseries no\+\_\+pm\+\_\+callbacks}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_afb5494348dd66fb57d3b646f2ac32cb5}\label{structdev__pm__info_afb5494348dd66fb57d3b646f2ac32cb5} 
+bool {\bfseries smart\+\_\+suspend}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a0af3a71b864050a043a893e8615c102d}\label{structdev__pm__info_a0af3a71b864050a043a893e8615c102d} 
+bool {\bfseries must\+\_\+resume}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_aa5fca73451bb402a254ed812b08c3eab}\label{structdev__pm__info_aa5fca73451bb402a254ed812b08c3eab} 
+bool {\bfseries may\+\_\+skip\+\_\+resume}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a58739add56df6b2ef88a0b0098ba3a87}\label{structdev__pm__info_a58739add56df6b2ef88a0b0098ba3a87} 
+bool {\bfseries out\+\_\+band\+\_\+wakeup}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a5387d9900d63704bd7175fdf8f20bef7}\label{structdev__pm__info_a5387d9900d63704bd7175fdf8f20bef7} 
+bool {\bfseries strict\+\_\+midlayer}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a8593377ed63b689845da08e0bee61dd8}\label{structdev__pm__info_a8593377ed63b689845da08e0bee61dd8} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries suspend\+\_\+timer}
+\item 
+\Hypertarget{structdev__pm__info_ad6a3d8ca2315626aafc90725e331688e}\label{structdev__pm__info_ad6a3d8ca2315626aafc90725e331688e} 
+u64 {\bfseries timer\+\_\+expires}
+\item 
+\Hypertarget{structdev__pm__info_aa19708f9259221a0791b18196ac53821}\label{structdev__pm__info_aa19708f9259221a0791b18196ac53821} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries work}
+\item 
+\Hypertarget{structdev__pm__info_a33b9f35f50e4e12eae3f9ca802940d02}\label{structdev__pm__info_a33b9f35f50e4e12eae3f9ca802940d02} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait\+\_\+queue}
+\item 
+\Hypertarget{structdev__pm__info_a0289174a6d6817d1d2c703318e460f29}\label{structdev__pm__info_a0289174a6d6817d1d2c703318e460f29} 
+struct \doxymbox{\hyperlink{structwake__irq}{wake\+\_\+irq}} \texorpdfstring{$\ast$}{*} {\bfseries wakeirq}
+\item 
+\Hypertarget{structdev__pm__info_a360c8144a01783408adeed621254298b}\label{structdev__pm__info_a360c8144a01783408adeed621254298b} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries usage\+\_\+count}
+\item 
+\Hypertarget{structdev__pm__info_a816057dfb3a13abf7c8225d99c7d3b0c}\label{structdev__pm__info_a816057dfb3a13abf7c8225d99c7d3b0c} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries child\+\_\+count}
+\item 
+\Hypertarget{structdev__pm__info_ad4e8e3fdb5031ddcf56c25d4bf339ea0}\label{structdev__pm__info_ad4e8e3fdb5031ddcf56c25d4bf339ea0} 
+unsigned int {\bfseries disable\+\_\+depth}:\+ 3
+\item 
+\Hypertarget{structdev__pm__info_ac0e500656f540dc19e61b8f3894ddf0e}\label{structdev__pm__info_ac0e500656f540dc19e61b8f3894ddf0e} 
+bool {\bfseries idle\+\_\+notification}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_ac3dd29d0dfe60c725556f21e94eec65e}\label{structdev__pm__info_ac3dd29d0dfe60c725556f21e94eec65e} 
+bool {\bfseries request\+\_\+pending}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a3109d5273cbcfdd6077a96887226c82f}\label{structdev__pm__info_a3109d5273cbcfdd6077a96887226c82f} 
+bool {\bfseries deferred\+\_\+resume}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_aa5486c1eed7038da39053733352d95b9}\label{structdev__pm__info_aa5486c1eed7038da39053733352d95b9} 
+bool {\bfseries needs\+\_\+force\+\_\+resume}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a2ae2a14e26f6c05a8cc6f924d96b048d}\label{structdev__pm__info_a2ae2a14e26f6c05a8cc6f924d96b048d} 
+bool {\bfseries runtime\+\_\+auto}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a1ae502c63e7c534c50078327b41465b4}\label{structdev__pm__info_a1ae502c63e7c534c50078327b41465b4} 
+bool {\bfseries ignore\+\_\+children}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_aeb5dd8edae6e80a2a98819099cea46c6}\label{structdev__pm__info_aeb5dd8edae6e80a2a98819099cea46c6} 
+bool {\bfseries no\+\_\+callbacks}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a3b9e8d4ef373143121b95f9937c0f925}\label{structdev__pm__info_a3b9e8d4ef373143121b95f9937c0f925} 
+bool {\bfseries irq\+\_\+safe}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a54b23a225a5df0ebff76a777f01c89c9}\label{structdev__pm__info_a54b23a225a5df0ebff76a777f01c89c9} 
+bool {\bfseries use\+\_\+autosuspend}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_aed84afde300e7ff857d435f3c884fd98}\label{structdev__pm__info_aed84afde300e7ff857d435f3c884fd98} 
+bool {\bfseries timer\+\_\+autosuspends}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a332df7270d470cc8f375e5c69d455398}\label{structdev__pm__info_a332df7270d470cc8f375e5c69d455398} 
+bool {\bfseries memalloc\+\_\+noio}:\+ 1
+\item 
+\Hypertarget{structdev__pm__info_a4bb48557d3ffd2640d99b1309d3f2d97}\label{structdev__pm__info_a4bb48557d3ffd2640d99b1309d3f2d97} 
+unsigned int {\bfseries links\+\_\+count}
+\item 
+\Hypertarget{structdev__pm__info_a099bb2df0baf94875808655265a77ba3}\label{structdev__pm__info_a099bb2df0baf94875808655265a77ba3} 
+enum rpm\+\_\+request {\bfseries request}
+\item 
+\Hypertarget{structdev__pm__info_a113229ede26e623964c7cbfa4146e8f9}\label{structdev__pm__info_a113229ede26e623964c7cbfa4146e8f9} 
+enum rpm\+\_\+status {\bfseries runtime\+\_\+status}
+\item 
+\Hypertarget{structdev__pm__info_a19da50c93cddbfa3996a8f1e223df067}\label{structdev__pm__info_a19da50c93cddbfa3996a8f1e223df067} 
+enum rpm\+\_\+status {\bfseries last\+\_\+status}
+\item 
+\Hypertarget{structdev__pm__info_aba705529cc2ec13591d9839d3ba3f043}\label{structdev__pm__info_aba705529cc2ec13591d9839d3ba3f043} 
+int {\bfseries runtime\+\_\+error}
+\item 
+\Hypertarget{structdev__pm__info_a0b505717da20658f43f2dd66a3658208}\label{structdev__pm__info_a0b505717da20658f43f2dd66a3658208} 
+int {\bfseries autosuspend\+\_\+delay}
+\item 
+\Hypertarget{structdev__pm__info_a23879a635af40b15d2b88206f2de7aee}\label{structdev__pm__info_a23879a635af40b15d2b88206f2de7aee} 
+u64 {\bfseries last\+\_\+busy}
+\item 
+\Hypertarget{structdev__pm__info_abd19701908a03a7f9c2035f33cb84386}\label{structdev__pm__info_abd19701908a03a7f9c2035f33cb84386} 
+u64 {\bfseries active\+\_\+time}
+\item 
+\Hypertarget{structdev__pm__info_a9d7631c7b02721a5a1e51cba1e264657}\label{structdev__pm__info_a9d7631c7b02721a5a1e51cba1e264657} 
+u64 {\bfseries suspended\+\_\+time}
+\item 
+\Hypertarget{structdev__pm__info_ad874770c435938accfd934ce238de644}\label{structdev__pm__info_ad874770c435938accfd934ce238de644} 
+u64 {\bfseries accounting\+\_\+timestamp}
+\item 
+\Hypertarget{structdev__pm__info_ac8e40d2b019ff0f3d92af46e2bb34396}\label{structdev__pm__info_ac8e40d2b019ff0f3d92af46e2bb34396} 
+struct \doxymbox{\hyperlink{structpm__subsys__data}{pm\+\_\+subsys\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries subsys\+\_\+data}
+\item 
+\Hypertarget{structdev__pm__info_a8dafd92f9656812fa14a97dea464cd36}\label{structdev__pm__info_a8dafd92f9656812fa14a97dea464cd36} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+latency\+\_\+tolerance} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, s32)
+\item 
+\Hypertarget{structdev__pm__info_af20c535fbbd67fbf153ad8bd3f79b9ba}\label{structdev__pm__info_af20c535fbbd67fbf153ad8bd3f79b9ba} 
+struct \doxymbox{\hyperlink{structdev__pm__qos}{dev\+\_\+pm\+\_\+qos}} \texorpdfstring{$\ast$}{*} {\bfseries qos}
+\item 
+\Hypertarget{structdev__pm__info_ad941695e5883f956a673e738bd62419f}\label{structdev__pm__info_ad941695e5883f956a673e738bd62419f} 
+bool {\bfseries detach\+\_\+power\+\_\+off}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

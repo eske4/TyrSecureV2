@@ -1,0 +1,103 @@
+\doxysection{gpio\+\_\+irq\+\_\+chip Struct Reference}
+\hypertarget{structgpio__irq__chip}{}\label{structgpio__irq__chip}\index{gpio\_irq\_chip@{gpio\_irq\_chip}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structgpio__irq__chip_a7c94e9f47ebf4c82a4b302f45ce85924}\label{structgpio__irq__chip_a7c94e9f47ebf4c82a4b302f45ce85924} 
+struct \doxymbox{\hyperlink{structirq__chip}{irq\+\_\+chip}} \texorpdfstring{$\ast$}{*} {\bfseries chip}
+\item 
+\Hypertarget{structgpio__irq__chip_a4fc4b2fcde3f0ba744fe7eb14857758f}\label{structgpio__irq__chip_a4fc4b2fcde3f0ba744fe7eb14857758f} 
+struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries domain}
+\item 
+\Hypertarget{structgpio__irq__chip_a66d1a1c3361f9306fd367b81207f49fb}\label{structgpio__irq__chip_a66d1a1c3361f9306fd367b81207f49fb} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*} {\bfseries fwnode}
+\item 
+\Hypertarget{structgpio__irq__chip_ac7d161522d6ea6bb4f5d4d58afb511fc}\label{structgpio__irq__chip_ac7d161522d6ea6bb4f5d4d58afb511fc} 
+struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries parent\+\_\+domain}
+\item 
+\Hypertarget{structgpio__irq__chip_ae204ffa4fdc3b75c6cc21aa2773612b3}\label{structgpio__irq__chip_ae204ffa4fdc3b75c6cc21aa2773612b3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries child\+\_\+to\+\_\+parent\+\_\+hwirq} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int, unsigned int \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgpio__irq__chip_a92fb71a92601b0302c0bc893fdb8c6ac}\label{structgpio__irq__chip_a92fb71a92601b0302c0bc893fdb8c6ac} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries populate\+\_\+parent\+\_\+alloc\+\_\+arg} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{uniongpio__irq__fwspec}{gpio\+\_\+irq\+\_\+fwspec}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structgpio__irq__chip_a10e804f9347a488bead7834c76fcb6b1}\label{structgpio__irq__chip_a10e804f9347a488bead7834c76fcb6b1} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries child\+\_\+offset\+\_\+to\+\_\+irq} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgpio__irq__chip_ac1ddc9ef6a2ea35ec67564c17a49f148}\label{structgpio__irq__chip_ac1ddc9ef6a2ea35ec67564c17a49f148} 
+struct \doxymbox{\hyperlink{structirq__domain__ops}{irq\+\_\+domain\+\_\+ops}} {\bfseries child\+\_\+irq\+\_\+domain\+\_\+ops}
+\item 
+\Hypertarget{structgpio__irq__chip_a22d4f990cf9c4b514bd72ea2ee755531}\label{structgpio__irq__chip_a22d4f990cf9c4b514bd72ea2ee755531} 
+irq\+\_\+flow\+\_\+handler\+\_\+t {\bfseries handler}
+\item 
+\Hypertarget{structgpio__irq__chip_ae76d2081c5d0ceee41d8b1075874aeb5}\label{structgpio__irq__chip_ae76d2081c5d0ceee41d8b1075874aeb5} 
+unsigned int {\bfseries default\+\_\+type}
+\item 
+\Hypertarget{structgpio__irq__chip_a7f9d1c226ead49daa5828f1c23b6a5be}\label{structgpio__irq__chip_a7f9d1c226ead49daa5828f1c23b6a5be} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} \texorpdfstring{$\ast$}{*} {\bfseries lock\+\_\+key}
+\item 
+\Hypertarget{structgpio__irq__chip_a4d19e5fce006e144b03058e434822e98}\label{structgpio__irq__chip_a4d19e5fce006e144b03058e434822e98} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} \texorpdfstring{$\ast$}{*} {\bfseries request\+\_\+key}
+\item 
+\Hypertarget{structgpio__irq__chip_aa7b1fb86381781145bb13808bdeca30e}\label{structgpio__irq__chip_aa7b1fb86381781145bb13808bdeca30e} 
+irq\+\_\+flow\+\_\+handler\+\_\+t {\bfseries parent\+\_\+handler}
+\item 
+\Hypertarget{structgpio__irq__chip_aa45ad11bc156668f297b01037d747ac1}\label{structgpio__irq__chip_aa45ad11bc156668f297b01037d747ac1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries parent\_handler\_data}\\
+\>void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries parent\_handler\_data\_array}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structgpio__irq__chip_a21f598bdd090d29229aa091eb1974889}\label{structgpio__irq__chip_a21f598bdd090d29229aa091eb1974889} 
+unsigned int {\bfseries num\+\_\+parents}
+\item 
+\Hypertarget{structgpio__irq__chip_a650c10b40b712258191c74593eb18a16}\label{structgpio__irq__chip_a650c10b40b712258191c74593eb18a16} 
+unsigned int \texorpdfstring{$\ast$}{*} {\bfseries parents}
+\item 
+\Hypertarget{structgpio__irq__chip_a61b7cc1c01b1107e36c4d8fcc9e08db1}\label{structgpio__irq__chip_a61b7cc1c01b1107e36c4d8fcc9e08db1} 
+unsigned int \texorpdfstring{$\ast$}{*} {\bfseries map}
+\item 
+\Hypertarget{structgpio__irq__chip_a1f6a345783d28e74abbb1313be25b1aa}\label{structgpio__irq__chip_a1f6a345783d28e74abbb1313be25b1aa} 
+bool {\bfseries threaded}
+\item 
+\Hypertarget{structgpio__irq__chip_a5317dc0e655b97fa26c9d1c7e21339cd}\label{structgpio__irq__chip_a5317dc0e655b97fa26c9d1c7e21339cd} 
+bool {\bfseries per\+\_\+parent\+\_\+data}
+\item 
+\Hypertarget{structgpio__irq__chip_ae0ab602e7ec6cedfac8e70d7a09787d9}\label{structgpio__irq__chip_ae0ab602e7ec6cedfac8e70d7a09787d9} 
+bool {\bfseries initialized}
+\item 
+\Hypertarget{structgpio__irq__chip_a96af21483240b7a5cf5edd91538ae3aa}\label{structgpio__irq__chip_a96af21483240b7a5cf5edd91538ae3aa} 
+bool {\bfseries domain\+\_\+is\+\_\+allocated\+\_\+externally}
+\item 
+\Hypertarget{structgpio__irq__chip_aaad6ab5e6659d2d57f36823f3b7da5fc}\label{structgpio__irq__chip_aaad6ab5e6659d2d57f36823f3b7da5fc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+hw} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgpio__irq__chip_a36002baa284ed23fba461b30fb845e7f}\label{structgpio__irq__chip_a36002baa284ed23fba461b30fb845e7f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+valid\+\_\+mask} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgpio__irq__chip_aa3d73cc6a380c3b208590e3e97eefd25}\label{structgpio__irq__chip_aa3d73cc6a380c3b208590e3e97eefd25} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries valid\+\_\+mask}
+\item 
+\Hypertarget{structgpio__irq__chip_a594cca1cb9cc701838e71094424d5b64}\label{structgpio__irq__chip_a594cca1cb9cc701838e71094424d5b64} 
+unsigned int {\bfseries first}
+\item 
+\Hypertarget{structgpio__irq__chip_af6ab4803a9042d029f7bb288040556f9}\label{structgpio__irq__chip_af6ab4803a9042d029f7bb288040556f9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+enable} )(struct \doxymbox{\hyperlink{structirq__data}{irq\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgpio__irq__chip_ae272bd8c729d0b4e95d4ff08f33fd901}\label{structgpio__irq__chip_ae272bd8c729d0b4e95d4ff08f33fd901} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+disable} )(struct \doxymbox{\hyperlink{structirq__data}{irq\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgpio__irq__chip_aca2c4ea2ad4bdd100557c33fbf1c51fc}\label{structgpio__irq__chip_aca2c4ea2ad4bdd100557c33fbf1c51fc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+unmask} )(struct \doxymbox{\hyperlink{structirq__data}{irq\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgpio__irq__chip_acabccc1ddea512442d6783c57eb185b7}\label{structgpio__irq__chip_acabccc1ddea512442d6783c57eb185b7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+mask} )(struct \doxymbox{\hyperlink{structirq__data}{irq\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

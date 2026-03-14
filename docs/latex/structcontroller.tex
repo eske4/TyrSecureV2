@@ -1,0 +1,76 @@
+\doxysection{controller Struct Reference}
+\hypertarget{structcontroller}{}\label{structcontroller}\index{controller@{controller}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcontroller_ace46b7e42752526a979c6101890e35a6}\label{structcontroller_ace46b7e42752526a979c6101890e35a6} 
+struct \doxymbox{\hyperlink{structpcie__device}{pcie\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries pcie}
+\item 
+\Hypertarget{structcontroller_a56aba12c99bac22e3c0aed964a1542db}\label{structcontroller_a56aba12c99bac22e3c0aed964a1542db} 
+u64 {\bfseries dsn}
+\item 
+\Hypertarget{structcontroller_a5209ebdfb4cfccb9393feb41cdcdec81}\label{structcontroller_a5209ebdfb4cfccb9393feb41cdcdec81} 
+u32 {\bfseries slot\+\_\+cap}
+\item 
+\Hypertarget{structcontroller_af7d53b623b2d6d19321c0ff76b9f1ecd}\label{structcontroller_af7d53b623b2d6d19321c0ff76b9f1ecd} 
+unsigned int {\bfseries inband\+\_\+presence\+\_\+disabled}:\+ 1
+\item 
+\Hypertarget{structcontroller_ae1647607589fb7615aa4862953e5bcb7}\label{structcontroller_ae1647607589fb7615aa4862953e5bcb7} 
+u16 {\bfseries slot\+\_\+ctrl}
+\item 
+\Hypertarget{structcontroller_a4312dfdcfedcdb1c390380169b402705}\label{structcontroller_a4312dfdcfedcdb1c390380169b402705} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries ctrl\+\_\+lock}
+\item 
+\Hypertarget{structcontroller_a7bedd674ff9cfbed8ce850b48d51bea5}\label{structcontroller_a7bedd674ff9cfbed8ce850b48d51bea5} 
+long unsigned int {\bfseries cmd\+\_\+started}
+\item 
+\Hypertarget{structcontroller_a841abf125866a542f3b2ccf32f990de8}\label{structcontroller_a841abf125866a542f3b2ccf32f990de8} 
+unsigned int {\bfseries cmd\+\_\+busy}:\+ 1
+\item 
+\Hypertarget{structcontroller_a9cd27561ec1bf125dec6ca0884926890}\label{structcontroller_a9cd27561ec1bf125dec6ca0884926890} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries queue}
+\item 
+\Hypertarget{structcontroller_af0f311358748868625d57bc01c4b3b45}\label{structcontroller_af0f311358748868625d57bc01c4b3b45} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries pending\+\_\+events}
+\item 
+\Hypertarget{structcontroller_a17da737f0b20f3e1d817da3b416c89d0}\label{structcontroller_a17da737f0b20f3e1d817da3b416c89d0} 
+unsigned int {\bfseries notification\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structcontroller_a644f7e9ad33c7dfe5cb9d04b86028eaa}\label{structcontroller_a644f7e9ad33c7dfe5cb9d04b86028eaa} 
+unsigned int {\bfseries power\+\_\+fault\+\_\+detected}
+\item 
+\Hypertarget{structcontroller_a88caec1ec13b7479c42b568d2c5bf017}\label{structcontroller_a88caec1ec13b7479c42b568d2c5bf017} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries poll\+\_\+thread}
+\item 
+\Hypertarget{structcontroller_a53bc5dc085e27516f3b76945830cbf36}\label{structcontroller_a53bc5dc085e27516f3b76945830cbf36} 
+u8 {\bfseries state}
+\item 
+\Hypertarget{structcontroller_a11fd75b47b87fc5f9fe049d1a310e0fb}\label{structcontroller_a11fd75b47b87fc5f9fe049d1a310e0fb} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries state\+\_\+lock}
+\item 
+\Hypertarget{structcontroller_a445463680c9b3c8facf6359ceaeb4bee}\label{structcontroller_a445463680c9b3c8facf6359ceaeb4bee} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries button\+\_\+work}
+\item 
+\Hypertarget{structcontroller_ac86142eb993e7dc13ee8ba4e3b5b820f}\label{structcontroller_ac86142eb993e7dc13ee8ba4e3b5b820f} 
+struct \doxymbox{\hyperlink{structhotplug__slot}{hotplug\+\_\+slot}} {\bfseries hotplug\+\_\+slot}
+\item 
+\Hypertarget{structcontroller_ae8bd15fa44db472dc0f36250d32c73eb}\label{structcontroller_ae8bd15fa44db472dc0f36250d32c73eb} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries reset\+\_\+lock}
+\item 
+\Hypertarget{structcontroller_a626307aab807fd604bf4e498324f6a92}\label{structcontroller_a626307aab807fd604bf4e498324f6a92} 
+unsigned int {\bfseries depth}
+\item 
+\Hypertarget{structcontroller_a6a068e105554f158f868eebc979d6c9d}\label{structcontroller_a6a068e105554f158f868eebc979d6c9d} 
+unsigned int {\bfseries ist\+\_\+running}
+\item 
+\Hypertarget{structcontroller_ac5564d15c3f2aa4b39dba89fd1e274a0}\label{structcontroller_ac5564d15c3f2aa4b39dba89fd1e274a0} 
+int {\bfseries request\+\_\+result}
+\item 
+\Hypertarget{structcontroller_a217bec41296bc3c8c9de7f0b4d278afb}\label{structcontroller_a217bec41296bc3c8c9de7f0b4d278afb} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries requester}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\doxysection{cper\+\_\+sec\+\_\+pcie Struct Reference}
+\hypertarget{structcper__sec__pcie}{}\label{structcper__sec__pcie}\index{cper\_sec\_pcie@{cper\_sec\_pcie}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcper__sec__pcie_a2a2f4159c6be54c3d815dbe09b2a5027}\label{structcper__sec__pcie_a2a2f4159c6be54c3d815dbe09b2a5027} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u16 {\bfseries vendor\_id}\\
+\>u16 {\bfseries device\_id}\\
+\>u8 {\bfseries class\_code} \+[3]\+\\
+\>u8 {\bfseries function}\\
+\>u8 {\bfseries device}\\
+\>u16 {\bfseries segment}\\
+\>u8 {\bfseries bus}\\
+\>u8 {\bfseries secondary\_bus}\\
+\>u16 {\bfseries slot}\\
+\>u8 {\bfseries reserved}\\
+\} {\bfseries \_\_attribute\_\_} ((packed)) device\_id\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcper__sec__pcie_a89bc0d3fdd5dd3e5f546eff08a579f4a}\label{structcper__sec__pcie_a89bc0d3fdd5dd3e5f546eff08a579f4a} 
+u64 {\bfseries validation\+\_\+bits}
+\item 
+\Hypertarget{structcper__sec__pcie_af7cb2bf82a478a361fc8a33db3da3081}\label{structcper__sec__pcie_af7cb2bf82a478a361fc8a33db3da3081} 
+u32 {\bfseries port\+\_\+type}
+\item 
+\Hypertarget{structcper__sec__pcie_a2b3f5fe52b4c4066087e09f55d73317a}\label{structcper__sec__pcie_a2b3f5fe52b4c4066087e09f55d73317a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u8 {\bfseries minor}\\
+\>u8 {\bfseries major}\\
+\>u8 {\bfseries reserved} \+[2]\+\\
+\} {\bfseries version}\\
+
+\end{tabbing}\item 
+\Hypertarget{structcper__sec__pcie_a3fe3368037c50e1d288208aa5c88f957}\label{structcper__sec__pcie_a3fe3368037c50e1d288208aa5c88f957} 
+u16 {\bfseries command}
+\item 
+\Hypertarget{structcper__sec__pcie_a2e38e5874ee37389c3082a1a82ab5eee}\label{structcper__sec__pcie_a2e38e5874ee37389c3082a1a82ab5eee} 
+u16 {\bfseries status}
+\item 
+\Hypertarget{structcper__sec__pcie_a08b8b4fc3c0e6fc1407924bcf19a7fcf}\label{structcper__sec__pcie_a08b8b4fc3c0e6fc1407924bcf19a7fcf} 
+u32 {\bfseries reserved}
+\item 
+\Hypertarget{structcper__sec__pcie_ab3ed3ea8fc45f5f9665621efb6b1863c}\label{structcper__sec__pcie_ab3ed3ea8fc45f5f9665621efb6b1863c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries lower}\\
+\>u32 {\bfseries upper}\\
+\} {\bfseries serial\_number}\\
+
+\end{tabbing}\item 
+\Hypertarget{structcper__sec__pcie_a9be722954fe8f1a898867bc91c982e19}\label{structcper__sec__pcie_a9be722954fe8f1a898867bc91c982e19} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u16 {\bfseries secondary\_status}\\
+\>u16 {\bfseries control}\\
+\} {\bfseries bridge}\\
+
+\end{tabbing}\item 
+\Hypertarget{structcper__sec__pcie_a10ca0d62202e43a525e56023e3d14b25}\label{structcper__sec__pcie_a10ca0d62202e43a525e56023e3d14b25} 
+u8 {\bfseries capability} \+[60]\+
+\item 
+\Hypertarget{structcper__sec__pcie_a576b8d1b6f8c35d8d1fedf5aeac89800}\label{structcper__sec__pcie_a576b8d1b6f8c35d8d1fedf5aeac89800} 
+u8 {\bfseries aer\+\_\+info} \+[96]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

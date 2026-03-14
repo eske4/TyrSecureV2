@@ -1,0 +1,91 @@
+\doxysection{gpio\+\_\+chip Struct Reference}
+\hypertarget{structgpio__chip}{}\label{structgpio__chip}\index{gpio\_chip@{gpio\_chip}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structgpio__chip_a7ee06f786aa0e579955eb6ddad47fce2}\label{structgpio__chip_a7ee06f786aa0e579955eb6ddad47fce2} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries label}
+\item 
+\Hypertarget{structgpio__chip_a414098a4c71b8709655b3123be094b3d}\label{structgpio__chip_a414098a4c71b8709655b3123be094b3d} 
+struct \doxymbox{\hyperlink{structgpio__device}{gpio\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries gpiodev}
+\item 
+\Hypertarget{structgpio__chip_ae06c47a84b8049e091520776ebc9f24b}\label{structgpio__chip_ae06c47a84b8049e091520776ebc9f24b} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structgpio__chip_ae1203af0cd2f3a095abe47dc5babcb0f}\label{structgpio__chip_ae1203af0cd2f3a095abe47dc5babcb0f} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*} {\bfseries fwnode}
+\item 
+\Hypertarget{structgpio__chip_a4aade158d1d8a6424cd7bb873c5735ca}\label{structgpio__chip_a4aade158d1d8a6424cd7bb873c5735ca} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structgpio__chip_adad9f535401b78b597bfa0158bf6303e}\label{structgpio__chip_adad9f535401b78b597bfa0158bf6303e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries request} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgpio__chip_a651323708c0ebef5e1cba97d2d65e52d}\label{structgpio__chip_a651323708c0ebef5e1cba97d2d65e52d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgpio__chip_a5e43821f994c4b93bbfa2fa1564e22d9}\label{structgpio__chip_a5e43821f994c4b93bbfa2fa1564e22d9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+direction} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgpio__chip_a866596ed6d59813bc840286a8cd90e05}\label{structgpio__chip_a866596ed6d59813bc840286a8cd90e05} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries direction\+\_\+input} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgpio__chip_ab6df1f53c8bbd42049c83b949f3a7a21}\label{structgpio__chip_ab6df1f53c8bbd42049c83b949f3a7a21} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries direction\+\_\+output} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int, int)
+\item 
+\Hypertarget{structgpio__chip_a0aeb0899191c0479ff8e12624a511259}\label{structgpio__chip_a0aeb0899191c0479ff8e12624a511259} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgpio__chip_a2947234372bcc8b4353622221ef7e768}\label{structgpio__chip_a2947234372bcc8b4353622221ef7e768} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+multiple} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgpio__chip_a77e23100b6986f411c2858a81e50651c}\label{structgpio__chip_a77e23100b6986f411c2858a81e50651c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int, int)
+\item 
+\Hypertarget{structgpio__chip_a3af229ce272e6dc78abdccaaa68d4cad}\label{structgpio__chip_a3af229ce272e6dc78abdccaaa68d4cad} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+multiple} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgpio__chip_a4542519625d8e078c7917eba0cb0ebc2}\label{structgpio__chip_a4542519625d8e078c7917eba0cb0ebc2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+config} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structgpio__chip_a1c7b4b98c5890fbfe91d77d314829a33}\label{structgpio__chip_a1c7b4b98c5890fbfe91d77d314829a33} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries to\+\_\+irq} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgpio__chip_a0217efeb095ee9cbd265579352282451}\label{structgpio__chip_a0217efeb095ee9cbd265579352282451} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dbg\+\_\+show} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgpio__chip_af880e2bf58e7008d9191aa6ca37e45a5}\label{structgpio__chip_af880e2bf58e7008d9191aa6ca37e45a5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+valid\+\_\+mask} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgpio__chip_aea35ceda11ec2df280d0658ae54a57b6}\label{structgpio__chip_aea35ceda11ec2df280d0658ae54a57b6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries add\+\_\+pin\+\_\+ranges} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgpio__chip_a5ce121f2aed294b0fb817376d4abfe5f}\label{structgpio__chip_a5ce121f2aed294b0fb817376d4abfe5f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries en\+\_\+hw\+\_\+timestamp} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, u32, long unsigned int)
+\item 
+\Hypertarget{structgpio__chip_a98b3a5d28af4bdfe581d333be7298aa6}\label{structgpio__chip_a98b3a5d28af4bdfe581d333be7298aa6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dis\+\_\+hw\+\_\+timestamp} )(struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*}, u32, long unsigned int)
+\item 
+\Hypertarget{structgpio__chip_a8e72c65560b953e314c611820815158e}\label{structgpio__chip_a8e72c65560b953e314c611820815158e} 
+int {\bfseries base}
+\item 
+\Hypertarget{structgpio__chip_a648559e261c4aea54ad2f4bc5113494c}\label{structgpio__chip_a648559e261c4aea54ad2f4bc5113494c} 
+u16 {\bfseries ngpio}
+\item 
+\Hypertarget{structgpio__chip_a66294f8c3301a30eeeeee5aa5252346d}\label{structgpio__chip_a66294f8c3301a30eeeeee5aa5252346d} 
+u16 {\bfseries offset}
+\item 
+\Hypertarget{structgpio__chip_a9155128e00830b332735824bac454225}\label{structgpio__chip_a9155128e00830b332735824bac454225} 
+const char \texorpdfstring{$\ast$}{*}const  \texorpdfstring{$\ast$}{*} {\bfseries names}
+\item 
+\Hypertarget{structgpio__chip_adcfac18ad00d502c99612b441402ad5b}\label{structgpio__chip_adcfac18ad00d502c99612b441402ad5b} 
+bool {\bfseries can\+\_\+sleep}
+\item 
+\Hypertarget{structgpio__chip_a1ef20d635b97fc789ac746b91a418bfd}\label{structgpio__chip_a1ef20d635b97fc789ac746b91a418bfd} 
+struct \doxymbox{\hyperlink{structgpio__irq__chip}{gpio\+\_\+irq\+\_\+chip}} {\bfseries irq}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

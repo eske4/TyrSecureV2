@@ -1,0 +1,40 @@
+\doxysection{scsi\+\_\+device\+\_\+handler Struct Reference}
+\hypertarget{structscsi__device__handler}{}\label{structscsi__device__handler}\index{scsi\_device\_handler@{scsi\_device\_handler}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structscsi__device__handler_a9bc02fb899d9acd4384cfee9d6cb5134}\label{structscsi__device__handler_a9bc02fb899d9acd4384cfee9d6cb5134} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structscsi__device__handler_a8faf27e1d37f77527b6c74dc1ce85d75}\label{structscsi__device__handler_a8faf27e1d37f77527b6c74dc1ce85d75} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries module}
+\item 
+\Hypertarget{structscsi__device__handler_af3d89411ed7ba60e49526915748a9cc4}\label{structscsi__device__handler_af3d89411ed7ba60e49526915748a9cc4} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structscsi__device__handler_af04df52d278d640ac777f61f803c36e6}\label{structscsi__device__handler_af04df52d278d640ac777f61f803c36e6} 
+enum scsi\+\_\+disposition(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+sense} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscsi__sense__hdr}{scsi\+\_\+sense\+\_\+hdr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__device__handler_a2dd9a5f98021a22f61c152b1355c0f8f}\label{structscsi__device__handler_a2dd9a5f98021a22f61c152b1355c0f8f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries attach} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__device__handler_a362dad04389dbc1231d9996d5b7433f8}\label{structscsi__device__handler_a362dad04389dbc1231d9996d5b7433f8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries detach} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__device__handler_a3bc6b16bdd3187b7d2199f377c74edd2}\label{structscsi__device__handler_a3bc6b16bdd3187b7d2199f377c74edd2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries activate} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*}, activate\+\_\+complete, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__device__handler_afeace92b96ef26b28e483b407a8d7dc8}\label{structscsi__device__handler_afeace92b96ef26b28e483b407a8d7dc8} 
+blk\+\_\+status\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries prep\+\_\+fn} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__device__handler_aa3bc6c6c70b7ab87f540771ef72d2714}\label{structscsi__device__handler_aa3bc6c6c70b7ab87f540771ef72d2714} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+params} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__device__handler_a2075ad121819ac8341712b40dfc01453}\label{structscsi__device__handler_a2075ad121819ac8341712b40dfc01453} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries rescan} )(struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

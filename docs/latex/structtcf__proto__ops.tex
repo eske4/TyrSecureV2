@@ -1,0 +1,82 @@
+\doxysection{tcf\+\_\+proto\+\_\+ops Struct Reference}
+\hypertarget{structtcf__proto__ops}{}\label{structtcf__proto__ops}\index{tcf\_proto\_ops@{tcf\_proto\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtcf__proto__ops_a92c8f678974b446fce584d4116bf5dac}\label{structtcf__proto__ops_a92c8f678974b446fce584d4116bf5dac} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries head}
+\item 
+\Hypertarget{structtcf__proto__ops_af23d85972cca4ce7b47867ced7086e16}\label{structtcf__proto__ops_af23d85972cca4ce7b47867ced7086e16} 
+char {\bfseries kind} \+[16]\+
+\item 
+\Hypertarget{structtcf__proto__ops_a147d98004207cdbb189e216fd2cf69b7}\label{structtcf__proto__ops_a147d98004207cdbb189e216fd2cf69b7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries classify} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcf__result}{tcf\+\_\+result}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_ab3788bd1b28a0e6d014a8febdf4d6885}\label{structtcf__proto__ops_ab3788bd1b28a0e6d014a8febdf4d6885} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a312c268fbb9eab422351a47f6b663568}\label{structtcf__proto__ops_a312c268fbb9eab422351a47f6b663568} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, bool, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a939f356c72f4e9580e596d77632eb8a7}\label{structtcf__proto__ops_a939f356c72f4e9580e596d77632eb8a7} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structtcf__proto__ops_a33b824846260a13c123113dcbee84216}\label{structtcf__proto__ops_a33b824846260a13c123113dcbee84216} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries put} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_ae6814fddaf261c57904fc0a8508b6820}\label{structtcf__proto__ops_ae6814fddaf261c57904fc0a8508b6820} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries change} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, long unsigned int, u32, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_afb48d3e328d0a693e0fcf4549f302e69}\label{structtcf__proto__ops_afb48d3e328d0a693e0fcf4549f302e69} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries delete} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, bool \texorpdfstring{$\ast$}{*}, bool, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a7bdab474313df0d2afd41e2fe69321a4}\label{structtcf__proto__ops_a7bdab474313df0d2afd41e2fe69321a4} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries delete\+\_\+empty} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a6b0c4ef84d8d719b6d1c7b78b1143f97}\label{structtcf__proto__ops_a6b0c4ef84d8d719b6d1c7b78b1143f97} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries walk} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcf__walker}{tcf\+\_\+walker}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structtcf__proto__ops_a65598d6c96cfaae06fed175df154e306}\label{structtcf__proto__ops_a65598d6c96cfaae06fed175df154e306} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reoffload} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, bool, flow\+\_\+setup\+\_\+cb\+\_\+t \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a54f070d7438e87cb012968d84fcf2988}\label{structtcf__proto__ops_a54f070d7438e87cb012968d84fcf2988} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+add} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a4011f7bddeb6e89cfc5c14a27b85b7de}\label{structtcf__proto__ops_a4011f7bddeb6e89cfc5c14a27b85b7de} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+del} )(struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a1d20f96cb20ffa97a0cbd8d3664935b2}\label{structtcf__proto__ops_a1d20f96cb20ffa97a0cbd8d3664935b2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bind\+\_\+class} )(void \texorpdfstring{$\ast$}{*}, u32, long unsigned int, void \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structtcf__proto__ops_adb72823519b46550f66ebc32f4e61606}\label{structtcf__proto__ops_adb72823519b46550f66ebc32f4e61606} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries tmplt\+\_\+create} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcf__chain}{tcf\+\_\+chain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_ab323b3c31cd3d51776805eaca734aff0}\label{structtcf__proto__ops_ab323b3c31cd3d51776805eaca734aff0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries tmplt\+\_\+destroy} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a94b564b77f04bf2782dfc695643a7298}\label{structtcf__proto__ops_a94b564b77f04bf2782dfc695643a7298} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries tmplt\+\_\+reoffload} )(struct \doxymbox{\hyperlink{structtcf__chain}{tcf\+\_\+chain}} \texorpdfstring{$\ast$}{*}, bool, flow\+\_\+setup\+\_\+cb\+\_\+t \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a9da6ff8725547060b5013913a7f97c34}\label{structtcf__proto__ops_a9da6ff8725547060b5013913a7f97c34} 
+struct \doxymbox{\hyperlink{structtcf__exts}{tcf\+\_\+exts}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+exts} )(const struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structtcf__proto__ops_a6f74e09ade41ff365f2f563c2c41d6a2}\label{structtcf__proto__ops_a6f74e09ade41ff365f2f563c2c41d6a2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dump} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcmsg}{tcmsg}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structtcf__proto__ops_a49f8cc0e0fdc1f5fa51113074f6a84af}\label{structtcf__proto__ops_a49f8cc0e0fdc1f5fa51113074f6a84af} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries terse\+\_\+dump} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcmsg}{tcmsg}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structtcf__proto__ops_a63c98aa67ec7df683b54c6987d99e3a2}\label{structtcf__proto__ops_a63c98aa67ec7df683b54c6987d99e3a2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tmplt\+\_\+dump} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto__ops_a08a19bb6fb44913ceb00441e0f1f038b}\label{structtcf__proto__ops_a08a19bb6fb44913ceb00441e0f1f038b} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structtcf__proto__ops_a2c2f4189a9ed26f5d64da01ee3aa391f}\label{structtcf__proto__ops_a2c2f4189a9ed26f5d64da01ee3aa391f} 
+int {\bfseries flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{blk\+\_\+flush\+\_\+queue Struct Reference}
+\hypertarget{structblk__flush__queue}{}\label{structblk__flush__queue}\index{blk\_flush\_queue@{blk\_flush\_queue}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structblk__flush__queue_a4aceff2a3c7c59dde226509d49dd4b8c}\label{structblk__flush__queue_a4aceff2a3c7c59dde226509d49dd4b8c} 
+spinlock\+\_\+t {\bfseries mq\+\_\+flush\+\_\+lock}
+\item 
+\Hypertarget{structblk__flush__queue_ac0803838589addad9a6b03a1a4b59bf4}\label{structblk__flush__queue_ac0803838589addad9a6b03a1a4b59bf4} 
+unsigned int {\bfseries flush\+\_\+pending\+\_\+idx}:\+ 1
+\item 
+\Hypertarget{structblk__flush__queue_aa6e19950d18386a4aa370cdb8a635f15}\label{structblk__flush__queue_aa6e19950d18386a4aa370cdb8a635f15} 
+unsigned int {\bfseries flush\+\_\+running\+\_\+idx}:\+ 1
+\item 
+\Hypertarget{structblk__flush__queue_a3760e416973d4666028fde10ecaf4de6}\label{structblk__flush__queue_a3760e416973d4666028fde10ecaf4de6} 
+blk\+\_\+status\+\_\+t {\bfseries rq\+\_\+status}
+\item 
+\Hypertarget{structblk__flush__queue_a01899844b600951552abd8490148e34c}\label{structblk__flush__queue_a01899844b600951552abd8490148e34c} 
+long unsigned int {\bfseries flush\+\_\+pending\+\_\+since}
+\item 
+\Hypertarget{structblk__flush__queue_abe31ad68cbda7c64ccbfd083b9d4e476}\label{structblk__flush__queue_abe31ad68cbda7c64ccbfd083b9d4e476} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries flush\+\_\+queue} \+[2]\+
+\item 
+\Hypertarget{structblk__flush__queue_a0278a0486f66811a3cd8a70efb3066ea}\label{structblk__flush__queue_a0278a0486f66811a3cd8a70efb3066ea} 
+long unsigned int {\bfseries flush\+\_\+data\+\_\+in\+\_\+flight}
+\item 
+\Hypertarget{structblk__flush__queue_ad4473f0698aab0b29747bc86ee2780bb}\label{structblk__flush__queue_ad4473f0698aab0b29747bc86ee2780bb} 
+struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+rq}
+\item 
+\Hypertarget{structblk__flush__queue_a59382a6ebb8cef32eab93a1ca17b23d5}\label{structblk__flush__queue_a59382a6ebb8cef32eab93a1ca17b23d5} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries callback\+\_\+head}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

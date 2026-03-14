@@ -1,0 +1,70 @@
+\doxysection{ata\+\_\+taskfile Struct Reference}
+\hypertarget{structata__taskfile}{}\label{structata__taskfile}\index{ata\_taskfile@{ata\_taskfile}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structata__taskfile_a3be33bb1cfac52df8eba27a91c047136}\label{structata__taskfile_a3be33bb1cfac52df8eba27a91c047136} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structata__taskfile_a4f05a9c526c55a19c544aa5a999b7dcc}\label{structata__taskfile_a4f05a9c526c55a19c544aa5a999b7dcc} 
+u8 {\bfseries protocol}
+\item 
+\Hypertarget{structata__taskfile_a573401050a792616775e8d945ce8ef05}\label{structata__taskfile_a573401050a792616775e8d945ce8ef05} 
+u8 {\bfseries ctl}
+\item 
+\Hypertarget{structata__taskfile_a24539599970406e3580c18163b134c44}\label{structata__taskfile_a24539599970406e3580c18163b134c44} 
+u8 {\bfseries hob\+\_\+feature}
+\item 
+\Hypertarget{structata__taskfile_aa9343c20c1cae9787d460a42bad05651}\label{structata__taskfile_aa9343c20c1cae9787d460a42bad05651} 
+u8 {\bfseries hob\+\_\+nsect}
+\item 
+\Hypertarget{structata__taskfile_a5d1025ad39bf26f57cf8a50af5f6548b}\label{structata__taskfile_a5d1025ad39bf26f57cf8a50af5f6548b} 
+u8 {\bfseries hob\+\_\+lbal}
+\item 
+\Hypertarget{structata__taskfile_af40fbb237c1bc0df472b8bc17fbfb84b}\label{structata__taskfile_af40fbb237c1bc0df472b8bc17fbfb84b} 
+u8 {\bfseries hob\+\_\+lbam}
+\item 
+\Hypertarget{structata__taskfile_a889596fcc6c7b3a3c3253396fb5f1264}\label{structata__taskfile_a889596fcc6c7b3a3c3253396fb5f1264} 
+u8 {\bfseries hob\+\_\+lbah}
+\item 
+\Hypertarget{structata__taskfile_aff4389a482e61d31a298a0cce8bd99e6}\label{structata__taskfile_aff4389a482e61d31a298a0cce8bd99e6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u8 {\bfseries error}\\
+\>u8 {\bfseries feature}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structata__taskfile_a03f21424e6666ed6d54f6c23ababdf26}\label{structata__taskfile_a03f21424e6666ed6d54f6c23ababdf26} 
+u8 {\bfseries nsect}
+\item 
+\Hypertarget{structata__taskfile_abd41f13173c815385c3d592bdb28f584}\label{structata__taskfile_abd41f13173c815385c3d592bdb28f584} 
+u8 {\bfseries lbal}
+\item 
+\Hypertarget{structata__taskfile_a3c7b8a3198f0526ffb8481cee789e47d}\label{structata__taskfile_a3c7b8a3198f0526ffb8481cee789e47d} 
+u8 {\bfseries lbam}
+\item 
+\Hypertarget{structata__taskfile_a543d9fa28d08fd0d913ae55ca6747a7e}\label{structata__taskfile_a543d9fa28d08fd0d913ae55ca6747a7e} 
+u8 {\bfseries lbah}
+\item 
+\Hypertarget{structata__taskfile_a6021701108f8d7380c7fbddc30b5fbc3}\label{structata__taskfile_a6021701108f8d7380c7fbddc30b5fbc3} 
+u8 {\bfseries device}
+\item 
+\Hypertarget{structata__taskfile_a250cc4ba8cd9f138b00b4033b654cd49}\label{structata__taskfile_a250cc4ba8cd9f138b00b4033b654cd49} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u8 {\bfseries status}\\
+\>u8 {\bfseries command}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structata__taskfile_a53f700d03533f1b9e925df07a4c01a42}\label{structata__taskfile_a53f700d03533f1b9e925df07a4c01a42} 
+u32 {\bfseries auxiliary}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

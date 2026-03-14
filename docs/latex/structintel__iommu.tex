@@ -1,0 +1,136 @@
+\doxysection{intel\+\_\+iommu Struct Reference}
+\hypertarget{structintel__iommu}{}\label{structintel__iommu}\index{intel\_iommu@{intel\_iommu}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structintel__iommu_a8161cd0ab72c28abce6e8e467891ef9e}\label{structintel__iommu_a8161cd0ab72c28abce6e8e467891ef9e} 
+void \texorpdfstring{$\ast$}{*} {\bfseries reg}
+\item 
+\Hypertarget{structintel__iommu_a4888b9e5740f91c8e428c0d215225847}\label{structintel__iommu_a4888b9e5740f91c8e428c0d215225847} 
+u64 {\bfseries reg\+\_\+phys}
+\item 
+\Hypertarget{structintel__iommu_a7f3de362d857db8bf736054b5152ba25}\label{structintel__iommu_a7f3de362d857db8bf736054b5152ba25} 
+u64 {\bfseries reg\+\_\+size}
+\item 
+\Hypertarget{structintel__iommu_a25ff9eec557387e856f89a2efc305215}\label{structintel__iommu_a25ff9eec557387e856f89a2efc305215} 
+u64 {\bfseries cap}
+\item 
+\Hypertarget{structintel__iommu_af030f7ea1beb895b9e6a7a807e88e70b}\label{structintel__iommu_af030f7ea1beb895b9e6a7a807e88e70b} 
+u64 {\bfseries ecap}
+\item 
+\Hypertarget{structintel__iommu_ae01a0ddb7e9c84d14afb4ad43606a779}\label{structintel__iommu_ae01a0ddb7e9c84d14afb4ad43606a779} 
+u64 {\bfseries vccap}
+\item 
+\Hypertarget{structintel__iommu_ad06b77df85bb678ce944634c3d255edd}\label{structintel__iommu_ad06b77df85bb678ce944634c3d255edd} 
+u64 {\bfseries ecmdcap} \+[4]\+
+\item 
+\Hypertarget{structintel__iommu_a27e912238e3835d564b1a879a7884b62}\label{structintel__iommu_a27e912238e3835d564b1a879a7884b62} 
+u32 {\bfseries gcmd}
+\item 
+\Hypertarget{structintel__iommu_afcd5b5f7102a05aa6d8f6b82ed125351}\label{structintel__iommu_afcd5b5f7102a05aa6d8f6b82ed125351} 
+raw\+\_\+spinlock\+\_\+t {\bfseries register\+\_\+lock}
+\item 
+\Hypertarget{structintel__iommu_af99637ea198960cbec79f754878cc9c8}\label{structintel__iommu_af99637ea198960cbec79f754878cc9c8} 
+int {\bfseries seq\+\_\+id}
+\item 
+\Hypertarget{structintel__iommu_ab0d6145bce85cecc88c53180c333ef9d}\label{structintel__iommu_ab0d6145bce85cecc88c53180c333ef9d} 
+int {\bfseries agaw}
+\item 
+\Hypertarget{structintel__iommu_a1859233b05e5d5f245fdbe6af4ef29b2}\label{structintel__iommu_a1859233b05e5d5f245fdbe6af4ef29b2} 
+int {\bfseries msagaw}
+\item 
+\Hypertarget{structintel__iommu_a5f3cf4443001605841f3a72c8df7c511}\label{structintel__iommu_a5f3cf4443001605841f3a72c8df7c511} 
+unsigned int {\bfseries irq}
+\item 
+\Hypertarget{structintel__iommu_ae58ec5ab9f8b3a0cfb4827a76c91f76c}\label{structintel__iommu_ae58ec5ab9f8b3a0cfb4827a76c91f76c} 
+unsigned int {\bfseries pr\+\_\+irq}
+\item 
+\Hypertarget{structintel__iommu_ac45159eaf4e1471ee04329bf86746a65}\label{structintel__iommu_ac45159eaf4e1471ee04329bf86746a65} 
+unsigned int {\bfseries perf\+\_\+irq}
+\item 
+\Hypertarget{structintel__iommu_ad5dd6932a1d590738f42c4b9049d2d9f}\label{structintel__iommu_ad5dd6932a1d590738f42c4b9049d2d9f} 
+u16 {\bfseries segment}
+\item 
+\Hypertarget{structintel__iommu_a4f43d3062ee135708343c4a53615953c}\label{structintel__iommu_a4f43d3062ee135708343c4a53615953c} 
+unsigned char {\bfseries name} \+[16]\+
+\item 
+\Hypertarget{structintel__iommu_abcbcb089e78a0d5488cf0838edd47d09}\label{structintel__iommu_abcbcb089e78a0d5488cf0838edd47d09} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries did\+\_\+lock}
+\item 
+\Hypertarget{structintel__iommu_aa907998c0f7c28f899b42c84d0d6d8f3}\label{structintel__iommu_aa907998c0f7c28f899b42c84d0d6d8f3} 
+struct \doxymbox{\hyperlink{structida}{ida}} {\bfseries domain\+\_\+ida}
+\item 
+\Hypertarget{structintel__iommu_a2b668d5e4ad465ccd1cefa33bee1b28a}\label{structintel__iommu_a2b668d5e4ad465ccd1cefa33bee1b28a} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries copied\+\_\+tables}
+\item 
+\Hypertarget{structintel__iommu_ad8ed25b784af0fd6c9e96a1c9ab041d9}\label{structintel__iommu_ad8ed25b784af0fd6c9e96a1c9ab041d9} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structintel__iommu_a288a3246e8bbfae2a100f9ce98ba8360}\label{structintel__iommu_a288a3246e8bbfae2a100f9ce98ba8360} 
+struct \doxymbox{\hyperlink{structroot__entry}{root\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries root\+\_\+entry}
+\item 
+\Hypertarget{structintel__iommu_a8cd1fccfad519dab217976bb7488b026}\label{structintel__iommu_a8cd1fccfad519dab217976bb7488b026} 
+struct \doxymbox{\hyperlink{structiommu__flush}{iommu\+\_\+flush}} {\bfseries flush}
+\item 
+\Hypertarget{structintel__iommu_a34553ac632e0081fccf94bf802c36d7a}\label{structintel__iommu_a34553ac632e0081fccf94bf802c36d7a} 
+struct \doxymbox{\hyperlink{structpage__req__dsc}{page\+\_\+req\+\_\+dsc}} \texorpdfstring{$\ast$}{*} {\bfseries prq}
+\item 
+\Hypertarget{structintel__iommu_a7015e8ea90691d7eaff5c42d6a61185f}\label{structintel__iommu_a7015e8ea90691d7eaff5c42d6a61185f} 
+unsigned char {\bfseries prq\+\_\+name} \+[16]\+
+\item 
+\Hypertarget{structintel__iommu_a37e9d406f925c79ef49c127cd5cbab6d}\label{structintel__iommu_a37e9d406f925c79ef49c127cd5cbab6d} 
+long unsigned int {\bfseries prq\+\_\+seq\+\_\+number}
+\item 
+\Hypertarget{structintel__iommu_aca7908787203d828b17ed9eefdf8d1b3}\label{structintel__iommu_aca7908787203d828b17ed9eefdf8d1b3} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries prq\+\_\+complete}
+\item 
+\Hypertarget{structintel__iommu_a8654489802fd4d9f16af5a828a3fa746}\label{structintel__iommu_a8654489802fd4d9f16af5a828a3fa746} 
+struct \doxymbox{\hyperlink{structiopf__queue}{iopf\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries iopf\+\_\+queue}
+\item 
+\Hypertarget{structintel__iommu_a57d7e4fa497a1dee3f32f7104a7ce8f1}\label{structintel__iommu_a57d7e4fa497a1dee3f32f7104a7ce8f1} 
+unsigned char {\bfseries iopfq\+\_\+name} \+[16]\+
+\item 
+\Hypertarget{structintel__iommu_ad1e11b6b8dcda876893783c133ab9a67}\label{structintel__iommu_ad1e11b6b8dcda876893783c133ab9a67} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries iopf\+\_\+lock}
+\item 
+\Hypertarget{structintel__iommu_ac3b75b42fb1faa2a3fb66d9d44b14239}\label{structintel__iommu_ac3b75b42fb1faa2a3fb66d9d44b14239} 
+struct \doxymbox{\hyperlink{structq__inval}{q\+\_\+inval}} \texorpdfstring{$\ast$}{*} {\bfseries qi}
+\item 
+\Hypertarget{structintel__iommu_ac08428bfb19d51f47d3889179534f191}\label{structintel__iommu_ac08428bfb19d51f47d3889179534f191} 
+u32 {\bfseries iommu\+\_\+state} \+[4]\+
+\item 
+\Hypertarget{structintel__iommu_af93b9a9ce0f24e17dbdafd5b6c0a907f}\label{structintel__iommu_af93b9a9ce0f24e17dbdafd5b6c0a907f} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries device\+\_\+rbtree}
+\item 
+\Hypertarget{structintel__iommu_a349bb4840a05e0d3241be5fea1f4d2c7}\label{structintel__iommu_a349bb4840a05e0d3241be5fea1f4d2c7} 
+spinlock\+\_\+t {\bfseries device\+\_\+rbtree\+\_\+lock}
+\item 
+\Hypertarget{structintel__iommu_a555383a3cd06ce002db5a17917a87183}\label{structintel__iommu_a555383a3cd06ce002db5a17917a87183} 
+struct \doxymbox{\hyperlink{structir__table}{ir\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries ir\+\_\+table}
+\item 
+\Hypertarget{structintel__iommu_a5fec17adc205beca60a36f235d681f3d}\label{structintel__iommu_a5fec17adc205beca60a36f235d681f3d} 
+struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries ir\+\_\+domain}
+\item 
+\Hypertarget{structintel__iommu_a9a5e430b30bb348b8e4a2ab1b86fa9d7}\label{structintel__iommu_a9a5e430b30bb348b8e4a2ab1b86fa9d7} 
+struct \doxymbox{\hyperlink{structiommu__device}{iommu\+\_\+device}} {\bfseries iommu}
+\item 
+\Hypertarget{structintel__iommu_ad24fd0b067c11bc5e8918140bb8cbfb5}\label{structintel__iommu_ad24fd0b067c11bc5e8918140bb8cbfb5} 
+int {\bfseries node}
+\item 
+\Hypertarget{structintel__iommu_a92d25e7b9d97f215628fd63568d81c3c}\label{structintel__iommu_a92d25e7b9d97f215628fd63568d81c3c} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structintel__iommu_ae299ced56e65c110dc1ba36582041f6d}\label{structintel__iommu_ae299ced56e65c110dc1ba36582041f6d} 
+struct \doxymbox{\hyperlink{structdmar__drhd__unit}{dmar\+\_\+drhd\+\_\+unit}} \texorpdfstring{$\ast$}{*} {\bfseries drhd}
+\item 
+\Hypertarget{structintel__iommu_ae1ce231435e8c00af1fe03edcbea2a06}\label{structintel__iommu_ae1ce231435e8c00af1fe03edcbea2a06} 
+void \texorpdfstring{$\ast$}{*} {\bfseries perf\+\_\+statistic}
+\item 
+\Hypertarget{structintel__iommu_a3ee69a3ed7b1e3f0808ad50a81218826}\label{structintel__iommu_a3ee69a3ed7b1e3f0808ad50a81218826} 
+struct \doxymbox{\hyperlink{structiommu__pmu}{iommu\+\_\+pmu}} \texorpdfstring{$\ast$}{*} {\bfseries pmu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

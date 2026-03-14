@@ -1,0 +1,98 @@
+\doxysection{\+\_\+\+\_\+sifields Union Reference}
+\hypertarget{union____sifields}{}\label{union____sifields}\index{\_\_sifields@{\_\_sifields}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{union____sifields_a937bdc79d4659cb84b660ea14de04f66}\label{union____sifields_a937bdc79d4659cb84b660ea14de04f66} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_kernel\_pid\_t {\bfseries \_pid}\\
+\>\_\_kernel\_uid32\_t {\bfseries \_uid}\\
+\} {\bfseries \_kill}\\
+
+\end{tabbing}\item 
+\Hypertarget{union____sifields_a6ed1bc6d056ed2e2114662b7348d9c62}\label{union____sifields_a6ed1bc6d056ed2e2114662b7348d9c62} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_kernel\_timer\_t {\bfseries \_tid}\\
+\>int {\bfseries \_overrun}\\
+\>sigval\_t {\bfseries \_sigval}\\
+\>int {\bfseries \_sys\_private}\\
+\} {\bfseries \_timer}\\
+
+\end{tabbing}\item 
+\Hypertarget{union____sifields_a42e9817396175526308c2ecc5c134e3d}\label{union____sifields_a42e9817396175526308c2ecc5c134e3d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_kernel\_pid\_t {\bfseries \_pid}\\
+\>\_\_kernel\_uid32\_t {\bfseries \_uid}\\
+\>sigval\_t {\bfseries \_sigval}\\
+\} {\bfseries \_rt}\\
+
+\end{tabbing}\item 
+\Hypertarget{union____sifields_ad63dd68ef1c8abe11dd1ebbe485c91be}\label{union____sifields_ad63dd68ef1c8abe11dd1ebbe485c91be} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_kernel\_pid\_t {\bfseries \_pid}\\
+\>\_\_kernel\_uid32\_t {\bfseries \_uid}\\
+\>int {\bfseries \_status}\\
+\>\_\_kernel\_clock\_t {\bfseries \_utime}\\
+\>\_\_kernel\_clock\_t {\bfseries \_stime}\\
+\} {\bfseries \_sigchld}\\
+
+\end{tabbing}\item 
+\Hypertarget{union____sifields_aadd673accc5bb54e1376b0d6f0fbb6e5}\label{union____sifields_aadd673accc5bb54e1376b0d6f0fbb6e5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries \_addr}\\
+\Hypertarget{struct____sifields_1_1_0d055003327330130222102233240107141012214063315236_ab3003046fc05bf1c44e3ef24edfab046}\label{struct____sifields_1_1_0d055003327330130222102233240107141012214063315236_ab3003046fc05bf1c44e3ef24edfab046} 
+\>union \{\\
+\>\>int {\bfseries \_trapno}\\
+\>\>short int {\bfseries \_addr\_lsb}\\
+\>\>struct \{\\
+\>\>\>char {\bfseries \_dummy\_bnd} \+[8]\+\\
+\>\>\>void \texorpdfstring{$\ast$}{*} {\bfseries \_lower}\\
+\>\>\>void \texorpdfstring{$\ast$}{*} {\bfseries \_upper}\\
+\>\>\} {\bfseries \_addr\_bnd}\\
+\>\>struct \{\\
+\>\>\>char {\bfseries \_dummy\_pkey} \+[8]\+\\
+\>\>\>\_\_u32 {\bfseries \_pkey}\\
+\>\>\} {\bfseries \_addr\_pkey}\\
+\>\>struct \{\\
+\>\>\>long unsigned int {\bfseries \_data}\\
+\>\>\>\_\_u32 {\bfseries \_type}\\
+\>\>\>\_\_u32 {\bfseries \_flags}\\
+\>\>\} {\bfseries \_perf}\\
+\>\} \\
+\} {\bfseries \_sigfault}\\
+
+\end{tabbing}\item 
+\Hypertarget{union____sifields_a44932ddc6a61712bc4738aa6891f9293}\label{union____sifields_a44932ddc6a61712bc4738aa6891f9293} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>long int {\bfseries \_band}\\
+\>int {\bfseries \_fd}\\
+\} {\bfseries \_sigpoll}\\
+
+\end{tabbing}\item 
+\Hypertarget{union____sifields_a84354419a06a94f9cc48f41d7f9413fb}\label{union____sifields_a84354419a06a94f9cc48f41d7f9413fb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries \_call\_addr}\\
+\>int {\bfseries \_syscall}\\
+\>unsigned int {\bfseries \_arch}\\
+\} {\bfseries \_sigsys}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

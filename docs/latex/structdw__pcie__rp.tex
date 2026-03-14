@@ -1,0 +1,91 @@
+\doxysection{dw\+\_\+pcie\+\_\+rp Struct Reference}
+\hypertarget{structdw__pcie__rp}{}\label{structdw__pcie__rp}\index{dw\_pcie\_rp@{dw\_pcie\_rp}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdw__pcie__rp_a7494adec0b3ebdea0815dd6c5edb6ea5}\label{structdw__pcie__rp_a7494adec0b3ebdea0815dd6c5edb6ea5} 
+bool {\bfseries has\+\_\+msi\+\_\+ctrl}:\+ 1
+\item 
+\Hypertarget{structdw__pcie__rp_adcd2c9b588071e196ec165b92084901b}\label{structdw__pcie__rp_adcd2c9b588071e196ec165b92084901b} 
+bool {\bfseries cfg0\+\_\+io\+\_\+shared}:\+ 1
+\item 
+\Hypertarget{structdw__pcie__rp_a6e7bd27fe2c2e3c5778fe2da73881777}\label{structdw__pcie__rp_a6e7bd27fe2c2e3c5778fe2da73881777} 
+u64 {\bfseries cfg0\+\_\+base}
+\item 
+\Hypertarget{structdw__pcie__rp_a50d9480d3f0bbf4be167f343ddd49bf2}\label{structdw__pcie__rp_a50d9480d3f0bbf4be167f343ddd49bf2} 
+void \texorpdfstring{$\ast$}{*} {\bfseries va\+\_\+cfg0\+\_\+base}
+\item 
+\Hypertarget{structdw__pcie__rp_a28e68d30cc50ac6b3c688ce49ba73edc}\label{structdw__pcie__rp_a28e68d30cc50ac6b3c688ce49ba73edc} 
+u32 {\bfseries cfg0\+\_\+size}
+\item 
+\Hypertarget{structdw__pcie__rp_acd9baabaca4c58fd08d32f9ca3684a7e}\label{structdw__pcie__rp_acd9baabaca4c58fd08d32f9ca3684a7e} 
+resource\+\_\+size\+\_\+t {\bfseries io\+\_\+base}
+\item 
+\Hypertarget{structdw__pcie__rp_a71669bc52eaa0c8f76f9b180c6ef3515}\label{structdw__pcie__rp_a71669bc52eaa0c8f76f9b180c6ef3515} 
+phys\+\_\+addr\+\_\+t {\bfseries io\+\_\+bus\+\_\+addr}
+\item 
+\Hypertarget{structdw__pcie__rp_a96ff91400f270e9ebfbb3bbe7aaed83d}\label{structdw__pcie__rp_a96ff91400f270e9ebfbb3bbe7aaed83d} 
+u32 {\bfseries io\+\_\+size}
+\item 
+\Hypertarget{structdw__pcie__rp_ae2f920261e8dfaafe0d58801a7a1fd85}\label{structdw__pcie__rp_ae2f920261e8dfaafe0d58801a7a1fd85} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structdw__pcie__rp_a30b9a3a9015d898b647559db498b498a}\label{structdw__pcie__rp_a30b9a3a9015d898b647559db498b498a} 
+const struct \doxymbox{\hyperlink{structdw__pcie__host__ops}{dw\+\_\+pcie\+\_\+host\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structdw__pcie__rp_a0d22552262ef3bf3c61962407989a0eb}\label{structdw__pcie__rp_a0d22552262ef3bf3c61962407989a0eb} 
+int {\bfseries msi\+\_\+irq} \+[8]\+
+\item 
+\Hypertarget{structdw__pcie__rp_a9a50e4f4f12f50930b3eb843b9994576}\label{structdw__pcie__rp_a9a50e4f4f12f50930b3eb843b9994576} 
+struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+domain}
+\item 
+\Hypertarget{structdw__pcie__rp_a3aba1b2de03b2b6bcf9e0f21795b265a}\label{structdw__pcie__rp_a3aba1b2de03b2b6bcf9e0f21795b265a} 
+dma\+\_\+addr\+\_\+t {\bfseries msi\+\_\+data}
+\item 
+\Hypertarget{structdw__pcie__rp_a00d566b79045b081b8fb5613d06fcdc0}\label{structdw__pcie__rp_a00d566b79045b081b8fb5613d06fcdc0} 
+struct \doxymbox{\hyperlink{structirq__chip}{irq\+\_\+chip}} \texorpdfstring{$\ast$}{*} {\bfseries msi\+\_\+irq\+\_\+chip}
+\item 
+\Hypertarget{structdw__pcie__rp_a9b15c6f9226c0282cd94666895abc744}\label{structdw__pcie__rp_a9b15c6f9226c0282cd94666895abc744} 
+u32 {\bfseries num\+\_\+vectors}
+\item 
+\Hypertarget{structdw__pcie__rp_a1bc03f677e080a05c5c15cab2c8e7dd3}\label{structdw__pcie__rp_a1bc03f677e080a05c5c15cab2c8e7dd3} 
+u32 {\bfseries irq\+\_\+mask} \+[8]\+
+\item 
+\Hypertarget{structdw__pcie__rp_af3623f7669b5e819a3fe7f8b8a0b51aa}\label{structdw__pcie__rp_af3623f7669b5e819a3fe7f8b8a0b51aa} 
+struct \doxymbox{\hyperlink{structpci__host__bridge}{pci\+\_\+host\+\_\+bridge}} \texorpdfstring{$\ast$}{*} {\bfseries bridge}
+\item 
+\Hypertarget{structdw__pcie__rp_a5c34111debb5d364fa6ff95d69ce6711}\label{structdw__pcie__rp_a5c34111debb5d364fa6ff95d69ce6711} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structdw__pcie__rp_a060001d7bce2ef4223ee46bbd86f5c8d}\label{structdw__pcie__rp_a060001d7bce2ef4223ee46bbd86f5c8d} 
+long unsigned int {\bfseries msi\+\_\+irq\+\_\+in\+\_\+use} \+[4]\+
+\item 
+\Hypertarget{structdw__pcie__rp_ab3f68cc099c09f08723d649c72ed4ed2}\label{structdw__pcie__rp_ab3f68cc099c09f08723d649c72ed4ed2} 
+bool {\bfseries use\+\_\+atu\+\_\+msg}
+\item 
+\Hypertarget{structdw__pcie__rp_a3d99fa4a86e886f8ff2c20b789fc9f08}\label{structdw__pcie__rp_a3d99fa4a86e886f8ff2c20b789fc9f08} 
+int {\bfseries msg\+\_\+atu\+\_\+index}
+\item 
+\Hypertarget{structdw__pcie__rp_a6fbd5a2bf4c0bde4576531e3245c3d34}\label{structdw__pcie__rp_a6fbd5a2bf4c0bde4576531e3245c3d34} 
+struct \doxymbox{\hyperlink{structresource}{resource}} \texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+res}
+\item 
+\Hypertarget{structdw__pcie__rp_a6bf6ebf04c927bd3d12b5b53f3e41a35}\label{structdw__pcie__rp_a6bf6ebf04c927bd3d12b5b53f3e41a35} 
+struct \doxymbox{\hyperlink{structpci__eq__presets}{pci\+\_\+eq\+\_\+presets}} {\bfseries presets}
+\item 
+\Hypertarget{structdw__pcie__rp_a206aa09ff64fa68f58753ccfbfd44ab2}\label{structdw__pcie__rp_a206aa09ff64fa68f58753ccfbfd44ab2} 
+struct \doxymbox{\hyperlink{structpci__config__window}{pci\+\_\+config\+\_\+window}} \texorpdfstring{$\ast$}{*} {\bfseries cfg}
+\item 
+\Hypertarget{structdw__pcie__rp_a87b584511971cd2ab5ea96507301a9f4}\label{structdw__pcie__rp_a87b584511971cd2ab5ea96507301a9f4} 
+bool {\bfseries ecam\+\_\+enabled}
+\item 
+\Hypertarget{structdw__pcie__rp_a821b6ed71af0ea362fcec1b0725cfdf1}\label{structdw__pcie__rp_a821b6ed71af0ea362fcec1b0725cfdf1} 
+bool {\bfseries native\+\_\+ecam}
+\item 
+\Hypertarget{structdw__pcie__rp_a0b749cd98fc6ef97087f82bec50855f4}\label{structdw__pcie__rp_a0b749cd98fc6ef97087f82bec50855f4} 
+bool {\bfseries skip\+\_\+l23\+\_\+ready}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

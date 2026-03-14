@@ -1,0 +1,82 @@
+\doxysection{nvmem\+\_\+device Struct Reference}
+\hypertarget{structnvmem__device}{}\label{structnvmem__device}\index{nvmem\_device@{nvmem\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnvmem__device_a8d5cca0750ca50a9cb265df26bc1cbc2}\label{structnvmem__device_a8d5cca0750ca50a9cb265df26bc1cbc2} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structnvmem__device_a8074a853df39b2721fddecbb05002594}\label{structnvmem__device_a8074a853df39b2721fddecbb05002594} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structnvmem__device_a13157de99fa33dbed54f23c8dea53713}\label{structnvmem__device_a13157de99fa33dbed54f23c8dea53713} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structnvmem__device_a91d64730d49de5767d06203762c3017c}\label{structnvmem__device_a91d64730d49de5767d06203762c3017c} 
+int {\bfseries stride}
+\item 
+\Hypertarget{structnvmem__device_aee91d2e196f51ba1abb39acee5680880}\label{structnvmem__device_aee91d2e196f51ba1abb39acee5680880} 
+int {\bfseries word\+\_\+size}
+\item 
+\Hypertarget{structnvmem__device_a0631fa6b3aaa8f4073050aa1fb1232c6}\label{structnvmem__device_a0631fa6b3aaa8f4073050aa1fb1232c6} 
+int {\bfseries id}
+\item 
+\Hypertarget{structnvmem__device_ac05619c3766d3d7aac2875b4c96336d9}\label{structnvmem__device_ac05619c3766d3d7aac2875b4c96336d9} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries refcnt}
+\item 
+\Hypertarget{structnvmem__device_aafd4b02ee91752833c9d9328a9967592}\label{structnvmem__device_aafd4b02ee91752833c9d9328a9967592} 
+size\+\_\+t {\bfseries size}
+\item 
+\Hypertarget{structnvmem__device_aee4d485d4684d1f55027958d4b26284e}\label{structnvmem__device_aee4d485d4684d1f55027958d4b26284e} 
+bool {\bfseries read\+\_\+only}
+\item 
+\Hypertarget{structnvmem__device_ad38a5c5b09fe53b64ae4a4d995cee852}\label{structnvmem__device_ad38a5c5b09fe53b64ae4a4d995cee852} 
+bool {\bfseries root\+\_\+only}
+\item 
+\Hypertarget{structnvmem__device_a368e8eacb71f240a687fe04b44e13397}\label{structnvmem__device_a368e8eacb71f240a687fe04b44e13397} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structnvmem__device_a5037b7492cb5f308ba5956314d9fb56d}\label{structnvmem__device_a5037b7492cb5f308ba5956314d9fb56d} 
+enum nvmem\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structnvmem__device_a71c4c0253d86b2d97df89e9ab08d8359}\label{structnvmem__device_a71c4c0253d86b2d97df89e9ab08d8359} 
+struct \doxymbox{\hyperlink{structbin__attribute}{bin\+\_\+attribute}} {\bfseries eeprom}
+\item 
+\Hypertarget{structnvmem__device_afe527b22b29d8039c8a653d39f5fd1cf}\label{structnvmem__device_afe527b22b29d8039c8a653d39f5fd1cf} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries base\+\_\+dev}
+\item 
+\Hypertarget{structnvmem__device_ad85b26e8216a59f30e891aa0686fb5c4}\label{structnvmem__device_ad85b26e8216a59f30e891aa0686fb5c4} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cells}
+\item 
+\Hypertarget{structnvmem__device_a6d50f1db6b863b2fb02559fc7288df8c}\label{structnvmem__device_a6d50f1db6b863b2fb02559fc7288df8c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fixup\+\_\+dt\+\_\+cell\+\_\+info} )(struct \doxymbox{\hyperlink{structnvmem__device}{nvmem\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnvmem__cell__info}{nvmem\+\_\+cell\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnvmem__device_a64d5c26a4545bd93965fcfc2c80f1ca1}\label{structnvmem__device_a64d5c26a4545bd93965fcfc2c80f1ca1} 
+const struct \doxymbox{\hyperlink{structnvmem__keepout}{nvmem\+\_\+keepout}} \texorpdfstring{$\ast$}{*} {\bfseries keepout}
+\item 
+\Hypertarget{structnvmem__device_adffff8368222b97a6fc46f635eaad2af}\label{structnvmem__device_adffff8368222b97a6fc46f635eaad2af} 
+unsigned int {\bfseries nkeepout}
+\item 
+\Hypertarget{structnvmem__device_a2eb2348d77ec09436e2dee089b71e15e}\label{structnvmem__device_a2eb2348d77ec09436e2dee089b71e15e} 
+nvmem\+\_\+reg\+\_\+read\+\_\+t {\bfseries reg\+\_\+read}
+\item 
+\Hypertarget{structnvmem__device_a5759df94b7c5b8e4b90ae7b3d4848762}\label{structnvmem__device_a5759df94b7c5b8e4b90ae7b3d4848762} 
+nvmem\+\_\+reg\+\_\+write\+\_\+t {\bfseries reg\+\_\+write}
+\item 
+\Hypertarget{structnvmem__device_a756424e9c06ac5b61ea18114d908c06d}\label{structnvmem__device_a756424e9c06ac5b61ea18114d908c06d} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries wp\+\_\+gpio}
+\item 
+\Hypertarget{structnvmem__device_abb738b7bb5fd3c70dc14818abbfb5ab6}\label{structnvmem__device_abb738b7bb5fd3c70dc14818abbfb5ab6} 
+struct \doxymbox{\hyperlink{structnvmem__layout}{nvmem\+\_\+layout}} \texorpdfstring{$\ast$}{*} {\bfseries layout}
+\item 
+\Hypertarget{structnvmem__device_ae29602f3cf165998b4aef3302e963715}\label{structnvmem__device_ae29602f3cf165998b4aef3302e963715} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv}
+\item 
+\Hypertarget{structnvmem__device_a82ed68f372f5490f2e63231186c36f74}\label{structnvmem__device_a82ed68f372f5490f2e63231186c36f74} 
+bool {\bfseries sysfs\+\_\+cells\+\_\+populated}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

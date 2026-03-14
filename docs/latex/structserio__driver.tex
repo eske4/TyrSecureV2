@@ -1,0 +1,43 @@
+\doxysection{serio\+\_\+driver Struct Reference}
+\hypertarget{structserio__driver}{}\label{structserio__driver}\index{serio\_driver@{serio\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structserio__driver_a91017972684eadffa6d339e44098332f}\label{structserio__driver_a91017972684eadffa6d339e44098332f} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries description}
+\item 
+\Hypertarget{structserio__driver_ad84aed7fc32e6cefaa09f6eaf643cc89}\label{structserio__driver_ad84aed7fc32e6cefaa09f6eaf643cc89} 
+const struct \doxymbox{\hyperlink{structserio__device__id}{serio\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries id\+\_\+table}
+\item 
+\Hypertarget{structserio__driver_aa27cc1bb96fac2f465827253735dcb87}\label{structserio__driver_aa27cc1bb96fac2f465827253735dcb87} 
+bool {\bfseries manual\+\_\+bind}
+\item 
+\Hypertarget{structserio__driver_a370f87202b627c955cbb14f48706ff9c}\label{structserio__driver_a370f87202b627c955cbb14f48706ff9c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+wakeup} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio__driver_a7d0eb72c8c7fc8d33fc24626f831de07}\label{structserio__driver_a7d0eb72c8c7fc8d33fc24626f831de07} 
+irqreturn\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries interrupt} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*}, unsigned char, unsigned int)
+\item 
+\Hypertarget{structserio__driver_a989e7834b2dabf4831034a3eb16f3be6}\label{structserio__driver_a989e7834b2dabf4831034a3eb16f3be6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries connect} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structserio__driver}{serio\+\_\+driver}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio__driver_afdc77fe151f79249adab44befda7174c}\label{structserio__driver_afdc77fe151f79249adab44befda7174c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reconnect} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio__driver_a57084fc8d176f761ab13e04dbd38ea1d}\label{structserio__driver_a57084fc8d176f761ab13e04dbd38ea1d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fast\+\_\+reconnect} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio__driver_a2c6228532851a471e058a45b9faee06d}\label{structserio__driver_a2c6228532851a471e058a45b9faee06d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disconnect} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio__driver_a11e52003cb22417c3c3d6b0cb7944af6}\label{structserio__driver_a11e52003cb22417c3c3d6b0cb7944af6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio__driver_a404824ad32f91006b7be230b8908e11e}\label{structserio__driver_a404824ad32f91006b7be230b8908e11e} 
+struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} {\bfseries driver}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

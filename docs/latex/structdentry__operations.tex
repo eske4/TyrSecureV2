@@ -1,0 +1,58 @@
+\doxysection{dentry\+\_\+operations Struct Reference}
+\hypertarget{structdentry__operations}{}\label{structdentry__operations}\index{dentry\_operations@{dentry\_operations}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdentry__operations_a5a6e6764b588c031e230f39e4c9720de}\label{structdentry__operations_a5a6e6764b588c031e230f39e4c9720de} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+revalidate} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structqstr}{qstr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structdentry__operations_a079a1d54800758d46d234313d298eaf9}\label{structdentry__operations_a079a1d54800758d46d234313d298eaf9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+weak\+\_\+revalidate} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structdentry__operations_a0bdf451c102f079a7a5f08b8f91f9ca4}\label{structdentry__operations_a0bdf451c102f079a7a5f08b8f91f9ca4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+hash} )(const struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structqstr}{qstr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_aa1f47971bdfadb77ab7fa393785ca87c}\label{structdentry__operations_aa1f47971bdfadb77ab7fa393785ca87c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+compare} )(const struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, unsigned int, const char \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structqstr}{qstr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_a1a815dc4b1ce67d81fc4ddab97c8dc68}\label{structdentry__operations_a1a815dc4b1ce67d81fc4ddab97c8dc68} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+delete} )(const struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_acbca99a32968f5afe5a01234312ca706}\label{structdentry__operations_acbca99a32968f5afe5a01234312ca706} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+init} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_abd9a2a562e963b1149b53e24677b22cc}\label{structdentry__operations_abd9a2a562e963b1149b53e24677b22cc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+release} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_a424623a1d86da10b6dd5ce19eb9ed343}\label{structdentry__operations_a424623a1d86da10b6dd5ce19eb9ed343} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+prune} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_aaae83d99ebba7900cc96faf1a90e9f9e}\label{structdentry__operations_aaae83d99ebba7900cc96faf1a90e9f9e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+iput} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_a61ec8954cbd2cbd4f68ebc7c8b3886dc}\label{structdentry__operations_a61ec8954cbd2cbd4f68ebc7c8b3886dc} 
+char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+dname} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdentry__operations_a0ab8e1d964d00f25dd2567f21f057b0a}\label{structdentry__operations_a0ab8e1d964d00f25dd2567f21f057b0a} 
+struct \doxymbox{\hyperlink{structvfsmount}{vfsmount}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+automount} )(struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_a4222414dccfe448aedfa27807b81a9d7}\label{structdentry__operations_a4222414dccfe448aedfa27807b81a9d7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+manage} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structdentry__operations_a6acb90cbee7989ae3c4d712d04045703}\label{structdentry__operations_a6acb90cbee7989ae3c4d712d04045703} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+real} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, enum d\+\_\+real\+\_\+type)
+\item 
+\Hypertarget{structdentry__operations_a1d3ba7c980b3e6b3bb6ddcbe971df09b}\label{structdentry__operations_a1d3ba7c980b3e6b3bb6ddcbe971df09b} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+unalias\+\_\+trylock} )(const struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_a06fc739f2b062538f5c605638ac469be}\label{structdentry__operations_a06fc739f2b062538f5c605638ac469be} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+unalias\+\_\+unlock} )(const struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdentry__operations_af429577b3565111de3e62d301970e3d7}\label{structdentry__operations_af429577b3565111de3e62d301970e3d7} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

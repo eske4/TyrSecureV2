@@ -1,0 +1,53 @@
+\doxysection{uffd\+\_\+msg Struct Reference}
+\hypertarget{structuffd__msg}{}\label{structuffd__msg}\index{uffd\_msg@{uffd\_msg}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structuffd__msg_a244a0ff2c76cb9d1ca91dd81f42216c9}\label{structuffd__msg_a244a0ff2c76cb9d1ca91dd81f42216c9} 
+\+\_\+\+\_\+u8 {\bfseries event}
+\item 
+\Hypertarget{structuffd__msg_ac643614d046d4e699b2e21f82a8b8ecb}\label{structuffd__msg_ac643614d046d4e699b2e21f82a8b8ecb} 
+\+\_\+\+\_\+u8 {\bfseries reserved1}
+\item 
+\Hypertarget{structuffd__msg_a61d5f1eade02db1f45a28745783cc197}\label{structuffd__msg_a61d5f1eade02db1f45a28745783cc197} 
+\+\_\+\+\_\+u16 {\bfseries reserved2}
+\item 
+\Hypertarget{structuffd__msg_a622933b7e1a8e221ded8d09b5d70866b}\label{structuffd__msg_a622933b7e1a8e221ded8d09b5d70866b} 
+\+\_\+\+\_\+u32 {\bfseries reserved3}
+\item 
+\Hypertarget{structuffd__msg_a9c7ad24766bfb66869ced03e796a5cce}\label{structuffd__msg_a9c7ad24766bfb66869ced03e796a5cce} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries flags}\\
+\>\>\_\_u64 {\bfseries address}\\
+\>\>union \{\\
+\>\>\>\_\_u32 {\bfseries ptid}\\
+\>\>\} {\bfseries feat}\\
+\>\} {\bfseries pagefault}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries ufd}\\
+\>\} {\bfseries fork}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries from}\\
+\>\>\_\_u64 {\bfseries to}\\
+\>\>\_\_u64 {\bfseries len}\\
+\>\} {\bfseries remap}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries start}\\
+\>\>\_\_u64 {\bfseries end}\\
+\>\} {\bfseries remove}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries reserved1}\\
+\>\>\_\_u64 {\bfseries reserved2}\\
+\>\>\_\_u64 {\bfseries reserved3}\\
+\>\} {\bfseries reserved}\\
+\} {\bfseries arg}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

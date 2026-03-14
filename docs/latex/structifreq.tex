@@ -1,0 +1,38 @@
+\doxysection{ifreq Struct Reference}
+\hypertarget{structifreq}{}\label{structifreq}\index{ifreq@{ifreq}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structifreq_ab41dfc2fcd9d48fe971cd02f3458bb12}\label{structifreq_ab41dfc2fcd9d48fe971cd02f3458bb12} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>char {\bfseries ifrn\_name} \+[16]\+\\
+\} {\bfseries ifr\_ifrn}\\
+
+\end{tabbing}\item 
+\Hypertarget{structifreq_ad021ca6b9e082a6aef0791326a58e6d9}\label{structifreq_ad021ca6b9e082a6aef0791326a58e6d9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} {\bfseries ifru\_addr}\\
+\>struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} {\bfseries ifru\_dstaddr}\\
+\>struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} {\bfseries ifru\_broadaddr}\\
+\>struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} {\bfseries ifru\_netmask}\\
+\>struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} {\bfseries ifru\_hwaddr}\\
+\>short int {\bfseries ifru\_flags}\\
+\>int {\bfseries ifru\_ivalue}\\
+\>int {\bfseries ifru\_mtu}\\
+\>struct \doxymbox{\hyperlink{structifmap}{ifmap}} {\bfseries ifru\_map}\\
+\>char {\bfseries ifru\_slave} \+[16]\+\\
+\>char {\bfseries ifru\_newname} \+[16]\+\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries ifru\_data}\\
+\>struct \doxymbox{\hyperlink{structif__settings}{if\_settings}} {\bfseries ifru\_settings}\\
+\} {\bfseries ifr\_ifru}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

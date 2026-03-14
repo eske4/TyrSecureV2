@@ -1,0 +1,187 @@
+\doxysection{nfs\+\_\+client Struct Reference}
+\hypertarget{structnfs__client}{}\label{structnfs__client}\index{nfs\_client@{nfs\_client}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs__client_a2da07ed919a26249d33a3bf5795f47ec}\label{structnfs__client_a2da07ed919a26249d33a3bf5795f47ec} 
+refcount\+\_\+t {\bfseries cl\+\_\+count}
+\item 
+\Hypertarget{structnfs__client_afde50d4a64188b53eb15604b70a09ee8}\label{structnfs__client_afde50d4a64188b53eb15604b70a09ee8} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries cl\+\_\+mds\+\_\+count}
+\item 
+\Hypertarget{structnfs__client_ada327baa609757353d41cd6c4ce1e20c}\label{structnfs__client_ada327baa609757353d41cd6c4ce1e20c} 
+int {\bfseries cl\+\_\+cons\+\_\+state}
+\item 
+\Hypertarget{structnfs__client_a945ce9c501c869bf9a167252ad9dd537}\label{structnfs__client_a945ce9c501c869bf9a167252ad9dd537} 
+long unsigned int {\bfseries cl\+\_\+res\+\_\+state}
+\item 
+\Hypertarget{structnfs__client_af8ebdad16646559a396da4d3d2b684fa}\label{structnfs__client_af8ebdad16646559a396da4d3d2b684fa} 
+long unsigned int {\bfseries cl\+\_\+flags}
+\item 
+\Hypertarget{structnfs__client_a1355c8ffa39c3df44b7cb1f41fcc2fca}\label{structnfs__client_a1355c8ffa39c3df44b7cb1f41fcc2fca} 
+struct \doxymbox{\hyperlink{struct____kernel__sockaddr__storage}{\+\_\+\+\_\+kernel\+\_\+sockaddr\+\_\+storage}} {\bfseries cl\+\_\+addr}
+\item 
+\Hypertarget{structnfs__client_a37923a04a10cdeb5c4896c42e4010d84}\label{structnfs__client_a37923a04a10cdeb5c4896c42e4010d84} 
+size\+\_\+t {\bfseries cl\+\_\+addrlen}
+\item 
+\Hypertarget{structnfs__client_a8685c3dc4831fd179d56c1f1d805af48}\label{structnfs__client_a8685c3dc4831fd179d56c1f1d805af48} 
+char \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+hostname}
+\item 
+\Hypertarget{structnfs__client_abf8f968ca2fe6ae5a2fd29859c6f5a70}\label{structnfs__client_abf8f968ca2fe6ae5a2fd29859c6f5a70} 
+char \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+acceptor}
+\item 
+\Hypertarget{structnfs__client_a3bd956cb449925487a031517c32206ea}\label{structnfs__client_a3bd956cb449925487a031517c32206ea} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cl\+\_\+share\+\_\+link}
+\item 
+\Hypertarget{structnfs__client_a7b9cc3e26a455228e8759c991ede5f54}\label{structnfs__client_a7b9cc3e26a455228e8759c991ede5f54} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cl\+\_\+superblocks}
+\item 
+\Hypertarget{structnfs__client_a7d5ad1403ed5bd1cbaa29d0db90a7c15}\label{structnfs__client_a7d5ad1403ed5bd1cbaa29d0db90a7c15} 
+struct \doxymbox{\hyperlink{structrpc__clnt}{rpc\+\_\+clnt}} \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+rpcclient}
+\item 
+\Hypertarget{structnfs__client_a2c4827a03bd7b6e4c9dfd12152d9e7a8}\label{structnfs__client_a2c4827a03bd7b6e4c9dfd12152d9e7a8} 
+const struct \doxymbox{\hyperlink{structnfs__rpc__ops}{nfs\+\_\+rpc\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries rpc\+\_\+ops}
+\item 
+\Hypertarget{structnfs__client_a756e2c92c9f25e0dd9ade927dca257d4}\label{structnfs__client_a756e2c92c9f25e0dd9ade927dca257d4} 
+int {\bfseries cl\+\_\+proto}
+\item 
+\Hypertarget{structnfs__client_a779a9e6135d5e3e6e6515dd64f773b56}\label{structnfs__client_a779a9e6135d5e3e6e6515dd64f773b56} 
+struct nfs\+\_\+subversion \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+nfs\+\_\+mod}
+\item 
+\Hypertarget{structnfs__client_ad02012cd31efbe025e4649b316da9955}\label{structnfs__client_ad02012cd31efbe025e4649b316da9955} 
+u32 {\bfseries cl\+\_\+minorversion}
+\item 
+\Hypertarget{structnfs__client_a8aaed33cf9ddf38bb6ff4dc406ca3d8d}\label{structnfs__client_a8aaed33cf9ddf38bb6ff4dc406ca3d8d} 
+unsigned int {\bfseries cl\+\_\+nconnect}
+\item 
+\Hypertarget{structnfs__client_aaf9ceb40ea140c107f213b3e67ba7c1a}\label{structnfs__client_aaf9ceb40ea140c107f213b3e67ba7c1a} 
+unsigned int {\bfseries cl\+\_\+max\+\_\+connect}
+\item 
+\Hypertarget{structnfs__client_a901d4d1979d6371e65dab81da6a8e115}\label{structnfs__client_a901d4d1979d6371e65dab81da6a8e115} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+principal}
+\item 
+\Hypertarget{structnfs__client_a38f59f114de07dc5fd697404d949d188}\label{structnfs__client_a38f59f114de07dc5fd697404d949d188} 
+struct \doxymbox{\hyperlink{structxprtsec__parms}{xprtsec\+\_\+parms}} {\bfseries cl\+\_\+xprtsec}
+\item 
+\Hypertarget{structnfs__client_a988c2c6c265896ace2a297ab59301245}\label{structnfs__client_a988c2c6c265896ace2a297ab59301245} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cl\+\_\+ds\+\_\+clients}
+\item 
+\Hypertarget{structnfs__client_a8fa80052aa33b8f99fa44a85c53d9567}\label{structnfs__client_a8fa80052aa33b8f99fa44a85c53d9567} 
+u64 {\bfseries cl\+\_\+clientid}
+\item 
+\Hypertarget{structnfs__client_a902e7c2f02c2182e9ec9e96828682650}\label{structnfs__client_a902e7c2f02c2182e9ec9e96828682650} 
+\doxymbox{\hyperlink{structnfs4__verifier}{nfs4\+\_\+verifier}} {\bfseries cl\+\_\+confirm}
+\item 
+\Hypertarget{structnfs__client_a58ea94a77d27e1fd0236f4a59da6be9b}\label{structnfs__client_a58ea94a77d27e1fd0236f4a59da6be9b} 
+long unsigned int {\bfseries cl\+\_\+state}
+\item 
+\Hypertarget{structnfs__client_a1806070323a7c846c04af0e4b1ee2a0c}\label{structnfs__client_a1806070323a7c846c04af0e4b1ee2a0c} 
+spinlock\+\_\+t {\bfseries cl\+\_\+lock}
+\item 
+\Hypertarget{structnfs__client_a4b95199e36c7ff4b6823f172a5d8d243}\label{structnfs__client_a4b95199e36c7ff4b6823f172a5d8d243} 
+long unsigned int {\bfseries cl\+\_\+lease\+\_\+time}
+\item 
+\Hypertarget{structnfs__client_ab05bf51f9ba53289c71d1a9ea1ea75b3}\label{structnfs__client_ab05bf51f9ba53289c71d1a9ea1ea75b3} 
+long unsigned int {\bfseries cl\+\_\+last\+\_\+renewal}
+\item 
+\Hypertarget{structnfs__client_af91b404dd342cc376222234c154051e0}\label{structnfs__client_af91b404dd342cc376222234c154051e0} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries cl\+\_\+renewd}
+\item 
+\Hypertarget{structnfs__client_ac54e408dc89c8466085cc3cd8d3a2dce}\label{structnfs__client_ac54e408dc89c8466085cc3cd8d3a2dce} 
+struct \doxymbox{\hyperlink{structrpc__wait__queue}{rpc\+\_\+wait\+\_\+queue}} {\bfseries cl\+\_\+rpcwaitq}
+\item 
+\Hypertarget{structnfs__client_af9f9a9df3416fd1809f84b7a483c86f0}\label{structnfs__client_af9f9a9df3416fd1809f84b7a483c86f0} 
+struct idmap \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+idmap}
+\item 
+\Hypertarget{structnfs__client_a812abb4b3e76cfbe8c6761244fe8a2fa}\label{structnfs__client_a812abb4b3e76cfbe8c6761244fe8a2fa} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+owner\+\_\+id}
+\item 
+\Hypertarget{structnfs__client_a8f02cae1d3d270fc9f22e258f9aa6653}\label{structnfs__client_a8f02cae1d3d270fc9f22e258f9aa6653} 
+u32 {\bfseries cl\+\_\+cb\+\_\+ident}
+\item 
+\Hypertarget{structnfs__client_a39fc42b713ccff6f87abf1279de157dc}\label{structnfs__client_a39fc42b713ccff6f87abf1279de157dc} 
+const struct \doxymbox{\hyperlink{structnfs4__minor__version__ops}{nfs4\+\_\+minor\+\_\+version\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+mvops}
+\item 
+\Hypertarget{structnfs__client_aac6688ef833c47e0796275e4ac7eacdb}\label{structnfs__client_aac6688ef833c47e0796275e4ac7eacdb} 
+long unsigned int {\bfseries cl\+\_\+mig\+\_\+gen}
+\item 
+\Hypertarget{structnfs__client_a8c5705a1b4aabe02982888fb8e56e3dd}\label{structnfs__client_a8c5705a1b4aabe02982888fb8e56e3dd} 
+struct nfs4\+\_\+slot\+\_\+table \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+slot\+\_\+tbl}
+\item 
+\Hypertarget{structnfs__client_aa11c471c4eb36bc49b1651e5c334fd28}\label{structnfs__client_aa11c471c4eb36bc49b1651e5c334fd28} 
+u32 {\bfseries cl\+\_\+seqid}
+\item 
+\Hypertarget{structnfs__client_a2e0424c90069cb369c9b40046a39c161}\label{structnfs__client_a2e0424c90069cb369c9b40046a39c161} 
+u32 {\bfseries cl\+\_\+exchange\+\_\+flags}
+\item 
+\Hypertarget{structnfs__client_a5e0844cd3fdf515c736f71c095f8e7e3}\label{structnfs__client_a5e0844cd3fdf515c736f71c095f8e7e3} 
+struct nfs4\+\_\+session \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+session}
+\item 
+\Hypertarget{structnfs__client_a3ed96d0d85cebf64c3a1c886dc928c03}\label{structnfs__client_a3ed96d0d85cebf64c3a1c886dc928c03} 
+bool {\bfseries cl\+\_\+preserve\+\_\+clid}
+\item 
+\Hypertarget{structnfs__client_ae6b9573f972c7e73d4d9b7259ad4dfa6}\label{structnfs__client_ae6b9573f972c7e73d4d9b7259ad4dfa6} 
+struct \doxymbox{\hyperlink{structnfs41__server__owner}{nfs41\+\_\+server\+\_\+owner}} \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+serverowner}
+\item 
+\Hypertarget{structnfs__client_a72c0438050442519c8be648d5c550310}\label{structnfs__client_a72c0438050442519c8be648d5c550310} 
+struct \doxymbox{\hyperlink{structnfs41__server__scope}{nfs41\+\_\+server\+\_\+scope}} \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+serverscope}
+\item 
+\Hypertarget{structnfs__client_afbfa02897973a2397347b8b2ac1672f9}\label{structnfs__client_afbfa02897973a2397347b8b2ac1672f9} 
+struct \doxymbox{\hyperlink{structnfs41__impl__id}{nfs41\+\_\+impl\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+implid}
+\item 
+\Hypertarget{structnfs__client_afb42f39f8c48cc61658466c7bc15c67e}\label{structnfs__client_afb42f39f8c48cc61658466c7bc15c67e} 
+long unsigned int {\bfseries cl\+\_\+sp4\+\_\+flags}
+\item 
+\Hypertarget{structnfs__client_a57a603d4d23c471d095e56d7d8f8d3fb}\label{structnfs__client_a57a603d4d23c471d095e56d7d8f8d3fb} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries cl\+\_\+lock\+\_\+waitq}
+\item 
+\Hypertarget{structnfs__client_a29cd9f40ef18caf45197393b20c9440f}\label{structnfs__client_a29cd9f40ef18caf45197393b20c9440f} 
+char {\bfseries cl\+\_\+ipaddr} \+[48]\+
+\item 
+\Hypertarget{structnfs__client_a0b5ca5bc2e6e66accf6fda5f96385c73}\label{structnfs__client_a0b5ca5bc2e6e66accf6fda5f96385c73} 
+struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*} {\bfseries cl\+\_\+net}
+\item 
+\Hypertarget{structnfs__client_a5adbbca3e3eed68307382e2d80eca0b0}\label{structnfs__client_a5adbbca3e3eed68307382e2d80eca0b0} 
+\doxymbox{\hyperlink{structnetns__tracker}{netns\+\_\+tracker}} {\bfseries cl\+\_\+ns\+\_\+tracker}
+\item 
+\Hypertarget{structnfs__client_a8cc28e520366221e201b0a3d9390054f}\label{structnfs__client_a8cc28e520366221e201b0a3d9390054f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pending\+\_\+cb\+\_\+stateids}
+\item 
+\Hypertarget{structnfs__client_a5c9e62fe6f2cc235fddbd1c03ff720b8}\label{structnfs__client_a5c9e62fe6f2cc235fddbd1c03ff720b8} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structnfs__client_a7094e0baa077b90813ebb03b00bf2d93}\label{structnfs__client_a7094e0baa077b90813ebb03b00bf2d93} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries cl\+\_\+nfssvc\+\_\+boot}
+\item 
+\Hypertarget{structnfs__client_ad26ae037f69de4aaf895038006f00cb3}\label{structnfs__client_ad26ae037f69de4aaf895038006f00cb3} 
+\doxymbox{\hyperlink{structseqlock__t}{seqlock\+\_\+t}} {\bfseries cl\+\_\+boot\+\_\+lock}
+\item 
+\Hypertarget{structnfs__client_a59de30fd0b1f856af89dbf6f421eafb3}\label{structnfs__client_a59de30fd0b1f856af89dbf6f421eafb3} 
+long :\+ 64
+\item 
+\Hypertarget{structnfs__client_ae07071799c3318564d4dd536060ee7e8}\label{structnfs__client_ae07071799c3318564d4dd536060ee7e8} 
+long :\+ 64
+\item 
+\Hypertarget{structnfs__client_a476976b2a5eea6378a6296005b716f06}\label{structnfs__client_a476976b2a5eea6378a6296005b716f06} 
+\doxymbox{\hyperlink{structnfs__uuid__t}{nfs\+\_\+uuid\+\_\+t}} {\bfseries cl\+\_\+uuid}
+\item 
+\Hypertarget{structnfs__client_a25631b7708e3c2060ad7ffddda98146d}\label{structnfs__client_a25631b7708e3c2060ad7ffddda98146d} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries cl\+\_\+local\+\_\+probe\+\_\+work}
+\item 
+\Hypertarget{structnfs__client_ac0971363c034e4bb0c4519e33e259fd8}\label{structnfs__client_ac0971363c034e4bb0c4519e33e259fd8} 
+long :\+ 64
+\item 
+\Hypertarget{structnfs__client_aad1ee687810edd177f0e280b4c94a3fd}\label{structnfs__client_aad1ee687810edd177f0e280b4c94a3fd} 
+long :\+ 64
+\item 
+\Hypertarget{structnfs__client_ad5dcc638088a10f2dd58df05d8c5afe9}\label{structnfs__client_ad5dcc638088a10f2dd58df05d8c5afe9} 
+long :\+ 64
+\item 
+\Hypertarget{structnfs__client_af42be1c7ba549fa4ae0a9beb46e22dad}\label{structnfs__client_af42be1c7ba549fa4ae0a9beb46e22dad} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

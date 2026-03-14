@@ -1,0 +1,73 @@
+\doxysection{acpi\+\_\+ec Struct Reference}
+\hypertarget{structacpi__ec}{}\label{structacpi__ec}\index{acpi\_ec@{acpi\_ec}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structacpi__ec_acae8d4c352c90db74c8ae45eaa1cef01}\label{structacpi__ec_acae8d4c352c90db74c8ae45eaa1cef01} 
+acpi\+\_\+handle {\bfseries handle}
+\item 
+\Hypertarget{structacpi__ec_a9e32250794f9bf824da0df64795d3e9f}\label{structacpi__ec_a9e32250794f9bf824da0df64795d3e9f} 
+int {\bfseries gpe}
+\item 
+\Hypertarget{structacpi__ec_a649d7f71da71c36d7b4127a0ab6fcc19}\label{structacpi__ec_a649d7f71da71c36d7b4127a0ab6fcc19} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structacpi__ec_a5541200edf78ca959d751d5dab73dde7}\label{structacpi__ec_a5541200edf78ca959d751d5dab73dde7} 
+long unsigned int {\bfseries command\+\_\+addr}
+\item 
+\Hypertarget{structacpi__ec_a040406704f8bee1ce4c9feb9498685a8}\label{structacpi__ec_a040406704f8bee1ce4c9feb9498685a8} 
+long unsigned int {\bfseries data\+\_\+addr}
+\item 
+\Hypertarget{structacpi__ec_a85cf366d75054289b900feeb9629e200}\label{structacpi__ec_a85cf366d75054289b900feeb9629e200} 
+bool {\bfseries global\+\_\+lock}
+\item 
+\Hypertarget{structacpi__ec_a8955bb46fa996f95d94fbc215b25cdd9}\label{structacpi__ec_a8955bb46fa996f95d94fbc215b25cdd9} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structacpi__ec_acab25c825fef4d324602ab521ffc2420}\label{structacpi__ec_acab25c825fef4d324602ab521ffc2420} 
+long unsigned int {\bfseries reference\+\_\+count}
+\item 
+\Hypertarget{structacpi__ec_aba1138af03e11d8ac2d2579623f349fa}\label{structacpi__ec_aba1138af03e11d8ac2d2579623f349fa} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structacpi__ec_a1bf8cf58db55fbaad60f864085760759}\label{structacpi__ec_a1bf8cf58db55fbaad60f864085760759} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\item 
+\Hypertarget{structacpi__ec_a27c7a352d2a815b77168c4420baadfe3}\label{structacpi__ec_a27c7a352d2a815b77168c4420baadfe3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structacpi__ec_a2b7a3822ba698d81ac2104d982e548db}\label{structacpi__ec_a2b7a3822ba698d81ac2104d982e548db} 
+struct \doxymbox{\hyperlink{structtransaction}{transaction}} \texorpdfstring{$\ast$}{*} {\bfseries curr}
+\item 
+\Hypertarget{structacpi__ec_a94bfa3bdc7bb9e552dcd83a9b9ae1bb2}\label{structacpi__ec_a94bfa3bdc7bb9e552dcd83a9b9ae1bb2} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structacpi__ec_a0261937e7232e03be119c0e3e4d8e550}\label{structacpi__ec_a0261937e7232e03be119c0e3e4d8e550} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries work}
+\item 
+\Hypertarget{structacpi__ec_ad996946cb51013909c40561992fc4293}\label{structacpi__ec_ad996946cb51013909c40561992fc4293} 
+long unsigned int {\bfseries timestamp}
+\item 
+\Hypertarget{structacpi__ec_abae3b644f45d2aa8e334ae25acb33648}\label{structacpi__ec_abae3b644f45d2aa8e334ae25acb33648} 
+enum acpi\+\_\+ec\+\_\+event\+\_\+state {\bfseries event\+\_\+state}
+\item 
+\Hypertarget{structacpi__ec_a704aa7ee793e805755b2a2b06cef559d}\label{structacpi__ec_a704aa7ee793e805755b2a2b06cef559d} 
+unsigned int {\bfseries events\+\_\+to\+\_\+process}
+\item 
+\Hypertarget{structacpi__ec_a1a9fea74ea378f21371d62031f72fbd2}\label{structacpi__ec_a1a9fea74ea378f21371d62031f72fbd2} 
+unsigned int {\bfseries events\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structacpi__ec_a425f695b4ffebd683bc2173e882e2fd0}\label{structacpi__ec_a425f695b4ffebd683bc2173e882e2fd0} 
+unsigned int {\bfseries queries\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structacpi__ec_ab234ccfe1e95044f38e1c96b246b3abe}\label{structacpi__ec_ab234ccfe1e95044f38e1c96b246b3abe} 
+bool {\bfseries busy\+\_\+polling}
+\item 
+\Hypertarget{structacpi__ec_aa5324b72b93b98c35659883a305d3818}\label{structacpi__ec_aa5324b72b93b98c35659883a305d3818} 
+unsigned int {\bfseries polling\+\_\+guard}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

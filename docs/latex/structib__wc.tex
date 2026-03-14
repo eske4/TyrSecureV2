@@ -1,0 +1,73 @@
+\doxysection{ib\+\_\+wc Struct Reference}
+\hypertarget{structib__wc}{}\label{structib__wc}\index{ib\_wc@{ib\_wc}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structib__wc_a8b8e17d2f931171aa85e605ce2a46a94}\label{structib__wc_a8b8e17d2f931171aa85e605ce2a46a94} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries wr\_id}\\
+\>struct \doxymbox{\hyperlink{structib__cqe}{ib\_cqe}} \texorpdfstring{$\ast$}{*} {\bfseries wr\_cqe}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structib__wc_a2a6dbad1053d6651c8bc4fd167c40c71}\label{structib__wc_a2a6dbad1053d6651c8bc4fd167c40c71} 
+enum ib\+\_\+wc\+\_\+status {\bfseries status}
+\item 
+\Hypertarget{structib__wc_af2b4de1ef6691e9ecefba941334967ee}\label{structib__wc_af2b4de1ef6691e9ecefba941334967ee} 
+enum ib\+\_\+wc\+\_\+opcode {\bfseries opcode}
+\item 
+\Hypertarget{structib__wc_ab0f04abc88b0ea6088b91802b49ffc4c}\label{structib__wc_ab0f04abc88b0ea6088b91802b49ffc4c} 
+u32 {\bfseries vendor\+\_\+err}
+\item 
+\Hypertarget{structib__wc_af2257f2be6ccc01e71824a3e7f1b40d9}\label{structib__wc_af2257f2be6ccc01e71824a3e7f1b40d9} 
+u32 {\bfseries byte\+\_\+len}
+\item 
+\Hypertarget{structib__wc_a6a129179c5e0a14da82da5f065c3d7c6}\label{structib__wc_a6a129179c5e0a14da82da5f065c3d7c6} 
+struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*} {\bfseries qp}
+\item 
+\Hypertarget{structib__wc_a85ab2230f1869762d5dd55c45109b4ab}\label{structib__wc_a85ab2230f1869762d5dd55c45109b4ab} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries imm\_data}\\
+\>u32 {\bfseries invalidate\_rkey}\\
+\} {\bfseries ex}\\
+
+\end{tabbing}\item 
+\Hypertarget{structib__wc_a8000a8bda571b61480764d798b3c60b8}\label{structib__wc_a8000a8bda571b61480764d798b3c60b8} 
+u32 {\bfseries src\+\_\+qp}
+\item 
+\Hypertarget{structib__wc_a72433a6fa8bda0d7cb7b98b56d151e4d}\label{structib__wc_a72433a6fa8bda0d7cb7b98b56d151e4d} 
+u32 {\bfseries slid}
+\item 
+\Hypertarget{structib__wc_ac1acbf7932bedc79da0301f99c7f72e8}\label{structib__wc_ac1acbf7932bedc79da0301f99c7f72e8} 
+int {\bfseries wc\+\_\+flags}
+\item 
+\Hypertarget{structib__wc_a22a84d46e00566b66f6416ed3ed39086}\label{structib__wc_a22a84d46e00566b66f6416ed3ed39086} 
+u16 {\bfseries pkey\+\_\+index}
+\item 
+\Hypertarget{structib__wc_ae6b07f9997beb19eeb9c9b81ea49b198}\label{structib__wc_ae6b07f9997beb19eeb9c9b81ea49b198} 
+u8 {\bfseries sl}
+\item 
+\Hypertarget{structib__wc_aace4efe0ea6262e527bc337e53dc597a}\label{structib__wc_aace4efe0ea6262e527bc337e53dc597a} 
+u8 {\bfseries dlid\+\_\+path\+\_\+bits}
+\item 
+\Hypertarget{structib__wc_a86f88c01fde672d2e764d40f5d1ce7a7}\label{structib__wc_a86f88c01fde672d2e764d40f5d1ce7a7} 
+u32 {\bfseries port\+\_\+num}
+\item 
+\Hypertarget{structib__wc_a755faacdd9244143505735d3a5538dad}\label{structib__wc_a755faacdd9244143505735d3a5538dad} 
+u8 {\bfseries smac} \+[6]\+
+\item 
+\Hypertarget{structib__wc_a1b5e0f233b50a1ee1509a491e8df03cd}\label{structib__wc_a1b5e0f233b50a1ee1509a491e8df03cd} 
+u16 {\bfseries vlan\+\_\+id}
+\item 
+\Hypertarget{structib__wc_af25dcc0c8010f6991c6dbcb7c4e7e6a5}\label{structib__wc_af25dcc0c8010f6991c6dbcb7c4e7e6a5} 
+u8 {\bfseries network\+\_\+hdr\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

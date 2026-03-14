@@ -1,0 +1,79 @@
+\doxysection{backing\+\_\+dev\+\_\+info Struct Reference}
+\hypertarget{structbacking__dev__info}{}\label{structbacking__dev__info}\index{backing\_dev\_info@{backing\_dev\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbacking__dev__info_af1efb6e597ec5f13d989ba02348c8d8d}\label{structbacking__dev__info_af1efb6e597ec5f13d989ba02348c8d8d} 
+u64 {\bfseries id}
+\item 
+\Hypertarget{structbacking__dev__info_ac50cbcecd13240ed4fc0e490d52c87c7}\label{structbacking__dev__info_ac50cbcecd13240ed4fc0e490d52c87c7} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries rb\+\_\+node}
+\item 
+\Hypertarget{structbacking__dev__info_aa6c4a5f260a3a8ded585db63e409e489}\label{structbacking__dev__info_aa6c4a5f260a3a8ded585db63e409e489} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries bdi\+\_\+list}
+\item 
+\Hypertarget{structbacking__dev__info_ad83019782ed614da03e63bdf7555410e}\label{structbacking__dev__info_ad83019782ed614da03e63bdf7555410e} 
+long unsigned int {\bfseries ra\+\_\+pages}
+\item 
+\Hypertarget{structbacking__dev__info_ac75a366f1b328939f7627c75b6206237}\label{structbacking__dev__info_ac75a366f1b328939f7627c75b6206237} 
+long unsigned int {\bfseries io\+\_\+pages}
+\item 
+\Hypertarget{structbacking__dev__info_ad3791cdf6d9690a37aa7f479e62a688c}\label{structbacking__dev__info_ad3791cdf6d9690a37aa7f479e62a688c} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries refcnt}
+\item 
+\Hypertarget{structbacking__dev__info_a0066759a6ab832d2a6c0bb3751a8b9ff}\label{structbacking__dev__info_a0066759a6ab832d2a6c0bb3751a8b9ff} 
+unsigned int {\bfseries capabilities}
+\item 
+\Hypertarget{structbacking__dev__info_a87a3f3b7902d6f15e4294b303edce8cf}\label{structbacking__dev__info_a87a3f3b7902d6f15e4294b303edce8cf} 
+unsigned int {\bfseries min\+\_\+ratio}
+\item 
+\Hypertarget{structbacking__dev__info_a9c8a031cd38155c2f18797e94c9dc3f0}\label{structbacking__dev__info_a9c8a031cd38155c2f18797e94c9dc3f0} 
+unsigned int {\bfseries max\+\_\+ratio}
+\item 
+\Hypertarget{structbacking__dev__info_a1e61664cb72c3a29d981f92276e3bf93}\label{structbacking__dev__info_a1e61664cb72c3a29d981f92276e3bf93} 
+unsigned int {\bfseries max\+\_\+prop\+\_\+frac}
+\item 
+\Hypertarget{structbacking__dev__info_af2499c9e0ea3427fc64a0298e45f2fb2}\label{structbacking__dev__info_af2499c9e0ea3427fc64a0298e45f2fb2} 
+atomic\+\_\+long\+\_\+t {\bfseries tot\+\_\+write\+\_\+bandwidth}
+\item 
+\Hypertarget{structbacking__dev__info_a93ab5111c8e81e949c293c4064b6e551}\label{structbacking__dev__info_a93ab5111c8e81e949c293c4064b6e551} 
+long unsigned int {\bfseries last\+\_\+bdp\+\_\+sleep}
+\item 
+\Hypertarget{structbacking__dev__info_aa56bda874aa6a91a2384f252613079a3}\label{structbacking__dev__info_aa56bda874aa6a91a2384f252613079a3} 
+struct \doxymbox{\hyperlink{structbdi__writeback}{bdi\+\_\+writeback}} {\bfseries wb}
+\item 
+\Hypertarget{structbacking__dev__info_aa1942f069ce86836208784097fa611f6}\label{structbacking__dev__info_aa1942f069ce86836208784097fa611f6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries wb\+\_\+list}
+\item 
+\Hypertarget{structbacking__dev__info_ab3f98ef851cf1dada982fb3be1aac698}\label{structbacking__dev__info_ab3f98ef851cf1dada982fb3be1aac698} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries cgwb\+\_\+tree}
+\item 
+\Hypertarget{structbacking__dev__info_a260e4c246d1f4578cd72ac0590d85cd0}\label{structbacking__dev__info_a260e4c246d1f4578cd72ac0590d85cd0} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries cgwb\+\_\+release\+\_\+mutex}
+\item 
+\Hypertarget{structbacking__dev__info_a54d8b59cae4424363ffbf64c8868ad2b}\label{structbacking__dev__info_a54d8b59cae4424363ffbf64c8868ad2b} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries wb\+\_\+switch\+\_\+rwsem}
+\item 
+\Hypertarget{structbacking__dev__info_a1464a29ceb1292f4c8e9f38822f2221d}\label{structbacking__dev__info_a1464a29ceb1292f4c8e9f38822f2221d} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wb\+\_\+waitq}
+\item 
+\Hypertarget{structbacking__dev__info_a1804df9d78c65b1fc9aa31309891d03a}\label{structbacking__dev__info_a1804df9d78c65b1fc9aa31309891d03a} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structbacking__dev__info_ab036122aec26915ba6da4985728acad0}\label{structbacking__dev__info_ab036122aec26915ba6da4985728acad0} 
+char {\bfseries dev\+\_\+name} \+[64]\+
+\item 
+\Hypertarget{structbacking__dev__info_afaad8f3bf1521c40d8426efa5d2aa14e}\label{structbacking__dev__info_afaad8f3bf1521c40d8426efa5d2aa14e} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structbacking__dev__info_aeac14cf6253e29be08f943a96a75bd58}\label{structbacking__dev__info_aeac14cf6253e29be08f943a96a75bd58} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries laptop\+\_\+mode\+\_\+wb\+\_\+timer}
+\item 
+\Hypertarget{structbacking__dev__info_a72e7f3484b1defc77496a7c9e5307e0a}\label{structbacking__dev__info_a72e7f3484b1defc77496a7c9e5307e0a} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debug\+\_\+dir}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

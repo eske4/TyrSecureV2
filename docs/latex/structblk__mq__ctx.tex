@@ -1,0 +1,38 @@
+\doxysection{blk\+\_\+mq\+\_\+ctx Struct Reference}
+\hypertarget{structblk__mq__ctx}{}\label{structblk__mq__ctx}\index{blk\_mq\_ctx@{blk\_mq\_ctx}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structblk__mq__ctx_a50a9adbd3cd66ea6a81f056fd9c5a41f}\label{structblk__mq__ctx_a50a9adbd3cd66ea6a81f056fd9c5a41f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>spinlock\_t {\bfseries lock}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries rq\_lists} \+[3]\+\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structblk__mq__ctx_aaffc33777932b39115e1c0d1d84ab1d6}\label{structblk__mq__ctx_aaffc33777932b39115e1c0d1d84ab1d6} 
+unsigned int {\bfseries cpu}
+\item 
+\Hypertarget{structblk__mq__ctx_a4f941a23a987145b9be09896bf088802}\label{structblk__mq__ctx_a4f941a23a987145b9be09896bf088802} 
+short unsigned int {\bfseries index\+\_\+hw} \+[3]\+
+\item 
+\Hypertarget{structblk__mq__ctx_a1f91afceca6fe0a32653258a09a07cfb}\label{structblk__mq__ctx_a1f91afceca6fe0a32653258a09a07cfb} 
+struct \doxymbox{\hyperlink{structblk__mq__hw__ctx}{blk\+\_\+mq\+\_\+hw\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries hctxs} \+[3]\+
+\item 
+\Hypertarget{structblk__mq__ctx_a99e59aa3542654ec3f51db11f62e8162}\label{structblk__mq__ctx_a99e59aa3542654ec3f51db11f62e8162} 
+struct \doxymbox{\hyperlink{structrequest__queue}{request\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries queue}
+\item 
+\Hypertarget{structblk__mq__ctx_a6f8f0695597e104400d1b3f82005c813}\label{structblk__mq__ctx_a6f8f0695597e104400d1b3f82005c813} 
+struct \doxymbox{\hyperlink{structblk__mq__ctxs}{blk\+\_\+mq\+\_\+ctxs}} \texorpdfstring{$\ast$}{*} {\bfseries ctxs}
+\item 
+\Hypertarget{structblk__mq__ctx_a3e235ef21c1ed74f5fcf8156d2dcbb54}\label{structblk__mq__ctx_a3e235ef21c1ed74f5fcf8156d2dcbb54} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} {\bfseries kobj}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

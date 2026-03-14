@@ -1,0 +1,64 @@
+\doxysection{irq\+\_\+chip\+\_\+generic Struct Reference}
+\hypertarget{structirq__chip__generic}{}\label{structirq__chip__generic}\index{irq\_chip\_generic@{irq\_chip\_generic}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structirq__chip__generic_aabdc14e8fab5fa4d5b50bd3b6dde1ff8}\label{structirq__chip__generic_aabdc14e8fab5fa4d5b50bd3b6dde1ff8} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structirq__chip__generic_a2f9a206b96fe659eb071a106b8b20f8e}\label{structirq__chip__generic_a2f9a206b96fe659eb071a106b8b20f8e} 
+void \texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+base}
+\item 
+\Hypertarget{structirq__chip__generic_a4195dd24f26627db92664445421cf2e6}\label{structirq__chip__generic_a4195dd24f26627db92664445421cf2e6} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+readl} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structirq__chip__generic_a4c163c9d6720c8c73ff00edc85de8bb6}\label{structirq__chip__generic_a4c163c9d6720c8c73ff00edc85de8bb6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+writel} )(u32, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structirq__chip__generic_af77028539819f27bcae0e98de6f84039}\label{structirq__chip__generic_af77028539819f27bcae0e98de6f84039} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structirq__chip__generic}{irq\+\_\+chip\+\_\+generic}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structirq__chip__generic_a38880c0f9dd95482032d8c35cf85c419}\label{structirq__chip__generic_a38880c0f9dd95482032d8c35cf85c419} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structirq__chip__generic}{irq\+\_\+chip\+\_\+generic}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structirq__chip__generic_aeed8a939733469d3fcc6f616fe51fee5}\label{structirq__chip__generic_aeed8a939733469d3fcc6f616fe51fee5} 
+unsigned int {\bfseries irq\+\_\+base}
+\item 
+\Hypertarget{structirq__chip__generic_afbace1fceee49649a69373c516d4cac7}\label{structirq__chip__generic_afbace1fceee49649a69373c516d4cac7} 
+unsigned int {\bfseries irq\+\_\+cnt}
+\item 
+\Hypertarget{structirq__chip__generic_a4d8e1a4f4c29552f106651ea3dd14bd3}\label{structirq__chip__generic_a4d8e1a4f4c29552f106651ea3dd14bd3} 
+u32 {\bfseries mask\+\_\+cache}
+\item 
+\Hypertarget{structirq__chip__generic_a4ab413c238b1694f35f8a43e3e441bd7}\label{structirq__chip__generic_a4ab413c238b1694f35f8a43e3e441bd7} 
+u32 {\bfseries wake\+\_\+enabled}
+\item 
+\Hypertarget{structirq__chip__generic_abe1a8f5a2d41d2f8e198a5313e37d5aa}\label{structirq__chip__generic_abe1a8f5a2d41d2f8e198a5313e37d5aa} 
+u32 {\bfseries wake\+\_\+active}
+\item 
+\Hypertarget{structirq__chip__generic_a5975d481e7d81e41ee3c1a2ad661c190}\label{structirq__chip__generic_a5975d481e7d81e41ee3c1a2ad661c190} 
+unsigned int {\bfseries num\+\_\+ct}
+\item 
+\Hypertarget{structirq__chip__generic_a2776b1710dc12ba6e1b88c76887cbe6c}\label{structirq__chip__generic_a2776b1710dc12ba6e1b88c76887cbe6c} 
+void \texorpdfstring{$\ast$}{*} {\bfseries private}
+\item 
+\Hypertarget{structirq__chip__generic_a6f52c36de72293054b0be9851bce9fcf}\label{structirq__chip__generic_a6f52c36de72293054b0be9851bce9fcf} 
+long unsigned int {\bfseries installed}
+\item 
+\Hypertarget{structirq__chip__generic_a4dddb916fe5ec7b29cc9d6f1cf5cc6d6}\label{structirq__chip__generic_a4dddb916fe5ec7b29cc9d6f1cf5cc6d6} 
+long unsigned int {\bfseries unused}
+\item 
+\Hypertarget{structirq__chip__generic_a8012a010dd232fe5542d197e6e8e8c57}\label{structirq__chip__generic_a8012a010dd232fe5542d197e6e8e8c57} 
+struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries domain}
+\item 
+\Hypertarget{structirq__chip__generic_a8f534e7dbff78813f723c7920d62db7a}\label{structirq__chip__generic_a8f534e7dbff78813f723c7920d62db7a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structirq__chip__generic_a6701d459bf49bbb1342a11736b080ecd}\label{structirq__chip__generic_a6701d459bf49bbb1342a11736b080ecd} 
+struct \doxymbox{\hyperlink{structirq__chip__type}{irq\+\_\+chip\+\_\+type}} {\bfseries chip\+\_\+types} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\doxysection{thermal\+\_\+zone\+\_\+device Struct Reference}
+\hypertarget{structthermal__zone__device}{}\label{structthermal__zone__device}\index{thermal\_zone\_device@{thermal\_zone\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structthermal__zone__device_a8d0e3b5715e99a615b0b10d7a0910ea1}\label{structthermal__zone__device_a8d0e3b5715e99a615b0b10d7a0910ea1} 
+int {\bfseries id}
+\item 
+\Hypertarget{structthermal__zone__device_ae09bf08cdd942b31a4ad50b85d58d23e}\label{structthermal__zone__device_ae09bf08cdd942b31a4ad50b85d58d23e} 
+char {\bfseries type} \+[20]\+
+\item 
+\Hypertarget{structthermal__zone__device_aaf4196cbb767e6253a7e072fa77ddf49}\label{structthermal__zone__device_aaf4196cbb767e6253a7e072fa77ddf49} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries device}
+\item 
+\Hypertarget{structthermal__zone__device_a8465a8fe51d2a93acebdf925207516bc}\label{structthermal__zone__device_a8465a8fe51d2a93acebdf925207516bc} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries removal}
+\item 
+\Hypertarget{structthermal__zone__device_a3d72703b53fa3697951a30b15fed92da}\label{structthermal__zone__device_a3d72703b53fa3697951a30b15fed92da} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries resume}
+\item 
+\Hypertarget{structthermal__zone__device_ab17b8215f0ebfc3fbd9304c881931238}\label{structthermal__zone__device_ab17b8215f0ebfc3fbd9304c881931238} 
+struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} {\bfseries trips\+\_\+attribute\+\_\+group}
+\item 
+\Hypertarget{structthermal__zone__device_a8127a28b2109a90b14c2a40148479550}\label{structthermal__zone__device_a8127a28b2109a90b14c2a40148479550} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries trips\+\_\+high}
+\item 
+\Hypertarget{structthermal__zone__device_a803f5415e55001cf4e1e53183d20a06d}\label{structthermal__zone__device_a803f5415e55001cf4e1e53183d20a06d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries trips\+\_\+reached}
+\item 
+\Hypertarget{structthermal__zone__device_a57b91501ceec6b75ca5b10aad565c2bf}\label{structthermal__zone__device_a57b91501ceec6b75ca5b10aad565c2bf} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries trips\+\_\+invalid}
+\item 
+\Hypertarget{structthermal__zone__device_a6ee673662252881ed7f111cadd7294b5}\label{structthermal__zone__device_a6ee673662252881ed7f111cadd7294b5} 
+enum thermal\+\_\+device\+\_\+mode {\bfseries mode}
+\item 
+\Hypertarget{structthermal__zone__device_a382457feeab2522146b83b7bf6836208}\label{structthermal__zone__device_a382457feeab2522146b83b7bf6836208} 
+void \texorpdfstring{$\ast$}{*} {\bfseries devdata}
+\item 
+\Hypertarget{structthermal__zone__device_a9275152401ab74234dabdd2121ba0bc8}\label{structthermal__zone__device_a9275152401ab74234dabdd2121ba0bc8} 
+int {\bfseries num\+\_\+trips}
+\item 
+\Hypertarget{structthermal__zone__device_a23e9477f9929678ac4359f2175bdce5f}\label{structthermal__zone__device_a23e9477f9929678ac4359f2175bdce5f} 
+long unsigned int {\bfseries passive\+\_\+delay\+\_\+jiffies}
+\item 
+\Hypertarget{structthermal__zone__device_aa70bd9d862c05e018beec5ea3b8476e6}\label{structthermal__zone__device_aa70bd9d862c05e018beec5ea3b8476e6} 
+long unsigned int {\bfseries polling\+\_\+delay\+\_\+jiffies}
+\item 
+\Hypertarget{structthermal__zone__device_a812709e0a949b2a5af38c3e2df663445}\label{structthermal__zone__device_a812709e0a949b2a5af38c3e2df663445} 
+long unsigned int {\bfseries recheck\+\_\+delay\+\_\+jiffies}
+\item 
+\Hypertarget{structthermal__zone__device_ac6d0a0e045dbbaa39246f275d197278d}\label{structthermal__zone__device_ac6d0a0e045dbbaa39246f275d197278d} 
+int {\bfseries temperature}
+\item 
+\Hypertarget{structthermal__zone__device_a19ced95b01f24d2892c654331d673eb2}\label{structthermal__zone__device_a19ced95b01f24d2892c654331d673eb2} 
+int {\bfseries last\+\_\+temperature}
+\item 
+\Hypertarget{structthermal__zone__device_aaf163bb482d5e50539eb13731db614f7}\label{structthermal__zone__device_aaf163bb482d5e50539eb13731db614f7} 
+int {\bfseries emul\+\_\+temperature}
+\item 
+\Hypertarget{structthermal__zone__device_a04c4657621d5e86ae52ba8280ad1acfe}\label{structthermal__zone__device_a04c4657621d5e86ae52ba8280ad1acfe} 
+int {\bfseries passive}
+\item 
+\Hypertarget{structthermal__zone__device_a6b1dba53c2809adb094e25d84c63b610}\label{structthermal__zone__device_a6b1dba53c2809adb094e25d84c63b610} 
+int {\bfseries prev\+\_\+low\+\_\+trip}
+\item 
+\Hypertarget{structthermal__zone__device_af447ef1385af7c3b605c7decbf0bba8e}\label{structthermal__zone__device_af447ef1385af7c3b605c7decbf0bba8e} 
+int {\bfseries prev\+\_\+high\+\_\+trip}
+\item 
+\Hypertarget{structthermal__zone__device_adc6350ee34243f9eafacf07d8e4c1904}\label{structthermal__zone__device_adc6350ee34243f9eafacf07d8e4c1904} 
+struct \doxymbox{\hyperlink{structthermal__zone__device__ops}{thermal\+\_\+zone\+\_\+device\+\_\+ops}} {\bfseries ops}
+\item 
+\Hypertarget{structthermal__zone__device_a4e0d6addcc7bb039e3d100e97571fc10}\label{structthermal__zone__device_a4e0d6addcc7bb039e3d100e97571fc10} 
+struct \doxymbox{\hyperlink{structthermal__zone__params}{thermal\+\_\+zone\+\_\+params}} \texorpdfstring{$\ast$}{*} {\bfseries tzp}
+\item 
+\Hypertarget{structthermal__zone__device_ac9fa5bc642cbf67d52fae1a70118e5d2}\label{structthermal__zone__device_ac9fa5bc642cbf67d52fae1a70118e5d2} 
+struct \doxymbox{\hyperlink{structthermal__governor}{thermal\+\_\+governor}} \texorpdfstring{$\ast$}{*} {\bfseries governor}
+\item 
+\Hypertarget{structthermal__zone__device_ac6854b787a34c312ccfda49b122c1827}\label{structthermal__zone__device_ac6854b787a34c312ccfda49b122c1827} 
+void \texorpdfstring{$\ast$}{*} {\bfseries governor\+\_\+data}
+\item 
+\Hypertarget{structthermal__zone__device_a2cf192e1ae6304e735dca36d3fd15319}\label{structthermal__zone__device_a2cf192e1ae6304e735dca36d3fd15319} 
+struct \doxymbox{\hyperlink{structida}{ida}} {\bfseries ida}
+\item 
+\Hypertarget{structthermal__zone__device_a8773c423234d9f0dc49b5c4fd92af4e9}\label{structthermal__zone__device_a8773c423234d9f0dc49b5c4fd92af4e9} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries lock}
+\item 
+\Hypertarget{structthermal__zone__device_ac3eb0ebcc9490f53509ed969f294b241}\label{structthermal__zone__device_ac3eb0ebcc9490f53509ed969f294b241} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structthermal__zone__device_a17d988d91c80d449599beb125c85ce58}\label{structthermal__zone__device_a17d988d91c80d449599beb125c85ce58} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries poll\+\_\+queue}
+\item 
+\Hypertarget{structthermal__zone__device_a245613861a2ec77fd8ee8e9ed4c724b1}\label{structthermal__zone__device_a245613861a2ec77fd8ee8e9ed4c724b1} 
+enum thermal\+\_\+notify\+\_\+event {\bfseries notify\+\_\+event}
+\item 
+\Hypertarget{structthermal__zone__device_a6a2917f7834911f71048a4cea6294b94}\label{structthermal__zone__device_a6a2917f7834911f71048a4cea6294b94} 
+u8 {\bfseries state}
+\item 
+\Hypertarget{structthermal__zone__device_a8ca5b7cd297ee63baee703d6dd50c859}\label{structthermal__zone__device_a8ca5b7cd297ee63baee703d6dd50c859} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries user\+\_\+thresholds}
+\item 
+\Hypertarget{structthermal__zone__device_aa3ea3e5196cc378d7f1578b11b008ba8}\label{structthermal__zone__device_aa3ea3e5196cc378d7f1578b11b008ba8} 
+struct \doxymbox{\hyperlink{structthermal__trip__desc}{thermal\+\_\+trip\+\_\+desc}} {\bfseries trips} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

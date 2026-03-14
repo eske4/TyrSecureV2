@@ -1,0 +1,67 @@
+\doxysection{inet\+\_\+timewait\+\_\+sock Struct Reference}
+\hypertarget{structinet__timewait__sock}{}\label{structinet__timewait__sock}\index{inet\_timewait\_sock@{inet\_timewait\_sock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinet__timewait__sock_af21da83d9ae1d8adac4e1f9a7f193522}\label{structinet__timewait__sock_af21da83d9ae1d8adac4e1f9a7f193522} 
+struct \doxymbox{\hyperlink{structsock__common}{sock\+\_\+common}} {\bfseries \+\_\+\+\_\+tw\+\_\+common}
+\item 
+\Hypertarget{structinet__timewait__sock_a574dfb155210b525c6cd5607a70b2a04}\label{structinet__timewait__sock_a574dfb155210b525c6cd5607a70b2a04} 
+\+\_\+\+\_\+u32 {\bfseries tw\+\_\+mark}
+\item 
+\Hypertarget{structinet__timewait__sock_a74d4a6e3b033a127b0ffa292b5130b0f}\label{structinet__timewait__sock_a74d4a6e3b033a127b0ffa292b5130b0f} 
+unsigned char {\bfseries tw\+\_\+substate}
+\item 
+\Hypertarget{structinet__timewait__sock_af79ef6890d2940b6e7b22de890844c63}\label{structinet__timewait__sock_af79ef6890d2940b6e7b22de890844c63} 
+unsigned char {\bfseries tw\+\_\+rcv\+\_\+wscale}
+\item 
+\Hypertarget{structinet__timewait__sock_a9492132ec6e76755b8066b606085af81}\label{structinet__timewait__sock_a9492132ec6e76755b8066b606085af81} 
+\+\_\+\+\_\+be16 {\bfseries tw\+\_\+sport}
+\item 
+\Hypertarget{structinet__timewait__sock_a02d8107b6a9a1ea287c80183bdc47e6a}\label{structinet__timewait__sock_a02d8107b6a9a1ea287c80183bdc47e6a} 
+unsigned int {\bfseries tw\+\_\+transparent}:\+ 1
+\item 
+\Hypertarget{structinet__timewait__sock_a53eb03959cb8c5f10f1e430b096a009d}\label{structinet__timewait__sock_a53eb03959cb8c5f10f1e430b096a009d} 
+unsigned int {\bfseries tw\+\_\+flowlabel}:\+ 20
+\item 
+\Hypertarget{structinet__timewait__sock_a771ac4711b2756a3b0f068a93429bc37}\label{structinet__timewait__sock_a771ac4711b2756a3b0f068a93429bc37} 
+unsigned int {\bfseries tw\+\_\+usec\+\_\+ts}:\+ 1
+\item 
+\Hypertarget{structinet__timewait__sock_acf6c19f750540cda9306882717183623}\label{structinet__timewait__sock_acf6c19f750540cda9306882717183623} 
+unsigned int {\bfseries tw\+\_\+connect\+\_\+bind}:\+ 1
+\item 
+\Hypertarget{structinet__timewait__sock_a61c060c02f24b2e2d344ac96d4a64fde}\label{structinet__timewait__sock_a61c060c02f24b2e2d344ac96d4a64fde} 
+unsigned int {\bfseries tw\+\_\+pad}:\+ 1
+\item 
+\Hypertarget{structinet__timewait__sock_a7464243674d8b8005bca1589cb71f0c1}\label{structinet__timewait__sock_a7464243674d8b8005bca1589cb71f0c1} 
+unsigned int {\bfseries tw\+\_\+tos}:\+ 8
+\item 
+\Hypertarget{structinet__timewait__sock_a663089807c05d42508533b86de402f82}\label{structinet__timewait__sock_a663089807c05d42508533b86de402f82} 
+u32 {\bfseries tw\+\_\+txhash}
+\item 
+\Hypertarget{structinet__timewait__sock_a02de5ce6661e4177214a6274356d7789}\label{structinet__timewait__sock_a02de5ce6661e4177214a6274356d7789} 
+u32 {\bfseries tw\+\_\+priority}
+\item 
+\Hypertarget{structinet__timewait__sock_abe129254fb9b6967bfc441558da3b53b}\label{structinet__timewait__sock_abe129254fb9b6967bfc441558da3b53b} 
+u32 {\bfseries tw\+\_\+entry\+\_\+stamp}
+\item 
+\Hypertarget{structinet__timewait__sock_a61994f0d87a03900312175ac5b61c9b0}\label{structinet__timewait__sock_a61994f0d87a03900312175ac5b61c9b0} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries tw\+\_\+timer}
+\item 
+\Hypertarget{structinet__timewait__sock_a061d3aaeb02bb8495467156b125072d4}\label{structinet__timewait__sock_a061d3aaeb02bb8495467156b125072d4} 
+struct \doxymbox{\hyperlink{structinet__bind__bucket}{inet\+\_\+bind\+\_\+bucket}} \texorpdfstring{$\ast$}{*} {\bfseries tw\+\_\+tb}
+\item 
+\Hypertarget{structinet__timewait__sock_a64b355beda4411e81cfa9430b0a2aed0}\label{structinet__timewait__sock_a64b355beda4411e81cfa9430b0a2aed0} 
+struct \doxymbox{\hyperlink{structinet__bind2__bucket}{inet\+\_\+bind2\+\_\+bucket}} \texorpdfstring{$\ast$}{*} {\bfseries tw\+\_\+tb2}
+\item 
+\Hypertarget{structinet__timewait__sock_add1bb2a3e01936ed7d92e71857425259}\label{structinet__timewait__sock_add1bb2a3e01936ed7d92e71857425259} 
+struct \doxymbox{\hyperlink{structpsp__assoc}{psp\+\_\+assoc}} \texorpdfstring{$\ast$}{*} {\bfseries psp\+\_\+assoc}
+\item 
+\Hypertarget{structinet__timewait__sock_a6b56c7d8921e1f188fb179afbfe2eee7}\label{structinet__timewait__sock_a6b56c7d8921e1f188fb179afbfe2eee7} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries tw\+\_\+validate\+\_\+xmit\+\_\+skb} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

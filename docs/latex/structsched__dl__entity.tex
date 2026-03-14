@@ -1,0 +1,82 @@
+\doxysection{sched\+\_\+dl\+\_\+entity Struct Reference}
+\hypertarget{structsched__dl__entity}{}\label{structsched__dl__entity}\index{sched\_dl\_entity@{sched\_dl\_entity}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsched__dl__entity_a8af41cafe45631cf86228e09a4aebb79}\label{structsched__dl__entity_a8af41cafe45631cf86228e09a4aebb79} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries rb\+\_\+node}
+\item 
+\Hypertarget{structsched__dl__entity_af07086c96cee826a8a2d2a30a8926ac4}\label{structsched__dl__entity_af07086c96cee826a8a2d2a30a8926ac4} 
+u64 {\bfseries dl\+\_\+runtime}
+\item 
+\Hypertarget{structsched__dl__entity_ab5850ca343a4617c3561d4852717d355}\label{structsched__dl__entity_ab5850ca343a4617c3561d4852717d355} 
+u64 {\bfseries dl\+\_\+deadline}
+\item 
+\Hypertarget{structsched__dl__entity_ab70e21b56ef5e3c6696cb4b5ce32f6d2}\label{structsched__dl__entity_ab70e21b56ef5e3c6696cb4b5ce32f6d2} 
+u64 {\bfseries dl\+\_\+period}
+\item 
+\Hypertarget{structsched__dl__entity_ac2e39289224db6ae50a082880c6642e2}\label{structsched__dl__entity_ac2e39289224db6ae50a082880c6642e2} 
+u64 {\bfseries dl\+\_\+bw}
+\item 
+\Hypertarget{structsched__dl__entity_a6923a0b1d7e4c43f42d3f352f5d654e9}\label{structsched__dl__entity_a6923a0b1d7e4c43f42d3f352f5d654e9} 
+u64 {\bfseries dl\+\_\+density}
+\item 
+\Hypertarget{structsched__dl__entity_a8def71bd55623c67efa67a2fd0cd667a}\label{structsched__dl__entity_a8def71bd55623c67efa67a2fd0cd667a} 
+s64 {\bfseries runtime}
+\item 
+\Hypertarget{structsched__dl__entity_a2bf99adb40ccc2c7305fe3bb4a0d5501}\label{structsched__dl__entity_a2bf99adb40ccc2c7305fe3bb4a0d5501} 
+u64 {\bfseries deadline}
+\item 
+\Hypertarget{structsched__dl__entity_a4900c1b491c70d8b457ab160c2f88e91}\label{structsched__dl__entity_a4900c1b491c70d8b457ab160c2f88e91} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structsched__dl__entity_ac780289ee11e4b4e20975d1298d1a084}\label{structsched__dl__entity_ac780289ee11e4b4e20975d1298d1a084} 
+unsigned int {\bfseries dl\+\_\+throttled}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_a8a394b73b3fb5e2e28a5a359dd6f737a}\label{structsched__dl__entity_a8a394b73b3fb5e2e28a5a359dd6f737a} 
+unsigned int {\bfseries dl\+\_\+yielded}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_a944f4421c8b117034cdea5520eaaad74}\label{structsched__dl__entity_a944f4421c8b117034cdea5520eaaad74} 
+unsigned int {\bfseries dl\+\_\+non\+\_\+contending}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_aa748bd8fcf3de2a7068a223b7f715ce5}\label{structsched__dl__entity_aa748bd8fcf3de2a7068a223b7f715ce5} 
+unsigned int {\bfseries dl\+\_\+overrun}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_ac5752547be5bee5efa369ff43555aad5}\label{structsched__dl__entity_ac5752547be5bee5efa369ff43555aad5} 
+unsigned int {\bfseries dl\+\_\+server}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_ae5efcf1395033c8ef90fb735f056c464}\label{structsched__dl__entity_ae5efcf1395033c8ef90fb735f056c464} 
+unsigned int {\bfseries dl\+\_\+server\+\_\+active}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_aa39952327cae053f7ac0ceec629a8a9d}\label{structsched__dl__entity_aa39952327cae053f7ac0ceec629a8a9d} 
+unsigned int {\bfseries dl\+\_\+defer}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_add49b0acb4a98fe6b0222865df4fd1e5}\label{structsched__dl__entity_add49b0acb4a98fe6b0222865df4fd1e5} 
+unsigned int {\bfseries dl\+\_\+defer\+\_\+armed}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_a682daa60d12e5e7e1d2fc7bffdf6123a}\label{structsched__dl__entity_a682daa60d12e5e7e1d2fc7bffdf6123a} 
+unsigned int {\bfseries dl\+\_\+defer\+\_\+running}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_a447a8067651069658988bdfd07ce1dc2}\label{structsched__dl__entity_a447a8067651069658988bdfd07ce1dc2} 
+unsigned int {\bfseries dl\+\_\+defer\+\_\+idle}:\+ 1
+\item 
+\Hypertarget{structsched__dl__entity_a22de82c7961f0831364fd156c7e78a85}\label{structsched__dl__entity_a22de82c7961f0831364fd156c7e78a85} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries dl\+\_\+timer}
+\item 
+\Hypertarget{structsched__dl__entity_aa8b754bfbdae0095dbe721a2322868be}\label{structsched__dl__entity_aa8b754bfbdae0095dbe721a2322868be} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries inactive\+\_\+timer}
+\item 
+\Hypertarget{structsched__dl__entity_ac461996928aa0b1195583542a4b9c2bf}\label{structsched__dl__entity_ac461996928aa0b1195583542a4b9c2bf} 
+struct \doxymbox{\hyperlink{structrq}{rq}} \texorpdfstring{$\ast$}{*} {\bfseries rq}
+\item 
+\Hypertarget{structsched__dl__entity_a77cd02e17b43440d6be9b32662379236}\label{structsched__dl__entity_a77cd02e17b43440d6be9b32662379236} 
+dl\+\_\+server\+\_\+pick\+\_\+f {\bfseries server\+\_\+pick\+\_\+task}
+\item 
+\Hypertarget{structsched__dl__entity_a2fbf1295bc51e0315a4665642c210b62}\label{structsched__dl__entity_a2fbf1295bc51e0315a4665642c210b62} 
+struct \doxymbox{\hyperlink{structsched__dl__entity}{sched\+\_\+dl\+\_\+entity}} \texorpdfstring{$\ast$}{*} {\bfseries pi\+\_\+se}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

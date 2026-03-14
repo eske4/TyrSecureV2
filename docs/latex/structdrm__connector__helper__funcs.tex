@@ -1,0 +1,46 @@
+\doxysection{drm\+\_\+connector\+\_\+helper\+\_\+funcs Struct Reference}
+\hypertarget{structdrm__connector__helper__funcs}{}\label{structdrm__connector__helper__funcs}\index{drm\_connector\_helper\_funcs@{drm\_connector\_helper\_funcs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_ac43f2a8a1e790ce7411280dbf34d16ea}\label{structdrm__connector__helper__funcs_ac43f2a8a1e790ce7411280dbf34d16ea} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+modes} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_abceed64302922e8c6986541ba984cb2e}\label{structdrm__connector__helper__funcs_abceed64302922e8c6986541ba984cb2e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries detect\+\_\+ctx} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__modeset__acquire__ctx}{drm\+\_\+modeset\+\_\+acquire\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_abcedb7a73ce31916df6eff233e5b82f6}\label{structdrm__connector__helper__funcs_abcedb7a73ce31916df6eff233e5b82f6} 
+enum drm\+\_\+mode\+\_\+status(\texorpdfstring{$\ast$}{*} {\bfseries mode\+\_\+valid} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_a86f0230f81c93877e1d97419759751cc}\label{structdrm__connector__helper__funcs_a86f0230f81c93877e1d97419759751cc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mode\+\_\+valid\+\_\+ctx} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__modeset__acquire__ctx}{drm\+\_\+modeset\+\_\+acquire\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, enum drm\+\_\+mode\+\_\+status \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_ae352d3d93a16e3fc1e943d409d75f900}\label{structdrm__connector__helper__funcs_ae352d3d93a16e3fc1e943d409d75f900} 
+struct \doxymbox{\hyperlink{structdrm__encoder}{drm\+\_\+encoder}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries best\+\_\+encoder} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_ac4cb73daca1bca71040997e9f1a00829}\label{structdrm__connector__helper__funcs_ac4cb73daca1bca71040997e9f1a00829} 
+struct \doxymbox{\hyperlink{structdrm__encoder}{drm\+\_\+encoder}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+best\+\_\+encoder} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_a8b00d194f8cc48e78c394e8ce93cbc91}\label{structdrm__connector__helper__funcs_a8b00d194f8cc48e78c394e8ce93cbc91} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+check} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_a726f2aa15435ab6c2ee438e1d46da5b6}\label{structdrm__connector__helper__funcs_a726f2aa15435ab6c2ee438e1d46da5b6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+commit} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_a607a7af23d0778dc507fe129f09a4085}\label{structdrm__connector__helper__funcs_a607a7af23d0778dc507fe129f09a4085} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+writeback\+\_\+job} )(struct \doxymbox{\hyperlink{structdrm__writeback__connector}{drm\+\_\+writeback\+\_\+connector}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__writeback__job}{drm\+\_\+writeback\+\_\+job}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_a0d3fd23ea6f3d7f65ca278c35f7a7943}\label{structdrm__connector__helper__funcs_a0d3fd23ea6f3d7f65ca278c35f7a7943} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup\+\_\+writeback\+\_\+job} )(struct \doxymbox{\hyperlink{structdrm__writeback__connector}{drm\+\_\+writeback\+\_\+connector}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__writeback__job}{drm\+\_\+writeback\+\_\+job}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_a39c69cb67f2b8d412138aaec67a9cfaf}\label{structdrm__connector__helper__funcs_a39c69cb67f2b8d412138aaec67a9cfaf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+hpd} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__connector__helper__funcs_ae7f01d3fbf5c1f0bd4181909117b178b}\label{structdrm__connector__helper__funcs_ae7f01d3fbf5c1f0bd4181909117b178b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable\+\_\+hpd} )(struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

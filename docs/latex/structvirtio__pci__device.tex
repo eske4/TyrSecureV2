@@ -1,0 +1,79 @@
+\doxysection{virtio\+\_\+pci\+\_\+device Struct Reference}
+\hypertarget{structvirtio__pci__device}{}\label{structvirtio__pci__device}\index{virtio\_pci\_device@{virtio\_pci\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtio__pci__device_acf79dbe7112ba30c66ad445b91eba648}\label{structvirtio__pci__device_acf79dbe7112ba30c66ad445b91eba648} 
+struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} {\bfseries vdev}
+\item 
+\Hypertarget{structvirtio__pci__device_a6334aa8415959a6048dda3b9d7e03783}\label{structvirtio__pci__device_a6334aa8415959a6048dda3b9d7e03783} 
+struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries pci\+\_\+dev}
+\item 
+\Hypertarget{structvirtio__pci__device_ae085f432a7310580b5d8937045fac6b6}\label{structvirtio__pci__device_ae085f432a7310580b5d8937045fac6b6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structvirtio__pci__legacy__device}{virtio\_pci\_legacy\_device}} {\bfseries ldev}\\
+\>struct \doxymbox{\hyperlink{structvirtio__pci__modern__device}{virtio\_pci\_modern\_device}} {\bfseries mdev}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structvirtio__pci__device_a0af9a3b43758f13aa5b1af3d078fdcd9}\label{structvirtio__pci__device_a0af9a3b43758f13aa5b1af3d078fdcd9} 
+bool {\bfseries is\+\_\+legacy}
+\item 
+\Hypertarget{structvirtio__pci__device_a465ad6b27eba92ccd94b67210e4888cb}\label{structvirtio__pci__device_a465ad6b27eba92ccd94b67210e4888cb} 
+u8 \texorpdfstring{$\ast$}{*} {\bfseries isr}
+\item 
+\Hypertarget{structvirtio__pci__device_a36d2565fa9a617e99a3d59638bd05e6b}\label{structvirtio__pci__device_a36d2565fa9a617e99a3d59638bd05e6b} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structvirtio__pci__device_a1e6306bbb17b18e9fe58059699812a6c}\label{structvirtio__pci__device_a1e6306bbb17b18e9fe58059699812a6c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries virtqueues}
+\item 
+\Hypertarget{structvirtio__pci__device_ad1c981c334722362fa2e9d970e68ad49}\label{structvirtio__pci__device_ad1c981c334722362fa2e9d970e68ad49} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries slow\+\_\+virtqueues}
+\item 
+\Hypertarget{structvirtio__pci__device_a135a754384e3ecf03f96ec5fdbd04020}\label{structvirtio__pci__device_a135a754384e3ecf03f96ec5fdbd04020} 
+struct \doxymbox{\hyperlink{structvirtio__pci__vq__info}{virtio\+\_\+pci\+\_\+vq\+\_\+info}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries vqs}
+\item 
+\Hypertarget{structvirtio__pci__device_aca1c4ab55c920f2a4256dccf348752cf}\label{structvirtio__pci__device_aca1c4ab55c920f2a4256dccf348752cf} 
+struct \doxymbox{\hyperlink{structvirtio__pci__admin__vq}{virtio\+\_\+pci\+\_\+admin\+\_\+vq}} {\bfseries admin\+\_\+vq}
+\item 
+\Hypertarget{structvirtio__pci__device_a45b1202f3e63a1a372b18d09fd897478}\label{structvirtio__pci__device_a45b1202f3e63a1a372b18d09fd897478} 
+int {\bfseries msix\+\_\+enabled}
+\item 
+\Hypertarget{structvirtio__pci__device_a136c0f0b35097bbdde39d6f8b48eac1d}\label{structvirtio__pci__device_a136c0f0b35097bbdde39d6f8b48eac1d} 
+int {\bfseries intx\+\_\+enabled}
+\item 
+\Hypertarget{structvirtio__pci__device_a0312f3bb304a46509f3e29b4b129571f}\label{structvirtio__pci__device_a0312f3bb304a46509f3e29b4b129571f} 
+cpumask\+\_\+var\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries msix\+\_\+affinity\+\_\+masks}
+\item 
+\Hypertarget{structvirtio__pci__device_a1b60fa8e491cfc94c55c696060dd6b30}\label{structvirtio__pci__device_a1b60fa8e491cfc94c55c696060dd6b30} 
+char(\texorpdfstring{$\ast$}{*} {\bfseries msix\+\_\+names} )\+[256]\+
+\item 
+\Hypertarget{structvirtio__pci__device_aebd7a1ff6b63b3af28190c041c404846}\label{structvirtio__pci__device_aebd7a1ff6b63b3af28190c041c404846} 
+unsigned int {\bfseries msix\+\_\+vectors}
+\item 
+\Hypertarget{structvirtio__pci__device_ac9f445d9d189f2aeb7cb17c3fb094abc}\label{structvirtio__pci__device_ac9f445d9d189f2aeb7cb17c3fb094abc} 
+unsigned int {\bfseries msix\+\_\+used\+\_\+vectors}
+\item 
+\Hypertarget{structvirtio__pci__device_a5660de676dd8c6e735b99deac7f8104c}\label{structvirtio__pci__device_a5660de676dd8c6e735b99deac7f8104c} 
+bool {\bfseries per\+\_\+vq\+\_\+vectors}
+\item 
+\Hypertarget{structvirtio__pci__device_a0a3f6beed97b8287ddbfbe9f93ab606d}\label{structvirtio__pci__device_a0a3f6beed97b8287ddbfbe9f93ab606d} 
+struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries setup\+\_\+vq} )(struct \doxymbox{\hyperlink{structvirtio__pci__device}{virtio\+\_\+pci\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvirtio__pci__vq__info}{virtio\+\_\+pci\+\_\+vq\+\_\+info}} \texorpdfstring{$\ast$}{*}, unsigned int, void(\texorpdfstring{$\ast$}{*})(struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*}), const char \texorpdfstring{$\ast$}{*}, bool, u16)
+\item 
+\Hypertarget{structvirtio__pci__device_a4892a5156dc0657bf74005ef51cdf563}\label{structvirtio__pci__device_a4892a5156dc0657bf74005ef51cdf563} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries del\+\_\+vq} )(struct \doxymbox{\hyperlink{structvirtio__pci__vq__info}{virtio\+\_\+pci\+\_\+vq\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__pci__device_af720c7011afd0d03ad7e9d158db45583}\label{structvirtio__pci__device_af720c7011afd0d03ad7e9d158db45583} 
+u16(\texorpdfstring{$\ast$}{*} {\bfseries config\+\_\+vector} )(struct \doxymbox{\hyperlink{structvirtio__pci__device}{virtio\+\_\+pci\+\_\+device}} \texorpdfstring{$\ast$}{*}, u16)
+\item 
+\Hypertarget{structvirtio__pci__device_a7f2bc5c3d987a822a3df7a35775903fb}\label{structvirtio__pci__device_a7f2bc5c3d987a822a3df7a35775903fb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries avq\+\_\+index} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*}, u16 \texorpdfstring{$\ast$}{*}, u16 \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

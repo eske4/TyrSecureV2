@@ -1,0 +1,40 @@
+\doxysection{nla\+\_\+policy Struct Reference}
+\hypertarget{structnla__policy}{}\label{structnla__policy}\index{nla\_policy@{nla\_policy}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnla__policy_ad1d6f5aabc57df120042efd5c0eee277}\label{structnla__policy_ad1d6f5aabc57df120042efd5c0eee277} 
+u8 {\bfseries type}
+\item 
+\Hypertarget{structnla__policy_a84c6ea29cb3ca1c1757f3131de2ac420}\label{structnla__policy_a84c6ea29cb3ca1c1757f3131de2ac420} 
+u8 {\bfseries validation\+\_\+type}
+\item 
+\Hypertarget{structnla__policy_a00860b49b7c9551714908f7231554a37}\label{structnla__policy_a00860b49b7c9551714908f7231554a37} 
+u16 {\bfseries len}
+\item 
+\Hypertarget{structnla__policy_afacf7b0d3fc077e35dee71b90a58473d}\label{structnla__policy_afacf7b0d3fc077e35dee71b90a58473d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u16 {\bfseries strict\_start\_type}\\
+\>const u32 {\bfseries bitfield32\_valid}\\
+\>const u32 {\bfseries mask}\\
+\>const char \texorpdfstring{$\ast$}{*} {\bfseries reject\_message}\\
+\>const struct \doxymbox{\hyperlink{structnla__policy}{nla\_policy}} \texorpdfstring{$\ast$}{*} {\bfseries nested\_policy}\\
+\>const struct \doxymbox{\hyperlink{structnetlink__range__validation}{netlink\_range\_validation}} \texorpdfstring{$\ast$}{*} {\bfseries range}\\
+\>const struct \doxymbox{\hyperlink{structnetlink__range__validation__signed}{netlink\_range\_validation\_signed}} \texorpdfstring{$\ast$}{*} {\bfseries range\_signed}\\
+\Hypertarget{unionnla__policy_1_1_0d212074152001154067342143154204107312265300177100_aed2c6b98525e0ff6272c86a6a3d76bac}\label{unionnla__policy_1_1_0d212074152001154067342143154204107312265300177100_aed2c6b98525e0ff6272c86a6a3d76bac} 
+\>struct \{\\
+\>\>s16 {\bfseries min}\\
+\>\>s16 {\bfseries max}\\
+\>\} \\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries validate} )(const struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*},\\
+\>\> struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\_ext\_ack}} \texorpdfstring{$\ast$}{*})\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

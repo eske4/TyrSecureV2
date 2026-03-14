@@ -1,0 +1,220 @@
+\doxysection{Scsi\+\_\+\+Host Struct Reference}
+\hypertarget{structScsi__Host}{}\label{structScsi__Host}\index{Scsi\_Host@{Scsi\_Host}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structScsi__Host_a8828a1828d638c99e8c6551f09f4e404}\label{structScsi__Host_a8828a1828d638c99e8c6551f09f4e404} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries \+\_\+\+\_\+devices}
+\item 
+\Hypertarget{structScsi__Host_a58c2099d8e491f2e35b25d6c0d20a4bd}\label{structScsi__Host_a58c2099d8e491f2e35b25d6c0d20a4bd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries \+\_\+\+\_\+targets}
+\item 
+\Hypertarget{structScsi__Host_a1b2d5ddf68557cc9f8d50a04d4530e29}\label{structScsi__Host_a1b2d5ddf68557cc9f8d50a04d4530e29} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries starved\+\_\+list}
+\item 
+\Hypertarget{structScsi__Host_a7a417cf68973e1f58bc6bf23a0d108d8}\label{structScsi__Host_a7a417cf68973e1f58bc6bf23a0d108d8} 
+spinlock\+\_\+t {\bfseries default\+\_\+lock}
+\item 
+\Hypertarget{structScsi__Host_afc30918bfc18a2e5533e4640f2b0232f}\label{structScsi__Host_afc30918bfc18a2e5533e4640f2b0232f} 
+spinlock\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries host\+\_\+lock}
+\item 
+\Hypertarget{structScsi__Host_aa20265ca495e4dfacbfc0e701e714434}\label{structScsi__Host_aa20265ca495e4dfacbfc0e701e714434} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries scan\+\_\+mutex}
+\item 
+\Hypertarget{structScsi__Host_aaa193802c5e4b8a9f89e7ea6d9957356}\label{structScsi__Host_aaa193802c5e4b8a9f89e7ea6d9957356} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries eh\+\_\+abort\+\_\+list}
+\item 
+\Hypertarget{structScsi__Host_a295c4ebe2fda407cfda0896e4dac0ea5}\label{structScsi__Host_a295c4ebe2fda407cfda0896e4dac0ea5} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries eh\+\_\+cmd\+\_\+q}
+\item 
+\Hypertarget{structScsi__Host_a3a0b68a263ad9b262654582c0fe92300}\label{structScsi__Host_a3a0b68a263ad9b262654582c0fe92300} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries ehandler}
+\item 
+\Hypertarget{structScsi__Host_a39f4d6efeceec7bf921ab35a12eb7f64}\label{structScsi__Host_a39f4d6efeceec7bf921ab35a12eb7f64} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} \texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+action}
+\item 
+\Hypertarget{structScsi__Host_a81b76f1a1dba8be533f8271400da0d4f}\label{structScsi__Host_a81b76f1a1dba8be533f8271400da0d4f} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries host\+\_\+wait}
+\item 
+\Hypertarget{structScsi__Host_a8e66da390d4c10d1e2f34ff4cf435043}\label{structScsi__Host_a8e66da390d4c10d1e2f34ff4cf435043} 
+const struct \doxymbox{\hyperlink{structscsi__host__template}{scsi\+\_\+host\+\_\+template}} \texorpdfstring{$\ast$}{*} {\bfseries hostt}
+\item 
+\Hypertarget{structScsi__Host_ac60a37e16036880e8fc0026684625c00}\label{structScsi__Host_ac60a37e16036880e8fc0026684625c00} 
+struct \doxymbox{\hyperlink{structscsi__transport__template}{scsi\+\_\+transport\+\_\+template}} \texorpdfstring{$\ast$}{*} {\bfseries transportt}
+\item 
+\Hypertarget{structScsi__Host_a07bad93ddc3ab7f3c55284dee56adda4}\label{structScsi__Host_a07bad93ddc3ab7f3c55284dee56adda4} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries tagset\+\_\+refcnt}
+\item 
+\Hypertarget{structScsi__Host_a7fddaa156b37a9a2415bc3e0f15f3999}\label{structScsi__Host_a7fddaa156b37a9a2415bc3e0f15f3999} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries tagset\+\_\+freed}
+\item 
+\Hypertarget{structScsi__Host_a2431674aa60e1de015cd15040b2416e2}\label{structScsi__Host_a2431674aa60e1de015cd15040b2416e2} 
+struct \doxymbox{\hyperlink{structblk__mq__tag__set}{blk\+\_\+mq\+\_\+tag\+\_\+set}} {\bfseries tag\+\_\+set}
+\item 
+\Hypertarget{structScsi__Host_ab5d961d77be2f1625ab96853825f7017}\label{structScsi__Host_ab5d961d77be2f1625ab96853825f7017} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries host\+\_\+blocked}
+\item 
+\Hypertarget{structScsi__Host_adde4e655ac34034ffdec6a011759099f}\label{structScsi__Host_adde4e655ac34034ffdec6a011759099f} 
+unsigned int {\bfseries host\+\_\+failed}
+\item 
+\Hypertarget{structScsi__Host_ad021e0741b8cd003719cf4d83faa3cfc}\label{structScsi__Host_ad021e0741b8cd003719cf4d83faa3cfc} 
+unsigned int {\bfseries host\+\_\+eh\+\_\+scheduled}
+\item 
+\Hypertarget{structScsi__Host_a1966b9171939fad8ebb4d33a3ffeb7f3}\label{structScsi__Host_a1966b9171939fad8ebb4d33a3ffeb7f3} 
+unsigned int {\bfseries host\+\_\+no}
+\item 
+\Hypertarget{structScsi__Host_a95fe73349ba90e21b30fdec939008dd0}\label{structScsi__Host_a95fe73349ba90e21b30fdec939008dd0} 
+int {\bfseries eh\+\_\+deadline}
+\item 
+\Hypertarget{structScsi__Host_aa19515b885187bb9f01370a401d84dd6}\label{structScsi__Host_aa19515b885187bb9f01370a401d84dd6} 
+long unsigned int {\bfseries last\+\_\+reset}
+\item 
+\Hypertarget{structScsi__Host_a468f847e956a8b25cc87dd2ad300bb1f}\label{structScsi__Host_a468f847e956a8b25cc87dd2ad300bb1f} 
+unsigned int {\bfseries max\+\_\+channel}
+\item 
+\Hypertarget{structScsi__Host_a45086bd6eb44b77d8bbc09b16c41e22a}\label{structScsi__Host_a45086bd6eb44b77d8bbc09b16c41e22a} 
+unsigned int {\bfseries max\+\_\+id}
+\item 
+\Hypertarget{structScsi__Host_a964486e8c474bd7e89be3bfc96c47699}\label{structScsi__Host_a964486e8c474bd7e89be3bfc96c47699} 
+u64 {\bfseries max\+\_\+lun}
+\item 
+\Hypertarget{structScsi__Host_ae9ef86c4f40fc4ff19e8e9bb06c619a6}\label{structScsi__Host_ae9ef86c4f40fc4ff19e8e9bb06c619a6} 
+unsigned int {\bfseries unique\+\_\+id}
+\item 
+\Hypertarget{structScsi__Host_a3b13df1f650a60a3c2026e6a7366060f}\label{structScsi__Host_a3b13df1f650a60a3c2026e6a7366060f} 
+short unsigned int {\bfseries max\+\_\+cmd\+\_\+len}
+\item 
+\Hypertarget{structScsi__Host_ab7453fee201474dfc18b5620fd22c2f5}\label{structScsi__Host_ab7453fee201474dfc18b5620fd22c2f5} 
+int {\bfseries this\+\_\+id}
+\item 
+\Hypertarget{structScsi__Host_a024089d89c2d2257d276a27ec4457716}\label{structScsi__Host_a024089d89c2d2257d276a27ec4457716} 
+int {\bfseries can\+\_\+queue}
+\item 
+\Hypertarget{structScsi__Host_a44061249b9e1b24cfb8ecd76344a63f1}\label{structScsi__Host_a44061249b9e1b24cfb8ecd76344a63f1} 
+unsigned int {\bfseries nr\+\_\+reserved\+\_\+cmds}
+\item 
+\Hypertarget{structScsi__Host_ab22220da4b31075ab4675f84f1a3a021}\label{structScsi__Host_ab22220da4b31075ab4675f84f1a3a021} 
+short int {\bfseries cmd\+\_\+per\+\_\+lun}
+\item 
+\Hypertarget{structScsi__Host_a80af245f1bcd2326087699273ae5b28f}\label{structScsi__Host_a80af245f1bcd2326087699273ae5b28f} 
+short unsigned int {\bfseries sg\+\_\+tablesize}
+\item 
+\Hypertarget{structScsi__Host_a8662da2f6d57eb147ce45e9e51f1c071}\label{structScsi__Host_a8662da2f6d57eb147ce45e9e51f1c071} 
+short unsigned int {\bfseries sg\+\_\+prot\+\_\+tablesize}
+\item 
+\Hypertarget{structScsi__Host_a0a1b2918bfb4de976c5a0efc0d6ee5d5}\label{structScsi__Host_a0a1b2918bfb4de976c5a0efc0d6ee5d5} 
+unsigned int {\bfseries max\+\_\+sectors}
+\item 
+\Hypertarget{structScsi__Host_aab72154b966bbad011cbd5444100b267}\label{structScsi__Host_aab72154b966bbad011cbd5444100b267} 
+unsigned int {\bfseries opt\+\_\+sectors}
+\item 
+\Hypertarget{structScsi__Host_a60f74f1302e8ac1c62f405aab9d4c5b8}\label{structScsi__Host_a60f74f1302e8ac1c62f405aab9d4c5b8} 
+unsigned int {\bfseries max\+\_\+segment\+\_\+size}
+\item 
+\Hypertarget{structScsi__Host_af1ea175b4eb6ce1e2bfe8dd82b9b4e87}\label{structScsi__Host_af1ea175b4eb6ce1e2bfe8dd82b9b4e87} 
+unsigned int {\bfseries dma\+\_\+alignment}
+\item 
+\Hypertarget{structScsi__Host_a90c6be6f65898d7b34043fef5ce84f22}\label{structScsi__Host_a90c6be6f65898d7b34043fef5ce84f22} 
+long unsigned int {\bfseries dma\+\_\+boundary}
+\item 
+\Hypertarget{structScsi__Host_a6b11642f0b96080cf9349dcf4ec96ac3}\label{structScsi__Host_a6b11642f0b96080cf9349dcf4ec96ac3} 
+long unsigned int {\bfseries virt\+\_\+boundary\+\_\+mask}
+\item 
+\Hypertarget{structScsi__Host_a6024d97519f960cb3de01f1b3676e461}\label{structScsi__Host_a6024d97519f960cb3de01f1b3676e461} 
+unsigned int {\bfseries nr\+\_\+hw\+\_\+queues}
+\item 
+\Hypertarget{structScsi__Host_a0b74dcc934309a79be38fb26accad6c7}\label{structScsi__Host_a0b74dcc934309a79be38fb26accad6c7} 
+unsigned int {\bfseries nr\+\_\+maps}
+\item 
+\Hypertarget{structScsi__Host_a202e12e165896ae153b31bd4029be3d7}\label{structScsi__Host_a202e12e165896ae153b31bd4029be3d7} 
+unsigned int {\bfseries active\+\_\+mode}:\+ 2
+\item 
+\Hypertarget{structScsi__Host_a4b1735d73e1c477626c67740583cab1a}\label{structScsi__Host_a4b1735d73e1c477626c67740583cab1a} 
+unsigned int {\bfseries host\+\_\+self\+\_\+blocked}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_a7cc555133bc76b4b191977e95bfec54b}\label{structScsi__Host_a7cc555133bc76b4b191977e95bfec54b} 
+unsigned int {\bfseries reverse\+\_\+ordering}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_af413b662e1b63994aee7eab785dc3277}\label{structScsi__Host_af413b662e1b63994aee7eab785dc3277} 
+unsigned int {\bfseries tmf\+\_\+in\+\_\+progress}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_ac078b97511da535432c3944cf414dd6f}\label{structScsi__Host_ac078b97511da535432c3944cf414dd6f} 
+unsigned int {\bfseries async\+\_\+scan}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_a0daec9c1172e3477f3503d283f4b7cdb}\label{structScsi__Host_a0daec9c1172e3477f3503d283f4b7cdb} 
+unsigned int {\bfseries eh\+\_\+noresume}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_a8dd5a5e6933269ac77a8e446e83546e3}\label{structScsi__Host_a8dd5a5e6933269ac77a8e446e83546e3} 
+unsigned int {\bfseries no\+\_\+write\+\_\+same}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_a920871046a7dbe1ece749e2d019ed769}\label{structScsi__Host_a920871046a7dbe1ece749e2d019ed769} 
+unsigned int {\bfseries host\+\_\+tagset}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_a729d7e6e6ce067d02693d64d5a3e3a9e}\label{structScsi__Host_a729d7e6e6ce067d02693d64d5a3e3a9e} 
+unsigned int {\bfseries queuecommand\+\_\+may\+\_\+block}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_a127e9d9193499d9147597b700184c3cc}\label{structScsi__Host_a127e9d9193499d9147597b700184c3cc} 
+unsigned int {\bfseries short\+\_\+inquiry}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_a78fa00f8a41ad8b156de645506fac874}\label{structScsi__Host_a78fa00f8a41ad8b156de645506fac874} 
+unsigned int {\bfseries no\+\_\+scsi2\+\_\+lun\+\_\+in\+\_\+cdb}:\+ 1
+\item 
+\Hypertarget{structScsi__Host_a211880083e106ebe255a32b2697d4412}\label{structScsi__Host_a211880083e106ebe255a32b2697d4412} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries work\+\_\+q}
+\item 
+\Hypertarget{structScsi__Host_af1461261eca5d20229a801026fea0b4d}\label{structScsi__Host_af1461261eca5d20229a801026fea0b4d} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries tmf\+\_\+work\+\_\+q}
+\item 
+\Hypertarget{structScsi__Host_ab03dad874dd640d8982d35297179583d}\label{structScsi__Host_ab03dad874dd640d8982d35297179583d} 
+unsigned int {\bfseries max\+\_\+host\+\_\+blocked}
+\item 
+\Hypertarget{structScsi__Host_a21159fc3d11d5e524e1af8948a4f2c86}\label{structScsi__Host_a21159fc3d11d5e524e1af8948a4f2c86} 
+unsigned int {\bfseries prot\+\_\+capabilities}
+\item 
+\Hypertarget{structScsi__Host_adab0d73fb95bdd985b8b228c23ba434e}\label{structScsi__Host_adab0d73fb95bdd985b8b228c23ba434e} 
+unsigned char {\bfseries prot\+\_\+guard\+\_\+type}
+\item 
+\Hypertarget{structScsi__Host_ad953a1395a2bfafd5f7517717b061281}\label{structScsi__Host_ad953a1395a2bfafd5f7517717b061281} 
+long unsigned int {\bfseries base}
+\item 
+\Hypertarget{structScsi__Host_a181e6d88a2272a0143af553ca2306a2d}\label{structScsi__Host_a181e6d88a2272a0143af553ca2306a2d} 
+long unsigned int {\bfseries io\+\_\+port}
+\item 
+\Hypertarget{structScsi__Host_ab8e86f63fc570cd9712ddf3c16654516}\label{structScsi__Host_ab8e86f63fc570cd9712ddf3c16654516} 
+unsigned char {\bfseries n\+\_\+io\+\_\+port}
+\item 
+\Hypertarget{structScsi__Host_aab091bdd1cea7e9af8c16ca2eaaabf03}\label{structScsi__Host_aab091bdd1cea7e9af8c16ca2eaaabf03} 
+unsigned char {\bfseries dma\+\_\+channel}
+\item 
+\Hypertarget{structScsi__Host_aeaf5eed491f800ff2679b3935a26e2b7}\label{structScsi__Host_aeaf5eed491f800ff2679b3935a26e2b7} 
+unsigned int {\bfseries irq}
+\item 
+\Hypertarget{structScsi__Host_a10b5e1f532a21b67e001fb202d5d515b}\label{structScsi__Host_a10b5e1f532a21b67e001fb202d5d515b} 
+enum scsi\+\_\+host\+\_\+state {\bfseries shost\+\_\+state}
+\item 
+\Hypertarget{structScsi__Host_a47606943f4946c9a7cf4aec54781e6ff}\label{structScsi__Host_a47606943f4946c9a7cf4aec54781e6ff} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries shost\+\_\+gendev}
+\item 
+\Hypertarget{structScsi__Host_ab63114bfb84648b3b389fffb8bbb4197}\label{structScsi__Host_ab63114bfb84648b3b389fffb8bbb4197} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries shost\+\_\+dev}
+\item 
+\Hypertarget{structScsi__Host_ad110968df46e6174c0c88e77fd8b7bf9}\label{structScsi__Host_ad110968df46e6174c0c88e77fd8b7bf9} 
+struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries pseudo\+\_\+sdev}
+\item 
+\Hypertarget{structScsi__Host_aaf2d63e4d027be9a49cbd57697a0b5ec}\label{structScsi__Host_aaf2d63e4d027be9a49cbd57697a0b5ec} 
+void \texorpdfstring{$\ast$}{*} {\bfseries shost\+\_\+data}
+\item 
+\Hypertarget{structScsi__Host_ae9f1f1b626d9b8132fe4fc9b2bb5448a}\label{structScsi__Host_ae9f1f1b626d9b8132fe4fc9b2bb5448a} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+dev}
+\item 
+\Hypertarget{structScsi__Host_ae5f31ecca04c13edacaf697684ea1626}\label{structScsi__Host_ae5f31ecca04c13edacaf697684ea1626} 
+int {\bfseries rpm\+\_\+autosuspend\+\_\+delay}
+\item 
+\Hypertarget{structScsi__Host_a52d957da5f9ee76a808e6ba47a011328}\label{structScsi__Host_a52d957da5f9ee76a808e6ba47a011328} 
+long unsigned int {\bfseries hostdata} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

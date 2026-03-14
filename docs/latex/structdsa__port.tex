@@ -1,0 +1,134 @@
+\doxysection{dsa\+\_\+port Struct Reference}
+\hypertarget{structdsa__port}{}\label{structdsa__port}\index{dsa\_port@{dsa\_port}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdsa__port_a3b231858282b9992157da8b8e1029482}\label{structdsa__port_a3b231858282b9992157da8b8e1029482} 
+enum \{ {\bfseries DSA\+\_\+\+PORT\+\_\+\+TYPE\+\_\+\+UNUSED} = 0
+, {\bfseries DSA\+\_\+\+PORT\+\_\+\+TYPE\+\_\+\+CPU} = 1
+, {\bfseries DSA\+\_\+\+PORT\+\_\+\+TYPE\+\_\+\+DSA} = 2
+, {\bfseries DSA\+\_\+\+PORT\+\_\+\+TYPE\+\_\+\+USER} = 3
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdsa__port_af9c00e5d9087b8b5ee7d9f0dab745aa2}\label{structdsa__port_af9c00e5d9087b8b5ee7d9f0dab745aa2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structnet__device}{net\_device}} \texorpdfstring{$\ast$}{*} {\bfseries conduit}\\
+\>struct \doxymbox{\hyperlink{structnet__device}{net\_device}} \texorpdfstring{$\ast$}{*} {\bfseries user}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdsa__port_ab32da8c316b68b8983ed30cb1e8c5257}\label{structdsa__port_ab32da8c316b68b8983ed30cb1e8c5257} 
+const struct \doxymbox{\hyperlink{structdsa__device__ops}{dsa\+\_\+device\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries tag\+\_\+ops}
+\item 
+\Hypertarget{structdsa__port_a5ca10ee81ae5628e53c993da70b8d221}\label{structdsa__port_a5ca10ee81ae5628e53c993da70b8d221} 
+struct \doxymbox{\hyperlink{structdsa__switch__tree}{dsa\+\_\+switch\+\_\+tree}} \texorpdfstring{$\ast$}{*} {\bfseries dst}
+\item 
+\Hypertarget{structdsa__port_a8f2f0caa9dd44f6acb8483bf81d48d49}\label{structdsa__port_a8f2f0caa9dd44f6acb8483bf81d48d49} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries rcv} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdsa__port_a86b38b0722c4edacf3e744a972fd4a0e}\label{structdsa__port_a86b38b0722c4edacf3e744a972fd4a0e} 
+struct \doxymbox{\hyperlink{structdsa__switch}{dsa\+\_\+switch}} \texorpdfstring{$\ast$}{*} {\bfseries ds}
+\item 
+\Hypertarget{structdsa__port_a8ba997449e3f21aebc054314fccc851c}\label{structdsa__port_a8ba997449e3f21aebc054314fccc851c} 
+unsigned int {\bfseries index}
+\item 
+\Hypertarget{structdsa__port_a61a7a8b291b9877472d0add6beae1e3e}\label{structdsa__port_a61a7a8b291b9877472d0add6beae1e3e} 
+enum dsa\+\_\+port::\+ \{ ... \}  {\bfseries type}
+\item 
+\Hypertarget{structdsa__port_afed1a4488a73e27889dcf1111ae55733}\label{structdsa__port_afed1a4488a73e27889dcf1111ae55733} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structdsa__port_aeb81caffb2a2006408a65330d6bdea68}\label{structdsa__port_aeb81caffb2a2006408a65330d6bdea68} 
+struct \doxymbox{\hyperlink{structdsa__port}{dsa\+\_\+port}} \texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+dp}
+\item 
+\Hypertarget{structdsa__port_a190faa7a29f601c348e4ec6d68b4146d}\label{structdsa__port_a190faa7a29f601c348e4ec6d68b4146d} 
+u8 {\bfseries mac} \+[6]\+
+\item 
+\Hypertarget{structdsa__port_a49366d7296defc1872676b77ca5838a2}\label{structdsa__port_a49366d7296defc1872676b77ca5838a2} 
+u8 {\bfseries stp\+\_\+state}
+\item 
+\Hypertarget{structdsa__port_afaa363e9e334c67d4378868593be63c8}\label{structdsa__port_afaa363e9e334c67d4378868593be63c8} 
+u8 {\bfseries vlan\+\_\+filtering}:\+ 1
+\item 
+\Hypertarget{structdsa__port_a145258a7d343d9f6b069694aa687a63d}\label{structdsa__port_a145258a7d343d9f6b069694aa687a63d} 
+u8 {\bfseries learning}:\+ 1
+\item 
+\Hypertarget{structdsa__port_acea26ae95c2951da7d7dab625b9b0ad5}\label{structdsa__port_acea26ae95c2951da7d7dab625b9b0ad5} 
+u8 {\bfseries lag\+\_\+tx\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structdsa__port_ab8d9ffbf37e433254febef89020ddcdf}\label{structdsa__port_ab8d9ffbf37e433254febef89020ddcdf} 
+u8 {\bfseries conduit\+\_\+admin\+\_\+up}:\+ 1
+\item 
+\Hypertarget{structdsa__port_af2bdd8ce6e2c86d1c2d4549f344dbaaa}\label{structdsa__port_af2bdd8ce6e2c86d1c2d4549f344dbaaa} 
+u8 {\bfseries conduit\+\_\+oper\+\_\+up}:\+ 1
+\item 
+\Hypertarget{structdsa__port_afdbb708b11aa42540e21777938281445}\label{structdsa__port_afdbb708b11aa42540e21777938281445} 
+u8 {\bfseries cpu\+\_\+port\+\_\+in\+\_\+lag}:\+ 1
+\item 
+\Hypertarget{structdsa__port_ae04e3cab6571afce19b8a3c41ea9e628}\label{structdsa__port_ae04e3cab6571afce19b8a3c41ea9e628} 
+u8 {\bfseries setup}:\+ 1
+\item 
+\Hypertarget{structdsa__port_aba944dc4b19a090fe2f62599c47a2917}\label{structdsa__port_aba944dc4b19a090fe2f62599c47a2917} 
+struct \doxymbox{\hyperlink{structdevice__node}{device\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries dn}
+\item 
+\Hypertarget{structdsa__port_ad67e58f7360fa7f880d9306ff48c096d}\label{structdsa__port_ad67e58f7360fa7f880d9306ff48c096d} 
+unsigned int {\bfseries ageing\+\_\+time}
+\item 
+\Hypertarget{structdsa__port_a5c7d311c24ccf84a5363ebc2155800f8}\label{structdsa__port_a5c7d311c24ccf84a5363ebc2155800f8} 
+struct \doxymbox{\hyperlink{structdsa__bridge}{dsa\+\_\+bridge}} \texorpdfstring{$\ast$}{*} {\bfseries bridge}
+\item 
+\Hypertarget{structdsa__port_a6c0c036025f0d39669eaec85bdb87f2e}\label{structdsa__port_a6c0c036025f0d39669eaec85bdb87f2e} 
+struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} {\bfseries devlink\+\_\+port}
+\item 
+\Hypertarget{structdsa__port_a7621ecd05011b8af42ac7201207edfde}\label{structdsa__port_a7621ecd05011b8af42ac7201207edfde} 
+struct phylink \texorpdfstring{$\ast$}{*} {\bfseries pl}
+\item 
+\Hypertarget{structdsa__port_a19f2a4f3f4dd20d07e20cb8eaeea6b9c}\label{structdsa__port_a19f2a4f3f4dd20d07e20cb8eaeea6b9c} 
+struct \doxymbox{\hyperlink{structphylink__config}{phylink\+\_\+config}} {\bfseries pl\+\_\+config}
+\item 
+\Hypertarget{structdsa__port_ac0d45f5173e0c1fa3c1a7909302c86f4}\label{structdsa__port_ac0d45f5173e0c1fa3c1a7909302c86f4} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries conduit\+\_\+tracker}
+\item 
+\Hypertarget{structdsa__port_ae387b0dd07c6dd64c51ee8a3afeaac52}\label{structdsa__port_ae387b0dd07c6dd64c51ee8a3afeaac52} 
+struct \doxymbox{\hyperlink{structdsa__lag}{dsa\+\_\+lag}} \texorpdfstring{$\ast$}{*} {\bfseries lag}
+\item 
+\Hypertarget{structdsa__port_a513417db7585dcd4ff7763cb8ce4a347}\label{structdsa__port_a513417db7585dcd4ff7763cb8ce4a347} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries hsr\+\_\+dev}
+\item 
+\Hypertarget{structdsa__port_abf5e36a55c8b20086a6f884747399964}\label{structdsa__port_abf5e36a55c8b20086a6f884747399964} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structdsa__port_aa2a43b9756ec082fbbf1f87cffae1c3e}\label{structdsa__port_aa2a43b9756ec082fbbf1f87cffae1c3e} 
+const struct \doxymbox{\hyperlink{structethtool__ops}{ethtool\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries orig\+\_\+ethtool\+\_\+ops}
+\item 
+\Hypertarget{structdsa__port_a659da465b83562c8b1cd4c6c1811397f}\label{structdsa__port_a659da465b83562c8b1cd4c6c1811397f} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries addr\+\_\+lists\+\_\+lock}
+\item 
+\Hypertarget{structdsa__port_a1abed5e3a86ad30aedec657ce2cbc20a}\label{structdsa__port_a1abed5e3a86ad30aedec657ce2cbc20a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries fdbs}
+\item 
+\Hypertarget{structdsa__port_acf99785c4f8bace1f3bdb43d260ddb9f}\label{structdsa__port_acf99785c4f8bace1f3bdb43d260ddb9f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries mdbs}
+\item 
+\Hypertarget{structdsa__port_a5ac1e94a44125b7eb164a792fc474411}\label{structdsa__port_a5ac1e94a44125b7eb164a792fc474411} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries vlans\+\_\+lock}
+\item 
+\Hypertarget{structdsa__port_ae256ac7510b89cdeb1ac2131f2e83f28}\label{structdsa__port_ae256ac7510b89cdeb1ac2131f2e83f28} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries vlans}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries user\_vlans}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

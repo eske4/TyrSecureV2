@@ -1,0 +1,485 @@
+\doxysection{kvm\+\_\+vcpu\+\_\+arch Struct Reference}
+\hypertarget{structkvm__vcpu__arch}{}\label{structkvm__vcpu__arch}\index{kvm\_vcpu\_arch@{kvm\_vcpu\_arch}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a5fc3509a0f40c8ca9c2b23e717df6cd9}\label{structkvm__vcpu__arch_a5fc3509a0f40c8ca9c2b23e717df6cd9} 
+long unsigned int {\bfseries regs} \+[17]\+
+\item 
+\Hypertarget{structkvm__vcpu__arch_aa5b1eafbe7767c518e5b9ba310941022}\label{structkvm__vcpu__arch_aa5b1eafbe7767c518e5b9ba310941022} 
+u32 {\bfseries regs\+\_\+avail}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a3135cafde020255ada71005797e29375}\label{structkvm__vcpu__arch_a3135cafde020255ada71005797e29375} 
+u32 {\bfseries regs\+\_\+dirty}
+\item 
+\Hypertarget{structkvm__vcpu__arch_afa3a407107030a834b540bd9ec97760f}\label{structkvm__vcpu__arch_afa3a407107030a834b540bd9ec97760f} 
+long unsigned int {\bfseries cr0}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a371ddaf7c0e672fa54a838c236d33085}\label{structkvm__vcpu__arch_a371ddaf7c0e672fa54a838c236d33085} 
+long unsigned int {\bfseries cr0\+\_\+guest\+\_\+owned\+\_\+bits}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aba67dd19d26312f7e358c57946ea5897}\label{structkvm__vcpu__arch_aba67dd19d26312f7e358c57946ea5897} 
+long unsigned int {\bfseries cr2}
+\item 
+\Hypertarget{structkvm__vcpu__arch_acc0435f67972d8c9d2cb2fe51a67c115}\label{structkvm__vcpu__arch_acc0435f67972d8c9d2cb2fe51a67c115} 
+long unsigned int {\bfseries cr3}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aeee06b1846ccf85104a33e963432a0cf}\label{structkvm__vcpu__arch_aeee06b1846ccf85104a33e963432a0cf} 
+long unsigned int {\bfseries cr4}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a973ecefa8f787425ee29c1b07d4fa39e}\label{structkvm__vcpu__arch_a973ecefa8f787425ee29c1b07d4fa39e} 
+long unsigned int {\bfseries cr4\+\_\+guest\+\_\+owned\+\_\+bits}
+\item 
+\Hypertarget{structkvm__vcpu__arch_af1d8ea19308c617754e7b8d65b94b581}\label{structkvm__vcpu__arch_af1d8ea19308c617754e7b8d65b94b581} 
+long unsigned int {\bfseries cr4\+\_\+guest\+\_\+rsvd\+\_\+bits}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ac87a5263578cbec24a44769373f0167a}\label{structkvm__vcpu__arch_ac87a5263578cbec24a44769373f0167a} 
+long unsigned int {\bfseries cr8}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a62502c8705d67eb1dc42380ddd2a5fbc}\label{structkvm__vcpu__arch_a62502c8705d67eb1dc42380ddd2a5fbc} 
+u32 {\bfseries host\+\_\+pkru}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a8fa646dca9cb96f69a4686af12a51c72}\label{structkvm__vcpu__arch_a8fa646dca9cb96f69a4686af12a51c72} 
+u32 {\bfseries pkru}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ab8cd44979201e942361a675a90a0b66b}\label{structkvm__vcpu__arch_ab8cd44979201e942361a675a90a0b66b} 
+u32 {\bfseries hflags}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aad7f78d99853020118049b5da2ee2195}\label{structkvm__vcpu__arch_aad7f78d99853020118049b5da2ee2195} 
+u64 {\bfseries efer}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a1997035bcef314bc34805ac1edefe63e}\label{structkvm__vcpu__arch_a1997035bcef314bc34805ac1edefe63e} 
+u64 {\bfseries host\+\_\+debugctl}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a12927e2899d1f9338b19b8226e53c156}\label{structkvm__vcpu__arch_a12927e2899d1f9338b19b8226e53c156} 
+u64 {\bfseries apic\+\_\+base}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a4b3533789f46ecf63d85a1ab8ebb34a3}\label{structkvm__vcpu__arch_a4b3533789f46ecf63d85a1ab8ebb34a3} 
+struct kvm\+\_\+lapic \texorpdfstring{$\ast$}{*} {\bfseries apic}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a3f5458f01050da45d2f039ae5c0f52b6}\label{structkvm__vcpu__arch_a3f5458f01050da45d2f039ae5c0f52b6} 
+bool {\bfseries load\+\_\+eoi\+\_\+exitmap\+\_\+pending}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a6c8c29e84e477554e1b6ed274866ee7a}\label{structkvm__vcpu__arch_a6c8c29e84e477554e1b6ed274866ee7a} 
+long unsigned int {\bfseries ioapic\+\_\+handled\+\_\+vectors} \+[4]\+
+\item 
+\Hypertarget{structkvm__vcpu__arch_ad96c805f5537d6016917b73b173325cd}\label{structkvm__vcpu__arch_ad96c805f5537d6016917b73b173325cd} 
+long unsigned int {\bfseries apic\+\_\+attention}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ad7e2e90a7b55f6a680828a4add02b3eb}\label{structkvm__vcpu__arch_ad7e2e90a7b55f6a680828a4add02b3eb} 
+int32\+\_\+t {\bfseries apic\+\_\+arb\+\_\+prio}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aa5331fb8528d7f91252be1c3812e75ac}\label{structkvm__vcpu__arch_aa5331fb8528d7f91252be1c3812e75ac} 
+int {\bfseries mp\+\_\+state}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ac624e94b74ac76c098558e18e99c8e1e}\label{structkvm__vcpu__arch_ac624e94b74ac76c098558e18e99c8e1e} 
+u64 {\bfseries ia32\+\_\+misc\+\_\+enable\+\_\+msr}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a95bc1f6f1495209fec0ac1f255cb9123}\label{structkvm__vcpu__arch_a95bc1f6f1495209fec0ac1f255cb9123} 
+u64 {\bfseries smbase}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a51375ff75190d8d873f2c6493a7f4c2c}\label{structkvm__vcpu__arch_a51375ff75190d8d873f2c6493a7f4c2c} 
+u64 {\bfseries smi\+\_\+count}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ad85c9f728e559fb2259155b572001bc1}\label{structkvm__vcpu__arch_ad85c9f728e559fb2259155b572001bc1} 
+bool {\bfseries at\+\_\+instruction\+\_\+boundary}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aae9edf2f2b97be8e68c9afcd78423241}\label{structkvm__vcpu__arch_aae9edf2f2b97be8e68c9afcd78423241} 
+bool {\bfseries tpr\+\_\+access\+\_\+reporting}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ab4877ef665a35673fd463c32561d00c2}\label{structkvm__vcpu__arch_ab4877ef665a35673fd463c32561d00c2} 
+bool {\bfseries xfd\+\_\+no\+\_\+write\+\_\+intercept}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a5749fa37273e016b5dcbc45b2d4a218b}\label{structkvm__vcpu__arch_a5749fa37273e016b5dcbc45b2d4a218b} 
+u64 {\bfseries microcode\+\_\+version}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a9979b8dfeb8c21d6cf55df18dec76031}\label{structkvm__vcpu__arch_a9979b8dfeb8c21d6cf55df18dec76031} 
+u64 {\bfseries arch\+\_\+capabilities}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a10adcfd31749f44a86c5b7341836e706}\label{structkvm__vcpu__arch_a10adcfd31749f44a86c5b7341836e706} 
+u64 {\bfseries perf\+\_\+capabilities}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a25d91cfa7a67869b6b1bd985d9e1619c}\label{structkvm__vcpu__arch_a25d91cfa7a67869b6b1bd985d9e1619c} 
+struct \doxymbox{\hyperlink{structkvm__mmu}{kvm\+\_\+mmu}} \texorpdfstring{$\ast$}{*} {\bfseries mmu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ac7f7681e4b16a1bcb24f018592dcad96}\label{structkvm__vcpu__arch_ac7f7681e4b16a1bcb24f018592dcad96} 
+struct \doxymbox{\hyperlink{structkvm__mmu}{kvm\+\_\+mmu}} {\bfseries root\+\_\+mmu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_afa4c7d8cafadb6f8bb5097b05a60dd4f}\label{structkvm__vcpu__arch_afa4c7d8cafadb6f8bb5097b05a60dd4f} 
+struct \doxymbox{\hyperlink{structkvm__mmu}{kvm\+\_\+mmu}} {\bfseries guest\+\_\+mmu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a05a525ee670e340d692d46a2b73f7425}\label{structkvm__vcpu__arch_a05a525ee670e340d692d46a2b73f7425} 
+struct \doxymbox{\hyperlink{structkvm__mmu}{kvm\+\_\+mmu}} {\bfseries nested\+\_\+mmu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a51ebede11c731c2183958a5e4cf15344}\label{structkvm__vcpu__arch_a51ebede11c731c2183958a5e4cf15344} 
+struct \doxymbox{\hyperlink{structkvm__mmu}{kvm\+\_\+mmu}} \texorpdfstring{$\ast$}{*} {\bfseries walk\+\_\+mmu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a4b4db261a16847b9c5317d2a3e0a6ce1}\label{structkvm__vcpu__arch_a4b4db261a16847b9c5317d2a3e0a6ce1} 
+struct \doxymbox{\hyperlink{structkvm__mmu__memory__cache}{kvm\+\_\+mmu\+\_\+memory\+\_\+cache}} {\bfseries mmu\+\_\+pte\+\_\+list\+\_\+desc\+\_\+cache}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a494dca41c94187a524ccc94d31640ff1}\label{structkvm__vcpu__arch_a494dca41c94187a524ccc94d31640ff1} 
+struct \doxymbox{\hyperlink{structkvm__mmu__memory__cache}{kvm\+\_\+mmu\+\_\+memory\+\_\+cache}} {\bfseries mmu\+\_\+shadow\+\_\+page\+\_\+cache}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a9e49e35824905a6587649c253ea10530}\label{structkvm__vcpu__arch_a9e49e35824905a6587649c253ea10530} 
+struct \doxymbox{\hyperlink{structkvm__mmu__memory__cache}{kvm\+\_\+mmu\+\_\+memory\+\_\+cache}} {\bfseries mmu\+\_\+shadowed\+\_\+info\+\_\+cache}
+\item 
+\Hypertarget{structkvm__vcpu__arch_adb87f1818b237c00be962fac3f29d999}\label{structkvm__vcpu__arch_adb87f1818b237c00be962fac3f29d999} 
+struct \doxymbox{\hyperlink{structkvm__mmu__memory__cache}{kvm\+\_\+mmu\+\_\+memory\+\_\+cache}} {\bfseries mmu\+\_\+page\+\_\+header\+\_\+cache}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aa6c3e48b2e7f3e1394c34dfdf93bca84}\label{structkvm__vcpu__arch_aa6c3e48b2e7f3e1394c34dfdf93bca84} 
+struct \doxymbox{\hyperlink{structkvm__mmu__memory__cache}{kvm\+\_\+mmu\+\_\+memory\+\_\+cache}} {\bfseries mmu\+\_\+external\+\_\+spt\+\_\+cache}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aad2541a93ce139ad74aaa74ff2ee16a7}\label{structkvm__vcpu__arch_aad2541a93ce139ad74aaa74ff2ee16a7} 
+struct \doxymbox{\hyperlink{structfpu__guest}{fpu\+\_\+guest}} {\bfseries guest\+\_\+fpu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ad95f991639cea55a925b3e6888a4f8d3}\label{structkvm__vcpu__arch_ad95f991639cea55a925b3e6888a4f8d3} 
+u64 {\bfseries xcr0}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a5f64f15ea8fcc0c1c136f4742c4606f4}\label{structkvm__vcpu__arch_a5f64f15ea8fcc0c1c136f4742c4606f4} 
+u64 {\bfseries guest\+\_\+supported\+\_\+xcr0}
+\item 
+\Hypertarget{structkvm__vcpu__arch_af76f0347ff27a0a14c34c179c82d187d}\label{structkvm__vcpu__arch_af76f0347ff27a0a14c34c179c82d187d} 
+u64 {\bfseries ia32\+\_\+xss}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a714a18e14ab56fd39243708f90059c1e}\label{structkvm__vcpu__arch_a714a18e14ab56fd39243708f90059c1e} 
+u64 {\bfseries guest\+\_\+supported\+\_\+xss}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a8ec407da0f7dd9de597d58524b594d51}\label{structkvm__vcpu__arch_a8ec407da0f7dd9de597d58524b594d51} 
+struct \doxymbox{\hyperlink{structkvm__pio__request}{kvm\+\_\+pio\+\_\+request}} {\bfseries pio}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a3c1a02a3ed6f4b219215808a272a3262}\label{structkvm__vcpu__arch_a3c1a02a3ed6f4b219215808a272a3262} 
+void \texorpdfstring{$\ast$}{*} {\bfseries pio\+\_\+data}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a952abe6913effe747b1bb988a11be57c}\label{structkvm__vcpu__arch_a952abe6913effe747b1bb988a11be57c} 
+void \texorpdfstring{$\ast$}{*} {\bfseries sev\+\_\+pio\+\_\+data}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a3c9b56efdde2608706d0a3ac1ba63ba6}\label{structkvm__vcpu__arch_a3c9b56efdde2608706d0a3ac1ba63ba6} 
+unsigned int {\bfseries sev\+\_\+pio\+\_\+count}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a86478194fd567fe37a90a7cc479bb3f4}\label{structkvm__vcpu__arch_a86478194fd567fe37a90a7cc479bb3f4} 
+u8 {\bfseries event\+\_\+exit\+\_\+inst\+\_\+len}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ab2a2fa84226580d16f28f287bccc2fe1}\label{structkvm__vcpu__arch_ab2a2fa84226580d16f28f287bccc2fe1} 
+bool {\bfseries exception\+\_\+from\+\_\+userspace}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ac93fef0ddbf3737145dedebb5829c14a}\label{structkvm__vcpu__arch_ac93fef0ddbf3737145dedebb5829c14a} 
+struct \doxymbox{\hyperlink{structkvm__queued__exception}{kvm\+\_\+queued\+\_\+exception}} {\bfseries exception}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a5e968246737acda1e4cdfb03208628ea}\label{structkvm__vcpu__arch_a5e968246737acda1e4cdfb03208628ea} 
+struct \doxymbox{\hyperlink{structkvm__queued__exception}{kvm\+\_\+queued\+\_\+exception}} {\bfseries exception\+\_\+vmexit}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a5a8356b6d0af7969b6f7e9d5f1ba4cc4}\label{structkvm__vcpu__arch_a5a8356b6d0af7969b6f7e9d5f1ba4cc4} 
+struct \doxymbox{\hyperlink{structkvm__queued__interrupt}{kvm\+\_\+queued\+\_\+interrupt}} {\bfseries interrupt}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a9629db898dc292a6e8b02be32fc3b487}\label{structkvm__vcpu__arch_a9629db898dc292a6e8b02be32fc3b487} 
+int {\bfseries halt\+\_\+request}
+\item 
+\Hypertarget{structkvm__vcpu__arch_afb11a37436d01964a58d580264744124}\label{structkvm__vcpu__arch_afb11a37436d01964a58d580264744124} 
+int {\bfseries cpuid\+\_\+nent}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a8d9220ef0e956473c3e41a8905bb8ea8}\label{structkvm__vcpu__arch_a8d9220ef0e956473c3e41a8905bb8ea8} 
+struct \doxymbox{\hyperlink{structkvm__cpuid__entry2}{kvm\+\_\+cpuid\+\_\+entry2}} \texorpdfstring{$\ast$}{*} {\bfseries cpuid\+\_\+entries}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a7718c485e404c78bbd47ab69db18ff69}\label{structkvm__vcpu__arch_a7718c485e404c78bbd47ab69db18ff69} 
+bool {\bfseries cpuid\+\_\+dynamic\+\_\+bits\+\_\+dirty}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ae8e1e05017e0e0d06124a12fb321d510}\label{structkvm__vcpu__arch_ae8e1e05017e0e0d06124a12fb321d510} 
+bool {\bfseries is\+\_\+amd\+\_\+compatible}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a310bd972be8cf1e1f5900f72da9a737b}\label{structkvm__vcpu__arch_a310bd972be8cf1e1f5900f72da9a737b} 
+u32 {\bfseries cpu\+\_\+caps} \+[30]\+
+\item 
+\Hypertarget{structkvm__vcpu__arch_a40c7d67c505cf92679f46658108255c6}\label{structkvm__vcpu__arch_a40c7d67c505cf92679f46658108255c6} 
+u64 {\bfseries reserved\+\_\+gpa\+\_\+bits}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a389e4cb1eba1d2323353a444055a0d51}\label{structkvm__vcpu__arch_a389e4cb1eba1d2323353a444055a0d51} 
+int {\bfseries maxphyaddr}
+\item 
+\Hypertarget{structkvm__vcpu__arch_af6e7d97fe15e2fac5bf783378c77678d}\label{structkvm__vcpu__arch_af6e7d97fe15e2fac5bf783378c77678d} 
+struct x86\+\_\+emulate\+\_\+ctxt \texorpdfstring{$\ast$}{*} {\bfseries emulate\+\_\+ctxt}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ae468b24f8ae11108bfd9017c29ef5944}\label{structkvm__vcpu__arch_ae468b24f8ae11108bfd9017c29ef5944} 
+bool {\bfseries emulate\+\_\+regs\+\_\+need\+\_\+sync\+\_\+to\+\_\+vcpu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a2f2f0c989bc6d79d39d121927b00f1fa}\label{structkvm__vcpu__arch_a2f2f0c989bc6d79d39d121927b00f1fa} 
+bool {\bfseries emulate\+\_\+regs\+\_\+need\+\_\+sync\+\_\+from\+\_\+vcpu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a4ac1f2f2f471c8113dca74ae64f2b61e}\label{structkvm__vcpu__arch_a4ac1f2f2f471c8113dca74ae64f2b61e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries complete\+\_\+userspace\+\_\+io} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__vcpu__arch_acb0623b6291ac23c92fd196d018a6442}\label{structkvm__vcpu__arch_acb0623b6291ac23c92fd196d018a6442} 
+long unsigned int {\bfseries cui\+\_\+linear\+\_\+rip}
+\item 
+\Hypertarget{structkvm__vcpu__arch_af028c88efd6c19bd0e42ed201d759053}\label{structkvm__vcpu__arch_af028c88efd6c19bd0e42ed201d759053} 
+int {\bfseries cui\+\_\+rdmsr\+\_\+imm\+\_\+reg}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a4e79ddcc0aade43ec84bce79acca9251}\label{structkvm__vcpu__arch_a4e79ddcc0aade43ec84bce79acca9251} 
+gpa\+\_\+t {\bfseries time}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a3c74bb1009545adda36f90b5346ffce8}\label{structkvm__vcpu__arch_a3c74bb1009545adda36f90b5346ffce8} 
+s8 {\bfseries pvclock\+\_\+tsc\+\_\+shift}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a66cc00c594dc9ad3ef55e5aa513adfa8}\label{structkvm__vcpu__arch_a66cc00c594dc9ad3ef55e5aa513adfa8} 
+u32 {\bfseries pvclock\+\_\+tsc\+\_\+mul}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a81eaddc982c6bec4c1d60638a0294b97}\label{structkvm__vcpu__arch_a81eaddc982c6bec4c1d60638a0294b97} 
+unsigned int {\bfseries hw\+\_\+tsc\+\_\+khz}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a74f3446866ddc457034bc7b7734e0877}\label{structkvm__vcpu__arch_a74f3446866ddc457034bc7b7734e0877} 
+struct \doxymbox{\hyperlink{structgfn__to__pfn__cache}{gfn\+\_\+to\+\_\+pfn\+\_\+cache}} {\bfseries pv\+\_\+time}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a1bdd0668354f6d51d379d22b82f36ba9}\label{structkvm__vcpu__arch_a1bdd0668354f6d51d379d22b82f36ba9} 
+bool {\bfseries pvclock\+\_\+set\+\_\+guest\+\_\+stopped\+\_\+request}
+\item 
+\Hypertarget{structkvm__vcpu__arch_af720ef4892366a2918d8be50b78ead9b}\label{structkvm__vcpu__arch_af720ef4892366a2918d8be50b78ead9b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u8 {\bfseries preempted}\\
+\>u64 {\bfseries msr\_val}\\
+\>u64 {\bfseries last\_steal}\\
+\>struct \doxymbox{\hyperlink{structgfn__to__hva__cache}{gfn\_to\_hva\_cache}} {\bfseries cache}\\
+\} {\bfseries st}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__arch_ab652ad99da3f923a0d9b10b0ba20778b}\label{structkvm__vcpu__arch_ab652ad99da3f923a0d9b10b0ba20778b} 
+u64 {\bfseries l1\+\_\+tsc\+\_\+offset}
+\item 
+\Hypertarget{structkvm__vcpu__arch_adf6aa0e1e96563842159744c1fec39ef}\label{structkvm__vcpu__arch_adf6aa0e1e96563842159744c1fec39ef} 
+u64 {\bfseries tsc\+\_\+offset}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ab62d9d7ddfc1d1860b7ac4c9ab11957e}\label{structkvm__vcpu__arch_ab62d9d7ddfc1d1860b7ac4c9ab11957e} 
+u64 {\bfseries last\+\_\+guest\+\_\+tsc}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a8f2e5287abea813e54404ab13999c291}\label{structkvm__vcpu__arch_a8f2e5287abea813e54404ab13999c291} 
+u64 {\bfseries last\+\_\+host\+\_\+tsc}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a76bfc1f7335e46b248c0fbe38095c62b}\label{structkvm__vcpu__arch_a76bfc1f7335e46b248c0fbe38095c62b} 
+u64 {\bfseries tsc\+\_\+offset\+\_\+adjustment}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aa294eebe9ded3981cf680d4a44292333}\label{structkvm__vcpu__arch_aa294eebe9ded3981cf680d4a44292333} 
+u64 {\bfseries this\+\_\+tsc\+\_\+nsec}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a30442fd489600457817a7c7eadcece2d}\label{structkvm__vcpu__arch_a30442fd489600457817a7c7eadcece2d} 
+u64 {\bfseries this\+\_\+tsc\+\_\+write}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a666709cd36df3720ed4d4aa9ec4af431}\label{structkvm__vcpu__arch_a666709cd36df3720ed4d4aa9ec4af431} 
+u64 {\bfseries this\+\_\+tsc\+\_\+generation}
+\item 
+\Hypertarget{structkvm__vcpu__arch_af2f8370843c87c28434cd39a26c43e53}\label{structkvm__vcpu__arch_af2f8370843c87c28434cd39a26c43e53} 
+bool {\bfseries tsc\+\_\+catchup}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a13f8b0421659ecf55ee582032b9259b1}\label{structkvm__vcpu__arch_a13f8b0421659ecf55ee582032b9259b1} 
+bool {\bfseries tsc\+\_\+always\+\_\+catchup}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a446ab5b436431bdeaa4a5e7919084a33}\label{structkvm__vcpu__arch_a446ab5b436431bdeaa4a5e7919084a33} 
+s8 {\bfseries virtual\+\_\+tsc\+\_\+shift}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aa201bd58b1f354cec43565f97b2cf32b}\label{structkvm__vcpu__arch_aa201bd58b1f354cec43565f97b2cf32b} 
+u32 {\bfseries virtual\+\_\+tsc\+\_\+mult}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a59519a1a2e04b0c857e61459cb8ef0af}\label{structkvm__vcpu__arch_a59519a1a2e04b0c857e61459cb8ef0af} 
+u32 {\bfseries virtual\+\_\+tsc\+\_\+khz}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ae1267c580e8659351e64b4b79cfa400c}\label{structkvm__vcpu__arch_ae1267c580e8659351e64b4b79cfa400c} 
+s64 {\bfseries ia32\+\_\+tsc\+\_\+adjust\+\_\+msr}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a8d834835df64555c886d8f709d0bd0f4}\label{structkvm__vcpu__arch_a8d834835df64555c886d8f709d0bd0f4} 
+u64 {\bfseries msr\+\_\+ia32\+\_\+power\+\_\+ctl}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aaefbe524eabba7528b31de20708973cd}\label{structkvm__vcpu__arch_aaefbe524eabba7528b31de20708973cd} 
+u64 {\bfseries l1\+\_\+tsc\+\_\+scaling\+\_\+ratio}
+\item 
+\Hypertarget{structkvm__vcpu__arch_af90ac2502e7c86409754b4b17d74af67}\label{structkvm__vcpu__arch_af90ac2502e7c86409754b4b17d74af67} 
+u64 {\bfseries tsc\+\_\+scaling\+\_\+ratio}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a96a6d484e2b8bf730690233e026f9356}\label{structkvm__vcpu__arch_a96a6d484e2b8bf730690233e026f9356} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nmi\+\_\+queued}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ae7b6167e273e7dcdcc989e9b8adbb009}\label{structkvm__vcpu__arch_ae7b6167e273e7dcdcc989e9b8adbb009} 
+unsigned int {\bfseries nmi\+\_\+pending}
+\item 
+\Hypertarget{structkvm__vcpu__arch_acc1498ef0a598fff5d8f956ef96d3bd2}\label{structkvm__vcpu__arch_acc1498ef0a598fff5d8f956ef96d3bd2} 
+bool {\bfseries nmi\+\_\+injected}
+\item 
+\Hypertarget{structkvm__vcpu__arch_adc827dd13cda6c08776b591ceb328ad1}\label{structkvm__vcpu__arch_adc827dd13cda6c08776b591ceb328ad1} 
+bool {\bfseries smi\+\_\+pending}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a63e70a981e41f5e3bee068f8547c610d}\label{structkvm__vcpu__arch_a63e70a981e41f5e3bee068f8547c610d} 
+u8 {\bfseries handling\+\_\+intr\+\_\+from\+\_\+guest}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ae8728f71f3463148bd850d61c2b2edfd}\label{structkvm__vcpu__arch_ae8728f71f3463148bd850d61c2b2edfd} 
+struct \doxymbox{\hyperlink{structkvm__mtrr}{kvm\+\_\+mtrr}} {\bfseries mtrr\+\_\+state}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a1db4d9054c671912c04cd0ca4171b068}\label{structkvm__vcpu__arch_a1db4d9054c671912c04cd0ca4171b068} 
+u64 {\bfseries pat}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a4b6d75136e23ee55131a03a43f7fe766}\label{structkvm__vcpu__arch_a4b6d75136e23ee55131a03a43f7fe766} 
+unsigned int {\bfseries switch\+\_\+db\+\_\+regs}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a74ea66147d79322e5d175d6d10d491d8}\label{structkvm__vcpu__arch_a74ea66147d79322e5d175d6d10d491d8} 
+long unsigned int {\bfseries db} \+[4]\+
+\item 
+\Hypertarget{structkvm__vcpu__arch_a1738fee587267bc92705eaa80ae87e52}\label{structkvm__vcpu__arch_a1738fee587267bc92705eaa80ae87e52} 
+long unsigned int {\bfseries dr6}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a2d2e9c1f5f5945660906a411847e4432}\label{structkvm__vcpu__arch_a2d2e9c1f5f5945660906a411847e4432} 
+long unsigned int {\bfseries dr7}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a7d461eb77c8c380337dda1f73f44910c}\label{structkvm__vcpu__arch_a7d461eb77c8c380337dda1f73f44910c} 
+long unsigned int {\bfseries eff\+\_\+db} \+[4]\+
+\item 
+\Hypertarget{structkvm__vcpu__arch_ae785a26cff30d8887381d9550957eaf8}\label{structkvm__vcpu__arch_ae785a26cff30d8887381d9550957eaf8} 
+long unsigned int {\bfseries guest\+\_\+debug\+\_\+dr7}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ad0845dcb590b1f601065911f8aab33e6}\label{structkvm__vcpu__arch_ad0845dcb590b1f601065911f8aab33e6} 
+u64 {\bfseries msr\+\_\+platform\+\_\+info}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a9d8097942c79b3b62b6afc768633a0c2}\label{structkvm__vcpu__arch_a9d8097942c79b3b62b6afc768633a0c2} 
+u64 {\bfseries msr\+\_\+misc\+\_\+features\+\_\+enables}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aa75207fa19043eda35c70fac57c21ff7}\label{structkvm__vcpu__arch_aa75207fa19043eda35c70fac57c21ff7} 
+u64 {\bfseries mcg\+\_\+cap}
+\item 
+\Hypertarget{structkvm__vcpu__arch_afe4394cb32b348fcbb48c8bd800831dc}\label{structkvm__vcpu__arch_afe4394cb32b348fcbb48c8bd800831dc} 
+u64 {\bfseries mcg\+\_\+status}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aa550241efb61e117a5586748ed1cca4f}\label{structkvm__vcpu__arch_aa550241efb61e117a5586748ed1cca4f} 
+u64 {\bfseries mcg\+\_\+ctl}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aac361005d669f7c0680aa2037eb1ef8d}\label{structkvm__vcpu__arch_aac361005d669f7c0680aa2037eb1ef8d} 
+u64 {\bfseries mcg\+\_\+ext\+\_\+ctl}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ac842650f15d27185e04a617c157f9f3c}\label{structkvm__vcpu__arch_ac842650f15d27185e04a617c157f9f3c} 
+u64 \texorpdfstring{$\ast$}{*} {\bfseries mce\+\_\+banks}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a5465239be5f81cab49c5a5ba1cca7d19}\label{structkvm__vcpu__arch_a5465239be5f81cab49c5a5ba1cca7d19} 
+u64 \texorpdfstring{$\ast$}{*} {\bfseries mci\+\_\+ctl2\+\_\+banks}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a612dc6521933e49334eb8825681064b1}\label{structkvm__vcpu__arch_a612dc6521933e49334eb8825681064b1} 
+u64 {\bfseries mmio\+\_\+gva}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ab59b87da8b4ec9bf2817de6468a736a3}\label{structkvm__vcpu__arch_ab59b87da8b4ec9bf2817de6468a736a3} 
+unsigned int {\bfseries mmio\+\_\+access}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a4f3fd70f81015a2a0af544b1f5b4c179}\label{structkvm__vcpu__arch_a4f3fd70f81015a2a0af544b1f5b4c179} 
+gfn\+\_\+t {\bfseries mmio\+\_\+gfn}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a2677e145fcd63dcc576b59e1a0516009}\label{structkvm__vcpu__arch_a2677e145fcd63dcc576b59e1a0516009} 
+u64 {\bfseries mmio\+\_\+gen}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ac1124dd37ba78e0a695e09cc478c0733}\label{structkvm__vcpu__arch_ac1124dd37ba78e0a695e09cc478c0733} 
+struct \doxymbox{\hyperlink{structkvm__pmu}{kvm\+\_\+pmu}} {\bfseries pmu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a3b9aa5d3b374019611e0e38737ea77eb}\label{structkvm__vcpu__arch_a3b9aa5d3b374019611e0e38737ea77eb} 
+long unsigned int {\bfseries singlestep\+\_\+rip}
+\item 
+\Hypertarget{structkvm__vcpu__arch_abff092deeefddfc3c3d9a9e8ff2f9e4d}\label{structkvm__vcpu__arch_abff092deeefddfc3c3d9a9e8ff2f9e4d} 
+bool {\bfseries hyperv\+\_\+enabled}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a8e91e52851bba215e553ee1be8ca2f13}\label{structkvm__vcpu__arch_a8e91e52851bba215e553ee1be8ca2f13} 
+struct \doxymbox{\hyperlink{structkvm__vcpu__hv}{kvm\+\_\+vcpu\+\_\+hv}} \texorpdfstring{$\ast$}{*} {\bfseries hyperv}
+\item 
+\Hypertarget{structkvm__vcpu__arch_acf1ca436dc9496b2b3aa57bc604d3e0c}\label{structkvm__vcpu__arch_acf1ca436dc9496b2b3aa57bc604d3e0c} 
+struct \doxymbox{\hyperlink{structkvm__vcpu__xen}{kvm\+\_\+vcpu\+\_\+xen}} {\bfseries xen}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a5155c0f17b5287ea79328783c9360b40}\label{structkvm__vcpu__arch_a5155c0f17b5287ea79328783c9360b40} 
+cpumask\+\_\+var\+\_\+t {\bfseries wbinvd\+\_\+dirty\+\_\+mask}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a3786be31e50e02fc8b007d51f2bc9e69}\label{structkvm__vcpu__arch_a3786be31e50e02fc8b007d51f2bc9e69} 
+long unsigned int {\bfseries last\+\_\+retry\+\_\+eip}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ac4d1138f981ff928f7140849ba45ef9c}\label{structkvm__vcpu__arch_ac4d1138f981ff928f7140849ba45ef9c} 
+long unsigned int {\bfseries last\+\_\+retry\+\_\+addr}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a6f8551aac9cd1544a4a820a0c9db29c7}\label{structkvm__vcpu__arch_a6f8551aac9cd1544a4a820a0c9db29c7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>bool {\bfseries halted}\\
+\>gfn\_t {\bfseries gfns} \+[64]\+\\
+\>struct \doxymbox{\hyperlink{structgfn__to__hva__cache}{gfn\_to\_hva\_cache}} {\bfseries data}\\
+\>u64 {\bfseries msr\_en\_val}\\
+\>u64 {\bfseries msr\_int\_val}\\
+\>u16 {\bfseries vec}\\
+\>u32 {\bfseries id}\\
+\>u32 {\bfseries host\_apf\_flags}\\
+\>bool {\bfseries send\_always}\\
+\>bool {\bfseries delivery\_as\_pf\_vmexit}\\
+\>bool {\bfseries pageready\_pending}\\
+\} {\bfseries apf}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__arch_a809726a56d4892e117976f5bc100f40a}\label{structkvm__vcpu__arch_a809726a56d4892e117976f5bc100f40a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u64 {\bfseries length}\\
+\>u64 {\bfseries status}\\
+\} {\bfseries osvw}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__arch_a361b1f5be7ccd12ceaca13034173e19a}\label{structkvm__vcpu__arch_a361b1f5be7ccd12ceaca13034173e19a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u64 {\bfseries msr\_val}\\
+\>struct \doxymbox{\hyperlink{structgfn__to__hva__cache}{gfn\_to\_hva\_cache}} {\bfseries data}\\
+\} {\bfseries pv\_eoi}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__arch_aa11d355ced45e0dc1d060306bcfae90b}\label{structkvm__vcpu__arch_aa11d355ced45e0dc1d060306bcfae90b} 
+u64 {\bfseries msr\+\_\+kvm\+\_\+poll\+\_\+control}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a714aef98c3a079e5b9d9bd02691008fa}\label{structkvm__vcpu__arch_a714aef98c3a079e5b9d9bd02691008fa} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>bool {\bfseries pv\_unhalted}\\
+\} {\bfseries pv}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__arch_a298df6b58b137f9e0c1c30542c1102e4}\label{structkvm__vcpu__arch_a298df6b58b137f9e0c1c30542c1102e4} 
+int {\bfseries pending\+\_\+ioapic\+\_\+eoi}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aff2d50d9f072348d34ebd06ad04c9a8e}\label{structkvm__vcpu__arch_aff2d50d9f072348d34ebd06ad04c9a8e} 
+int {\bfseries pending\+\_\+external\+\_\+vector}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a4076857558fc12b7ceebe94840faca8b}\label{structkvm__vcpu__arch_a4076857558fc12b7ceebe94840faca8b} 
+int {\bfseries highest\+\_\+stale\+\_\+pending\+\_\+ioapic\+\_\+eoi}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a1b3871c5d171c897857b2065d23409f5}\label{structkvm__vcpu__arch_a1b3871c5d171c897857b2065d23409f5} 
+bool {\bfseries preempted\+\_\+in\+\_\+kernel}
+\item 
+\Hypertarget{structkvm__vcpu__arch_abf2c5a2205ceac685f203d176c22ef65}\label{structkvm__vcpu__arch_abf2c5a2205ceac685f203d176c22ef65} 
+int {\bfseries last\+\_\+vmentry\+\_\+cpu}
+\item 
+\Hypertarget{structkvm__vcpu__arch_aceb0553a899f6a51764d99c9515567c0}\label{structkvm__vcpu__arch_aceb0553a899f6a51764d99c9515567c0} 
+u64 {\bfseries msr\+\_\+hwcr}
+\item 
+\Hypertarget{structkvm__vcpu__arch_ad6bceef253751d6a566b728772b34bd4}\label{structkvm__vcpu__arch_ad6bceef253751d6a566b728772b34bd4} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries features}\\
+\>bool {\bfseries enforce}\\
+\} {\bfseries pv\_cpuid}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__arch_ad5cb8639fd6893b029f69619a99aba67}\label{structkvm__vcpu__arch_ad5cb8639fd6893b029f69619a99aba67} 
+bool {\bfseries guest\+\_\+state\+\_\+protected}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a7c3a85e52669159879046dc6795b81ff}\label{structkvm__vcpu__arch_a7c3a85e52669159879046dc6795b81ff} 
+bool {\bfseries guest\+\_\+tsc\+\_\+protected}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a20d2c1d50ae2a51ca4a16a936db10b80}\label{structkvm__vcpu__arch_a20d2c1d50ae2a51ca4a16a936db10b80} 
+bool {\bfseries pdptrs\+\_\+from\+\_\+userspace}
+\item 
+\Hypertarget{structkvm__vcpu__arch_a5db88a33b07ea54b68e8304e16ff358d}\label{structkvm__vcpu__arch_a5db88a33b07ea54b68e8304e16ff358d} 
+hpa\+\_\+t {\bfseries hv\+\_\+root\+\_\+tdp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

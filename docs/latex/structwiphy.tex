@@ -1,0 +1,299 @@
+\doxysection{wiphy Struct Reference}
+\hypertarget{structwiphy}{}\label{structwiphy}\index{wiphy@{wiphy}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structwiphy_af1ba4917c6810a192f279932b08a03e2}\label{structwiphy_af1ba4917c6810a192f279932b08a03e2} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mtx}
+\item 
+\Hypertarget{structwiphy_adf677c771e3d99a7fb200315655de884}\label{structwiphy_adf677c771e3d99a7fb200315655de884} 
+u8 {\bfseries perm\+\_\+addr} \+[6]\+
+\item 
+\Hypertarget{structwiphy_aebb6834d39caa319a1ed6a0701888296}\label{structwiphy_aebb6834d39caa319a1ed6a0701888296} 
+u8 {\bfseries addr\+\_\+mask} \+[6]\+
+\item 
+\Hypertarget{structwiphy_a45686f913b94296b86a4133b31400e9c}\label{structwiphy_a45686f913b94296b86a4133b31400e9c} 
+struct \doxymbox{\hyperlink{structmac__address}{mac\+\_\+address}} \texorpdfstring{$\ast$}{*} {\bfseries addresses}
+\item 
+\Hypertarget{structwiphy_a524ef76dc317b63ca4314f5bd73c95ce}\label{structwiphy_a524ef76dc317b63ca4314f5bd73c95ce} 
+const struct \doxymbox{\hyperlink{structieee80211__txrx__stypes}{ieee80211\+\_\+txrx\+\_\+stypes}} \texorpdfstring{$\ast$}{*} {\bfseries mgmt\+\_\+stypes}
+\item 
+\Hypertarget{structwiphy_aa9071ed3df9ff688f0deb2be17ff5ec5}\label{structwiphy_aa9071ed3df9ff688f0deb2be17ff5ec5} 
+const struct \doxymbox{\hyperlink{structieee80211__iface__combination}{ieee80211\+\_\+iface\+\_\+combination}} \texorpdfstring{$\ast$}{*} {\bfseries iface\+\_\+combinations}
+\item 
+\Hypertarget{structwiphy_aef50f8263940b671e68be86be8a3aa93}\label{structwiphy_aef50f8263940b671e68be86be8a3aa93} 
+int {\bfseries n\+\_\+iface\+\_\+combinations}
+\item 
+\Hypertarget{structwiphy_aadf95e25e8d9474f5f005a7b714773aa}\label{structwiphy_aadf95e25e8d9474f5f005a7b714773aa} 
+u16 {\bfseries software\+\_\+iftypes}
+\item 
+\Hypertarget{structwiphy_af72d850fe48d0b2a4176b5854c5cc5c8}\label{structwiphy_af72d850fe48d0b2a4176b5854c5cc5c8} 
+u16 {\bfseries n\+\_\+addresses}
+\item 
+\Hypertarget{structwiphy_a2ff37fd6d96e3f86bc3c6d6cad32f41f}\label{structwiphy_a2ff37fd6d96e3f86bc3c6d6cad32f41f} 
+u16 {\bfseries interface\+\_\+modes}
+\item 
+\Hypertarget{structwiphy_afbfc788c6deb8503388fa2724ecb57ef}\label{structwiphy_afbfc788c6deb8503388fa2724ecb57ef} 
+u16 {\bfseries max\+\_\+acl\+\_\+mac\+\_\+addrs}
+\item 
+\Hypertarget{structwiphy_a944339a7683be8018ae0879cc1317bcd}\label{structwiphy_a944339a7683be8018ae0879cc1317bcd} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structwiphy_aab92c83235cf5100ac8a5feea6e0b206}\label{structwiphy_aab92c83235cf5100ac8a5feea6e0b206} 
+u32 {\bfseries regulatory\+\_\+flags}
+\item 
+\Hypertarget{structwiphy_ae8ab0f0af7e0de6a5a9990da07631510}\label{structwiphy_ae8ab0f0af7e0de6a5a9990da07631510} 
+u32 {\bfseries features}
+\item 
+\Hypertarget{structwiphy_a5ae33dd470c0052b330e309c59b738c9}\label{structwiphy_a5ae33dd470c0052b330e309c59b738c9} 
+u8 {\bfseries ext\+\_\+features} \+[9]\+
+\item 
+\Hypertarget{structwiphy_abad72f34a9e29646816339bf3109d2bf}\label{structwiphy_abad72f34a9e29646816339bf3109d2bf} 
+u32 {\bfseries ap\+\_\+sme\+\_\+capa}
+\item 
+\Hypertarget{structwiphy_a2d2eae1f92350a96e6674d8a0bf42c38}\label{structwiphy_a2d2eae1f92350a96e6674d8a0bf42c38} 
+enum cfg80211\+\_\+signal\+\_\+type {\bfseries signal\+\_\+type}
+\item 
+\Hypertarget{structwiphy_a9ba3d030f48a0127827bdb733d67996b}\label{structwiphy_a9ba3d030f48a0127827bdb733d67996b} 
+int {\bfseries bss\+\_\+priv\+\_\+size}
+\item 
+\Hypertarget{structwiphy_a0105c9659b6a30df7911b402fea5e627}\label{structwiphy_a0105c9659b6a30df7911b402fea5e627} 
+u8 {\bfseries max\+\_\+scan\+\_\+ssids}
+\item 
+\Hypertarget{structwiphy_aec98bfd4c6925d5ac57f911bd4b7aeb5}\label{structwiphy_aec98bfd4c6925d5ac57f911bd4b7aeb5} 
+u8 {\bfseries max\+\_\+sched\+\_\+scan\+\_\+reqs}
+\item 
+\Hypertarget{structwiphy_a11a1f8cfce2235fbb9f9613133bd20d2}\label{structwiphy_a11a1f8cfce2235fbb9f9613133bd20d2} 
+u8 {\bfseries max\+\_\+sched\+\_\+scan\+\_\+ssids}
+\item 
+\Hypertarget{structwiphy_a2c1675880034d7d450c6deacd182367e}\label{structwiphy_a2c1675880034d7d450c6deacd182367e} 
+u8 {\bfseries max\+\_\+match\+\_\+sets}
+\item 
+\Hypertarget{structwiphy_a852a15c959838b62bafd8e38eeec0468}\label{structwiphy_a852a15c959838b62bafd8e38eeec0468} 
+u16 {\bfseries max\+\_\+scan\+\_\+ie\+\_\+len}
+\item 
+\Hypertarget{structwiphy_a5f77e41520c7db36a94f2f19a88f2d5a}\label{structwiphy_a5f77e41520c7db36a94f2f19a88f2d5a} 
+u16 {\bfseries max\+\_\+sched\+\_\+scan\+\_\+ie\+\_\+len}
+\item 
+\Hypertarget{structwiphy_a070cbe2988c243b407db9f926a720be1}\label{structwiphy_a070cbe2988c243b407db9f926a720be1} 
+u32 {\bfseries max\+\_\+sched\+\_\+scan\+\_\+plans}
+\item 
+\Hypertarget{structwiphy_a9f25df6bbac83c254a4f2d6cd1c41680}\label{structwiphy_a9f25df6bbac83c254a4f2d6cd1c41680} 
+u32 {\bfseries max\+\_\+sched\+\_\+scan\+\_\+plan\+\_\+interval}
+\item 
+\Hypertarget{structwiphy_aef9151bc96e6e6d5cde670f7cec467a1}\label{structwiphy_aef9151bc96e6e6d5cde670f7cec467a1} 
+u32 {\bfseries max\+\_\+sched\+\_\+scan\+\_\+plan\+\_\+iterations}
+\item 
+\Hypertarget{structwiphy_a9cc4c898e29046fa451702467de2161d}\label{structwiphy_a9cc4c898e29046fa451702467de2161d} 
+int {\bfseries n\+\_\+cipher\+\_\+suites}
+\item 
+\Hypertarget{structwiphy_af45294da45bd5fa3d642673abf297f34}\label{structwiphy_af45294da45bd5fa3d642673abf297f34} 
+const u32 \texorpdfstring{$\ast$}{*} {\bfseries cipher\+\_\+suites}
+\item 
+\Hypertarget{structwiphy_a780facd94bacab90f07619b0caeabca9}\label{structwiphy_a780facd94bacab90f07619b0caeabca9} 
+int {\bfseries n\+\_\+akm\+\_\+suites}
+\item 
+\Hypertarget{structwiphy_a4ce99eac368aac6ab25da00749418193}\label{structwiphy_a4ce99eac368aac6ab25da00749418193} 
+const u32 \texorpdfstring{$\ast$}{*} {\bfseries akm\+\_\+suites}
+\item 
+\Hypertarget{structwiphy_adbe7979223e0b7135869989a9578935d}\label{structwiphy_adbe7979223e0b7135869989a9578935d} 
+const struct \doxymbox{\hyperlink{structwiphy__iftype__akm__suites}{wiphy\+\_\+iftype\+\_\+akm\+\_\+suites}} \texorpdfstring{$\ast$}{*} {\bfseries iftype\+\_\+akm\+\_\+suites}
+\item 
+\Hypertarget{structwiphy_a8b48e618aa94fb3032e96d633fd64f64}\label{structwiphy_a8b48e618aa94fb3032e96d633fd64f64} 
+unsigned int {\bfseries num\+\_\+iftype\+\_\+akm\+\_\+suites}
+\item 
+\Hypertarget{structwiphy_a6e75328cd91982de002c85b17262f3bb}\label{structwiphy_a6e75328cd91982de002c85b17262f3bb} 
+u8 {\bfseries retry\+\_\+short}
+\item 
+\Hypertarget{structwiphy_a315157778374aa797fe80494278f5868}\label{structwiphy_a315157778374aa797fe80494278f5868} 
+u8 {\bfseries retry\+\_\+long}
+\item 
+\Hypertarget{structwiphy_a43ef65617afbf3b9d5af6043b49dc8c7}\label{structwiphy_a43ef65617afbf3b9d5af6043b49dc8c7} 
+u32 {\bfseries frag\+\_\+threshold}
+\item 
+\Hypertarget{structwiphy_a36b03e4df9a2024f109dbc07d72fce79}\label{structwiphy_a36b03e4df9a2024f109dbc07d72fce79} 
+u32 {\bfseries rts\+\_\+threshold}
+\item 
+\Hypertarget{structwiphy_a2c12e6a185d6de9cfea9eac94276cb71}\label{structwiphy_a2c12e6a185d6de9cfea9eac94276cb71} 
+u8 {\bfseries coverage\+\_\+class}
+\item 
+\Hypertarget{structwiphy_a8290add13a150cae430dfbd42300e312}\label{structwiphy_a8290add13a150cae430dfbd42300e312} 
+char {\bfseries fw\+\_\+version} \+[32]\+
+\item 
+\Hypertarget{structwiphy_a4c450b3e821698ab9566c3a6587735cd}\label{structwiphy_a4c450b3e821698ab9566c3a6587735cd} 
+u32 {\bfseries hw\+\_\+version}
+\item 
+\Hypertarget{structwiphy_a7e417f190d4ca172df3e2886600050db}\label{structwiphy_a7e417f190d4ca172df3e2886600050db} 
+const struct \doxymbox{\hyperlink{structwiphy__wowlan__support}{wiphy\+\_\+wowlan\+\_\+support}} \texorpdfstring{$\ast$}{*} {\bfseries wowlan}
+\item 
+\Hypertarget{structwiphy_a69501c702fee311bbd3e8b64f7beac5f}\label{structwiphy_a69501c702fee311bbd3e8b64f7beac5f} 
+struct \doxymbox{\hyperlink{structcfg80211__wowlan}{cfg80211\+\_\+wowlan}} \texorpdfstring{$\ast$}{*} {\bfseries wowlan\+\_\+config}
+\item 
+\Hypertarget{structwiphy_aaa9ba208d3820b1b1a586d77398a30c4}\label{structwiphy_aaa9ba208d3820b1b1a586d77398a30c4} 
+u16 {\bfseries max\+\_\+remain\+\_\+on\+\_\+channel\+\_\+duration}
+\item 
+\Hypertarget{structwiphy_a865d30cff7383f05dabac651f6e87668}\label{structwiphy_a865d30cff7383f05dabac651f6e87668} 
+u8 {\bfseries max\+\_\+num\+\_\+pmkids}
+\item 
+\Hypertarget{structwiphy_aaeba140a85c4bca6cf9ec2ad6318e12d}\label{structwiphy_aaeba140a85c4bca6cf9ec2ad6318e12d} 
+u32 {\bfseries available\+\_\+antennas\+\_\+tx}
+\item 
+\Hypertarget{structwiphy_a30239a5a269e42dfb1fb2a48ef7c17ee}\label{structwiphy_a30239a5a269e42dfb1fb2a48ef7c17ee} 
+u32 {\bfseries available\+\_\+antennas\+\_\+rx}
+\item 
+\Hypertarget{structwiphy_aaf167e3ebba73d9798bfc22320fd4665}\label{structwiphy_aaf167e3ebba73d9798bfc22320fd4665} 
+u32 {\bfseries probe\+\_\+resp\+\_\+offload}
+\item 
+\Hypertarget{structwiphy_ad409df218039d26f550453ec125e689b}\label{structwiphy_ad409df218039d26f550453ec125e689b} 
+const u8 \texorpdfstring{$\ast$}{*} {\bfseries extended\+\_\+capabilities}
+\item 
+\Hypertarget{structwiphy_a1cd8df279e582b37ef3c50d88137ddcb}\label{structwiphy_a1cd8df279e582b37ef3c50d88137ddcb} 
+const u8 \texorpdfstring{$\ast$}{*} {\bfseries extended\+\_\+capabilities\+\_\+mask}
+\item 
+\Hypertarget{structwiphy_a0180dafbb3cfff1e8d211f2f9d0bb253}\label{structwiphy_a0180dafbb3cfff1e8d211f2f9d0bb253} 
+u8 {\bfseries extended\+\_\+capabilities\+\_\+len}
+\item 
+\Hypertarget{structwiphy_a8099c3f304d39d55d547f7146ae89ef1}\label{structwiphy_a8099c3f304d39d55d547f7146ae89ef1} 
+const struct \doxymbox{\hyperlink{structwiphy__iftype__ext__capab}{wiphy\+\_\+iftype\+\_\+ext\+\_\+capab}} \texorpdfstring{$\ast$}{*} {\bfseries iftype\+\_\+ext\+\_\+capab}
+\item 
+\Hypertarget{structwiphy_a2931e0b0e3f20d931324528626fef99e}\label{structwiphy_a2931e0b0e3f20d931324528626fef99e} 
+unsigned int {\bfseries num\+\_\+iftype\+\_\+ext\+\_\+capab}
+\item 
+\Hypertarget{structwiphy_a8b53c842850d2a6c593275f70fc66576}\label{structwiphy_a8b53c842850d2a6c593275f70fc66576} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries privid}
+\item 
+\Hypertarget{structwiphy_a95fceaa4224e9d95bc0e1903692aac7f}\label{structwiphy_a95fceaa4224e9d95bc0e1903692aac7f} 
+struct \doxymbox{\hyperlink{structieee80211__supported__band}{ieee80211\+\_\+supported\+\_\+band}} \texorpdfstring{$\ast$}{*} {\bfseries bands} \+[6]\+
+\item 
+\Hypertarget{structwiphy_a53d167f9c9fb1384c50c584c99757ed5}\label{structwiphy_a53d167f9c9fb1384c50c584c99757ed5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+notifier} )(struct \doxymbox{\hyperlink{structwiphy}{wiphy}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structregulatory__request}{regulatory\+\_\+request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structwiphy_a65f703c63f82410d07c3cfa81f62aeb4}\label{structwiphy_a65f703c63f82410d07c3cfa81f62aeb4} 
+struct \doxymbox{\hyperlink{structwiphy__radio__cfg}{wiphy\+\_\+radio\+\_\+cfg}} \texorpdfstring{$\ast$}{*} {\bfseries radio\+\_\+cfg}
+\item 
+\Hypertarget{structwiphy_ae77ab9835a8708169abfcd0a60a09c95}\label{structwiphy_ae77ab9835a8708169abfcd0a60a09c95} 
+const struct \doxymbox{\hyperlink{structieee80211__regdomain}{ieee80211\+\_\+regdomain}} \texorpdfstring{$\ast$}{*} {\bfseries regd}
+\item 
+\Hypertarget{structwiphy_abd3c0d82c42560aacb95241c80dc0c0d}\label{structwiphy_abd3c0d82c42560aacb95241c80dc0c0d} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structwiphy_a4378327c3c83717b0ad960f3cb19a72a}\label{structwiphy_a4378327c3c83717b0ad960f3cb19a72a} 
+bool {\bfseries registered}
+\item 
+\Hypertarget{structwiphy_afb2dcb4e809ce8b0313001a77d9b47a5}\label{structwiphy_afb2dcb4e809ce8b0313001a77d9b47a5} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfsdir}
+\item 
+\Hypertarget{structwiphy_a1201b736e35df3eca551e3a3d265a209}\label{structwiphy_a1201b736e35df3eca551e3a3d265a209} 
+const struct \doxymbox{\hyperlink{structieee80211__ht__cap}{ieee80211\+\_\+ht\+\_\+cap}} \texorpdfstring{$\ast$}{*} {\bfseries ht\+\_\+capa\+\_\+mod\+\_\+mask}
+\item 
+\Hypertarget{structwiphy_a4ebacaf553a0748eb062db09052e3489}\label{structwiphy_a4ebacaf553a0748eb062db09052e3489} 
+const struct \doxymbox{\hyperlink{structieee80211__vht__cap}{ieee80211\+\_\+vht\+\_\+cap}} \texorpdfstring{$\ast$}{*} {\bfseries vht\+\_\+capa\+\_\+mod\+\_\+mask}
+\item 
+\Hypertarget{structwiphy_aff227ffc59f7104f6e0efeeb5ba2d0b5}\label{structwiphy_aff227ffc59f7104f6e0efeeb5ba2d0b5} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries wdev\+\_\+list}
+\item 
+\Hypertarget{structwiphy_a40503121a5b4dee5eaa287a87195e193}\label{structwiphy_a40503121a5b4dee5eaa287a87195e193} 
+\doxymbox{\hyperlink{structpossible__net__t}{possible\+\_\+net\+\_\+t}} {\bfseries \+\_\+net}
+\item 
+\Hypertarget{structwiphy_a534eb29247b4227edf30c559c5758cc9}\label{structwiphy_a534eb29247b4227edf30c559c5758cc9} 
+const struct \doxymbox{\hyperlink{structiw__handler__def}{iw\+\_\+handler\+\_\+def}} \texorpdfstring{$\ast$}{*} {\bfseries wext}
+\item 
+\Hypertarget{structwiphy_a294f5e7e263fcfba0e6a8f6b1ce4f7e9}\label{structwiphy_a294f5e7e263fcfba0e6a8f6b1ce4f7e9} 
+const struct \doxymbox{\hyperlink{structwiphy__coalesce__support}{wiphy\+\_\+coalesce\+\_\+support}} \texorpdfstring{$\ast$}{*} {\bfseries coalesce}
+\item 
+\Hypertarget{structwiphy_aa0764cb324bb5d536bfb16d774213acf}\label{structwiphy_aa0764cb324bb5d536bfb16d774213acf} 
+const struct \doxymbox{\hyperlink{structwiphy__vendor__command}{wiphy\+\_\+vendor\+\_\+command}} \texorpdfstring{$\ast$}{*} {\bfseries vendor\+\_\+commands}
+\item 
+\Hypertarget{structwiphy_a2b5167bc72b18fc2b83c9983b87fe73e}\label{structwiphy_a2b5167bc72b18fc2b83c9983b87fe73e} 
+const struct \doxymbox{\hyperlink{structnl80211__vendor__cmd__info}{nl80211\+\_\+vendor\+\_\+cmd\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries vendor\+\_\+events}
+\item 
+\Hypertarget{structwiphy_a87a8892ff2d47b259ec72c8db3ebd0b7}\label{structwiphy_a87a8892ff2d47b259ec72c8db3ebd0b7} 
+int {\bfseries n\+\_\+vendor\+\_\+commands}
+\item 
+\Hypertarget{structwiphy_a1bf7da0237cf6e500a72a71d6de7b876}\label{structwiphy_a1bf7da0237cf6e500a72a71d6de7b876} 
+int {\bfseries n\+\_\+vendor\+\_\+events}
+\item 
+\Hypertarget{structwiphy_a8cbb0975587e1e2332bcbe655c62276e}\label{structwiphy_a8cbb0975587e1e2332bcbe655c62276e} 
+u16 {\bfseries max\+\_\+ap\+\_\+assoc\+\_\+sta}
+\item 
+\Hypertarget{structwiphy_a93ca148317b8c0349e1127ea5931ca74}\label{structwiphy_a93ca148317b8c0349e1127ea5931ca74} 
+u8 {\bfseries max\+\_\+num\+\_\+csa\+\_\+counters}
+\item 
+\Hypertarget{structwiphy_a0e9bbcad38636523a1a82faf16df990c}\label{structwiphy_a0e9bbcad38636523a1a82faf16df990c} 
+u32 {\bfseries bss\+\_\+param\+\_\+support}
+\item 
+\Hypertarget{structwiphy_a166fd843d7cd0e99a85dc5af258a44f0}\label{structwiphy_a166fd843d7cd0e99a85dc5af258a44f0} 
+u32 {\bfseries bss\+\_\+select\+\_\+support}
+\item 
+\Hypertarget{structwiphy_aeda20ea33badf99c5c3c69b747405f76}\label{structwiphy_aeda20ea33badf99c5c3c69b747405f76} 
+u8 {\bfseries nan\+\_\+supported\+\_\+bands}
+\item 
+\Hypertarget{structwiphy_aea125dd3cf2de4e220fa2a5212f17cea}\label{structwiphy_aea125dd3cf2de4e220fa2a5212f17cea} 
+struct \doxymbox{\hyperlink{structwiphy__nan__capa}{wiphy\+\_\+nan\+\_\+capa}} {\bfseries nan\+\_\+capa}
+\item 
+\Hypertarget{structwiphy_af7b50c1b037dcee7f794fbbc6ea52108}\label{structwiphy_af7b50c1b037dcee7f794fbbc6ea52108} 
+u32 {\bfseries txq\+\_\+limit}
+\item 
+\Hypertarget{structwiphy_a5828d6231a9083d49e139b0ba344630e}\label{structwiphy_a5828d6231a9083d49e139b0ba344630e} 
+u32 {\bfseries txq\+\_\+memory\+\_\+limit}
+\item 
+\Hypertarget{structwiphy_a4e3b84882116ffec734bacac6cbfe338}\label{structwiphy_a4e3b84882116ffec734bacac6cbfe338} 
+u32 {\bfseries txq\+\_\+quantum}
+\item 
+\Hypertarget{structwiphy_aaa0518b6ccf3fbeceb93473120221f95}\label{structwiphy_aaa0518b6ccf3fbeceb93473120221f95} 
+long unsigned int {\bfseries tx\+\_\+queue\+\_\+len}
+\item 
+\Hypertarget{structwiphy_a5fa1546213359cc4540a69bf3a0d2346}\label{structwiphy_a5fa1546213359cc4540a69bf3a0d2346} 
+u8 {\bfseries support\+\_\+mbssid}:\+ 1
+\item 
+\Hypertarget{structwiphy_a0b4e4a5d9c7467eb08abc6faba1a96c9}\label{structwiphy_a0b4e4a5d9c7467eb08abc6faba1a96c9} 
+u8 {\bfseries support\+\_\+only\+\_\+he\+\_\+mbssid}:\+ 1
+\item 
+\Hypertarget{structwiphy_ae7af05f3b6e52cb8b042b3afcb43966f}\label{structwiphy_ae7af05f3b6e52cb8b042b3afcb43966f} 
+const struct \doxymbox{\hyperlink{structcfg80211__pmsr__capabilities}{cfg80211\+\_\+pmsr\+\_\+capabilities}} \texorpdfstring{$\ast$}{*} {\bfseries pmsr\+\_\+capa}
+\item 
+\Hypertarget{structwiphy_add51aae04ad3864f03f5587a588b17bb}\label{structwiphy_add51aae04ad3864f03f5587a588b17bb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u64 {\bfseries peer}\\
+\>u64 {\bfseries vif}\\
+\>u8 {\bfseries max\_retry}\\
+\} {\bfseries tid\_config\_support}\\
+
+\end{tabbing}\item 
+\Hypertarget{structwiphy_a98f4b01e9ddc57aefc5c0ae3a109e975}\label{structwiphy_a98f4b01e9ddc57aefc5c0ae3a109e975} 
+u8 {\bfseries max\+\_\+data\+\_\+retry\+\_\+count}
+\item 
+\Hypertarget{structwiphy_a9a8d2a191ed1d1e2103484c0baf4eb97}\label{structwiphy_a9a8d2a191ed1d1e2103484c0baf4eb97} 
+const struct \doxymbox{\hyperlink{structcfg80211__sar__capa}{cfg80211\+\_\+sar\+\_\+capa}} \texorpdfstring{$\ast$}{*} {\bfseries sar\+\_\+capa}
+\item 
+\Hypertarget{structwiphy_a778aee97552af35ddf903b65a4381c2a}\label{structwiphy_a778aee97552af35ddf903b65a4381c2a} 
+struct rfkill \texorpdfstring{$\ast$}{*} {\bfseries rfkill}
+\item 
+\Hypertarget{structwiphy_ab720aeeaaabbe9c0be822a443dd00b5f}\label{structwiphy_ab720aeeaaabbe9c0be822a443dd00b5f} 
+u8 {\bfseries mbssid\+\_\+max\+\_\+interfaces}
+\item 
+\Hypertarget{structwiphy_a2ff432ab848a5ed87d47f2fc7d68d1a1}\label{structwiphy_a2ff432ab848a5ed87d47f2fc7d68d1a1} 
+u8 {\bfseries ema\+\_\+max\+\_\+profile\+\_\+periodicity}
+\item 
+\Hypertarget{structwiphy_ad28d814b535c54b7fd6d1f119e981093}\label{structwiphy_ad28d814b535c54b7fd6d1f119e981093} 
+u16 {\bfseries max\+\_\+num\+\_\+akm\+\_\+suites}
+\item 
+\Hypertarget{structwiphy_aa1b7cf33e94f26828f07973dbb1fbc73}\label{structwiphy_aa1b7cf33e94f26828f07973dbb1fbc73} 
+u16 {\bfseries hw\+\_\+timestamp\+\_\+max\+\_\+peers}
+\item 
+\Hypertarget{structwiphy_aa542cd7e9dccd04c7e734f712004bc63}\label{structwiphy_aa542cd7e9dccd04c7e734f712004bc63} 
+int {\bfseries n\+\_\+radio}
+\item 
+\Hypertarget{structwiphy_aec4a8aa20670a74dbc112f0aa5fcfbc6}\label{structwiphy_aec4a8aa20670a74dbc112f0aa5fcfbc6} 
+const struct \doxymbox{\hyperlink{structwiphy__radio}{wiphy\+\_\+radio}} \texorpdfstring{$\ast$}{*} {\bfseries radio}
+\item 
+\Hypertarget{structwiphy_ae3e39fc884c5748a116cd44fecce7cbb}\label{structwiphy_ae3e39fc884c5748a116cd44fecce7cbb} 
+char {\bfseries priv} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

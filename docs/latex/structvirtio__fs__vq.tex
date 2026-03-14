@@ -1,0 +1,67 @@
+\doxysection{virtio\+\_\+fs\+\_\+vq Struct Reference}
+\hypertarget{structvirtio__fs__vq}{}\label{structvirtio__fs__vq}\index{virtio\_fs\_vq@{virtio\_fs\_vq}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtio__fs__vq_abbf4e50c0ecfadf8cb167a3e76712318}\label{structvirtio__fs__vq_abbf4e50c0ecfadf8cb167a3e76712318} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structvirtio__fs__vq_a376caf2ade23e4c6be7c44532627360b}\label{structvirtio__fs__vq_a376caf2ade23e4c6be7c44532627360b} 
+struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*} {\bfseries vq}
+\item 
+\Hypertarget{structvirtio__fs__vq_a8c416e0d12afe7fa1e3fc63d3c8bf2b0}\label{structvirtio__fs__vq_a8c416e0d12afe7fa1e3fc63d3c8bf2b0} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries done\+\_\+work}
+\item 
+\Hypertarget{structvirtio__fs__vq_a8dfb3dac5048fc221fb50a1437efa2be}\label{structvirtio__fs__vq_a8dfb3dac5048fc221fb50a1437efa2be} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries queued\+\_\+reqs}
+\item 
+\Hypertarget{structvirtio__fs__vq_ad11bd56d344317646699b1552478fc36}\label{structvirtio__fs__vq_ad11bd56d344317646699b1552478fc36} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries end\+\_\+reqs}
+\item 
+\Hypertarget{structvirtio__fs__vq_ae15fcb5e89cc01503aec0dfaf02892a6}\label{structvirtio__fs__vq_ae15fcb5e89cc01503aec0dfaf02892a6} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries dispatch\+\_\+work}
+\item 
+\Hypertarget{structvirtio__fs__vq_ae289e39d3ed9d599e69364d8e4e0491c}\label{structvirtio__fs__vq_ae289e39d3ed9d599e69364d8e4e0491c} 
+struct \doxymbox{\hyperlink{structfuse__dev}{fuse\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries fud}
+\item 
+\Hypertarget{structvirtio__fs__vq_a7a4ed6a7b31c5d15cd4382db87315b17}\label{structvirtio__fs__vq_a7a4ed6a7b31c5d15cd4382db87315b17} 
+bool {\bfseries connected}
+\item 
+\Hypertarget{structvirtio__fs__vq_a5e3667423fab5c70b351e3f924bb3efd}\label{structvirtio__fs__vq_a5e3667423fab5c70b351e3f924bb3efd} 
+long int {\bfseries in\+\_\+flight}
+\item 
+\Hypertarget{structvirtio__fs__vq_a5499e2641a91275d871e8b16a0d18f84}\label{structvirtio__fs__vq_a5499e2641a91275d871e8b16a0d18f84} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries in\+\_\+flight\+\_\+zero}
+\item 
+\Hypertarget{structvirtio__fs__vq_ae2518f2faff7939b4c46c15f3241afb0}\label{structvirtio__fs__vq_ae2518f2faff7939b4c46c15f3241afb0} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} \texorpdfstring{$\ast$}{*} {\bfseries kobj}
+\item 
+\Hypertarget{structvirtio__fs__vq_ad49cfba7317f7bf078b749138a839f59}\label{structvirtio__fs__vq_ad49cfba7317f7bf078b749138a839f59} 
+char {\bfseries name} \+[24]\+
+\item 
+\Hypertarget{structvirtio__fs__vq_a93e992ee48f8da9c6cbad7aada56602c}\label{structvirtio__fs__vq_a93e992ee48f8da9c6cbad7aada56602c} 
+long :\+ 64
+\item 
+\Hypertarget{structvirtio__fs__vq_aaf5354f23d72563d79168c37685ea9b4}\label{structvirtio__fs__vq_aaf5354f23d72563d79168c37685ea9b4} 
+long :\+ 64
+\item 
+\Hypertarget{structvirtio__fs__vq_a4f20645475da322c61f0f372423cc638}\label{structvirtio__fs__vq_a4f20645475da322c61f0f372423cc638} 
+long :\+ 64
+\item 
+\Hypertarget{structvirtio__fs__vq_a7122d4ea557cab231f9fba04c5b8e0f4}\label{structvirtio__fs__vq_a7122d4ea557cab231f9fba04c5b8e0f4} 
+long :\+ 64
+\item 
+\Hypertarget{structvirtio__fs__vq_a7f7f47cbbcc500a72298da57e138f22d}\label{structvirtio__fs__vq_a7f7f47cbbcc500a72298da57e138f22d} 
+long :\+ 64
+\item 
+\Hypertarget{structvirtio__fs__vq_a383885657a0299b6578106cdf1d39b94}\label{structvirtio__fs__vq_a383885657a0299b6578106cdf1d39b94} 
+long :\+ 64
+\item 
+\Hypertarget{structvirtio__fs__vq_a1a64ae688b1da14af15accaa3fadecca}\label{structvirtio__fs__vq_a1a64ae688b1da14af15accaa3fadecca} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

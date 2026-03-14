@@ -1,0 +1,85 @@
+\doxysection{ipv6\+\_\+stub Struct Reference}
+\hypertarget{structipv6__stub}{}\label{structipv6__stub}\index{ipv6\_stub@{ipv6\_stub}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structipv6__stub_a63a64f614943c528b89ad2041e20b1b7}\label{structipv6__stub_a63a64f614943c528b89ad2041e20b1b7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ipv6\+\_\+sock\+\_\+mc\+\_\+join} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a063a31332912206bc4d2aa40119a0b18}\label{structipv6__stub_a063a31332912206bc4d2aa40119a0b18} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ipv6\+\_\+sock\+\_\+mc\+\_\+drop} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_ab8e8fe85058cf066b564ae034ee26497}\label{structipv6__stub_ab8e8fe85058cf066b564ae034ee26497} 
+struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries ipv6\+\_\+dst\+\_\+lookup\+\_\+flow} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi6}{flowi6}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a394b718751186617fe068e5e466ed447}\label{structipv6__stub_a394b718751186617fe068e5e466ed447} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ipv6\+\_\+route\+\_\+input} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a93fa576a4b18442ceef51395a5a1f0d6}\label{structipv6__stub_a93fa576a4b18442ceef51395a5a1f0d6} 
+struct \doxymbox{\hyperlink{structfib6__table}{fib6\+\_\+table}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+get\+\_\+table} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structipv6__stub_a4f7ec9b2c1be0864bf7aac63770c3c45}\label{structipv6__stub_a4f7ec9b2c1be0864bf7aac63770c3c45} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+lookup} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structflowi6}{flowi6}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib6__result}{fib6\+\_\+result}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structipv6__stub_a10b4a4cbe0a0c0b69c9db6474d273c79}\label{structipv6__stub_a10b4a4cbe0a0c0b69c9db6474d273c79} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+table\+\_\+lookup} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib6__table}{fib6\+\_\+table}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structflowi6}{flowi6}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib6__result}{fib6\+\_\+result}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structipv6__stub_a1f27c4ebc626e15bb7362e38d37fda4f}\label{structipv6__stub_a1f27c4ebc626e15bb7362e38d37fda4f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+select\+\_\+path} )(const struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib6__result}{fib6\+\_\+result}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi6}{flowi6}} \texorpdfstring{$\ast$}{*}, int, bool, const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structipv6__stub_a5525539d076a72b7055ee8c7dacd2649}\label{structipv6__stub_a5525539d076a72b7055ee8c7dacd2649} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries ip6\+\_\+mtu\+\_\+from\+\_\+fib6} )(const struct \doxymbox{\hyperlink{structfib6__result}{fib6\+\_\+result}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a8271744dd0fe1011e8871a7c83a429c9}\label{structipv6__stub_a8271744dd0fe1011e8871a7c83a429c9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+nh\+\_\+init} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib6__nh}{fib6\+\_\+nh}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib6__config}{fib6\+\_\+config}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a5c1b1424568dbc10d3f51b9e806e0416}\label{structipv6__stub_a5c1b1424568dbc10d3f51b9e806e0416} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+nh\+\_\+release} )(struct \doxymbox{\hyperlink{structfib6__nh}{fib6\+\_\+nh}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a0074b1a92096a7fac522f3250624fde9}\label{structipv6__stub_a0074b1a92096a7fac522f3250624fde9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+nh\+\_\+release\+\_\+dsts} )(struct \doxymbox{\hyperlink{structfib6__nh}{fib6\+\_\+nh}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a5e5953c2558fc4c3041ae24340a7f610}\label{structipv6__stub_a5e5953c2558fc4c3041ae24340a7f610} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+update\+\_\+sernum} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib6__info}{fib6\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a09c0b5cadcd0a7143fdf5b517cd1d4fe}\label{structipv6__stub_a09c0b5cadcd0a7143fdf5b517cd1d4fe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ip6\+\_\+del\+\_\+rt} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib6__info}{fib6\+\_\+info}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structipv6__stub_a5ddccf50ec32972d58e3b0a361d2e753}\label{structipv6__stub_a5ddccf50ec32972d58e3b0a361d2e753} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+rt\+\_\+update} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib6__info}{fib6\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnl__info}{nl\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a8dbf478132c3ff9baed73ca147d05db7}\label{structipv6__stub_a8dbf478132c3ff9baed73ca147d05db7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries udpv6\+\_\+encap\+\_\+enable} )(void)
+\item 
+\Hypertarget{structipv6__stub_ad3fc74fee86f1f448bad542b875db6c7}\label{structipv6__stub_ad3fc74fee86f1f448bad542b875db6c7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndisc\+\_\+send\+\_\+na} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} \texorpdfstring{$\ast$}{*}, bool, bool, bool, bool)
+\item 
+\Hypertarget{structipv6__stub_a0bde538a6717cfb47d24e859020f8cc9}\label{structipv6__stub_a0bde538a6717cfb47d24e859020f8cc9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries xfrm6\+\_\+local\+\_\+rxpmtu} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structipv6__stub_a6773ee15f4d3cc555f28902801ff2418}\label{structipv6__stub_a6773ee15f4d3cc555f28902801ff2418} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm6\+\_\+udp\+\_\+encap\+\_\+rcv} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a6f4fe4b0adb69e3c26037540465c4459}\label{structipv6__stub_a6f4fe4b0adb69e3c26037540465c4459} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries xfrm6\+\_\+gro\+\_\+udp\+\_\+encap\+\_\+rcv} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a91dfeb86e081dbaa88d69fe1a7d1953e}\label{structipv6__stub_a91dfeb86e081dbaa88d69fe1a7d1953e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm6\+\_\+rcv\+\_\+encap} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, int, \+\_\+\+\_\+be32, int)
+\item 
+\Hypertarget{structipv6__stub_a6c520687a38dbcf8b43b3a25b33a8e9a}\label{structipv6__stub_a6c520687a38dbcf8b43b3a25b33a8e9a} 
+struct \doxymbox{\hyperlink{structneigh__table}{neigh\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries nd\+\_\+tbl}
+\item 
+\Hypertarget{structipv6__stub_ab58dfe6cd803784ab07baf13bed8e3c7}\label{structipv6__stub_ab58dfe6cd803784ab07baf13bed8e3c7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ipv6\+\_\+fragment} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, int(\texorpdfstring{$\ast$}{*})(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}))
+\item 
+\Hypertarget{structipv6__stub_a263282a4bfb49b3b9061b32cae516dd1}\label{structipv6__stub_a263282a4bfb49b3b9061b32cae516dd1} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries ipv6\+\_\+dev\+\_\+find} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structipv6__stub_a892953d255bf9d343bcb1d7d3e9e82d9}\label{structipv6__stub_a892953d255bf9d343bcb1d7d3e9e82d9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ip6\+\_\+xmit} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi6}{flowi6}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+u32, struct \doxymbox{\hyperlink{structipv6__txoptions}{ipv6\+\_\+txoptions}} \texorpdfstring{$\ast$}{*}, int, u32)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

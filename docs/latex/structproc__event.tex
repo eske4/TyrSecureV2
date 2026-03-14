@@ -1,0 +1,37 @@
+\doxysection{proc\+\_\+event Struct Reference}
+\hypertarget{structproc__event}{}\label{structproc__event}\index{proc\_event@{proc\_event}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structproc__event_ab1a36c1f3f0f35fc97c6aae581cb37f6}\label{structproc__event_ab1a36c1f3f0f35fc97c6aae581cb37f6} 
+enum proc\+\_\+cn\+\_\+event {\bfseries what}
+\item 
+\Hypertarget{structproc__event_a19ab8c26e56503537a986ba65b5a7955}\label{structproc__event_a19ab8c26e56503537a986ba65b5a7955} 
+\+\_\+\+\_\+u32 {\bfseries cpu}
+\item 
+\Hypertarget{structproc__event_ae39077023668c68d17fc0ecf15a594ca}\label{structproc__event_ae39077023668c68d17fc0ecf15a594ca} 
+\+\_\+\+\_\+u64 {\bfseries timestamp\+\_\+ns}
+\item 
+\Hypertarget{structproc__event_a5d3da580ddc82fe45fe9bd31d563c9a8}\label{structproc__event_a5d3da580ddc82fe45fe9bd31d563c9a8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries err}\\
+\>\} {\bfseries ack}\\
+\>struct \doxymbox{\hyperlink{structfork__proc__event}{fork\_proc\_event}} {\bfseries fork}\\
+\>struct \doxymbox{\hyperlink{structexec__proc__event}{exec\_proc\_event}} {\bfseries exec}\\
+\>struct \doxymbox{\hyperlink{structid__proc__event}{id\_proc\_event}} {\bfseries id}\\
+\>struct \doxymbox{\hyperlink{structsid__proc__event}{sid\_proc\_event}} {\bfseries sid}\\
+\>struct \doxymbox{\hyperlink{structptrace__proc__event}{ptrace\_proc\_event}} {\bfseries ptrace}\\
+\>struct \doxymbox{\hyperlink{structcomm__proc__event}{comm\_proc\_event}} {\bfseries comm}\\
+\>struct \doxymbox{\hyperlink{structcoredump__proc__event}{coredump\_proc\_event}} {\bfseries coredump}\\
+\>struct \doxymbox{\hyperlink{structexit__proc__event}{exit\_proc\_event}} {\bfseries exit}\\
+\} {\bfseries event\_data}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

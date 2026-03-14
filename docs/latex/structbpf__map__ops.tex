@@ -1,0 +1,142 @@
+\doxysection{bpf\+\_\+map\+\_\+ops Struct Reference}
+\hypertarget{structbpf__map__ops}{}\label{structbpf__map__ops}\index{bpf\_map\_ops@{bpf\_map\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__map__ops_ac6c442a8229e7b76bd9f0621f5111566}\label{structbpf__map__ops_ac6c442a8229e7b76bd9f0621f5111566} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+alloc\+\_\+check} )(union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_aada0d78cff7798de26fd2bc2b4bd976f}\label{structbpf__map__ops_aada0d78cff7798de26fd2bc2b4bd976f} 
+struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+alloc} )(union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a4ca14221b1f74e7e01b4c5abf69eced7}\label{structbpf__map__ops_a4ca14221b1f74e7e01b4c5abf69eced7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+release} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a81c4c3a257ea60af55da54f6a4af8f4f}\label{structbpf__map__ops_a81c4c3a257ea60af55da54f6a4af8f4f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+free} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_aa338fbe673f3d31eca576ee4ef64f9c2}\label{structbpf__map__ops_aa338fbe673f3d31eca576ee4ef64f9c2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+get\+\_\+next\+\_\+key} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a77e0a716e43496a3dd943859471f987f}\label{structbpf__map__ops_a77e0a716e43496a3dd943859471f987f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+release\+\_\+uref} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a8194aa42f5d9eae6ff7e57478aafb978}\label{structbpf__map__ops_a8194aa42f5d9eae6ff7e57478aafb978} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+lookup\+\_\+elem\+\_\+sys\+\_\+only} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_ab813f9d53fda24075eb4b2002c3f3bbb}\label{structbpf__map__ops_ab813f9d53fda24075eb4b2002c3f3bbb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+lookup\+\_\+batch} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, const union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a69350e56c7f6aca7f35755fe13ddd170}\label{structbpf__map__ops_a69350e56c7f6aca7f35755fe13ddd170} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+lookup\+\_\+and\+\_\+delete\+\_\+elem} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structbpf__map__ops_a6dd49d8bf4c140fd6c96beb2381477ca}\label{structbpf__map__ops_a6dd49d8bf4c140fd6c96beb2381477ca} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+lookup\+\_\+and\+\_\+delete\+\_\+batch} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, const union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a2d7c8c76e92c2d50ccf81d148f0c22e9}\label{structbpf__map__ops_a2d7c8c76e92c2d50ccf81d148f0c22e9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+update\+\_\+batch} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, const union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_ac22c309ecc423b9d29ab7a8544c719e7}\label{structbpf__map__ops_ac22c309ecc423b9d29ab7a8544c719e7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+delete\+\_\+batch} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, const union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_aa158a3b26105c47c925edc96d1764766}\label{structbpf__map__ops_aa158a3b26105c47c925edc96d1764766} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+lookup\+\_\+elem} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a68ea854e7379c0c3581eabc8549aa9c4}\label{structbpf__map__ops_a68ea854e7379c0c3581eabc8549aa9c4} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+update\+\_\+elem} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structbpf__map__ops_a4a42461e217387bcf56f62beefece99d}\label{structbpf__map__ops_a4a42461e217387bcf56f62beefece99d} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+delete\+\_\+elem} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_af5d3550052779d341e867648da2d8327}\label{structbpf__map__ops_af5d3550052779d341e867648da2d8327} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+push\+\_\+elem} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structbpf__map__ops_a40d23ed5a3588f208b7db0260f49a3e5}\label{structbpf__map__ops_a40d23ed5a3588f208b7db0260f49a3e5} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+pop\+\_\+elem} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_af9b4032a6e2cde399e80054dc7864f2f}\label{structbpf__map__ops_af9b4032a6e2cde399e80054dc7864f2f} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+peek\+\_\+elem} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a8db3a0e3a8d2b1e02d0179aecac43012}\label{structbpf__map__ops_a8db3a0e3a8d2b1e02d0179aecac43012} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+lookup\+\_\+percpu\+\_\+elem} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structbpf__map__ops_ae7d0a0779bff7b159868eb3029daec36}\label{structbpf__map__ops_ae7d0a0779bff7b159868eb3029daec36} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+get\+\_\+hash} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, u32, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a466fb1c0c2262adabea5058b79d58c09}\label{structbpf__map__ops_a466fb1c0c2262adabea5058b79d58c09} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+fd\+\_\+get\+\_\+ptr} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structbpf__map__ops_a6f67361ad898ad51f52a76ba01c87583}\label{structbpf__map__ops_a6f67361ad898ad51f52a76ba01c87583} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+fd\+\_\+put\+\_\+ptr} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structbpf__map__ops_af042ebcfff2a815bd462c6503c41e416}\label{structbpf__map__ops_af042ebcfff2a815bd462c6503c41e416} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+gen\+\_\+lookup} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbpf__insn}{bpf\+\_\+insn}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a79571d8e2c5e7b9176b5a42eb80091e4}\label{structbpf__map__ops_a79571d8e2c5e7b9176b5a42eb80091e4} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+fd\+\_\+sys\+\_\+lookup\+\_\+elem} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a68c679d0f853950b7dacc85a05c82711}\label{structbpf__map__ops_a68c679d0f853950b7dacc85a05c82711} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+seq\+\_\+show\+\_\+elem} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a74fd191d244d9528a19afbb833995517}\label{structbpf__map__ops_a74fd191d244d9528a19afbb833995517} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+check\+\_\+btf} )(const struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structbtf}{btf}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structbtf__type}{btf\+\_\+type}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structbtf__type}{btf\+\_\+type}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a2d9250dd35f3e113d58d98d782558728}\label{structbpf__map__ops_a2d9250dd35f3e113d58d98d782558728} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+poke\+\_\+track} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbpf__prog__aux}{bpf\+\_\+prog\+\_\+aux}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a5ca1c81e994d70d5dc7f33e180dc4491}\label{structbpf__map__ops_a5ca1c81e994d70d5dc7f33e180dc4491} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+poke\+\_\+untrack} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbpf__prog__aux}{bpf\+\_\+prog\+\_\+aux}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_afd5434482356185275dfc92f0e9924c0}\label{structbpf__map__ops_afd5434482356185275dfc92f0e9924c0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+poke\+\_\+run} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_acbc7960e8c0fbe219cd1bf8f49e4510e}\label{structbpf__map__ops_acbc7960e8c0fbe219cd1bf8f49e4510e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+direct\+\_\+value\+\_\+addr} )(const struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structbpf__map__ops_ae8b66a77c6a72d99ebbc486403cc63e4}\label{structbpf__map__ops_ae8b66a77c6a72d99ebbc486403cc63e4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+direct\+\_\+value\+\_\+meta} )(const struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, u64, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a0072fc0b9c9f932d30114e5fd2ff1382}\label{structbpf__map__ops_a0072fc0b9c9f932d30114e5fd2ff1382} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+mmap} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_adb103df052fc9db13fb4c4f3428f0371}\label{structbpf__map__ops_adb103df052fc9db13fb4c4f3428f0371} 
+\+\_\+\+\_\+poll\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+poll} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpoll__table__struct}{poll\+\_\+table\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a33af2d2e404c993bbe0293df75986184}\label{structbpf__map__ops_a33af2d2e404c993bbe0293df75986184} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+get\+\_\+unmapped\+\_\+area} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int, long unsigned int, long unsigned int)
+\item 
+\Hypertarget{structbpf__map__ops_a110d881d99c3ce9804bbac71969c0297}\label{structbpf__map__ops_a110d881d99c3ce9804bbac71969c0297} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+local\+\_\+storage\+\_\+charge} )(struct \doxymbox{\hyperlink{structbpf__local__storage__map}{bpf\+\_\+local\+\_\+storage\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structbpf__map__ops_a7f3021b7c8e9930fd2497278fcf1ca7a}\label{structbpf__map__ops_a7f3021b7c8e9930fd2497278fcf1ca7a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+local\+\_\+storage\+\_\+uncharge} )(struct \doxymbox{\hyperlink{structbpf__local__storage__map}{bpf\+\_\+local\+\_\+storage\+\_\+map}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structbpf__map__ops_a0f83fd2ec82314f7489369e29fb0888e}\label{structbpf__map__ops_a0f83fd2ec82314f7489369e29fb0888e} 
+struct \doxymbox{\hyperlink{structbpf__local__storage}{bpf\+\_\+local\+\_\+storage}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+owner\+\_\+storage\+\_\+ptr} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_add98ba5603b445499c67b0f7c6c33041}\label{structbpf__map__ops_add98ba5603b445499c67b0f7c6c33041} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+redirect} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, u64, u64)
+\item 
+\Hypertarget{structbpf__map__ops_a1219c24954fb534f31037d7580ed4b39}\label{structbpf__map__ops_a1219c24954fb534f31037d7580ed4b39} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+meta\+\_\+equal} )(const struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a0f923754d8421a53d655bde1f54dc02a}\label{structbpf__map__ops_a0f923754d8421a53d655bde1f54dc02a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+set\+\_\+for\+\_\+each\+\_\+callback\+\_\+args} )(struct \doxymbox{\hyperlink{structbpf__verifier__env}{bpf\+\_\+verifier\+\_\+env}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbpf__func__state}{bpf\+\_\+func\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbpf__func__state}{bpf\+\_\+func\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a12f38926d41f4b39bf7409d25b5a73a8}\label{structbpf__map__ops_a12f38926d41f4b39bf7409d25b5a73a8} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+for\+\_\+each\+\_\+callback} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, bpf\+\_\+callback\+\_\+t, void \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structbpf__map__ops_ac5cab06e6fbff420939805c4737cc510}\label{structbpf__map__ops_ac5cab06e6fbff420939805c4737cc510} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+mem\+\_\+usage} )(const struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbpf__map__ops_a09830e278113dee53be9d495a268b88a}\label{structbpf__map__ops_a09830e278113dee53be9d495a268b88a} 
+int \texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+btf\+\_\+id}
+\item 
+\Hypertarget{structbpf__map__ops_aa1fb86675adcbe806344bc63f36098da}\label{structbpf__map__ops_aa1fb86675adcbe806344bc63f36098da} 
+const struct \doxymbox{\hyperlink{structbpf__iter__seq__info}{bpf\+\_\+iter\+\_\+seq\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries iter\+\_\+seq\+\_\+info}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

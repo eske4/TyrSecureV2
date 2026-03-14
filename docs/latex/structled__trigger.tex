@@ -1,0 +1,37 @@
+\doxysection{led\+\_\+trigger Struct Reference}
+\hypertarget{structled__trigger}{}\label{structled__trigger}\index{led\_trigger@{led\_trigger}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structled__trigger_a4cd6aee385542c2a237b9ae3b2f37ed3}\label{structled__trigger_a4cd6aee385542c2a237b9ae3b2f37ed3} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structled__trigger_a59b77e307837e2ea683c8dc440c8a453}\label{structled__trigger_a59b77e307837e2ea683c8dc440c8a453} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries activate} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structled__trigger_a02893b35f3f715a8c77154ab00ed5b3a}\label{structled__trigger_a02893b35f3f715a8c77154ab00ed5b3a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries deactivate} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structled__trigger_ac1608ca8da76ea4e7329e0016df2333d}\label{structled__trigger_ac1608ca8da76ea4e7329e0016df2333d} 
+enum led\+\_\+brightness {\bfseries brightness}
+\item 
+\Hypertarget{structled__trigger_affa5caaad92541811ab46f8e7eb3802d}\label{structled__trigger_affa5caaad92541811ab46f8e7eb3802d} 
+struct \doxymbox{\hyperlink{structled__hw__trigger__type}{led\+\_\+hw\+\_\+trigger\+\_\+type}} \texorpdfstring{$\ast$}{*} {\bfseries trigger\+\_\+type}
+\item 
+\Hypertarget{structled__trigger_a50019777e5114f8e968109e893465b37}\label{structled__trigger_a50019777e5114f8e968109e893465b37} 
+spinlock\+\_\+t {\bfseries leddev\+\_\+list\+\_\+lock}
+\item 
+\Hypertarget{structled__trigger_a10cd9c86dc6c0d844cbd96ffd7828cd6}\label{structled__trigger_a10cd9c86dc6c0d844cbd96ffd7828cd6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries led\+\_\+cdevs}
+\item 
+\Hypertarget{structled__trigger_a29ddd2c4727903b4de43681b12af33d2}\label{structled__trigger_a29ddd2c4727903b4de43681b12af33d2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries next\+\_\+trig}
+\item 
+\Hypertarget{structled__trigger_a664b86a7b61e5ab018332d3594772c28}\label{structled__trigger_a664b86a7b61e5ab018332d3594772c28} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries groups}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

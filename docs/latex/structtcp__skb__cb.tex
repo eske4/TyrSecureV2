@@ -1,0 +1,71 @@
+\doxysection{tcp\+\_\+skb\+\_\+cb Struct Reference}
+\hypertarget{structtcp__skb__cb}{}\label{structtcp__skb__cb}\index{tcp\_skb\_cb@{tcp\_skb\_cb}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtcp__skb__cb_a15d90a1c55242031b8f95804923bd86f}\label{structtcp__skb__cb_a15d90a1c55242031b8f95804923bd86f} 
+\+\_\+\+\_\+u32 {\bfseries seq}
+\item 
+\Hypertarget{structtcp__skb__cb_ab603bdd5235e72ad44002bfbfec88d8d}\label{structtcp__skb__cb_ab603bdd5235e72ad44002bfbfec88d8d} 
+\+\_\+\+\_\+u32 {\bfseries end\+\_\+seq}
+\item 
+\Hypertarget{structtcp__skb__cb_a117a718f35de951ddfd4d73835345e59}\label{structtcp__skb__cb_a117a718f35de951ddfd4d73835345e59} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{uniontcp__skb__cb_1_1_0d365145060052236256133151340101345061272344263366_adcf36915d720656615fca99d76646583}\label{uniontcp__skb__cb_1_1_0d365145060052236256133151340101345061272344263366_adcf36915d720656615fca99d76646583} 
+\>struct \{\\
+\>\>u16 {\bfseries tcp\_gso\_segs}\\
+\>\>u16 {\bfseries tcp\_gso\_size}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structtcp__skb__cb_aed680b892a47d063a66cd828f5dfcf55}\label{structtcp__skb__cb_aed680b892a47d063a66cd828f5dfcf55} 
+\+\_\+\+\_\+u16 {\bfseries tcp\+\_\+flags}
+\item 
+\Hypertarget{structtcp__skb__cb_a39bbb065994e6f44d8905179035544f2}\label{structtcp__skb__cb_a39bbb065994e6f44d8905179035544f2} 
+\+\_\+\+\_\+u8 {\bfseries sacked}
+\item 
+\Hypertarget{structtcp__skb__cb_a38a366ab614262608c43434bd038ea4d}\label{structtcp__skb__cb_a38a366ab614262608c43434bd038ea4d} 
+\+\_\+\+\_\+u8 {\bfseries ip\+\_\+dsfield}
+\item 
+\Hypertarget{structtcp__skb__cb_a8e741ceb23579d18d11ca46207c51afa}\label{structtcp__skb__cb_a8e741ceb23579d18d11ca46207c51afa} 
+\+\_\+\+\_\+u8 {\bfseries txstamp\+\_\+ack}:\+ 2
+\item 
+\Hypertarget{structtcp__skb__cb_a9a8fffc8efc59b739ad1b2cf034b6d7e}\label{structtcp__skb__cb_a9a8fffc8efc59b739ad1b2cf034b6d7e} 
+\+\_\+\+\_\+u8 {\bfseries eor}:\+ 1
+\item 
+\Hypertarget{structtcp__skb__cb_aa89283b392151428da6ab428a597557e}\label{structtcp__skb__cb_aa89283b392151428da6ab428a597557e} 
+\+\_\+\+\_\+u8 {\bfseries has\+\_\+rxtstamp}:\+ 1
+\item 
+\Hypertarget{structtcp__skb__cb_a485f32881e6b85be26845b5d65f555fa}\label{structtcp__skb__cb_a485f32881e6b85be26845b5d65f555fa} 
+\+\_\+\+\_\+u8 {\bfseries unused}:\+ 4
+\item 
+\Hypertarget{structtcp__skb__cb_aba8abc28c62c34392dd2c13a6c5d885f}\label{structtcp__skb__cb_aba8abc28c62c34392dd2c13a6c5d885f} 
+\+\_\+\+\_\+u32 {\bfseries ack\+\_\+seq}
+\item 
+\Hypertarget{structtcp__skb__cb_adb3f7eedc6b1b64ee02d8622481e737d}\label{structtcp__skb__cb_adb3f7eedc6b1b64ee02d8622481e737d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries is\_app\_limited}: 1\\
+\>\>\_\_u32 {\bfseries delivered\_ce}: 20\\
+\>\>\_\_u32 {\bfseries unused}: 11\\
+\>\>\_\_u32 {\bfseries delivered}\\
+\>\>u64 {\bfseries first\_tx\_mstamp}\\
+\>\>u64 {\bfseries delivered\_mstamp}\\
+\>\} {\bfseries tx}\\
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{structinet__skb__parm}{inet\_skb\_parm}} {\bfseries h4}\\
+\>\>struct \doxymbox{\hyperlink{structinet6__skb__parm}{inet6\_skb\_parm}} {\bfseries h6}\\
+\>\} {\bfseries header}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

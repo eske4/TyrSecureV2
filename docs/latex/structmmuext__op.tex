@@ -1,0 +1,32 @@
+\doxysection{mmuext\+\_\+op Struct Reference}
+\hypertarget{structmmuext__op}{}\label{structmmuext__op}\index{mmuext\_op@{mmuext\_op}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmmuext__op_adff35c796262b844e67e74c8dc8104cc}\label{structmmuext__op_adff35c796262b844e67e74c8dc8104cc} 
+unsigned int {\bfseries cmd}
+\item 
+\Hypertarget{structmmuext__op_a3a878baceff2873b129585b6ed9bdfa7}\label{structmmuext__op_a3a878baceff2873b129585b6ed9bdfa7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>xen\_pfn\_t {\bfseries mfn}\\
+\>long unsigned int {\bfseries linear\_addr}\\
+\} {\bfseries arg1}\\
+
+\end{tabbing}\item 
+\Hypertarget{structmmuext__op_afc61e230210d4fe16d536b8c12c35538}\label{structmmuext__op_afc61e230210d4fe16d536b8c12c35538} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>unsigned int {\bfseries nr\_ents}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries vcpumask}\\
+\>xen\_pfn\_t {\bfseries src\_mfn}\\
+\} {\bfseries arg2}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

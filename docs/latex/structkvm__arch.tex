@@ -1,0 +1,283 @@
+\doxysection{kvm\+\_\+arch Struct Reference}
+\hypertarget{structkvm__arch}{}\label{structkvm__arch}\index{kvm\_arch@{kvm\_arch}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__arch_a6c24605085094c3392116e413e51f872}\label{structkvm__arch_a6c24605085094c3392116e413e51f872} 
+long unsigned int {\bfseries n\+\_\+used\+\_\+mmu\+\_\+pages}
+\item 
+\Hypertarget{structkvm__arch_ac4e1b4d19bc0b77fa7619da26097713d}\label{structkvm__arch_ac4e1b4d19bc0b77fa7619da26097713d} 
+long unsigned int {\bfseries n\+\_\+requested\+\_\+mmu\+\_\+pages}
+\item 
+\Hypertarget{structkvm__arch_a383f1939c4bf15546afb2aaede230984}\label{structkvm__arch_a383f1939c4bf15546afb2aaede230984} 
+long unsigned int {\bfseries n\+\_\+max\+\_\+mmu\+\_\+pages}
+\item 
+\Hypertarget{structkvm__arch_a94e5558b1436fa726401a9e3c04d2a07}\label{structkvm__arch_a94e5558b1436fa726401a9e3c04d2a07} 
+unsigned int {\bfseries indirect\+\_\+shadow\+\_\+pages}
+\item 
+\Hypertarget{structkvm__arch_a5d19847c06888b520f58dfa562c43863}\label{structkvm__arch_a5d19847c06888b520f58dfa562c43863} 
+u8 {\bfseries mmu\+\_\+valid\+\_\+gen}
+\item 
+\Hypertarget{structkvm__arch_a5d492e9811eb999162a60587695bafd1}\label{structkvm__arch_a5d492e9811eb999162a60587695bafd1} 
+u8 {\bfseries vm\+\_\+type}
+\item 
+\Hypertarget{structkvm__arch_ac249ffe114ec9ea5e41cbc969c8561e6}\label{structkvm__arch_ac249ffe114ec9ea5e41cbc969c8561e6} 
+bool {\bfseries has\+\_\+private\+\_\+mem}
+\item 
+\Hypertarget{structkvm__arch_aeea07538198d315674d8c67b77a7878d}\label{structkvm__arch_aeea07538198d315674d8c67b77a7878d} 
+bool {\bfseries has\+\_\+protected\+\_\+state}
+\item 
+\Hypertarget{structkvm__arch_a7c2c27769f7a9aa534362ce8265c73b3}\label{structkvm__arch_a7c2c27769f7a9aa534362ce8265c73b3} 
+bool {\bfseries has\+\_\+protected\+\_\+eoi}
+\item 
+\Hypertarget{structkvm__arch_a5977abe88a0a79eeeb49a152fdfc5f89}\label{structkvm__arch_a5977abe88a0a79eeeb49a152fdfc5f89} 
+bool {\bfseries pre\+\_\+fault\+\_\+allowed}
+\item 
+\Hypertarget{structkvm__arch_ae0e0bf72ec6cc6f1de87324bbb536569}\label{structkvm__arch_ae0e0bf72ec6cc6f1de87324bbb536569} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries mmu\+\_\+page\+\_\+hash}
+\item 
+\Hypertarget{structkvm__arch_a1245f1f058aa2f940fd52be46e93c128}\label{structkvm__arch_a1245f1f058aa2f940fd52be46e93c128} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries active\+\_\+mmu\+\_\+pages}
+\item 
+\Hypertarget{structkvm__arch_aaeeb723bc0f6a1879cc4d6824940ab5b}\label{structkvm__arch_aaeeb723bc0f6a1879cc4d6824940ab5b} 
+struct \doxymbox{\hyperlink{structkvm__possible__nx__huge__pages}{kvm\+\_\+possible\+\_\+nx\+\_\+huge\+\_\+pages}} {\bfseries possible\+\_\+nx\+\_\+huge\+\_\+pages} \+[2]\+
+\item 
+\Hypertarget{structkvm__arch_a818eed852b72a232211f2cfc1b6469db}\label{structkvm__arch_a818eed852b72a232211f2cfc1b6469db} 
+struct \doxymbox{\hyperlink{structkvm__page__track__notifier__head}{kvm\+\_\+page\+\_\+track\+\_\+notifier\+\_\+head}} {\bfseries track\+\_\+notifier\+\_\+head}
+\item 
+\Hypertarget{structkvm__arch_a78897b7fd9806e12da9175c50f9426f6}\label{structkvm__arch_a78897b7fd9806e12da9175c50f9426f6} 
+spinlock\+\_\+t {\bfseries mmu\+\_\+unsync\+\_\+pages\+\_\+lock}
+\item 
+\Hypertarget{structkvm__arch_aa2b9c4cbbfcd8b499191a20b89fec1f6}\label{structkvm__arch_aa2b9c4cbbfcd8b499191a20b89fec1f6} 
+u64 {\bfseries shadow\+\_\+mmio\+\_\+value}
+\item 
+\Hypertarget{structkvm__arch_a8ae48a1521b17cdffdddd3390020e5c5}\label{structkvm__arch_a8ae48a1521b17cdffdddd3390020e5c5} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries noncoherent\+\_\+dma\+\_\+count}
+\item 
+\Hypertarget{structkvm__arch_acd59edb19fca4588bdf7091168247df9}\label{structkvm__arch_acd59edb19fca4588bdf7091168247df9} 
+long unsigned int {\bfseries nr\+\_\+possible\+\_\+bypass\+\_\+irqs}
+\item 
+\Hypertarget{structkvm__arch_a79ec2b0c39eeecaa974c54da93a75bb2}\label{structkvm__arch_a79ec2b0c39eeecaa974c54da93a75bb2} 
+struct kvm\+\_\+pic \texorpdfstring{$\ast$}{*} {\bfseries vpic}
+\item 
+\Hypertarget{structkvm__arch_a9b72f51b86f548d66c0c049b114de6e5}\label{structkvm__arch_a9b72f51b86f548d66c0c049b114de6e5} 
+struct kvm\+\_\+ioapic \texorpdfstring{$\ast$}{*} {\bfseries vioapic}
+\item 
+\Hypertarget{structkvm__arch_af481386f9f9f1e4b79addb70a2180108}\label{structkvm__arch_af481386f9f9f1e4b79addb70a2180108} 
+struct kvm\+\_\+pit \texorpdfstring{$\ast$}{*} {\bfseries vpit}
+\item 
+\Hypertarget{structkvm__arch_ae700315dbc648b992dac84b5a4ce7ebd}\label{structkvm__arch_ae700315dbc648b992dac84b5a4ce7ebd} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries vapics\+\_\+in\+\_\+nmi\+\_\+mode}
+\item 
+\Hypertarget{structkvm__arch_ab867498957dae21606d42f8730922c87}\label{structkvm__arch_ab867498957dae21606d42f8730922c87} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries apic\+\_\+map\+\_\+lock}
+\item 
+\Hypertarget{structkvm__arch_abeb6d2ce1f8435ed0d7527c4924f289f}\label{structkvm__arch_abeb6d2ce1f8435ed0d7527c4924f289f} 
+struct \doxymbox{\hyperlink{structkvm__apic__map}{kvm\+\_\+apic\+\_\+map}} \texorpdfstring{$\ast$}{*} {\bfseries apic\+\_\+map}
+\item 
+\Hypertarget{structkvm__arch_aeb3897c2aeb8532baee12d3e9e075088}\label{structkvm__arch_aeb3897c2aeb8532baee12d3e9e075088} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries apic\+\_\+map\+\_\+dirty}
+\item 
+\Hypertarget{structkvm__arch_a865a18b4651fb974d3017a6325a5b0a2}\label{structkvm__arch_a865a18b4651fb974d3017a6325a5b0a2} 
+bool {\bfseries apic\+\_\+access\+\_\+memslot\+\_\+enabled}
+\item 
+\Hypertarget{structkvm__arch_acac166b2526ea1c88bcead1031380922}\label{structkvm__arch_acac166b2526ea1c88bcead1031380922} 
+bool {\bfseries apic\+\_\+access\+\_\+memslot\+\_\+inhibited}
+\item 
+\Hypertarget{structkvm__arch_a588a7741e7fd6b59994e0057027b7120}\label{structkvm__arch_a588a7741e7fd6b59994e0057027b7120} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries apicv\+\_\+update\+\_\+lock}
+\item 
+\Hypertarget{structkvm__arch_a6c23c7f525b0883a4b81c5db583f10c5}\label{structkvm__arch_a6c23c7f525b0883a4b81c5db583f10c5} 
+long unsigned int {\bfseries apicv\+\_\+inhibit\+\_\+reasons}
+\item 
+\Hypertarget{structkvm__arch_a9b9f2260bd917ddfdb078101067b24b2}\label{structkvm__arch_a9b9f2260bd917ddfdb078101067b24b2} 
+gpa\+\_\+t {\bfseries wall\+\_\+clock}
+\item 
+\Hypertarget{structkvm__arch_a8cd997ff9f814c53fb9534dd4a16b3dc}\label{structkvm__arch_a8cd997ff9f814c53fb9534dd4a16b3dc} 
+u64 {\bfseries disabled\+\_\+exits}
+\item 
+\Hypertarget{structkvm__arch_ab47c82a7296c803c3ddd3f786fa6389e}\label{structkvm__arch_ab47c82a7296c803c3ddd3f786fa6389e} 
+s64 {\bfseries kvmclock\+\_\+offset}
+\item 
+\Hypertarget{structkvm__arch_ae45f07beb5d7566e4801bbc01d48e6cc}\label{structkvm__arch_ae45f07beb5d7566e4801bbc01d48e6cc} 
+raw\+\_\+spinlock\+\_\+t {\bfseries tsc\+\_\+write\+\_\+lock}
+\item 
+\Hypertarget{structkvm__arch_a2a82fc94b5a7a1233a36142b3625d45b}\label{structkvm__arch_a2a82fc94b5a7a1233a36142b3625d45b} 
+u64 {\bfseries last\+\_\+tsc\+\_\+nsec}
+\item 
+\Hypertarget{structkvm__arch_ada3cf90d963f3e3c7739dc1f4129d0ea}\label{structkvm__arch_ada3cf90d963f3e3c7739dc1f4129d0ea} 
+u64 {\bfseries last\+\_\+tsc\+\_\+write}
+\item 
+\Hypertarget{structkvm__arch_a498564a42740d0d09d290bfa760fab09}\label{structkvm__arch_a498564a42740d0d09d290bfa760fab09} 
+u32 {\bfseries last\+\_\+tsc\+\_\+khz}
+\item 
+\Hypertarget{structkvm__arch_acd83c72cdef033f6dd250b161487bb59}\label{structkvm__arch_acd83c72cdef033f6dd250b161487bb59} 
+u64 {\bfseries last\+\_\+tsc\+\_\+offset}
+\item 
+\Hypertarget{structkvm__arch_a02788020559e13b2a9157c80d7c81349}\label{structkvm__arch_a02788020559e13b2a9157c80d7c81349} 
+u64 {\bfseries cur\+\_\+tsc\+\_\+nsec}
+\item 
+\Hypertarget{structkvm__arch_af8ee0100c7300ec5e0f9fe37624bcbe7}\label{structkvm__arch_af8ee0100c7300ec5e0f9fe37624bcbe7} 
+u64 {\bfseries cur\+\_\+tsc\+\_\+write}
+\item 
+\Hypertarget{structkvm__arch_ae50d3107d00f3235bb798d36977c7d28}\label{structkvm__arch_ae50d3107d00f3235bb798d36977c7d28} 
+u64 {\bfseries cur\+\_\+tsc\+\_\+offset}
+\item 
+\Hypertarget{structkvm__arch_aa213e9e0336d931d0ef30da1f9911dc9}\label{structkvm__arch_aa213e9e0336d931d0ef30da1f9911dc9} 
+u64 {\bfseries cur\+\_\+tsc\+\_\+generation}
+\item 
+\Hypertarget{structkvm__arch_ae049b81531302f1c6d65562d07e1508e}\label{structkvm__arch_ae049b81531302f1c6d65562d07e1508e} 
+int {\bfseries nr\+\_\+vcpus\+\_\+matched\+\_\+tsc}
+\item 
+\Hypertarget{structkvm__arch_ac411ea0643df75ef5f11958ea10638a3}\label{structkvm__arch_ac411ea0643df75ef5f11958ea10638a3} 
+u32 {\bfseries default\+\_\+tsc\+\_\+khz}
+\item 
+\Hypertarget{structkvm__arch_a3bd69aff4bc618610c91b886bc2d1742}\label{structkvm__arch_a3bd69aff4bc618610c91b886bc2d1742} 
+bool {\bfseries user\+\_\+set\+\_\+tsc}
+\item 
+\Hypertarget{structkvm__arch_ae25d07e592c291075bd1eca8ba641e1f}\label{structkvm__arch_ae25d07e592c291075bd1eca8ba641e1f} 
+u64 {\bfseries apic\+\_\+bus\+\_\+cycle\+\_\+ns}
+\item 
+\Hypertarget{structkvm__arch_abab02702749be76280e98218b8a2ae76}\label{structkvm__arch_abab02702749be76280e98218b8a2ae76} 
+seqcount\+\_\+raw\+\_\+spinlock\+\_\+t {\bfseries pvclock\+\_\+sc}
+\item 
+\Hypertarget{structkvm__arch_ac4a901cf1afb8054d4f1c53aa563ba49}\label{structkvm__arch_ac4a901cf1afb8054d4f1c53aa563ba49} 
+bool {\bfseries use\+\_\+master\+\_\+clock}
+\item 
+\Hypertarget{structkvm__arch_acf4dd9e9e44de552c8e898a360242c86}\label{structkvm__arch_acf4dd9e9e44de552c8e898a360242c86} 
+u64 {\bfseries master\+\_\+kernel\+\_\+ns}
+\item 
+\Hypertarget{structkvm__arch_aaf08ccd9abb375b1622b320757429078}\label{structkvm__arch_aaf08ccd9abb375b1622b320757429078} 
+u64 {\bfseries master\+\_\+cycle\+\_\+now}
+\item 
+\Hypertarget{structkvm__arch_a0bbf15e030487ca1f9314d4009791be7}\label{structkvm__arch_a0bbf15e030487ca1f9314d4009791be7} 
+struct \doxymbox{\hyperlink{structkvm__hv}{kvm\+\_\+hv}} {\bfseries hyperv}
+\item 
+\Hypertarget{structkvm__arch_a89ef2d69794d38544849f8293d0feb48}\label{structkvm__arch_a89ef2d69794d38544849f8293d0feb48} 
+struct \doxymbox{\hyperlink{structkvm__xen}{kvm\+\_\+xen}} {\bfseries xen}
+\item 
+\Hypertarget{structkvm__arch_adced6ee04d30483d3cb1e45bfa8e3b9b}\label{structkvm__arch_adced6ee04d30483d3cb1e45bfa8e3b9b} 
+bool {\bfseries backwards\+\_\+tsc\+\_\+observed}
+\item 
+\Hypertarget{structkvm__arch_a178e1fa938f6e824406794a2100dcd61}\label{structkvm__arch_a178e1fa938f6e824406794a2100dcd61} 
+bool {\bfseries boot\+\_\+vcpu\+\_\+runs\+\_\+old\+\_\+kvmclock}
+\item 
+\Hypertarget{structkvm__arch_a8850cec735b1d98111e39fbc7423ed2c}\label{structkvm__arch_a8850cec735b1d98111e39fbc7423ed2c} 
+u32 {\bfseries bsp\+\_\+vcpu\+\_\+id}
+\item 
+\Hypertarget{structkvm__arch_ae073334515c17746bea664deadc98b79}\label{structkvm__arch_ae073334515c17746bea664deadc98b79} 
+u64 {\bfseries disabled\+\_\+quirks}
+\item 
+\Hypertarget{structkvm__arch_a5182fbeb973208bc1e941758a555666f}\label{structkvm__arch_a5182fbeb973208bc1e941758a555666f} 
+enum kvm\+\_\+irqchip\+\_\+mode {\bfseries irqchip\+\_\+mode}
+\item 
+\Hypertarget{structkvm__arch_abf4b22a32932e1956ea48a05be1e0954}\label{structkvm__arch_abf4b22a32932e1956ea48a05be1e0954} 
+u8 {\bfseries nr\+\_\+reserved\+\_\+ioapic\+\_\+pins}
+\item 
+\Hypertarget{structkvm__arch_a1ee0220a0d03b062feab8bd3d9e9cead}\label{structkvm__arch_a1ee0220a0d03b062feab8bd3d9e9cead} 
+bool {\bfseries disabled\+\_\+lapic\+\_\+found}
+\item 
+\Hypertarget{structkvm__arch_aed027a3dbee98ae6eafeae3d2c373a91}\label{structkvm__arch_aed027a3dbee98ae6eafeae3d2c373a91} 
+bool {\bfseries x2apic\+\_\+format}
+\item 
+\Hypertarget{structkvm__arch_a2608bdbbaf1b9010c3ad99acb1a16394}\label{structkvm__arch_a2608bdbbaf1b9010c3ad99acb1a16394} 
+bool {\bfseries x2apic\+\_\+broadcast\+\_\+quirk\+\_\+disabled}
+\item 
+\Hypertarget{structkvm__arch_a129284a4cb94ac9e482e0f513c60ae06}\label{structkvm__arch_a129284a4cb94ac9e482e0f513c60ae06} 
+bool {\bfseries has\+\_\+mapped\+\_\+host\+\_\+mmio}
+\item 
+\Hypertarget{structkvm__arch_aa8fe2dbbe9f5c8069cfc866eb2238855}\label{structkvm__arch_aa8fe2dbbe9f5c8069cfc866eb2238855} 
+bool {\bfseries guest\+\_\+can\+\_\+read\+\_\+msr\+\_\+platform\+\_\+info}
+\item 
+\Hypertarget{structkvm__arch_ab56dc6d05db2e844739e13cad326640c}\label{structkvm__arch_ab56dc6d05db2e844739e13cad326640c} 
+bool {\bfseries exception\+\_\+payload\+\_\+enabled}
+\item 
+\Hypertarget{structkvm__arch_a82cfc03a0d2e92c5f6c9a3d561f4d990}\label{structkvm__arch_a82cfc03a0d2e92c5f6c9a3d561f4d990} 
+bool {\bfseries triple\+\_\+fault\+\_\+event}
+\item 
+\Hypertarget{structkvm__arch_a80259ee879c7865742a8209c138e1139}\label{structkvm__arch_a80259ee879c7865742a8209c138e1139} 
+bool {\bfseries bus\+\_\+lock\+\_\+detection\+\_\+enabled}
+\item 
+\Hypertarget{structkvm__arch_a909cb48df1139c95ccf768df68194ad8}\label{structkvm__arch_a909cb48df1139c95ccf768df68194ad8} 
+bool {\bfseries enable\+\_\+pmu}
+\item 
+\Hypertarget{structkvm__arch_a4359c3c1bd2f54ab2aa230532fbeffbd}\label{structkvm__arch_a4359c3c1bd2f54ab2aa230532fbeffbd} 
+u32 {\bfseries notify\+\_\+window}
+\item 
+\Hypertarget{structkvm__arch_a620e6c6a7c40b10ad91b6d955016cd1f}\label{structkvm__arch_a620e6c6a7c40b10ad91b6d955016cd1f} 
+u32 {\bfseries notify\+\_\+vmexit\+\_\+flags}
+\item 
+\Hypertarget{structkvm__arch_a5012024f750068560d240784ade21dc4}\label{structkvm__arch_a5012024f750068560d240784ade21dc4} 
+bool {\bfseries exit\+\_\+on\+\_\+emulation\+\_\+error}
+\item 
+\Hypertarget{structkvm__arch_a554d2382c9b58f8336b5c740ad9ff250}\label{structkvm__arch_a554d2382c9b58f8336b5c740ad9ff250} 
+u32 {\bfseries user\+\_\+space\+\_\+msr\+\_\+mask}
+\item 
+\Hypertarget{structkvm__arch_a4b83694f868db6577551475bf5ccacb9}\label{structkvm__arch_a4b83694f868db6577551475bf5ccacb9} 
+struct \doxymbox{\hyperlink{structkvm__x86__msr__filter}{kvm\+\_\+x86\+\_\+msr\+\_\+filter}} \texorpdfstring{$\ast$}{*} {\bfseries msr\+\_\+filter}
+\item 
+\Hypertarget{structkvm__arch_a3427dcee268699c5d914b805379eb6f2}\label{structkvm__arch_a3427dcee268699c5d914b805379eb6f2} 
+u32 {\bfseries hypercall\+\_\+exit\+\_\+enabled}
+\item 
+\Hypertarget{structkvm__arch_aea9dd03fe2d21d1cb6cca6b3e044ba59}\label{structkvm__arch_aea9dd03fe2d21d1cb6cca6b3e044ba59} 
+bool {\bfseries sgx\+\_\+provisioning\+\_\+allowed}
+\item 
+\Hypertarget{structkvm__arch_a671cf7955d9ccd52f37127899de4db2e}\label{structkvm__arch_a671cf7955d9ccd52f37127899de4db2e} 
+struct \doxymbox{\hyperlink{structkvm__x86__pmu__event__filter}{kvm\+\_\+x86\+\_\+pmu\+\_\+event\+\_\+filter}} \texorpdfstring{$\ast$}{*} {\bfseries pmu\+\_\+event\+\_\+filter}
+\item 
+\Hypertarget{structkvm__arch_ac834ec2fe4e07ecc3a64850290464407}\label{structkvm__arch_ac834ec2fe4e07ecc3a64850290464407} 
+struct \doxymbox{\hyperlink{structvhost__task}{vhost\+\_\+task}} \texorpdfstring{$\ast$}{*} {\bfseries nx\+\_\+huge\+\_\+page\+\_\+recovery\+\_\+thread}
+\item 
+\Hypertarget{structkvm__arch_afac888c79cbcab48ada62ef7a0ac6eee}\label{structkvm__arch_afac888c79cbcab48ada62ef7a0ac6eee} 
+u64 {\bfseries nx\+\_\+huge\+\_\+page\+\_\+last}
+\item 
+\Hypertarget{structkvm__arch_affc0d8d0f3bce946770ce8eb8294e11c}\label{structkvm__arch_affc0d8d0f3bce946770ce8eb8294e11c} 
+struct \doxymbox{\hyperlink{structonce}{once}} {\bfseries nx\+\_\+once}
+\item 
+\Hypertarget{structkvm__arch_afdfb848e2d78763e0148c03a2c84f05d}\label{structkvm__arch_afdfb848e2d78763e0148c03a2c84f05d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tdp\+\_\+mmu\+\_\+roots}
+\item 
+\Hypertarget{structkvm__arch_a2193c73fbf057f1c72bd1c201c7ffbaf}\label{structkvm__arch_a2193c73fbf057f1c72bd1c201c7ffbaf} 
+spinlock\+\_\+t {\bfseries tdp\+\_\+mmu\+\_\+pages\+\_\+lock}
+\item 
+\Hypertarget{structkvm__arch_a964a15729347c5306de21cbc4be18b71}\label{structkvm__arch_a964a15729347c5306de21cbc4be18b71} 
+bool {\bfseries shadow\+\_\+root\+\_\+allocated}
+\item 
+\Hypertarget{structkvm__arch_af92101ac88e18538b4394748dbd2869d}\label{structkvm__arch_af92101ac88e18538b4394748dbd2869d} 
+bool {\bfseries external\+\_\+write\+\_\+tracking\+\_\+enabled}
+\item 
+\Hypertarget{structkvm__arch_a8f60d6c6f6eac7c5be9f24dc52dfd4ca}\label{structkvm__arch_a8f60d6c6f6eac7c5be9f24dc52dfd4ca} 
+hpa\+\_\+t {\bfseries hv\+\_\+root\+\_\+tdp}
+\item 
+\Hypertarget{structkvm__arch_a24a01d7dfebbfd54835201021ccc03a4}\label{structkvm__arch_a24a01d7dfebbfd54835201021ccc03a4} 
+spinlock\+\_\+t {\bfseries hv\+\_\+root\+\_\+tdp\+\_\+lock}
+\item 
+\Hypertarget{structkvm__arch_adbb884b53747d14bd7aba5368bbcb4a1}\label{structkvm__arch_adbb884b53747d14bd7aba5368bbcb4a1} 
+struct \doxymbox{\hyperlink{structhv__partition__assist__pg}{hv\+\_\+partition\+\_\+assist\+\_\+pg}} \texorpdfstring{$\ast$}{*} {\bfseries hv\+\_\+pa\+\_\+pg}
+\item 
+\Hypertarget{structkvm__arch_a4179c11c320cd0f09c02193933fec7fd}\label{structkvm__arch_a4179c11c320cd0f09c02193933fec7fd} 
+u32 {\bfseries max\+\_\+vcpu\+\_\+ids}
+\item 
+\Hypertarget{structkvm__arch_a9113eae4362b5f7ad57b235f20319482}\label{structkvm__arch_a9113eae4362b5f7ad57b235f20319482} 
+bool {\bfseries disable\+\_\+nx\+\_\+huge\+\_\+pages}
+\item 
+\Hypertarget{structkvm__arch_ac66555bd4a8fe3cea6c31306ea255f12}\label{structkvm__arch_ac66555bd4a8fe3cea6c31306ea255f12} 
+struct \doxymbox{\hyperlink{structkvm__mmu__memory__cache}{kvm\+\_\+mmu\+\_\+memory\+\_\+cache}} {\bfseries split\+\_\+shadow\+\_\+page\+\_\+cache}
+\item 
+\Hypertarget{structkvm__arch_aa189e1f5f2b178bcd8a2e429a01d3750}\label{structkvm__arch_aa189e1f5f2b178bcd8a2e429a01d3750} 
+struct \doxymbox{\hyperlink{structkvm__mmu__memory__cache}{kvm\+\_\+mmu\+\_\+memory\+\_\+cache}} {\bfseries split\+\_\+page\+\_\+header\+\_\+cache}
+\item 
+\Hypertarget{structkvm__arch_a3b729ecb6fa11b257cd151e9b9a0dca4}\label{structkvm__arch_a3b729ecb6fa11b257cd151e9b9a0dca4} 
+struct \doxymbox{\hyperlink{structkvm__mmu__memory__cache}{kvm\+\_\+mmu\+\_\+memory\+\_\+cache}} {\bfseries split\+\_\+desc\+\_\+cache}
+\item 
+\Hypertarget{structkvm__arch_a8b033596938db137d2231adaf82e0684}\label{structkvm__arch_a8b033596938db137d2231adaf82e0684} 
+gfn\+\_\+t {\bfseries gfn\+\_\+direct\+\_\+bits}
+\item 
+\Hypertarget{structkvm__arch_a53f2c7288be3ab6512e80e06ba74a91d}\label{structkvm__arch_a53f2c7288be3ab6512e80e06ba74a91d} 
+int {\bfseries cpu\+\_\+dirty\+\_\+log\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

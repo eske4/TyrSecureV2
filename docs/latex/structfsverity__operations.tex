@@ -1,0 +1,28 @@
+\doxysection{fsverity\+\_\+operations Struct Reference}
+\hypertarget{structfsverity__operations}{}\label{structfsverity__operations}\index{fsverity\_operations@{fsverity\_operations}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfsverity__operations_a0d17208b6e950695678ab69561b83a18}\label{structfsverity__operations_a0d17208b6e950695678ab69561b83a18} 
+ptrdiff\+\_\+t {\bfseries inode\+\_\+info\+\_\+offs}
+\item 
+\Hypertarget{structfsverity__operations_aaa296b7bd824e498744c017a7bfbb1d1}\label{structfsverity__operations_aaa296b7bd824e498744c017a7bfbb1d1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries begin\+\_\+enable\+\_\+verity} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfsverity__operations_a96df6a73a5ca3baa11731c9503fda36e}\label{structfsverity__operations_a96df6a73a5ca3baa11731c9503fda36e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+enable\+\_\+verity} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t, u64)
+\item 
+\Hypertarget{structfsverity__operations_a22f093fe3598510c180fb59e9c6d9d0b}\label{structfsverity__operations_a22f093fe3598510c180fb59e9c6d9d0b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+verity\+\_\+descriptor} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structfsverity__operations_a364289c26f7c8ceb01983e473d4d4e3e}\label{structfsverity__operations_a364289c26f7c8ceb01983e473d4d4e3e} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+merkle\+\_\+tree\+\_\+page} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int)
+\item 
+\Hypertarget{structfsverity__operations_a75a5d9ddabd3f61a682867c704214ec1}\label{structfsverity__operations_a75a5d9ddabd3f61a682867c704214ec1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+merkle\+\_\+tree\+\_\+block} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, u64, unsigned int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\doxysection{kvm\+\_\+sregs Struct Reference}
+\hypertarget{structkvm__sregs}{}\label{structkvm__sregs}\index{kvm\_sregs@{kvm\_sregs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__sregs_a717d296f343acd96ed4344f53820de23}\label{structkvm__sregs_a717d296f343acd96ed4344f53820de23} 
+struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} {\bfseries cs}
+\item 
+\Hypertarget{structkvm__sregs_a371a27050eca59bb17d5fc26ddb8ef1e}\label{structkvm__sregs_a371a27050eca59bb17d5fc26ddb8ef1e} 
+struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} {\bfseries ds}
+\item 
+\Hypertarget{structkvm__sregs_a8c27b85db6ac9059e3f3996a9c60cb27}\label{structkvm__sregs_a8c27b85db6ac9059e3f3996a9c60cb27} 
+struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} {\bfseries es}
+\item 
+\Hypertarget{structkvm__sregs_aba52964437b2d77959ebd74d7eed877e}\label{structkvm__sregs_aba52964437b2d77959ebd74d7eed877e} 
+struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} {\bfseries fs}
+\item 
+\Hypertarget{structkvm__sregs_a6e46901acbba26485e32ae8611721015}\label{structkvm__sregs_a6e46901acbba26485e32ae8611721015} 
+struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} {\bfseries gs}
+\item 
+\Hypertarget{structkvm__sregs_a32a3bc1af1d553787144b765db9b9085}\label{structkvm__sregs_a32a3bc1af1d553787144b765db9b9085} 
+struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} {\bfseries ss}
+\item 
+\Hypertarget{structkvm__sregs_ade73906eb2d71186477c0f88d280389a}\label{structkvm__sregs_ade73906eb2d71186477c0f88d280389a} 
+struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} {\bfseries tr}
+\item 
+\Hypertarget{structkvm__sregs_a6d727402a9e7018d18977d40ea3dfd19}\label{structkvm__sregs_a6d727402a9e7018d18977d40ea3dfd19} 
+struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} {\bfseries ldt}
+\item 
+\Hypertarget{structkvm__sregs_a7a9656a09e9d2c3db5b059872e9edccc}\label{structkvm__sregs_a7a9656a09e9d2c3db5b059872e9edccc} 
+struct \doxymbox{\hyperlink{structkvm__dtable}{kvm\+\_\+dtable}} {\bfseries gdt}
+\item 
+\Hypertarget{structkvm__sregs_a4427ef1a950b34a38da5f09372cf6ecc}\label{structkvm__sregs_a4427ef1a950b34a38da5f09372cf6ecc} 
+struct \doxymbox{\hyperlink{structkvm__dtable}{kvm\+\_\+dtable}} {\bfseries idt}
+\item 
+\Hypertarget{structkvm__sregs_a67467cd427149656eb7c7c5e2a7b3c8f}\label{structkvm__sregs_a67467cd427149656eb7c7c5e2a7b3c8f} 
+\+\_\+\+\_\+u64 {\bfseries cr0}
+\item 
+\Hypertarget{structkvm__sregs_a54167d700c1356291cf16451553f09fb}\label{structkvm__sregs_a54167d700c1356291cf16451553f09fb} 
+\+\_\+\+\_\+u64 {\bfseries cr2}
+\item 
+\Hypertarget{structkvm__sregs_aa1648b80b94ed453ff6dba53b20b8fd2}\label{structkvm__sregs_aa1648b80b94ed453ff6dba53b20b8fd2} 
+\+\_\+\+\_\+u64 {\bfseries cr3}
+\item 
+\Hypertarget{structkvm__sregs_ac9edef60ef92dda31229928906ca809c}\label{structkvm__sregs_ac9edef60ef92dda31229928906ca809c} 
+\+\_\+\+\_\+u64 {\bfseries cr4}
+\item 
+\Hypertarget{structkvm__sregs_a62fd37e37bfeff18e801f0eda3c25ff1}\label{structkvm__sregs_a62fd37e37bfeff18e801f0eda3c25ff1} 
+\+\_\+\+\_\+u64 {\bfseries cr8}
+\item 
+\Hypertarget{structkvm__sregs_a316616de2dba78e2ff7266f920ad401a}\label{structkvm__sregs_a316616de2dba78e2ff7266f920ad401a} 
+\+\_\+\+\_\+u64 {\bfseries efer}
+\item 
+\Hypertarget{structkvm__sregs_a909247196c57db3d312507d1da394d6e}\label{structkvm__sregs_a909247196c57db3d312507d1da394d6e} 
+\+\_\+\+\_\+u64 {\bfseries apic\+\_\+base}
+\item 
+\Hypertarget{structkvm__sregs_a7f0b24bc221c873d71e3c62823a6ed1c}\label{structkvm__sregs_a7f0b24bc221c873d71e3c62823a6ed1c} 
+\+\_\+\+\_\+u64 {\bfseries interrupt\+\_\+bitmap} \+[4]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

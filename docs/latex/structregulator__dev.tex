@@ -1,0 +1,100 @@
+\doxysection{regulator\+\_\+dev Struct Reference}
+\hypertarget{structregulator__dev}{}\label{structregulator__dev}\index{regulator\_dev@{regulator\_dev}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structregulator__dev_a22d3e57cb9594928988d26f81d82beba}\label{structregulator__dev_a22d3e57cb9594928988d26f81d82beba} 
+const struct \doxymbox{\hyperlink{structregulator__desc}{regulator\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries desc}
+\item 
+\Hypertarget{structregulator__dev_a7b30ceb4970683bb1fe6284f6a2726fc}\label{structregulator__dev_a7b30ceb4970683bb1fe6284f6a2726fc} 
+int {\bfseries exclusive}
+\item 
+\Hypertarget{structregulator__dev_afa31e9943a70058e95f8ccb87c20bc51}\label{structregulator__dev_afa31e9943a70058e95f8ccb87c20bc51} 
+u32 {\bfseries use\+\_\+count}
+\item 
+\Hypertarget{structregulator__dev_a934893160ee7ae82f44a4c5880bfd52c}\label{structregulator__dev_a934893160ee7ae82f44a4c5880bfd52c} 
+u32 {\bfseries open\+\_\+count}
+\item 
+\Hypertarget{structregulator__dev_aef674a43211cbcee10a5d215c6a444b1}\label{structregulator__dev_aef674a43211cbcee10a5d215c6a444b1} 
+u32 {\bfseries bypass\+\_\+count}
+\item 
+\Hypertarget{structregulator__dev_a192c2074556761284af10848abe98da0}\label{structregulator__dev_a192c2074556761284af10848abe98da0} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structregulator__dev_a9dd840148d3905d61736cbc934e64434}\label{structregulator__dev_a9dd840148d3905d61736cbc934e64434} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries consumer\+\_\+list}
+\item 
+\Hypertarget{structregulator__dev_a7b99412b511920821255f22cf62d42d7}\label{structregulator__dev_a7b99412b511920821255f22cf62d42d7} 
+struct \doxymbox{\hyperlink{structcoupling__desc}{coupling\+\_\+desc}} {\bfseries coupling\+\_\+desc}
+\item 
+\Hypertarget{structregulator__dev_a3e7ca86be4cebec6bd5c4d76ee90b6c5}\label{structregulator__dev_a3e7ca86be4cebec6bd5c4d76ee90b6c5} 
+struct \doxymbox{\hyperlink{structblocking__notifier__head}{blocking\+\_\+notifier\+\_\+head}} {\bfseries notifier}
+\item 
+\Hypertarget{structregulator__dev_ab9a9655050a5fac12050cfcdf9aad7e2}\label{structregulator__dev_ab9a9655050a5fac12050cfcdf9aad7e2} 
+struct \doxymbox{\hyperlink{structww__mutex}{ww\+\_\+mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structregulator__dev_af7eee242d77b315881736561b85dabb4}\label{structregulator__dev_af7eee242d77b315881736561b85dabb4} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries mutex\+\_\+owner}
+\item 
+\Hypertarget{structregulator__dev_a8c80df10e2b3b838891d7fbd982ffe95}\label{structregulator__dev_a8c80df10e2b3b838891d7fbd982ffe95} 
+int {\bfseries ref\+\_\+cnt}
+\item 
+\Hypertarget{structregulator__dev_a27a19afce83e0795e3a2fa11e08f8bb2}\label{structregulator__dev_a27a19afce83e0795e3a2fa11e08f8bb2} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structregulator__dev_af9f50066bacd43bd034373c4592c240b}\label{structregulator__dev_af9f50066bacd43bd034373c4592c240b} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structregulator__dev_a37f4a8bf19b52ef8cc1d87964021a690}\label{structregulator__dev_a37f4a8bf19b52ef8cc1d87964021a690} 
+struct \doxymbox{\hyperlink{structregulation__constraints}{regulation\+\_\+constraints}} \texorpdfstring{$\ast$}{*} {\bfseries constraints}
+\item 
+\Hypertarget{structregulator__dev_a72d4bf7d241a55347ee17363b8ecd5a6}\label{structregulator__dev_a72d4bf7d241a55347ee17363b8ecd5a6} 
+struct \doxymbox{\hyperlink{structregulator}{regulator}} \texorpdfstring{$\ast$}{*} {\bfseries supply}
+\item 
+\Hypertarget{structregulator__dev_a630d4cb7f2128eb7fac8ba0e0ed48bed}\label{structregulator__dev_a630d4cb7f2128eb7fac8ba0e0ed48bed} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries supply\+\_\+name}
+\item 
+\Hypertarget{structregulator__dev_aeff693d349b7ae42b6195f3c8c79b8a8}\label{structregulator__dev_aeff693d349b7ae42b6195f3c8c79b8a8} 
+struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*} {\bfseries regmap}
+\item 
+\Hypertarget{structregulator__dev_a3071c4d9e1cbfbf770996c46fa87c8d4}\label{structregulator__dev_a3071c4d9e1cbfbf770996c46fa87c8d4} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries disable\+\_\+work}
+\item 
+\Hypertarget{structregulator__dev_ab05e65d1377aedcf7789aabc90485baf}\label{structregulator__dev_ab05e65d1377aedcf7789aabc90485baf} 
+void \texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+data}
+\item 
+\Hypertarget{structregulator__dev_a1d2c096e87599946ca4a23d1f0d8539e}\label{structregulator__dev_a1d2c096e87599946ca4a23d1f0d8539e} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs}
+\item 
+\Hypertarget{structregulator__dev_a3729019e3ba65583c832ddb8a136a242}\label{structregulator__dev_a3729019e3ba65583c832ddb8a136a242} 
+struct \doxymbox{\hyperlink{structregulator__enable__gpio}{regulator\+\_\+enable\+\_\+gpio}} \texorpdfstring{$\ast$}{*} {\bfseries ena\+\_\+pin}
+\item 
+\Hypertarget{structregulator__dev_a4eb01236116cabcbc4ebee0dbf139055}\label{structregulator__dev_a4eb01236116cabcbc4ebee0dbf139055} 
+unsigned int {\bfseries ena\+\_\+gpio\+\_\+state}:\+ 1
+\item 
+\Hypertarget{structregulator__dev_ad0438696ec9eea14461c9b7dfae1c886}\label{structregulator__dev_ad0438696ec9eea14461c9b7dfae1c886} 
+unsigned int {\bfseries is\+\_\+switch}:\+ 1
+\item 
+\Hypertarget{structregulator__dev_aabc6134e40ce7feb6d97fc4265ba5f27}\label{structregulator__dev_aabc6134e40ce7feb6d97fc4265ba5f27} 
+ktime\+\_\+t {\bfseries last\+\_\+off}
+\item 
+\Hypertarget{structregulator__dev_a09735c0be6c304d8fb7c1bf3833932fc}\label{structregulator__dev_a09735c0be6c304d8fb7c1bf3833932fc} 
+int {\bfseries cached\+\_\+err}
+\item 
+\Hypertarget{structregulator__dev_a371d018bc6dbc8aec08443d82e336d53}\label{structregulator__dev_a371d018bc6dbc8aec08443d82e336d53} 
+bool {\bfseries use\+\_\+cached\+\_\+err}
+\item 
+\Hypertarget{structregulator__dev_a9a714faa6c140837f9d55a4eb5604ddf}\label{structregulator__dev_a9a714faa6c140837f9d55a4eb5604ddf} 
+spinlock\+\_\+t {\bfseries err\+\_\+lock}
+\item 
+\Hypertarget{structregulator__dev_a2e0fddaa1aca88d1e8b599b8b702524f}\label{structregulator__dev_a2e0fddaa1aca88d1e8b599b8b702524f} 
+int {\bfseries pw\+\_\+requested\+\_\+mW}
+\item 
+\Hypertarget{structregulator__dev_a5833c2a15a541ef658cf59b748a7529b}\label{structregulator__dev_a5833c2a15a541ef658cf59b748a7529b} 
+struct \doxymbox{\hyperlink{structnotifier__block}{notifier\+\_\+block}} {\bfseries supply\+\_\+fwd\+\_\+nb}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

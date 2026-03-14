@@ -1,0 +1,95 @@
+\doxysection{apparmor\+\_\+audit\+\_\+data Struct Reference}
+\hypertarget{structapparmor__audit__data}{}\label{structapparmor__audit__data}\index{apparmor\_audit\_data@{apparmor\_audit\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structapparmor__audit__data_ac973f79227bd4a0a6c82f18c92d7e086}\label{structapparmor__audit__data_ac973f79227bd4a0a6c82f18c92d7e086} 
+int {\bfseries error}
+\item 
+\Hypertarget{structapparmor__audit__data_a2db6f03a444b47c64597fd294836d8c6}\label{structapparmor__audit__data_a2db6f03a444b47c64597fd294836d8c6} 
+int {\bfseries type}
+\item 
+\Hypertarget{structapparmor__audit__data_aa364d1afd4942564c1b11babf5ce27b4}\label{structapparmor__audit__data_aa364d1afd4942564c1b11babf5ce27b4} 
+u16 {\bfseries class}
+\item 
+\Hypertarget{structapparmor__audit__data_a86cf95428c76938464feb8f7d2570879}\label{structapparmor__audit__data_a86cf95428c76938464feb8f7d2570879} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries op}
+\item 
+\Hypertarget{structapparmor__audit__data_a5c43d7d2dc5062dabbd9ff1334b3fc37}\label{structapparmor__audit__data_a5c43d7d2dc5062dabbd9ff1334b3fc37} 
+const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*} {\bfseries subj\+\_\+cred}
+\item 
+\Hypertarget{structapparmor__audit__data_a728093077d50d8f681d1d2c479c52e66}\label{structapparmor__audit__data_a728093077d50d8f681d1d2c479c52e66} 
+struct \doxymbox{\hyperlink{structaa__label}{aa\+\_\+label}} \texorpdfstring{$\ast$}{*} {\bfseries subj\+\_\+label}
+\item 
+\Hypertarget{structapparmor__audit__data_abf2819042423fc03fd39f68b43ff0048}\label{structapparmor__audit__data_abf2819042423fc03fd39f68b43ff0048} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structapparmor__audit__data_a0fe475b6ba333a6db56bf18ed31a7007}\label{structapparmor__audit__data_a0fe475b6ba333a6db56bf18ed31a7007} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries info}
+\item 
+\Hypertarget{structapparmor__audit__data_a329e268ed8a8459475ce33823129cbbc}\label{structapparmor__audit__data_a329e268ed8a8459475ce33823129cbbc} 
+u32 {\bfseries request}
+\item 
+\Hypertarget{structapparmor__audit__data_a42e746ef0a7eccf385bb87bd90e3523e}\label{structapparmor__audit__data_a42e746ef0a7eccf385bb87bd90e3523e} 
+u32 {\bfseries denied}
+\item 
+\Hypertarget{structapparmor__audit__data_ac1cb3b29bf2c5e8badfc74da317dc1ea}\label{structapparmor__audit__data_ac1cb3b29bf2c5e8badfc74da317dc1ea} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionapparmor__audit__data_1_1_0d272106265332056320234271071053371115340145376253_ae06be52e78538aad119f6af1df821311}\label{unionapparmor__audit__data_1_1_0d272106265332056320234271071053371115340145376253_ae06be52e78538aad119f6af1df821311} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structaa__label}{aa\_label}} \texorpdfstring{$\ast$}{*} {\bfseries peer}\\
+\Hypertarget{structapparmor__audit__data_1_1_0d272106265332056320234271071053371115340145376253_1_1_0d2640640a02c8c3344751da7f7b5a57c2fe017d5_ad58bcf2f2d36eec9e76996ad349dba54}\label{structapparmor__audit__data_1_1_0d272106265332056320234271071053371115340145376253_1_1_0d2640640a02c8c3344751da7f7b5a57c2fe017d5_ad58bcf2f2d36eec9e76996ad349dba54} 
+\>\>union \{\\
+\>\>\>struct \{\\
+\>\>\>\>const char \texorpdfstring{$\ast$}{*} {\bfseries target}\\
+\>\>\>\>\doxymbox{\hyperlink{structkuid__t}{kuid\_t}} {\bfseries ouid}\\
+\>\>\>\} {\bfseries fs}\\
+\>\>\>struct \{\\
+\>\>\>\>int {\bfseries rlim}\\
+\>\>\>\>long unsigned int {\bfseries max}\\
+\>\>\>\} {\bfseries rlim}\\
+\Hypertarget{unionapparmor__audit__data_1_1_0d272106265332056320234271071053371115340145376253_1_1_0d2640640643664eab233e7e612753b73a3b1120f5_a1506136cc99120df2c94527d04b2ef6b}\label{unionapparmor__audit__data_1_1_0d272106265332056320234271071053371115340145376253_1_1_0d2640640643664eab233e7e612753b73a3b1120f5_a1506136cc99120df2c94527d04b2ef6b} 
+\>\>\>struct \{\\
+\>\>\>\>int {\bfseries signal}\\
+\>\>\>\>int {\bfseries unmappedsig}\\
+\>\>\>\} \\
+\>\>\>struct \{\\
+\>\>\>\>int {\bfseries type}\\
+\>\>\>\>int {\bfseries protocol}\\
+\>\>\>\>void \texorpdfstring{$\ast$}{*} {\bfseries addr}\\
+\>\>\>\>int {\bfseries addrlen}\\
+\>\>\>\>struct \{\\
+\>\>\>\>\>void \texorpdfstring{$\ast$}{*} {\bfseries addr}\\
+\>\>\>\>\>int {\bfseries addrlen}\\
+\>\>\>\>\} {\bfseries peer}\\
+\>\>\>\} {\bfseries net}\\
+\>\>\} \\
+\>\} \\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structaa__profile}{aa\_profile}} \texorpdfstring{$\ast$}{*} {\bfseries profile}\\
+\>\>const char \texorpdfstring{$\ast$}{*} {\bfseries ns}\\
+\>\>long int {\bfseries pos}\\
+\>\} {\bfseries iface}\\
+\>struct \{\\
+\>\>const char \texorpdfstring{$\ast$}{*} {\bfseries src\_name}\\
+\>\>const char \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>const char \texorpdfstring{$\ast$}{*} {\bfseries trans}\\
+\>\>const char \texorpdfstring{$\ast$}{*} {\bfseries data}\\
+\>\>long unsigned int {\bfseries flags}\\
+\>\} {\bfseries mnt}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structaa__label}{aa\_label}} \texorpdfstring{$\ast$}{*} {\bfseries target}\\
+\>\} {\bfseries uring}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structapparmor__audit__data_af6b247a138b375ddab46d99e241381ce}\label{structapparmor__audit__data_af6b247a138b375ddab46d99e241381ce} 
+struct \doxymbox{\hyperlink{structcommon__audit__data}{common\+\_\+audit\+\_\+data}} {\bfseries common}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

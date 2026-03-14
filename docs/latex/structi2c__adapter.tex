@@ -1,0 +1,76 @@
+\doxysection{i2c\+\_\+adapter Struct Reference}
+\hypertarget{structi2c__adapter}{}\label{structi2c__adapter}\index{i2c\_adapter@{i2c\_adapter}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structi2c__adapter_acb6dc2de2b548ecaba9ceece4d89e91c}\label{structi2c__adapter_acb6dc2de2b548ecaba9ceece4d89e91c} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structi2c__adapter_ac4b944970ff28fb00ee812308bbf4e3f}\label{structi2c__adapter_ac4b944970ff28fb00ee812308bbf4e3f} 
+unsigned int {\bfseries class}
+\item 
+\Hypertarget{structi2c__adapter_afac3301a37e9ca64124f4e35d49a488a}\label{structi2c__adapter_afac3301a37e9ca64124f4e35d49a488a} 
+const struct \doxymbox{\hyperlink{structi2c__algorithm}{i2c\+\_\+algorithm}} \texorpdfstring{$\ast$}{*} {\bfseries algo}
+\item 
+\Hypertarget{structi2c__adapter_ae5ef0c6f24118eded5cbb3c9aad927c4}\label{structi2c__adapter_ae5ef0c6f24118eded5cbb3c9aad927c4} 
+void \texorpdfstring{$\ast$}{*} {\bfseries algo\+\_\+data}
+\item 
+\Hypertarget{structi2c__adapter_a98fc87d801cafd578e6e0be7faa3da51}\label{structi2c__adapter_a98fc87d801cafd578e6e0be7faa3da51} 
+const struct \doxymbox{\hyperlink{structi2c__lock__operations}{i2c\+\_\+lock\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries lock\+\_\+ops}
+\item 
+\Hypertarget{structi2c__adapter_a5ec0f7ea4c77411948714db026713c68}\label{structi2c__adapter_a5ec0f7ea4c77411948714db026713c68} 
+struct \doxymbox{\hyperlink{structrt__mutex}{rt\+\_\+mutex}} {\bfseries bus\+\_\+lock}
+\item 
+\Hypertarget{structi2c__adapter_a0cbadd789e646b7791daafef8da92c90}\label{structi2c__adapter_a0cbadd789e646b7791daafef8da92c90} 
+struct \doxymbox{\hyperlink{structrt__mutex}{rt\+\_\+mutex}} {\bfseries mux\+\_\+lock}
+\item 
+\Hypertarget{structi2c__adapter_af2da0189dd7f2e6398829dcf04923657}\label{structi2c__adapter_af2da0189dd7f2e6398829dcf04923657} 
+int {\bfseries timeout}
+\item 
+\Hypertarget{structi2c__adapter_a3aa486b6ce0250391feccf75af3fc360}\label{structi2c__adapter_a3aa486b6ce0250391feccf75af3fc360} 
+int {\bfseries retries}
+\item 
+\Hypertarget{structi2c__adapter_a549f0b667a00f9bf2cc60b112e6e759c}\label{structi2c__adapter_a549f0b667a00f9bf2cc60b112e6e759c} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structi2c__adapter_a0b678f7079b46ed02005aacd8c157f0f}\label{structi2c__adapter_a0b678f7079b46ed02005aacd8c157f0f} 
+long unsigned int {\bfseries locked\+\_\+flags}
+\item 
+\Hypertarget{structi2c__adapter_ab2eef9366b05802358e2488dfb54e6bf}\label{structi2c__adapter_ab2eef9366b05802358e2488dfb54e6bf} 
+int {\bfseries nr}
+\item 
+\Hypertarget{structi2c__adapter_a249fe8d2dc91e79b2251588e92bf0af7}\label{structi2c__adapter_a249fe8d2dc91e79b2251588e92bf0af7} 
+char {\bfseries name} \+[48]\+
+\item 
+\Hypertarget{structi2c__adapter_a25f479ae7066a95c7392d6f6cbc51bbd}\label{structi2c__adapter_a25f479ae7066a95c7392d6f6cbc51bbd} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries dev\+\_\+released}
+\item 
+\Hypertarget{structi2c__adapter_ac04ed929abce31dd7b29d1a467024363}\label{structi2c__adapter_ac04ed929abce31dd7b29d1a467024363} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries userspace\+\_\+clients\+\_\+lock}
+\item 
+\Hypertarget{structi2c__adapter_a40f030ed0e97e54eac0df73d9ae64083}\label{structi2c__adapter_a40f030ed0e97e54eac0df73d9ae64083} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries userspace\+\_\+clients}
+\item 
+\Hypertarget{structi2c__adapter_a4d18c31815edacf5633f18057e65d07b}\label{structi2c__adapter_a4d18c31815edacf5633f18057e65d07b} 
+struct \doxymbox{\hyperlink{structi2c__bus__recovery__info}{i2c\+\_\+bus\+\_\+recovery\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries bus\+\_\+recovery\+\_\+info}
+\item 
+\Hypertarget{structi2c__adapter_acfd4fbde05e8fc47064c5aa31a7e7638}\label{structi2c__adapter_acfd4fbde05e8fc47064c5aa31a7e7638} 
+const struct \doxymbox{\hyperlink{structi2c__adapter__quirks}{i2c\+\_\+adapter\+\_\+quirks}} \texorpdfstring{$\ast$}{*} {\bfseries quirks}
+\item 
+\Hypertarget{structi2c__adapter_a39bc5df803e6e448a270bf145ad72188}\label{structi2c__adapter_a39bc5df803e6e448a270bf145ad72188} 
+struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries host\+\_\+notify\+\_\+domain}
+\item 
+\Hypertarget{structi2c__adapter_aa1f7aedf7fd4bbefaa944033da7c2b34}\label{structi2c__adapter_aa1f7aedf7fd4bbefaa944033da7c2b34} 
+struct \doxymbox{\hyperlink{structregulator}{regulator}} \texorpdfstring{$\ast$}{*} {\bfseries bus\+\_\+regulator}
+\item 
+\Hypertarget{structi2c__adapter_ac6443df7659c9da036dc71c3c36d6d19}\label{structi2c__adapter_ac6443df7659c9da036dc71c3c36d6d19} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs}
+\item 
+\Hypertarget{structi2c__adapter_a2096b79b192d6e340f551037b558ad17}\label{structi2c__adapter_a2096b79b192d6e340f551037b558ad17} 
+long unsigned int {\bfseries addrs\+\_\+in\+\_\+instantiation} \+[2]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

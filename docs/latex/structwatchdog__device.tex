@@ -1,0 +1,70 @@
+\doxysection{watchdog\+\_\+device Struct Reference}
+\hypertarget{structwatchdog__device}{}\label{structwatchdog__device}\index{watchdog\_device@{watchdog\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structwatchdog__device_af6dde98835421a224b655c05bccf41e8}\label{structwatchdog__device_af6dde98835421a224b655c05bccf41e8} 
+int {\bfseries id}
+\item 
+\Hypertarget{structwatchdog__device_a172f59534a59565e6739ce2ddde37b9b}\label{structwatchdog__device_a172f59534a59565e6739ce2ddde37b9b} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structwatchdog__device_a6afe3f3acac6a56c0a813332e6a25930}\label{structwatchdog__device_a6afe3f3acac6a56c0a813332e6a25930} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries groups}
+\item 
+\Hypertarget{structwatchdog__device_af1fa4c890b739ad167544a69af8d90eb}\label{structwatchdog__device_af1fa4c890b739ad167544a69af8d90eb} 
+const struct \doxymbox{\hyperlink{structwatchdog__info}{watchdog\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries info}
+\item 
+\Hypertarget{structwatchdog__device_ac8860a179236a3be80c5e182763c03f1}\label{structwatchdog__device_ac8860a179236a3be80c5e182763c03f1} 
+const struct \doxymbox{\hyperlink{structwatchdog__ops}{watchdog\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structwatchdog__device_a530273bb023919231ff144d3d47f41ff}\label{structwatchdog__device_a530273bb023919231ff144d3d47f41ff} 
+const struct \doxymbox{\hyperlink{structwatchdog__governor}{watchdog\+\_\+governor}} \texorpdfstring{$\ast$}{*} {\bfseries gov}
+\item 
+\Hypertarget{structwatchdog__device_af8570794eeb48bb4ca2c02880abd6279}\label{structwatchdog__device_af8570794eeb48bb4ca2c02880abd6279} 
+unsigned int {\bfseries bootstatus}
+\item 
+\Hypertarget{structwatchdog__device_ac4dfd6658ca97997f1853b719b467da1}\label{structwatchdog__device_ac4dfd6658ca97997f1853b719b467da1} 
+unsigned int {\bfseries timeout}
+\item 
+\Hypertarget{structwatchdog__device_aa384e73d74da49baaa83372d892c0272}\label{structwatchdog__device_aa384e73d74da49baaa83372d892c0272} 
+unsigned int {\bfseries pretimeout}
+\item 
+\Hypertarget{structwatchdog__device_a6fb218867a89f246f6be3dd6866845a4}\label{structwatchdog__device_a6fb218867a89f246f6be3dd6866845a4} 
+unsigned int {\bfseries min\+\_\+timeout}
+\item 
+\Hypertarget{structwatchdog__device_a625b10cb5dab930eb6f3c2da36d487de}\label{structwatchdog__device_a625b10cb5dab930eb6f3c2da36d487de} 
+unsigned int {\bfseries max\+\_\+timeout}
+\item 
+\Hypertarget{structwatchdog__device_a6b346370edf76ff2e537f5b28222c56a}\label{structwatchdog__device_a6b346370edf76ff2e537f5b28222c56a} 
+unsigned int {\bfseries min\+\_\+hw\+\_\+heartbeat\+\_\+ms}
+\item 
+\Hypertarget{structwatchdog__device_aa811c61d6313b6cc31d83edb3fe940f1}\label{structwatchdog__device_aa811c61d6313b6cc31d83edb3fe940f1} 
+unsigned int {\bfseries max\+\_\+hw\+\_\+heartbeat\+\_\+ms}
+\item 
+\Hypertarget{structwatchdog__device_acb0ab18b1368e7ace8e968ece3076eb7}\label{structwatchdog__device_acb0ab18b1368e7ace8e968ece3076eb7} 
+struct \doxymbox{\hyperlink{structnotifier__block}{notifier\+\_\+block}} {\bfseries reboot\+\_\+nb}
+\item 
+\Hypertarget{structwatchdog__device_a2e644a0f121ee83b5497f90a980a004b}\label{structwatchdog__device_a2e644a0f121ee83b5497f90a980a004b} 
+struct \doxymbox{\hyperlink{structnotifier__block}{notifier\+\_\+block}} {\bfseries restart\+\_\+nb}
+\item 
+\Hypertarget{structwatchdog__device_a29eeef14ed259df1b58484b2e435a4bd}\label{structwatchdog__device_a29eeef14ed259df1b58484b2e435a4bd} 
+struct \doxymbox{\hyperlink{structnotifier__block}{notifier\+\_\+block}} {\bfseries pm\+\_\+nb}
+\item 
+\Hypertarget{structwatchdog__device_a4de1c5a230d493e5b9c1daae446c371d}\label{structwatchdog__device_a4de1c5a230d493e5b9c1daae446c371d} 
+void \texorpdfstring{$\ast$}{*} {\bfseries driver\+\_\+data}
+\item 
+\Hypertarget{structwatchdog__device_a85996f3c41061ccb819fc8fb57239522}\label{structwatchdog__device_a85996f3c41061ccb819fc8fb57239522} 
+struct \doxymbox{\hyperlink{structwatchdog__core__data}{watchdog\+\_\+core\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries wd\+\_\+data}
+\item 
+\Hypertarget{structwatchdog__device_a1bc820cb6166ab0be4775ef50977d13f}\label{structwatchdog__device_a1bc820cb6166ab0be4775ef50977d13f} 
+long unsigned int {\bfseries status}
+\item 
+\Hypertarget{structwatchdog__device_ade5e770171971bd78c48646e65504127}\label{structwatchdog__device_ade5e770171971bd78c48646e65504127} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries deferred}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

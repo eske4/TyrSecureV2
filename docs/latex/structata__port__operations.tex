@@ -1,0 +1,172 @@
+\doxysection{ata\+\_\+port\+\_\+operations Struct Reference}
+\hypertarget{structata__port__operations}{}\label{structata__port__operations}\index{ata\_port\_operations@{ata\_port\_operations}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structata__port__operations_a16ae70d0a44fbb79abba35894e065d5a}\label{structata__port__operations_a16ae70d0a44fbb79abba35894e065d5a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries qc\+\_\+defer} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a41fbd2eb01b32fb62a58ab9f4602c3c2}\label{structata__port__operations_a41fbd2eb01b32fb62a58ab9f4602c3c2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+atapi\+\_\+dma} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a6f1c33ca0671be80090c8ca7e6c1d815}\label{structata__port__operations_a6f1c33ca0671be80090c8ca7e6c1d815} 
+enum ata\+\_\+completion\+\_\+errors(\texorpdfstring{$\ast$}{*} {\bfseries qc\+\_\+prep} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_acb11a4176787fa0f795510800bd7e7d5}\label{structata__port__operations_acb11a4176787fa0f795510800bd7e7d5} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries qc\+\_\+issue} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a27be5e9fac5d764f9b918202f944b825}\label{structata__port__operations_a27be5e9fac5d764f9b918202f944b825} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries qc\+\_\+fill\+\_\+rtf} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a0e57897b120c239864abd8cee9a48c3e}\label{structata__port__operations_a0e57897b120c239864abd8cee9a48c3e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries qc\+\_\+ncq\+\_\+fill\+\_\+rtf} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structata__port__operations_ac5dc8f81474f371dcf2b06315e83c610}\label{structata__port__operations_ac5dc8f81474f371dcf2b06315e83c610} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cable\+\_\+detect} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ac1bbea1c1de5e900e443455e99edb3c6}\label{structata__port__operations_ac1bbea1c1de5e900e443455e99edb3c6} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries mode\+\_\+filter} )(struct \doxymbox{\hyperlink{structata__device}{ata\+\_\+device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structata__port__operations_a58671ab6766abea4cdb640b44cebab60}\label{structata__port__operations_a58671ab6766abea4cdb640b44cebab60} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+piomode} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structata__device}{ata\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a0e64fd79e2a6a4d6282ff4b714b773da}\label{structata__port__operations_a0e64fd79e2a6a4d6282ff4b714b773da} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+dmamode} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structata__device}{ata\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a044e7adbe2fc7490607cae44bbb4b7d3}\label{structata__port__operations_a044e7adbe2fc7490607cae44bbb4b7d3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+mode} )(struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structata__device}{ata\+\_\+device}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_abcdb220582963128d018b034e84a6fda}\label{structata__port__operations_abcdb220582963128d018b034e84a6fda} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+id} )(struct \doxymbox{\hyperlink{structata__device}{ata\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structata__taskfile}{ata\+\_\+taskfile}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+le16 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ac493b6e34b9a61411e3f4f4407b9c733}\label{structata__port__operations_ac493b6e34b9a61411e3f4f4407b9c733} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+config} )(struct \doxymbox{\hyperlink{structata__device}{ata\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a45238a41570a4fb29aed3ac8331f91a2}\label{structata__port__operations_a45238a41570a4fb29aed3ac8331f91a2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries freeze} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a217f58a95908c6ed7dc04fe7d1dcf5d0}\label{structata__port__operations_a217f58a95908c6ed7dc04fe7d1dcf5d0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries thaw} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ae02c4fe7652263b916e3f3aef478d7eb}\label{structata__port__operations_ae02c4fe7652263b916e3f3aef478d7eb} 
+struct \doxymbox{\hyperlink{structata__reset__operations}{ata\+\_\+reset\+\_\+operations}} {\bfseries reset}
+\item 
+\Hypertarget{structata__port__operations_ae5e8a6ec167b8b27d4a729217bf60444}\label{structata__port__operations_ae5e8a6ec167b8b27d4a729217bf60444} 
+struct \doxymbox{\hyperlink{structata__reset__operations}{ata\+\_\+reset\+\_\+operations}} {\bfseries pmp\+\_\+reset}
+\item 
+\Hypertarget{structata__port__operations_ae2a62fe548268802b46c7d43762dfde3}\label{structata__port__operations_ae2a62fe548268802b46c7d43762dfde3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries error\+\_\+handler} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ac4f502ca2043d2d3076c3ef7e4fe5d2d}\label{structata__port__operations_ac4f502ca2043d2d3076c3ef7e4fe5d2d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries lost\+\_\+interrupt} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a66b65e98d8faf169275f95e0fd5f97bd}\label{structata__port__operations_a66b65e98d8faf169275f95e0fd5f97bd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+internal\+\_\+cmd} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_aa98884027ec22eb110911e3abeada0b5}\label{structata__port__operations_aa98884027ec22eb110911e3abeada0b5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sched\+\_\+eh} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a73cd6719b8fb4abb7cb336a7a85a4769}\label{structata__port__operations_a73cd6719b8fb4abb7cb336a7a85a4769} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+eh} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a87e79c6e6049e131a3109ca8f6440f4b}\label{structata__port__operations_a87e79c6e6049e131a3109ca8f6440f4b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries scr\+\_\+read} )(struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*}, unsigned int, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ab4c895e177f244560afc9e66648eb4ac}\label{structata__port__operations_ab4c895e177f244560afc9e66648eb4ac} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries scr\+\_\+write} )(struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*}, unsigned int, u32)
+\item 
+\Hypertarget{structata__port__operations_a0d50d3e002378ec5d115cf12d177785c}\label{structata__port__operations_a0d50d3e002378ec5d115cf12d177785c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pmp\+\_\+attach} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ae43d28f416ded7fc21c3daf3f7db22a1}\label{structata__port__operations_ae43d28f416ded7fc21c3daf3f7db22a1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pmp\+\_\+detach} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ae517521a09ae874152468e278e4e4805}\label{structata__port__operations_ae517521a09ae874152468e278e4e4805} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+lpm} )(struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*}, enum ata\+\_\+lpm\+\_\+policy, unsigned int)
+\item 
+\Hypertarget{structata__port__operations_a23a906d33745f8c28d93f8b18afcd7e1}\label{structata__port__operations_a23a906d33745f8c28d93f8b18afcd7e1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+suspend} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, pm\+\_\+message\+\_\+t)
+\item 
+\Hypertarget{structata__port__operations_af5dd1f3b1d4b226c550554eb2f7b565d}\label{structata__port__operations_af5dd1f3b1d4b226c550554eb2f7b565d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+resume} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a97c2a592341c871de61481f7ed0a886a}\label{structata__port__operations_a97c2a592341c871de61481f7ed0a886a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+start} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ac6c54d81f83f33c34768cfbea7841727}\label{structata__port__operations_ac6c54d81f83f33c34768cfbea7841727} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+stop} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_aa60f2185e31819ceb11c6bef4f0cfb02}\label{structata__port__operations_aa60f2185e31819ceb11c6bef4f0cfb02} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries host\+\_\+stop} )(struct \doxymbox{\hyperlink{structata__host}{ata\+\_\+host}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a2493afdb167f0326c353e947f1a5c66b}\label{structata__port__operations_a2493afdb167f0326c353e947f1a5c66b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+dev\+\_\+select} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structata__port__operations_a86108bdb0cfb67022a8b41459618f001}\label{structata__port__operations_a86108bdb0cfb67022a8b41459618f001} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+set\+\_\+devctl} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structata__port__operations_a30d0f6619192ff7b506bbfe235c8edc6}\label{structata__port__operations_a30d0f6619192ff7b506bbfe235c8edc6} 
+u8(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+check\+\_\+status} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a09897431c07cfb1c4a3f8cec52869da0}\label{structata__port__operations_a09897431c07cfb1c4a3f8cec52869da0} 
+u8(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+check\+\_\+altstatus} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_aa5bda27959f7efc96da485d297b10f97}\label{structata__port__operations_aa5bda27959f7efc96da485d297b10f97} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+tf\+\_\+load} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structata__taskfile}{ata\+\_\+taskfile}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ab2bab5a530d1bc949419e32176d80edd}\label{structata__port__operations_ab2bab5a530d1bc949419e32176d80edd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+tf\+\_\+read} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structata__taskfile}{ata\+\_\+taskfile}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a6686603e2f54d184d092a0a551366c66}\label{structata__port__operations_a6686603e2f54d184d092a0a551366c66} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+exec\+\_\+command} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structata__taskfile}{ata\+\_\+taskfile}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a7100d1d36ea3301591cee4bbc63da780}\label{structata__port__operations_a7100d1d36ea3301591cee4bbc63da780} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+data\+\_\+xfer} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*}, unsigned char \texorpdfstring{$\ast$}{*}, unsigned int, int)
+\item 
+\Hypertarget{structata__port__operations_afa28e944c4776684ca44c1346b57583c}\label{structata__port__operations_afa28e944c4776684ca44c1346b57583c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+irq\+\_\+on} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a9a58aa2d495f90e684ddedefda37f294}\label{structata__port__operations_a9a58aa2d495f90e684ddedefda37f294} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+irq\+\_\+check} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_aa1a71f486661bbbfea354a06b446a34e}\label{structata__port__operations_aa1a71f486661bbbfea354a06b446a34e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+irq\+\_\+clear} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_ab139022e2f0f359c3587eebed350836a}\label{structata__port__operations_ab139022e2f0f359c3587eebed350836a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+drain\+\_\+fifo} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a61ee3310d1e3c2567e02efc29c73b065}\label{structata__port__operations_a61ee3310d1e3c2567e02efc29c73b065} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bmdma\+\_\+setup} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a632555e65a1c9c76a09d638e24fb3d76}\label{structata__port__operations_a632555e65a1c9c76a09d638e24fb3d76} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bmdma\+\_\+start} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a7e5c69e525fd0dd2ff4d1b3e57bb5bd4}\label{structata__port__operations_a7e5c69e525fd0dd2ff4d1b3e57bb5bd4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bmdma\+\_\+stop} )(struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a75e03c3865fde0164a1eba2d357fec52}\label{structata__port__operations_a75e03c3865fde0164a1eba2d357fec52} 
+u8(\texorpdfstring{$\ast$}{*} {\bfseries bmdma\+\_\+status} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a576ab0367a905e33de48e092fd4a793d}\label{structata__port__operations_a576ab0367a905e33de48e092fd4a793d} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries em\+\_\+show} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_a1d48e5d27514a124fd09ce1ec18cd2d5}\label{structata__port__operations_a1d48e5d27514a124fd09ce1ec18cd2d5} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries em\+\_\+store} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structata__port__operations_af1522c7a4b62f2f9309fe41142a3d483}\label{structata__port__operations_af1522c7a4b62f2f9309fe41142a3d483} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries sw\+\_\+activity\+\_\+show} )(struct \doxymbox{\hyperlink{structata__device}{ata\+\_\+device}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__port__operations_afdff7269cf6719d5923d87b452017a7f}\label{structata__port__operations_afdff7269cf6719d5923d87b452017a7f} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries sw\+\_\+activity\+\_\+store} )(struct \doxymbox{\hyperlink{structata__device}{ata\+\_\+device}} \texorpdfstring{$\ast$}{*}, enum sw\+\_\+activity)
+\item 
+\Hypertarget{structata__port__operations_abc27d8fb868c26209168df01a2a5652f}\label{structata__port__operations_abc27d8fb868c26209168df01a2a5652f} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries transmit\+\_\+led\+\_\+message} )(struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*}, u32, ssize\+\_\+t)
+\item 
+\Hypertarget{structata__port__operations_af9aa8de5d9c2277a9fa5ce895f9ba86a}\label{structata__port__operations_af9aa8de5d9c2277a9fa5ce895f9ba86a} 
+const struct \doxymbox{\hyperlink{structata__port__operations}{ata\+\_\+port\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries inherits}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,40 @@
+\doxysection{inet\+\_\+connection\+\_\+sock\+\_\+af\+\_\+ops Struct Reference}
+\hypertarget{structinet__connection__sock__af__ops}{}\label{structinet__connection__sock__af__ops}\index{inet\_connection\_sock\_af\_ops@{inet\_connection\_sock\_af\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_afcae5438730e37eb82fd2ef4d7d080bf}\label{structinet__connection__sock__af__ops_afcae5438730e37eb82fd2ef4d7d080bf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries queue\+\_\+xmit} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi}{flowi}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_a97c7a6c127264013d3370f478cb60501}\label{structinet__connection__sock__af__ops_a97c7a6c127264013d3370f478cb60501} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+check} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_a3715d2da09506b8bb1ec9b621d5259fd}\label{structinet__connection__sock__af__ops_a3715d2da09506b8bb1ec9b621d5259fd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rebuild\+\_\+header} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_ae6372b7ec051e525ae2c9d108ae44f98}\label{structinet__connection__sock__af__ops_ae6372b7ec051e525ae2c9d108ae44f98} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+rx\+\_\+dst\+\_\+set} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_a11e5fd78dd807bdfc600711223a3de35}\label{structinet__connection__sock__af__ops_a11e5fd78dd807bdfc600711223a3de35} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries conn\+\_\+request} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_a741125d1c04611a1792284c64d14238c}\label{structinet__connection__sock__af__ops_a741125d1c04611a1792284c64d14238c} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries syn\+\_\+recv\+\_\+sock} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*}, bool \texorpdfstring{$\ast$}{*}, void(\texorpdfstring{$\ast$}{*})(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}))
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_a90b74bb6db770aa90d8380319a4f74ce}\label{structinet__connection__sock__af__ops_a90b74bb6db770aa90d8380319a4f74ce} 
+u16 {\bfseries net\+\_\+header\+\_\+len}
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_a4e3b5835810359e7632e1bced53edd60}\label{structinet__connection__sock__af__ops_a4e3b5835810359e7632e1bced53edd60} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setsockopt} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int, int, \doxymbox{\hyperlink{structsockptr__t}{sockptr\+\_\+t}}, unsigned int)
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_a44bc394c2f31fc87fc9ad921b0d5a53f}\label{structinet__connection__sock__af__ops_a44bc394c2f31fc87fc9ad921b0d5a53f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries getsockopt} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int, int, char \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinet__connection__sock__af__ops_a8aa9e08882f238fa062ee79912c1e146}\label{structinet__connection__sock__af__ops_a8aa9e08882f238fa062ee79912c1e146} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries mtu\+\_\+reduced} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

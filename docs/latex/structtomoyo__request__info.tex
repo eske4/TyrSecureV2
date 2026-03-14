@@ -1,0 +1,94 @@
+\doxysection{tomoyo\+\_\+request\+\_\+info Struct Reference}
+\hypertarget{structtomoyo__request__info}{}\label{structtomoyo__request__info}\index{tomoyo\_request\_info@{tomoyo\_request\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtomoyo__request__info_aa8d199c2706c2f2b339740679a47063b}\label{structtomoyo__request__info_aa8d199c2706c2f2b339740679a47063b} 
+struct \doxymbox{\hyperlink{structtomoyo__obj__info}{tomoyo\+\_\+obj\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries obj}
+\item 
+\Hypertarget{structtomoyo__request__info_adffdac12d5a29c4d3f50cc8d51739a1b}\label{structtomoyo__request__info_adffdac12d5a29c4d3f50cc8d51739a1b} 
+struct \doxymbox{\hyperlink{structtomoyo__execve}{tomoyo\+\_\+execve}} \texorpdfstring{$\ast$}{*} {\bfseries ee}
+\item 
+\Hypertarget{structtomoyo__request__info_ad82925679a3b5c1267d1046a535c428b}\label{structtomoyo__request__info_ad82925679a3b5c1267d1046a535c428b} 
+struct \doxymbox{\hyperlink{structtomoyo__domain__info}{tomoyo\+\_\+domain\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries domain}
+\item 
+\Hypertarget{structtomoyo__request__info_ab083a812d8bcc540692a70a68c2b457b}\label{structtomoyo__request__info_ab083a812d8bcc540692a70a68c2b457b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries filename}\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries matched\_path}\\
+\>\>u8 {\bfseries operation}\\
+\>\} {\bfseries path}\\
+\>struct \{\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries filename1}\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries filename2}\\
+\>\>u8 {\bfseries operation}\\
+\>\} {\bfseries path2}\\
+\>struct \{\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries filename}\\
+\>\>unsigned int {\bfseries mode}\\
+\>\>unsigned int {\bfseries major}\\
+\>\>unsigned int {\bfseries minor}\\
+\>\>u8 {\bfseries operation}\\
+\>\} {\bfseries mkdev}\\
+\>struct \{\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries filename}\\
+\>\>long unsigned int {\bfseries number}\\
+\>\>u8 {\bfseries operation}\\
+\>\} {\bfseries path\_number}\\
+\>struct \{\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries name}\\
+\>\} {\bfseries environ}\\
+\>struct \{\\
+\>\>const \_\_be32 \texorpdfstring{$\ast$}{*} {\bfseries address}\\
+\>\>u16 {\bfseries port}\\
+\>\>u8 {\bfseries protocol}\\
+\>\>u8 {\bfseries operation}\\
+\>\>bool {\bfseries is\_ipv6}\\
+\>\} {\bfseries inet\_network}\\
+\>struct \{\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries address}\\
+\>\>u8 {\bfseries protocol}\\
+\>\>u8 {\bfseries operation}\\
+\>\} {\bfseries unix\_network}\\
+\>struct \{\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries dir}\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries dev}\\
+\>\>long unsigned int {\bfseries flags}\\
+\>\>int {\bfseries need\_dev}\\
+\>\} {\bfseries mount}\\
+\>struct \{\\
+\>\>const struct \doxymbox{\hyperlink{structtomoyo__path__info}{tomoyo\_path\_info}} \texorpdfstring{$\ast$}{*} {\bfseries domainname}\\
+\>\} {\bfseries task}\\
+\} {\bfseries param}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtomoyo__request__info_a03f57da97beb75d1dac9f448b2839932}\label{structtomoyo__request__info_a03f57da97beb75d1dac9f448b2839932} 
+struct \doxymbox{\hyperlink{structtomoyo__acl__info}{tomoyo\+\_\+acl\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries matched\+\_\+acl}
+\item 
+\Hypertarget{structtomoyo__request__info_a57f4e8d57fed6ceaf8a1c0c938a73124}\label{structtomoyo__request__info_a57f4e8d57fed6ceaf8a1c0c938a73124} 
+u8 {\bfseries param\+\_\+type}
+\item 
+\Hypertarget{structtomoyo__request__info_aa12cc68f368f12ddbf9f3a579855a130}\label{structtomoyo__request__info_aa12cc68f368f12ddbf9f3a579855a130} 
+bool {\bfseries granted}
+\item 
+\Hypertarget{structtomoyo__request__info_af29ad1207839d78dacd63a8d1dd66f39}\label{structtomoyo__request__info_af29ad1207839d78dacd63a8d1dd66f39} 
+u8 {\bfseries retry}
+\item 
+\Hypertarget{structtomoyo__request__info_a6ae71e5096e2019e56a13eb8ec60b636}\label{structtomoyo__request__info_a6ae71e5096e2019e56a13eb8ec60b636} 
+u8 {\bfseries profile}
+\item 
+\Hypertarget{structtomoyo__request__info_acd65193d5a9e657e60070a373824cd16}\label{structtomoyo__request__info_acd65193d5a9e657e60070a373824cd16} 
+u8 {\bfseries mode}
+\item 
+\Hypertarget{structtomoyo__request__info_a66170943e4ce5470cd44cbff2bbf1afb}\label{structtomoyo__request__info_a66170943e4ce5470cd44cbff2bbf1afb} 
+u8 {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

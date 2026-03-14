@@ -1,0 +1,46 @@
+\doxysection{xhci\+\_\+td Struct Reference}
+\hypertarget{structxhci__td}{}\label{structxhci__td}\index{xhci\_td@{xhci\_td}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxhci__td_a5d13b6739538a80f3f9597c51a447ce2}\label{structxhci__td_a5d13b6739538a80f3f9597c51a447ce2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries td\+\_\+list}
+\item 
+\Hypertarget{structxhci__td_a5a529a49c3e01ffabc3a455ac2aca852}\label{structxhci__td_a5a529a49c3e01ffabc3a455ac2aca852} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cancelled\+\_\+td\+\_\+list}
+\item 
+\Hypertarget{structxhci__td_a5312a0c2a9bab4b39f26eea776013899}\label{structxhci__td_a5312a0c2a9bab4b39f26eea776013899} 
+int {\bfseries status}
+\item 
+\Hypertarget{structxhci__td_ad90f6575f625c2ef06c407e8118494fc}\label{structxhci__td_ad90f6575f625c2ef06c407e8118494fc} 
+enum xhci\+\_\+cancelled\+\_\+td\+\_\+status {\bfseries cancel\+\_\+status}
+\item 
+\Hypertarget{structxhci__td_abc876de9e746db03a6b2c41c620bcbef}\label{structxhci__td_abc876de9e746db03a6b2c41c620bcbef} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries urb}
+\item 
+\Hypertarget{structxhci__td_a11b91dcabdba05748ac19e2739bc3739}\label{structxhci__td_a11b91dcabdba05748ac19e2739bc3739} 
+struct \doxymbox{\hyperlink{structxhci__segment}{xhci\+\_\+segment}} \texorpdfstring{$\ast$}{*} {\bfseries start\+\_\+seg}
+\item 
+\Hypertarget{structxhci__td_af01a0d4df43a585aeb462b52566d0149}\label{structxhci__td_af01a0d4df43a585aeb462b52566d0149} 
+union \doxymbox{\hyperlink{unionxhci__trb}{xhci\+\_\+trb}} \texorpdfstring{$\ast$}{*} {\bfseries start\+\_\+trb}
+\item 
+\Hypertarget{structxhci__td_ae32c5b0bff025264733a22a1b5be4a33}\label{structxhci__td_ae32c5b0bff025264733a22a1b5be4a33} 
+struct \doxymbox{\hyperlink{structxhci__segment}{xhci\+\_\+segment}} \texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+seg}
+\item 
+\Hypertarget{structxhci__td_aa060941001e3190d5217b1d0c354fba3}\label{structxhci__td_aa060941001e3190d5217b1d0c354fba3} 
+union \doxymbox{\hyperlink{unionxhci__trb}{xhci\+\_\+trb}} \texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+trb}
+\item 
+\Hypertarget{structxhci__td_a63c764f3a2b222ed95992b6c3d40e0fd}\label{structxhci__td_a63c764f3a2b222ed95992b6c3d40e0fd} 
+struct \doxymbox{\hyperlink{structxhci__segment}{xhci\+\_\+segment}} \texorpdfstring{$\ast$}{*} {\bfseries bounce\+\_\+seg}
+\item 
+\Hypertarget{structxhci__td_ab1306d4b007ec8f4d8318ac570623735}\label{structxhci__td_ab1306d4b007ec8f4d8318ac570623735} 
+bool {\bfseries urb\+\_\+length\+\_\+set}
+\item 
+\Hypertarget{structxhci__td_aa58eaa4a9ad31d7c3c20e49de85716e6}\label{structxhci__td_aa58eaa4a9ad31d7c3c20e49de85716e6} 
+bool {\bfseries error\+\_\+mid\+\_\+td}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

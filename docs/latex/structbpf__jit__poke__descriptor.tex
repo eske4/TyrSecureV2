@@ -1,0 +1,45 @@
+\doxysection{bpf\+\_\+jit\+\_\+poke\+\_\+descriptor Struct Reference}
+\hypertarget{structbpf__jit__poke__descriptor}{}\label{structbpf__jit__poke__descriptor}\index{bpf\_jit\_poke\_descriptor@{bpf\_jit\_poke\_descriptor}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__jit__poke__descriptor_ae2eefbfde208e0da101004f5c9c183f5}\label{structbpf__jit__poke__descriptor_ae2eefbfde208e0da101004f5c9c183f5} 
+void \texorpdfstring{$\ast$}{*} {\bfseries tailcall\+\_\+target}
+\item 
+\Hypertarget{structbpf__jit__poke__descriptor_acb73d1814e12133d41c57630f722d240}\label{structbpf__jit__poke__descriptor_acb73d1814e12133d41c57630f722d240} 
+void \texorpdfstring{$\ast$}{*} {\bfseries tailcall\+\_\+bypass}
+\item 
+\Hypertarget{structbpf__jit__poke__descriptor_a67b0e536b99074fb252f3c4d14ada80f}\label{structbpf__jit__poke__descriptor_a67b0e536b99074fb252f3c4d14ada80f} 
+void \texorpdfstring{$\ast$}{*} {\bfseries bypass\+\_\+addr}
+\item 
+\Hypertarget{structbpf__jit__poke__descriptor_a344409c23df59cbb210d7bb98cfd5dcd}\label{structbpf__jit__poke__descriptor_a344409c23df59cbb210d7bb98cfd5dcd} 
+void \texorpdfstring{$\ast$}{*} {\bfseries aux}
+\item 
+\Hypertarget{structbpf__jit__poke__descriptor_a5f0d5f7e120b3ff354abd3007078ef44}\label{structbpf__jit__poke__descriptor_a5f0d5f7e120b3ff354abd3007078ef44} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structbpf__map}{bpf\_map}} \texorpdfstring{$\ast$}{*} {\bfseries map}\\
+\>\>u32 {\bfseries key}\\
+\>\} {\bfseries tail\_call}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__jit__poke__descriptor_a20b211e33dbf72eff5724ede5245ceb8}\label{structbpf__jit__poke__descriptor_a20b211e33dbf72eff5724ede5245ceb8} 
+bool {\bfseries tailcall\+\_\+target\+\_\+stable}
+\item 
+\Hypertarget{structbpf__jit__poke__descriptor_a3013d66809d5e87e0e19b72434d01a3d}\label{structbpf__jit__poke__descriptor_a3013d66809d5e87e0e19b72434d01a3d} 
+u8 {\bfseries adj\+\_\+off}
+\item 
+\Hypertarget{structbpf__jit__poke__descriptor_ac7f10da6b3fa6e5b5df992d8ac418e97}\label{structbpf__jit__poke__descriptor_ac7f10da6b3fa6e5b5df992d8ac418e97} 
+u16 {\bfseries reason}
+\item 
+\Hypertarget{structbpf__jit__poke__descriptor_ac051f2093a7699dcac81e0529c42f276}\label{structbpf__jit__poke__descriptor_ac051f2093a7699dcac81e0529c42f276} 
+u32 {\bfseries insn\+\_\+idx}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

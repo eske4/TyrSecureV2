@@ -1,0 +1,68 @@
+\doxysection{xenpf\+\_\+efi\+\_\+runtime\+\_\+call Struct Reference}
+\hypertarget{structxenpf__efi__runtime__call}{}\label{structxenpf__efi__runtime__call}\index{xenpf\_efi\_runtime\_call@{xenpf\_efi\_runtime\_call}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxenpf__efi__runtime__call_ab8dca659ff804c9ac006bf97f0572819}\label{structxenpf__efi__runtime__call_ab8dca659ff804c9ac006bf97f0572819} 
+uint32\+\_\+t {\bfseries function}
+\item 
+\Hypertarget{structxenpf__efi__runtime__call_a572968eab02a4419ab637ee6792462dd}\label{structxenpf__efi__runtime__call_a572968eab02a4419ab637ee6792462dd} 
+uint32\+\_\+t {\bfseries misc}
+\item 
+\Hypertarget{structxenpf__efi__runtime__call_a25d2a61e8f8fad66b566a4bfbd2cc8fc}\label{structxenpf__efi__runtime__call_a25d2a61e8f8fad66b566a4bfbd2cc8fc} 
+xen\+\_\+ulong\+\_\+t {\bfseries status}
+\item 
+\Hypertarget{structxenpf__efi__runtime__call_aa487330b4efd160789b7c3c188012328}\label{structxenpf__efi__runtime__call_aa487330b4efd160789b7c3c188012328} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structxenpf__efi__time}{xenpf\_efi\_time}} {\bfseries time}\\
+\>\>uint32\_t {\bfseries resolution}\\
+\>\>uint32\_t {\bfseries accuracy}\\
+\>\} {\bfseries get\_time}\\
+\>struct \doxymbox{\hyperlink{structxenpf__efi__time}{xenpf\_efi\_time}} {\bfseries set\_time}\\
+\>struct \doxymbox{\hyperlink{structxenpf__efi__time}{xenpf\_efi\_time}} {\bfseries get\_wakeup\_time}\\
+\>struct \doxymbox{\hyperlink{structxenpf__efi__time}{xenpf\_efi\_time}} {\bfseries set\_wakeup\_time}\\
+\>struct \{\\
+\>\>\_\_guest\_handle\_void {\bfseries name}\\
+\>\>xen\_ulong\_t {\bfseries size}\\
+\>\>\_\_guest\_handle\_void {\bfseries data}\\
+\>\>struct \doxymbox{\hyperlink{structxenpf__efi__guid}{xenpf\_efi\_guid}} {\bfseries vendor\_guid}\\
+\>\} {\bfseries get\_variable}\\
+\>struct \{\\
+\>\>\_\_guest\_handle\_void {\bfseries name}\\
+\>\>xen\_ulong\_t {\bfseries size}\\
+\>\>\_\_guest\_handle\_void {\bfseries data}\\
+\>\>struct \doxymbox{\hyperlink{structxenpf__efi__guid}{xenpf\_efi\_guid}} {\bfseries vendor\_guid}\\
+\>\} {\bfseries set\_variable}\\
+\>struct \{\\
+\>\>xen\_ulong\_t {\bfseries size}\\
+\>\>\_\_guest\_handle\_void {\bfseries name}\\
+\>\>struct \doxymbox{\hyperlink{structxenpf__efi__guid}{xenpf\_efi\_guid}} {\bfseries vendor\_guid}\\
+\>\} {\bfseries get\_next\_variable\_name}\\
+\>struct \{\\
+\>\>uint32\_t {\bfseries attr}\\
+\>\>uint64\_t {\bfseries max\_store\_size}\\
+\>\>uint64\_t {\bfseries remain\_store\_size}\\
+\>\>uint64\_t {\bfseries max\_size}\\
+\>\} {\bfseries query\_variable\_info}\\
+\>struct \{\\
+\>\>\_\_guest\_handle\_void {\bfseries capsule\_header\_array}\\
+\>\>xen\_ulong\_t {\bfseries capsule\_count}\\
+\>\>uint64\_t {\bfseries max\_capsule\_size}\\
+\>\>uint32\_t {\bfseries reset\_type}\\
+\>\} {\bfseries query\_capsule\_capabilities}\\
+\>struct \{\\
+\>\>\_\_guest\_handle\_void {\bfseries capsule\_header\_array}\\
+\>\>xen\_ulong\_t {\bfseries capsule\_count}\\
+\>\>uint64\_t {\bfseries sg\_list}\\
+\>\} {\bfseries update\_capsule}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

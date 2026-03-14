@@ -1,0 +1,100 @@
+\doxysection{kvm\+\_\+pmu Struct Reference}
+\hypertarget{structkvm__pmu}{}\label{structkvm__pmu}\index{kvm\_pmu@{kvm\_pmu}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__pmu_a5aadba3329718ed30846086f6073b3fb}\label{structkvm__pmu_a5aadba3329718ed30846086f6073b3fb} 
+u8 {\bfseries version}
+\item 
+\Hypertarget{structkvm__pmu_acb1b9c9810b266fd1595e95c5b87aa1d}\label{structkvm__pmu_acb1b9c9810b266fd1595e95c5b87aa1d} 
+unsigned int {\bfseries nr\+\_\+arch\+\_\+gp\+\_\+counters}
+\item 
+\Hypertarget{structkvm__pmu_acba97042eeef43c538ef0bbc0a214ffe}\label{structkvm__pmu_acba97042eeef43c538ef0bbc0a214ffe} 
+unsigned int {\bfseries nr\+\_\+arch\+\_\+fixed\+\_\+counters}
+\item 
+\Hypertarget{structkvm__pmu_af18dd1157ee6e8994270dd8da80b7fa5}\label{structkvm__pmu_af18dd1157ee6e8994270dd8da80b7fa5} 
+unsigned int {\bfseries available\+\_\+event\+\_\+types}
+\item 
+\Hypertarget{structkvm__pmu_a502d93e86c645ebfa4b3b6ab5d46936b}\label{structkvm__pmu_a502d93e86c645ebfa4b3b6ab5d46936b} 
+u64 {\bfseries fixed\+\_\+ctr\+\_\+ctrl}
+\item 
+\Hypertarget{structkvm__pmu_a778d8a05d5d3a8cf0ae52735e55a686e}\label{structkvm__pmu_a778d8a05d5d3a8cf0ae52735e55a686e} 
+u64 {\bfseries fixed\+\_\+ctr\+\_\+ctrl\+\_\+rsvd}
+\item 
+\Hypertarget{structkvm__pmu_abbb704b79ea8f9d7cf539927c4426549}\label{structkvm__pmu_abbb704b79ea8f9d7cf539927c4426549} 
+u64 {\bfseries global\+\_\+ctrl}
+\item 
+\Hypertarget{structkvm__pmu_a88dd8724a5941fca42fc6d29ee2d99eb}\label{structkvm__pmu_a88dd8724a5941fca42fc6d29ee2d99eb} 
+u64 {\bfseries global\+\_\+status}
+\item 
+\Hypertarget{structkvm__pmu_aeeb7ffa3007f7ad4bed125f71d6bc5fc}\label{structkvm__pmu_aeeb7ffa3007f7ad4bed125f71d6bc5fc} 
+u64 {\bfseries counter\+\_\+bitmask} \+[2]\+
+\item 
+\Hypertarget{structkvm__pmu_a1e6339949c8ded6b2d997e4e1c179269}\label{structkvm__pmu_a1e6339949c8ded6b2d997e4e1c179269} 
+u64 {\bfseries global\+\_\+ctrl\+\_\+rsvd}
+\item 
+\Hypertarget{structkvm__pmu_a7639fd54891d63b528da742bc0068fb9}\label{structkvm__pmu_a7639fd54891d63b528da742bc0068fb9} 
+u64 {\bfseries global\+\_\+status\+\_\+rsvd}
+\item 
+\Hypertarget{structkvm__pmu_a278d6370f3693d736b9cab6999464092}\label{structkvm__pmu_a278d6370f3693d736b9cab6999464092} 
+u64 {\bfseries reserved\+\_\+bits}
+\item 
+\Hypertarget{structkvm__pmu_a0ba9c3a1493691ce4df0a916ff5366cb}\label{structkvm__pmu_a0ba9c3a1493691ce4df0a916ff5366cb} 
+u64 {\bfseries raw\+\_\+event\+\_\+mask}
+\item 
+\Hypertarget{structkvm__pmu_a977515f157fe470ec5d1fb93230b614a}\label{structkvm__pmu_a977515f157fe470ec5d1fb93230b614a} 
+struct \doxymbox{\hyperlink{structkvm__pmc}{kvm\+\_\+pmc}} {\bfseries gp\+\_\+counters} \+[8]\+
+\item 
+\Hypertarget{structkvm__pmu_a4520ed4b56ace773baf44ac81f81e308}\label{structkvm__pmu_a4520ed4b56ace773baf44ac81f81e308} 
+struct \doxymbox{\hyperlink{structkvm__pmc}{kvm\+\_\+pmc}} {\bfseries fixed\+\_\+counters} \+[3]\+
+\item 
+\Hypertarget{structkvm__pmu_a4dd5aa6d76edc3811ea5a931e4a6c8b6}\label{structkvm__pmu_a4dd5aa6d76edc3811ea5a931e4a6c8b6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int {\bfseries reprogram\_pmi} \+[1]\+\\
+\>\doxymbox{\hyperlink{structatomic64__t}{atomic64\_t}} {\bfseries \_\_reprogram\_pmi}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__pmu_a29fb2bba2ef4d79a90563c18b19074a9}\label{structkvm__pmu_a29fb2bba2ef4d79a90563c18b19074a9} 
+long unsigned int {\bfseries all\+\_\+valid\+\_\+pmc\+\_\+idx} \+[1]\+
+\item 
+\Hypertarget{structkvm__pmu_acc9d59d48a148381d33e7d71669c310d}\label{structkvm__pmu_acc9d59d48a148381d33e7d71669c310d} 
+long unsigned int {\bfseries pmc\+\_\+in\+\_\+use} \+[1]\+
+\item 
+\Hypertarget{structkvm__pmu_a09886b2fcad146331ba03a81a1ded631}\label{structkvm__pmu_a09886b2fcad146331ba03a81a1ded631} 
+long unsigned int {\bfseries pmc\+\_\+counting\+\_\+instructions} \+[1]\+
+\item 
+\Hypertarget{structkvm__pmu_ae4a04b651330a4a8e4ba7cbd82d8297b}\label{structkvm__pmu_ae4a04b651330a4a8e4ba7cbd82d8297b} 
+long unsigned int {\bfseries pmc\+\_\+counting\+\_\+branches} \+[1]\+
+\item 
+\Hypertarget{structkvm__pmu_a9b124e6971bba054001f3b0e51656b90}\label{structkvm__pmu_a9b124e6971bba054001f3b0e51656b90} 
+u64 {\bfseries ds\+\_\+area}
+\item 
+\Hypertarget{structkvm__pmu_aa68b0ad62b2f19830166053607051d40}\label{structkvm__pmu_aa68b0ad62b2f19830166053607051d40} 
+u64 {\bfseries pebs\+\_\+enable}
+\item 
+\Hypertarget{structkvm__pmu_a9f7250ca0cf0d6dded92be7d6796bf3e}\label{structkvm__pmu_a9f7250ca0cf0d6dded92be7d6796bf3e} 
+u64 {\bfseries pebs\+\_\+enable\+\_\+rsvd}
+\item 
+\Hypertarget{structkvm__pmu_af2fbcc9bdcca0521bfb5c9b201b7d22d}\label{structkvm__pmu_af2fbcc9bdcca0521bfb5c9b201b7d22d} 
+u64 {\bfseries pebs\+\_\+data\+\_\+cfg}
+\item 
+\Hypertarget{structkvm__pmu_a8cfb8304169255ce52ea37354f5d74e7}\label{structkvm__pmu_a8cfb8304169255ce52ea37354f5d74e7} 
+u64 {\bfseries pebs\+\_\+data\+\_\+cfg\+\_\+rsvd}
+\item 
+\Hypertarget{structkvm__pmu_a983ec285f42083ca64de3be310026a99}\label{structkvm__pmu_a983ec285f42083ca64de3be310026a99} 
+u64 {\bfseries host\+\_\+cross\+\_\+mapped\+\_\+mask}
+\item 
+\Hypertarget{structkvm__pmu_a44ec6a66a4305a40b0eb2687e8ae15fd}\label{structkvm__pmu_a44ec6a66a4305a40b0eb2687e8ae15fd} 
+bool {\bfseries need\+\_\+cleanup}
+\item 
+\Hypertarget{structkvm__pmu_a14b8eca57864251f64b9935fcea3d969}\label{structkvm__pmu_a14b8eca57864251f64b9935fcea3d969} 
+u8 {\bfseries event\+\_\+count}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

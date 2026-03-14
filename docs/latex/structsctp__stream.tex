@@ -1,0 +1,60 @@
+\doxysection{sctp\+\_\+stream Struct Reference}
+\hypertarget{structsctp__stream}{}\label{structsctp__stream}\index{sctp\_stream@{sctp\_stream}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsctp__stream_aa744bb54757ae81bd66f1cb3726d2e2e}\label{structsctp__stream_aa744bb54757ae81bd66f1cb3726d2e2e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{struct____genradix}{\_\_genradix}} {\bfseries tree}\\
+\>struct \doxymbox{\hyperlink{structsctp__stream__out}{sctp\_stream\_out}} {\bfseries type} \+[0]\+\\
+\} {\bfseries out}\\
+
+\end{tabbing}\item 
+\Hypertarget{structsctp__stream_a863e704b8f60f9fa50418516b22fc82a}\label{structsctp__stream_a863e704b8f60f9fa50418516b22fc82a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{struct____genradix}{\_\_genradix}} {\bfseries tree}\\
+\>struct \doxymbox{\hyperlink{structsctp__stream__in}{sctp\_stream\_in}} {\bfseries type} \+[0]\+\\
+\} {\bfseries in}\\
+
+\end{tabbing}\item 
+\Hypertarget{structsctp__stream_ae3f4738042ab8ea7ecb087bd7487cba9}\label{structsctp__stream_ae3f4738042ab8ea7ecb087bd7487cba9} 
+\+\_\+\+\_\+u16 {\bfseries outcnt}
+\item 
+\Hypertarget{structsctp__stream_a0564b18313b3b74bbc500ce030fe030c}\label{structsctp__stream_a0564b18313b3b74bbc500ce030fe030c} 
+\+\_\+\+\_\+u16 {\bfseries incnt}
+\item 
+\Hypertarget{structsctp__stream_a59af6ecc3fe5ab45a3f2004c7f8afa76}\label{structsctp__stream_a59af6ecc3fe5ab45a3f2004c7f8afa76} 
+struct \doxymbox{\hyperlink{structsctp__stream__out}{sctp\+\_\+stream\+\_\+out}} \texorpdfstring{$\ast$}{*} {\bfseries out\+\_\+curr}
+\item 
+\Hypertarget{structsctp__stream_a0d86717cf14f171eb7320464b1a9d706}\label{structsctp__stream_a0d86717cf14f171eb7320464b1a9d706} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionsctp__stream_1_1_0d314022362076045110267216364024001350234247340351_aa97186c05efee149e0c51705c2e2e10b}\label{unionsctp__stream_1_1_0d314022362076045110267216364024001350234247340351_aa97186c05efee149e0c51705c2e2e10b} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries prio\_list}\\
+\>\} \\
+\Hypertarget{unionsctp__stream_1_1_0d314022362076045110267216364024001350234247340351_a2f0b1b8ba302518decdac0ddec91f746}\label{unionsctp__stream_1_1_0d314022362076045110267216364024001350234247340351_a2f0b1b8ba302518decdac0ddec91f746} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries rr\_list}\\
+\>\>struct \doxymbox{\hyperlink{structsctp__stream__out__ext}{sctp\_stream\_out\_ext}} \texorpdfstring{$\ast$}{*} {\bfseries rr\_next}\\
+\>\} \\
+\Hypertarget{unionsctp__stream_1_1_0d314022362076045110267216364024001350234247340351_a792be0a3ddf066d78616927e00dec4c7}\label{unionsctp__stream_1_1_0d314022362076045110267216364024001350234247340351_a792be0a3ddf066d78616927e00dec4c7} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries fc\_list}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsctp__stream_a5fe7bfc58099bc61c754e33943a69cea}\label{structsctp__stream_a5fe7bfc58099bc61c754e33943a69cea} 
+struct \doxymbox{\hyperlink{structsctp__stream__interleave}{sctp\+\_\+stream\+\_\+interleave}} \texorpdfstring{$\ast$}{*} {\bfseries si}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

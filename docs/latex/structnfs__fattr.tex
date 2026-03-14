@@ -1,0 +1,99 @@
+\doxysection{nfs\+\_\+fattr Struct Reference}
+\hypertarget{structnfs__fattr}{}\label{structnfs__fattr}\index{nfs\_fattr@{nfs\_fattr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs__fattr_a6cfe71f87d21b6aa02659929dafcea74}\label{structnfs__fattr_a6cfe71f87d21b6aa02659929dafcea74} 
+\+\_\+\+\_\+u64 {\bfseries valid}
+\item 
+\Hypertarget{structnfs__fattr_a3cd46b543000632b4924d751029d754f}\label{structnfs__fattr_a3cd46b543000632b4924d751029d754f} 
+umode\+\_\+t {\bfseries mode}
+\item 
+\Hypertarget{structnfs__fattr_a743646a418cd7a504c0c6394e520c61a}\label{structnfs__fattr_a743646a418cd7a504c0c6394e520c61a} 
+\+\_\+\+\_\+u32 {\bfseries nlink}
+\item 
+\Hypertarget{structnfs__fattr_a22385cd004925b1ab9846b714f21fa69}\label{structnfs__fattr_a22385cd004925b1ab9846b714f21fa69} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries uid}
+\item 
+\Hypertarget{structnfs__fattr_a307066d11aa1a55070c2f7fef1da65e4}\label{structnfs__fattr_a307066d11aa1a55070c2f7fef1da65e4} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries gid}
+\item 
+\Hypertarget{structnfs__fattr_ace4cdbf129505fa9e53e26766a2bc14d}\label{structnfs__fattr_ace4cdbf129505fa9e53e26766a2bc14d} 
+dev\+\_\+t {\bfseries rdev}
+\item 
+\Hypertarget{structnfs__fattr_af8deb81a77c98e8892e47c21b19621d1}\label{structnfs__fattr_af8deb81a77c98e8892e47c21b19621d1} 
+\+\_\+\+\_\+u64 {\bfseries size}
+\item 
+\Hypertarget{structnfs__fattr_a3dc407844a7bd87f06e0ca5a10df0744}\label{structnfs__fattr_a3dc407844a7bd87f06e0ca5a10df0744} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries blocksize}\\
+\>\>\_\_u32 {\bfseries blocks}\\
+\>\} {\bfseries nfs2}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries used}\\
+\>\} {\bfseries nfs3}\\
+\} {\bfseries du}\\
+
+\end{tabbing}\item 
+\Hypertarget{structnfs__fattr_a0edc9c84afe59e0ae047212e2a6b2c37}\label{structnfs__fattr_a0edc9c84afe59e0ae047212e2a6b2c37} 
+struct \doxymbox{\hyperlink{structnfs__fsid}{nfs\+\_\+fsid}} {\bfseries fsid}
+\item 
+\Hypertarget{structnfs__fattr_a652729592532b92a72e1cdc0cf159cee}\label{structnfs__fattr_a652729592532b92a72e1cdc0cf159cee} 
+\+\_\+\+\_\+u64 {\bfseries fileid}
+\item 
+\Hypertarget{structnfs__fattr_a1659ce7261ba56cc06bfc564fd00ba24}\label{structnfs__fattr_a1659ce7261ba56cc06bfc564fd00ba24} 
+\+\_\+\+\_\+u64 {\bfseries mounted\+\_\+on\+\_\+fileid}
+\item 
+\Hypertarget{structnfs__fattr_aa1ede8407aad8aa2495e4c5369e68fe3}\label{structnfs__fattr_aa1ede8407aad8aa2495e4c5369e68fe3} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries atime}
+\item 
+\Hypertarget{structnfs__fattr_a64ae717c1a0ed69b1eae2bec6cd9c813}\label{structnfs__fattr_a64ae717c1a0ed69b1eae2bec6cd9c813} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries mtime}
+\item 
+\Hypertarget{structnfs__fattr_ab6a48424c85abacbeaa5f30794d9ab32}\label{structnfs__fattr_ab6a48424c85abacbeaa5f30794d9ab32} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries ctime}
+\item 
+\Hypertarget{structnfs__fattr_a6d9d328557a7ed89a00e1640368f82f7}\label{structnfs__fattr_a6d9d328557a7ed89a00e1640368f82f7} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries btime}
+\item 
+\Hypertarget{structnfs__fattr_a68b96f505d3114509b16284f9b8d9c5d}\label{structnfs__fattr_a68b96f505d3114509b16284f9b8d9c5d} 
+\+\_\+\+\_\+u64 {\bfseries change\+\_\+attr}
+\item 
+\Hypertarget{structnfs__fattr_a8d0c4a0a8f13aa9b7b0d8489bfdd6184}\label{structnfs__fattr_a8d0c4a0a8f13aa9b7b0d8489bfdd6184} 
+\+\_\+\+\_\+u64 {\bfseries pre\+\_\+change\+\_\+attr}
+\item 
+\Hypertarget{structnfs__fattr_abdc5da8c2bdf16c19441313ec9b61e73}\label{structnfs__fattr_abdc5da8c2bdf16c19441313ec9b61e73} 
+\+\_\+\+\_\+u64 {\bfseries pre\+\_\+size}
+\item 
+\Hypertarget{structnfs__fattr_aa57ed676f6dcffd61c9443985a2aa0a1}\label{structnfs__fattr_aa57ed676f6dcffd61c9443985a2aa0a1} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries pre\+\_\+mtime}
+\item 
+\Hypertarget{structnfs__fattr_a1e6a5d23abd930304095b88d55f0a2da}\label{structnfs__fattr_a1e6a5d23abd930304095b88d55f0a2da} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries pre\+\_\+ctime}
+\item 
+\Hypertarget{structnfs__fattr_a35955e31ee4dcee3b31f99fe895238a1}\label{structnfs__fattr_a35955e31ee4dcee3b31f99fe895238a1} 
+long unsigned int {\bfseries time\+\_\+start}
+\item 
+\Hypertarget{structnfs__fattr_a5216ef73b111721d113d469e97a0ef82}\label{structnfs__fattr_a5216ef73b111721d113d469e97a0ef82} 
+long unsigned int {\bfseries gencount}
+\item 
+\Hypertarget{structnfs__fattr_a38ba50c0e7eb08628f98dfb852925533}\label{structnfs__fattr_a38ba50c0e7eb08628f98dfb852925533} 
+struct \doxymbox{\hyperlink{structnfs4__string}{nfs4\+\_\+string}} \texorpdfstring{$\ast$}{*} {\bfseries owner\+\_\+name}
+\item 
+\Hypertarget{structnfs__fattr_ad87cdef79953c8526bf665affd91f86d}\label{structnfs__fattr_ad87cdef79953c8526bf665affd91f86d} 
+struct \doxymbox{\hyperlink{structnfs4__string}{nfs4\+\_\+string}} \texorpdfstring{$\ast$}{*} {\bfseries group\+\_\+name}
+\item 
+\Hypertarget{structnfs__fattr_a3d206a88093a410afaa192ca6a5e2626}\label{structnfs__fattr_a3d206a88093a410afaa192ca6a5e2626} 
+struct \doxymbox{\hyperlink{structnfs4__threshold}{nfs4\+\_\+threshold}} \texorpdfstring{$\ast$}{*} {\bfseries mdsthreshold}
+\item 
+\Hypertarget{structnfs__fattr_a09fea16287bb05323087789369758f4a}\label{structnfs__fattr_a09fea16287bb05323087789369758f4a} 
+struct \doxymbox{\hyperlink{structnfs4__label}{nfs4\+\_\+label}} \texorpdfstring{$\ast$}{*} {\bfseries label}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

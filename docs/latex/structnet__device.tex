@@ -1,0 +1,638 @@
+\doxysection{net\+\_\+device Struct Reference}
+\hypertarget{structnet__device}{}\label{structnet__device}\index{net\_device@{net\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnet__device_a4d1ae30d55895b7a793fc48a522908fb}\label{structnet__device_a4d1ae30d55895b7a793fc48a522908fb} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+net\+\_\+device\+\_\+read\+\_\+tx} \+[0]\+
+\item 
+\Hypertarget{structnet__device_a33566ba7378173190d14f64f5e138eee}\label{structnet__device_a33566ba7378173190d14f64f5e138eee} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionnet__device_1_1_0d017266242163352101360236036127125272224020075202_ad58c1c4acf806d49992458e9368f0a58}\label{unionnet__device_1_1_0d017266242163352101360236036127125272224020075202_ad58c1c4acf806d49992458e9368f0a58} 
+\>struct \{\\
+\>\>long unsigned int {\bfseries priv\_flags}: 32\\
+\>\>long unsigned int {\bfseries lltx}: 1\\
+\>\>long unsigned int {\bfseries netmem\_tx}: 1\\
+\>\} \\
+\>struct \{\\
+\>\>long unsigned int {\bfseries priv\_flags}: 32\\
+\>\>long unsigned int {\bfseries lltx}: 1\\
+\>\>long unsigned int {\bfseries netmem\_tx}: 1\\
+\>\} {\bfseries priv\_flags\_fast}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnet__device_adb584f63cfa86e8f7fc00dace610d494}\label{structnet__device_adb584f63cfa86e8f7fc00dace610d494} 
+const struct \doxymbox{\hyperlink{structnet__device__ops}{net\+\_\+device\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries netdev\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_a92ab6ee0d4600edbf016e3ef30cff4c2}\label{structnet__device_a92ab6ee0d4600edbf016e3ef30cff4c2} 
+const struct \doxymbox{\hyperlink{structheader__ops}{header\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries header\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_ac7366068c9ec189caa969a97b1e9bb47}\label{structnet__device_ac7366068c9ec189caa969a97b1e9bb47} 
+struct \doxymbox{\hyperlink{structnetdev__queue}{netdev\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+tx}
+\item 
+\Hypertarget{structnet__device_aaa37a78e34d0d95b4f1a8fb78021eb1b}\label{structnet__device_aaa37a78e34d0d95b4f1a8fb78021eb1b} 
+netdev\+\_\+features\+\_\+t {\bfseries gso\+\_\+partial\+\_\+features}
+\item 
+\Hypertarget{structnet__device_af5224e622dd3431dead2d283c4167c67}\label{structnet__device_af5224e622dd3431dead2d283c4167c67} 
+unsigned int {\bfseries real\+\_\+num\+\_\+tx\+\_\+queues}
+\item 
+\Hypertarget{structnet__device_aed41fdb36707c4695f4560e90aedd7c5}\label{structnet__device_aed41fdb36707c4695f4560e90aedd7c5} 
+unsigned int {\bfseries gso\+\_\+max\+\_\+size}
+\item 
+\Hypertarget{structnet__device_aa421fac3e47f8560ce1fa9525c7ed2ab}\label{structnet__device_aa421fac3e47f8560ce1fa9525c7ed2ab} 
+unsigned int {\bfseries gso\+\_\+ipv4\+\_\+max\+\_\+size}
+\item 
+\Hypertarget{structnet__device_a8424581fc3d0ceafa6d2396bf09c3e11}\label{structnet__device_a8424581fc3d0ceafa6d2396bf09c3e11} 
+u16 {\bfseries gso\+\_\+max\+\_\+segs}
+\item 
+\Hypertarget{structnet__device_a5d3fbd9dea4992d56efeabdd6f82d962}\label{structnet__device_a5d3fbd9dea4992d56efeabdd6f82d962} 
+s16 {\bfseries num\+\_\+tc}
+\item 
+\Hypertarget{structnet__device_ae0ea680b4fe757682e26c822131f581d}\label{structnet__device_ae0ea680b4fe757682e26c822131f581d} 
+unsigned int {\bfseries mtu}
+\item 
+\Hypertarget{structnet__device_a0684a30e7883140ef995b8876ef175c0}\label{structnet__device_a0684a30e7883140ef995b8876ef175c0} 
+short unsigned int {\bfseries needed\+\_\+headroom}
+\item 
+\Hypertarget{structnet__device_a4c0779796bb06e2dcf3bc0dad747b31d}\label{structnet__device_a4c0779796bb06e2dcf3bc0dad747b31d} 
+struct \doxymbox{\hyperlink{structnetdev__tc__txq}{netdev\+\_\+tc\+\_\+txq}} {\bfseries tc\+\_\+to\+\_\+txq} \+[16]\+
+\item 
+\Hypertarget{structnet__device_a701b7243b5973eab8f8bfad1b1bfaedc}\label{structnet__device_a701b7243b5973eab8f8bfad1b1bfaedc} 
+struct \doxymbox{\hyperlink{structxps__dev__maps}{xps\+\_\+dev\+\_\+maps}} \texorpdfstring{$\ast$}{*} {\bfseries xps\+\_\+maps} \+[2]\+
+\item 
+\Hypertarget{structnet__device_a53e3f346b9aaaac2acd618c1c77cca9d}\label{structnet__device_a53e3f346b9aaaac2acd618c1c77cca9d} 
+struct \doxymbox{\hyperlink{structnf__hook__entries}{nf\+\_\+hook\+\_\+entries}} \texorpdfstring{$\ast$}{*} {\bfseries nf\+\_\+hooks\+\_\+egress}
+\item 
+\Hypertarget{structnet__device_ac4529b721ddea2e9e66873ce190b4513}\label{structnet__device_ac4529b721ddea2e9e66873ce190b4513} 
+struct \doxymbox{\hyperlink{structbpf__mprog__entry}{bpf\+\_\+mprog\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries tcx\+\_\+egress}
+\item 
+\Hypertarget{structnet__device_af2b2ae5416acec2cd6f9a60c3829a194}\label{structnet__device_af2b2ae5416acec2cd6f9a60c3829a194} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+net\+\_\+device\+\_\+read\+\_\+tx} \+[0]\+
+\item 
+\Hypertarget{structnet__device_a56bae1291acd20dc7a53d1041ebdf51a}\label{structnet__device_a56bae1291acd20dc7a53d1041ebdf51a} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+net\+\_\+device\+\_\+read\+\_\+txrx} \+[0]\+
+\item 
+\Hypertarget{structnet__device_af3847eed8e6a50cea8476bad86c135a7}\label{structnet__device_af3847eed8e6a50cea8476bad86c135a7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpcpu__lstats}{pcpu\_lstats}} \texorpdfstring{$\ast$}{*} {\bfseries lstats}\\
+\>struct \doxymbox{\hyperlink{structpcpu__sw__netstats}{pcpu\_sw\_netstats}} \texorpdfstring{$\ast$}{*} {\bfseries tstats}\\
+\>struct \doxymbox{\hyperlink{structpcpu__dstats}{pcpu\_dstats}} \texorpdfstring{$\ast$}{*} {\bfseries dstats}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnet__device_a731dc4225ebabb68b7e637196a122330}\label{structnet__device_a731dc4225ebabb68b7e637196a122330} 
+long unsigned int {\bfseries state}
+\item 
+\Hypertarget{structnet__device_a8ee54cb7e02444a92cbbed941243e585}\label{structnet__device_a8ee54cb7e02444a92cbbed941243e585} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structnet__device_a221e3f235975f6178584763543f91751}\label{structnet__device_a221e3f235975f6178584763543f91751} 
+short unsigned int {\bfseries hard\+\_\+header\+\_\+len}
+\item 
+\Hypertarget{structnet__device_a362ca42e9b0f05f7ffc21d838d2a9022}\label{structnet__device_a362ca42e9b0f05f7ffc21d838d2a9022} 
+netdev\+\_\+features\+\_\+t {\bfseries features}
+\item 
+\Hypertarget{structnet__device_a0611f8bf8dc313a0c94b5ee40b74e511}\label{structnet__device_a0611f8bf8dc313a0c94b5ee40b74e511} 
+struct \doxymbox{\hyperlink{structinet6__dev}{inet6\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries ip6\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_aaaafa668bf9ea79e35469533596104ca}\label{structnet__device_aaaafa668bf9ea79e35469533596104ca} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+net\+\_\+device\+\_\+read\+\_\+txrx} \+[0]\+
+\item 
+\Hypertarget{structnet__device_adc3e89c704b0389252456bac0f041700}\label{structnet__device_adc3e89c704b0389252456bac0f041700} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+net\+\_\+device\+\_\+read\+\_\+rx} \+[0]\+
+\item 
+\Hypertarget{structnet__device_a71d627e8be57cf4f9dc8d4d21e3447d7}\label{structnet__device_a71d627e8be57cf4f9dc8d4d21e3447d7} 
+struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*} {\bfseries xdp\+\_\+prog}
+\item 
+\Hypertarget{structnet__device_af751ea110d514b82f2f5d9b030049273}\label{structnet__device_af751ea110d514b82f2f5d9b030049273} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ptype\+\_\+specific}
+\item 
+\Hypertarget{structnet__device_aa9df493ff6c2f473689fc4ede0f7fd12}\label{structnet__device_aa9df493ff6c2f473689fc4ede0f7fd12} 
+int {\bfseries ifindex}
+\item 
+\Hypertarget{structnet__device_a7940286a223bae00c4cedce588c3e691}\label{structnet__device_a7940286a223bae00c4cedce588c3e691} 
+unsigned int {\bfseries real\+\_\+num\+\_\+rx\+\_\+queues}
+\item 
+\Hypertarget{structnet__device_abd6a500b1d21e92210b2d77c076cece9}\label{structnet__device_abd6a500b1d21e92210b2d77c076cece9} 
+struct \doxymbox{\hyperlink{structnetdev__rx__queue}{netdev\+\_\+rx\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+rx}
+\item 
+\Hypertarget{structnet__device_a59d9353297ec48e05b7eeebc6572b191}\label{structnet__device_a59d9353297ec48e05b7eeebc6572b191} 
+unsigned int {\bfseries gro\+\_\+max\+\_\+size}
+\item 
+\Hypertarget{structnet__device_ae7d22c889a95a3917190ccc264242f5d}\label{structnet__device_ae7d22c889a95a3917190ccc264242f5d} 
+unsigned int {\bfseries gro\+\_\+ipv4\+\_\+max\+\_\+size}
+\item 
+\Hypertarget{structnet__device_acbe65a74bfc885c7000558ca373a5627}\label{structnet__device_acbe65a74bfc885c7000558ca373a5627} 
+rx\+\_\+handler\+\_\+func\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+handler}
+\item 
+\Hypertarget{structnet__device_af8298158eb265bd87d737dbfb83aeda3}\label{structnet__device_af8298158eb265bd87d737dbfb83aeda3} 
+void \texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+handler\+\_\+data}
+\item 
+\Hypertarget{structnet__device_af2b1073f8bfda5f9b2911d399034cfb3}\label{structnet__device_af2b1073f8bfda5f9b2911d399034cfb3} 
+\doxymbox{\hyperlink{structpossible__net__t}{possible\+\_\+net\+\_\+t}} {\bfseries nd\+\_\+net}
+\item 
+\Hypertarget{structnet__device_aa3b6b5de0658975ada6f28609ed2f387}\label{structnet__device_aa3b6b5de0658975ada6f28609ed2f387} 
+struct \doxymbox{\hyperlink{structnetpoll__info}{netpoll\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries npinfo}
+\item 
+\Hypertarget{structnet__device_a1eff3f186844feb9d6faef65316f123c}\label{structnet__device_a1eff3f186844feb9d6faef65316f123c} 
+struct \doxymbox{\hyperlink{structbpf__mprog__entry}{bpf\+\_\+mprog\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries tcx\+\_\+ingress}
+\item 
+\Hypertarget{structnet__device_a8598e7ab3b7bb9009b5faed24a229c61}\label{structnet__device_a8598e7ab3b7bb9009b5faed24a229c61} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+net\+\_\+device\+\_\+read\+\_\+rx} \+[0]\+
+\item 
+\Hypertarget{structnet__device_a8ebfd8ded26401b0d9a922b55a96922a}\label{structnet__device_a8ebfd8ded26401b0d9a922b55a96922a} 
+char {\bfseries name} \+[16]\+
+\item 
+\Hypertarget{structnet__device_a8aca5c4a3ed6b46f3d1d19fee1be7cf3}\label{structnet__device_a8aca5c4a3ed6b46f3d1d19fee1be7cf3} 
+struct \doxymbox{\hyperlink{structnetdev__name__node}{netdev\+\_\+name\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries name\+\_\+node}
+\item 
+\Hypertarget{structnet__device_ad2b8a24203a679ffe9a75dc790c933ac}\label{structnet__device_ad2b8a24203a679ffe9a75dc790c933ac} 
+struct \doxymbox{\hyperlink{structdev__ifalias}{dev\+\_\+ifalias}} \texorpdfstring{$\ast$}{*} {\bfseries ifalias}
+\item 
+\Hypertarget{structnet__device_a9b52cdda236e550856c87e93a816d3b6}\label{structnet__device_a9b52cdda236e550856c87e93a816d3b6} 
+long unsigned int {\bfseries mem\+\_\+end}
+\item 
+\Hypertarget{structnet__device_abc38a601a9c8971795f4ddc7d5245321}\label{structnet__device_abc38a601a9c8971795f4ddc7d5245321} 
+long unsigned int {\bfseries mem\+\_\+start}
+\item 
+\Hypertarget{structnet__device_ae35abefbf1748c18fb2cdd723acc1ff0}\label{structnet__device_ae35abefbf1748c18fb2cdd723acc1ff0} 
+long unsigned int {\bfseries base\+\_\+addr}
+\item 
+\Hypertarget{structnet__device_a097b9b8290219b03eebcb762603c628f}\label{structnet__device_a097b9b8290219b03eebcb762603c628f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dev\+\_\+list}
+\item 
+\Hypertarget{structnet__device_a8fb6655b1f1db31e4da3ae2ceb12cf47}\label{structnet__device_a8fb6655b1f1db31e4da3ae2ceb12cf47} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries napi\+\_\+list}
+\item 
+\Hypertarget{structnet__device_a94cbd85ccbc01721e4320536a558ffc7}\label{structnet__device_a94cbd85ccbc01721e4320536a558ffc7} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries unreg\+\_\+list}
+\item 
+\Hypertarget{structnet__device_af92849d7a200b1ecd996fc782176c7c3}\label{structnet__device_af92849d7a200b1ecd996fc782176c7c3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries close\+\_\+list}
+\item 
+\Hypertarget{structnet__device_a30ced2e3b556fc6db95c022d584b4e59}\label{structnet__device_a30ced2e3b556fc6db95c022d584b4e59} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ptype\+\_\+all}
+\item 
+\Hypertarget{structnet__device_a3be81a32ca9d531fb2e2ae608f4d503c}\label{structnet__device_a3be81a32ca9d531fb2e2ae608f4d503c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries upper}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries lower}\\
+\} {\bfseries adj\_list}\\
+
+\end{tabbing}\item 
+\Hypertarget{structnet__device_ad583b615d70c42f6caccec20855e27b0}\label{structnet__device_ad583b615d70c42f6caccec20855e27b0} 
+xdp\+\_\+features\+\_\+t {\bfseries xdp\+\_\+features}
+\item 
+\Hypertarget{structnet__device_ab3ad4400040f3882818aa23bd46ba50b}\label{structnet__device_ab3ad4400040f3882818aa23bd46ba50b} 
+const struct \doxymbox{\hyperlink{structxdp__metadata__ops}{xdp\+\_\+metadata\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries xdp\+\_\+metadata\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_a7c0d47010dd2644b6a33d930ea4c08e4}\label{structnet__device_a7c0d47010dd2644b6a33d930ea4c08e4} 
+const struct \doxymbox{\hyperlink{structxsk__tx__metadata__ops}{xsk\+\_\+tx\+\_\+metadata\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries xsk\+\_\+tx\+\_\+metadata\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_af582b3f8ccaf3075c42ab09d20d6f8d7}\label{structnet__device_af582b3f8ccaf3075c42ab09d20d6f8d7} 
+short unsigned int {\bfseries gflags}
+\item 
+\Hypertarget{structnet__device_a6bd59c2775ebaae4e605b33f0cb04695}\label{structnet__device_a6bd59c2775ebaae4e605b33f0cb04695} 
+short unsigned int {\bfseries needed\+\_\+tailroom}
+\item 
+\Hypertarget{structnet__device_ac5e920d6f8843369a95d36611bebc938}\label{structnet__device_ac5e920d6f8843369a95d36611bebc938} 
+netdev\+\_\+features\+\_\+t {\bfseries hw\+\_\+features}
+\item 
+\Hypertarget{structnet__device_a10cecb4e36536d21930e3a647b16c0c4}\label{structnet__device_a10cecb4e36536d21930e3a647b16c0c4} 
+netdev\+\_\+features\+\_\+t {\bfseries wanted\+\_\+features}
+\item 
+\Hypertarget{structnet__device_a329b7cfa3d721de0950ddb5a63f3a0c0}\label{structnet__device_a329b7cfa3d721de0950ddb5a63f3a0c0} 
+netdev\+\_\+features\+\_\+t {\bfseries vlan\+\_\+features}
+\item 
+\Hypertarget{structnet__device_a5577dec0c4c9ad763746c6b0782c10bb}\label{structnet__device_a5577dec0c4c9ad763746c6b0782c10bb} 
+netdev\+\_\+features\+\_\+t {\bfseries hw\+\_\+enc\+\_\+features}
+\item 
+\Hypertarget{structnet__device_afd5edca157b193c52b735879ead4d885}\label{structnet__device_afd5edca157b193c52b735879ead4d885} 
+netdev\+\_\+features\+\_\+t {\bfseries mpls\+\_\+features}
+\item 
+\Hypertarget{structnet__device_a8b83836af1f402ee0aa4fcd9506e3e03}\label{structnet__device_a8b83836af1f402ee0aa4fcd9506e3e03} 
+unsigned int {\bfseries min\+\_\+mtu}
+\item 
+\Hypertarget{structnet__device_a6f2bcb5c91f9c16610e4284883aec335}\label{structnet__device_a6f2bcb5c91f9c16610e4284883aec335} 
+unsigned int {\bfseries max\+\_\+mtu}
+\item 
+\Hypertarget{structnet__device_a3d274eef12b952e406c26832ca1d98a3}\label{structnet__device_a3d274eef12b952e406c26832ca1d98a3} 
+short unsigned int {\bfseries type}
+\item 
+\Hypertarget{structnet__device_aa6ace72deeeb140f6e28d66f48b0ee6c}\label{structnet__device_aa6ace72deeeb140f6e28d66f48b0ee6c} 
+unsigned char {\bfseries min\+\_\+header\+\_\+len}
+\item 
+\Hypertarget{structnet__device_ad4a43be8a229a07fcd3aaa459bafd9b4}\label{structnet__device_ad4a43be8a229a07fcd3aaa459bafd9b4} 
+unsigned char {\bfseries name\+\_\+assign\+\_\+type}
+\item 
+\Hypertarget{structnet__device_a7395755ed8b30fc8dc3687837b4893fc}\label{structnet__device_a7395755ed8b30fc8dc3687837b4893fc} 
+int {\bfseries group}
+\item 
+\Hypertarget{structnet__device_a185659ae44e3d0695db09515b7d37738}\label{structnet__device_a185659ae44e3d0695db09515b7d37738} 
+struct \doxymbox{\hyperlink{structnet__device__stats}{net\+\_\+device\+\_\+stats}} {\bfseries stats}
+\item 
+\Hypertarget{structnet__device_a96a1438a2b9276e4af8c44262cf699b9}\label{structnet__device_a96a1438a2b9276e4af8c44262cf699b9} 
+struct \doxymbox{\hyperlink{structnet__device__core__stats}{net\+\_\+device\+\_\+core\+\_\+stats}} \texorpdfstring{$\ast$}{*} {\bfseries core\+\_\+stats}
+\item 
+\Hypertarget{structnet__device_a478c5d8f541ade3c99ce46542b82523e}\label{structnet__device_a478c5d8f541ade3c99ce46542b82523e} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries carrier\+\_\+up\+\_\+count}
+\item 
+\Hypertarget{structnet__device_a3ed4bc50e2ea20b56b8648ddc86210a0}\label{structnet__device_a3ed4bc50e2ea20b56b8648ddc86210a0} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries carrier\+\_\+down\+\_\+count}
+\item 
+\Hypertarget{structnet__device_a8000b4b7b7cc130740681cfa11de2545}\label{structnet__device_a8000b4b7b7cc130740681cfa11de2545} 
+const struct \doxymbox{\hyperlink{structiw__handler__def}{iw\+\_\+handler\+\_\+def}} \texorpdfstring{$\ast$}{*} {\bfseries wireless\+\_\+handlers}
+\item 
+\Hypertarget{structnet__device_a77a7d257c49ee73ac06bff50376634ad}\label{structnet__device_a77a7d257c49ee73ac06bff50376634ad} 
+const struct \doxymbox{\hyperlink{structethtool__ops}{ethtool\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ethtool\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_a124867408b8b9ffb473224b5bdb2e936}\label{structnet__device_a124867408b8b9ffb473224b5bdb2e936} 
+const struct \doxymbox{\hyperlink{structl3mdev__ops}{l3mdev\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries l3mdev\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_aa00131c1a9914e04c17a53b57c954b99}\label{structnet__device_aa00131c1a9914e04c17a53b57c954b99} 
+const struct \doxymbox{\hyperlink{structndisc__ops}{ndisc\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ndisc\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_abe0aef4901f036d5d4fbbcf238724ac9}\label{structnet__device_abe0aef4901f036d5d4fbbcf238724ac9} 
+const struct \doxymbox{\hyperlink{structxfrmdev__ops}{xfrmdev\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries xfrmdev\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_a7a2ee7fcf82bbeacdc819c24d0361651}\label{structnet__device_a7a2ee7fcf82bbeacdc819c24d0361651} 
+const struct \doxymbox{\hyperlink{structtlsdev__ops}{tlsdev\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries tlsdev\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_ab4b1142e79d92547453601e93c1df665}\label{structnet__device_ab4b1142e79d92547453601e93c1df665} 
+unsigned int {\bfseries operstate}
+\item 
+\Hypertarget{structnet__device_affb585a3bb41d04b72a0ebc1c84db1f6}\label{structnet__device_affb585a3bb41d04b72a0ebc1c84db1f6} 
+unsigned char {\bfseries link\+\_\+mode}
+\item 
+\Hypertarget{structnet__device_a680e7ae0ee79faa9eaea34be0bd7356c}\label{structnet__device_a680e7ae0ee79faa9eaea34be0bd7356c} 
+unsigned char {\bfseries if\+\_\+port}
+\item 
+\Hypertarget{structnet__device_a52cc7d6e91a5bd2210eff27745abf4a3}\label{structnet__device_a52cc7d6e91a5bd2210eff27745abf4a3} 
+unsigned char {\bfseries dma}
+\item 
+\Hypertarget{structnet__device_af6376319b4ed424ad27c06f97d03ccd9}\label{structnet__device_af6376319b4ed424ad27c06f97d03ccd9} 
+unsigned char {\bfseries perm\+\_\+addr} \+[32]\+
+\item 
+\Hypertarget{structnet__device_aaa141663046b1aa9bed1212abb72be59}\label{structnet__device_aaa141663046b1aa9bed1212abb72be59} 
+unsigned char {\bfseries addr\+\_\+assign\+\_\+type}
+\item 
+\Hypertarget{structnet__device_a228a9412ee292cf016e901f6aec6506b}\label{structnet__device_a228a9412ee292cf016e901f6aec6506b} 
+unsigned char {\bfseries addr\+\_\+len}
+\item 
+\Hypertarget{structnet__device_a90641d52c54ba2480a376d6d8a64b861}\label{structnet__device_a90641d52c54ba2480a376d6d8a64b861} 
+unsigned char {\bfseries upper\+\_\+level}
+\item 
+\Hypertarget{structnet__device_a9f6ce395ad3dc829b29eaa494fa2dba5}\label{structnet__device_a9f6ce395ad3dc829b29eaa494fa2dba5} 
+unsigned char {\bfseries lower\+\_\+level}
+\item 
+\Hypertarget{structnet__device_a3cb19022bcf176a403d0fc7f43d21f18}\label{structnet__device_a3cb19022bcf176a403d0fc7f43d21f18} 
+u8 {\bfseries threaded}
+\item 
+\Hypertarget{structnet__device_a763057d32f8e5719006618b8a60db4bc}\label{structnet__device_a763057d32f8e5719006618b8a60db4bc} 
+short unsigned int {\bfseries neigh\+\_\+priv\+\_\+len}
+\item 
+\Hypertarget{structnet__device_a77fc1663be5c3e621651098e2339305e}\label{structnet__device_a77fc1663be5c3e621651098e2339305e} 
+short unsigned int {\bfseries dev\+\_\+id}
+\item 
+\Hypertarget{structnet__device_a373d5d224e1ec3c35ada774b633eedd9}\label{structnet__device_a373d5d224e1ec3c35ada774b633eedd9} 
+short unsigned int {\bfseries dev\+\_\+port}
+\item 
+\Hypertarget{structnet__device_aaf3eee74322d6d9c61fa69315fd48fea}\label{structnet__device_aaf3eee74322d6d9c61fa69315fd48fea} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structnet__device_a1c643bc06d331cde0ef7c3939e98ecda}\label{structnet__device_a1c643bc06d331cde0ef7c3939e98ecda} 
+u32 {\bfseries priv\+\_\+len}
+\item 
+\Hypertarget{structnet__device_a575d144e723cc2319178464d0aad4278}\label{structnet__device_a575d144e723cc2319178464d0aad4278} 
+spinlock\+\_\+t {\bfseries addr\+\_\+list\+\_\+lock}
+\item 
+\Hypertarget{structnet__device_aeb741bfed2c8246279df96e93a13692c}\label{structnet__device_aeb741bfed2c8246279df96e93a13692c} 
+struct \doxymbox{\hyperlink{structnetdev__hw__addr__list}{netdev\+\_\+hw\+\_\+addr\+\_\+list}} {\bfseries uc}
+\item 
+\Hypertarget{structnet__device_a64d1da3207bcb7b03da752b7897ae167}\label{structnet__device_a64d1da3207bcb7b03da752b7897ae167} 
+struct \doxymbox{\hyperlink{structnetdev__hw__addr__list}{netdev\+\_\+hw\+\_\+addr\+\_\+list}} {\bfseries mc}
+\item 
+\Hypertarget{structnet__device_ac3cd6850d9561329d26bceda228946ce}\label{structnet__device_ac3cd6850d9561329d26bceda228946ce} 
+struct \doxymbox{\hyperlink{structnetdev__hw__addr__list}{netdev\+\_\+hw\+\_\+addr\+\_\+list}} {\bfseries dev\+\_\+addrs}
+\item 
+\Hypertarget{structnet__device_ac07fdaf4acf5859eb45350c969f3997a}\label{structnet__device_ac07fdaf4acf5859eb45350c969f3997a} 
+struct \doxymbox{\hyperlink{structkset}{kset}} \texorpdfstring{$\ast$}{*} {\bfseries queues\+\_\+kset}
+\item 
+\Hypertarget{structnet__device_a6553bef6b1f08a0a1cd368ac21a371b8}\label{structnet__device_a6553bef6b1f08a0a1cd368ac21a371b8} 
+unsigned int {\bfseries promiscuity}
+\item 
+\Hypertarget{structnet__device_aaa64af2e39121222a892eb6356d5a789}\label{structnet__device_aaa64af2e39121222a892eb6356d5a789} 
+unsigned int {\bfseries allmulti}
+\item 
+\Hypertarget{structnet__device_a9fb687643698ffe7cfcda1b5e9a39b63}\label{structnet__device_a9fb687643698ffe7cfcda1b5e9a39b63} 
+bool {\bfseries uc\+\_\+promisc}
+\item 
+\Hypertarget{structnet__device_a8b593483ee0aa74fb899c8fa46d3ea2c}\label{structnet__device_a8b593483ee0aa74fb899c8fa46d3ea2c} 
+struct \doxymbox{\hyperlink{structin__device}{in\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries ip\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_a316272a57656c5fa9ad031f2eb8706a1}\label{structnet__device_a316272a57656c5fa9ad031f2eb8706a1} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries fib\+\_\+nh\+\_\+head}
+\item 
+\Hypertarget{structnet__device_a206f18842ead3dca5088295274b874b3}\label{structnet__device_a206f18842ead3dca5088295274b874b3} 
+struct \doxymbox{\hyperlink{structvlan__info}{vlan\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries vlan\+\_\+info}
+\item 
+\Hypertarget{structnet__device_aa69805aca16f71554624bc68c53670cc}\label{structnet__device_aa69805aca16f71554624bc68c53670cc} 
+struct \doxymbox{\hyperlink{structdsa__port}{dsa\+\_\+port}} \texorpdfstring{$\ast$}{*} {\bfseries dsa\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_a80fcf96344790853254ff58f6746b81c}\label{structnet__device_a80fcf96344790853254ff58f6746b81c} 
+struct tipc\+\_\+bearer \texorpdfstring{$\ast$}{*} {\bfseries tipc\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_a7d0ee8b6e7a7ecd50305b402bea58cdb}\label{structnet__device_a7d0ee8b6e7a7ecd50305b402bea58cdb} 
+void \texorpdfstring{$\ast$}{*} {\bfseries atalk\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_a99d7979ab1ddc0a5fed47e8bcf05fbf7}\label{structnet__device_a99d7979ab1ddc0a5fed47e8bcf05fbf7} 
+struct \doxymbox{\hyperlink{structax25__dev}{ax25\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries ax25\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_ae9b7d934231502fa6de3ea1e79b090a0}\label{structnet__device_ae9b7d934231502fa6de3ea1e79b090a0} 
+struct \doxymbox{\hyperlink{structwireless__dev}{wireless\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries ieee80211\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_a43d0a60a95ad5001458ceee9b38ac44d}\label{structnet__device_a43d0a60a95ad5001458ceee9b38ac44d} 
+struct \doxymbox{\hyperlink{structwpan__dev}{wpan\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries ieee802154\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_a0bc06898f263739cc8622cfb78269cd6}\label{structnet__device_a0bc06898f263739cc8622cfb78269cd6} 
+struct mpls\+\_\+dev \texorpdfstring{$\ast$}{*} {\bfseries mpls\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_a7ec7680e24df430515fec38eb40b5760}\label{structnet__device_a7ec7680e24df430515fec38eb40b5760} 
+struct \doxymbox{\hyperlink{structmctp__dev}{mctp\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries mctp\+\_\+ptr}
+\item 
+\Hypertarget{structnet__device_af8f10c8eefc1d8e554ca041fcbe7b912}\label{structnet__device_af8f10c8eefc1d8e554ca041fcbe7b912} 
+struct \doxymbox{\hyperlink{structpsp__dev}{psp\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries psp\+\_\+dev}
+\item 
+\Hypertarget{structnet__device_af830a45a6bb5ab0501f4a6eef143f23c}\label{structnet__device_af830a45a6bb5ab0501f4a6eef143f23c} 
+const unsigned char \texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+addr}
+\item 
+\Hypertarget{structnet__device_a7a43589b23a106a878800f02395fcd12}\label{structnet__device_a7a43589b23a106a878800f02395fcd12} 
+unsigned int {\bfseries num\+\_\+rx\+\_\+queues}
+\item 
+\Hypertarget{structnet__device_a8cca329709b63d14b18a2332880f149d}\label{structnet__device_a8cca329709b63d14b18a2332880f149d} 
+unsigned int {\bfseries xdp\+\_\+zc\+\_\+max\+\_\+segs}
+\item 
+\Hypertarget{structnet__device_aa7681ae69dae63774f1f608cdeff4cf5}\label{structnet__device_aa7681ae69dae63774f1f608cdeff4cf5} 
+struct \doxymbox{\hyperlink{structnetdev__queue}{netdev\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries ingress\+\_\+queue}
+\item 
+\Hypertarget{structnet__device_a137b167bab5439172930b5ff1d339c1b}\label{structnet__device_a137b167bab5439172930b5ff1d339c1b} 
+struct \doxymbox{\hyperlink{structnf__hook__entries}{nf\+\_\+hook\+\_\+entries}} \texorpdfstring{$\ast$}{*} {\bfseries nf\+\_\+hooks\+\_\+ingress}
+\item 
+\Hypertarget{structnet__device_a7c8245bc4e99af8c87b91ac65e76438a}\label{structnet__device_a7c8245bc4e99af8c87b91ac65e76438a} 
+unsigned char {\bfseries broadcast} \+[32]\+
+\item 
+\Hypertarget{structnet__device_a4d88cc12c688236be30f6ea2fcf588ca}\label{structnet__device_a4d88cc12c688236be30f6ea2fcf588ca} 
+struct \doxymbox{\hyperlink{structcpu__rmap}{cpu\+\_\+rmap}} \texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+cpu\+\_\+rmap}
+\item 
+\Hypertarget{structnet__device_a2c5099a3d61a0adaefaa84556c1a5621}\label{structnet__device_a2c5099a3d61a0adaefaa84556c1a5621} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries index\+\_\+hlist}
+\item 
+\Hypertarget{structnet__device_a00fd3a3fe1bb817a5a5f1321bb89fe1f}\label{structnet__device_a00fd3a3fe1bb817a5a5f1321bb89fe1f} 
+unsigned int {\bfseries num\+\_\+tx\+\_\+queues}
+\item 
+\Hypertarget{structnet__device_a4ec87b76a125041edfe5512922fae82f}\label{structnet__device_a4ec87b76a125041edfe5512922fae82f} 
+struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*} {\bfseries qdisc}
+\item 
+\Hypertarget{structnet__device_aa6f972c1c4507a1f5e21ea94ca88f2b4}\label{structnet__device_aa6f972c1c4507a1f5e21ea94ca88f2b4} 
+unsigned int {\bfseries tx\+\_\+queue\+\_\+len}
+\item 
+\Hypertarget{structnet__device_aa019b69c78df89ce7655b4ad12000a4c}\label{structnet__device_aa019b69c78df89ce7655b4ad12000a4c} 
+spinlock\+\_\+t {\bfseries tx\+\_\+global\+\_\+lock}
+\item 
+\Hypertarget{structnet__device_a2e062c52506184519e0568dd73434190}\label{structnet__device_a2e062c52506184519e0568dd73434190} 
+struct \doxymbox{\hyperlink{structxdp__dev__bulk__queue}{xdp\+\_\+dev\+\_\+bulk\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries xdp\+\_\+bulkq}
+\item 
+\Hypertarget{structnet__device_a2a41b9cb4a68b0283e29a7772a2a354f}\label{structnet__device_a2a41b9cb4a68b0283e29a7772a2a354f} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries qdisc\+\_\+hash} \+[16]\+
+\item 
+\Hypertarget{structnet__device_a1eb37b0fb0395c865e3db110c07cc5ab}\label{structnet__device_a1eb37b0fb0395c865e3db110c07cc5ab} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries watchdog\+\_\+timer}
+\item 
+\Hypertarget{structnet__device_ae48a090169e37b7a6d5bb6f4cb76f43b}\label{structnet__device_ae48a090169e37b7a6d5bb6f4cb76f43b} 
+int {\bfseries watchdog\+\_\+timeo}
+\item 
+\Hypertarget{structnet__device_ae222ddb6c356d8189b31088262f096ee}\label{structnet__device_ae222ddb6c356d8189b31088262f096ee} 
+u32 {\bfseries proto\+\_\+down\+\_\+reason}
+\item 
+\Hypertarget{structnet__device_a06ce6ddae8f90cdd8ef12d096264f62c}\label{structnet__device_a06ce6ddae8f90cdd8ef12d096264f62c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries todo\+\_\+list}
+\item 
+\Hypertarget{structnet__device_a312eeddfe90ac6fd645902adfa39dec4}\label{structnet__device_a312eeddfe90ac6fd645902adfa39dec4} 
+int \texorpdfstring{$\ast$}{*} {\bfseries pcpu\+\_\+refcnt}
+\item 
+\Hypertarget{structnet__device_a995ccfa610082a0f636dbc9203457a26}\label{structnet__device_a995ccfa610082a0f636dbc9203457a26} 
+struct \doxymbox{\hyperlink{structref__tracker__dir}{ref\+\_\+tracker\+\_\+dir}} {\bfseries refcnt\+\_\+tracker}
+\item 
+\Hypertarget{structnet__device_a27d8e4367d231e41b5b70dcc5f86fb73}\label{structnet__device_a27d8e4367d231e41b5b70dcc5f86fb73} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries link\+\_\+watch\+\_\+list}
+\item 
+\Hypertarget{structnet__device_a817ea5af37d68921d98918ca65d738f0}\label{structnet__device_a817ea5af37d68921d98918ca65d738f0} 
+u8 {\bfseries reg\+\_\+state}
+\item 
+\Hypertarget{structnet__device_ac0a59b180b03adea2c1a044cb8d49363}\label{structnet__device_ac0a59b180b03adea2c1a044cb8d49363} 
+bool {\bfseries dismantle}
+\item 
+\Hypertarget{structnet__device_a336ac794a7cf869d7648905bc40825a6}\label{structnet__device_a336ac794a7cf869d7648905bc40825a6} 
+bool {\bfseries moving\+\_\+ns}
+\item 
+\Hypertarget{structnet__device_a99245eb70120b0c03f148fafb599dd09}\label{structnet__device_a99245eb70120b0c03f148fafb599dd09} 
+bool {\bfseries rtnl\+\_\+link\+\_\+initializing}
+\item 
+\Hypertarget{structnet__device_af19f2ec8de78bf4a0315c1df7ece5085}\label{structnet__device_af19f2ec8de78bf4a0315c1df7ece5085} 
+bool {\bfseries needs\+\_\+free\+\_\+netdev}
+\item 
+\Hypertarget{structnet__device_aa2d12e23624fb3826fb4d44d0042cd61}\label{structnet__device_aa2d12e23624fb3826fb4d44d0042cd61} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries priv\+\_\+destructor} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device_a040563d800327a93f5318a815ec2800d}\label{structnet__device_a040563d800327a93f5318a815ec2800d} 
+void \texorpdfstring{$\ast$}{*} {\bfseries ml\+\_\+priv}
+\item 
+\Hypertarget{structnet__device_a4d784f4ecd819d9069f8fcc6a669035a}\label{structnet__device_a4d784f4ecd819d9069f8fcc6a669035a} 
+enum netdev\+\_\+ml\+\_\+priv\+\_\+type {\bfseries ml\+\_\+priv\+\_\+type}
+\item 
+\Hypertarget{structnet__device_a63299003d5e676070323ca58f1b16611}\label{structnet__device_a63299003d5e676070323ca58f1b16611} 
+enum netdev\+\_\+stat\+\_\+type {\bfseries pcpu\+\_\+stat\+\_\+type}:\+ 8
+\item 
+\Hypertarget{structnet__device_a5112aa72d04c781e8110807474e063b0}\label{structnet__device_a5112aa72d04c781e8110807474e063b0} 
+struct garp\+\_\+port \texorpdfstring{$\ast$}{*} {\bfseries garp\+\_\+port}
+\item 
+\Hypertarget{structnet__device_a86cc16ba81d172defbadc0182b6e26e0}\label{structnet__device_a86cc16ba81d172defbadc0182b6e26e0} 
+struct mrp\+\_\+port \texorpdfstring{$\ast$}{*} {\bfseries mrp\+\_\+port}
+\item 
+\Hypertarget{structnet__device_acc399eba9a57592954a18ab5c045fe1b}\label{structnet__device_acc399eba9a57592954a18ab5c045fe1b} 
+struct \doxymbox{\hyperlink{structdm__hw__stat__delta}{dm\+\_\+hw\+\_\+stat\+\_\+delta}} \texorpdfstring{$\ast$}{*} {\bfseries dm\+\_\+private}
+\item 
+\Hypertarget{structnet__device_a33e86717eb042b7842321b6302601983}\label{structnet__device_a33e86717eb042b7842321b6302601983} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structnet__device_a2c9e8828acb667d2a33998fc424f24f9}\label{structnet__device_a2c9e8828acb667d2a33998fc424f24f9} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries sysfs\+\_\+groups} \+[5]\+
+\item 
+\Hypertarget{structnet__device_af1d69d5b557dd28d03fb3f20180ce64f}\label{structnet__device_af1d69d5b557dd28d03fb3f20180ce64f} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries sysfs\+\_\+rx\+\_\+queue\+\_\+group}
+\item 
+\Hypertarget{structnet__device_a01e80bd2464b75b697c183700a7fac76}\label{structnet__device_a01e80bd2464b75b697c183700a7fac76} 
+const struct \doxymbox{\hyperlink{structrtnl__link__ops}{rtnl\+\_\+link\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries rtnl\+\_\+link\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_a612847a0c98da587271c2e9a600520a7}\label{structnet__device_a612847a0c98da587271c2e9a600520a7} 
+const struct \doxymbox{\hyperlink{structnetdev__stat__ops}{netdev\+\_\+stat\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries stat\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_a9aef4da06e4bafa8753d29d8e3b45938}\label{structnet__device_a9aef4da06e4bafa8753d29d8e3b45938} 
+const struct \doxymbox{\hyperlink{structnetdev__queue__mgmt__ops}{netdev\+\_\+queue\+\_\+mgmt\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries queue\+\_\+mgmt\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_aabf9eeaa51f998929a688b6104e0caf3}\label{structnet__device_aabf9eeaa51f998929a688b6104e0caf3} 
+unsigned int {\bfseries tso\+\_\+max\+\_\+size}
+\item 
+\Hypertarget{structnet__device_aae8251d64611451eff791480d371e9d7}\label{structnet__device_aae8251d64611451eff791480d371e9d7} 
+u16 {\bfseries tso\+\_\+max\+\_\+segs}
+\item 
+\Hypertarget{structnet__device_a2c92720a8f38f86102e39fd762b3c9c4}\label{structnet__device_a2c92720a8f38f86102e39fd762b3c9c4} 
+const struct \doxymbox{\hyperlink{structdcbnl__rtnl__ops}{dcbnl\+\_\+rtnl\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries dcbnl\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_a174fc5862011cfd90f7f5c74b262cb8b}\label{structnet__device_a174fc5862011cfd90f7f5c74b262cb8b} 
+u8 {\bfseries prio\+\_\+tc\+\_\+map} \+[16]\+
+\item 
+\Hypertarget{structnet__device_a647b29657eb871e1ea3c086020d704d2}\label{structnet__device_a647b29657eb871e1ea3c086020d704d2} 
+unsigned int {\bfseries fcoe\+\_\+ddp\+\_\+xid}
+\item 
+\Hypertarget{structnet__device_ab554aefa993803097b08cb2024cfdea3}\label{structnet__device_ab554aefa993803097b08cb2024cfdea3} 
+struct \doxymbox{\hyperlink{structnetprio__map}{netprio\+\_\+map}} \texorpdfstring{$\ast$}{*} {\bfseries priomap}
+\item 
+\Hypertarget{structnet__device_a6e9b5d4351fbcf6f6c3e0884c240d788}\label{structnet__device_a6e9b5d4351fbcf6f6c3e0884c240d788} 
+struct \doxymbox{\hyperlink{structphy__link__topology}{phy\+\_\+link\+\_\+topology}} \texorpdfstring{$\ast$}{*} {\bfseries link\+\_\+topo}
+\item 
+\Hypertarget{structnet__device_aec625649a34a74c1e5db86da14ddb2ba}\label{structnet__device_aec625649a34a74c1e5db86da14ddb2ba} 
+struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries phydev}
+\item 
+\Hypertarget{structnet__device_aed777eb484d3f0ec0492751054758f2d}\label{structnet__device_aed777eb484d3f0ec0492751054758f2d} 
+struct \doxymbox{\hyperlink{structsfp__bus}{sfp\+\_\+bus}} \texorpdfstring{$\ast$}{*} {\bfseries sfp\+\_\+bus}
+\item 
+\Hypertarget{structnet__device_a8efff6553b566098ef47f147aecf4ddb}\label{structnet__device_a8efff6553b566098ef47f147aecf4ddb} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} \texorpdfstring{$\ast$}{*} {\bfseries qdisc\+\_\+tx\+\_\+busylock}
+\item 
+\Hypertarget{structnet__device_ab19a5881a8230617ce17cd66aaa3161b}\label{structnet__device_ab19a5881a8230617ce17cd66aaa3161b} 
+bool {\bfseries proto\+\_\+down}
+\item 
+\Hypertarget{structnet__device_a3a777c8ee41016a42a3bb21f1ed14c83}\label{structnet__device_a3a777c8ee41016a42a3bb21f1ed14c83} 
+bool {\bfseries irq\+\_\+affinity\+\_\+auto}
+\item 
+\Hypertarget{structnet__device_aed07b7b612f83760f9be59e6b6f48038}\label{structnet__device_aed07b7b612f83760f9be59e6b6f48038} 
+bool {\bfseries rx\+\_\+cpu\+\_\+rmap\+\_\+auto}
+\item 
+\Hypertarget{structnet__device_a8e3306d6ae811e4a40fa0a99b440a6ff}\label{structnet__device_a8e3306d6ae811e4a40fa0a99b440a6ff} 
+long unsigned int {\bfseries see\+\_\+all\+\_\+hwtstamp\+\_\+requests}:\+ 1
+\item 
+\Hypertarget{structnet__device_aebc531640f12d835c6cb078d468dc749}\label{structnet__device_aebc531640f12d835c6cb078d468dc749} 
+long unsigned int {\bfseries change\+\_\+proto\+\_\+down}:\+ 1
+\item 
+\Hypertarget{structnet__device_a11ff6cdcdd05630897f0fd0aa2be837f}\label{structnet__device_a11ff6cdcdd05630897f0fd0aa2be837f} 
+long unsigned int {\bfseries netns\+\_\+immutable}:\+ 1
+\item 
+\Hypertarget{structnet__device_a80decdfc22b58fd1a7850169cf0a8b02}\label{structnet__device_a80decdfc22b58fd1a7850169cf0a8b02} 
+long unsigned int {\bfseries fcoe\+\_\+mtu}:\+ 1
+\item 
+\Hypertarget{structnet__device_aa99dd8b61515342a6dbc837dc961bc45}\label{structnet__device_aa99dd8b61515342a6dbc837dc961bc45} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries net\+\_\+notifier\+\_\+list}
+\item 
+\Hypertarget{structnet__device_a7befee801f45be717b0ada3059ef16d6}\label{structnet__device_a7befee801f45be717b0ada3059ef16d6} 
+const struct \doxymbox{\hyperlink{structmacsec__ops}{macsec\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries macsec\+\_\+ops}
+\item 
+\Hypertarget{structnet__device_ad771caf4057f53641d214b738a6f0feb}\label{structnet__device_ad771caf4057f53641d214b738a6f0feb} 
+const struct \doxymbox{\hyperlink{structudp__tunnel__nic__info}{udp\+\_\+tunnel\+\_\+nic\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries udp\+\_\+tunnel\+\_\+nic\+\_\+info}
+\item 
+\Hypertarget{structnet__device_a19e4a9a3c3cdfd62631761c072bb351a}\label{structnet__device_a19e4a9a3c3cdfd62631761c072bb351a} 
+struct udp\+\_\+tunnel\+\_\+nic \texorpdfstring{$\ast$}{*} {\bfseries udp\+\_\+tunnel\+\_\+nic}
+\item 
+\Hypertarget{structnet__device_a4bd30182ef7afb0c885489dcf6f275dd}\label{structnet__device_a4bd30182ef7afb0c885489dcf6f275dd} 
+struct \doxymbox{\hyperlink{structnetdev__config}{netdev\+\_\+config}} \texorpdfstring{$\ast$}{*} {\bfseries cfg}
+\item 
+\Hypertarget{structnet__device_a34f799bca2bcb107ba9a3df4de33085b}\label{structnet__device_a34f799bca2bcb107ba9a3df4de33085b} 
+struct \doxymbox{\hyperlink{structnetdev__config}{netdev\+\_\+config}} \texorpdfstring{$\ast$}{*} {\bfseries cfg\+\_\+pending}
+\item 
+\Hypertarget{structnet__device_abe72f6339d307aa171656fffd90574d2}\label{structnet__device_abe72f6339d307aa171656fffd90574d2} 
+struct \doxymbox{\hyperlink{structethtool__netdev__state}{ethtool\+\_\+netdev\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries ethtool}
+\item 
+\Hypertarget{structnet__device_a32e09c61715779750fbf57d5dfa28353}\label{structnet__device_a32e09c61715779750fbf57d5dfa28353} 
+struct \doxymbox{\hyperlink{structbpf__xdp__entity}{bpf\+\_\+xdp\+\_\+entity}} {\bfseries xdp\+\_\+state} \+[3]\+
+\item 
+\Hypertarget{structnet__device_a12083c08cb0b1d273565aa13e2b09367}\label{structnet__device_a12083c08cb0b1d273565aa13e2b09367} 
+u8 {\bfseries dev\+\_\+addr\+\_\+shadow} \+[32]\+
+\item 
+\Hypertarget{structnet__device_a2f76a141afc685d33eabc88ebb6c016c}\label{structnet__device_a2f76a141afc685d33eabc88ebb6c016c} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries linkwatch\+\_\+dev\+\_\+tracker}
+\item 
+\Hypertarget{structnet__device_abc1d928adc1e283eea5d6d93535114a9}\label{structnet__device_abc1d928adc1e283eea5d6d93535114a9} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries watchdog\+\_\+dev\+\_\+tracker}
+\item 
+\Hypertarget{structnet__device_adb5f108df53da4260f703e5d80f1191b}\label{structnet__device_adb5f108df53da4260f703e5d80f1191b} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries dev\+\_\+registered\+\_\+tracker}
+\item 
+\Hypertarget{structnet__device_ac2cf5dc57ce9ade8959586ff0836db74}\label{structnet__device_ac2cf5dc57ce9ade8959586ff0836db74} 
+struct \doxymbox{\hyperlink{structrtnl__hw__stats64}{rtnl\+\_\+hw\+\_\+stats64}} \texorpdfstring{$\ast$}{*} {\bfseries offload\+\_\+xstats\+\_\+l3}
+\item 
+\Hypertarget{structnet__device_ac7c97a67856e2ce602fe066681da5351}\label{structnet__device_ac7c97a67856e2ce602fe066681da5351} 
+struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} \texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+port}
+\item 
+\Hypertarget{structnet__device_a662438740241dff4aaf905b525b3c657}\label{structnet__device_a662438740241dff4aaf905b525b3c657} 
+struct \doxymbox{\hyperlink{structdpll__pin}{dpll\+\_\+pin}} \texorpdfstring{$\ast$}{*} {\bfseries dpll\+\_\+pin}
+\item 
+\Hypertarget{structnet__device_a01d7875dc7cd02cdf2d529c8413c7259}\label{structnet__device_a01d7875dc7cd02cdf2d529c8413c7259} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries page\+\_\+pools}
+\item 
+\Hypertarget{structnet__device_a221aeac8e02f6e68f862732e6582dc90}\label{structnet__device_a221aeac8e02f6e68f862732e6582dc90} 
+struct \doxymbox{\hyperlink{structdim__irq__moder}{dim\+\_\+irq\+\_\+moder}} \texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+moder}
+\item 
+\Hypertarget{structnet__device_a301286894277817542d3eb51574fd827}\label{structnet__device_a301286894277817542d3eb51574fd827} 
+u64 {\bfseries max\+\_\+pacing\+\_\+offload\+\_\+horizon}
+\item 
+\Hypertarget{structnet__device_aba27284ff0f82f5d501b131870c25243}\label{structnet__device_aba27284ff0f82f5d501b131870c25243} 
+struct \doxymbox{\hyperlink{structnapi__config}{napi\+\_\+config}} \texorpdfstring{$\ast$}{*} {\bfseries napi\+\_\+config}
+\item 
+\Hypertarget{structnet__device_a5a7c960aa10dfd4a8570b7a7ecc02254}\label{structnet__device_a5a7c960aa10dfd4a8570b7a7ecc02254} 
+u32 {\bfseries num\+\_\+napi\+\_\+configs}
+\item 
+\Hypertarget{structnet__device_ab71e51654af8f8d9c44cefcbee734084}\label{structnet__device_ab71e51654af8f8d9c44cefcbee734084} 
+u32 {\bfseries napi\+\_\+defer\+\_\+hard\+\_\+irqs}
+\item 
+\Hypertarget{structnet__device_a1da91afdd5d2d7665faa0613772c3c51}\label{structnet__device_a1da91afdd5d2d7665faa0613772c3c51} 
+long unsigned int {\bfseries gro\+\_\+flush\+\_\+timeout}
+\item 
+\Hypertarget{structnet__device_a87cf2c4dd219df5662af47fcbda3626d}\label{structnet__device_a87cf2c4dd219df5662af47fcbda3626d} 
+bool {\bfseries up}
+\item 
+\Hypertarget{structnet__device_ac46165bcf0e8f557ac3f7ed0ded029f1}\label{structnet__device_ac46165bcf0e8f557ac3f7ed0ded029f1} 
+bool {\bfseries request\+\_\+ops\+\_\+lock}
+\item 
+\Hypertarget{structnet__device_aba768692bdddd9a9ad0710ed7fb99506}\label{structnet__device_aba768692bdddd9a9ad0710ed7fb99506} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries lock}
+\item 
+\Hypertarget{structnet__device_acc69f301ac714e6b37e141190179c2bd}\label{structnet__device_acc69f301ac714e6b37e141190179c2bd} 
+struct \doxymbox{\hyperlink{structnet__shaper__hierarchy}{net\+\_\+shaper\+\_\+hierarchy}} \texorpdfstring{$\ast$}{*} {\bfseries net\+\_\+shaper\+\_\+hierarchy}
+\item 
+\Hypertarget{structnet__device_a64fdff0b7fbda7375960f7d36870fc43}\label{structnet__device_a64fdff0b7fbda7375960f7d36870fc43} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries neighbours} \+[2]\+
+\item 
+\Hypertarget{structnet__device_a38ade68a08e1633a22eeb6bd2e3a07fa}\label{structnet__device_a38ade68a08e1633a22eeb6bd2e3a07fa} 
+struct \doxymbox{\hyperlink{structhwtstamp__provider}{hwtstamp\+\_\+provider}} \texorpdfstring{$\ast$}{*} {\bfseries hwprov}
+\item 
+\Hypertarget{structnet__device_a96dc65b048beca5096ae89accfc5573f}\label{structnet__device_a96dc65b048beca5096ae89accfc5573f} 
+long :\+ 64
+\item 
+\Hypertarget{structnet__device_a80f22efa1d296c9d20de71f1448e02cb}\label{structnet__device_a80f22efa1d296c9d20de71f1448e02cb} 
+long :\+ 64
+\item 
+\Hypertarget{structnet__device_aa0e1adbfbb877b64d62424c71f11213f}\label{structnet__device_aa0e1adbfbb877b64d62424c71f11213f} 
+u8 {\bfseries priv} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

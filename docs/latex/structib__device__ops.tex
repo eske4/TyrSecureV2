@@ -1,0 +1,439 @@
+\doxysection{ib\+\_\+device\+\_\+ops Struct Reference}
+\hypertarget{structib__device__ops}{}\label{structib__device__ops}\index{ib\_device\_ops@{ib\_device\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structib__device__ops_a88795b434ead920bc66c94961b7b6a3e}\label{structib__device__ops_a88795b434ead920bc66c94961b7b6a3e} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structib__device__ops_a144a8b07390614e7a79c2dc804fff79f}\label{structib__device__ops_a144a8b07390614e7a79c2dc804fff79f} 
+enum rdma\+\_\+driver\+\_\+id {\bfseries driver\+\_\+id}
+\item 
+\Hypertarget{structib__device__ops_aef6e577c824dca292a60a77c9ae52140}\label{structib__device__ops_aef6e577c824dca292a60a77c9ae52140} 
+u32 {\bfseries uverbs\+\_\+abi\+\_\+ver}
+\item 
+\Hypertarget{structib__device__ops_ace452e7100e9dea8003a0228421709f8}\label{structib__device__ops_ace452e7100e9dea8003a0228421709f8} 
+unsigned int {\bfseries uverbs\+\_\+no\+\_\+driver\+\_\+id\+\_\+binding}:\+ 1
+\item 
+\Hypertarget{structib__device__ops_a2d3aaaa354d369e6f65a33e95732c656}\label{structib__device__ops_a2d3aaaa354d369e6f65a33e95732c656} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+group}
+\item 
+\Hypertarget{structib__device__ops_aaaa0297a37a660139a861e9a95cb1662}\label{structib__device__ops_aaaa0297a37a660139a861e9a95cb1662} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+groups}
+\item 
+\Hypertarget{structib__device__ops_adb5595f641f5cfeb2d823f1a34dbbf48}\label{structib__device__ops_adb5595f641f5cfeb2d823f1a34dbbf48} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+send} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structib__send__wr}{ib\+\_\+send\+\_\+wr}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structib__send__wr}{ib\+\_\+send\+\_\+wr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aa28ea0b8986dbacf5e78e9e8170f9c12}\label{structib__device__ops_aa28ea0b8986dbacf5e78e9e8170f9c12} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+recv} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structib__recv__wr}{ib\+\_\+recv\+\_\+wr}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structib__recv__wr}{ib\+\_\+recv\+\_\+wr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_abd363a4a3b6d73116e8e455210bd68ff}\label{structib__device__ops_abd363a4a3b6d73116e8e455210bd68ff} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries drain\+\_\+rq} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a7b76ea6ea89a9faa862bc99df1742000}\label{structib__device__ops_a7b76ea6ea89a9faa862bc99df1742000} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries drain\+\_\+sq} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a156e09825f88ced7bcaa86a151955e57}\label{structib__device__ops_a156e09825f88ced7bcaa86a151955e57} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries poll\+\_\+cq} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structib__wc}{ib\+\_\+wc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aef22972ead2818685aee15005ac7c811}\label{structib__device__ops_aef22972ead2818685aee15005ac7c811} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries peek\+\_\+cq} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structib__device__ops_a2b7513baf7ea8ef20abaa2ebb94f648d}\label{structib__device__ops_a2b7513baf7ea8ef20abaa2ebb94f648d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries req\+\_\+notify\+\_\+cq} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*}, enum ib\+\_\+cq\+\_\+notify\+\_\+flags)
+\item 
+\Hypertarget{structib__device__ops_a03952f672be625604beb22caa9286fc4}\label{structib__device__ops_a03952f672be625604beb22caa9286fc4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+srq\+\_\+recv} )(struct \doxymbox{\hyperlink{structib__srq}{ib\+\_\+srq}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structib__recv__wr}{ib\+\_\+recv\+\_\+wr}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structib__recv__wr}{ib\+\_\+recv\+\_\+wr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_acab1c5ce090d80c4342335f93fda9fe5}\label{structib__device__ops_acab1c5ce090d80c4342335f93fda9fe5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries process\+\_\+mad} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u32, const struct \doxymbox{\hyperlink{structib__wc}{ib\+\_\+wc}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structib__grh}{ib\+\_\+grh}} \texorpdfstring{$\ast$}{*}, const struct ib\+\_\+mad \texorpdfstring{$\ast$}{*}, struct ib\+\_\+mad \texorpdfstring{$\ast$}{*}, size\+\_\+t \texorpdfstring{$\ast$}{*}, u16 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aaa06577b8dc1d7622a5b559105610a0e}\label{structib__device__ops_aaa06577b8dc1d7622a5b559105610a0e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries query\+\_\+device} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__device__attr}{ib\+\_\+device\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_abb2176e124bbeb64eae5fda29042940d}\label{structib__device__ops_abb2176e124bbeb64eae5fda29042940d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries modify\+\_\+device} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structib__device__modify}{ib\+\_\+device\+\_\+modify}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aa59e2bcccd1b2134aa3cd9c4292d0f34}\label{structib__device__ops_aa59e2bcccd1b2134aa3cd9c4292d0f34} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+dev\+\_\+fw\+\_\+str} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ad941bfe881ba1d4ed6a86734abb4f90b}\label{structib__device__ops_ad941bfe881ba1d4ed6a86734abb4f90b} 
+const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+vector\+\_\+affinity} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structib__device__ops_aba6143384752be3ddd64caa9dd9ff70a}\label{structib__device__ops_aba6143384752be3ddd64caa9dd9ff70a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries query\+\_\+port} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structib__port__attr}{ib\+\_\+port\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a1323253eabb3ed0e30f6f2cbfde4ab7e}\label{structib__device__ops_a1323253eabb3ed0e30f6f2cbfde4ab7e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries modify\+\_\+port} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, int, struct \doxymbox{\hyperlink{structib__port__modify}{ib\+\_\+port\+\_\+modify}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a248be8fa4c08725456a42d9ae25bee1e}\label{structib__device__ops_a248be8fa4c08725456a42d9ae25bee1e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+port\+\_\+immutable} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structib__port__immutable}{ib\+\_\+port\+\_\+immutable}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ae807858d44da0e66401bfaa55c0ebabf}\label{structib__device__ops_ae807858d44da0e66401bfaa55c0ebabf} 
+enum rdma\+\_\+link\+\_\+layer(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+link\+\_\+layer} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structib__device__ops_ae23dace179d991b7e88f17ece37cdcf8}\label{structib__device__ops_ae23dace179d991b7e88f17ece37cdcf8} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+netdev} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structib__device__ops_aae940cea264e474cfa49cc2f000873ce}\label{structib__device__ops_aae940cea264e474cfa49cc2f000873ce} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+rdma\+\_\+netdev} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, enum rdma\+\_\+netdev\+\_\+t, const char \texorpdfstring{$\ast$}{*}, unsigned char, void(\texorpdfstring{$\ast$}{*})(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}))
+\item 
+\Hypertarget{structib__device__ops_a5e14c29371971f78af9cff352e3e0be9}\label{structib__device__ops_a5e14c29371971f78af9cff352e3e0be9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rdma\+\_\+netdev\+\_\+get\+\_\+params} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, enum rdma\+\_\+netdev\+\_\+t, struct \doxymbox{\hyperlink{structrdma__netdev__alloc__params}{rdma\+\_\+netdev\+\_\+alloc\+\_\+params}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_afde102bf36793c4c65d199789ad59696}\label{structib__device__ops_afde102bf36793c4c65d199789ad59696} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries query\+\_\+gid} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, int, union \doxymbox{\hyperlink{unionib__gid}{ib\+\_\+gid}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a125fd84bf33ad0a0a4d61e8201b99dcb}\label{structib__device__ops_a125fd84bf33ad0a0a4d61e8201b99dcb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries add\+\_\+gid} )(const struct \doxymbox{\hyperlink{structib__gid__attr}{ib\+\_\+gid\+\_\+attr}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a24e3574ed6b2b86243932b5f9211c0a0}\label{structib__device__ops_a24e3574ed6b2b86243932b5f9211c0a0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries del\+\_\+gid} )(const struct \doxymbox{\hyperlink{structib__gid__attr}{ib\+\_\+gid\+\_\+attr}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a0df88a8026fa283ff55216e9eeb925f4}\label{structib__device__ops_a0df88a8026fa283ff55216e9eeb925f4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries query\+\_\+pkey} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, u16, u16 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ae200b7a55c46f45121a6035d80bc1e72}\label{structib__device__ops_ae200b7a55c46f45121a6035d80bc1e72} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+ucontext} )(struct \doxymbox{\hyperlink{structib__ucontext}{ib\+\_\+ucontext}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_af0558607f3b8b505fc03f278300a590d}\label{structib__device__ops_af0558607f3b8b505fc03f278300a590d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dealloc\+\_\+ucontext} )(struct \doxymbox{\hyperlink{structib__ucontext}{ib\+\_\+ucontext}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a49a977af532b38b288a9793112a534ca}\label{structib__device__ops_a49a977af532b38b288a9793112a534ca} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mmap} )(struct \doxymbox{\hyperlink{structib__ucontext}{ib\+\_\+ucontext}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aa9c5f94f0713f88d3dc49223d461c937}\label{structib__device__ops_aa9c5f94f0713f88d3dc49223d461c937} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries mmap\+\_\+free} )(struct \doxymbox{\hyperlink{structrdma__user__mmap__entry}{rdma\+\_\+user\+\_\+mmap\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ae801c66df6bda53f6b75e707eeaaf33d}\label{structib__device__ops_ae801c66df6bda53f6b75e707eeaaf33d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disassociate\+\_\+ucontext} )(struct \doxymbox{\hyperlink{structib__ucontext}{ib\+\_\+ucontext}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aa5c1ed6ecba1d295e7ccca92d3fdbb4f}\label{structib__device__ops_aa5c1ed6ecba1d295e7ccca92d3fdbb4f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+pd} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a3a00ce917ea3e52f8984daebb6c2c8b3}\label{structib__device__ops_a3a00ce917ea3e52f8984daebb6c2c8b3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dealloc\+\_\+pd} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a0adbdea671a5e9d7dad70aeac1f70c39}\label{structib__device__ops_a0adbdea671a5e9d7dad70aeac1f70c39} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+ah} )(struct \doxymbox{\hyperlink{structib__ah}{ib\+\_\+ah}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrdma__ah__init__attr}{rdma\+\_\+ah\+\_\+init\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ae102c6bdd885af16d60554fb5fa09023}\label{structib__device__ops_ae102c6bdd885af16d60554fb5fa09023} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+user\+\_\+ah} )(struct \doxymbox{\hyperlink{structib__ah}{ib\+\_\+ah}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrdma__ah__init__attr}{rdma\+\_\+ah\+\_\+init\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a2adca53f457b9dcd86047d6b9a26dab9}\label{structib__device__ops_a2adca53f457b9dcd86047d6b9a26dab9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries modify\+\_\+ah} )(struct \doxymbox{\hyperlink{structib__ah}{ib\+\_\+ah}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrdma__ah__attr}{rdma\+\_\+ah\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_af2a07643b579189e3dcbfab04e974c66}\label{structib__device__ops_af2a07643b579189e3dcbfab04e974c66} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries query\+\_\+ah} )(struct \doxymbox{\hyperlink{structib__ah}{ib\+\_\+ah}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrdma__ah__attr}{rdma\+\_\+ah\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a5ab4b31a18f1ae42299dcd80a26b5f35}\label{structib__device__ops_a5ab4b31a18f1ae42299dcd80a26b5f35} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+ah} )(struct \doxymbox{\hyperlink{structib__ah}{ib\+\_\+ah}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structib__device__ops_abe717d804ce6af3b086fdf1a05c7ebd9}\label{structib__device__ops_abe717d804ce6af3b086fdf1a05c7ebd9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+srq} )(struct \doxymbox{\hyperlink{structib__srq}{ib\+\_\+srq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__srq__init__attr}{ib\+\_\+srq\+\_\+init\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a87ba0c6d1981030729a642be3bfdc475}\label{structib__device__ops_a87ba0c6d1981030729a642be3bfdc475} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries modify\+\_\+srq} )(struct \doxymbox{\hyperlink{structib__srq}{ib\+\_\+srq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__srq__attr}{ib\+\_\+srq\+\_\+attr}} \texorpdfstring{$\ast$}{*}, enum ib\+\_\+srq\+\_\+attr\+\_\+mask, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a82560f4b63b7680d6d3a0cab479dcf6a}\label{structib__device__ops_a82560f4b63b7680d6d3a0cab479dcf6a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries query\+\_\+srq} )(struct \doxymbox{\hyperlink{structib__srq}{ib\+\_\+srq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__srq__attr}{ib\+\_\+srq\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a5dbeba6d999009e6ac759d23580d2ac9}\label{structib__device__ops_a5dbeba6d999009e6ac759d23580d2ac9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+srq} )(struct \doxymbox{\hyperlink{structib__srq}{ib\+\_\+srq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a4edb3eb7d0c3c603cd47773c109483da}\label{structib__device__ops_a4edb3eb7d0c3c603cd47773c109483da} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+qp} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__qp__init__attr}{ib\+\_\+qp\+\_\+init\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a430cd6323bf9a2300c5e1bfdd0a7ae72}\label{structib__device__ops_a430cd6323bf9a2300c5e1bfdd0a7ae72} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries modify\+\_\+qp} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__qp__attr}{ib\+\_\+qp\+\_\+attr}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_afda5be1659858141ef58c34a9e14d168}\label{structib__device__ops_afda5be1659858141ef58c34a9e14d168} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries query\+\_\+qp} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__qp__attr}{ib\+\_\+qp\+\_\+attr}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structib__qp__init__attr}{ib\+\_\+qp\+\_\+init\+\_\+attr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_abca1c1c37ade44593d49f9adc2757bfc}\label{structib__device__ops_abca1c1c37ade44593d49f9adc2757bfc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+qp} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a985b0e403f384868ffee7eb5a9d1119e}\label{structib__device__ops_a985b0e403f384868ffee7eb5a9d1119e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+cq} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structib__cq__init__attr}{ib\+\_\+cq\+\_\+init\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a72ab1dc9f8ceddbfbf79f57120f82a7f}\label{structib__device__ops_a72ab1dc9f8ceddbfbf79f57120f82a7f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+cq\+\_\+umem} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structib__cq__init__attr}{ib\+\_\+cq\+\_\+init\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct ib\+\_\+umem \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aed0ae424c2440c358718ec6a56f00c10}\label{structib__device__ops_aed0ae424c2440c358718ec6a56f00c10} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries modify\+\_\+cq} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*}, u16, u16)
+\item 
+\Hypertarget{structib__device__ops_a4461de6fdbf432cb8016742be15c4fc5}\label{structib__device__ops_a4461de6fdbf432cb8016742be15c4fc5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+cq} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_adf897f53288cdcee716a3b8fd1aeb715}\label{structib__device__ops_adf897f53288cdcee716a3b8fd1aeb715} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resize\+\_\+cq} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a0c120f97452adca3a2f034d607281689}\label{structib__device__ops_a0c120f97452adca3a2f034d607281689} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pre\+\_\+destroy\+\_\+cq} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ae2f6d6725f473eb4a0ec3429095120e8}\label{structib__device__ops_ae2f6d6725f473eb4a0ec3429095120e8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+destroy\+\_\+cq} )(struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a8db5ee23987f0ddd62e3d40cb68be510}\label{structib__device__ops_a8db5ee23987f0ddd62e3d40cb68be510} 
+struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+dma\+\_\+mr} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structib__device__ops_a2ed82396f0c2f416362e3a8cf63f0f98}\label{structib__device__ops_a2ed82396f0c2f416362e3a8cf63f0f98} 
+struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+user\+\_\+mr} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, u64, u64, u64, int, struct \doxymbox{\hyperlink{structib__dmah}{ib\+\_\+dmah}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_adaf071cf63073c1ea326caa80e5164ce}\label{structib__device__ops_adaf071cf63073c1ea326caa80e5164ce} 
+struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+user\+\_\+mr\+\_\+dmabuf} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, u64, u64, u64, int, int, struct \doxymbox{\hyperlink{structib__dmah}{ib\+\_\+dmah}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aa77bec6e94b2ca42730d29a962a0e067}\label{structib__device__ops_aa77bec6e94b2ca42730d29a962a0e067} 
+struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries rereg\+\_\+user\+\_\+mr} )(struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}, int, u64, u64, u64, int, struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_adb55338d782e62f3a530b790d9d2ef93}\label{structib__device__ops_adb55338d782e62f3a530b790d9d2ef93} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dereg\+\_\+mr} )(struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a74b486c7c01f0fe0d4ea472b34452ded}\label{structib__device__ops_a74b486c7c01f0fe0d4ea472b34452ded} 
+struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+mr} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, enum ib\+\_\+mr\+\_\+type, u32)
+\item 
+\Hypertarget{structib__device__ops_a2b0691d052c402f7ea12f308691a5f7b}\label{structib__device__ops_a2b0691d052c402f7ea12f308691a5f7b} 
+struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+mr\+\_\+integrity} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, u32, u32)
+\item 
+\Hypertarget{structib__device__ops_ac22e342e77f1bb6d641fb3df7bfef2a3}\label{structib__device__ops_ac22e342e77f1bb6d641fb3df7bfef2a3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries advise\+\_\+mr} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, enum ib\+\_\+uverbs\+\_\+advise\+\_\+mr\+\_\+advice, u32, struct \doxymbox{\hyperlink{structib__sge}{ib\+\_\+sge}} \texorpdfstring{$\ast$}{*}, u32, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a9fe52954d7019485b3b63413321ecfbc}\label{structib__device__ops_a9fe52954d7019485b3b63413321ecfbc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+mr\+\_\+sg} )(struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*}, int, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aef26de8fc51d1b00ac1a76036862f8cc}\label{structib__device__ops_aef26de8fc51d1b00ac1a76036862f8cc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+mr\+\_\+status} )(struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structib__mr__status}{ib\+\_\+mr\+\_\+status}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_abb9765bdf6007d451ad066718678eac4}\label{structib__device__ops_abb9765bdf6007d451ad066718678eac4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+mw} )(struct \doxymbox{\hyperlink{structib__mw}{ib\+\_\+mw}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ad347d20af4e0cefb2c5c04dd0ad9e0ba}\label{structib__device__ops_ad347d20af4e0cefb2c5c04dd0ad9e0ba} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dealloc\+\_\+mw} )(struct \doxymbox{\hyperlink{structib__mw}{ib\+\_\+mw}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a9d4fab430c6b246c6554461a55dc084b}\label{structib__device__ops_a9d4fab430c6b246c6554461a55dc084b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries attach\+\_\+mcast} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionib__gid}{ib\+\_\+gid}} \texorpdfstring{$\ast$}{*}, u16)
+\item 
+\Hypertarget{structib__device__ops_a9e593067935b6c38a38a82de7d2f4b0f}\label{structib__device__ops_a9e593067935b6c38a38a82de7d2f4b0f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries detach\+\_\+mcast} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionib__gid}{ib\+\_\+gid}} \texorpdfstring{$\ast$}{*}, u16)
+\item 
+\Hypertarget{structib__device__ops_a5c0e9535db51a8d3aa105b9b231fc222}\label{structib__device__ops_a5c0e9535db51a8d3aa105b9b231fc222} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+xrcd} )(struct \doxymbox{\hyperlink{structib__xrcd}{ib\+\_\+xrcd}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_acee4ccb668fefa5090b1f845a8ca915b}\label{structib__device__ops_acee4ccb668fefa5090b1f845a8ca915b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dealloc\+\_\+xrcd} )(struct \doxymbox{\hyperlink{structib__xrcd}{ib\+\_\+xrcd}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a9d57ac304ce854d796eddce21e7b265d}\label{structib__device__ops_a9d57ac304ce854d796eddce21e7b265d} 
+struct \doxymbox{\hyperlink{structib__flow}{ib\+\_\+flow}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+flow} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__flow__attr}{ib\+\_\+flow\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a89b7b16270c1bb4b794148c4d3880593}\label{structib__device__ops_a89b7b16270c1bb4b794148c4d3880593} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+flow} )(struct \doxymbox{\hyperlink{structib__flow}{ib\+\_\+flow}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a0372047afaab0bfda724615bbef3fd32}\label{structib__device__ops_a0372047afaab0bfda724615bbef3fd32} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+flow\+\_\+action} )(struct \doxymbox{\hyperlink{structib__flow__action}{ib\+\_\+flow\+\_\+action}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aaf5a8bc8fb4364faa2463c34ae4c89f3}\label{structib__device__ops_aaf5a8bc8fb4364faa2463c34ae4c89f3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+vf\+\_\+link\+\_\+state} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u32, int)
+\item 
+\Hypertarget{structib__device__ops_a114b7738b7dd550aa56385eecbc92edd}\label{structib__device__ops_a114b7738b7dd550aa56385eecbc92edd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+vf\+\_\+config} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u32, struct \doxymbox{\hyperlink{structifla__vf__info}{ifla\+\_\+vf\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a74774a33ec8eadf528d12c797e2f8a40}\label{structib__device__ops_a74774a33ec8eadf528d12c797e2f8a40} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+vf\+\_\+stats} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u32, struct \doxymbox{\hyperlink{structifla__vf__stats}{ifla\+\_\+vf\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a1850855117e7772ef05af7dc942ee626}\label{structib__device__ops_a1850855117e7772ef05af7dc942ee626} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+vf\+\_\+guid} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u32, struct \doxymbox{\hyperlink{structifla__vf__guid}{ifla\+\_\+vf\+\_\+guid}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structifla__vf__guid}{ifla\+\_\+vf\+\_\+guid}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ad0926c7cb0ee72bf0f9c814ca5ac2272}\label{structib__device__ops_ad0926c7cb0ee72bf0f9c814ca5ac2272} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+vf\+\_\+guid} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u32, u64, int)
+\item 
+\Hypertarget{structib__device__ops_aa3036386cee2c34b934cf74cff6d46f2}\label{structib__device__ops_aa3036386cee2c34b934cf74cff6d46f2} 
+struct \doxymbox{\hyperlink{structib__wq}{ib\+\_\+wq}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+wq} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__wq__init__attr}{ib\+\_\+wq\+\_\+init\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_af1f0ab594e3332224ac00ff4e35bf6f6}\label{structib__device__ops_af1f0ab594e3332224ac00ff4e35bf6f6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+wq} )(struct \doxymbox{\hyperlink{structib__wq}{ib\+\_\+wq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aa5fd1e365e0dc3efe075684b95c4c1a3}\label{structib__device__ops_aa5fd1e365e0dc3efe075684b95c4c1a3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries modify\+\_\+wq} )(struct \doxymbox{\hyperlink{structib__wq}{ib\+\_\+wq}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__wq__attr}{ib\+\_\+wq\+\_\+attr}} \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a1746b55ac4d776b1fa76e28200f0b1bf}\label{structib__device__ops_a1746b55ac4d776b1fa76e28200f0b1bf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+rwq\+\_\+ind\+\_\+table} )(struct \doxymbox{\hyperlink{structib__rwq__ind__table}{ib\+\_\+rwq\+\_\+ind\+\_\+table}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__rwq__ind__table__init__attr}{ib\+\_\+rwq\+\_\+ind\+\_\+table\+\_\+init\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__udata}{ib\+\_\+udata}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a6e64b655f6cde99f43e4d1a754b53190}\label{structib__device__ops_a6e64b655f6cde99f43e4d1a754b53190} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+rwq\+\_\+ind\+\_\+table} )(struct \doxymbox{\hyperlink{structib__rwq__ind__table}{ib\+\_\+rwq\+\_\+ind\+\_\+table}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a2239d03fe79e8cfbb5c9071d8d1e1143}\label{structib__device__ops_a2239d03fe79e8cfbb5c9071d8d1e1143} 
+struct \doxymbox{\hyperlink{structib__dm}{ib\+\_\+dm}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+dm} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__ucontext}{ib\+\_\+ucontext}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__dm__alloc__attr}{ib\+\_\+dm\+\_\+alloc\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a8853bf712fc4f953409a773b00567264}\label{structib__device__ops_a8853bf712fc4f953409a773b00567264} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dealloc\+\_\+dm} )(struct \doxymbox{\hyperlink{structib__dm}{ib\+\_\+dm}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ad4f0167a1981a832c80142ce976044ce}\label{structib__device__ops_ad4f0167a1981a832c80142ce976044ce} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+dmah} )(struct \doxymbox{\hyperlink{structib__dmah}{ib\+\_\+dmah}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a9ce3645daa556455f4ea110e9d12c120}\label{structib__device__ops_a9ce3645daa556455f4ea110e9d12c120} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dealloc\+\_\+dmah} )(struct \doxymbox{\hyperlink{structib__dmah}{ib\+\_\+dmah}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a4976b948d75e18049c038e05b1ba5c8e}\label{structib__device__ops_a4976b948d75e18049c038e05b1ba5c8e} 
+struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+dm\+\_\+mr} )(struct \doxymbox{\hyperlink{structib__pd}{ib\+\_\+pd}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__dm}{ib\+\_\+dm}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__dm__mr__attr}{ib\+\_\+dm\+\_\+mr\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aa39f0f4040edf8993f09f298ba01e484}\label{structib__device__ops_aa39f0f4040edf8993f09f298ba01e484} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+counters} )(struct \doxymbox{\hyperlink{structib__counters}{ib\+\_\+counters}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a330d945655913a24d8642f044a424dbe}\label{structib__device__ops_a330d945655913a24d8642f044a424dbe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+counters} )(struct \doxymbox{\hyperlink{structib__counters}{ib\+\_\+counters}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_af8a93e89d8abc7d253db65c2da28208e}\label{structib__device__ops_af8a93e89d8abc7d253db65c2da28208e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+counters} )(struct \doxymbox{\hyperlink{structib__counters}{ib\+\_\+counters}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__counters__read__attr}{ib\+\_\+counters\+\_\+read\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_afc60c384b45a10e04fe86daabfc48cdc}\label{structib__device__ops_afc60c384b45a10e04fe86daabfc48cdc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+mr\+\_\+sg\+\_\+pi} )(struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*}, int, unsigned int \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*}, int, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aedcc4f0d1a7ea9bff49d7f7a9a3065da}\label{structib__device__ops_aedcc4f0d1a7ea9bff49d7f7a9a3065da} 
+struct \doxymbox{\hyperlink{structrdma__hw__stats}{rdma\+\_\+hw\+\_\+stats}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+hw\+\_\+device\+\_\+stats} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a2b05927ab5f389b51c004cb2d1d00b09}\label{structib__device__ops_a2b05927ab5f389b51c004cb2d1d00b09} 
+struct \doxymbox{\hyperlink{structrdma__hw__stats}{rdma\+\_\+hw\+\_\+stats}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+hw\+\_\+port\+\_\+stats} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structib__device__ops_a7ecd00c434b9caa7acf53d3d90bc10d1}\label{structib__device__ops_a7ecd00c434b9caa7acf53d3d90bc10d1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+hw\+\_\+stats} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrdma__hw__stats}{rdma\+\_\+hw\+\_\+stats}} \texorpdfstring{$\ast$}{*}, u32, int)
+\item 
+\Hypertarget{structib__device__ops_a57517f275fd5ea84380721f9eb8851c2}\label{structib__device__ops_a57517f275fd5ea84380721f9eb8851c2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries modify\+\_\+hw\+\_\+stat} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, unsigned int, bool)
+\item 
+\Hypertarget{structib__device__ops_ac216a24d67740d04267287728b110efb}\label{structib__device__ops_ac216a24d67740d04267287728b110efb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+res\+\_\+mr\+\_\+entry} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a1fb991743ac8c7660d0b69a49f4c7f33}\label{structib__device__ops_a1fb991743ac8c7660d0b69a49f4c7f33} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+res\+\_\+mr\+\_\+entry\+\_\+raw} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a8759f5fadaabab788a8973fff24f6d43}\label{structib__device__ops_a8759f5fadaabab788a8973fff24f6d43} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+res\+\_\+cq\+\_\+entry} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a00fdbfb6b2c2225b39ef5c2ed11234f3}\label{structib__device__ops_a00fdbfb6b2c2225b39ef5c2ed11234f3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+res\+\_\+cq\+\_\+entry\+\_\+raw} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__cq}{ib\+\_\+cq}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a7d4a40b6764e579aac68ff7bbfea3caa}\label{structib__device__ops_a7d4a40b6764e579aac68ff7bbfea3caa} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+res\+\_\+qp\+\_\+entry} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a1e53ea6a40d92260b00b92ef84c8ed14}\label{structib__device__ops_a1e53ea6a40d92260b00b92ef84c8ed14} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+res\+\_\+qp\+\_\+entry\+\_\+raw} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a07d63feaa6456e0292fe4c228252cd4c}\label{structib__device__ops_a07d63feaa6456e0292fe4c228252cd4c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+res\+\_\+cm\+\_\+id\+\_\+entry} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct rdma\+\_\+cm\+\_\+id \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_aba989f7b546aee5d8a827b0a318ab1a4}\label{structib__device__ops_aba989f7b546aee5d8a827b0a318ab1a4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+res\+\_\+srq\+\_\+entry} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__srq}{ib\+\_\+srq}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a3a9c738f016a1501faeb9f1edca147b8}\label{structib__device__ops_a3a9c738f016a1501faeb9f1edca147b8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+res\+\_\+srq\+\_\+entry\+\_\+raw} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__srq}{ib\+\_\+srq}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a319fb057bdeca28f04154db6a55534eb}\label{structib__device__ops_a319fb057bdeca28f04154db6a55534eb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+driver} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ad72579bdafe283ac44feebfd2021a1e9}\label{structib__device__ops_ad72579bdafe283ac44feebfd2021a1e9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dealloc\+\_\+driver} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a623f27636b8e1c0d1b2b50801d0ce57b}\label{structib__device__ops_a623f27636b8e1c0d1b2b50801d0ce57b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries iw\+\_\+add\+\_\+ref} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a95dcdddee497f89c14e907d8e335c9c5}\label{structib__device__ops_a95dcdddee497f89c14e907d8e335c9c5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries iw\+\_\+rem\+\_\+ref} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a8290b28aa7ffe6bf61e9e290c18e35e0}\label{structib__device__ops_a8290b28aa7ffe6bf61e9e290c18e35e0} 
+struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries iw\+\_\+get\+\_\+qp} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structib__device__ops_a8d951048dcfee361e755cab056a5c4c6}\label{structib__device__ops_a8d951048dcfee361e755cab056a5c4c6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries iw\+\_\+connect} )(struct iw\+\_\+cm\+\_\+id \texorpdfstring{$\ast$}{*}, struct iw\+\_\+cm\+\_\+conn\+\_\+param \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ab8960e818fd139c17a8f70ff810eb9e3}\label{structib__device__ops_ab8960e818fd139c17a8f70ff810eb9e3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries iw\+\_\+accept} )(struct iw\+\_\+cm\+\_\+id \texorpdfstring{$\ast$}{*}, struct iw\+\_\+cm\+\_\+conn\+\_\+param \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a8147fec3ca9fbde68cfdb9486d76e4d8}\label{structib__device__ops_a8147fec3ca9fbde68cfdb9486d76e4d8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries iw\+\_\+reject} )(struct iw\+\_\+cm\+\_\+id \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structib__device__ops_a326d88ae048b357876395338f8ee7691}\label{structib__device__ops_a326d88ae048b357876395338f8ee7691} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries iw\+\_\+create\+\_\+listen} )(struct iw\+\_\+cm\+\_\+id \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structib__device__ops_a09660579acfb3f144907d3e195c0a2ef}\label{structib__device__ops_a09660579acfb3f144907d3e195c0a2ef} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries iw\+\_\+destroy\+\_\+listen} )(struct iw\+\_\+cm\+\_\+id \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a158a26e49ac021c82f81ec12ae9a719e}\label{structib__device__ops_a158a26e49ac021c82f81ec12ae9a719e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries counter\+\_\+bind\+\_\+qp} )(struct \doxymbox{\hyperlink{structrdma__counter}{rdma\+\_\+counter}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structib__device__ops_ad6dd1a5fb8e06bd59f165d6a077818af}\label{structib__device__ops_ad6dd1a5fb8e06bd59f165d6a077818af} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries counter\+\_\+unbind\+\_\+qp} )(struct \doxymbox{\hyperlink{structib__qp}{ib\+\_\+qp}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structib__device__ops_a8e5809649d8156f107c2b242921f6025}\label{structib__device__ops_a8e5809649d8156f107c2b242921f6025} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries counter\+\_\+dealloc} )(struct \doxymbox{\hyperlink{structrdma__counter}{rdma\+\_\+counter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a3f69b5151c9fb687e1dc45c67f53f312}\label{structib__device__ops_a3f69b5151c9fb687e1dc45c67f53f312} 
+struct \doxymbox{\hyperlink{structrdma__hw__stats}{rdma\+\_\+hw\+\_\+stats}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries counter\+\_\+alloc\+\_\+stats} )(struct \doxymbox{\hyperlink{structrdma__counter}{rdma\+\_\+counter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ad5896323d5ed43701c2496effd772597}\label{structib__device__ops_ad5896323d5ed43701c2496effd772597} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries counter\+\_\+update\+\_\+stats} )(struct \doxymbox{\hyperlink{structrdma__counter}{rdma\+\_\+counter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a42bab7350df9d5230a12fa0a0b7852f0}\label{structib__device__ops_a42bab7350df9d5230a12fa0a0b7852f0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries counter\+\_\+init} )(struct \doxymbox{\hyperlink{structrdma__counter}{rdma\+\_\+counter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a30369665027d6a713623a8ab01bf114b}\label{structib__device__ops_a30369665027d6a713623a8ab01bf114b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+stat\+\_\+mr\+\_\+entry} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structib__mr}{ib\+\_\+mr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a51970ddf5796a2821dcd0d950dc20586}\label{structib__device__ops_a51970ddf5796a2821dcd0d950dc20586} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries query\+\_\+ucontext} )(struct \doxymbox{\hyperlink{structib__ucontext}{ib\+\_\+ucontext}} \texorpdfstring{$\ast$}{*}, struct uverbs\+\_\+attr\+\_\+bundle \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a2ae3398f682fc67fa22f52bd6b77f81c}\label{structib__device__ops_a2ae3398f682fc67fa22f52bd6b77f81c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+numa\+\_\+node} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a63945f3c65ff2d6d698a12d5cb48814c}\label{structib__device__ops_a63945f3c65ff2d6d698a12d5cb48814c} 
+struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries add\+\_\+sub\+\_\+dev} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, enum rdma\+\_\+nl\+\_\+dev\+\_\+type, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a8bcbdc0c756eddfd471cddd1a911ea16}\label{structib__device__ops_a8bcbdc0c756eddfd471cddd1a911ea16} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries del\+\_\+sub\+\_\+dev} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_a36d8aad8b6dab9120040e8c98a576e38}\label{structib__device__ops_a36d8aad8b6dab9120040e8c98a576e38} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ufile\+\_\+hw\+\_\+cleanup} )(struct ib\+\_\+uverbs\+\_\+file \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__device__ops_ac278271109d5fe6e4f6c88900e244a7c}\label{structib__device__ops_ac278271109d5fe6e4f6c88900e244a7c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries report\+\_\+port\+\_\+event} )(struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structib__device__ops_a3af22614d46099d75b852f77f7e0b7fe}\label{structib__device__ops_a3af22614d46099d75b852f77f7e0b7fe} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+ah}
+\item 
+\Hypertarget{structib__device__ops_a5a9e31d2d1302b992ad710bc46cd1013}\label{structib__device__ops_a5a9e31d2d1302b992ad710bc46cd1013} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+counters}
+\item 
+\Hypertarget{structib__device__ops_a2cc61d8485ac9320f446b4e90a173c2b}\label{structib__device__ops_a2cc61d8485ac9320f446b4e90a173c2b} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+cq}
+\item 
+\Hypertarget{structib__device__ops_a37dbe4481cb37458d343922cce28cc65}\label{structib__device__ops_a37dbe4481cb37458d343922cce28cc65} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+dmah}
+\item 
+\Hypertarget{structib__device__ops_a150e72a251a2fd0e2734f5e9785ae3e8}\label{structib__device__ops_a150e72a251a2fd0e2734f5e9785ae3e8} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+mw}
+\item 
+\Hypertarget{structib__device__ops_aa2fc72bd0f31efa0fe96c77a73e642d2}\label{structib__device__ops_aa2fc72bd0f31efa0fe96c77a73e642d2} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+pd}
+\item 
+\Hypertarget{structib__device__ops_a307b3145b4328ab5b2bab7f923e6e92f}\label{structib__device__ops_a307b3145b4328ab5b2bab7f923e6e92f} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+qp}
+\item 
+\Hypertarget{structib__device__ops_a2cfb3f9f235b45dc9dfc27b093f34b2d}\label{structib__device__ops_a2cfb3f9f235b45dc9dfc27b093f34b2d} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+rwq\+\_\+ind\+\_\+table}
+\item 
+\Hypertarget{structib__device__ops_a6c08be89486308d09dcf5b987a02a91e}\label{structib__device__ops_a6c08be89486308d09dcf5b987a02a91e} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+srq}
+\item 
+\Hypertarget{structib__device__ops_a94b8b1b437af75ae5482d7c77416eb0f}\label{structib__device__ops_a94b8b1b437af75ae5482d7c77416eb0f} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+ucontext}
+\item 
+\Hypertarget{structib__device__ops_a6247321dbd0680f7c6003fd8ad123472}\label{structib__device__ops_a6247321dbd0680f7c6003fd8ad123472} 
+size\+\_\+t {\bfseries size\+\_\+ib\+\_\+xrcd}
+\item 
+\Hypertarget{structib__device__ops_a55be5fd3571243ad6f52589707ff70ec}\label{structib__device__ops_a55be5fd3571243ad6f52589707ff70ec} 
+size\+\_\+t {\bfseries size\+\_\+rdma\+\_\+counter}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

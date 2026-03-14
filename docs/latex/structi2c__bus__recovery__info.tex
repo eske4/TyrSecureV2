@@ -1,0 +1,49 @@
+\doxysection{i2c\+\_\+bus\+\_\+recovery\+\_\+info Struct Reference}
+\hypertarget{structi2c__bus__recovery__info}{}\label{structi2c__bus__recovery__info}\index{i2c\_bus\_recovery\_info@{i2c\_bus\_recovery\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a0ca33ccdaf73b55d1d2c12282f4fd9f7}\label{structi2c__bus__recovery__info_a0ca33ccdaf73b55d1d2c12282f4fd9f7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries recover\+\_\+bus} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__bus__recovery__info_adce8f21375b3e4d1d17413a99e0c0b6b}\label{structi2c__bus__recovery__info_adce8f21375b3e4d1d17413a99e0c0b6b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+scl} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a151c835635ba22933f9ba9330c33a736}\label{structi2c__bus__recovery__info_a151c835635ba22933f9ba9330c33a736} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+scl} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a213908d01dc99c88230d5b5f86022a7e}\label{structi2c__bus__recovery__info_a213908d01dc99c88230d5b5f86022a7e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+sda} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a01d7a8a5cff7f32bb1868f869a654482}\label{structi2c__bus__recovery__info_a01d7a8a5cff7f32bb1868f869a654482} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+sda} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a305a143b8f01accd14c3c0eb5faec080}\label{structi2c__bus__recovery__info_a305a143b8f01accd14c3c0eb5faec080} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+bus\+\_\+free} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a0915bbb816b8ac26c5f92ad757a1928b}\label{structi2c__bus__recovery__info_a0915bbb816b8ac26c5f92ad757a1928b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+recovery} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a2c55cb4ac83562e3d5745655c30c681b}\label{structi2c__bus__recovery__info_a2c55cb4ac83562e3d5745655c30c681b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unprepare\+\_\+recovery} )(struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__bus__recovery__info_abb74ebac53b39925460635908bdf1576}\label{structi2c__bus__recovery__info_abb74ebac53b39925460635908bdf1576} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries scl\+\_\+gpiod}
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a32dfac2ebee67cd83ef05ac906520c4a}\label{structi2c__bus__recovery__info_a32dfac2ebee67cd83ef05ac906520c4a} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries sda\+\_\+gpiod}
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a49535c983f0a2ef8efb230e72b096688}\label{structi2c__bus__recovery__info_a49535c983f0a2ef8efb230e72b096688} 
+struct \doxymbox{\hyperlink{structpinctrl}{pinctrl}} \texorpdfstring{$\ast$}{*} {\bfseries pinctrl}
+\item 
+\Hypertarget{structi2c__bus__recovery__info_aa7a4dc67ba73fd5e98439c10f5d5596d}\label{structi2c__bus__recovery__info_aa7a4dc67ba73fd5e98439c10f5d5596d} 
+struct \doxymbox{\hyperlink{structpinctrl__state}{pinctrl\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries pins\+\_\+default}
+\item 
+\Hypertarget{structi2c__bus__recovery__info_a40cda67129813ff2f893de9927a16414}\label{structi2c__bus__recovery__info_a40cda67129813ff2f893de9927a16414} 
+struct \doxymbox{\hyperlink{structpinctrl__state}{pinctrl\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries pins\+\_\+gpio}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

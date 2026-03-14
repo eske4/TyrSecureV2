@@ -1,0 +1,79 @@
+\doxysection{block\+\_\+device Struct Reference}
+\hypertarget{structblock__device}{}\label{structblock__device}\index{block\_device@{block\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structblock__device_a5b523a1e37dfacbeb582d259dc8e2bc9}\label{structblock__device_a5b523a1e37dfacbeb582d259dc8e2bc9} 
+sector\+\_\+t {\bfseries bd\+\_\+start\+\_\+sect}
+\item 
+\Hypertarget{structblock__device_ae7f5f3dfc70c0a66ec00ce007563a7e8}\label{structblock__device_ae7f5f3dfc70c0a66ec00ce007563a7e8} 
+sector\+\_\+t {\bfseries bd\+\_\+nr\+\_\+sectors}
+\item 
+\Hypertarget{structblock__device_ae90da39afd0942d54cea3406c263debb}\label{structblock__device_ae90da39afd0942d54cea3406c263debb} 
+struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+disk}
+\item 
+\Hypertarget{structblock__device_ac038c9c9cef2bb1176fa469f19ff54ac}\label{structblock__device_ac038c9c9cef2bb1176fa469f19ff54ac} 
+struct \doxymbox{\hyperlink{structrequest__queue}{request\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+queue}
+\item 
+\Hypertarget{structblock__device_aee4b5e3b04175150921941181f5556b4}\label{structblock__device_aee4b5e3b04175150921941181f5556b4} 
+struct \doxymbox{\hyperlink{structdisk__stats}{disk\+\_\+stats}} \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+stats}
+\item 
+\Hypertarget{structblock__device_a2b7dc0f31cd013b3312a0f86e0251c1f}\label{structblock__device_a2b7dc0f31cd013b3312a0f86e0251c1f} 
+long unsigned int {\bfseries bd\+\_\+stamp}
+\item 
+\Hypertarget{structblock__device_a8dd7c3e89c143bd7c061016442f13bf3}\label{structblock__device_a8dd7c3e89c143bd7c061016442f13bf3} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries \+\_\+\+\_\+bd\+\_\+flags}
+\item 
+\Hypertarget{structblock__device_a97ca7d96525d1a3e3dc3effba072f5ef}\label{structblock__device_a97ca7d96525d1a3e3dc3effba072f5ef} 
+dev\+\_\+t {\bfseries bd\+\_\+dev}
+\item 
+\Hypertarget{structblock__device_aca19b35d141eae3baf1608f81ff19b25}\label{structblock__device_aca19b35d141eae3baf1608f81ff19b25} 
+struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+mapping}
+\item 
+\Hypertarget{structblock__device_aef1738af0c9fd6d94372977fccdc4b2e}\label{structblock__device_aef1738af0c9fd6d94372977fccdc4b2e} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries bd\+\_\+openers}
+\item 
+\Hypertarget{structblock__device_aa40a7f752d87a0dc19e6e1ba4e2a9b1e}\label{structblock__device_aa40a7f752d87a0dc19e6e1ba4e2a9b1e} 
+spinlock\+\_\+t {\bfseries bd\+\_\+size\+\_\+lock}
+\item 
+\Hypertarget{structblock__device_a21619106ddb971876a1e0c9d9e6cd340}\label{structblock__device_a21619106ddb971876a1e0c9d9e6cd340} 
+void \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+claiming}
+\item 
+\Hypertarget{structblock__device_ab7c5b7b3812969fd1abeb714e015d817}\label{structblock__device_ab7c5b7b3812969fd1abeb714e015d817} 
+void \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+holder}
+\item 
+\Hypertarget{structblock__device_a94cc8f15479b6b8fd57a128c626aed9e}\label{structblock__device_a94cc8f15479b6b8fd57a128c626aed9e} 
+const struct \doxymbox{\hyperlink{structblk__holder__ops}{blk\+\_\+holder\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+holder\+\_\+ops}
+\item 
+\Hypertarget{structblock__device_aecdeb3444d91453b7ee7345a3d2f3a09}\label{structblock__device_aecdeb3444d91453b7ee7345a3d2f3a09} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries bd\+\_\+holder\+\_\+lock}
+\item 
+\Hypertarget{structblock__device_a5983efb3050be7fd124530e8634b416c}\label{structblock__device_a5983efb3050be7fd124530e8634b416c} 
+int {\bfseries bd\+\_\+holders}
+\item 
+\Hypertarget{structblock__device_a230b7888d3838105185b718cd099dd48}\label{structblock__device_a230b7888d3838105185b718cd099dd48} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+holder\+\_\+dir}
+\item 
+\Hypertarget{structblock__device_ad9b7a598b0069dde1770613f2945ef33}\label{structblock__device_ad9b7a598b0069dde1770613f2945ef33} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries bd\+\_\+fsfreeze\+\_\+count}
+\item 
+\Hypertarget{structblock__device_a6d3d5c3606f0e8ea358cb3cc0bb2b7f5}\label{structblock__device_a6d3d5c3606f0e8ea358cb3cc0bb2b7f5} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries bd\+\_\+fsfreeze\+\_\+mutex}
+\item 
+\Hypertarget{structblock__device_a1d01be5eadcf844480f639cac36af13f}\label{structblock__device_a1d01be5eadcf844480f639cac36af13f} 
+struct \doxymbox{\hyperlink{structpartition__meta__info}{partition\+\_\+meta\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+meta\+\_\+info}
+\item 
+\Hypertarget{structblock__device_aee2618190700f443ce5978ab74e45012}\label{structblock__device_aee2618190700f443ce5978ab74e45012} 
+int {\bfseries bd\+\_\+writers}
+\item 
+\Hypertarget{structblock__device_a703a774a3fdef6aaaafa0d75114e5b88}\label{structblock__device_a703a774a3fdef6aaaafa0d75114e5b88} 
+void \texorpdfstring{$\ast$}{*} {\bfseries bd\+\_\+security}
+\item 
+\Hypertarget{structblock__device_ae76a5f84db342a9626392f0dd875b7ab}\label{structblock__device_ae76a5f84db342a9626392f0dd875b7ab} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries bd\+\_\+device}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

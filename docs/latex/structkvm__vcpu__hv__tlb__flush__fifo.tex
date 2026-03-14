@@ -1,0 +1,30 @@
+\doxysection{kvm\+\_\+vcpu\+\_\+hv\+\_\+tlb\+\_\+flush\+\_\+fifo Struct Reference}
+\hypertarget{structkvm__vcpu__hv__tlb__flush__fifo}{}\label{structkvm__vcpu__hv__tlb__flush__fifo}\index{kvm\_vcpu\_hv\_tlb\_flush\_fifo@{kvm\_vcpu\_hv\_tlb\_flush\_fifo}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__vcpu__hv__tlb__flush__fifo_aaaa7c9a7c17145ebfb3348054eeac87d}\label{structkvm__vcpu__hv__tlb__flush__fifo_aaaa7c9a7c17145ebfb3348054eeac87d} 
+spinlock\+\_\+t {\bfseries write\+\_\+lock}
+\item 
+\Hypertarget{structkvm__vcpu__hv__tlb__flush__fifo_aa50f55f41d963d2c8f9763677135d35a}\label{structkvm__vcpu__hv__tlb__flush__fifo_aa50f55f41d963d2c8f9763677135d35a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structkvm__vcpu__hv__tlb__flush__fifo_1_1_0d206063261225134353360144301107244225206032124052_a31ceb982649e8b1fb36cb74fff2d326a}\label{structkvm__vcpu__hv__tlb__flush__fifo_1_1_0d206063261225134353360144301107244225206032124052_a31ceb982649e8b1fb36cb74fff2d326a} 
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{struct____kfifo}{\_\_kfifo}} {\bfseries kfifo}\\
+\>\>u64 \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>const u64 \texorpdfstring{$\ast$}{*} {\bfseries const\_type}\\
+\>\>char(\texorpdfstring{$\ast$}{*} {\bfseries rectype} )\+[0]\+\\
+\>\>u64 \texorpdfstring{$\ast$}{*} {\bfseries ptr}\\
+\>\>const u64 \texorpdfstring{$\ast$}{*} {\bfseries ptr\_const}\\
+\>\} \\
+\>u64 {\bfseries buf} \+[16]\+\\
+\} {\bfseries entries}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

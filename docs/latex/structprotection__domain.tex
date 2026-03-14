@@ -1,0 +1,45 @@
+\doxysection{protection\+\_\+domain Struct Reference}
+\hypertarget{structprotection__domain}{}\label{structprotection__domain}\index{protection\_domain@{protection\_domain}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structprotection__domain_ae9743df92e2f58c9d61bf695bdb28dfd}\label{structprotection__domain_ae9743df92e2f58c9d61bf695bdb28dfd} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structiommu__domain}{iommu\_domain}} {\bfseries domain}\\
+\>struct \doxymbox{\hyperlink{structpt__iommu}{pt\_iommu}} {\bfseries iommu}\\
+\>struct \doxymbox{\hyperlink{structpt__iommu__amdv1}{pt\_iommu\_amdv1}} {\bfseries amdv1}\\
+\>struct \doxymbox{\hyperlink{structpt__iommu__x86__64}{pt\_iommu\_x86\_64}} {\bfseries amdv2}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structprotection__domain_a38ca5d29f13d02981b8266ac0c93b853}\label{structprotection__domain_a38ca5d29f13d02981b8266ac0c93b853} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dev\+\_\+list}
+\item 
+\Hypertarget{structprotection__domain_a3ba0ef53e7e7c77acd95f8b0724b9092}\label{structprotection__domain_a3ba0ef53e7e7c77acd95f8b0724b9092} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structprotection__domain_aff4e39ea90b2dc72e7ae88602f18f973}\label{structprotection__domain_aff4e39ea90b2dc72e7ae88602f18f973} 
+u16 {\bfseries id}
+\item 
+\Hypertarget{structprotection__domain_aa46a59ec2294823d8b1f457dc8220aec}\label{structprotection__domain_aa46a59ec2294823d8b1f457dc8220aec} 
+enum protection\+\_\+domain\+\_\+mode {\bfseries pd\+\_\+mode}
+\item 
+\Hypertarget{structprotection__domain_a83244d27b4aa69962d5f937cb33796f3}\label{structprotection__domain_a83244d27b4aa69962d5f937cb33796f3} 
+bool {\bfseries dirty\+\_\+tracking}
+\item 
+\Hypertarget{structprotection__domain_a602ffe977db2f13d767b0751c78f5db3}\label{structprotection__domain_a602ffe977db2f13d767b0751c78f5db3} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries iommu\+\_\+array}
+\item 
+\Hypertarget{structprotection__domain_ad57495734721f4b6cea59a37bb7df44a}\label{structprotection__domain_ad57495734721f4b6cea59a37bb7df44a} 
+struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} {\bfseries mn}
+\item 
+\Hypertarget{structprotection__domain_a3eef39e20e1f18619204075f1edf9d11}\label{structprotection__domain_a3eef39e20e1f18619204075f1edf9d11} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dev\+\_\+data\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{property\+\_\+entry Struct Reference}
+\hypertarget{structproperty__entry}{}\label{structproperty__entry}\index{property\_entry@{property\_entry}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structproperty__entry_a6954b69b1f4dce3a8c908bf9c03cdb4d}\label{structproperty__entry_a6954b69b1f4dce3a8c908bf9c03cdb4d} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structproperty__entry_a2bfb653b11fe38319296d0856d9fa28a}\label{structproperty__entry_a2bfb653b11fe38319296d0856d9fa28a} 
+size\+\_\+t {\bfseries length}
+\item 
+\Hypertarget{structproperty__entry_a7b321c03a5f6024cd2c9b7d55d2fdaa5}\label{structproperty__entry_a7b321c03a5f6024cd2c9b7d55d2fdaa5} 
+bool {\bfseries is\+\_\+inline}
+\item 
+\Hypertarget{structproperty__entry_a72754883dccbe3542d5ac3c2343ce5c8}\label{structproperty__entry_a72754883dccbe3542d5ac3c2343ce5c8} 
+enum dev\+\_\+prop\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structproperty__entry_ae2d422ce8c92ee10c625b1d946effd44}\label{structproperty__entry_ae2d422ce8c92ee10c625b1d946effd44} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const void \texorpdfstring{$\ast$}{*} {\bfseries pointer}\\
+\>union \{\\
+\>\>u8 {\bfseries u8\_data} \+[8]\+\\
+\>\>u16 {\bfseries u16\_data} \+[4]\+\\
+\>\>u32 {\bfseries u32\_data} \+[2]\+\\
+\>\>u64 {\bfseries u64\_data} \+[1]\+\\
+\>\>const char \texorpdfstring{$\ast$}{*} {\bfseries str} \+[1]\+\\
+\>\} {\bfseries value}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

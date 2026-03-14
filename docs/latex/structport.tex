@@ -1,0 +1,70 @@
+\doxysection{port Struct Reference}
+\hypertarget{structport}{}\label{structport}\index{port@{port}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structport_af577713a29c868a4b646ee57f6d94e02}\label{structport_af577713a29c868a4b646ee57f6d94e02} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structport_afd57dc888a54b72c6659a438251879c3}\label{structport_afd57dc888a54b72c6659a438251879c3} 
+struct \doxymbox{\hyperlink{structports__device}{ports\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries portdev}
+\item 
+\Hypertarget{structport_a33ccb2f5281821d3447ef56256805309}\label{structport_a33ccb2f5281821d3447ef56256805309} 
+struct \doxymbox{\hyperlink{structport__buffer}{port\+\_\+buffer}} \texorpdfstring{$\ast$}{*} {\bfseries inbuf}
+\item 
+\Hypertarget{structport_a00ed9d6b4282a615d1c197459e7140b8}\label{structport_a00ed9d6b4282a615d1c197459e7140b8} 
+spinlock\+\_\+t {\bfseries inbuf\+\_\+lock}
+\item 
+\Hypertarget{structport_a155049ae2db06250cfaee7c5a8806c04}\label{structport_a155049ae2db06250cfaee7c5a8806c04} 
+spinlock\+\_\+t {\bfseries outvq\+\_\+lock}
+\item 
+\Hypertarget{structport_ab55bc242e16018cb61050439b26d7653}\label{structport_ab55bc242e16018cb61050439b26d7653} 
+struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*} {\bfseries in\+\_\+vq}
+\item 
+\Hypertarget{structport_ad881f7cd51c3294738f3ba5b91e7ba07}\label{structport_ad881f7cd51c3294738f3ba5b91e7ba07} 
+struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*} {\bfseries out\+\_\+vq}
+\item 
+\Hypertarget{structport_a9693606580c9f0cfa9a11257990acde4}\label{structport_a9693606580c9f0cfa9a11257990acde4} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+file}
+\item 
+\Hypertarget{structport_a862ec6943a79dd56edb487d200a72e43}\label{structport_a862ec6943a79dd56edb487d200a72e43} 
+struct \doxymbox{\hyperlink{structport__stats}{port\+\_\+stats}} {\bfseries stats}
+\item 
+\Hypertarget{structport_a9c7fc4001ae2c743dcf4d2c43f765791}\label{structport_a9c7fc4001ae2c743dcf4d2c43f765791} 
+struct \doxymbox{\hyperlink{structconsole______2}{console\+\_\+\+\_\+\+\_\+2}} {\bfseries cons}
+\item 
+\Hypertarget{structport_afb153b4edca5f85e6d43d9b5cff9ee1c}\label{structport_afb153b4edca5f85e6d43d9b5cff9ee1c} 
+struct \doxymbox{\hyperlink{structcdev}{cdev}} \texorpdfstring{$\ast$}{*} {\bfseries cdev}
+\item 
+\Hypertarget{structport_a8a4542a00923871d16f04ff4fc2bd688}\label{structport_a8a4542a00923871d16f04ff4fc2bd688} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structport_a35e1491f9ee13c3034c6b1dafcce429f}\label{structport_a35e1491f9ee13c3034c6b1dafcce429f} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries kref}
+\item 
+\Hypertarget{structport_a54f5c6662b8f9d5787c1cfc520ea42ff}\label{structport_a54f5c6662b8f9d5787c1cfc520ea42ff} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries waitqueue}
+\item 
+\Hypertarget{structport_a9f1c5a69930afafbd521b9900106b550}\label{structport_a9f1c5a69930afafbd521b9900106b550} 
+char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structport_aa33d2da089dffedbb7cbf5ac20ff1eb9}\label{structport_aa33d2da089dffedbb7cbf5ac20ff1eb9} 
+struct \doxymbox{\hyperlink{structfasync__struct}{fasync\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries async\+\_\+queue}
+\item 
+\Hypertarget{structport_a34e267af882ec97320a2d2620d937a20}\label{structport_a34e267af882ec97320a2d2620d937a20} 
+u32 {\bfseries id}
+\item 
+\Hypertarget{structport_a4a3f0d55f717944e22336937cf9eb0a8}\label{structport_a4a3f0d55f717944e22336937cf9eb0a8} 
+bool {\bfseries outvq\+\_\+full}
+\item 
+\Hypertarget{structport_a0a388aa1b54c0e406a1ccc1cb6e69926}\label{structport_a0a388aa1b54c0e406a1ccc1cb6e69926} 
+bool {\bfseries host\+\_\+connected}
+\item 
+\Hypertarget{structport_a380f770dfef83b3bde5727e9ebfa21bb}\label{structport_a380f770dfef83b3bde5727e9ebfa21bb} 
+bool {\bfseries guest\+\_\+connected}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

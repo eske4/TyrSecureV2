@@ -1,0 +1,64 @@
+\doxysection{inet\+\_\+frag\+\_\+queue Struct Reference}
+\hypertarget{structinet__frag__queue}{}\label{structinet__frag__queue}\index{inet\_frag\_queue@{inet\_frag\_queue}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinet__frag__queue_a32148e0dc70703911913a09027d98de7}\label{structinet__frag__queue_a32148e0dc70703911913a09027d98de7} 
+struct \doxymbox{\hyperlink{structrhash__head}{rhash\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structinet__frag__queue_ab27d3df430cd9e18544953e1f20ce4c0}\label{structinet__frag__queue_ab27d3df430cd9e18544953e1f20ce4c0} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structfrag__v4__compare__key}{frag\_v4\_compare\_key}} {\bfseries v4}\\
+\>struct \doxymbox{\hyperlink{structfrag__v6__compare__key}{frag\_v6\_compare\_key}} {\bfseries v6}\\
+\} {\bfseries key}\\
+
+\end{tabbing}\item 
+\Hypertarget{structinet__frag__queue_a8d0788a9b4bc1cfbc2823dd787854eee}\label{structinet__frag__queue_a8d0788a9b4bc1cfbc2823dd787854eee} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries timer}
+\item 
+\Hypertarget{structinet__frag__queue_afe8e0a106ce68143d212cd21e9d11928}\label{structinet__frag__queue_afe8e0a106ce68143d212cd21e9d11928} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structinet__frag__queue_a8de10c13c5e9ae86603985ce31027a96}\label{structinet__frag__queue_a8de10c13c5e9ae86603985ce31027a96} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structinet__frag__queue_a23f5308a1b121ce4adba7441b7e1ee91}\label{structinet__frag__queue_a23f5308a1b121ce4adba7441b7e1ee91} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries rb\+\_\+fragments}
+\item 
+\Hypertarget{structinet__frag__queue_acd2ab39db46239b5ae5234f06d82611f}\label{structinet__frag__queue_acd2ab39db46239b5ae5234f06d82611f} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries fragments\+\_\+tail}
+\item 
+\Hypertarget{structinet__frag__queue_a77b292e0af2263c82bc320b2efb765e3}\label{structinet__frag__queue_a77b292e0af2263c82bc320b2efb765e3} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries last\+\_\+run\+\_\+head}
+\item 
+\Hypertarget{structinet__frag__queue_a65a0f15d54f499d556072a7aed250c85}\label{structinet__frag__queue_a65a0f15d54f499d556072a7aed250c85} 
+ktime\+\_\+t {\bfseries stamp}
+\item 
+\Hypertarget{structinet__frag__queue_a349fde3a0aeb06d06fe76474c326ce4c}\label{structinet__frag__queue_a349fde3a0aeb06d06fe76474c326ce4c} 
+int {\bfseries len}
+\item 
+\Hypertarget{structinet__frag__queue_aa631439cce34805a9a7fd4ab31524da5}\label{structinet__frag__queue_aa631439cce34805a9a7fd4ab31524da5} 
+int {\bfseries meat}
+\item 
+\Hypertarget{structinet__frag__queue_ac83d07252fa030bf62f39ea20e98ae62}\label{structinet__frag__queue_ac83d07252fa030bf62f39ea20e98ae62} 
+u8 {\bfseries tstamp\+\_\+type}
+\item 
+\Hypertarget{structinet__frag__queue_a310b74977b62587aa5ba5b845b174384}\label{structinet__frag__queue_a310b74977b62587aa5ba5b845b174384} 
+\+\_\+\+\_\+u8 {\bfseries flags}
+\item 
+\Hypertarget{structinet__frag__queue_a4df27a2ea66f3c1b0450d91579d0a8df}\label{structinet__frag__queue_a4df27a2ea66f3c1b0450d91579d0a8df} 
+u16 {\bfseries max\+\_\+size}
+\item 
+\Hypertarget{structinet__frag__queue_ad9bb20d0e935622ed337a7d4b5bf51db}\label{structinet__frag__queue_ad9bb20d0e935622ed337a7d4b5bf51db} 
+struct \doxymbox{\hyperlink{structfqdir}{fqdir}} \texorpdfstring{$\ast$}{*} {\bfseries fqdir}
+\item 
+\Hypertarget{structinet__frag__queue_a6ca4c366e7b16da001499131aa901fa2}\label{structinet__frag__queue_a6ca4c366e7b16da001499131aa901fa2} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

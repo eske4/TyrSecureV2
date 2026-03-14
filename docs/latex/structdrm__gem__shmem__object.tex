@@ -1,0 +1,46 @@
+\doxysection{drm\+\_\+gem\+\_\+shmem\+\_\+object Struct Reference}
+\hypertarget{structdrm__gem__shmem__object}{}\label{structdrm__gem__shmem__object}\index{drm\_gem\_shmem\_object@{drm\_gem\_shmem\_object}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a844eec8affe9865637412cc40f1656dc}\label{structdrm__gem__shmem__object_a844eec8affe9865637412cc40f1656dc} 
+struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} {\bfseries base}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a11a8d66a255bd7c9b9c2d0f26f6ee4fe}\label{structdrm__gem__shmem__object_a11a8d66a255bd7c9b9c2d0f26f6ee4fe} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries pages}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a5d2c2b7220ede566a7b18cb664d57812}\label{structdrm__gem__shmem__object_a5d2c2b7220ede566a7b18cb664d57812} 
+refcount\+\_\+t {\bfseries pages\+\_\+use\+\_\+count}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a2c885e52dae886339cb3e9b3f9ae0990}\label{structdrm__gem__shmem__object_a2c885e52dae886339cb3e9b3f9ae0990} 
+refcount\+\_\+t {\bfseries pages\+\_\+pin\+\_\+count}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a37b2c55d75ad065ea2273390bb92dfba}\label{structdrm__gem__shmem__object_a37b2c55d75ad065ea2273390bb92dfba} 
+int {\bfseries madv}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_affc54a0856577940d922b5f61de808cd}\label{structdrm__gem__shmem__object_affc54a0856577940d922b5f61de808cd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries madv\+\_\+list}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a1c8fc2ae3cca9f29b3bf49a0cb87a078}\label{structdrm__gem__shmem__object_a1c8fc2ae3cca9f29b3bf49a0cb87a078} 
+struct \doxymbox{\hyperlink{structsg__table}{sg\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries sgt}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a73f9f4a3fabb248b3737c9e2175a15a2}\label{structdrm__gem__shmem__object_a73f9f4a3fabb248b3737c9e2175a15a2} 
+void \texorpdfstring{$\ast$}{*} {\bfseries vaddr}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a9be364b0700a94568fcf34de1e690f7a}\label{structdrm__gem__shmem__object_a9be364b0700a94568fcf34de1e690f7a} 
+refcount\+\_\+t {\bfseries vmap\+\_\+use\+\_\+count}
+\item 
+\Hypertarget{structdrm__gem__shmem__object_acd8f9b70e535c39848ce58573d902bc9}\label{structdrm__gem__shmem__object_acd8f9b70e535c39848ce58573d902bc9} 
+bool {\bfseries pages\+\_\+mark\+\_\+dirty\+\_\+on\+\_\+put}:\+ 1
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a5c1685e0e9d10e0c4857f4a0e9b07adb}\label{structdrm__gem__shmem__object_a5c1685e0e9d10e0c4857f4a0e9b07adb} 
+bool {\bfseries pages\+\_\+mark\+\_\+accessed\+\_\+on\+\_\+put}:\+ 1
+\item 
+\Hypertarget{structdrm__gem__shmem__object_a8398f5f21642a56716f41ab920490072}\label{structdrm__gem__shmem__object_a8398f5f21642a56716f41ab920490072} 
+bool {\bfseries map\+\_\+wc}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

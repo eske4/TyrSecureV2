@@ -1,0 +1,31 @@
+\doxysection{gnttab\+\_\+ops Struct Reference}
+\hypertarget{structgnttab__ops}{}\label{structgnttab__ops}\index{gnttab\_ops@{gnttab\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structgnttab__ops_a381be68bf76aac52b29eb510281528d2}\label{structgnttab__ops_a381be68bf76aac52b29eb510281528d2} 
+unsigned int {\bfseries version}
+\item 
+\Hypertarget{structgnttab__ops_a83a52f55c3a3f81c194ccc0270265e62}\label{structgnttab__ops_a83a52f55c3a3f81c194ccc0270265e62} 
+unsigned int {\bfseries grefs\+\_\+per\+\_\+grant\+\_\+frame}
+\item 
+\Hypertarget{structgnttab__ops_ab078658b944f3edcd5665d7dae4d4cb5}\label{structgnttab__ops_ab078658b944f3edcd5665d7dae4d4cb5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+frames} )(xen\+\_\+pfn\+\_\+t \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structgnttab__ops_a9521e823632dcfe9d9899f9fa23eaacd}\label{structgnttab__ops_a9521e823632dcfe9d9899f9fa23eaacd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unmap\+\_\+frames} )(void)
+\item 
+\Hypertarget{structgnttab__ops_a45b5297036e6e98074fb71ecd57724cd}\label{structgnttab__ops_a45b5297036e6e98074fb71ecd57724cd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+entry} )(grant\+\_\+ref\+\_\+t, domid\+\_\+t, long unsigned int, unsigned int)
+\item 
+\Hypertarget{structgnttab__ops_a24f522c8ac5c7c2c224d5fdb5a2c4d7c}\label{structgnttab__ops_a24f522c8ac5c7c2c224d5fdb5a2c4d7c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+foreign\+\_\+access\+\_\+ref} )(grant\+\_\+ref\+\_\+t)
+\item 
+\Hypertarget{structgnttab__ops_a544c0c88ae893c55d3c6866a9da25486}\label{structgnttab__ops_a544c0c88ae893c55d3c6866a9da25486} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+frame} )(grant\+\_\+ref\+\_\+t)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,36 @@
+\doxysection{aa\+\_\+sfs\+\_\+entry Struct Reference}
+\hypertarget{structaa__sfs__entry}{}\label{structaa__sfs__entry}\index{aa\_sfs\_entry@{aa\_sfs\_entry}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structaa__sfs__entry_a0ec82ca6cda6c7ff1c27c24c7cf9a33a}\label{structaa__sfs__entry_a0ec82ca6cda6c7ff1c27c24c7cf9a33a} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structaa__sfs__entry_a47a8e54cd339a1f0c5c3363c7957c74f}\label{structaa__sfs__entry_a47a8e54cd339a1f0c5c3363c7957c74f} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries dentry}
+\item 
+\Hypertarget{structaa__sfs__entry_ac09b8211d01c75ba42b00418ef0c2e7c}\label{structaa__sfs__entry_ac09b8211d01c75ba42b00418ef0c2e7c} 
+umode\+\_\+t {\bfseries mode}
+\item 
+\Hypertarget{structaa__sfs__entry_a0a0fefbad393c3fbd680776fd7052cc3}\label{structaa__sfs__entry_a0a0fefbad393c3fbd680776fd7052cc3} 
+enum aa\+\_\+sfs\+\_\+type {\bfseries v\+\_\+type}
+\item 
+\Hypertarget{structaa__sfs__entry_a79d4417c3bbed1293cf4333c08efb65c}\label{structaa__sfs__entry_a79d4417c3bbed1293cf4333c08efb65c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>bool {\bfseries boolean}\\
+\>char \texorpdfstring{$\ast$}{*} {\bfseries string}\\
+\>long unsigned int {\bfseries u64}\\
+\>struct \doxymbox{\hyperlink{structaa__sfs__entry}{aa\_sfs\_entry}} \texorpdfstring{$\ast$}{*} {\bfseries files}\\
+\} {\bfseries v}\\
+
+\end{tabbing}\item 
+\Hypertarget{structaa__sfs__entry_a66c9c757da1066901455403ba62b1226}\label{structaa__sfs__entry_a66c9c757da1066901455403ba62b1226} 
+const struct \doxymbox{\hyperlink{structfile__operations}{file\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+ops}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\doxysection{ms\+\_\+hyperv\+\_\+info Struct Reference}
+\hypertarget{structms__hyperv__info}{}\label{structms__hyperv__info}\index{ms\_hyperv\_info@{ms\_hyperv\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structms__hyperv__info_a1fb4a7ca024de418ca4b5184cf851968}\label{structms__hyperv__info_a1fb4a7ca024de418ca4b5184cf851968} 
+u32 {\bfseries features}
+\item 
+\Hypertarget{structms__hyperv__info_a694d338eee8bcf1ca4f2c7efba7fa213}\label{structms__hyperv__info_a694d338eee8bcf1ca4f2c7efba7fa213} 
+u32 {\bfseries priv\+\_\+high}
+\item 
+\Hypertarget{structms__hyperv__info_ab832d7026338b1a98ea52502a6a82159}\label{structms__hyperv__info_ab832d7026338b1a98ea52502a6a82159} 
+u32 {\bfseries ext\+\_\+features}
+\item 
+\Hypertarget{structms__hyperv__info_a8459f328e420ea309e7d5c6fe054767e}\label{structms__hyperv__info_a8459f328e420ea309e7d5c6fe054767e} 
+u32 {\bfseries misc\+\_\+features}
+\item 
+\Hypertarget{structms__hyperv__info_a480791e0cda11b69ea2341627d6a3600}\label{structms__hyperv__info_a480791e0cda11b69ea2341627d6a3600} 
+u32 {\bfseries hints}
+\item 
+\Hypertarget{structms__hyperv__info_ad9a971dc1ba5211ef6a779d455db3a35}\label{structms__hyperv__info_ad9a971dc1ba5211ef6a779d455db3a35} 
+u32 {\bfseries nested\+\_\+features}
+\item 
+\Hypertarget{structms__hyperv__info_a3f2aa0f4baf52768349596f98e313eb0}\label{structms__hyperv__info_a3f2aa0f4baf52768349596f98e313eb0} 
+u32 {\bfseries max\+\_\+vp\+\_\+index}
+\item 
+\Hypertarget{structms__hyperv__info_ada1272b01fda17dbdf4264fafbe79e2e}\label{structms__hyperv__info_ada1272b01fda17dbdf4264fafbe79e2e} 
+u32 {\bfseries max\+\_\+lp\+\_\+index}
+\item 
+\Hypertarget{structms__hyperv__info_af1e6a70c40eff4ce199e080824d24970}\label{structms__hyperv__info_af1e6a70c40eff4ce199e080824d24970} 
+u8 {\bfseries vtl}
+\item 
+\Hypertarget{structms__hyperv__info_aff1faf61b93238c5ee2d19958897900f}\label{structms__hyperv__info_aff1faf61b93238c5ee2d19958897900f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries isolation\_config\_a}\\
+\Hypertarget{unionms__hyperv__info_1_1_0d362232325101217077306323231150046174056216357224_a00b5850c3ea95192158ac390839905b1}\label{unionms__hyperv__info_1_1_0d362232325101217077306323231150046174056216357224_a00b5850c3ea95192158ac390839905b1} 
+\>struct \{\\
+\>\>u32 {\bfseries paravisor\_present}: 1\\
+\>\>u32 {\bfseries reserved\_a1}: 31\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structms__hyperv__info_aecba9ebc525c396fbe4b3a32d989eda2}\label{structms__hyperv__info_aecba9ebc525c396fbe4b3a32d989eda2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries isolation\_config\_b}\\
+\Hypertarget{unionms__hyperv__info_1_1_0d032250124123035057263246130313325006131045367077_a8fb0e15f9daed4f704e74e39ce8de3bb}\label{unionms__hyperv__info_1_1_0d032250124123035057263246130313325006131045367077_a8fb0e15f9daed4f704e74e39ce8de3bb} 
+\>struct \{\\
+\>\>u32 {\bfseries cvm\_type}: 4\\
+\>\>u32 {\bfseries reserved\_b1}: 1\\
+\>\>u32 {\bfseries shared\_gpa\_boundary\_active}: 1\\
+\>\>u32 {\bfseries shared\_gpa\_boundary\_bits}: 6\\
+\>\>u32 {\bfseries reserved\_b2}: 20\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structms__hyperv__info_a4a2f9cc7f9515d743825c54f8f6e3e8e}\label{structms__hyperv__info_a4a2f9cc7f9515d743825c54f8f6e3e8e} 
+u64 {\bfseries shared\+\_\+gpa\+\_\+boundary}
+\item 
+\Hypertarget{structms__hyperv__info_abdc53e9f29a1b74318fa60e71c075515}\label{structms__hyperv__info_abdc53e9f29a1b74318fa60e71c075515} 
+bool {\bfseries msi\+\_\+ext\+\_\+dest\+\_\+id}
+\item 
+\Hypertarget{structms__hyperv__info_a0da1a9c9e0f1ec90b1a88cd477c82a5f}\label{structms__hyperv__info_a0da1a9c9e0f1ec90b1a88cd477c82a5f} 
+bool {\bfseries confidential\+\_\+vmbus\+\_\+available}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

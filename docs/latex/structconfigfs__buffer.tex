@@ -1,0 +1,58 @@
+\doxysection{configfs\+\_\+buffer Struct Reference}
+\hypertarget{structconfigfs__buffer}{}\label{structconfigfs__buffer}\index{configfs\_buffer@{configfs\_buffer}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structconfigfs__buffer_a3de0a0b3b369d85636258dfb2aec4c33}\label{structconfigfs__buffer_a3de0a0b3b369d85636258dfb2aec4c33} 
+size\+\_\+t {\bfseries count}
+\item 
+\Hypertarget{structconfigfs__buffer_a39a506e24513184ef47d43171681e399}\label{structconfigfs__buffer_a39a506e24513184ef47d43171681e399} 
+loff\+\_\+t {\bfseries pos}
+\item 
+\Hypertarget{structconfigfs__buffer_a8aaf8d7189fb9d0cf2383dc876c2939a}\label{structconfigfs__buffer_a8aaf8d7189fb9d0cf2383dc876c2939a} 
+char \texorpdfstring{$\ast$}{*} {\bfseries page}
+\item 
+\Hypertarget{structconfigfs__buffer_a09091f8e1b94c2cad63a9980f1a997ea}\label{structconfigfs__buffer_a09091f8e1b94c2cad63a9980f1a997ea} 
+const struct \doxymbox{\hyperlink{structconfigfs__item__operations}{configfs\+\_\+item\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structconfigfs__buffer_a33385191d47df856346ca9c0a7ff53ca}\label{structconfigfs__buffer_a33385191d47df856346ca9c0a7ff53ca} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structconfigfs__buffer_acfb5cdf58873d41fd33751ee0d804f11}\label{structconfigfs__buffer_acfb5cdf58873d41fd33751ee0d804f11} 
+int {\bfseries needs\+\_\+read\+\_\+fill}
+\item 
+\Hypertarget{structconfigfs__buffer_a75eb2ea9657dbb4d47850dba20c6969c}\label{structconfigfs__buffer_a75eb2ea9657dbb4d47850dba20c6969c} 
+bool {\bfseries read\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structconfigfs__buffer_a5cbad84760aeee95aee5f7ff0485b0d4}\label{structconfigfs__buffer_a5cbad84760aeee95aee5f7ff0485b0d4} 
+bool {\bfseries write\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structconfigfs__buffer_a01bb542d0550674c7aec2fb73e8a65f5}\label{structconfigfs__buffer_a01bb542d0550674c7aec2fb73e8a65f5} 
+char \texorpdfstring{$\ast$}{*} {\bfseries bin\+\_\+buffer}
+\item 
+\Hypertarget{structconfigfs__buffer_ad381d683ad526b0d323751ab5fe15735}\label{structconfigfs__buffer_ad381d683ad526b0d323751ab5fe15735} 
+int {\bfseries bin\+\_\+buffer\+\_\+size}
+\item 
+\Hypertarget{structconfigfs__buffer_a04576ebfb404566a918ed9d272cb185c}\label{structconfigfs__buffer_a04576ebfb404566a918ed9d272cb185c} 
+int {\bfseries cb\+\_\+max\+\_\+size}
+\item 
+\Hypertarget{structconfigfs__buffer_aec1bece2dfa9b4907d64705577a1cc70}\label{structconfigfs__buffer_aec1bece2dfa9b4907d64705577a1cc70} 
+struct \doxymbox{\hyperlink{structconfig__item}{config\+\_\+item}} \texorpdfstring{$\ast$}{*} {\bfseries item}
+\item 
+\Hypertarget{structconfigfs__buffer_adfdf9f10750a0ecfaee2fe44b1f593e9}\label{structconfigfs__buffer_adfdf9f10750a0ecfaee2fe44b1f593e9} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structconfigfs__buffer_a7407d590f14745909c40ec2ce7d3a250}\label{structconfigfs__buffer_a7407d590f14745909c40ec2ce7d3a250} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structconfigfs__attribute}{configfs\_attribute}} \texorpdfstring{$\ast$}{*} {\bfseries attr}\\
+\>struct \doxymbox{\hyperlink{structconfigfs__bin__attribute}{configfs\_bin\_attribute}} \texorpdfstring{$\ast$}{*} {\bfseries bin\_attr}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

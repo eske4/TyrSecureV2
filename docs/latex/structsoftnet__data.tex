@@ -1,0 +1,142 @@
+\doxysection{softnet\+\_\+data Struct Reference}
+\hypertarget{structsoftnet__data}{}\label{structsoftnet__data}\index{softnet\_data@{softnet\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsoftnet__data_a6b367ef8f5090fe5ae57e0dcab310254}\label{structsoftnet__data_a6b367ef8f5090fe5ae57e0dcab310254} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries poll\+\_\+list}
+\item 
+\Hypertarget{structsoftnet__data_a702bc9825a40e139bd848616b9cb92b3}\label{structsoftnet__data_a702bc9825a40e139bd848616b9cb92b3} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries process\+\_\+queue}
+\item 
+\Hypertarget{structsoftnet__data_afbe74ae8c4f876c5ce797b2fefd4182d}\label{structsoftnet__data_afbe74ae8c4f876c5ce797b2fefd4182d} 
+\doxymbox{\hyperlink{structlocal__lock__t}{local\+\_\+lock\+\_\+t}} {\bfseries process\+\_\+queue\+\_\+bh\+\_\+lock}
+\item 
+\Hypertarget{structsoftnet__data_a383f6bed2894310b5e5d1f882c6c595a}\label{structsoftnet__data_a383f6bed2894310b5e5d1f882c6c595a} 
+unsigned int {\bfseries processed}
+\item 
+\Hypertarget{structsoftnet__data_a40d6372141c02f520236c4ff3969626a}\label{structsoftnet__data_a40d6372141c02f520236c4ff3969626a} 
+unsigned int {\bfseries time\+\_\+squeeze}
+\item 
+\Hypertarget{structsoftnet__data_aa23cb65342cc99922db279fcd44acf72}\label{structsoftnet__data_aa23cb65342cc99922db279fcd44acf72} 
+struct \doxymbox{\hyperlink{structsoftnet__data}{softnet\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries rps\+\_\+ipi\+\_\+list}
+\item 
+\Hypertarget{structsoftnet__data_a07d58b905f850fefbc848ee0d5b918a7}\label{structsoftnet__data_a07d58b905f850fefbc848ee0d5b918a7} 
+unsigned int {\bfseries received\+\_\+rps}
+\item 
+\Hypertarget{structsoftnet__data_aa31b551da39a31c2be081d9555fb3373}\label{structsoftnet__data_aa31b551da39a31c2be081d9555fb3373} 
+bool {\bfseries in\+\_\+net\+\_\+rx\+\_\+action}
+\item 
+\Hypertarget{structsoftnet__data_a644ed3156892641bcaa2a4f475492eb6}\label{structsoftnet__data_a644ed3156892641bcaa2a4f475492eb6} 
+bool {\bfseries in\+\_\+napi\+\_\+threaded\+\_\+poll}
+\item 
+\Hypertarget{structsoftnet__data_a45b15804e34ace9e1b77b8fb56c6747b}\label{structsoftnet__data_a45b15804e34ace9e1b77b8fb56c6747b} 
+struct \doxymbox{\hyperlink{structsd__flow__limit}{sd\+\_\+flow\+\_\+limit}} \texorpdfstring{$\ast$}{*} {\bfseries flow\+\_\+limit}
+\item 
+\Hypertarget{structsoftnet__data_a81c20e28de3c52e7134bdfee6db1b915}\label{structsoftnet__data_a81c20e28de3c52e7134bdfee6db1b915} 
+struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*} {\bfseries output\+\_\+queue}
+\item 
+\Hypertarget{structsoftnet__data_a8b4f3631ba6bed24d46523fe36f8487a}\label{structsoftnet__data_a8b4f3631ba6bed24d46523fe36f8487a} 
+struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries output\+\_\+queue\+\_\+tailp}
+\item 
+\Hypertarget{structsoftnet__data_a14425dcfd01e950d3016fb162626e7b4}\label{structsoftnet__data_a14425dcfd01e950d3016fb162626e7b4} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries completion\+\_\+queue}
+\item 
+\Hypertarget{structsoftnet__data_a759bebd1de710b1c2c936c722b92c6b1}\label{structsoftnet__data_a759bebd1de710b1c2c936c722b92c6b1} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries xfrm\+\_\+backlog}
+\item 
+\Hypertarget{structsoftnet__data_a205c58acbe1d1e490c223db7e4f9e805}\label{structsoftnet__data_a205c58acbe1d1e490c223db7e4f9e805} 
+struct \doxymbox{\hyperlink{structnetdev__xmit}{netdev\+\_\+xmit}} {\bfseries xmit}
+\item 
+\Hypertarget{structsoftnet__data_a61f2440a37c74df12565affbf5b0ef30}\label{structsoftnet__data_a61f2440a37c74df12565affbf5b0ef30} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a5722f8f0960d1a322a67f72c8ee4f648}\label{structsoftnet__data_a5722f8f0960d1a322a67f72c8ee4f648} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a8df6ef45b80f483da91c6c6a26f596eb}\label{structsoftnet__data_a8df6ef45b80f483da91c6c6a26f596eb} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a58efdf20c9ceeb529255c0a5bf7efab6}\label{structsoftnet__data_a58efdf20c9ceeb529255c0a5bf7efab6} 
+unsigned int {\bfseries input\+\_\+queue\+\_\+head}
+\item 
+\Hypertarget{structsoftnet__data_a83aeb8964de98a9dff76042a67632959}\label{structsoftnet__data_a83aeb8964de98a9dff76042a67632959} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a484b72f2e68d9a72866ddecaeaed140c}\label{structsoftnet__data_a484b72f2e68d9a72866ddecaeaed140c} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a7d4791c31cf16bef917c58587059a107}\label{structsoftnet__data_a7d4791c31cf16bef917c58587059a107} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a729e0ce4709db8ed9a739a1a698e4c30}\label{structsoftnet__data_a729e0ce4709db8ed9a739a1a698e4c30} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a6212975275eab8dff70117312c170966}\label{structsoftnet__data_a6212975275eab8dff70117312c170966} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a5aa5b848bfa2b53896e77b81b301f6d2}\label{structsoftnet__data_a5aa5b848bfa2b53896e77b81b301f6d2} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a3f633ad936ed00aefe743d1afbc47991}\label{structsoftnet__data_a3f633ad936ed00aefe743d1afbc47991} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a218112d5a5911d6d94f97e20b6547274}\label{structsoftnet__data_a218112d5a5911d6d94f97e20b6547274} 
+call\+\_\+single\+\_\+data\+\_\+t {\bfseries csd}
+\item 
+\Hypertarget{structsoftnet__data_a2e71f58b351fe626ab9343ef6c621b68}\label{structsoftnet__data_a2e71f58b351fe626ab9343ef6c621b68} 
+struct \doxymbox{\hyperlink{structsoftnet__data}{softnet\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries rps\+\_\+ipi\+\_\+next}
+\item 
+\Hypertarget{structsoftnet__data_ad32efc25e50a810b67d4380bbf8bcd93}\label{structsoftnet__data_ad32efc25e50a810b67d4380bbf8bcd93} 
+unsigned int {\bfseries cpu}
+\item 
+\Hypertarget{structsoftnet__data_a5c58d0da75b376735c96f9aa2de7b2e1}\label{structsoftnet__data_a5c58d0da75b376735c96f9aa2de7b2e1} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a78dfb820efc2bc54aa65ef6eeac5af7d}\label{structsoftnet__data_a78dfb820efc2bc54aa65ef6eeac5af7d} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a3d8df245675f65e8f9ca184ab0d13b1d}\label{structsoftnet__data_a3d8df245675f65e8f9ca184ab0d13b1d} 
+long int {\bfseries pad} \+[3]\+
+\item 
+\Hypertarget{structsoftnet__data_a56ffa92c4aa21aa733ff6774d931e681}\label{structsoftnet__data_a56ffa92c4aa21aa733ff6774d931e681} 
+unsigned int {\bfseries input\+\_\+queue\+\_\+tail}
+\item 
+\Hypertarget{structsoftnet__data_ada7bd62e387c3d1d150da980229486e0}\label{structsoftnet__data_ada7bd62e387c3d1d150da980229486e0} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries input\+\_\+pkt\+\_\+queue}
+\item 
+\Hypertarget{structsoftnet__data_a985b97ce25e49986d139bc0568adcb05}\label{structsoftnet__data_a985b97ce25e49986d139bc0568adcb05} 
+struct \doxymbox{\hyperlink{structnapi__struct}{napi\+\_\+struct}} {\bfseries backlog}
+\item 
+\Hypertarget{structsoftnet__data_ab5ace0438c0c4a520456cbe15dc10e05}\label{structsoftnet__data_ab5ace0438c0c4a520456cbe15dc10e05} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_ab7a51917f4ab7db8790b49ecfd8ae29a}\label{structsoftnet__data_ab7a51917f4ab7db8790b49ecfd8ae29a} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_acd9809041bd0eece8cc2ca0dc8957ce3}\label{structsoftnet__data_acd9809041bd0eece8cc2ca0dc8957ce3} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a3df7b76ea2893b6ec8893a63dc8b0473}\label{structsoftnet__data_a3df7b76ea2893b6ec8893a63dc8b0473} 
+struct \doxymbox{\hyperlink{structnuma__drop__counters}{numa\+\_\+drop\+\_\+counters}} {\bfseries drop\+\_\+counters}
+\item 
+\Hypertarget{structsoftnet__data_a6a50d9392cd46ac8378806fea4d5910b}\label{structsoftnet__data_a6a50d9392cd46ac8378806fea4d5910b} 
+int {\bfseries defer\+\_\+ipi\+\_\+scheduled}
+\item 
+\Hypertarget{structsoftnet__data_a344c9396013bdc4fdaf0cbb735f30faf}\label{structsoftnet__data_a344c9396013bdc4fdaf0cbb735f30faf} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a023017372d6ec499d41a25b42cd792ea}\label{structsoftnet__data_a023017372d6ec499d41a25b42cd792ea} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_a6a20a733529793866736e955f9f4cc7f}\label{structsoftnet__data_a6a20a733529793866736e955f9f4cc7f} 
+long :\+ 64
+\item 
+\Hypertarget{structsoftnet__data_aff32a239d3bcd082e05c909dbb643532}\label{structsoftnet__data_aff32a239d3bcd082e05c909dbb643532} 
+call\+\_\+single\+\_\+data\+\_\+t {\bfseries defer\+\_\+csd}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

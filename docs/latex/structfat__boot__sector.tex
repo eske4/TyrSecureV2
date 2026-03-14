@@ -1,0 +1,82 @@
+\doxysection{fat\+\_\+boot\+\_\+sector Struct Reference}
+\hypertarget{structfat__boot__sector}{}\label{structfat__boot__sector}\index{fat\_boot\_sector@{fat\_boot\_sector}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfat__boot__sector_a804b862584ac5aac256738f454705a3f}\label{structfat__boot__sector_a804b862584ac5aac256738f454705a3f} 
+\+\_\+\+\_\+u8 {\bfseries ignored} \+[3]\+
+\item 
+\Hypertarget{structfat__boot__sector_ae2b20012ac2c6c958ff73492cc2761aa}\label{structfat__boot__sector_ae2b20012ac2c6c958ff73492cc2761aa} 
+\+\_\+\+\_\+u8 {\bfseries system\+\_\+id} \+[8]\+
+\item 
+\Hypertarget{structfat__boot__sector_ab371a04a7e64087beb225ff991258435}\label{structfat__boot__sector_ab371a04a7e64087beb225ff991258435} 
+\+\_\+\+\_\+u8 {\bfseries sector\+\_\+size} \+[2]\+
+\item 
+\Hypertarget{structfat__boot__sector_ad2fc0c478e85f7a8b04b5b766a79c667}\label{structfat__boot__sector_ad2fc0c478e85f7a8b04b5b766a79c667} 
+\+\_\+\+\_\+u8 {\bfseries sec\+\_\+per\+\_\+clus}
+\item 
+\Hypertarget{structfat__boot__sector_aea10a2aef4689d10ee0f5cf8d0c8ac6d}\label{structfat__boot__sector_aea10a2aef4689d10ee0f5cf8d0c8ac6d} 
+\+\_\+\+\_\+le16 {\bfseries reserved}
+\item 
+\Hypertarget{structfat__boot__sector_a0b5e5157c146675e6e00d2f5e3a97baa}\label{structfat__boot__sector_a0b5e5157c146675e6e00d2f5e3a97baa} 
+\+\_\+\+\_\+u8 {\bfseries fats}
+\item 
+\Hypertarget{structfat__boot__sector_a91d223786d6376dcb78faae12fcde976}\label{structfat__boot__sector_a91d223786d6376dcb78faae12fcde976} 
+\+\_\+\+\_\+u8 {\bfseries dir\+\_\+entries} \+[2]\+
+\item 
+\Hypertarget{structfat__boot__sector_ab39fb3e25ca29edc1535c4a7a2802d9b}\label{structfat__boot__sector_ab39fb3e25ca29edc1535c4a7a2802d9b} 
+\+\_\+\+\_\+u8 {\bfseries sectors} \+[2]\+
+\item 
+\Hypertarget{structfat__boot__sector_a02debed5b0a8595ba984ea0d2d5b0307}\label{structfat__boot__sector_a02debed5b0a8595ba984ea0d2d5b0307} 
+\+\_\+\+\_\+u8 {\bfseries media}
+\item 
+\Hypertarget{structfat__boot__sector_a71799a7ebcfebb4e5b3f6800a1136a74}\label{structfat__boot__sector_a71799a7ebcfebb4e5b3f6800a1136a74} 
+\+\_\+\+\_\+le16 {\bfseries fat\+\_\+length}
+\item 
+\Hypertarget{structfat__boot__sector_a4eb48460f8d1ef496d1845d0edeeb07f}\label{structfat__boot__sector_a4eb48460f8d1ef496d1845d0edeeb07f} 
+\+\_\+\+\_\+le16 {\bfseries secs\+\_\+track}
+\item 
+\Hypertarget{structfat__boot__sector_aa01c9ab497cfb5b9c84d16d8ac6459da}\label{structfat__boot__sector_aa01c9ab497cfb5b9c84d16d8ac6459da} 
+\+\_\+\+\_\+le16 {\bfseries heads}
+\item 
+\Hypertarget{structfat__boot__sector_a41a8367c5e209e2335089e8fc1f0c2c2}\label{structfat__boot__sector_a41a8367c5e209e2335089e8fc1f0c2c2} 
+\+\_\+\+\_\+le32 {\bfseries hidden}
+\item 
+\Hypertarget{structfat__boot__sector_a2ecd39b74b589a9e69ff7c32f0e2ceae}\label{structfat__boot__sector_a2ecd39b74b589a9e69ff7c32f0e2ceae} 
+\+\_\+\+\_\+le32 {\bfseries total\+\_\+sect}
+\item 
+\Hypertarget{structfat__boot__sector_a59566d7808201268d6b51a2e712b4c76}\label{structfat__boot__sector_a59566d7808201268d6b51a2e712b4c76} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u8 {\bfseries drive\_number}\\
+\>\>\_\_u8 {\bfseries state}\\
+\>\>\_\_u8 {\bfseries signature}\\
+\>\>\_\_u8 {\bfseries vol\_id} \+[4]\+\\
+\>\>\_\_u8 {\bfseries vol\_label} \+[11]\+\\
+\>\>\_\_u8 {\bfseries fs\_type} \+[8]\+\\
+\>\} {\bfseries fat16}\\
+\>struct \{\\
+\>\>\_\_le32 {\bfseries length}\\
+\>\>\_\_le16 {\bfseries flags}\\
+\>\>\_\_u8 {\bfseries version} \+[2]\+\\
+\>\>\_\_le32 {\bfseries root\_cluster}\\
+\>\>\_\_le16 {\bfseries info\_sector}\\
+\>\>\_\_le16 {\bfseries backup\_boot}\\
+\>\>\_\_le16 {\bfseries reserved2} \+[6]\+\\
+\>\>\_\_u8 {\bfseries drive\_number}\\
+\>\>\_\_u8 {\bfseries state}\\
+\>\>\_\_u8 {\bfseries signature}\\
+\>\>\_\_u8 {\bfseries vol\_id} \+[4]\+\\
+\>\>\_\_u8 {\bfseries vol\_label} \+[11]\+\\
+\>\>\_\_u8 {\bfseries fs\_type} \+[8]\+\\
+\>\} {\bfseries fat32}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

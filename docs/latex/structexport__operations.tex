@@ -1,0 +1,46 @@
+\doxysection{export\+\_\+operations Struct Reference}
+\hypertarget{structexport__operations}{}\label{structexport__operations}\index{export\_operations@{export\_operations}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structexport__operations_a9a59d2c6d2b62c5a3888ebea2bda6cdc}\label{structexport__operations_a9a59d2c6d2b62c5a3888ebea2bda6cdc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries encode\+\_\+fh} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+u32 \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structexport__operations_ac52bd8de61cb6909e2d61d9769b10d44}\label{structexport__operations_ac52bd8de61cb6909e2d61d9769b10d44} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries fh\+\_\+to\+\_\+dentry} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfid}{fid}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structexport__operations_aa72e289a52f3ada8505b8c575fd8fb33}\label{structexport__operations_aa72e289a52f3ada8505b8c575fd8fb33} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries fh\+\_\+to\+\_\+parent} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfid}{fid}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structexport__operations_aca2bd4b97f3a8ef0ec4c698e5123d100}\label{structexport__operations_aca2bd4b97f3a8ef0ec4c698e5123d100} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+name} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structexport__operations_a2a7828d2cf02cb456717790885f2165c}\label{structexport__operations_a2a7828d2cf02cb456717790885f2165c} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+parent} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structexport__operations_a02818d88fe339495a8666ed1da548936}\label{structexport__operations_a02818d88fe339495a8666ed1da548936} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries commit\+\_\+metadata} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structexport__operations_a139543ee6efc6ff37f259e7ccfe1fb8f}\label{structexport__operations_a139543ee6efc6ff37f259e7ccfe1fb8f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+uuid} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structexport__operations_a5b31d2093fb0d466bfb4e1c5ff272f06}\label{structexport__operations_a5b31d2093fb0d466bfb4e1c5ff272f06} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+blocks} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, loff\+\_\+t, u64, struct \doxymbox{\hyperlink{structiomap}{iomap}} \texorpdfstring{$\ast$}{*}, bool, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structexport__operations_a4347675ecb23d7da43aab68fd5b8dd2a}\label{structexport__operations_a4347675ecb23d7da43aab68fd5b8dd2a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries commit\+\_\+blocks} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiomap}{iomap}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structiattr}{iattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structexport__operations_ad360381954baa0f6de2dc7589a67ec19}\label{structexport__operations_ad360381954baa0f6de2dc7589a67ec19} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries permission} )(struct \doxymbox{\hyperlink{structhandle__to__path__ctx}{handle\+\_\+to\+\_\+path\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structexport__operations_a6de825b2cc856c6d9eb38fc3b362887b}\label{structexport__operations_a6de825b2cc856c6d9eb38fc3b362887b} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries open} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structexport__operations_a94bfdf26473873079d5986e4a6efda74}\label{structexport__operations_a94bfdf26473873079d5986e4a6efda74} 
+long unsigned int {\bfseries flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

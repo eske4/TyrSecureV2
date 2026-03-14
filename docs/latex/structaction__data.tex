@@ -1,0 +1,58 @@
+\doxysection{action\+\_\+data Struct Reference}
+\hypertarget{structaction__data}{}\label{structaction__data}\index{action\_data@{action\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structaction__data_a1008cce246211ccda95d13d5eb43e7df}\label{structaction__data_a1008cce246211ccda95d13d5eb43e7df} 
+enum handler\+\_\+id {\bfseries handler}
+\item 
+\Hypertarget{structaction__data_aa979d3fa55d557816cf8eff75e4bcd13}\label{structaction__data_aa979d3fa55d557816cf8eff75e4bcd13} 
+enum action\+\_\+id {\bfseries action}
+\item 
+\Hypertarget{structaction__data_a5ced349dd729a81eb2488a59a9bebb3f}\label{structaction__data_a5ced349dd729a81eb2488a59a9bebb3f} 
+char \texorpdfstring{$\ast$}{*} {\bfseries action\+\_\+name}
+\item 
+\Hypertarget{structaction__data_aff2e755c7a32aaf37c24266aafa5c091}\label{structaction__data_aff2e755c7a32aaf37c24266aafa5c091} 
+action\+\_\+fn\+\_\+t {\bfseries fn}
+\item 
+\Hypertarget{structaction__data_a84b3fe58aad304b502cb2f5fbd884401}\label{structaction__data_a84b3fe58aad304b502cb2f5fbd884401} 
+unsigned int {\bfseries n\+\_\+params}
+\item 
+\Hypertarget{structaction__data_ae8ee5062911dbfcdb2957f109da9b197}\label{structaction__data_ae8ee5062911dbfcdb2957f109da9b197} 
+char \texorpdfstring{$\ast$}{*} {\bfseries params} \+[64]\+
+\item 
+\Hypertarget{structaction__data_afa90c0f63b7b5ff733b6c2ffafd6c693}\label{structaction__data_afa90c0f63b7b5ff733b6c2ffafd6c693} 
+unsigned int {\bfseries var\+\_\+ref\+\_\+idx} \+[64]\+
+\item 
+\Hypertarget{structaction__data_ad525705677d55f9a9b67a5f57c2f0a8a}\label{structaction__data_ad525705677d55f9a9b67a5f57c2f0a8a} 
+struct \doxymbox{\hyperlink{structsynth__event}{synth\+\_\+event}} \texorpdfstring{$\ast$}{*} {\bfseries synth\+\_\+event}
+\item 
+\Hypertarget{structaction__data_af79273c6199334b2ba55c5304b12f9b5}\label{structaction__data_af79273c6199334b2ba55c5304b12f9b5} 
+bool {\bfseries use\+\_\+trace\+\_\+keyword}
+\item 
+\Hypertarget{structaction__data_a8cfde20167a01727d6889b325ed222fa}\label{structaction__data_a8cfde20167a01727d6889b325ed222fa} 
+char \texorpdfstring{$\ast$}{*} {\bfseries synth\+\_\+event\+\_\+name}
+\item 
+\Hypertarget{structaction__data_a4a93a22594c9771a390556817a2f17d7}\label{structaction__data_a4a93a22594c9771a390556817a2f17d7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>char \texorpdfstring{$\ast$}{*} {\bfseries event}\\
+\>\>char \texorpdfstring{$\ast$}{*} {\bfseries event\_system}\\
+\>\} {\bfseries match\_data}\\
+\>struct \{\\
+\>\>char \texorpdfstring{$\ast$}{*} {\bfseries var\_str}\\
+\>\>struct \doxymbox{\hyperlink{structhist__field}{hist\_field}} \texorpdfstring{$\ast$}{*} {\bfseries var\_ref}\\
+\>\>struct \doxymbox{\hyperlink{structhist__field}{hist\_field}} \texorpdfstring{$\ast$}{*} {\bfseries track\_var}\\
+\>\>check\_track\_val\_fn\_t {\bfseries check\_val}\\
+\>\>action\_fn\_t {\bfseries save\_data}\\
+\>\} {\bfseries track\_data}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,97 @@
+\doxysection{xdp\+\_\+sock Struct Reference}
+\hypertarget{structxdp__sock}{}\label{structxdp__sock}\index{xdp\_sock@{xdp\_sock}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxdp__sock_afb6e26abc25c0723af3abbd165c8b5e7}\label{structxdp__sock_afb6e26abc25c0723af3abbd165c8b5e7} 
+enum \{ {\bfseries XSK\+\_\+\+READY} = 0
+, {\bfseries XSK\+\_\+\+BOUND} = 1
+, {\bfseries XSK\+\_\+\+UNBOUND} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxdp__sock_a3e9c47c84211a57d1a82c71b542946f9}\label{structxdp__sock_a3e9c47c84211a57d1a82c71b542946f9} 
+struct \doxymbox{\hyperlink{structsock}{sock}} {\bfseries sk}
+\item 
+\Hypertarget{structxdp__sock_ae1fe05d1c1f7d0fe20c406704908eedf}\label{structxdp__sock_ae1fe05d1c1f7d0fe20c406704908eedf} 
+long :\+ 64
+\item 
+\Hypertarget{structxdp__sock_a8aabe499cde8f9903951946cf31d465d}\label{structxdp__sock_a8aabe499cde8f9903951946cf31d465d} 
+long :\+ 64
+\item 
+\Hypertarget{structxdp__sock_a9c21e0cb12ad595a7aa782f09a03eda4}\label{structxdp__sock_a9c21e0cb12ad595a7aa782f09a03eda4} 
+long :\+ 64
+\item 
+\Hypertarget{structxdp__sock_ab6970a7a5a228d74235f99d1f971a302}\label{structxdp__sock_ab6970a7a5a228d74235f99d1f971a302} 
+struct \doxymbox{\hyperlink{structxsk__queue}{xsk\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries rx}
+\item 
+\Hypertarget{structxdp__sock_ad449b001ef8172fcb5c7962946d5df81}\label{structxdp__sock_ad449b001ef8172fcb5c7962946d5df81} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structxdp__sock_ac8c649bf8b0f17075b976336e696ca3d}\label{structxdp__sock_ac8c649bf8b0f17075b976336e696ca3d} 
+struct \doxymbox{\hyperlink{structxdp__umem}{xdp\+\_\+umem}} \texorpdfstring{$\ast$}{*} {\bfseries umem}
+\item 
+\Hypertarget{structxdp__sock_a7cda2d718960e3acb8a33f3112345897}\label{structxdp__sock_a7cda2d718960e3acb8a33f3112345897} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries flush\+\_\+node}
+\item 
+\Hypertarget{structxdp__sock_a582236e31e708cbe8b97240c3cc05ef3}\label{structxdp__sock_a582236e31e708cbe8b97240c3cc05ef3} 
+struct \doxymbox{\hyperlink{structxsk__buff__pool}{xsk\+\_\+buff\+\_\+pool}} \texorpdfstring{$\ast$}{*} {\bfseries pool}
+\item 
+\Hypertarget{structxdp__sock_a568d41dd66502e486ed257db360a1a97}\label{structxdp__sock_a568d41dd66502e486ed257db360a1a97} 
+u16 {\bfseries queue\+\_\+id}
+\item 
+\Hypertarget{structxdp__sock_ae1151496d0790ebee093b1fa2e9dffff}\label{structxdp__sock_ae1151496d0790ebee093b1fa2e9dffff} 
+bool {\bfseries zc}
+\item 
+\Hypertarget{structxdp__sock_a3fed9300746eb94f8c1428ca8e903392}\label{structxdp__sock_a3fed9300746eb94f8c1428ca8e903392} 
+bool {\bfseries sg}
+\item 
+\Hypertarget{structxdp__sock_a8e37b6f0151c80e0545325b241d2c583}\label{structxdp__sock_a8e37b6f0151c80e0545325b241d2c583} 
+enum xdp\+\_\+sock::\+ \{ ... \}  {\bfseries state}
+\item 
+\Hypertarget{structxdp__sock_afc13110046adffe722be4bf1b15cfff6}\label{structxdp__sock_afc13110046adffe722be4bf1b15cfff6} 
+long :\+ 64
+\item 
+\Hypertarget{structxdp__sock_abd22f2a382a6e2ab83cc99f275d49a69}\label{structxdp__sock_abd22f2a382a6e2ab83cc99f275d49a69} 
+struct \doxymbox{\hyperlink{structxsk__queue}{xsk\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries tx}
+\item 
+\Hypertarget{structxdp__sock_aeb2af8b5d69b17833d5da181524d92a2}\label{structxdp__sock_aeb2af8b5d69b17833d5da181524d92a2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tx\+\_\+list}
+\item 
+\Hypertarget{structxdp__sock_abeae3576f688726de45952af7328cd96}\label{structxdp__sock_abeae3576f688726de45952af7328cd96} 
+u32 {\bfseries tx\+\_\+budget\+\_\+spent}
+\item 
+\Hypertarget{structxdp__sock_a3fd379068b778ba3ec5b5af161a22036}\label{structxdp__sock_a3fd379068b778ba3ec5b5af161a22036} 
+u64 {\bfseries rx\+\_\+dropped}
+\item 
+\Hypertarget{structxdp__sock_a7c65a456e9752e9d5271af04ccb8b0d8}\label{structxdp__sock_a7c65a456e9752e9d5271af04ccb8b0d8} 
+u64 {\bfseries rx\+\_\+queue\+\_\+full}
+\item 
+\Hypertarget{structxdp__sock_a84de9f7ee75e80a5dc76e9841aa48ffd}\label{structxdp__sock_a84de9f7ee75e80a5dc76e9841aa48ffd} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries skb}
+\item 
+\Hypertarget{structxdp__sock_a1a9c32d2faadb25567966834c18c76f2}\label{structxdp__sock_a1a9c32d2faadb25567966834c18c76f2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries map\+\_\+list}
+\item 
+\Hypertarget{structxdp__sock_a5e35ac524678fa01c4ea062c5d85ca90}\label{structxdp__sock_a5e35ac524678fa01c4ea062c5d85ca90} 
+spinlock\+\_\+t {\bfseries map\+\_\+list\+\_\+lock}
+\item 
+\Hypertarget{structxdp__sock_ab6a844dd970ef397b2d9868b12de4b31}\label{structxdp__sock_ab6a844dd970ef397b2d9868b12de4b31} 
+u32 {\bfseries max\+\_\+tx\+\_\+budget}
+\item 
+\Hypertarget{structxdp__sock_a41fb82444018ff31dda4adfeaa7bd12a}\label{structxdp__sock_a41fb82444018ff31dda4adfeaa7bd12a} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structxdp__sock_a9b92f0300769012a1531a9b070f6e94d}\label{structxdp__sock_a9b92f0300769012a1531a9b070f6e94d} 
+struct \doxymbox{\hyperlink{structxsk__queue}{xsk\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries fq\+\_\+tmp}
+\item 
+\Hypertarget{structxdp__sock_a9fd0e82671fe49e4d90430953105f2ab}\label{structxdp__sock_a9fd0e82671fe49e4d90430953105f2ab} 
+struct \doxymbox{\hyperlink{structxsk__queue}{xsk\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries cq\+\_\+tmp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,202 @@
+\doxysection{usb\+\_\+device Struct Reference}
+\hypertarget{structusb__device}{}\label{structusb__device}\index{usb\_device@{usb\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusb__device_a4878dc1624b165aedbaac7130488eb16}\label{structusb__device_a4878dc1624b165aedbaac7130488eb16} 
+int {\bfseries devnum}
+\item 
+\Hypertarget{structusb__device_ad35b80fe08918b8030e54ef386378b88}\label{structusb__device_ad35b80fe08918b8030e54ef386378b88} 
+char {\bfseries devpath} \+[16]\+
+\item 
+\Hypertarget{structusb__device_a45853538fea647ff173a4cae7bc1fc9c}\label{structusb__device_a45853538fea647ff173a4cae7bc1fc9c} 
+u32 {\bfseries route}
+\item 
+\Hypertarget{structusb__device_aa75bbea6a879460b39216453323d177f}\label{structusb__device_aa75bbea6a879460b39216453323d177f} 
+enum usb\+\_\+device\+\_\+state {\bfseries state}
+\item 
+\Hypertarget{structusb__device_a1b3f4becfd9fbfae80074fc2e76ea6a8}\label{structusb__device_a1b3f4becfd9fbfae80074fc2e76ea6a8} 
+enum usb\+\_\+device\+\_\+speed {\bfseries speed}
+\item 
+\Hypertarget{structusb__device_aef54247ef738fb064edcfec71edbf815}\label{structusb__device_aef54247ef738fb064edcfec71edbf815} 
+unsigned int {\bfseries rx\+\_\+lanes}
+\item 
+\Hypertarget{structusb__device_a2571185f4c627d8cf97d4dc41979a197}\label{structusb__device_a2571185f4c627d8cf97d4dc41979a197} 
+unsigned int {\bfseries tx\+\_\+lanes}
+\item 
+\Hypertarget{structusb__device_a44c7662603300fa6fe0d310682906313}\label{structusb__device_a44c7662603300fa6fe0d310682906313} 
+enum usb\+\_\+ssp\+\_\+rate {\bfseries ssp\+\_\+rate}
+\item 
+\Hypertarget{structusb__device_a579e455a18916db8a4dddbefd8449f17}\label{structusb__device_a579e455a18916db8a4dddbefd8449f17} 
+struct \doxymbox{\hyperlink{structusb__tt}{usb\+\_\+tt}} \texorpdfstring{$\ast$}{*} {\bfseries tt}
+\item 
+\Hypertarget{structusb__device_a14918551fbbe76e5c0131c572fc8df46}\label{structusb__device_a14918551fbbe76e5c0131c572fc8df46} 
+int {\bfseries ttport}
+\item 
+\Hypertarget{structusb__device_aee392549f690381ffd197619281d2ba6}\label{structusb__device_aee392549f690381ffd197619281d2ba6} 
+unsigned int {\bfseries toggle} \+[2]\+
+\item 
+\Hypertarget{structusb__device_aeaa724c5d43a108402635ea19bdf4508}\label{structusb__device_aeaa724c5d43a108402635ea19bdf4508} 
+struct \doxymbox{\hyperlink{structusb__device}{usb\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structusb__device_a532e474ebc2a6bfa9512e6fa1aaedf3c}\label{structusb__device_a532e474ebc2a6bfa9512e6fa1aaedf3c} 
+struct \doxymbox{\hyperlink{structusb__bus}{usb\+\_\+bus}} \texorpdfstring{$\ast$}{*} {\bfseries bus}
+\item 
+\Hypertarget{structusb__device_a6d4ab5a0f166dede613dc6ab466a2d73}\label{structusb__device_a6d4ab5a0f166dede613dc6ab466a2d73} 
+struct \doxymbox{\hyperlink{structusb__host__endpoint}{usb\+\_\+host\+\_\+endpoint}} {\bfseries ep0}
+\item 
+\Hypertarget{structusb__device_a85dfa30f89201ac0c8af2d775fe8d9a8}\label{structusb__device_a85dfa30f89201ac0c8af2d775fe8d9a8} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structusb__device_a33bbd71be994f58bf95c34f8a56db11f}\label{structusb__device_a33bbd71be994f58bf95c34f8a56db11f} 
+struct \doxymbox{\hyperlink{structusb__device__descriptor}{usb\+\_\+device\+\_\+descriptor}} {\bfseries descriptor}
+\item 
+\Hypertarget{structusb__device_afc0dbffa4a2441611c113956cb54bd60}\label{structusb__device_afc0dbffa4a2441611c113956cb54bd60} 
+struct \doxymbox{\hyperlink{structusb__host__bos}{usb\+\_\+host\+\_\+bos}} \texorpdfstring{$\ast$}{*} {\bfseries bos}
+\item 
+\Hypertarget{structusb__device_a9829486ddf9dac0d3421c1683d0577cc}\label{structusb__device_a9829486ddf9dac0d3421c1683d0577cc} 
+struct \doxymbox{\hyperlink{structusb__host__config}{usb\+\_\+host\+\_\+config}} \texorpdfstring{$\ast$}{*} {\bfseries config}
+\item 
+\Hypertarget{structusb__device_aea25e81ee81541ef34e02d6bd86e12cb}\label{structusb__device_aea25e81ee81541ef34e02d6bd86e12cb} 
+struct \doxymbox{\hyperlink{structusb__host__config}{usb\+\_\+host\+\_\+config}} \texorpdfstring{$\ast$}{*} {\bfseries actconfig}
+\item 
+\Hypertarget{structusb__device_a3c50eecc9bf2cb4e8efba65f2580abe1}\label{structusb__device_a3c50eecc9bf2cb4e8efba65f2580abe1} 
+struct \doxymbox{\hyperlink{structusb__host__endpoint}{usb\+\_\+host\+\_\+endpoint}} \texorpdfstring{$\ast$}{*} {\bfseries ep\+\_\+in} \+[16]\+
+\item 
+\Hypertarget{structusb__device_a0bbb63e710d4f01800c75628c975e1b3}\label{structusb__device_a0bbb63e710d4f01800c75628c975e1b3} 
+struct \doxymbox{\hyperlink{structusb__host__endpoint}{usb\+\_\+host\+\_\+endpoint}} \texorpdfstring{$\ast$}{*} {\bfseries ep\+\_\+out} \+[16]\+
+\item 
+\Hypertarget{structusb__device_a46d7d5ca26d6c023af5cb05caeea77f9}\label{structusb__device_a46d7d5ca26d6c023af5cb05caeea77f9} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries rawdescriptors}
+\item 
+\Hypertarget{structusb__device_a6b3d76611a95de7328df2c580544c1f9}\label{structusb__device_a6b3d76611a95de7328df2c580544c1f9} 
+short unsigned int {\bfseries bus\+\_\+mA}
+\item 
+\Hypertarget{structusb__device_a9bd80a4f0e2818192d4a028291e64dc2}\label{structusb__device_a9bd80a4f0e2818192d4a028291e64dc2} 
+u8 {\bfseries portnum}
+\item 
+\Hypertarget{structusb__device_ae1a1cb6bd7696aad74cdc1e98fb49f24}\label{structusb__device_ae1a1cb6bd7696aad74cdc1e98fb49f24} 
+u8 {\bfseries level}
+\item 
+\Hypertarget{structusb__device_a1466853fac9bbaf1a3a2982bcad03ded}\label{structusb__device_a1466853fac9bbaf1a3a2982bcad03ded} 
+u8 {\bfseries devaddr}
+\item 
+\Hypertarget{structusb__device_a5791111c92d3c47eb5fb28ad0d894711}\label{structusb__device_a5791111c92d3c47eb5fb28ad0d894711} 
+unsigned int {\bfseries can\+\_\+submit}:\+ 1
+\item 
+\Hypertarget{structusb__device_a079d97410cca982d7023ae712dc46cac}\label{structusb__device_a079d97410cca982d7023ae712dc46cac} 
+unsigned int {\bfseries persist\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structusb__device_ab685695d8f8bb4af38d35e0a5c6ead5f}\label{structusb__device_ab685695d8f8bb4af38d35e0a5c6ead5f} 
+unsigned int {\bfseries reset\+\_\+in\+\_\+progress}:\+ 1
+\item 
+\Hypertarget{structusb__device_a72cccaadc4730ab92cbfe42effc1b3ae}\label{structusb__device_a72cccaadc4730ab92cbfe42effc1b3ae} 
+unsigned int {\bfseries have\+\_\+langid}:\+ 1
+\item 
+\Hypertarget{structusb__device_a77735ee1159914466c070273ec08fb88}\label{structusb__device_a77735ee1159914466c070273ec08fb88} 
+unsigned int {\bfseries authorized}:\+ 1
+\item 
+\Hypertarget{structusb__device_aa60309d74a5d26b4f950f85f5e39b97d}\label{structusb__device_aa60309d74a5d26b4f950f85f5e39b97d} 
+unsigned int {\bfseries authenticated}:\+ 1
+\item 
+\Hypertarget{structusb__device_a3d2c96f2b119ac49b3decf0033d10ff1}\label{structusb__device_a3d2c96f2b119ac49b3decf0033d10ff1} 
+unsigned int {\bfseries lpm\+\_\+capable}:\+ 1
+\item 
+\Hypertarget{structusb__device_a65eb2552fbdb462d47e62198b378d58d}\label{structusb__device_a65eb2552fbdb462d47e62198b378d58d} 
+unsigned int {\bfseries lpm\+\_\+devinit\+\_\+allow}:\+ 1
+\item 
+\Hypertarget{structusb__device_a80a6322a65eef2b1a333ac0c70bbfe71}\label{structusb__device_a80a6322a65eef2b1a333ac0c70bbfe71} 
+unsigned int {\bfseries usb2\+\_\+hw\+\_\+lpm\+\_\+capable}:\+ 1
+\item 
+\Hypertarget{structusb__device_ac6e53c4b25f2a1a05f716a1318fb4f78}\label{structusb__device_ac6e53c4b25f2a1a05f716a1318fb4f78} 
+unsigned int {\bfseries usb2\+\_\+hw\+\_\+lpm\+\_\+besl\+\_\+capable}:\+ 1
+\item 
+\Hypertarget{structusb__device_a6554a4c92d95160357c161c16530e446}\label{structusb__device_a6554a4c92d95160357c161c16530e446} 
+unsigned int {\bfseries usb2\+\_\+hw\+\_\+lpm\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structusb__device_af821ef21d7b9027a3e3a09527c894005}\label{structusb__device_af821ef21d7b9027a3e3a09527c894005} 
+unsigned int {\bfseries usb2\+\_\+hw\+\_\+lpm\+\_\+allowed}:\+ 1
+\item 
+\Hypertarget{structusb__device_ad179aa48cc413815c158bc7574f9e60a}\label{structusb__device_ad179aa48cc413815c158bc7574f9e60a} 
+unsigned int {\bfseries usb3\+\_\+lpm\+\_\+u1\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structusb__device_aaea3f485363ae135b53428f242580ef0}\label{structusb__device_aaea3f485363ae135b53428f242580ef0} 
+unsigned int {\bfseries usb3\+\_\+lpm\+\_\+u2\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structusb__device_aed6daf725430e92b748b9f1c4dccbae6}\label{structusb__device_aed6daf725430e92b748b9f1c4dccbae6} 
+int {\bfseries string\+\_\+langid}
+\item 
+\Hypertarget{structusb__device_ae4a9cabadab5578dee7b103965072bb3}\label{structusb__device_ae4a9cabadab5578dee7b103965072bb3} 
+char \texorpdfstring{$\ast$}{*} {\bfseries product}
+\item 
+\Hypertarget{structusb__device_ade707da1f255a977a254f6c2bdb60a0d}\label{structusb__device_ade707da1f255a977a254f6c2bdb60a0d} 
+char \texorpdfstring{$\ast$}{*} {\bfseries manufacturer}
+\item 
+\Hypertarget{structusb__device_a94b892413786bbdacc6afdaccb30bb1e}\label{structusb__device_a94b892413786bbdacc6afdaccb30bb1e} 
+char \texorpdfstring{$\ast$}{*} {\bfseries serial}
+\item 
+\Hypertarget{structusb__device_ae9deefc6d18978705697089014c7f14f}\label{structusb__device_ae9deefc6d18978705697089014c7f14f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries filelist}
+\item 
+\Hypertarget{structusb__device_a213eb5d575af9294f05ebb393491ea03}\label{structusb__device_a213eb5d575af9294f05ebb393491ea03} 
+int {\bfseries maxchild}
+\item 
+\Hypertarget{structusb__device_a85bfc1960ce9ca880c9383750d503668}\label{structusb__device_a85bfc1960ce9ca880c9383750d503668} 
+u32 {\bfseries quirks}
+\item 
+\Hypertarget{structusb__device_a6abe8a04f4e7b144c0602c5038f8e8b7}\label{structusb__device_a6abe8a04f4e7b144c0602c5038f8e8b7} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries urbnum}
+\item 
+\Hypertarget{structusb__device_ae205f30a1bb074f8ca114f08e60e60ee}\label{structusb__device_ae205f30a1bb074f8ca114f08e60e60ee} 
+long unsigned int {\bfseries active\+\_\+duration}
+\item 
+\Hypertarget{structusb__device_acdb867f188ad0c4da532864cab82e5df}\label{structusb__device_acdb867f188ad0c4da532864cab82e5df} 
+long unsigned int {\bfseries connect\+\_\+time}
+\item 
+\Hypertarget{structusb__device_a329e69e6e59020db60069aeef7e3dbcc}\label{structusb__device_a329e69e6e59020db60069aeef7e3dbcc} 
+unsigned int {\bfseries do\+\_\+remote\+\_\+wakeup}:\+ 1
+\item 
+\Hypertarget{structusb__device_af123bf98f60fb3da54ee9aa1f46377c6}\label{structusb__device_af123bf98f60fb3da54ee9aa1f46377c6} 
+unsigned int {\bfseries reset\+\_\+resume}:\+ 1
+\item 
+\Hypertarget{structusb__device_a539f371d39753a62a9bb43310caa21be}\label{structusb__device_a539f371d39753a62a9bb43310caa21be} 
+unsigned int {\bfseries port\+\_\+is\+\_\+suspended}:\+ 1
+\item 
+\Hypertarget{structusb__device_a7ddf559f076ef3ece39f2dcf5586f083}\label{structusb__device_a7ddf559f076ef3ece39f2dcf5586f083} 
+unsigned int {\bfseries offload\+\_\+at\+\_\+suspend}:\+ 1
+\item 
+\Hypertarget{structusb__device_acab1635f41b3dfa11ee467f7d6625d7f}\label{structusb__device_acab1635f41b3dfa11ee467f7d6625d7f} 
+int {\bfseries offload\+\_\+usage}
+\item 
+\Hypertarget{structusb__device_ab67838db3eddb2bb8dda55e30c202824}\label{structusb__device_ab67838db3eddb2bb8dda55e30c202824} 
+enum usb\+\_\+link\+\_\+tunnel\+\_\+mode {\bfseries tunnel\+\_\+mode}
+\item 
+\Hypertarget{structusb__device_a190a68b95e50dee0046dd5cb3ceea4a1}\label{structusb__device_a190a68b95e50dee0046dd5cb3ceea4a1} 
+struct \doxymbox{\hyperlink{structdevice__link}{device\+\_\+link}} \texorpdfstring{$\ast$}{*} {\bfseries usb4\+\_\+link}
+\item 
+\Hypertarget{structusb__device_a2307d4dfdfb1ded141b088d4118c31a6}\label{structusb__device_a2307d4dfdfb1ded141b088d4118c31a6} 
+int {\bfseries slot\+\_\+id}
+\item 
+\Hypertarget{structusb__device_aece0d92b0d86db218779cd0b4cf457b3}\label{structusb__device_aece0d92b0d86db218779cd0b4cf457b3} 
+struct \doxymbox{\hyperlink{structusb2__lpm__parameters}{usb2\+\_\+lpm\+\_\+parameters}} {\bfseries l1\+\_\+params}
+\item 
+\Hypertarget{structusb__device_a01a46c17228950b210207624e7927355}\label{structusb__device_a01a46c17228950b210207624e7927355} 
+struct \doxymbox{\hyperlink{structusb3__lpm__parameters}{usb3\+\_\+lpm\+\_\+parameters}} {\bfseries u1\+\_\+params}
+\item 
+\Hypertarget{structusb__device_a1897faa1b30304c5e97efcb43894b88f}\label{structusb__device_a1897faa1b30304c5e97efcb43894b88f} 
+struct \doxymbox{\hyperlink{structusb3__lpm__parameters}{usb3\+\_\+lpm\+\_\+parameters}} {\bfseries u2\+\_\+params}
+\item 
+\Hypertarget{structusb__device_a88f44e9f5a4d09377282bae348270b43}\label{structusb__device_a88f44e9f5a4d09377282bae348270b43} 
+unsigned int {\bfseries lpm\+\_\+disable\+\_\+count}
+\item 
+\Hypertarget{structusb__device_a7ec48af3e84c38dbc622a407984a5adc}\label{structusb__device_a7ec48af3e84c38dbc622a407984a5adc} 
+u16 {\bfseries hub\+\_\+delay}
+\item 
+\Hypertarget{structusb__device_a48c99e6f0d373e9e7a4628184512c854}\label{structusb__device_a48c99e6f0d373e9e7a4628184512c854} 
+unsigned int {\bfseries use\+\_\+generic\+\_\+driver}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

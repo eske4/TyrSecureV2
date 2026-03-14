@@ -1,0 +1,47 @@
+\doxysection{dom0\+\_\+vga\+\_\+console\+\_\+info Struct Reference}
+\hypertarget{structdom0__vga__console__info}{}\label{structdom0__vga__console__info}\index{dom0\_vga\_console\_info@{dom0\_vga\_console\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdom0__vga__console__info_aed3abc512345d95c02e9847c4371739c}\label{structdom0__vga__console__info_aed3abc512345d95c02e9847c4371739c} 
+uint8\+\_\+t {\bfseries video\+\_\+type}
+\item 
+\Hypertarget{structdom0__vga__console__info_ac52e36e91686ea1b92c5bc206eecfcf1}\label{structdom0__vga__console__info_ac52e36e91686ea1b92c5bc206eecfcf1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint16\_t {\bfseries font\_height}\\
+\>\>uint16\_t {\bfseries cursor\_x}\\
+\>\>uint16\_t {\bfseries cursor\_y}\\
+\>\>uint16\_t {\bfseries rows}\\
+\>\>uint16\_t {\bfseries columns}\\
+\>\} {\bfseries text\_mode\_3}\\
+\>struct \{\\
+\>\>uint16\_t {\bfseries width}\\
+\>\>uint16\_t {\bfseries height}\\
+\>\>uint16\_t {\bfseries bytes\_per\_line}\\
+\>\>uint16\_t {\bfseries bits\_per\_pixel}\\
+\>\>uint32\_t {\bfseries lfb\_base}\\
+\>\>uint32\_t {\bfseries lfb\_size}\\
+\>\>uint8\_t {\bfseries red\_pos}\\
+\>\>uint8\_t {\bfseries red\_size}\\
+\>\>uint8\_t {\bfseries green\_pos}\\
+\>\>uint8\_t {\bfseries green\_size}\\
+\>\>uint8\_t {\bfseries blue\_pos}\\
+\>\>uint8\_t {\bfseries blue\_size}\\
+\>\>uint8\_t {\bfseries rsvd\_pos}\\
+\>\>uint8\_t {\bfseries rsvd\_size}\\
+\>\>uint32\_t {\bfseries gbl\_caps}\\
+\>\>uint16\_t {\bfseries mode\_attrs}\\
+\>\>uint16\_t {\bfseries pad}\\
+\>\>uint32\_t {\bfseries ext\_lfb\_base}\\
+\>\} {\bfseries vesa\_lfb}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

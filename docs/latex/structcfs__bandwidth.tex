@@ -1,0 +1,64 @@
+\doxysection{cfs\+\_\+bandwidth Struct Reference}
+\hypertarget{structcfs__bandwidth}{}\label{structcfs__bandwidth}\index{cfs\_bandwidth@{cfs\_bandwidth}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcfs__bandwidth_afb7a81558ee6a35d304ddeb34a727a97}\label{structcfs__bandwidth_afb7a81558ee6a35d304ddeb34a727a97} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structcfs__bandwidth_a346a6a13fb1f14f37a213a55535933cf}\label{structcfs__bandwidth_a346a6a13fb1f14f37a213a55535933cf} 
+ktime\+\_\+t {\bfseries period}
+\item 
+\Hypertarget{structcfs__bandwidth_a61947757f8549ff84493c0d4135068a0}\label{structcfs__bandwidth_a61947757f8549ff84493c0d4135068a0} 
+u64 {\bfseries quota}
+\item 
+\Hypertarget{structcfs__bandwidth_a73f75c46c445f8555ea3fa2e69b51364}\label{structcfs__bandwidth_a73f75c46c445f8555ea3fa2e69b51364} 
+u64 {\bfseries runtime}
+\item 
+\Hypertarget{structcfs__bandwidth_a6b4296d26608512a1928d8b4cd79f4a4}\label{structcfs__bandwidth_a6b4296d26608512a1928d8b4cd79f4a4} 
+u64 {\bfseries burst}
+\item 
+\Hypertarget{structcfs__bandwidth_a137170bd8ae5a3711b4d698978c00d2a}\label{structcfs__bandwidth_a137170bd8ae5a3711b4d698978c00d2a} 
+u64 {\bfseries runtime\+\_\+snap}
+\item 
+\Hypertarget{structcfs__bandwidth_a5e922a8ca148d497110f25ee27597893}\label{structcfs__bandwidth_a5e922a8ca148d497110f25ee27597893} 
+s64 {\bfseries hierarchical\+\_\+quota}
+\item 
+\Hypertarget{structcfs__bandwidth_aa884dff13d21630acdb125f3bc4c797b}\label{structcfs__bandwidth_aa884dff13d21630acdb125f3bc4c797b} 
+u8 {\bfseries idle}
+\item 
+\Hypertarget{structcfs__bandwidth_a83f33bd6167e34867c8bb2135e82e87b}\label{structcfs__bandwidth_a83f33bd6167e34867c8bb2135e82e87b} 
+u8 {\bfseries period\+\_\+active}
+\item 
+\Hypertarget{structcfs__bandwidth_aa575400558bcd0e547bca460e9add873}\label{structcfs__bandwidth_aa575400558bcd0e547bca460e9add873} 
+u8 {\bfseries slack\+\_\+started}
+\item 
+\Hypertarget{structcfs__bandwidth_a654f885ee2642aef6afdc2035d523046}\label{structcfs__bandwidth_a654f885ee2642aef6afdc2035d523046} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries period\+\_\+timer}
+\item 
+\Hypertarget{structcfs__bandwidth_abdc65a36c5ce3926bb3684ed0cfa2ab9}\label{structcfs__bandwidth_abdc65a36c5ce3926bb3684ed0cfa2ab9} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries slack\+\_\+timer}
+\item 
+\Hypertarget{structcfs__bandwidth_a4bc8559179022e50c03f39d83c99b046}\label{structcfs__bandwidth_a4bc8559179022e50c03f39d83c99b046} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries throttled\+\_\+cfs\+\_\+rq}
+\item 
+\Hypertarget{structcfs__bandwidth_ab26c7f4a609b4aee19f3d16adaca242f}\label{structcfs__bandwidth_ab26c7f4a609b4aee19f3d16adaca242f} 
+int {\bfseries nr\+\_\+periods}
+\item 
+\Hypertarget{structcfs__bandwidth_a80961551d0d432eb072b08f5b59b041f}\label{structcfs__bandwidth_a80961551d0d432eb072b08f5b59b041f} 
+int {\bfseries nr\+\_\+throttled}
+\item 
+\Hypertarget{structcfs__bandwidth_a984faa6c2b4b617fa2efdc5755b35cdf}\label{structcfs__bandwidth_a984faa6c2b4b617fa2efdc5755b35cdf} 
+int {\bfseries nr\+\_\+burst}
+\item 
+\Hypertarget{structcfs__bandwidth_affced62eea1e9ce7cd264b32c91fe6c6}\label{structcfs__bandwidth_affced62eea1e9ce7cd264b32c91fe6c6} 
+u64 {\bfseries throttled\+\_\+time}
+\item 
+\Hypertarget{structcfs__bandwidth_a4dde4219fae0995e6c0d9c7d5563deea}\label{structcfs__bandwidth_a4dde4219fae0995e6c0d9c7d5563deea} 
+u64 {\bfseries burst\+\_\+time}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

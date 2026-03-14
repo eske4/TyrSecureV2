@@ -1,0 +1,55 @@
+\doxysection{GLauncher.\+hpp}
+\hypertarget{GLauncher_8hpp_source}{}\label{GLauncher_8hpp_source}\index{/home/eske/Documents/git/TyrSecureV2/src/daemon/launcher/include/GLauncher.hpp@{/home/eske/Documents/git/TyrSecureV2/src/daemon/launcher/include/GLauncher.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}daemon/LContext.hpp"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <optional>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <linux/sched.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <sys/syscall.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <sys/types.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }Launcher\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{enum\ class}\ LauncherStatus\ :\ \textcolor{keywordtype}{int}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ Success\ \ \ \ \ \ \ \ \ \ \ \ =\ 0,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ SetGroupsFailed\ \ \ \ =\ 100,}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ SetGidFailed\ \ \ \ \ \ \ =\ 101,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ SetUidFailed\ \ \ \ \ \ \ =\ 102,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ ChdirFailed\ \ \ \ \ \ \ \ =\ 103,}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ NoNewPrivsFailed\ \ \ =\ 104,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ SetDumpableFailed\ \ =\ 105,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ ExecveFailed\ \ \ \ \ \ \ =\ 106}
+\DoxyCodeLine{00020\ \ \ \ \ \};}
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{class\ }GLauncher\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ GLauncher()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \string~GLauncher()\ \{\ stop();\ \}}
+\DoxyCodeLine{00026\ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ GLauncher(\textcolor{keyword}{const}\ GLauncher\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ GLauncher\&\ operator=(\textcolor{keyword}{const}\ GLauncher\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ GLauncher(GLauncher\&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ GLauncher\&\ operator=(GLauncher\&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classLauncher_1_1GLauncher_a08077d040c21b30e553b07065670591c}{setup}}(\textcolor{keyword}{const}\ std::filesystem::path\ \&bin\_path,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::filesystem::path\ \&game\_working\_dir\_path,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{classsys_1_1CGroup}{sys::CGroup}}\&\ cgroup\_parent);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ start();}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ stop();}
+\DoxyCodeLine{00043\ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ isActive()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ctx.has\_value()\ \&\&\ gpid\ !=\ -\/1;\ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ isPrepared()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ctx.has\_value()\ \&\&\ gpid\ ==\ -\/1;\ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ [[nodiscard]]\ pid\_t\ getGpid()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ gpid;\ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structLContext}{LContext}}*\ getSessionInfo()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ launch(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structLContext}{LContext}}\ \&ctx);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::optional<LContext>\ ctx;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ pid\_t\ gpid\ =\ -\/1;}
+\DoxyCodeLine{00058\ \ \ \ \ \};}
+\DoxyCodeLine{00059\ \}}
+
+\end{DoxyCode}

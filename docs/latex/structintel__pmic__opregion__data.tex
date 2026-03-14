@@ -1,0 +1,49 @@
+\doxysection{intel\+\_\+pmic\+\_\+opregion\+\_\+data Struct Reference}
+\hypertarget{structintel__pmic__opregion__data}{}\label{structintel__pmic__opregion__data}\index{intel\_pmic\_opregion\_data@{intel\_pmic\_opregion\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structintel__pmic__opregion__data_afc1ced7a31dede25f2203ccb0b8c803b}\label{structintel__pmic__opregion__data_afc1ced7a31dede25f2203ccb0b8c803b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+power} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, int, int, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structintel__pmic__opregion__data_a69fbb4bea253e7db95cd99626cb8b11a}\label{structintel__pmic__opregion__data_a69fbb4bea253e7db95cd99626cb8b11a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+power} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, int, int, bool)
+\item 
+\Hypertarget{structintel__pmic__opregion__data_a9f81912aa656e3db9c546e2a7de24d33}\label{structintel__pmic__opregion__data_a9f81912aa656e3db9c546e2a7de24d33} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+raw\+\_\+temp} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structintel__pmic__opregion__data_a29bbe544f708deadc76c8192357ed0d9}\label{structintel__pmic__opregion__data_a29bbe544f708deadc76c8192357ed0d9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+aux} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structintel__pmic__opregion__data_afcdd89352946abe0ee80f21181639be9}\label{structintel__pmic__opregion__data_afcdd89352946abe0ee80f21181639be9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+policy} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, int, int, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structintel__pmic__opregion__data_a44e52467d1354eaaf6e5dc0636228435}\label{structintel__pmic__opregion__data_a44e52467d1354eaaf6e5dc0636228435} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+policy} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, int, int, int)
+\item 
+\Hypertarget{structintel__pmic__opregion__data_afe9d2b455bd7a5c9c5774ad9aef8a71e}\label{structintel__pmic__opregion__data_afe9d2b455bd7a5c9c5774ad9aef8a71e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries exec\+\_\+mipi\+\_\+pmic\+\_\+seq\+\_\+element} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, u16, u32, u32, u32)
+\item 
+\Hypertarget{structintel__pmic__opregion__data_a96883a252a4474d9f11b0cd201bd7624}\label{structintel__pmic__opregion__data_a96883a252a4474d9f11b0cd201bd7624} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries lpat\+\_\+raw\+\_\+to\+\_\+temp} )(struct \doxymbox{\hyperlink{structacpi__lpat__conversion__table}{acpi\+\_\+lpat\+\_\+conversion\+\_\+table}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structintel__pmic__opregion__data_a7b66d20c822a6801d43cf6b01361ce70}\label{structintel__pmic__opregion__data_a7b66d20c822a6801d43cf6b01361ce70} 
+const struct \doxymbox{\hyperlink{structpmic__table}{pmic\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries power\+\_\+table}
+\item 
+\Hypertarget{structintel__pmic__opregion__data_af22a651d0023a966308bde777a890074}\label{structintel__pmic__opregion__data_af22a651d0023a966308bde777a890074} 
+int {\bfseries power\+\_\+table\+\_\+count}
+\item 
+\Hypertarget{structintel__pmic__opregion__data_a79c183e3d7c25d050291527c516b6b0b}\label{structintel__pmic__opregion__data_a79c183e3d7c25d050291527c516b6b0b} 
+const struct \doxymbox{\hyperlink{structpmic__table}{pmic\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries thermal\+\_\+table}
+\item 
+\Hypertarget{structintel__pmic__opregion__data_ab42e753df4ac96a7b133c14160cda82f}\label{structintel__pmic__opregion__data_ab42e753df4ac96a7b133c14160cda82f} 
+int {\bfseries thermal\+\_\+table\+\_\+count}
+\item 
+\Hypertarget{structintel__pmic__opregion__data_aac7c87eecacdfd8e438326c827a0c088}\label{structintel__pmic__opregion__data_aac7c87eecacdfd8e438326c827a0c088} 
+int {\bfseries pmic\+\_\+i2c\+\_\+address}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

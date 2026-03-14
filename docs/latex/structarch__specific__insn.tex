@@ -1,0 +1,46 @@
+\doxysection{arch\+\_\+specific\+\_\+insn Struct Reference}
+\hypertarget{structarch__specific__insn}{}\label{structarch__specific__insn}\index{arch\_specific\_insn@{arch\_specific\_insn}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structarch__specific__insn_af32cbdc35fc1be29f2cf524753f033ca}\label{structarch__specific__insn_af32cbdc35fc1be29f2cf524753f033ca} 
+kprobe\+\_\+opcode\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries insn}
+\item 
+\Hypertarget{structarch__specific__insn_ad27a5631f78a58fd80fb9af74aab3cf1}\label{structarch__specific__insn_ad27a5631f78a58fd80fb9af74aab3cf1} 
+unsigned int {\bfseries boostable}:\+ 1
+\item 
+\Hypertarget{structarch__specific__insn_abdf57037370abb07058c01d06889fe37}\label{structarch__specific__insn_abdf57037370abb07058c01d06889fe37} 
+unsigned char {\bfseries size}
+\item 
+\Hypertarget{structarch__specific__insn_acfcf5a7671490f3cb20cbbb33b3e4fc3}\label{structarch__specific__insn_acfcf5a7671490f3cb20cbbb33b3e4fc3} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>unsigned char {\bfseries opcode}\\
+\>struct \{\\
+\>\>unsigned char {\bfseries type}\\
+\>\} {\bfseries jcc}\\
+\>struct \{\\
+\>\>unsigned char {\bfseries type}\\
+\>\>unsigned char {\bfseries asize}\\
+\>\} {\bfseries loop}\\
+\>struct \{\\
+\>\>unsigned char {\bfseries reg}\\
+\>\} {\bfseries indirect}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structarch__specific__insn_a4ae842e9b9fdc69e9fbb56a0164901ce}\label{structarch__specific__insn_a4ae842e9b9fdc69e9fbb56a0164901ce} 
+s32 {\bfseries rel32}
+\item 
+\Hypertarget{structarch__specific__insn_a9139020490ba4dc138d5f4b56b722dc1}\label{structarch__specific__insn_a9139020490ba4dc138d5f4b56b722dc1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries emulate\+\_\+op} )(struct \doxymbox{\hyperlink{structkprobe}{kprobe}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpt__regs}{pt\+\_\+regs}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structarch__specific__insn_aedb8e7962ff2de6c7d61a40211327f73}\label{structarch__specific__insn_aedb8e7962ff2de6c7d61a40211327f73} 
+int {\bfseries tp\+\_\+len}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

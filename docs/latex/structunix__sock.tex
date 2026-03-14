@@ -1,0 +1,88 @@
+\doxysection{unix\+\_\+sock Struct Reference}
+\hypertarget{structunix__sock}{}\label{structunix__sock}\index{unix\_sock@{unix\_sock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structunix__sock_adfa9017c347a8abf23f3536f84180a14}\label{structunix__sock_adfa9017c347a8abf23f3536f84180a14} 
+struct \doxymbox{\hyperlink{structsock}{sock}} {\bfseries sk}
+\item 
+\Hypertarget{structunix__sock_a949e149d52a666bf25e426a6e596dafa}\label{structunix__sock_a949e149d52a666bf25e426a6e596dafa} 
+struct \doxymbox{\hyperlink{structunix__address}{unix\+\_\+address}} \texorpdfstring{$\ast$}{*} {\bfseries addr}
+\item 
+\Hypertarget{structunix__sock_ab03899d3a4ec77d06c4d9f77d73cfd9a}\label{structunix__sock_ab03899d3a4ec77d06c4d9f77d73cfd9a} 
+struct \doxymbox{\hyperlink{structpath}{path}} {\bfseries path}
+\item 
+\Hypertarget{structunix__sock_a3c31e0d4b8289820919db39c2bb1f9f9}\label{structunix__sock_a3c31e0d4b8289820919db39c2bb1f9f9} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries iolock}
+\item 
+\Hypertarget{structunix__sock_a6cf0b5554ce00034661b855366f21ebd}\label{structunix__sock_a6cf0b5554ce00034661b855366f21ebd} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries bindlock}
+\item 
+\Hypertarget{structunix__sock_af000d282fea7419aad9ec3c384bf1147}\label{structunix__sock_af000d282fea7419aad9ec3c384bf1147} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries peer}
+\item 
+\Hypertarget{structunix__sock_a5be98699a82a38093dfeca603d7ef31a}\label{structunix__sock_a5be98699a82a38093dfeca603d7ef31a} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries listener}
+\item 
+\Hypertarget{structunix__sock_a6e3e5f3f3e8dfab03844c23405f994d5}\label{structunix__sock_a6e3e5f3f3e8dfab03844c23405f994d5} 
+struct \doxymbox{\hyperlink{structunix__vertex}{unix\+\_\+vertex}} \texorpdfstring{$\ast$}{*} {\bfseries vertex}
+\item 
+\Hypertarget{structunix__sock_aa28d7e5a09ff181418045d27e7b7fc4b}\label{structunix__sock_aa28d7e5a09ff181418045d27e7b7fc4b} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structunix__sock_a908ff90df73f652414212c4ac1fc063f}\label{structunix__sock_a908ff90df73f652414212c4ac1fc063f} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_a8a07b3d8e7bf318793aa98e8ca2b9747}\label{structunix__sock_a8a07b3d8e7bf318793aa98e8ca2b9747} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_afc30c87f34478300d95b74c1e66f9bbb}\label{structunix__sock_afc30c87f34478300d95b74c1e66f9bbb} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_aee649268f9d6910a8126e98f74594961}\label{structunix__sock_aee649268f9d6910a8126e98f74594961} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_a12281461a28815f3a5444dbc96a482fc}\label{structunix__sock_a12281461a28815f3a5444dbc96a482fc} 
+struct \doxymbox{\hyperlink{structsocket__wq}{socket\+\_\+wq}} {\bfseries peer\+\_\+wq}
+\item 
+\Hypertarget{structunix__sock_a6ee481d38e612e19ceb8b5ab80bf5e59}\label{structunix__sock_a6ee481d38e612e19ceb8b5ab80bf5e59} 
+wait\+\_\+queue\+\_\+entry\+\_\+t {\bfseries peer\+\_\+wake}
+\item 
+\Hypertarget{structunix__sock_ae13ae694392d647f368e4cc11eee1bdc}\label{structunix__sock_ae13ae694392d647f368e4cc11eee1bdc} 
+struct \doxymbox{\hyperlink{structscm__stat}{scm\+\_\+stat}} {\bfseries scm\+\_\+stat}
+\item 
+\Hypertarget{structunix__sock_a8df5d2986a435fd1627b77359f74c4f9}\label{structunix__sock_a8df5d2986a435fd1627b77359f74c4f9} 
+int {\bfseries inq\+\_\+len}
+\item 
+\Hypertarget{structunix__sock_a958dba5c3f25f58866eb7b45119a5a08}\label{structunix__sock_a958dba5c3f25f58866eb7b45119a5a08} 
+bool {\bfseries recvmsg\+\_\+inq}
+\item 
+\Hypertarget{structunix__sock_a0beaca7d5e39f24f60304fc77821209b}\label{structunix__sock_a0beaca7d5e39f24f60304fc77821209b} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries oob\+\_\+skb}
+\item 
+\Hypertarget{structunix__sock_ab666f67233047907e22b5f8c9026e7a7}\label{structunix__sock_ab666f67233047907e22b5f8c9026e7a7} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_a87fb4155e00b4d2b9cba4a4658792839}\label{structunix__sock_a87fb4155e00b4d2b9cba4a4658792839} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_a81031f371e54c93613e07282d843abad}\label{structunix__sock_a81031f371e54c93613e07282d843abad} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_af26200ed770da7dba3c247361cb06481}\label{structunix__sock_af26200ed770da7dba3c247361cb06481} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_a052523ebfffc1a197ab153eeab2a22d3}\label{structunix__sock_a052523ebfffc1a197ab153eeab2a22d3} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_a27f1d78d3af101af32bc5d365876e9fd}\label{structunix__sock_a27f1d78d3af101af32bc5d365876e9fd} 
+long :\+ 64
+\item 
+\Hypertarget{structunix__sock_a68e481cc1790151b94f9d3e2c278770d}\label{structunix__sock_a68e481cc1790151b94f9d3e2c278770d} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

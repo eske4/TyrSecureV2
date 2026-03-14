@@ -1,0 +1,34 @@
+\doxysection{per\+\_\+cpu\+\_\+dm\+\_\+data Struct Reference}
+\hypertarget{structper__cpu__dm__data}{}\label{structper__cpu__dm__data}\index{per\_cpu\_dm\_data@{per\_cpu\_dm\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structper__cpu__dm__data_af07cb7a309a35dfb30872c45b4279756}\label{structper__cpu__dm__data_af07cb7a309a35dfb30872c45b4279756} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structper__cpu__dm__data_a5ece3304849be50ffdc132416b9c693c}\label{structper__cpu__dm__data_a5ece3304849be50ffdc132416b9c693c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structsk__buff}{sk\_buff}} \texorpdfstring{$\ast$}{*} {\bfseries skb}\\
+\>struct \doxymbox{\hyperlink{structnet__dm__hw__entries}{net\_dm\_hw\_entries}} \texorpdfstring{$\ast$}{*} {\bfseries hw\_entries}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structper__cpu__dm__data_a8c7c1d6103a30f35618bb65921a4d533}\label{structper__cpu__dm__data_a8c7c1d6103a30f35618bb65921a4d533} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries drop\+\_\+queue}
+\item 
+\Hypertarget{structper__cpu__dm__data_a57b2fbc74449c6e6811bbee42a4ad6d4}\label{structper__cpu__dm__data_a57b2fbc74449c6e6811bbee42a4ad6d4} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries dm\+\_\+alert\+\_\+work}
+\item 
+\Hypertarget{structper__cpu__dm__data_a3c6cb0a10c9ec9c35c1f24448b538bc4}\label{structper__cpu__dm__data_a3c6cb0a10c9ec9c35c1f24448b538bc4} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries send\+\_\+timer}
+\item 
+\Hypertarget{structper__cpu__dm__data_ada2db756ed58b09bcc7d646e8790bd9e}\label{structper__cpu__dm__data_ada2db756ed58b09bcc7d646e8790bd9e} 
+struct \doxymbox{\hyperlink{structnet__dm__stats}{net\+\_\+dm\+\_\+stats}} {\bfseries stats}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

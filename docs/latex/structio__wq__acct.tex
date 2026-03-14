@@ -1,0 +1,37 @@
+\doxysection{io\+\_\+wq\+\_\+acct Struct Reference}
+\hypertarget{structio__wq__acct}{}\label{structio__wq__acct}\index{io\_wq\_acct@{io\_wq\_acct}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__wq__acct_a714becde8c6932e4d24454228de21c2e}\label{structio__wq__acct_a714becde8c6932e4d24454228de21c2e} 
+raw\+\_\+spinlock\+\_\+t {\bfseries workers\+\_\+lock}
+\item 
+\Hypertarget{structio__wq__acct_a5a83fc5f13f1cb7960cf24371e44ca0b}\label{structio__wq__acct_a5a83fc5f13f1cb7960cf24371e44ca0b} 
+unsigned int {\bfseries nr\+\_\+workers}
+\item 
+\Hypertarget{structio__wq__acct_a018af8611d6bd96247b0c4a2b10c041c}\label{structio__wq__acct_a018af8611d6bd96247b0c4a2b10c041c} 
+unsigned int {\bfseries max\+\_\+workers}
+\item 
+\Hypertarget{structio__wq__acct_a87f1d7c74d387e3073f0cbd41a959005}\label{structio__wq__acct_a87f1d7c74d387e3073f0cbd41a959005} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nr\+\_\+running}
+\item 
+\Hypertarget{structio__wq__acct_a30a15e34afa9436bae7c32bdcb6f53b6}\label{structio__wq__acct_a30a15e34afa9436bae7c32bdcb6f53b6} 
+struct \doxymbox{\hyperlink{structhlist__nulls__head}{hlist\+\_\+nulls\+\_\+head}} {\bfseries free\+\_\+list}
+\item 
+\Hypertarget{structio__wq__acct_a9a851b9eee072950e291e7d0bbc2d68d}\label{structio__wq__acct_a9a851b9eee072950e291e7d0bbc2d68d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries all\+\_\+list}
+\item 
+\Hypertarget{structio__wq__acct_aa55be881b67cb89489c7143ab857405b}\label{structio__wq__acct_aa55be881b67cb89489c7143ab857405b} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structio__wq__acct_a62c7c08e760d7a057d1f73eba96b989b}\label{structio__wq__acct_a62c7c08e760d7a057d1f73eba96b989b} 
+struct \doxymbox{\hyperlink{structio__wq__work__list}{io\+\_\+wq\+\_\+work\+\_\+list}} {\bfseries work\+\_\+list}
+\item 
+\Hypertarget{structio__wq__acct_aa2f45ce919b7ea0d02d97e2916b12afd}\label{structio__wq__acct_aa2f45ce919b7ea0d02d97e2916b12afd} 
+long unsigned int {\bfseries flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

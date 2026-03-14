@@ -1,0 +1,49 @@
+\doxysection{rtable Struct Reference}
+\hypertarget{structrtable}{}\label{structrtable}\index{rtable@{rtable}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrtable_a5e5625c455fd3da7cc9f47c30bf7dd35}\label{structrtable_a5e5625c455fd3da7cc9f47c30bf7dd35} 
+struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} {\bfseries dst}
+\item 
+\Hypertarget{structrtable_a0c019d3b8731d269cd939c05f5943c3f}\label{structrtable_a0c019d3b8731d269cd939c05f5943c3f} 
+int {\bfseries rt\+\_\+genid}
+\item 
+\Hypertarget{structrtable_ae2335d964da00d6ee611e37b2edfb744}\label{structrtable_ae2335d964da00d6ee611e37b2edfb744} 
+unsigned int {\bfseries rt\+\_\+flags}
+\item 
+\Hypertarget{structrtable_a09a384759dfcef1a358ad371b93bb1fe}\label{structrtable_a09a384759dfcef1a358ad371b93bb1fe} 
+\+\_\+\+\_\+u16 {\bfseries rt\+\_\+type}
+\item 
+\Hypertarget{structrtable_a4ca0a4cd37a4b94b86aa58e672bfd2ee}\label{structrtable_a4ca0a4cd37a4b94b86aa58e672bfd2ee} 
+\+\_\+\+\_\+u8 {\bfseries rt\+\_\+is\+\_\+input}
+\item 
+\Hypertarget{structrtable_a5c83241465e7ea15e1073144c5b819a5}\label{structrtable_a5c83241465e7ea15e1073144c5b819a5} 
+\+\_\+\+\_\+u8 {\bfseries rt\+\_\+uses\+\_\+gateway}
+\item 
+\Hypertarget{structrtable_a0130351831512bcbb30c4a581a57be94}\label{structrtable_a0130351831512bcbb30c4a581a57be94} 
+int {\bfseries rt\+\_\+iif}
+\item 
+\Hypertarget{structrtable_ac0cb74b645a6d5ff8066de7c0c698950}\label{structrtable_ac0cb74b645a6d5ff8066de7c0c698950} 
+u8 {\bfseries rt\+\_\+gw\+\_\+family}
+\item 
+\Hypertarget{structrtable_a1c2677ca82bb77ee30d138168dd47447}\label{structrtable_a1c2677ca82bb77ee30d138168dd47447} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries rt\_gw4}\\
+\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries rt\_gw6}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structrtable_ab5b5b6c4474b803c2dbbce7eafba73b2}\label{structrtable_ab5b5b6c4474b803c2dbbce7eafba73b2} 
+u32 {\bfseries rt\+\_\+mtu\+\_\+locked}:\+ 1
+\item 
+\Hypertarget{structrtable_ad2470c77b45bd6716062e80d6c3e5221}\label{structrtable_ad2470c77b45bd6716062e80d6c3e5221} 
+u32 {\bfseries rt\+\_\+pmtu}:\+ 31
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

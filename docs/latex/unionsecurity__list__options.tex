@@ -1,0 +1,832 @@
+\doxysection{security\+\_\+list\+\_\+options Union Reference}
+\hypertarget{unionsecurity__list__options}{}\label{unionsecurity__list__options}\index{security\_list\_options@{security\_list\_options}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionsecurity__list__options_ae1443ed05c150ccb6d7a7cc8ba179c6c}\label{unionsecurity__list__options_ae1443ed05c150ccb6d7a7cc8ba179c6c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries binder\+\_\+set\+\_\+context\+\_\+mgr} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_acccffb4753fa901457d66766e64d9be6}\label{unionsecurity__list__options_acccffb4753fa901457d66766e64d9be6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries binder\+\_\+transaction} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a4ecea58056c2b2f3cb7947db66ea85e2}\label{unionsecurity__list__options_a4ecea58056c2b2f3cb7947db66ea85e2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries binder\+\_\+transfer\+\_\+binder} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ac55789b5c4a30ab40e721d6609dad7af}\label{unionsecurity__list__options_ac55789b5c4a30ab40e721d6609dad7af} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries binder\+\_\+transfer\+\_\+file} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a06b5fc761d4d12211acf7de52dc18c0b}\label{unionsecurity__list__options_a06b5fc761d4d12211acf7de52dc18c0b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ptrace\+\_\+access\+\_\+check} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_ac2954ea49528e7b34e80ea10d0f04f61}\label{unionsecurity__list__options_ac2954ea49528e7b34e80ea10d0f04f61} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ptrace\+\_\+traceme} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a1287b8e1e4eca125cf5a4d5c5910ed27}\label{unionsecurity__list__options_a1287b8e1e4eca125cf5a4d5c5910ed27} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries capget} )(const struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structkernel__cap__t}{kernel\+\_\+cap\+\_\+t}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structkernel__cap__t}{kernel\+\_\+cap\+\_\+t}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structkernel__cap__t}{kernel\+\_\+cap\+\_\+t}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ad62d35bfb0b5637eca4191698036636f}\label{unionsecurity__list__options_ad62d35bfb0b5637eca4191698036636f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries capset} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const \doxymbox{\hyperlink{structkernel__cap__t}{kernel\+\_\+cap\+\_\+t}} \texorpdfstring{$\ast$}{*}, const \doxymbox{\hyperlink{structkernel__cap__t}{kernel\+\_\+cap\+\_\+t}} \texorpdfstring{$\ast$}{*}, const \doxymbox{\hyperlink{structkernel__cap__t}{kernel\+\_\+cap\+\_\+t}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a1eda5b9c34f5a1d42cec241273e0f84f}\label{unionsecurity__list__options_a1eda5b9c34f5a1d42cec241273e0f84f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries capable} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structuser__namespace}{user\+\_\+namespace}} \texorpdfstring{$\ast$}{*}, int, unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_ad4a90169e33d20a984f7b082dcb9c5e9}\label{unionsecurity__list__options_ad4a90169e33d20a984f7b082dcb9c5e9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries quotactl} )(int, int, int, const struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a9854b147a980867748b93155f500c8d2}\label{unionsecurity__list__options_a9854b147a980867748b93155f500c8d2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries quota\+\_\+on} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a668058b2f7c727bd9a983ef9c9ddc615}\label{unionsecurity__list__options_a668058b2f7c727bd9a983ef9c9ddc615} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries syslog} )(int)
+\item 
+\Hypertarget{unionsecurity__list__options_ac3459cd8958963bf8ac8eba3ae16f5b2}\label{unionsecurity__list__options_ac3459cd8958963bf8ac8eba3ae16f5b2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries settime} )(const struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structtimezone}{timezone}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a71e20a2daeb047f54fbeab0a34937bd3}\label{unionsecurity__list__options_a71e20a2daeb047f54fbeab0a34937bd3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+enough\+\_\+memory} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long int)
+\item 
+\Hypertarget{unionsecurity__list__options_ab16f5608ce3cb7b86a3dcdadebc9c717}\label{unionsecurity__list__options_ab16f5608ce3cb7b86a3dcdadebc9c717} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bprm\+\_\+creds\+\_\+for\+\_\+exec} )(struct \doxymbox{\hyperlink{structlinux__binprm}{linux\+\_\+binprm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0f791c57bf593e2f2b5a4a0a59b6e177}\label{unionsecurity__list__options_a0f791c57bf593e2f2b5a4a0a59b6e177} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bprm\+\_\+creds\+\_\+from\+\_\+file} )(struct \doxymbox{\hyperlink{structlinux__binprm}{linux\+\_\+binprm}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_af2a6806d31fd2edf35f9bd457d041d34}\label{unionsecurity__list__options_af2a6806d31fd2edf35f9bd457d041d34} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bprm\+\_\+check\+\_\+security} )(struct \doxymbox{\hyperlink{structlinux__binprm}{linux\+\_\+binprm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ab817af2ae8108d8186cb6ca59adda15f}\label{unionsecurity__list__options_ab817af2ae8108d8186cb6ca59adda15f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bprm\+\_\+committing\+\_\+creds} )(const struct \doxymbox{\hyperlink{structlinux__binprm}{linux\+\_\+binprm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a40d687ef0b48c1251bd95372bb7600aa}\label{unionsecurity__list__options_a40d687ef0b48c1251bd95372bb7600aa} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bprm\+\_\+committed\+\_\+creds} )(const struct \doxymbox{\hyperlink{structlinux__binprm}{linux\+\_\+binprm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a63f0555d3323c30564aa32e18c1ea1a2}\label{unionsecurity__list__options_a63f0555d3323c30564aa32e18c1ea1a2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+context\+\_\+submount} )(struct \doxymbox{\hyperlink{structfs__context}{fs\+\_\+context}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0f74df2143ed66d5ea2785f86ab0b10f}\label{unionsecurity__list__options_a0f74df2143ed66d5ea2785f86ab0b10f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+context\+\_\+dup} )(struct \doxymbox{\hyperlink{structfs__context}{fs\+\_\+context}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfs__context}{fs\+\_\+context}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a6d139f95bd42079e64bf595248cb31fa}\label{unionsecurity__list__options_a6d139f95bd42079e64bf595248cb31fa} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+context\+\_\+parse\+\_\+param} )(struct \doxymbox{\hyperlink{structfs__context}{fs\+\_\+context}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfs__parameter}{fs\+\_\+parameter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0bf28223edd89ff9223ea4e3fe8bb047}\label{unionsecurity__list__options_a0bf28223edd89ff9223ea4e3fe8bb047} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a04fb7a15b546aeb6b02ea5ef254370f4}\label{unionsecurity__list__options_a04fb7a15b546aeb6b02ea5ef254370f4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+delete} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a9f1fc573ea3bfb161e45d47a74b9ebe6}\label{unionsecurity__list__options_a9f1fc573ea3bfb161e45d47a74b9ebe6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a85d8065c9ce68c65dc15e2dfdc47d729}\label{unionsecurity__list__options_a85d8065c9ce68c65dc15e2dfdc47d729} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+free\+\_\+mnt\+\_\+opts} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aa74e40f61b60bc37388aa7f40896cc66}\label{unionsecurity__list__options_aa74e40f61b60bc37388aa7f40896cc66} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+eat\+\_\+lsm\+\_\+opts} )(char \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0b581d93e4e039e9abfc3ef021a00476}\label{unionsecurity__list__options_a0b581d93e4e039e9abfc3ef021a00476} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+mnt\+\_\+opts\+\_\+compat} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ae330946bf434ad41fd526c88f83f6c09}\label{unionsecurity__list__options_ae330946bf434ad41fd526c88f83f6c09} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+remount} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a2eda795b0fe230ee7a9c14203f8c17da}\label{unionsecurity__list__options_a2eda795b0fe230ee7a9c14203f8c17da} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+kern\+\_\+mount} )(const struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a6dee5d7a9f10a017729951c438928a36}\label{unionsecurity__list__options_a6dee5d7a9f10a017729951c438928a36} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+show\+\_\+options} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ae8355c42dd2bca951d4c59b8795f1653}\label{unionsecurity__list__options_ae8355c42dd2bca951d4c59b8795f1653} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+statfs} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a3e3dbe928665ea837426749e24f5aaea}\label{unionsecurity__list__options_a3e3dbe928665ea837426749e24f5aaea} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+mount} )(const char \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, long unsigned int, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a22265bd7d14b484b8fbab88e8d0091e7}\label{unionsecurity__list__options_a22265bd7d14b484b8fbab88e8d0091e7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+umount} )(struct \doxymbox{\hyperlink{structvfsmount}{vfsmount}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a77ef9f8547400b0019e367720363c034}\label{unionsecurity__list__options_a77ef9f8547400b0019e367720363c034} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+pivotroot} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a097832d8addc04ec946cd7204528d706}\label{unionsecurity__list__options_a097832d8addc04ec946cd7204528d706} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+set\+\_\+mnt\+\_\+opts} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aa0f5ffcbd31661321267bbf9aaa10466}\label{unionsecurity__list__options_aa0f5ffcbd31661321267bbf9aaa10466} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+clone\+\_\+mnt\+\_\+opts} )(const struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a350348d690055f64787517b1665a29b9}\label{unionsecurity__list__options_a350348d690055f64787517b1665a29b9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries move\+\_\+mount} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_adad627abd4ebacfcddffe8819927e780}\label{unionsecurity__list__options_adad627abd4ebacfcddffe8819927e780} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dentry\+\_\+init\+\_\+security} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structqstr}{qstr}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlsm__context}{lsm\+\_\+context}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a76e51fa01a6c1a36f77b2403f3eb4235}\label{unionsecurity__list__options_a76e51fa01a6c1a36f77b2403f3eb4235} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dentry\+\_\+create\+\_\+files\+\_\+as} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structqstr}{qstr}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ac5808b7cc3af27068bd8fa3c31378dcf}\label{unionsecurity__list__options_ac5808b7cc3af27068bd8fa3c31378dcf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+unlink} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a5dbbbf912838a74a0aefe7f579170122}\label{unionsecurity__list__options_a5dbbbf912838a74a0aefe7f579170122} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+mkdir} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, umode\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_a665dd02b8f5032182eafa5a6d69964b3}\label{unionsecurity__list__options_a665dd02b8f5032182eafa5a6d69964b3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+rmdir} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a8cb481a4319fe11874a7d728d216438e}\label{unionsecurity__list__options_a8cb481a4319fe11874a7d728d216438e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+mknod} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, umode\+\_\+t, unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_aae09df83286eb78e3693ecf927a70b8f}\label{unionsecurity__list__options_aae09df83286eb78e3693ecf927a70b8f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+post\+\_\+mknod} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a41bf6b785062f2e7cb5465926f4dac04}\label{unionsecurity__list__options_a41bf6b785062f2e7cb5465926f4dac04} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+truncate} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aa5851c949ee347be792d32cb3f68f9ca}\label{unionsecurity__list__options_aa5851c949ee347be792d32cb3f68f9ca} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+symlink} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aaf2bbb9165eb4c4a3b6bfc21c97af91c}\label{unionsecurity__list__options_aaf2bbb9165eb4c4a3b6bfc21c97af91c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+link} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a1838ce365f8eb6c064a9e77432724518}\label{unionsecurity__list__options_a1838ce365f8eb6c064a9e77432724518} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+rename} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a3096a2ae1a3d4f6664032bb5ab655363}\label{unionsecurity__list__options_a3096a2ae1a3d4f6664032bb5ab655363} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+chmod} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, umode\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_a5697b15094a9eeaab3dd85681c4c38c7}\label{unionsecurity__list__options_a5697b15094a9eeaab3dd85681c4c38c7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+chown} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}}, \doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}})
+\item 
+\Hypertarget{unionsecurity__list__options_ade7d898f519ffc9f77d6e3483b95b900}\label{unionsecurity__list__options_ade7d898f519ffc9f77d6e3483b95b900} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+chroot} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_afee31865ad20441a096511e8028fad2f}\label{unionsecurity__list__options_afee31865ad20441a096511e8028fad2f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+notify} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*}, u64, unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a5612ce7f6d612b730b8edf3525a3343b}\label{unionsecurity__list__options_a5612ce7f6d612b730b8edf3525a3343b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a2d56d39cb5044687df63851271992d4d}\label{unionsecurity__list__options_a2d56d39cb5044687df63851271992d4d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ab518244813653ad81cc58ece20d8cbbf}\label{unionsecurity__list__options_ab518244813653ad81cc58ece20d8cbbf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+free\+\_\+security\+\_\+rcu} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a3919f65abed7e7c496568cfd96afdff9}\label{unionsecurity__list__options_a3919f65abed7e7c496568cfd96afdff9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+init\+\_\+security} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structqstr}{qstr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxattr}{xattr}} \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ac6bb019877fa4c338cb28891945b79e9}\label{unionsecurity__list__options_ac6bb019877fa4c338cb28891945b79e9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+init\+\_\+security\+\_\+anon} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structqstr}{qstr}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a3cee1acb9bddc22611b7a0f41d03a354}\label{unionsecurity__list__options_a3cee1acb9bddc22611b7a0f41d03a354} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+create} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, umode\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_aedfacd70be55c554284041493aa9530d}\label{unionsecurity__list__options_aedfacd70be55c554284041493aa9530d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+post\+\_\+create\+\_\+tmpfile} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aedc45bbe7d847c8afd4225888bd3cf30}\label{unionsecurity__list__options_aedc45bbe7d847c8afd4225888bd3cf30} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+link} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ac3b6e3b1764441da7326bb1137a356c6}\label{unionsecurity__list__options_ac3b6e3b1764441da7326bb1137a356c6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+unlink} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aaa84c3dbc007ca6535b7752eb626d31d}\label{unionsecurity__list__options_aaa84c3dbc007ca6535b7752eb626d31d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+symlink} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a606f9596d1f2e88356d60d007c874044}\label{unionsecurity__list__options_a606f9596d1f2e88356d60d007c874044} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+mkdir} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, umode\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_a50be6fcd69538cd4876f6e945f61e3e6}\label{unionsecurity__list__options_a50be6fcd69538cd4876f6e945f61e3e6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+rmdir} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a3dbe036e9de12f6e8fd05498874d8e73}\label{unionsecurity__list__options_a3dbe036e9de12f6e8fd05498874d8e73} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+mknod} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, umode\+\_\+t, dev\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_ac0d8698dfd0bc71f45dd5b0537362f3f}\label{unionsecurity__list__options_ac0d8698dfd0bc71f45dd5b0537362f3f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+rename} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a749ca68bf3dec9623ee75ac8e0d4a622}\label{unionsecurity__list__options_a749ca68bf3dec9623ee75ac8e0d4a622} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+readlink} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a808b28ed372cb1abf91236a6e1560b57}\label{unionsecurity__list__options_a808b28ed372cb1abf91236a6e1560b57} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+follow\+\_\+link} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{unionsecurity__list__options_a01956a15ad7ca7b1d07fb1013dc456fb}\label{unionsecurity__list__options_a01956a15ad7ca7b1d07fb1013dc456fb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+permission} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a8cd299dfe97210e778df175fb1ce4ec4}\label{unionsecurity__list__options_a8cd299dfe97210e778df175fb1ce4ec4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+setattr} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiattr}{iattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a1e36aea1d59ca6de2ca57b8377ee2dbc}\label{unionsecurity__list__options_a1e36aea1d59ca6de2ca57b8377ee2dbc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+post\+\_\+setattr} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a56f90c0648609daba14766823f1f3cce}\label{unionsecurity__list__options_a56f90c0648609daba14766823f1f3cce} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+getattr} )(const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0cd4e7da3b48d1505738e2429c9137cd}\label{unionsecurity__list__options_a0cd4e7da3b48d1505738e2429c9137cd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+xattr\+\_\+skipcap} )(const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ac96f1e905e9f4277d48acd4240f2152b}\label{unionsecurity__list__options_ac96f1e905e9f4277d48acd4240f2152b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+setxattr} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t, int)
+\item 
+\Hypertarget{unionsecurity__list__options_aec83aa11a9629f4f26722031a1615cd0}\label{unionsecurity__list__options_aec83aa11a9629f4f26722031a1615cd0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+post\+\_\+setxattr} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a3208900cd548cc45ad0d7de5f9ac2be3}\label{unionsecurity__list__options_a3208900cd548cc45ad0d7de5f9ac2be3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+getxattr} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a58a962dbab0a21469adef953d4f8140d}\label{unionsecurity__list__options_a58a962dbab0a21469adef953d4f8140d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+listxattr} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a22aa58fc254f5e4100b5d59bdba09c08}\label{unionsecurity__list__options_a22aa58fc254f5e4100b5d59bdba09c08} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+removexattr} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a7ac0e9d5a9b985765e9ba1ae94f05314}\label{unionsecurity__list__options_a7ac0e9d5a9b985765e9ba1ae94f05314} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+post\+\_\+removexattr} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a45de89f3028fc6f8f6d2a2622fa5803e}\label{unionsecurity__list__options_a45de89f3028fc6f8f6d2a2622fa5803e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+file\+\_\+setattr} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile__kattr}{file\+\_\+kattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ab1348dfdaedc4c07f30f1b898819a7b4}\label{unionsecurity__list__options_ab1348dfdaedc4c07f30f1b898819a7b4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+file\+\_\+getattr} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile__kattr}{file\+\_\+kattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a63220a49dbaa8946a4ed1ed00564c602}\label{unionsecurity__list__options_a63220a49dbaa8946a4ed1ed00564c602} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+set\+\_\+acl} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structposix__acl}{posix\+\_\+acl}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a320b28c4645cda2a27494c7107c18916}\label{unionsecurity__list__options_a320b28c4645cda2a27494c7107c18916} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+post\+\_\+set\+\_\+acl} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structposix__acl}{posix\+\_\+acl}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a5597fd6b882f667b6d11c534903272d5}\label{unionsecurity__list__options_a5597fd6b882f667b6d11c534903272d5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+get\+\_\+acl} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a66002c2a42d8deeed827d017d4741ea8}\label{unionsecurity__list__options_a66002c2a42d8deeed827d017d4741ea8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+remove\+\_\+acl} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aee7a709e322928d525952c553a998c7c}\label{unionsecurity__list__options_aee7a709e322928d525952c553a998c7c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+post\+\_\+remove\+\_\+acl} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a84d55ff6d15f5285330bfb50159582d1}\label{unionsecurity__list__options_a84d55ff6d15f5285330bfb50159582d1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+need\+\_\+killpriv} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a7e50c2233570ecfafa437c55167fce62}\label{unionsecurity__list__options_a7e50c2233570ecfafa437c55167fce62} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+killpriv} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a6c28de040b79d73d6c947d9eff95392d}\label{unionsecurity__list__options_a6c28de040b79d73d6c947d9eff95392d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+getsecurity} )(struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{unionsecurity__list__options_afb143c3e7c1d62bdf301d117e03e6d18}\label{unionsecurity__list__options_afb143c3e7c1d62bdf301d117e03e6d18} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+setsecurity} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a59ae5552aafec8c6cd2f346365df849b}\label{unionsecurity__list__options_a59ae5552aafec8c6cd2f346365df849b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+listsecurity} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_a723c00a328c776397d19c3f5fc561969}\label{unionsecurity__list__options_a723c00a328c776397d19c3f5fc561969} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+getlsmprop} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlsm__prop}{lsm\+\_\+prop}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a2bc9610a60562415c6def18b89fc729b}\label{unionsecurity__list__options_a2bc9610a60562415c6def18b89fc729b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+copy\+\_\+up} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ace11c415ef71cc9292bea23cfec9a18e}\label{unionsecurity__list__options_ace11c415ef71cc9292bea23cfec9a18e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+copy\+\_\+up\+\_\+xattr} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_abdcfe2863d14b95566969b64c94d87d0}\label{unionsecurity__list__options_abdcfe2863d14b95566969b64c94d87d0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+setintegrity} )(const struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, enum lsm\+\_\+integrity\+\_\+type, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_a8b7a49c698c1e6845745e83291aa1297}\label{unionsecurity__list__options_a8b7a49c698c1e6845745e83291aa1297} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries kernfs\+\_\+init\+\_\+security} )(struct \doxymbox{\hyperlink{structkernfs__node}{kernfs\+\_\+node}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkernfs__node}{kernfs\+\_\+node}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a43b4c76562f8017e5db1cfbad8ef65f2}\label{unionsecurity__list__options_a43b4c76562f8017e5db1cfbad8ef65f2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+permission} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a380c9684b1f8dc7af1c5d41361405fd1}\label{unionsecurity__list__options_a380c9684b1f8dc7af1c5d41361405fd1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a8fad25e67f150e28620f27179def9be7}\label{unionsecurity__list__options_a8fad25e67f150e28620f27179def9be7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+release} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ac328d646395f2772a5ee1cd711885695}\label{unionsecurity__list__options_ac328d646395f2772a5ee1cd711885695} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a799c72f56c141ef507a40bf4922ddb53}\label{unionsecurity__list__options_a799c72f56c141ef507a40bf4922ddb53} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_ae657ac0df415da5ed45c748d36f29b8e}\label{unionsecurity__list__options_ae657ac0df415da5ed45c748d36f29b8e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+ioctl\+\_\+compat} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a985de35cdceec1e1038f7ef0dba5a95a}\label{unionsecurity__list__options_a985de35cdceec1e1038f7ef0dba5a95a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mmap\+\_\+addr} )(long unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a048998cb8f34101504a3af9c14d3a820}\label{unionsecurity__list__options_a048998cb8f34101504a3af9c14d3a820} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mmap\+\_\+file} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int, long unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_ab77c58bdfdb3297727ea5b9f6965b0c7}\label{unionsecurity__list__options_ab77c58bdfdb3297727ea5b9f6965b0c7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+mprotect} )(struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a028ca851681f64916772af952a4eafa9}\label{unionsecurity__list__options_a028ca851681f64916772af952a4eafa9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+lock} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a1fd468b6aa69ed0c1a78ede4785bff65}\label{unionsecurity__list__options_a1fd468b6aa69ed0c1a78ede4785bff65} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+fcntl} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a91663185a94dad3ee9c64278038273a8}\label{unionsecurity__list__options_a91663185a94dad3ee9c64278038273a8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+set\+\_\+fowner} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a75fcd72708be3c0d9024eb6c9beb6b66}\label{unionsecurity__list__options_a75fcd72708be3c0d9024eb6c9beb6b66} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+send\+\_\+sigiotask} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfown__struct}{fown\+\_\+struct}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_ad27d069cd11e2518e6042d48efaa222e}\label{unionsecurity__list__options_ad27d069cd11e2518e6042d48efaa222e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+receive} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aabe7bc41ef689f385a1ae918cadbe956}\label{unionsecurity__list__options_aabe7bc41ef689f385a1ae918cadbe956} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+open} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a54d0eb6e112c738e917e16c646570777}\label{unionsecurity__list__options_a54d0eb6e112c738e917e16c646570777} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+post\+\_\+open} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a63916a8f0cf2a99eab94baf5c37e71a1}\label{unionsecurity__list__options_a63916a8f0cf2a99eab94baf5c37e71a1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+truncate} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a2a62de180a858472146f52b5b80f2b10}\label{unionsecurity__list__options_a2a62de180a858472146f52b5b80f2b10} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+alloc} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{unionsecurity__list__options_a293150ccbc4f803f36713159faf11bb2}\label{unionsecurity__list__options_a293150ccbc4f803f36713159faf11bb2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+free} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a97ab3dfcd3a1e005fbee52f4dc9e4ee0}\label{unionsecurity__list__options_a97ab3dfcd3a1e005fbee52f4dc9e4ee0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cred\+\_\+alloc\+\_\+blank} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_ab5337cbaf85b108a6edf46da0c00b84b}\label{unionsecurity__list__options_ab5337cbaf85b108a6edf46da0c00b84b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cred\+\_\+free} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aef9f930d9a374c4f284081d2c64d052e}\label{unionsecurity__list__options_aef9f930d9a374c4f284081d2c64d052e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cred\+\_\+prepare} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_a2048de7112bb566f773d2b746664f126}\label{unionsecurity__list__options_a2048de7112bb566f773d2b746664f126} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cred\+\_\+transfer} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a30bbd4588aad0b98bdac2dfcac94b155}\label{unionsecurity__list__options_a30bbd4588aad0b98bdac2dfcac94b155} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cred\+\_\+getsecid} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ab1daf8542ee17e1bb98e2456810702cf}\label{unionsecurity__list__options_ab1daf8542ee17e1bb98e2456810702cf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cred\+\_\+getlsmprop} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlsm__prop}{lsm\+\_\+prop}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_adec78efe365751107a31690dc511c956}\label{unionsecurity__list__options_adec78efe365751107a31690dc511c956} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries kernel\+\_\+act\+\_\+as} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{unionsecurity__list__options_a7b6e795718e41ccfef6f4cfc8b40aa7c}\label{unionsecurity__list__options_a7b6e795718e41ccfef6f4cfc8b40aa7c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries kernel\+\_\+create\+\_\+files\+\_\+as} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a303971bbf8c6eac9e117a07c9b9918bf}\label{unionsecurity__list__options_a303971bbf8c6eac9e117a07c9b9918bf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries kernel\+\_\+module\+\_\+request} )(char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a65e03fdd037f2f5dcec440aa6fbd7085}\label{unionsecurity__list__options_a65e03fdd037f2f5dcec440aa6fbd7085} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries kernel\+\_\+load\+\_\+data} )(enum kernel\+\_\+load\+\_\+data\+\_\+id, bool)
+\item 
+\Hypertarget{unionsecurity__list__options_a192383c54400341b06fbb7882ca08b95}\label{unionsecurity__list__options_a192383c54400341b06fbb7882ca08b95} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries kernel\+\_\+post\+\_\+load\+\_\+data} )(char \texorpdfstring{$\ast$}{*}, loff\+\_\+t, enum kernel\+\_\+load\+\_\+data\+\_\+id, char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_adf30dbec33e76381922f217fabcf1e63}\label{unionsecurity__list__options_adf30dbec33e76381922f217fabcf1e63} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries kernel\+\_\+read\+\_\+file} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, enum kernel\+\_\+read\+\_\+file\+\_\+id, bool)
+\item 
+\Hypertarget{unionsecurity__list__options_a33a8fa018c6f59ca779f5854b0e62561}\label{unionsecurity__list__options_a33a8fa018c6f59ca779f5854b0e62561} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries kernel\+\_\+post\+\_\+read\+\_\+file} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, loff\+\_\+t, enum kernel\+\_\+read\+\_\+file\+\_\+id)
+\item 
+\Hypertarget{unionsecurity__list__options_a19a520d1c03e23623dc288c386874899}\label{unionsecurity__list__options_a19a520d1c03e23623dc288c386874899} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+fix\+\_\+setuid} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_aaa0e28af23f0abcfbd77c5c35e8579e2}\label{unionsecurity__list__options_aaa0e28af23f0abcfbd77c5c35e8579e2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+fix\+\_\+setgid} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a4324fdc8d7560a7199f859bfd85403e3}\label{unionsecurity__list__options_a4324fdc8d7560a7199f859bfd85403e3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+fix\+\_\+setgroups} )(struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a4f6f35fdb4eaffefc60e00047328c908}\label{unionsecurity__list__options_a4f6f35fdb4eaffefc60e00047328c908} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+setpgid} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, pid\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_af0babe03329d90aa0767b9586e281282}\label{unionsecurity__list__options_af0babe03329d90aa0767b9586e281282} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+getpgid} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a41c0252c9842a98936ce8b0fadb7d18a}\label{unionsecurity__list__options_a41c0252c9842a98936ce8b0fadb7d18a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+getsid} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0bf95b24467b45b14a75744aff091dcf}\label{unionsecurity__list__options_a0bf95b24467b45b14a75744aff091dcf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries current\+\_\+getlsmprop\+\_\+subj} )(struct \doxymbox{\hyperlink{structlsm__prop}{lsm\+\_\+prop}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aaca51fe8422c78a99fd85cd08a7d5040}\label{unionsecurity__list__options_aaca51fe8422c78a99fd85cd08a7d5040} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+getlsmprop\+\_\+obj} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlsm__prop}{lsm\+\_\+prop}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ad489592ff19d805fdef1f711fa3594d2}\label{unionsecurity__list__options_ad489592ff19d805fdef1f711fa3594d2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+setnice} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_afc526d549cfc6345d627704d34e97020}\label{unionsecurity__list__options_afc526d549cfc6345d627704d34e97020} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+setioprio} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a4b23d72bb90ae0d4a8f126f266f0004d}\label{unionsecurity__list__options_a4b23d72bb90ae0d4a8f126f266f0004d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+getioprio} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_af279ae4f142d395f3be7d2988e26c9cb}\label{unionsecurity__list__options_af279ae4f142d395f3be7d2988e26c9cb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+prlimit} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a9807fda56c02dd30b1241d73cb6ef9c2}\label{unionsecurity__list__options_a9807fda56c02dd30b1241d73cb6ef9c2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+setrlimit} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, unsigned int, struct \doxymbox{\hyperlink{structrlimit}{rlimit}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_af194bd97c80a624301517a611a20347a}\label{unionsecurity__list__options_af194bd97c80a624301517a611a20347a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+setscheduler} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a2e8a36d006e6bdfda7c537d4f9ddc9b7}\label{unionsecurity__list__options_a2e8a36d006e6bdfda7c537d4f9ddc9b7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+getscheduler} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ae5f0a5814f2359a88844aca94dda5441}\label{unionsecurity__list__options_ae5f0a5814f2359a88844aca94dda5441} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+movememory} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a7b33fc8c7e7afb19ff2f06661fad94fc}\label{unionsecurity__list__options_a7b33fc8c7e7afb19ff2f06661fad94fc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+kill} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkernel__siginfo}{kernel\+\_\+siginfo}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a583cbd5b1337a422add371114db8786e}\label{unionsecurity__list__options_a583cbd5b1337a422add371114db8786e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+prctl} )(int, long unsigned int, long unsigned int, long unsigned int, long unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a0b43d975b2f6fc6588a98f5dc6090d17}\label{unionsecurity__list__options_a0b43d975b2f6fc6588a98f5dc6090d17} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+to\+\_\+inode} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ace6822d80ac5aeb4ad2aafae472bae12}\label{unionsecurity__list__options_ace6822d80ac5aeb4ad2aafae472bae12} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries userns\+\_\+create} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a6c3b293b2414d08de4aacc3ca6651580}\label{unionsecurity__list__options_a6c3b293b2414d08de4aacc3ca6651580} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ipc\+\_\+permission} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, short int)
+\item 
+\Hypertarget{unionsecurity__list__options_a1fa8141ba022c398ba1cb7cab00f8cc1}\label{unionsecurity__list__options_a1fa8141ba022c398ba1cb7cab00f8cc1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ipc\+\_\+getlsmprop} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlsm__prop}{lsm\+\_\+prop}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ad191ebd4c12b6146f0b2b221b06808d7}\label{unionsecurity__list__options_ad191ebd4c12b6146f0b2b221b06808d7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+msg\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structmsg__msg}{msg\+\_\+msg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_abeb215969d8de6b5a453fe862c000cf8}\label{unionsecurity__list__options_abeb215969d8de6b5a453fe862c000cf8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+msg\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structmsg__msg}{msg\+\_\+msg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aa2229cf6af3fa6359dcccd208ff14145}\label{unionsecurity__list__options_aa2229cf6af3fa6359dcccd208ff14145} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+queue\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a016094bdcb813aa9ac7c11973bc9dd6d}\label{unionsecurity__list__options_a016094bdcb813aa9ac7c11973bc9dd6d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+queue\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_af8cac629a803c2c8480bb4bcf00f78be}\label{unionsecurity__list__options_af8cac629a803c2c8480bb4bcf00f78be} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+queue\+\_\+associate} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_ac7581a10348f250bd85714a71dff4613}\label{unionsecurity__list__options_ac7581a10348f250bd85714a71dff4613} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+queue\+\_\+msgctl} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a637ad174b763da524df147a53f0f380b}\label{unionsecurity__list__options_a637ad174b763da524df147a53f0f380b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+queue\+\_\+msgsnd} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsg__msg}{msg\+\_\+msg}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a502e2c24db07cda18fc6374e269196fa}\label{unionsecurity__list__options_a502e2c24db07cda18fc6374e269196fa} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+queue\+\_\+msgrcv} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsg__msg}{msg\+\_\+msg}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long int, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a7302c5e7fc6d64342fd72442d65897f3}\label{unionsecurity__list__options_a7302c5e7fc6d64342fd72442d65897f3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries shm\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aab2ccf986b874098c95d8d6d5c479811}\label{unionsecurity__list__options_aab2ccf986b874098c95d8d6d5c479811} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries shm\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_acf482760843f0d9043548072abf36792}\label{unionsecurity__list__options_acf482760843f0d9043548072abf36792} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries shm\+\_\+associate} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a261d60c9d3056304b9d45c5a7993c671}\label{unionsecurity__list__options_a261d60c9d3056304b9d45c5a7993c671} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries shm\+\_\+shmctl} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a78b091a2768b42bb1c3f3a94b9a4cb68}\label{unionsecurity__list__options_a78b091a2768b42bb1c3f3a94b9a4cb68} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries shm\+\_\+shmat} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a5a24833d3e61ec8a065f01d3eace41dd}\label{unionsecurity__list__options_a5a24833d3e61ec8a065f01d3eace41dd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sem\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ad5b7b0dfb8c6567bbd9ad2a7f302ce90}\label{unionsecurity__list__options_ad5b7b0dfb8c6567bbd9ad2a7f302ce90} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sem\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ae21b74a45df504f66ce2d8da5b679404}\label{unionsecurity__list__options_ae21b74a45df504f66ce2d8da5b679404} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sem\+\_\+associate} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a94bf5f1c3ee15a8f266186d90a897f15}\label{unionsecurity__list__options_a94bf5f1c3ee15a8f266186d90a897f15} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sem\+\_\+semctl} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a00377e2b5d09edc63b3bf7fef643cff8}\label{unionsecurity__list__options_a00377e2b5d09edc63b3bf7fef643cff8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sem\+\_\+semop} )(struct \doxymbox{\hyperlink{structkern__ipc__perm}{kern\+\_\+ipc\+\_\+perm}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsembuf}{sembuf}} \texorpdfstring{$\ast$}{*}, unsigned int, int)
+\item 
+\Hypertarget{unionsecurity__list__options_ad8431bd8bcbfc2fce102ef18a0725412}\label{unionsecurity__list__options_ad8431bd8bcbfc2fce102ef18a0725412} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries netlink\+\_\+send} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a586be1fbf308eaed22aba4c60b9f5765}\label{unionsecurity__list__options_a586be1fbf308eaed22aba4c60b9f5765} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries d\+\_\+instantiate} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a3f99eb8245f565ad1e2908866f5c8cb1}\label{unionsecurity__list__options_a3f99eb8245f565ad1e2908866f5c8cb1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries getselfattr} )(unsigned int, struct \doxymbox{\hyperlink{structlsm__ctx}{lsm\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{unionsecurity__list__options_a6631c72e7c3d249ece5fefce7266cd58}\label{unionsecurity__list__options_a6631c72e7c3d249ece5fefce7266cd58} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setselfattr} )(unsigned int, struct \doxymbox{\hyperlink{structlsm__ctx}{lsm\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, u32, u32)
+\item 
+\Hypertarget{unionsecurity__list__options_a9725d696a209ddf47a4418d29ee1bfe9}\label{unionsecurity__list__options_a9725d696a209ddf47a4418d29ee1bfe9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries getprocattr} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a5bea13489a3afbaa115e256686723273}\label{unionsecurity__list__options_a5bea13489a3afbaa115e256686723273} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setprocattr} )(const char \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_af1e02bee86e0ec69752108b29c0ca4c3}\label{unionsecurity__list__options_af1e02bee86e0ec69752108b29c0ca4c3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ismaclabel} )(const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a6d0b3f9eb99a532b2ea4eac21b871126}\label{unionsecurity__list__options_a6d0b3f9eb99a532b2ea4eac21b871126} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries secid\+\_\+to\+\_\+secctx} )(u32, struct \doxymbox{\hyperlink{structlsm__context}{lsm\+\_\+context}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a8bf416edface5cc4d601e7d61ebfbca2}\label{unionsecurity__list__options_a8bf416edface5cc4d601e7d61ebfbca2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries lsmprop\+\_\+to\+\_\+secctx} )(struct \doxymbox{\hyperlink{structlsm__prop}{lsm\+\_\+prop}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlsm__context}{lsm\+\_\+context}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aca7a14c846635b30753b1a1a837ef9bf}\label{unionsecurity__list__options_aca7a14c846635b30753b1a1a837ef9bf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries secctx\+\_\+to\+\_\+secid} )(const char \texorpdfstring{$\ast$}{*}, u32, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_afd7de300a7f8c40a43fa44c88225b82d}\label{unionsecurity__list__options_afd7de300a7f8c40a43fa44c88225b82d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+secctx} )(struct \doxymbox{\hyperlink{structlsm__context}{lsm\+\_\+context}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a492ce6421bdd37970c490ec1203b16c2}\label{unionsecurity__list__options_a492ce6421bdd37970c490ec1203b16c2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+invalidate\+\_\+secctx} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aee21c8c4df132103448ba87d5e0e2490}\label{unionsecurity__list__options_aee21c8c4df132103448ba87d5e0e2490} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+notifysecctx} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{unionsecurity__list__options_a272e536da1ebc009feb495d94f54d368}\label{unionsecurity__list__options_a272e536da1ebc009feb495d94f54d368} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+setsecctx} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{unionsecurity__list__options_a9545aeef2ab85e3ae2a8ef3720e9fc58}\label{unionsecurity__list__options_a9545aeef2ab85e3ae2a8ef3720e9fc58} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inode\+\_\+getsecctx} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlsm__context}{lsm\+\_\+context}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a2d34509cd1e6df83bf1af85ee33ca724}\label{unionsecurity__list__options_a2d34509cd1e6df83bf1af85ee33ca724} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+notification} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structwatch__notification}{watch\+\_\+notification}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aa01541c165aad67f2e2a6f21fd2a3ec3}\label{unionsecurity__list__options_aa01541c165aad67f2e2a6f21fd2a3ec3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries watch\+\_\+key} )(struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ac3f6d1d27087d41c0e8897e2653ab1c8}\label{unionsecurity__list__options_ac3f6d1d27087d41c0e8897e2653ab1c8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries unix\+\_\+stream\+\_\+connect} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0c6f92778e2765f8942d09ee4426ec1e}\label{unionsecurity__list__options_a0c6f92778e2765f8942d09ee4426ec1e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries unix\+\_\+may\+\_\+send} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a09a1f1d040849db8a92946ab1fcd8524}\label{unionsecurity__list__options_a09a1f1d040849db8a92946ab1fcd8524} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+create} )(int, int, int, int)
+\item 
+\Hypertarget{unionsecurity__list__options_ab5a04b148d5afa346c61e4124cdb9d2c}\label{unionsecurity__list__options_ab5a04b148d5afa346c61e4124cdb9d2c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+post\+\_\+create} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, int, int, int, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a07ac61a30fe31e2cf84781497cd4f22c}\label{unionsecurity__list__options_a07ac61a30fe31e2cf84781497cd4f22c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+socketpair} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a1fd7e522215baaa9fe1da90d335d4389}\label{unionsecurity__list__options_a1fd7e522215baaa9fe1da90d335d4389} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+bind} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a3e4b677f089088cacf72c7105ac7de9a}\label{unionsecurity__list__options_a3e4b677f089088cacf72c7105ac7de9a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+connect} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a16dd0903e611141f7d4c3a7bce176b6a}\label{unionsecurity__list__options_a16dd0903e611141f7d4c3a7bce176b6a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+listen} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a968fd04002129073692719140636f417}\label{unionsecurity__list__options_a968fd04002129073692719140636f417} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+accept} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ac983ff62803ad33fd9c0876287e69602}\label{unionsecurity__list__options_ac983ff62803ad33fd9c0876287e69602} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+sendmsg} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsghdr}{msghdr}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a7d86d1d5b7d4e287c7db48aa85c27aee}\label{unionsecurity__list__options_a7d86d1d5b7d4e287c7db48aa85c27aee} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+recvmsg} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsghdr}{msghdr}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a422162251d24822c1aadd01108a392fe}\label{unionsecurity__list__options_a422162251d24822c1aadd01108a392fe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+getsockname} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a5b2c6b5358e925c205bf42ee6e478394}\label{unionsecurity__list__options_a5b2c6b5358e925c205bf42ee6e478394} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+getpeername} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_abba77050298c571e8c1268adaf256a5e}\label{unionsecurity__list__options_abba77050298c571e8c1268adaf256a5e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+getsockopt} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a6fda9cc1184615e9bb8a8546743860f2}\label{unionsecurity__list__options_a6fda9cc1184615e9bb8a8546743860f2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+setsockopt} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a993f60c4e30de633b73920aba7213b06}\label{unionsecurity__list__options_a993f60c4e30de633b73920aba7213b06} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+shutdown} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a3ae3c6e968760e780984700127c959f3}\label{unionsecurity__list__options_a3ae3c6e968760e780984700127c959f3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+sock\+\_\+rcv\+\_\+skb} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aec6b4c433f2a507ef2047b276b4deca6}\label{unionsecurity__list__options_aec6b4c433f2a507ef2047b276b4deca6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+getpeersec\+\_\+stream} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structsockptr__t}{sockptr\+\_\+t}}, \doxymbox{\hyperlink{structsockptr__t}{sockptr\+\_\+t}}, unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a29ad9aa1280c5a2f78f2abc2c5956f0d}\label{unionsecurity__list__options_a29ad9aa1280c5a2f78f2abc2c5956f0d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socket\+\_\+getpeersec\+\_\+dgram} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a460251264ef2d4bc8aa35980e5aea714}\label{unionsecurity__list__options_a460251264ef2d4bc8aa35980e5aea714} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int, gfp\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_afcf51cec913a2ad87021fcf49e5bbe70}\label{unionsecurity__list__options_afcf51cec913a2ad87021fcf49e5bbe70} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ac840baa2af09f1bc81fcd8b9565a1312}\label{unionsecurity__list__options_ac840baa2af09f1bc81fcd8b9565a1312} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+clone\+\_\+security} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_acc42870f4917d9d2f84bb97766bbee4f}\label{unionsecurity__list__options_acc42870f4917d9d2f84bb97766bbee4f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+getsecid} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a9cc3f638784976d2eaf6b63ee50adfe7}\label{unionsecurity__list__options_a9cc3f638784976d2eaf6b63ee50adfe7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sock\+\_\+graft} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ae4137c2f864bd4168822043c62d36765}\label{unionsecurity__list__options_ae4137c2f864bd4168822043c62d36765} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries inet\+\_\+conn\+\_\+request} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a118c3e238697dc6d91e5f5a3bac34b17}\label{unionsecurity__list__options_a118c3e238697dc6d91e5f5a3bac34b17} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inet\+\_\+csk\+\_\+clone} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0047bdfe500a7c262167111f7fa76e83}\label{unionsecurity__list__options_a0047bdfe500a7c262167111f7fa76e83} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inet\+\_\+conn\+\_\+established} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0ccdbca41c494ca67bff580afe9b13d6}\label{unionsecurity__list__options_a0ccdbca41c494ca67bff580afe9b13d6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries secmark\+\_\+relabel\+\_\+packet} )(u32)
+\item 
+\Hypertarget{unionsecurity__list__options_a7e73d58e4b462c41320e77baedb471aa}\label{unionsecurity__list__options_a7e73d58e4b462c41320e77baedb471aa} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries secmark\+\_\+refcount\+\_\+inc} )(void)
+\item 
+\Hypertarget{unionsecurity__list__options_a69768ca0bbeb5b46df441c3ea671a892}\label{unionsecurity__list__options_a69768ca0bbeb5b46df441c3ea671a892} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries secmark\+\_\+refcount\+\_\+dec} )(void)
+\item 
+\Hypertarget{unionsecurity__list__options_a3af7086c32c389463aba8feab8070d58}\label{unionsecurity__list__options_a3af7086c32c389463aba8feab8070d58} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries req\+\_\+classify\+\_\+flow} )(const struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi__common}{flowi\+\_\+common}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a75f2ab5f1b0dfab45702b1d7628686b8}\label{unionsecurity__list__options_a75f2ab5f1b0dfab45702b1d7628686b8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tun\+\_\+dev\+\_\+alloc\+\_\+security} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a952dc62c60442d015a8ad0597e139f82}\label{unionsecurity__list__options_a952dc62c60442d015a8ad0597e139f82} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tun\+\_\+dev\+\_\+create} )(void)
+\item 
+\Hypertarget{unionsecurity__list__options_aabdc7a08831f364fb3879911492b032b}\label{unionsecurity__list__options_aabdc7a08831f364fb3879911492b032b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tun\+\_\+dev\+\_\+attach\+\_\+queue} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a5bc5664339a408f75baa007b0cc02d7e}\label{unionsecurity__list__options_a5bc5664339a408f75baa007b0cc02d7e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tun\+\_\+dev\+\_\+attach} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a1bd96069e153aae32b80ec38e7645e05}\label{unionsecurity__list__options_a1bd96069e153aae32b80ec38e7645e05} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tun\+\_\+dev\+\_\+open} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_abe20c5e0dc08e55ae79e3e5f4bf2fda8}\label{unionsecurity__list__options_abe20c5e0dc08e55ae79e3e5f4bf2fda8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sctp\+\_\+assoc\+\_\+request} )(struct \doxymbox{\hyperlink{structsctp__association}{sctp\+\_\+association}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a99f1f58ff51514b9b4419f5129c9298f}\label{unionsecurity__list__options_a99f1f58ff51514b9b4419f5129c9298f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sctp\+\_\+bind\+\_\+connect} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_acd2a0e73f3e0a741e2360786d1489b9e}\label{unionsecurity__list__options_acd2a0e73f3e0a741e2360786d1489b9e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sctp\+\_\+sk\+\_\+clone} )(struct \doxymbox{\hyperlink{structsctp__association}{sctp\+\_\+association}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a76bf87d829c73245a0dc02f32b6d339b}\label{unionsecurity__list__options_a76bf87d829c73245a0dc02f32b6d339b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sctp\+\_\+assoc\+\_\+established} )(struct \doxymbox{\hyperlink{structsctp__association}{sctp\+\_\+association}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a80ef47854c4f58e05ae0c02dcaf85045}\label{unionsecurity__list__options_a80ef47854c4f58e05ae0c02dcaf85045} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mptcp\+\_\+add\+\_\+subflow} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a270940db18576b0102247478b3605512}\label{unionsecurity__list__options_a270940db18576b0102247478b3605512} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ib\+\_\+pkey\+\_\+access} )(void \texorpdfstring{$\ast$}{*}, u64, u16)
+\item 
+\Hypertarget{unionsecurity__list__options_a02da2976390d9499e6174ede289699a6}\label{unionsecurity__list__options_a02da2976390d9499e6174ede289699a6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ib\+\_\+endport\+\_\+manage\+\_\+subnet} )(void \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{unionsecurity__list__options_a837f27ad121051a849ac218f7dbd5640}\label{unionsecurity__list__options_a837f27ad121051a849ac218f7dbd5640} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ib\+\_\+alloc\+\_\+security} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aabbb75f5b1a2d430a6f0155080157098}\label{unionsecurity__list__options_aabbb75f5b1a2d430a6f0155080157098} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+policy\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structxfrm__sec__ctx}{xfrm\+\_\+sec\+\_\+ctx}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxfrm__user__sec__ctx}{xfrm\+\_\+user\+\_\+sec\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_a3c9314e635dfcd23203cfdae32a016fb}\label{unionsecurity__list__options_a3c9314e635dfcd23203cfdae32a016fb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+policy\+\_\+clone\+\_\+security} )(struct \doxymbox{\hyperlink{structxfrm__sec__ctx}{xfrm\+\_\+sec\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxfrm__sec__ctx}{xfrm\+\_\+sec\+\_\+ctx}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a9b24ae202607eabf1ef77bdbaaac7553}\label{unionsecurity__list__options_a9b24ae202607eabf1ef77bdbaaac7553} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+policy\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structxfrm__sec__ctx}{xfrm\+\_\+sec\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ade9b05a08fca6500e326b040c34fd455}\label{unionsecurity__list__options_ade9b05a08fca6500e326b040c34fd455} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+policy\+\_\+delete\+\_\+security} )(struct \doxymbox{\hyperlink{structxfrm__sec__ctx}{xfrm\+\_\+sec\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a754bc8bccd33ee7c457efe0e3dab1a9d}\label{unionsecurity__list__options_a754bc8bccd33ee7c457efe0e3dab1a9d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+state\+\_\+alloc} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxfrm__user__sec__ctx}{xfrm\+\_\+user\+\_\+sec\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a5d9277b6312a52f1c1fdcd835a48e9e5}\label{unionsecurity__list__options_a5d9277b6312a52f1c1fdcd835a48e9e5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+state\+\_\+alloc\+\_\+acquire} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxfrm__sec__ctx}{xfrm\+\_\+sec\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{unionsecurity__list__options_ae8f3c100e3563b668584aaada96152ba}\label{unionsecurity__list__options_ae8f3c100e3563b668584aaada96152ba} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+state\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a95fada270c83cb8da4f44d69839784f0}\label{unionsecurity__list__options_a95fada270c83cb8da4f44d69839784f0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+state\+\_\+delete\+\_\+security} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a6cb729e8ea4ee600ed3778c40e916275}\label{unionsecurity__list__options_a6cb729e8ea4ee600ed3778c40e916275} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+policy\+\_\+lookup} )(struct \doxymbox{\hyperlink{structxfrm__sec__ctx}{xfrm\+\_\+sec\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{unionsecurity__list__options_a0900acaecc140838accb0850e0c24bde}\label{unionsecurity__list__options_a0900acaecc140838accb0850e0c24bde} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+state\+\_\+pol\+\_\+flow\+\_\+match} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxfrm__policy}{xfrm\+\_\+policy}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structflowi__common}{flowi\+\_\+common}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aaa47752ae94729e807b4cbee31ec0243}\label{unionsecurity__list__options_aaa47752ae94729e807b4cbee31ec0243} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries xfrm\+\_\+decode\+\_\+session} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_aad46e4ed2a07ab4f8008b045ef77a2bb}\label{unionsecurity__list__options_aad46e4ed2a07ab4f8008b045ef77a2bb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries key\+\_\+alloc} )(struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{unionsecurity__list__options_a32faff5156b6b4bfdba39242c9f006f0}\label{unionsecurity__list__options_a32faff5156b6b4bfdba39242c9f006f0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries key\+\_\+permission} )(key\+\_\+ref\+\_\+t, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*}, enum key\+\_\+need\+\_\+perm)
+\item 
+\Hypertarget{unionsecurity__list__options_ac64354a4b67d9485d9e15bb3bacb005b}\label{unionsecurity__list__options_ac64354a4b67d9485d9e15bb3bacb005b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries key\+\_\+getsecurity} )(struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a2555ac28efa91f1dd345f0b6d95dee8e}\label{unionsecurity__list__options_a2555ac28efa91f1dd345f0b6d95dee8e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries key\+\_\+post\+\_\+create\+\_\+or\+\_\+update} )(struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t, long unsigned int, bool)
+\item 
+\Hypertarget{unionsecurity__list__options_ab26fb0ef78c1e83371dc989bb44fc0e1}\label{unionsecurity__list__options_ab26fb0ef78c1e83371dc989bb44fc0e1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries audit\+\_\+rule\+\_\+init} )(u32, u32, char \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_aa654586e584c1b1367507ac11ab7ccdf}\label{unionsecurity__list__options_aa654586e584c1b1367507ac11ab7ccdf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries audit\+\_\+rule\+\_\+known} )(struct \doxymbox{\hyperlink{structaudit__krule}{audit\+\_\+krule}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a5075a5324100d5199c4c7f9f894c4a4d}\label{unionsecurity__list__options_a5075a5324100d5199c4c7f9f894c4a4d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries audit\+\_\+rule\+\_\+match} )(struct \doxymbox{\hyperlink{structlsm__prop}{lsm\+\_\+prop}} \texorpdfstring{$\ast$}{*}, u32, u32, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a1fab08e32a09a75fbde95ab29cd3c601}\label{unionsecurity__list__options_a1fab08e32a09a75fbde95ab29cd3c601} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries audit\+\_\+rule\+\_\+free} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a0ba163c71591a9a603865f0c4a1756f0}\label{unionsecurity__list__options_a0ba163c71591a9a603865f0c4a1756f0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bpf} )(int, union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*}, unsigned int, bool)
+\item 
+\Hypertarget{unionsecurity__list__options_a2fef432d76ebd0dbc54800792296ed85}\label{unionsecurity__list__options_a2fef432d76ebd0dbc54800792296ed85} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+map} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, fmode\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_a27b67c7c444d23f92576c51c0a8a1ea5}\label{unionsecurity__list__options_a27b67c7c444d23f92576c51c0a8a1ea5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+prog} )(struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_af834d9ab0b59ed5c96dce215be1f1123}\label{unionsecurity__list__options_af834d9ab0b59ed5c96dce215be1f1123} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+map\+\_\+create} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbpf__token}{bpf\+\_\+token}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{unionsecurity__list__options_a1e5e1f6cb57e9b7a27ae5304f9eac2d0}\label{unionsecurity__list__options_a1e5e1f6cb57e9b7a27ae5304f9eac2d0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+map\+\_\+free} )(struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a384c58a9d2bfb5f3c88755640f8e5940}\label{unionsecurity__list__options_a384c58a9d2bfb5f3c88755640f8e5940} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+prog\+\_\+load} )(struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbpf__token}{bpf\+\_\+token}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{unionsecurity__list__options_a848b4c34b244427523da30680636fc87}\label{unionsecurity__list__options_a848b4c34b244427523da30680636fc87} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+prog\+\_\+free} )(struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ae28b44ed1f6afad65dcc142ca2ea41e1}\label{unionsecurity__list__options_ae28b44ed1f6afad65dcc142ca2ea41e1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+token\+\_\+create} )(struct \doxymbox{\hyperlink{structbpf__token}{bpf\+\_\+token}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionbpf__attr}{bpf\+\_\+attr}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_aa92db9707a0dd9da96319971cc49d748}\label{unionsecurity__list__options_aa92db9707a0dd9da96319971cc49d748} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+token\+\_\+free} )(struct \doxymbox{\hyperlink{structbpf__token}{bpf\+\_\+token}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a353f7219cad3290f9e7e5f00099c7bb5}\label{unionsecurity__list__options_a353f7219cad3290f9e7e5f00099c7bb5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+token\+\_\+cmd} )(const struct \doxymbox{\hyperlink{structbpf__token}{bpf\+\_\+token}} \texorpdfstring{$\ast$}{*}, enum bpf\+\_\+cmd)
+\item 
+\Hypertarget{unionsecurity__list__options_ad2cd6728ee1bcba4e9d70a0326f336a1}\label{unionsecurity__list__options_ad2cd6728ee1bcba4e9d70a0326f336a1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bpf\+\_\+token\+\_\+capable} )(const struct \doxymbox{\hyperlink{structbpf__token}{bpf\+\_\+token}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{unionsecurity__list__options_a52417df2573c036164b48a5503003cf9}\label{unionsecurity__list__options_a52417df2573c036164b48a5503003cf9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries locked\+\_\+down} )(enum lockdown\+\_\+reason)
+\item 
+\Hypertarget{unionsecurity__list__options_a81d9a55f950035a1365259b235b1e031}\label{unionsecurity__list__options_a81d9a55f950035a1365259b235b1e031} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries perf\+\_\+event\+\_\+open} )(int)
+\item 
+\Hypertarget{unionsecurity__list__options_a841fc22f59d1df67b1972edb36683780}\label{unionsecurity__list__options_a841fc22f59d1df67b1972edb36683780} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries perf\+\_\+event\+\_\+alloc} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_ad73cf56eeca1f9e212977ed86a39475e}\label{unionsecurity__list__options_ad73cf56eeca1f9e212977ed86a39475e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries perf\+\_\+event\+\_\+read} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a3aee5fff4ae1e528617f952cd54002a3}\label{unionsecurity__list__options_a3aee5fff4ae1e528617f952cd54002a3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries perf\+\_\+event\+\_\+write} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a2774161ceccee1ecf25de82db43c557f}\label{unionsecurity__list__options_a2774161ceccee1ecf25de82db43c557f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries uring\+\_\+override\+\_\+creds} )(const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a17178a43626a7fe82f47ccff9b90d46b}\label{unionsecurity__list__options_a17178a43626a7fe82f47ccff9b90d46b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries uring\+\_\+sqpoll} )(void)
+\item 
+\Hypertarget{unionsecurity__list__options_a5ac5c845bb236bb35c145c7fb4885502}\label{unionsecurity__list__options_a5ac5c845bb236bb35c145c7fb4885502} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries uring\+\_\+cmd} )(struct \doxymbox{\hyperlink{structio__uring__cmd}{io\+\_\+uring\+\_\+cmd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a6adddd1ce49ac685aa336eb1a5abcb8c}\label{unionsecurity__list__options_a6adddd1ce49ac685aa336eb1a5abcb8c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries uring\+\_\+allowed} )(void)
+\item 
+\Hypertarget{unionsecurity__list__options_a69ddc9fe8b9267d3c132feb4e1442669}\label{unionsecurity__list__options_a69ddc9fe8b9267d3c132feb4e1442669} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries initramfs\+\_\+populated} )(void)
+\item 
+\Hypertarget{unionsecurity__list__options_a21bf920e3987ede06b70454049f52595}\label{unionsecurity__list__options_a21bf920e3987ede06b70454049f52595} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bdev\+\_\+alloc\+\_\+security} )(struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_a4fdfed3cf294cd414416ac002f589b20}\label{unionsecurity__list__options_a4fdfed3cf294cd414416ac002f589b20} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bdev\+\_\+free\+\_\+security} )(struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{unionsecurity__list__options_abd9098c223ffdfacd3cf779f096c1128}\label{unionsecurity__list__options_abd9098c223ffdfacd3cf779f096c1128} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bdev\+\_\+setintegrity} )(struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*}, enum lsm\+\_\+integrity\+\_\+type, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{unionsecurity__list__options_a0a717ddc45270f9faf11b126071d7793}\label{unionsecurity__list__options_a0a717ddc45270f9faf11b126071d7793} 
+void \texorpdfstring{$\ast$}{*} {\bfseries lsm\+\_\+func\+\_\+addr}
+\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

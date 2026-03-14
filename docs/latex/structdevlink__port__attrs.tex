@@ -1,0 +1,39 @@
+\doxysection{devlink\+\_\+port\+\_\+attrs Struct Reference}
+\hypertarget{structdevlink__port__attrs}{}\label{structdevlink__port__attrs}\index{devlink\_port\_attrs@{devlink\_port\_attrs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdevlink__port__attrs_ab9961c6f84b2bf730d5fd6948aa2d89c}\label{structdevlink__port__attrs_ab9961c6f84b2bf730d5fd6948aa2d89c} 
+u8 {\bfseries split}:\+ 1
+\item 
+\Hypertarget{structdevlink__port__attrs_aaf9164a5cdf4f7479fd0dfa350a5b87f}\label{structdevlink__port__attrs_aaf9164a5cdf4f7479fd0dfa350a5b87f} 
+u8 {\bfseries splittable}:\+ 1
+\item 
+\Hypertarget{structdevlink__port__attrs_a3f695ee0068b0a90064f677a4f2bf287}\label{structdevlink__port__attrs_a3f695ee0068b0a90064f677a4f2bf287} 
+u8 {\bfseries no\+\_\+phys\+\_\+port\+\_\+name}:\+ 1
+\item 
+\Hypertarget{structdevlink__port__attrs_a406e82121ae45dab5e3e4301eb06cb56}\label{structdevlink__port__attrs_a406e82121ae45dab5e3e4301eb06cb56} 
+u32 {\bfseries lanes}
+\item 
+\Hypertarget{structdevlink__port__attrs_a5c0007a17de4eebc8230aff9d3133678}\label{structdevlink__port__attrs_a5c0007a17de4eebc8230aff9d3133678} 
+enum devlink\+\_\+port\+\_\+flavour {\bfseries flavour}
+\item 
+\Hypertarget{structdevlink__port__attrs_a58d4e7d2156a20e3a236bf75787314d7}\label{structdevlink__port__attrs_a58d4e7d2156a20e3a236bf75787314d7} 
+struct \doxymbox{\hyperlink{structnetdev__phys__item__id}{netdev\+\_\+phys\+\_\+item\+\_\+id}} {\bfseries switch\+\_\+id}
+\item 
+\Hypertarget{structdevlink__port__attrs_ab161f990c5b2c3e52af2e12c32e579cc}\label{structdevlink__port__attrs_ab161f990c5b2c3e52af2e12c32e579cc} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structdevlink__port__phys__attrs}{devlink\_port\_phys\_attrs}} {\bfseries phys}\\
+\>struct \doxymbox{\hyperlink{structdevlink__port__pci__pf__attrs}{devlink\_port\_pci\_pf\_attrs}} {\bfseries pci\_pf}\\
+\>struct \doxymbox{\hyperlink{structdevlink__port__pci__vf__attrs}{devlink\_port\_pci\_vf\_attrs}} {\bfseries pci\_vf}\\
+\>struct \doxymbox{\hyperlink{structdevlink__port__pci__sf__attrs}{devlink\_port\_pci\_sf\_attrs}} {\bfseries pci\_sf}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,36 @@
+\doxysection{drm\+\_\+gpuvm\+\_\+bo Struct Reference}
+\hypertarget{structdrm__gpuvm__bo}{}\label{structdrm__gpuvm__bo}\index{drm\_gpuvm\_bo@{drm\_gpuvm\_bo}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__gpuvm__bo_a184f11aa07d76932cf3e0391dfe0d42e}\label{structdrm__gpuvm__bo_a184f11aa07d76932cf3e0391dfe0d42e} 
+struct \doxymbox{\hyperlink{structdrm__gpuvm}{drm\+\_\+gpuvm}} \texorpdfstring{$\ast$}{*} {\bfseries vm}
+\item 
+\Hypertarget{structdrm__gpuvm__bo_aa72ff07b11dc79feec0a6a59b0c7853d}\label{structdrm__gpuvm__bo_aa72ff07b11dc79feec0a6a59b0c7853d} 
+struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*} {\bfseries obj}
+\item 
+\Hypertarget{structdrm__gpuvm__bo_a5c9b028111fd4dec77ac19d80a4d45ad}\label{structdrm__gpuvm__bo_a5c9b028111fd4dec77ac19d80a4d45ad} 
+bool {\bfseries evicted}
+\item 
+\Hypertarget{structdrm__gpuvm__bo_a6c6123ef009cbbce2b36f2969c85ad92}\label{structdrm__gpuvm__bo_a6c6123ef009cbbce2b36f2969c85ad92} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries kref}
+\item 
+\Hypertarget{structdrm__gpuvm__bo_a861d79b231c196bed8b30ba770c93fcd}\label{structdrm__gpuvm__bo_a861d79b231c196bed8b30ba770c93fcd} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries gpuva}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries gem}\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries extobj}\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries evict}\\
+\>\>struct \doxymbox{\hyperlink{structllist__node}{llist\_node}} {\bfseries bo\_defer}\\
+\>\} {\bfseries entry}\\
+\} {\bfseries list}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

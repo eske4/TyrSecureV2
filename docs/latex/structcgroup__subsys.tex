@@ -1,0 +1,109 @@
+\doxysection{cgroup\+\_\+subsys Struct Reference}
+\hypertarget{structcgroup__subsys}{}\label{structcgroup__subsys}\index{cgroup\_subsys@{cgroup\_subsys}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcgroup__subsys_a133782f7d64ca14a2c27643b6449c519}\label{structcgroup__subsys_a133782f7d64ca14a2c27643b6449c519} 
+struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+alloc} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_aa9bf4671004d236b322fcd663929c692}\label{structcgroup__subsys_aa9bf4671004d236b322fcd663929c692} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+online} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_aebc1de6608fdaa197ec26c36b7704258}\label{structcgroup__subsys_aebc1de6608fdaa197ec26c36b7704258} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+offline} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a0c0c7538c8737591714886d1f77e691d}\label{structcgroup__subsys_a0c0c7538c8737591714886d1f77e691d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+released} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a0757e4499216423740ac95bbac998e49}\label{structcgroup__subsys_a0757e4499216423740ac95bbac998e49} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+free} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a5a5314d016ce1fed1e725d559db3c413}\label{structcgroup__subsys_a5a5314d016ce1fed1e725d559db3c413} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+reset} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a095dad641a34364d8999618d0b112036}\label{structcgroup__subsys_a095dad641a34364d8999618d0b112036} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+killed} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a48e5c2e05668ba72483e230556975741}\label{structcgroup__subsys_a48e5c2e05668ba72483e230556975741} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+rstat\+\_\+flush} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structcgroup__subsys_a42e5f17dc3cad455fc7e5fec874f097a}\label{structcgroup__subsys_a42e5f17dc3cad455fc7e5fec874f097a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+extra\+\_\+stat\+\_\+show} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a22b6ff742fd18edd971d6b69998d091e}\label{structcgroup__subsys_a22b6ff742fd18edd971d6b69998d091e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries css\+\_\+local\+\_\+stat\+\_\+show} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a81941aa49d479e14cd20867199ae402a}\label{structcgroup__subsys_a81941aa49d479e14cd20867199ae402a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries can\+\_\+attach} )(struct \doxymbox{\hyperlink{structcgroup__taskset}{cgroup\+\_\+taskset}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a8d212013f7a8b68c1c458d9a328e2ad4}\label{structcgroup__subsys_a8d212013f7a8b68c1c458d9a328e2ad4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cancel\+\_\+attach} )(struct \doxymbox{\hyperlink{structcgroup__taskset}{cgroup\+\_\+taskset}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_aec0dddb044864b307e542037e5e04f9b}\label{structcgroup__subsys_aec0dddb044864b307e542037e5e04f9b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries attach} )(struct \doxymbox{\hyperlink{structcgroup__taskset}{cgroup\+\_\+taskset}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_ad8ce1aae7b443306494acde6e1f3f430}\label{structcgroup__subsys_ad8ce1aae7b443306494acde6e1f3f430} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries can\+\_\+fork} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcss__set}{css\+\_\+set}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a5056197664cadeda8b212b913c8870ce}\label{structcgroup__subsys_a5056197664cadeda8b212b913c8870ce} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cancel\+\_\+fork} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcss__set}{css\+\_\+set}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a767cb2a488db4c4240b8d933020b63a9}\label{structcgroup__subsys_a767cb2a488db4c4240b8d933020b63a9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fork} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a54ec7c0376f9349eafa32dc0d1bd831c}\label{structcgroup__subsys_a54ec7c0376f9349eafa32dc0d1bd831c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_af222123a0503a77a4c253d63bca3f273}\label{structcgroup__subsys_af222123a0503a77a4c253d63bca3f273} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a38f33f78d32110975d55b4d79ef41c7f}\label{structcgroup__subsys_a38f33f78d32110975d55b4d79ef41c7f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries bind} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcgroup__subsys_a6c3751b63e2d7bf2fe7a3f047a49fe70}\label{structcgroup__subsys_a6c3751b63e2d7bf2fe7a3f047a49fe70} 
+bool {\bfseries early\+\_\+init}:\+ 1
+\item 
+\Hypertarget{structcgroup__subsys_acd8b3b0d3ed78c4edbfdf8f1604fbcf1}\label{structcgroup__subsys_acd8b3b0d3ed78c4edbfdf8f1604fbcf1} 
+bool {\bfseries implicit\+\_\+on\+\_\+dfl}:\+ 1
+\item 
+\Hypertarget{structcgroup__subsys_ae10008ab7728424f46863ac334b1ae49}\label{structcgroup__subsys_ae10008ab7728424f46863ac334b1ae49} 
+bool {\bfseries threaded}:\+ 1
+\item 
+\Hypertarget{structcgroup__subsys_af7d4cd7f30d0c8ab9e696646ad9895bb}\label{structcgroup__subsys_af7d4cd7f30d0c8ab9e696646ad9895bb} 
+int {\bfseries id}
+\item 
+\Hypertarget{structcgroup__subsys_abe4e13a434178274b8ae5c91aff6ddbf}\label{structcgroup__subsys_abe4e13a434178274b8ae5c91aff6ddbf} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structcgroup__subsys_a47156db590715f2570b0ed9b60b147e8}\label{structcgroup__subsys_a47156db590715f2570b0ed9b60b147e8} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries legacy\+\_\+name}
+\item 
+\Hypertarget{structcgroup__subsys_a3484b9e12a9d9db681374db52e490436}\label{structcgroup__subsys_a3484b9e12a9d9db681374db52e490436} 
+struct \doxymbox{\hyperlink{structcgroup__root}{cgroup\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries root}
+\item 
+\Hypertarget{structcgroup__subsys_a8052cbc779e7c11c07095f1ed5396d29}\label{structcgroup__subsys_a8052cbc779e7c11c07095f1ed5396d29} 
+struct \doxymbox{\hyperlink{structidr}{idr}} {\bfseries css\+\_\+idr}
+\item 
+\Hypertarget{structcgroup__subsys_aa3fb3dfa2f057df83197e79dc67e25d0}\label{structcgroup__subsys_aa3fb3dfa2f057df83197e79dc67e25d0} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cfts}
+\item 
+\Hypertarget{structcgroup__subsys_ade639b9a74f4f7ca2a5f59518b68324f}\label{structcgroup__subsys_ade639b9a74f4f7ca2a5f59518b68324f} 
+struct \doxymbox{\hyperlink{structcftype}{cftype}} \texorpdfstring{$\ast$}{*} {\bfseries dfl\+\_\+cftypes}
+\item 
+\Hypertarget{structcgroup__subsys_a80f8e070e789c21c32cf72fb29e8886f}\label{structcgroup__subsys_a80f8e070e789c21c32cf72fb29e8886f} 
+struct \doxymbox{\hyperlink{structcftype}{cftype}} \texorpdfstring{$\ast$}{*} {\bfseries legacy\+\_\+cftypes}
+\item 
+\Hypertarget{structcgroup__subsys_abcb3bb02d191c32ab5eaedbad857e42e}\label{structcgroup__subsys_abcb3bb02d191c32ab5eaedbad857e42e} 
+unsigned int {\bfseries depends\+\_\+on}
+\item 
+\Hypertarget{structcgroup__subsys_a64d0c5b8f0ad413c8c6670da9144c6c6}\label{structcgroup__subsys_a64d0c5b8f0ad413c8c6670da9144c6c6} 
+spinlock\+\_\+t {\bfseries rstat\+\_\+ss\+\_\+lock}
+\item 
+\Hypertarget{structcgroup__subsys_a374a72e3985b9f8218d4a72bbd6ead7a}\label{structcgroup__subsys_a374a72e3985b9f8218d4a72bbd6ead7a} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries lhead}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

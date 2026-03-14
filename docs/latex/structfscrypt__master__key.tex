@@ -1,0 +1,58 @@
+\doxysection{fscrypt\+\_\+master\+\_\+key Struct Reference}
+\hypertarget{structfscrypt__master__key}{}\label{structfscrypt__master__key}\index{fscrypt\_master\_key@{fscrypt\_master\_key}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfscrypt__master__key_a233dc0101b24dc1ed4ad01cc3374a699}\label{structfscrypt__master__key_a233dc0101b24dc1ed4ad01cc3374a699} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries mk\+\_\+node}
+\item 
+\Hypertarget{structfscrypt__master__key_a5aeb9d9f922a040742a63bd3acd2ee7b}\label{structfscrypt__master__key_a5aeb9d9f922a040742a63bd3acd2ee7b} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries mk\+\_\+sem}
+\item 
+\Hypertarget{structfscrypt__master__key_a9cadf50ad0575828d19e677b4e34931b}\label{structfscrypt__master__key_a9cadf50ad0575828d19e677b4e34931b} 
+refcount\+\_\+t {\bfseries mk\+\_\+active\+\_\+refs}
+\item 
+\Hypertarget{structfscrypt__master__key_a470fe422e46ecc12ac9d84394d728b24}\label{structfscrypt__master__key_a470fe422e46ecc12ac9d84394d728b24} 
+refcount\+\_\+t {\bfseries mk\+\_\+struct\+\_\+refs}
+\item 
+\Hypertarget{structfscrypt__master__key_a6f8ee9ecf191f9a301f4bc4335da92b3}\label{structfscrypt__master__key_a6f8ee9ecf191f9a301f4bc4335da92b3} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries mk\+\_\+rcu\+\_\+head}
+\item 
+\Hypertarget{structfscrypt__master__key_ac8c9a0f12105a9bc23208d58d5f5f1e5}\label{structfscrypt__master__key_ac8c9a0f12105a9bc23208d58d5f5f1e5} 
+struct \doxymbox{\hyperlink{structfscrypt__master__key__secret}{fscrypt\+\_\+master\+\_\+key\+\_\+secret}} {\bfseries mk\+\_\+secret}
+\item 
+\Hypertarget{structfscrypt__master__key_aa650fccd252079e29d6980676de96910}\label{structfscrypt__master__key_aa650fccd252079e29d6980676de96910} 
+struct \doxymbox{\hyperlink{structfscrypt__key__specifier}{fscrypt\+\_\+key\+\_\+specifier}} {\bfseries mk\+\_\+spec}
+\item 
+\Hypertarget{structfscrypt__master__key_a6dcf0f96050ec73ddbc4ecc5548ce1d9}\label{structfscrypt__master__key_a6dcf0f96050ec73ddbc4ecc5548ce1d9} 
+struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*} {\bfseries mk\+\_\+users}
+\item 
+\Hypertarget{structfscrypt__master__key_a7adae648f0ed79b239b81fcef563813a}\label{structfscrypt__master__key_a7adae648f0ed79b239b81fcef563813a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries mk\+\_\+decrypted\+\_\+inodes}
+\item 
+\Hypertarget{structfscrypt__master__key_ac758d1184dfc80d07143e843d51e324a}\label{structfscrypt__master__key_ac758d1184dfc80d07143e843d51e324a} 
+spinlock\+\_\+t {\bfseries mk\+\_\+decrypted\+\_\+inodes\+\_\+lock}
+\item 
+\Hypertarget{structfscrypt__master__key_aee19a5066e74ea911d7630988e24981e}\label{structfscrypt__master__key_aee19a5066e74ea911d7630988e24981e} 
+struct \doxymbox{\hyperlink{structfscrypt__prepared__key}{fscrypt\+\_\+prepared\+\_\+key}} {\bfseries mk\+\_\+direct\+\_\+keys} \+[11]\+
+\item 
+\Hypertarget{structfscrypt__master__key_ad9c7c3bd54f348fd022128ee2bd074f9}\label{structfscrypt__master__key_ad9c7c3bd54f348fd022128ee2bd074f9} 
+struct \doxymbox{\hyperlink{structfscrypt__prepared__key}{fscrypt\+\_\+prepared\+\_\+key}} {\bfseries mk\+\_\+iv\+\_\+ino\+\_\+lblk\+\_\+64\+\_\+keys} \+[11]\+
+\item 
+\Hypertarget{structfscrypt__master__key_aa4a2122effa6f07326548b7a84d7107a}\label{structfscrypt__master__key_aa4a2122effa6f07326548b7a84d7107a} 
+struct \doxymbox{\hyperlink{structfscrypt__prepared__key}{fscrypt\+\_\+prepared\+\_\+key}} {\bfseries mk\+\_\+iv\+\_\+ino\+\_\+lblk\+\_\+32\+\_\+keys} \+[11]\+
+\item 
+\Hypertarget{structfscrypt__master__key_a0603c78cf6e3c1281914d7c9b31832ad}\label{structfscrypt__master__key_a0603c78cf6e3c1281914d7c9b31832ad} 
+\doxymbox{\hyperlink{structsiphash__key__t}{siphash\+\_\+key\+\_\+t}} {\bfseries mk\+\_\+ino\+\_\+hash\+\_\+key}
+\item 
+\Hypertarget{structfscrypt__master__key_ae159fe73b355a8d56552cf324db4fc47}\label{structfscrypt__master__key_ae159fe73b355a8d56552cf324db4fc47} 
+bool {\bfseries mk\+\_\+ino\+\_\+hash\+\_\+key\+\_\+initialized}
+\item 
+\Hypertarget{structfscrypt__master__key_a6eb90fbaacc1ed9ed3cab6bd6d39fba1}\label{structfscrypt__master__key_a6eb90fbaacc1ed9ed3cab6bd6d39fba1} 
+bool {\bfseries mk\+\_\+present}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+\doxysection{nfs4\+\_\+minor\+\_\+version\+\_\+ops Struct Reference}
+\hypertarget{structnfs4__minor__version__ops}{}\label{structnfs4__minor__version__ops}\index{nfs4\_minor\_version\_ops@{nfs4\_minor\_version\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs4__minor__version__ops_a91d2c3cc2258e6ed3f01bd98f3809991}\label{structnfs4__minor__version__ops_a91d2c3cc2258e6ed3f01bd98f3809991} 
+u32 {\bfseries minor\+\_\+version}
+\item 
+\Hypertarget{structnfs4__minor__version__ops_a667429bf32155a91bced19b856ad6b4e}\label{structnfs4__minor__version__ops_a667429bf32155a91bced19b856ad6b4e} 
+unsigned int {\bfseries init\+\_\+caps}
+\item 
+\Hypertarget{structnfs4__minor__version__ops_af00d013a2d5d0ad96fa6d6c0717251fb}\label{structnfs4__minor__version__ops_af00d013a2d5d0ad96fa6d6c0717251fb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+client} )(struct \doxymbox{\hyperlink{structnfs__client}{nfs\+\_\+client}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs4__minor__version__ops_a8e72582bea3deea26898d88c0d12c034}\label{structnfs4__minor__version__ops_a8e72582bea3deea26898d88c0d12c034} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries shutdown\+\_\+client} )(struct \doxymbox{\hyperlink{structnfs__client}{nfs\+\_\+client}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs4__minor__version__ops_a213660d88fe718055ef6f39bdd3b1d0b}\label{structnfs4__minor__version__ops_a213660d88fe718055ef6f39bdd3b1d0b} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries match\+\_\+stateid} )(const nfs4\+\_\+stateid \texorpdfstring{$\ast$}{*}, const nfs4\+\_\+stateid \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs4__minor__version__ops_ac32e4525f75eb593b44d38ff7ec17ff5}\label{structnfs4__minor__version__ops_ac32e4525f75eb593b44d38ff7ec17ff5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries find\+\_\+root\+\_\+sec} )(struct \doxymbox{\hyperlink{structnfs__server}{nfs\+\_\+server}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnfs__fh}{nfs\+\_\+fh}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnfs__fattr}{nfs\+\_\+fattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs4__minor__version__ops_afe39e7aff0ce6cabe988f0a28abe39a0}\label{structnfs4__minor__version__ops_afe39e7aff0ce6cabe988f0a28abe39a0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+lock\+\_\+state} )(struct \doxymbox{\hyperlink{structnfs__server}{nfs\+\_\+server}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnfs4__lock__state}{nfs4\+\_\+lock\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs4__minor__version__ops_ae84279325c4b2cb210ad5c9709e36d26}\label{structnfs4__minor__version__ops_ae84279325c4b2cb210ad5c9709e36d26} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries test\+\_\+and\+\_\+free\+\_\+expired} )(struct \doxymbox{\hyperlink{structnfs__server}{nfs\+\_\+server}} \texorpdfstring{$\ast$}{*}, nfs4\+\_\+stateid \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs4__minor__version__ops_a4d9d32cff09c678bae7f5bc4c80adfb2}\label{structnfs4__minor__version__ops_a4d9d32cff09c678bae7f5bc4c80adfb2} 
+struct \doxymbox{\hyperlink{structnfs__seqid}{nfs\+\_\+seqid}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+seqid} )(struct \doxymbox{\hyperlink{structnfs__seqid__counter}{nfs\+\_\+seqid\+\_\+counter}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{structnfs4__minor__version__ops_aa732e8c130c49cbd69e0822ab95522b6}\label{structnfs4__minor__version__ops_aa732e8c130c49cbd69e0822ab95522b6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries session\+\_\+trunk} )(struct \doxymbox{\hyperlink{structrpc__clnt}{rpc\+\_\+clnt}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrpc__xprt}{rpc\+\_\+xprt}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs4__minor__version__ops_a78ce352f00d17143433d65d44d75b074}\label{structnfs4__minor__version__ops_a78ce352f00d17143433d65d44d75b074} 
+const struct \doxymbox{\hyperlink{structrpc__call__ops}{rpc\+\_\+call\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries call\+\_\+sync\+\_\+ops}
+\item 
+\Hypertarget{structnfs4__minor__version__ops_ad7b589345b5aea7c4639fbdbdc6be5ab}\label{structnfs4__minor__version__ops_ad7b589345b5aea7c4639fbdbdc6be5ab} 
+const struct \doxymbox{\hyperlink{structnfs4__state__recovery__ops}{nfs4\+\_\+state\+\_\+recovery\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries reboot\+\_\+recovery\+\_\+ops}
+\item 
+\Hypertarget{structnfs4__minor__version__ops_a63bf72e109475fc5f5340af93a382eaa}\label{structnfs4__minor__version__ops_a63bf72e109475fc5f5340af93a382eaa} 
+const struct \doxymbox{\hyperlink{structnfs4__state__recovery__ops}{nfs4\+\_\+state\+\_\+recovery\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries nograce\+\_\+recovery\+\_\+ops}
+\item 
+\Hypertarget{structnfs4__minor__version__ops_a37cc81a1e4e39c6b2aff19e39b77da65}\label{structnfs4__minor__version__ops_a37cc81a1e4e39c6b2aff19e39b77da65} 
+const struct \doxymbox{\hyperlink{structnfs4__state__maintenance__ops}{nfs4\+\_\+state\+\_\+maintenance\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries state\+\_\+renewal\+\_\+ops}
+\item 
+\Hypertarget{structnfs4__minor__version__ops_a70b9bf58a995013f2871a2f8c70b2a6c}\label{structnfs4__minor__version__ops_a70b9bf58a995013f2871a2f8c70b2a6c} 
+const struct \doxymbox{\hyperlink{structnfs4__mig__recovery__ops}{nfs4\+\_\+mig\+\_\+recovery\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries mig\+\_\+recovery\+\_\+ops}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

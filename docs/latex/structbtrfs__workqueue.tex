@@ -1,0 +1,40 @@
+\doxysection{btrfs\+\_\+workqueue Struct Reference}
+\hypertarget{structbtrfs__workqueue}{}\label{structbtrfs__workqueue}\index{btrfs\_workqueue@{btrfs\_workqueue}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__workqueue_a95d51605e4ec646fb1e29f28e0133771}\label{structbtrfs__workqueue_a95d51605e4ec646fb1e29f28e0133771} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries normal\+\_\+wq}
+\item 
+\Hypertarget{structbtrfs__workqueue_a83ad09e2e89144276124c186116da5b9}\label{structbtrfs__workqueue_a83ad09e2e89144276124c186116da5b9} 
+struct \doxymbox{\hyperlink{structbtrfs__fs__info}{btrfs\+\_\+fs\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{structbtrfs__workqueue_a9cbecbacd1f63943ec7ddc806a27fdb9}\label{structbtrfs__workqueue_a9cbecbacd1f63943ec7ddc806a27fdb9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ordered\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__workqueue_aed5ac64df8fcd2d191d76ca575074277}\label{structbtrfs__workqueue_aed5ac64df8fcd2d191d76ca575074277} 
+spinlock\+\_\+t {\bfseries list\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__workqueue_af90b225506d6b3fcd2b4cbfa3715b869}\label{structbtrfs__workqueue_af90b225506d6b3fcd2b4cbfa3715b869} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries pending}
+\item 
+\Hypertarget{structbtrfs__workqueue_a9dbdbd59c4760c442fb874a4b8796ba8}\label{structbtrfs__workqueue_a9dbdbd59c4760c442fb874a4b8796ba8} 
+int {\bfseries limit\+\_\+active}
+\item 
+\Hypertarget{structbtrfs__workqueue_a6dea55889e1fe33db76a396cb8329481}\label{structbtrfs__workqueue_a6dea55889e1fe33db76a396cb8329481} 
+int {\bfseries current\+\_\+active}
+\item 
+\Hypertarget{structbtrfs__workqueue_a281e2e96b86fdbee57f5875021ba1b3e}\label{structbtrfs__workqueue_a281e2e96b86fdbee57f5875021ba1b3e} 
+int {\bfseries thresh}
+\item 
+\Hypertarget{structbtrfs__workqueue_a187edaef3e39c4bf20579c5a76e4f0bc}\label{structbtrfs__workqueue_a187edaef3e39c4bf20579c5a76e4f0bc} 
+unsigned int {\bfseries count}
+\item 
+\Hypertarget{structbtrfs__workqueue_a2db490cd0bc981103b2291003e0ef0e0}\label{structbtrfs__workqueue_a2db490cd0bc981103b2291003e0ef0e0} 
+spinlock\+\_\+t {\bfseries thres\+\_\+lock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

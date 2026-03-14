@@ -1,0 +1,47 @@
+\doxysection{pci\+\_\+tsm\+\_\+ops Struct Reference}
+\hypertarget{structpci__tsm__ops}{}\label{structpci__tsm__ops}\index{pci\_tsm\_ops@{pci\_tsm\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpci__tsm__ops_ad112ac0ee82dd3687b2b668fa4e7cab2}\label{structpci__tsm__ops_ad112ac0ee82dd3687b2b668fa4e7cab2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionpci__tsm__ops_1_1_0d356114362023017074015112131053212022017250003176_a3dd1e259c14ea2744e3d59ad3eb5fbb6}\label{unionpci__tsm__ops_1_1_0d356114362023017074015112131053212022017250003176_a3dd1e259c14ea2744e3d59ad3eb5fbb6} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structpci__tsm}{pci\_tsm}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structtsm__dev}{tsm\_dev}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\>\doxymbox{\hyperlink{structpci__dev}{pci\_dev}} \texorpdfstring{$\ast$}{*})\\
+\>\>void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(struct \doxymbox{\hyperlink{structpci__tsm}{pci\_tsm}} \texorpdfstring{$\ast$}{*})\\
+\>\>int(\texorpdfstring{$\ast$}{*} {\bfseries connect} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\_dev}} \texorpdfstring{$\ast$}{*})\\
+\>\>void(\texorpdfstring{$\ast$}{*} {\bfseries disconnect} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\_dev}} \texorpdfstring{$\ast$}{*})\\
+\>\>struct \doxymbox{\hyperlink{structpci__tdi}{pci\_tdi}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries bind} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\_dev}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*},\\
+\>\>\> u32)\\
+\>\>void(\texorpdfstring{$\ast$}{*} {\bfseries unbind} )(struct \doxymbox{\hyperlink{structpci__tdi}{pci\_tdi}} \texorpdfstring{$\ast$}{*})\\
+\>\>ssize\_t(\texorpdfstring{$\ast$}{*} {\bfseries guest\_req} )(struct \doxymbox{\hyperlink{structpci__tdi}{pci\_tdi}} \texorpdfstring{$\ast$}{*}, enum \\
+\>\>\>pci\_tsm\_req\_scope, \doxymbox{\hyperlink{structsockptr__t}{sockptr\_t}},\\
+\>\>\> size\_t, \doxymbox{\hyperlink{structsockptr__t}{sockptr\_t}}, size\_t,\\
+\>\>\> u64 \texorpdfstring{$\ast$}{*})\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structpci__tsm__link__ops}{pci\_tsm\_link\_ops}} {\bfseries link\_ops}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structpci__tsm__ops_aa850abd0af337796bc49b1425e6d6c71}\label{structpci__tsm__ops_aa850abd0af337796bc49b1425e6d6c71} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionpci__tsm__ops_1_1_0d140215354161026345061210314127226000117314335134_af9614dc090dcf730eacbda9da6ff8ea4}\label{unionpci__tsm__ops_1_1_0d140215354161026345061210314127226000117314335134_af9614dc090dcf730eacbda9da6ff8ea4} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structpci__tsm}{pci\_tsm}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries lock} )(struct \doxymbox{\hyperlink{structtsm__dev}{tsm\_dev}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\>\doxymbox{\hyperlink{structpci__dev}{pci\_dev}} \texorpdfstring{$\ast$}{*})\\
+\>\>void(\texorpdfstring{$\ast$}{*} {\bfseries unlock} )(struct \doxymbox{\hyperlink{structpci__tsm}{pci\_tsm}} \texorpdfstring{$\ast$}{*})\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structpci__tsm__devsec__ops}{pci\_tsm\_devsec\_ops}} {\bfseries devsec\_ops}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\doxysection{perf\+\_\+event\+\_\+context Struct Reference}
+\hypertarget{structperf__event__context}{}\label{structperf__event__context}\index{perf\_event\_context@{perf\_event\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structperf__event__context_abb62a927aee96d25d1294fecce987710}\label{structperf__event__context_abb62a927aee96d25d1294fecce987710} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structperf__event__context_ab696e1f84430aa710a07a6f460e83264}\label{structperf__event__context_ab696e1f84430aa710a07a6f460e83264} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structperf__event__context_afa35ec1fe5fd04fc43855e99d39715bf}\label{structperf__event__context_afa35ec1fe5fd04fc43855e99d39715bf} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pmu\+\_\+ctx\+\_\+list}
+\item 
+\Hypertarget{structperf__event__context_abce5d1e28cf521f32d1b609baabdd568}\label{structperf__event__context_abce5d1e28cf521f32d1b609baabdd568} 
+struct \doxymbox{\hyperlink{structperf__event__groups}{perf\+\_\+event\+\_\+groups}} {\bfseries pinned\+\_\+groups}
+\item 
+\Hypertarget{structperf__event__context_a625c4e8d751d38feb9eaf8ea500ba1f4}\label{structperf__event__context_a625c4e8d751d38feb9eaf8ea500ba1f4} 
+struct \doxymbox{\hyperlink{structperf__event__groups}{perf\+\_\+event\+\_\+groups}} {\bfseries flexible\+\_\+groups}
+\item 
+\Hypertarget{structperf__event__context_a481197853500cb063aa0d2b234f8aa56}\label{structperf__event__context_a481197853500cb063aa0d2b234f8aa56} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries event\+\_\+list}
+\item 
+\Hypertarget{structperf__event__context_aa352b17d09bcbb5fbb65d2d79c634b92}\label{structperf__event__context_aa352b17d09bcbb5fbb65d2d79c634b92} 
+int {\bfseries nr\+\_\+events}
+\item 
+\Hypertarget{structperf__event__context_a596a284e71960e77dcb83a622d410eb0}\label{structperf__event__context_a596a284e71960e77dcb83a622d410eb0} 
+int {\bfseries nr\+\_\+user}
+\item 
+\Hypertarget{structperf__event__context_acf90495bc56af9979984a2cef1bd6bde}\label{structperf__event__context_acf90495bc56af9979984a2cef1bd6bde} 
+int {\bfseries is\+\_\+active}
+\item 
+\Hypertarget{structperf__event__context_a28823865a8196447e5202cd61b2734cc}\label{structperf__event__context_a28823865a8196447e5202cd61b2734cc} 
+int {\bfseries nr\+\_\+stat}
+\item 
+\Hypertarget{structperf__event__context_a4abd23f98eb905228fe6b79ed3956234}\label{structperf__event__context_a4abd23f98eb905228fe6b79ed3956234} 
+int {\bfseries nr\+\_\+freq}
+\item 
+\Hypertarget{structperf__event__context_a6881c34caa372cdfc9d1a7efb9adb403}\label{structperf__event__context_a6881c34caa372cdfc9d1a7efb9adb403} 
+int {\bfseries rotate\+\_\+disable}
+\item 
+\Hypertarget{structperf__event__context_a7789d2a2bfad6d0fe02cab4f663ea768}\label{structperf__event__context_a7789d2a2bfad6d0fe02cab4f663ea768} 
+refcount\+\_\+t {\bfseries refcount}
+\item 
+\Hypertarget{structperf__event__context_a32cdc4ba308dc8eaec992072d9840825}\label{structperf__event__context_a32cdc4ba308dc8eaec992072d9840825} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries task}
+\item 
+\Hypertarget{structperf__event__context_ac89e2ff1e4bf0668288589d3370448a6}\label{structperf__event__context_ac89e2ff1e4bf0668288589d3370448a6} 
+u64 {\bfseries time}
+\item 
+\Hypertarget{structperf__event__context_a4083b7a9dc8ee06c11f0e1d362240f34}\label{structperf__event__context_a4083b7a9dc8ee06c11f0e1d362240f34} 
+u64 {\bfseries timestamp}
+\item 
+\Hypertarget{structperf__event__context_a1395d9b6e7c53a49d5127d1ae68aa390}\label{structperf__event__context_a1395d9b6e7c53a49d5127d1ae68aa390} 
+u64 {\bfseries timeoffset}
+\item 
+\Hypertarget{structperf__event__context_ab2d94a40f9b8196c6c6d853a8a6fe280}\label{structperf__event__context_ab2d94a40f9b8196c6c6d853a8a6fe280} 
+struct \doxymbox{\hyperlink{structperf__event__context}{perf\+\_\+event\+\_\+context}} \texorpdfstring{$\ast$}{*} {\bfseries parent\+\_\+ctx}
+\item 
+\Hypertarget{structperf__event__context_a091efb09f9629a587e3a6f43a2a5c4be}\label{structperf__event__context_a091efb09f9629a587e3a6f43a2a5c4be} 
+u64 {\bfseries parent\+\_\+gen}
+\item 
+\Hypertarget{structperf__event__context_aea1325426689950ef234ea17384f9937}\label{structperf__event__context_aea1325426689950ef234ea17384f9937} 
+u64 {\bfseries generation}
+\item 
+\Hypertarget{structperf__event__context_ac219d278dcf9bced3c831ffecf3589cb}\label{structperf__event__context_ac219d278dcf9bced3c831ffecf3589cb} 
+int {\bfseries pin\+\_\+count}
+\item 
+\Hypertarget{structperf__event__context_a190824cfa1ad422eda117f62514bcb3b}\label{structperf__event__context_a190824cfa1ad422eda117f62514bcb3b} 
+int {\bfseries nr\+\_\+cgroups}
+\item 
+\Hypertarget{structperf__event__context_a6c7596a1c817ed6c0d5c000edd74833d}\label{structperf__event__context_a6c7596a1c817ed6c0d5c000edd74833d} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries callback\+\_\+head}
+\item 
+\Hypertarget{structperf__event__context_a6bfee2f3a2f8179e35f3d49ac179a2e0}\label{structperf__event__context_a6bfee2f3a2f8179e35f3d49ac179a2e0} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries nr\+\_\+no\+\_\+switch\+\_\+fast}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

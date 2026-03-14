@@ -1,0 +1,334 @@
+\doxysection{drm\+\_\+mode\+\_\+config Struct Reference}
+\hypertarget{structdrm__mode__config}{}\label{structdrm__mode__config}\index{drm\_mode\_config@{drm\_mode\_config}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__mode__config_a35b4dd1abf9a173854423248460a175e}\label{structdrm__mode__config_a35b4dd1abf9a173854423248460a175e} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structdrm__mode__config_aee2e0dcbff3f5dc352d73871a619687c}\label{structdrm__mode__config_aee2e0dcbff3f5dc352d73871a619687c} 
+struct \doxymbox{\hyperlink{structdrm__modeset__lock}{drm\+\_\+modeset\+\_\+lock}} {\bfseries connection\+\_\+mutex}
+\item 
+\Hypertarget{structdrm__mode__config_a703bdeef69d32ed3a7e9105dc839042f}\label{structdrm__mode__config_a703bdeef69d32ed3a7e9105dc839042f} 
+struct \doxymbox{\hyperlink{structdrm__modeset__acquire__ctx}{drm\+\_\+modeset\+\_\+acquire\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries acquire\+\_\+ctx}
+\item 
+\Hypertarget{structdrm__mode__config_a5a30c1a63024e0380649137606a58bad}\label{structdrm__mode__config_a5a30c1a63024e0380649137606a58bad} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries idr\+\_\+mutex}
+\item 
+\Hypertarget{structdrm__mode__config_afe57ce0fe195e1b679503bb72b5c8f84}\label{structdrm__mode__config_afe57ce0fe195e1b679503bb72b5c8f84} 
+struct \doxymbox{\hyperlink{structidr}{idr}} {\bfseries object\+\_\+idr}
+\item 
+\Hypertarget{structdrm__mode__config_a0321f9b4d259ba19f9e6cd7cfa28299a}\label{structdrm__mode__config_a0321f9b4d259ba19f9e6cd7cfa28299a} 
+struct \doxymbox{\hyperlink{structidr}{idr}} {\bfseries tile\+\_\+idr}
+\item 
+\Hypertarget{structdrm__mode__config_aa04435cf2db0b4e58cddb6c1d045d8a3}\label{structdrm__mode__config_aa04435cf2db0b4e58cddb6c1d045d8a3} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries fb\+\_\+lock}
+\item 
+\Hypertarget{structdrm__mode__config_a37173aa1847a8dafb996a8a3b28bbd1b}\label{structdrm__mode__config_a37173aa1847a8dafb996a8a3b28bbd1b} 
+int {\bfseries num\+\_\+fb}
+\item 
+\Hypertarget{structdrm__mode__config_a0d42bd0ec595a867ed4d27ab4d58f59c}\label{structdrm__mode__config_a0d42bd0ec595a867ed4d27ab4d58f59c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries fb\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_a0d86ce1194d5a1b187af66f474f868d3}\label{structdrm__mode__config_a0d86ce1194d5a1b187af66f474f868d3} 
+spinlock\+\_\+t {\bfseries connector\+\_\+list\+\_\+lock}
+\item 
+\Hypertarget{structdrm__mode__config_af12cbe9b093b4d2a2fecfad37bb02bcc}\label{structdrm__mode__config_af12cbe9b093b4d2a2fecfad37bb02bcc} 
+int {\bfseries num\+\_\+connector}
+\item 
+\Hypertarget{structdrm__mode__config_a69caa5d11d843746bd5da20d1d75f81d}\label{structdrm__mode__config_a69caa5d11d843746bd5da20d1d75f81d} 
+struct \doxymbox{\hyperlink{structida}{ida}} {\bfseries connector\+\_\+ida}
+\item 
+\Hypertarget{structdrm__mode__config_a28b621d6828cafb3173f6d1d90346441}\label{structdrm__mode__config_a28b621d6828cafb3173f6d1d90346441} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries connector\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_a1ea030899d0c616f1b72bac1cf174704}\label{structdrm__mode__config_a1ea030899d0c616f1b72bac1cf174704} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries connector\+\_\+free\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_a109961e2c12f6c3e7de859bdb860e101}\label{structdrm__mode__config_a109961e2c12f6c3e7de859bdb860e101} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries connector\+\_\+free\+\_\+work}
+\item 
+\Hypertarget{structdrm__mode__config_ad527b956ebbb6db99fcc16750c53446e}\label{structdrm__mode__config_ad527b956ebbb6db99fcc16750c53446e} 
+int {\bfseries num\+\_\+encoder}
+\item 
+\Hypertarget{structdrm__mode__config_a64a2a8ef6dda1abfe51f36d3e986c460}\label{structdrm__mode__config_a64a2a8ef6dda1abfe51f36d3e986c460} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries encoder\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_a978e6eb26e55a5d0faea029db3a00829}\label{structdrm__mode__config_a978e6eb26e55a5d0faea029db3a00829} 
+int {\bfseries num\+\_\+total\+\_\+plane}
+\item 
+\Hypertarget{structdrm__mode__config_a48eb823b2579ca464dc28724a0ca5b99}\label{structdrm__mode__config_a48eb823b2579ca464dc28724a0ca5b99} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries plane\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_a2944449d65ce8eb604c371c930470a95}\label{structdrm__mode__config_a2944449d65ce8eb604c371c930470a95} 
+struct \doxymbox{\hyperlink{structraw__spinlock}{raw\+\_\+spinlock}} {\bfseries panic\+\_\+lock}
+\item 
+\Hypertarget{structdrm__mode__config_acfd5dacc457e8bf5ad8487a5bc70c811}\label{structdrm__mode__config_acfd5dacc457e8bf5ad8487a5bc70c811} 
+int {\bfseries num\+\_\+colorop}
+\item 
+\Hypertarget{structdrm__mode__config_a23c9bc4fd69cae567e3ee03a54f42300}\label{structdrm__mode__config_a23c9bc4fd69cae567e3ee03a54f42300} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries colorop\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_a73541431eaed0a841040b3a8e7ab409c}\label{structdrm__mode__config_a73541431eaed0a841040b3a8e7ab409c} 
+int {\bfseries num\+\_\+crtc}
+\item 
+\Hypertarget{structdrm__mode__config_ae81c80ed49d4bd16d6f310461f244961}\label{structdrm__mode__config_ae81c80ed49d4bd16d6f310461f244961} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries crtc\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_ad9aa6bae3811ac53e3f788951570ac50}\label{structdrm__mode__config_ad9aa6bae3811ac53e3f788951570ac50} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries property\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_af95deb78751a44ce0df498c24b147313}\label{structdrm__mode__config_af95deb78751a44ce0df498c24b147313} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries privobj\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_a783c1c3fd9235ef76a77f14654ddd45f}\label{structdrm__mode__config_a783c1c3fd9235ef76a77f14654ddd45f} 
+unsigned int {\bfseries min\+\_\+width}
+\item 
+\Hypertarget{structdrm__mode__config_aecf9e5954625781689eb9273a1609577}\label{structdrm__mode__config_aecf9e5954625781689eb9273a1609577} 
+unsigned int {\bfseries min\+\_\+height}
+\item 
+\Hypertarget{structdrm__mode__config_a1f7443fdeefe7e0625a7b6d640223b67}\label{structdrm__mode__config_a1f7443fdeefe7e0625a7b6d640223b67} 
+unsigned int {\bfseries max\+\_\+width}
+\item 
+\Hypertarget{structdrm__mode__config_aace7c4001eaa589d9106b5eb7ffeaaf9}\label{structdrm__mode__config_aace7c4001eaa589d9106b5eb7ffeaaf9} 
+unsigned int {\bfseries max\+\_\+height}
+\item 
+\Hypertarget{structdrm__mode__config_a6b5122282e74a734ebf71dc2d799e9e4}\label{structdrm__mode__config_a6b5122282e74a734ebf71dc2d799e9e4} 
+const struct \doxymbox{\hyperlink{structdrm__mode__config__funcs}{drm\+\_\+mode\+\_\+config\+\_\+funcs}} \texorpdfstring{$\ast$}{*} {\bfseries funcs}
+\item 
+\Hypertarget{structdrm__mode__config_aaaa317f6493ba56fbe287e23beb5fec0}\label{structdrm__mode__config_aaaa317f6493ba56fbe287e23beb5fec0} 
+bool {\bfseries poll\+\_\+enabled}
+\item 
+\Hypertarget{structdrm__mode__config_ac4c77eaa7fde9fa1872754590ed3f9b4}\label{structdrm__mode__config_ac4c77eaa7fde9fa1872754590ed3f9b4} 
+bool {\bfseries poll\+\_\+running}
+\item 
+\Hypertarget{structdrm__mode__config_ab19c7307bef6a34edfcb3c23a904a2c5}\label{structdrm__mode__config_ab19c7307bef6a34edfcb3c23a904a2c5} 
+bool {\bfseries delayed\+\_\+event}
+\item 
+\Hypertarget{structdrm__mode__config_afcae416005d8820bf5c001029dbb76a4}\label{structdrm__mode__config_afcae416005d8820bf5c001029dbb76a4} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries output\+\_\+poll\+\_\+work}
+\item 
+\Hypertarget{structdrm__mode__config_a0fccbc349758e2c1a7ae40b7efda4ee3}\label{structdrm__mode__config_a0fccbc349758e2c1a7ae40b7efda4ee3} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries blob\+\_\+lock}
+\item 
+\Hypertarget{structdrm__mode__config_a48ad5899882ba8b1ebcd484a83a79ffe}\label{structdrm__mode__config_a48ad5899882ba8b1ebcd484a83a79ffe} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries property\+\_\+blob\+\_\+list}
+\item 
+\Hypertarget{structdrm__mode__config_a0978c750d5d8a5f49c43ada61254da26}\label{structdrm__mode__config_a0978c750d5d8a5f49c43ada61254da26} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries edid\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a5942af187ae5fefee3635fc4ea14d4a8}\label{structdrm__mode__config_a5942af187ae5fefee3635fc4ea14d4a8} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries dpms\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_af0b83d4354a7b1789648fab35eebbf5e}\label{structdrm__mode__config_af0b83d4354a7b1789648fab35eebbf5e} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries path\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a400e974766c785b52f47f473fc632a7d}\label{structdrm__mode__config_a400e974766c785b52f47f473fc632a7d} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tile\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a768ca01d75a091b2172562139c93867c}\label{structdrm__mode__config_a768ca01d75a091b2172562139c93867c} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries link\+\_\+status\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_aace2edf81c68ab7bb30462f29b8c9bb8}\label{structdrm__mode__config_aace2edf81c68ab7bb30462f29b8c9bb8} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries plane\+\_\+type\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_aa1ca6cb05630040ac6601b0b5beb0bef}\label{structdrm__mode__config_aa1ca6cb05630040ac6601b0b5beb0bef} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+src\+\_\+x}
+\item 
+\Hypertarget{structdrm__mode__config_aefe489ca50ef0fa63fde715f4b12e7c1}\label{structdrm__mode__config_aefe489ca50ef0fa63fde715f4b12e7c1} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+src\+\_\+y}
+\item 
+\Hypertarget{structdrm__mode__config_a5bcac518b424a0d856d75f4656f69345}\label{structdrm__mode__config_a5bcac518b424a0d856d75f4656f69345} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+src\+\_\+w}
+\item 
+\Hypertarget{structdrm__mode__config_ad474543a88f3c2ebeba84e9bfc572d4a}\label{structdrm__mode__config_ad474543a88f3c2ebeba84e9bfc572d4a} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+src\+\_\+h}
+\item 
+\Hypertarget{structdrm__mode__config_ae357c57d20805d5e39ef1ec86a0b4ce6}\label{structdrm__mode__config_ae357c57d20805d5e39ef1ec86a0b4ce6} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+crtc\+\_\+x}
+\item 
+\Hypertarget{structdrm__mode__config_a9cf018b8cf6a1f245bff22d0f5bbf878}\label{structdrm__mode__config_a9cf018b8cf6a1f245bff22d0f5bbf878} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+crtc\+\_\+y}
+\item 
+\Hypertarget{structdrm__mode__config_a688852e03bfc8923879942a84aa4e2ad}\label{structdrm__mode__config_a688852e03bfc8923879942a84aa4e2ad} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+crtc\+\_\+w}
+\item 
+\Hypertarget{structdrm__mode__config_a79f017f388c4d9dbf6983fecacd15dec}\label{structdrm__mode__config_a79f017f388c4d9dbf6983fecacd15dec} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+crtc\+\_\+h}
+\item 
+\Hypertarget{structdrm__mode__config_a994e9259ad0e6cd9e1e31edb14b41d8a}\label{structdrm__mode__config_a994e9259ad0e6cd9e1e31edb14b41d8a} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+fb\+\_\+id}
+\item 
+\Hypertarget{structdrm__mode__config_a9b349002e24f488a5d8b2fcb0f20b63b}\label{structdrm__mode__config_a9b349002e24f488a5d8b2fcb0f20b63b} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+in\+\_\+fence\+\_\+fd}
+\item 
+\Hypertarget{structdrm__mode__config_a18703ee367aaf7aa89b76e10330812d2}\label{structdrm__mode__config_a18703ee367aaf7aa89b76e10330812d2} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+out\+\_\+fence\+\_\+ptr}
+\item 
+\Hypertarget{structdrm__mode__config_a2fc9754c16a173f11761781268ef3ba7}\label{structdrm__mode__config_a2fc9754c16a173f11761781268ef3ba7} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+crtc\+\_\+id}
+\item 
+\Hypertarget{structdrm__mode__config_aef7d4f895b021f0ebae49407cb5d8e8e}\label{structdrm__mode__config_aef7d4f895b021f0ebae49407cb5d8e8e} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+fb\+\_\+damage\+\_\+clips}
+\item 
+\Hypertarget{structdrm__mode__config_ab4fbb050546004d8a05ceb8e79edf78d}\label{structdrm__mode__config_ab4fbb050546004d8a05ceb8e79edf78d} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+active}
+\item 
+\Hypertarget{structdrm__mode__config_ac363e223c7671a36f88e97d240f603b0}\label{structdrm__mode__config_ac363e223c7671a36f88e97d240f603b0} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+mode\+\_\+id}
+\item 
+\Hypertarget{structdrm__mode__config_ad71060f8402261ee8d11691b4324e83f}\label{structdrm__mode__config_ad71060f8402261ee8d11691b4324e83f} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries prop\+\_\+vrr\+\_\+enabled}
+\item 
+\Hypertarget{structdrm__mode__config_af698878cea08a4373770ed14152010b5}\label{structdrm__mode__config_af698878cea08a4373770ed14152010b5} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries dvi\+\_\+i\+\_\+subconnector\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_aa19b84887eff2534717e49537c845d9b}\label{structdrm__mode__config_aa19b84887eff2534717e49537c845d9b} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries dvi\+\_\+i\+\_\+select\+\_\+subconnector\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a9e637380e64f247f25c630ea64893bdf}\label{structdrm__mode__config_a9e637380e64f247f25c630ea64893bdf} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries dp\+\_\+subconnector\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_ae3a7f606a6a32ca28a5d1bdff18f5650}\label{structdrm__mode__config_ae3a7f606a6a32ca28a5d1bdff18f5650} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+subconnector\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a9a4a0744ec6f05353de725ff078e72d7}\label{structdrm__mode__config_a9a4a0744ec6f05353de725ff078e72d7} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+select\+\_\+subconnector\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_ab66de460d0f1e50ce02b79f4fffc7e23}\label{structdrm__mode__config_ab66de460d0f1e50ce02b79f4fffc7e23} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries legacy\+\_\+tv\+\_\+mode\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a8c72513eec2eba0410bf3b0181980767}\label{structdrm__mode__config_a8c72513eec2eba0410bf3b0181980767} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+mode\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a3cb3c74c682c3f3bff487cf68e82c21a}\label{structdrm__mode__config_a3cb3c74c682c3f3bff487cf68e82c21a} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+left\+\_\+margin\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a657d8091ed336f382c1fc9226c633077}\label{structdrm__mode__config_a657d8091ed336f382c1fc9226c633077} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+right\+\_\+margin\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a9fc74b6e41a3a9ace082f3a6750ed592}\label{structdrm__mode__config_a9fc74b6e41a3a9ace082f3a6750ed592} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+top\+\_\+margin\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a06374188b33fe211d5551a7a7c0cf321}\label{structdrm__mode__config_a06374188b33fe211d5551a7a7c0cf321} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+bottom\+\_\+margin\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a608901aee1b8d337eeba854dfa60dec3}\label{structdrm__mode__config_a608901aee1b8d337eeba854dfa60dec3} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+brightness\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a08438ca42f416d1a6bac15020c5235f0}\label{structdrm__mode__config_a08438ca42f416d1a6bac15020c5235f0} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+contrast\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_af920018af216f89f35d3a44b0f791565}\label{structdrm__mode__config_af920018af216f89f35d3a44b0f791565} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+flicker\+\_\+reduction\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a0fec38b76a19f733aa2edddce41d1eb0}\label{structdrm__mode__config_a0fec38b76a19f733aa2edddce41d1eb0} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+overscan\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a5c945fa935e74932885fe7a464327d15}\label{structdrm__mode__config_a5c945fa935e74932885fe7a464327d15} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+saturation\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_ad0a4a56f74afc3ba0e82abcf2844a3f6}\label{structdrm__mode__config_ad0a4a56f74afc3ba0e82abcf2844a3f6} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries tv\+\_\+hue\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_ac3b493e74c7e9d4a2f126eb4577edbbb}\label{structdrm__mode__config_ac3b493e74c7e9d4a2f126eb4577edbbb} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries scaling\+\_\+mode\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a203dc04ca3a367031c864fee1a3da4ba}\label{structdrm__mode__config_a203dc04ca3a367031c864fee1a3da4ba} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries aspect\+\_\+ratio\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a21370b0155b51abb6fb79753ccab44a9}\label{structdrm__mode__config_a21370b0155b51abb6fb79753ccab44a9} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries content\+\_\+type\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a5a3ae5c104f8523e8ec69df9f87b3e30}\label{structdrm__mode__config_a5a3ae5c104f8523e8ec69df9f87b3e30} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries degamma\+\_\+lut\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a7fd5dd84951c547c4b0aeda018ce8142}\label{structdrm__mode__config_a7fd5dd84951c547c4b0aeda018ce8142} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries degamma\+\_\+lut\+\_\+size\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_ad786b2c939116052e43239cc180136aa}\label{structdrm__mode__config_ad786b2c939116052e43239cc180136aa} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries ctm\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a252cefd5e90c4cb411ab00518c84d71a}\label{structdrm__mode__config_a252cefd5e90c4cb411ab00518c84d71a} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries gamma\+\_\+lut\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a5006cdb5a95e850306ff466390a0699f}\label{structdrm__mode__config_a5006cdb5a95e850306ff466390a0699f} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries gamma\+\_\+lut\+\_\+size\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a0ffa87fb53fc0677ff348133017026d7}\label{structdrm__mode__config_a0ffa87fb53fc0677ff348133017026d7} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries suggested\+\_\+x\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a59d9f52f5e0282588374d933b24fec48}\label{structdrm__mode__config_a59d9f52f5e0282588374d933b24fec48} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries suggested\+\_\+y\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a97564c63bbbd654dff4a80fb02568338}\label{structdrm__mode__config_a97564c63bbbd654dff4a80fb02568338} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries non\+\_\+desktop\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_aa8bc5eda6c71fc0a48040cc45a9f2a15}\label{structdrm__mode__config_aa8bc5eda6c71fc0a48040cc45a9f2a15} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries panel\+\_\+orientation\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_aaf07d1aead74f4d2a92d9d77776cbcf0}\label{structdrm__mode__config_aaf07d1aead74f4d2a92d9d77776cbcf0} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries writeback\+\_\+fb\+\_\+id\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a9436e2a57870bc847e04341a62c3ed4f}\label{structdrm__mode__config_a9436e2a57870bc847e04341a62c3ed4f} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries writeback\+\_\+pixel\+\_\+formats\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_aa722c8fdca34f7d53c5db3b445e5fdbe}\label{structdrm__mode__config_aa722c8fdca34f7d53c5db3b445e5fdbe} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries writeback\+\_\+out\+\_\+fence\+\_\+ptr\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a4888a13c048f2514dee5f1497c4e7ba1}\label{structdrm__mode__config_a4888a13c048f2514dee5f1497c4e7ba1} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries hdr\+\_\+output\+\_\+metadata\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a31eefcaf90fc6053031aada04a9ea15e}\label{structdrm__mode__config_a31eefcaf90fc6053031aada04a9ea15e} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries content\+\_\+protection\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_aa8b1efad3b0e307fbca1b8d64fca3b82}\label{structdrm__mode__config_aa8b1efad3b0e307fbca1b8d64fca3b82} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries hdcp\+\_\+content\+\_\+type\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a8398dbfd51bb7d0693b835687abcf0f2}\label{structdrm__mode__config_a8398dbfd51bb7d0693b835687abcf0f2} 
+uint32\+\_\+t {\bfseries preferred\+\_\+depth}
+\item 
+\Hypertarget{structdrm__mode__config_ad603cc19b954615bbf6fbf5553f580b7}\label{structdrm__mode__config_ad603cc19b954615bbf6fbf5553f580b7} 
+uint32\+\_\+t {\bfseries prefer\+\_\+shadow}
+\item 
+\Hypertarget{structdrm__mode__config_a932e4b20a634bb73addfa5b53e725f3c}\label{structdrm__mode__config_a932e4b20a634bb73addfa5b53e725f3c} 
+bool {\bfseries quirk\+\_\+addfb\+\_\+prefer\+\_\+xbgr\+\_\+30bpp}
+\item 
+\Hypertarget{structdrm__mode__config_a2727af09326681d2d6a60808e0f6c976}\label{structdrm__mode__config_a2727af09326681d2d6a60808e0f6c976} 
+bool {\bfseries quirk\+\_\+addfb\+\_\+prefer\+\_\+host\+\_\+byte\+\_\+order}
+\item 
+\Hypertarget{structdrm__mode__config_a67fa1c60d9f432756339d7b303b77908}\label{structdrm__mode__config_a67fa1c60d9f432756339d7b303b77908} 
+bool {\bfseries async\+\_\+page\+\_\+flip}
+\item 
+\Hypertarget{structdrm__mode__config_ab9bd5d97558212f382d2b4e21390d134}\label{structdrm__mode__config_ab9bd5d97558212f382d2b4e21390d134} 
+bool {\bfseries fb\+\_\+modifiers\+\_\+not\+\_\+supported}
+\item 
+\Hypertarget{structdrm__mode__config_a62ce8da668a63459911ebd77f64c1bc1}\label{structdrm__mode__config_a62ce8da668a63459911ebd77f64c1bc1} 
+bool {\bfseries normalize\+\_\+zpos}
+\item 
+\Hypertarget{structdrm__mode__config_a90adc3f4435277b3608fff5a3f712f53}\label{structdrm__mode__config_a90adc3f4435277b3608fff5a3f712f53} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries modifiers\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a2b879ba214189e356535c58f9aa1d90e}\label{structdrm__mode__config_a2b879ba214189e356535c58f9aa1d90e} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries async\+\_\+modifiers\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_a7f662f2bb42677835cc8dd8280213f07}\label{structdrm__mode__config_a7f662f2bb42677835cc8dd8280213f07} 
+struct \doxymbox{\hyperlink{structdrm__property}{drm\+\_\+property}} \texorpdfstring{$\ast$}{*} {\bfseries size\+\_\+hints\+\_\+property}
+\item 
+\Hypertarget{structdrm__mode__config_ae0ab3c19712a3a18e90a3961e77263c6}\label{structdrm__mode__config_ae0ab3c19712a3a18e90a3961e77263c6} 
+uint32\+\_\+t {\bfseries cursor\+\_\+width}
+\item 
+\Hypertarget{structdrm__mode__config_a359789fe4f1aca3a883ce6cba733a015}\label{structdrm__mode__config_a359789fe4f1aca3a883ce6cba733a015} 
+uint32\+\_\+t {\bfseries cursor\+\_\+height}
+\item 
+\Hypertarget{structdrm__mode__config_a97fab05b71865d2eaa0b2d56c8876337}\label{structdrm__mode__config_a97fab05b71865d2eaa0b2d56c8876337} 
+struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries suspend\+\_\+state}
+\item 
+\Hypertarget{structdrm__mode__config_a2b15d7ec789071d583f1a72f84e0f2ad}\label{structdrm__mode__config_a2b15d7ec789071d583f1a72f84e0f2ad} 
+const struct \doxymbox{\hyperlink{structdrm__mode__config__helper__funcs}{drm\+\_\+mode\+\_\+config\+\_\+helper\+\_\+funcs}} \texorpdfstring{$\ast$}{*} {\bfseries helper\+\_\+private}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

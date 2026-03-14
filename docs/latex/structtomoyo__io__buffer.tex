@@ -1,0 +1,85 @@
+\doxysection{tomoyo\+\_\+io\+\_\+buffer Struct Reference}
+\hypertarget{structtomoyo__io__buffer}{}\label{structtomoyo__io__buffer}\index{tomoyo\_io\_buffer@{tomoyo\_io\_buffer}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtomoyo__io__buffer_aee6ffc1239c645da3bc0c08a331c36c1}\label{structtomoyo__io__buffer_aee6ffc1239c645da3bc0c08a331c36c1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structtomoyo__io__buffer}{tomoyo\+\_\+io\+\_\+buffer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtomoyo__io__buffer_aa3b2eb4fe23141fc2e887b2e2706a2d6}\label{structtomoyo__io__buffer_aa3b2eb4fe23141fc2e887b2e2706a2d6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structtomoyo__io__buffer}{tomoyo\+\_\+io\+\_\+buffer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtomoyo__io__buffer_ad0a9494a2b5c74e43a03b99ce0ca080a}\label{structtomoyo__io__buffer_ad0a9494a2b5c74e43a03b99ce0ca080a} 
+\+\_\+\+\_\+poll\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries poll} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, poll\+\_\+table \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtomoyo__io__buffer_a9a9fbc07411bb2395331563b86c5e764}\label{structtomoyo__io__buffer_a9a9fbc07411bb2395331563b86c5e764} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries io\+\_\+sem}
+\item 
+\Hypertarget{structtomoyo__io__buffer_a2057373fd90d059530e96615d8694f83}\label{structtomoyo__io__buffer_a2057373fd90d059530e96615d8694f83} 
+char \texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+user\+\_\+buf}
+\item 
+\Hypertarget{structtomoyo__io__buffer_a3fbdcc2808b1a6a595c7da5f59e97219}\label{structtomoyo__io__buffer_a3fbdcc2808b1a6a595c7da5f59e97219} 
+size\+\_\+t {\bfseries read\+\_\+user\+\_\+buf\+\_\+avail}
+\item 
+\Hypertarget{structtomoyo__io__buffer_a6eee4c1e995fafdbdb3c5cae4ab1ce3f}\label{structtomoyo__io__buffer_a6eee4c1e995fafdbdb3c5cae4ab1ce3f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} \texorpdfstring{$\ast$}{*} {\bfseries ns}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} \texorpdfstring{$\ast$}{*} {\bfseries domain}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} \texorpdfstring{$\ast$}{*} {\bfseries group}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} \texorpdfstring{$\ast$}{*} {\bfseries acl}\\
+\>size\_t {\bfseries avail}\\
+\>unsigned int {\bfseries step}\\
+\>unsigned int {\bfseries query\_index}\\
+\>u16 {\bfseries index}\\
+\>u16 {\bfseries cond\_index}\\
+\>u8 {\bfseries acl\_group\_index}\\
+\>u8 {\bfseries cond\_step}\\
+\>u8 {\bfseries bit}\\
+\>u8 {\bfseries w\_pos}\\
+\>bool {\bfseries eof}\\
+\>bool {\bfseries print\_this\_domain\_only}\\
+\>bool {\bfseries print\_transition\_related\_only}\\
+\>bool {\bfseries print\_cond\_part}\\
+\>const char \texorpdfstring{$\ast$}{*} {\bfseries w} \+[64]\+\\
+\} {\bfseries r}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtomoyo__io__buffer_a1894cc93990a88353c1768d5d6e1e372}\label{structtomoyo__io__buffer_a1894cc93990a88353c1768d5d6e1e372} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structtomoyo__policy__namespace}{tomoyo\_policy\_namespace}} \texorpdfstring{$\ast$}{*} {\bfseries ns}\\
+\>struct \doxymbox{\hyperlink{structtomoyo__domain__info}{tomoyo\_domain\_info}} \texorpdfstring{$\ast$}{*} {\bfseries domain}\\
+\>size\_t {\bfseries avail}\\
+\>bool {\bfseries is\_delete}\\
+\} {\bfseries w}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtomoyo__io__buffer_a2da5bce321256113caca6ee36bdf226e}\label{structtomoyo__io__buffer_a2da5bce321256113caca6ee36bdf226e} 
+char \texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+buf}
+\item 
+\Hypertarget{structtomoyo__io__buffer_a8466b4ba63def65c5b9287c7d0ca079b}\label{structtomoyo__io__buffer_a8466b4ba63def65c5b9287c7d0ca079b} 
+size\+\_\+t {\bfseries readbuf\+\_\+size}
+\item 
+\Hypertarget{structtomoyo__io__buffer_ac363120480acad58ac5e97f175fc22ae}\label{structtomoyo__io__buffer_ac363120480acad58ac5e97f175fc22ae} 
+char \texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+buf}
+\item 
+\Hypertarget{structtomoyo__io__buffer_af52b53e13950dfe5883153a4c80482f1}\label{structtomoyo__io__buffer_af52b53e13950dfe5883153a4c80482f1} 
+size\+\_\+t {\bfseries writebuf\+\_\+size}
+\item 
+\Hypertarget{structtomoyo__io__buffer_a909ec65729f1266b6659203b123006e3}\label{structtomoyo__io__buffer_a909ec65729f1266b6659203b123006e3} 
+enum tomoyo\+\_\+securityfs\+\_\+interface\+\_\+index {\bfseries type}
+\item 
+\Hypertarget{structtomoyo__io__buffer_a109b2183d7a8c59f2670b9a8711d2e31}\label{structtomoyo__io__buffer_a109b2183d7a8c59f2670b9a8711d2e31} 
+u8 {\bfseries users}
+\item 
+\Hypertarget{structtomoyo__io__buffer_ab21f3b811b4c120b46fa9fc0b8a7dc10}\label{structtomoyo__io__buffer_ab21f3b811b4c120b46fa9fc0b8a7dc10} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

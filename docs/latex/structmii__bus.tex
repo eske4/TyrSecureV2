@@ -1,0 +1,89 @@
+\doxysection{mii\+\_\+bus Struct Reference}
+\hypertarget{structmii__bus}{}\label{structmii__bus}\index{mii\_bus@{mii\_bus}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmii__bus_a5b21efb2bbf3000996e1ab52109feec6}\label{structmii__bus_a5b21efb2bbf3000996e1ab52109feec6} 
+enum \{ {\bfseries MDIOBUS\+\_\+\+ALLOCATED} = 1
+, {\bfseries MDIOBUS\+\_\+\+REGISTERED} = 2
+, {\bfseries MDIOBUS\+\_\+\+UNREGISTERED} = 3
+, {\bfseries MDIOBUS\+\_\+\+RELEASED} = 4
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmii__bus_a5f468e98630568d82d0f4e279d8b5a15}\label{structmii__bus_a5f468e98630568d82d0f4e279d8b5a15} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structmii__bus_a910cc1ed72df7cd0d749971e923bff28}\label{structmii__bus_a910cc1ed72df7cd0d749971e923bff28} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structmii__bus_a36726e0675c86260cfc796858b351365}\label{structmii__bus_a36726e0675c86260cfc796858b351365} 
+char {\bfseries id} \+[61]\+
+\item 
+\Hypertarget{structmii__bus_a5c96cd502e178bb48d33c24a1a11b17d}\label{structmii__bus_a5c96cd502e178bb48d33c24a1a11b17d} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv}
+\item 
+\Hypertarget{structmii__bus_ab00a54ee32d944032c5a2db45e1ffef0}\label{structmii__bus_ab00a54ee32d944032c5a2db45e1ffef0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structmii__bus}{mii\+\_\+bus}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structmii__bus_a97d454cee2829df58acfc200b0232143}\label{structmii__bus_a97d454cee2829df58acfc200b0232143} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structmii__bus}{mii\+\_\+bus}} \texorpdfstring{$\ast$}{*}, int, int, u16)
+\item 
+\Hypertarget{structmii__bus_ac146f9efd7953bc88faa52e2f1b40120}\label{structmii__bus_ac146f9efd7953bc88faa52e2f1b40120} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+c45} )(struct \doxymbox{\hyperlink{structmii__bus}{mii\+\_\+bus}} \texorpdfstring{$\ast$}{*}, int, int, int)
+\item 
+\Hypertarget{structmii__bus_a5d76522f79031912cc5f2ba196a38165}\label{structmii__bus_a5d76522f79031912cc5f2ba196a38165} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+c45} )(struct \doxymbox{\hyperlink{structmii__bus}{mii\+\_\+bus}} \texorpdfstring{$\ast$}{*}, int, int, int, u16)
+\item 
+\Hypertarget{structmii__bus_ac5201663322135020fe49fb22280ac83}\label{structmii__bus_ac5201663322135020fe49fb22280ac83} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reset} )(struct \doxymbox{\hyperlink{structmii__bus}{mii\+\_\+bus}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmii__bus_a96a476dc43106228798e1b13e00dee3c}\label{structmii__bus_a96a476dc43106228798e1b13e00dee3c} 
+struct \doxymbox{\hyperlink{structmdio__bus__stats}{mdio\+\_\+bus\+\_\+stats}} {\bfseries stats} \+[32]\+
+\item 
+\Hypertarget{structmii__bus_a37bdbdacd5d9fee400cf543d95b20f45}\label{structmii__bus_a37bdbdacd5d9fee400cf543d95b20f45} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mdio\+\_\+lock}
+\item 
+\Hypertarget{structmii__bus_a792752ad00d72368084f2d9b5c0eb155}\label{structmii__bus_a792752ad00d72368084f2d9b5c0eb155} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structmii__bus_a5a5ea69a971a0ccf5fcc1e49b01ba0be}\label{structmii__bus_a5a5ea69a971a0ccf5fcc1e49b01ba0be} 
+enum mii\+\_\+bus::\+ \{ ... \}  {\bfseries state}
+\item 
+\Hypertarget{structmii__bus_aa6974b5425396539bc04caa5394c4b3a}\label{structmii__bus_aa6974b5425396539bc04caa5394c4b3a} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structmii__bus_ab92aabd1a6b8cd179edf9eecf37545cf}\label{structmii__bus_ab92aabd1a6b8cd179edf9eecf37545cf} 
+struct \doxymbox{\hyperlink{structmdio__device}{mdio\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries mdio\+\_\+map} \+[32]\+
+\item 
+\Hypertarget{structmii__bus_aec5c247ba104420d9186f035d384fe8b}\label{structmii__bus_aec5c247ba104420d9186f035d384fe8b} 
+u32 {\bfseries phy\+\_\+mask}
+\item 
+\Hypertarget{structmii__bus_a5b778c640aac8ee2c203b317828f5677}\label{structmii__bus_a5b778c640aac8ee2c203b317828f5677} 
+u32 {\bfseries phy\+\_\+ignore\+\_\+ta\+\_\+mask}
+\item 
+\Hypertarget{structmii__bus_abc4fca4026bd63697ac97cdf66a82fad}\label{structmii__bus_abc4fca4026bd63697ac97cdf66a82fad} 
+int {\bfseries irq} \+[32]\+
+\item 
+\Hypertarget{structmii__bus_a463d7feb7f0211650a5abcfdbb664a37}\label{structmii__bus_a463d7feb7f0211650a5abcfdbb664a37} 
+int {\bfseries reset\+\_\+delay\+\_\+us}
+\item 
+\Hypertarget{structmii__bus_a6aa2800e0ad43893b976f45e991ed324}\label{structmii__bus_a6aa2800e0ad43893b976f45e991ed324} 
+int {\bfseries reset\+\_\+post\+\_\+delay\+\_\+us}
+\item 
+\Hypertarget{structmii__bus_a010993282820b3b31ec4818966b9c321}\label{structmii__bus_a010993282820b3b31ec4818966b9c321} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+gpiod}
+\item 
+\Hypertarget{structmii__bus_a7f7146f7b226fe2e7038b4dc6c40d8df}\label{structmii__bus_a7f7146f7b226fe2e7038b4dc6c40d8df} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries shared\+\_\+lock}
+\item 
+\Hypertarget{structmii__bus_a98f7d0ba84e6156b1105e524396045c1}\label{structmii__bus_a98f7d0ba84e6156b1105e524396045c1} 
+struct phy\+\_\+package\+\_\+shared \texorpdfstring{$\ast$}{*} {\bfseries shared} \+[32]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

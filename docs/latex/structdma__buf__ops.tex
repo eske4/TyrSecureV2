@@ -1,0 +1,46 @@
+\doxysection{dma\+\_\+buf\+\_\+ops Struct Reference}
+\hypertarget{structdma__buf__ops}{}\label{structdma__buf__ops}\index{dma\_buf\_ops@{dma\_buf\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdma__buf__ops_a8b86cf2c5baac542c5d034945df83264}\label{structdma__buf__ops_a8b86cf2c5baac542c5d034945df83264} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries attach} )(struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdma__buf__attachment}{dma\+\_\+buf\+\_\+attachment}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdma__buf__ops_a4c6f72c700d84be43564ee5bf8fc3364}\label{structdma__buf__ops_a4c6f72c700d84be43564ee5bf8fc3364} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries detach} )(struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdma__buf__attachment}{dma\+\_\+buf\+\_\+attachment}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdma__buf__ops_aa560fb943e57dfd6773fab7c069813ed}\label{structdma__buf__ops_aa560fb943e57dfd6773fab7c069813ed} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pin} )(struct \doxymbox{\hyperlink{structdma__buf__attachment}{dma\+\_\+buf\+\_\+attachment}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdma__buf__ops_a0e4cce1b4fd38f1fa3313b08ca72a693}\label{structdma__buf__ops_a0e4cce1b4fd38f1fa3313b08ca72a693} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unpin} )(struct \doxymbox{\hyperlink{structdma__buf__attachment}{dma\+\_\+buf\+\_\+attachment}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdma__buf__ops_a26c7e063521b00df0cdc2c4c7aab8388}\label{structdma__buf__ops_a26c7e063521b00df0cdc2c4c7aab8388} 
+struct \doxymbox{\hyperlink{structsg__table}{sg\+\_\+table}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+dma\+\_\+buf} )(struct \doxymbox{\hyperlink{structdma__buf__attachment}{dma\+\_\+buf\+\_\+attachment}} \texorpdfstring{$\ast$}{*}, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__buf__ops_a219413438a0e81f8ed452d9e899c2291}\label{structdma__buf__ops_a219413438a0e81f8ed452d9e899c2291} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unmap\+\_\+dma\+\_\+buf} )(struct \doxymbox{\hyperlink{structdma__buf__attachment}{dma\+\_\+buf\+\_\+attachment}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsg__table}{sg\+\_\+table}} \texorpdfstring{$\ast$}{*}, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__buf__ops_a35743e5e08595abf0b5c6fea6154af1c}\label{structdma__buf__ops_a35743e5e08595abf0b5c6fea6154af1c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdma__buf__ops_abd94acdada1879eea8b04b2f320980d9}\label{structdma__buf__ops_abd94acdada1879eea8b04b2f320980d9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries begin\+\_\+cpu\+\_\+access} )(struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*}, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__buf__ops_a4083d823ad62616fe82976db4a45fd1d}\label{structdma__buf__ops_a4083d823ad62616fe82976db4a45fd1d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+cpu\+\_\+access} )(struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*}, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__buf__ops_aed439e6940388769f05ddee4abedc433}\label{structdma__buf__ops_aed439e6940388769f05ddee4abedc433} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mmap} )(struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdma__buf__ops_a3a7a5d3f9751052972e692349d2c8673}\label{structdma__buf__ops_a3a7a5d3f9751052972e692349d2c8673} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vmap} )(struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiosys__map}{iosys\+\_\+map}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdma__buf__ops_aee51594dd5d9de130924bb55de7625ff}\label{structdma__buf__ops_aee51594dd5d9de130924bb55de7625ff} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vunmap} )(struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiosys__map}{iosys\+\_\+map}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

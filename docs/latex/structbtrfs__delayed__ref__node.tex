@@ -1,0 +1,52 @@
+\doxysection{btrfs\+\_\+delayed\+\_\+ref\+\_\+node Struct Reference}
+\hypertarget{structbtrfs__delayed__ref__node}{}\label{structbtrfs__delayed__ref__node}\index{btrfs\_delayed\_ref\_node@{btrfs\_delayed\_ref\_node}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a2a4799e66db43d3e7ad2fa38b81ac436}\label{structbtrfs__delayed__ref__node_a2a4799e66db43d3e7ad2fa38b81ac436} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries ref\+\_\+node}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_ab5b9f5768aba76d5672d8b78a8e4e571}\label{structbtrfs__delayed__ref__node_ab5b9f5768aba76d5672d8b78a8e4e571} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries add\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a6389f132f1e538d2b52081bb160bfa7a}\label{structbtrfs__delayed__ref__node_a6389f132f1e538d2b52081bb160bfa7a} 
+u64 {\bfseries bytenr}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a1b6dc225866c36aad5becad73fe6e199}\label{structbtrfs__delayed__ref__node_a1b6dc225866c36aad5becad73fe6e199} 
+u64 {\bfseries num\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a3025b7fb01c2e23aba6ef13754fe685a}\label{structbtrfs__delayed__ref__node_a3025b7fb01c2e23aba6ef13754fe685a} 
+u64 {\bfseries seq}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a2b4b8d5ac03dbac36693e5cb564ef863}\label{structbtrfs__delayed__ref__node_a2b4b8d5ac03dbac36693e5cb564ef863} 
+u64 {\bfseries ref\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a0bdc76b63a25c6f279245acd52a95be5}\label{structbtrfs__delayed__ref__node_a0bdc76b63a25c6f279245acd52a95be5} 
+u64 {\bfseries parent}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_aafd9980071cf1629289deed49dd438a9}\label{structbtrfs__delayed__ref__node_aafd9980071cf1629289deed49dd438a9} 
+refcount\+\_\+t {\bfseries refs}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a9825259262844cdeafd3e02d616d1a33}\label{structbtrfs__delayed__ref__node_a9825259262844cdeafd3e02d616d1a33} 
+int {\bfseries ref\+\_\+mod}
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a53cbce7e6f6dbbc17f5fbc17c083f155}\label{structbtrfs__delayed__ref__node_a53cbce7e6f6dbbc17f5fbc17c083f155} 
+unsigned int {\bfseries action}:\+ 8
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a0bbe01c039e2a589f2781bf931602a38}\label{structbtrfs__delayed__ref__node_a0bbe01c039e2a589f2781bf931602a38} 
+unsigned int {\bfseries type}:\+ 8
+\item 
+\Hypertarget{structbtrfs__delayed__ref__node_a5aa61f2cbee03700a2907dac23e6b9f9}\label{structbtrfs__delayed__ref__node_a5aa61f2cbee03700a2907dac23e6b9f9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structbtrfs__tree__ref}{btrfs\_tree\_ref}} {\bfseries tree\_ref}\\
+\>struct \doxymbox{\hyperlink{structbtrfs__data__ref}{btrfs\_data\_ref}} {\bfseries data\_ref}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

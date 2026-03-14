@@ -1,0 +1,49 @@
+\doxysection{common\+\_\+audit\+\_\+data Struct Reference}
+\hypertarget{structcommon__audit__data}{}\label{structcommon__audit__data}\index{common\_audit\_data@{common\_audit\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcommon__audit__data_afa1580d6d00996f5c24ac059f656c80d}\label{structcommon__audit__data_afa1580d6d00996f5c24ac059f656c80d} 
+char {\bfseries type}
+\item 
+\Hypertarget{structcommon__audit__data_a9ad8b261a2cf4a5eb07e6b1ef255ac4d}\label{structcommon__audit__data_a9ad8b261a2cf4a5eb07e6b1ef255ac4d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpath}{path}} {\bfseries path}\\
+\>struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries dentry}\\
+\>struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries inode}\\
+\>struct \doxymbox{\hyperlink{structlsm__network__audit}{lsm\_network\_audit}} \texorpdfstring{$\ast$}{*} {\bfseries net}\\
+\>int {\bfseries cap}\\
+\>int {\bfseries ipc\_id}\\
+\>struct \doxymbox{\hyperlink{structtask__struct}{task\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries tsk}\\
+\>struct \{\\
+\>\>key\_serial\_t {\bfseries key}\\
+\>\>char \texorpdfstring{$\ast$}{*} {\bfseries key\_desc}\\
+\>\} {\bfseries key\_struct}\\
+\>char \texorpdfstring{$\ast$}{*} {\bfseries kmod\_name}\\
+\>struct \doxymbox{\hyperlink{structlsm__ioctlop__audit}{lsm\_ioctlop\_audit}} \texorpdfstring{$\ast$}{*} {\bfseries op}\\
+\>struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries file}\\
+\>struct \doxymbox{\hyperlink{structlsm__ibpkey__audit}{lsm\_ibpkey\_audit}} \texorpdfstring{$\ast$}{*} {\bfseries ibpkey}\\
+\>struct \doxymbox{\hyperlink{structlsm__ibendport__audit}{lsm\_ibendport\_audit}} \texorpdfstring{$\ast$}{*} {\bfseries ibendport}\\
+\>int {\bfseries reason}\\
+\>const char \texorpdfstring{$\ast$}{*} {\bfseries anonclass}\\
+\>u16 {\bfseries nlmsg\_type}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\item 
+\Hypertarget{structcommon__audit__data_ae302e8de907cfcb2fb31a4b9845f1fd5}\label{structcommon__audit__data_ae302e8de907cfcb2fb31a4b9845f1fd5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structsmack__audit__data}{smack\_audit\_data}} \texorpdfstring{$\ast$}{*} {\bfseries smack\_audit\_data}\\
+\>struct \doxymbox{\hyperlink{structselinux__audit__data}{selinux\_audit\_data}} \texorpdfstring{$\ast$}{*} {\bfseries selinux\_audit\_data}\\
+\>struct \doxymbox{\hyperlink{structapparmor__audit__data}{apparmor\_audit\_data}} \texorpdfstring{$\ast$}{*} {\bfseries apparmor\_audit\_data}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

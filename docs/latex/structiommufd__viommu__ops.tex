@@ -1,0 +1,31 @@
+\doxysection{iommufd\+\_\+viommu\+\_\+ops Struct Reference}
+\hypertarget{structiommufd__viommu__ops}{}\label{structiommufd__viommu__ops}\index{iommufd\_viommu\_ops@{iommufd\_viommu\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structiommufd__viommu__ops_a35046728227bc47849d1cfaec3dc37b9}\label{structiommufd__viommu__ops_a35046728227bc47849d1cfaec3dc37b9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy} )(struct \doxymbox{\hyperlink{structiommufd__viommu}{iommufd\+\_\+viommu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommufd__viommu__ops_a06036e62b76e68f8f525b360ad4ddad7}\label{structiommufd__viommu__ops_a06036e62b76e68f8f525b360ad4ddad7} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+domain\+\_\+nested} )(struct \doxymbox{\hyperlink{structiommufd__viommu}{iommufd\+\_\+viommu}} \texorpdfstring{$\ast$}{*}, u32, const struct \doxymbox{\hyperlink{structiommu__user__data}{iommu\+\_\+user\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommufd__viommu__ops_ae2b8385b9f4a9f401275c1b33efe17d7}\label{structiommufd__viommu__ops_ae2b8385b9f4a9f401275c1b33efe17d7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cache\+\_\+invalidate} )(struct \doxymbox{\hyperlink{structiommufd__viommu}{iommufd\+\_\+viommu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiommu__user__data__array}{iommu\+\_\+user\+\_\+data\+\_\+array}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommufd__viommu__ops_a36305f6727b797d81f72d86cd25ba916}\label{structiommufd__viommu__ops_a36305f6727b797d81f72d86cd25ba916} 
+const size\+\_\+t {\bfseries vdevice\+\_\+size}
+\item 
+\Hypertarget{structiommufd__viommu__ops_a9c9531a7c4455c2818a818ef567b7ad3}\label{structiommufd__viommu__ops_a9c9531a7c4455c2818a818ef567b7ad3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vdevice\+\_\+init} )(struct \doxymbox{\hyperlink{structiommufd__vdevice}{iommufd\+\_\+vdevice}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommufd__viommu__ops_a4d30c948b412c8766de8bdcf2de04ed3}\label{structiommufd__viommu__ops_a4d30c948b412c8766de8bdcf2de04ed3} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+hw\+\_\+queue\+\_\+size} )(struct \doxymbox{\hyperlink{structiommufd__viommu}{iommufd\+\_\+viommu}} \texorpdfstring{$\ast$}{*}, enum iommu\+\_\+hw\+\_\+queue\+\_\+type)
+\item 
+\Hypertarget{structiommufd__viommu__ops_aa8a4489eb34efb4d422f2f83f8b0d2a5}\label{structiommufd__viommu__ops_aa8a4489eb34efb4d422f2f83f8b0d2a5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+queue\+\_\+init\+\_\+phys} )(struct \doxymbox{\hyperlink{structiommufd__hw__queue}{iommufd\+\_\+hw\+\_\+queue}} \texorpdfstring{$\ast$}{*}, u32, phys\+\_\+addr\+\_\+t)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

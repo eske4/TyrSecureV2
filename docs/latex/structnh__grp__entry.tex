@@ -1,0 +1,43 @@
+\doxysection{nh\+\_\+grp\+\_\+entry Struct Reference}
+\hypertarget{structnh__grp__entry}{}\label{structnh__grp__entry}\index{nh\_grp\_entry@{nh\_grp\_entry}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnh__grp__entry_a043345e18f9935b1e385f54aaee0c593}\label{structnh__grp__entry_a043345e18f9935b1e385f54aaee0c593} 
+struct \doxymbox{\hyperlink{structnexthop}{nexthop}} \texorpdfstring{$\ast$}{*} {\bfseries nh}
+\item 
+\Hypertarget{structnh__grp__entry_aba6fe2f41dbbad4545e5eb3924a824f4}\label{structnh__grp__entry_aba6fe2f41dbbad4545e5eb3924a824f4} 
+struct \doxymbox{\hyperlink{structnh__grp__entry__stats}{nh\+\_\+grp\+\_\+entry\+\_\+stats}} \texorpdfstring{$\ast$}{*} {\bfseries stats}
+\item 
+\Hypertarget{structnh__grp__entry_af471dab75428c5053d703383e32e1b48}\label{structnh__grp__entry_af471dab75428c5053d703383e32e1b48} 
+u16 {\bfseries weight}
+\item 
+\Hypertarget{structnh__grp__entry_a682fb05b4636b8075f04304eb0ecc12b}\label{structnh__grp__entry_a682fb05b4636b8075f04304eb0ecc12b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries upper\_bound}\\
+\>\} {\bfseries hthr}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries uw\_nh\_entry}\\
+\>\>u16 {\bfseries count\_buckets}\\
+\>\>u16 {\bfseries wants\_buckets}\\
+\>\} {\bfseries res}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnh__grp__entry_a9a4a842862fcf4fa05e310e7bc568086}\label{structnh__grp__entry_a9a4a842862fcf4fa05e310e7bc568086} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries nh\+\_\+list}
+\item 
+\Hypertarget{structnh__grp__entry_a623948aa32d54cb075ef22356d1a815a}\label{structnh__grp__entry_a623948aa32d54cb075ef22356d1a815a} 
+struct \doxymbox{\hyperlink{structnexthop}{nexthop}} \texorpdfstring{$\ast$}{*} {\bfseries nh\+\_\+parent}
+\item 
+\Hypertarget{structnh__grp__entry_afb17ad797e0671e96e12f58b6e535009}\label{structnh__grp__entry_afb17ad797e0671e96e12f58b6e535009} 
+u64 {\bfseries packets\+\_\+hw}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

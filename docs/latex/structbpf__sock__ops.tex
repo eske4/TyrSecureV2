@@ -1,0 +1,155 @@
+\doxysection{bpf\+\_\+sock\+\_\+ops Struct Reference}
+\hypertarget{structbpf__sock__ops}{}\label{structbpf__sock__ops}\index{bpf\_sock\_ops@{bpf\_sock\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__sock__ops_a2b7b6a2029ec5d11b8d6c8de85286d13}\label{structbpf__sock__ops_a2b7b6a2029ec5d11b8d6c8de85286d13} 
+\+\_\+\+\_\+u32 {\bfseries op}
+\item 
+\Hypertarget{structbpf__sock__ops_acf04af8fe7e40a0d7268b61c840c9fdd}\label{structbpf__sock__ops_acf04af8fe7e40a0d7268b61c840c9fdd} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u32 {\bfseries args} \+[4]\+\\
+\>\_\_u32 {\bfseries reply}\\
+\>\_\_u32 {\bfseries replylong} \+[4]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__sock__ops_a712958eb75d0f800dacdb75022a17381}\label{structbpf__sock__ops_a712958eb75d0f800dacdb75022a17381} 
+\+\_\+\+\_\+u32 {\bfseries family}
+\item 
+\Hypertarget{structbpf__sock__ops_a6f20a3ff9b42c218635a7ff86561adb2}\label{structbpf__sock__ops_a6f20a3ff9b42c218635a7ff86561adb2} 
+\+\_\+\+\_\+u32 {\bfseries remote\+\_\+ip4}
+\item 
+\Hypertarget{structbpf__sock__ops_afb34db65d8ac166d46ab6a4f80a938ed}\label{structbpf__sock__ops_afb34db65d8ac166d46ab6a4f80a938ed} 
+\+\_\+\+\_\+u32 {\bfseries local\+\_\+ip4}
+\item 
+\Hypertarget{structbpf__sock__ops_ade3ab885595ec108c3b3911cad79e44b}\label{structbpf__sock__ops_ade3ab885595ec108c3b3911cad79e44b} 
+\+\_\+\+\_\+u32 {\bfseries remote\+\_\+ip6} \+[4]\+
+\item 
+\Hypertarget{structbpf__sock__ops_aaa9cf0e3daee7fb5813a305f82c1854e}\label{structbpf__sock__ops_aaa9cf0e3daee7fb5813a305f82c1854e} 
+\+\_\+\+\_\+u32 {\bfseries local\+\_\+ip6} \+[4]\+
+\item 
+\Hypertarget{structbpf__sock__ops_a725c6012a341203be87cd4c141dd7e7c}\label{structbpf__sock__ops_a725c6012a341203be87cd4c141dd7e7c} 
+\+\_\+\+\_\+u32 {\bfseries remote\+\_\+port}
+\item 
+\Hypertarget{structbpf__sock__ops_af427e5ba35c6dbe3a8250385a91b3074}\label{structbpf__sock__ops_af427e5ba35c6dbe3a8250385a91b3074} 
+\+\_\+\+\_\+u32 {\bfseries local\+\_\+port}
+\item 
+\Hypertarget{structbpf__sock__ops_a96050c76026bfacd258e1529ba977ff6}\label{structbpf__sock__ops_a96050c76026bfacd258e1529ba977ff6} 
+\+\_\+\+\_\+u32 {\bfseries is\+\_\+fullsock}
+\item 
+\Hypertarget{structbpf__sock__ops_ac9cc16ca6ef4ffde543f9ed4428d1cd2}\label{structbpf__sock__ops_ac9cc16ca6ef4ffde543f9ed4428d1cd2} 
+\+\_\+\+\_\+u32 {\bfseries snd\+\_\+cwnd}
+\item 
+\Hypertarget{structbpf__sock__ops_a9cb21647ca91793ae6acd09a0ebba3c7}\label{structbpf__sock__ops_a9cb21647ca91793ae6acd09a0ebba3c7} 
+\+\_\+\+\_\+u32 {\bfseries srtt\+\_\+us}
+\item 
+\Hypertarget{structbpf__sock__ops_a8adbd3881c0672aa19318938a2b7ff42}\label{structbpf__sock__ops_a8adbd3881c0672aa19318938a2b7ff42} 
+\+\_\+\+\_\+u32 {\bfseries bpf\+\_\+sock\+\_\+ops\+\_\+cb\+\_\+flags}
+\item 
+\Hypertarget{structbpf__sock__ops_ac7ff7f8c1968b518fe6ba36a683d5b36}\label{structbpf__sock__ops_ac7ff7f8c1968b518fe6ba36a683d5b36} 
+\+\_\+\+\_\+u32 {\bfseries state}
+\item 
+\Hypertarget{structbpf__sock__ops_abf7e679be79d615e99deab2bb2a34c42}\label{structbpf__sock__ops_abf7e679be79d615e99deab2bb2a34c42} 
+\+\_\+\+\_\+u32 {\bfseries rtt\+\_\+min}
+\item 
+\Hypertarget{structbpf__sock__ops_af8902b7102c42cc07f75f31298869322}\label{structbpf__sock__ops_af8902b7102c42cc07f75f31298869322} 
+\+\_\+\+\_\+u32 {\bfseries snd\+\_\+ssthresh}
+\item 
+\Hypertarget{structbpf__sock__ops_a9b637017f93d8d46d257fef0b843cb0c}\label{structbpf__sock__ops_a9b637017f93d8d46d257fef0b843cb0c} 
+\+\_\+\+\_\+u32 {\bfseries rcv\+\_\+nxt}
+\item 
+\Hypertarget{structbpf__sock__ops_ab1868764db6be10823a24badcf0ae8f4}\label{structbpf__sock__ops_ab1868764db6be10823a24badcf0ae8f4} 
+\+\_\+\+\_\+u32 {\bfseries snd\+\_\+nxt}
+\item 
+\Hypertarget{structbpf__sock__ops_a29ff613dcf70e1fecb39664816212f37}\label{structbpf__sock__ops_a29ff613dcf70e1fecb39664816212f37} 
+\+\_\+\+\_\+u32 {\bfseries snd\+\_\+una}
+\item 
+\Hypertarget{structbpf__sock__ops_ae08e474da7c1bc8c5eba7fde7eda05ce}\label{structbpf__sock__ops_ae08e474da7c1bc8c5eba7fde7eda05ce} 
+\+\_\+\+\_\+u32 {\bfseries mss\+\_\+cache}
+\item 
+\Hypertarget{structbpf__sock__ops_a5f421586d062456c32695dc61d46b32f}\label{structbpf__sock__ops_a5f421586d062456c32695dc61d46b32f} 
+\+\_\+\+\_\+u32 {\bfseries ecn\+\_\+flags}
+\item 
+\Hypertarget{structbpf__sock__ops_a28b104116e26d1c4b0cdb691b7686d92}\label{structbpf__sock__ops_a28b104116e26d1c4b0cdb691b7686d92} 
+\+\_\+\+\_\+u32 {\bfseries rate\+\_\+delivered}
+\item 
+\Hypertarget{structbpf__sock__ops_a279a0b0bfd131422ee55a1e9e53240c1}\label{structbpf__sock__ops_a279a0b0bfd131422ee55a1e9e53240c1} 
+\+\_\+\+\_\+u32 {\bfseries rate\+\_\+interval\+\_\+us}
+\item 
+\Hypertarget{structbpf__sock__ops_ae35328eddaeca44297ad78bcbeef7487}\label{structbpf__sock__ops_ae35328eddaeca44297ad78bcbeef7487} 
+\+\_\+\+\_\+u32 {\bfseries packets\+\_\+out}
+\item 
+\Hypertarget{structbpf__sock__ops_a11782a038c9df431c44129ad1243be26}\label{structbpf__sock__ops_a11782a038c9df431c44129ad1243be26} 
+\+\_\+\+\_\+u32 {\bfseries retrans\+\_\+out}
+\item 
+\Hypertarget{structbpf__sock__ops_a3433fb51fcd229c5f5291b471bc3127e}\label{structbpf__sock__ops_a3433fb51fcd229c5f5291b471bc3127e} 
+\+\_\+\+\_\+u32 {\bfseries total\+\_\+retrans}
+\item 
+\Hypertarget{structbpf__sock__ops_aa04733521fecf78730859a212644f38a}\label{structbpf__sock__ops_aa04733521fecf78730859a212644f38a} 
+\+\_\+\+\_\+u32 {\bfseries segs\+\_\+in}
+\item 
+\Hypertarget{structbpf__sock__ops_a21d96c07fb624f6ad4da6208b74aff04}\label{structbpf__sock__ops_a21d96c07fb624f6ad4da6208b74aff04} 
+\+\_\+\+\_\+u32 {\bfseries data\+\_\+segs\+\_\+in}
+\item 
+\Hypertarget{structbpf__sock__ops_a9c1b573d7a9b24db54e8151f0c371b16}\label{structbpf__sock__ops_a9c1b573d7a9b24db54e8151f0c371b16} 
+\+\_\+\+\_\+u32 {\bfseries segs\+\_\+out}
+\item 
+\Hypertarget{structbpf__sock__ops_a4bf7537b45c1db98f8eed28425ab72ad}\label{structbpf__sock__ops_a4bf7537b45c1db98f8eed28425ab72ad} 
+\+\_\+\+\_\+u32 {\bfseries data\+\_\+segs\+\_\+out}
+\item 
+\Hypertarget{structbpf__sock__ops_a6b049b8bb80255f96d7f27996fd4af3c}\label{structbpf__sock__ops_a6b049b8bb80255f96d7f27996fd4af3c} 
+\+\_\+\+\_\+u32 {\bfseries lost\+\_\+out}
+\item 
+\Hypertarget{structbpf__sock__ops_a9454a9652af905def540c61f57b28f0c}\label{structbpf__sock__ops_a9454a9652af905def540c61f57b28f0c} 
+\+\_\+\+\_\+u32 {\bfseries sacked\+\_\+out}
+\item 
+\Hypertarget{structbpf__sock__ops_aa20d541210741e925b4a80a4e81c038e}\label{structbpf__sock__ops_aa20d541210741e925b4a80a4e81c038e} 
+\+\_\+\+\_\+u32 {\bfseries sk\+\_\+txhash}
+\item 
+\Hypertarget{structbpf__sock__ops_ad9f7af6b2e43d4b87240ff88453eabb0}\label{structbpf__sock__ops_ad9f7af6b2e43d4b87240ff88453eabb0} 
+\+\_\+\+\_\+u64 {\bfseries bytes\+\_\+received}
+\item 
+\Hypertarget{structbpf__sock__ops_adcdf7326198044db69839d8ea4b241ba}\label{structbpf__sock__ops_adcdf7326198044db69839d8ea4b241ba} 
+\+\_\+\+\_\+u64 {\bfseries bytes\+\_\+acked}
+\item 
+\Hypertarget{structbpf__sock__ops_aeca8204854c2e975677aac938106ac4c}\label{structbpf__sock__ops_aeca8204854c2e975677aac938106ac4c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structbpf__sock}{bpf\_sock}} \texorpdfstring{$\ast$}{*} {\bfseries sk}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__sock__ops_a9be44eb1811aebfe68f5147cafc06e18}\label{structbpf__sock__ops_a9be44eb1811aebfe68f5147cafc06e18} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries skb\_data}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__sock__ops_aa28b8cedc639951e90b1ccbf69a38f2f}\label{structbpf__sock__ops_aa28b8cedc639951e90b1ccbf69a38f2f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries skb\_data\_end}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__sock__ops_a89782fde6d37bca00527330b1f398cf1}\label{structbpf__sock__ops_a89782fde6d37bca00527330b1f398cf1} 
+\+\_\+\+\_\+u32 {\bfseries skb\+\_\+len}
+\item 
+\Hypertarget{structbpf__sock__ops_ae7acf0a636046a156697a2942cd40d59}\label{structbpf__sock__ops_ae7acf0a636046a156697a2942cd40d59} 
+\+\_\+\+\_\+u32 {\bfseries skb\+\_\+tcp\+\_\+flags}
+\item 
+\Hypertarget{structbpf__sock__ops_a947afd806457db46be677684e18dadad}\label{structbpf__sock__ops_a947afd806457db46be677684e18dadad} 
+\+\_\+\+\_\+u64 {\bfseries skb\+\_\+hwtstamp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

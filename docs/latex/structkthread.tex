@@ -1,0 +1,52 @@
+\doxysection{kthread Struct Reference}
+\hypertarget{structkthread}{}\label{structkthread}\index{kthread@{kthread}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkthread_a990113a24aa9a9a7d15e9eb3df6fd73e}\label{structkthread_a990113a24aa9a9a7d15e9eb3df6fd73e} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structkthread_af979f218840dcf35d4409113bd16c3f3}\label{structkthread_af979f218840dcf35d4409113bd16c3f3} 
+unsigned int {\bfseries cpu}
+\item 
+\Hypertarget{structkthread_a70cf5c0c410d0228a6eb2ace2615934b}\label{structkthread_a70cf5c0c410d0228a6eb2ace2615934b} 
+unsigned int {\bfseries node}
+\item 
+\Hypertarget{structkthread_a28a159fc1aaa73ed7ac71f10ef6acf85}\label{structkthread_a28a159fc1aaa73ed7ac71f10ef6acf85} 
+int {\bfseries started}
+\item 
+\Hypertarget{structkthread_aa5dec5b1458cfbbef67495f8a0091123}\label{structkthread_aa5dec5b1458cfbbef67495f8a0091123} 
+int {\bfseries result}
+\item 
+\Hypertarget{structkthread_a5c29eda474fdcdf1d15b466d05d7a3af}\label{structkthread_a5c29eda474fdcdf1d15b466d05d7a3af} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries threadfn} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkthread_af312db4b52c989a45f5bd9c7e7fdbcc4}\label{structkthread_af312db4b52c989a45f5bd9c7e7fdbcc4} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structkthread_a1940b29b374afd8e5a9fc1615cf7f0c5}\label{structkthread_a1940b29b374afd8e5a9fc1615cf7f0c5} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries parked}
+\item 
+\Hypertarget{structkthread_ac56293b26e5647ee3c80383d16f10e7f}\label{structkthread_ac56293b26e5647ee3c80383d16f10e7f} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries exited}
+\item 
+\Hypertarget{structkthread_a9370b8244d56a6691e8c2baf6de8df11}\label{structkthread_a9370b8244d56a6691e8c2baf6de8df11} 
+struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries blkcg\+\_\+css}
+\item 
+\Hypertarget{structkthread_a489cdd27f1b85379b3a1f56169d05ac4}\label{structkthread_a489cdd27f1b85379b3a1f56169d05ac4} 
+char \texorpdfstring{$\ast$}{*} {\bfseries full\+\_\+name}
+\item 
+\Hypertarget{structkthread_a7fa844f8891baf2eaeeb3a5ab355b973}\label{structkthread_a7fa844f8891baf2eaeeb3a5ab355b973} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries task}
+\item 
+\Hypertarget{structkthread_afa618bb9a252eb0a2377b7d2f24f59bf}\label{structkthread_afa618bb9a252eb0a2377b7d2f24f59bf} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries hotplug\+\_\+node}
+\item 
+\Hypertarget{structkthread_a5811a31766833c01ac5b13533a416d07}\label{structkthread_a5811a31766833c01ac5b13533a416d07} 
+struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*} {\bfseries preferred\+\_\+affinity}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{address\+\_\+space\+\_\+operations Struct Reference}
+\hypertarget{structaddress__space__operations}{}\label{structaddress__space__operations}\index{address\_space\_operations@{address\_space\_operations}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structaddress__space__operations_a57f791e134bd0d673ef8159ca1868cb4}\label{structaddress__space__operations_a57f791e134bd0d673ef8159ca1868cb4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+folio} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_af115199cc4a5458fe70bea8a44617396}\label{structaddress__space__operations_af115199cc4a5458fe70bea8a44617396} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries writepages} )(struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structwriteback__control}{writeback\+\_\+control}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_a9456c49667a04053cadaa0cc320460c4}\label{structaddress__space__operations_a9456c49667a04053cadaa0cc320460c4} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries dirty\+\_\+folio} )(struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_a5ddd427e57ca1f0baee0db7164824d9e}\label{structaddress__space__operations_a5ddd427e57ca1f0baee0db7164824d9e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries readahead} )(struct \doxymbox{\hyperlink{structreadahead__control}{readahead\+\_\+control}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_aa8ecb5a6d8bcfcc0d2a140a1edfdbc72}\label{structaddress__space__operations_aa8ecb5a6d8bcfcc0d2a140a1edfdbc72} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+begin} )(const struct \doxymbox{\hyperlink{structkiocb}{kiocb}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*}, loff\+\_\+t, unsigned int, struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_a7b13bdf60166aa398353b2b8cddcfef0}\label{structaddress__space__operations_a7b13bdf60166aa398353b2b8cddcfef0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+end} )(const struct \doxymbox{\hyperlink{structkiocb}{kiocb}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*}, loff\+\_\+t, unsigned int, unsigned int, struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_ab6bb7dda08b51fd3f54fa0e76115a2ae}\label{structaddress__space__operations_ab6bb7dda08b51fd3f54fa0e76115a2ae} 
+sector\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries bmap} )(struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*}, sector\+\_\+t)
+\item 
+\Hypertarget{structaddress__space__operations_a3723b2d811cfe5d917de3c3d2d2c58de}\label{structaddress__space__operations_a3723b2d811cfe5d917de3c3d2d2c58de} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries invalidate\+\_\+folio} )(struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, size\+\_\+t)
+\item 
+\Hypertarget{structaddress__space__operations_a31b2012554fa0eeea73e0a98a49123a1}\label{structaddress__space__operations_a31b2012554fa0eeea73e0a98a49123a1} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+folio} )(struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{structaddress__space__operations_a2f05b7350836a137503843dab5a7a6b4}\label{structaddress__space__operations_a2f05b7350836a137503843dab5a7a6b4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+folio} )(struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_ab2309162eeef9e58978f78d1609cf260}\label{structaddress__space__operations_ab2309162eeef9e58978f78d1609cf260} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries direct\+\_\+\+IO} )(struct \doxymbox{\hyperlink{structkiocb}{kiocb}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiov__iter}{iov\+\_\+iter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_a2f7e2b0b6cd71e8a05a0b06637b36d3e}\label{structaddress__space__operations_a2f7e2b0b6cd71e8a05a0b06637b36d3e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries migrate\+\_\+folio} )(struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*}, enum migrate\+\_\+mode)
+\item 
+\Hypertarget{structaddress__space__operations_a56fc55edcf7b8f614503d9f8db159607}\label{structaddress__space__operations_a56fc55edcf7b8f614503d9f8db159607} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries launder\+\_\+folio} )(struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_a9376969ae3e646141202c8da5facc9e5}\label{structaddress__space__operations_a9376969ae3e646141202c8da5facc9e5} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+partially\+\_\+uptodate} )(struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, size\+\_\+t)
+\item 
+\Hypertarget{structaddress__space__operations_a1c68a0731968ddf3da36e8c6c9332eca}\label{structaddress__space__operations_a1c68a0731968ddf3da36e8c6c9332eca} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+dirty\+\_\+writeback} )(struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*}, bool \texorpdfstring{$\ast$}{*}, bool \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_a391944d417b917c483a92d66de404e91}\label{structaddress__space__operations_a391944d417b917c483a92d66de404e91} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries error\+\_\+remove\+\_\+folio} )(struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_a145ecb8862c2aab00074542ff00123a9}\label{structaddress__space__operations_a145ecb8862c2aab00074542ff00123a9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries swap\+\_\+activate} )(struct \doxymbox{\hyperlink{structswap__info__struct}{swap\+\_\+info\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, sector\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_ad4c1aafbe026d30bd37352f290c1ab7b}\label{structaddress__space__operations_ad4c1aafbe026d30bd37352f290c1ab7b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries swap\+\_\+deactivate} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structaddress__space__operations_adca9d5410e5b377ace30797feb69ca40}\label{structaddress__space__operations_adca9d5410e5b377ace30797feb69ca40} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries swap\+\_\+rw} )(struct \doxymbox{\hyperlink{structkiocb}{kiocb}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiov__iter}{iov\+\_\+iter}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

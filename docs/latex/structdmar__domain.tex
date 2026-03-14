@@ -1,0 +1,76 @@
+\doxysection{dmar\+\_\+domain Struct Reference}
+\hypertarget{structdmar__domain}{}\label{structdmar__domain}\index{dmar\_domain@{dmar\_domain}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdmar__domain_aaa2e1c2932bafbf1db44b15272488ba9}\label{structdmar__domain_aaa2e1c2932bafbf1db44b15272488ba9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structiommu__domain}{iommu\_domain}} {\bfseries domain}\\
+\>struct \doxymbox{\hyperlink{structpt__iommu}{pt\_iommu}} {\bfseries iommu}\\
+\>struct \doxymbox{\hyperlink{structpt__iommu__x86__64}{pt\_iommu\_x86\_64}} {\bfseries fspt}\\
+\>struct \doxymbox{\hyperlink{structpt__iommu__vtdss}{pt\_iommu\_vtdss}} {\bfseries sspt}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdmar__domain_a3adfc5d9d66357420636620a83ec46bb}\label{structdmar__domain_a3adfc5d9d66357420636620a83ec46bb} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries iommu\+\_\+array}
+\item 
+\Hypertarget{structdmar__domain_a045984780ba4736f5c85839ac0664448}\label{structdmar__domain_a045984780ba4736f5c85839ac0664448} 
+u8 {\bfseries force\+\_\+snooping}:\+ 1
+\item 
+\Hypertarget{structdmar__domain_a7cd03e65dc6136de4c0800aa2c454979}\label{structdmar__domain_a7cd03e65dc6136de4c0800aa2c454979} 
+u8 {\bfseries dirty\+\_\+tracking}:\+ 1
+\item 
+\Hypertarget{structdmar__domain_ad0bcb93dc5fb04d5c26dfddd4ccd7ce3}\label{structdmar__domain_ad0bcb93dc5fb04d5c26dfddd4ccd7ce3} 
+u8 {\bfseries nested\+\_\+parent}:\+ 1
+\item 
+\Hypertarget{structdmar__domain_a38f5af9b133f6c1f8e6b3fadbe840d0c}\label{structdmar__domain_a38f5af9b133f6c1f8e6b3fadbe840d0c} 
+u8 {\bfseries iotlb\+\_\+sync\+\_\+map}:\+ 1
+\item 
+\Hypertarget{structdmar__domain_abef2b77e19f6400dcaf9ad79c224ed39}\label{structdmar__domain_abef2b77e19f6400dcaf9ad79c224ed39} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structdmar__domain_a0ab44260e82219b68832dc87d26e898d}\label{structdmar__domain_a0ab44260e82219b68832dc87d26e898d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries devices}
+\item 
+\Hypertarget{structdmar__domain_ab4f537230b36041f1b573ec1a6a18d5e}\label{structdmar__domain_ab4f537230b36041f1b573ec1a6a18d5e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dev\+\_\+pasids}
+\item 
+\Hypertarget{structdmar__domain_a7222106ebaf8cb5725ff8faf71377989}\label{structdmar__domain_a7222106ebaf8cb5725ff8faf71377989} 
+spinlock\+\_\+t {\bfseries cache\+\_\+lock}
+\item 
+\Hypertarget{structdmar__domain_a80daaa189464f3003dac4261e7f665cb}\label{structdmar__domain_a80daaa189464f3003dac4261e7f665cb} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cache\+\_\+tags}
+\item 
+\Hypertarget{structdmar__domain_adb46cfd9ff5e6e0c05ce1f982e2e8291}\label{structdmar__domain_adb46cfd9ff5e6e0c05ce1f982e2e8291} 
+struct \doxymbox{\hyperlink{structqi__batch}{qi\+\_\+batch}} \texorpdfstring{$\ast$}{*} {\bfseries qi\+\_\+batch}
+\item 
+\Hypertarget{structdmar__domain_a1ff9665f1250ac98f444b0f65d835510}\label{structdmar__domain_a1ff9665f1250ac98f444b0f65d835510} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{uniondmar__domain_1_1_0d042107300026211265222077107353343171161154057077_a1b68e506611a9ac3f47586d6d642957c}\label{uniondmar__domain_1_1_0d042107300026211265222077107353343171161154057077_a1b68e506611a9ac3f47586d6d642957c} 
+\>struct \{\\
+\>\>spinlock\_t {\bfseries s1\_lock}\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries s1\_domains}\\
+\>\} \\
+\Hypertarget{uniondmar__domain_1_1_0d042107300026211265222077107353343171161154057077_ac473ba5a336c90e418a4bae931cd9711}\label{uniondmar__domain_1_1_0d042107300026211265222077107353343171161154057077_ac473ba5a336c90e418a4bae931cd9711} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structdmar__domain}{dmar\_domain}} \texorpdfstring{$\ast$}{*} {\bfseries s2\_domain}\\
+\>\>struct \doxymbox{\hyperlink{structiommu__hwpt__vtd__s1}{iommu\_hwpt\_vtd\_s1}} {\bfseries s1\_cfg}\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries s2\_link}\\
+\>\} \\
+\Hypertarget{uniondmar__domain_1_1_0d042107300026211265222077107353343171161154057077_a79d3f0f4ef734a3f33e1e5edefffc3a0}\label{uniondmar__domain_1_1_0d042107300026211265222077107353343171161154057077_a79d3f0f4ef734a3f33e1e5edefffc3a0} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\_notifier}} {\bfseries notifier}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

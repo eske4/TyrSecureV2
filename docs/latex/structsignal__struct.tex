@@ -1,0 +1,214 @@
+\doxysection{signal\+\_\+struct Struct Reference}
+\hypertarget{structsignal__struct}{}\label{structsignal__struct}\index{signal\_struct@{signal\_struct}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsignal__struct_a2af938351f7c78a71bd53788f41c05b1}\label{structsignal__struct_a2af938351f7c78a71bd53788f41c05b1} 
+refcount\+\_\+t {\bfseries sigcnt}
+\item 
+\Hypertarget{structsignal__struct_a1cadd86fcc8ce6c01f8fb22ca7356a92}\label{structsignal__struct_a1cadd86fcc8ce6c01f8fb22ca7356a92} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries live}
+\item 
+\Hypertarget{structsignal__struct_a1f6b47fb41a7cb2235759c3dfb987771}\label{structsignal__struct_a1f6b47fb41a7cb2235759c3dfb987771} 
+int {\bfseries nr\+\_\+threads}
+\item 
+\Hypertarget{structsignal__struct_af817f0bd921de65eccc2349128fa8e83}\label{structsignal__struct_af817f0bd921de65eccc2349128fa8e83} 
+int {\bfseries quick\+\_\+threads}
+\item 
+\Hypertarget{structsignal__struct_a9179f301a7d47d01573e4dc82f7083e8}\label{structsignal__struct_a9179f301a7d47d01573e4dc82f7083e8} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries thread\+\_\+head}
+\item 
+\Hypertarget{structsignal__struct_abdd584fa168df229ed5e1321e63d5fb6}\label{structsignal__struct_abdd584fa168df229ed5e1321e63d5fb6} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait\+\_\+chldexit}
+\item 
+\Hypertarget{structsignal__struct_a752d2f9484fb4023588f85c68ecff63c}\label{structsignal__struct_a752d2f9484fb4023588f85c68ecff63c} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries curr\+\_\+target}
+\item 
+\Hypertarget{structsignal__struct_af2a3bced068053742a4ad360359ecc22}\label{structsignal__struct_af2a3bced068053742a4ad360359ecc22} 
+struct \doxymbox{\hyperlink{structsigpending}{sigpending}} {\bfseries shared\+\_\+pending}
+\item 
+\Hypertarget{structsignal__struct_ae669feb4d6c4fe49c911e572e975882e}\label{structsignal__struct_ae669feb4d6c4fe49c911e572e975882e} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries multiprocess}
+\item 
+\Hypertarget{structsignal__struct_afaad807df6abd6a24d04973137ff87d6}\label{structsignal__struct_afaad807df6abd6a24d04973137ff87d6} 
+int {\bfseries group\+\_\+exit\+\_\+code}
+\item 
+\Hypertarget{structsignal__struct_abcb9558320119548aca99b02e2f34ad3}\label{structsignal__struct_abcb9558320119548aca99b02e2f34ad3} 
+int {\bfseries notify\+\_\+count}
+\item 
+\Hypertarget{structsignal__struct_a9d1e41326bcd6d9fed0f6094afde1262}\label{structsignal__struct_a9d1e41326bcd6d9fed0f6094afde1262} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries group\+\_\+exec\+\_\+task}
+\item 
+\Hypertarget{structsignal__struct_a5d365e351b8dd57f8b2e101a335bdfd2}\label{structsignal__struct_a5d365e351b8dd57f8b2e101a335bdfd2} 
+int {\bfseries group\+\_\+stop\+\_\+count}
+\item 
+\Hypertarget{structsignal__struct_aef0053775931a8302bf875ef75c4ee5a}\label{structsignal__struct_aef0053775931a8302bf875ef75c4ee5a} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structsignal__struct_a677f6d7be4cb56819beb857be110b7b0}\label{structsignal__struct_a677f6d7be4cb56819beb857be110b7b0} 
+struct \doxymbox{\hyperlink{structcore__state}{core\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries core\+\_\+state}
+\item 
+\Hypertarget{structsignal__struct_a98be3b624b2178c7c5ebd1bcf07e7878}\label{structsignal__struct_a98be3b624b2178c7c5ebd1bcf07e7878} 
+unsigned int {\bfseries is\+\_\+child\+\_\+subreaper}:\+ 1
+\item 
+\Hypertarget{structsignal__struct_af348c624477e09633fbcdbc47bff76ec}\label{structsignal__struct_af348c624477e09633fbcdbc47bff76ec} 
+unsigned int {\bfseries has\+\_\+child\+\_\+subreaper}:\+ 1
+\item 
+\Hypertarget{structsignal__struct_a1b9d1982b51c1dcf9dc18924ba45419d}\label{structsignal__struct_a1b9d1982b51c1dcf9dc18924ba45419d} 
+unsigned int {\bfseries timer\+\_\+create\+\_\+restore\+\_\+ids}:\+ 1
+\item 
+\Hypertarget{structsignal__struct_aad865bc6ff13a349b61528ec46a53354}\label{structsignal__struct_aad865bc6ff13a349b61528ec46a53354} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries next\+\_\+posix\+\_\+timer\+\_\+id}
+\item 
+\Hypertarget{structsignal__struct_ae73e328611bee9d495afb5f782e64375}\label{structsignal__struct_ae73e328611bee9d495afb5f782e64375} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries posix\+\_\+timers}
+\item 
+\Hypertarget{structsignal__struct_a9960bc0182c06d605a33efc618819e9f}\label{structsignal__struct_a9960bc0182c06d605a33efc618819e9f} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries ignored\+\_\+posix\+\_\+timers}
+\item 
+\Hypertarget{structsignal__struct_aaa2a98af6e29dbf90ca89bac756c1468}\label{structsignal__struct_aaa2a98af6e29dbf90ca89bac756c1468} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries real\+\_\+timer}
+\item 
+\Hypertarget{structsignal__struct_ab780a584661cae5ba7da9cf79072fc43}\label{structsignal__struct_ab780a584661cae5ba7da9cf79072fc43} 
+ktime\+\_\+t {\bfseries it\+\_\+real\+\_\+incr}
+\item 
+\Hypertarget{structsignal__struct_a0ec9f7575ff44601a1aea834f8dc5d66}\label{structsignal__struct_a0ec9f7575ff44601a1aea834f8dc5d66} 
+struct \doxymbox{\hyperlink{structcpu__itimer}{cpu\+\_\+itimer}} {\bfseries it} \+[2]\+
+\item 
+\Hypertarget{structsignal__struct_a9ea4af210f23a1b73717541f5c024a1a}\label{structsignal__struct_a9ea4af210f23a1b73717541f5c024a1a} 
+struct \doxymbox{\hyperlink{structthread__group__cputimer}{thread\+\_\+group\+\_\+cputimer}} {\bfseries cputimer}
+\item 
+\Hypertarget{structsignal__struct_ac293dbad5610dd4eeb7407799c2a636f}\label{structsignal__struct_ac293dbad5610dd4eeb7407799c2a636f} 
+struct \doxymbox{\hyperlink{structposix__cputimers}{posix\+\_\+cputimers}} {\bfseries posix\+\_\+cputimers}
+\item 
+\Hypertarget{structsignal__struct_a13b18b74c32cdcdf998feb9fc4d6b9ce}\label{structsignal__struct_a13b18b74c32cdcdf998feb9fc4d6b9ce} 
+struct \doxymbox{\hyperlink{structpid}{pid}} \texorpdfstring{$\ast$}{*} {\bfseries pids} \+[4]\+
+\item 
+\Hypertarget{structsignal__struct_ac1c27fdde2ad4b268ec2c490d9624c1e}\label{structsignal__struct_ac1c27fdde2ad4b268ec2c490d9624c1e} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries tick\+\_\+dep\+\_\+mask}
+\item 
+\Hypertarget{structsignal__struct_ab0f0ac1dead9ba6c1ad3e383dc72f3e7}\label{structsignal__struct_ab0f0ac1dead9ba6c1ad3e383dc72f3e7} 
+struct \doxymbox{\hyperlink{structpid}{pid}} \texorpdfstring{$\ast$}{*} {\bfseries tty\+\_\+old\+\_\+pgrp}
+\item 
+\Hypertarget{structsignal__struct_a4649603e37ba062a8d0045565a51776c}\label{structsignal__struct_a4649603e37ba062a8d0045565a51776c} 
+int {\bfseries leader}
+\item 
+\Hypertarget{structsignal__struct_a64dc2bc9b331833cd99e428b66e6c382}\label{structsignal__struct_a64dc2bc9b331833cd99e428b66e6c382} 
+struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries tty}
+\item 
+\Hypertarget{structsignal__struct_a3686b003036c88233e20f0bda2936451}\label{structsignal__struct_a3686b003036c88233e20f0bda2936451} 
+struct \doxymbox{\hyperlink{structautogroup}{autogroup}} \texorpdfstring{$\ast$}{*} {\bfseries autogroup}
+\item 
+\Hypertarget{structsignal__struct_a3f0b73b8cae4acf5c7089d3d3331f78e}\label{structsignal__struct_a3f0b73b8cae4acf5c7089d3d3331f78e} 
+\doxymbox{\hyperlink{structseqlock__t}{seqlock\+\_\+t}} {\bfseries stats\+\_\+lock}
+\item 
+\Hypertarget{structsignal__struct_aa7401d7faec0dd9b8a70101cda562d1a}\label{structsignal__struct_aa7401d7faec0dd9b8a70101cda562d1a} 
+u64 {\bfseries utime}
+\item 
+\Hypertarget{structsignal__struct_a4963bbd52f3ceca7309fb7e37c335dea}\label{structsignal__struct_a4963bbd52f3ceca7309fb7e37c335dea} 
+u64 {\bfseries stime}
+\item 
+\Hypertarget{structsignal__struct_a1125e9e63d4200ba9e2ae753e63372d0}\label{structsignal__struct_a1125e9e63d4200ba9e2ae753e63372d0} 
+u64 {\bfseries cutime}
+\item 
+\Hypertarget{structsignal__struct_a52de0ffb1f0eedb555640e86556c3ab8}\label{structsignal__struct_a52de0ffb1f0eedb555640e86556c3ab8} 
+u64 {\bfseries cstime}
+\item 
+\Hypertarget{structsignal__struct_a66035894bcb280d16935015d84015ffc}\label{structsignal__struct_a66035894bcb280d16935015d84015ffc} 
+u64 {\bfseries gtime}
+\item 
+\Hypertarget{structsignal__struct_a83c2de06ef6b5085037ad83b2c9fa5b1}\label{structsignal__struct_a83c2de06ef6b5085037ad83b2c9fa5b1} 
+u64 {\bfseries cgtime}
+\item 
+\Hypertarget{structsignal__struct_a7a9bac1a17a4c76de49afd7ae76946d3}\label{structsignal__struct_a7a9bac1a17a4c76de49afd7ae76946d3} 
+struct \doxymbox{\hyperlink{structprev__cputime}{prev\+\_\+cputime}} {\bfseries prev\+\_\+cputime}
+\item 
+\Hypertarget{structsignal__struct_ad1b0c133abcc051c76a3da1fb6696a03}\label{structsignal__struct_ad1b0c133abcc051c76a3da1fb6696a03} 
+long unsigned int {\bfseries nvcsw}
+\item 
+\Hypertarget{structsignal__struct_aca85dc38daf1e0e4c588874b4b0dc600}\label{structsignal__struct_aca85dc38daf1e0e4c588874b4b0dc600} 
+long unsigned int {\bfseries nivcsw}
+\item 
+\Hypertarget{structsignal__struct_aca2b649eef811fc3e776f49eb81585a2}\label{structsignal__struct_aca2b649eef811fc3e776f49eb81585a2} 
+long unsigned int {\bfseries cnvcsw}
+\item 
+\Hypertarget{structsignal__struct_a81758ff1143a165ecb8ad36536a362e9}\label{structsignal__struct_a81758ff1143a165ecb8ad36536a362e9} 
+long unsigned int {\bfseries cnivcsw}
+\item 
+\Hypertarget{structsignal__struct_aca0ada35e41bb912ad84b379dbfcf6fd}\label{structsignal__struct_aca0ada35e41bb912ad84b379dbfcf6fd} 
+long unsigned int {\bfseries min\+\_\+flt}
+\item 
+\Hypertarget{structsignal__struct_a3ebbb8eb49b78e18db549c309f7be884}\label{structsignal__struct_a3ebbb8eb49b78e18db549c309f7be884} 
+long unsigned int {\bfseries maj\+\_\+flt}
+\item 
+\Hypertarget{structsignal__struct_a04b29b17363ba1dc26706856a9bcf5b0}\label{structsignal__struct_a04b29b17363ba1dc26706856a9bcf5b0} 
+long unsigned int {\bfseries cmin\+\_\+flt}
+\item 
+\Hypertarget{structsignal__struct_ace345273240ac5a12faa507ecde134e2}\label{structsignal__struct_ace345273240ac5a12faa507ecde134e2} 
+long unsigned int {\bfseries cmaj\+\_\+flt}
+\item 
+\Hypertarget{structsignal__struct_ab04d92c5d8706ef999cbabc1e2c91bce}\label{structsignal__struct_ab04d92c5d8706ef999cbabc1e2c91bce} 
+long unsigned int {\bfseries inblock}
+\item 
+\Hypertarget{structsignal__struct_ab677b7e94480f0d3e2d303e391ba847e}\label{structsignal__struct_ab677b7e94480f0d3e2d303e391ba847e} 
+long unsigned int {\bfseries oublock}
+\item 
+\Hypertarget{structsignal__struct_a7a6a56c867f74fdab03d79d2457c512b}\label{structsignal__struct_a7a6a56c867f74fdab03d79d2457c512b} 
+long unsigned int {\bfseries cinblock}
+\item 
+\Hypertarget{structsignal__struct_ae803b4090d8738446f38c7b5edc4d6e8}\label{structsignal__struct_ae803b4090d8738446f38c7b5edc4d6e8} 
+long unsigned int {\bfseries coublock}
+\item 
+\Hypertarget{structsignal__struct_a889c919ffe4a9298159421c7453cab0f}\label{structsignal__struct_a889c919ffe4a9298159421c7453cab0f} 
+long unsigned int {\bfseries maxrss}
+\item 
+\Hypertarget{structsignal__struct_adcc77d79c1d44c8977a76f7c33afc6cb}\label{structsignal__struct_adcc77d79c1d44c8977a76f7c33afc6cb} 
+long unsigned int {\bfseries cmaxrss}
+\item 
+\Hypertarget{structsignal__struct_a7c4a1e4145f6d31f473bb85ab152a0c8}\label{structsignal__struct_a7c4a1e4145f6d31f473bb85ab152a0c8} 
+struct \doxymbox{\hyperlink{structtask__io__accounting}{task\+\_\+io\+\_\+accounting}} {\bfseries ioac}
+\item 
+\Hypertarget{structsignal__struct_aa5f81aa3f5a3f72ba379a74b98f43219}\label{structsignal__struct_aa5f81aa3f5a3f72ba379a74b98f43219} 
+long long unsigned int {\bfseries sum\+\_\+sched\+\_\+runtime}
+\item 
+\Hypertarget{structsignal__struct_ac3a325c8e5b7d16a6894431be72ef6e6}\label{structsignal__struct_ac3a325c8e5b7d16a6894431be72ef6e6} 
+struct \doxymbox{\hyperlink{structrlimit}{rlimit}} {\bfseries rlim} \+[16]\+
+\item 
+\Hypertarget{structsignal__struct_aca0e351149798e88629afca49daa28fe}\label{structsignal__struct_aca0e351149798e88629afca49daa28fe} 
+struct \doxymbox{\hyperlink{structpacct__struct}{pacct\+\_\+struct}} {\bfseries pacct}
+\item 
+\Hypertarget{structsignal__struct_ae7509ec71a9c92bc729ae26bf5d9359b}\label{structsignal__struct_ae7509ec71a9c92bc729ae26bf5d9359b} 
+struct \doxymbox{\hyperlink{structtaskstats}{taskstats}} \texorpdfstring{$\ast$}{*} {\bfseries stats}
+\item 
+\Hypertarget{structsignal__struct_a75e76b6a6a3632e32c6dbc132ccdfb7f}\label{structsignal__struct_a75e76b6a6a3632e32c6dbc132ccdfb7f} 
+unsigned int {\bfseries audit\+\_\+tty}
+\item 
+\Hypertarget{structsignal__struct_a18a693e0b4a1bdfd82442007fd748459}\label{structsignal__struct_a18a693e0b4a1bdfd82442007fd748459} 
+struct \doxymbox{\hyperlink{structtty__audit__buf}{tty\+\_\+audit\+\_\+buf}} \texorpdfstring{$\ast$}{*} {\bfseries tty\+\_\+audit\+\_\+buf}
+\item 
+\Hypertarget{structsignal__struct_afb7a81dfa6d44e5a8542aa074aac498d}\label{structsignal__struct_afb7a81dfa6d44e5a8542aa074aac498d} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries cgroup\+\_\+threadgroup\+\_\+rwsem}
+\item 
+\Hypertarget{structsignal__struct_aa8a588be469ecdf64f19823ce97438f2}\label{structsignal__struct_aa8a588be469ecdf64f19823ce97438f2} 
+bool {\bfseries oom\+\_\+flag\+\_\+origin}
+\item 
+\Hypertarget{structsignal__struct_ad48fc90f20688b7c0af37153de4bc447}\label{structsignal__struct_ad48fc90f20688b7c0af37153de4bc447} 
+short int {\bfseries oom\+\_\+score\+\_\+adj}
+\item 
+\Hypertarget{structsignal__struct_a679b88b8a1cec3516ea5a5be2b48a3e0}\label{structsignal__struct_a679b88b8a1cec3516ea5a5be2b48a3e0} 
+short int {\bfseries oom\+\_\+score\+\_\+adj\+\_\+min}
+\item 
+\Hypertarget{structsignal__struct_a9addae471e5a428bcc4322e623db5a92}\label{structsignal__struct_a9addae471e5a428bcc4322e623db5a92} 
+struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries oom\+\_\+mm}
+\item 
+\Hypertarget{structsignal__struct_a8728eb62cc5fbf6c24816d68e25aae03}\label{structsignal__struct_a8728eb62cc5fbf6c24816d68e25aae03} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries cred\+\_\+guard\+\_\+mutex}
+\item 
+\Hypertarget{structsignal__struct_a2b14de4cdeb86e5b2cec7d352673caaa}\label{structsignal__struct_a2b14de4cdeb86e5b2cec7d352673caaa} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries exec\+\_\+update\+\_\+lock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

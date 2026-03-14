@@ -1,0 +1,46 @@
+\doxysection{xenbus\+\_\+file\+\_\+priv Struct Reference}
+\hypertarget{structxenbus__file__priv}{}\label{structxenbus__file__priv}\index{xenbus\_file\_priv@{xenbus\_file\_priv}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxenbus__file__priv_a767c26e09d44fd8ab950ea58c0833632}\label{structxenbus__file__priv_a767c26e09d44fd8ab950ea58c0833632} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries msgbuffer\+\_\+mutex}
+\item 
+\Hypertarget{structxenbus__file__priv_a446dfb15c662c6ce0469259758ed4da2}\label{structxenbus__file__priv_a446dfb15c662c6ce0469259758ed4da2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries transactions}
+\item 
+\Hypertarget{structxenbus__file__priv_a5b807386d5f16a0a43fdba73bb8b4d66}\label{structxenbus__file__priv_a5b807386d5f16a0a43fdba73bb8b4d66} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries watches}
+\item 
+\Hypertarget{structxenbus__file__priv_addcba8ede3c02addd90be1a5e5228176}\label{structxenbus__file__priv_addcba8ede3c02addd90be1a5e5228176} 
+unsigned int {\bfseries len}
+\item 
+\Hypertarget{structxenbus__file__priv_a6b9e1b6311687179467b3677c6e7cc02}\label{structxenbus__file__priv_a6b9e1b6311687179467b3677c6e7cc02} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structxsd__sockmsg}{xsd\_sockmsg}} {\bfseries msg}\\
+\>char {\bfseries buffer} \+[4096]\+\\
+\} {\bfseries u}\\
+
+\end{tabbing}\item 
+\Hypertarget{structxenbus__file__priv_a4ef150a1b6613312aa75a189e171c185}\label{structxenbus__file__priv_a4ef150a1b6613312aa75a189e171c185} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries reply\+\_\+mutex}
+\item 
+\Hypertarget{structxenbus__file__priv_af546112710fe2c441c7dd82bbb2cfb58}\label{structxenbus__file__priv_af546112710fe2c441c7dd82bbb2cfb58} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries read\+\_\+buffers}
+\item 
+\Hypertarget{structxenbus__file__priv_a2ed50837b1e2baa53cd1f4eb8a30bfbe}\label{structxenbus__file__priv_a2ed50837b1e2baa53cd1f4eb8a30bfbe} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries read\+\_\+waitq}
+\item 
+\Hypertarget{structxenbus__file__priv_addd7897c0a0693c6da85d17e5e8a932e}\label{structxenbus__file__priv_addd7897c0a0693c6da85d17e5e8a932e} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries kref}
+\item 
+\Hypertarget{structxenbus__file__priv_a7af20e8b51ba7e1d1f4c39fa4991f05a}\label{structxenbus__file__priv_a7af20e8b51ba7e1d1f4c39fa4991f05a} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries wq}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

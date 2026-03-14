@@ -1,0 +1,72 @@
+\doxysection{hv\+\_\+device\+\_\+id Union Reference}
+\hypertarget{unionhv__device__id}{}\label{unionhv__device__id}\index{hv\_device\_id@{hv\_device\_id}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionhv__device__id_a57db4e0d0e953ae24fbf5ce8d0b5b20c}\label{unionhv__device__id_a57db4e0d0e953ae24fbf5ce8d0b5b20c} 
+u64 {\bfseries as\+\_\+uint64}
+\item 
+\Hypertarget{unionhv__device__id_ae0e0dab9b9dd8902b74502b947b8716d}\label{unionhv__device__id_ae0e0dab9b9dd8902b74502b947b8716d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u64 {\bfseries reserved0}: 62\\
+\>u64 {\bfseries device\_type}: 2\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionhv__device__id_afd54c92aeb3eea1b893bc4ecddbca6c2}\label{unionhv__device__id_afd54c92aeb3eea1b893bc4ecddbca6c2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u64 {\bfseries id}: 62\\
+\>u64 {\bfseries device\_type}: 2\\
+\} {\bfseries logical}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionhv__device__id_ab269f12dad31ad9a1a0ca94aa8c36032}\label{unionhv__device__id_ab269f12dad31ad9a1a0ca94aa8c36032} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structhv__device__id_1_1_0d102237344334027372332052307066361200053047272027_acd815f20d2398bbb2460ea4499eee243}\label{structhv__device__id_1_1_0d102237344334027372332052307066361200053047272027_acd815f20d2398bbb2460ea4499eee243} 
+\>union \{\\
+\>\>hv\_pci\_rid {\bfseries rid}\\
+\>\>union \doxymbox{\hyperlink{unionhv__pci__bdf}{hv\_pci\_bdf}} {\bfseries bdf}\\
+\>\} \\
+\>hv\_pci\_segment {\bfseries segment}\\
+\>union \doxymbox{\hyperlink{unionhv__pci__bus__range}{hv\_pci\_bus\_range}} {\bfseries shadow\_bus\_range}\\
+\>u16 {\bfseries phantom\_function\_bits}: 2\\
+\>u16 {\bfseries source\_shadow}: 1\\
+\>u16 {\bfseries rsvdz0}: 11\\
+\>u16 {\bfseries device\_type}: 2\\
+\} {\bfseries pci}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionhv__device__id_a005588b07d3d47eab80c602910b6aaaf}\label{unionhv__device__id_a005588b07d3d47eab80c602910b6aaaf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u8 {\bfseries ioapic\_id}\\
+\>u8 {\bfseries rsvdz0}\\
+\>u16 {\bfseries rsvdz1}\\
+\>u16 {\bfseries rsvdz2}\\
+\>u16 {\bfseries rsvdz3}: 14\\
+\>u16 {\bfseries device\_type}: 2\\
+\} {\bfseries ioapic}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionhv__device__id_abe8ee1ea3629b0bd63e3f8a941b2684a}\label{unionhv__device__id_abe8ee1ea3629b0bd63e3f8a941b2684a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries input\_mapping\_base}\\
+\>u32 {\bfseries input\_mapping\_count}: 30\\
+\>u32 {\bfseries device\_type}: 2\\
+\} {\bfseries acpi}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

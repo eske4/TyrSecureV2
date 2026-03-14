@@ -1,0 +1,57 @@
+\doxysection{kvm\+\_\+vm\+\_\+stat Struct Reference}
+\hypertarget{structkvm__vm__stat}{}\label{structkvm__vm__stat}\index{kvm\_vm\_stat@{kvm\_vm\_stat}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__vm__stat_ad09f0133c876b7ad87cf555df0945fa9}\label{structkvm__vm__stat_ad09f0133c876b7ad87cf555df0945fa9} 
+struct \doxymbox{\hyperlink{structkvm__vm__stat__generic}{kvm\+\_\+vm\+\_\+stat\+\_\+generic}} {\bfseries generic}
+\item 
+\Hypertarget{structkvm__vm__stat_ad6b59f62d04369d29aca74f25f0d2a9b}\label{structkvm__vm__stat_ad6b59f62d04369d29aca74f25f0d2a9b} 
+u64 {\bfseries mmu\+\_\+shadow\+\_\+zapped}
+\item 
+\Hypertarget{structkvm__vm__stat_afa7d68070a404923098b7785dbc1172e}\label{structkvm__vm__stat_afa7d68070a404923098b7785dbc1172e} 
+u64 {\bfseries mmu\+\_\+pte\+\_\+write}
+\item 
+\Hypertarget{structkvm__vm__stat_a42d546d9fc2e4cde9751e4d815728c16}\label{structkvm__vm__stat_a42d546d9fc2e4cde9751e4d815728c16} 
+u64 {\bfseries mmu\+\_\+pde\+\_\+zapped}
+\item 
+\Hypertarget{structkvm__vm__stat_a6d37d0d4db8e832037f97d2f2f78c4dc}\label{structkvm__vm__stat_a6d37d0d4db8e832037f97d2f2f78c4dc} 
+u64 {\bfseries mmu\+\_\+flooded}
+\item 
+\Hypertarget{structkvm__vm__stat_a26d4b965b46f843208077d879daea51b}\label{structkvm__vm__stat_a26d4b965b46f843208077d879daea51b} 
+u64 {\bfseries mmu\+\_\+recycled}
+\item 
+\Hypertarget{structkvm__vm__stat_a1619753e475050214d9724697db24513}\label{structkvm__vm__stat_a1619753e475050214d9724697db24513} 
+u64 {\bfseries mmu\+\_\+cache\+\_\+miss}
+\item 
+\Hypertarget{structkvm__vm__stat_ac5b0e0503c7174cfe2c86dce27ea6441}\label{structkvm__vm__stat_ac5b0e0503c7174cfe2c86dce27ea6441} 
+u64 {\bfseries mmu\+\_\+unsync}
+\item 
+\Hypertarget{structkvm__vm__stat_a7875347d618c51bfd927fce7c9bf04d1}\label{structkvm__vm__stat_a7875347d618c51bfd927fce7c9bf04d1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionkvm__vm__stat_1_1_0d102273257014327163374035021175240176126235330230_a1fdc4c75cd3711e8ea3b27a037fcea63}\label{unionkvm__vm__stat_1_1_0d102273257014327163374035021175240176126235330230_a1fdc4c75cd3711e8ea3b27a037fcea63} 
+\>struct \{\\
+\>\>\doxymbox{\hyperlink{structatomic64__t}{atomic64\_t}} {\bfseries pages\_4k}\\
+\>\>\doxymbox{\hyperlink{structatomic64__t}{atomic64\_t}} {\bfseries pages\_2m}\\
+\>\>\doxymbox{\hyperlink{structatomic64__t}{atomic64\_t}} {\bfseries pages\_1g}\\
+\>\} \\
+\>\doxymbox{\hyperlink{structatomic64__t}{atomic64\_t}} {\bfseries pages} \+[3]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vm__stat_a092402685304117e394815aa7085ef87}\label{structkvm__vm__stat_a092402685304117e394815aa7085ef87} 
+u64 {\bfseries nx\+\_\+lpage\+\_\+splits}
+\item 
+\Hypertarget{structkvm__vm__stat_a648392bb96baba5705a9f4a6fd2be455}\label{structkvm__vm__stat_a648392bb96baba5705a9f4a6fd2be455} 
+u64 {\bfseries max\+\_\+mmu\+\_\+page\+\_\+hash\+\_\+collisions}
+\item 
+\Hypertarget{structkvm__vm__stat_a6f26efb2533ab3adc16d4ef9106398ca}\label{structkvm__vm__stat_a6f26efb2533ab3adc16d4ef9106398ca} 
+u64 {\bfseries max\+\_\+mmu\+\_\+rmap\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

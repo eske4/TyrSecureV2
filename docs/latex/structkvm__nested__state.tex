@@ -1,0 +1,48 @@
+\doxysection{kvm\+\_\+nested\+\_\+state Struct Reference}
+\hypertarget{structkvm__nested__state}{}\label{structkvm__nested__state}\index{kvm\_nested\_state@{kvm\_nested\_state}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__nested__state_a50bdcf50a1aaf624cc7bf4f865d6cd7b}\label{structkvm__nested__state_a50bdcf50a1aaf624cc7bf4f865d6cd7b} 
+\+\_\+\+\_\+u16 {\bfseries flags}
+\item 
+\Hypertarget{structkvm__nested__state_adc46b294e9b432306358194b7dcd50b1}\label{structkvm__nested__state_adc46b294e9b432306358194b7dcd50b1} 
+\+\_\+\+\_\+u16 {\bfseries format}
+\item 
+\Hypertarget{structkvm__nested__state_a33de7e2f3dfe3d3ea9568c84e899e0a8}\label{structkvm__nested__state_a33de7e2f3dfe3d3ea9568c84e899e0a8} 
+\+\_\+\+\_\+u32 {\bfseries size}
+\item 
+\Hypertarget{structkvm__nested__state_aa7b78bba3d2810304218d1b30162847d}\label{structkvm__nested__state_aa7b78bba3d2810304218d1b30162847d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structkvm__vmx__nested__state__hdr}{kvm\_vmx\_nested\_state\_hdr}} {\bfseries vmx}\\
+\>struct \doxymbox{\hyperlink{structkvm__svm__nested__state__hdr}{kvm\_svm\_nested\_state\_hdr}} {\bfseries svm}\\
+\>\_\_u8 {\bfseries pad} \+[120]\+\\
+\} {\bfseries hdr}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__nested__state_a854b6eb107a967d3ea7dafcc5138b514}\label{structkvm__nested__state_a854b6eb107a967d3ea7dafcc5138b514} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionkvm__nested__state_1_1_0d310324321233217323257337011341232343014324156114_a2df809aa46dae8cf81074f2f551f638a}\label{unionkvm__nested__state_1_1_0d310324321233217323257337011341232343014324156114_a2df809aa46dae8cf81074f2f551f638a} 
+\>struct \{\\
+\>\>struct \{\\
+\>\>\} {\bfseries \_\_empty\_vmx}\\
+\>\>struct \doxymbox{\hyperlink{structkvm__vmx__nested__state__data}{kvm\_vmx\_nested\_state\_data}} {\bfseries vmx} \+[0]\+\\
+\>\} \\
+\Hypertarget{unionkvm__nested__state_1_1_0d310324321233217323257337011341232343014324156114_a51d5347778c3865948a19823700e3ae6}\label{unionkvm__nested__state_1_1_0d310324321233217323257337011341232343014324156114_a51d5347778c3865948a19823700e3ae6} 
+\>struct \{\\
+\>\>struct \{\\
+\>\>\} {\bfseries \_\_empty\_svm}\\
+\>\>struct \doxymbox{\hyperlink{structkvm__svm__nested__state__data}{kvm\_svm\_nested\_state\_data}} {\bfseries svm} \+[0]\+\\
+\>\} \\
+\} {\bfseries data}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

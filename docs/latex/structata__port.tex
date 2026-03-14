@@ -1,0 +1,187 @@
+\doxysection{ata\+\_\+port Struct Reference}
+\hypertarget{structata__port}{}\label{structata__port}\index{ata\_port@{ata\_port}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structata__port_a47fc7ffb59c6469fed4d41f89577de44}\label{structata__port_a47fc7ffb59c6469fed4d41f89577de44} 
+struct \doxymbox{\hyperlink{structScsi__Host}{Scsi\+\_\+\+Host}} \texorpdfstring{$\ast$}{*} {\bfseries scsi\+\_\+host}
+\item 
+\Hypertarget{structata__port_a53704d344c271660f1822c9296e185f6}\label{structata__port_a53704d344c271660f1822c9296e185f6} 
+struct \doxymbox{\hyperlink{structata__port__operations}{ata\+\_\+port\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structata__port_a644507346a15c38552dd84c4eb24019d}\label{structata__port_a644507346a15c38552dd84c4eb24019d} 
+spinlock\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries lock}
+\item 
+\Hypertarget{structata__port_a477e6f85cd38f4dfcff2485fcd0cb6b4}\label{structata__port_a477e6f85cd38f4dfcff2485fcd0cb6b4} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structata__port_add502ce56b6e14442fab7afa374d31eb}\label{structata__port_add502ce56b6e14442fab7afa374d31eb} 
+unsigned int {\bfseries pflags}
+\item 
+\Hypertarget{structata__port_a1ade95766776825a5b6e0505efdf8b65}\label{structata__port_a1ade95766776825a5b6e0505efdf8b65} 
+unsigned int {\bfseries print\+\_\+id}
+\item 
+\Hypertarget{structata__port_aa0dbdf6a35deaffc6e825864579dfa75}\label{structata__port_aa0dbdf6a35deaffc6e825864579dfa75} 
+unsigned int {\bfseries port\+\_\+no}
+\item 
+\Hypertarget{structata__port_a0bfee765164625990686667b2bedfdfe}\label{structata__port_a0bfee765164625990686667b2bedfdfe} 
+struct \doxymbox{\hyperlink{structata__ioports}{ata\+\_\+ioports}} {\bfseries ioaddr}
+\item 
+\Hypertarget{structata__port_a031b6f2dc7fdf4ca6adbb194e0096e24}\label{structata__port_a031b6f2dc7fdf4ca6adbb194e0096e24} 
+u8 {\bfseries ctl}
+\item 
+\Hypertarget{structata__port_a91038da9f2abd567575dfda3c7912e99}\label{structata__port_a91038da9f2abd567575dfda3c7912e99} 
+u8 {\bfseries last\+\_\+ctl}
+\item 
+\Hypertarget{structata__port_a5c29cb5c80e5b3166279a176036dd0fc}\label{structata__port_a5c29cb5c80e5b3166279a176036dd0fc} 
+struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*} {\bfseries sff\+\_\+pio\+\_\+task\+\_\+link}
+\item 
+\Hypertarget{structata__port_ae09b05bd81da09cd77e2f6d3424ebb53}\label{structata__port_ae09b05bd81da09cd77e2f6d3424ebb53} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries sff\+\_\+pio\+\_\+task}
+\item 
+\Hypertarget{structata__port_aa2dedd52fbbe2a0793b768726f4f7867}\label{structata__port_aa2dedd52fbbe2a0793b768726f4f7867} 
+struct \doxymbox{\hyperlink{structata__bmdma__prd}{ata\+\_\+bmdma\+\_\+prd}} \texorpdfstring{$\ast$}{*} {\bfseries bmdma\+\_\+prd}
+\item 
+\Hypertarget{structata__port_a881b67c26fcd4d6621073c7af1ef6558}\label{structata__port_a881b67c26fcd4d6621073c7af1ef6558} 
+dma\+\_\+addr\+\_\+t {\bfseries bmdma\+\_\+prd\+\_\+dma}
+\item 
+\Hypertarget{structata__port_a4cc12ad3d278fdc571fb5de2b671f188}\label{structata__port_a4cc12ad3d278fdc571fb5de2b671f188} 
+unsigned int {\bfseries pio\+\_\+mask}
+\item 
+\Hypertarget{structata__port_ac4b2b67767d83f886f371925ef82de40}\label{structata__port_ac4b2b67767d83f886f371925ef82de40} 
+unsigned int {\bfseries mwdma\+\_\+mask}
+\item 
+\Hypertarget{structata__port_a566ba617e338fa802f863a282b94bc6d}\label{structata__port_a566ba617e338fa802f863a282b94bc6d} 
+unsigned int {\bfseries udma\+\_\+mask}
+\item 
+\Hypertarget{structata__port_a98d038cea81e2cf0b6e49bf3f2112120}\label{structata__port_a98d038cea81e2cf0b6e49bf3f2112120} 
+unsigned int {\bfseries cbl}
+\item 
+\Hypertarget{structata__port_a864eb8c6a8130cbafa51c416d5f7cf4b}\label{structata__port_a864eb8c6a8130cbafa51c416d5f7cf4b} 
+struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} {\bfseries qcmd} \+[33]\+
+\item 
+\Hypertarget{structata__port_aa3d92f131c7d26ae3e846b7f2d04c671}\label{structata__port_aa3d92f131c7d26ae3e846b7f2d04c671} 
+u64 {\bfseries qc\+\_\+active}
+\item 
+\Hypertarget{structata__port_a5664498439cc0dd4eb90c0cc07c8c646}\label{structata__port_a5664498439cc0dd4eb90c0cc07c8c646} 
+int {\bfseries nr\+\_\+active\+\_\+links}
+\item 
+\Hypertarget{structata__port_a2aa7acd763f3817b73b0ae0fd0be468c}\label{structata__port_a2aa7acd763f3817b73b0ae0fd0be468c} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries deferred\+\_\+qc\+\_\+work}
+\item 
+\Hypertarget{structata__port_a9fae0445a976a3c72b6583a6ad07797e}\label{structata__port_a9fae0445a976a3c72b6583a6ad07797e} 
+struct \doxymbox{\hyperlink{structata__queued__cmd}{ata\+\_\+queued\+\_\+cmd}} \texorpdfstring{$\ast$}{*} {\bfseries deferred\+\_\+qc}
+\item 
+\Hypertarget{structata__port_a7275a79d4bae73ebe664c8b86decc7f5}\label{structata__port_a7275a79d4bae73ebe664c8b86decc7f5} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_a0dc9cffb41f2567ed57f42c98d730789}\label{structata__port_a0dc9cffb41f2567ed57f42c98d730789} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_a24af912ccbc1159e258ef0598372f4ad}\label{structata__port_a24af912ccbc1159e258ef0598372f4ad} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_aa74299a26969eaa2b76e3781eb0f8b21}\label{structata__port_aa74299a26969eaa2b76e3781eb0f8b21} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_adaabc2d3afe2ced002050a1a281a34f2}\label{structata__port_adaabc2d3afe2ced002050a1a281a34f2} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_a34b83d4d0b62e3a0da210f31ea2e95e6}\label{structata__port_a34b83d4d0b62e3a0da210f31ea2e95e6} 
+struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} {\bfseries link}
+\item 
+\Hypertarget{structata__port_aad32d4753d1038371391e92187c346fb}\label{structata__port_aad32d4753d1038371391e92187c346fb} 
+struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*} {\bfseries slave\+\_\+link}
+\item 
+\Hypertarget{structata__port_aa6872bd39dbfd45eb8f760ba56366b43}\label{structata__port_aa6872bd39dbfd45eb8f760ba56366b43} 
+int {\bfseries nr\+\_\+pmp\+\_\+links}
+\item 
+\Hypertarget{structata__port_ae78beae302b95498ea6d9f835f4db50f}\label{structata__port_ae78beae302b95498ea6d9f835f4db50f} 
+struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*} {\bfseries pmp\+\_\+link}
+\item 
+\Hypertarget{structata__port_a0bb9a4f7296360deb10ecd9add05128b}\label{structata__port_a0bb9a4f7296360deb10ecd9add05128b} 
+struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*} {\bfseries excl\+\_\+link}
+\item 
+\Hypertarget{structata__port_a9063629a226c2f433381fd72e0dadd65}\label{structata__port_a9063629a226c2f433381fd72e0dadd65} 
+struct \doxymbox{\hyperlink{structata__port__stats}{ata\+\_\+port\+\_\+stats}} {\bfseries stats}
+\item 
+\Hypertarget{structata__port_a2da8e164b903bd6802e427a613b24211}\label{structata__port_a2da8e164b903bd6802e427a613b24211} 
+struct \doxymbox{\hyperlink{structata__host}{ata\+\_\+host}} \texorpdfstring{$\ast$}{*} {\bfseries host}
+\item 
+\Hypertarget{structata__port_a7659495231bd61fb75e92e17a6f8574f}\label{structata__port_a7659495231bd61fb75e92e17a6f8574f} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structata__port_a4f5c8b3accc5c6e9c9696cd02151a40a}\label{structata__port_a4f5c8b3accc5c6e9c9696cd02151a40a} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries tdev}
+\item 
+\Hypertarget{structata__port_a3dc6c8176f8363c5ac90dbb34344794b}\label{structata__port_a3dc6c8176f8363c5ac90dbb34344794b} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries scsi\+\_\+scan\+\_\+mutex}
+\item 
+\Hypertarget{structata__port_abe183909e81207b932dce89b1df8fe67}\label{structata__port_abe183909e81207b932dce89b1df8fe67} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries hotplug\+\_\+task}
+\item 
+\Hypertarget{structata__port_a59c7d57450c10a8ae70295046cdedf5d}\label{structata__port_a59c7d57450c10a8ae70295046cdedf5d} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries scsi\+\_\+rescan\+\_\+task}
+\item 
+\Hypertarget{structata__port_a65c5bfeeeee9a0e72447a139943e1173}\label{structata__port_a65c5bfeeeee9a0e72447a139943e1173} 
+unsigned int {\bfseries hsm\+\_\+task\+\_\+state}
+\item 
+\Hypertarget{structata__port_a713aaf0efa92d0ad994a7cd2e6a24801}\label{structata__port_a713aaf0efa92d0ad994a7cd2e6a24801} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries eh\+\_\+done\+\_\+q}
+\item 
+\Hypertarget{structata__port_a102df4486c2915d1217cc874da2fd9e2}\label{structata__port_a102df4486c2915d1217cc874da2fd9e2} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries eh\+\_\+wait\+\_\+q}
+\item 
+\Hypertarget{structata__port_a5dc2018733ebd67f7cf40a3b21ef5e2f}\label{structata__port_a5dc2018733ebd67f7cf40a3b21ef5e2f} 
+int {\bfseries eh\+\_\+tries}
+\item 
+\Hypertarget{structata__port_ab3bf1f3cef85451e3240b8c541bcd54c}\label{structata__port_ab3bf1f3cef85451e3240b8c541bcd54c} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries park\+\_\+req\+\_\+pending}
+\item 
+\Hypertarget{structata__port_ab347aed3f694dc52b5c99c2c4fd9b36c}\label{structata__port_ab347aed3f694dc52b5c99c2c4fd9b36c} 
+pm\+\_\+message\+\_\+t {\bfseries pm\+\_\+mesg}
+\item 
+\Hypertarget{structata__port_a1786f48dee2977cf1ce3f51a857871f6}\label{structata__port_a1786f48dee2977cf1ce3f51a857871f6} 
+enum ata\+\_\+lpm\+\_\+policy {\bfseries target\+\_\+lpm\+\_\+policy}
+\item 
+\Hypertarget{structata__port_a5c3cb75a324af992b126155ef12d07d4}\label{structata__port_a5c3cb75a324af992b126155ef12d07d4} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries fastdrain\+\_\+timer}
+\item 
+\Hypertarget{structata__port_aaaf8f4834e0d8675e18723ccea449cd4}\label{structata__port_aaaf8f4834e0d8675e18723ccea449cd4} 
+unsigned int {\bfseries fastdrain\+\_\+cnt}
+\item 
+\Hypertarget{structata__port_a4112569f856d8e0051e65e8f6d28e3ee}\label{structata__port_a4112569f856d8e0051e65e8f6d28e3ee} 
+async\+\_\+cookie\+\_\+t {\bfseries cookie}
+\item 
+\Hypertarget{structata__port_a068c8625b284c35e40c4920309ed02e6}\label{structata__port_a068c8625b284c35e40c4920309ed02e6} 
+int {\bfseries em\+\_\+message\+\_\+type}
+\item 
+\Hypertarget{structata__port_a98c06b0f51cae1d115bfd0ae76e9716d}\label{structata__port_a98c06b0f51cae1d115bfd0ae76e9716d} 
+void \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+data}
+\item 
+\Hypertarget{structata__port_adec23c4102bfeee1d83313e33a7b1c1f}\label{structata__port_adec23c4102bfeee1d83313e33a7b1c1f} 
+struct \doxymbox{\hyperlink{structata__acpi__gtm}{ata\+\_\+acpi\+\_\+gtm}} {\bfseries \+\_\+\+\_\+acpi\+\_\+init\+\_\+gtm}
+\item 
+\Hypertarget{structata__port_a30301577ae6a92c8e58ba7bcff0d8df9}\label{structata__port_a30301577ae6a92c8e58ba7bcff0d8df9} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_aef47adef15c71951c1d962c52bf8ea56}\label{structata__port_aef47adef15c71951c1d962c52bf8ea56} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_a102150cdd31a00083a2c053b295155a7}\label{structata__port_a102150cdd31a00083a2c053b295155a7} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_af40523d82fc5f9c93f63fafb792a4cec}\label{structata__port_af40523d82fc5f9c93f63fafb792a4cec} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_a4707ba45a6d7fcf402914ed12192ccd0}\label{structata__port_a4707ba45a6d7fcf402914ed12192ccd0} 
+long :\+ 64
+\item 
+\Hypertarget{structata__port_a27e5f2a660b40f5554884c751a752faf}\label{structata__port_a27e5f2a660b40f5554884c751a752faf} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

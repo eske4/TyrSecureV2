@@ -1,0 +1,34 @@
+\doxysection{drm\+\_\+mode\+\_\+config\+\_\+funcs Struct Reference}
+\hypertarget{structdrm__mode__config__funcs}{}\label{structdrm__mode__config__funcs}\index{drm\_mode\_config\_funcs@{drm\_mode\_config\_funcs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__mode__config__funcs_aad30f3b2b2a69ec8be31d5d4a62ef1f4}\label{structdrm__mode__config__funcs_aad30f3b2b2a69ec8be31d5d4a62ef1f4} 
+struct \doxymbox{\hyperlink{structdrm__framebuffer}{drm\+\_\+framebuffer}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+create} )(struct \doxymbox{\hyperlink{structdrm__device}{drm\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__file}{drm\+\_\+file}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__format__info}{drm\+\_\+format\+\_\+info}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__mode__fb__cmd2}{drm\+\_\+mode\+\_\+fb\+\_\+cmd2}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__mode__config__funcs_af92ce200cbf848e6794f90d54dfb2c57}\label{structdrm__mode__config__funcs_af92ce200cbf848e6794f90d54dfb2c57} 
+const struct \doxymbox{\hyperlink{structdrm__format__info}{drm\+\_\+format\+\_\+info}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+format\+\_\+info} )(u32, u64)
+\item 
+\Hypertarget{structdrm__mode__config__funcs_a5fc7752965994cf1e4bdcb43f2fd39fa}\label{structdrm__mode__config__funcs_a5fc7752965994cf1e4bdcb43f2fd39fa} 
+enum drm\+\_\+mode\+\_\+status(\texorpdfstring{$\ast$}{*} {\bfseries mode\+\_\+valid} )(struct \doxymbox{\hyperlink{structdrm__device}{drm\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__mode__config__funcs_a66520e2b952b87527432faba77964422}\label{structdrm__mode__config__funcs_a66520e2b952b87527432faba77964422} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+check} )(struct \doxymbox{\hyperlink{structdrm__device}{drm\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__mode__config__funcs_a35c7f97dafcacf27fc3d7709557eba22}\label{structdrm__mode__config__funcs_a35c7f97dafcacf27fc3d7709557eba22} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+commit} )(struct \doxymbox{\hyperlink{structdrm__device}{drm\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structdrm__mode__config__funcs_a2ce639fc96906acd23f39782340c04c4}\label{structdrm__mode__config__funcs_a2ce639fc96906acd23f39782340c04c4} 
+struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+state\+\_\+alloc} )(struct \doxymbox{\hyperlink{structdrm__device}{drm\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__mode__config__funcs_a672fe15fc54341bf68d300af46e3bb23}\label{structdrm__mode__config__funcs_a672fe15fc54341bf68d300af46e3bb23} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+state\+\_\+clear} )(struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__mode__config__funcs_ad15c6e082dc29ef6555e3a9513055150}\label{structdrm__mode__config__funcs_ad15c6e082dc29ef6555e3a9513055150} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+state\+\_\+free} )(struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\doxysection{vcpu\+\_\+guest\+\_\+context Struct Reference}
+\hypertarget{structvcpu__guest__context}{}\label{structvcpu__guest__context}\index{vcpu\_guest\_context@{vcpu\_guest\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvcpu__guest__context_acc01a2c81ece282a0e278dea00082437}\label{structvcpu__guest__context_acc01a2c81ece282a0e278dea00082437} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>char {\bfseries x} \+[512]\+\\
+\} {\bfseries fpu\_ctxt}\\
+
+\end{tabbing}\item 
+\Hypertarget{structvcpu__guest__context_a6337d2956bc6a68aa1082bcd7f9b024e}\label{structvcpu__guest__context_a6337d2956bc6a68aa1082bcd7f9b024e} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structvcpu__guest__context_a243aa492e7345399d10ee6e59528d55a}\label{structvcpu__guest__context_a243aa492e7345399d10ee6e59528d55a} 
+struct \doxymbox{\hyperlink{structcpu__user__regs}{cpu\+\_\+user\+\_\+regs}} {\bfseries user\+\_\+regs}
+\item 
+\Hypertarget{structvcpu__guest__context_af96b62555437df049cac8cd6d0043eb5}\label{structvcpu__guest__context_af96b62555437df049cac8cd6d0043eb5} 
+struct \doxymbox{\hyperlink{structtrap__info}{trap\+\_\+info}} {\bfseries trap\+\_\+ctxt} \+[256]\+
+\item 
+\Hypertarget{structvcpu__guest__context_a5dd568243f3bc4ed8dcb8b7edb0203ca}\label{structvcpu__guest__context_a5dd568243f3bc4ed8dcb8b7edb0203ca} 
+long unsigned int {\bfseries ldt\+\_\+base}
+\item 
+\Hypertarget{structvcpu__guest__context_a99ffa8dad303a6cbde8b2bce44073fe0}\label{structvcpu__guest__context_a99ffa8dad303a6cbde8b2bce44073fe0} 
+long unsigned int {\bfseries ldt\+\_\+ents}
+\item 
+\Hypertarget{structvcpu__guest__context_a58bfc7120476907eef389875aad9d6e9}\label{structvcpu__guest__context_a58bfc7120476907eef389875aad9d6e9} 
+long unsigned int {\bfseries gdt\+\_\+frames} \+[16]\+
+\item 
+\Hypertarget{structvcpu__guest__context_a61ed1168ae89b2ea1cc9c70798c5620a}\label{structvcpu__guest__context_a61ed1168ae89b2ea1cc9c70798c5620a} 
+long unsigned int {\bfseries gdt\+\_\+ents}
+\item 
+\Hypertarget{structvcpu__guest__context_acbeb0a7eadd9551daaed7559a306a689}\label{structvcpu__guest__context_acbeb0a7eadd9551daaed7559a306a689} 
+long unsigned int {\bfseries kernel\+\_\+ss}
+\item 
+\Hypertarget{structvcpu__guest__context_a36ddeccb10e1806229627f52bb7f1200}\label{structvcpu__guest__context_a36ddeccb10e1806229627f52bb7f1200} 
+long unsigned int {\bfseries kernel\+\_\+sp}
+\item 
+\Hypertarget{structvcpu__guest__context_ac01445878870736a59f9e89f81f03683}\label{structvcpu__guest__context_ac01445878870736a59f9e89f81f03683} 
+long unsigned int {\bfseries ctrlreg} \+[8]\+
+\item 
+\Hypertarget{structvcpu__guest__context_a73c83def877dc56b22de90c30dddb4f1}\label{structvcpu__guest__context_a73c83def877dc56b22de90c30dddb4f1} 
+long unsigned int {\bfseries debugreg} \+[8]\+
+\item 
+\Hypertarget{structvcpu__guest__context_a9fc27cb9bfac0a25164379c546a59c34}\label{structvcpu__guest__context_a9fc27cb9bfac0a25164379c546a59c34} 
+long unsigned int {\bfseries event\+\_\+callback\+\_\+eip}
+\item 
+\Hypertarget{structvcpu__guest__context_acb2190e685dedbc89925eb71e2236e55}\label{structvcpu__guest__context_acb2190e685dedbc89925eb71e2236e55} 
+long unsigned int {\bfseries failsafe\+\_\+callback\+\_\+eip}
+\item 
+\Hypertarget{structvcpu__guest__context_ae4cc0add4c858fdac717a07700cf46b0}\label{structvcpu__guest__context_ae4cc0add4c858fdac717a07700cf46b0} 
+long unsigned int {\bfseries syscall\+\_\+callback\+\_\+eip}
+\item 
+\Hypertarget{structvcpu__guest__context_a452e5638795c81236a04819016513861}\label{structvcpu__guest__context_a452e5638795c81236a04819016513861} 
+long unsigned int {\bfseries vm\+\_\+assist}
+\item 
+\Hypertarget{structvcpu__guest__context_ac5d39d070f252bedc26b3ff0022317e9}\label{structvcpu__guest__context_ac5d39d070f252bedc26b3ff0022317e9} 
+uint64\+\_\+t {\bfseries fs\+\_\+base}
+\item 
+\Hypertarget{structvcpu__guest__context_a7f29095b741594c4a9349122b62a7df7}\label{structvcpu__guest__context_a7f29095b741594c4a9349122b62a7df7} 
+uint64\+\_\+t {\bfseries gs\+\_\+base\+\_\+kernel}
+\item 
+\Hypertarget{structvcpu__guest__context_a52b683c4bfaab5b90d2d5e376d5aedfa}\label{structvcpu__guest__context_a52b683c4bfaab5b90d2d5e376d5aedfa} 
+uint64\+\_\+t {\bfseries gs\+\_\+base\+\_\+user}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

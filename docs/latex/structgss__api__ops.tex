@@ -1,0 +1,28 @@
+\doxysection{gss\+\_\+api\+\_\+ops Struct Reference}
+\hypertarget{structgss__api__ops}{}\label{structgss__api__ops}\index{gss\_api\_ops@{gss\_api\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structgss__api__ops_a5627a66b554857a1ad763f37dea37d4f}\label{structgss__api__ops_a5627a66b554857a1ad763f37dea37d4f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries gss\+\_\+import\+\_\+sec\+\_\+context} )(const void \texorpdfstring{$\ast$}{*}, size\+\_\+t, struct \doxymbox{\hyperlink{structgss__ctx}{gss\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, time64\+\_\+t \texorpdfstring{$\ast$}{*}, gfp\+\_\+t)
+\item 
+\Hypertarget{structgss__api__ops_ab6e213a63a4310afa376f286cf39e0a3}\label{structgss__api__ops_ab6e213a63a4310afa376f286cf39e0a3} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries gss\+\_\+get\+\_\+mic} )(struct \doxymbox{\hyperlink{structgss__ctx}{gss\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxdr__buf}{xdr\+\_\+buf}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxdr__netobj}{xdr\+\_\+netobj}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgss__api__ops_abdb59eb481d6e40ec350559860239b40}\label{structgss__api__ops_abdb59eb481d6e40ec350559860239b40} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries gss\+\_\+verify\+\_\+mic} )(struct \doxymbox{\hyperlink{structgss__ctx}{gss\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxdr__buf}{xdr\+\_\+buf}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxdr__netobj}{xdr\+\_\+netobj}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgss__api__ops_adca31369597b0303c0a4164ec34fbced}\label{structgss__api__ops_adca31369597b0303c0a4164ec34fbced} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries gss\+\_\+wrap} )(struct \doxymbox{\hyperlink{structgss__ctx}{gss\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structxdr__buf}{xdr\+\_\+buf}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgss__api__ops_a71644c05549ccf5a58a51d1be03c7609}\label{structgss__api__ops_a71644c05549ccf5a58a51d1be03c7609} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries gss\+\_\+unwrap} )(struct \doxymbox{\hyperlink{structgss__ctx}{gss\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, int, int, struct \doxymbox{\hyperlink{structxdr__buf}{xdr\+\_\+buf}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgss__api__ops_aa06b27f9b62170fc1424be2c5d212361}\label{structgss__api__ops_aa06b27f9b62170fc1424be2c5d212361} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries gss\+\_\+delete\+\_\+sec\+\_\+context} )(void \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\doxysection{led\+\_\+classdev Struct Reference}
+\hypertarget{structled__classdev}{}\label{structled__classdev}\index{led\_classdev@{led\_classdev}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structled__classdev_a8c0664047b44c0765827a03ac3dea04d}\label{structled__classdev_a8c0664047b44c0765827a03ac3dea04d} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structled__classdev_a3c219cd1ce8827d972d7570a5fea12a7}\label{structled__classdev_a3c219cd1ce8827d972d7570a5fea12a7} 
+unsigned int {\bfseries brightness}
+\item 
+\Hypertarget{structled__classdev_ae79345f2e30f2b23213126be9e94ed03}\label{structled__classdev_ae79345f2e30f2b23213126be9e94ed03} 
+unsigned int {\bfseries max\+\_\+brightness}
+\item 
+\Hypertarget{structled__classdev_a7a331d009f1ad6ede30774dd0887afd5}\label{structled__classdev_a7a331d009f1ad6ede30774dd0887afd5} 
+unsigned int {\bfseries color}
+\item 
+\Hypertarget{structled__classdev_a2d195de9ccf0dc5a5dd8c3d96f296ac9}\label{structled__classdev_a2d195de9ccf0dc5a5dd8c3d96f296ac9} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structled__classdev_a82832e614e7679a5f07ad88c9a234e8a}\label{structled__classdev_a82832e614e7679a5f07ad88c9a234e8a} 
+long unsigned int {\bfseries work\+\_\+flags}
+\item 
+\Hypertarget{structled__classdev_a116d989aa59451de03647861619bc5b4}\label{structled__classdev_a116d989aa59451de03647861619bc5b4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries brightness\+\_\+set} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*}, enum led\+\_\+brightness)
+\item 
+\Hypertarget{structled__classdev_aee80db7fc905d70cee891ac16757a8a7}\label{structled__classdev_aee80db7fc905d70cee891ac16757a8a7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries brightness\+\_\+set\+\_\+blocking} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*}, enum led\+\_\+brightness)
+\item 
+\Hypertarget{structled__classdev_ab8cb5e3376486d015c42de95510be1ee}\label{structled__classdev_ab8cb5e3376486d015c42de95510be1ee} 
+enum led\+\_\+brightness(\texorpdfstring{$\ast$}{*} {\bfseries brightness\+\_\+get} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structled__classdev_a30c238ac0d7aedaa3d5cbb255b043d84}\label{structled__classdev_a30c238ac0d7aedaa3d5cbb255b043d84} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries blink\+\_\+set} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structled__classdev_a5f647c4a835196e106065d47ab445412}\label{structled__classdev_a5f647c4a835196e106065d47ab445412} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pattern\+\_\+set} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structled__pattern}{led\+\_\+pattern}} \texorpdfstring{$\ast$}{*}, u32, int)
+\item 
+\Hypertarget{structled__classdev_a5670cc13c2c2e8475e73b4adfdedd7a0}\label{structled__classdev_a5670cc13c2c2e8475e73b4adfdedd7a0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pattern\+\_\+clear} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structled__classdev_a472988428d24dc8df9376dceb0f3fcae}\label{structled__classdev_a472988428d24dc8df9376dceb0f3fcae} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structled__classdev_a98863aa7505fb0166662b47976d9dfd6}\label{structled__classdev_a98863aa7505fb0166662b47976d9dfd6} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries groups}
+\item 
+\Hypertarget{structled__classdev_a194416936cbe2376b8ea1db934ef4b79}\label{structled__classdev_a194416936cbe2376b8ea1db934ef4b79} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structled__classdev_a720e90721157adb633ff96d83d307470}\label{structled__classdev_a720e90721157adb633ff96d83d307470} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries default\+\_\+trigger}
+\item 
+\Hypertarget{structled__classdev_afb30c7a0aa46afcd7ba37af96d63cd53}\label{structled__classdev_afb30c7a0aa46afcd7ba37af96d63cd53} 
+long unsigned int {\bfseries blink\+\_\+delay\+\_\+on}
+\item 
+\Hypertarget{structled__classdev_a7f89276af8be08be9522a8a23e0a6f16}\label{structled__classdev_a7f89276af8be08be9522a8a23e0a6f16} 
+long unsigned int {\bfseries blink\+\_\+delay\+\_\+off}
+\item 
+\Hypertarget{structled__classdev_a6faa77eaabbe1a7151a5c5386abc2c19}\label{structled__classdev_a6faa77eaabbe1a7151a5c5386abc2c19} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries blink\+\_\+timer}
+\item 
+\Hypertarget{structled__classdev_aa85dd0c3098d2177e838cc5b147c5edc}\label{structled__classdev_aa85dd0c3098d2177e838cc5b147c5edc} 
+int {\bfseries blink\+\_\+brightness}
+\item 
+\Hypertarget{structled__classdev_ad306853c8ff49d814f8014afaf37862d}\label{structled__classdev_ad306853c8ff49d814f8014afaf37862d} 
+int {\bfseries new\+\_\+blink\+\_\+brightness}
+\item 
+\Hypertarget{structled__classdev_a74b6c0a346fcb54441399fb860893a16}\label{structled__classdev_a74b6c0a346fcb54441399fb860893a16} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flash\+\_\+resume} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structled__classdev_a088c3aa0afad267b139b4e72cc928586}\label{structled__classdev_a088c3aa0afad267b139b4e72cc928586} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries wq}
+\item 
+\Hypertarget{structled__classdev_aff793093b1fc9679ad44679a76ee445a}\label{structled__classdev_aff793093b1fc9679ad44679a76ee445a} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries set\+\_\+brightness\+\_\+work}
+\item 
+\Hypertarget{structled__classdev_ac2638f3457686d1174eb13d66b1ad04a}\label{structled__classdev_ac2638f3457686d1174eb13d66b1ad04a} 
+int {\bfseries delayed\+\_\+set\+\_\+value}
+\item 
+\Hypertarget{structled__classdev_a3cead09636ef5f425b69df847a13efc6}\label{structled__classdev_a3cead09636ef5f425b69df847a13efc6} 
+long unsigned int {\bfseries delayed\+\_\+delay\+\_\+on}
+\item 
+\Hypertarget{structled__classdev_a65260315a33a3a52655f7729f6c5a116}\label{structled__classdev_a65260315a33a3a52655f7729f6c5a116} 
+long unsigned int {\bfseries delayed\+\_\+delay\+\_\+off}
+\item 
+\Hypertarget{structled__classdev_a2380226a56d1497bd13f489addb6fe74}\label{structled__classdev_a2380226a56d1497bd13f489addb6fe74} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries trigger\+\_\+lock}
+\item 
+\Hypertarget{structled__classdev_af9a9847870d597ba44b2345a3ffe6a91}\label{structled__classdev_af9a9847870d597ba44b2345a3ffe6a91} 
+struct \doxymbox{\hyperlink{structled__trigger}{led\+\_\+trigger}} \texorpdfstring{$\ast$}{*} {\bfseries trigger}
+\item 
+\Hypertarget{structled__classdev_a1f9528196425fc484005d6b31ba80c0a}\label{structled__classdev_a1f9528196425fc484005d6b31ba80c0a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries trig\+\_\+list}
+\item 
+\Hypertarget{structled__classdev_aa1cab7b3a717a4cebd337056e4ee975d}\label{structled__classdev_aa1cab7b3a717a4cebd337056e4ee975d} 
+void \texorpdfstring{$\ast$}{*} {\bfseries trigger\+\_\+data}
+\item 
+\Hypertarget{structled__classdev_a1065dc2f641c0694ba953b80097836a0}\label{structled__classdev_a1065dc2f641c0694ba953b80097836a0} 
+bool {\bfseries activated}
+\item 
+\Hypertarget{structled__classdev_a7e5936513d59993af3eb1734b3a25a7e}\label{structled__classdev_a7e5936513d59993af3eb1734b3a25a7e} 
+struct \doxymbox{\hyperlink{structled__hw__trigger__type}{led\+\_\+hw\+\_\+trigger\+\_\+type}} \texorpdfstring{$\ast$}{*} {\bfseries trigger\+\_\+type}
+\item 
+\Hypertarget{structled__classdev_a3d433ce91797472e146cf50dc12dd2cd}\label{structled__classdev_a3d433ce91797472e146cf50dc12dd2cd} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+control\+\_\+trigger}
+\item 
+\Hypertarget{structled__classdev_a673bdd13e9c049f15e41f052ceb10d33}\label{structled__classdev_a673bdd13e9c049f15e41f052ceb10d33} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+control\+\_\+is\+\_\+supported} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structled__classdev_a36a33e3d1afa14a3289cec56f8d872c5}\label{structled__classdev_a36a33e3d1afa14a3289cec56f8d872c5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+control\+\_\+set} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structled__classdev_a323e2ccddd0479f83e2390f80b813aa5}\label{structled__classdev_a323e2ccddd0479f83e2390f80b813aa5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+control\+\_\+get} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structled__classdev_ab6e24db80c50ef440c6e73b28d48425a}\label{structled__classdev_ab6e24db80c50ef440c6e73b28d48425a} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+control\+\_\+get\+\_\+device} )(struct \doxymbox{\hyperlink{structled__classdev}{led\+\_\+classdev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structled__classdev_ac2a8e37464af07ce2e4e58aaed5513ae}\label{structled__classdev_ac2a8e37464af07ce2e4e58aaed5513ae} 
+int {\bfseries brightness\+\_\+hw\+\_\+changed}
+\item 
+\Hypertarget{structled__classdev_a8cc895c7b202416b7109a826dcfa1d77}\label{structled__classdev_a8cc895c7b202416b7109a826dcfa1d77} 
+struct \doxymbox{\hyperlink{structkernfs__node}{kernfs\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries brightness\+\_\+hw\+\_\+changed\+\_\+kn}
+\item 
+\Hypertarget{structled__classdev_a2111f3f3a4ea54ccfbc560075ca643c6}\label{structled__classdev_a2111f3f3a4ea54ccfbc560075ca643c6} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries led\+\_\+access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

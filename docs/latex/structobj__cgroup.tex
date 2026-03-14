@@ -1,0 +1,28 @@
+\doxysection{obj\+\_\+cgroup Struct Reference}
+\hypertarget{structobj__cgroup}{}\label{structobj__cgroup}\index{obj\_cgroup@{obj\_cgroup}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structobj__cgroup_a3402a4ccbe784a64d83d03ad05953cb2}\label{structobj__cgroup_a3402a4ccbe784a64d83d03ad05953cb2} 
+struct \doxymbox{\hyperlink{structpercpu__ref}{percpu\+\_\+ref}} {\bfseries refcnt}
+\item 
+\Hypertarget{structobj__cgroup_a5033945aa688d2001f5cf7345486d2e2}\label{structobj__cgroup_a5033945aa688d2001f5cf7345486d2e2} 
+struct \doxymbox{\hyperlink{structmem__cgroup}{mem\+\_\+cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries memcg}
+\item 
+\Hypertarget{structobj__cgroup_a467b9432a9cbee97c40e921300cb39a0}\label{structobj__cgroup_a467b9432a9cbee97c40e921300cb39a0} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nr\+\_\+charged\+\_\+bytes}
+\item 
+\Hypertarget{structobj__cgroup_a7817b5d5a2069374547c8eb0b2215ddc}\label{structobj__cgroup_a7817b5d5a2069374547c8eb0b2215ddc} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries list}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries rcu}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

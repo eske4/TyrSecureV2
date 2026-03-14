@@ -1,0 +1,49 @@
+\doxysection{fuse\+\_\+io\+\_\+priv Struct Reference}
+\hypertarget{structfuse__io__priv}{}\label{structfuse__io__priv}\index{fuse\_io\_priv@{fuse\_io\_priv}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__io__priv_a8e6b1a8e4676e5fbc74a343f3cb67b33}\label{structfuse__io__priv_a8e6b1a8e4676e5fbc74a343f3cb67b33} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries refcnt}
+\item 
+\Hypertarget{structfuse__io__priv_ac632e925e73c0ed5e2ca0db04c45f950}\label{structfuse__io__priv_ac632e925e73c0ed5e2ca0db04c45f950} 
+int {\bfseries async}
+\item 
+\Hypertarget{structfuse__io__priv_a571d5bdeee508b43a684ccb740bc4c8a}\label{structfuse__io__priv_a571d5bdeee508b43a684ccb740bc4c8a} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structfuse__io__priv_a6cbfef3c2b35599ca6d5a5314fecf07d}\label{structfuse__io__priv_a6cbfef3c2b35599ca6d5a5314fecf07d} 
+unsigned int {\bfseries reqs}
+\item 
+\Hypertarget{structfuse__io__priv_a84b8bc4e838cd535475c020cd621267e}\label{structfuse__io__priv_a84b8bc4e838cd535475c020cd621267e} 
+ssize\+\_\+t {\bfseries bytes}
+\item 
+\Hypertarget{structfuse__io__priv_a5e606b389e2845650d9ec015529b33c3}\label{structfuse__io__priv_a5e606b389e2845650d9ec015529b33c3} 
+size\+\_\+t {\bfseries size}
+\item 
+\Hypertarget{structfuse__io__priv_a8254159f6d77e8aa9e585b99e9386870}\label{structfuse__io__priv_a8254159f6d77e8aa9e585b99e9386870} 
+\+\_\+\+\_\+u64 {\bfseries offset}
+\item 
+\Hypertarget{structfuse__io__priv_a105fb3d10bf3bac407c8869d449ad03b}\label{structfuse__io__priv_a105fb3d10bf3bac407c8869d449ad03b} 
+bool {\bfseries write}
+\item 
+\Hypertarget{structfuse__io__priv_a4d9c16da6292f9cbfda21f15bd736083}\label{structfuse__io__priv_a4d9c16da6292f9cbfda21f15bd736083} 
+bool {\bfseries should\+\_\+dirty}
+\item 
+\Hypertarget{structfuse__io__priv_aea7c1e5d1952e7bddde5b46781304d28}\label{structfuse__io__priv_aea7c1e5d1952e7bddde5b46781304d28} 
+int {\bfseries err}
+\item 
+\Hypertarget{structfuse__io__priv_a76af20ded52fd2972d6ff88f7aee193c}\label{structfuse__io__priv_a76af20ded52fd2972d6ff88f7aee193c} 
+struct \doxymbox{\hyperlink{structkiocb}{kiocb}} \texorpdfstring{$\ast$}{*} {\bfseries iocb}
+\item 
+\Hypertarget{structfuse__io__priv_a354d600bac8b6055bab99006f9fcfe64}\label{structfuse__io__priv_a354d600bac8b6055bab99006f9fcfe64} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} \texorpdfstring{$\ast$}{*} {\bfseries done}
+\item 
+\Hypertarget{structfuse__io__priv_a917980cc1bce7face9f5047ab6090778}\label{structfuse__io__priv_a917980cc1bce7face9f5047ab6090778} 
+bool {\bfseries blocking}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

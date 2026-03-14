@@ -1,0 +1,55 @@
+\doxysection{btrfs\+\_\+backref\+\_\+walk\+\_\+ctx Struct Reference}
+\hypertarget{structbtrfs__backref__walk__ctx}{}\label{structbtrfs__backref__walk__ctx}\index{btrfs\_backref\_walk\_ctx@{btrfs\_backref\_walk\_ctx}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_ab5732264ac8a98fde31a4b8549a58bc0}\label{structbtrfs__backref__walk__ctx_ab5732264ac8a98fde31a4b8549a58bc0} 
+u64 {\bfseries bytenr}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_adb486ce1c98f2663f56140d0963f77f5}\label{structbtrfs__backref__walk__ctx_adb486ce1c98f2663f56140d0963f77f5} 
+u64 {\bfseries extent\+\_\+item\+\_\+pos}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_a991d3878146799235e321de707cdb3c6}\label{structbtrfs__backref__walk__ctx_a991d3878146799235e321de707cdb3c6} 
+bool {\bfseries ignore\+\_\+extent\+\_\+item\+\_\+pos}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_a524a1a800ab99c76b651488b9db7c399}\label{structbtrfs__backref__walk__ctx_a524a1a800ab99c76b651488b9db7c399} 
+bool {\bfseries skip\+\_\+inode\+\_\+ref\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_ab87e4e7d5242c6a27627300b2fefc33f}\label{structbtrfs__backref__walk__ctx_ab87e4e7d5242c6a27627300b2fefc33f} 
+struct \doxymbox{\hyperlink{structbtrfs__trans__handle}{btrfs\+\_\+trans\+\_\+handle}} \texorpdfstring{$\ast$}{*} {\bfseries trans}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_ad421a8cb167e46c22261e11ad3f1a869}\label{structbtrfs__backref__walk__ctx_ad421a8cb167e46c22261e11ad3f1a869} 
+struct \doxymbox{\hyperlink{structbtrfs__fs__info}{btrfs\+\_\+fs\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_afb5c52547df8d48afb921fa1fa4d87c6}\label{structbtrfs__backref__walk__ctx_afb5c52547df8d48afb921fa1fa4d87c6} 
+u64 {\bfseries time\+\_\+seq}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_a976c75ba22a364bd91da92f3d7ef534f}\label{structbtrfs__backref__walk__ctx_a976c75ba22a364bd91da92f3d7ef534f} 
+struct \doxymbox{\hyperlink{structulist}{ulist}} \texorpdfstring{$\ast$}{*} {\bfseries refs}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_a46acb88921fdc95a4ec424a3899e6512}\label{structbtrfs__backref__walk__ctx_a46acb88921fdc95a4ec424a3899e6512} 
+struct \doxymbox{\hyperlink{structulist}{ulist}} \texorpdfstring{$\ast$}{*} {\bfseries roots}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_ac7ad1ae2be0dc26004783f39b9134d89}\label{structbtrfs__backref__walk__ctx_ac7ad1ae2be0dc26004783f39b9134d89} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries cache\+\_\+lookup} )(u64, void \texorpdfstring{$\ast$}{*}, const u64 \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_a4a99c554368f6db8bb319103df7e8f71}\label{structbtrfs__backref__walk__ctx_a4a99c554368f6db8bb319103df7e8f71} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cache\+\_\+store} )(u64, const struct \doxymbox{\hyperlink{structulist}{ulist}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_ad0da498a4c56008a3cf6980ce222f814}\label{structbtrfs__backref__walk__ctx_ad0da498a4c56008a3cf6980ce222f814} 
+iterate\+\_\+extent\+\_\+inodes\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries indirect\+\_\+ref\+\_\+iterator}
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_a1c3a32a482cbc873147d628c018e0e46}\label{structbtrfs__backref__walk__ctx_a1c3a32a482cbc873147d628c018e0e46} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+extent\+\_\+item} )(u64, const struct \doxymbox{\hyperlink{structbtrfs__extent__item}{btrfs\+\_\+extent\+\_\+item}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structextent__buffer}{extent\+\_\+buffer}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_ad2f1cb29d134ccd199b9d9b1e00787e9}\label{structbtrfs__backref__walk__ctx_ad2f1cb29d134ccd199b9d9b1e00787e9} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries skip\+\_\+data\+\_\+ref} )(u64, u64, u64, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbtrfs__backref__walk__ctx_addf923ec56208d4db926a8e5cdadb066}\label{structbtrfs__backref__walk__ctx_addf923ec56208d4db926a8e5cdadb066} 
+void \texorpdfstring{$\ast$}{*} {\bfseries user\+\_\+ctx}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\doxysection{fsnotify\+\_\+mark\+\_\+connector Struct Reference}
+\hypertarget{structfsnotify__mark__connector}{}\label{structfsnotify__mark__connector}\index{fsnotify\_mark\_connector@{fsnotify\_mark\_connector}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfsnotify__mark__connector_a334c0fee313aa057e9dd3d1407f6bf67}\label{structfsnotify__mark__connector_a334c0fee313aa057e9dd3d1407f6bf67} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structfsnotify__mark__connector_a794572c196cc38987395113979d3890a}\label{structfsnotify__mark__connector_a794572c196cc38987395113979d3890a} 
+unsigned char {\bfseries type}
+\item 
+\Hypertarget{structfsnotify__mark__connector_a6354a365bcafa6cccb4b681b4cbf354d}\label{structfsnotify__mark__connector_a6354a365bcafa6cccb4b681b4cbf354d} 
+unsigned char {\bfseries prio}
+\item 
+\Hypertarget{structfsnotify__mark__connector_aa85371299a80eb39a2cfa5d4dbd97ad5}\label{structfsnotify__mark__connector_aa85371299a80eb39a2cfa5d4dbd97ad5} 
+short unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structfsnotify__mark__connector_a6b98128088b7a8fb463294ec11085ac1}\label{structfsnotify__mark__connector_a6b98128088b7a8fb463294ec11085ac1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries obj}\\
+\>struct \doxymbox{\hyperlink{structfsnotify__mark__connector}{fsnotify\_mark\_connector}} \texorpdfstring{$\ast$}{*} {\bfseries destroy\_next}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structfsnotify__mark__connector_abaf32e41e3a439ca8dcc424eb80cbf5f}\label{structfsnotify__mark__connector_abaf32e41e3a439ca8dcc424eb80cbf5f} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\doxysection{blk\+\_\+crypto\+\_\+profile Struct Reference}
+\hypertarget{structblk__crypto__profile}{}\label{structblk__crypto__profile}\index{blk\_crypto\_profile@{blk\_crypto\_profile}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structblk__crypto__profile_a742e27fdb2cbca3f70824ba1c9c4e49f}\label{structblk__crypto__profile_a742e27fdb2cbca3f70824ba1c9c4e49f} 
+struct \doxymbox{\hyperlink{structblk__crypto__ll__ops}{blk\+\_\+crypto\+\_\+ll\+\_\+ops}} {\bfseries ll\+\_\+ops}
+\item 
+\Hypertarget{structblk__crypto__profile_a142fe40759476eb52884110ef4a2faa1}\label{structblk__crypto__profile_a142fe40759476eb52884110ef4a2faa1} 
+unsigned int {\bfseries max\+\_\+dun\+\_\+bytes\+\_\+supported}
+\item 
+\Hypertarget{structblk__crypto__profile_ae3b3708452c97ae1565870cfc5cbe39e}\label{structblk__crypto__profile_ae3b3708452c97ae1565870cfc5cbe39e} 
+unsigned int {\bfseries key\+\_\+types\+\_\+supported}
+\item 
+\Hypertarget{structblk__crypto__profile_a32e65275753fb2f6b72b58b5ac42205e}\label{structblk__crypto__profile_a32e65275753fb2f6b72b58b5ac42205e} 
+unsigned int {\bfseries modes\+\_\+supported} \+[5]\+
+\item 
+\Hypertarget{structblk__crypto__profile_a60366ef9e02c97a97f8336a6a3af5add}\label{structblk__crypto__profile_a60366ef9e02c97a97f8336a6a3af5add} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structblk__crypto__profile_aa7d46ee26e7c0f8eee296499d080ca04}\label{structblk__crypto__profile_aa7d46ee26e7c0f8eee296499d080ca04} 
+unsigned int {\bfseries num\+\_\+slots}
+\item 
+\Hypertarget{structblk__crypto__profile_adaec4f51913bea28495f673a8520c9cc}\label{structblk__crypto__profile_adaec4f51913bea28495f673a8520c9cc} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries lock}
+\item 
+\Hypertarget{structblk__crypto__profile_ab6592be7e8c7ff7fb30b1a512311d04c}\label{structblk__crypto__profile_ab6592be7e8c7ff7fb30b1a512311d04c} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries lockdep\+\_\+key}
+\item 
+\Hypertarget{structblk__crypto__profile_a503bade6d0afe2c424dc928fdab5872e}\label{structblk__crypto__profile_a503bade6d0afe2c424dc928fdab5872e} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries idle\+\_\+slots\+\_\+wait\+\_\+queue}
+\item 
+\Hypertarget{structblk__crypto__profile_af058ea41b9029bec3c77eb425f22accd}\label{structblk__crypto__profile_af058ea41b9029bec3c77eb425f22accd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries idle\+\_\+slots}
+\item 
+\Hypertarget{structblk__crypto__profile_a80f0dcc1f22987240951b70963fc8309}\label{structblk__crypto__profile_a80f0dcc1f22987240951b70963fc8309} 
+spinlock\+\_\+t {\bfseries idle\+\_\+slots\+\_\+lock}
+\item 
+\Hypertarget{structblk__crypto__profile_a0065d518f422bb7093613b576150e236}\label{structblk__crypto__profile_a0065d518f422bb7093613b576150e236} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries slot\+\_\+hashtable}
+\item 
+\Hypertarget{structblk__crypto__profile_a18edec0491f4654686f717016fc379fa}\label{structblk__crypto__profile_a18edec0491f4654686f717016fc379fa} 
+unsigned int {\bfseries log\+\_\+slot\+\_\+ht\+\_\+size}
+\item 
+\Hypertarget{structblk__crypto__profile_a81e33769b4bd33ece7835f3d4149169a}\label{structblk__crypto__profile_a81e33769b4bd33ece7835f3d4149169a} 
+struct \doxymbox{\hyperlink{structblk__crypto__keyslot}{blk\+\_\+crypto\+\_\+keyslot}} \texorpdfstring{$\ast$}{*} {\bfseries slots}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

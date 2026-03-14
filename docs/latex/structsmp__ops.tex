@@ -1,0 +1,55 @@
+\doxysection{smp\+\_\+ops Struct Reference}
+\hypertarget{structsmp__ops}{}\label{structsmp__ops}\index{smp\_ops@{smp\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsmp__ops_ab42f2edbd29a5d827688938df4e20d2e}\label{structsmp__ops_ab42f2edbd29a5d827688938df4e20d2e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries smp\+\_\+prepare\+\_\+boot\+\_\+cpu} )(void)
+\item 
+\Hypertarget{structsmp__ops_af33c3509bdd9f86edcc87a9894634116}\label{structsmp__ops_af33c3509bdd9f86edcc87a9894634116} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries smp\+\_\+prepare\+\_\+cpus} )(unsigned int)
+\item 
+\Hypertarget{structsmp__ops_a14078dbd0176dc3d6fdfae198b09daec}\label{structsmp__ops_a14078dbd0176dc3d6fdfae198b09daec} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries smp\+\_\+cpus\+\_\+done} )(unsigned int)
+\item 
+\Hypertarget{structsmp__ops_a7d7c3719bbe538359698293e14118ca3}\label{structsmp__ops_a7d7c3719bbe538359698293e14118ca3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries stop\+\_\+other\+\_\+cpus} )(int)
+\item 
+\Hypertarget{structsmp__ops_ae8a8f2fc502d4f278008b805c2258aa1}\label{structsmp__ops_ae8a8f2fc502d4f278008b805c2258aa1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries crash\+\_\+stop\+\_\+other\+\_\+cpus} )(void)
+\item 
+\Hypertarget{structsmp__ops_a70b885e384c394a7be7f2221e6fa0c88}\label{structsmp__ops_a70b885e384c394a7be7f2221e6fa0c88} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries smp\+\_\+send\+\_\+reschedule} )(int)
+\item 
+\Hypertarget{structsmp__ops_a98c8bec8ff367286cae116d304fea763}\label{structsmp__ops_a98c8bec8ff367286cae116d304fea763} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup\+\_\+dead\+\_\+cpu} )(unsigned int)
+\item 
+\Hypertarget{structsmp__ops_aa0c67b3ab510a0274b7e7d8716da77cd}\label{structsmp__ops_aa0c67b3ab510a0274b7e7d8716da77cd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries poll\+\_\+sync\+\_\+state} )(void)
+\item 
+\Hypertarget{structsmp__ops_a8284177a0b5ae94533ff67681931316a}\label{structsmp__ops_a8284177a0b5ae94533ff67681931316a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries kick\+\_\+ap\+\_\+alive} )(unsigned int, struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsmp__ops_ad7b3021364283d2cc2a97a62fe48c7c2}\label{structsmp__ops_ad7b3021364283d2cc2a97a62fe48c7c2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+disable} )(void)
+\item 
+\Hypertarget{structsmp__ops_abae27796f80dc0e69bf7735cc6afc71b}\label{structsmp__ops_abae27796f80dc0e69bf7735cc6afc71b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+die} )(unsigned int)
+\item 
+\Hypertarget{structsmp__ops_a5c7991daea4fe372f99f2329778f99d5}\label{structsmp__ops_a5c7991daea4fe372f99f2329778f99d5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries play\+\_\+dead} )(void)
+\item 
+\Hypertarget{structsmp__ops_adf2238e6952dc3752c3a5a139709ed79}\label{structsmp__ops_adf2238e6952dc3752c3a5a139709ed79} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries stop\+\_\+this\+\_\+cpu} )(void)
+\item 
+\Hypertarget{structsmp__ops_af2ff466f6ac41c924768b5fb43429c3d}\label{structsmp__ops_af2ff466f6ac41c924768b5fb43429c3d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+call\+\_\+func\+\_\+ipi} )(const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsmp__ops_a6bdebe860d3c60a86772c7da5f60b2e0}\label{structsmp__ops_a6bdebe860d3c60a86772c7da5f60b2e0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+call\+\_\+func\+\_\+single\+\_\+ipi} )(int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

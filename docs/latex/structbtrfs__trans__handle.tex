@@ -1,0 +1,73 @@
+\doxysection{btrfs\+\_\+trans\+\_\+handle Struct Reference}
+\hypertarget{structbtrfs__trans__handle}{}\label{structbtrfs__trans__handle}\index{btrfs\_trans\_handle@{btrfs\_trans\_handle}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__trans__handle_ad5ea23d65fbffa5264396d70bf5bb694}\label{structbtrfs__trans__handle_ad5ea23d65fbffa5264396d70bf5bb694} 
+u64 {\bfseries transid}
+\item 
+\Hypertarget{structbtrfs__trans__handle_af39bc042dbedd3c16396e54ac207822d}\label{structbtrfs__trans__handle_af39bc042dbedd3c16396e54ac207822d} 
+u64 {\bfseries bytes\+\_\+reserved}
+\item 
+\Hypertarget{structbtrfs__trans__handle_ae84923cc2b48e8043bfc903d0ed1f5d0}\label{structbtrfs__trans__handle_ae84923cc2b48e8043bfc903d0ed1f5d0} 
+u64 {\bfseries delayed\+\_\+refs\+\_\+bytes\+\_\+reserved}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a3ec2fb4e9ba519b89b9af712f89c0f63}\label{structbtrfs__trans__handle_a3ec2fb4e9ba519b89b9af712f89c0f63} 
+u64 {\bfseries chunk\+\_\+bytes\+\_\+reserved}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a8cdab528223cc1df40d060a0bc8865b2}\label{structbtrfs__trans__handle_a8cdab528223cc1df40d060a0bc8865b2} 
+long unsigned int {\bfseries delayed\+\_\+ref\+\_\+updates}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a7ec5bf720eabefa544c052259b3ee769}\label{structbtrfs__trans__handle_a7ec5bf720eabefa544c052259b3ee769} 
+long unsigned int {\bfseries delayed\+\_\+ref\+\_\+csum\+\_\+deletions}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a34ad698ca435602c606e8a7ea81b537b}\label{structbtrfs__trans__handle_a34ad698ca435602c606e8a7ea81b537b} 
+struct \doxymbox{\hyperlink{structbtrfs__transaction}{btrfs\+\_\+transaction}} \texorpdfstring{$\ast$}{*} {\bfseries transaction}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a5372c9699da5413e7bf0ba5e2b31c023}\label{structbtrfs__trans__handle_a5372c9699da5413e7bf0ba5e2b31c023} 
+struct \doxymbox{\hyperlink{structbtrfs__block__rsv}{btrfs\+\_\+block\+\_\+rsv}} \texorpdfstring{$\ast$}{*} {\bfseries block\+\_\+rsv}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a52f33463287edc2a95311a262073c4b4}\label{structbtrfs__trans__handle_a52f33463287edc2a95311a262073c4b4} 
+struct \doxymbox{\hyperlink{structbtrfs__block__rsv}{btrfs\+\_\+block\+\_\+rsv}} \texorpdfstring{$\ast$}{*} {\bfseries orig\+\_\+rsv}
+\item 
+\Hypertarget{structbtrfs__trans__handle_aeb80197976b2f9c098a95eeeae3b2343}\label{structbtrfs__trans__handle_aeb80197976b2f9c098a95eeeae3b2343} 
+struct \doxymbox{\hyperlink{structbtrfs__pending__snapshot}{btrfs\+\_\+pending\+\_\+snapshot}} \texorpdfstring{$\ast$}{*} {\bfseries pending\+\_\+snapshot}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a2ff4ba5167c6eb0f57f4a0fad66af1d5}\label{structbtrfs__trans__handle_a2ff4ba5167c6eb0f57f4a0fad66af1d5} 
+refcount\+\_\+t {\bfseries use\+\_\+count}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a8cfc94515a00c45483e95dced6d8cab1}\label{structbtrfs__trans__handle_a8cfc94515a00c45483e95dced6d8cab1} 
+unsigned int {\bfseries type}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a97b9cfda326c7e5554a27af5c28796ed}\label{structbtrfs__trans__handle_a97b9cfda326c7e5554a27af5c28796ed} 
+short int {\bfseries aborted}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a894a144df4b56070501f65a1b75a16a6}\label{structbtrfs__trans__handle_a894a144df4b56070501f65a1b75a16a6} 
+bool {\bfseries adding\+\_\+csums}
+\item 
+\Hypertarget{structbtrfs__trans__handle_adc504f4574bcc68bffdd1bc73f93c803}\label{structbtrfs__trans__handle_adc504f4574bcc68bffdd1bc73f93c803} 
+bool {\bfseries allocating\+\_\+chunk}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a01448caa3b50722b8cb13d2f675801d0}\label{structbtrfs__trans__handle_a01448caa3b50722b8cb13d2f675801d0} 
+bool {\bfseries removing\+\_\+chunk}
+\item 
+\Hypertarget{structbtrfs__trans__handle_ae0ef821dbf31992f44a5bef19576175a}\label{structbtrfs__trans__handle_ae0ef821dbf31992f44a5bef19576175a} 
+bool {\bfseries reloc\+\_\+reserved}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a00e7b46e6581853ad698a4c501a45e38}\label{structbtrfs__trans__handle_a00e7b46e6581853ad698a4c501a45e38} 
+bool {\bfseries in\+\_\+fsync}
+\item 
+\Hypertarget{structbtrfs__trans__handle_aed83b774bc4a78c30b10ce77c3c2cc29}\label{structbtrfs__trans__handle_aed83b774bc4a78c30b10ce77c3c2cc29} 
+struct \doxymbox{\hyperlink{structbtrfs__fs__info}{btrfs\+\_\+fs\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{structbtrfs__trans__handle_a753a7e40966f043546f92ef01c50415e}\label{structbtrfs__trans__handle_a753a7e40966f043546f92ef01c50415e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries new\+\_\+bgs}
+\item 
+\Hypertarget{structbtrfs__trans__handle_acfcc7a2ffd0016173b3f9b441c703b48}\label{structbtrfs__trans__handle_acfcc7a2ffd0016173b3f9b441c703b48} 
+struct \doxymbox{\hyperlink{structbtrfs__block__rsv}{btrfs\+\_\+block\+\_\+rsv}} {\bfseries delayed\+\_\+rsv}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

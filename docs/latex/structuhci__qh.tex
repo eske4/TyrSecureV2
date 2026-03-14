@@ -1,0 +1,82 @@
+\doxysection{uhci\+\_\+qh Struct Reference}
+\hypertarget{structuhci__qh}{}\label{structuhci__qh}\index{uhci\_qh@{uhci\_qh}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structuhci__qh_ac69251ce2d13a1deca95a2a83685a022}\label{structuhci__qh_ac69251ce2d13a1deca95a2a83685a022} 
+\+\_\+\+\_\+le32 {\bfseries link}
+\item 
+\Hypertarget{structuhci__qh_af2bd50e6f46762530209a4362445ae5c}\label{structuhci__qh_af2bd50e6f46762530209a4362445ae5c} 
+\+\_\+\+\_\+le32 {\bfseries element}
+\item 
+\Hypertarget{structuhci__qh_a8b5a6f1fa9ec8f4c9fda9ee9663eea8c}\label{structuhci__qh_a8b5a6f1fa9ec8f4c9fda9ee9663eea8c} 
+dma\+\_\+addr\+\_\+t {\bfseries dma\+\_\+handle}
+\item 
+\Hypertarget{structuhci__qh_a87fba8fb24ab9c6d83b6defa353d71db}\label{structuhci__qh_a87fba8fb24ab9c6d83b6defa353d71db} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structuhci__qh_a11fe71b5fd10e15b634d21edbf45f4b1}\label{structuhci__qh_a11fe71b5fd10e15b634d21edbf45f4b1} 
+struct \doxymbox{\hyperlink{structusb__host__endpoint}{usb\+\_\+host\+\_\+endpoint}} \texorpdfstring{$\ast$}{*} {\bfseries hep}
+\item 
+\Hypertarget{structuhci__qh_a0c22d3159a7a7b6a86a208be107a9346}\label{structuhci__qh_a0c22d3159a7a7b6a86a208be107a9346} 
+struct \doxymbox{\hyperlink{structusb__device}{usb\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries udev}
+\item 
+\Hypertarget{structuhci__qh_a0e024a7467c962e234a78ef0ed270a2c}\label{structuhci__qh_a0e024a7467c962e234a78ef0ed270a2c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries queue}
+\item 
+\Hypertarget{structuhci__qh_ac0af756bd5d38299c22e46ea02a824b7}\label{structuhci__qh_ac0af756bd5d38299c22e46ea02a824b7} 
+struct \doxymbox{\hyperlink{structuhci__td}{uhci\+\_\+td}} \texorpdfstring{$\ast$}{*} {\bfseries dummy\+\_\+td}
+\item 
+\Hypertarget{structuhci__qh_a3dc6a3a0af06416dbb6a1789d350f740}\label{structuhci__qh_a3dc6a3a0af06416dbb6a1789d350f740} 
+struct \doxymbox{\hyperlink{structuhci__td}{uhci\+\_\+td}} \texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+td}
+\item 
+\Hypertarget{structuhci__qh_ac419512644bd23e418567afe9685e856}\label{structuhci__qh_ac419512644bd23e418567afe9685e856} 
+struct \doxymbox{\hyperlink{structusb__iso__packet__descriptor}{usb\+\_\+iso\+\_\+packet\+\_\+descriptor}} \texorpdfstring{$\ast$}{*} {\bfseries iso\+\_\+packet\+\_\+desc}
+\item 
+\Hypertarget{structuhci__qh_aa1b1cbaa52b9819e1b8b281f57b18370}\label{structuhci__qh_aa1b1cbaa52b9819e1b8b281f57b18370} 
+long unsigned int {\bfseries advance\+\_\+jiffies}
+\item 
+\Hypertarget{structuhci__qh_a5e8cdc0a73813852da83449c02afbd01}\label{structuhci__qh_a5e8cdc0a73813852da83449c02afbd01} 
+unsigned int {\bfseries unlink\+\_\+frame}
+\item 
+\Hypertarget{structuhci__qh_aca90c97f86c4b2a9d6ce4da65a151296}\label{structuhci__qh_aca90c97f86c4b2a9d6ce4da65a151296} 
+unsigned int {\bfseries period}
+\item 
+\Hypertarget{structuhci__qh_a94d84a4f57611f3ca7dcabe1990958a8}\label{structuhci__qh_a94d84a4f57611f3ca7dcabe1990958a8} 
+short int {\bfseries phase}
+\item 
+\Hypertarget{structuhci__qh_a5e03a8beac906ee692578a02dfc95a94}\label{structuhci__qh_a5e03a8beac906ee692578a02dfc95a94} 
+short int {\bfseries load}
+\item 
+\Hypertarget{structuhci__qh_a4c6368bf261b7861a9d1c2cda892582b}\label{structuhci__qh_a4c6368bf261b7861a9d1c2cda892582b} 
+unsigned int {\bfseries iso\+\_\+frame}
+\item 
+\Hypertarget{structuhci__qh_a63bfaf9ae371fac35d58e8591cff0618}\label{structuhci__qh_a63bfaf9ae371fac35d58e8591cff0618} 
+int {\bfseries state}
+\item 
+\Hypertarget{structuhci__qh_a1395b0e122565f587f37dc6981dd312e}\label{structuhci__qh_a1395b0e122565f587f37dc6981dd312e} 
+int {\bfseries type}
+\item 
+\Hypertarget{structuhci__qh_a6adb1d7b36b6679312c3daf8b5ee005e}\label{structuhci__qh_a6adb1d7b36b6679312c3daf8b5ee005e} 
+int {\bfseries skel}
+\item 
+\Hypertarget{structuhci__qh_a4b3a99c9159f4cf5c801d83e64ca7693}\label{structuhci__qh_a4b3a99c9159f4cf5c801d83e64ca7693} 
+unsigned int {\bfseries initial\+\_\+toggle}:\+ 1
+\item 
+\Hypertarget{structuhci__qh_ab5004937f019d83b9fe4a34dedd0286f}\label{structuhci__qh_ab5004937f019d83b9fe4a34dedd0286f} 
+unsigned int {\bfseries needs\+\_\+fixup}:\+ 1
+\item 
+\Hypertarget{structuhci__qh_a91796fc7f1f497e3a615df2dc9539f80}\label{structuhci__qh_a91796fc7f1f497e3a615df2dc9539f80} 
+unsigned int {\bfseries is\+\_\+stopped}:\+ 1
+\item 
+\Hypertarget{structuhci__qh_afe6937f36a85eec4ccb3ce0eb80fd751}\label{structuhci__qh_afe6937f36a85eec4ccb3ce0eb80fd751} 
+unsigned int {\bfseries wait\+\_\+expired}:\+ 1
+\item 
+\Hypertarget{structuhci__qh_a1a52d3cb00b889f3c6ee0e4b98c686bb}\label{structuhci__qh_a1a52d3cb00b889f3c6ee0e4b98c686bb} 
+unsigned int {\bfseries bandwidth\+\_\+reserved}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\doxysection{drm\+\_\+device Struct Reference}
+\hypertarget{structdrm__device}{}\label{structdrm__device}\index{drm\_device@{drm\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__device_af5f751cfea9d39d5fe7f1eb8ba7a433d}\label{structdrm__device_af5f751cfea9d39d5fe7f1eb8ba7a433d} 
+int {\bfseries if\+\_\+version}
+\item 
+\Hypertarget{structdrm__device_ad3181574589e4d1739e94999e55003b5}\label{structdrm__device_ad3181574589e4d1739e94999e55003b5} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries ref}
+\item 
+\Hypertarget{structdrm__device_aa2f256519e024bfbc2d22ad1f7a63958}\label{structdrm__device_aa2f256519e024bfbc2d22ad1f7a63958} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structdrm__device_acd700ff6114895cb414d1909968d8b3f}\label{structdrm__device_acd700ff6114895cb414d1909968d8b3f} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+dev}
+\item 
+\Hypertarget{structdrm__device_ab56751ae47ac358ffafc0ba499ee53be}\label{structdrm__device_ab56751ae47ac358ffafc0ba499ee53be} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries resources}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries final\_kfree}\\
+\>spinlock\_t {\bfseries lock}\\
+\} {\bfseries managed}\\
+
+\end{tabbing}\item 
+\Hypertarget{structdrm__device_a10dcceee9ab9cad44fb76c2b49ce2b68}\label{structdrm__device_a10dcceee9ab9cad44fb76c2b49ce2b68} 
+const struct \doxymbox{\hyperlink{structdrm__driver}{drm\+\_\+driver}} \texorpdfstring{$\ast$}{*} {\bfseries driver}
+\item 
+\Hypertarget{structdrm__device_a7ac8d4a8c08fc60fbf6d919d9f0545ad}\label{structdrm__device_a7ac8d4a8c08fc60fbf6d919d9f0545ad} 
+void \texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+private}
+\item 
+\Hypertarget{structdrm__device_ae40b2c9aa8668f417f2084c9332384d3}\label{structdrm__device_ae40b2c9aa8668f417f2084c9332384d3} 
+struct \doxymbox{\hyperlink{structdrm__minor}{drm\+\_\+minor}} \texorpdfstring{$\ast$}{*} {\bfseries primary}
+\item 
+\Hypertarget{structdrm__device_acd68d7095406bb80b06e4307bc9fc5aa}\label{structdrm__device_acd68d7095406bb80b06e4307bc9fc5aa} 
+struct \doxymbox{\hyperlink{structdrm__minor}{drm\+\_\+minor}} \texorpdfstring{$\ast$}{*} {\bfseries render}
+\item 
+\Hypertarget{structdrm__device_ab26863099a8945d59673d2b2590d41f4}\label{structdrm__device_ab26863099a8945d59673d2b2590d41f4} 
+struct \doxymbox{\hyperlink{structdrm__minor}{drm\+\_\+minor}} \texorpdfstring{$\ast$}{*} {\bfseries accel}
+\item 
+\Hypertarget{structdrm__device_aada5f598969931a612bad70788fb5119}\label{structdrm__device_aada5f598969931a612bad70788fb5119} 
+bool {\bfseries registered}
+\item 
+\Hypertarget{structdrm__device_a3424ebd51696ac15ac8f6ef608106619}\label{structdrm__device_a3424ebd51696ac15ac8f6ef608106619} 
+struct \doxymbox{\hyperlink{structdrm__master}{drm\+\_\+master}} \texorpdfstring{$\ast$}{*} {\bfseries master}
+\item 
+\Hypertarget{structdrm__device_a07e696a146638a18e09317e10c5f4daf}\label{structdrm__device_a07e696a146638a18e09317e10c5f4daf} 
+u32 {\bfseries driver\+\_\+features}
+\item 
+\Hypertarget{structdrm__device_ab138511b7ce355110aebe731299d75ab}\label{structdrm__device_ab138511b7ce355110aebe731299d75ab} 
+bool {\bfseries unplugged}
+\item 
+\Hypertarget{structdrm__device_a16c5ad8b348a819437e85bc87789d9a4}\label{structdrm__device_a16c5ad8b348a819437e85bc87789d9a4} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries anon\+\_\+inode}
+\item 
+\Hypertarget{structdrm__device_aa2fa6557eb3cea19598cec72f398340d}\label{structdrm__device_aa2fa6557eb3cea19598cec72f398340d} 
+char \texorpdfstring{$\ast$}{*} {\bfseries unique}
+\item 
+\Hypertarget{structdrm__device_a5184a0d2dbf992da4ab6ffb250154fff}\label{structdrm__device_a5184a0d2dbf992da4ab6ffb250154fff} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries master\+\_\+mutex}
+\item 
+\Hypertarget{structdrm__device_a4d020b0255b17bdd29195d86ee95a376}\label{structdrm__device_a4d020b0255b17bdd29195d86ee95a376} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries open\+\_\+count}
+\item 
+\Hypertarget{structdrm__device_a11c835ce2ee70dabe53411237ac506cd}\label{structdrm__device_a11c835ce2ee70dabe53411237ac506cd} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries filelist\+\_\+mutex}
+\item 
+\Hypertarget{structdrm__device_a13116b3eb8137d1c2ee01d1197e19c1e}\label{structdrm__device_a13116b3eb8137d1c2ee01d1197e19c1e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries filelist}
+\item 
+\Hypertarget{structdrm__device_a19228ffb9e790883c220d036d851eb4b}\label{structdrm__device_a19228ffb9e790883c220d036d851eb4b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries filelist\+\_\+internal}
+\item 
+\Hypertarget{structdrm__device_a57bf924b9d3abafb92854a1758628b49}\label{structdrm__device_a57bf924b9d3abafb92854a1758628b49} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries clientlist\+\_\+mutex}
+\item 
+\Hypertarget{structdrm__device_ac65b6bb15923441a0a344b1483174e56}\label{structdrm__device_ac65b6bb15923441a0a344b1483174e56} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries clientlist}
+\item 
+\Hypertarget{structdrm__device_a0725b35fc9c920358df2f3387af63b8c}\label{structdrm__device_a0725b35fc9c920358df2f3387af63b8c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries client\+\_\+sysrq\+\_\+list}
+\item 
+\Hypertarget{structdrm__device_abebfb902db67b72fa4b455bcc1ea6dc2}\label{structdrm__device_abebfb902db67b72fa4b455bcc1ea6dc2} 
+bool {\bfseries vblank\+\_\+disable\+\_\+immediate}
+\item 
+\Hypertarget{structdrm__device_a367445b51298251d5d0e18175cd1f076}\label{structdrm__device_a367445b51298251d5d0e18175cd1f076} 
+struct \doxymbox{\hyperlink{structdrm__vblank__crtc}{drm\+\_\+vblank\+\_\+crtc}} \texorpdfstring{$\ast$}{*} {\bfseries vblank}
+\item 
+\Hypertarget{structdrm__device_a616b6d1be2ca8cc706c94cd05b009c7f}\label{structdrm__device_a616b6d1be2ca8cc706c94cd05b009c7f} 
+spinlock\+\_\+t {\bfseries vblank\+\_\+time\+\_\+lock}
+\item 
+\Hypertarget{structdrm__device_aa0f325dea4454d649dd718b2a0c83ac4}\label{structdrm__device_aa0f325dea4454d649dd718b2a0c83ac4} 
+spinlock\+\_\+t {\bfseries vbl\+\_\+lock}
+\item 
+\Hypertarget{structdrm__device_ae77265ce808e0b0abcdcfe5a1b5dabd7}\label{structdrm__device_ae77265ce808e0b0abcdcfe5a1b5dabd7} 
+u32 {\bfseries max\+\_\+vblank\+\_\+count}
+\item 
+\Hypertarget{structdrm__device_a8f399fa4e60f19af1ce76a95cc533903}\label{structdrm__device_a8f399fa4e60f19af1ce76a95cc533903} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries vblank\+\_\+event\+\_\+list}
+\item 
+\Hypertarget{structdrm__device_a6f90c6678c3ddd55e01c0a7f7e87e1a4}\label{structdrm__device_a6f90c6678c3ddd55e01c0a7f7e87e1a4} 
+spinlock\+\_\+t {\bfseries event\+\_\+lock}
+\item 
+\Hypertarget{structdrm__device_ac6b76db26ac14788e9d355fe15ac1025}\label{structdrm__device_ac6b76db26ac14788e9d355fe15ac1025} 
+unsigned int {\bfseries num\+\_\+crtcs}
+\item 
+\Hypertarget{structdrm__device_a5e2cc4a28c1f264b2c4969a04b9c6c75}\label{structdrm__device_a5e2cc4a28c1f264b2c4969a04b9c6c75} 
+struct \doxymbox{\hyperlink{structdrm__mode__config}{drm\+\_\+mode\+\_\+config}} {\bfseries mode\+\_\+config}
+\item 
+\Hypertarget{structdrm__device_ac2df8157a1a3fff5a3666a6bd25df3c4}\label{structdrm__device_ac2df8157a1a3fff5a3666a6bd25df3c4} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries object\+\_\+name\+\_\+lock}
+\item 
+\Hypertarget{structdrm__device_a94705c046d5f9635705eab609b872114}\label{structdrm__device_a94705c046d5f9635705eab609b872114} 
+struct \doxymbox{\hyperlink{structidr}{idr}} {\bfseries object\+\_\+name\+\_\+idr}
+\item 
+\Hypertarget{structdrm__device_aeb11c064d9a5363baa2cd10b7679c930}\label{structdrm__device_aeb11c064d9a5363baa2cd10b7679c930} 
+struct \doxymbox{\hyperlink{structdrm__vma__offset__manager}{drm\+\_\+vma\+\_\+offset\+\_\+manager}} \texorpdfstring{$\ast$}{*} {\bfseries vma\+\_\+offset\+\_\+manager}
+\item 
+\Hypertarget{structdrm__device_a145d19a5613e79da6fd4fd3a1bf22d08}\label{structdrm__device_a145d19a5613e79da6fd4fd3a1bf22d08} 
+struct drm\+\_\+vram\+\_\+mm \texorpdfstring{$\ast$}{*} {\bfseries vram\+\_\+mm}
+\item 
+\Hypertarget{structdrm__device_acae57d2ff11f9c00d30161532c44392b}\label{structdrm__device_acae57d2ff11f9c00d30161532c44392b} 
+enum switch\+\_\+power\+\_\+state {\bfseries switch\+\_\+power\+\_\+state}
+\item 
+\Hypertarget{structdrm__device_a43a44910ab6e631288587592312c0076}\label{structdrm__device_a43a44910ab6e631288587592312c0076} 
+struct \doxymbox{\hyperlink{structdrm__fb__helper}{drm\+\_\+fb\+\_\+helper}} \texorpdfstring{$\ast$}{*} {\bfseries fb\+\_\+helper}
+\item 
+\Hypertarget{structdrm__device_a42c880ef9c145cac3444077ac924c714}\label{structdrm__device_a42c880ef9c145cac3444077ac924c714} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+root}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\doxysection{x86\+\_\+hybrid\+\_\+pmu Struct Reference}
+\hypertarget{structx86__hybrid__pmu}{}\label{structx86__hybrid__pmu}\index{x86\_hybrid\_pmu@{x86\_hybrid\_pmu}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structx86__hybrid__pmu_a389a08aca765a9307e2df625c8c8e04c}\label{structx86__hybrid__pmu_a389a08aca765a9307e2df625c8c8e04c} 
+struct \doxymbox{\hyperlink{structpmu}{pmu}} {\bfseries pmu}
+\item 
+\Hypertarget{structx86__hybrid__pmu_acd72241e9dba5d674fcf388b0fb92fce}\label{structx86__hybrid__pmu_acd72241e9dba5d674fcf388b0fb92fce} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structx86__hybrid__pmu_abd8ef7fd354e7601752480f09f407d40}\label{structx86__hybrid__pmu_abd8ef7fd354e7601752480f09f407d40} 
+enum hybrid\+\_\+pmu\+\_\+type {\bfseries pmu\+\_\+type}
+\item 
+\Hypertarget{structx86__hybrid__pmu_ac6eeae04fe39e94337fb43ef087b1a12}\label{structx86__hybrid__pmu_ac6eeae04fe39e94337fb43ef087b1a12} 
+cpumask\+\_\+t {\bfseries supported\+\_\+cpus}
+\item 
+\Hypertarget{structx86__hybrid__pmu_aa53fa8914300475a071780463b6357ec}\label{structx86__hybrid__pmu_aa53fa8914300475a071780463b6357ec} 
+union \doxymbox{\hyperlink{unionperf__capabilities}{perf\+\_\+capabilities}} {\bfseries intel\+\_\+cap}
+\item 
+\Hypertarget{structx86__hybrid__pmu_ade63a8f96ec9cde1c14eaa2fad44fe38}\label{structx86__hybrid__pmu_ade63a8f96ec9cde1c14eaa2fad44fe38} 
+u64 {\bfseries intel\+\_\+ctrl}
+\item 
+\Hypertarget{structx86__hybrid__pmu_a47fd1a2083655a223c9f8acd94dc42bc}\label{structx86__hybrid__pmu_a47fd1a2083655a223c9f8acd94dc42bc} 
+u64 {\bfseries pebs\+\_\+events\+\_\+mask}
+\item 
+\Hypertarget{structx86__hybrid__pmu_ad3571d77e38021563a4917f96b4cf6b1}\label{structx86__hybrid__pmu_ad3571d77e38021563a4917f96b4cf6b1} 
+u64 {\bfseries config\+\_\+mask}
+\item 
+\Hypertarget{structx86__hybrid__pmu_a94d9f16da223cb10842b4b6c98073641}\label{structx86__hybrid__pmu_a94d9f16da223cb10842b4b6c98073641} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries cntr\_mask64}\\
+\>long unsigned int {\bfseries cntr\_mask} \+[1]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__hybrid__pmu_a8ee79ce46d9803b0c49942bc03cfd9b5}\label{structx86__hybrid__pmu_a8ee79ce46d9803b0c49942bc03cfd9b5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries fixed\_cntr\_mask64}\\
+\>long unsigned int {\bfseries fixed\_cntr\_mask} \+[1]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__hybrid__pmu_a941f913eb8b65e650dd47882f0b0c80e}\label{structx86__hybrid__pmu_a941f913eb8b65e650dd47882f0b0c80e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries acr\_cntr\_mask64}\\
+\>long unsigned int {\bfseries acr\_cntr\_mask} \+[1]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__hybrid__pmu_ac4284873687d7ecf2884a3ff2be74716}\label{structx86__hybrid__pmu_ac4284873687d7ecf2884a3ff2be74716} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries acr\_cause\_mask64}\\
+\>long unsigned int {\bfseries acr\_cause\_mask} \+[1]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__hybrid__pmu_a0496e2fc20ef302a2c6cd1f2de25a574}\label{structx86__hybrid__pmu_a0496e2fc20ef302a2c6cd1f2de25a574} 
+struct \doxymbox{\hyperlink{structevent__constraint}{event\+\_\+constraint}} {\bfseries unconstrained}
+\item 
+\Hypertarget{structx86__hybrid__pmu_adbace1776a6ad1d9985d2de79d767ad0}\label{structx86__hybrid__pmu_adbace1776a6ad1d9985d2de79d767ad0} 
+u64 {\bfseries hw\+\_\+cache\+\_\+event\+\_\+ids} \+[42]\+
+\item 
+\Hypertarget{structx86__hybrid__pmu_a21fef8b613c7e75bde5c8c0553f57c80}\label{structx86__hybrid__pmu_a21fef8b613c7e75bde5c8c0553f57c80} 
+u64 {\bfseries hw\+\_\+cache\+\_\+extra\+\_\+regs} \+[42]\+
+\item 
+\Hypertarget{structx86__hybrid__pmu_a305455dcd0ee2fe0c306b20b9d3f1c82}\label{structx86__hybrid__pmu_a305455dcd0ee2fe0c306b20b9d3f1c82} 
+struct \doxymbox{\hyperlink{structevent__constraint}{event\+\_\+constraint}} \texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+constraints}
+\item 
+\Hypertarget{structx86__hybrid__pmu_aab206eb549658be36517c2be9657715a}\label{structx86__hybrid__pmu_aab206eb549658be36517c2be9657715a} 
+struct \doxymbox{\hyperlink{structevent__constraint}{event\+\_\+constraint}} \texorpdfstring{$\ast$}{*} {\bfseries pebs\+\_\+constraints}
+\item 
+\Hypertarget{structx86__hybrid__pmu_ad94a2a54591aa51eb417aa6c62f0a375}\label{structx86__hybrid__pmu_ad94a2a54591aa51eb417aa6c62f0a375} 
+struct \doxymbox{\hyperlink{structextra__reg}{extra\+\_\+reg}} \texorpdfstring{$\ast$}{*} {\bfseries extra\+\_\+regs}
+\item 
+\Hypertarget{structx86__hybrid__pmu_a79fdff98fe83ad70d61f2b0d1d340a7c}\label{structx86__hybrid__pmu_a79fdff98fe83ad70d61f2b0d1d340a7c} 
+unsigned int {\bfseries late\+\_\+ack}:\+ 1
+\item 
+\Hypertarget{structx86__hybrid__pmu_ae4c8bf212061db869764dbfe62d7ee16}\label{structx86__hybrid__pmu_ae4c8bf212061db869764dbfe62d7ee16} 
+unsigned int {\bfseries mid\+\_\+ack}:\+ 1
+\item 
+\Hypertarget{structx86__hybrid__pmu_a9c16fb434e657eab3ce975313ce4df61}\label{structx86__hybrid__pmu_a9c16fb434e657eab3ce975313ce4df61} 
+unsigned int {\bfseries enabled\+\_\+ack}:\+ 1
+\item 
+\Hypertarget{structx86__hybrid__pmu_a1c0cf88695ea68785453341e154f3fdd}\label{structx86__hybrid__pmu_a1c0cf88695ea68785453341e154f3fdd} 
+struct \doxymbox{\hyperlink{structarch__pebs__cap}{arch\+\_\+pebs\+\_\+cap}} {\bfseries arch\+\_\+pebs\+\_\+cap}
+\item 
+\Hypertarget{structx86__hybrid__pmu_a8527d75a53637d105a51dfe29c0f23ff}\label{structx86__hybrid__pmu_a8527d75a53637d105a51dfe29c0f23ff} 
+u64 {\bfseries pebs\+\_\+data\+\_\+source} \+[256]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

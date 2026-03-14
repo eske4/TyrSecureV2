@@ -1,0 +1,58 @@
+\doxysection{fib\+\_\+nh\+\_\+common Struct Reference}
+\hypertarget{structfib__nh__common}{}\label{structfib__nh__common}\index{fib\_nh\_common@{fib\_nh\_common}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfib__nh__common_ac623284a4b6924c69b8883526313b494}\label{structfib__nh__common_ac623284a4b6924c69b8883526313b494} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries nhc\+\_\+dev}
+\item 
+\Hypertarget{structfib__nh__common_a0098455743958a3ff10075e22cca2823}\label{structfib__nh__common_a0098455743958a3ff10075e22cca2823} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries nhc\+\_\+dev\+\_\+tracker}
+\item 
+\Hypertarget{structfib__nh__common_a7a19cc1473a297aaeaa3ce42e3e1b3ed}\label{structfib__nh__common_a7a19cc1473a297aaeaa3ce42e3e1b3ed} 
+int {\bfseries nhc\+\_\+oif}
+\item 
+\Hypertarget{structfib__nh__common_a261eea16f838a9bdd33a8040a0a84f9c}\label{structfib__nh__common_a261eea16f838a9bdd33a8040a0a84f9c} 
+unsigned char {\bfseries nhc\+\_\+scope}
+\item 
+\Hypertarget{structfib__nh__common_a7353d9ae92780b45af6142c16dbbe91f}\label{structfib__nh__common_a7353d9ae92780b45af6142c16dbbe91f} 
+u8 {\bfseries nhc\+\_\+family}
+\item 
+\Hypertarget{structfib__nh__common_a487bf0f0698da0c3c9d323cd4a9c08b8}\label{structfib__nh__common_a487bf0f0698da0c3c9d323cd4a9c08b8} 
+u8 {\bfseries nhc\+\_\+gw\+\_\+family}
+\item 
+\Hypertarget{structfib__nh__common_a90f37d5c030f817d25b69717b106ac76}\label{structfib__nh__common_a90f37d5c030f817d25b69717b106ac76} 
+unsigned char {\bfseries nhc\+\_\+flags}
+\item 
+\Hypertarget{structfib__nh__common_ae2c1d7e7a38477a39ad51fcc54fc4f4d}\label{structfib__nh__common_ae2c1d7e7a38477a39ad51fcc54fc4f4d} 
+struct \doxymbox{\hyperlink{structlwtunnel__state}{lwtunnel\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries nhc\+\_\+lwtstate}
+\item 
+\Hypertarget{structfib__nh__common_a7eaad74485e56b3986efaf6d0dc8c051}\label{structfib__nh__common_a7eaad74485e56b3986efaf6d0dc8c051} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries ipv4}\\
+\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries ipv6}\\
+\} {\bfseries nhc\_gw}\\
+
+\end{tabbing}\item 
+\Hypertarget{structfib__nh__common_a60231ebb5d9451c6549d6233ed8d4065}\label{structfib__nh__common_a60231ebb5d9451c6549d6233ed8d4065} 
+int {\bfseries nhc\+\_\+weight}
+\item 
+\Hypertarget{structfib__nh__common_a240572a9bd1f3d6bab768a7c73c4dbd2}\label{structfib__nh__common_a240572a9bd1f3d6bab768a7c73c4dbd2} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nhc\+\_\+upper\+\_\+bound}
+\item 
+\Hypertarget{structfib__nh__common_a46dd7a3bf29dccf7edd727d23de726fc}\label{structfib__nh__common_a46dd7a3bf29dccf7edd727d23de726fc} 
+struct \doxymbox{\hyperlink{structrtable}{rtable}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries nhc\+\_\+pcpu\+\_\+rth\+\_\+output}
+\item 
+\Hypertarget{structfib__nh__common_ae3813cffb8bc15c14fae38082fe29849}\label{structfib__nh__common_ae3813cffb8bc15c14fae38082fe29849} 
+struct \doxymbox{\hyperlink{structrtable}{rtable}} \texorpdfstring{$\ast$}{*} {\bfseries nhc\+\_\+rth\+\_\+input}
+\item 
+\Hypertarget{structfib__nh__common_a751889d387fa5362b192c4b4d72a5836}\label{structfib__nh__common_a751889d387fa5362b192c4b4d72a5836} 
+struct \doxymbox{\hyperlink{structfnhe__hash__bucket}{fnhe\+\_\+hash\+\_\+bucket}} \texorpdfstring{$\ast$}{*} {\bfseries nhc\+\_\+exceptions}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

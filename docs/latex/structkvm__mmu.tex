@@ -1,0 +1,67 @@
+\doxysection{kvm\+\_\+mmu Struct Reference}
+\hypertarget{structkvm__mmu}{}\label{structkvm__mmu}\index{kvm\_mmu@{kvm\_mmu}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__mmu_a525b6b551e07c42fbe71a0f0e35a20de}\label{structkvm__mmu_a525b6b551e07c42fbe71a0f0e35a20de} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+guest\+\_\+pgd} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__mmu_a06ce27bfbabb39b35c2a04a0e219ce2c}\label{structkvm__mmu_a06ce27bfbabb39b35c2a04a0e219ce2c} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+pdptr} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__mmu_aed75cbfe3b251187fb122821cc002001}\label{structkvm__mmu_aed75cbfe3b251187fb122821cc002001} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries page\+\_\+fault} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct kvm\+\_\+page\+\_\+fault \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__mmu_af800888a3c846d2c95d9d88ab64d8bae}\label{structkvm__mmu_af800888a3c846d2c95d9d88ab64d8bae} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inject\+\_\+page\+\_\+fault} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct x86\+\_\+exception \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__mmu_a8ae2dceaff5c3f9bfe2a383a79d9b0be}\label{structkvm__mmu_a8ae2dceaff5c3f9bfe2a383a79d9b0be} 
+gpa\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries gva\+\_\+to\+\_\+gpa} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm__mmu}{kvm\+\_\+mmu}} \texorpdfstring{$\ast$}{*}, gpa\+\_\+t, u64, struct x86\+\_\+exception \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__mmu_a54bccdf8f3ac4f36442ff04829dc73df}\label{structkvm__mmu_a54bccdf8f3ac4f36442ff04829dc73df} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+spte} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct kvm\+\_\+mmu\+\_\+page \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__mmu_a65cf5ce16534ca7b52002da90b746ebe}\label{structkvm__mmu_a65cf5ce16534ca7b52002da90b746ebe} 
+struct \doxymbox{\hyperlink{structkvm__mmu__root__info}{kvm\+\_\+mmu\+\_\+root\+\_\+info}} {\bfseries root}
+\item 
+\Hypertarget{structkvm__mmu_a8bdfc4a5212a32fe8036ead5b771f146}\label{structkvm__mmu_a8bdfc4a5212a32fe8036ead5b771f146} 
+hpa\+\_\+t {\bfseries mirror\+\_\+root\+\_\+hpa}
+\item 
+\Hypertarget{structkvm__mmu_a7148155dc8427cca786facd2be776b1f}\label{structkvm__mmu_a7148155dc8427cca786facd2be776b1f} 
+union \doxymbox{\hyperlink{unionkvm__cpu__role}{kvm\+\_\+cpu\+\_\+role}} {\bfseries cpu\+\_\+role}
+\item 
+\Hypertarget{structkvm__mmu_a9514c9e20816f4681b02bb8b7f29afde}\label{structkvm__mmu_a9514c9e20816f4681b02bb8b7f29afde} 
+union \doxymbox{\hyperlink{unionkvm__mmu__page__role}{kvm\+\_\+mmu\+\_\+page\+\_\+role}} {\bfseries root\+\_\+role}
+\item 
+\Hypertarget{structkvm__mmu_ae00e333a09a3208f0e73687161b01631}\label{structkvm__mmu_ae00e333a09a3208f0e73687161b01631} 
+u32 {\bfseries pkru\+\_\+mask}
+\item 
+\Hypertarget{structkvm__mmu_a84d60dbf34869f1be3de64b3b2aee6e4}\label{structkvm__mmu_a84d60dbf34869f1be3de64b3b2aee6e4} 
+struct \doxymbox{\hyperlink{structkvm__mmu__root__info}{kvm\+\_\+mmu\+\_\+root\+\_\+info}} {\bfseries prev\+\_\+roots} \+[3]\+
+\item 
+\Hypertarget{structkvm__mmu_a1aec3bbb878364eb311f5b4dc93a1f11}\label{structkvm__mmu_a1aec3bbb878364eb311f5b4dc93a1f11} 
+u8 {\bfseries permissions} \+[16]\+
+\item 
+\Hypertarget{structkvm__mmu_a490b5467566fb5b91fc192de5961a598}\label{structkvm__mmu_a490b5467566fb5b91fc192de5961a598} 
+u64 \texorpdfstring{$\ast$}{*} {\bfseries pae\+\_\+root}
+\item 
+\Hypertarget{structkvm__mmu_a33d70e68abc63df24277b8f3bcad687f}\label{structkvm__mmu_a33d70e68abc63df24277b8f3bcad687f} 
+u64 \texorpdfstring{$\ast$}{*} {\bfseries pml4\+\_\+root}
+\item 
+\Hypertarget{structkvm__mmu_ad82d34afe7349b22e64c252e41cbdd09}\label{structkvm__mmu_ad82d34afe7349b22e64c252e41cbdd09} 
+u64 \texorpdfstring{$\ast$}{*} {\bfseries pml5\+\_\+root}
+\item 
+\Hypertarget{structkvm__mmu_acf620ac8bcf5fc91e56ddb03a39c9100}\label{structkvm__mmu_acf620ac8bcf5fc91e56ddb03a39c9100} 
+struct \doxymbox{\hyperlink{structrsvd__bits__validate}{rsvd\+\_\+bits\+\_\+validate}} {\bfseries shadow\+\_\+zero\+\_\+check}
+\item 
+\Hypertarget{structkvm__mmu_a028d1e251c4f0d3e2f750a6d08b95c39}\label{structkvm__mmu_a028d1e251c4f0d3e2f750a6d08b95c39} 
+struct \doxymbox{\hyperlink{structrsvd__bits__validate}{rsvd\+\_\+bits\+\_\+validate}} {\bfseries guest\+\_\+rsvd\+\_\+check}
+\item 
+\Hypertarget{structkvm__mmu_aba8eca73e95d1e369a4b262283f7d42f}\label{structkvm__mmu_aba8eca73e95d1e369a4b262283f7d42f} 
+u64 {\bfseries pdptrs} \+[4]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\doxysection{netlink\+\_\+callback Struct Reference}
+\hypertarget{structnetlink__callback}{}\label{structnetlink__callback}\index{netlink\_callback@{netlink\_callback}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnetlink__callback_ab1153645e8ce7b4c8743c33fe1c0c926}\label{structnetlink__callback_ab1153645e8ce7b4c8743c33fe1c0c926} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries skb}
+\item 
+\Hypertarget{structnetlink__callback_a41a29d683f9dd4f4bfc3ad6174d98e8d}\label{structnetlink__callback_a41a29d683f9dd4f4bfc3ad6174d98e8d} 
+const struct \doxymbox{\hyperlink{structnlmsghdr}{nlmsghdr}} \texorpdfstring{$\ast$}{*} {\bfseries nlh}
+\item 
+\Hypertarget{structnetlink__callback_a41dc5926e861dcc657ef900e328fd570}\label{structnetlink__callback_a41dc5926e861dcc657ef900e328fd570} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dump} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__callback}{netlink\+\_\+callback}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlink__callback_aa903422219c95d3ec543425a28ff779b}\label{structnetlink__callback_aa903422219c95d3ec543425a28ff779b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries done} )(struct \doxymbox{\hyperlink{structnetlink__callback}{netlink\+\_\+callback}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlink__callback_a67007ea8c154c5d70129d7b593e28f01}\label{structnetlink__callback_a67007ea8c154c5d70129d7b593e28f01} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structnetlink__callback_ad9b1e147ed9c1c42d468b572c7944494}\label{structnetlink__callback_ad9b1e147ed9c1c42d468b572c7944494} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries module}
+\item 
+\Hypertarget{structnetlink__callback_ae7c9451d117fe3084b6589b38f20b44d}\label{structnetlink__callback_ae7c9451d117fe3084b6589b38f20b44d} 
+struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*} {\bfseries extack}
+\item 
+\Hypertarget{structnetlink__callback_afde02f868c422e6066901887a875ad9e}\label{structnetlink__callback_afde02f868c422e6066901887a875ad9e} 
+u16 {\bfseries family}
+\item 
+\Hypertarget{structnetlink__callback_ab21bd4c271acc479c3ac1790204f421a}\label{structnetlink__callback_ab21bd4c271acc479c3ac1790204f421a} 
+u16 {\bfseries answer\+\_\+flags}
+\item 
+\Hypertarget{structnetlink__callback_a558d32904d9b2d26406bd8dfc31159b7}\label{structnetlink__callback_a558d32904d9b2d26406bd8dfc31159b7} 
+u32 {\bfseries min\+\_\+dump\+\_\+alloc}
+\item 
+\Hypertarget{structnetlink__callback_a410f3a90802214c989bf0a272aa6c310}\label{structnetlink__callback_a410f3a90802214c989bf0a272aa6c310} 
+unsigned int {\bfseries prev\+\_\+seq}
+\item 
+\Hypertarget{structnetlink__callback_ae0b6cfd1a9b9861065ce0c6627130fbc}\label{structnetlink__callback_ae0b6cfd1a9b9861065ce0c6627130fbc} 
+unsigned int {\bfseries seq}
+\item 
+\Hypertarget{structnetlink__callback_a4188a76a95312fb7835b7060216487a5}\label{structnetlink__callback_a4188a76a95312fb7835b7060216487a5} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structnetlink__callback_aa5f62877ebb03e122c2c1432753f4bfd}\label{structnetlink__callback_aa5f62877ebb03e122c2c1432753f4bfd} 
+bool {\bfseries strict\+\_\+check}
+\item 
+\Hypertarget{structnetlink__callback_a7d1a7e278e8b18d69516dd7bab302efe}\label{structnetlink__callback_a7d1a7e278e8b18d69516dd7bab302efe} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u8 {\bfseries ctx} \+[48]\+\\
+\>long int {\bfseries args} \+[6]\+\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

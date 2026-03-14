@@ -1,0 +1,44 @@
+\doxysection{nfs4\+\_\+stateid\+\_\+struct Struct Reference}
+\hypertarget{structnfs4__stateid__struct}{}\label{structnfs4__stateid__struct}\index{nfs4\_stateid\_struct@{nfs4\_stateid\_struct}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs4__stateid__struct_a988262520825a0574ea36319bb0e41b9}\label{structnfs4__stateid__struct_a988262520825a0574ea36319bb0e41b9} 
+enum \{ \newline
+{\bfseries NFS4\+\_\+\+INVALID\+\_\+\+STATEID\+\_\+\+TYPE} = 0
+, {\bfseries NFS4\+\_\+\+SPECIAL\+\_\+\+STATEID\+\_\+\+TYPE} = 1
+, {\bfseries NFS4\+\_\+\+OPEN\+\_\+\+STATEID\+\_\+\+TYPE} = 2
+, {\bfseries NFS4\+\_\+\+LOCK\+\_\+\+STATEID\+\_\+\+TYPE} = 3
+, \newline
+{\bfseries NFS4\+\_\+\+DELEGATION\+\_\+\+STATEID\+\_\+\+TYPE} = 4
+, {\bfseries NFS4\+\_\+\+LAYOUT\+\_\+\+STATEID\+\_\+\+TYPE} = 5
+, {\bfseries NFS4\+\_\+\+PNFS\+\_\+\+DS\+\_\+\+STATEID\+\_\+\+TYPE} = 6
+, {\bfseries NFS4\+\_\+\+REVOKED\+\_\+\+STATEID\+\_\+\+TYPE} = 7
+, \newline
+{\bfseries NFS4\+\_\+\+FREED\+\_\+\+STATEID\+\_\+\+TYPE} = 8
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs4__stateid__struct_a3e909791398bc4598e054f301072c536}\label{structnfs4__stateid__struct_a3e909791398bc4598e054f301072c536} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>char {\bfseries data} \+[16]\+\\
+\Hypertarget{unionnfs4__stateid__struct_1_1_0d044367111340332124344113357157075306230331145055_aba04031e4d986e8affebc03dd096a8f3}\label{unionnfs4__stateid__struct_1_1_0d044367111340332124344113357157075306230331145055_aba04031e4d986e8affebc03dd096a8f3} 
+\>struct \{\\
+\>\>\_\_be32 {\bfseries seqid}\\
+\>\>char {\bfseries other} \+[12]\+\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnfs4__stateid__struct_a4e743566d5d339ce163c459dedc005af}\label{structnfs4__stateid__struct_a4e743566d5d339ce163c459dedc005af} 
+enum nfs4\+\_\+stateid\+\_\+struct::\+ \{ ... \}  {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

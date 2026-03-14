@@ -1,0 +1,110 @@
+\doxysection{hw\+\_\+perf\+\_\+event Struct Reference}
+\hypertarget{structhw__perf__event}{}\label{structhw__perf__event}\index{hw\_perf\_event@{hw\_perf\_event}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structhw__perf__event_a8a9a27e3ba9f8241a33612ea7d6ec3a0}\label{structhw__perf__event_a8a9a27e3ba9f8241a33612ea7d6ec3a0} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a668e6c586020cf2c4749cd9d0274ea92}\label{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a668e6c586020cf2c4749cd9d0274ea92} 
+\>struct \{\\
+\>\>u64 {\bfseries config}\\
+\>\>u64 {\bfseries config1}\\
+\>\>u64 {\bfseries last\_tag}\\
+\>\>u64 {\bfseries dyn\_constraint}\\
+\>\>long unsigned int {\bfseries config\_base}\\
+\>\>long unsigned int {\bfseries event\_base}\\
+\>\>int {\bfseries event\_base\_rdpmc}\\
+\>\>int {\bfseries idx}\\
+\>\>int {\bfseries last\_cpu}\\
+\>\>int {\bfseries flags}\\
+\>\>struct \doxymbox{\hyperlink{structhw__perf__event__extra}{hw\_perf\_event\_extra}} {\bfseries extra\_reg}\\
+\>\>struct \doxymbox{\hyperlink{structhw__perf__event__extra}{hw\_perf\_event\_extra}} {\bfseries branch\_reg}\\
+\>\} \\
+\Hypertarget{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_ad0353128b000df401730f90c822d2f6a}\label{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_ad0353128b000df401730f90c822d2f6a} 
+\>struct \{\\
+\>\>u64 {\bfseries aux\_config}\\
+\>\>unsigned int {\bfseries aux\_paused}\\
+\>\} \\
+\Hypertarget{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a72f22ab7e21d142426b14443b85124b7}\label{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a72f22ab7e21d142426b14443b85124b7} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries hrtimer}\\
+\>\} \\
+\Hypertarget{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a21c58b84556d2d7b313f936ee2914356}\label{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a21c58b84556d2d7b313f936ee2914356} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries tp\_list}\\
+\>\} \\
+\Hypertarget{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a7211a0803f76cd3224148e61c75ebedd}\label{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a7211a0803f76cd3224148e61c75ebedd} 
+\>struct \{\\
+\>\>u64 {\bfseries pwr\_acc}\\
+\>\>u64 {\bfseries ptsc}\\
+\>\} \\
+\Hypertarget{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_abaeae41e23a4e759cfe6fcc6db88ce12}\label{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_abaeae41e23a4e759cfe6fcc6db88ce12} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structarch__hw__breakpoint}{arch\_hw\_breakpoint}} {\bfseries info}\\
+\>\>struct \doxymbox{\hyperlink{structrhlist__head}{rhlist\_head}} {\bfseries bp\_list}\\
+\>\} \\
+\Hypertarget{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a8d62a435cf74fb93583b93a49430185e}\label{unionhw__perf__event_1_1_0d173152235315160375203307237173370143274246220016_a8d62a435cf74fb93583b93a49430185e} 
+\>struct \{\\
+\>\>u8 {\bfseries iommu\_bank}\\
+\>\>u8 {\bfseries iommu\_cntr}\\
+\>\>u16 {\bfseries padding}\\
+\>\>u64 {\bfseries conf}\\
+\>\>u64 {\bfseries conf1}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structhw__perf__event_a724ae798190fb0b92db8639f4e9fea65}\label{structhw__perf__event_a724ae798190fb0b92db8639f4e9fea65} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries target}
+\item 
+\Hypertarget{structhw__perf__event_a99f13d5df5d4b685c58bd17c031099ae}\label{structhw__perf__event_a99f13d5df5d4b685c58bd17c031099ae} 
+void \texorpdfstring{$\ast$}{*} {\bfseries addr\+\_\+filters}
+\item 
+\Hypertarget{structhw__perf__event_afe67fd11757ef62c562549d020a85b41}\label{structhw__perf__event_afe67fd11757ef62c562549d020a85b41} 
+long unsigned int {\bfseries addr\+\_\+filters\+\_\+gen}
+\item 
+\Hypertarget{structhw__perf__event_ac19f0de49301904d15eb2a2c8c7208b6}\label{structhw__perf__event_ac19f0de49301904d15eb2a2c8c7208b6} 
+int {\bfseries state}
+\item 
+\Hypertarget{structhw__perf__event_ab73e99458b7c78fd1e3359ee83b9598f}\label{structhw__perf__event_ab73e99458b7c78fd1e3359ee83b9598f} 
+\doxymbox{\hyperlink{structlocal64__t}{local64\+\_\+t}} {\bfseries prev\+\_\+count}
+\item 
+\Hypertarget{structhw__perf__event_a0a8fef8cf3501460859a3d28675bd270}\label{structhw__perf__event_a0a8fef8cf3501460859a3d28675bd270} 
+u64 {\bfseries sample\+\_\+period}
+\item 
+\Hypertarget{structhw__perf__event_aaac42f5ccbbc24ab7fedaeb01fdddd72}\label{structhw__perf__event_aaac42f5ccbbc24ab7fedaeb01fdddd72} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionhw__perf__event_1_1_0d130201121063025277136220267021110220244231070050_a11d01896e5be1ba68b82dd4b78cbc524}\label{unionhw__perf__event_1_1_0d130201121063025277136220267021110220244231070050_a11d01896e5be1ba68b82dd4b78cbc524} 
+\>struct \{\\
+\>\>u64 {\bfseries last\_period}\\
+\>\>\doxymbox{\hyperlink{structlocal64__t}{local64\_t}} {\bfseries period\_left}\\
+\>\} \\
+\Hypertarget{unionhw__perf__event_1_1_0d130201121063025277136220267021110220244231070050_aaad9ca7942ca7c0c12bb1e35666d71fa}\label{unionhw__perf__event_1_1_0d130201121063025277136220267021110220244231070050_aaad9ca7942ca7c0c12bb1e35666d71fa} 
+\>struct \{\\
+\>\>u64 {\bfseries saved\_metric}\\
+\>\>u64 {\bfseries saved\_slots}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structhw__perf__event_a1fff6e34bd045861338f0644b356da80}\label{structhw__perf__event_a1fff6e34bd045861338f0644b356da80} 
+u64 {\bfseries interrupts\+\_\+seq}
+\item 
+\Hypertarget{structhw__perf__event_a2cfbff60386af5d76f77ccbbe32df1d4}\label{structhw__perf__event_a2cfbff60386af5d76f77ccbbe32df1d4} 
+u64 {\bfseries interrupts}
+\item 
+\Hypertarget{structhw__perf__event_a7c5747b98053b278a5a047fc4444c54d}\label{structhw__perf__event_a7c5747b98053b278a5a047fc4444c54d} 
+u64 {\bfseries freq\+\_\+time\+\_\+stamp}
+\item 
+\Hypertarget{structhw__perf__event_adf21d9f863fa74a62c41bf3772825073}\label{structhw__perf__event_adf21d9f863fa74a62c41bf3772825073} 
+u64 {\bfseries freq\+\_\+count\+\_\+stamp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

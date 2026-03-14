@@ -1,0 +1,100 @@
+\doxysection{usbhid\+\_\+device Struct Reference}
+\hypertarget{structusbhid__device}{}\label{structusbhid__device}\index{usbhid\_device@{usbhid\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusbhid__device_a38d0bc9878686febd8aa7d3ec5e5f493}\label{structusbhid__device_a38d0bc9878686febd8aa7d3ec5e5f493} 
+struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries hid}
+\item 
+\Hypertarget{structusbhid__device_a1e662e27e24a2d2b6f825b78894e19aa}\label{structusbhid__device_a1e662e27e24a2d2b6f825b78894e19aa} 
+struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*} {\bfseries intf}
+\item 
+\Hypertarget{structusbhid__device_a6ee2ca376a45ff84e8ecfd6e4e747389}\label{structusbhid__device_a6ee2ca376a45ff84e8ecfd6e4e747389} 
+int {\bfseries ifnum}
+\item 
+\Hypertarget{structusbhid__device_a75807cddca86bc46fcf21b0d284b1ac3}\label{structusbhid__device_a75807cddca86bc46fcf21b0d284b1ac3} 
+unsigned int {\bfseries bufsize}
+\item 
+\Hypertarget{structusbhid__device_ac609a705df570b53e45314caffa8bf85}\label{structusbhid__device_ac609a705df570b53e45314caffa8bf85} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries urbin}
+\item 
+\Hypertarget{structusbhid__device_a778c67aefdaed03abe4a9078ec0058c1}\label{structusbhid__device_a778c67aefdaed03abe4a9078ec0058c1} 
+char \texorpdfstring{$\ast$}{*} {\bfseries inbuf}
+\item 
+\Hypertarget{structusbhid__device_ae9ea8e630cd60e5970eecd7b9c73b9ec}\label{structusbhid__device_ae9ea8e630cd60e5970eecd7b9c73b9ec} 
+dma\+\_\+addr\+\_\+t {\bfseries inbuf\+\_\+dma}
+\item 
+\Hypertarget{structusbhid__device_a11273c45608b94a4afdcd3313a2b6433}\label{structusbhid__device_a11273c45608b94a4afdcd3313a2b6433} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries urbctrl}
+\item 
+\Hypertarget{structusbhid__device_a6a69839aa1d236c0ca858e7db97cc65f}\label{structusbhid__device_a6a69839aa1d236c0ca858e7db97cc65f} 
+struct \doxymbox{\hyperlink{structusb__ctrlrequest}{usb\+\_\+ctrlrequest}} \texorpdfstring{$\ast$}{*} {\bfseries cr}
+\item 
+\Hypertarget{structusbhid__device_af448d26cc05c9c7b6aec3b6000151949}\label{structusbhid__device_af448d26cc05c9c7b6aec3b6000151949} 
+struct \doxymbox{\hyperlink{structhid__control__fifo}{hid\+\_\+control\+\_\+fifo}} {\bfseries ctrl} \+[256]\+
+\item 
+\Hypertarget{structusbhid__device_adc967df743e24095a06635836381f28e}\label{structusbhid__device_adc967df743e24095a06635836381f28e} 
+unsigned char {\bfseries ctrlhead}
+\item 
+\Hypertarget{structusbhid__device_a4c749c2bab722d0f34a455498121efa7}\label{structusbhid__device_a4c749c2bab722d0f34a455498121efa7} 
+unsigned char {\bfseries ctrltail}
+\item 
+\Hypertarget{structusbhid__device_a4a25dae59ede9ea3a2f485e5f7c96d45}\label{structusbhid__device_a4a25dae59ede9ea3a2f485e5f7c96d45} 
+char \texorpdfstring{$\ast$}{*} {\bfseries ctrlbuf}
+\item 
+\Hypertarget{structusbhid__device_a54b6e0b82d593a3c813b5db5dd508aab}\label{structusbhid__device_a54b6e0b82d593a3c813b5db5dd508aab} 
+dma\+\_\+addr\+\_\+t {\bfseries ctrlbuf\+\_\+dma}
+\item 
+\Hypertarget{structusbhid__device_a33ccaf71fa1171ae967dfbb7233a5aaf}\label{structusbhid__device_a33ccaf71fa1171ae967dfbb7233a5aaf} 
+long unsigned int {\bfseries last\+\_\+ctrl}
+\item 
+\Hypertarget{structusbhid__device_ad28b37a02db0217322e1d89190bfb5cf}\label{structusbhid__device_ad28b37a02db0217322e1d89190bfb5cf} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries urbout}
+\item 
+\Hypertarget{structusbhid__device_ab298110e27c97312882235d3b9380e7b}\label{structusbhid__device_ab298110e27c97312882235d3b9380e7b} 
+struct \doxymbox{\hyperlink{structhid__output__fifo}{hid\+\_\+output\+\_\+fifo}} {\bfseries out} \+[256]\+
+\item 
+\Hypertarget{structusbhid__device_a0c7fbdf96be08e0be7607f6aef28d9dc}\label{structusbhid__device_a0c7fbdf96be08e0be7607f6aef28d9dc} 
+unsigned char {\bfseries outhead}
+\item 
+\Hypertarget{structusbhid__device_ab8c8a1e61f207fc4f928320327a51402}\label{structusbhid__device_ab8c8a1e61f207fc4f928320327a51402} 
+unsigned char {\bfseries outtail}
+\item 
+\Hypertarget{structusbhid__device_a264ece58a940fb115dbc16ffd6ad985d}\label{structusbhid__device_a264ece58a940fb115dbc16ffd6ad985d} 
+char \texorpdfstring{$\ast$}{*} {\bfseries outbuf}
+\item 
+\Hypertarget{structusbhid__device_a6da01b3acb860ab57984ea190061a07b}\label{structusbhid__device_a6da01b3acb860ab57984ea190061a07b} 
+dma\+\_\+addr\+\_\+t {\bfseries outbuf\+\_\+dma}
+\item 
+\Hypertarget{structusbhid__device_adfbf7e51afcefd6cb7acc47f839426f2}\label{structusbhid__device_adfbf7e51afcefd6cb7acc47f839426f2} 
+long unsigned int {\bfseries last\+\_\+out}
+\item 
+\Hypertarget{structusbhid__device_a6750db6ddf384dd72c376a0e8e8a6cb9}\label{structusbhid__device_a6750db6ddf384dd72c376a0e8e8a6cb9} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structusbhid__device_a225f0f086a9aea78acb62de7a2fdadde}\label{structusbhid__device_a225f0f086a9aea78acb62de7a2fdadde} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structusbhid__device_a3945f35d370c7fef739a722790608f64}\label{structusbhid__device_a3945f35d370c7fef739a722790608f64} 
+long unsigned int {\bfseries iofl}
+\item 
+\Hypertarget{structusbhid__device_a1efe30fdcf996026f26e83d1bcf3f838}\label{structusbhid__device_a1efe30fdcf996026f26e83d1bcf3f838} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries io\+\_\+retry}
+\item 
+\Hypertarget{structusbhid__device_a6042cf5a5f454fcf91cf701cbae1e86d}\label{structusbhid__device_a6042cf5a5f454fcf91cf701cbae1e86d} 
+long unsigned int {\bfseries stop\+\_\+retry}
+\item 
+\Hypertarget{structusbhid__device_a87846dc9cd51aa07b37b6d6ffc233fe0}\label{structusbhid__device_a87846dc9cd51aa07b37b6d6ffc233fe0} 
+unsigned int {\bfseries retry\+\_\+delay}
+\item 
+\Hypertarget{structusbhid__device_accbde53aa5d7dffa28f754065f0c4d29}\label{structusbhid__device_accbde53aa5d7dffa28f754065f0c4d29} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries reset\+\_\+work}
+\item 
+\Hypertarget{structusbhid__device_affc2d5af55e07b58018b26ad309cfe71}\label{structusbhid__device_affc2d5af55e07b58018b26ad309cfe71} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

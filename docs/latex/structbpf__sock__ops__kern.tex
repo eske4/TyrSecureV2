@@ -1,0 +1,47 @@
+\doxysection{bpf\+\_\+sock\+\_\+ops\+\_\+kern Struct Reference}
+\hypertarget{structbpf__sock__ops__kern}{}\label{structbpf__sock__ops__kern}\index{bpf\_sock\_ops\_kern@{bpf\_sock\_ops\_kern}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__sock__ops__kern_a9d632367da3686dc60cca13e5a0244e1}\label{structbpf__sock__ops__kern_a9d632367da3686dc60cca13e5a0244e1} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries sk}
+\item 
+\Hypertarget{structbpf__sock__ops__kern_abc6870aec2fb6c806de1ba73cc15b407}\label{structbpf__sock__ops__kern_abc6870aec2fb6c806de1ba73cc15b407} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries args} \+[4]\+\\
+\>u32 {\bfseries reply}\\
+\>u32 {\bfseries replylong} \+[4]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__sock__ops__kern_a80b4c2ac3312b14ab010073812598d0a}\label{structbpf__sock__ops__kern_a80b4c2ac3312b14ab010073812598d0a} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries syn\+\_\+skb}
+\item 
+\Hypertarget{structbpf__sock__ops__kern_acfef6f9f08c461f8d756a74b8669173c}\label{structbpf__sock__ops__kern_acfef6f9f08c461f8d756a74b8669173c} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries skb}
+\item 
+\Hypertarget{structbpf__sock__ops__kern_a44a5fa0efc630f092cec3b2454d3f6cb}\label{structbpf__sock__ops__kern_a44a5fa0efc630f092cec3b2454d3f6cb} 
+void \texorpdfstring{$\ast$}{*} {\bfseries skb\+\_\+data\+\_\+end}
+\item 
+\Hypertarget{structbpf__sock__ops__kern_aa41f51356d3d4139bdd1a8ef675341c6}\label{structbpf__sock__ops__kern_aa41f51356d3d4139bdd1a8ef675341c6} 
+u8 {\bfseries op}
+\item 
+\Hypertarget{structbpf__sock__ops__kern_a7b70c4d0b94f76277adcf52871ce4206}\label{structbpf__sock__ops__kern_a7b70c4d0b94f76277adcf52871ce4206} 
+u8 {\bfseries is\+\_\+fullsock}
+\item 
+\Hypertarget{structbpf__sock__ops__kern_a20f574917a1960c9f14f5cd289bd32a1}\label{structbpf__sock__ops__kern_a20f574917a1960c9f14f5cd289bd32a1} 
+u8 {\bfseries is\+\_\+locked\+\_\+tcp\+\_\+sock}
+\item 
+\Hypertarget{structbpf__sock__ops__kern_afa77fcc60d47717d900f21b06acc3282}\label{structbpf__sock__ops__kern_afa77fcc60d47717d900f21b06acc3282} 
+u8 {\bfseries remaining\+\_\+opt\+\_\+len}
+\item 
+\Hypertarget{structbpf__sock__ops__kern_a9ffb3809ce413d4bdccb713e0dbd0097}\label{structbpf__sock__ops__kern_a9ffb3809ce413d4bdccb713e0dbd0097} 
+u64 {\bfseries temp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

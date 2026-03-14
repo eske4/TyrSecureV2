@@ -1,0 +1,64 @@
+\doxysection{blk\+\_\+mq\+\_\+ops Struct Reference}
+\hypertarget{structblk__mq__ops}{}\label{structblk__mq__ops}\index{blk\_mq\_ops@{blk\_mq\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structblk__mq__ops_a0619e011c43a2652158f2cf210a48f98}\label{structblk__mq__ops_a0619e011c43a2652158f2cf210a48f98} 
+blk\+\_\+status\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries queue\+\_\+rq} )(struct \doxymbox{\hyperlink{structblk__mq__hw__ctx}{blk\+\_\+mq\+\_\+hw\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structblk__mq__queue__data}{blk\+\_\+mq\+\_\+queue\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_a4a162c02338c8e154683b60093290d04}\label{structblk__mq__ops_a4a162c02338c8e154683b60093290d04} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries commit\+\_\+rqs} )(struct \doxymbox{\hyperlink{structblk__mq__hw__ctx}{blk\+\_\+mq\+\_\+hw\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_a33aa6d0e0615aa92b1bcc3c1effeb77e}\label{structblk__mq__ops_a33aa6d0e0615aa92b1bcc3c1effeb77e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries queue\+\_\+rqs} )(struct \doxymbox{\hyperlink{structrq__list}{rq\+\_\+list}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_a87cf152d6f3daa407c56877b36d77a6e}\label{structblk__mq__ops_a87cf152d6f3daa407c56877b36d77a6e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+budget} )(struct \doxymbox{\hyperlink{structrequest__queue}{request\+\_\+queue}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_af68474a709fe46d4bf4a08e86c9325ab}\label{structblk__mq__ops_af68474a709fe46d4bf4a08e86c9325ab} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries put\+\_\+budget} )(struct \doxymbox{\hyperlink{structrequest__queue}{request\+\_\+queue}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structblk__mq__ops_ac52c03c209dd7835ae2ce2e025c9adbc}\label{structblk__mq__ops_ac52c03c209dd7835ae2ce2e025c9adbc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+rq\+\_\+budget\+\_\+token} )(struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structblk__mq__ops_a9df73cace5dde97e8f7e233fbd775d22}\label{structblk__mq__ops_a9df73cace5dde97e8f7e233fbd775d22} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+rq\+\_\+budget\+\_\+token} )(struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_ac1a292b8d85673a9ce479f723d129668}\label{structblk__mq__ops_ac1a292b8d85673a9ce479f723d129668} 
+enum blk\+\_\+eh\+\_\+timer\+\_\+return(\texorpdfstring{$\ast$}{*} {\bfseries timeout} )(struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_ae25d616794e21e9b4059ac5d61a41760}\label{structblk__mq__ops_ae25d616794e21e9b4059ac5d61a41760} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries poll} )(struct \doxymbox{\hyperlink{structblk__mq__hw__ctx}{blk\+\_\+mq\+\_\+hw\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structio__comp__batch}{io\+\_\+comp\+\_\+batch}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_a33934b9c17168b47d315065ee997d84d}\label{structblk__mq__ops_a33934b9c17168b47d315065ee997d84d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries complete} )(struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_aeeb89108c618efc90657bcc453b82f5b}\label{structblk__mq__ops_aeeb89108c618efc90657bcc453b82f5b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+hctx} )(struct \doxymbox{\hyperlink{structblk__mq__hw__ctx}{blk\+\_\+mq\+\_\+hw\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structblk__mq__ops_a966f5ad5cc6e5ee5bc17c7bc7d1a9541}\label{structblk__mq__ops_a966f5ad5cc6e5ee5bc17c7bc7d1a9541} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit\+\_\+hctx} )(struct \doxymbox{\hyperlink{structblk__mq__hw__ctx}{blk\+\_\+mq\+\_\+hw\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structblk__mq__ops_a266e665c491d42e4220ecafbd2395ed0}\label{structblk__mq__ops_a266e665c491d42e4220ecafbd2395ed0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+request} )(struct \doxymbox{\hyperlink{structblk__mq__tag__set}{blk\+\_\+mq\+\_\+tag\+\_\+set}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structblk__mq__ops_a1564992351dd3a0aa5b4552ee53b24d9}\label{structblk__mq__ops_a1564992351dd3a0aa5b4552ee53b24d9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit\+\_\+request} )(struct \doxymbox{\hyperlink{structblk__mq__tag__set}{blk\+\_\+mq\+\_\+tag\+\_\+set}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structblk__mq__ops_aac860d55c0d96cf8ef86c7834c4c465f}\label{structblk__mq__ops_aac860d55c0d96cf8ef86c7834c4c465f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup\+\_\+rq} )(struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_a82582187c39a3a468a40f966d7ec442d}\label{structblk__mq__ops_a82582187c39a3a468a40f966d7ec442d} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries busy} )(struct \doxymbox{\hyperlink{structrequest__queue}{request\+\_\+queue}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_a429d47aa8ff955d9f1ae3b261f4fcfae}\label{structblk__mq__ops_a429d47aa8ff955d9f1ae3b261f4fcfae} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+queues} )(struct \doxymbox{\hyperlink{structblk__mq__tag__set}{blk\+\_\+mq\+\_\+tag\+\_\+set}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblk__mq__ops_a8cfd4bc34d03c2d4e9bde005d55034f5}\label{structblk__mq__ops_a8cfd4bc34d03c2d4e9bde005d55034f5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries show\+\_\+rq} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

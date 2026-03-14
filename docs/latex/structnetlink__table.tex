@@ -1,0 +1,43 @@
+\doxysection{netlink\+\_\+table Struct Reference}
+\hypertarget{structnetlink__table}{}\label{structnetlink__table}\index{netlink\_table@{netlink\_table}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnetlink__table_aa4bc28600eaab4e98ccfa85baef2a830}\label{structnetlink__table_aa4bc28600eaab4e98ccfa85baef2a830} 
+struct \doxymbox{\hyperlink{structrhashtable}{rhashtable}} {\bfseries hash}
+\item 
+\Hypertarget{structnetlink__table_a4879a58f5b0b9dd922e2a4b7c68782b4}\label{structnetlink__table_a4879a58f5b0b9dd922e2a4b7c68782b4} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries mc\+\_\+list}
+\item 
+\Hypertarget{structnetlink__table_a8e8cbea44ec7c5f0b7694d5a7c5b8977}\label{structnetlink__table_a8e8cbea44ec7c5f0b7694d5a7c5b8977} 
+struct \doxymbox{\hyperlink{structlisteners}{listeners}} \texorpdfstring{$\ast$}{*} {\bfseries listeners}
+\item 
+\Hypertarget{structnetlink__table_a62487c20a4d9901a7c8ce2955f2a4715}\label{structnetlink__table_a62487c20a4d9901a7c8ce2955f2a4715} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structnetlink__table_aa965bc74ca25a7401be4ad18a6b88a95}\label{structnetlink__table_aa965bc74ca25a7401be4ad18a6b88a95} 
+unsigned int {\bfseries groups}
+\item 
+\Hypertarget{structnetlink__table_a12cb9450d3af04a06be33a7cd696d6f4}\label{structnetlink__table_a12cb9450d3af04a06be33a7cd696d6f4} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} \texorpdfstring{$\ast$}{*} {\bfseries cb\+\_\+mutex}
+\item 
+\Hypertarget{structnetlink__table_ad3b4638636096733e8dbc472aa3db2a5}\label{structnetlink__table_ad3b4638636096733e8dbc472aa3db2a5} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries module}
+\item 
+\Hypertarget{structnetlink__table_ab4da0d1f73b57c1149273afe5f7497d5}\label{structnetlink__table_ab4da0d1f73b57c1149273afe5f7497d5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bind} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnetlink__table_a20c836ed4175b385c048be41ad358db6}\label{structnetlink__table_a20c836ed4175b385c048be41ad358db6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unbind} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnetlink__table_adac6a9d81194163770607efd4c66eda3}\label{structnetlink__table_adac6a9d81194163770607efd4c66eda3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlink__table_ac5304acbfb81b369f24aa57a0eba06bf}\label{structnetlink__table_ac5304acbfb81b369f24aa57a0eba06bf} 
+int {\bfseries registered}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

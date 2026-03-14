@@ -1,0 +1,43 @@
+\doxysection{switchdev\+\_\+attr Struct Reference}
+\hypertarget{structswitchdev__attr}{}\label{structswitchdev__attr}\index{switchdev\_attr@{switchdev\_attr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structswitchdev__attr_a8de5d8dff0275bfe7153b4597af2ea4e}\label{structswitchdev__attr_a8de5d8dff0275bfe7153b4597af2ea4e} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries orig\+\_\+dev}
+\item 
+\Hypertarget{structswitchdev__attr_a3f8a8ff3aaa26eb2602982a41b107df4}\label{structswitchdev__attr_a3f8a8ff3aaa26eb2602982a41b107df4} 
+enum switchdev\+\_\+attr\+\_\+id {\bfseries id}
+\item 
+\Hypertarget{structswitchdev__attr_ae866081bda9b236ffb2f55ea0317b792}\label{structswitchdev__attr_ae866081bda9b236ffb2f55ea0317b792} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structswitchdev__attr_a969ee83d893c192df33f1cb6b01fe4f8}\label{structswitchdev__attr_a969ee83d893c192df33f1cb6b01fe4f8} 
+void \texorpdfstring{$\ast$}{*} {\bfseries complete\+\_\+priv}
+\item 
+\Hypertarget{structswitchdev__attr_a2449de98d1837730caabfa82d83632ff}\label{structswitchdev__attr_a2449de98d1837730caabfa82d83632ff} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries complete} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structswitchdev__attr_aad12c5ce4a63979492e8e7fc6e85bbc4}\label{structswitchdev__attr_aad12c5ce4a63979492e8e7fc6e85bbc4} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u8 {\bfseries stp\_state}\\
+\>struct \doxymbox{\hyperlink{structswitchdev__mst__state}{switchdev\_mst\_state}} {\bfseries mst\_state}\\
+\>struct \doxymbox{\hyperlink{structswitchdev__brport__flags}{switchdev\_brport\_flags}} {\bfseries brport\_flags}\\
+\>bool {\bfseries mrouter}\\
+\>clock\_t {\bfseries ageing\_time}\\
+\>bool {\bfseries vlan\_filtering}\\
+\>u16 {\bfseries vlan\_protocol}\\
+\>bool {\bfseries mst}\\
+\>bool {\bfseries mc\_disabled}\\
+\>u8 {\bfseries mrp\_port\_role}\\
+\>struct \doxymbox{\hyperlink{structswitchdev__vlan__msti}{switchdev\_vlan\_msti}} {\bfseries vlan\_msti}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

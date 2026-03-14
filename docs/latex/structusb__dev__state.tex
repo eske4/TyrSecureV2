@@ -1,0 +1,67 @@
+\doxysection{usb\+\_\+dev\+\_\+state Struct Reference}
+\hypertarget{structusb__dev__state}{}\label{structusb__dev__state}\index{usb\_dev\_state@{usb\_dev\_state}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusb__dev__state_ac3a9acd0955cf3632332693445ec4fd6}\label{structusb__dev__state_ac3a9acd0955cf3632332693445ec4fd6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structusb__dev__state_a66dd1862a704e63c257414d4354dcb32}\label{structusb__dev__state_a66dd1862a704e63c257414d4354dcb32} 
+struct \doxymbox{\hyperlink{structusb__device}{usb\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structusb__dev__state_a9221f84b1158cfe396c1f952a2af4762}\label{structusb__dev__state_a9221f84b1158cfe396c1f952a2af4762} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries file}
+\item 
+\Hypertarget{structusb__dev__state_aac997c068f543286403b127614946ca0}\label{structusb__dev__state_aac997c068f543286403b127614946ca0} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structusb__dev__state_a741ffb6943e5db17abecde88b1966a9b}\label{structusb__dev__state_a741ffb6943e5db17abecde88b1966a9b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries async\+\_\+pending}
+\item 
+\Hypertarget{structusb__dev__state_ac50e2e06815a92aa6c0cc0062f51d3bd}\label{structusb__dev__state_ac50e2e06815a92aa6c0cc0062f51d3bd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries async\+\_\+completed}
+\item 
+\Hypertarget{structusb__dev__state_af5eab296bb955735025c5d182e2936a3}\label{structusb__dev__state_af5eab296bb955735025c5d182e2936a3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries memory\+\_\+list}
+\item 
+\Hypertarget{structusb__dev__state_a9dc55cbf9d8732d2ac17649a0285d19d}\label{structusb__dev__state_a9dc55cbf9d8732d2ac17649a0285d19d} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\item 
+\Hypertarget{structusb__dev__state_a34737034db70e2cb8b1beb3ee8b52d57}\label{structusb__dev__state_a34737034db70e2cb8b1beb3ee8b52d57} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait\+\_\+for\+\_\+resume}
+\item 
+\Hypertarget{structusb__dev__state_a95d02febafb2003dcf64aa3ad58c1da9}\label{structusb__dev__state_a95d02febafb2003dcf64aa3ad58c1da9} 
+unsigned int {\bfseries discsignr}
+\item 
+\Hypertarget{structusb__dev__state_a4e0fe8b5d1261ea0e3c3f863ac13d17a}\label{structusb__dev__state_a4e0fe8b5d1261ea0e3c3f863ac13d17a} 
+struct \doxymbox{\hyperlink{structpid}{pid}} \texorpdfstring{$\ast$}{*} {\bfseries disc\+\_\+pid}
+\item 
+\Hypertarget{structusb__dev__state_acf36e3c6c859249391b42298041d481e}\label{structusb__dev__state_acf36e3c6c859249391b42298041d481e} 
+const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*} {\bfseries cred}
+\item 
+\Hypertarget{structusb__dev__state_ab0e64dba6de9a6a5b2b9d7b16380ec63}\label{structusb__dev__state_ab0e64dba6de9a6a5b2b9d7b16380ec63} 
+sigval\+\_\+t {\bfseries disccontext}
+\item 
+\Hypertarget{structusb__dev__state_a03c785709e0b6d3d63eb6ed7019adea1}\label{structusb__dev__state_a03c785709e0b6d3d63eb6ed7019adea1} 
+long unsigned int {\bfseries ifclaimed}
+\item 
+\Hypertarget{structusb__dev__state_ab55509d43c5a46e3282997cdada50058}\label{structusb__dev__state_ab55509d43c5a46e3282997cdada50058} 
+u32 {\bfseries disabled\+\_\+bulk\+\_\+eps}
+\item 
+\Hypertarget{structusb__dev__state_a2d68bf1fc5afa2cc998a8d2636bba7b2}\label{structusb__dev__state_a2d68bf1fc5afa2cc998a8d2636bba7b2} 
+long unsigned int {\bfseries interface\+\_\+allowed\+\_\+mask}
+\item 
+\Hypertarget{structusb__dev__state_a3218c7b1d17b5402cd07f07719d0838b}\label{structusb__dev__state_a3218c7b1d17b5402cd07f07719d0838b} 
+int {\bfseries not\+\_\+yet\+\_\+resumed}
+\item 
+\Hypertarget{structusb__dev__state_a248a0472482395887a281679598ec0f1}\label{structusb__dev__state_a248a0472482395887a281679598ec0f1} 
+bool {\bfseries suspend\+\_\+allowed}
+\item 
+\Hypertarget{structusb__dev__state_ae98fc079e159f6d440173c74c2d22819}\label{structusb__dev__state_ae98fc079e159f6d440173c74c2d22819} 
+bool {\bfseries privileges\+\_\+dropped}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

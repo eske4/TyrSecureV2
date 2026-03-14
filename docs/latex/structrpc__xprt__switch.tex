@@ -1,0 +1,46 @@
+\doxysection{rpc\+\_\+xprt\+\_\+switch Struct Reference}
+\hypertarget{structrpc__xprt__switch}{}\label{structrpc__xprt__switch}\index{rpc\_xprt\_switch@{rpc\_xprt\_switch}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrpc__xprt__switch_a223e085201009835de79d2ae8d5702aa}\label{structrpc__xprt__switch_a223e085201009835de79d2ae8d5702aa} 
+spinlock\+\_\+t {\bfseries xps\+\_\+lock}
+\item 
+\Hypertarget{structrpc__xprt__switch_a0dec804590480ce54b3d0fb15bbcec9c}\label{structrpc__xprt__switch_a0dec804590480ce54b3d0fb15bbcec9c} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries xps\+\_\+kref}
+\item 
+\Hypertarget{structrpc__xprt__switch_a6641031f58f20ac92558f8298c40cc5a}\label{structrpc__xprt__switch_a6641031f58f20ac92558f8298c40cc5a} 
+unsigned int {\bfseries xps\+\_\+id}
+\item 
+\Hypertarget{structrpc__xprt__switch_ab3f9ddc4c7851150ca88501a1b2c43a5}\label{structrpc__xprt__switch_ab3f9ddc4c7851150ca88501a1b2c43a5} 
+unsigned int {\bfseries xps\+\_\+nxprts}
+\item 
+\Hypertarget{structrpc__xprt__switch_aa0dfef7332f805ff192b8e7e72d57594}\label{structrpc__xprt__switch_aa0dfef7332f805ff192b8e7e72d57594} 
+unsigned int {\bfseries xps\+\_\+nactive}
+\item 
+\Hypertarget{structrpc__xprt__switch_a70ec0bb1c72261d6fe766d45644e4382}\label{structrpc__xprt__switch_a70ec0bb1c72261d6fe766d45644e4382} 
+unsigned int {\bfseries xps\+\_\+nunique\+\_\+destaddr\+\_\+xprts}
+\item 
+\Hypertarget{structrpc__xprt__switch_af85d29d7f037439a95d7b2c25dadc0ad}\label{structrpc__xprt__switch_af85d29d7f037439a95d7b2c25dadc0ad} 
+atomic\+\_\+long\+\_\+t {\bfseries xps\+\_\+queuelen}
+\item 
+\Hypertarget{structrpc__xprt__switch_a0bb9f5b0442d2061c1eccb086a57e338}\label{structrpc__xprt__switch_a0bb9f5b0442d2061c1eccb086a57e338} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries xps\+\_\+xprt\+\_\+list}
+\item 
+\Hypertarget{structrpc__xprt__switch_abd611529aae378f5eeb6e1b9b668f76b}\label{structrpc__xprt__switch_abd611529aae378f5eeb6e1b9b668f76b} 
+struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*} {\bfseries xps\+\_\+net}
+\item 
+\Hypertarget{structrpc__xprt__switch_aeac3fd8bee0c1549d2a4d561bc878b75}\label{structrpc__xprt__switch_aeac3fd8bee0c1549d2a4d561bc878b75} 
+const struct \doxymbox{\hyperlink{structrpc__xprt__iter__ops}{rpc\+\_\+xprt\+\_\+iter\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries xps\+\_\+iter\+\_\+ops}
+\item 
+\Hypertarget{structrpc__xprt__switch_aaac34c70e7289a4a65b07a296a1a0c97}\label{structrpc__xprt__switch_aaac34c70e7289a4a65b07a296a1a0c97} 
+struct rpc\+\_\+sysfs\+\_\+xprt\+\_\+switch \texorpdfstring{$\ast$}{*} {\bfseries xps\+\_\+sysfs}
+\item 
+\Hypertarget{structrpc__xprt__switch_a1839a237bf60341df13bf93289579e6e}\label{structrpc__xprt__switch_a1839a237bf60341df13bf93289579e6e} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries xps\+\_\+rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

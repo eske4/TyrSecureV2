@@ -1,0 +1,25 @@
+\doxysection{ld\+\_\+semaphore Struct Reference}
+\hypertarget{structld__semaphore}{}\label{structld__semaphore}\index{ld\_semaphore@{ld\_semaphore}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structld__semaphore_a89e1f8cd0a8a8955396f9a1157792784}\label{structld__semaphore_a89e1f8cd0a8a8955396f9a1157792784} 
+atomic\+\_\+long\+\_\+t {\bfseries count}
+\item 
+\Hypertarget{structld__semaphore_adc181caae66bb06b49bc5a87ebc4fefb}\label{structld__semaphore_adc181caae66bb06b49bc5a87ebc4fefb} 
+raw\+\_\+spinlock\+\_\+t {\bfseries wait\+\_\+lock}
+\item 
+\Hypertarget{structld__semaphore_afdf6dd7e039400bcf46459166ce26d7d}\label{structld__semaphore_afdf6dd7e039400bcf46459166ce26d7d} 
+unsigned int {\bfseries wait\+\_\+readers}
+\item 
+\Hypertarget{structld__semaphore_a88f15cd95c9efeaa1a6efc87b39997d2}\label{structld__semaphore_a88f15cd95c9efeaa1a6efc87b39997d2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries read\+\_\+wait}
+\item 
+\Hypertarget{structld__semaphore_a4aa33adbfd77eef631b930a2f9020424}\label{structld__semaphore_a4aa33adbfd77eef631b930a2f9020424} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries write\+\_\+wait}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

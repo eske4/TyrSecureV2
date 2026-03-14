@@ -1,0 +1,51 @@
+\doxysection{iomap\+\_\+dio Struct Reference}
+\hypertarget{structiomap__dio}{}\label{structiomap__dio}\index{iomap\_dio@{iomap\_dio}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structiomap__dio_a24c96308ecdf0a5d2c8212c2147b7c52}\label{structiomap__dio_a24c96308ecdf0a5d2c8212c2147b7c52} 
+struct \doxymbox{\hyperlink{structkiocb}{kiocb}} \texorpdfstring{$\ast$}{*} {\bfseries iocb}
+\item 
+\Hypertarget{structiomap__dio_a229f652ffcd0e887e4304c9b58831b10}\label{structiomap__dio_a229f652ffcd0e887e4304c9b58831b10} 
+const struct \doxymbox{\hyperlink{structiomap__dio__ops}{iomap\+\_\+dio\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries dops}
+\item 
+\Hypertarget{structiomap__dio_a7594bd0f8b077e3494ddd47849f31f46}\label{structiomap__dio_a7594bd0f8b077e3494ddd47849f31f46} 
+loff\+\_\+t {\bfseries i\+\_\+size}
+\item 
+\Hypertarget{structiomap__dio_a7ae3dac054f22414b4037be48f3a1c03}\label{structiomap__dio_a7ae3dac054f22414b4037be48f3a1c03} 
+loff\+\_\+t {\bfseries size}
+\item 
+\Hypertarget{structiomap__dio_a90d0050b303a7db2a94391b4c90a8b50}\label{structiomap__dio_a90d0050b303a7db2a94391b4c90a8b50} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries ref}
+\item 
+\Hypertarget{structiomap__dio_a98a96858890d0683e5593199bd119ab2}\label{structiomap__dio_a98a96858890d0683e5593199bd119ab2} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structiomap__dio_a328c85dc65237d760fec0ae0dd6164b2}\label{structiomap__dio_a328c85dc65237d760fec0ae0dd6164b2} 
+int {\bfseries error}
+\item 
+\Hypertarget{structiomap__dio_a30a2f19127785254c2df290db5ae55b4}\label{structiomap__dio_a30a2f19127785254c2df290db5ae55b4} 
+size\+\_\+t {\bfseries done\+\_\+before}
+\item 
+\Hypertarget{structiomap__dio_a312d6a4b686d9e312d0bf73a0de7e6c8}\label{structiomap__dio_a312d6a4b686d9e312d0bf73a0de7e6c8} 
+bool {\bfseries wait\+\_\+for\+\_\+completion}
+\item 
+\Hypertarget{structiomap__dio_a96fdd638914373486f5e9ea3f2fbf6c6}\label{structiomap__dio_a96fdd638914373486f5e9ea3f2fbf6c6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structiov__iter}{iov\_iter}} \texorpdfstring{$\ast$}{*} {\bfseries iter}\\
+\>\>struct \doxymbox{\hyperlink{structtask__struct}{task\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries waiter}\\
+\>\} {\bfseries submit}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structwork__struct}{work\_struct}} {\bfseries work}\\
+\>\} {\bfseries aio}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\doxysection{gendisk Struct Reference}
+\hypertarget{structgendisk}{}\label{structgendisk}\index{gendisk@{gendisk}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structgendisk_a56e5c35ff9aafacca555e0deeaae75ee}\label{structgendisk_a56e5c35ff9aafacca555e0deeaae75ee} 
+int {\bfseries major}
+\item 
+\Hypertarget{structgendisk_a4cf6d6cbebfb3de6308e2ba4a60c9eb8}\label{structgendisk_a4cf6d6cbebfb3de6308e2ba4a60c9eb8} 
+int {\bfseries first\+\_\+minor}
+\item 
+\Hypertarget{structgendisk_a9b85b07a6fa293c9cf710771e62d05e8}\label{structgendisk_a9b85b07a6fa293c9cf710771e62d05e8} 
+int {\bfseries minors}
+\item 
+\Hypertarget{structgendisk_a2edfa5d96c8d109c664ccdb67821da43}\label{structgendisk_a2edfa5d96c8d109c664ccdb67821da43} 
+char {\bfseries disk\+\_\+name} \+[32]\+
+\item 
+\Hypertarget{structgendisk_a860c4c9cf90e679bd94cb1f46203b8e0}\label{structgendisk_a860c4c9cf90e679bd94cb1f46203b8e0} 
+short unsigned int {\bfseries events}
+\item 
+\Hypertarget{structgendisk_a96eae7e3017f760e18512991de814c59}\label{structgendisk_a96eae7e3017f760e18512991de814c59} 
+short unsigned int {\bfseries event\+\_\+flags}
+\item 
+\Hypertarget{structgendisk_af9b15695fb83b209f12d5cdabcb19063}\label{structgendisk_af9b15695fb83b209f12d5cdabcb19063} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries part\+\_\+tbl}
+\item 
+\Hypertarget{structgendisk_af04b1246edb6883793b867680f79e3b0}\label{structgendisk_af04b1246edb6883793b867680f79e3b0} 
+struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries part0}
+\item 
+\Hypertarget{structgendisk_a8d3dc8f024ae425d573ef35df0360c0c}\label{structgendisk_a8d3dc8f024ae425d573ef35df0360c0c} 
+const struct \doxymbox{\hyperlink{structblock__device__operations}{block\+\_\+device\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries fops}
+\item 
+\Hypertarget{structgendisk_a966a82deab159c53722612537a3da60c}\label{structgendisk_a966a82deab159c53722612537a3da60c} 
+struct \doxymbox{\hyperlink{structrequest__queue}{request\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries queue}
+\item 
+\Hypertarget{structgendisk_a3811b24a7ea111e7e974ffd598ac1409}\label{structgendisk_a3811b24a7ea111e7e974ffd598ac1409} 
+void \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+data}
+\item 
+\Hypertarget{structgendisk_a5de7857822b01599686e07f11452a6d5}\label{structgendisk_a5de7857822b01599686e07f11452a6d5} 
+struct \doxymbox{\hyperlink{structbio__set}{bio\+\_\+set}} {\bfseries bio\+\_\+split}
+\item 
+\Hypertarget{structgendisk_a231c1e814570c8d4d17df89a72c97c32}\label{structgendisk_a231c1e814570c8d4d17df89a72c97c32} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structgendisk_a05b52aaf9f968ac25e8616b8d4fa36a7}\label{structgendisk_a05b52aaf9f968ac25e8616b8d4fa36a7} 
+long unsigned int {\bfseries state}
+\item 
+\Hypertarget{structgendisk_a4bbffd754f4bddb5e664dda58804953d}\label{structgendisk_a4bbffd754f4bddb5e664dda58804953d} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries open\+\_\+mutex}
+\item 
+\Hypertarget{structgendisk_ab18c6e3c72a7fe02216ae6f5bdaabdf5}\label{structgendisk_ab18c6e3c72a7fe02216ae6f5bdaabdf5} 
+unsigned int {\bfseries open\+\_\+partitions}
+\item 
+\Hypertarget{structgendisk_acb12a6fe65bd277b65bc3c36abb90761}\label{structgendisk_acb12a6fe65bd277b65bc3c36abb90761} 
+struct \doxymbox{\hyperlink{structbacking__dev__info}{backing\+\_\+dev\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries bdi}
+\item 
+\Hypertarget{structgendisk_a061692a7a45c7bd129d9f384adfd797d}\label{structgendisk_a061692a7a45c7bd129d9f384adfd797d} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} {\bfseries queue\+\_\+kobj}
+\item 
+\Hypertarget{structgendisk_ad3fe9beb5524338f56512d1bed788600}\label{structgendisk_ad3fe9beb5524338f56512d1bed788600} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} \texorpdfstring{$\ast$}{*} {\bfseries slave\+\_\+dir}
+\item 
+\Hypertarget{structgendisk_a5fad7b2891f3fb71960745d88dbad189}\label{structgendisk_a5fad7b2891f3fb71960745d88dbad189} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries slave\+\_\+bdevs}
+\item 
+\Hypertarget{structgendisk_a5a77fbc05baef9e60392e8369b4d2ff9}\label{structgendisk_a5a77fbc05baef9e60392e8369b4d2ff9} 
+struct \doxymbox{\hyperlink{structtimer__rand__state}{timer\+\_\+rand\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries random}
+\item 
+\Hypertarget{structgendisk_a607df430140914feef787992ba56e7c1}\label{structgendisk_a607df430140914feef787992ba56e7c1} 
+struct \doxymbox{\hyperlink{structdisk__events}{disk\+\_\+events}} \texorpdfstring{$\ast$}{*} {\bfseries ev}
+\item 
+\Hypertarget{structgendisk_ae709e8a8950add96c176029b9e8935b2}\label{structgendisk_ae709e8a8950add96c176029b9e8935b2} 
+unsigned int {\bfseries nr\+\_\+zones}
+\item 
+\Hypertarget{structgendisk_ab710088ad61d052174238de1a59d5e91}\label{structgendisk_ab710088ad61d052174238de1a59d5e91} 
+unsigned int {\bfseries zone\+\_\+capacity}
+\item 
+\Hypertarget{structgendisk_a4425844c43a40be5331348980ccba63c}\label{structgendisk_a4425844c43a40be5331348980ccba63c} 
+unsigned int {\bfseries last\+\_\+zone\+\_\+capacity}
+\item 
+\Hypertarget{structgendisk_ab4ea66e2e4d1f53d4048d30bc9e84734}\label{structgendisk_ab4ea66e2e4d1f53d4048d30bc9e84734} 
+u8 \texorpdfstring{$\ast$}{*} {\bfseries zones\+\_\+cond}
+\item 
+\Hypertarget{structgendisk_a338b6db13c1629a18cca9b3ade3497de}\label{structgendisk_a338b6db13c1629a18cca9b3ade3497de} 
+unsigned int {\bfseries zone\+\_\+wplugs\+\_\+hash\+\_\+bits}
+\item 
+\Hypertarget{structgendisk_a706d278fe4cadf3f0c607724975cc6b5}\label{structgendisk_a706d278fe4cadf3f0c607724975cc6b5} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nr\+\_\+zone\+\_\+wplugs}
+\item 
+\Hypertarget{structgendisk_a2bcb02b972f82fba86d10af95bc38d7b}\label{structgendisk_a2bcb02b972f82fba86d10af95bc38d7b} 
+spinlock\+\_\+t {\bfseries zone\+\_\+wplugs\+\_\+lock}
+\item 
+\Hypertarget{structgendisk_a9b33122eed67b3050af9215376f73ac2}\label{structgendisk_a9b33122eed67b3050af9215376f73ac2} 
+struct \doxymbox{\hyperlink{structmempool}{mempool}} \texorpdfstring{$\ast$}{*} {\bfseries zone\+\_\+wplugs\+\_\+pool}
+\item 
+\Hypertarget{structgendisk_ad3bada0d298b7b5868ec34da7ce3592f}\label{structgendisk_ad3bada0d298b7b5868ec34da7ce3592f} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries zone\+\_\+wplugs\+\_\+hash}
+\item 
+\Hypertarget{structgendisk_a186ab2e1b4058ec42acf289d7c418b7f}\label{structgendisk_a186ab2e1b4058ec42acf289d7c418b7f} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries zone\+\_\+wplugs\+\_\+wq}
+\item 
+\Hypertarget{structgendisk_aff32f0acf0cdf9a58084d404cc9d75a3}\label{structgendisk_aff32f0acf0cdf9a58084d404cc9d75a3} 
+struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries cdi}
+\item 
+\Hypertarget{structgendisk_a45a7c71d65c70bd0edb4dc259ae88018}\label{structgendisk_a45a7c71d65c70bd0edb4dc259ae88018} 
+int {\bfseries node\+\_\+id}
+\item 
+\Hypertarget{structgendisk_ad284362975dca20085437160b61ed0dc}\label{structgendisk_ad284362975dca20085437160b61ed0dc} 
+struct \doxymbox{\hyperlink{structbadblocks}{badblocks}} \texorpdfstring{$\ast$}{*} {\bfseries bb}
+\item 
+\Hypertarget{structgendisk_ad037dbc3f40b9c3bc412c9ae3952da00}\label{structgendisk_ad037dbc3f40b9c3bc412c9ae3952da00} 
+struct \doxymbox{\hyperlink{structlockdep__map}{lockdep\+\_\+map}} {\bfseries lockdep\+\_\+map}
+\item 
+\Hypertarget{structgendisk_afc4930faab8d0a20cef3968a6db10445}\label{structgendisk_afc4930faab8d0a20cef3968a6db10445} 
+u64 {\bfseries diskseq}
+\item 
+\Hypertarget{structgendisk_afd4c947e09ccf02a09235fd9677b0be9}\label{structgendisk_afd4c947e09ccf02a09235fd9677b0be9} 
+blk\+\_\+mode\+\_\+t {\bfseries open\+\_\+mode}
+\item 
+\Hypertarget{structgendisk_af10d86f5cba013461e6488076803bc08}\label{structgendisk_af10d86f5cba013461e6488076803bc08} 
+struct \doxymbox{\hyperlink{structblk__independent__access__ranges}{blk\+\_\+independent\+\_\+access\+\_\+ranges}} \texorpdfstring{$\ast$}{*} {\bfseries ia\+\_\+ranges}
+\item 
+\Hypertarget{structgendisk_a085c3d8b1d297bae576e3395157121b5}\label{structgendisk_a085c3d8b1d297bae576e3395157121b5} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries rqos\+\_\+state\+\_\+mutex}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

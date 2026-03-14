@@ -1,0 +1,43 @@
+\doxysection{autofs\+\_\+dev\+\_\+ioctl Struct Reference}
+\hypertarget{structautofs__dev__ioctl}{}\label{structautofs__dev__ioctl}\index{autofs\_dev\_ioctl@{autofs\_dev\_ioctl}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structautofs__dev__ioctl_a71bd3b023de5ab2ebd378504776d22b8}\label{structautofs__dev__ioctl_a71bd3b023de5ab2ebd378504776d22b8} 
+\+\_\+\+\_\+u32 {\bfseries ver\+\_\+major}
+\item 
+\Hypertarget{structautofs__dev__ioctl_a1036eff7cb62daf659efb11115aebd73}\label{structautofs__dev__ioctl_a1036eff7cb62daf659efb11115aebd73} 
+\+\_\+\+\_\+u32 {\bfseries ver\+\_\+minor}
+\item 
+\Hypertarget{structautofs__dev__ioctl_adb465d8dddb7cf2f5ead1e7f738ca83d}\label{structautofs__dev__ioctl_adb465d8dddb7cf2f5ead1e7f738ca83d} 
+\+\_\+\+\_\+u32 {\bfseries size}
+\item 
+\Hypertarget{structautofs__dev__ioctl_a8e68096f2c61e06de2e31f0f282aa21c}\label{structautofs__dev__ioctl_a8e68096f2c61e06de2e31f0f282aa21c} 
+\+\_\+\+\_\+s32 {\bfseries ioctlfd}
+\item 
+\Hypertarget{structautofs__dev__ioctl_af4d0195ea08304146952e945be5d77a6}\label{structautofs__dev__ioctl_af4d0195ea08304146952e945be5d77a6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structargs__protover}{args\_protover}} {\bfseries protover}\\
+\>struct \doxymbox{\hyperlink{structargs__protosubver}{args\_protosubver}} {\bfseries protosubver}\\
+\>struct \doxymbox{\hyperlink{structargs__openmount}{args\_openmount}} {\bfseries openmount}\\
+\>struct \doxymbox{\hyperlink{structargs__ready}{args\_ready}} {\bfseries ready}\\
+\>struct \doxymbox{\hyperlink{structargs__fail}{args\_fail}} {\bfseries fail}\\
+\>struct \doxymbox{\hyperlink{structargs__setpipefd}{args\_setpipefd}} {\bfseries setpipefd}\\
+\>struct \doxymbox{\hyperlink{structargs__timeout}{args\_timeout}} {\bfseries timeout}\\
+\>struct \doxymbox{\hyperlink{structargs__requester}{args\_requester}} {\bfseries requester}\\
+\>struct \doxymbox{\hyperlink{structargs__expire}{args\_expire}} {\bfseries expire}\\
+\>struct \doxymbox{\hyperlink{structargs__askumount}{args\_askumount}} {\bfseries askumount}\\
+\>struct \doxymbox{\hyperlink{structargs__ismountpoint}{args\_ismountpoint}} {\bfseries ismountpoint}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structautofs__dev__ioctl_a1cd79174c563f394889509bd10108729}\label{structautofs__dev__ioctl_a1cd79174c563f394889509bd10108729} 
+char {\bfseries path} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

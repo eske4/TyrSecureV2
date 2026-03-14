@@ -1,0 +1,79 @@
+\doxysection{hid\+\_\+driver Struct Reference}
+\hypertarget{structhid__driver}{}\label{structhid__driver}\index{hid\_driver@{hid\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structhid__driver_ac6f7e91983db4bf502c2c90ea1e73661}\label{structhid__driver_ac6f7e91983db4bf502c2c90ea1e73661} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structhid__driver_a869a876f585314818ae0ed5638d6f23c}\label{structhid__driver_a869a876f585314818ae0ed5638d6f23c} 
+const struct \doxymbox{\hyperlink{structhid__device__id}{hid\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries id\+\_\+table}
+\item 
+\Hypertarget{structhid__driver_a3bdae9f46ba955ed1043437ad0d4568c}\label{structhid__driver_a3bdae9f46ba955ed1043437ad0d4568c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dyn\+\_\+list}
+\item 
+\Hypertarget{structhid__driver_aa2dfaf47ab425ef02fc5e59448f0eb54}\label{structhid__driver_aa2dfaf47ab425ef02fc5e59448f0eb54} 
+spinlock\+\_\+t {\bfseries dyn\+\_\+lock}
+\item 
+\Hypertarget{structhid__driver_ad4a796686874c031da3e9ef9eea75238}\label{structhid__driver_ad4a796686874c031da3e9ef9eea75238} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries match} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structhid__driver_a75e5d232f90a655da2f2ba29b4c96d34}\label{structhid__driver_a75e5d232f90a655da2f2ba29b4c96d34} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structhid__device__id}{hid\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_a571388f5cacc4d4ebda295a5611d3377}\label{structhid__driver_a571388f5cacc4d4ebda295a5611d3377} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_a9aac6fd9e508f6d4dbf76db0cc464168}\label{structhid__driver_a9aac6fd9e508f6d4dbf76db0cc464168} 
+const struct \doxymbox{\hyperlink{structhid__report__id}{hid\+\_\+report\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries report\+\_\+table}
+\item 
+\Hypertarget{structhid__driver_a7112c6d20c9acd3fa9ec03b4e7dc745e}\label{structhid__driver_a7112c6d20c9acd3fa9ec03b4e7dc745e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+event} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__report}{hid\+\_\+report}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structhid__driver_ad70846a4bf8b90ee896c43da52ffebac}\label{structhid__driver_ad70846a4bf8b90ee896c43da52ffebac} 
+const struct \doxymbox{\hyperlink{structhid__usage__id}{hid\+\_\+usage\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries usage\+\_\+table}
+\item 
+\Hypertarget{structhid__driver_a1cafd9b203007e17c09306101c503490}\label{structhid__driver_a1cafd9b203007e17c09306101c503490} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries event} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__field}{hid\+\_\+field}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__usage}{hid\+\_\+usage}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+s32)
+\item 
+\Hypertarget{structhid__driver_a5ed3875dfb6b67ca65ffb489e416d6a5}\label{structhid__driver_a5ed3875dfb6b67ca65ffb489e416d6a5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries report} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__report}{hid\+\_\+report}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_a2f0baecaeb0cea21d7ca85b687c09abe}\label{structhid__driver_a2f0baecaeb0cea21d7ca85b687c09abe} 
+const \+\_\+\+\_\+u8 \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries report\+\_\+fixup} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+u8 \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_ad3f4d7f79386458dcbe26b3fac27a60f}\label{structhid__driver_ad3f4d7f79386458dcbe26b3fac27a60f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries input\+\_\+mapping} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__input}{hid\+\_\+input}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__field}{hid\+\_\+field}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__usage}{hid\+\_\+usage}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_a6697987b3ba27153e0e1bc15e491e5c7}\label{structhid__driver_a6697987b3ba27153e0e1bc15e491e5c7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries input\+\_\+mapped} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__input}{hid\+\_\+input}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__field}{hid\+\_\+field}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__usage}{hid\+\_\+usage}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_a14f514e437f7254063bb9e26aa89a1c6}\label{structhid__driver_a14f514e437f7254063bb9e26aa89a1c6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries input\+\_\+configured} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__input}{hid\+\_\+input}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_affd393571144a89abf003f46c76bb271}\label{structhid__driver_affd393571144a89abf003f46c76bb271} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries feature\+\_\+mapping} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__field}{hid\+\_\+field}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhid__usage}{hid\+\_\+usage}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_acb87deb3f78c1317a15de7bcb8da807e}\label{structhid__driver_acb87deb3f78c1317a15de7bcb8da807e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*}, pm\+\_\+message\+\_\+t)
+\item 
+\Hypertarget{structhid__driver_a6dbc3ee12542f95a424eb81a0707f1cb}\label{structhid__driver_a6dbc3ee12542f95a424eb81a0707f1cb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_ab0429cb17d827ae203afff1cb330af6e}\label{structhid__driver_ab0429cb17d827ae203afff1cb330af6e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+resume} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_a586760736718779acc8c0706be2045b2}\label{structhid__driver_a586760736718779acc8c0706be2045b2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries on\+\_\+hid\+\_\+hw\+\_\+open} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_a859c13efec1b656189c431cc63f24f24}\label{structhid__driver_a859c13efec1b656189c431cc63f24f24} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries on\+\_\+hid\+\_\+hw\+\_\+close} )(struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__driver_ac6d417fa51a299a56b282b97c58aa95e}\label{structhid__driver_ac6d417fa51a299a56b282b97c58aa95e} 
+struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} {\bfseries driver}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

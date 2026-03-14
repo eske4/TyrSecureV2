@@ -1,0 +1,66 @@
+\doxysection{cpuinfo\+\_\+topology Struct Reference}
+\hypertarget{structcpuinfo__topology}{}\label{structcpuinfo__topology}\index{cpuinfo\_topology@{cpuinfo\_topology}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcpuinfo__topology_acb819cdfed1c639a4ddd858c3e3b423c}\label{structcpuinfo__topology_acb819cdfed1c639a4ddd858c3e3b423c} 
+u32 {\bfseries apicid}
+\item 
+\Hypertarget{structcpuinfo__topology_a19be58a5e2f61aa5b35868fd5389e0a4}\label{structcpuinfo__topology_a19be58a5e2f61aa5b35868fd5389e0a4} 
+u32 {\bfseries initial\+\_\+apicid}
+\item 
+\Hypertarget{structcpuinfo__topology_ae83faf29f50089ac339a021a0ffc8f13}\label{structcpuinfo__topology_ae83faf29f50089ac339a021a0ffc8f13} 
+u32 {\bfseries pkg\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_afa9ac51bcec665fd00e5ea02909c6abd}\label{structcpuinfo__topology_afa9ac51bcec665fd00e5ea02909c6abd} 
+u32 {\bfseries die\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_a546dc2a4ff021de227d3252d3581e03a}\label{structcpuinfo__topology_a546dc2a4ff021de227d3252d3581e03a} 
+u32 {\bfseries cu\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_abf9aadd2b21820b4750f5357f58831fc}\label{structcpuinfo__topology_abf9aadd2b21820b4750f5357f58831fc} 
+u32 {\bfseries core\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_a967dbf4e0272249d961a5f208637820f}\label{structcpuinfo__topology_a967dbf4e0272249d961a5f208637820f} 
+u32 {\bfseries logical\+\_\+pkg\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_a1d34757b5cf63ae137891688b7acd616}\label{structcpuinfo__topology_a1d34757b5cf63ae137891688b7acd616} 
+u32 {\bfseries logical\+\_\+die\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_a209823b2296db7d2d3e7644e0061c183}\label{structcpuinfo__topology_a209823b2296db7d2d3e7644e0061c183} 
+u32 {\bfseries logical\+\_\+core\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_a53149b85e9ddd56679fbc6e187d5caa7}\label{structcpuinfo__topology_a53149b85e9ddd56679fbc6e187d5caa7} 
+u32 {\bfseries amd\+\_\+node\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_a9c8d28a99a348ee69531bc964487260b}\label{structcpuinfo__topology_a9c8d28a99a348ee69531bc964487260b} 
+u32 {\bfseries llc\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_a151e7e358a75f1a9cc315405a8f76954}\label{structcpuinfo__topology_a151e7e358a75f1a9cc315405a8f76954} 
+u32 {\bfseries l2c\+\_\+id}
+\item 
+\Hypertarget{structcpuinfo__topology_a37b9bad6fbef21bb25e86ab2ac00ffbb}\label{structcpuinfo__topology_a37b9bad6fbef21bb25e86ab2ac00ffbb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries cpu\_type}\\
+\Hypertarget{unioncpuinfo__topology_1_1_0d060306171201140126165040055206125024336171255143_aa33e3ba610b86c25d0c728c85d8c8c3b}\label{unioncpuinfo__topology_1_1_0d060306171201140126165040055206125024336171255143_aa33e3ba610b86c25d0c728c85d8c8c3b} 
+\>struct \{\\
+\>\>u32 {\bfseries intel\_native\_model\_id}: 24\\
+\>\>u32 {\bfseries intel\_type}: 8\\
+\>\} \\
+\Hypertarget{unioncpuinfo__topology_1_1_0d060306171201140126165040055206125024336171255143_a479d373e2eb6d505d73f7a81025b8681}\label{unioncpuinfo__topology_1_1_0d060306171201140126165040055206125024336171255143_a479d373e2eb6d505d73f7a81025b8681} 
+\>struct \{\\
+\>\>u32 {\bfseries amd\_num\_processors}: 16\\
+\>\>u32 {\bfseries amd\_power\_eff\_ranking}: 8\\
+\>\>u32 {\bfseries amd\_native\_model\_id}: 4\\
+\>\>u32 {\bfseries amd\_type}: 4\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

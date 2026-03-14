@@ -1,0 +1,46 @@
+\doxysection{pixel\+\_\+format Struct Reference}
+\hypertarget{structpixel__format}{}\label{structpixel__format}\index{pixel\_format@{pixel\_format}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpixel__format_a18dc8f961ae7d9b0fbd66367d319a782}\label{structpixel__format_a18dc8f961ae7d9b0fbd66367d319a782} 
+unsigned char {\bfseries bits\+\_\+per\+\_\+pixel}
+\item 
+\Hypertarget{structpixel__format_a287035b7b83778f03f72e004cfba4b39}\label{structpixel__format_a287035b7b83778f03f72e004cfba4b39} 
+bool {\bfseries indexed}
+\item 
+\Hypertarget{structpixel__format_a444dfd59bb44ea798eb5fcb79243dee9}\label{structpixel__format_a444dfd59bb44ea798eb5fcb79243dee9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionpixel__format_1_1_0d265174001177332105155254275313175216040235106274_a5f6116007b34891350f10c462f33ddd2}\label{unionpixel__format_1_1_0d265174001177332105155254275313175216040235106274_a5f6116007b34891350f10c462f33ddd2} 
+\>struct \{\\
+\>\>struct \{\\
+\>\>\>unsigned char {\bfseries offset}\\
+\>\>\>unsigned char {\bfseries length}\\
+\>\>\} {\bfseries alpha}\\
+\>\>struct \{\\
+\>\>\>unsigned char {\bfseries offset}\\
+\>\>\>unsigned char {\bfseries length}\\
+\>\>\} {\bfseries red}\\
+\>\>struct \{\\
+\>\>\>unsigned char {\bfseries offset}\\
+\>\>\>unsigned char {\bfseries length}\\
+\>\>\} {\bfseries green}\\
+\>\>struct \{\\
+\>\>\>unsigned char {\bfseries offset}\\
+\>\>\>unsigned char {\bfseries length}\\
+\>\>\} {\bfseries blue}\\
+\>\} \\
+\>struct \{\\
+\>\>unsigned char {\bfseries offset}\\
+\>\>unsigned char {\bfseries length}\\
+\>\} {\bfseries index}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

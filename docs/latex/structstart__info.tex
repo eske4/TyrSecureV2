@@ -1,0 +1,67 @@
+\doxysection{start\+\_\+info Struct Reference}
+\hypertarget{structstart__info}{}\label{structstart__info}\index{start\_info@{start\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structstart__info_a9374750a5fa6b80bfb6f2dc804dd2521}\label{structstart__info_a9374750a5fa6b80bfb6f2dc804dd2521} 
+char {\bfseries magic} \+[32]\+
+\item 
+\Hypertarget{structstart__info_afb9fe0cf1fc19074dfb89cecf7135ff0}\label{structstart__info_afb9fe0cf1fc19074dfb89cecf7135ff0} 
+long unsigned int {\bfseries nr\+\_\+pages}
+\item 
+\Hypertarget{structstart__info_a65cfabb05422d09ae32750f31080e2fe}\label{structstart__info_a65cfabb05422d09ae32750f31080e2fe} 
+long unsigned int {\bfseries shared\+\_\+info}
+\item 
+\Hypertarget{structstart__info_a596357902d607e1a03682bc5177be49b}\label{structstart__info_a596357902d607e1a03682bc5177be49b} 
+uint32\+\_\+t {\bfseries flags}
+\item 
+\Hypertarget{structstart__info_aed1f05dbf742e8164c3e120117431eba}\label{structstart__info_aed1f05dbf742e8164c3e120117431eba} 
+xen\+\_\+pfn\+\_\+t {\bfseries store\+\_\+mfn}
+\item 
+\Hypertarget{structstart__info_a082ead25e685bee7e3398f63fc2cf724}\label{structstart__info_a082ead25e685bee7e3398f63fc2cf724} 
+uint32\+\_\+t {\bfseries store\+\_\+evtchn}
+\item 
+\Hypertarget{structstart__info_abb7f2f877ca32479276068575437285b}\label{structstart__info_abb7f2f877ca32479276068575437285b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>xen\_pfn\_t {\bfseries mfn}\\
+\>\>uint32\_t {\bfseries evtchn}\\
+\>\} {\bfseries domU}\\
+\>struct \{\\
+\>\>uint32\_t {\bfseries info\_off}\\
+\>\>uint32\_t {\bfseries info\_size}\\
+\>\} {\bfseries dom0}\\
+\} {\bfseries console}\\
+
+\end{tabbing}\item 
+\Hypertarget{structstart__info_a64da813904bb7907d7dcb13db3001b4b}\label{structstart__info_a64da813904bb7907d7dcb13db3001b4b} 
+long unsigned int {\bfseries pt\+\_\+base}
+\item 
+\Hypertarget{structstart__info_a33250404794a981de8db488eb52dbd91}\label{structstart__info_a33250404794a981de8db488eb52dbd91} 
+long unsigned int {\bfseries nr\+\_\+pt\+\_\+frames}
+\item 
+\Hypertarget{structstart__info_a3e7ee8af2c19715d5bf553a369e13bdb}\label{structstart__info_a3e7ee8af2c19715d5bf553a369e13bdb} 
+long unsigned int {\bfseries mfn\+\_\+list}
+\item 
+\Hypertarget{structstart__info_a79affeeaaf9b6e3de1561dfe8280d3ef}\label{structstart__info_a79affeeaaf9b6e3de1561dfe8280d3ef} 
+long unsigned int {\bfseries mod\+\_\+start}
+\item 
+\Hypertarget{structstart__info_ac8763413b4a99551ab5187f7c941efd4}\label{structstart__info_ac8763413b4a99551ab5187f7c941efd4} 
+long unsigned int {\bfseries mod\+\_\+len}
+\item 
+\Hypertarget{structstart__info_a25ea4b87b7f264909d8a0ec2cc0a5ce3}\label{structstart__info_a25ea4b87b7f264909d8a0ec2cc0a5ce3} 
+int8\+\_\+t {\bfseries cmd\+\_\+line} \+[1024]\+
+\item 
+\Hypertarget{structstart__info_a71659d1d2fdc67da210f3c7fed8085a8}\label{structstart__info_a71659d1d2fdc67da210f3c7fed8085a8} 
+long unsigned int {\bfseries first\+\_\+p2m\+\_\+pfn}
+\item 
+\Hypertarget{structstart__info_a62f8797201af149aaa28803c17d31c71}\label{structstart__info_a62f8797201af149aaa28803c17d31c71} 
+long unsigned int {\bfseries nr\+\_\+p2m\+\_\+frames}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,430 @@
+\doxysection{x86\+\_\+pmu Struct Reference}
+\hypertarget{structx86__pmu}{}\label{structx86__pmu}\index{x86\_pmu@{x86\_pmu}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structx86__pmu_a05e29647c0a593c34a15276d1cbddc74}\label{structx86__pmu_a05e29647c0a593c34a15276d1cbddc74} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structx86__pmu_ad9b79cc1c7c81cd8dcb2a4bf3f3242ca}\label{structx86__pmu_ad9b79cc1c7c81cd8dcb2a4bf3f3242ca} 
+int {\bfseries version}
+\item 
+\Hypertarget{structx86__pmu_a89acab2cfcfd4e42f1214f4939e35c78}\label{structx86__pmu_a89acab2cfcfd4e42f1214f4939e35c78} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+irq} )(struct \doxymbox{\hyperlink{structpt__regs}{pt\+\_\+regs}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a38534c836529af54297220ea9b30a181}\label{structx86__pmu_a38534c836529af54297220ea9b30a181} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable\+\_\+all} )(void)
+\item 
+\Hypertarget{structx86__pmu_a0714a2195e4205d02e016ecb88229fe4}\label{structx86__pmu_a0714a2195e4205d02e016ecb88229fe4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+all} )(int)
+\item 
+\Hypertarget{structx86__pmu_a46900e068432834fe4b3fb1ba874d4e9}\label{structx86__pmu_a46900e068432834fe4b3fb1ba874d4e9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_aa4ff0c55e21461ed1c4bfb1ca11441d5}\label{structx86__pmu_aa4ff0c55e21461ed1c4bfb1ca11441d5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_ab52c2fcb896b7070daf11cdd325a3b9b}\label{structx86__pmu_ab52c2fcb896b7070daf11cdd325a3b9b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries assign} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structx86__pmu_a2affcb4947728e734fc57ce470e55c70}\label{structx86__pmu_a2affcb4947728e734fc57ce470e55c70} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries add} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a25af24e6de5c25585f2f3962325599af}\label{structx86__pmu_a25af24e6de5c25585f2f3962325599af} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries del} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_aca284ba5246676ca27a9c89a35bbcb1c}\label{structx86__pmu_aca284ba5246676ca27a9c89a35bbcb1c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a9d5d8d31e6524185128934c6a5050f66}\label{structx86__pmu_a9d5d8d31e6524185128934c6a5050f66} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+period} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_afa83d7f57f763d2ad36eb66f050b145a}\label{structx86__pmu_afa83d7f57f763d2ad36eb66f050b145a} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries update} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_ac2c5687b023133ff06a99d74de1f8fca}\label{structx86__pmu_ac2c5687b023133ff06a99d74de1f8fca} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+config} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_aa8d90abeffc32f104516f4c32ba37bf4}\label{structx86__pmu_aa8d90abeffc32f104516f4c32ba37bf4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries schedule\+\_\+events} )(struct \doxymbox{\hyperlink{structcpu__hw__events}{cpu\+\_\+hw\+\_\+events}} \texorpdfstring{$\ast$}{*}, int, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a9c7f49fcae6c559fc94a84c33575978b}\label{structx86__pmu_a9c7f49fcae6c559fc94a84c33575978b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries late\+\_\+setup} )(void)
+\item 
+\Hypertarget{structx86__pmu_aebafd80b38dcd54d21b591aa0f140d09}\label{structx86__pmu_aebafd80b38dcd54d21b591aa0f140d09} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pebs\+\_\+enable} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_afaf78d29c81136e7f440bcb171e51109}\label{structx86__pmu_afaf78d29c81136e7f440bcb171e51109} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pebs\+\_\+disable} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a5fe26f130a61d1e4e6dafc56c7c69c2a}\label{structx86__pmu_a5fe26f130a61d1e4e6dafc56c7c69c2a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pebs\+\_\+enable\+\_\+all} )(void)
+\item 
+\Hypertarget{structx86__pmu_aa58631423e946fe799a24d303eefe6aa}\label{structx86__pmu_aa58631423e946fe799a24d303eefe6aa} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pebs\+\_\+disable\+\_\+all} )(void)
+\item 
+\Hypertarget{structx86__pmu_a8301665f617f3eb100b3e41a0407f352}\label{structx86__pmu_a8301665f617f3eb100b3e41a0407f352} 
+unsigned int {\bfseries eventsel}
+\item 
+\Hypertarget{structx86__pmu_a7ce0423bc68d668aa59380024ae721df}\label{structx86__pmu_a7ce0423bc68d668aa59380024ae721df} 
+unsigned int {\bfseries perfctr}
+\item 
+\Hypertarget{structx86__pmu_af89b44c66a88f702baeae009ed1f867c}\label{structx86__pmu_af89b44c66a88f702baeae009ed1f867c} 
+unsigned int {\bfseries fixedctr}
+\item 
+\Hypertarget{structx86__pmu_af616d3f6b545ed3aa9aead1d7b386723}\label{structx86__pmu_af616d3f6b545ed3aa9aead1d7b386723} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries addr\+\_\+offset} )(int, bool)
+\item 
+\Hypertarget{structx86__pmu_a391a809ac18dc3ba2f9df323254c0ecb}\label{structx86__pmu_a391a809ac18dc3ba2f9df323254c0ecb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rdpmc\+\_\+index} )(int)
+\item 
+\Hypertarget{structx86__pmu_ab939b207104fa4e9b7954f702207369f}\label{structx86__pmu_ab939b207104fa4e9b7954f702207369f} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+map} )(int)
+\item 
+\Hypertarget{structx86__pmu_a42be8396a955066679fc894cb1aec331}\label{structx86__pmu_a42be8396a955066679fc894cb1aec331} 
+int {\bfseries max\+\_\+events}
+\item 
+\Hypertarget{structx86__pmu_a20bd53e7f3d63297bbf82d69da1826ea}\label{structx86__pmu_a20bd53e7f3d63297bbf82d69da1826ea} 
+u64 {\bfseries config\+\_\+mask}
+\item 
+\Hypertarget{structx86__pmu_acd1a483f1267b3b4a5b188a317249fcf}\label{structx86__pmu_acd1a483f1267b3b4a5b188a317249fcf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries cntr\_mask64}\\
+\>long unsigned int {\bfseries cntr\_mask} \+[1]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__pmu_ac28c4c34ba1e4b3afcf1c6091da35a0e}\label{structx86__pmu_ac28c4c34ba1e4b3afcf1c6091da35a0e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries fixed\_cntr\_mask64}\\
+\>long unsigned int {\bfseries fixed\_cntr\_mask} \+[1]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__pmu_af690283dabbbcb426658ab33b014c9d1}\label{structx86__pmu_af690283dabbbcb426658ab33b014c9d1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries acr\_cntr\_mask64}\\
+\>long unsigned int {\bfseries acr\_cntr\_mask} \+[1]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__pmu_a2e93468bd39ba7f1ad6ecd41b1d0a20e}\label{structx86__pmu_a2e93468bd39ba7f1ad6ecd41b1d0a20e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries acr\_cause\_mask64}\\
+\>long unsigned int {\bfseries acr\_cause\_mask} \+[1]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__pmu_a192f7acbae46e161b687437c8d0bc602}\label{structx86__pmu_a192f7acbae46e161b687437c8d0bc602} 
+int {\bfseries cntval\+\_\+bits}
+\item 
+\Hypertarget{structx86__pmu_af7cb44da0f08e89a876949fe0ca6cf73}\label{structx86__pmu_af7cb44da0f08e89a876949fe0ca6cf73} 
+u64 {\bfseries cntval\+\_\+mask}
+\item 
+\Hypertarget{structx86__pmu_aee1b3b93f2b84847c0120da7ee528b87}\label{structx86__pmu_aee1b3b93f2b84847c0120da7ee528b87} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int {\bfseries events\_maskl}\\
+\>long unsigned int {\bfseries events\_mask} \+[1]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__pmu_a39a12dd1fa18b29ddf7b9cb4c35c96dc}\label{structx86__pmu_a39a12dd1fa18b29ddf7b9cb4c35c96dc} 
+int {\bfseries events\+\_\+mask\+\_\+len}
+\item 
+\Hypertarget{structx86__pmu_a2f2c8577e349b07ed91a873371fa2b7f}\label{structx86__pmu_a2f2c8577e349b07ed91a873371fa2b7f} 
+int {\bfseries apic}
+\item 
+\Hypertarget{structx86__pmu_add1ff4af2f8a1d8ab3b0741ad900a931}\label{structx86__pmu_add1ff4af2f8a1d8ab3b0741ad900a931} 
+u64 {\bfseries max\+\_\+period}
+\item 
+\Hypertarget{structx86__pmu_a7b0f7d2eb6a598d9a0513c68d6d62db2}\label{structx86__pmu_a7b0f7d2eb6a598d9a0513c68d6d62db2} 
+struct \doxymbox{\hyperlink{structevent__constraint}{event\+\_\+constraint}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+event\+\_\+constraints} )(struct \doxymbox{\hyperlink{structcpu__hw__events}{cpu\+\_\+hw\+\_\+events}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_abc483b63e52a262eaac6f3a93a2e63ae}\label{structx86__pmu_abc483b63e52a262eaac6f3a93a2e63ae} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries put\+\_\+event\+\_\+constraints} )(struct \doxymbox{\hyperlink{structcpu__hw__events}{cpu\+\_\+hw\+\_\+events}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a0407a1bc56437635e979c26ce766976b}\label{structx86__pmu_a0407a1bc56437635e979c26ce766976b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries start\+\_\+scheduling} )(struct \doxymbox{\hyperlink{structcpu__hw__events}{cpu\+\_\+hw\+\_\+events}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_aed08189b0f004b3efb7209cb4d87e619}\label{structx86__pmu_aed08189b0f004b3efb7209cb4d87e619} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries commit\+\_\+scheduling} )(struct \doxymbox{\hyperlink{structcpu__hw__events}{cpu\+\_\+hw\+\_\+events}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structx86__pmu_a29823e82acde856d869760b04109359d}\label{structx86__pmu_a29823e82acde856d869760b04109359d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries stop\+\_\+scheduling} )(struct \doxymbox{\hyperlink{structcpu__hw__events}{cpu\+\_\+hw\+\_\+events}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_ae3a7b8405e37c6fec4e30158bfd36e49}\label{structx86__pmu_ae3a7b8405e37c6fec4e30158bfd36e49} 
+struct \doxymbox{\hyperlink{structevent__constraint}{event\+\_\+constraint}} \texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+constraints}
+\item 
+\Hypertarget{structx86__pmu_aaac8a31a1c20115589586491fc1b149f}\label{structx86__pmu_aaac8a31a1c20115589586491fc1b149f} 
+struct \doxymbox{\hyperlink{structx86__pmu__quirk}{x86\+\_\+pmu\+\_\+quirk}} \texorpdfstring{$\ast$}{*} {\bfseries quirks}
+\item 
+\Hypertarget{structx86__pmu_a2ff54ec256cc1146258ee19dc9e11ba6}\label{structx86__pmu_a2ff54ec256cc1146258ee19dc9e11ba6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries limit\+\_\+period} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, s64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a2614c246077aff3247f3062379fbe259}\label{structx86__pmu_a2614c246077aff3247f3062379fbe259} 
+unsigned int {\bfseries late\+\_\+ack}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a3d6d35b709950a8441bb6a25e6d09be3}\label{structx86__pmu_a3d6d35b709950a8441bb6a25e6d09be3} 
+unsigned int {\bfseries mid\+\_\+ack}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a86ea78686224acddcd547aa83906e98c}\label{structx86__pmu_a86ea78686224acddcd547aa83906e98c} 
+unsigned int {\bfseries enabled\+\_\+ack}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a329fd8f4b25c502bab1ab12dd0eeb663}\label{structx86__pmu_a329fd8f4b25c502bab1ab12dd0eeb663} 
+int {\bfseries attr\+\_\+rdpmc\+\_\+broken}
+\item 
+\Hypertarget{structx86__pmu_a7ff58834ede03e8c90f0f1829a15cbbd}\label{structx86__pmu_a7ff58834ede03e8c90f0f1829a15cbbd} 
+int {\bfseries attr\+\_\+rdpmc}
+\item 
+\Hypertarget{structx86__pmu_a6a0161abae795f2658344463ec704c93}\label{structx86__pmu_a6a0161abae795f2658344463ec704c93} 
+struct \doxymbox{\hyperlink{structattribute}{attribute}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries format\+\_\+attrs}
+\item 
+\Hypertarget{structx86__pmu_a2eee74162be4869fc1ae04f1db10670d}\label{structx86__pmu_a2eee74162be4869fc1ae04f1db10670d} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries events\+\_\+sysfs\+\_\+show} )(char \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structx86__pmu_a7c07b2d52dfe1d17c09d7ae5535986a2}\label{structx86__pmu_a7c07b2d52dfe1d17c09d7ae5535986a2} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries attr\+\_\+update}
+\item 
+\Hypertarget{structx86__pmu_ae3c127b40d15e1cca16d44368853df57}\label{structx86__pmu_ae3c127b40d15e1cca16d44368853df57} 
+long unsigned int {\bfseries attr\+\_\+freeze\+\_\+on\+\_\+smi}
+\item 
+\Hypertarget{structx86__pmu_a88405dea2f88737a5cbc8c72d59f9647}\label{structx86__pmu_a88405dea2f88737a5cbc8c72d59f9647} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+prepare} )(int)
+\item 
+\Hypertarget{structx86__pmu_a2f610bfece98ae74becd617e9c97862f}\label{structx86__pmu_a2f610bfece98ae74becd617e9c97862f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+starting} )(int)
+\item 
+\Hypertarget{structx86__pmu_a24ef9684a7c0fddf235369a9659f5bba}\label{structx86__pmu_a24ef9684a7c0fddf235369a9659f5bba} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+dying} )(int)
+\item 
+\Hypertarget{structx86__pmu_a2614c2f5d01d9ebeb5ca6d690ead7e3f}\label{structx86__pmu_a2614c2f5d01d9ebeb5ca6d690ead7e3f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+dead} )(int)
+\item 
+\Hypertarget{structx86__pmu_a1e8e82484628238615895fac8a67eeec}\label{structx86__pmu_a1e8e82484628238615895fac8a67eeec} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+microcode} )(void)
+\item 
+\Hypertarget{structx86__pmu_a791781c41d97738305b7f8987d167807}\label{structx86__pmu_a791781c41d97738305b7f8987d167807} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sched\+\_\+task} )(struct \doxymbox{\hyperlink{structperf__event__pmu__context}{perf\+\_\+event\+\_\+pmu\+\_\+context}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structx86__pmu_a1788a90986ea372b96fe22e2ae8bcba2}\label{structx86__pmu_a1788a90986ea372b96fe22e2ae8bcba2} 
+u64 {\bfseries intel\+\_\+ctrl}
+\item 
+\Hypertarget{structx86__pmu_a180197560e9c631bb346a44f4e8af6bc}\label{structx86__pmu_a180197560e9c631bb346a44f4e8af6bc} 
+union \doxymbox{\hyperlink{unionperf__capabilities}{perf\+\_\+capabilities}} {\bfseries intel\+\_\+cap}
+\item 
+\Hypertarget{structx86__pmu_a34b0955804396cf6230ca1a283cd4ee2}\label{structx86__pmu_a34b0955804396cf6230ca1a283cd4ee2} 
+unsigned int {\bfseries bts}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a2b9a38007bed1b6121f271e7c82e01ef}\label{structx86__pmu_a2b9a38007bed1b6121f271e7c82e01ef} 
+unsigned int {\bfseries bts\+\_\+active}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_ae312a13867a543d15ac5a8fa6e837cbc}\label{structx86__pmu_ae312a13867a543d15ac5a8fa6e837cbc} 
+unsigned int {\bfseries ds\+\_\+pebs}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_abcf74b33c40f9066beef241f30433161}\label{structx86__pmu_abcf74b33c40f9066beef241f30433161} 
+unsigned int {\bfseries pebs\+\_\+active}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a2044771b025cdb811ab5283f41950132}\label{structx86__pmu_a2044771b025cdb811ab5283f41950132} 
+unsigned int {\bfseries pebs\+\_\+broken}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a6c3e63ed5fb9c47830a2263e9a2c2ebd}\label{structx86__pmu_a6c3e63ed5fb9c47830a2263e9a2c2ebd} 
+unsigned int {\bfseries pebs\+\_\+prec\+\_\+dist}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_ad4decaca50a79e55c0f187f45b3e604c}\label{structx86__pmu_ad4decaca50a79e55c0f187f45b3e604c} 
+unsigned int {\bfseries pebs\+\_\+no\+\_\+tlb}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a38e26a62a64c323d4987122f68eca73c}\label{structx86__pmu_a38e26a62a64c323d4987122f68eca73c} 
+unsigned int {\bfseries pebs\+\_\+no\+\_\+isolation}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_ad023793a03668518cf67349817b9ef70}\label{structx86__pmu_ad023793a03668518cf67349817b9ef70} 
+unsigned int {\bfseries pebs\+\_\+block}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_ae440bdef61716a48df3ed5909ffd3ca7}\label{structx86__pmu_ae440bdef61716a48df3ed5909ffd3ca7} 
+unsigned int {\bfseries pebs\+\_\+ept}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a952bdadab59f1240f2187be7f0c56b1c}\label{structx86__pmu_a952bdadab59f1240f2187be7f0c56b1c} 
+unsigned int {\bfseries arch\+\_\+pebs}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a8a925ee24c0f03fb2d9f6c68fc37c7ce}\label{structx86__pmu_a8a925ee24c0f03fb2d9f6c68fc37c7ce} 
+int {\bfseries pebs\+\_\+record\+\_\+size}
+\item 
+\Hypertarget{structx86__pmu_ad526346aae07e9bf4743eef517e72b1c}\label{structx86__pmu_ad526346aae07e9bf4743eef517e72b1c} 
+int {\bfseries pebs\+\_\+buffer\+\_\+size}
+\item 
+\Hypertarget{structx86__pmu_a0400ace31fc21d18f7bf1e4f0b8921a3}\label{structx86__pmu_a0400ace31fc21d18f7bf1e4f0b8921a3} 
+u64 {\bfseries pebs\+\_\+events\+\_\+mask}
+\item 
+\Hypertarget{structx86__pmu_a044765332809a0fb327b5826bed5f0c3}\label{structx86__pmu_a044765332809a0fb327b5826bed5f0c3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries drain\+\_\+pebs} )(struct \doxymbox{\hyperlink{structpt__regs}{pt\+\_\+regs}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structperf__sample__data}{perf\+\_\+sample\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_aa6a7227854be8298768dcf282da7ac36}\label{structx86__pmu_aa6a7227854be8298768dcf282da7ac36} 
+struct \doxymbox{\hyperlink{structevent__constraint}{event\+\_\+constraint}} \texorpdfstring{$\ast$}{*} {\bfseries pebs\+\_\+constraints}
+\item 
+\Hypertarget{structx86__pmu_afc143239b052929b5c684a2e3cdfd4a5}\label{structx86__pmu_afc143239b052929b5c684a2e3cdfd4a5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pebs\+\_\+aliases} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_ab097bf69c32ec2e27a68b378f06f16a1}\label{structx86__pmu_ab097bf69c32ec2e27a68b378f06f16a1} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries pebs\+\_\+latency\+\_\+data} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structx86__pmu_a767be7cd6655deb244f6920c327c4d79}\label{structx86__pmu_a767be7cd6655deb244f6920c327c4d79} 
+long unsigned int {\bfseries large\+\_\+pebs\+\_\+flags}
+\item 
+\Hypertarget{structx86__pmu_a5701d40b2e152059b875628652728188}\label{structx86__pmu_a5701d40b2e152059b875628652728188} 
+u64 {\bfseries rtm\+\_\+abort\+\_\+event}
+\item 
+\Hypertarget{structx86__pmu_a5a63505e35b9ce2dbe96e3c2934ee78b}\label{structx86__pmu_a5a63505e35b9ce2dbe96e3c2934ee78b} 
+u64 {\bfseries pebs\+\_\+capable}
+\item 
+\Hypertarget{structx86__pmu_a8e6c43dad8ba1dae9b8523e27912a72d}\label{structx86__pmu_a8e6c43dad8ba1dae9b8523e27912a72d} 
+struct \doxymbox{\hyperlink{structarch__pebs__cap}{arch\+\_\+pebs\+\_\+cap}} {\bfseries arch\+\_\+pebs\+\_\+cap}
+\item 
+\Hypertarget{structx86__pmu_a473fcca916b10126b465cb1e972849ce}\label{structx86__pmu_a473fcca916b10126b465cb1e972849ce} 
+unsigned int {\bfseries lbr\+\_\+tos}
+\item 
+\Hypertarget{structx86__pmu_a6f6ee7178cc35d4aa7119c0030d89ff9}\label{structx86__pmu_a6f6ee7178cc35d4aa7119c0030d89ff9} 
+unsigned int {\bfseries lbr\+\_\+from}
+\item 
+\Hypertarget{structx86__pmu_a46b96a6abe40dc9860b9349ce791cc6b}\label{structx86__pmu_a46b96a6abe40dc9860b9349ce791cc6b} 
+unsigned int {\bfseries lbr\+\_\+to}
+\item 
+\Hypertarget{structx86__pmu_a1302fbb76fc1bc17122284e7df664045}\label{structx86__pmu_a1302fbb76fc1bc17122284e7df664045} 
+unsigned int {\bfseries lbr\+\_\+info}
+\item 
+\Hypertarget{structx86__pmu_a91e25f189ba9f4b9a6ddfe61451ea0b5}\label{structx86__pmu_a91e25f189ba9f4b9a6ddfe61451ea0b5} 
+unsigned int {\bfseries lbr\+\_\+nr}
+\item 
+\Hypertarget{structx86__pmu_abdc87692ae07905f94dfe1bee0f4130b}\label{structx86__pmu_abdc87692ae07905f94dfe1bee0f4130b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries lbr\_sel\_mask}\\
+\>u64 {\bfseries lbr\_ctl\_mask}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__pmu_a5805c45f665a63d17c0e0504f0b42606}\label{structx86__pmu_a5805c45f665a63d17c0e0504f0b42606} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const int \texorpdfstring{$\ast$}{*} {\bfseries lbr\_sel\_map}\\
+\>int \texorpdfstring{$\ast$}{*} {\bfseries lbr\_ctl\_map}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structx86__pmu_af5a59ac550b13aa8e4b6fc246b951936}\label{structx86__pmu_af5a59ac550b13aa8e4b6fc246b951936} 
+u64 {\bfseries lbr\+\_\+callstack\+\_\+users}
+\item 
+\Hypertarget{structx86__pmu_aa7e6329aac13ddfc6b55dd79c113a3f5}\label{structx86__pmu_aa7e6329aac13ddfc6b55dd79c113a3f5} 
+bool {\bfseries lbr\+\_\+double\+\_\+abort}
+\item 
+\Hypertarget{structx86__pmu_a3dba207af72603a3e4abc167bbafc5fa}\label{structx86__pmu_a3dba207af72603a3e4abc167bbafc5fa} 
+bool {\bfseries lbr\+\_\+pt\+\_\+coexist}
+\item 
+\Hypertarget{structx86__pmu_a23d359c98da674b3472cb09320a07364}\label{structx86__pmu_a23d359c98da674b3472cb09320a07364} 
+unsigned int {\bfseries lbr\+\_\+has\+\_\+info}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_aa35c322afd9865fd0ae4b9ca15239590}\label{structx86__pmu_aa35c322afd9865fd0ae4b9ca15239590} 
+unsigned int {\bfseries lbr\+\_\+has\+\_\+tsx}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a4a8c90272e7ec19be80b2cfb11e1b9a5}\label{structx86__pmu_a4a8c90272e7ec19be80b2cfb11e1b9a5} 
+unsigned int {\bfseries lbr\+\_\+from\+\_\+flags}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_aae807b247d1b1a9da3d62a1c966e38f6}\label{structx86__pmu_aae807b247d1b1a9da3d62a1c966e38f6} 
+unsigned int {\bfseries lbr\+\_\+to\+\_\+cycles}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a1bf3fbcd61aa348d0dc571247ab92daa}\label{structx86__pmu_a1bf3fbcd61aa348d0dc571247ab92daa} 
+unsigned int {\bfseries lbr\+\_\+depth\+\_\+mask}:\+ 8
+\item 
+\Hypertarget{structx86__pmu_afe1e3f1bebdb471ae55abf5449520b4a}\label{structx86__pmu_afe1e3f1bebdb471ae55abf5449520b4a} 
+unsigned int {\bfseries lbr\+\_\+deep\+\_\+c\+\_\+reset}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a0cef97f489923137d41a3daef58d2413}\label{structx86__pmu_a0cef97f489923137d41a3daef58d2413} 
+unsigned int {\bfseries lbr\+\_\+lip}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a45740be534b3dfbc23231e45c96b9bf6}\label{structx86__pmu_a45740be534b3dfbc23231e45c96b9bf6} 
+unsigned int {\bfseries lbr\+\_\+cpl}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_abdb7368ace90dde803b45ab514a356b5}\label{structx86__pmu_abdb7368ace90dde803b45ab514a356b5} 
+unsigned int {\bfseries lbr\+\_\+filter}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_af32de4df5ab3efd76fed45eff79c32ea}\label{structx86__pmu_af32de4df5ab3efd76fed45eff79c32ea} 
+unsigned int {\bfseries lbr\+\_\+call\+\_\+stack}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a31cef95bdda076e86d46e829a537ba9c}\label{structx86__pmu_a31cef95bdda076e86d46e829a537ba9c} 
+unsigned int {\bfseries lbr\+\_\+mispred}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_ad822fd3ebc95f521592a8825a09abf7a}\label{structx86__pmu_ad822fd3ebc95f521592a8825a09abf7a} 
+unsigned int {\bfseries lbr\+\_\+timed\+\_\+lbr}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_afea387823cadff182d941ee64760c6e8}\label{structx86__pmu_afea387823cadff182d941ee64760c6e8} 
+unsigned int {\bfseries lbr\+\_\+br\+\_\+type}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a2ed9d13fe19726368f2629d84d071985}\label{structx86__pmu_a2ed9d13fe19726368f2629d84d071985} 
+unsigned int {\bfseries lbr\+\_\+counters}:\+ 4
+\item 
+\Hypertarget{structx86__pmu_acf40f618a1c7e393be547ef71bb389c9}\label{structx86__pmu_acf40f618a1c7e393be547ef71bb389c9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries lbr\+\_\+reset} )(void)
+\item 
+\Hypertarget{structx86__pmu_aa168710f1747cd46b07c35fecd2de40e}\label{structx86__pmu_aa168710f1747cd46b07c35fecd2de40e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries lbr\+\_\+read} )(struct \doxymbox{\hyperlink{structcpu__hw__events}{cpu\+\_\+hw\+\_\+events}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_aedacfc551cd30b9f20456e06cbf03d9a}\label{structx86__pmu_aedacfc551cd30b9f20456e06cbf03d9a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries lbr\+\_\+save} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a215b62ac076f002f95c68057528f8e36}\label{structx86__pmu_a215b62ac076f002f95c68057528f8e36} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries lbr\+\_\+restore} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_ad2a68b711311bf0aeb1ad2d78ec8d84a}\label{structx86__pmu_ad2a68b711311bf0aeb1ad2d78ec8d84a} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries lbr\+\_\+exclusive} \+[3]\+
+\item 
+\Hypertarget{structx86__pmu_a27919f4f56d9e506c33613075d451d21}\label{structx86__pmu_a27919f4f56d9e506c33613075d451d21} 
+int {\bfseries num\+\_\+topdown\+\_\+events}
+\item 
+\Hypertarget{structx86__pmu_a41f0361fc3fd2ceffc2f0b0e8dd2830b}\label{structx86__pmu_a41f0361fc3fd2ceffc2f0b0e8dd2830b} 
+unsigned int {\bfseries amd\+\_\+nb\+\_\+constraints}:\+ 1
+\item 
+\Hypertarget{structx86__pmu_a6122301d7dab3f5e0387aa354f3a70c7}\label{structx86__pmu_a6122301d7dab3f5e0387aa354f3a70c7} 
+u64 {\bfseries perf\+\_\+ctr\+\_\+pair\+\_\+en}
+\item 
+\Hypertarget{structx86__pmu_a699a411bdd315b36ac375e960e33b2d2}\label{structx86__pmu_a699a411bdd315b36ac375e960e33b2d2} 
+struct \doxymbox{\hyperlink{structextra__reg}{extra\+\_\+reg}} \texorpdfstring{$\ast$}{*} {\bfseries extra\+\_\+regs}
+\item 
+\Hypertarget{structx86__pmu_ac7fbe3d6b66d24b2ffba8eff1cb88ef6}\label{structx86__pmu_ac7fbe3d6b66d24b2ffba8eff1cb88ef6} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structx86__pmu_add2dc18a4d14c4f0aa5946af15fa77cd}\label{structx86__pmu_add2dc18a4d14c4f0aa5946af15fa77cd} 
+struct \doxymbox{\hyperlink{structperf__guest__switch__msr}{perf\+\_\+guest\+\_\+switch\+\_\+msr}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries guest\+\_\+get\+\_\+msrs} )(int \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_aa30b3123aa475e229e603d839a247f9d}\label{structx86__pmu_aa30b3123aa475e229e603d839a247f9d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+period} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structx86__pmu_a4c990c147828505578f89b321ad4dbb3}\label{structx86__pmu_a4c990c147828505578f89b321ad4dbb3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries aux\+\_\+output\+\_\+match} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a6a12e4f929ddd351bbf5139e1dc7015c}\label{structx86__pmu_a6a12e4f929ddd351bbf5139e1dc7015c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries filter} )(struct \doxymbox{\hyperlink{structpmu}{pmu}} \texorpdfstring{$\ast$}{*}, int, bool \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__pmu_a77001fbdbd21286a8639c3d7bdd3ce4c}\label{structx86__pmu_a77001fbdbd21286a8639c3d7bdd3ce4c} 
+int {\bfseries num\+\_\+hybrid\+\_\+pmus}
+\item 
+\Hypertarget{structx86__pmu_aa9e88ec2eb7d9cdc248a8b1c46f67c81}\label{structx86__pmu_aa9e88ec2eb7d9cdc248a8b1c46f67c81} 
+struct \doxymbox{\hyperlink{structx86__hybrid__pmu}{x86\+\_\+hybrid\+\_\+pmu}} \texorpdfstring{$\ast$}{*} {\bfseries hybrid\+\_\+pmu}
+\item 
+\Hypertarget{structx86__pmu_ac8bab60189820a6aef12a15299e21367}\label{structx86__pmu_ac8bab60189820a6aef12a15299e21367} 
+enum intel\+\_\+cpu\+\_\+type(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+hybrid\+\_\+cpu\+\_\+type} )(void)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

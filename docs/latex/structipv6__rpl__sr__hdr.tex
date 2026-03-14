@@ -1,0 +1,56 @@
+\doxysection{ipv6\+\_\+rpl\+\_\+sr\+\_\+hdr Struct Reference}
+\hypertarget{structipv6__rpl__sr__hdr}{}\label{structipv6__rpl__sr__hdr}\index{ipv6\_rpl\_sr\_hdr@{ipv6\_rpl\_sr\_hdr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_a626dbbdd3912b9486280e3daaeeb1691}\label{structipv6__rpl__sr__hdr_a626dbbdd3912b9486280e3daaeeb1691} 
+\+\_\+\+\_\+u8 {\bfseries nexthdr}
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_a09faf55b0a767f3b878e0322642b6b76}\label{structipv6__rpl__sr__hdr_a09faf55b0a767f3b878e0322642b6b76} 
+\+\_\+\+\_\+u8 {\bfseries hdrlen}
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_a5b2038ea0194a5f396e95d2de0ac7d2a}\label{structipv6__rpl__sr__hdr_a5b2038ea0194a5f396e95d2de0ac7d2a} 
+\+\_\+\+\_\+u8 {\bfseries type}
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_a9ff01739b3cdca0b2f22299c1d46cf86}\label{structipv6__rpl__sr__hdr_a9ff01739b3cdca0b2f22299c1d46cf86} 
+\+\_\+\+\_\+u8 {\bfseries segments\+\_\+left}
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_a338ceb2c8339bec30c6988c247a44db0}\label{structipv6__rpl__sr__hdr_a338ceb2c8339bec30c6988c247a44db0} 
+\+\_\+\+\_\+u32 {\bfseries cmpre}:\+ 4
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_a6589b1591d3636add455e823e0d85c8c}\label{structipv6__rpl__sr__hdr_a6589b1591d3636add455e823e0d85c8c} 
+\+\_\+\+\_\+u32 {\bfseries cmpri}:\+ 4
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_a4d9ee83dbf4820fd4b05bd0face47700}\label{structipv6__rpl__sr__hdr_a4d9ee83dbf4820fd4b05bd0face47700} 
+\+\_\+\+\_\+u32 {\bfseries reserved}:\+ 4
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_a88080147dcb05978284fd6f1b9a78c88}\label{structipv6__rpl__sr__hdr_a88080147dcb05978284fd6f1b9a78c88} 
+\+\_\+\+\_\+u32 {\bfseries pad}:\+ 4
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_ab3c806f03359143f4ea5076aa21bb974}\label{structipv6__rpl__sr__hdr_ab3c806f03359143f4ea5076aa21bb974} 
+\+\_\+\+\_\+u32 {\bfseries reserved1}:\+ 16
+\item 
+\Hypertarget{structipv6__rpl__sr__hdr_a56f538b58edbbb6c9258f38439b158dd}\label{structipv6__rpl__sr__hdr_a56f538b58edbbb6c9258f38439b158dd} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionipv6__rpl__sr__hdr_1_1_0d034174222227257140371253125345174206264123227057_a7a0ba6e2d24370951e3a0d91378641fd}\label{unionipv6__rpl__sr__hdr_1_1_0d034174222227257140371253125345174206264123227057_a7a0ba6e2d24370951e3a0d91378641fd} 
+\>struct \{\\
+\>\>struct \{\\
+\>\>\} {\bfseries \_\_empty\_addr}\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries addr} \+[0]\+\\
+\>\} \\
+\Hypertarget{unionipv6__rpl__sr__hdr_1_1_0d034174222227257140371253125345174206264123227057_a7a32eb94fb6f93e9457a2eaae235ca6b}\label{unionipv6__rpl__sr__hdr_1_1_0d034174222227257140371253125345174206264123227057_a7a32eb94fb6f93e9457a2eaae235ca6b} 
+\>struct \{\\
+\>\>struct \{\\
+\>\>\} {\bfseries \_\_empty\_data}\\
+\>\>\_\_u8 {\bfseries data} \+[0]\+\\
+\>\} \\
+\} {\bfseries segments}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

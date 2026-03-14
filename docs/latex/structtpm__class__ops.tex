@@ -1,0 +1,55 @@
+\doxysection{tpm\+\_\+class\+\_\+ops Struct Reference}
+\hypertarget{structtpm__class__ops}{}\label{structtpm__class__ops}\index{tpm\_class\_ops@{tpm\_class\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtpm__class__ops_af02be0b0a80f2ea62fc4211fbbc10c70}\label{structtpm__class__ops_af02be0b0a80f2ea62fc4211fbbc10c70} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structtpm__class__ops_a528b8f411412834fcb11b5c7c9bfbdf7}\label{structtpm__class__ops_a528b8f411412834fcb11b5c7c9bfbdf7} 
+const u8 {\bfseries req\+\_\+complete\+\_\+mask}
+\item 
+\Hypertarget{structtpm__class__ops_aa44680a85fb7e8910d676e424ef1fb49}\label{structtpm__class__ops_aa44680a85fb7e8910d676e424ef1fb49} 
+const u8 {\bfseries req\+\_\+complete\+\_\+val}
+\item 
+\Hypertarget{structtpm__class__ops_a6d7ccab763befd4c17307bf31aa42b85}\label{structtpm__class__ops_a6d7ccab763befd4c17307bf31aa42b85} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries req\+\_\+canceled} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structtpm__class__ops_a60f6a46d42de4c74f4ed424b07f57265}\label{structtpm__class__ops_a60f6a46d42de4c74f4ed424b07f57265} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries recv} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structtpm__class__ops_ab256bab354f68c3961201ee13d69a9c8}\label{structtpm__class__ops_ab256bab354f68c3961201ee13d69a9c8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries send} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*}, size\+\_\+t, size\+\_\+t)
+\item 
+\Hypertarget{structtpm__class__ops_a81dfd8de30a1a6f3ba96bc4c099033c3}\label{structtpm__class__ops_a81dfd8de30a1a6f3ba96bc4c099033c3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cancel} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtpm__class__ops_a20c3122fbdf154299ef548d304ca2e4c}\label{structtpm__class__ops_a20c3122fbdf154299ef548d304ca2e4c} 
+u8(\texorpdfstring{$\ast$}{*} {\bfseries status} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtpm__class__ops_aa2fdbe3150e5a68ace51f0b7f23b072b}\label{structtpm__class__ops_aa2fdbe3150e5a68ace51f0b7f23b072b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+timeouts} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtpm__class__ops_a6ccb57e18ff26ce74eac384c7fc8a7bb}\label{structtpm__class__ops_a6ccb57e18ff26ce74eac384c7fc8a7bb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+durations} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtpm__class__ops_aeb707cdc6e6d6ba412cecff6a195eb6b}\label{structtpm__class__ops_aeb707cdc6e6d6ba412cecff6a195eb6b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries go\+\_\+idle} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtpm__class__ops_a2bb15452ae6b361786a7ee4ea5cf28d2}\label{structtpm__class__ops_a2bb15452ae6b361786a7ee4ea5cf28d2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cmd\+\_\+ready} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtpm__class__ops_ad30062dfac00de8616d13303619fe67a}\label{structtpm__class__ops_ad30062dfac00de8616d13303619fe67a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries request\+\_\+locality} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structtpm__class__ops_a6a4abcc5ab98f248755a7e24d5424f68}\label{structtpm__class__ops_a6a4abcc5ab98f248755a7e24d5424f68} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries relinquish\+\_\+locality} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structtpm__class__ops_a8ee391cb8e76d9577b7e64d8e2261993}\label{structtpm__class__ops_a8ee391cb8e76d9577b7e64d8e2261993} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries clk\+\_\+enable} )(struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, bool)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

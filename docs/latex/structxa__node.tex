@@ -1,0 +1,49 @@
+\doxysection{xa\+\_\+node Struct Reference}
+\hypertarget{structxa__node}{}\label{structxa__node}\index{xa\_node@{xa\_node}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxa__node_aaff3262ddaabe46c523ad680b7e47b01}\label{structxa__node_aaff3262ddaabe46c523ad680b7e47b01} 
+unsigned char {\bfseries shift}
+\item 
+\Hypertarget{structxa__node_a8366364e21015d14d77d0a6620cdeb34}\label{structxa__node_a8366364e21015d14d77d0a6620cdeb34} 
+unsigned char {\bfseries offset}
+\item 
+\Hypertarget{structxa__node_a1c2245b9ea6855ba98b1631cce72c3b7}\label{structxa__node_a1c2245b9ea6855ba98b1631cce72c3b7} 
+unsigned char {\bfseries count}
+\item 
+\Hypertarget{structxa__node_a7ef6c0c74b11ca5417d62a109b016cfc}\label{structxa__node_a7ef6c0c74b11ca5417d62a109b016cfc} 
+unsigned char {\bfseries nr\+\_\+values}
+\item 
+\Hypertarget{structxa__node_ab8b7a97e5c69a1b0e0f99de6b7eda15b}\label{structxa__node_ab8b7a97e5c69a1b0e0f99de6b7eda15b} 
+struct \doxymbox{\hyperlink{structxa__node}{xa\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structxa__node_a51428fdaa36a1fea1f50a1e870e09e0c}\label{structxa__node_a51428fdaa36a1fea1f50a1e870e09e0c} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} \texorpdfstring{$\ast$}{*} {\bfseries array}
+\item 
+\Hypertarget{structxa__node_ade2f095bf6bac171a2d1a6b96547b0dc}\label{structxa__node_ade2f095bf6bac171a2d1a6b96547b0dc} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries private\_list}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries callback\_head}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structxa__node_acd40710db2c8e36413cf0f113ea84dc3}\label{structxa__node_acd40710db2c8e36413cf0f113ea84dc3} 
+void \texorpdfstring{$\ast$}{*} {\bfseries slots} \+[64]\+
+\item 
+\Hypertarget{structxa__node_a6ddd605a0eeb9c612be985315c377a29}\label{structxa__node_a6ddd605a0eeb9c612be985315c377a29} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int {\bfseries tags} \+[3]\+\\
+\>long unsigned int {\bfseries marks} \+[3]\+\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

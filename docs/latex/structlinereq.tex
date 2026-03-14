@@ -1,0 +1,54 @@
+\doxysection{linereq Struct Reference}
+\hypertarget{structlinereq}{}\label{structlinereq}\index{linereq@{linereq}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structlinereq_a1149836c163a276506e865a9e52f6e15}\label{structlinereq_a1149836c163a276506e865a9e52f6e15} 
+struct \doxymbox{\hyperlink{structgpio__device}{gpio\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries gdev}
+\item 
+\Hypertarget{structlinereq_a2c2ef1cdc5cfa9e030631e6d6e90a353}\label{structlinereq_a2c2ef1cdc5cfa9e030631e6d6e90a353} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries label}
+\item 
+\Hypertarget{structlinereq_a1dda08a781675be6ff6de9117c05cd4d}\label{structlinereq_a1dda08a781675be6ff6de9117c05cd4d} 
+u32 {\bfseries num\+\_\+lines}
+\item 
+\Hypertarget{structlinereq_a01c603b0a92915d08182f8ae361ff3ff}\label{structlinereq_a01c603b0a92915d08182f8ae361ff3ff} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\item 
+\Hypertarget{structlinereq_a8591a735db057d17ed4f96a317802015}\label{structlinereq_a8591a735db057d17ed4f96a317802015} 
+struct \doxymbox{\hyperlink{structnotifier__block}{notifier\+\_\+block}} {\bfseries device\+\_\+unregistered\+\_\+nb}
+\item 
+\Hypertarget{structlinereq_abae39fa8cabb0c4d979b432de98577d4}\label{structlinereq_abae39fa8cabb0c4d979b432de98577d4} 
+u32 {\bfseries event\+\_\+buffer\+\_\+size}
+\item 
+\Hypertarget{structlinereq_ad44033a10b4ed83271bff48a46a300d3}\label{structlinereq_ad44033a10b4ed83271bff48a46a300d3} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structlinereq_1_1_0d027117026125352263054327046073047264353005262324_ae27c0cc569170e2549acc62694534b9d}\label{structlinereq_1_1_0d027117026125352263054327046073047264353005262324_ae27c0cc569170e2549acc62694534b9d} 
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{struct____kfifo}{\_\_kfifo}} {\bfseries kfifo}\\
+\>\>struct \doxymbox{\hyperlink{structgpio__v2__line__event}{gpio\_v2\_line\_event}} \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>const struct \doxymbox{\hyperlink{structgpio__v2__line__event}{gpio\_v2\_line\_event}} \texorpdfstring{$\ast$}{*} {\bfseries const\_type}\\
+\>\>char(\texorpdfstring{$\ast$}{*} {\bfseries rectype} )\+[0]\+\\
+\>\>struct \doxymbox{\hyperlink{structgpio__v2__line__event}{gpio\_v2\_line\_event}} \texorpdfstring{$\ast$}{*} {\bfseries ptr}\\
+\>\>const struct \doxymbox{\hyperlink{structgpio__v2__line__event}{gpio\_v2\_line\_event}} \texorpdfstring{$\ast$}{*} {\bfseries ptr\_const}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structgpio__v2__line__event}{gpio\_v2\_line\_event}} {\bfseries buf} \+[0]\+\\
+\} {\bfseries events}\\
+
+\end{tabbing}\item 
+\Hypertarget{structlinereq_a077eb02e02674640c1d6dc4941b0dd52}\label{structlinereq_a077eb02e02674640c1d6dc4941b0dd52} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries seqno}
+\item 
+\Hypertarget{structlinereq_ae289b0bf76cb07d916bdc2d018754171}\label{structlinereq_ae289b0bf76cb07d916bdc2d018754171} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries config\+\_\+mutex}
+\item 
+\Hypertarget{structlinereq_a54689866a7e29d01d5dbebc9c2426970}\label{structlinereq_a54689866a7e29d01d5dbebc9c2426970} 
+struct \doxymbox{\hyperlink{structline}{line}} {\bfseries lines} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

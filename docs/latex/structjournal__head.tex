@@ -1,0 +1,58 @@
+\doxysection{journal\+\_\+head Struct Reference}
+\hypertarget{structjournal__head}{}\label{structjournal__head}\index{journal\_head@{journal\_head}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structjournal__head_aa3e6f5e527ae2e7315194a30ebf9b786}\label{structjournal__head_aa3e6f5e527ae2e7315194a30ebf9b786} 
+struct \doxymbox{\hyperlink{structbuffer__head}{buffer\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+bh}
+\item 
+\Hypertarget{structjournal__head_a0bcb9e1ecba00dc9170026227cc9185f}\label{structjournal__head_a0bcb9e1ecba00dc9170026227cc9185f} 
+spinlock\+\_\+t {\bfseries b\+\_\+state\+\_\+lock}
+\item 
+\Hypertarget{structjournal__head_abc3912c58b40bc32b8da9090e7ae1d14}\label{structjournal__head_abc3912c58b40bc32b8da9090e7ae1d14} 
+int {\bfseries b\+\_\+jcount}
+\item 
+\Hypertarget{structjournal__head_a5bf2c3a505289471c47665694c30896d}\label{structjournal__head_a5bf2c3a505289471c47665694c30896d} 
+unsigned int {\bfseries b\+\_\+jlist}
+\item 
+\Hypertarget{structjournal__head_a2185aad203d1bc7b4574319cad185e23}\label{structjournal__head_a2185aad203d1bc7b4574319cad185e23} 
+unsigned int {\bfseries b\+\_\+modified}
+\item 
+\Hypertarget{structjournal__head_ae122a9107394eec14f9d4a683dc8b85b}\label{structjournal__head_ae122a9107394eec14f9d4a683dc8b85b} 
+char \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+frozen\+\_\+data}
+\item 
+\Hypertarget{structjournal__head_a8c7640afe4ff52ae0aeb14a80b23ea70}\label{structjournal__head_a8c7640afe4ff52ae0aeb14a80b23ea70} 
+char \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+committed\+\_\+data}
+\item 
+\Hypertarget{structjournal__head_a31530888657ea4a477c6638006424bfc}\label{structjournal__head_a31530888657ea4a477c6638006424bfc} 
+transaction\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+transaction}
+\item 
+\Hypertarget{structjournal__head_a23882e7867346ccfea64a53eaea455b1}\label{structjournal__head_a23882e7867346ccfea64a53eaea455b1} 
+transaction\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+next\+\_\+transaction}
+\item 
+\Hypertarget{structjournal__head_aab4f22a0597702ef3b331481f4564e7b}\label{structjournal__head_aab4f22a0597702ef3b331481f4564e7b} 
+struct \doxymbox{\hyperlink{structjournal__head}{journal\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+tnext}
+\item 
+\Hypertarget{structjournal__head_aa30b718b4f5be59ddd832c9ac15b70a8}\label{structjournal__head_aa30b718b4f5be59ddd832c9ac15b70a8} 
+struct \doxymbox{\hyperlink{structjournal__head}{journal\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+tprev}
+\item 
+\Hypertarget{structjournal__head_a24b0169f6e1b6fcaeece534e39dbd74e}\label{structjournal__head_a24b0169f6e1b6fcaeece534e39dbd74e} 
+transaction\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+cp\+\_\+transaction}
+\item 
+\Hypertarget{structjournal__head_ac07a9a984b6e5de6212c7699cbe71895}\label{structjournal__head_ac07a9a984b6e5de6212c7699cbe71895} 
+struct \doxymbox{\hyperlink{structjournal__head}{journal\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+cpnext}
+\item 
+\Hypertarget{structjournal__head_a468eaf0e3a2a620500921795110f9355}\label{structjournal__head_a468eaf0e3a2a620500921795110f9355} 
+struct \doxymbox{\hyperlink{structjournal__head}{journal\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+cpprev}
+\item 
+\Hypertarget{structjournal__head_a9b8b2806194382ce9a0457619a080bd9}\label{structjournal__head_a9b8b2806194382ce9a0457619a080bd9} 
+struct \doxymbox{\hyperlink{structjbd2__buffer__trigger__type}{jbd2\+\_\+buffer\+\_\+trigger\+\_\+type}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+triggers}
+\item 
+\Hypertarget{structjournal__head_a91a6dfcf407549ba8bc2bbe66e738007}\label{structjournal__head_a91a6dfcf407549ba8bc2bbe66e738007} 
+struct \doxymbox{\hyperlink{structjbd2__buffer__trigger__type}{jbd2\+\_\+buffer\+\_\+trigger\+\_\+type}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+frozen\+\_\+triggers}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

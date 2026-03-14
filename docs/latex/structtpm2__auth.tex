@@ -1,0 +1,55 @@
+\doxysection{tpm2\+\_\+auth Struct Reference}
+\hypertarget{structtpm2__auth}{}\label{structtpm2__auth}\index{tpm2\_auth@{tpm2\_auth}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtpm2__auth_a57ccb16a2f6e332ad1573f49439f7584}\label{structtpm2__auth_a57ccb16a2f6e332ad1573f49439f7584} 
+u32 {\bfseries handle}
+\item 
+\Hypertarget{structtpm2__auth_a28ea3d016eb063dd48517eaeaa4db197}\label{structtpm2__auth_a28ea3d016eb063dd48517eaeaa4db197} 
+u32 {\bfseries session}
+\item 
+\Hypertarget{structtpm2__auth_a3540cc97e092bb6fa177dc50c1eb97cd}\label{structtpm2__auth_a3540cc97e092bb6fa177dc50c1eb97cd} 
+u8 {\bfseries our\+\_\+nonce} \+[32]\+
+\item 
+\Hypertarget{structtpm2__auth_af2d977cee0deee02cd753a5ac83f8779}\label{structtpm2__auth_af2d977cee0deee02cd753a5ac83f8779} 
+u8 {\bfseries tpm\+\_\+nonce} \+[32]\+
+\item 
+\Hypertarget{structtpm2__auth_a9f7afba18b9ddf62e8777a8150beab00}\label{structtpm2__auth_a9f7afba18b9ddf62e8777a8150beab00} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u8 {\bfseries salt} \+[32]\+\\
+\>u8 {\bfseries scratch} \+[32]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structtpm2__auth_ada5cd52d31499169fb9d8f2d00b40845}\label{structtpm2__auth_ada5cd52d31499169fb9d8f2d00b40845} 
+u8 {\bfseries session\+\_\+key} \+[32]\+
+\item 
+\Hypertarget{structtpm2__auth_a7dd26a3524ab03c087dd94a5c0bcd928}\label{structtpm2__auth_a7dd26a3524ab03c087dd94a5c0bcd928} 
+u8 {\bfseries passphrase} \+[32]\+
+\item 
+\Hypertarget{structtpm2__auth_a6f070fd1ddd18d93abd003e6f94040cd}\label{structtpm2__auth_a6f070fd1ddd18d93abd003e6f94040cd} 
+int {\bfseries passphrase\+\_\+len}
+\item 
+\Hypertarget{structtpm2__auth_a63ef6b6db431e4d6f700cb33c00f543f}\label{structtpm2__auth_a63ef6b6db431e4d6f700cb33c00f543f} 
+struct \doxymbox{\hyperlink{structcrypto__aes__ctx}{crypto\+\_\+aes\+\_\+ctx}} {\bfseries aes\+\_\+ctx}
+\item 
+\Hypertarget{structtpm2__auth_a361656b571dfe900e104366b0be2c3ea}\label{structtpm2__auth_a361656b571dfe900e104366b0be2c3ea} 
+u8 {\bfseries attrs}
+\item 
+\Hypertarget{structtpm2__auth_ac5d3102062391d7167767c42500a383c}\label{structtpm2__auth_ac5d3102062391d7167767c42500a383c} 
+\+\_\+\+\_\+be32 {\bfseries ordinal}
+\item 
+\Hypertarget{structtpm2__auth_a804b06960a7222c889975329310d204f}\label{structtpm2__auth_a804b06960a7222c889975329310d204f} 
+u32 {\bfseries name\+\_\+h} \+[3]\+
+\item 
+\Hypertarget{structtpm2__auth_a684ada190afcb7874503c84ad3c7ea47}\label{structtpm2__auth_a684ada190afcb7874503c84ad3c7ea47} 
+u8 {\bfseries name} \+[198]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

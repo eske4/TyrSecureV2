@@ -1,0 +1,52 @@
+\doxysection{ip\+\_\+tunnel\+\_\+key Struct Reference}
+\hypertarget{structip__tunnel__key}{}\label{structip__tunnel__key}\index{ip\_tunnel\_key@{ip\_tunnel\_key}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structip__tunnel__key_aa6e2320278f3eed2f935eaf16d85b9ce}\label{structip__tunnel__key_aa6e2320278f3eed2f935eaf16d85b9ce} 
+\+\_\+\+\_\+be64 {\bfseries tun\+\_\+id}
+\item 
+\Hypertarget{structip__tunnel__key_a64535931e69492d23f1cbb15d0e9eccf}\label{structip__tunnel__key_a64535931e69492d23f1cbb15d0e9eccf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_be32 {\bfseries src}\\
+\>\>\_\_be32 {\bfseries dst}\\
+\>\} {\bfseries ipv4}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries src}\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries dst}\\
+\>\} {\bfseries ipv6}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\item 
+\Hypertarget{structip__tunnel__key_aa262f79d7c3cfdc355efac64e34679c3}\label{structip__tunnel__key_aa262f79d7c3cfdc355efac64e34679c3} 
+long unsigned int {\bfseries tun\+\_\+flags} \+[1]\+
+\item 
+\Hypertarget{structip__tunnel__key_a3bd298ca803c38c4297bb8d48ba11064}\label{structip__tunnel__key_a3bd298ca803c38c4297bb8d48ba11064} 
+\+\_\+\+\_\+be32 {\bfseries label}
+\item 
+\Hypertarget{structip__tunnel__key_aad62713ccd74dd61d6f163aaa953c1bd}\label{structip__tunnel__key_aad62713ccd74dd61d6f163aaa953c1bd} 
+u32 {\bfseries nhid}
+\item 
+\Hypertarget{structip__tunnel__key_a839632b76d4f1c888c4ed3aca56bd53f}\label{structip__tunnel__key_a839632b76d4f1c888c4ed3aca56bd53f} 
+u8 {\bfseries tos}
+\item 
+\Hypertarget{structip__tunnel__key_ab1a78d5012d1718eb924f8827d51dbc1}\label{structip__tunnel__key_ab1a78d5012d1718eb924f8827d51dbc1} 
+u8 {\bfseries ttl}
+\item 
+\Hypertarget{structip__tunnel__key_ae1e9ffc079463ab5504acb7a32000ef1}\label{structip__tunnel__key_ae1e9ffc079463ab5504acb7a32000ef1} 
+\+\_\+\+\_\+be16 {\bfseries tp\+\_\+src}
+\item 
+\Hypertarget{structip__tunnel__key_af5507c78fbe248a6ade614ca29125351}\label{structip__tunnel__key_af5507c78fbe248a6ade614ca29125351} 
+\+\_\+\+\_\+be16 {\bfseries tp\+\_\+dst}
+\item 
+\Hypertarget{structip__tunnel__key_a9d0169278ea4d00fc6fb41189056b307}\label{structip__tunnel__key_a9d0169278ea4d00fc6fb41189056b307} 
+\+\_\+\+\_\+u8 {\bfseries flow\+\_\+flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\doxysection{mptcp\+\_\+subflow\+\_\+request\+\_\+sock Struct Reference}
+\hypertarget{structmptcp__subflow__request__sock}{}\label{structmptcp__subflow__request__sock}\index{mptcp\_subflow\_request\_sock@{mptcp\_subflow\_request\_sock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_a1a73ab486063b37d2d47468e20d3eef1}\label{structmptcp__subflow__request__sock_a1a73ab486063b37d2d47468e20d3eef1} 
+struct \doxymbox{\hyperlink{structtcp__request__sock}{tcp\+\_\+request\+\_\+sock}} {\bfseries sk}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_ab6976781f59a2f050b6247b4fc616a7e}\label{structmptcp__subflow__request__sock_ab6976781f59a2f050b6247b4fc616a7e} 
+u16 {\bfseries mp\+\_\+capable}:\+ 1
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_ad9d20c5fa15653d79819d02165faa281}\label{structmptcp__subflow__request__sock_ad9d20c5fa15653d79819d02165faa281} 
+u16 {\bfseries mp\+\_\+join}:\+ 1
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_a61b29745d3bbe6233a7e51b46bb4f473}\label{structmptcp__subflow__request__sock_a61b29745d3bbe6233a7e51b46bb4f473} 
+u16 {\bfseries backup}:\+ 1
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_a872fd2143f8282fd93be09ab39738dee}\label{structmptcp__subflow__request__sock_a872fd2143f8282fd93be09ab39738dee} 
+u16 {\bfseries request\+\_\+bkup}:\+ 1
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_ae5860a61aa0e07d7df7ce8c5ebaddc16}\label{structmptcp__subflow__request__sock_ae5860a61aa0e07d7df7ce8c5ebaddc16} 
+u16 {\bfseries csum\+\_\+reqd}:\+ 1
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_a0700114894ba1d2311f1312c75b05530}\label{structmptcp__subflow__request__sock_a0700114894ba1d2311f1312c75b05530} 
+u16 {\bfseries allow\+\_\+join\+\_\+id0}:\+ 1
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_ad2ccdce9a70329f4c63209a628ed6f31}\label{structmptcp__subflow__request__sock_ad2ccdce9a70329f4c63209a628ed6f31} 
+u8 {\bfseries local\+\_\+id}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_a9ed0b99f719ff485ad6d8a4437cc0a4a}\label{structmptcp__subflow__request__sock_a9ed0b99f719ff485ad6d8a4437cc0a4a} 
+u8 {\bfseries remote\+\_\+id}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_a3afde2a82e5c6ec67eed7c52cc9e93a5}\label{structmptcp__subflow__request__sock_a3afde2a82e5c6ec67eed7c52cc9e93a5} 
+u64 {\bfseries local\+\_\+key}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_ad63c35728f44be800f35bc90404cf42b}\label{structmptcp__subflow__request__sock_ad63c35728f44be800f35bc90404cf42b} 
+u64 {\bfseries idsn}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_aedb66d86d30902b25b2d50cf70596158}\label{structmptcp__subflow__request__sock_aedb66d86d30902b25b2d50cf70596158} 
+u32 {\bfseries token}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_aeb797b6561be0947d031698670747125}\label{structmptcp__subflow__request__sock_aeb797b6561be0947d031698670747125} 
+u32 {\bfseries ssn\+\_\+offset}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_a971bd4e34308e12e40c2b907ea957d4a}\label{structmptcp__subflow__request__sock_a971bd4e34308e12e40c2b907ea957d4a} 
+u64 {\bfseries thmac}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_aafc1dadd3ceb89af5f56a46343cdbd79}\label{structmptcp__subflow__request__sock_aafc1dadd3ceb89af5f56a46343cdbd79} 
+u32 {\bfseries local\+\_\+nonce}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_a837b916631bb406c4090d8c6ae46f66c}\label{structmptcp__subflow__request__sock_a837b916631bb406c4090d8c6ae46f66c} 
+u32 {\bfseries remote\+\_\+nonce}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_a261cf31ff3f9906d5b3daa93def804a5}\label{structmptcp__subflow__request__sock_a261cf31ff3f9906d5b3daa93def804a5} 
+struct \doxymbox{\hyperlink{structmptcp__sock}{mptcp\+\_\+sock}} \texorpdfstring{$\ast$}{*} {\bfseries msk}
+\item 
+\Hypertarget{structmptcp__subflow__request__sock_ade64fc91cda4a862faee004546ca9247}\label{structmptcp__subflow__request__sock_ade64fc91cda4a862faee004546ca9247} 
+struct \doxymbox{\hyperlink{structhlist__nulls__node}{hlist\+\_\+nulls\+\_\+node}} {\bfseries token\+\_\+node}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

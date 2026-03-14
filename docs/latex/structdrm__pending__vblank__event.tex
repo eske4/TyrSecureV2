@@ -1,0 +1,29 @@
+\doxysection{drm\+\_\+pending\+\_\+vblank\+\_\+event Struct Reference}
+\hypertarget{structdrm__pending__vblank__event}{}\label{structdrm__pending__vblank__event}\index{drm\_pending\_vblank\_event@{drm\_pending\_vblank\_event}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__pending__vblank__event_af74187ebe57df679d4949f0a7081eae2}\label{structdrm__pending__vblank__event_af74187ebe57df679d4949f0a7081eae2} 
+struct \doxymbox{\hyperlink{structdrm__pending__event}{drm\+\_\+pending\+\_\+event}} {\bfseries base}
+\item 
+\Hypertarget{structdrm__pending__vblank__event_a6d71ea29105ce7cb4cb49da586f55aa5}\label{structdrm__pending__vblank__event_a6d71ea29105ce7cb4cb49da586f55aa5} 
+unsigned int {\bfseries pipe}
+\item 
+\Hypertarget{structdrm__pending__vblank__event_ab4d229e1e56c086a0edda8fc67d3fcff}\label{structdrm__pending__vblank__event_ab4d229e1e56c086a0edda8fc67d3fcff} 
+u64 {\bfseries sequence}
+\item 
+\Hypertarget{structdrm__pending__vblank__event_a80a82459d2285af02a3b3064265a0ad1}\label{structdrm__pending__vblank__event_a80a82459d2285af02a3b3064265a0ad1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structdrm__event}{drm\_event}} {\bfseries base}\\
+\>struct \doxymbox{\hyperlink{structdrm__event__vblank}{drm\_event\_vblank}} {\bfseries vbl}\\
+\>struct \doxymbox{\hyperlink{structdrm__event__crtc__sequence}{drm\_event\_crtc\_sequence}} {\bfseries seq}\\
+\} {\bfseries event}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

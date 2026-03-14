@@ -1,0 +1,106 @@
+\doxysection{workqueue\+\_\+struct Struct Reference}
+\hypertarget{structworkqueue__struct}{}\label{structworkqueue__struct}\index{workqueue\_struct@{workqueue\_struct}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structworkqueue__struct_aa0c2f2938a85fbc56d7488a49cc73314}\label{structworkqueue__struct_aa0c2f2938a85fbc56d7488a49cc73314} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pwqs}
+\item 
+\Hypertarget{structworkqueue__struct_a1071978c400be1333d99a010c8a88bbe}\label{structworkqueue__struct_a1071978c400be1333d99a010c8a88bbe} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structworkqueue__struct_a880e8845a79130636d5b523da35c95cd}\label{structworkqueue__struct_a880e8845a79130636d5b523da35c95cd} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structworkqueue__struct_aae22841fedbba004696d517e63b05622}\label{structworkqueue__struct_aae22841fedbba004696d517e63b05622} 
+int {\bfseries work\+\_\+color}
+\item 
+\Hypertarget{structworkqueue__struct_afa6fb0ee0d0ba43d21bb05561f171347}\label{structworkqueue__struct_afa6fb0ee0d0ba43d21bb05561f171347} 
+int {\bfseries flush\+\_\+color}
+\item 
+\Hypertarget{structworkqueue__struct_a4c835ba2493576431c5095e280c3159a}\label{structworkqueue__struct_a4c835ba2493576431c5095e280c3159a} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nr\+\_\+pwqs\+\_\+to\+\_\+flush}
+\item 
+\Hypertarget{structworkqueue__struct_a556ceeac5d9987e302128f4f0d7cdbbc}\label{structworkqueue__struct_a556ceeac5d9987e302128f4f0d7cdbbc} 
+struct \doxymbox{\hyperlink{structwq__flusher}{wq\+\_\+flusher}} \texorpdfstring{$\ast$}{*} {\bfseries first\+\_\+flusher}
+\item 
+\Hypertarget{structworkqueue__struct_a2a0a406ca5f371a433252306fdd2e7ee}\label{structworkqueue__struct_a2a0a406ca5f371a433252306fdd2e7ee} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries flusher\+\_\+queue}
+\item 
+\Hypertarget{structworkqueue__struct_a264f18a8d900e926817134844306afa5}\label{structworkqueue__struct_a264f18a8d900e926817134844306afa5} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries flusher\+\_\+overflow}
+\item 
+\Hypertarget{structworkqueue__struct_ad211c85df9ea721b1b065f5ad3a1f651}\label{structworkqueue__struct_ad211c85df9ea721b1b065f5ad3a1f651} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries maydays}
+\item 
+\Hypertarget{structworkqueue__struct_a8ab2128d939fbdcf43b7cd675d378712}\label{structworkqueue__struct_a8ab2128d939fbdcf43b7cd675d378712} 
+struct \doxymbox{\hyperlink{structworker}{worker}} \texorpdfstring{$\ast$}{*} {\bfseries rescuer}
+\item 
+\Hypertarget{structworkqueue__struct_a96b0619f88ba33a8af94b709e184e35f}\label{structworkqueue__struct_a96b0619f88ba33a8af94b709e184e35f} 
+int {\bfseries nr\+\_\+drainers}
+\item 
+\Hypertarget{structworkqueue__struct_a833e44213efaa8a2e0b431e5bbdca5fc}\label{structworkqueue__struct_a833e44213efaa8a2e0b431e5bbdca5fc} 
+int {\bfseries max\+\_\+active}
+\item 
+\Hypertarget{structworkqueue__struct_ab73532b48f84c3fa1f82ec33fb10468c}\label{structworkqueue__struct_ab73532b48f84c3fa1f82ec33fb10468c} 
+int {\bfseries min\+\_\+active}
+\item 
+\Hypertarget{structworkqueue__struct_a9df4b96acfd642c54810fbba42e8bbce}\label{structworkqueue__struct_a9df4b96acfd642c54810fbba42e8bbce} 
+int {\bfseries saved\+\_\+max\+\_\+active}
+\item 
+\Hypertarget{structworkqueue__struct_a05d13ad5c219fef74c740f4da842f3e4}\label{structworkqueue__struct_a05d13ad5c219fef74c740f4da842f3e4} 
+int {\bfseries saved\+\_\+min\+\_\+active}
+\item 
+\Hypertarget{structworkqueue__struct_aba47541412e83afa1bb17c4e9ae1b8f1}\label{structworkqueue__struct_aba47541412e83afa1bb17c4e9ae1b8f1} 
+struct \doxymbox{\hyperlink{structworkqueue__attrs}{workqueue\+\_\+attrs}} \texorpdfstring{$\ast$}{*} {\bfseries unbound\+\_\+attrs}
+\item 
+\Hypertarget{structworkqueue__struct_ad96e9829b443fc28bd9aaed8e73d44f1}\label{structworkqueue__struct_ad96e9829b443fc28bd9aaed8e73d44f1} 
+struct \doxymbox{\hyperlink{structpool__workqueue}{pool\+\_\+workqueue}} \texorpdfstring{$\ast$}{*} {\bfseries dfl\+\_\+pwq}
+\item 
+\Hypertarget{structworkqueue__struct_af9aafdfe225d88a55a0e9e7251fa5dce}\label{structworkqueue__struct_af9aafdfe225d88a55a0e9e7251fa5dce} 
+struct \doxymbox{\hyperlink{structwq__device}{wq\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries wq\+\_\+dev}
+\item 
+\Hypertarget{structworkqueue__struct_aaa488f3c82d5fc11e4fc5e4b67ca6e1f}\label{structworkqueue__struct_aaa488f3c82d5fc11e4fc5e4b67ca6e1f} 
+char {\bfseries name} \+[32]\+
+\item 
+\Hypertarget{structworkqueue__struct_aa6573c94978a7d8919bebcc13fd377e0}\label{structworkqueue__struct_aa6573c94978a7d8919bebcc13fd377e0} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structworkqueue__struct_ad1a9c3673ca0df48d55477e201dc5007}\label{structworkqueue__struct_ad1a9c3673ca0df48d55477e201dc5007} 
+long :\+ 64
+\item 
+\Hypertarget{structworkqueue__struct_a8eaeb7f88630f052eb6d570f7a5825cd}\label{structworkqueue__struct_a8eaeb7f88630f052eb6d570f7a5825cd} 
+long :\+ 64
+\item 
+\Hypertarget{structworkqueue__struct_acb8741d7fb4b65ca635abd050a23110f}\label{structworkqueue__struct_acb8741d7fb4b65ca635abd050a23110f} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structworkqueue__struct_ab69f6f35efa7809f553dfac550f47831}\label{structworkqueue__struct_ab69f6f35efa7809f553dfac550f47831} 
+struct \doxymbox{\hyperlink{structpool__workqueue}{pool\+\_\+workqueue}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+pwq}
+\item 
+\Hypertarget{structworkqueue__struct_a817426577aa4c3cd5aabc043516a2a0f}\label{structworkqueue__struct_a817426577aa4c3cd5aabc043516a2a0f} 
+struct \doxymbox{\hyperlink{structwq__node__nr__active}{wq\+\_\+node\+\_\+nr\+\_\+active}} \texorpdfstring{$\ast$}{*} {\bfseries node\+\_\+nr\+\_\+active} \+[0]\+
+\item 
+\Hypertarget{structworkqueue__struct_af313cd632512e82dfdb923818bfe545d}\label{structworkqueue__struct_af313cd632512e82dfdb923818bfe545d} 
+long :\+ 64
+\item 
+\Hypertarget{structworkqueue__struct_a505c9d07858dc2f21ac159b9dc30d130}\label{structworkqueue__struct_a505c9d07858dc2f21ac159b9dc30d130} 
+long :\+ 64
+\item 
+\Hypertarget{structworkqueue__struct_a040bf8b3f8a3d6329a5255562ce533c5}\label{structworkqueue__struct_a040bf8b3f8a3d6329a5255562ce533c5} 
+long :\+ 64
+\item 
+\Hypertarget{structworkqueue__struct_a0bb0084d24e96f53d7227c27558704b4}\label{structworkqueue__struct_a0bb0084d24e96f53d7227c27558704b4} 
+long :\+ 64
+\item 
+\Hypertarget{structworkqueue__struct_a8a2d6603de90ae8e9790c293570e1f23}\label{structworkqueue__struct_a8a2d6603de90ae8e9790c293570e1f23} 
+long :\+ 64
+\item 
+\Hypertarget{structworkqueue__struct_a917b8715b8857ec218b8bfb6bbabd737}\label{structworkqueue__struct_a917b8715b8857ec218b8bfb6bbabd737} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

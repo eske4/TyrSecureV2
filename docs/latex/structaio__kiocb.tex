@@ -1,0 +1,39 @@
+\doxysection{aio\+\_\+kiocb Struct Reference}
+\hypertarget{structaio__kiocb}{}\label{structaio__kiocb}\index{aio\_kiocb@{aio\_kiocb}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structaio__kiocb_a1c6782bf54138d70d24ceff90865b615}\label{structaio__kiocb_a1c6782bf54138d70d24ceff90865b615} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries ki\_filp}\\
+\>struct \doxymbox{\hyperlink{structkiocb}{kiocb}} {\bfseries rw}\\
+\>struct \doxymbox{\hyperlink{structfsync__iocb}{fsync\_iocb}} {\bfseries fsync}\\
+\>struct \doxymbox{\hyperlink{structpoll__iocb}{poll\_iocb}} {\bfseries poll}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structaio__kiocb_a035fe936b528b55a255023bed4592269}\label{structaio__kiocb_a035fe936b528b55a255023bed4592269} 
+struct \doxymbox{\hyperlink{structkioctx}{kioctx}} \texorpdfstring{$\ast$}{*} {\bfseries ki\+\_\+ctx}
+\item 
+\Hypertarget{structaio__kiocb_a8b1db9ee39f3ce3bc8e174eaa9c709c7}\label{structaio__kiocb_a8b1db9ee39f3ce3bc8e174eaa9c709c7} 
+kiocb\+\_\+cancel\+\_\+fn \texorpdfstring{$\ast$}{*} {\bfseries ki\+\_\+cancel}
+\item 
+\Hypertarget{structaio__kiocb_a314f436b3c42b4baa3ed16390e1da308}\label{structaio__kiocb_a314f436b3c42b4baa3ed16390e1da308} 
+struct \doxymbox{\hyperlink{structio__event}{io\+\_\+event}} {\bfseries ki\+\_\+res}
+\item 
+\Hypertarget{structaio__kiocb_aa8000ce57da9f18c831f2f6446e042dd}\label{structaio__kiocb_aa8000ce57da9f18c831f2f6446e042dd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ki\+\_\+list}
+\item 
+\Hypertarget{structaio__kiocb_a398d00bd418b9ccaeff6b8d75faad9f3}\label{structaio__kiocb_a398d00bd418b9ccaeff6b8d75faad9f3} 
+refcount\+\_\+t {\bfseries ki\+\_\+refcnt}
+\item 
+\Hypertarget{structaio__kiocb_a314e3774da931e0eb6c5296e48f44833}\label{structaio__kiocb_a314e3774da931e0eb6c5296e48f44833} 
+struct \doxymbox{\hyperlink{structeventfd__ctx}{eventfd\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries ki\+\_\+eventfd}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

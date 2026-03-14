@@ -1,0 +1,46 @@
+\doxysection{inet\+\_\+peer Struct Reference}
+\hypertarget{structinet__peer}{}\label{structinet__peer}\index{inet\_peer@{inet\_peer}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinet__peer_aa5642c2d8c4fb35768f2cf7c62b509c1}\label{structinet__peer_aa5642c2d8c4fb35768f2cf7c62b509c1} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries rb\+\_\+node}
+\item 
+\Hypertarget{structinet__peer_a208e756e1357a7be214cb4f9a309ec41}\label{structinet__peer_a208e756e1357a7be214cb4f9a309ec41} 
+struct \doxymbox{\hyperlink{structinetpeer__addr}{inetpeer\+\_\+addr}} {\bfseries daddr}
+\item 
+\Hypertarget{structinet__peer_adc730b99227089349e0b2eab337387fd}\label{structinet__peer_adc730b99227089349e0b2eab337387fd} 
+u32 {\bfseries metrics} \+[17]\+
+\item 
+\Hypertarget{structinet__peer_a258b0b61219d7e9e7e28391fcd373e0f}\label{structinet__peer_a258b0b61219d7e9e7e28391fcd373e0f} 
+u32 {\bfseries rate\+\_\+tokens}
+\item 
+\Hypertarget{structinet__peer_a7434aca6f35f523518b145d2a4d22f3d}\label{structinet__peer_a7434aca6f35f523518b145d2a4d22f3d} 
+u32 {\bfseries n\+\_\+redirects}
+\item 
+\Hypertarget{structinet__peer_a1ab709550d6eada3535294f8d03e46ed}\label{structinet__peer_a1ab709550d6eada3535294f8d03e46ed} 
+long unsigned int {\bfseries rate\+\_\+last}
+\item 
+\Hypertarget{structinet__peer_a7ee964d4e169bc1c63bd6815e67671c8}\label{structinet__peer_a7ee964d4e169bc1c63bd6815e67671c8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unioninet__peer_1_1_0d146015073047014323241204004322023011241170262324_a00d0751e5f9789a3340b08c316753708}\label{unioninet__peer_1_1_0d146015073047014323241204004322023011241170262324_a00d0751e5f9789a3340b08c316753708} 
+\>struct \{\\
+\>\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries rid}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries rcu}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinet__peer_abb4d8bcf1d7070865f31634edbfb039b}\label{structinet__peer_abb4d8bcf1d7070865f31634edbfb039b} 
+\+\_\+\+\_\+u32 {\bfseries dtime}
+\item 
+\Hypertarget{structinet__peer_a7cd57456137fe8c8c54ed871630641e3}\label{structinet__peer_a7cd57456137fe8c8c54ed871630641e3} 
+refcount\+\_\+t {\bfseries refcnt}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

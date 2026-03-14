@@ -1,0 +1,211 @@
+\doxysection{audit\+\_\+context Struct Reference}
+\hypertarget{structaudit__context}{}\label{structaudit__context}\index{audit\_context@{audit\_context}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structaudit__context_ae0e4fc0e798a43c041e558024434b7ba}\label{structaudit__context_ae0e4fc0e798a43c041e558024434b7ba} 
+enum \{ {\bfseries AUDIT\+\_\+\+CTX\+\_\+\+UNUSED} = 0
+, {\bfseries AUDIT\+\_\+\+CTX\+\_\+\+SYSCALL} = 1
+, {\bfseries AUDIT\+\_\+\+CTX\+\_\+\+URING} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structaudit__context_a2876f58c35fc4eae6a4239876e9572bd}\label{structaudit__context_a2876f58c35fc4eae6a4239876e9572bd} 
+int {\bfseries dummy}
+\item 
+\Hypertarget{structaudit__context_add148d9943d64c1225e3e1f4969991f4}\label{structaudit__context_add148d9943d64c1225e3e1f4969991f4} 
+enum audit\+\_\+context::\+ \{ ... \}  {\bfseries context}
+\item 
+\Hypertarget{structaudit__context_a0c68b7685dd232231410127e0b07668b}\label{structaudit__context_a0c68b7685dd232231410127e0b07668b} 
+enum audit\+\_\+state {\bfseries state}
+\item 
+\Hypertarget{structaudit__context_add4fc7cff89762010b997a8cc0e406f4}\label{structaudit__context_add4fc7cff89762010b997a8cc0e406f4} 
+enum audit\+\_\+state {\bfseries current\+\_\+state}
+\item 
+\Hypertarget{structaudit__context_a773fbde2bd93c6064d40c8e4bb345bd6}\label{structaudit__context_a773fbde2bd93c6064d40c8e4bb345bd6} 
+struct \doxymbox{\hyperlink{structaudit__stamp}{audit\+\_\+stamp}} {\bfseries stamp}
+\item 
+\Hypertarget{structaudit__context_a727e367161054fa04646d5ff188df207}\label{structaudit__context_a727e367161054fa04646d5ff188df207} 
+int {\bfseries major}
+\item 
+\Hypertarget{structaudit__context_a8a11a22604df1d119ec62c5a846c4553}\label{structaudit__context_a8a11a22604df1d119ec62c5a846c4553} 
+int {\bfseries uring\+\_\+op}
+\item 
+\Hypertarget{structaudit__context_a5a4d8930d6d1a9f2ab8efe2276359609}\label{structaudit__context_a5a4d8930d6d1a9f2ab8efe2276359609} 
+long unsigned int {\bfseries argv} \+[4]\+
+\item 
+\Hypertarget{structaudit__context_a9fe9eda3f6ba42cfb054cd24398bc84f}\label{structaudit__context_a9fe9eda3f6ba42cfb054cd24398bc84f} 
+long int {\bfseries return\+\_\+code}
+\item 
+\Hypertarget{structaudit__context_a953db12c9970d2bc1b1840745b18d038}\label{structaudit__context_a953db12c9970d2bc1b1840745b18d038} 
+u64 {\bfseries prio}
+\item 
+\Hypertarget{structaudit__context_aa8d203f9e1170b3154148bf6adb1b04b}\label{structaudit__context_aa8d203f9e1170b3154148bf6adb1b04b} 
+int {\bfseries return\+\_\+valid}
+\item 
+\Hypertarget{structaudit__context_a6c994f1e75d76160e02558b782503a38}\label{structaudit__context_a6c994f1e75d76160e02558b782503a38} 
+struct \doxymbox{\hyperlink{structaudit__names}{audit\+\_\+names}} {\bfseries preallocated\+\_\+names} \+[5]\+
+\item 
+\Hypertarget{structaudit__context_a0b1d7f95ac474c7f070268a4ad88e537}\label{structaudit__context_a0b1d7f95ac474c7f070268a4ad88e537} 
+int {\bfseries name\+\_\+count}
+\item 
+\Hypertarget{structaudit__context_abeb294c162a90634c0a37ce9d135aeef}\label{structaudit__context_abeb294c162a90634c0a37ce9d135aeef} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries names\+\_\+list}
+\item 
+\Hypertarget{structaudit__context_ad521d2d85b720b4db9524ae83f8d9097}\label{structaudit__context_ad521d2d85b720b4db9524ae83f8d9097} 
+char \texorpdfstring{$\ast$}{*} {\bfseries filterkey}
+\item 
+\Hypertarget{structaudit__context_a983cee40ca7aa55f9b35d4163fd8c4ee}\label{structaudit__context_a983cee40ca7aa55f9b35d4163fd8c4ee} 
+struct \doxymbox{\hyperlink{structpath}{path}} {\bfseries pwd}
+\item 
+\Hypertarget{structaudit__context_a476eff8c2cee7d158bf1f82bcd0e84cb}\label{structaudit__context_a476eff8c2cee7d158bf1f82bcd0e84cb} 
+struct \doxymbox{\hyperlink{structaudit__aux__data}{audit\+\_\+aux\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries aux}
+\item 
+\Hypertarget{structaudit__context_a43f6dacde063becd55310945e0dd01a8}\label{structaudit__context_a43f6dacde063becd55310945e0dd01a8} 
+struct \doxymbox{\hyperlink{structaudit__aux__data}{audit\+\_\+aux\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries aux\+\_\+pids}
+\item 
+\Hypertarget{structaudit__context_a000bcd43fdabdbaed3c393208abe8032}\label{structaudit__context_a000bcd43fdabdbaed3c393208abe8032} 
+struct \doxymbox{\hyperlink{struct____kernel__sockaddr__storage}{\+\_\+\+\_\+kernel\+\_\+sockaddr\+\_\+storage}} \texorpdfstring{$\ast$}{*} {\bfseries sockaddr}
+\item 
+\Hypertarget{structaudit__context_a360e4c087c94503166bf179ced2c2a5c}\label{structaudit__context_a360e4c087c94503166bf179ced2c2a5c} 
+size\+\_\+t {\bfseries sockaddr\+\_\+len}
+\item 
+\Hypertarget{structaudit__context_a8cedc507f574b8097c64c9002b5f7b7a}\label{structaudit__context_a8cedc507f574b8097c64c9002b5f7b7a} 
+pid\+\_\+t {\bfseries ppid}
+\item 
+\Hypertarget{structaudit__context_a1ddbc9bf459eda39d6912080771e7f99}\label{structaudit__context_a1ddbc9bf459eda39d6912080771e7f99} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries uid}
+\item 
+\Hypertarget{structaudit__context_a6caeaea229128cd6b2a7b71a0d1538b9}\label{structaudit__context_a6caeaea229128cd6b2a7b71a0d1538b9} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries euid}
+\item 
+\Hypertarget{structaudit__context_a5a6cd45a553f1f15bbb9b09ca610d484}\label{structaudit__context_a5a6cd45a553f1f15bbb9b09ca610d484} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries suid}
+\item 
+\Hypertarget{structaudit__context_abeaee34af7473df4232feee288feaa47}\label{structaudit__context_abeaee34af7473df4232feee288feaa47} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries fsuid}
+\item 
+\Hypertarget{structaudit__context_a3afc9e349e9e13980928e0239c3cc8a4}\label{structaudit__context_a3afc9e349e9e13980928e0239c3cc8a4} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries gid}
+\item 
+\Hypertarget{structaudit__context_aa634ebf667b9df4566fdc1d04a86bf21}\label{structaudit__context_aa634ebf667b9df4566fdc1d04a86bf21} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries egid}
+\item 
+\Hypertarget{structaudit__context_a38ab56b1742982dd21cbb56910d9b59d}\label{structaudit__context_a38ab56b1742982dd21cbb56910d9b59d} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries sgid}
+\item 
+\Hypertarget{structaudit__context_adee95a55bb30a556be529e6c3706dde3}\label{structaudit__context_adee95a55bb30a556be529e6c3706dde3} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries fsgid}
+\item 
+\Hypertarget{structaudit__context_a161418f46f7d6b9785e28dd7441481b8}\label{structaudit__context_a161418f46f7d6b9785e28dd7441481b8} 
+long unsigned int {\bfseries personality}
+\item 
+\Hypertarget{structaudit__context_a4688163eb5ff011a0dd2d11435ca877a}\label{structaudit__context_a4688163eb5ff011a0dd2d11435ca877a} 
+int {\bfseries arch}
+\item 
+\Hypertarget{structaudit__context_aff14968d8bd05f6c25c027c0e017a6a3}\label{structaudit__context_aff14968d8bd05f6c25c027c0e017a6a3} 
+pid\+\_\+t {\bfseries target\+\_\+pid}
+\item 
+\Hypertarget{structaudit__context_a1f9a00bde7633ad7fac18da8f92dd2e9}\label{structaudit__context_a1f9a00bde7633ad7fac18da8f92dd2e9} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries target\+\_\+auid}
+\item 
+\Hypertarget{structaudit__context_aef6cb9af0fab5b544e42598728c38693}\label{structaudit__context_aef6cb9af0fab5b544e42598728c38693} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries target\+\_\+uid}
+\item 
+\Hypertarget{structaudit__context_aa5926ba99052700fe14bf321abc7075c}\label{structaudit__context_aa5926ba99052700fe14bf321abc7075c} 
+unsigned int {\bfseries target\+\_\+sessionid}
+\item 
+\Hypertarget{structaudit__context_a9020ba98e9fc27c8aec67a473a62fe55}\label{structaudit__context_a9020ba98e9fc27c8aec67a473a62fe55} 
+struct \doxymbox{\hyperlink{structlsm__prop}{lsm\+\_\+prop}} {\bfseries target\+\_\+ref}
+\item 
+\Hypertarget{structaudit__context_a3aaa7a2ae7676b6cbb0c5e1c22b323cd}\label{structaudit__context_a3aaa7a2ae7676b6cbb0c5e1c22b323cd} 
+char {\bfseries target\+\_\+comm} \+[16]\+
+\item 
+\Hypertarget{structaudit__context_a58e8ea38d5466f603febc9774f6811a9}\label{structaudit__context_a58e8ea38d5466f603febc9774f6811a9} 
+struct \doxymbox{\hyperlink{structaudit__tree__refs}{audit\+\_\+tree\+\_\+refs}} \texorpdfstring{$\ast$}{*} {\bfseries trees}
+\item 
+\Hypertarget{structaudit__context_abfaff17c8668f16c98fe0107fccbc5d7}\label{structaudit__context_abfaff17c8668f16c98fe0107fccbc5d7} 
+struct \doxymbox{\hyperlink{structaudit__tree__refs}{audit\+\_\+tree\+\_\+refs}} \texorpdfstring{$\ast$}{*} {\bfseries first\+\_\+trees}
+\item 
+\Hypertarget{structaudit__context_a6c64b70c7f7460306bc21c2d76c1d278}\label{structaudit__context_a6c64b70c7f7460306bc21c2d76c1d278} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries killed\+\_\+trees}
+\item 
+\Hypertarget{structaudit__context_ab87bbc9d19dc4c1bebd53010b35a9ed3}\label{structaudit__context_ab87bbc9d19dc4c1bebd53010b35a9ed3} 
+int {\bfseries tree\+\_\+count}
+\item 
+\Hypertarget{structaudit__context_a990c65b6bae9d10ef0e43c6ea17878fd}\label{structaudit__context_a990c65b6bae9d10ef0e43c6ea17878fd} 
+int {\bfseries type}
+\item 
+\Hypertarget{structaudit__context_ae8e6bf3a7850a4a1ff00f915047c59cb}\label{structaudit__context_ae8e6bf3a7850a4a1ff00f915047c59cb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>int {\bfseries nargs}\\
+\>\>long int {\bfseries args} \+[6]\+\\
+\>\} {\bfseries socketcall}\\
+\>struct \{\\
+\>\>\doxymbox{\hyperlink{structkuid__t}{kuid\_t}} {\bfseries uid}\\
+\>\>\doxymbox{\hyperlink{structkgid__t}{kgid\_t}} {\bfseries gid}\\
+\>\>umode\_t {\bfseries mode}\\
+\>\>struct \doxymbox{\hyperlink{structlsm__prop}{lsm\_prop}} {\bfseries oprop}\\
+\>\>int {\bfseries has\_perm}\\
+\>\>uid\_t {\bfseries perm\_uid}\\
+\>\>gid\_t {\bfseries perm\_gid}\\
+\>\>umode\_t {\bfseries perm\_mode}\\
+\>\>long unsigned int {\bfseries qbytes}\\
+\>\} {\bfseries ipc}\\
+\>struct \{\\
+\>\>mqd\_t {\bfseries mqdes}\\
+\>\>struct \doxymbox{\hyperlink{structmq__attr}{mq\_attr}} {\bfseries mqstat}\\
+\>\} {\bfseries mq\_getsetattr}\\
+\>struct \{\\
+\>\>mqd\_t {\bfseries mqdes}\\
+\>\>int {\bfseries sigev\_signo}\\
+\>\} {\bfseries mq\_notify}\\
+\>struct \{\\
+\>\>mqd\_t {\bfseries mqdes}\\
+\>\>size\_t {\bfseries msg\_len}\\
+\>\>unsigned int {\bfseries msg\_prio}\\
+\>\>struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries abs\_timeout}\\
+\>\} {\bfseries mq\_sendrecv}\\
+\>struct \{\\
+\>\>int {\bfseries oflag}\\
+\>\>umode\_t {\bfseries mode}\\
+\>\>struct \doxymbox{\hyperlink{structmq__attr}{mq\_attr}} {\bfseries attr}\\
+\>\} {\bfseries mq\_open}\\
+\>struct \{\\
+\>\>pid\_t {\bfseries pid}\\
+\>\>struct \doxymbox{\hyperlink{structaudit__cap__data}{audit\_cap\_data}} {\bfseries cap}\\
+\>\} {\bfseries capset}\\
+\>struct \{\\
+\>\>int {\bfseries fd}\\
+\>\>int {\bfseries flags}\\
+\>\} {\bfseries mmap}\\
+\>struct \doxymbox{\hyperlink{structopen__how}{open\_how}} {\bfseries openat2}\\
+\>struct \{\\
+\>\>int {\bfseries argc}\\
+\>\} {\bfseries execve}\\
+\>struct \{\\
+\>\>const char \texorpdfstring{$\ast$}{*} {\bfseries name}\\
+\>\} {\bfseries module}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structaudit__ntp__data}{audit\_ntp\_data}} {\bfseries ntp\_data}\\
+\>\>struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries tk\_injoffset}\\
+\>\} {\bfseries time}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structaudit__context_a893c14b2119c38937c214f3c338d451b}\label{structaudit__context_a893c14b2119c38937c214f3c338d451b} 
+int {\bfseries fds} \+[2]\+
+\item 
+\Hypertarget{structaudit__context_adb02f307459a6586e9ca4982e7d158b3}\label{structaudit__context_adb02f307459a6586e9ca4982e7d158b3} 
+struct \doxymbox{\hyperlink{structaudit__proctitle}{audit\+\_\+proctitle}} {\bfseries proctitle}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

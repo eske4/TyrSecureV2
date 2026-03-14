@@ -1,0 +1,61 @@
+\doxysection{file\+\_\+system\+\_\+type Struct Reference}
+\hypertarget{structfile__system__type}{}\label{structfile__system__type}\index{file\_system\_type@{file\_system\_type}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfile__system__type_a23f5018839393e89f97067fded4e7117}\label{structfile__system__type_a23f5018839393e89f97067fded4e7117} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structfile__system__type_aabb551d1516b02fde9225cbe45f16707}\label{structfile__system__type_aabb551d1516b02fde9225cbe45f16707} 
+int {\bfseries fs\+\_\+flags}
+\item 
+\Hypertarget{structfile__system__type_af52e2601fcf942d5776639ae72f720d0}\label{structfile__system__type_af52e2601fcf942d5776639ae72f720d0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+fs\+\_\+context} )(struct \doxymbox{\hyperlink{structfs__context}{fs\+\_\+context}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfile__system__type_a0f35146d603e424fa5e2dbc261c3c591}\label{structfile__system__type_a0f35146d603e424fa5e2dbc261c3c591} 
+const struct \doxymbox{\hyperlink{structfs__parameter__spec}{fs\+\_\+parameter\+\_\+spec}} \texorpdfstring{$\ast$}{*} {\bfseries parameters}
+\item 
+\Hypertarget{structfile__system__type_a84aadafe8e5536b5aff8eb4c22bba5f5}\label{structfile__system__type_a84aadafe8e5536b5aff8eb4c22bba5f5} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries mount} )(struct \doxymbox{\hyperlink{structfile__system__type}{file\+\_\+system\+\_\+type}} \texorpdfstring{$\ast$}{*}, int, const char \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfile__system__type_a358d787f70718c2bd623e0ae7c01bc19}\label{structfile__system__type_a358d787f70718c2bd623e0ae7c01bc19} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries kill\+\_\+sb} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfile__system__type_abd1a339d6682057ae59a3858eebd215f}\label{structfile__system__type_abd1a339d6682057ae59a3858eebd215f} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structfile__system__type_a7891d2047cb0ad325081cf5589f3a382}\label{structfile__system__type_a7891d2047cb0ad325081cf5589f3a382} 
+struct \doxymbox{\hyperlink{structfile__system__type}{file\+\_\+system\+\_\+type}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\item 
+\Hypertarget{structfile__system__type_ac62bcbdd27fecc37d1502fca556d4327}\label{structfile__system__type_ac62bcbdd27fecc37d1502fca556d4327} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries fs\+\_\+supers}
+\item 
+\Hypertarget{structfile__system__type_a729c6625cd137e7f8b591b48b699919b}\label{structfile__system__type_a729c6625cd137e7f8b591b48b699919b} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries s\+\_\+lock\+\_\+key}
+\item 
+\Hypertarget{structfile__system__type_a3b391f617b7bb99e6d2a6e56f38ccc28}\label{structfile__system__type_a3b391f617b7bb99e6d2a6e56f38ccc28} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries s\+\_\+umount\+\_\+key}
+\item 
+\Hypertarget{structfile__system__type_a1134cea0733d8726b60b9390fc07884e}\label{structfile__system__type_a1134cea0733d8726b60b9390fc07884e} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries s\+\_\+vfs\+\_\+rename\+\_\+key}
+\item 
+\Hypertarget{structfile__system__type_ac1d17f7820217a88c78efa5a94c20298}\label{structfile__system__type_ac1d17f7820217a88c78efa5a94c20298} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries s\+\_\+writers\+\_\+key} \+[3]\+
+\item 
+\Hypertarget{structfile__system__type_aa60cbd49d05e7bf8738e18c79a0fbd55}\label{structfile__system__type_aa60cbd49d05e7bf8738e18c79a0fbd55} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries i\+\_\+lock\+\_\+key}
+\item 
+\Hypertarget{structfile__system__type_ad2118a32449ec92263224d39f1c27e52}\label{structfile__system__type_ad2118a32449ec92263224d39f1c27e52} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries i\+\_\+mutex\+\_\+key}
+\item 
+\Hypertarget{structfile__system__type_acc7178e52866b1cb31772e09f3b5ccc7}\label{structfile__system__type_acc7178e52866b1cb31772e09f3b5ccc7} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries invalidate\+\_\+lock\+\_\+key}
+\item 
+\Hypertarget{structfile__system__type_aae266a6c6a2754b8b518af66a7524ec6}\label{structfile__system__type_aae266a6c6a2754b8b518af66a7524ec6} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries i\+\_\+mutex\+\_\+dir\+\_\+key}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

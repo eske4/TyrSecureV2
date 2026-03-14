@@ -1,0 +1,46 @@
+\doxysection{iommu\+\_\+domain\+\_\+ops Struct Reference}
+\hypertarget{structiommu__domain__ops}{}\label{structiommu__domain__ops}\index{iommu\_domain\_ops@{iommu\_domain\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structiommu__domain__ops_a7919a4b993ee788862633d32b4272016}\label{structiommu__domain__ops_a7919a4b993ee788862633d32b4272016} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries attach\+\_\+dev} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__domain__ops_af2305071aedae70ef7c89f5b5426353f}\label{structiommu__domain__ops_af2305071aedae70ef7c89f5b5426353f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+dev\+\_\+pasid} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, ioasid\+\_\+t, struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__domain__ops_a9717e962bb17912f18c099c4ca5d052f}\label{structiommu__domain__ops_a9717e962bb17912f18c099c4ca5d052f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+pages} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, long unsigned int, phys\+\_\+addr\+\_\+t, size\+\_\+t, size\+\_\+t, int, gfp\+\_\+t, size\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__domain__ops_a9a0cce9ffc91f14b1bda9cfedd15746e}\label{structiommu__domain__ops_a9a0cce9ffc91f14b1bda9cfedd15746e} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries unmap\+\_\+pages} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, long unsigned int, size\+\_\+t, size\+\_\+t, struct \doxymbox{\hyperlink{structiommu__iotlb__gather}{iommu\+\_\+iotlb\+\_\+gather}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__domain__ops_a0c99dcafaa7dad6d883e8a3e87242e1d}\label{structiommu__domain__ops_a0c99dcafaa7dad6d883e8a3e87242e1d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+iotlb\+\_\+all} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__domain__ops_abc5c70300bf853e892d601551d01492c}\label{structiommu__domain__ops_abc5c70300bf853e892d601551d01492c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries iotlb\+\_\+sync\+\_\+map} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, long unsigned int, size\+\_\+t)
+\item 
+\Hypertarget{structiommu__domain__ops_a6b482d40a016f7e0609f2c70ed6e330c}\label{structiommu__domain__ops_a6b482d40a016f7e0609f2c70ed6e330c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries iotlb\+\_\+sync} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiommu__iotlb__gather}{iommu\+\_\+iotlb\+\_\+gather}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__domain__ops_a912e57ee0b4a62b116dee1e62d8e14df}\label{structiommu__domain__ops_a912e57ee0b4a62b116dee1e62d8e14df} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cache\+\_\+invalidate\+\_\+user} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiommu__user__data__array}{iommu\+\_\+user\+\_\+data\+\_\+array}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__domain__ops_a883e6617861afc8c1c92dfd4f8c8b046}\label{structiommu__domain__ops_a883e6617861afc8c1c92dfd4f8c8b046} 
+phys\+\_\+addr\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries iova\+\_\+to\+\_\+phys} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t)
+\item 
+\Hypertarget{structiommu__domain__ops_a140e4a80966aa5393b921d555aeac765}\label{structiommu__domain__ops_a140e4a80966aa5393b921d555aeac765} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries enforce\+\_\+cache\+\_\+coherency} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__domain__ops_a5bac0d608b9af37c6e114decbc3f89f1}\label{structiommu__domain__ops_a5bac0d608b9af37c6e114decbc3f89f1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+pgtable\+\_\+quirks} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structiommu__domain__ops_a620de84557880175077a996ace2ea32a}\label{structiommu__domain__ops_a620de84557880175077a996ace2ea32a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free} )(struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

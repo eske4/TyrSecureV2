@@ -1,0 +1,33 @@
+\doxysection{mptcp\+\_\+subflow\+\_\+addrs Struct Reference}
+\hypertarget{structmptcp__subflow__addrs}{}\label{structmptcp__subflow__addrs}\index{mptcp\_subflow\_addrs@{mptcp\_subflow\_addrs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmptcp__subflow__addrs_a35b6e057b6da1999ebb2972c17420b7f}\label{structmptcp__subflow__addrs_a35b6e057b6da1999ebb2972c17420b7f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_kernel\_sa\_family\_t {\bfseries sa\_family}\\
+\>struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} {\bfseries sa\_local}\\
+\>struct \doxymbox{\hyperlink{structsockaddr__in}{sockaddr\_in}} {\bfseries sin\_local}\\
+\>struct \doxymbox{\hyperlink{structsockaddr__in6}{sockaddr\_in6}} {\bfseries sin6\_local}\\
+\>struct \doxymbox{\hyperlink{struct____kernel__sockaddr__storage}{\_\_kernel\_sockaddr\_storage}} {\bfseries ss\_local}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmptcp__subflow__addrs_a03d7d61ab2d0018dbbacbaf639f744e6}\label{structmptcp__subflow__addrs_a03d7d61ab2d0018dbbacbaf639f744e6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} {\bfseries sa\_remote}\\
+\>struct \doxymbox{\hyperlink{structsockaddr__in}{sockaddr\_in}} {\bfseries sin\_remote}\\
+\>struct \doxymbox{\hyperlink{structsockaddr__in6}{sockaddr\_in6}} {\bfseries sin6\_remote}\\
+\>struct \doxymbox{\hyperlink{struct____kernel__sockaddr__storage}{\_\_kernel\_sockaddr\_storage}} {\bfseries ss\_remote}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\doxysection{dw\+\_\+dma Struct Reference}
+\hypertarget{structdw__dma}{}\label{structdw__dma}\index{dw\_dma@{dw\_dma}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdw__dma_af2b206ec19f2d0c02accc0aee89417a4}\label{structdw__dma_af2b206ec19f2d0c02accc0aee89417a4} 
+struct \doxymbox{\hyperlink{structdma__device}{dma\+\_\+device}} {\bfseries dma}
+\item 
+\Hypertarget{structdw__dma_a790ad5bad3aac5d694bf84f530f96014}\label{structdw__dma_a790ad5bad3aac5d694bf84f530f96014} 
+char {\bfseries name} \+[20]\+
+\item 
+\Hypertarget{structdw__dma_a83f8e3b49b3c5054858a7a2c839251dc}\label{structdw__dma_a83f8e3b49b3c5054858a7a2c839251dc} 
+void \texorpdfstring{$\ast$}{*} {\bfseries regs}
+\item 
+\Hypertarget{structdw__dma_a78e8df45162a46534a6a455ae042176c}\label{structdw__dma_a78e8df45162a46534a6a455ae042176c} 
+struct \doxymbox{\hyperlink{structdma__pool}{dma\+\_\+pool}} \texorpdfstring{$\ast$}{*} {\bfseries desc\+\_\+pool}
+\item 
+\Hypertarget{structdw__dma_ad00de9ab51b6cf5e2115408eb4c229b0}\label{structdw__dma_ad00de9ab51b6cf5e2115408eb4c229b0} 
+struct \doxymbox{\hyperlink{structtasklet__struct}{tasklet\+\_\+struct}} {\bfseries tasklet}
+\item 
+\Hypertarget{structdw__dma_a40a8e2809dd7d6019a00d29f6fbdfa9c}\label{structdw__dma_a40a8e2809dd7d6019a00d29f6fbdfa9c} 
+struct \doxymbox{\hyperlink{structdw__dma__chan}{dw\+\_\+dma\+\_\+chan}} \texorpdfstring{$\ast$}{*} {\bfseries chan}
+\item 
+\Hypertarget{structdw__dma_accdec6bc70c9e0db4d15bcb2c785d091}\label{structdw__dma_accdec6bc70c9e0db4d15bcb2c785d091} 
+u8 {\bfseries all\+\_\+chan\+\_\+mask}
+\item 
+\Hypertarget{structdw__dma_aad4f0ba71566a42928f3139069fe43ce}\label{structdw__dma_aad4f0ba71566a42928f3139069fe43ce} 
+u8 {\bfseries in\+\_\+use}
+\item 
+\Hypertarget{structdw__dma_afce3ca9b4313a9de6c2e694813162d2a}\label{structdw__dma_afce3ca9b4313a9de6c2e694813162d2a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries initialize\+\_\+chan} )(struct \doxymbox{\hyperlink{structdw__dma__chan}{dw\+\_\+dma\+\_\+chan}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdw__dma_a26315ceab891880dc19aab2bdab47ebd}\label{structdw__dma_a26315ceab891880dc19aab2bdab47ebd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries suspend\+\_\+chan} )(struct \doxymbox{\hyperlink{structdw__dma__chan}{dw\+\_\+dma\+\_\+chan}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structdw__dma_a82268ecf0e2bf9f6f79491815a03bbc9}\label{structdw__dma_a82268ecf0e2bf9f6f79491815a03bbc9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries resume\+\_\+chan} )(struct \doxymbox{\hyperlink{structdw__dma__chan}{dw\+\_\+dma\+\_\+chan}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structdw__dma_a8e92ff3b59815855b7d867a37145c1a1}\label{structdw__dma_a8e92ff3b59815855b7d867a37145c1a1} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+ctllo} )(struct \doxymbox{\hyperlink{structdw__dma__chan}{dw\+\_\+dma\+\_\+chan}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdw__dma_a3f0cc825bbab8eee001034dbd4aeb3ab}\label{structdw__dma_a3f0cc825bbab8eee001034dbd4aeb3ab} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries bytes2block} )(struct \doxymbox{\hyperlink{structdw__dma__chan}{dw\+\_\+dma\+\_\+chan}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, unsigned int, size\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdw__dma_a7d707055817304b43032402002862c52}\label{structdw__dma_a7d707055817304b43032402002862c52} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries block2bytes} )(struct \doxymbox{\hyperlink{structdw__dma__chan}{dw\+\_\+dma\+\_\+chan}} \texorpdfstring{$\ast$}{*}, u32, u32)
+\item 
+\Hypertarget{structdw__dma_af9c42cc721e4b0591edd8c37fc90b1d1}\label{structdw__dma_af9c42cc721e4b0591edd8c37fc90b1d1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+device\+\_\+name} )(struct \doxymbox{\hyperlink{structdw__dma}{dw\+\_\+dma}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdw__dma_ab847ae1aa00f633df2b4eee80884ba93}\label{structdw__dma_ab847ae1aa00f633df2b4eee80884ba93} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable} )(struct \doxymbox{\hyperlink{structdw__dma}{dw\+\_\+dma}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdw__dma_a1e54d986f1d87229d7b0e247a8d12e84}\label{structdw__dma_a1e54d986f1d87229d7b0e247a8d12e84} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable} )(struct \doxymbox{\hyperlink{structdw__dma}{dw\+\_\+dma}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdw__dma_aca96d34084662c97ebf9a94e0ad3df70}\label{structdw__dma_aca96d34084662c97ebf9a94e0ad3df70} 
+struct \doxymbox{\hyperlink{structdw__dma__platform__data}{dw\+\_\+dma\+\_\+platform\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries pdata}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

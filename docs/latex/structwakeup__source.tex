@@ -1,0 +1,70 @@
+\doxysection{wakeup\+\_\+source Struct Reference}
+\hypertarget{structwakeup__source}{}\label{structwakeup__source}\index{wakeup\_source@{wakeup\_source}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structwakeup__source_aa684056fbc0426c9d2c70a7e1710edfc}\label{structwakeup__source_aa684056fbc0426c9d2c70a7e1710edfc} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structwakeup__source_abb9587332833086a0fcb3a72123c005c}\label{structwakeup__source_abb9587332833086a0fcb3a72123c005c} 
+int {\bfseries id}
+\item 
+\Hypertarget{structwakeup__source_a5d50963defab66de761352fba02306ae}\label{structwakeup__source_a5d50963defab66de761352fba02306ae} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries entry}
+\item 
+\Hypertarget{structwakeup__source_a335220bd84f3e6413fef3aae1adce3a1}\label{structwakeup__source_a335220bd84f3e6413fef3aae1adce3a1} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structwakeup__source_aef393558616b2b3767ed09da3598f37a}\label{structwakeup__source_aef393558616b2b3767ed09da3598f37a} 
+struct \doxymbox{\hyperlink{structwake__irq}{wake\+\_\+irq}} \texorpdfstring{$\ast$}{*} {\bfseries wakeirq}
+\item 
+\Hypertarget{structwakeup__source_a8db41bae4c6958d0f32ef2322e1e93b9}\label{structwakeup__source_a8db41bae4c6958d0f32ef2322e1e93b9} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries timer}
+\item 
+\Hypertarget{structwakeup__source_affb48bd2ce2b81e851b45c32623f4819}\label{structwakeup__source_affb48bd2ce2b81e851b45c32623f4819} 
+long unsigned int {\bfseries timer\+\_\+expires}
+\item 
+\Hypertarget{structwakeup__source_a39796f1869838b9acf10e957189d4cfe}\label{structwakeup__source_a39796f1869838b9acf10e957189d4cfe} 
+ktime\+\_\+t {\bfseries total\+\_\+time}
+\item 
+\Hypertarget{structwakeup__source_a011b14c9359f0585df63feee807be13b}\label{structwakeup__source_a011b14c9359f0585df63feee807be13b} 
+ktime\+\_\+t {\bfseries max\+\_\+time}
+\item 
+\Hypertarget{structwakeup__source_a9fb7e91b7669b0eb8faa8b08b9529738}\label{structwakeup__source_a9fb7e91b7669b0eb8faa8b08b9529738} 
+ktime\+\_\+t {\bfseries last\+\_\+time}
+\item 
+\Hypertarget{structwakeup__source_a7f90622ff01a204923e09af1794e42a2}\label{structwakeup__source_a7f90622ff01a204923e09af1794e42a2} 
+ktime\+\_\+t {\bfseries start\+\_\+prevent\+\_\+time}
+\item 
+\Hypertarget{structwakeup__source_a1c7c1099d5959bc7fcc31a9a64bf4d76}\label{structwakeup__source_a1c7c1099d5959bc7fcc31a9a64bf4d76} 
+ktime\+\_\+t {\bfseries prevent\+\_\+sleep\+\_\+time}
+\item 
+\Hypertarget{structwakeup__source_a220198748fa5793aae56a20d4de44ba7}\label{structwakeup__source_a220198748fa5793aae56a20d4de44ba7} 
+long unsigned int {\bfseries event\+\_\+count}
+\item 
+\Hypertarget{structwakeup__source_a01b07b1b5011dc68541a0387a30408ef}\label{structwakeup__source_a01b07b1b5011dc68541a0387a30408ef} 
+long unsigned int {\bfseries active\+\_\+count}
+\item 
+\Hypertarget{structwakeup__source_af1f38d0cc5a63978ef47cdc9a71bbfe6}\label{structwakeup__source_af1f38d0cc5a63978ef47cdc9a71bbfe6} 
+long unsigned int {\bfseries relax\+\_\+count}
+\item 
+\Hypertarget{structwakeup__source_affa0b4e82687573c2f7ace5af36e021e}\label{structwakeup__source_affa0b4e82687573c2f7ace5af36e021e} 
+long unsigned int {\bfseries expire\+\_\+count}
+\item 
+\Hypertarget{structwakeup__source_a8936d305ac9e91d43dd3f36984048c3f}\label{structwakeup__source_a8936d305ac9e91d43dd3f36984048c3f} 
+long unsigned int {\bfseries wakeup\+\_\+count}
+\item 
+\Hypertarget{structwakeup__source_afcaeb9b17372cc1cd195c71d646f6445}\label{structwakeup__source_afcaeb9b17372cc1cd195c71d646f6445} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structwakeup__source_a3050847e1628998320407cdd53bb3bee}\label{structwakeup__source_a3050847e1628998320407cdd53bb3bee} 
+bool {\bfseries active}:\+ 1
+\item 
+\Hypertarget{structwakeup__source_a10101622bca2951f5dc59c66a8b10d30}\label{structwakeup__source_a10101622bca2951f5dc59c66a8b10d30} 
+bool {\bfseries autosleep\+\_\+enabled}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\doxysection{ib\+\_\+cq Struct Reference}
+\hypertarget{structib__cq}{}\label{structib__cq}\index{ib\_cq@{ib\_cq}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structib__cq_a6afbf794c5dd61521d8fdd20a06258f4}\label{structib__cq_a6afbf794c5dd61521d8fdd20a06258f4} 
+struct \doxymbox{\hyperlink{structib__device}{ib\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries device}
+\item 
+\Hypertarget{structib__cq_afd7142460eedf9a82dd703d3e6f609f8}\label{structib__cq_afd7142460eedf9a82dd703d3e6f609f8} 
+struct ib\+\_\+ucq\+\_\+object \texorpdfstring{$\ast$}{*} {\bfseries uobject}
+\item 
+\Hypertarget{structib__cq_a1a4fba62cf39195e72b388045c8a4ece}\label{structib__cq_a1a4fba62cf39195e72b388045c8a4ece} 
+ib\+\_\+comp\+\_\+handler {\bfseries comp\+\_\+handler}
+\item 
+\Hypertarget{structib__cq_afe25e1b51b7ef84a42859200fd31b6aa}\label{structib__cq_afe25e1b51b7ef84a42859200fd31b6aa} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+handler} )(struct \doxymbox{\hyperlink{structib__event}{ib\+\_\+event}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structib__cq_ad0f5796bc0119f81e5703726064a3fc8}\label{structib__cq_ad0f5796bc0119f81e5703726064a3fc8} 
+void \texorpdfstring{$\ast$}{*} {\bfseries cq\+\_\+context}
+\item 
+\Hypertarget{structib__cq_a6ffdc4a3da6dd829fe8d977e65441139}\label{structib__cq_a6ffdc4a3da6dd829fe8d977e65441139} 
+int {\bfseries cqe}
+\item 
+\Hypertarget{structib__cq_af75450f2da2c153450258c99557174ef}\label{structib__cq_af75450f2da2c153450258c99557174ef} 
+unsigned int {\bfseries cqe\+\_\+used}
+\item 
+\Hypertarget{structib__cq_add418baf29ba3ea9b1059efcfe1d98ec}\label{structib__cq_add418baf29ba3ea9b1059efcfe1d98ec} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries usecnt}
+\item 
+\Hypertarget{structib__cq_a0d9e231f428a9885bbbe9d0291c009a7}\label{structib__cq_a0d9e231f428a9885bbbe9d0291c009a7} 
+enum ib\+\_\+poll\+\_\+context {\bfseries poll\+\_\+ctx}
+\item 
+\Hypertarget{structib__cq_aaf32b4b5c716073edc99ad6ca66c8563}\label{structib__cq_aaf32b4b5c716073edc99ad6ca66c8563} 
+struct \doxymbox{\hyperlink{structib__wc}{ib\+\_\+wc}} \texorpdfstring{$\ast$}{*} {\bfseries wc}
+\item 
+\Hypertarget{structib__cq_aacf16e4049ca781bea17767af6e50568}\label{structib__cq_aacf16e4049ca781bea17767af6e50568} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pool\+\_\+entry}
+\item 
+\Hypertarget{structib__cq_a8d57fc665d5a8cd188aea97cc514c760}\label{structib__cq_a8d57fc665d5a8cd188aea97cc514c760} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structirq__poll}{irq\_poll}} {\bfseries iop}\\
+\>struct \doxymbox{\hyperlink{structwork__struct}{work\_struct}} {\bfseries work}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structib__cq_a8e82d8f6baf67d9a4070e5183230a139}\label{structib__cq_a8e82d8f6baf67d9a4070e5183230a139} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries comp\+\_\+wq}
+\item 
+\Hypertarget{structib__cq_a3b828069137da5e2299e6d222bf3208e}\label{structib__cq_a3b828069137da5e2299e6d222bf3208e} 
+struct \doxymbox{\hyperlink{structdim}{dim}} \texorpdfstring{$\ast$}{*} {\bfseries dim}
+\item 
+\Hypertarget{structib__cq_a4dc8a127158e3690d285afb172253bb9}\label{structib__cq_a4dc8a127158e3690d285afb172253bb9} 
+ktime\+\_\+t {\bfseries timestamp}
+\item 
+\Hypertarget{structib__cq_ab5ebed79daf07d5a8485c1aed9c1112b}\label{structib__cq_ab5ebed79daf07d5a8485c1aed9c1112b} 
+u8 {\bfseries interrupt}:\+ 1
+\item 
+\Hypertarget{structib__cq_aa8cae490dc1057008b63a4d0486cb91d}\label{structib__cq_aa8cae490dc1057008b63a4d0486cb91d} 
+u8 {\bfseries shared}:\+ 1
+\item 
+\Hypertarget{structib__cq_a2a3c136e2acfa5424c5f20e9fe38b7dd}\label{structib__cq_a2a3c136e2acfa5424c5f20e9fe38b7dd} 
+unsigned int {\bfseries comp\+\_\+vector}
+\item 
+\Hypertarget{structib__cq_a4bc4b13825ba0c9b19d196a99c65f80a}\label{structib__cq_a4bc4b13825ba0c9b19d196a99c65f80a} 
+struct \doxymbox{\hyperlink{structrdma__restrack__entry}{rdma\+\_\+restrack\+\_\+entry}} {\bfseries res}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

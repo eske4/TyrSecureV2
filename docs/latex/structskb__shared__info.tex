@@ -1,0 +1,65 @@
+\doxysection{skb\+\_\+shared\+\_\+info Struct Reference}
+\hypertarget{structskb__shared__info}{}\label{structskb__shared__info}\index{skb\_shared\_info@{skb\_shared\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structskb__shared__info_a229c61115ea19ebd546822cc06e1a4a0}\label{structskb__shared__info_a229c61115ea19ebd546822cc06e1a4a0} 
+\+\_\+\+\_\+u8 {\bfseries flags}
+\item 
+\Hypertarget{structskb__shared__info_a79eb8e00deb93c8a5ef8162eb890d0c2}\label{structskb__shared__info_a79eb8e00deb93c8a5ef8162eb890d0c2} 
+\+\_\+\+\_\+u8 {\bfseries meta\+\_\+len}
+\item 
+\Hypertarget{structskb__shared__info_a82aa95c66e1d6a23ba9d3bec09a86164}\label{structskb__shared__info_a82aa95c66e1d6a23ba9d3bec09a86164} 
+\+\_\+\+\_\+u8 {\bfseries nr\+\_\+frags}
+\item 
+\Hypertarget{structskb__shared__info_a31ad3057141c4bc5e462dc09cd5378ce}\label{structskb__shared__info_a31ad3057141c4bc5e462dc09cd5378ce} 
+\+\_\+\+\_\+u8 {\bfseries tx\+\_\+flags}
+\item 
+\Hypertarget{structskb__shared__info_a311aa8635435f7991cb39713746c717b}\label{structskb__shared__info_a311aa8635435f7991cb39713746c717b} 
+short unsigned int {\bfseries gso\+\_\+size}
+\item 
+\Hypertarget{structskb__shared__info_a302d1ea8d5596c22787c098a8b748328}\label{structskb__shared__info_a302d1ea8d5596c22787c098a8b748328} 
+short unsigned int {\bfseries gso\+\_\+segs}
+\item 
+\Hypertarget{structskb__shared__info_a0260f70ca62beb3f47145cf3c59d27b2}\label{structskb__shared__info_a0260f70ca62beb3f47145cf3c59d27b2} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries frag\+\_\+list}
+\item 
+\Hypertarget{structskb__shared__info_a0eabb4170cbfce302897eed131a68d17}\label{structskb__shared__info_a0eabb4170cbfce302897eed131a68d17} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structskb__shared__hwtstamps}{skb\_shared\_hwtstamps}} {\bfseries hwtstamps}\\
+\>struct \doxymbox{\hyperlink{structxsk__tx__metadata__compl}{xsk\_tx\_metadata\_compl}} {\bfseries xsk\_meta}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structskb__shared__info_add0f633b25d24723f2aba88de3ab427c}\label{structskb__shared__info_add0f633b25d24723f2aba88de3ab427c} 
+unsigned int {\bfseries gso\+\_\+type}
+\item 
+\Hypertarget{structskb__shared__info_ae74a02a11464d2a454e81f668d1505df}\label{structskb__shared__info_ae74a02a11464d2a454e81f668d1505df} 
+u32 {\bfseries tskey}
+\item 
+\Hypertarget{structskb__shared__info_aba7deacf9301599c47b317478a146d10}\label{structskb__shared__info_aba7deacf9301599c47b317478a146d10} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries dataref}
+\item 
+\Hypertarget{structskb__shared__info_abb61d32ecfb0e9a4579094fed3a130ae}\label{structskb__shared__info_abb61d32ecfb0e9a4579094fed3a130ae} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionskb__shared__info_1_1_0d303227150102064067365243343052251105151202252065_a92da5ce12807f7b31bae30f9a6e10987}\label{unionskb__shared__info_1_1_0d303227150102064067365243343052251105151202252065_a92da5ce12807f7b31bae30f9a6e10987} 
+\>struct \{\\
+\>\>u32 {\bfseries xdp\_frags\_size}\\
+\>\>u32 {\bfseries xdp\_frags\_truesize}\\
+\>\} \\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries destructor\_arg}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structskb__shared__info_aa00b950dd38b02af58e663743fb125cc}\label{structskb__shared__info_aa00b950dd38b02af58e663743fb125cc} 
+skb\+\_\+frag\+\_\+t {\bfseries frags} \+[17]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

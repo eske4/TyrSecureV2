@@ -1,0 +1,28 @@
+\doxysection{xsk\+\_\+tx\+\_\+metadata Struct Reference}
+\hypertarget{structxsk__tx__metadata}{}\label{structxsk__tx__metadata}\index{xsk\_tx\_metadata@{xsk\_tx\_metadata}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxsk__tx__metadata_aad4c72c546756ccbbcb962830af5dcaa}\label{structxsk__tx__metadata_aad4c72c546756ccbbcb962830af5dcaa} 
+\+\_\+\+\_\+u64 {\bfseries flags}
+\item 
+\Hypertarget{structxsk__tx__metadata_aeacee485011349c1b8e06dcccbbbbad2}\label{structxsk__tx__metadata_aeacee485011349c1b8e06dcccbbbbad2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u16 {\bfseries csum\_start}\\
+\>\>\_\_u16 {\bfseries csum\_offset}\\
+\>\>\_\_u64 {\bfseries launch\_time}\\
+\>\} {\bfseries request}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries tx\_timestamp}\\
+\>\} {\bfseries completion}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

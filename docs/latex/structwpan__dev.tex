@@ -1,0 +1,79 @@
+\doxysection{wpan\+\_\+dev Struct Reference}
+\hypertarget{structwpan__dev}{}\label{structwpan__dev}\index{wpan\_dev@{wpan\_dev}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structwpan__dev_ab80c6b5564459e7c940cac3b8f96f428}\label{structwpan__dev_ab80c6b5564459e7c940cac3b8f96f428} 
+struct \doxymbox{\hyperlink{structwpan__phy}{wpan\+\_\+phy}} \texorpdfstring{$\ast$}{*} {\bfseries wpan\+\_\+phy}
+\item 
+\Hypertarget{structwpan__dev_a25110d19d6b6eaf8ab79521d667bb169}\label{structwpan__dev_a25110d19d6b6eaf8ab79521d667bb169} 
+int {\bfseries iftype}
+\item 
+\Hypertarget{structwpan__dev_ad1b2605fb037ce7f1b86f10e09b1ef85}\label{structwpan__dev_ad1b2605fb037ce7f1b86f10e09b1ef85} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structwpan__dev_a96cd0d35ddcc04f1bc230387f474f9e7}\label{structwpan__dev_a96cd0d35ddcc04f1bc230387f474f9e7} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries netdev}
+\item 
+\Hypertarget{structwpan__dev_a120c67f84083957372f00b139acb04e1}\label{structwpan__dev_a120c67f84083957372f00b139acb04e1} 
+const struct \doxymbox{\hyperlink{structwpan__dev__header__ops}{wpan\+\_\+dev\+\_\+header\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries header\+\_\+ops}
+\item 
+\Hypertarget{structwpan__dev_a99472d9d5a19866fc8f2d3204c14b594}\label{structwpan__dev_a99472d9d5a19866fc8f2d3204c14b594} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries lowpan\+\_\+dev}
+\item 
+\Hypertarget{structwpan__dev_a17d84a822c4dfa60febd58b8bc695799}\label{structwpan__dev_a17d84a822c4dfa60febd58b8bc695799} 
+u32 {\bfseries identifier}
+\item 
+\Hypertarget{structwpan__dev_ab734c27e0b335233eb603abadd8ff14e}\label{structwpan__dev_ab734c27e0b335233eb603abadd8ff14e} 
+\+\_\+\+\_\+le16 {\bfseries pan\+\_\+id}
+\item 
+\Hypertarget{structwpan__dev_a8abf87eabea7ba1e398f77a25df9a82e}\label{structwpan__dev_a8abf87eabea7ba1e398f77a25df9a82e} 
+\+\_\+\+\_\+le16 {\bfseries short\+\_\+addr}
+\item 
+\Hypertarget{structwpan__dev_a152400cec1540d5f5975b40643a03f00}\label{structwpan__dev_a152400cec1540d5f5975b40643a03f00} 
+\+\_\+\+\_\+le64 {\bfseries extended\+\_\+addr}
+\item 
+\Hypertarget{structwpan__dev_ae91b1045855e94a36099e43b66aa53a2}\label{structwpan__dev_ae91b1045855e94a36099e43b66aa53a2} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries bsn}
+\item 
+\Hypertarget{structwpan__dev_a12db9381d6a2d6f0e7bdfd2969463a68}\label{structwpan__dev_a12db9381d6a2d6f0e7bdfd2969463a68} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries dsn}
+\item 
+\Hypertarget{structwpan__dev_a9330d7571d62d3954b7d7d01c3b7089c}\label{structwpan__dev_a9330d7571d62d3954b7d7d01c3b7089c} 
+u8 {\bfseries min\+\_\+be}
+\item 
+\Hypertarget{structwpan__dev_a5ff5eee621b3c5ea5bd7c9346163708a}\label{structwpan__dev_a5ff5eee621b3c5ea5bd7c9346163708a} 
+u8 {\bfseries max\+\_\+be}
+\item 
+\Hypertarget{structwpan__dev_a19385f1f8088a8df8b3bbc8c65383037}\label{structwpan__dev_a19385f1f8088a8df8b3bbc8c65383037} 
+u8 {\bfseries csma\+\_\+retries}
+\item 
+\Hypertarget{structwpan__dev_a192f1f8d4142bece20554b2e8cb9fb9b}\label{structwpan__dev_a192f1f8d4142bece20554b2e8cb9fb9b} 
+s8 {\bfseries frame\+\_\+retries}
+\item 
+\Hypertarget{structwpan__dev_a64d3a9e556d4033b832df25ee98d3605}\label{structwpan__dev_a64d3a9e556d4033b832df25ee98d3605} 
+bool {\bfseries lbt}
+\item 
+\Hypertarget{structwpan__dev_a7bcfc051de9858a8382ae2a52482e4fe}\label{structwpan__dev_a7bcfc051de9858a8382ae2a52482e4fe} 
+bool {\bfseries ackreq}
+\item 
+\Hypertarget{structwpan__dev_aa2c1b8c2d90f8d7c97d319b99eb4c265}\label{structwpan__dev_aa2c1b8c2d90f8d7c97d319b99eb4c265} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries association\+\_\+lock}
+\item 
+\Hypertarget{structwpan__dev_a781a5d70f9825e80645111bb5494c11f}\label{structwpan__dev_a781a5d70f9825e80645111bb5494c11f} 
+struct \doxymbox{\hyperlink{structieee802154__pan__device}{ieee802154\+\_\+pan\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structwpan__dev_a3455e778b1e9d1721909373736b035d6}\label{structwpan__dev_a3455e778b1e9d1721909373736b035d6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries children}
+\item 
+\Hypertarget{structwpan__dev_a77ab3c51650a884b387eaa0c491ede5f}\label{structwpan__dev_a77ab3c51650a884b387eaa0c491ede5f} 
+unsigned int {\bfseries max\+\_\+associations}
+\item 
+\Hypertarget{structwpan__dev_ae960175ab67b0fc07036dcaef1366b26}\label{structwpan__dev_ae960175ab67b0fc07036dcaef1366b26} 
+unsigned int {\bfseries nchildren}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

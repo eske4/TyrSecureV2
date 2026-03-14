@@ -1,0 +1,89 @@
+\doxysection{vm\+\_\+area\+\_\+struct Struct Reference}
+\hypertarget{structvm__area__struct}{}\label{structvm__area__struct}\index{vm\_area\_struct@{vm\_area\_struct}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvm__area__struct_afea962a0cd505f55b8a4cac819941944}\label{structvm__area__struct_afea962a0cd505f55b8a4cac819941944} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionvm__area__struct_1_1_0d114273045001014102046255200015010030053274242347_a55e623b7f8328814a051d466ce61c6a9}\label{unionvm__area__struct_1_1_0d114273045001014102046255200015010030053274242347_a55e623b7f8328814a051d466ce61c6a9} 
+\>struct \{\\
+\>\>long unsigned int {\bfseries vm\_start}\\
+\>\>long unsigned int {\bfseries vm\_end}\\
+\>\} \\
+\>\doxymbox{\hyperlink{structfreeptr__t}{freeptr\_t}} {\bfseries vm\_freeptr}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structvm__area__struct_a027a4d392fd036a546b796b5aabbee23}\label{structvm__area__struct_a027a4d392fd036a546b796b5aabbee23} 
+struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+mm}
+\item 
+\Hypertarget{structvm__area__struct_a9ae5d2ba50c1c5e6c981a8b27b33ee1e}\label{structvm__area__struct_a9ae5d2ba50c1c5e6c981a8b27b33ee1e} 
+pgprot\+\_\+t {\bfseries vm\+\_\+page\+\_\+prot}
+\item 
+\Hypertarget{structvm__area__struct_a84ddf027736b93374a5f9639afcfd7e7}\label{structvm__area__struct_a84ddf027736b93374a5f9639afcfd7e7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const vm\_flags\_t {\bfseries vm\_flags}\\
+\>\doxymbox{\hyperlink{structvma__flags__t}{vma\_flags\_t}} {\bfseries flags}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structvm__area__struct_a8af1b74142671d65f544a17c03ae3f8d}\label{structvm__area__struct_a8af1b74142671d65f544a17c03ae3f8d} 
+unsigned int {\bfseries vm\+\_\+lock\+\_\+seq}
+\item 
+\Hypertarget{structvm__area__struct_a1518083d46ff7c917552d4e7f9622d45}\label{structvm__area__struct_a1518083d46ff7c917552d4e7f9622d45} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries anon\+\_\+vma\+\_\+chain}
+\item 
+\Hypertarget{structvm__area__struct_ad8d0a307b7c23468bedf517d22a1fb4b}\label{structvm__area__struct_ad8d0a307b7c23468bedf517d22a1fb4b} 
+struct \doxymbox{\hyperlink{structanon__vma}{anon\+\_\+vma}} \texorpdfstring{$\ast$}{*} {\bfseries anon\+\_\+vma}
+\item 
+\Hypertarget{structvm__area__struct_a4b0b88bbcb91f31f936cb014484891f4}\label{structvm__area__struct_a4b0b88bbcb91f31f936cb014484891f4} 
+const struct \doxymbox{\hyperlink{structvm__operations__struct}{vm\+\_\+operations\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+ops}
+\item 
+\Hypertarget{structvm__area__struct_a41fab5966e16645c7f2f7ec56a5d79d1}\label{structvm__area__struct_a41fab5966e16645c7f2f7ec56a5d79d1} 
+long unsigned int {\bfseries vm\+\_\+pgoff}
+\item 
+\Hypertarget{structvm__area__struct_a4f8257dacf3837a9d6cbd32b7895f548}\label{structvm__area__struct_a4f8257dacf3837a9d6cbd32b7895f548} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+file}
+\item 
+\Hypertarget{structvm__area__struct_aefd4c05a50e50fe47a2b492876a81ec3}\label{structvm__area__struct_aefd4c05a50e50fe47a2b492876a81ec3} 
+void \texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+private\+\_\+data}
+\item 
+\Hypertarget{structvm__area__struct_a47e98ec10def0201ae761156eaf1fe49}\label{structvm__area__struct_a47e98ec10def0201ae761156eaf1fe49} 
+atomic\+\_\+long\+\_\+t {\bfseries swap\+\_\+readahead\+\_\+info}
+\item 
+\Hypertarget{structvm__area__struct_a3f72e01c6ab076c4e77b533ba0560c4c}\label{structvm__area__struct_a3f72e01c6ab076c4e77b533ba0560c4c} 
+struct \doxymbox{\hyperlink{structmempolicy}{mempolicy}} \texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+policy}
+\item 
+\Hypertarget{structvm__area__struct_a762dc8d51e33d773ce5078f0326c03bd}\label{structvm__area__struct_a762dc8d51e33d773ce5078f0326c03bd} 
+struct \doxymbox{\hyperlink{structvma__numab__state}{vma\+\_\+numab\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries numab\+\_\+state}
+\item 
+\Hypertarget{structvm__area__struct_a904beeb5ea03f6cff0dea1a8c74bc371}\label{structvm__area__struct_a904beeb5ea03f6cff0dea1a8c74bc371} 
+refcount\+\_\+t {\bfseries vm\+\_\+refcnt}
+\item 
+\Hypertarget{structvm__area__struct_aa061634d2720884f0e8e7ed19abe4906}\label{structvm__area__struct_aa061634d2720884f0e8e7ed19abe4906} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structrb__node}{rb\_node}} {\bfseries rb}\\
+\>long unsigned int {\bfseries rb\_subtree\_last}\\
+\} {\bfseries shared}\\
+
+\end{tabbing}\item 
+\Hypertarget{structvm__area__struct_a3512cb1148b50e0cf554c1d5f5070cd0}\label{structvm__area__struct_a3512cb1148b50e0cf554c1d5f5070cd0} 
+struct \doxymbox{\hyperlink{structanon__vma__name}{anon\+\_\+vma\+\_\+name}} \texorpdfstring{$\ast$}{*} {\bfseries anon\+\_\+name}
+\item 
+\Hypertarget{structvm__area__struct_aefacc8e22b1d578df64491fb1c5b8a80}\label{structvm__area__struct_aefacc8e22b1d578df64491fb1c5b8a80} 
+struct \doxymbox{\hyperlink{structvm__userfaultfd__ctx}{vm\+\_\+userfaultfd\+\_\+ctx}} {\bfseries vm\+\_\+userfaultfd\+\_\+ctx}
+\item 
+\Hypertarget{structvm__area__struct_acb41e613738238368c0d9cf45d6e2252}\label{structvm__area__struct_acb41e613738238368c0d9cf45d6e2252} 
+struct \doxymbox{\hyperlink{structpfnmap__track__ctx}{pfnmap\+\_\+track\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries pfnmap\+\_\+track\+\_\+ctx}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\doxysection{rseq\+\_\+event Struct Reference}
+\hypertarget{structrseq__event}{}\label{structrseq__event}\index{rseq\_event@{rseq\_event}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrseq__event_a556957ce2343b4f99ecea362abe0c467}\label{structrseq__event_a556957ce2343b4f99ecea362abe0c467} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries all}\\
+\Hypertarget{unionrseq__event_1_1_0d336157144030342241360350042271135222170034076023_ad6815737e4265e33b99bb2011b4640b7}\label{unionrseq__event_1_1_0d336157144030342241360350042271135222170034076023_ad6815737e4265e33b99bb2011b4640b7} 
+\>struct \{\\
+\Hypertarget{structrseq__event_1_1_0d336157144030342241360350042271135222170034076023_1_1_0d327302377074111061356220365310170274116165062346_a4b14c47820cfb7c6b341270f3636ca3a}\label{structrseq__event_1_1_0d336157144030342241360350042271135222170034076023_1_1_0d327302377074111061356220365310170274116165062346_a4b14c47820cfb7c6b341270f3636ca3a} 
+\>\>union \{\\
+\>\>\>u32 {\bfseries events}\\
+\Hypertarget{unionrseq__event_1_1_0d336157144030342241360350042271135222170034076023_1_1_0d32730237707411106142221f0d1fff6c09c57b350403b7e419_abb3ac30970913611be6b13f2f35ff601}\label{unionrseq__event_1_1_0d336157144030342241360350042271135222170034076023_1_1_0d32730237707411106142221f0d1fff6c09c57b350403b7e419_abb3ac30970913611be6b13f2f35ff601} 
+\>\>\>struct \{\\
+\>\>\>\>u8 {\bfseries sched\_switch}\\
+\>\>\>\>u8 {\bfseries ids\_changed}\\
+\>\>\>\>u8 {\bfseries user\_irq}\\
+\>\>\>\} \\
+\>\>\} \\
+\>\>u8 {\bfseries has\_rseq}\\
+\>\>u8 {\bfseries \_\_pad}\\
+\Hypertarget{structrseq__event_1_1_0d336157144030342241360350042271135222170034076023_1_1_0d327302377074111061356220365310170274116165062346_a301167a3b373cd61793ab6b7b7323634}\label{structrseq__event_1_1_0d336157144030342241360350042271135222170034076023_1_1_0d327302377074111061356220365310170274116165062346_a301167a3b373cd61793ab6b7b7323634} 
+\>\>union \{\\
+\>\>\>u16 {\bfseries error}\\
+\Hypertarget{unionrseq__event_1_1_0d336157144030342241360350042271135222170034076023_1_1_0d327302377074111061a08b7386808d4f2c02c6364f690be774_ad30bc0bab5f8422c3bbe2a79e74995da}\label{unionrseq__event_1_1_0d336157144030342241360350042271135222170034076023_1_1_0d327302377074111061a08b7386808d4f2c02c6364f690be774_ad30bc0bab5f8422c3bbe2a79e74995da} 
+\>\>\>struct \{\\
+\>\>\>\>u8 {\bfseries fatal}\\
+\>\>\>\>u8 {\bfseries slowpath}\\
+\>\>\>\} \\
+\>\>\} \\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

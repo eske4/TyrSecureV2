@@ -1,0 +1,157 @@
+\doxysection{ring\+\_\+buffer\+\_\+per\+\_\+cpu Struct Reference}
+\hypertarget{structring__buffer__per__cpu}{}\label{structring__buffer__per__cpu}\index{ring\_buffer\_per\_cpu@{ring\_buffer\_per\_cpu}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a1e31b6d459e85451250d9816526a92d4}\label{structring__buffer__per__cpu_a1e31b6d459e85451250d9816526a92d4} 
+int {\bfseries cpu}
+\item 
+\Hypertarget{structring__buffer__per__cpu_ae1be95047ffe3e10df93b6f6ea75cdc7}\label{structring__buffer__per__cpu_ae1be95047ffe3e10df93b6f6ea75cdc7} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries record\+\_\+disabled}
+\item 
+\Hypertarget{structring__buffer__per__cpu_abae9e251dd3a33d8ca679561d966e954}\label{structring__buffer__per__cpu_abae9e251dd3a33d8ca679561d966e954} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries resize\+\_\+disabled}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a88dcb8dc823ba97f4e6be2889f0efb7e}\label{structring__buffer__per__cpu_a88dcb8dc823ba97f4e6be2889f0efb7e} 
+struct \doxymbox{\hyperlink{structtrace__buffer}{trace\+\_\+buffer}} \texorpdfstring{$\ast$}{*} {\bfseries buffer}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a2245eedac8785dbd1f7d6849251db635}\label{structring__buffer__per__cpu_a2245eedac8785dbd1f7d6849251db635} 
+raw\+\_\+spinlock\+\_\+t {\bfseries reader\+\_\+lock}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a939e8fe345899f2e2e5905612b6269e5}\label{structring__buffer__per__cpu_a939e8fe345899f2e2e5905612b6269e5} 
+arch\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a0d2e29cc56ff5356f7b19772374f0b11}\label{structring__buffer__per__cpu_a0d2e29cc56ff5356f7b19772374f0b11} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries lock\+\_\+key}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a0d98c1728317747d4e372017721725d8}\label{structring__buffer__per__cpu_a0d98c1728317747d4e372017721725d8} 
+struct \doxymbox{\hyperlink{structbuffer__data__page}{buffer\+\_\+data\+\_\+page}} \texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+page}
+\item 
+\Hypertarget{structring__buffer__per__cpu_aa1f95d2fa0ded306ad14b3de9dd92213}\label{structring__buffer__per__cpu_aa1f95d2fa0ded306ad14b3de9dd92213} 
+long unsigned int {\bfseries nr\+\_\+pages}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a267cd1de1f51093b794e5d6dbc37fc13}\label{structring__buffer__per__cpu_a267cd1de1f51093b794e5d6dbc37fc13} 
+unsigned int {\bfseries current\+\_\+context}
+\item 
+\Hypertarget{structring__buffer__per__cpu_af3f86d59038c6401e3a538234844f333}\label{structring__buffer__per__cpu_af3f86d59038c6401e3a538234844f333} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries pages}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a0f70b345bec46e8bbf967d5e51d1acce}\label{structring__buffer__per__cpu_a0f70b345bec46e8bbf967d5e51d1acce} 
+long unsigned int {\bfseries cnt}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a9cc37e8dc69fcae8ac7f774d6b99a2b0}\label{structring__buffer__per__cpu_a9cc37e8dc69fcae8ac7f774d6b99a2b0} 
+struct \doxymbox{\hyperlink{structbuffer__page}{buffer\+\_\+page}} \texorpdfstring{$\ast$}{*} {\bfseries head\+\_\+page}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a5a0fa8f1d9df2fea976dd6d541072247}\label{structring__buffer__per__cpu_a5a0fa8f1d9df2fea976dd6d541072247} 
+struct \doxymbox{\hyperlink{structbuffer__page}{buffer\+\_\+page}} \texorpdfstring{$\ast$}{*} {\bfseries tail\+\_\+page}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a686dbcb7decbf481222a707495bcdd52}\label{structring__buffer__per__cpu_a686dbcb7decbf481222a707495bcdd52} 
+struct \doxymbox{\hyperlink{structbuffer__page}{buffer\+\_\+page}} \texorpdfstring{$\ast$}{*} {\bfseries commit\+\_\+page}
+\item 
+\Hypertarget{structring__buffer__per__cpu_aeb4a2d7e1362592e83a985709aabeacd}\label{structring__buffer__per__cpu_aeb4a2d7e1362592e83a985709aabeacd} 
+struct \doxymbox{\hyperlink{structbuffer__page}{buffer\+\_\+page}} \texorpdfstring{$\ast$}{*} {\bfseries reader\+\_\+page}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a6514ac86109c1132451b3e0d8a6c7b56}\label{structring__buffer__per__cpu_a6514ac86109c1132451b3e0d8a6c7b56} 
+long unsigned int {\bfseries lost\+\_\+events}
+\item 
+\Hypertarget{structring__buffer__per__cpu_add9696a12acfbc9701361f406f714a66}\label{structring__buffer__per__cpu_add9696a12acfbc9701361f406f714a66} 
+long unsigned int {\bfseries last\+\_\+overrun}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a1806e14de8f7cbaaf92bc263a1036e1c}\label{structring__buffer__per__cpu_a1806e14de8f7cbaaf92bc263a1036e1c} 
+long unsigned int {\bfseries nest}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a30b433a16790b8952536f44b3cd4dcea}\label{structring__buffer__per__cpu_a30b433a16790b8952536f44b3cd4dcea} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries entries\+\_\+bytes}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a44b1b6e792b38437c280175e1b4fde77}\label{structring__buffer__per__cpu_a44b1b6e792b38437c280175e1b4fde77} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries entries}
+\item 
+\Hypertarget{structring__buffer__per__cpu_aa407b46bd7f418b15cfe80515c5ffb1c}\label{structring__buffer__per__cpu_aa407b46bd7f418b15cfe80515c5ffb1c} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries overrun}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a44da48e314dd2125258507ef34c43a6a}\label{structring__buffer__per__cpu_a44da48e314dd2125258507ef34c43a6a} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries commit\+\_\+overrun}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a6c0b0026e7ffdaf95e4a2ba241670caf}\label{structring__buffer__per__cpu_a6c0b0026e7ffdaf95e4a2ba241670caf} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries dropped\+\_\+events}
+\item 
+\Hypertarget{structring__buffer__per__cpu_ab5461530220be39e6411a49e7af29346}\label{structring__buffer__per__cpu_ab5461530220be39e6411a49e7af29346} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries committing}
+\item 
+\Hypertarget{structring__buffer__per__cpu_aabaa23a4b8bae87fb4991b9013c12144}\label{structring__buffer__per__cpu_aabaa23a4b8bae87fb4991b9013c12144} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries commits}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a07af8abce338474b5c5c59a6a887aa41}\label{structring__buffer__per__cpu_a07af8abce338474b5c5c59a6a887aa41} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries pages\+\_\+touched}
+\item 
+\Hypertarget{structring__buffer__per__cpu_ab82ef2eaac027cacff4dcaee80da0256}\label{structring__buffer__per__cpu_ab82ef2eaac027cacff4dcaee80da0256} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries pages\+\_\+lost}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a9879dd154bbf2e8a6b79489c40711bbf}\label{structring__buffer__per__cpu_a9879dd154bbf2e8a6b79489c40711bbf} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries pages\+\_\+read}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a1361bec15e9945762a2997fc1b06f082}\label{structring__buffer__per__cpu_a1361bec15e9945762a2997fc1b06f082} 
+long int {\bfseries last\+\_\+pages\+\_\+touch}
+\item 
+\Hypertarget{structring__buffer__per__cpu_acd2a1d3b224ece45b6bff5fb2d938c73}\label{structring__buffer__per__cpu_acd2a1d3b224ece45b6bff5fb2d938c73} 
+size\+\_\+t {\bfseries shortest\+\_\+full}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a1e66a7a77a52c7482277f4710dc56a9c}\label{structring__buffer__per__cpu_a1e66a7a77a52c7482277f4710dc56a9c} 
+long unsigned int {\bfseries read}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a654fddc82f7a8324ae5748f54d1b77bd}\label{structring__buffer__per__cpu_a654fddc82f7a8324ae5748f54d1b77bd} 
+long unsigned int {\bfseries read\+\_\+bytes}
+\item 
+\Hypertarget{structring__buffer__per__cpu_ab99ca8c279b4f8779ab7d389f13932c1}\label{structring__buffer__per__cpu_ab99ca8c279b4f8779ab7d389f13932c1} 
+rb\+\_\+time\+\_\+t {\bfseries write\+\_\+stamp}
+\item 
+\Hypertarget{structring__buffer__per__cpu_ac7cd1bed9aa0cd15cc75dffdd03c7e3d}\label{structring__buffer__per__cpu_ac7cd1bed9aa0cd15cc75dffdd03c7e3d} 
+rb\+\_\+time\+\_\+t {\bfseries before\+\_\+stamp}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a53cc7785c3fa6b469fee14dae367752b}\label{structring__buffer__per__cpu_a53cc7785c3fa6b469fee14dae367752b} 
+u64 {\bfseries event\+\_\+stamp} \+[5]\+
+\item 
+\Hypertarget{structring__buffer__per__cpu_aa42a0d466c3bd0201db1e3fce3b8d805}\label{structring__buffer__per__cpu_aa42a0d466c3bd0201db1e3fce3b8d805} 
+u64 {\bfseries read\+\_\+stamp}
+\item 
+\Hypertarget{structring__buffer__per__cpu_abda9f77aafacd1dfd0f2934c63ff708a}\label{structring__buffer__per__cpu_abda9f77aafacd1dfd0f2934c63ff708a} 
+long unsigned int {\bfseries pages\+\_\+removed}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a198783cad0dce7cd235b5e7865c24a79}\label{structring__buffer__per__cpu_a198783cad0dce7cd235b5e7865c24a79} 
+unsigned int {\bfseries mapped}
+\item 
+\Hypertarget{structring__buffer__per__cpu_adde70ba683204077abed5585341d7080}\label{structring__buffer__per__cpu_adde70ba683204077abed5585341d7080} 
+unsigned int {\bfseries user\+\_\+mapped}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a94ff8048c4d3acdc5229eb0982d2f594}\label{structring__buffer__per__cpu_a94ff8048c4d3acdc5229eb0982d2f594} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mapping\+\_\+lock}
+\item 
+\Hypertarget{structring__buffer__per__cpu_acdd7c357e15578478cc49e32c6100950}\label{structring__buffer__per__cpu_acdd7c357e15578478cc49e32c6100950} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries subbuf\+\_\+ids}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a086ac30fd0fd2dbcaf33a19cd1b0caaf}\label{structring__buffer__per__cpu_a086ac30fd0fd2dbcaf33a19cd1b0caaf} 
+struct \doxymbox{\hyperlink{structtrace__buffer__meta}{trace\+\_\+buffer\+\_\+meta}} \texorpdfstring{$\ast$}{*} {\bfseries meta\+\_\+page}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a40617ef66b7c27b3c859cb294ff833a1}\label{structring__buffer__per__cpu_a40617ef66b7c27b3c859cb294ff833a1} 
+struct \doxymbox{\hyperlink{structring__buffer__cpu__meta}{ring\+\_\+buffer\+\_\+cpu\+\_\+meta}} \texorpdfstring{$\ast$}{*} {\bfseries ring\+\_\+meta}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a363edd908fd0ed05cb69fdc003bb9401}\label{structring__buffer__per__cpu_a363edd908fd0ed05cb69fdc003bb9401} 
+long int {\bfseries nr\+\_\+pages\+\_\+to\+\_\+update}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a0e0419b933e57558d9935a611fad0e30}\label{structring__buffer__per__cpu_a0e0419b933e57558d9935a611fad0e30} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries new\+\_\+pages}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a56bfe79bb6fde9f256f3259523d60832}\label{structring__buffer__per__cpu_a56bfe79bb6fde9f256f3259523d60832} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries update\+\_\+pages\+\_\+work}
+\item 
+\Hypertarget{structring__buffer__per__cpu_aa09c042c2a30cd8d40a0f05661a6b930}\label{structring__buffer__per__cpu_aa09c042c2a30cd8d40a0f05661a6b930} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries update\+\_\+done}
+\item 
+\Hypertarget{structring__buffer__per__cpu_a531ac09c133c1d988b2d40f936190d2f}\label{structring__buffer__per__cpu_a531ac09c133c1d988b2d40f936190d2f} 
+struct \doxymbox{\hyperlink{structrb__irq__work}{rb\+\_\+irq\+\_\+work}} {\bfseries irq\+\_\+work}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

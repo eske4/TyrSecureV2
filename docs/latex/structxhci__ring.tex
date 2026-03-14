@@ -1,0 +1,55 @@
+\doxysection{xhci\+\_\+ring Struct Reference}
+\hypertarget{structxhci__ring}{}\label{structxhci__ring}\index{xhci\_ring@{xhci\_ring}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxhci__ring_a05a156ab604f9baf9b27d27b4b1c55a9}\label{structxhci__ring_a05a156ab604f9baf9b27d27b4b1c55a9} 
+struct \doxymbox{\hyperlink{structxhci__segment}{xhci\+\_\+segment}} \texorpdfstring{$\ast$}{*} {\bfseries first\+\_\+seg}
+\item 
+\Hypertarget{structxhci__ring_a0a5de6222309a13db02986a9242daf46}\label{structxhci__ring_a0a5de6222309a13db02986a9242daf46} 
+struct \doxymbox{\hyperlink{structxhci__segment}{xhci\+\_\+segment}} \texorpdfstring{$\ast$}{*} {\bfseries last\+\_\+seg}
+\item 
+\Hypertarget{structxhci__ring_a2c1961855ff5a32b1e89df9c75c26655}\label{structxhci__ring_a2c1961855ff5a32b1e89df9c75c26655} 
+union \doxymbox{\hyperlink{unionxhci__trb}{xhci\+\_\+trb}} \texorpdfstring{$\ast$}{*} {\bfseries enqueue}
+\item 
+\Hypertarget{structxhci__ring_abec7aa9a27099adc29f4c24c45ebfcb2}\label{structxhci__ring_abec7aa9a27099adc29f4c24c45ebfcb2} 
+struct \doxymbox{\hyperlink{structxhci__segment}{xhci\+\_\+segment}} \texorpdfstring{$\ast$}{*} {\bfseries enq\+\_\+seg}
+\item 
+\Hypertarget{structxhci__ring_aa480e300114e1a01726ad611d881014b}\label{structxhci__ring_aa480e300114e1a01726ad611d881014b} 
+union \doxymbox{\hyperlink{unionxhci__trb}{xhci\+\_\+trb}} \texorpdfstring{$\ast$}{*} {\bfseries dequeue}
+\item 
+\Hypertarget{structxhci__ring_a062d6feac1bbf95d533fe1909387ef03}\label{structxhci__ring_a062d6feac1bbf95d533fe1909387ef03} 
+struct \doxymbox{\hyperlink{structxhci__segment}{xhci\+\_\+segment}} \texorpdfstring{$\ast$}{*} {\bfseries deq\+\_\+seg}
+\item 
+\Hypertarget{structxhci__ring_a1a950f61bf1f25a07e7faead534cc495}\label{structxhci__ring_a1a950f61bf1f25a07e7faead534cc495} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries td\+\_\+list}
+\item 
+\Hypertarget{structxhci__ring_aca205f4abadb906a91d085136040c74b}\label{structxhci__ring_aca205f4abadb906a91d085136040c74b} 
+u32 {\bfseries cycle\+\_\+state}
+\item 
+\Hypertarget{structxhci__ring_a9dc301718e5f846be400a57a3903e4c8}\label{structxhci__ring_a9dc301718e5f846be400a57a3903e4c8} 
+unsigned int {\bfseries stream\+\_\+id}
+\item 
+\Hypertarget{structxhci__ring_a9c83a22cfd4f67c8dd85e82bc6c4d350}\label{structxhci__ring_a9c83a22cfd4f67c8dd85e82bc6c4d350} 
+unsigned int {\bfseries num\+\_\+segs}
+\item 
+\Hypertarget{structxhci__ring_ac24af77cec748bae3daba9305c58cb90}\label{structxhci__ring_ac24af77cec748bae3daba9305c58cb90} 
+unsigned int {\bfseries num\+\_\+trbs\+\_\+free}
+\item 
+\Hypertarget{structxhci__ring_a8193e059e896dbf07eb2986dfccf871e}\label{structxhci__ring_a8193e059e896dbf07eb2986dfccf871e} 
+unsigned int {\bfseries bounce\+\_\+buf\+\_\+len}
+\item 
+\Hypertarget{structxhci__ring_a9c09dac59a10cd5e2513ce86294a0309}\label{structxhci__ring_a9c09dac59a10cd5e2513ce86294a0309} 
+enum xhci\+\_\+ring\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structxhci__ring_a8f71fca0260af664b59c9b23866607f9}\label{structxhci__ring_a8f71fca0260af664b59c9b23866607f9} 
+u32 {\bfseries old\+\_\+trb\+\_\+comp\+\_\+code}
+\item 
+\Hypertarget{structxhci__ring_a2adc065c145f901dc6792f9ca6026172}\label{structxhci__ring_a2adc065c145f901dc6792f9ca6026172} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} \texorpdfstring{$\ast$}{*} {\bfseries trb\+\_\+address\+\_\+map}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\doxysection{nfs\+\_\+pgio\+\_\+args Struct Reference}
+\hypertarget{structnfs__pgio__args}{}\label{structnfs__pgio__args}\index{nfs\_pgio\_args@{nfs\_pgio\_args}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs__pgio__args_a80bc2efe0af33a5b3cc3c7ff5a369ae1}\label{structnfs__pgio__args_a80bc2efe0af33a5b3cc3c7ff5a369ae1} 
+struct \doxymbox{\hyperlink{structnfs4__sequence__args}{nfs4\+\_\+sequence\+\_\+args}} {\bfseries seq\+\_\+args}
+\item 
+\Hypertarget{structnfs__pgio__args_a04f67dbce0505662c26eb9b988694e5d}\label{structnfs__pgio__args_a04f67dbce0505662c26eb9b988694e5d} 
+struct \doxymbox{\hyperlink{structnfs__fh}{nfs\+\_\+fh}} \texorpdfstring{$\ast$}{*} {\bfseries fh}
+\item 
+\Hypertarget{structnfs__pgio__args_a09979eb1d5bb218bfbbedba89439dd89}\label{structnfs__pgio__args_a09979eb1d5bb218bfbbedba89439dd89} 
+struct \doxymbox{\hyperlink{structnfs__open__context}{nfs\+\_\+open\+\_\+context}} \texorpdfstring{$\ast$}{*} {\bfseries context}
+\item 
+\Hypertarget{structnfs__pgio__args_a6e6f3c3b6464161cefe0e5009986d109}\label{structnfs__pgio__args_a6e6f3c3b6464161cefe0e5009986d109} 
+struct \doxymbox{\hyperlink{structnfs__lock__context}{nfs\+\_\+lock\+\_\+context}} \texorpdfstring{$\ast$}{*} {\bfseries lock\+\_\+context}
+\item 
+\Hypertarget{structnfs__pgio__args_a91f0cbd903a430b12d3f56778a88d7de}\label{structnfs__pgio__args_a91f0cbd903a430b12d3f56778a88d7de} 
+nfs4\+\_\+stateid {\bfseries stateid}
+\item 
+\Hypertarget{structnfs__pgio__args_ad6548b4eb5ea2299d8e4f5fb53333fbc}\label{structnfs__pgio__args_ad6548b4eb5ea2299d8e4f5fb53333fbc} 
+\+\_\+\+\_\+u64 {\bfseries offset}
+\item 
+\Hypertarget{structnfs__pgio__args_a72a63463f8be1b85c306d7b1137e3df6}\label{structnfs__pgio__args_a72a63463f8be1b85c306d7b1137e3df6} 
+\+\_\+\+\_\+u32 {\bfseries count}
+\item 
+\Hypertarget{structnfs__pgio__args_af699a63159a5732e45713c9c4741bc40}\label{structnfs__pgio__args_af699a63159a5732e45713c9c4741bc40} 
+unsigned int {\bfseries pgbase}
+\item 
+\Hypertarget{structnfs__pgio__args_afb959ce835617ead16ef6c4fe8d3064a}\label{structnfs__pgio__args_afb959ce835617ead16ef6c4fe8d3064a} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries pages}
+\item 
+\Hypertarget{structnfs__pgio__args_ac162b89a22ec4548067af4ff6e63b119}\label{structnfs__pgio__args_ac162b89a22ec4548067af4ff6e63b119} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>unsigned int {\bfseries replen}\\
+\Hypertarget{unionnfs__pgio__args_1_1_0d032167121220006373374113023147247275242341001021_aa743a013a506054d69dd0e4984b24b1d}\label{unionnfs__pgio__args_1_1_0d032167121220006373374113023147247275242341001021_aa743a013a506054d69dd0e4984b24b1d} 
+\>struct \{\\
+\>\>const u32 \texorpdfstring{$\ast$}{*} {\bfseries bitmask}\\
+\>\>u32 {\bfseries bitmask\_store} \+[3]\+\\
+\>\>enum nfs3\_stable\_how {\bfseries stable}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

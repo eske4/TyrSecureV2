@@ -1,0 +1,101 @@
+\doxysection{ipv6\+\_\+pinfo Struct Reference}
+\hypertarget{structipv6__pinfo}{}\label{structipv6__pinfo}\index{ipv6\_pinfo@{ipv6\_pinfo}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structipv6__pinfo_a476f553e2e8a49b956c89d2f37e7bfa4}\label{structipv6__pinfo_a476f553e2e8a49b956c89d2f37e7bfa4} 
+struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} {\bfseries saddr}
+\item 
+\Hypertarget{structipv6__pinfo_aee041be08b0bb883ca99c1148c130649}\label{structipv6__pinfo_aee041be08b0bb883ca99c1148c130649} 
+\+\_\+\+\_\+be32 {\bfseries flow\+\_\+label}
+\item 
+\Hypertarget{structipv6__pinfo_ae97ebd60d349233be58cd9be2cd83e2d}\label{structipv6__pinfo_ae97ebd60d349233be58cd9be2cd83e2d} 
+u32 {\bfseries dst\+\_\+cookie}
+\item 
+\Hypertarget{structipv6__pinfo_afcafe0df3b5de6f348d3d8245ef3384c}\label{structipv6__pinfo_afcafe0df3b5de6f348d3d8245ef3384c} 
+struct \doxymbox{\hyperlink{structipv6__txoptions}{ipv6\+\_\+txoptions}} \texorpdfstring{$\ast$}{*} {\bfseries opt}
+\item 
+\Hypertarget{structipv6__pinfo_acdeb07063589b0022d06505552138072}\label{structipv6__pinfo_acdeb07063589b0022d06505552138072} 
+s16 {\bfseries hop\+\_\+limit}
+\item 
+\Hypertarget{structipv6__pinfo_a93bd1dd1162def4daad159a8be2106bd}\label{structipv6__pinfo_a93bd1dd1162def4daad159a8be2106bd} 
+u8 {\bfseries pmtudisc}
+\item 
+\Hypertarget{structipv6__pinfo_ac8fd3d1c1cae53a234e81df0f23f5158}\label{structipv6__pinfo_ac8fd3d1c1cae53a234e81df0f23f5158} 
+u8 {\bfseries tclass}
+\item 
+\Hypertarget{structipv6__pinfo_ab4196c7294a3810d634f493c32f5dd32}\label{structipv6__pinfo_ab4196c7294a3810d634f493c32f5dd32} 
+bool {\bfseries saddr\+\_\+cache}
+\item 
+\Hypertarget{structipv6__pinfo_a3d9b14e05ac15c0fe3f86893cf29ee41}\label{structipv6__pinfo_a3d9b14e05ac15c0fe3f86893cf29ee41} 
+bool {\bfseries daddr\+\_\+cache}
+\item 
+\Hypertarget{structipv6__pinfo_a045a38b7c801cd3ccff923b163810676}\label{structipv6__pinfo_a045a38b7c801cd3ccff923b163810676} 
+u8 {\bfseries mcast\+\_\+hops}
+\item 
+\Hypertarget{structipv6__pinfo_a5bdb9fb61c572fcf5404bef1124a315e}\label{structipv6__pinfo_a5bdb9fb61c572fcf5404bef1124a315e} 
+u32 {\bfseries frag\+\_\+size}
+\item 
+\Hypertarget{structipv6__pinfo_a5bd7ba64f02b9819653140c7063e0577}\label{structipv6__pinfo_a5bd7ba64f02b9819653140c7063e0577} 
+int {\bfseries ucast\+\_\+oif}
+\item 
+\Hypertarget{structipv6__pinfo_a43b77cdf0f013bcf16e60a62600efe0a}\label{structipv6__pinfo_a43b77cdf0f013bcf16e60a62600efe0a} 
+int {\bfseries mcast\+\_\+oif}
+\item 
+\Hypertarget{structipv6__pinfo_ac97b03d66f06b1e5453bcc2319eeccff}\label{structipv6__pinfo_ac97b03d66f06b1e5453bcc2319eeccff} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>u16 {\bfseries srcrt}: 1\\
+\>\>u16 {\bfseries osrcrt}: 1\\
+\>\>u16 {\bfseries rxinfo}: 1\\
+\>\>u16 {\bfseries rxoinfo}: 1\\
+\>\>u16 {\bfseries rxhlim}: 1\\
+\>\>u16 {\bfseries rxohlim}: 1\\
+\>\>u16 {\bfseries hopopts}: 1\\
+\>\>u16 {\bfseries ohopopts}: 1\\
+\>\>u16 {\bfseries dstopts}: 1\\
+\>\>u16 {\bfseries odstopts}: 1\\
+\>\>u16 {\bfseries rxflow}: 1\\
+\>\>u16 {\bfseries rxtclass}: 1\\
+\>\>u16 {\bfseries rxpmtu}: 1\\
+\>\>u16 {\bfseries rxorigdstaddr}: 1\\
+\>\>u16 {\bfseries recvfragsize}: 1\\
+\>\} {\bfseries bits}\\
+\>u16 {\bfseries all}\\
+\} {\bfseries rxopt}\\
+
+\end{tabbing}\item 
+\Hypertarget{structipv6__pinfo_a31d0ac7b1c53192b8148b2f60eee44fa}\label{structipv6__pinfo_a31d0ac7b1c53192b8148b2f60eee44fa} 
+u8 {\bfseries srcprefs}
+\item 
+\Hypertarget{structipv6__pinfo_a0bb8c23fe8e5a8cf6c1306b513fc5159}\label{structipv6__pinfo_a0bb8c23fe8e5a8cf6c1306b513fc5159} 
+u8 {\bfseries min\+\_\+hopcount}
+\item 
+\Hypertarget{structipv6__pinfo_aae0d3596de31e445fa9b438ff012e0e5}\label{structipv6__pinfo_aae0d3596de31e445fa9b438ff012e0e5} 
+\+\_\+\+\_\+be32 {\bfseries rcv\+\_\+flowinfo}
+\item 
+\Hypertarget{structipv6__pinfo_aeab1d27c2810331f28f4bf06115f5bb7}\label{structipv6__pinfo_aeab1d27c2810331f28f4bf06115f5bb7} 
+struct \doxymbox{\hyperlink{structin6__pktinfo}{in6\+\_\+pktinfo}} {\bfseries sticky\+\_\+pktinfo}
+\item 
+\Hypertarget{structipv6__pinfo_a082cfa692323c5ecda79c42953d1c464}\label{structipv6__pinfo_a082cfa692323c5ecda79c42953d1c464} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries pktoptions}
+\item 
+\Hypertarget{structipv6__pinfo_ac4dab92c4c34672226287facc782f5be}\label{structipv6__pinfo_ac4dab92c4c34672226287facc782f5be} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries rxpmtu}
+\item 
+\Hypertarget{structipv6__pinfo_ae03cb7f24982d86005c52053edbc04c7}\label{structipv6__pinfo_ae03cb7f24982d86005c52053edbc04c7} 
+struct \doxymbox{\hyperlink{structinet6__cork}{inet6\+\_\+cork}} {\bfseries cork}
+\item 
+\Hypertarget{structipv6__pinfo_a84d92c531ab47a4bfbf845fd29dc6af8}\label{structipv6__pinfo_a84d92c531ab47a4bfbf845fd29dc6af8} 
+struct \doxymbox{\hyperlink{structipv6__mc__socklist}{ipv6\+\_\+mc\+\_\+socklist}} \texorpdfstring{$\ast$}{*} {\bfseries ipv6\+\_\+mc\+\_\+list}
+\item 
+\Hypertarget{structipv6__pinfo_a70333559e9cfbf24449d4f0e87ec765b}\label{structipv6__pinfo_a70333559e9cfbf24449d4f0e87ec765b} 
+struct \doxymbox{\hyperlink{structipv6__ac__socklist}{ipv6\+\_\+ac\+\_\+socklist}} \texorpdfstring{$\ast$}{*} {\bfseries ipv6\+\_\+ac\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

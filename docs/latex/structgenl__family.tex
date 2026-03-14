@@ -1,0 +1,91 @@
+\doxysection{genl\+\_\+family Struct Reference}
+\hypertarget{structgenl__family}{}\label{structgenl__family}\index{genl\_family@{genl\_family}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structgenl__family_af33323d308ec477a3f90e47d861ddd54}\label{structgenl__family_af33323d308ec477a3f90e47d861ddd54} 
+unsigned int {\bfseries hdrsize}
+\item 
+\Hypertarget{structgenl__family_a699341094e3014630de2131fb2dd1c99}\label{structgenl__family_a699341094e3014630de2131fb2dd1c99} 
+char {\bfseries name} \+[16]\+
+\item 
+\Hypertarget{structgenl__family_a177ce05e1535e86de71c5c51af7ea592}\label{structgenl__family_a177ce05e1535e86de71c5c51af7ea592} 
+unsigned int {\bfseries version}
+\item 
+\Hypertarget{structgenl__family_ade06bab6c5f076547748b97e704b795d}\label{structgenl__family_ade06bab6c5f076547748b97e704b795d} 
+unsigned int {\bfseries maxattr}
+\item 
+\Hypertarget{structgenl__family_a4188c30f73ef9b5bcf1db45889147cce}\label{structgenl__family_a4188c30f73ef9b5bcf1db45889147cce} 
+u8 {\bfseries netnsok}:\+ 1
+\item 
+\Hypertarget{structgenl__family_a76dd7ffac483b8dd498acb802fd3fb4f}\label{structgenl__family_a76dd7ffac483b8dd498acb802fd3fb4f} 
+u8 {\bfseries parallel\+\_\+ops}:\+ 1
+\item 
+\Hypertarget{structgenl__family_ab3502e46fc287d20ac8074ae8765786c}\label{structgenl__family_ab3502e46fc287d20ac8074ae8765786c} 
+u8 {\bfseries n\+\_\+ops}
+\item 
+\Hypertarget{structgenl__family_a6af5e1db9bf632893351ebb989d4aac5}\label{structgenl__family_a6af5e1db9bf632893351ebb989d4aac5} 
+u8 {\bfseries n\+\_\+small\+\_\+ops}
+\item 
+\Hypertarget{structgenl__family_af370c19534648f6d6790c57d72b687ac}\label{structgenl__family_af370c19534648f6d6790c57d72b687ac} 
+u8 {\bfseries n\+\_\+split\+\_\+ops}
+\item 
+\Hypertarget{structgenl__family_a929bedb0d5e7814e7618f9360898a04b}\label{structgenl__family_a929bedb0d5e7814e7618f9360898a04b} 
+u8 {\bfseries n\+\_\+mcgrps}
+\item 
+\Hypertarget{structgenl__family_a58148eee582eb697a5d1e76ac888c582}\label{structgenl__family_a58148eee582eb697a5d1e76ac888c582} 
+u8 {\bfseries resv\+\_\+start\+\_\+op}
+\item 
+\Hypertarget{structgenl__family_abc64790be53227e29c7e1b9a96a0d31c}\label{structgenl__family_abc64790be53227e29c7e1b9a96a0d31c} 
+const struct \doxymbox{\hyperlink{structnla__policy}{nla\+\_\+policy}} \texorpdfstring{$\ast$}{*} {\bfseries policy}
+\item 
+\Hypertarget{structgenl__family_af3755be75d313d3c6d5fa6e8d7a35fe0}\label{structgenl__family_af3755be75d313d3c6d5fa6e8d7a35fe0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pre\+\_\+doit} )(const struct \doxymbox{\hyperlink{structgenl__split__ops}{genl\+\_\+split\+\_\+ops}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structgenl__info}{genl\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgenl__family_abd59e4048c251a816328a575eb676bab}\label{structgenl__family_abd59e4048c251a816328a575eb676bab} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+doit} )(const struct \doxymbox{\hyperlink{structgenl__split__ops}{genl\+\_\+split\+\_\+ops}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structgenl__info}{genl\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgenl__family_a8c91c74b2accf1a78380b879a9ecdae6}\label{structgenl__family_a8c91c74b2accf1a78380b879a9ecdae6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bind} )(int)
+\item 
+\Hypertarget{structgenl__family_a0951c6e6f05d7cd498b03c7b96b806f7}\label{structgenl__family_a0951c6e6f05d7cd498b03c7b96b806f7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unbind} )(int)
+\item 
+\Hypertarget{structgenl__family_a4e4f53d2d7cacaf2a4fc0091e3085350}\label{structgenl__family_a4e4f53d2d7cacaf2a4fc0091e3085350} 
+const struct \doxymbox{\hyperlink{structgenl__ops}{genl\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structgenl__family_a3b24957364ab7491675294a17ca28587}\label{structgenl__family_a3b24957364ab7491675294a17ca28587} 
+const struct \doxymbox{\hyperlink{structgenl__small__ops}{genl\+\_\+small\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries small\+\_\+ops}
+\item 
+\Hypertarget{structgenl__family_a7dcbcb5815a8475953416abe318e49f8}\label{structgenl__family_a7dcbcb5815a8475953416abe318e49f8} 
+const struct \doxymbox{\hyperlink{structgenl__split__ops}{genl\+\_\+split\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries split\+\_\+ops}
+\item 
+\Hypertarget{structgenl__family_aa436a7da6daf345f47d6ff0556b3de46}\label{structgenl__family_aa436a7da6daf345f47d6ff0556b3de46} 
+const struct \doxymbox{\hyperlink{structgenl__multicast__group}{genl\+\_\+multicast\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries mcgrps}
+\item 
+\Hypertarget{structgenl__family_a0531ec3e968be4c8bb73929e4545804f}\label{structgenl__family_a0531ec3e968be4c8bb73929e4545804f} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries module}
+\item 
+\Hypertarget{structgenl__family_ab9a8e166bedbdd740495af8fbf64b4b9}\label{structgenl__family_ab9a8e166bedbdd740495af8fbf64b4b9} 
+size\+\_\+t {\bfseries sock\+\_\+priv\+\_\+size}
+\item 
+\Hypertarget{structgenl__family_ac4e664a7780cccd1da3d56967cc3dcc8}\label{structgenl__family_ac4e664a7780cccd1da3d56967cc3dcc8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sock\+\_\+priv\+\_\+init} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgenl__family_a31370b372af21d91ea4d2948d434b24f}\label{structgenl__family_a31370b372af21d91ea4d2948d434b24f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sock\+\_\+priv\+\_\+destroy} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structgenl__family_a58bb9145c15f016e8fbff414b2cdb6f4}\label{structgenl__family_a58bb9145c15f016e8fbff414b2cdb6f4} 
+int {\bfseries id}
+\item 
+\Hypertarget{structgenl__family_a4fd0a1530c613ccdfa03408a7740fb65}\label{structgenl__family_a4fd0a1530c613ccdfa03408a7740fb65} 
+unsigned int {\bfseries mcgrp\+\_\+offset}
+\item 
+\Hypertarget{structgenl__family_a4e718de6804a3a7e687b1c1a630ad893}\label{structgenl__family_a4e718de6804a3a7e687b1c1a630ad893} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} \texorpdfstring{$\ast$}{*} {\bfseries sock\+\_\+privs}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

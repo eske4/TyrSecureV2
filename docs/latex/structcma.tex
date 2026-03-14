@@ -1,0 +1,58 @@
+\doxysection{cma Struct Reference}
+\hypertarget{structcma}{}\label{structcma}\index{cma@{cma}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcma_a3d50ba8294a79d0ce1413cd4855e83bb}\label{structcma_a3d50ba8294a79d0ce1413cd4855e83bb} 
+long unsigned int {\bfseries count}
+\item 
+\Hypertarget{structcma_a910cc523319e5396d725b57aed31ad54}\label{structcma_a910cc523319e5396d725b57aed31ad54} 
+long unsigned int {\bfseries available\+\_\+count}
+\item 
+\Hypertarget{structcma_ab10ccb797b113a21646b0c9f54fb8780}\label{structcma_ab10ccb797b113a21646b0c9f54fb8780} 
+unsigned int {\bfseries order\+\_\+per\+\_\+bit}
+\item 
+\Hypertarget{structcma_a2691fffb3cbbe130f305bcf9968b9a5b}\label{structcma_a2691fffb3cbbe130f305bcf9968b9a5b} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structcma_a26192936b7b1c2340ab1ca0d5f756a5c}\label{structcma_a26192936b7b1c2340ab1ca0d5f756a5c} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries alloc\+\_\+mutex}
+\item 
+\Hypertarget{structcma_a6d8fd598770d929efe255c8988ace416}\label{structcma_a6d8fd598770d929efe255c8988ace416} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries mem\+\_\+head}
+\item 
+\Hypertarget{structcma_a302f8220180c0ae36a39cdda40854bdc}\label{structcma_a302f8220180c0ae36a39cdda40854bdc} 
+spinlock\+\_\+t {\bfseries mem\+\_\+head\+\_\+lock}
+\item 
+\Hypertarget{structcma_a77f14db80a20990b728231dbb714319e}\label{structcma_a77f14db80a20990b728231dbb714319e} 
+char {\bfseries name} \+[64]\+
+\item 
+\Hypertarget{structcma_a1982fbb56b1d3cb2306be0a45a17f42e}\label{structcma_a1982fbb56b1d3cb2306be0a45a17f42e} 
+int {\bfseries nranges}
+\item 
+\Hypertarget{structcma_a9f276a818df106cd6df64c8a2bef5726}\label{structcma_a9f276a818df106cd6df64c8a2bef5726} 
+struct \doxymbox{\hyperlink{structcma__memrange}{cma\+\_\+memrange}} {\bfseries ranges} \+[8]\+
+\item 
+\Hypertarget{structcma_a4dab8bd8649fabb77fd518ae5857b65e}\label{structcma_a4dab8bd8649fabb77fd518ae5857b65e} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries nr\+\_\+pages\+\_\+succeeded}
+\item 
+\Hypertarget{structcma_aced7bacb0a1f1af551e167f68b44608e}\label{structcma_aced7bacb0a1f1af551e167f68b44608e} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries nr\+\_\+pages\+\_\+failed}
+\item 
+\Hypertarget{structcma_af5e4a43926e2df7af2fbdbfd19247cd4}\label{structcma_af5e4a43926e2df7af2fbdbfd19247cd4} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries nr\+\_\+pages\+\_\+released}
+\item 
+\Hypertarget{structcma_a15002cbc017d91f0d392fb808d23a0b4}\label{structcma_a15002cbc017d91f0d392fb808d23a0b4} 
+struct \doxymbox{\hyperlink{structcma__kobject}{cma\+\_\+kobject}} \texorpdfstring{$\ast$}{*} {\bfseries cma\+\_\+kobj}
+\item 
+\Hypertarget{structcma_aa5aa7baba5384756aecb307c18f7395b}\label{structcma_aa5aa7baba5384756aecb307c18f7395b} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structcma_aa92f147de5857587665ae15097ca4329}\label{structcma_aa92f147de5857587665ae15097ca4329} 
+int {\bfseries nid}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

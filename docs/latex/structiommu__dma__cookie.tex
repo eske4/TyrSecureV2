@@ -1,0 +1,43 @@
+\doxysection{iommu\+\_\+dma\+\_\+cookie Struct Reference}
+\hypertarget{structiommu__dma__cookie}{}\label{structiommu__dma__cookie}\index{iommu\_dma\_cookie@{iommu\_dma\_cookie}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structiommu__dma__cookie_ac55f040e569ca93781a6c175309ad917}\label{structiommu__dma__cookie_ac55f040e569ca93781a6c175309ad917} 
+struct \doxymbox{\hyperlink{structiova__domain}{iova\+\_\+domain}} {\bfseries iovad}
+\item 
+\Hypertarget{structiommu__dma__cookie_a9b5e73d1be9cd91daa9e42dcdf818145}\label{structiommu__dma__cookie_a9b5e73d1be9cd91daa9e42dcdf818145} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries msi\+\_\+page\+\_\+list}
+\item 
+\Hypertarget{structiommu__dma__cookie_a997a11a4a4b9ad7e26ee4f84d76196af}\label{structiommu__dma__cookie_a997a11a4a4b9ad7e26ee4f84d76196af} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structiova__fq}{iova\_fq}} \texorpdfstring{$\ast$}{*} {\bfseries single\_fq}\\
+\>struct \doxymbox{\hyperlink{structiova__fq}{iova\_fq}} \texorpdfstring{$\ast$}{*} {\bfseries percpu\_fq}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structiommu__dma__cookie_a7fb238cc43b31cd5707bcdf833c61aba}\label{structiommu__dma__cookie_a7fb238cc43b31cd5707bcdf833c61aba} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries fq\+\_\+flush\+\_\+start\+\_\+cnt}
+\item 
+\Hypertarget{structiommu__dma__cookie_a824ef85cce3bd3d1d522be9aa47e3cde}\label{structiommu__dma__cookie_a824ef85cce3bd3d1d522be9aa47e3cde} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries fq\+\_\+flush\+\_\+finish\+\_\+cnt}
+\item 
+\Hypertarget{structiommu__dma__cookie_af789306e7087828fc0ab02e984c64c15}\label{structiommu__dma__cookie_af789306e7087828fc0ab02e984c64c15} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries fq\+\_\+timer}
+\item 
+\Hypertarget{structiommu__dma__cookie_a0cf5735582b89df1d7f43f1e6bcc14ae}\label{structiommu__dma__cookie_a0cf5735582b89df1d7f43f1e6bcc14ae} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries fq\+\_\+timer\+\_\+on}
+\item 
+\Hypertarget{structiommu__dma__cookie_acf23a3281f61e944ab5a2103d5ddf1cc}\label{structiommu__dma__cookie_acf23a3281f61e944ab5a2103d5ddf1cc} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries fq\+\_\+domain}
+\item 
+\Hypertarget{structiommu__dma__cookie_afdeacef6d3f5d23540fe5a00cfe3f993}\label{structiommu__dma__cookie_afdeacef6d3f5d23540fe5a00cfe3f993} 
+struct \doxymbox{\hyperlink{structiommu__dma__options}{iommu\+\_\+dma\+\_\+options}} {\bfseries options}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\doxysection{ehci\+\_\+itd Struct Reference}
+\hypertarget{structehci__itd}{}\label{structehci__itd}\index{ehci\_itd@{ehci\_itd}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structehci__itd_a0ba5f2c83bcbc130f672951b3d5618f8}\label{structehci__itd_a0ba5f2c83bcbc130f672951b3d5618f8} 
+\+\_\+\+\_\+le32 {\bfseries hw\+\_\+next}
+\item 
+\Hypertarget{structehci__itd_a1eae29e28abbee95e54069d4b171196a}\label{structehci__itd_a1eae29e28abbee95e54069d4b171196a} 
+\+\_\+\+\_\+le32 {\bfseries hw\+\_\+transaction} \+[8]\+
+\item 
+\Hypertarget{structehci__itd_ade2978ccc39b4806be2a2916093d162d}\label{structehci__itd_ade2978ccc39b4806be2a2916093d162d} 
+\+\_\+\+\_\+le32 {\bfseries hw\+\_\+bufp} \+[7]\+
+\item 
+\Hypertarget{structehci__itd_a963a7af37c5f017e6ddd339b1995ba51}\label{structehci__itd_a963a7af37c5f017e6ddd339b1995ba51} 
+\+\_\+\+\_\+le32 {\bfseries hw\+\_\+bufp\+\_\+hi} \+[7]\+
+\item 
+\Hypertarget{structehci__itd_a1442d6ec9c52e09bfcfe2bac889f5461}\label{structehci__itd_a1442d6ec9c52e09bfcfe2bac889f5461} 
+dma\+\_\+addr\+\_\+t {\bfseries itd\+\_\+dma}
+\item 
+\Hypertarget{structehci__itd_ac48da4f145006578117626b4dc99dff1}\label{structehci__itd_ac48da4f145006578117626b4dc99dff1} 
+union \doxymbox{\hyperlink{unionehci__shadow}{ehci\+\_\+shadow}} {\bfseries itd\+\_\+next}
+\item 
+\Hypertarget{structehci__itd_a5ede1cc87b11c21864f19d805072c87a}\label{structehci__itd_a5ede1cc87b11c21864f19d805072c87a} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries urb}
+\item 
+\Hypertarget{structehci__itd_ae9b86c6a72bb4fc155e4dba4dddc8333}\label{structehci__itd_ae9b86c6a72bb4fc155e4dba4dddc8333} 
+struct \doxymbox{\hyperlink{structehci__iso__stream}{ehci\+\_\+iso\+\_\+stream}} \texorpdfstring{$\ast$}{*} {\bfseries stream}
+\item 
+\Hypertarget{structehci__itd_a37c27737178dd51c9275a55d78355114}\label{structehci__itd_a37c27737178dd51c9275a55d78355114} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries itd\+\_\+list}
+\item 
+\Hypertarget{structehci__itd_a3c6d81d24c7bebe58951535f820e4bb0}\label{structehci__itd_a3c6d81d24c7bebe58951535f820e4bb0} 
+unsigned int {\bfseries frame}
+\item 
+\Hypertarget{structehci__itd_a2a016e4b7af1495f0f215e694291654f}\label{structehci__itd_a2a016e4b7af1495f0f215e694291654f} 
+unsigned int {\bfseries pg}
+\item 
+\Hypertarget{structehci__itd_a27b00f4c21ddf3b9e396d6571fc17741}\label{structehci__itd_a27b00f4c21ddf3b9e396d6571fc17741} 
+unsigned int {\bfseries index} \+[8]\+
+\item 
+\Hypertarget{structehci__itd_a5d1162512f2776832fdf57739b7ed303}\label{structehci__itd_a5d1162512f2776832fdf57739b7ed303} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

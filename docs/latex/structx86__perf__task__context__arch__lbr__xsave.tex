@@ -1,0 +1,48 @@
+\doxysection{x86\+\_\+perf\+\_\+task\+\_\+context\+\_\+arch\+\_\+lbr\+\_\+xsave Struct Reference}
+\hypertarget{structx86__perf__task__context__arch__lbr__xsave}{}\label{structx86__perf__task__context__arch__lbr__xsave}\index{x86\_perf\_task\_context\_arch\_lbr\_xsave@{x86\_perf\_task\_context\_arch\_lbr\_xsave}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structx86__perf__task__context__arch__lbr__xsave_a784ec4babf604b5953aa2f85f82806ea}\label{structx86__perf__task__context__arch__lbr__xsave_a784ec4babf604b5953aa2f85f82806ea} 
+struct \doxymbox{\hyperlink{structx86__perf__task__context__opt}{x86\+\_\+perf\+\_\+task\+\_\+context\+\_\+opt}} {\bfseries opt}
+\item 
+\Hypertarget{structx86__perf__task__context__arch__lbr__xsave_a961cfb52aff91f31daf18be96ba76917}\label{structx86__perf__task__context__arch__lbr__xsave_a961cfb52aff91f31daf18be96ba76917} 
+long :\+ 64
+\item 
+\Hypertarget{structx86__perf__task__context__arch__lbr__xsave_ae8923d8b2c1e3bde9475bbc77cd758cd}\label{structx86__perf__task__context__arch__lbr__xsave_ae8923d8b2c1e3bde9475bbc77cd758cd} 
+long :\+ 64
+\item 
+\Hypertarget{structx86__perf__task__context__arch__lbr__xsave_a36024fbe550e17687f1b1e4e6d1d9ba4}\label{structx86__perf__task__context__arch__lbr__xsave_a36024fbe550e17687f1b1e4e6d1d9ba4} 
+long :\+ 64
+\item 
+\Hypertarget{structx86__perf__task__context__arch__lbr__xsave_acf9cf4ce7093b40d84bb413c1920c1eb}\label{structx86__perf__task__context__arch__lbr__xsave_acf9cf4ce7093b40d84bb413c1920c1eb} 
+long :\+ 64
+\item 
+\Hypertarget{structx86__perf__task__context__arch__lbr__xsave_a4778b8afa7861a7542b66ae4195f0c2e}\label{structx86__perf__task__context__arch__lbr__xsave_a4778b8afa7861a7542b66ae4195f0c2e} 
+long :\+ 64
+\item 
+\Hypertarget{structx86__perf__task__context__arch__lbr__xsave_aae645129b6d87afa19852e554d023555}\label{structx86__perf__task__context__arch__lbr__xsave_aae645129b6d87afa19852e554d023555} 
+long :\+ 64
+\item 
+\Hypertarget{structx86__perf__task__context__arch__lbr__xsave_a7821772ffae0ead789b8f71eb3c489c8}\label{structx86__perf__task__context__arch__lbr__xsave_a7821772ffae0ead789b8f71eb3c489c8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structxregs__state}{xregs\_state}} {\bfseries xsave}\\
+\Hypertarget{unionx86__perf__task__context__arch__lbr__xsave_1_1_0d061150055065012013164104155021065317245073177275_addfd5ea29b95575ad4d62a3350f236d5}\label{unionx86__perf__task__context__arch__lbr__xsave_1_1_0d061150055065012013164104155021065317245073177275_addfd5ea29b95575ad4d62a3350f236d5} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structfxregs__state}{fxregs\_state}} {\bfseries i387}\\
+\>\>struct \doxymbox{\hyperlink{structxstate__header}{xstate\_header}} {\bfseries header}\\
+\>\>struct \doxymbox{\hyperlink{structarch__lbr__state}{arch\_lbr\_state}} {\bfseries lbr}\\
+\>\>long : 64\\
+\>\>long : 64\\
+\>\>long : 64\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

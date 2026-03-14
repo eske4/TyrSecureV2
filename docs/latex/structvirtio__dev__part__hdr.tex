@@ -1,0 +1,37 @@
+\doxysection{virtio\+\_\+dev\+\_\+part\+\_\+hdr Struct Reference}
+\hypertarget{structvirtio__dev__part__hdr}{}\label{structvirtio__dev__part__hdr}\index{virtio\_dev\_part\_hdr@{virtio\_dev\_part\_hdr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtio__dev__part__hdr_a94d0e0d30476d8c0ec621f9950be959a}\label{structvirtio__dev__part__hdr_a94d0e0d30476d8c0ec621f9950be959a} 
+\+\_\+\+\_\+le16 {\bfseries part\+\_\+type}
+\item 
+\Hypertarget{structvirtio__dev__part__hdr_aff32284f2997e17ca470a9e992692086}\label{structvirtio__dev__part__hdr_aff32284f2997e17ca470a9e992692086} 
+\+\_\+\+\_\+u8 {\bfseries flags}
+\item 
+\Hypertarget{structvirtio__dev__part__hdr_a47ba585cdd8412e71979c0974ada0a3a}\label{structvirtio__dev__part__hdr_a47ba585cdd8412e71979c0974ada0a3a} 
+\+\_\+\+\_\+u8 {\bfseries reserved}
+\item 
+\Hypertarget{structvirtio__dev__part__hdr_a3f84b30219629abde9710a81cdce3b32}\label{structvirtio__dev__part__hdr_a3f84b30219629abde9710a81cdce3b32} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_le32 {\bfseries offset}\\
+\>\>\_\_le32 {\bfseries reserved}\\
+\>\} {\bfseries pci\_common\_cfg}\\
+\>struct \{\\
+\>\>\_\_le16 {\bfseries index}\\
+\>\>\_\_u8 {\bfseries reserved} \+[6]\+\\
+\>\} {\bfseries vq\_index}\\
+\} {\bfseries selector}\\
+
+\end{tabbing}\item 
+\Hypertarget{structvirtio__dev__part__hdr_a84da07ae1be0733ffed3c73da58dac6e}\label{structvirtio__dev__part__hdr_a84da07ae1be0733ffed3c73da58dac6e} 
+\+\_\+\+\_\+le32 {\bfseries length}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

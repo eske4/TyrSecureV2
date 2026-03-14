@@ -1,0 +1,130 @@
+\doxysection{btrfs\+\_\+space\+\_\+info Struct Reference}
+\hypertarget{structbtrfs__space__info}{}\label{structbtrfs__space__info}\index{btrfs\_space\_info@{btrfs\_space\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__space__info_a20ebe7541854ccfbfe9439aead5c97e9}\label{structbtrfs__space__info_a20ebe7541854ccfbfe9439aead5c97e9} 
+struct \doxymbox{\hyperlink{structbtrfs__fs__info}{btrfs\+\_\+fs\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{structbtrfs__space__info_a57678c6f3e9713b7c194f2e4e52f87a8}\label{structbtrfs__space__info_a57678c6f3e9713b7c194f2e4e52f87a8} 
+struct \doxymbox{\hyperlink{structbtrfs__space__info}{btrfs\+\_\+space\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structbtrfs__space__info_a9673730f0ebd72cf51f8fe591ba04b75}\label{structbtrfs__space__info_a9673730f0ebd72cf51f8fe591ba04b75} 
+struct \doxymbox{\hyperlink{structbtrfs__space__info}{btrfs\+\_\+space\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries sub\+\_\+group} \+[1]\+
+\item 
+\Hypertarget{structbtrfs__space__info_affa1f39f3907b55c896856ed34d1a619}\label{structbtrfs__space__info_affa1f39f3907b55c896856ed34d1a619} 
+int {\bfseries subgroup\+\_\+id}
+\item 
+\Hypertarget{structbtrfs__space__info_acd198b1f4565fa0478fa0ac3fc62707b}\label{structbtrfs__space__info_acd198b1f4565fa0478fa0ac3fc62707b} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structbtrfs__space__info_a2a0e78f64477ea5901376e814b5a05c2}\label{structbtrfs__space__info_a2a0e78f64477ea5901376e814b5a05c2} 
+u64 {\bfseries total\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__space__info_a1aa6965503176872cbd686747fc8b082}\label{structbtrfs__space__info_a1aa6965503176872cbd686747fc8b082} 
+u64 {\bfseries bytes\+\_\+used}
+\item 
+\Hypertarget{structbtrfs__space__info_a1f0c489584e3e49e22ef4e30f6fde010}\label{structbtrfs__space__info_a1f0c489584e3e49e22ef4e30f6fde010} 
+u64 {\bfseries bytes\+\_\+pinned}
+\item 
+\Hypertarget{structbtrfs__space__info_a318b2be375e0b53a183189581d3e1164}\label{structbtrfs__space__info_a318b2be375e0b53a183189581d3e1164} 
+u64 {\bfseries bytes\+\_\+reserved}
+\item 
+\Hypertarget{structbtrfs__space__info_a872e13b64a581349e01a6e16503296da}\label{structbtrfs__space__info_a872e13b64a581349e01a6e16503296da} 
+u64 {\bfseries bytes\+\_\+may\+\_\+use}
+\item 
+\Hypertarget{structbtrfs__space__info_a6148f6aadb05d5c79d1b08295d697c17}\label{structbtrfs__space__info_a6148f6aadb05d5c79d1b08295d697c17} 
+u64 {\bfseries bytes\+\_\+readonly}
+\item 
+\Hypertarget{structbtrfs__space__info_a5b14e034176aba7bb918c39e34b7021e}\label{structbtrfs__space__info_a5b14e034176aba7bb918c39e34b7021e} 
+u64 {\bfseries bytes\+\_\+zone\+\_\+unusable}
+\item 
+\Hypertarget{structbtrfs__space__info_af98ed9db646cc4a3cf647446817af6a5}\label{structbtrfs__space__info_af98ed9db646cc4a3cf647446817af6a5} 
+u64 {\bfseries max\+\_\+extent\+\_\+size}
+\item 
+\Hypertarget{structbtrfs__space__info_a8c79c073606253de4effc5b10facd394}\label{structbtrfs__space__info_a8c79c073606253de4effc5b10facd394} 
+u64 {\bfseries chunk\+\_\+size}
+\item 
+\Hypertarget{structbtrfs__space__info_a259088d959981c19fcfc51b392ca4058}\label{structbtrfs__space__info_a259088d959981c19fcfc51b392ca4058} 
+int {\bfseries bg\+\_\+reclaim\+\_\+threshold}
+\item 
+\Hypertarget{structbtrfs__space__info_a820f83da314f97651a7c51b6fc4772b2}\label{structbtrfs__space__info_a820f83da314f97651a7c51b6fc4772b2} 
+int {\bfseries clamp}
+\item 
+\Hypertarget{structbtrfs__space__info_a37c4ac6ea0f9199594a5e903a74fbf49}\label{structbtrfs__space__info_a37c4ac6ea0f9199594a5e903a74fbf49} 
+bool {\bfseries full}
+\item 
+\Hypertarget{structbtrfs__space__info_a96b9202fbb91999215efe494cfe68c0c}\label{structbtrfs__space__info_a96b9202fbb91999215efe494cfe68c0c} 
+bool {\bfseries chunk\+\_\+alloc}
+\item 
+\Hypertarget{structbtrfs__space__info_a2da14effede63cfe2322409636a0eabf}\label{structbtrfs__space__info_a2da14effede63cfe2322409636a0eabf} 
+bool {\bfseries flush}
+\item 
+\Hypertarget{structbtrfs__space__info_ae6a710f59860d1c5ac06e110d7b52bd2}\label{structbtrfs__space__info_ae6a710f59860d1c5ac06e110d7b52bd2} 
+unsigned int {\bfseries force\+\_\+alloc}
+\item 
+\Hypertarget{structbtrfs__space__info_ab4a7fcdcda63acff2f761c76c7ffb19c}\label{structbtrfs__space__info_ab4a7fcdcda63acff2f761c76c7ffb19c} 
+u64 {\bfseries disk\+\_\+used}
+\item 
+\Hypertarget{structbtrfs__space__info_aebba3fcc510365ea71be9aaad29e708f}\label{structbtrfs__space__info_aebba3fcc510365ea71be9aaad29e708f} 
+u64 {\bfseries disk\+\_\+total}
+\item 
+\Hypertarget{structbtrfs__space__info_afa9639ba943c0b572435b7fbbb00cbf0}\label{structbtrfs__space__info_afa9639ba943c0b572435b7fbbb00cbf0} 
+u64 {\bfseries flags}
+\item 
+\Hypertarget{structbtrfs__space__info_ade5167885f3ccd72ea223422227f8009}\label{structbtrfs__space__info_ade5167885f3ccd72ea223422227f8009} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structbtrfs__space__info_a19bd2fb88357a47de24fc5f8c8ddecc8}\label{structbtrfs__space__info_a19bd2fb88357a47de24fc5f8c8ddecc8} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ro\+\_\+bgs}
+\item 
+\Hypertarget{structbtrfs__space__info_adf5ceeabf1a8d897c61bfc5badc0fc52}\label{structbtrfs__space__info_adf5ceeabf1a8d897c61bfc5badc0fc52} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries priority\+\_\+tickets}
+\item 
+\Hypertarget{structbtrfs__space__info_a44f70e3bf1056bd4177616aa59e2ecd1}\label{structbtrfs__space__info_a44f70e3bf1056bd4177616aa59e2ecd1} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tickets}
+\item 
+\Hypertarget{structbtrfs__space__info_a7014fdcf584c03a3c22af596758d1044}\label{structbtrfs__space__info_a7014fdcf584c03a3c22af596758d1044} 
+u64 {\bfseries reclaim\+\_\+size}
+\item 
+\Hypertarget{structbtrfs__space__info_a5bc43ca40c13bc91689679c6a42d597c}\label{structbtrfs__space__info_a5bc43ca40c13bc91689679c6a42d597c} 
+u64 {\bfseries tickets\+\_\+id}
+\item 
+\Hypertarget{structbtrfs__space__info_a5a8e0f77020bc23a543af63e6b5b71fb}\label{structbtrfs__space__info_a5a8e0f77020bc23a543af63e6b5b71fb} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries groups\+\_\+sem}
+\item 
+\Hypertarget{structbtrfs__space__info_a700cecf24519cd6a9c33a49b78c2b169}\label{structbtrfs__space__info_a700cecf24519cd6a9c33a49b78c2b169} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries block\+\_\+groups} \+[9]\+
+\item 
+\Hypertarget{structbtrfs__space__info_af0580d0543516c0e0fc1917d748eb07a}\label{structbtrfs__space__info_af0580d0543516c0e0fc1917d748eb07a} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} {\bfseries kobj}
+\item 
+\Hypertarget{structbtrfs__space__info_a38782ba00a2659a383bc650ef55d6cff}\label{structbtrfs__space__info_a38782ba00a2659a383bc650ef55d6cff} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} \texorpdfstring{$\ast$}{*} {\bfseries block\+\_\+group\+\_\+kobjs} \+[9]\+
+\item 
+\Hypertarget{structbtrfs__space__info_adf6e6320bb0bd3a43648f87311157eec}\label{structbtrfs__space__info_adf6e6320bb0bd3a43648f87311157eec} 
+u64 {\bfseries reclaim\+\_\+count}
+\item 
+\Hypertarget{structbtrfs__space__info_a0f80ef296795418203c33aeda450f464}\label{structbtrfs__space__info_a0f80ef296795418203c33aeda450f464} 
+u64 {\bfseries reclaim\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__space__info_aa51074c02f4493c102cfa1494c8616b6}\label{structbtrfs__space__info_aa51074c02f4493c102cfa1494c8616b6} 
+u64 {\bfseries reclaim\+\_\+errors}
+\item 
+\Hypertarget{structbtrfs__space__info_a849556b9e2269e48eddcf2a8b1ba1098}\label{structbtrfs__space__info_a849556b9e2269e48eddcf2a8b1ba1098} 
+bool {\bfseries dynamic\+\_\+reclaim}
+\item 
+\Hypertarget{structbtrfs__space__info_a0654a321e6f9b0ce22cbbcec7b2625e7}\label{structbtrfs__space__info_a0654a321e6f9b0ce22cbbcec7b2625e7} 
+bool {\bfseries periodic\+\_\+reclaim}
+\item 
+\Hypertarget{structbtrfs__space__info_ada4766cdeeb70e1aa8895bff45d41757}\label{structbtrfs__space__info_ada4766cdeeb70e1aa8895bff45d41757} 
+bool {\bfseries periodic\+\_\+reclaim\+\_\+ready}
+\item 
+\Hypertarget{structbtrfs__space__info_a642da5c2b860e78ec38045036d8b310d}\label{structbtrfs__space__info_a642da5c2b860e78ec38045036d8b310d} 
+s64 {\bfseries reclaimable\+\_\+bytes}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\doxysection{proto\+\_\+ops Struct Reference}
+\hypertarget{structproto__ops}{}\label{structproto__ops}\index{proto\_ops@{proto\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structproto__ops_af31e17045b804dc92f97ef8cd790e832}\label{structproto__ops_af31e17045b804dc92f97ef8cd790e832} 
+int {\bfseries family}
+\item 
+\Hypertarget{structproto__ops_a378256f9bbda5270c7e3466edbd2cdf7}\label{structproto__ops_a378256f9bbda5270c7e3466edbd2cdf7} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structproto__ops_aafd518231cdb0155341e0f70f1adca99}\label{structproto__ops_aafd518231cdb0155341e0f70f1adca99} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproto__ops_a2b38935a22a493cd11ebc7e739f50e9d}\label{structproto__ops_a2b38935a22a493cd11ebc7e739f50e9d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bind} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsockaddr__unsized}{sockaddr\+\_\+unsized}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structproto__ops_ade07908161bf9079df67239d35db5ff8}\label{structproto__ops_ade07908161bf9079df67239d35db5ff8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries connect} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsockaddr__unsized}{sockaddr\+\_\+unsized}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structproto__ops_affd2b82c5d2bc44565fd6250c2c5484d}\label{structproto__ops_affd2b82c5d2bc44565fd6250c2c5484d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries socketpair} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproto__ops_a1bfe2b96cb051c6c5906750ea17ab238}\label{structproto__ops_a1bfe2b96cb051c6c5906750ea17ab238} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries accept} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structproto__accept__arg}{proto\+\_\+accept\+\_\+arg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproto__ops_aeb1458dd853cb7f57b495be9c1d57d39}\label{structproto__ops_aeb1458dd853cb7f57b495be9c1d57d39} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries getname} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsockaddr}{sockaddr}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structproto__ops_adeca59ea842d7097fc3550face35bc72}\label{structproto__ops_adeca59ea842d7097fc3550face35bc72} 
+\+\_\+\+\_\+poll\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries poll} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpoll__table__struct}{poll\+\_\+table\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproto__ops_aedbf781cc7ddfd36fa75124b15df7d37}\label{structproto__ops_aedbf781cc7ddfd36fa75124b15df7d37} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ioctl} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structproto__ops_aeee4c1454b0f62f753a40f0264a47e49}\label{structproto__ops_aeee4c1454b0f62f753a40f0264a47e49} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries compat\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structproto__ops_acc68906c603404e55a0337ac6e612f37}\label{structproto__ops_acc68906c603404e55a0337ac6e612f37} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries gettstamp} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, bool, bool)
+\item 
+\Hypertarget{structproto__ops_a3efa992dfcd5654d784b1cc028645084}\label{structproto__ops_a3efa992dfcd5654d784b1cc028645084} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries listen} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structproto__ops_a324eb8fcf6053620fdfc9fd8852de6b6}\label{structproto__ops_a324eb8fcf6053620fdfc9fd8852de6b6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries shutdown} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structproto__ops_a739aa80c360cd188e61202fdc9057268}\label{structproto__ops_a739aa80c360cd188e61202fdc9057268} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setsockopt} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, int, int, \doxymbox{\hyperlink{structsockptr__t}{sockptr\+\_\+t}}, unsigned int)
+\item 
+\Hypertarget{structproto__ops_a7226296a85b9da8e0f7f73457386d503}\label{structproto__ops_a7226296a85b9da8e0f7f73457386d503} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries getsockopt} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, int, int, char \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproto__ops_a6116f27bba709c953e62614153042682}\label{structproto__ops_a6116f27bba709c953e62614153042682} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries show\+\_\+fdinfo} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproto__ops_a6e926be9feacdd7a448d742b50c41bc1}\label{structproto__ops_a6e926be9feacdd7a448d742b50c41bc1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sendmsg} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsghdr}{msghdr}} \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structproto__ops_a76badd278f75e553e4e15ff265e999e2}\label{structproto__ops_a76badd278f75e553e4e15ff265e999e2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries recvmsg} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsghdr}{msghdr}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, int)
+\item 
+\Hypertarget{structproto__ops_a8f675670b77cc2897737e3bf21ad21d6}\label{structproto__ops_a8f675670b77cc2897737e3bf21ad21d6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mmap} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproto__ops_a9d789d63680cfdaf77ab8aa90b764e29}\label{structproto__ops_a9d789d63680cfdaf77ab8aa90b764e29} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries splice\+\_\+read} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*}, loff\+\_\+t \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpipe__inode__info}{pipe\+\_\+inode\+\_\+info}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, unsigned int)
+\item 
+\Hypertarget{structproto__ops_ad8d3db84da7cd1bcf94f329e37a761f5}\label{structproto__ops_ad8d3db84da7cd1bcf94f329e37a761f5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries splice\+\_\+eof} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproto__ops_a83947cc1210d633da39fe42faf2ab66a}\label{structproto__ops_a83947cc1210d633da39fe42faf2ab66a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+peek\+\_\+off} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structproto__ops_a6ba0b3ebd8d39ca70e992a1385f6b8d1}\label{structproto__ops_a6ba0b3ebd8d39ca70e992a1385f6b8d1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries peek\+\_\+len} )(struct \doxymbox{\hyperlink{structsocket}{socket}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproto__ops_a2ac99b3bab60f4968cf03456e78077f2}\label{structproto__ops_a2ac99b3bab60f4968cf03456e78077f2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+sock} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structread__descriptor__t}{read\+\_\+descriptor\+\_\+t}} \texorpdfstring{$\ast$}{*}, sk\+\_\+read\+\_\+actor\+\_\+t)
+\item 
+\Hypertarget{structproto__ops_a0369beb334eaf343ee92a07c0ea4de90}\label{structproto__ops_a0369beb334eaf343ee92a07c0ea4de90} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+skb} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, skb\+\_\+read\+\_\+actor\+\_\+t)
+\item 
+\Hypertarget{structproto__ops_a14cfe5c3ead44bacffccf6d43cff02ac}\label{structproto__ops_a14cfe5c3ead44bacffccf6d43cff02ac} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sendmsg\+\_\+locked} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsghdr}{msghdr}} \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structproto__ops_afb2afbf003e8dd5e3e904ba6ed1a8d75}\label{structproto__ops_afb2afbf003e8dd5e3e904ba6ed1a8d75} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+rcvlowat} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,35 @@
+\doxysection{fuse\+\_\+io\+\_\+args Struct Reference}
+\hypertarget{structfuse__io__args}{}\label{structfuse__io__args}\index{fuse\_io\_args@{fuse\_io\_args}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__io__args_a8aceef5f7cd04aad4ed2d555a69fe529}\label{structfuse__io__args_a8aceef5f7cd04aad4ed2d555a69fe529} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structfuse__read__in}{fuse\_read\_in}} {\bfseries in}\\
+\>\>u64 {\bfseries attr\_ver}\\
+\>\} {\bfseries read}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structfuse__write__in}{fuse\_write\_in}} {\bfseries in}\\
+\>\>struct \doxymbox{\hyperlink{structfuse__write__out}{fuse\_write\_out}} {\bfseries out}\\
+\>\>bool {\bfseries folio\_locked}\\
+\>\} {\bfseries write}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structfuse__io__args_a0670e4f7018023ed44e47696ecbfde54}\label{structfuse__io__args_a0670e4f7018023ed44e47696ecbfde54} 
+struct \doxymbox{\hyperlink{structfuse__args__pages}{fuse\+\_\+args\+\_\+pages}} {\bfseries ap}
+\item 
+\Hypertarget{structfuse__io__args_a6a630d514e1c3109f46c0e0365a1801a}\label{structfuse__io__args_a6a630d514e1c3109f46c0e0365a1801a} 
+struct \doxymbox{\hyperlink{structfuse__io__priv}{fuse\+\_\+io\+\_\+priv}} \texorpdfstring{$\ast$}{*} {\bfseries io}
+\item 
+\Hypertarget{structfuse__io__args_a526495a7460af82979e7c53fb0067a41}\label{structfuse__io__args_a526495a7460af82979e7c53fb0067a41} 
+struct \doxymbox{\hyperlink{structfuse__file}{fuse\+\_\+file}} \texorpdfstring{$\ast$}{*} {\bfseries ff}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

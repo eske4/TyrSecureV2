@@ -1,0 +1,55 @@
+\doxysection{tcf\+\_\+proto Struct Reference}
+\hypertarget{structtcf__proto}{}\label{structtcf__proto}\index{tcf\_proto@{tcf\_proto}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtcf__proto_a2af284eac81bcc4c0888c7699c4dc7c9}\label{structtcf__proto_a2af284eac81bcc4c0888c7699c4dc7c9} 
+struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\item 
+\Hypertarget{structtcf__proto_a1aef7ebe646d2bb6d4fb1f664e9f5ad7}\label{structtcf__proto_a1aef7ebe646d2bb6d4fb1f664e9f5ad7} 
+void \texorpdfstring{$\ast$}{*} {\bfseries root}
+\item 
+\Hypertarget{structtcf__proto_ab3ec5f5a21cf461808c14c835e87fd85}\label{structtcf__proto_ab3ec5f5a21cf461808c14c835e87fd85} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries classify} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcf__result}{tcf\+\_\+result}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcf__proto_a21cc625144b240798a76d02df1add0f4}\label{structtcf__proto_a21cc625144b240798a76d02df1add0f4} 
+\+\_\+\+\_\+be16 {\bfseries protocol}
+\item 
+\Hypertarget{structtcf__proto_af3d2741fa9339fe187a32c60f9d2bf60}\label{structtcf__proto_af3d2741fa9339fe187a32c60f9d2bf60} 
+u32 {\bfseries prio}
+\item 
+\Hypertarget{structtcf__proto_a9e881d3103febd4e5e68050294dcc9aa}\label{structtcf__proto_a9e881d3103febd4e5e68050294dcc9aa} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structtcf__proto_a575b669fd3eaf671fd77730f7e4b95c6}\label{structtcf__proto_a575b669fd3eaf671fd77730f7e4b95c6} 
+const struct \doxymbox{\hyperlink{structtcf__proto__ops}{tcf\+\_\+proto\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structtcf__proto_a49ed52bb865c63d0d2d799074b2fea49}\label{structtcf__proto_a49ed52bb865c63d0d2d799074b2fea49} 
+struct \doxymbox{\hyperlink{structtcf__chain}{tcf\+\_\+chain}} \texorpdfstring{$\ast$}{*} {\bfseries chain}
+\item 
+\Hypertarget{structtcf__proto_a5fff5cac10a300db76d03bbed27f9a81}\label{structtcf__proto_a5fff5cac10a300db76d03bbed27f9a81} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structtcf__proto_adffa5cdb092ffe49481cd9ac69277f56}\label{structtcf__proto_adffa5cdb092ffe49481cd9ac69277f56} 
+bool {\bfseries deleting}
+\item 
+\Hypertarget{structtcf__proto_afd73d2253af98c4b6e821e2e45a052f4}\label{structtcf__proto_afd73d2253af98c4b6e821e2e45a052f4} 
+bool {\bfseries counted}
+\item 
+\Hypertarget{structtcf__proto_a0725d28451b4c201707bd37e55aaa120}\label{structtcf__proto_a0725d28451b4c201707bd37e55aaa120} 
+bool {\bfseries usesw}
+\item 
+\Hypertarget{structtcf__proto_a728b2c8543851dad80d581be3c3e5239}\label{structtcf__proto_a728b2c8543851dad80d581be3c3e5239} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structtcf__proto_a7cba3634b97cdbb45448bde13b4785cc}\label{structtcf__proto_a7cba3634b97cdbb45448bde13b4785cc} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structtcf__proto_a5aa597395450c1674064a119c5478f83}\label{structtcf__proto_a5aa597395450c1674064a119c5478f83} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries destroy\+\_\+ht\+\_\+node}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

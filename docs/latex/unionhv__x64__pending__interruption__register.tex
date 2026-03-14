@@ -1,0 +1,28 @@
+\doxysection{hv\+\_\+x64\+\_\+pending\+\_\+interruption\+\_\+register Union Reference}
+\hypertarget{unionhv__x64__pending__interruption__register}{}\label{unionhv__x64__pending__interruption__register}\index{hv\_x64\_pending\_interruption\_register@{hv\_x64\_pending\_interruption\_register}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionhv__x64__pending__interruption__register_a52cdb308c1c8cdb7fc68db3fa437ea9f}\label{unionhv__x64__pending__interruption__register_a52cdb308c1c8cdb7fc68db3fa437ea9f} 
+u64 {\bfseries as\+\_\+uint64}
+\item 
+\Hypertarget{unionhv__x64__pending__interruption__register_ab1e82e466038abaebbd989408402c11b}\label{unionhv__x64__pending__interruption__register_ab1e82e466038abaebbd989408402c11b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries interruption\_pending}: 1\\
+\>u32 {\bfseries interruption\_type}: 3\\
+\>u32 {\bfseries deliver\_error\_code}: 1\\
+\>u32 {\bfseries instruction\_length}: 4\\
+\>u32 {\bfseries nested\_event}: 1\\
+\>u32 {\bfseries reserved}: 6\\
+\>u32 {\bfseries interruption\_vector}: 16\\
+\>u32 {\bfseries error\_code}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

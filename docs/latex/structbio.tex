@@ -1,0 +1,88 @@
+\doxysection{bio Struct Reference}
+\hypertarget{structbio}{}\label{structbio}\index{bio@{bio}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbio_a36d35ae1fc7b4309ac6bf80fcd58435e}\label{structbio_a36d35ae1fc7b4309ac6bf80fcd58435e} 
+struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*} {\bfseries bi\+\_\+next}
+\item 
+\Hypertarget{structbio_afc527294ce7fca347908f72be24d6da5}\label{structbio_afc527294ce7fca347908f72be24d6da5} 
+struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries bi\+\_\+bdev}
+\item 
+\Hypertarget{structbio_a1f378da422e242e180d7223d086cb58c}\label{structbio_a1f378da422e242e180d7223d086cb58c} 
+blk\+\_\+opf\+\_\+t {\bfseries bi\+\_\+opf}
+\item 
+\Hypertarget{structbio_aaac050d73fca358e6e831c0bca44eca6}\label{structbio_aaac050d73fca358e6e831c0bca44eca6} 
+short unsigned int {\bfseries bi\+\_\+flags}
+\item 
+\Hypertarget{structbio_a1f4906c6d9f79555663d0212896a334a}\label{structbio_a1f4906c6d9f79555663d0212896a334a} 
+short unsigned int {\bfseries bi\+\_\+ioprio}
+\item 
+\Hypertarget{structbio_aa403e50227be004bb1ab5cc487dace56}\label{structbio_aa403e50227be004bb1ab5cc487dace56} 
+enum rw\+\_\+hint {\bfseries bi\+\_\+write\+\_\+hint}
+\item 
+\Hypertarget{structbio_a04cb3cc6c15fe25f29d936fd3b1771e5}\label{structbio_a04cb3cc6c15fe25f29d936fd3b1771e5} 
+u8 {\bfseries bi\+\_\+write\+\_\+stream}
+\item 
+\Hypertarget{structbio_ab0383945d79f5c0fbb7e1cb5cadf3e9d}\label{structbio_ab0383945d79f5c0fbb7e1cb5cadf3e9d} 
+blk\+\_\+status\+\_\+t {\bfseries bi\+\_\+status}
+\item 
+\Hypertarget{structbio_a282e689ca8e4a0493e18c2c286aef849}\label{structbio_a282e689ca8e4a0493e18c2c286aef849} 
+u8 {\bfseries bi\+\_\+bvec\+\_\+gap\+\_\+bit}
+\item 
+\Hypertarget{structbio_a99cbbc1a0ad495737335585bb95d1fce}\label{structbio_a99cbbc1a0ad495737335585bb95d1fce} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries \+\_\+\+\_\+bi\+\_\+remaining}
+\item 
+\Hypertarget{structbio_aa4e21114350ea4163c7fb307da3e47a1}\label{structbio_aa4e21114350ea4163c7fb307da3e47a1} 
+struct \doxymbox{\hyperlink{structbvec__iter}{bvec\+\_\+iter}} {\bfseries bi\+\_\+iter}
+\item 
+\Hypertarget{structbio_ab758a90843be2eb2fc6a5129f8ec55de}\label{structbio_ab758a90843be2eb2fc6a5129f8ec55de} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>blk\_qc\_t {\bfseries bi\_cookie}\\
+\>unsigned int {\bfseries \_\_bi\_nr\_segments}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbio_afcf23bfafb2274034f9bd8814932fce5}\label{structbio_afcf23bfafb2274034f9bd8814932fce5} 
+bio\+\_\+end\+\_\+io\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries bi\+\_\+end\+\_\+io}
+\item 
+\Hypertarget{structbio_ab6f285ce3646a79ebe101f8781cc78ec}\label{structbio_ab6f285ce3646a79ebe101f8781cc78ec} 
+void \texorpdfstring{$\ast$}{*} {\bfseries bi\+\_\+private}
+\item 
+\Hypertarget{structbio_a8f1754673cc5299e015f45d3972a5cf4}\label{structbio_a8f1754673cc5299e015f45d3972a5cf4} 
+struct \doxymbox{\hyperlink{structblkcg__gq}{blkcg\+\_\+gq}} \texorpdfstring{$\ast$}{*} {\bfseries bi\+\_\+blkg}
+\item 
+\Hypertarget{structbio_ac5f2b9b24ddb34811d7e9a1586cc69d4}\label{structbio_ac5f2b9b24ddb34811d7e9a1586cc69d4} 
+u64 {\bfseries issue\+\_\+time\+\_\+ns}
+\item 
+\Hypertarget{structbio_a53c04e23bc331fe7341c9017af8fd813}\label{structbio_a53c04e23bc331fe7341c9017af8fd813} 
+u64 {\bfseries bi\+\_\+iocost\+\_\+cost}
+\item 
+\Hypertarget{structbio_a517f95615d2ce6bcddc3b5cb8e7c9ef1}\label{structbio_a517f95615d2ce6bcddc3b5cb8e7c9ef1} 
+struct \doxymbox{\hyperlink{structbio__crypt__ctx}{bio\+\_\+crypt\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries bi\+\_\+crypt\+\_\+context}
+\item 
+\Hypertarget{structbio_a1f62382787ddd79821e238af5a1257ae}\label{structbio_a1f62382787ddd79821e238af5a1257ae} 
+struct \doxymbox{\hyperlink{structbio__integrity__payload}{bio\+\_\+integrity\+\_\+payload}} \texorpdfstring{$\ast$}{*} {\bfseries bi\+\_\+integrity}
+\item 
+\Hypertarget{structbio_a940b0fec86193167bdfc5647c2d1767b}\label{structbio_a940b0fec86193167bdfc5647c2d1767b} 
+short unsigned int {\bfseries bi\+\_\+vcnt}
+\item 
+\Hypertarget{structbio_a6d8724f0a33df7404f94bd73962ff7ac}\label{structbio_a6d8724f0a33df7404f94bd73962ff7ac} 
+short unsigned int {\bfseries bi\+\_\+max\+\_\+vecs}
+\item 
+\Hypertarget{structbio_a75f64f7c16d893b7392daa968f93f6b9}\label{structbio_a75f64f7c16d893b7392daa968f93f6b9} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries \+\_\+\+\_\+bi\+\_\+cnt}
+\item 
+\Hypertarget{structbio_a8d16e50cee374bc13a4d3a25c6dff934}\label{structbio_a8d16e50cee374bc13a4d3a25c6dff934} 
+struct \doxymbox{\hyperlink{structbio__vec}{bio\+\_\+vec}} \texorpdfstring{$\ast$}{*} {\bfseries bi\+\_\+io\+\_\+vec}
+\item 
+\Hypertarget{structbio_a528be64a757bb4479ca58cf2ac4b13f4}\label{structbio_a528be64a757bb4479ca58cf2ac4b13f4} 
+struct \doxymbox{\hyperlink{structbio__set}{bio\+\_\+set}} \texorpdfstring{$\ast$}{*} {\bfseries bi\+\_\+pool}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

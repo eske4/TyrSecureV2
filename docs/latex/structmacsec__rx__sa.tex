@@ -1,0 +1,43 @@
+\doxysection{macsec\+\_\+rx\+\_\+sa Struct Reference}
+\hypertarget{structmacsec__rx__sa}{}\label{structmacsec__rx__sa}\index{macsec\_rx\_sa@{macsec\_rx\_sa}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmacsec__rx__sa_a9127a9d754d73e67c9a4be9923081032}\label{structmacsec__rx__sa_a9127a9d754d73e67c9a4be9923081032} 
+struct \doxymbox{\hyperlink{structmacsec__key}{macsec\+\_\+key}} {\bfseries key}
+\item 
+\Hypertarget{structmacsec__rx__sa_a3f30fae3a8990d5608900219ea7159fa}\label{structmacsec__rx__sa_a3f30fae3a8990d5608900219ea7159fa} 
+ssci\+\_\+t {\bfseries ssci}
+\item 
+\Hypertarget{structmacsec__rx__sa_ab274bf370ae1068103f70acb502b5e1c}\label{structmacsec__rx__sa_ab274bf370ae1068103f70acb502b5e1c} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structmacsec__rx__sa_a9f93efa6942aa2d51ad648c47c5390d9}\label{structmacsec__rx__sa_a9f93efa6942aa2d51ad648c47c5390d9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>pn\_t {\bfseries next\_pn\_halves}\\
+\>u64 {\bfseries next\_pn}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmacsec__rx__sa_a085c16517d123515f6650ea48384f359}\label{structmacsec__rx__sa_a085c16517d123515f6650ea48384f359} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structmacsec__rx__sa_ae52f2a9cc2bf74f74c1c04d07a38bb87}\label{structmacsec__rx__sa_ae52f2a9cc2bf74f74c1c04d07a38bb87} 
+bool {\bfseries active}
+\item 
+\Hypertarget{structmacsec__rx__sa_abab5656a16511e57fc19b63e1a0390a6}\label{structmacsec__rx__sa_abab5656a16511e57fc19b63e1a0390a6} 
+struct \doxymbox{\hyperlink{structmacsec__rx__sa__stats}{macsec\+\_\+rx\+\_\+sa\+\_\+stats}} \texorpdfstring{$\ast$}{*} {\bfseries stats}
+\item 
+\Hypertarget{structmacsec__rx__sa_a0438ab7ce1535de0d926debf54e9835c}\label{structmacsec__rx__sa_a0438ab7ce1535de0d926debf54e9835c} 
+struct \doxymbox{\hyperlink{structmacsec__rx__sc}{macsec\+\_\+rx\+\_\+sc}} \texorpdfstring{$\ast$}{*} {\bfseries sc}
+\item 
+\Hypertarget{structmacsec__rx__sa_a14033290b70e03249ce5d9cedd3567f4}\label{structmacsec__rx__sa_a14033290b70e03249ce5d9cedd3567f4} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

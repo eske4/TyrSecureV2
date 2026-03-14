@@ -1,0 +1,82 @@
+\doxysection{ncsi\+\_\+dev\+\_\+priv Struct Reference}
+\hypertarget{structncsi__dev__priv}{}\label{structncsi__dev__priv}\index{ncsi\_dev\_priv@{ncsi\_dev\_priv}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structncsi__dev__priv_ad04303b0c5804cffae6c84f57172c180}\label{structncsi__dev__priv_ad04303b0c5804cffae6c84f57172c180} 
+struct \doxymbox{\hyperlink{structncsi__dev}{ncsi\+\_\+dev}} {\bfseries ndev}
+\item 
+\Hypertarget{structncsi__dev__priv_ab24c41fd6e91bff2e5debc2a7892ea8c}\label{structncsi__dev__priv_ab24c41fd6e91bff2e5debc2a7892ea8c} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structncsi__dev__priv_a46158d54b84001f94e3278da29808cef}\label{structncsi__dev__priv_a46158d54b84001f94e3278da29808cef} 
+unsigned int {\bfseries gma\+\_\+flag}
+\item 
+\Hypertarget{structncsi__dev__priv_ae8d00407c7e6cc2bbcc050ae07de2a1c}\label{structncsi__dev__priv_ae8d00407c7e6cc2bbcc050ae07de2a1c} 
+struct \doxymbox{\hyperlink{struct____kernel__sockaddr__storage}{\+\_\+\+\_\+kernel\+\_\+sockaddr\+\_\+storage}} {\bfseries pending\+\_\+mac}
+\item 
+\Hypertarget{structncsi__dev__priv_a6da85dc65265289babfa54f3a5c38a7c}\label{structncsi__dev__priv_a6da85dc65265289babfa54f3a5c38a7c} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structncsi__dev__priv_a2b6a5bd22b2e2b0c020fe1cd77f0065f}\label{structncsi__dev__priv_a2b6a5bd22b2e2b0c020fe1cd77f0065f} 
+unsigned int {\bfseries package\+\_\+probe\+\_\+id}
+\item 
+\Hypertarget{structncsi__dev__priv_a3f39e48f33495259537ecfd8338b97a6}\label{structncsi__dev__priv_a3f39e48f33495259537ecfd8338b97a6} 
+unsigned int {\bfseries package\+\_\+num}
+\item 
+\Hypertarget{structncsi__dev__priv_a8042502fdccaab6c352da22595968523}\label{structncsi__dev__priv_a8042502fdccaab6c352da22595968523} 
+unsigned int {\bfseries channel\+\_\+probe\+\_\+id}
+\item 
+\Hypertarget{structncsi__dev__priv_a64cd0ab7ce469fddc2b2481376b7ada9}\label{structncsi__dev__priv_a64cd0ab7ce469fddc2b2481376b7ada9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries packages}
+\item 
+\Hypertarget{structncsi__dev__priv_a468a1554e25e1a3cb22f396030e7bc69}\label{structncsi__dev__priv_a468a1554e25e1a3cb22f396030e7bc69} 
+struct \doxymbox{\hyperlink{structncsi__channel}{ncsi\+\_\+channel}} \texorpdfstring{$\ast$}{*} {\bfseries hot\+\_\+channel}
+\item 
+\Hypertarget{structncsi__dev__priv_a31b3bfd20fba09a11183b66cf7438f9c}\label{structncsi__dev__priv_a31b3bfd20fba09a11183b66cf7438f9c} 
+struct \doxymbox{\hyperlink{structncsi__request}{ncsi\+\_\+request}} {\bfseries requests} \+[256]\+
+\item 
+\Hypertarget{structncsi__dev__priv_a4b41f722ebe0467cb62d50b91dba0f41}\label{structncsi__dev__priv_a4b41f722ebe0467cb62d50b91dba0f41} 
+unsigned int {\bfseries request\+\_\+id}
+\item 
+\Hypertarget{structncsi__dev__priv_a51cd2ffdda86b9e146d23d7acd979f8e}\label{structncsi__dev__priv_a51cd2ffdda86b9e146d23d7acd979f8e} 
+unsigned int {\bfseries pending\+\_\+req\+\_\+num}
+\item 
+\Hypertarget{structncsi__dev__priv_a698dc265905aba8fecc057fce131891c}\label{structncsi__dev__priv_a698dc265905aba8fecc057fce131891c} 
+struct \doxymbox{\hyperlink{structncsi__package}{ncsi\+\_\+package}} \texorpdfstring{$\ast$}{*} {\bfseries active\+\_\+package}
+\item 
+\Hypertarget{structncsi__dev__priv_a1e75d3734233f357439c71db36604c87}\label{structncsi__dev__priv_a1e75d3734233f357439c71db36604c87} 
+struct \doxymbox{\hyperlink{structncsi__channel}{ncsi\+\_\+channel}} \texorpdfstring{$\ast$}{*} {\bfseries active\+\_\+channel}
+\item 
+\Hypertarget{structncsi__dev__priv_adb690ad44306a1aee24d6be3fcfd5320}\label{structncsi__dev__priv_adb690ad44306a1aee24d6be3fcfd5320} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries channel\+\_\+queue}
+\item 
+\Hypertarget{structncsi__dev__priv_aa5c5a9d119f52a79a6e967614a0ce2bb}\label{structncsi__dev__priv_aa5c5a9d119f52a79a6e967614a0ce2bb} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries work}
+\item 
+\Hypertarget{structncsi__dev__priv_af2098c1daca2c33298163542419ac4a9}\label{structncsi__dev__priv_af2098c1daca2c33298163542419ac4a9} 
+struct \doxymbox{\hyperlink{structpacket__type}{packet\+\_\+type}} {\bfseries ptype}
+\item 
+\Hypertarget{structncsi__dev__priv_a38e00a15e06c5458d2a74544a8bd058a}\label{structncsi__dev__priv_a38e00a15e06c5458d2a74544a8bd058a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structncsi__dev__priv_ae0ace707b2fbe5911b56a45e3a9bbf72}\label{structncsi__dev__priv_ae0ace707b2fbe5911b56a45e3a9bbf72} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries vlan\+\_\+vids}
+\item 
+\Hypertarget{structncsi__dev__priv_a26e2331245bfb952b2de2507dd4968d7}\label{structncsi__dev__priv_a26e2331245bfb952b2de2507dd4968d7} 
+bool {\bfseries multi\+\_\+package}
+\item 
+\Hypertarget{structncsi__dev__priv_ad7979df426cc3b34dc075d8b29f417a4}\label{structncsi__dev__priv_ad7979df426cc3b34dc075d8b29f417a4} 
+bool {\bfseries mlx\+\_\+multi\+\_\+host}
+\item 
+\Hypertarget{structncsi__dev__priv_a1fa46a526375ffdb25f7eec7289be75b}\label{structncsi__dev__priv_a1fa46a526375ffdb25f7eec7289be75b} 
+u32 {\bfseries package\+\_\+whitelist}
+\item 
+\Hypertarget{structncsi__dev__priv_af677995e37e988ed30f4480f5e47e76c}\label{structncsi__dev__priv_af677995e37e988ed30f4480f5e47e76c} 
+unsigned char {\bfseries channel\+\_\+count}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,40 @@
+\doxysection{ahash\+\_\+request Struct Reference}
+\hypertarget{structahash__request}{}\label{structahash__request}\index{ahash\_request@{ahash\_request}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structahash__request_a0547fc6e6a26ac609b5585b4c0cecfc5}\label{structahash__request_a0547fc6e6a26ac609b5585b4c0cecfc5} 
+struct \doxymbox{\hyperlink{structcrypto__async__request}{crypto\+\_\+async\+\_\+request}} {\bfseries base}
+\item 
+\Hypertarget{structahash__request_ac8a978e79c4fa72033be7c8a49546118}\label{structahash__request_ac8a978e79c4fa72033be7c8a49546118} 
+unsigned int {\bfseries nbytes}
+\item 
+\Hypertarget{structahash__request_a2ebb0d5eb37c32174a57df37b6b5519d}\label{structahash__request_a2ebb0d5eb37c32174a57df37b6b5519d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*} {\bfseries src}\\
+\>const u8 \texorpdfstring{$\ast$}{*} {\bfseries svirt}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structahash__request_a7d868725176b5ceb2d63f78724a637b5}\label{structahash__request_a7d868725176b5ceb2d63f78724a637b5} 
+u8 \texorpdfstring{$\ast$}{*} {\bfseries result}
+\item 
+\Hypertarget{structahash__request_a8d2874ea139c959aad20da527a4a2343}\label{structahash__request_a8d2874ea139c959aad20da527a4a2343} 
+struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} {\bfseries sg\+\_\+head} \+[2]\+
+\item 
+\Hypertarget{structahash__request_a26e196443f735a6f179afa22110ecb90}\label{structahash__request_a26e196443f735a6f179afa22110ecb90} 
+crypto\+\_\+completion\+\_\+t {\bfseries saved\+\_\+complete}
+\item 
+\Hypertarget{structahash__request_abade37505db365e4cba26c9e08c6874f}\label{structahash__request_abade37505db365e4cba26c9e08c6874f} 
+void \texorpdfstring{$\ast$}{*} {\bfseries saved\+\_\+data}
+\item 
+\Hypertarget{structahash__request_aa89cce798a49b67bea97350dd2f65006}\label{structahash__request_aa89cce798a49b67bea97350dd2f65006} 
+void \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+\+\_\+ctx} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

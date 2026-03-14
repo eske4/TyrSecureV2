@@ -1,0 +1,57 @@
+\doxysection{io\+\_\+uring\+\_\+task Struct Reference}
+\hypertarget{structio__uring__task}{}\label{structio__uring__task}\index{io\_uring\_task@{io\_uring\_task}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__uring__task_ad6c03598a5ccd7e0391c255fe23f8f21}\label{structio__uring__task_ad6c03598a5ccd7e0391c255fe23f8f21} 
+int {\bfseries cached\+\_\+refs}
+\item 
+\Hypertarget{structio__uring__task_a7b48e9c14647ce9443184d52a74bc2c9}\label{structio__uring__task_a7b48e9c14647ce9443184d52a74bc2c9} 
+const struct \doxymbox{\hyperlink{structio__ring__ctx}{io\+\_\+ring\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries last}
+\item 
+\Hypertarget{structio__uring__task_ab10137f01590a13df1cecc7de891bdfc}\label{structio__uring__task_ab10137f01590a13df1cecc7de891bdfc} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries task}
+\item 
+\Hypertarget{structio__uring__task_a29303155e654d376a06d915270613880}\label{structio__uring__task_a29303155e654d376a06d915270613880} 
+struct \doxymbox{\hyperlink{structio__wq}{io\+\_\+wq}} \texorpdfstring{$\ast$}{*} {\bfseries io\+\_\+wq}
+\item 
+\Hypertarget{structio__uring__task_aa1225044f6019180b39d4b67d7cf4154}\label{structio__uring__task_aa1225044f6019180b39d4b67d7cf4154} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries registered\+\_\+rings} \+[16]\+
+\item 
+\Hypertarget{structio__uring__task_ad9db8ce55012603adc92f7adecee6501}\label{structio__uring__task_ad9db8ce55012603adc92f7adecee6501} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries xa}
+\item 
+\Hypertarget{structio__uring__task_a1ca9ed9496be9155403497a6690752b8}\label{structio__uring__task_a1ca9ed9496be9155403497a6690752b8} 
+struct \doxymbox{\hyperlink{structwait__queue__head}{wait\+\_\+queue\+\_\+head}} {\bfseries wait}
+\item 
+\Hypertarget{structio__uring__task_a8b274905df5c7114dc7a924bc4ab7c83}\label{structio__uring__task_a8b274905df5c7114dc7a924bc4ab7c83} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries in\+\_\+cancel}
+\item 
+\Hypertarget{structio__uring__task_acafeb919cabf5b02d8f378bc8d5b628b}\label{structio__uring__task_acafeb919cabf5b02d8f378bc8d5b628b} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries inflight\+\_\+tracked}
+\item 
+\Hypertarget{structio__uring__task_a19609c91f02390884f43ef200b7be844}\label{structio__uring__task_a19609c91f02390884f43ef200b7be844} 
+struct \doxymbox{\hyperlink{structpercpu__counter}{percpu\+\_\+counter}} {\bfseries inflight}
+\item 
+\Hypertarget{structio__uring__task_a595d54515c265b75171c7bd9acf779f7}\label{structio__uring__task_a595d54515c265b75171c7bd9acf779f7} 
+long :\+ 64
+\item 
+\Hypertarget{structio__uring__task_ab3ed85727507ba2765a7eac20b3dd5b2}\label{structio__uring__task_ab3ed85727507ba2765a7eac20b3dd5b2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structllist__head}{llist\_head}} {\bfseries task\_list}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries task\_work}\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

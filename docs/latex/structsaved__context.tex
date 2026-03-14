@@ -1,0 +1,85 @@
+\doxysection{saved\+\_\+context Struct Reference}
+\hypertarget{structsaved__context}{}\label{structsaved__context}\index{saved\_context@{saved\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsaved__context_a70c1435c1dc99b659d4bfedd34aca4ff}\label{structsaved__context_a70c1435c1dc99b659d4bfedd34aca4ff} 
+struct \doxymbox{\hyperlink{structpt__regs}{pt\+\_\+regs}} {\bfseries regs}
+\item 
+\Hypertarget{structsaved__context_a3d07d66f22047d6c51280bbfadd7932b}\label{structsaved__context_a3d07d66f22047d6c51280bbfadd7932b} 
+u16 {\bfseries ds}
+\item 
+\Hypertarget{structsaved__context_a71aeb56de36bc9b8d6bed4aa48004e32}\label{structsaved__context_a71aeb56de36bc9b8d6bed4aa48004e32} 
+u16 {\bfseries es}
+\item 
+\Hypertarget{structsaved__context_ae688a11e43f74ef8725930d8202d0244}\label{structsaved__context_ae688a11e43f74ef8725930d8202d0244} 
+u16 {\bfseries fs}
+\item 
+\Hypertarget{structsaved__context_a70f919260cd736908d37d9f4f6798cfa}\label{structsaved__context_a70f919260cd736908d37d9f4f6798cfa} 
+u16 {\bfseries gs}
+\item 
+\Hypertarget{structsaved__context_af6237329a92f2e06ddfb26561e66c5e5}\label{structsaved__context_af6237329a92f2e06ddfb26561e66c5e5} 
+long unsigned int {\bfseries kernelmode\+\_\+gs\+\_\+base}
+\item 
+\Hypertarget{structsaved__context_a6c452ad66251159a833efb19accc33b4}\label{structsaved__context_a6c452ad66251159a833efb19accc33b4} 
+long unsigned int {\bfseries usermode\+\_\+gs\+\_\+base}
+\item 
+\Hypertarget{structsaved__context_a4388e4d73ff06cbd518e29f00a2287ef}\label{structsaved__context_a4388e4d73ff06cbd518e29f00a2287ef} 
+long unsigned int {\bfseries fs\+\_\+base}
+\item 
+\Hypertarget{structsaved__context_a9277a031645f18fb8e1bed845f6fd28c}\label{structsaved__context_a9277a031645f18fb8e1bed845f6fd28c} 
+long unsigned int {\bfseries cr0}
+\item 
+\Hypertarget{structsaved__context_aa31c4326b5c7e53d1ef359ebbfa2851f}\label{structsaved__context_aa31c4326b5c7e53d1ef359ebbfa2851f} 
+long unsigned int {\bfseries cr2}
+\item 
+\Hypertarget{structsaved__context_a2802b92818f4897fe9fe6750af225eda}\label{structsaved__context_a2802b92818f4897fe9fe6750af225eda} 
+long unsigned int {\bfseries cr3}
+\item 
+\Hypertarget{structsaved__context_a7becedc8393af7472c8da244e1986fe4}\label{structsaved__context_a7becedc8393af7472c8da244e1986fe4} 
+long unsigned int {\bfseries cr4}
+\item 
+\Hypertarget{structsaved__context_a399dd0ff917a4af850a93e726cf27fa0}\label{structsaved__context_a399dd0ff917a4af850a93e726cf27fa0} 
+u64 {\bfseries misc\+\_\+enable}
+\item 
+\Hypertarget{structsaved__context_a8ff1e3223a220c6aec5c4ad14967a853}\label{structsaved__context_a8ff1e3223a220c6aec5c4ad14967a853} 
+struct \doxymbox{\hyperlink{structsaved__msrs}{saved\+\_\+msrs}} {\bfseries saved\+\_\+msrs}
+\item 
+\Hypertarget{structsaved__context_ab6ae83b6c0318f5060088f14cf6bcf2f}\label{structsaved__context_ab6ae83b6c0318f5060088f14cf6bcf2f} 
+long unsigned int {\bfseries efer}
+\item 
+\Hypertarget{structsaved__context_a20bb14e838e7d26cde2f5beea3695323}\label{structsaved__context_a20bb14e838e7d26cde2f5beea3695323} 
+u16 {\bfseries gdt\+\_\+pad}
+\item 
+\Hypertarget{structsaved__context_a90b0a2e6f251348239d341de1b2184e8}\label{structsaved__context_a90b0a2e6f251348239d341de1b2184e8} 
+struct \doxymbox{\hyperlink{structdesc__ptr}{desc\+\_\+ptr}} {\bfseries gdt\+\_\+desc}
+\item 
+\Hypertarget{structsaved__context_a1c6600bff99c8065a51684a6d272d0c5}\label{structsaved__context_a1c6600bff99c8065a51684a6d272d0c5} 
+u16 {\bfseries idt\+\_\+pad}
+\item 
+\Hypertarget{structsaved__context_ae7ede005927bffff504470386d62d5db}\label{structsaved__context_ae7ede005927bffff504470386d62d5db} 
+struct \doxymbox{\hyperlink{structdesc__ptr}{desc\+\_\+ptr}} {\bfseries idt}
+\item 
+\Hypertarget{structsaved__context_ad4615e00eadf2bb53b97ac66b381f0fd}\label{structsaved__context_ad4615e00eadf2bb53b97ac66b381f0fd} 
+u16 {\bfseries ldt}
+\item 
+\Hypertarget{structsaved__context_acdf06401638727ef30e34f47cd70d0aa}\label{structsaved__context_acdf06401638727ef30e34f47cd70d0aa} 
+u16 {\bfseries tss}
+\item 
+\Hypertarget{structsaved__context_a5aee7be35fecf6347b1579c6441ca266}\label{structsaved__context_a5aee7be35fecf6347b1579c6441ca266} 
+long unsigned int {\bfseries tr}
+\item 
+\Hypertarget{structsaved__context_a28c9211819d45442e46c3a7880b00ffa}\label{structsaved__context_a28c9211819d45442e46c3a7880b00ffa} 
+long unsigned int {\bfseries safety}
+\item 
+\Hypertarget{structsaved__context_acbb811de1fbdf513fc77f73e71d03aa0}\label{structsaved__context_acbb811de1fbdf513fc77f73e71d03aa0} 
+long unsigned int {\bfseries return\+\_\+address}
+\item 
+\Hypertarget{structsaved__context_a7bb3f0c8e6e8d3e38cb73fb7c92aa010}\label{structsaved__context_a7bb3f0c8e6e8d3e38cb73fb7c92aa010} 
+bool {\bfseries misc\+\_\+enable\+\_\+saved}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\doxysection{fib\+\_\+rules\+\_\+ops Struct Reference}
+\hypertarget{structfib__rules__ops}{}\label{structfib__rules__ops}\index{fib\_rules\_ops@{fib\_rules\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfib__rules__ops_a87062ecd1cc109cbcafd750e3ec3580f}\label{structfib__rules__ops_a87062ecd1cc109cbcafd750e3ec3580f} 
+int {\bfseries family}
+\item 
+\Hypertarget{structfib__rules__ops_a1e67ec49e4f2efbce3970ab546556ad2}\label{structfib__rules__ops_a1e67ec49e4f2efbce3970ab546556ad2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structfib__rules__ops_a8e76335514853304c0ededdbf829376e}\label{structfib__rules__ops_a8e76335514853304c0ededdbf829376e} 
+int {\bfseries rule\+\_\+size}
+\item 
+\Hypertarget{structfib__rules__ops_a8fc26b8b936f17da428aa2c7a56438fd}\label{structfib__rules__ops_a8fc26b8b936f17da428aa2c7a56438fd} 
+int {\bfseries addr\+\_\+size}
+\item 
+\Hypertarget{structfib__rules__ops_ac4dcb0d4ffbc8ad6aa43365896508671}\label{structfib__rules__ops_ac4dcb0d4ffbc8ad6aa43365896508671} 
+int {\bfseries unresolved\+\_\+rules}
+\item 
+\Hypertarget{structfib__rules__ops_a3b5a2dd027e31e0ff862706718d96ab0}\label{structfib__rules__ops_a3b5a2dd027e31e0ff862706718d96ab0} 
+int {\bfseries nr\+\_\+goto\+\_\+rules}
+\item 
+\Hypertarget{structfib__rules__ops_a605d65aaf59d7b0ad5ea5bf7d9d2bae1}\label{structfib__rules__ops_a605d65aaf59d7b0ad5ea5bf7d9d2bae1} 
+unsigned int {\bfseries fib\+\_\+rules\+\_\+seq}
+\item 
+\Hypertarget{structfib__rules__ops_abc73dd73596612e58ef4814fc209b5c9}\label{structfib__rules__ops_abc73dd73596612e58ef4814fc209b5c9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries action} )(struct \doxymbox{\hyperlink{structfib__rule}{fib\+\_\+rule}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi}{flowi}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structfib__lookup__arg}{fib\+\_\+lookup\+\_\+arg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfib__rules__ops_a14a421b64c60fb6fc15a3f04c64ae8cf}\label{structfib__rules__ops_a14a421b64c60fb6fc15a3f04c64ae8cf} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries suppress} )(struct \doxymbox{\hyperlink{structfib__rule}{fib\+\_\+rule}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structfib__lookup__arg}{fib\+\_\+lookup\+\_\+arg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfib__rules__ops_a2797db1230245214cadf1d588be04fe3}\label{structfib__rules__ops_a2797db1230245214cadf1d588be04fe3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries match} )(struct \doxymbox{\hyperlink{structfib__rule}{fib\+\_\+rule}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi}{flowi}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structfib__rules__ops_ab407022bca196ab66dd02b77b19523a7}\label{structfib__rules__ops_ab407022bca196ab66dd02b77b19523a7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries configure} )(struct \doxymbox{\hyperlink{structfib__rule}{fib\+\_\+rule}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib__rule__hdr}{fib\+\_\+rule\+\_\+hdr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfib__rules__ops_a625f50e50ea5108f7ebf8fd30cf4cf41}\label{structfib__rules__ops_a625f50e50ea5108f7ebf8fd30cf4cf41} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries delete} )(struct \doxymbox{\hyperlink{structfib__rule}{fib\+\_\+rule}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfib__rules__ops_a74d80475c8e32cf556c98b872ca86f4a}\label{structfib__rules__ops_a74d80475c8e32cf556c98b872ca86f4a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries compare} )(struct \doxymbox{\hyperlink{structfib__rule}{fib\+\_\+rule}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib__rule__hdr}{fib\+\_\+rule\+\_\+hdr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfib__rules__ops_a4254848a6285fced11cdf65063ec2623}\label{structfib__rules__ops_a4254848a6285fced11cdf65063ec2623} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill} )(struct \doxymbox{\hyperlink{structfib__rule}{fib\+\_\+rule}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfib__rule__hdr}{fib\+\_\+rule\+\_\+hdr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfib__rules__ops_a3e14408b3b558dece37cb1f90f758f49}\label{structfib__rules__ops_a3e14408b3b558dece37cb1f90f758f49} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries nlmsg\+\_\+payload} )(struct \doxymbox{\hyperlink{structfib__rule}{fib\+\_\+rule}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfib__rules__ops_abcddf6dc1a71ced234fad14601a91431}\label{structfib__rules__ops_abcddf6dc1a71ced234fad14601a91431} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+cache} )(struct \doxymbox{\hyperlink{structfib__rules__ops}{fib\+\_\+rules\+\_\+ops}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfib__rules__ops_aee4a0c4a7881eae10b7a28f384596df1}\label{structfib__rules__ops_aee4a0c4a7881eae10b7a28f384596df1} 
+int {\bfseries nlgroup}
+\item 
+\Hypertarget{structfib__rules__ops_a524cb5e81968a2a7dc90861c52dd28b3}\label{structfib__rules__ops_a524cb5e81968a2a7dc90861c52dd28b3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rules\+\_\+list}
+\item 
+\Hypertarget{structfib__rules__ops_a9f389950bc774c04f347779cd76b1c3d}\label{structfib__rules__ops_a9f389950bc774c04f347779cd76b1c3d} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structfib__rules__ops_acb3ef0afd8ad51081478b53b28a49aa8}\label{structfib__rules__ops_acb3ef0afd8ad51081478b53b28a49aa8} 
+struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*} {\bfseries fro\+\_\+net}
+\item 
+\Hypertarget{structfib__rules__ops_aa574a233085f1a30b906e151d218d8ce}\label{structfib__rules__ops_aa574a233085f1a30b906e151d218d8ce} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

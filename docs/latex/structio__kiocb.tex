@@ -1,0 +1,104 @@
+\doxysection{io\+\_\+kiocb Struct Reference}
+\hypertarget{structio__kiocb}{}\label{structio__kiocb}\index{io\_kiocb@{io\_kiocb}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__kiocb_aff86b8dfe48f25ed7bd717ee2a444301}\label{structio__kiocb_aff86b8dfe48f25ed7bd717ee2a444301} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries file}\\
+\>struct \doxymbox{\hyperlink{structio__cmd__data}{io\_cmd\_data}} {\bfseries cmd}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__kiocb_a26ce18fd6c54acf66d894d3245aa11ab}\label{structio__kiocb_a26ce18fd6c54acf66d894d3245aa11ab} 
+u8 {\bfseries opcode}
+\item 
+\Hypertarget{structio__kiocb_a8c6fbf7d3042782bd8bfda8462325cbf}\label{structio__kiocb_a8c6fbf7d3042782bd8bfda8462325cbf} 
+u8 {\bfseries iopoll\+\_\+completed}
+\item 
+\Hypertarget{structio__kiocb_aaf35fc4a1b4aaa3923d2b7b7de878e45}\label{structio__kiocb_aaf35fc4a1b4aaa3923d2b7b7de878e45} 
+u16 {\bfseries buf\+\_\+index}
+\item 
+\Hypertarget{structio__kiocb_af54ffa7dea4a5857ef9e3c90b90f9615}\label{structio__kiocb_af54ffa7dea4a5857ef9e3c90b90f9615} 
+unsigned int {\bfseries nr\+\_\+tw}
+\item 
+\Hypertarget{structio__kiocb_a45cff278514704cd1cb5e2f42c09ff35}\label{structio__kiocb_a45cff278514704cd1cb5e2f42c09ff35} 
+io\+\_\+req\+\_\+flags\+\_\+t {\bfseries flags}
+\item 
+\Hypertarget{structio__kiocb_a4c262fc047bc8e4ec1d5248b8af312cd}\label{structio__kiocb_a4c262fc047bc8e4ec1d5248b8af312cd} 
+struct \doxymbox{\hyperlink{structio__cqe}{io\+\_\+cqe}} {\bfseries cqe}
+\item 
+\Hypertarget{structio__kiocb_a7b5f85d53856bfd1e624f6ac186e2c52}\label{structio__kiocb_a7b5f85d53856bfd1e624f6ac186e2c52} 
+struct \doxymbox{\hyperlink{structio__ring__ctx}{io\+\_\+ring\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries ctx}
+\item 
+\Hypertarget{structio__kiocb_aa40c5ccd257e7bb3c8b77da82ffe9aa8}\label{structio__kiocb_aa40c5ccd257e7bb3c8b77da82ffe9aa8} 
+struct \doxymbox{\hyperlink{structio__uring__task}{io\+\_\+uring\+\_\+task}} \texorpdfstring{$\ast$}{*} {\bfseries tctx}
+\item 
+\Hypertarget{structio__kiocb_af8f463f1f1528fbd9330004154c51c67}\label{structio__kiocb_af8f463f1f1528fbd9330004154c51c67} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structio__buffer}{io\_buffer}} \texorpdfstring{$\ast$}{*} {\bfseries kbuf}\\
+\>struct \doxymbox{\hyperlink{structio__rsrc__node}{io\_rsrc\_node}} \texorpdfstring{$\ast$}{*} {\bfseries buf\_node}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__kiocb_a1b69c4f520fe0a4e97ae752464f94b7f}\label{structio__kiocb_a1b69c4f520fe0a4e97ae752464f94b7f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structio__wq__work__node}{io\_wq\_work\_node}} {\bfseries comp\_list}\\
+\>\_\_poll\_t {\bfseries apoll\_events}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__kiocb_a8ad1999133abc575de40e0cc98cb847e}\label{structio__kiocb_a8ad1999133abc575de40e0cc98cb847e} 
+struct \doxymbox{\hyperlink{structio__rsrc__node}{io\+\_\+rsrc\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries file\+\_\+node}
+\item 
+\Hypertarget{structio__kiocb_a5e99e66b8d78ccd94cadc07f7fb52817}\label{structio__kiocb_a5e99e66b8d78ccd94cadc07f7fb52817} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries refs}
+\item 
+\Hypertarget{structio__kiocb_a9b6281322573fa7f230537c3bb224e61}\label{structio__kiocb_a9b6281322573fa7f230537c3bb224e61} 
+bool {\bfseries cancel\+\_\+seq\+\_\+set}
+\item 
+\Hypertarget{structio__kiocb_a89d360a49115d46519abde52e8c144ed}\label{structio__kiocb_a89d360a49115d46519abde52e8c144ed} 
+struct \doxymbox{\hyperlink{structio__task__work}{io\+\_\+task\+\_\+work}} {\bfseries io\+\_\+task\+\_\+work}
+\item 
+\Hypertarget{structio__kiocb_a638c697374866bf47efc9a9e035bbeb5}\label{structio__kiocb_a638c697374866bf47efc9a9e035bbeb5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries hash\_node}\\
+\>u64 {\bfseries iopoll\_start}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries callback\_head}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__kiocb_af9f2e8150884bff2254c35df50ee6425}\label{structio__kiocb_af9f2e8150884bff2254c35df50ee6425} 
+struct \doxymbox{\hyperlink{structasync__poll}{async\+\_\+poll}} \texorpdfstring{$\ast$}{*} {\bfseries apoll}
+\item 
+\Hypertarget{structio__kiocb_a3d6f674c491ee7fb3c8764fa540683e0}\label{structio__kiocb_a3d6f674c491ee7fb3c8764fa540683e0} 
+void \texorpdfstring{$\ast$}{*} {\bfseries async\+\_\+data}
+\item 
+\Hypertarget{structio__kiocb_a0640938f1f6d1025b92c3e2facb6da21}\label{structio__kiocb_a0640938f1f6d1025b92c3e2facb6da21} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries poll\+\_\+refs}
+\item 
+\Hypertarget{structio__kiocb_ac3450db8df4be368161920414c91ccee}\label{structio__kiocb_ac3450db8df4be368161920414c91ccee} 
+struct \doxymbox{\hyperlink{structio__kiocb}{io\+\_\+kiocb}} \texorpdfstring{$\ast$}{*} {\bfseries link}
+\item 
+\Hypertarget{structio__kiocb_ab5445ad7d10140bafd03b95b9ecf7202}\label{structio__kiocb_ab5445ad7d10140bafd03b95b9ecf7202} 
+const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*} {\bfseries creds}
+\item 
+\Hypertarget{structio__kiocb_a2f651daf4fbddc98fe63c230bfb1cbdd}\label{structio__kiocb_a2f651daf4fbddc98fe63c230bfb1cbdd} 
+struct \doxymbox{\hyperlink{structio__wq__work}{io\+\_\+wq\+\_\+work}} {\bfseries work}
+\item 
+\Hypertarget{structio__kiocb_a3f905954702b8cbe6516bb6cffecd981}\label{structio__kiocb_a3f905954702b8cbe6516bb6cffecd981} 
+struct \doxymbox{\hyperlink{structio__big__cqe}{io\+\_\+big\+\_\+cqe}} {\bfseries big\+\_\+cqe}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

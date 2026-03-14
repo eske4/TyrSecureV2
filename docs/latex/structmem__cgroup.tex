@@ -1,0 +1,124 @@
+\doxysection{mem\+\_\+cgroup Struct Reference}
+\hypertarget{structmem__cgroup}{}\label{structmem__cgroup}\index{mem\_cgroup@{mem\_cgroup}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmem__cgroup_a42ae722fe0925e936ae40aa4114dc5eb}\label{structmem__cgroup_a42ae722fe0925e936ae40aa4114dc5eb} 
+struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} {\bfseries css}
+\item 
+\Hypertarget{structmem__cgroup_a9e41328089323002aa224fda5e5de509}\label{structmem__cgroup_a9e41328089323002aa224fda5e5de509} 
+struct \doxymbox{\hyperlink{structmem__cgroup__id}{mem\+\_\+cgroup\+\_\+id}} {\bfseries id}
+\item 
+\Hypertarget{structmem__cgroup_ac77d5d86861b3c19b9c101141a4d2192}\label{structmem__cgroup_ac77d5d86861b3c19b9c101141a4d2192} 
+long :\+ 64
+\item 
+\Hypertarget{structmem__cgroup_ab5bbdcaf237e8696f51403033d2cee33}\label{structmem__cgroup_ab5bbdcaf237e8696f51403033d2cee33} 
+long :\+ 64
+\item 
+\Hypertarget{structmem__cgroup_a22f77fdc4e850ace8e16a4212d7cc7f4}\label{structmem__cgroup_a22f77fdc4e850ace8e16a4212d7cc7f4} 
+long :\+ 64
+\item 
+\Hypertarget{structmem__cgroup_a650173050d3c2c3f4f4f2310165329c2}\label{structmem__cgroup_a650173050d3c2c3f4f4f2310165329c2} 
+long :\+ 64
+\item 
+\Hypertarget{structmem__cgroup_ab4478ffd40f66c15440dc96855286eb2}\label{structmem__cgroup_ab4478ffd40f66c15440dc96855286eb2} 
+long :\+ 64
+\item 
+\Hypertarget{structmem__cgroup_a5aa25312888c4db457c493b4c290871c}\label{structmem__cgroup_a5aa25312888c4db457c493b4c290871c} 
+struct \doxymbox{\hyperlink{structpage__counter}{page\+\_\+counter}} {\bfseries memory}
+\item 
+\Hypertarget{structmem__cgroup_a0f2f513ddf82bf705f7e59d4def0ce4d}\label{structmem__cgroup_a0f2f513ddf82bf705f7e59d4def0ce4d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpage__counter}{page\_counter}} {\bfseries swap}\\
+\>struct \doxymbox{\hyperlink{structpage__counter}{page\_counter}} {\bfseries memsw}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmem__cgroup_a52bdf10194ff9f98277e421b07d8f639}\label{structmem__cgroup_a52bdf10194ff9f98277e421b07d8f639} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries memory\+\_\+peaks}
+\item 
+\Hypertarget{structmem__cgroup_aaa4e413f63ea9477da7afc92acf71483}\label{structmem__cgroup_aaa4e413f63ea9477da7afc92acf71483} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries swap\+\_\+peaks}
+\item 
+\Hypertarget{structmem__cgroup_ae5db16f7478bbc1ccdcabbfe9c231da6}\label{structmem__cgroup_ae5db16f7478bbc1ccdcabbfe9c231da6} 
+spinlock\+\_\+t {\bfseries peaks\+\_\+lock}
+\item 
+\Hypertarget{structmem__cgroup_acd89319c9c18bea1fec62f325111ba15}\label{structmem__cgroup_acd89319c9c18bea1fec62f325111ba15} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries high\+\_\+work}
+\item 
+\Hypertarget{structmem__cgroup_a3eab271fa0a2c7c9ea3d943e551ea6a2}\label{structmem__cgroup_a3eab271fa0a2c7c9ea3d943e551ea6a2} 
+long unsigned int {\bfseries zswap\+\_\+max}
+\item 
+\Hypertarget{structmem__cgroup_ab03dc4d103031dfd6e1f26b36254cda6}\label{structmem__cgroup_ab03dc4d103031dfd6e1f26b36254cda6} 
+bool {\bfseries zswap\+\_\+writeback}
+\item 
+\Hypertarget{structmem__cgroup_ad8bda744e60e30e0d875467407357568}\label{structmem__cgroup_ad8bda744e60e30e0d875467407357568} 
+struct \doxymbox{\hyperlink{structvmpressure}{vmpressure}} {\bfseries vmpressure}
+\item 
+\Hypertarget{structmem__cgroup_a23a2b3a463d97497287bb8e2434b23ac}\label{structmem__cgroup_a23a2b3a463d97497287bb8e2434b23ac} 
+bool {\bfseries oom\+\_\+group}
+\item 
+\Hypertarget{structmem__cgroup_ade3e0d60e81d55d1077a4cc7d93711af}\label{structmem__cgroup_ade3e0d60e81d55d1077a4cc7d93711af} 
+int {\bfseries swappiness}
+\item 
+\Hypertarget{structmem__cgroup_a299dc0133b31eeb28c2b428415e15b60}\label{structmem__cgroup_a299dc0133b31eeb28c2b428415e15b60} 
+struct \doxymbox{\hyperlink{structcgroup__file}{cgroup\+\_\+file}} {\bfseries events\+\_\+file}
+\item 
+\Hypertarget{structmem__cgroup_a29b6d9fecbdac3ea90b9575a4d6ce7dc}\label{structmem__cgroup_a29b6d9fecbdac3ea90b9575a4d6ce7dc} 
+struct \doxymbox{\hyperlink{structcgroup__file}{cgroup\+\_\+file}} {\bfseries events\+\_\+local\+\_\+file}
+\item 
+\Hypertarget{structmem__cgroup_a9773f2513520f98fdd03b2e3464d8337}\label{structmem__cgroup_a9773f2513520f98fdd03b2e3464d8337} 
+struct \doxymbox{\hyperlink{structcgroup__file}{cgroup\+\_\+file}} {\bfseries swap\+\_\+events\+\_\+file}
+\item 
+\Hypertarget{structmem__cgroup_a848cadef173c2da6e74c7d0ca46c7f65}\label{structmem__cgroup_a848cadef173c2da6e74c7d0ca46c7f65} 
+struct \doxymbox{\hyperlink{structmemcg__vmstats}{memcg\+\_\+vmstats}} \texorpdfstring{$\ast$}{*} {\bfseries vmstats}
+\item 
+\Hypertarget{structmem__cgroup_a671119bac776643272ddf15f6860bf48}\label{structmem__cgroup_a671119bac776643272ddf15f6860bf48} 
+atomic\+\_\+long\+\_\+t {\bfseries memory\+\_\+events} \+[10]\+
+\item 
+\Hypertarget{structmem__cgroup_a12616d0446db1052fde1073df4be4da4}\label{structmem__cgroup_a12616d0446db1052fde1073df4be4da4} 
+atomic\+\_\+long\+\_\+t {\bfseries memory\+\_\+events\+\_\+local} \+[10]\+
+\item 
+\Hypertarget{structmem__cgroup_adfef4ce10bd70037a20bff11991f22be}\label{structmem__cgroup_adfef4ce10bd70037a20bff11991f22be} 
+u64 {\bfseries socket\+\_\+pressure}
+\item 
+\Hypertarget{structmem__cgroup_a99a6a0db2f44d12a7301e4c97944b6f4}\label{structmem__cgroup_a99a6a0db2f44d12a7301e4c97944b6f4} 
+int {\bfseries kmemcg\+\_\+id}
+\item 
+\Hypertarget{structmem__cgroup_a0b2292e7f2f04225fab09bf883280087}\label{structmem__cgroup_a0b2292e7f2f04225fab09bf883280087} 
+struct \doxymbox{\hyperlink{structobj__cgroup}{obj\+\_\+cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries objcg}
+\item 
+\Hypertarget{structmem__cgroup_a367edc511f8e4a64391d3ea756fc8228}\label{structmem__cgroup_a367edc511f8e4a64391d3ea756fc8228} 
+struct \doxymbox{\hyperlink{structobj__cgroup}{obj\+\_\+cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries orig\+\_\+objcg}
+\item 
+\Hypertarget{structmem__cgroup_ae7b3f87e51ceda2f5db518c1af16f3bd}\label{structmem__cgroup_ae7b3f87e51ceda2f5db518c1af16f3bd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries objcg\+\_\+list}
+\item 
+\Hypertarget{structmem__cgroup_a26d30660482ebcfac15a0028c5792a5f}\label{structmem__cgroup_a26d30660482ebcfac15a0028c5792a5f} 
+struct \doxymbox{\hyperlink{structmemcg__vmstats__percpu}{memcg\+\_\+vmstats\+\_\+percpu}} \texorpdfstring{$\ast$}{*} {\bfseries vmstats\+\_\+percpu}
+\item 
+\Hypertarget{structmem__cgroup_aef8165eb47a0032b5240a11a2a016576}\label{structmem__cgroup_aef8165eb47a0032b5240a11a2a016576} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cgwb\+\_\+list}
+\item 
+\Hypertarget{structmem__cgroup_a482e2fb71c549aaa3df6a877d264de4c}\label{structmem__cgroup_a482e2fb71c549aaa3df6a877d264de4c} 
+struct \doxymbox{\hyperlink{structwb__domain}{wb\+\_\+domain}} {\bfseries cgwb\+\_\+domain}
+\item 
+\Hypertarget{structmem__cgroup_a346fabdb289a171423010364fccd6847}\label{structmem__cgroup_a346fabdb289a171423010364fccd6847} 
+struct \doxymbox{\hyperlink{structmemcg__cgwb__frn}{memcg\+\_\+cgwb\+\_\+frn}} {\bfseries cgwb\+\_\+frn} \+[4]\+
+\item 
+\Hypertarget{structmem__cgroup_aa110077dd7310cb8b30c8b6abc399845}\label{structmem__cgroup_aa110077dd7310cb8b30c8b6abc399845} 
+struct \doxymbox{\hyperlink{structdeferred__split}{deferred\+\_\+split}} {\bfseries deferred\+\_\+split\+\_\+queue}
+\item 
+\Hypertarget{structmem__cgroup_a04e722028ede2556baaf9df4830eebfb}\label{structmem__cgroup_a04e722028ede2556baaf9df4830eebfb} 
+struct \doxymbox{\hyperlink{structlru__gen__mm__list}{lru\+\_\+gen\+\_\+mm\+\_\+list}} {\bfseries mm\+\_\+list}
+\item 
+\Hypertarget{structmem__cgroup_a052a72e5a4e852ce328badc745e241d7}\label{structmem__cgroup_a052a72e5a4e852ce328badc745e241d7} 
+struct \doxymbox{\hyperlink{structmem__cgroup__per__node}{mem\+\_\+cgroup\+\_\+per\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries nodeinfo} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

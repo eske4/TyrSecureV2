@@ -1,0 +1,47 @@
+\doxysection{IO\+\_\+\+APIC\+\_\+route\+\_\+entry Struct Reference}
+\hypertarget{structIO__APIC__route__entry}{}\label{structIO__APIC__route__entry}\index{IO\_APIC\_route\_entry@{IO\_APIC\_route\_entry}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structIO__APIC__route__entry_a1d4b1eb0984e4a8ebbbb66bf7106b010}\label{structIO__APIC__route__entry_a1d4b1eb0984e4a8ebbbb66bf7106b010} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionIO__APIC__route__entry_1_1_0d222043154255055066174022155353360303233201375147_ab3a20a0b7eb5ae118298b0f49fa9fb49}\label{unionIO__APIC__route__entry_1_1_0d222043154255055066174022155353360303233201375147_ab3a20a0b7eb5ae118298b0f49fa9fb49} 
+\>struct \{\\
+\>\>u64 {\bfseries vector}: 8\\
+\>\>u64 {\bfseries delivery\_mode}: 3\\
+\>\>u64 {\bfseries dest\_mode\_logical}: 1\\
+\>\>u64 {\bfseries delivery\_status}: 1\\
+\>\>u64 {\bfseries active\_low}: 1\\
+\>\>u64 {\bfseries irr}: 1\\
+\>\>u64 {\bfseries is\_level}: 1\\
+\>\>u64 {\bfseries masked}: 1\\
+\>\>u64 {\bfseries reserved\_0}: 15\\
+\>\>u64 {\bfseries reserved\_1}: 17\\
+\>\>u64 {\bfseries virt\_destid\_8\_14}: 7\\
+\>\>u64 {\bfseries destid\_0\_7}: 8\\
+\>\} \\
+\Hypertarget{unionIO__APIC__route__entry_1_1_0d222043154255055066174022155353360303233201375147_af8619e2b6e4c75ea744ee197503590f2}\label{unionIO__APIC__route__entry_1_1_0d222043154255055066174022155353360303233201375147_af8619e2b6e4c75ea744ee197503590f2} 
+\>struct \{\\
+\>\>u64 {\bfseries ir\_shared\_0}: 8\\
+\>\>u64 {\bfseries ir\_zero}: 3\\
+\>\>u64 {\bfseries ir\_index\_15}: 1\\
+\>\>u64 {\bfseries ir\_shared\_1}: 5\\
+\>\>u64 {\bfseries ir\_reserved\_0}: 31\\
+\>\>u64 {\bfseries ir\_format}: 1\\
+\>\>u64 {\bfseries ir\_index\_0\_14}: 15\\
+\>\} \\
+\Hypertarget{unionIO__APIC__route__entry_1_1_0d222043154255055066174022155353360303233201375147_af31c58db91e41fb5fd2b1e58cc66b5e8}\label{unionIO__APIC__route__entry_1_1_0d222043154255055066174022155353360303233201375147_af31c58db91e41fb5fd2b1e58cc66b5e8} 
+\>struct \{\\
+\>\>u64 {\bfseries w1}: 32\\
+\>\>u64 {\bfseries w2}: 32\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

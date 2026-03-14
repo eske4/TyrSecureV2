@@ -1,0 +1,73 @@
+\doxysection{\+\_\+fpstate\+\_\+32 Struct Reference}
+\hypertarget{struct__fpstate__32}{}\label{struct__fpstate__32}\index{\_fpstate\_32@{\_fpstate\_32}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct__fpstate__32_a6b0094067114f93ed8c54006812877d8}\label{struct__fpstate__32_a6b0094067114f93ed8c54006812877d8} 
+\+\_\+\+\_\+u32 {\bfseries cw}
+\item 
+\Hypertarget{struct__fpstate__32_a6cd06580b273e6ecbfe7fb1ad7db037e}\label{struct__fpstate__32_a6cd06580b273e6ecbfe7fb1ad7db037e} 
+\+\_\+\+\_\+u32 {\bfseries sw}
+\item 
+\Hypertarget{struct__fpstate__32_afe48408c09964d05987833e86d6c9e3a}\label{struct__fpstate__32_afe48408c09964d05987833e86d6c9e3a} 
+\+\_\+\+\_\+u32 {\bfseries tag}
+\item 
+\Hypertarget{struct__fpstate__32_a5f54fda63060093c0d04288ace9f2d0c}\label{struct__fpstate__32_a5f54fda63060093c0d04288ace9f2d0c} 
+\+\_\+\+\_\+u32 {\bfseries ipoff}
+\item 
+\Hypertarget{struct__fpstate__32_aa388940acf75eb1b286fa852ce73432d}\label{struct__fpstate__32_aa388940acf75eb1b286fa852ce73432d} 
+\+\_\+\+\_\+u32 {\bfseries cssel}
+\item 
+\Hypertarget{struct__fpstate__32_a132812a0ce3dbd6827cbbe167f3d0b2d}\label{struct__fpstate__32_a132812a0ce3dbd6827cbbe167f3d0b2d} 
+\+\_\+\+\_\+u32 {\bfseries dataoff}
+\item 
+\Hypertarget{struct__fpstate__32_a5541b966eae3ad688613df3e6baae91d}\label{struct__fpstate__32_a5541b966eae3ad688613df3e6baae91d} 
+\+\_\+\+\_\+u32 {\bfseries datasel}
+\item 
+\Hypertarget{struct__fpstate__32_ae5b6d5398f5aad22e52f7b58f81960d9}\label{struct__fpstate__32_ae5b6d5398f5aad22e52f7b58f81960d9} 
+struct \doxymbox{\hyperlink{struct__fpreg}{\+\_\+fpreg}} {\bfseries \+\_\+st} \+[8]\+
+\item 
+\Hypertarget{struct__fpstate__32_a5cc012c59985711bef91a207e837248e}\label{struct__fpstate__32_a5cc012c59985711bef91a207e837248e} 
+\+\_\+\+\_\+u16 {\bfseries status}
+\item 
+\Hypertarget{struct__fpstate__32_a8db01679fb4236f0b6d0c32815d7fda9}\label{struct__fpstate__32_a8db01679fb4236f0b6d0c32815d7fda9} 
+\+\_\+\+\_\+u16 {\bfseries magic}
+\item 
+\Hypertarget{struct__fpstate__32_ac05a568e3e3fe8b10a073d7ea47b4009}\label{struct__fpstate__32_ac05a568e3e3fe8b10a073d7ea47b4009} 
+\+\_\+\+\_\+u32 {\bfseries \+\_\+fxsr\+\_\+env} \+[6]\+
+\item 
+\Hypertarget{struct__fpstate__32_a2613d9ec61ca46181b523b770da5660b}\label{struct__fpstate__32_a2613d9ec61ca46181b523b770da5660b} 
+\+\_\+\+\_\+u32 {\bfseries mxcsr}
+\item 
+\Hypertarget{struct__fpstate__32_a630c91b094fe0fd96c13b71d871946e1}\label{struct__fpstate__32_a630c91b094fe0fd96c13b71d871946e1} 
+\+\_\+\+\_\+u32 {\bfseries reserved}
+\item 
+\Hypertarget{struct__fpstate__32_a828ca5e3efa8addb48867ed1ed83fd9c}\label{struct__fpstate__32_a828ca5e3efa8addb48867ed1ed83fd9c} 
+struct \doxymbox{\hyperlink{struct__fpxreg}{\+\_\+fpxreg}} {\bfseries \+\_\+fxsr\+\_\+st} \+[8]\+
+\item 
+\Hypertarget{struct__fpstate__32_aaae6f0d190c8cf202cbedc95cfb1a736}\label{struct__fpstate__32_aaae6f0d190c8cf202cbedc95cfb1a736} 
+struct \doxymbox{\hyperlink{struct__xmmreg}{\+\_\+xmmreg}} {\bfseries \+\_\+xmm} \+[8]\+
+\item 
+\Hypertarget{struct__fpstate__32_ad3cbae26bedef8e16c33cbc028aa84a1}\label{struct__fpstate__32_ad3cbae26bedef8e16c33cbc028aa84a1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u32 {\bfseries padding1} \+[44]\+\\
+\>\_\_u32 {\bfseries padding} \+[44]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{struct__fpstate__32_a7d3f96412d96c2f54b01207f9e0420d3}\label{struct__fpstate__32_a7d3f96412d96c2f54b01207f9e0420d3} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u32 {\bfseries padding2} \+[12]\+\\
+\>struct \doxymbox{\hyperlink{struct__fpx__sw__bytes}{\_fpx\_sw\_bytes}} {\bfseries sw\_reserved}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

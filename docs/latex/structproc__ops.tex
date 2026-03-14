@@ -1,0 +1,46 @@
+\doxysection{proc\+\_\+ops Struct Reference}
+\hypertarget{structproc__ops}{}\label{structproc__ops}\index{proc\_ops@{proc\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structproc__ops_ae977552488efabbbca7f1c0a67bf8cbb}\label{structproc__ops_ae977552488efabbbca7f1c0a67bf8cbb} 
+unsigned int {\bfseries proc\+\_\+flags}
+\item 
+\Hypertarget{structproc__ops_aec2262fd69ed3400e02a6e31d3f4a4a2}\label{structproc__ops_aec2262fd69ed3400e02a6e31d3f4a4a2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+open} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproc__ops_a5b9824926a1351bc95d804185d28962b}\label{structproc__ops_a5b9824926a1351bc95d804185d28962b} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+read} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, size\+\_\+t, loff\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproc__ops_a597e6135e0f297a312bbf89f36c916b5}\label{structproc__ops_a597e6135e0f297a312bbf89f36c916b5} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+read\+\_\+iter} )(struct \doxymbox{\hyperlink{structkiocb}{kiocb}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiov__iter}{iov\+\_\+iter}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproc__ops_a807803d7d885b13302b2fdadbe01a398}\label{structproc__ops_a807803d7d885b13302b2fdadbe01a398} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+write} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, size\+\_\+t, loff\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproc__ops_aaaf9cf084718bef258f9a245568d18b2}\label{structproc__ops_aaaf9cf084718bef258f9a245568d18b2} 
+loff\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+lseek} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, loff\+\_\+t, int)
+\item 
+\Hypertarget{structproc__ops_ac8910d7471b9282bf15bd654e583faf3}\label{structproc__ops_ac8910d7471b9282bf15bd654e583faf3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+release} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproc__ops_a264f1531229fde2151ca6f58305b1acd}\label{structproc__ops_a264f1531229fde2151ca6f58305b1acd} 
+\+\_\+\+\_\+poll\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+poll} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpoll__table__struct}{poll\+\_\+table\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproc__ops_abe14d76a971c7c9bb77e094c81b5ff31}\label{structproc__ops_abe14d76a971c7c9bb77e094c81b5ff31} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structproc__ops_a1547e3d86d9c2b7c5b802bb7c7f96f4b}\label{structproc__ops_a1547e3d86d9c2b7c5b802bb7c7f96f4b} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+compat\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structproc__ops_a7a0725e67b649f72547ad66a48fcb8c8}\label{structproc__ops_a7a0725e67b649f72547ad66a48fcb8c8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+mmap} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structproc__ops_a2a6b7e2f0da59f13f2fe053288335429}\label{structproc__ops_a2a6b7e2f0da59f13f2fe053288335429} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+get\+\_\+unmapped\+\_\+area} )(struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int, long unsigned int, long unsigned int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

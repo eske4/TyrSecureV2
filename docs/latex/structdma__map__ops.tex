@@ -1,0 +1,70 @@
+\doxysection{dma\+\_\+map\+\_\+ops Struct Reference}
+\hypertarget{structdma__map__ops}{}\label{structdma__map__ops}\index{dma\_map\_ops@{dma\_map\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdma__map__ops_ae96d0f58527fd1c8463c892c65694253}\label{structdma__map__ops_ae96d0f58527fd1c8463c892c65694253} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, dma\+\_\+addr\+\_\+t \texorpdfstring{$\ast$}{*}, gfp\+\_\+t, long unsigned int)
+\item 
+\Hypertarget{structdma__map__ops_a2ccd8730a14c519bb49c1abbfafc4789}\label{structdma__map__ops_a2ccd8730a14c519bb49c1abbfafc4789} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, void \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t, long unsigned int)
+\item 
+\Hypertarget{structdma__map__ops_a67f5c8fdf0da38634d62de4e352c994a}\label{structdma__map__ops_a67f5c8fdf0da38634d62de4e352c994a} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+pages\+\_\+op} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, dma\+\_\+addr\+\_\+t \texorpdfstring{$\ast$}{*}, enum dma\+\_\+data\+\_\+direction, gfp\+\_\+t)
+\item 
+\Hypertarget{structdma__map__ops_a66cb9bbf3eb2078fbc31b2ecc69f3dee}\label{structdma__map__ops_a66cb9bbf3eb2078fbc31b2ecc69f3dee} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+pages} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__map__ops_a8abd928545f485c6831554f8bfc59808}\label{structdma__map__ops_a8abd928545f485c6831554f8bfc59808} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mmap} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t, size\+\_\+t, long unsigned int)
+\item 
+\Hypertarget{structdma__map__ops_abf26f9c4d5fb29eead0662cdc8eb298e}\label{structdma__map__ops_abf26f9c4d5fb29eead0662cdc8eb298e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+sgtable} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsg__table}{sg\+\_\+table}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t, size\+\_\+t, long unsigned int)
+\item 
+\Hypertarget{structdma__map__ops_ac1642b86a0fcae3201556d214a37575f}\label{structdma__map__ops_ac1642b86a0fcae3201556d214a37575f} 
+dma\+\_\+addr\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+phys} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, phys\+\_\+addr\+\_\+t, size\+\_\+t, enum dma\+\_\+data\+\_\+direction, long unsigned int)
+\item 
+\Hypertarget{structdma__map__ops_ae2aec6ef36d144abc20edd87b37ebc55}\label{structdma__map__ops_ae2aec6ef36d144abc20edd87b37ebc55} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unmap\+\_\+phys} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t, size\+\_\+t, enum dma\+\_\+data\+\_\+direction, long unsigned int)
+\item 
+\Hypertarget{structdma__map__ops_a1a241c5c6c8b1d3d9ab6aaa268d473f5}\label{structdma__map__ops_a1a241c5c6c8b1d3d9ab6aaa268d473f5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+sg} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*}, int, enum dma\+\_\+data\+\_\+direction, long unsigned int)
+\item 
+\Hypertarget{structdma__map__ops_a4f07510006c4d394538e21c163ccbf36}\label{structdma__map__ops_a4f07510006c4d394538e21c163ccbf36} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unmap\+\_\+sg} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*}, int, enum dma\+\_\+data\+\_\+direction, long unsigned int)
+\item 
+\Hypertarget{structdma__map__ops_a1b26e100c1cfcb80814f7dc9a7c56163}\label{structdma__map__ops_a1b26e100c1cfcb80814f7dc9a7c56163} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+single\+\_\+for\+\_\+cpu} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t, size\+\_\+t, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__map__ops_a41118907c23b33e582c7d7db2edd95bc}\label{structdma__map__ops_a41118907c23b33e582c7d7db2edd95bc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+single\+\_\+for\+\_\+device} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t, size\+\_\+t, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__map__ops_a025c27c537fab29016a9e717ccfcb3ff}\label{structdma__map__ops_a025c27c537fab29016a9e717ccfcb3ff} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+sg\+\_\+for\+\_\+cpu} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*}, int, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__map__ops_acff859192b14bbabb0041672d01bee3f}\label{structdma__map__ops_acff859192b14bbabb0041672d01bee3f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+sg\+\_\+for\+\_\+device} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*}, int, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__map__ops_a7fac399f1e0e21cc1077d4de662e3fca}\label{structdma__map__ops_a7fac399f1e0e21cc1077d4de662e3fca} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cache\+\_\+sync} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, size\+\_\+t, enum dma\+\_\+data\+\_\+direction)
+\item 
+\Hypertarget{structdma__map__ops_a41767eb444f601ab312406c4e7862cf8}\label{structdma__map__ops_a41767eb444f601ab312406c4e7862cf8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+supported} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structdma__map__ops_ac52250d475c94009bae9c129edf79778}\label{structdma__map__ops_ac52250d475c94009bae9c129edf79778} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+required\+\_\+mask} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdma__map__ops_a8aa8318f043643bc9c0f38ab7d2ef856}\label{structdma__map__ops_a8aa8318f043643bc9c0f38ab7d2ef856} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries max\+\_\+mapping\+\_\+size} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdma__map__ops_a5a7702ff6c66dd2b981b518fa3c3b562}\label{structdma__map__ops_a5a7702ff6c66dd2b981b518fa3c3b562} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries opt\+\_\+mapping\+\_\+size} )(void)
+\item 
+\Hypertarget{structdma__map__ops_ac37202ac13729b16740afa23328351e7}\label{structdma__map__ops_ac37202ac13729b16740afa23328351e7} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+merge\+\_\+boundary} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

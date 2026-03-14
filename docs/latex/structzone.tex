@@ -1,0 +1,172 @@
+\doxysection{zone Struct Reference}
+\hypertarget{structzone}{}\label{structzone}\index{zone@{zone}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structzone_a8c0f0939adafaf1f2937334150de5349}\label{structzone_a8c0f0939adafaf1f2937334150de5349} 
+long unsigned int {\bfseries \+\_\+watermark} \+[4]\+
+\item 
+\Hypertarget{structzone_ac908cef93c00fffb21b74ba60399325f}\label{structzone_ac908cef93c00fffb21b74ba60399325f} 
+long unsigned int {\bfseries watermark\+\_\+boost}
+\item 
+\Hypertarget{structzone_a19d5518bab5193d448a2c7c5220f1c86}\label{structzone_a19d5518bab5193d448a2c7c5220f1c86} 
+long unsigned int {\bfseries nr\+\_\+reserved\+\_\+highatomic}
+\item 
+\Hypertarget{structzone_a936d60be20a2cb86ba33a8fdc3012ab1}\label{structzone_a936d60be20a2cb86ba33a8fdc3012ab1} 
+long unsigned int {\bfseries nr\+\_\+free\+\_\+highatomic}
+\item 
+\Hypertarget{structzone_a199524cf0a0ac097a2ab143da57cfdf0}\label{structzone_a199524cf0a0ac097a2ab143da57cfdf0} 
+long int {\bfseries lowmem\+\_\+reserve} \+[5]\+
+\item 
+\Hypertarget{structzone_ae04ae2e819d981d0a33d493a02647b73}\label{structzone_ae04ae2e819d981d0a33d493a02647b73} 
+int {\bfseries node}
+\item 
+\Hypertarget{structzone_a83774c5e352f0896f2cfadd5975b4f53}\label{structzone_a83774c5e352f0896f2cfadd5975b4f53} 
+struct \doxymbox{\hyperlink{structpglist__data}{pglist\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries zone\+\_\+pgdat}
+\item 
+\Hypertarget{structzone_aba030c2fce626b5e1d57a6b00d713258}\label{structzone_aba030c2fce626b5e1d57a6b00d713258} 
+struct \doxymbox{\hyperlink{structper__cpu__pages}{per\+\_\+cpu\+\_\+pages}} \texorpdfstring{$\ast$}{*} {\bfseries per\+\_\+cpu\+\_\+pageset}
+\item 
+\Hypertarget{structzone_addf23a0f73297b58f3ac65ebeb8cf959}\label{structzone_addf23a0f73297b58f3ac65ebeb8cf959} 
+struct \doxymbox{\hyperlink{structper__cpu__zonestat}{per\+\_\+cpu\+\_\+zonestat}} \texorpdfstring{$\ast$}{*} {\bfseries per\+\_\+cpu\+\_\+zonestats}
+\item 
+\Hypertarget{structzone_a5845bb39590e5cb6ecd5a0bbc1a1306a}\label{structzone_a5845bb39590e5cb6ecd5a0bbc1a1306a} 
+int {\bfseries pageset\+\_\+high\+\_\+min}
+\item 
+\Hypertarget{structzone_ab54dfb33275bff53433c7a71eb9d275b}\label{structzone_ab54dfb33275bff53433c7a71eb9d275b} 
+int {\bfseries pageset\+\_\+high\+\_\+max}
+\item 
+\Hypertarget{structzone_a738a570f82d107d6a3d11bcaf94968f1}\label{structzone_a738a570f82d107d6a3d11bcaf94968f1} 
+int {\bfseries pageset\+\_\+batch}
+\item 
+\Hypertarget{structzone_a1a911e21fc28e890c44427a6981d7034}\label{structzone_a1a911e21fc28e890c44427a6981d7034} 
+long unsigned int {\bfseries zone\+\_\+start\+\_\+pfn}
+\item 
+\Hypertarget{structzone_a689557c972f514f5c1157a97a280e2e8}\label{structzone_a689557c972f514f5c1157a97a280e2e8} 
+atomic\+\_\+long\+\_\+t {\bfseries managed\+\_\+pages}
+\item 
+\Hypertarget{structzone_aebdcdc428b8c77dce392545aa48bae14}\label{structzone_aebdcdc428b8c77dce392545aa48bae14} 
+long unsigned int {\bfseries spanned\+\_\+pages}
+\item 
+\Hypertarget{structzone_a77f08cf754c8b44a80ae161dfb92bf7a}\label{structzone_a77f08cf754c8b44a80ae161dfb92bf7a} 
+long unsigned int {\bfseries present\+\_\+pages}
+\item 
+\Hypertarget{structzone_a06f50775bc6b3a7ea1dca8eea0be5216}\label{structzone_a06f50775bc6b3a7ea1dca8eea0be5216} 
+long unsigned int {\bfseries present\+\_\+early\+\_\+pages}
+\item 
+\Hypertarget{structzone_a87bf3c4c7d4b4daa20eadb661b26dc1a}\label{structzone_a87bf3c4c7d4b4daa20eadb661b26dc1a} 
+long unsigned int {\bfseries cma\+\_\+pages}
+\item 
+\Hypertarget{structzone_a20afe297b3ee81e04e71f8b1d4d5ac3a}\label{structzone_a20afe297b3ee81e04e71f8b1d4d5ac3a} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structzone_a757f60cd827fff1af70d0787f578c807}\label{structzone_a757f60cd827fff1af70d0787f578c807} 
+long unsigned int {\bfseries nr\+\_\+isolate\+\_\+pageblock}
+\item 
+\Hypertarget{structzone_a9c5b510ec3b079d4940de3a8b9928378}\label{structzone_a9c5b510ec3b079d4940de3a8b9928378} 
+\doxymbox{\hyperlink{structseqlock__t}{seqlock\+\_\+t}} {\bfseries span\+\_\+seqlock}
+\item 
+\Hypertarget{structzone_a39641bddb64e407a9a440df024ce12db}\label{structzone_a39641bddb64e407a9a440df024ce12db} 
+int {\bfseries initialized}
+\item 
+\Hypertarget{structzone_af0b158da982f60c69898fc887bf48d6e}\label{structzone_af0b158da982f60c69898fc887bf48d6e} 
+long :\+ 64
+\item 
+\Hypertarget{structzone_a093ed083b4e46cd46dc7e65dd14fc850}\label{structzone_a093ed083b4e46cd46dc7e65dd14fc850} 
+long :\+ 64
+\item 
+\Hypertarget{structzone_a02609653fd5512375cf733e632fa1e3b}\label{structzone_a02609653fd5512375cf733e632fa1e3b} 
+long :\+ 64
+\item 
+\Hypertarget{structzone_aed0cbe066c7bf6efc129ce903d507d2b}\label{structzone_aed0cbe066c7bf6efc129ce903d507d2b} 
+long :\+ 64
+\item 
+\Hypertarget{structzone_a97f681332ed3ba33cf9f7a4c9daa6de8}\label{structzone_a97f681332ed3ba33cf9f7a4c9daa6de8} 
+struct \doxymbox{\hyperlink{structcacheline__padding}{cacheline\+\_\+padding}} {\bfseries \+\_\+pad1\+\_\+}
+\item 
+\Hypertarget{structzone_ae531f8109b144c82913197f9662fcd4b}\label{structzone_ae531f8109b144c82913197f9662fcd4b} 
+struct \doxymbox{\hyperlink{structfree__area}{free\+\_\+area}} {\bfseries free\+\_\+area} \+[11]\+
+\item 
+\Hypertarget{structzone_aa827f73a5a6b8fcfdb9ba94a5884b466}\label{structzone_aa827f73a5a6b8fcfdb9ba94a5884b466} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries unaccepted\+\_\+pages}
+\item 
+\Hypertarget{structzone_aeac4742240318719715cea2e7fc77dbd}\label{structzone_aeac4742240318719715cea2e7fc77dbd} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries unaccepted\+\_\+cleanup}
+\item 
+\Hypertarget{structzone_a38cc1a671e2a1b0f5fcf67700333710e}\label{structzone_a38cc1a671e2a1b0f5fcf67700333710e} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structzone_aa38596b94f1a55f677f7f0b181c895da}\label{structzone_aa38596b94f1a55f677f7f0b181c895da} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structzone_aafd59d9916eb5e101bce63377b8b0a55}\label{structzone_aafd59d9916eb5e101bce63377b8b0a55} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries trylock\+\_\+free\+\_\+pages}
+\item 
+\Hypertarget{structzone_a278009dd163caa53d64048b5a2b29bfc}\label{structzone_a278009dd163caa53d64048b5a2b29bfc} 
+struct \doxymbox{\hyperlink{structcacheline__padding}{cacheline\+\_\+padding}} {\bfseries \+\_\+pad2\+\_\+}
+\item 
+\Hypertarget{structzone_a169dea1c87a8727fbf02354a2883c1d6}\label{structzone_a169dea1c87a8727fbf02354a2883c1d6} 
+long unsigned int {\bfseries percpu\+\_\+drift\+\_\+mark}
+\item 
+\Hypertarget{structzone_a4fab00224b5a709aa251dcd862b48f50}\label{structzone_a4fab00224b5a709aa251dcd862b48f50} 
+long unsigned int {\bfseries compact\+\_\+cached\+\_\+free\+\_\+pfn}
+\item 
+\Hypertarget{structzone_ab6e5762a573f3c89cc24bec9e021149c}\label{structzone_ab6e5762a573f3c89cc24bec9e021149c} 
+long unsigned int {\bfseries compact\+\_\+cached\+\_\+migrate\+\_\+pfn} \+[2]\+
+\item 
+\Hypertarget{structzone_a3557217fb26df5dd9fa17396d007fb8b}\label{structzone_a3557217fb26df5dd9fa17396d007fb8b} 
+long unsigned int {\bfseries compact\+\_\+init\+\_\+migrate\+\_\+pfn}
+\item 
+\Hypertarget{structzone_a5ce0799245e051ddda8024639e354b96}\label{structzone_a5ce0799245e051ddda8024639e354b96} 
+long unsigned int {\bfseries compact\+\_\+init\+\_\+free\+\_\+pfn}
+\item 
+\Hypertarget{structzone_a532b35293a64ae5f107d59d86becac28}\label{structzone_a532b35293a64ae5f107d59d86becac28} 
+unsigned int {\bfseries compact\+\_\+considered}
+\item 
+\Hypertarget{structzone_ab0239f8684e5319828b7698e841302c4}\label{structzone_ab0239f8684e5319828b7698e841302c4} 
+unsigned int {\bfseries compact\+\_\+defer\+\_\+shift}
+\item 
+\Hypertarget{structzone_a1c0e2e40aa597077cab400882f93e381}\label{structzone_a1c0e2e40aa597077cab400882f93e381} 
+int {\bfseries compact\+\_\+order\+\_\+failed}
+\item 
+\Hypertarget{structzone_aee5d1017f732e05f1b2dbd10d1e6ee24}\label{structzone_aee5d1017f732e05f1b2dbd10d1e6ee24} 
+bool {\bfseries compact\+\_\+blockskip\+\_\+flush}
+\item 
+\Hypertarget{structzone_a7bacb149c4262e0266fb162457149d48}\label{structzone_a7bacb149c4262e0266fb162457149d48} 
+bool {\bfseries contiguous}
+\item 
+\Hypertarget{structzone_ac9547605b98ecddb8c67ff6dcf3ddfbc}\label{structzone_ac9547605b98ecddb8c67ff6dcf3ddfbc} 
+long :\+ 0
+\item 
+\Hypertarget{structzone_a601321f870f667881f47bf0333c3af11}\label{structzone_a601321f870f667881f47bf0333c3af11} 
+struct \doxymbox{\hyperlink{structcacheline__padding}{cacheline\+\_\+padding}} {\bfseries \+\_\+pad3\+\_\+}
+\item 
+\Hypertarget{structzone_aa0cdc7f2619094423ff7352c8e0c8617}\label{structzone_aa0cdc7f2619094423ff7352c8e0c8617} 
+atomic\+\_\+long\+\_\+t {\bfseries vm\+\_\+stat} \+[12]\+
+\item 
+\Hypertarget{structzone_a4b519588e07bb33f906ed63339c4ca6c}\label{structzone_a4b519588e07bb33f906ed63339c4ca6c} 
+atomic\+\_\+long\+\_\+t {\bfseries vm\+\_\+numa\+\_\+event} \+[6]\+
+\item 
+\Hypertarget{structzone_af86a78abd5b1688c68ef7750d2f464c8}\label{structzone_af86a78abd5b1688c68ef7750d2f464c8} 
+long :\+ 64
+\item 
+\Hypertarget{structzone_ad1e9853e66b8fbe0ed42d26985afa5a5}\label{structzone_ad1e9853e66b8fbe0ed42d26985afa5a5} 
+long :\+ 64
+\item 
+\Hypertarget{structzone_a95b548a59a6c7edaf9a8db248e2cf4ee}\label{structzone_a95b548a59a6c7edaf9a8db248e2cf4ee} 
+long :\+ 64
+\item 
+\Hypertarget{structzone_a42b6b4c7a1aad5830fdcf7e3e10754ba}\label{structzone_a42b6b4c7a1aad5830fdcf7e3e10754ba} 
+long :\+ 64
+\item 
+\Hypertarget{structzone_a67dcd3423b028705079c9040d2c56cba}\label{structzone_a67dcd3423b028705079c9040d2c56cba} 
+long :\+ 64
+\item 
+\Hypertarget{structzone_ad2f223195541e778f2aef0b3600334a2}\label{structzone_ad2f223195541e778f2aef0b3600334a2} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

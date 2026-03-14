@@ -1,0 +1,40 @@
+\doxysection{msi\+\_\+domain\+\_\+ops Struct Reference}
+\hypertarget{structmsi__domain__ops}{}\label{structmsi__domain__ops}\index{msi\_domain\_ops@{msi\_domain\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmsi__domain__ops_a182d5a8c83880ae5fed7d189378b24dd}\label{structmsi__domain__ops_a182d5a8c83880ae5fed7d189378b24dd} 
+irq\+\_\+hw\+\_\+number\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+hwirq} )(struct \doxymbox{\hyperlink{structmsi__domain__info}{msi\+\_\+domain\+\_\+info}} \texorpdfstring{$\ast$}{*}, msi\+\_\+alloc\+\_\+info\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmsi__domain__ops_a4ade89ab8dd4f48e406cce2b4a21e1ea}\label{structmsi__domain__ops_a4ade89ab8dd4f48e406cce2b4a21e1ea} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries msi\+\_\+init} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsi__domain__info}{msi\+\_\+domain\+\_\+info}} \texorpdfstring{$\ast$}{*}, unsigned int, irq\+\_\+hw\+\_\+number\+\_\+t, msi\+\_\+alloc\+\_\+info\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmsi__domain__ops_aed84519f842f4304aa85ab8c84b2194c}\label{structmsi__domain__ops_aed84519f842f4304aa85ab8c84b2194c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries msi\+\_\+free} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsi__domain__info}{msi\+\_\+domain\+\_\+info}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structmsi__domain__ops_a9f5fce679002f3945ee0e808d52f844e}\label{structmsi__domain__ops_a9f5fce679002f3945ee0e808d52f844e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries msi\+\_\+prepare} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, int, msi\+\_\+alloc\+\_\+info\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmsi__domain__ops_ae7c34232a806caea6bd848c1d9ff8345}\label{structmsi__domain__ops_ae7c34232a806caea6bd848c1d9ff8345} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries msi\+\_\+teardown} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, msi\+\_\+alloc\+\_\+info\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmsi__domain__ops_a65e7095f474155e80ff0b15471ef8e81}\label{structmsi__domain__ops_a65e7095f474155e80ff0b15471ef8e81} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+desc} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, msi\+\_\+alloc\+\_\+info\+\_\+t \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsi__desc}{msi\+\_\+desc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmsi__domain__ops_a73db373864477e53c7a43ba9582a6991}\label{structmsi__domain__ops_a73db373864477e53c7a43ba9582a6991} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+desc} )(msi\+\_\+alloc\+\_\+info\+\_\+t \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsi__desc}{msi\+\_\+desc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmsi__domain__ops_afd5a915727744b2d55004a9561f9802c}\label{structmsi__domain__ops_afd5a915727744b2d55004a9561f9802c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries domain\+\_\+alloc\+\_\+irqs} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structmsi__domain__ops_a5c00621d4d5ade0e276b9f2e7c4d1da6}\label{structmsi__domain__ops_a5c00621d4d5ade0e276b9f2e7c4d1da6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries domain\+\_\+free\+\_\+irqs} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmsi__domain__ops_a067c88417a12c327451d174caa915749}\label{structmsi__domain__ops_a067c88417a12c327451d174caa915749} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries msi\+\_\+translate} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structirq__fwspec}{irq\+\_\+fwspec}} \texorpdfstring{$\ast$}{*}, irq\+\_\+hw\+\_\+number\+\_\+t \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

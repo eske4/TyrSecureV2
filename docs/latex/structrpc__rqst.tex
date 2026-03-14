@@ -1,0 +1,121 @@
+\doxysection{rpc\+\_\+rqst Struct Reference}
+\hypertarget{structrpc__rqst}{}\label{structrpc__rqst}\index{rpc\_rqst@{rpc\_rqst}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrpc__rqst_ae129e55522f14bd001973954a7a53f30}\label{structrpc__rqst_ae129e55522f14bd001973954a7a53f30} 
+struct \doxymbox{\hyperlink{structrpc__xprt}{rpc\+\_\+xprt}} \texorpdfstring{$\ast$}{*} {\bfseries rq\+\_\+xprt}
+\item 
+\Hypertarget{structrpc__rqst_a7545fafb8f7b0563dd006024088b249b}\label{structrpc__rqst_a7545fafb8f7b0563dd006024088b249b} 
+struct \doxymbox{\hyperlink{structxdr__buf}{xdr\+\_\+buf}} {\bfseries rq\+\_\+snd\+\_\+buf}
+\item 
+\Hypertarget{structrpc__rqst_a9924db19e6faa0f02aeb723ac24e5192}\label{structrpc__rqst_a9924db19e6faa0f02aeb723ac24e5192} 
+struct \doxymbox{\hyperlink{structxdr__buf}{xdr\+\_\+buf}} {\bfseries rq\+\_\+rcv\+\_\+buf}
+\item 
+\Hypertarget{structrpc__rqst_ae4c3212ab1a900118f6e04920c378a39}\label{structrpc__rqst_ae4c3212ab1a900118f6e04920c378a39} 
+struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*} {\bfseries rq\+\_\+task}
+\item 
+\Hypertarget{structrpc__rqst_af170ec0f62ab8012dc76ae97cf04fa9e}\label{structrpc__rqst_af170ec0f62ab8012dc76ae97cf04fa9e} 
+struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*} {\bfseries rq\+\_\+cred}
+\item 
+\Hypertarget{structrpc__rqst_a86a3caa1d77fd7768df8af7a758473b7}\label{structrpc__rqst_a86a3caa1d77fd7768df8af7a758473b7} 
+\+\_\+\+\_\+be32 {\bfseries rq\+\_\+xid}
+\item 
+\Hypertarget{structrpc__rqst_a645bdf416bba9b306acc8fa5f0d0eb45}\label{structrpc__rqst_a645bdf416bba9b306acc8fa5f0d0eb45} 
+int {\bfseries rq\+\_\+cong}
+\item 
+\Hypertarget{structrpc__rqst_ab48318e2455fabc80f886fb195708295}\label{structrpc__rqst_ab48318e2455fabc80f886fb195708295} 
+u32 {\bfseries rq\+\_\+seqnos} \+[3]\+
+\item 
+\Hypertarget{structrpc__rqst_a3166a2595ba930e886c48ea6a41444c6}\label{structrpc__rqst_a3166a2595ba930e886c48ea6a41444c6} 
+unsigned int {\bfseries rq\+\_\+seqno\+\_\+count}
+\item 
+\Hypertarget{structrpc__rqst_a5ca24bd79bc5cd6bd14f5cfdfe39f330}\label{structrpc__rqst_a5ca24bd79bc5cd6bd14f5cfdfe39f330} 
+int {\bfseries rq\+\_\+enc\+\_\+pages\+\_\+num}
+\item 
+\Hypertarget{structrpc__rqst_ae05ff045401381e8bda106c6628d7973}\label{structrpc__rqst_ae05ff045401381e8bda106c6628d7973} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries rq\+\_\+enc\+\_\+pages}
+\item 
+\Hypertarget{structrpc__rqst_a03f03c0cc6180055b6383c6535880949}\label{structrpc__rqst_a03f03c0cc6180055b6383c6535880949} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries rq\+\_\+release\+\_\+snd\+\_\+buf} )(struct \doxymbox{\hyperlink{structrpc__rqst}{rpc\+\_\+rqst}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__rqst_a1c0cd3015ea527711c47acd82940f088}\label{structrpc__rqst_a1c0cd3015ea527711c47acd82940f088} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries rq\_list}\\
+\>struct \doxymbox{\hyperlink{structrb__node}{rb\_node}} {\bfseries rq\_recv}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structrpc__rqst_a1191d8f98074b153f4773d179fa4c164}\label{structrpc__rqst_a1191d8f98074b153f4773d179fa4c164} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rq\+\_\+xmit}
+\item 
+\Hypertarget{structrpc__rqst_ac420ede847ca68965b4f2c04dca95df7}\label{structrpc__rqst_ac420ede847ca68965b4f2c04dca95df7} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rq\+\_\+xmit2}
+\item 
+\Hypertarget{structrpc__rqst_a1a58c03989a055f00402006dd50dd2c6}\label{structrpc__rqst_a1a58c03989a055f00402006dd50dd2c6} 
+void \texorpdfstring{$\ast$}{*} {\bfseries rq\+\_\+buffer}
+\item 
+\Hypertarget{structrpc__rqst_a6ebdaa00744b1aeb1a653bb2a217b813}\label{structrpc__rqst_a6ebdaa00744b1aeb1a653bb2a217b813} 
+size\+\_\+t {\bfseries rq\+\_\+callsize}
+\item 
+\Hypertarget{structrpc__rqst_a7696124e5840a450e1335e72ee5b8021}\label{structrpc__rqst_a7696124e5840a450e1335e72ee5b8021} 
+void \texorpdfstring{$\ast$}{*} {\bfseries rq\+\_\+rbuffer}
+\item 
+\Hypertarget{structrpc__rqst_a8864170cdee2a9ed8c7583d5b127c615}\label{structrpc__rqst_a8864170cdee2a9ed8c7583d5b127c615} 
+size\+\_\+t {\bfseries rq\+\_\+rcvsize}
+\item 
+\Hypertarget{structrpc__rqst_a76e7ce03a31607e591bf4910b22cccf3}\label{structrpc__rqst_a76e7ce03a31607e591bf4910b22cccf3} 
+size\+\_\+t {\bfseries rq\+\_\+xmit\+\_\+bytes\+\_\+sent}
+\item 
+\Hypertarget{structrpc__rqst_a7c246cc72186d492b175720b5615bba5}\label{structrpc__rqst_a7c246cc72186d492b175720b5615bba5} 
+size\+\_\+t {\bfseries rq\+\_\+reply\+\_\+bytes\+\_\+recvd}
+\item 
+\Hypertarget{structrpc__rqst_afe98039deccf0b2eeeed29dc632c619a}\label{structrpc__rqst_afe98039deccf0b2eeeed29dc632c619a} 
+struct \doxymbox{\hyperlink{structxdr__buf}{xdr\+\_\+buf}} {\bfseries rq\+\_\+private\+\_\+buf}
+\item 
+\Hypertarget{structrpc__rqst_ae04373c59738b3546cb39e6b8f01eb69}\label{structrpc__rqst_ae04373c59738b3546cb39e6b8f01eb69} 
+long unsigned int {\bfseries rq\+\_\+majortimeo}
+\item 
+\Hypertarget{structrpc__rqst_ac897dd2b171973d53a24d3c1988d80fe}\label{structrpc__rqst_ac897dd2b171973d53a24d3c1988d80fe} 
+long unsigned int {\bfseries rq\+\_\+minortimeo}
+\item 
+\Hypertarget{structrpc__rqst_a01da751a96cfa5d6607c576a638e150f}\label{structrpc__rqst_a01da751a96cfa5d6607c576a638e150f} 
+long unsigned int {\bfseries rq\+\_\+timeout}
+\item 
+\Hypertarget{structrpc__rqst_a0f58313494900b2e37cd029e3fa91ae8}\label{structrpc__rqst_a0f58313494900b2e37cd029e3fa91ae8} 
+ktime\+\_\+t {\bfseries rq\+\_\+rtt}
+\item 
+\Hypertarget{structrpc__rqst_ad8d633be1a8117216e4c3575550bd855}\label{structrpc__rqst_ad8d633be1a8117216e4c3575550bd855} 
+unsigned int {\bfseries rq\+\_\+retries}
+\item 
+\Hypertarget{structrpc__rqst_acf6c415e509ac0533d55b785aec05822}\label{structrpc__rqst_acf6c415e509ac0533d55b785aec05822} 
+unsigned int {\bfseries rq\+\_\+connect\+\_\+cookie}
+\item 
+\Hypertarget{structrpc__rqst_a82709374e0b368a5654927c29285d077}\label{structrpc__rqst_a82709374e0b368a5654927c29285d077} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries rq\+\_\+pin}
+\item 
+\Hypertarget{structrpc__rqst_a5738fa5622a6141c4e8b339ff8d7475d}\label{structrpc__rqst_a5738fa5622a6141c4e8b339ff8d7475d} 
+u32 {\bfseries rq\+\_\+bytes\+\_\+sent}
+\item 
+\Hypertarget{structrpc__rqst_a6706daa6b6208f7d8fd691c2c5449f19}\label{structrpc__rqst_a6706daa6b6208f7d8fd691c2c5449f19} 
+ktime\+\_\+t {\bfseries rq\+\_\+xtime}
+\item 
+\Hypertarget{structrpc__rqst_ad02fa62d13d4a135310d35fe0ea40b1e}\label{structrpc__rqst_ad02fa62d13d4a135310d35fe0ea40b1e} 
+int {\bfseries rq\+\_\+ntrans}
+\item 
+\Hypertarget{structrpc__rqst_aee6dc20c52c859d3fe2b8bcec08bfe63}\label{structrpc__rqst_aee6dc20c52c859d3fe2b8bcec08bfe63} 
+struct \doxymbox{\hyperlink{structlwq__node}{lwq\+\_\+node}} {\bfseries rq\+\_\+bc\+\_\+list}
+\item 
+\Hypertarget{structrpc__rqst_a216e09e483a996cfed82b45f42ed66b9}\label{structrpc__rqst_a216e09e483a996cfed82b45f42ed66b9} 
+long unsigned int {\bfseries rq\+\_\+bc\+\_\+pa\+\_\+state}
+\item 
+\Hypertarget{structrpc__rqst_a47e2432e8e0e51f4a994b8bf78e86e6e}\label{structrpc__rqst_a47e2432e8e0e51f4a994b8bf78e86e6e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rq\+\_\+bc\+\_\+pa\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

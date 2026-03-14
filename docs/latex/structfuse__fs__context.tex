@@ -1,0 +1,76 @@
+\doxysection{fuse\+\_\+fs\+\_\+context Struct Reference}
+\hypertarget{structfuse__fs__context}{}\label{structfuse__fs__context}\index{fuse\_fs\_context@{fuse\_fs\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__fs__context_a94c41b1e1957669ee874fe2e77025112}\label{structfuse__fs__context_a94c41b1e1957669ee874fe2e77025112} 
+int {\bfseries fd}
+\item 
+\Hypertarget{structfuse__fs__context_a2f38d7bcfa708de6037f052035f5a3e8}\label{structfuse__fs__context_a2f38d7bcfa708de6037f052035f5a3e8} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries file}
+\item 
+\Hypertarget{structfuse__fs__context_adb0776441b778e68dc06bbb36cba5372}\label{structfuse__fs__context_adb0776441b778e68dc06bbb36cba5372} 
+unsigned int {\bfseries rootmode}
+\item 
+\Hypertarget{structfuse__fs__context_ad62c583ec0b5d7cd7ae829717011e982}\label{structfuse__fs__context_ad62c583ec0b5d7cd7ae829717011e982} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries user\+\_\+id}
+\item 
+\Hypertarget{structfuse__fs__context_a35c56273d3c40f91d72bd9ca41457ff6}\label{structfuse__fs__context_a35c56273d3c40f91d72bd9ca41457ff6} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries group\+\_\+id}
+\item 
+\Hypertarget{structfuse__fs__context_a31d0c923e3fcd1ef55c1afd95df858e5}\label{structfuse__fs__context_a31d0c923e3fcd1ef55c1afd95df858e5} 
+bool {\bfseries is\+\_\+bdev}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_ab6ce804ccb383168e8dc961063a9d553}\label{structfuse__fs__context_ab6ce804ccb383168e8dc961063a9d553} 
+bool {\bfseries fd\+\_\+present}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_adee42e360080d6e9c45884a07edc0b33}\label{structfuse__fs__context_adee42e360080d6e9c45884a07edc0b33} 
+bool {\bfseries rootmode\+\_\+present}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_a1b429328fbf1bcb619d05211a1d07d1a}\label{structfuse__fs__context_a1b429328fbf1bcb619d05211a1d07d1a} 
+bool {\bfseries user\+\_\+id\+\_\+present}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_a25d3cea2151b154b1064db5ce31756da}\label{structfuse__fs__context_a25d3cea2151b154b1064db5ce31756da} 
+bool {\bfseries group\+\_\+id\+\_\+present}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_a74aa494c02f509e310ddffe742b9112e}\label{structfuse__fs__context_a74aa494c02f509e310ddffe742b9112e} 
+bool {\bfseries default\+\_\+permissions}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_a2bf10f4fbdb82fd239e7c45b1b218213}\label{structfuse__fs__context_a2bf10f4fbdb82fd239e7c45b1b218213} 
+bool {\bfseries allow\+\_\+other}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_ab271bdbb86e014a77ef43aea527152d4}\label{structfuse__fs__context_ab271bdbb86e014a77ef43aea527152d4} 
+bool {\bfseries destroy}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_ac89096005edcc01164f7740c044fc6fe}\label{structfuse__fs__context_ac89096005edcc01164f7740c044fc6fe} 
+bool {\bfseries no\+\_\+control}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_aaa3f99421a1cce5cdf517dca64c61d05}\label{structfuse__fs__context_aaa3f99421a1cce5cdf517dca64c61d05} 
+bool {\bfseries no\+\_\+force\+\_\+umount}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_aaa3f0d5dc6700e0178072cd9538969cf}\label{structfuse__fs__context_aaa3f0d5dc6700e0178072cd9538969cf} 
+bool {\bfseries legacy\+\_\+opts\+\_\+show}:\+ 1
+\item 
+\Hypertarget{structfuse__fs__context_a988b006b60a1a809c48bdd85a2f621d7}\label{structfuse__fs__context_a988b006b60a1a809c48bdd85a2f621d7} 
+enum fuse\+\_\+dax\+\_\+mode {\bfseries dax\+\_\+mode}
+\item 
+\Hypertarget{structfuse__fs__context_ac28e913309c1409ff9ff1b26c7dde71e}\label{structfuse__fs__context_ac28e913309c1409ff9ff1b26c7dde71e} 
+unsigned int {\bfseries max\+\_\+read}
+\item 
+\Hypertarget{structfuse__fs__context_a3aece966b88d6bf724d07754832c67c5}\label{structfuse__fs__context_a3aece966b88d6bf724d07754832c67c5} 
+unsigned int {\bfseries blksize}
+\item 
+\Hypertarget{structfuse__fs__context_a43b7ed6a074ca6c88cb018ab3abc3e52}\label{structfuse__fs__context_a43b7ed6a074ca6c88cb018ab3abc3e52} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries subtype}
+\item 
+\Hypertarget{structfuse__fs__context_a094d24e42ee8b166ea821bb39c994f1d}\label{structfuse__fs__context_a094d24e42ee8b166ea821bb39c994f1d} 
+struct \doxymbox{\hyperlink{structdax__device}{dax\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dax\+\_\+dev}
+\item 
+\Hypertarget{structfuse__fs__context_a334466c866317190a376030d83002493}\label{structfuse__fs__context_a334466c866317190a376030d83002493} 
+void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries fudptr}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

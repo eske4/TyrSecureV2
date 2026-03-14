@@ -1,0 +1,61 @@
+\doxysection{ahci\+\_\+port\+\_\+priv Struct Reference}
+\hypertarget{structahci__port__priv}{}\label{structahci__port__priv}\index{ahci\_port\_priv@{ahci\_port\_priv}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structahci__port__priv_a48d9437008031c394b5781cc29cf3aa6}\label{structahci__port__priv_a48d9437008031c394b5781cc29cf3aa6} 
+struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*} {\bfseries active\+\_\+link}
+\item 
+\Hypertarget{structahci__port__priv_aa1b08b8f3e89646d7b6dd0c6d96aabe4}\label{structahci__port__priv_aa1b08b8f3e89646d7b6dd0c6d96aabe4} 
+struct \doxymbox{\hyperlink{structahci__cmd__hdr}{ahci\+\_\+cmd\+\_\+hdr}} \texorpdfstring{$\ast$}{*} {\bfseries cmd\+\_\+slot}
+\item 
+\Hypertarget{structahci__port__priv_ae5f0d010e535a3a0a86bd759aba7e374}\label{structahci__port__priv_ae5f0d010e535a3a0a86bd759aba7e374} 
+dma\+\_\+addr\+\_\+t {\bfseries cmd\+\_\+slot\+\_\+dma}
+\item 
+\Hypertarget{structahci__port__priv_ab86a30487d995a86218352f3825a93c9}\label{structahci__port__priv_ab86a30487d995a86218352f3825a93c9} 
+void \texorpdfstring{$\ast$}{*} {\bfseries cmd\+\_\+tbl}
+\item 
+\Hypertarget{structahci__port__priv_afb0c8132824f7f1ddf1a5baa8494d20b}\label{structahci__port__priv_afb0c8132824f7f1ddf1a5baa8494d20b} 
+dma\+\_\+addr\+\_\+t {\bfseries cmd\+\_\+tbl\+\_\+dma}
+\item 
+\Hypertarget{structahci__port__priv_ab412f19f02cf7c2a3e1fe7c7430c111d}\label{structahci__port__priv_ab412f19f02cf7c2a3e1fe7c7430c111d} 
+void \texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+fis}
+\item 
+\Hypertarget{structahci__port__priv_a91198ca24cf70c5e070c922da21aa8a5}\label{structahci__port__priv_a91198ca24cf70c5e070c922da21aa8a5} 
+dma\+\_\+addr\+\_\+t {\bfseries rx\+\_\+fis\+\_\+dma}
+\item 
+\Hypertarget{structahci__port__priv_a73db814468336da7e47eb3df09239cd0}\label{structahci__port__priv_a73db814468336da7e47eb3df09239cd0} 
+unsigned int {\bfseries ncq\+\_\+saw\+\_\+d2h}:\+ 1
+\item 
+\Hypertarget{structahci__port__priv_a0c8568cacade07975bf580a4ddd87161}\label{structahci__port__priv_a0c8568cacade07975bf580a4ddd87161} 
+unsigned int {\bfseries ncq\+\_\+saw\+\_\+dmas}:\+ 1
+\item 
+\Hypertarget{structahci__port__priv_a2748ec3934d7777d7acbdf91a83beb8c}\label{structahci__port__priv_a2748ec3934d7777d7acbdf91a83beb8c} 
+unsigned int {\bfseries ncq\+\_\+saw\+\_\+sdb}:\+ 1
+\item 
+\Hypertarget{structahci__port__priv_aba2a453263172447d8821fbb88bf4e66}\label{structahci__port__priv_aba2a453263172447d8821fbb88bf4e66} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structahci__port__priv_ae6bd3c4078c9a176b39956259b2979e4}\label{structahci__port__priv_ae6bd3c4078c9a176b39956259b2979e4} 
+u32 {\bfseries intr\+\_\+mask}
+\item 
+\Hypertarget{structahci__port__priv_ac9240f5a1c58369144b5abe459cef7a6}\label{structahci__port__priv_ac9240f5a1c58369144b5abe459cef7a6} 
+bool {\bfseries fbs\+\_\+supported}
+\item 
+\Hypertarget{structahci__port__priv_a61d03af865e6e18aa7861918eb0868c8}\label{structahci__port__priv_a61d03af865e6e18aa7861918eb0868c8} 
+bool {\bfseries fbs\+\_\+enabled}
+\item 
+\Hypertarget{structahci__port__priv_a1dede37cbc4ba9a7cea8024e5f7cae27}\label{structahci__port__priv_a1dede37cbc4ba9a7cea8024e5f7cae27} 
+int {\bfseries fbs\+\_\+last\+\_\+dev}
+\item 
+\Hypertarget{structahci__port__priv_a6ee050402204e13c826ade1e094ec352}\label{structahci__port__priv_a6ee050402204e13c826ade1e094ec352} 
+struct \doxymbox{\hyperlink{structahci__em__priv}{ahci\+\_\+em\+\_\+priv}} {\bfseries em\+\_\+priv} \+[15]\+
+\item 
+\Hypertarget{structahci__port__priv_ada2b5d57d59275a0e1471404135eee74}\label{structahci__port__priv_ada2b5d57d59275a0e1471404135eee74} 
+char \texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+desc}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

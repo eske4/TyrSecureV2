@@ -1,0 +1,265 @@
+\doxysection{rcu\+\_\+data Struct Reference}
+\hypertarget{structrcu__data}{}\label{structrcu__data}\index{rcu\_data@{rcu\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrcu__data_aa28845d71b32d91bccc0140c25f58af1}\label{structrcu__data_aa28845d71b32d91bccc0140c25f58af1} 
+long unsigned int {\bfseries gp\+\_\+seq}
+\item 
+\Hypertarget{structrcu__data_a193faac4e20b5175791e6a7feb4344ae}\label{structrcu__data_a193faac4e20b5175791e6a7feb4344ae} 
+long unsigned int {\bfseries gp\+\_\+seq\+\_\+needed}
+\item 
+\Hypertarget{structrcu__data_ae9dc4b9dbbeb40e99657eb273a567935}\label{structrcu__data_ae9dc4b9dbbeb40e99657eb273a567935} 
+union \doxymbox{\hyperlink{unionrcu__noqs}{rcu\+\_\+noqs}} {\bfseries cpu\+\_\+no\+\_\+qs}
+\item 
+\Hypertarget{structrcu__data_a8356d9dacde4f3cfdd5587d761bb70d0}\label{structrcu__data_a8356d9dacde4f3cfdd5587d761bb70d0} 
+bool {\bfseries core\+\_\+needs\+\_\+qs}
+\item 
+\Hypertarget{structrcu__data_a3ccc4c9ff14a4e8ab142fef05403fca2}\label{structrcu__data_a3ccc4c9ff14a4e8ab142fef05403fca2} 
+bool {\bfseries beenonline}
+\item 
+\Hypertarget{structrcu__data_a95d1e7183cf8ddb491d96089beb6b7fd}\label{structrcu__data_a95d1e7183cf8ddb491d96089beb6b7fd} 
+bool {\bfseries gpwrap}
+\item 
+\Hypertarget{structrcu__data_a0391783de8028f96b8cd71579ec47f41}\label{structrcu__data_a0391783de8028f96b8cd71579ec47f41} 
+unsigned int {\bfseries gpwrap\+\_\+count}
+\item 
+\Hypertarget{structrcu__data_a5c9ae8304db09e52e2c7f3604fe9b1c5}\label{structrcu__data_a5c9ae8304db09e52e2c7f3604fe9b1c5} 
+bool {\bfseries cpu\+\_\+started}
+\item 
+\Hypertarget{structrcu__data_af12252431dee7b72fb7f73ecbb0b2095}\label{structrcu__data_af12252431dee7b72fb7f73ecbb0b2095} 
+struct \doxymbox{\hyperlink{structrcu__node}{rcu\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries mynode}
+\item 
+\Hypertarget{structrcu__data_a9869e4ed4e99ca16c00f07231d2db3b2}\label{structrcu__data_a9869e4ed4e99ca16c00f07231d2db3b2} 
+long unsigned int {\bfseries grpmask}
+\item 
+\Hypertarget{structrcu__data_af4bda44a6e85d6a722d7a070e3f008d1}\label{structrcu__data_af4bda44a6e85d6a722d7a070e3f008d1} 
+long unsigned int {\bfseries ticks\+\_\+this\+\_\+gp}
+\item 
+\Hypertarget{structrcu__data_afa0735327101e3a8dbb7890e45f08543}\label{structrcu__data_afa0735327101e3a8dbb7890e45f08543} 
+struct \doxymbox{\hyperlink{structirq__work}{irq\+\_\+work}} {\bfseries defer\+\_\+qs\+\_\+iw}
+\item 
+\Hypertarget{structrcu__data_ad6e0701e14008cb8ac8f364df1c1c331}\label{structrcu__data_ad6e0701e14008cb8ac8f364df1c1c331} 
+int {\bfseries defer\+\_\+qs\+\_\+pending}
+\item 
+\Hypertarget{structrcu__data_a6c57a40a3dc93f0ae8f85fc73df3380e}\label{structrcu__data_a6c57a40a3dc93f0ae8f85fc73df3380e} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries strict\+\_\+work}
+\item 
+\Hypertarget{structrcu__data_a7595e3799899571b10b8a974b10b4dfd}\label{structrcu__data_a7595e3799899571b10b8a974b10b4dfd} 
+struct \doxymbox{\hyperlink{structrcu__segcblist}{rcu\+\_\+segcblist}} {\bfseries cblist}
+\item 
+\Hypertarget{structrcu__data_a32fcf9a6318db0622d2b08ddd6544af3}\label{structrcu__data_a32fcf9a6318db0622d2b08ddd6544af3} 
+long int {\bfseries qlen\+\_\+last\+\_\+fqs\+\_\+check}
+\item 
+\Hypertarget{structrcu__data_aa0548508a37fd1deede5c7f7658579af}\label{structrcu__data_aa0548508a37fd1deede5c7f7658579af} 
+long unsigned int {\bfseries n\+\_\+cbs\+\_\+invoked}
+\item 
+\Hypertarget{structrcu__data_a5bc35a6c058f2cfa8a6fa1f62bc468b5}\label{structrcu__data_a5bc35a6c058f2cfa8a6fa1f62bc468b5} 
+long unsigned int {\bfseries n\+\_\+force\+\_\+qs\+\_\+snap}
+\item 
+\Hypertarget{structrcu__data_aec79a70a4ffb4943116ba058e81a74d1}\label{structrcu__data_aec79a70a4ffb4943116ba058e81a74d1} 
+long int {\bfseries blimit}
+\item 
+\Hypertarget{structrcu__data_a7cb475c407e51506739f16b509448628}\label{structrcu__data_a7cb475c407e51506739f16b509448628} 
+int {\bfseries watching\+\_\+snap}
+\item 
+\Hypertarget{structrcu__data_a8ae65f9997fe8043188906bcaae5f782}\label{structrcu__data_a8ae65f9997fe8043188906bcaae5f782} 
+bool {\bfseries rcu\+\_\+need\+\_\+heavy\+\_\+qs}
+\item 
+\Hypertarget{structrcu__data_abac730fc5a3a902105e6c97edf399ea4}\label{structrcu__data_abac730fc5a3a902105e6c97edf399ea4} 
+bool {\bfseries rcu\+\_\+urgent\+\_\+qs}
+\item 
+\Hypertarget{structrcu__data_af85645e5e43ac44b0d86c63ffcf2dff1}\label{structrcu__data_af85645e5e43ac44b0d86c63ffcf2dff1} 
+bool {\bfseries rcu\+\_\+forced\+\_\+tick}
+\item 
+\Hypertarget{structrcu__data_ae298b8d68ed0331690f393fe8a437834}\label{structrcu__data_ae298b8d68ed0331690f393fe8a437834} 
+bool {\bfseries rcu\+\_\+forced\+\_\+tick\+\_\+exp}
+\item 
+\Hypertarget{structrcu__data_a392142e173e08660fcb3d176f7e1e20a}\label{structrcu__data_a392142e173e08660fcb3d176f7e1e20a} 
+long unsigned int {\bfseries barrier\+\_\+seq\+\_\+snap}
+\item 
+\Hypertarget{structrcu__data_ae79897ba03f110d84875d3196d4fcb88}\label{structrcu__data_ae79897ba03f110d84875d3196d4fcb88} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries barrier\+\_\+head}
+\item 
+\Hypertarget{structrcu__data_aa09cce4572342ee164296c2ec02c7a8f}\label{structrcu__data_aa09cce4572342ee164296c2ec02c7a8f} 
+int {\bfseries exp\+\_\+watching\+\_\+snap}
+\item 
+\Hypertarget{structrcu__data_a231819a40e019e44c76513e3118a9128}\label{structrcu__data_a231819a40e019e44c76513e3118a9128} 
+struct \doxymbox{\hyperlink{structswait__queue__head}{swait\+\_\+queue\+\_\+head}} {\bfseries nocb\+\_\+cb\+\_\+wq}
+\item 
+\Hypertarget{structrcu__data_af1758af5ba8b038c3416203400244670}\label{structrcu__data_af1758af5ba8b038c3416203400244670} 
+struct \doxymbox{\hyperlink{structswait__queue__head}{swait\+\_\+queue\+\_\+head}} {\bfseries nocb\+\_\+state\+\_\+wq}
+\item 
+\Hypertarget{structrcu__data_a342a4a58c4955a469ab2069102e8310a}\label{structrcu__data_a342a4a58c4955a469ab2069102e8310a} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries nocb\+\_\+gp\+\_\+kthread}
+\item 
+\Hypertarget{structrcu__data_ad026342f23016327cda4cb0a56f747f3}\label{structrcu__data_ad026342f23016327cda4cb0a56f747f3} 
+raw\+\_\+spinlock\+\_\+t {\bfseries nocb\+\_\+lock}
+\item 
+\Hypertarget{structrcu__data_a3e39cbb7eb61192e1a6b156205a6c97e}\label{structrcu__data_a3e39cbb7eb61192e1a6b156205a6c97e} 
+int {\bfseries nocb\+\_\+defer\+\_\+wakeup}
+\item 
+\Hypertarget{structrcu__data_ac1e38f6f900f8ef601120e5aacc2fcf8}\label{structrcu__data_ac1e38f6f900f8ef601120e5aacc2fcf8} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries nocb\+\_\+timer}
+\item 
+\Hypertarget{structrcu__data_abb7e70bcea167ce62798a5d4c2371c38}\label{structrcu__data_abb7e70bcea167ce62798a5d4c2371c38} 
+long unsigned int {\bfseries nocb\+\_\+gp\+\_\+adv\+\_\+time}
+\item 
+\Hypertarget{structrcu__data_adb3a99d9008844528b690a346e0e77b0}\label{structrcu__data_adb3a99d9008844528b690a346e0e77b0} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries nocb\+\_\+gp\+\_\+kthread\+\_\+mutex}
+\item 
+\Hypertarget{structrcu__data_a803352122d8860f76e88bd0e1b1857ca}\label{structrcu__data_a803352122d8860f76e88bd0e1b1857ca} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_aa6beefe6382010953f0442cf80fa674f}\label{structrcu__data_aa6beefe6382010953f0442cf80fa674f} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_a15833e5a88851536de3081bfed68da1e}\label{structrcu__data_a15833e5a88851536de3081bfed68da1e} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_a00cec3824bdbd3e6ac3b6b97c2364546}\label{structrcu__data_a00cec3824bdbd3e6ac3b6b97c2364546} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_a1fc6fce8599b0d11308234eb0f640eba}\label{structrcu__data_a1fc6fce8599b0d11308234eb0f640eba} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_a2567a168e2227d9a7aada7bcb5ba57ee}\label{structrcu__data_a2567a168e2227d9a7aada7bcb5ba57ee} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_a58b11e1bf45f9621118f02713b14aff0}\label{structrcu__data_a58b11e1bf45f9621118f02713b14aff0} 
+raw\+\_\+spinlock\+\_\+t {\bfseries nocb\+\_\+bypass\+\_\+lock}
+\item 
+\Hypertarget{structrcu__data_a1c23665d7e335c4dc34a10306ab2d7b0}\label{structrcu__data_a1c23665d7e335c4dc34a10306ab2d7b0} 
+struct \doxymbox{\hyperlink{structrcu__cblist}{rcu\+\_\+cblist}} {\bfseries nocb\+\_\+bypass}
+\item 
+\Hypertarget{structrcu__data_a69834fe5afce6b932aed79b9f625c800}\label{structrcu__data_a69834fe5afce6b932aed79b9f625c800} 
+long unsigned int {\bfseries nocb\+\_\+bypass\+\_\+first}
+\item 
+\Hypertarget{structrcu__data_a6157b4adae097fcab88a3f6e5a98d599}\label{structrcu__data_a6157b4adae097fcab88a3f6e5a98d599} 
+long unsigned int {\bfseries nocb\+\_\+nobypass\+\_\+last}
+\item 
+\Hypertarget{structrcu__data_a062ef524c974c3654225a5ae453f4414}\label{structrcu__data_a062ef524c974c3654225a5ae453f4414} 
+int {\bfseries nocb\+\_\+nobypass\+\_\+count}
+\item 
+\Hypertarget{structrcu__data_a043493e6cef8a315e1ef7fb930084830}\label{structrcu__data_a043493e6cef8a315e1ef7fb930084830} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_acb00078585fcb457aa309fcd6417e12e}\label{structrcu__data_acb00078585fcb457aa309fcd6417e12e} 
+raw\+\_\+spinlock\+\_\+t {\bfseries nocb\+\_\+gp\+\_\+lock}
+\item 
+\Hypertarget{structrcu__data_a47d873070434bb3a9b1b89e6125513ee}\label{structrcu__data_a47d873070434bb3a9b1b89e6125513ee} 
+u8 {\bfseries nocb\+\_\+gp\+\_\+sleep}
+\item 
+\Hypertarget{structrcu__data_ad492fe7884b4eb214edf6e8665c2a3ed}\label{structrcu__data_ad492fe7884b4eb214edf6e8665c2a3ed} 
+u8 {\bfseries nocb\+\_\+gp\+\_\+bypass}
+\item 
+\Hypertarget{structrcu__data_a00177fb856435317d77ea2358f958c7f}\label{structrcu__data_a00177fb856435317d77ea2358f958c7f} 
+u8 {\bfseries nocb\+\_\+gp\+\_\+gp}
+\item 
+\Hypertarget{structrcu__data_ae7ce8642e0bcdb0d3c38be16c9272364}\label{structrcu__data_ae7ce8642e0bcdb0d3c38be16c9272364} 
+long unsigned int {\bfseries nocb\+\_\+gp\+\_\+seq}
+\item 
+\Hypertarget{structrcu__data_af47e828155845eca40bba3207fb9669b}\label{structrcu__data_af47e828155845eca40bba3207fb9669b} 
+long unsigned int {\bfseries nocb\+\_\+gp\+\_\+loops}
+\item 
+\Hypertarget{structrcu__data_a72dc3f95969e0d9439f1113053e3b23d}\label{structrcu__data_a72dc3f95969e0d9439f1113053e3b23d} 
+struct \doxymbox{\hyperlink{structswait__queue__head}{swait\+\_\+queue\+\_\+head}} {\bfseries nocb\+\_\+gp\+\_\+wq}
+\item 
+\Hypertarget{structrcu__data_a16a852b95771a81dbd7628e5ac435844}\label{structrcu__data_a16a852b95771a81dbd7628e5ac435844} 
+bool {\bfseries nocb\+\_\+cb\+\_\+sleep}
+\item 
+\Hypertarget{structrcu__data_ad69141bea03d900498e7e5dbc56cabb8}\label{structrcu__data_ad69141bea03d900498e7e5dbc56cabb8} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries nocb\+\_\+cb\+\_\+kthread}
+\item 
+\Hypertarget{structrcu__data_a9683d77734efa05739b5be5f8ff1c174}\label{structrcu__data_a9683d77734efa05739b5be5f8ff1c174} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries nocb\+\_\+head\+\_\+rdp}
+\item 
+\Hypertarget{structrcu__data_a3524675d9e91778c78b2ead1c11b63b7}\label{structrcu__data_a3524675d9e91778c78b2ead1c11b63b7} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries nocb\+\_\+entry\+\_\+rdp}
+\item 
+\Hypertarget{structrcu__data_a4370f1a8b2a331a2ebf6e5eb17107558}\label{structrcu__data_a4370f1a8b2a331a2ebf6e5eb17107558} 
+struct \doxymbox{\hyperlink{structrcu__data}{rcu\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries nocb\+\_\+toggling\+\_\+rdp}
+\item 
+\Hypertarget{structrcu__data_a9d51bf64b3ddd07314c074232271e9ae}\label{structrcu__data_a9d51bf64b3ddd07314c074232271e9ae} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_a7ada938150f34ebebba3c852328a2a0a}\label{structrcu__data_a7ada938150f34ebebba3c852328a2a0a} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_aaae063f1f0ec76cd88b6156711c35a01}\label{structrcu__data_aaae063f1f0ec76cd88b6156711c35a01} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_af689caf27af28b6de6bd40aa15a74067}\label{structrcu__data_af689caf27af28b6de6bd40aa15a74067} 
+struct \doxymbox{\hyperlink{structrcu__data}{rcu\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries nocb\+\_\+gp\+\_\+rdp}
+\item 
+\Hypertarget{structrcu__data_ad250506fe96f903a35a81bd65e5b09e1}\label{structrcu__data_ad250506fe96f903a35a81bd65e5b09e1} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries rcu\+\_\+cpu\+\_\+kthread\+\_\+task}
+\item 
+\Hypertarget{structrcu__data_aa076f4bc43e33ece11ac063f1f201b61}\label{structrcu__data_aa076f4bc43e33ece11ac063f1f201b61} 
+unsigned int {\bfseries rcu\+\_\+cpu\+\_\+kthread\+\_\+status}
+\item 
+\Hypertarget{structrcu__data_a5b643bd8751dc3771e36018852ba5a96}\label{structrcu__data_a5b643bd8751dc3771e36018852ba5a96} 
+char {\bfseries rcu\+\_\+cpu\+\_\+has\+\_\+work}
+\item 
+\Hypertarget{structrcu__data_a828aab5055b1f2fe130d0234925bd35a}\label{structrcu__data_a828aab5055b1f2fe130d0234925bd35a} 
+long unsigned int {\bfseries rcuc\+\_\+activity}
+\item 
+\Hypertarget{structrcu__data_a5e9273fdebd0f985f04f97c9177c8763}\label{structrcu__data_a5e9273fdebd0f985f04f97c9177c8763} 
+unsigned int {\bfseries softirq\+\_\+snap}
+\item 
+\Hypertarget{structrcu__data_a241f176e5958050414c80803952b05c0}\label{structrcu__data_a241f176e5958050414c80803952b05c0} 
+struct \doxymbox{\hyperlink{structirq__work}{irq\+\_\+work}} {\bfseries rcu\+\_\+iw}
+\item 
+\Hypertarget{structrcu__data_af5e6a15e576865115e8ccf0390a80944}\label{structrcu__data_af5e6a15e576865115e8ccf0390a80944} 
+bool {\bfseries rcu\+\_\+iw\+\_\+pending}
+\item 
+\Hypertarget{structrcu__data_a1caa7fd96563c0b258580df40079c4a8}\label{structrcu__data_a1caa7fd96563c0b258580df40079c4a8} 
+long unsigned int {\bfseries rcu\+\_\+iw\+\_\+gp\+\_\+seq}
+\item 
+\Hypertarget{structrcu__data_a077a9335efcd58c781a3b0b0505d0405}\label{structrcu__data_a077a9335efcd58c781a3b0b0505d0405} 
+long unsigned int {\bfseries rcu\+\_\+ofl\+\_\+gp\+\_\+seq}
+\item 
+\Hypertarget{structrcu__data_a6291b346d4ac8ad4e9bc54e408a94776}\label{structrcu__data_a6291b346d4ac8ad4e9bc54e408a94776} 
+short int {\bfseries rcu\+\_\+ofl\+\_\+gp\+\_\+state}
+\item 
+\Hypertarget{structrcu__data_a3cab59ace8590755b366b556ba316fa6}\label{structrcu__data_a3cab59ace8590755b366b556ba316fa6} 
+long unsigned int {\bfseries rcu\+\_\+onl\+\_\+gp\+\_\+seq}
+\item 
+\Hypertarget{structrcu__data_a2d6724bebae8832649909ab47c0e0a36}\label{structrcu__data_a2d6724bebae8832649909ab47c0e0a36} 
+short int {\bfseries rcu\+\_\+onl\+\_\+gp\+\_\+state}
+\item 
+\Hypertarget{structrcu__data_ac99204ab7766ffe3db5f03bc7c8c943e}\label{structrcu__data_ac99204ab7766ffe3db5f03bc7c8c943e} 
+long unsigned int {\bfseries last\+\_\+fqs\+\_\+resched}
+\item 
+\Hypertarget{structrcu__data_a8cd37621d5b1fcb49bfcbb43a141078c}\label{structrcu__data_a8cd37621d5b1fcb49bfcbb43a141078c} 
+long unsigned int {\bfseries last\+\_\+sched\+\_\+clock}
+\item 
+\Hypertarget{structrcu__data_a67f8bdba5f10cddf1ca72ca124a17ea9}\label{structrcu__data_a67f8bdba5f10cddf1ca72ca124a17ea9} 
+struct \doxymbox{\hyperlink{structrcu__snap__record}{rcu\+\_\+snap\+\_\+record}} {\bfseries snap\+\_\+record}
+\item 
+\Hypertarget{structrcu__data_af2c1169db8a180a23bf5bdf8fb4306b2}\label{structrcu__data_af2c1169db8a180a23bf5bdf8fb4306b2} 
+long int {\bfseries lazy\+\_\+len}
+\item 
+\Hypertarget{structrcu__data_a3438986ad6f2b80444106324f099b9c7}\label{structrcu__data_a3438986ad6f2b80444106324f099b9c7} 
+int {\bfseries cpu}
+\item 
+\Hypertarget{structrcu__data_a71b4b56f646b02e952d3a20563cd8ce9}\label{structrcu__data_a71b4b56f646b02e952d3a20563cd8ce9} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_a4152483b1daae2403389a3675c2fa17f}\label{structrcu__data_a4152483b1daae2403389a3675c2fa17f} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_a4f5b2b46058840f0368092defe4723c9}\label{structrcu__data_a4f5b2b46058840f0368092defe4723c9} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_ab82455781f9d540c6c4910f49c982cc7}\label{structrcu__data_ab82455781f9d540c6c4910f49c982cc7} 
+long :\+ 64
+\item 
+\Hypertarget{structrcu__data_abf7c20f4c7b2ae497b79869971e513bc}\label{structrcu__data_abf7c20f4c7b2ae497b79869971e513bc} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

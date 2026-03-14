@@ -1,0 +1,52 @@
+\doxysection{ethnl\+\_\+request\+\_\+ops Struct Reference}
+\hypertarget{structethnl__request__ops}{}\label{structethnl__request__ops}\index{ethnl\_request\_ops@{ethnl\_request\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structethnl__request__ops_a5bff91241fc0b794e11e0d0c549435f8}\label{structethnl__request__ops_a5bff91241fc0b794e11e0d0c549435f8} 
+u8 {\bfseries request\+\_\+cmd}
+\item 
+\Hypertarget{structethnl__request__ops_a62155444f1921a136e6e22440ac1355d}\label{structethnl__request__ops_a62155444f1921a136e6e22440ac1355d} 
+u8 {\bfseries reply\+\_\+cmd}
+\item 
+\Hypertarget{structethnl__request__ops_a423fa5bf3573bf2fccee378e2ee8efe5}\label{structethnl__request__ops_a423fa5bf3573bf2fccee378e2ee8efe5} 
+u16 {\bfseries hdr\+\_\+attr}
+\item 
+\Hypertarget{structethnl__request__ops_ac859ad7ce020caad379560c861df82c2}\label{structethnl__request__ops_ac859ad7ce020caad379560c861df82c2} 
+unsigned int {\bfseries req\+\_\+info\+\_\+size}
+\item 
+\Hypertarget{structethnl__request__ops_a9e6e1371d074b534250729bc88538f24}\label{structethnl__request__ops_a9e6e1371d074b534250729bc88538f24} 
+unsigned int {\bfseries reply\+\_\+data\+\_\+size}
+\item 
+\Hypertarget{structethnl__request__ops_a2292b73c1f7126d5446fe70264966dda}\label{structethnl__request__ops_a2292b73c1f7126d5446fe70264966dda} 
+bool {\bfseries allow\+\_\+nodev\+\_\+do}
+\item 
+\Hypertarget{structethnl__request__ops_ad61d9a8f976a7c67ff8155d7f23327e6}\label{structethnl__request__ops_ad61d9a8f976a7c67ff8155d7f23327e6} 
+u8 {\bfseries set\+\_\+ntf\+\_\+cmd}
+\item 
+\Hypertarget{structethnl__request__ops_a39d7ed367cd987ef81407625eabb367f}\label{structethnl__request__ops_a39d7ed367cd987ef81407625eabb367f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries parse\+\_\+request} )(struct \doxymbox{\hyperlink{structethnl__req__info}{ethnl\+\_\+req\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structethnl__request__ops_a1b99a5eec4b4126be9bd1e7faf8299f5}\label{structethnl__request__ops_a1b99a5eec4b4126be9bd1e7faf8299f5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+data} )(const struct \doxymbox{\hyperlink{structethnl__req__info}{ethnl\+\_\+req\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethnl__reply__data}{ethnl\+\_\+reply\+\_\+data}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structgenl__info}{genl\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structethnl__request__ops_a7a7b238cef31f2ae58c5ef3366a1f60a}\label{structethnl__request__ops_a7a7b238cef31f2ae58c5ef3366a1f60a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reply\+\_\+size} )(const struct \doxymbox{\hyperlink{structethnl__req__info}{ethnl\+\_\+req\+\_\+info}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structethnl__reply__data}{ethnl\+\_\+reply\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structethnl__request__ops_aa851258ad5cc529e96302a094f8c6c4c}\label{structethnl__request__ops_aa851258ad5cc529e96302a094f8c6c4c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fill\+\_\+reply} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structethnl__req__info}{ethnl\+\_\+req\+\_\+info}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structethnl__reply__data}{ethnl\+\_\+reply\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structethnl__request__ops_a91bd9cb3d1e97168d485e5e5a57cb691}\label{structethnl__request__ops_a91bd9cb3d1e97168d485e5e5a57cb691} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup\+\_\+data} )(struct \doxymbox{\hyperlink{structethnl__reply__data}{ethnl\+\_\+reply\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structethnl__request__ops_aeb56394019a15d84d04bc7920a3ed659}\label{structethnl__request__ops_aeb56394019a15d84d04bc7920a3ed659} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+validate} )(struct \doxymbox{\hyperlink{structethnl__req__info}{ethnl\+\_\+req\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structgenl__info}{genl\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structethnl__request__ops_a288bac19c729680eb07d2eec2fb7f40f}\label{structethnl__request__ops_a288bac19c729680eb07d2eec2fb7f40f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set} )(struct \doxymbox{\hyperlink{structethnl__req__info}{ethnl\+\_\+req\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structgenl__info}{genl\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,36 @@
+\doxysection{kvm\+\_\+mmu\+\_\+page\+\_\+role Union Reference}
+\hypertarget{unionkvm__mmu__page__role}{}\label{unionkvm__mmu__page__role}\index{kvm\_mmu\_page\_role@{kvm\_mmu\_page\_role}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionkvm__mmu__page__role_aa2907bf98585998983bb515bdd6b3f23}\label{unionkvm__mmu__page__role_aa2907bf98585998983bb515bdd6b3f23} 
+u32 {\bfseries word}
+\item 
+\Hypertarget{unionkvm__mmu__page__role_afad324c8e3114113b4d0d19f38e08ead}\label{unionkvm__mmu__page__role_afad324c8e3114113b4d0d19f38e08ead} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries level}: 4\\
+\>unsigned int {\bfseries has\_4\_byte\_gpte}: 1\\
+\>unsigned int {\bfseries quadrant}: 2\\
+\>unsigned int {\bfseries direct}: 1\\
+\>unsigned int {\bfseries access}: 3\\
+\>unsigned int {\bfseries invalid}: 1\\
+\>unsigned int {\bfseries efer\_nx}: 1\\
+\>unsigned int {\bfseries cr0\_wp}: 1\\
+\>unsigned int {\bfseries smep\_andnot\_wp}: 1\\
+\>unsigned int {\bfseries smap\_andnot\_wp}: 1\\
+\>unsigned int {\bfseries ad\_disabled}: 1\\
+\>unsigned int {\bfseries guest\_mode}: 1\\
+\>unsigned int {\bfseries passthrough}: 1\\
+\>unsigned int {\bfseries is\_mirror}: 1\\
+\>char : 4\\
+\>unsigned int {\bfseries smm}: 8\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\doxysection{xenbus\+\_\+driver Struct Reference}
+\hypertarget{structxenbus__driver}{}\label{structxenbus__driver}\index{xenbus\_driver@{xenbus\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxenbus__driver_a61f452807970c0a6c6f89bde4f81400d}\label{structxenbus__driver_a61f452807970c0a6c6f89bde4f81400d} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structxenbus__driver_aae374aec87bead9583e1d82ed0ebe909}\label{structxenbus__driver_aae374aec87bead9583e1d82ed0ebe909} 
+const struct \doxymbox{\hyperlink{structxenbus__device__id}{xenbus\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries ids}
+\item 
+\Hypertarget{structxenbus__driver_a5bbaf74648467ed6586ccb21987abb18}\label{structxenbus__driver_a5bbaf74648467ed6586ccb21987abb18} 
+bool {\bfseries allow\+\_\+rebind}
+\item 
+\Hypertarget{structxenbus__driver_adce2928015a4a058410bc42441cfc34c}\label{structxenbus__driver_adce2928015a4a058410bc42441cfc34c} 
+bool {\bfseries not\+\_\+essential}
+\item 
+\Hypertarget{structxenbus__driver_ad1f17d925e1c94091a372d0c6818c69a}\label{structxenbus__driver_ad1f17d925e1c94091a372d0c6818c69a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structxenbus__device__id}{xenbus\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxenbus__driver_a77dffeae86e9da7c68f2c6f8f1f11f01}\label{structxenbus__driver_a77dffeae86e9da7c68f2c6f8f1f11f01} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries otherend\+\_\+changed} )(struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\+\_\+device}} \texorpdfstring{$\ast$}{*}, enum xenbus\+\_\+state)
+\item 
+\Hypertarget{structxenbus__driver_a82acb1f57cda5a010e3b32d0a9ffc12a}\label{structxenbus__driver_a82acb1f57cda5a010e3b32d0a9ffc12a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxenbus__driver_ad72c073d67449b8b0a00ec3748d14929}\label{structxenbus__driver_ad72c073d67449b8b0a00ec3748d14929} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxenbus__driver_aaf59d154adf1cb3f1659b40f330d1c45}\label{structxenbus__driver_aaf59d154adf1cb3f1659b40f330d1c45} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxenbus__driver_a45de275ec6946c221943d4116dac089b}\label{structxenbus__driver_a45de275ec6946c221943d4116dac089b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries uevent} )(const struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkobj__uevent__env}{kobj\+\_\+uevent\+\_\+env}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxenbus__driver_a6c1c5bb41812f01fa59c42291473a167}\label{structxenbus__driver_a6c1c5bb41812f01fa59c42291473a167} 
+struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} {\bfseries driver}
+\item 
+\Hypertarget{structxenbus__driver_aec41c15ccd6810ffd7187fff2ad7a6e6}\label{structxenbus__driver_aec41c15ccd6810ffd7187fff2ad7a6e6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+otherend\+\_\+details} )(struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxenbus__driver_ace3c8ac873aa39ccfd470953ed8cf3dc}\label{structxenbus__driver_ace3c8ac873aa39ccfd470953ed8cf3dc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+ready} )(struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxenbus__driver_a1f5aa68425faaa81747e365b3cc01ac2}\label{structxenbus__driver_a1f5aa68425faaa81747e365b3cc01ac2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries reclaim\+\_\+memory} )(struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

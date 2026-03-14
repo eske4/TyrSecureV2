@@ -1,0 +1,55 @@
+\doxysection{pwm\+\_\+chip Struct Reference}
+\hypertarget{structpwm__chip}{}\label{structpwm__chip}\index{pwm\_chip@{pwm\_chip}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpwm__chip_ad836a4650d9963d71de762bd92be0dc8}\label{structpwm__chip_ad836a4650d9963d71de762bd92be0dc8} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structpwm__chip_ac618598ffa870b3fe77079d2af0cf3e2}\label{structpwm__chip_ac618598ffa870b3fe77079d2af0cf3e2} 
+struct \doxymbox{\hyperlink{structcdev}{cdev}} {\bfseries cdev}
+\item 
+\Hypertarget{structpwm__chip_ae969a9cb36fb83fefa75e0c8ed03102f}\label{structpwm__chip_ae969a9cb36fb83fefa75e0c8ed03102f} 
+const struct \doxymbox{\hyperlink{structpwm__ops}{pwm\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structpwm__chip_a118306d9b9b4c4e5ee402f2faa602e96}\label{structpwm__chip_a118306d9b9b4c4e5ee402f2faa602e96} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structpwm__chip_a719dba118d89c62aba274a84963537f7}\label{structpwm__chip_a719dba118d89c62aba274a84963537f7} 
+unsigned int {\bfseries id}
+\item 
+\Hypertarget{structpwm__chip_af114976aaf16819730eda31674c327da}\label{structpwm__chip_af114976aaf16819730eda31674c327da} 
+unsigned int {\bfseries npwm}
+\item 
+\Hypertarget{structpwm__chip_accb934b4cba5139929cc9ca2b834662e}\label{structpwm__chip_accb934b4cba5139929cc9ca2b834662e} 
+struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries of\+\_\+xlate} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structof__phandle__args}{of\+\_\+phandle\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpwm__chip_a676ad12a7d585e07cf8ee1fc7ac70385}\label{structpwm__chip_a676ad12a7d585e07cf8ee1fc7ac70385} 
+bool {\bfseries atomic}
+\item 
+\Hypertarget{structpwm__chip_a1f8d72474a1a777e37f5b8ebbd17c48c}\label{structpwm__chip_a1f8d72474a1a777e37f5b8ebbd17c48c} 
+struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} {\bfseries gpio}
+\item 
+\Hypertarget{structpwm__chip_ab1c3bf9867d3cb8c85db8bb8a24c8b1c}\label{structpwm__chip_ab1c3bf9867d3cb8c85db8bb8a24c8b1c} 
+bool {\bfseries uses\+\_\+pwmchip\+\_\+alloc}
+\item 
+\Hypertarget{structpwm__chip_a5f37e0094c94775fc9d003e951163b09}\label{structpwm__chip_a5f37e0094c94775fc9d003e951163b09} 
+bool {\bfseries operational}
+\item 
+\Hypertarget{structpwm__chip_a91c587d09123ef84cd6a420ae07f2698}\label{structpwm__chip_a91c587d09123ef84cd6a420ae07f2698} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries nonatomic\_lock}\\
+\>spinlock\_t {\bfseries atomic\_lock}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structpwm__chip_ab524efaf41ee0759b96e2e2d4124d312}\label{structpwm__chip_ab524efaf41ee0759b96e2e2d4124d312} 
+struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} {\bfseries pwms} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

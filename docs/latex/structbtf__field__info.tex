@@ -1,0 +1,30 @@
+\doxysection{btf\+\_\+field\+\_\+info Struct Reference}
+\hypertarget{structbtf__field__info}{}\label{structbtf__field__info}\index{btf\_field\_info@{btf\_field\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtf__field__info_a21aee776a822771e03dd8d27d93705be}\label{structbtf__field__info_a21aee776a822771e03dd8d27d93705be} 
+enum btf\+\_\+field\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structbtf__field__info_a5df5f0089bda09cc06298f73d5837e5e}\label{structbtf__field__info_a5df5f0089bda09cc06298f73d5837e5e} 
+u32 {\bfseries off}
+\item 
+\Hypertarget{structbtf__field__info_a8634a1bc952f4962e63ebe089a210480}\label{structbtf__field__info_a8634a1bc952f4962e63ebe089a210480} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>u32 {\bfseries type\_id}\\
+\>\} {\bfseries kptr}\\
+\>struct \{\\
+\>\>const char \texorpdfstring{$\ast$}{*} {\bfseries node\_name}\\
+\>\>u32 {\bfseries value\_btf\_id}\\
+\>\} {\bfseries graph\_root}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

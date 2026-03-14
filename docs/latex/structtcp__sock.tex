@@ -1,0 +1,573 @@
+\doxysection{tcp\+\_\+sock Struct Reference}
+\hypertarget{structtcp__sock}{}\label{structtcp__sock}\index{tcp\_sock@{tcp\_sock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtcp__sock_a0dcc38d7dda1da460050709f5fb3d652}\label{structtcp__sock_a0dcc38d7dda1da460050709f5fb3d652} 
+struct \doxymbox{\hyperlink{structinet__connection__sock}{inet\+\_\+connection\+\_\+sock}} {\bfseries inet\+\_\+conn}
+\item 
+\Hypertarget{structtcp__sock_a9bb97b70d8d4fd1fccc77e0cacc06581}\label{structtcp__sock_a9bb97b70d8d4fd1fccc77e0cacc06581} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+tcp\+\_\+sock\+\_\+read\+\_\+tx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_abafdbb9b2c4bc1a743c683836c6c63f1}\label{structtcp__sock_abafdbb9b2c4bc1a743c683836c6c63f1} 
+u32 {\bfseries max\+\_\+window}
+\item 
+\Hypertarget{structtcp__sock_af102935de09ec9d1966d39072e3a7d33}\label{structtcp__sock_af102935de09ec9d1966d39072e3a7d33} 
+u32 {\bfseries rcv\+\_\+ssthresh}
+\item 
+\Hypertarget{structtcp__sock_aeb915753065e61547d602bcaa89e19c1}\label{structtcp__sock_aeb915753065e61547d602bcaa89e19c1} 
+u32 {\bfseries reordering}
+\item 
+\Hypertarget{structtcp__sock_abe0aa32586cbca0dd15ac874756b8d7b}\label{structtcp__sock_abe0aa32586cbca0dd15ac874756b8d7b} 
+u32 {\bfseries notsent\+\_\+lowat}
+\item 
+\Hypertarget{structtcp__sock_a6acc67fe2cb29cbfb29004b524edf905}\label{structtcp__sock_a6acc67fe2cb29cbfb29004b524edf905} 
+u16 {\bfseries gso\+\_\+segs}
+\item 
+\Hypertarget{structtcp__sock_aadb29a637eb4a0a885cedaf556b40645}\label{structtcp__sock_aadb29a637eb4a0a885cedaf556b40645} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries retransmit\+\_\+skb\+\_\+hint}
+\item 
+\Hypertarget{structtcp__sock_afc3ef37c9f759cc74e1c07e7a4565523}\label{structtcp__sock_afc3ef37c9f759cc74e1c07e7a4565523} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries tcp\+\_\+clean\+\_\+acked} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structtcp__sock_afc1068559291440202b7637ef93825e8}\label{structtcp__sock_afc1068559291440202b7637ef93825e8} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+tcp\+\_\+sock\+\_\+read\+\_\+tx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_a3f663f1db4254471cb11165ae270e213}\label{structtcp__sock_a3f663f1db4254471cb11165ae270e213} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+tcp\+\_\+sock\+\_\+read\+\_\+txrx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_a087e0b96c8d250d3db4d23b6f58763f2}\label{structtcp__sock_a087e0b96c8d250d3db4d23b6f58763f2} 
+u32 {\bfseries tsoffset}
+\item 
+\Hypertarget{structtcp__sock_a395d2fe4e3e0c99cafff3ade939298fd}\label{structtcp__sock_a395d2fe4e3e0c99cafff3ade939298fd} 
+u32 {\bfseries snd\+\_\+wnd}
+\item 
+\Hypertarget{structtcp__sock_afcf7e0962ceb5df1bbd94a02347bb660}\label{structtcp__sock_afcf7e0962ceb5df1bbd94a02347bb660} 
+u32 {\bfseries mss\+\_\+cache}
+\item 
+\Hypertarget{structtcp__sock_a2ce76085cdea0da2a86c51979e1da355}\label{structtcp__sock_a2ce76085cdea0da2a86c51979e1da355} 
+u32 {\bfseries snd\+\_\+cwnd}
+\item 
+\Hypertarget{structtcp__sock_a2f2cfd886b30898f5d2d9286f8b00714}\label{structtcp__sock_a2f2cfd886b30898f5d2d9286f8b00714} 
+u32 {\bfseries prr\+\_\+out}
+\item 
+\Hypertarget{structtcp__sock_ac46f6dad009e094cfa10980412512b0b}\label{structtcp__sock_ac46f6dad009e094cfa10980412512b0b} 
+u32 {\bfseries lost\+\_\+out}
+\item 
+\Hypertarget{structtcp__sock_a7151b364d9c6fb8f29978da468880ca8}\label{structtcp__sock_a7151b364d9c6fb8f29978da468880ca8} 
+u32 {\bfseries sacked\+\_\+out}
+\item 
+\Hypertarget{structtcp__sock_afdb6946f5184c65545880da46767a763}\label{structtcp__sock_afdb6946f5184c65545880da46767a763} 
+u16 {\bfseries tcp\+\_\+header\+\_\+len}
+\item 
+\Hypertarget{structtcp__sock_a06adc7e07efa015c8d6449422ef9eb8d}\label{structtcp__sock_a06adc7e07efa015c8d6449422ef9eb8d} 
+u8 {\bfseries scaling\+\_\+ratio}
+\item 
+\Hypertarget{structtcp__sock_a590ee68210d5e5b7b76129e6397f8ab3}\label{structtcp__sock_a590ee68210d5e5b7b76129e6397f8ab3} 
+u8 {\bfseries chrono\+\_\+type}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_aa277ebf529ca28e11011539ab4f087d2}\label{structtcp__sock_aa277ebf529ca28e11011539ab4f087d2} 
+u8 {\bfseries repair}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a0f9cea3a346be047370bc92bc8fcc64f}\label{structtcp__sock_a0f9cea3a346be047370bc92bc8fcc64f} 
+u8 {\bfseries tcp\+\_\+usec\+\_\+ts}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a7b33cc55402a9169158b17846dfceea5}\label{structtcp__sock_a7b33cc55402a9169158b17846dfceea5} 
+u8 {\bfseries is\+\_\+sack\+\_\+reneg}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_ad997f252d633fabc7f989f9f345407c0}\label{structtcp__sock_ad997f252d633fabc7f989f9f345407c0} 
+u8 {\bfseries is\+\_\+cwnd\+\_\+limited}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_aacafb211632c08c35275670358a76200}\label{structtcp__sock_aacafb211632c08c35275670358a76200} 
+u8 {\bfseries recvmsg\+\_\+inq}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a3c8e89cc9ffb92d329f84740b794912e}\label{structtcp__sock_a3c8e89cc9ffb92d329f84740b794912e} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+tcp\+\_\+sock\+\_\+read\+\_\+txrx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_a14b5d397dc57b85379b4c75be39694cc}\label{structtcp__sock_a14b5d397dc57b85379b4c75be39694cc} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+tcp\+\_\+sock\+\_\+read\+\_\+rx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_aa553cddc370cd3fbcc88f08b6e3e821a}\label{structtcp__sock_aa553cddc370cd3fbcc88f08b6e3e821a} 
+u32 {\bfseries copied\+\_\+seq}
+\item 
+\Hypertarget{structtcp__sock_a133a021074b43086e2e88300c00147a1}\label{structtcp__sock_a133a021074b43086e2e88300c00147a1} 
+u32 {\bfseries snd\+\_\+wl1}
+\item 
+\Hypertarget{structtcp__sock_af998ff53be1dd82406b7c59b07dc5084}\label{structtcp__sock_af998ff53be1dd82406b7c59b07dc5084} 
+u32 {\bfseries tlp\+\_\+high\+\_\+seq}
+\item 
+\Hypertarget{structtcp__sock_a757cfd6c116ef7ddf1c247503360352d}\label{structtcp__sock_a757cfd6c116ef7ddf1c247503360352d} 
+u32 {\bfseries rttvar\+\_\+us}
+\item 
+\Hypertarget{structtcp__sock_a265bf2bed1f3a4f26da54022ced0860e}\label{structtcp__sock_a265bf2bed1f3a4f26da54022ced0860e} 
+u32 {\bfseries retrans\+\_\+out}
+\item 
+\Hypertarget{structtcp__sock_a973ff8646152800fc95f7436d668194b}\label{structtcp__sock_a973ff8646152800fc95f7436d668194b} 
+u16 {\bfseries advmss}
+\item 
+\Hypertarget{structtcp__sock_ac3b6a4487fe1283f7901e871164f0f61}\label{structtcp__sock_ac3b6a4487fe1283f7901e871164f0f61} 
+u16 {\bfseries urg\+\_\+data}
+\item 
+\Hypertarget{structtcp__sock_ab6dc460f7352a3b7320c6b61587fb2d7}\label{structtcp__sock_ab6dc460f7352a3b7320c6b61587fb2d7} 
+u32 {\bfseries lost}
+\item 
+\Hypertarget{structtcp__sock_a9b2984218565d272167a0dcef63f4652}\label{structtcp__sock_a9b2984218565d272167a0dcef63f4652} 
+u32 {\bfseries snd\+\_\+ssthresh}
+\item 
+\Hypertarget{structtcp__sock_ab76e3ead3e2cf91ecafec4d5eec63800}\label{structtcp__sock_ab76e3ead3e2cf91ecafec4d5eec63800} 
+struct \doxymbox{\hyperlink{structminmax}{minmax}} {\bfseries rtt\+\_\+min}
+\item 
+\Hypertarget{structtcp__sock_a977fd43df3175686b80d3d0d01d719ce}\label{structtcp__sock_a977fd43df3175686b80d3d0d01d719ce} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries out\+\_\+of\+\_\+order\+\_\+queue}
+\item 
+\Hypertarget{structtcp__sock_a66a74e9ca89972e7269339e73e4cf46b}\label{structtcp__sock_a66a74e9ca89972e7269339e73e4cf46b} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+tcp\+\_\+sock\+\_\+read\+\_\+rx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_afa7bdf6ac7c6164a82660a7ecb548b93}\label{structtcp__sock_afa7bdf6ac7c6164a82660a7ecb548b93} 
+long :\+ 64
+\item 
+\Hypertarget{structtcp__sock_a65d12c2e9b335e6898b703834eee80d1}\label{structtcp__sock_a65d12c2e9b335e6898b703834eee80d1} 
+long :\+ 64
+\item 
+\Hypertarget{structtcp__sock_a33135e5caaa26816b7d7beaea9e4106d}\label{structtcp__sock_a33135e5caaa26816b7d7beaea9e4106d} 
+long :\+ 64
+\item 
+\Hypertarget{structtcp__sock_a8ff525dae4fee52e662d8cd47418f01c}\label{structtcp__sock_a8ff525dae4fee52e662d8cd47418f01c} 
+long :\+ 64
+\item 
+\Hypertarget{structtcp__sock_a4164ae12e861e3522725a0bac352045d}\label{structtcp__sock_a4164ae12e861e3522725a0bac352045d} 
+long :\+ 64
+\item 
+\Hypertarget{structtcp__sock_ac7b4f28ce672b14dfb85b14fdc6451d3}\label{structtcp__sock_ac7b4f28ce672b14dfb85b14fdc6451d3} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+tcp\+\_\+sock\+\_\+write\+\_\+tx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_afbc739bd09feec0406e0817e35f6e715}\label{structtcp__sock_afbc739bd09feec0406e0817e35f6e715} 
+u32 {\bfseries segs\+\_\+out}
+\item 
+\Hypertarget{structtcp__sock_ae2d5fe74b21da8967b2a34f0ef20c442}\label{structtcp__sock_ae2d5fe74b21da8967b2a34f0ef20c442} 
+u32 {\bfseries data\+\_\+segs\+\_\+out}
+\item 
+\Hypertarget{structtcp__sock_a438d627aa18f7966fe2a3838e18114d0}\label{structtcp__sock_a438d627aa18f7966fe2a3838e18114d0} 
+u64 {\bfseries bytes\+\_\+sent}
+\item 
+\Hypertarget{structtcp__sock_a2a947a3723210530d893eddc5c7e0e11}\label{structtcp__sock_a2a947a3723210530d893eddc5c7e0e11} 
+u32 {\bfseries snd\+\_\+sml}
+\item 
+\Hypertarget{structtcp__sock_a4405db2708f988ed8ee6c61d1bdf69f4}\label{structtcp__sock_a4405db2708f988ed8ee6c61d1bdf69f4} 
+u32 {\bfseries chrono\+\_\+start}
+\item 
+\Hypertarget{structtcp__sock_a13f6cc543b41b145e504d61d1288997b}\label{structtcp__sock_a13f6cc543b41b145e504d61d1288997b} 
+u32 {\bfseries chrono\+\_\+stat} \+[3]\+
+\item 
+\Hypertarget{structtcp__sock_aac931d28c0f207dbbffcce8e32281d3f}\label{structtcp__sock_aac931d28c0f207dbbffcce8e32281d3f} 
+u32 {\bfseries write\+\_\+seq}
+\item 
+\Hypertarget{structtcp__sock_ae6b0912815ed8cf605313c45025fcd71}\label{structtcp__sock_ae6b0912815ed8cf605313c45025fcd71} 
+u32 {\bfseries pushed\+\_\+seq}
+\item 
+\Hypertarget{structtcp__sock_adee0b83d9ad7c1a0adddad5d1f92285b}\label{structtcp__sock_adee0b83d9ad7c1a0adddad5d1f92285b} 
+u32 {\bfseries lsndtime}
+\item 
+\Hypertarget{structtcp__sock_aa980cba1714c00c4da2ebc9c769085de}\label{structtcp__sock_aa980cba1714c00c4da2ebc9c769085de} 
+u32 {\bfseries mdev\+\_\+us}
+\item 
+\Hypertarget{structtcp__sock_a3ae9c3be1cb67362f08c58ba4ffe79dd}\label{structtcp__sock_a3ae9c3be1cb67362f08c58ba4ffe79dd} 
+u32 {\bfseries rtt\+\_\+seq}
+\item 
+\Hypertarget{structtcp__sock_a837e3bf17aba2c5544a33a2e911d49a2}\label{structtcp__sock_a837e3bf17aba2c5544a33a2e911d49a2} 
+u64 {\bfseries tcp\+\_\+wstamp\+\_\+ns}
+\item 
+\Hypertarget{structtcp__sock_aa0f9e7e6eae9af89071c3fe2c73da32a}\label{structtcp__sock_aa0f9e7e6eae9af89071c3fe2c73da32a} 
+u64 {\bfseries accecn\+\_\+opt\+\_\+tstamp}
+\item 
+\Hypertarget{structtcp__sock_ac437a7e9c9fd0957aab6cbd434165651}\label{structtcp__sock_ac437a7e9c9fd0957aab6cbd434165651} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tsorted\+\_\+sent\+\_\+queue}
+\item 
+\Hypertarget{structtcp__sock_a880aebe82ff8788400c3c631402c179d}\label{structtcp__sock_a880aebe82ff8788400c3c631402c179d} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries highest\+\_\+sack}
+\item 
+\Hypertarget{structtcp__sock_a0f39cdd26af408d9d4e5c213f1dc85a7}\label{structtcp__sock_a0f39cdd26af408d9d4e5c213f1dc85a7} 
+u8 {\bfseries ecn\+\_\+flags}
+\item 
+\Hypertarget{structtcp__sock_acf9d0da93081b033ac704db0e9480488}\label{structtcp__sock_acf9d0da93081b033ac704db0e9480488} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+tcp\+\_\+sock\+\_\+write\+\_\+tx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_af976d1a2470dbe18f259e203ddfc840e}\label{structtcp__sock_af976d1a2470dbe18f259e203ddfc840e} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+tcp\+\_\+sock\+\_\+write\+\_\+txrx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_a814808ac7fce32a1e0f9e4284b98464b}\label{structtcp__sock_a814808ac7fce32a1e0f9e4284b98464b} 
+u8 {\bfseries nonagle}:\+ 4
+\item 
+\Hypertarget{structtcp__sock_a4d46372b8fd3febc7e0e4c1713585a3c}\label{structtcp__sock_a4d46372b8fd3febc7e0e4c1713585a3c} 
+u8 {\bfseries rate\+\_\+app\+\_\+limited}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a508f471ff6b9b92e55a445c1ec614e76}\label{structtcp__sock_a508f471ff6b9b92e55a445c1ec614e76} 
+short :\+ 3
+\item 
+\Hypertarget{structtcp__sock_a6e0424f66a9e51fd0f3aa39a01e0d552}\label{structtcp__sock_a6e0424f66a9e51fd0f3aa39a01e0d552} 
+u8 {\bfseries received\+\_\+ce\+\_\+pending}:\+ 4
+\item 
+\Hypertarget{structtcp__sock_ae146cbc694636f0c8767346a42697094}\label{structtcp__sock_ae146cbc694636f0c8767346a42697094} 
+u8 {\bfseries unused2}:\+ 4
+\item 
+\Hypertarget{structtcp__sock_ab490acaf8f4257540ab2f2143809aa53}\label{structtcp__sock_ab490acaf8f4257540ab2f2143809aa53} 
+u8 {\bfseries accecn\+\_\+minlen}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_a08e16af901e3aa9bff1671be0bf166e4}\label{structtcp__sock_a08e16af901e3aa9bff1671be0bf166e4} 
+u8 {\bfseries est\+\_\+ecnfield}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_a65951b0dfdca94db9fd168f3c3b0e0e2}\label{structtcp__sock_a65951b0dfdca94db9fd168f3c3b0e0e2} 
+u8 {\bfseries accecn\+\_\+opt\+\_\+demand}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_a0bf016ff2b10b0397e73d6f8e8246ea8}\label{structtcp__sock_a0bf016ff2b10b0397e73d6f8e8246ea8} 
+u8 {\bfseries prev\+\_\+ecnfield}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_a61df665490f13c6e6a8a03c8e524b953}\label{structtcp__sock_a61df665490f13c6e6a8a03c8e524b953} 
+\+\_\+\+\_\+be32 {\bfseries pred\+\_\+flags}
+\item 
+\Hypertarget{structtcp__sock_a741caa87916a964a14591ff9fd4698d5}\label{structtcp__sock_a741caa87916a964a14591ff9fd4698d5} 
+u64 {\bfseries tcp\+\_\+clock\+\_\+cache}
+\item 
+\Hypertarget{structtcp__sock_af96df6b05c0dab7aebe786f42a57d268}\label{structtcp__sock_af96df6b05c0dab7aebe786f42a57d268} 
+u64 {\bfseries tcp\+\_\+mstamp}
+\item 
+\Hypertarget{structtcp__sock_a84dc23de617c7b964acbcba783c97f39}\label{structtcp__sock_a84dc23de617c7b964acbcba783c97f39} 
+u32 {\bfseries rcv\+\_\+nxt}
+\item 
+\Hypertarget{structtcp__sock_a0de6f8c53ff1122f2164954d15808048}\label{structtcp__sock_a0de6f8c53ff1122f2164954d15808048} 
+u32 {\bfseries snd\+\_\+nxt}
+\item 
+\Hypertarget{structtcp__sock_a5cff81513c10901062fce4dae318fdda}\label{structtcp__sock_a5cff81513c10901062fce4dae318fdda} 
+u32 {\bfseries snd\+\_\+una}
+\item 
+\Hypertarget{structtcp__sock_ab68ff0368437601729fd725260337529}\label{structtcp__sock_ab68ff0368437601729fd725260337529} 
+u32 {\bfseries window\+\_\+clamp}
+\item 
+\Hypertarget{structtcp__sock_a4362abe8ebff5780c23901208eb28f8d}\label{structtcp__sock_a4362abe8ebff5780c23901208eb28f8d} 
+u32 {\bfseries srtt\+\_\+us}
+\item 
+\Hypertarget{structtcp__sock_ab0f5860d0cfa74ec73a4bcf9b3ca44f7}\label{structtcp__sock_ab0f5860d0cfa74ec73a4bcf9b3ca44f7} 
+u32 {\bfseries packets\+\_\+out}
+\item 
+\Hypertarget{structtcp__sock_a9948a59e13f9f3c323d02ae61ae7c120}\label{structtcp__sock_a9948a59e13f9f3c323d02ae61ae7c120} 
+u32 {\bfseries snd\+\_\+up}
+\item 
+\Hypertarget{structtcp__sock_a5bfbca34cce8cae54c1959c33a74e840}\label{structtcp__sock_a5bfbca34cce8cae54c1959c33a74e840} 
+u32 {\bfseries delivered}
+\item 
+\Hypertarget{structtcp__sock_a58be73173638c3f712ec5c5d8b06ce8a}\label{structtcp__sock_a58be73173638c3f712ec5c5d8b06ce8a} 
+u32 {\bfseries delivered\+\_\+ce}
+\item 
+\Hypertarget{structtcp__sock_adade3134590cf771488521b278a4d6c2}\label{structtcp__sock_adade3134590cf771488521b278a4d6c2} 
+u32 {\bfseries received\+\_\+ce}
+\item 
+\Hypertarget{structtcp__sock_aa2e663bf252f68f8c7712f6453893d1d}\label{structtcp__sock_aa2e663bf252f68f8c7712f6453893d1d} 
+u32 {\bfseries received\+\_\+ecn\+\_\+bytes} \+[3]\+
+\item 
+\Hypertarget{structtcp__sock_a21df3ae0bf6e37994f31fae7b83dffd0}\label{structtcp__sock_a21df3ae0bf6e37994f31fae7b83dffd0} 
+u32 {\bfseries app\+\_\+limited}
+\item 
+\Hypertarget{structtcp__sock_a8bb704ddef9d02d0d622c65c7dcd449f}\label{structtcp__sock_a8bb704ddef9d02d0d622c65c7dcd449f} 
+u32 {\bfseries rcv\+\_\+wnd}
+\item 
+\Hypertarget{structtcp__sock_abd413d7fad4c726ca3dfc00cf30520c2}\label{structtcp__sock_abd413d7fad4c726ca3dfc00cf30520c2} 
+u32 {\bfseries rcv\+\_\+tstamp}
+\item 
+\Hypertarget{structtcp__sock_ad8b7f9dc44d596380715796906e37643}\label{structtcp__sock_ad8b7f9dc44d596380715796906e37643} 
+struct \doxymbox{\hyperlink{structtcp__options__received}{tcp\+\_\+options\+\_\+received}} {\bfseries rx\+\_\+opt}
+\item 
+\Hypertarget{structtcp__sock_af911c65271104ca181c050f5a9baff0e}\label{structtcp__sock_af911c65271104ca181c050f5a9baff0e} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+tcp\+\_\+sock\+\_\+write\+\_\+txrx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_a84462de96fbf70f3d57e3f63baaab8c8}\label{structtcp__sock_a84462de96fbf70f3d57e3f63baaab8c8} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+tcp\+\_\+sock\+\_\+write\+\_\+rx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_ae4728bab55c9df0377aeb576841b3cfa}\label{structtcp__sock_ae4728bab55c9df0377aeb576841b3cfa} 
+u64 {\bfseries bytes\+\_\+received}
+\item 
+\Hypertarget{structtcp__sock_a7bb646c0e4b35d8a0bcf8d3c6293c02e}\label{structtcp__sock_a7bb646c0e4b35d8a0bcf8d3c6293c02e} 
+u32 {\bfseries segs\+\_\+in}
+\item 
+\Hypertarget{structtcp__sock_af331d3be5d9d7e0530eb731074562b90}\label{structtcp__sock_af331d3be5d9d7e0530eb731074562b90} 
+u32 {\bfseries data\+\_\+segs\+\_\+in}
+\item 
+\Hypertarget{structtcp__sock_a0e2b481bd173365229decd9bec8af603}\label{structtcp__sock_a0e2b481bd173365229decd9bec8af603} 
+u32 {\bfseries rcv\+\_\+wup}
+\item 
+\Hypertarget{structtcp__sock_a420ddea11ac82c318dabddae6d0786bd}\label{structtcp__sock_a420ddea11ac82c318dabddae6d0786bd} 
+u32 {\bfseries max\+\_\+packets\+\_\+out}
+\item 
+\Hypertarget{structtcp__sock_a441d6ec8e8c4ffd15e82774a4e764262}\label{structtcp__sock_a441d6ec8e8c4ffd15e82774a4e764262} 
+u32 {\bfseries cwnd\+\_\+usage\+\_\+seq}
+\item 
+\Hypertarget{structtcp__sock_ae2be07254afac513bb08f56492302c56}\label{structtcp__sock_ae2be07254afac513bb08f56492302c56} 
+u32 {\bfseries rate\+\_\+delivered}
+\item 
+\Hypertarget{structtcp__sock_ad6fbd6135fa7708c7cc2880801469850}\label{structtcp__sock_ad6fbd6135fa7708c7cc2880801469850} 
+u32 {\bfseries rate\+\_\+interval\+\_\+us}
+\item 
+\Hypertarget{structtcp__sock_a2e1d6d0616c094aaca7fd3645af4519b}\label{structtcp__sock_a2e1d6d0616c094aaca7fd3645af4519b} 
+u32 {\bfseries rcv\+\_\+rtt\+\_\+last\+\_\+tsecr}
+\item 
+\Hypertarget{structtcp__sock_a6cd9947fd6f0f2945d8400078ebab627}\label{structtcp__sock_a6cd9947fd6f0f2945d8400078ebab627} 
+u32 {\bfseries delivered\+\_\+ecn\+\_\+bytes} \+[3]\+
+\item 
+\Hypertarget{structtcp__sock_a0f8a2c634c73c2a5f39d7a053c0dfd13}\label{structtcp__sock_a0f8a2c634c73c2a5f39d7a053c0dfd13} 
+u64 {\bfseries first\+\_\+tx\+\_\+mstamp}
+\item 
+\Hypertarget{structtcp__sock_a473ab4b17de0d1fa7b70165091b6045f}\label{structtcp__sock_a473ab4b17de0d1fa7b70165091b6045f} 
+u64 {\bfseries delivered\+\_\+mstamp}
+\item 
+\Hypertarget{structtcp__sock_a56ede49a7f15db6c5d7af3594a816fe9}\label{structtcp__sock_a56ede49a7f15db6c5d7af3594a816fe9} 
+u64 {\bfseries bytes\+\_\+acked}
+\item 
+\Hypertarget{structtcp__sock_a30117b1bd988ee7be6254259daebf997}\label{structtcp__sock_a30117b1bd988ee7be6254259daebf997} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries rtt\_us}\\
+\>u32 {\bfseries seq}\\
+\>u64 {\bfseries time}\\
+\} {\bfseries rcv\_rtt\_est}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtcp__sock_aaa615d85a3ddd9923e6583c5143937b1}\label{structtcp__sock_aaa615d85a3ddd9923e6583c5143937b1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int {\bfseries space}\\
+\>u32 {\bfseries seq}\\
+\>u64 {\bfseries time}\\
+\} {\bfseries rcvq\_space}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtcp__sock_a582cdb0467a08f3e7161d47243eb064e}\label{structtcp__sock_a582cdb0467a08f3e7161d47243eb064e} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+tcp\+\_\+sock\+\_\+write\+\_\+rx} \+[0]\+
+\item 
+\Hypertarget{structtcp__sock_abbed83e0ee2bfede8cbe82162be39175}\label{structtcp__sock_abbed83e0ee2bfede8cbe82162be39175} 
+u32 {\bfseries dsack\+\_\+dups}
+\item 
+\Hypertarget{structtcp__sock_a7fed50c783335b42cb2f1a0b9e9372fe}\label{structtcp__sock_a7fed50c783335b42cb2f1a0b9e9372fe} 
+u32 {\bfseries compressed\+\_\+ack\+\_\+rcv\+\_\+nxt}
+\item 
+\Hypertarget{structtcp__sock_a782d859d4eaa3200bf2d7bcf7d9c181e}\label{structtcp__sock_a782d859d4eaa3200bf2d7bcf7d9c181e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tsq\+\_\+node}
+\item 
+\Hypertarget{structtcp__sock_afed951e0efc86db36ab371ffd637e970}\label{structtcp__sock_afed951e0efc86db36ab371ffd637e970} 
+struct \doxymbox{\hyperlink{structtcp__rack}{tcp\+\_\+rack}} {\bfseries rack}
+\item 
+\Hypertarget{structtcp__sock_a1a768d1a85c9f6846722198efccf9886}\label{structtcp__sock_a1a768d1a85c9f6846722198efccf9886} 
+u8 {\bfseries compressed\+\_\+ack}
+\item 
+\Hypertarget{structtcp__sock_afbd6346c3d2871f6a4caf2d07a7b083f}\label{structtcp__sock_afbd6346c3d2871f6a4caf2d07a7b083f} 
+u8 {\bfseries dup\+\_\+ack\+\_\+counter}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_a48193541d577217c7dd1cfe367a9f8ea}\label{structtcp__sock_a48193541d577217c7dd1cfe367a9f8ea} 
+u8 {\bfseries tlp\+\_\+retrans}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a83ede5a9f2a3827fe067baa48ca45c11}\label{structtcp__sock_a83ede5a9f2a3827fe067baa48ca45c11} 
+u8 {\bfseries syn\+\_\+ect\+\_\+snt}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_a46af5a6c8bd52f7a41caba6d62723790}\label{structtcp__sock_a46af5a6c8bd52f7a41caba6d62723790} 
+u8 {\bfseries syn\+\_\+ect\+\_\+rcv}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_ae6dcbb4ef9965299f5fd76e4e09384b6}\label{structtcp__sock_ae6dcbb4ef9965299f5fd76e4e09384b6} 
+u8 {\bfseries thin\+\_\+lto}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_ac5b7fecbc33d9c863a7877277af09942}\label{structtcp__sock_ac5b7fecbc33d9c863a7877277af09942} 
+u8 {\bfseries fastopen\+\_\+connect}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a7b126c03dda7ef65175aaaed44cadf2c}\label{structtcp__sock_a7b126c03dda7ef65175aaaed44cadf2c} 
+u8 {\bfseries fastopen\+\_\+no\+\_\+cookie}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a708125dfb0f8fa10fbc53028dafd1656}\label{structtcp__sock_a708125dfb0f8fa10fbc53028dafd1656} 
+u8 {\bfseries fastopen\+\_\+client\+\_\+fail}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_ab17526b29c9ef0676bd88f73db129953}\label{structtcp__sock_ab17526b29c9ef0676bd88f73db129953} 
+u8 {\bfseries frto}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a3b5cba3235546e4de2913fcd4efb1808}\label{structtcp__sock_a3b5cba3235546e4de2913fcd4efb1808} 
+u8 {\bfseries repair\+\_\+queue}
+\item 
+\Hypertarget{structtcp__sock_a9c288127a5bc307001914eeade534983}\label{structtcp__sock_a9c288127a5bc307001914eeade534983} 
+u8 {\bfseries save\+\_\+syn}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_af12b1273f877062ff37c9cad8fac76c6}\label{structtcp__sock_af12b1273f877062ff37c9cad8fac76c6} 
+u8 {\bfseries syn\+\_\+data}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a1b2ca51d59d88439664807c413521cce}\label{structtcp__sock_a1b2ca51d59d88439664807c413521cce} 
+u8 {\bfseries syn\+\_\+fastopen}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a971d32b3a08792fe7e6f0f44798707a6}\label{structtcp__sock_a971d32b3a08792fe7e6f0f44798707a6} 
+u8 {\bfseries syn\+\_\+fastopen\+\_\+exp}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a7b96a314db522651a6731572cbb07366}\label{structtcp__sock_a7b96a314db522651a6731572cbb07366} 
+u8 {\bfseries syn\+\_\+fastopen\+\_\+ch}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a389d1a416d9739a2875e47ff36cb7241}\label{structtcp__sock_a389d1a416d9739a2875e47ff36cb7241} 
+u8 {\bfseries syn\+\_\+data\+\_\+acked}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a75bd3973d36b1c16c6f17f90f1e4a3a9}\label{structtcp__sock_a75bd3973d36b1c16c6f17f90f1e4a3a9} 
+u8 {\bfseries syn\+\_\+fastopen\+\_\+child}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a85408a4ca1df1ea959240bddd2a4ac96}\label{structtcp__sock_a85408a4ca1df1ea959240bddd2a4ac96} 
+u8 {\bfseries keepalive\+\_\+probes}
+\item 
+\Hypertarget{structtcp__sock_a4131aca4e153f07df99b8d8b54090f28}\label{structtcp__sock_a4131aca4e153f07df99b8d8b54090f28} 
+u8 {\bfseries accecn\+\_\+fail\+\_\+mode}:\+ 4
+\item 
+\Hypertarget{structtcp__sock_a98e409960652dae69a5119b72a85f031}\label{structtcp__sock_a98e409960652dae69a5119b72a85f031} 
+u8 {\bfseries saw\+\_\+accecn\+\_\+opt}:\+ 2
+\item 
+\Hypertarget{structtcp__sock_a161eac800564e7404e202fd72e482d1c}\label{structtcp__sock_a161eac800564e7404e202fd72e482d1c} 
+u32 {\bfseries tcp\+\_\+tx\+\_\+delay}
+\item 
+\Hypertarget{structtcp__sock_aa692ddf231e3bab734822247d61709e7}\label{structtcp__sock_aa692ddf231e3bab734822247d61709e7} 
+u32 {\bfseries mdev\+\_\+max\+\_\+us}
+\item 
+\Hypertarget{structtcp__sock_ab5847ef80844dbfc5f6fc50f0955d488}\label{structtcp__sock_ab5847ef80844dbfc5f6fc50f0955d488} 
+u32 {\bfseries reord\+\_\+seen}
+\item 
+\Hypertarget{structtcp__sock_a1a017093620c833c1436e25aec36171d}\label{structtcp__sock_a1a017093620c833c1436e25aec36171d} 
+u32 {\bfseries snd\+\_\+cwnd\+\_\+cnt}
+\item 
+\Hypertarget{structtcp__sock_a41fbc77332b1752335d6d60ba8fa7131}\label{structtcp__sock_a41fbc77332b1752335d6d60ba8fa7131} 
+u32 {\bfseries snd\+\_\+cwnd\+\_\+clamp}
+\item 
+\Hypertarget{structtcp__sock_a260f22eeb3356938afef0f1c2c397aeb}\label{structtcp__sock_a260f22eeb3356938afef0f1c2c397aeb} 
+u32 {\bfseries snd\+\_\+cwnd\+\_\+used}
+\item 
+\Hypertarget{structtcp__sock_ab12ba746eb1fc8659dcb307c3a85ba14}\label{structtcp__sock_ab12ba746eb1fc8659dcb307c3a85ba14} 
+u32 {\bfseries snd\+\_\+cwnd\+\_\+stamp}
+\item 
+\Hypertarget{structtcp__sock_a5a4987b36129809d424f860a5b19a5cf}\label{structtcp__sock_a5a4987b36129809d424f860a5b19a5cf} 
+u32 {\bfseries prior\+\_\+cwnd}
+\item 
+\Hypertarget{structtcp__sock_ac48fd43711995d4a030def14b071f96e}\label{structtcp__sock_ac48fd43711995d4a030def14b071f96e} 
+u32 {\bfseries prr\+\_\+delivered}
+\item 
+\Hypertarget{structtcp__sock_ac135f58bb75b9b37ad321a4e56ae42bf}\label{structtcp__sock_ac135f58bb75b9b37ad321a4e56ae42bf} 
+u32 {\bfseries last\+\_\+oow\+\_\+ack\+\_\+time}
+\item 
+\Hypertarget{structtcp__sock_a729f9b277e8d66ae723c9fb98af2ae75}\label{structtcp__sock_a729f9b277e8d66ae723c9fb98af2ae75} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries pacing\+\_\+timer}
+\item 
+\Hypertarget{structtcp__sock_a973d57173455366de393bdb50d64e8be}\label{structtcp__sock_a973d57173455366de393bdb50d64e8be} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries compressed\+\_\+ack\+\_\+timer}
+\item 
+\Hypertarget{structtcp__sock_a1c254409294dc24d65fdd29dbcb888d7}\label{structtcp__sock_a1c254409294dc24d65fdd29dbcb888d7} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries ooo\+\_\+last\+\_\+skb}
+\item 
+\Hypertarget{structtcp__sock_a2b9a8f1cfc6d618fb6658d366bb72ce6}\label{structtcp__sock_a2b9a8f1cfc6d618fb6658d366bb72ce6} 
+struct \doxymbox{\hyperlink{structtcp__sack__block}{tcp\+\_\+sack\+\_\+block}} {\bfseries duplicate\+\_\+sack} \+[1]\+
+\item 
+\Hypertarget{structtcp__sock_ac746da4571e1eb7cd6bcbac5e0cd6bf8}\label{structtcp__sock_ac746da4571e1eb7cd6bcbac5e0cd6bf8} 
+struct \doxymbox{\hyperlink{structtcp__sack__block}{tcp\+\_\+sack\+\_\+block}} {\bfseries selective\+\_\+acks} \+[4]\+
+\item 
+\Hypertarget{structtcp__sock_a46d2d48b7142eeecdc27d36595b68b46}\label{structtcp__sock_a46d2d48b7142eeecdc27d36595b68b46} 
+struct \doxymbox{\hyperlink{structtcp__sack__block}{tcp\+\_\+sack\+\_\+block}} {\bfseries recv\+\_\+sack\+\_\+cache} \+[4]\+
+\item 
+\Hypertarget{structtcp__sock_ac1d1ba5d1f3155b47ef27dc7749f8bfb}\label{structtcp__sock_ac1d1ba5d1f3155b47ef27dc7749f8bfb} 
+u32 {\bfseries prior\+\_\+ssthresh}
+\item 
+\Hypertarget{structtcp__sock_a31b50c726e44b623a39fd662af82565a}\label{structtcp__sock_a31b50c726e44b623a39fd662af82565a} 
+u32 {\bfseries high\+\_\+seq}
+\item 
+\Hypertarget{structtcp__sock_a82d338eb5adaf8ca8da4c570917abf70}\label{structtcp__sock_a82d338eb5adaf8ca8da4c570917abf70} 
+u32 {\bfseries retrans\+\_\+stamp}
+\item 
+\Hypertarget{structtcp__sock_a14c3d26eb70cfe5c457731c20e8b4d6c}\label{structtcp__sock_a14c3d26eb70cfe5c457731c20e8b4d6c} 
+u32 {\bfseries undo\+\_\+marker}
+\item 
+\Hypertarget{structtcp__sock_a3caa21ae2da6f7939d0303d9f63f0ac4}\label{structtcp__sock_a3caa21ae2da6f7939d0303d9f63f0ac4} 
+int {\bfseries undo\+\_\+retrans}
+\item 
+\Hypertarget{structtcp__sock_aa035810030859e09cb55268209e47068}\label{structtcp__sock_aa035810030859e09cb55268209e47068} 
+u32 {\bfseries mtu\+\_\+info}
+\item 
+\Hypertarget{structtcp__sock_ad754e83ab7c403e736019d9d0c2ee9fc}\label{structtcp__sock_ad754e83ab7c403e736019d9d0c2ee9fc} 
+u64 {\bfseries bytes\+\_\+retrans}
+\item 
+\Hypertarget{structtcp__sock_a9c9a8ef69da60fb99c924fb96d307383}\label{structtcp__sock_a9c9a8ef69da60fb99c924fb96d307383} 
+u32 {\bfseries total\+\_\+retrans}
+\item 
+\Hypertarget{structtcp__sock_a01c5f6aa71c0d2d35dd4ce340cd720ae}\label{structtcp__sock_a01c5f6aa71c0d2d35dd4ce340cd720ae} 
+u32 {\bfseries rto\+\_\+stamp}
+\item 
+\Hypertarget{structtcp__sock_aeb2619841b348971762adb2b08e4a43b}\label{structtcp__sock_aeb2619841b348971762adb2b08e4a43b} 
+u16 {\bfseries total\+\_\+rto}
+\item 
+\Hypertarget{structtcp__sock_a98bbc66dfa316a2d0405a90b5cd34c61}\label{structtcp__sock_a98bbc66dfa316a2d0405a90b5cd34c61} 
+u16 {\bfseries total\+\_\+rto\+\_\+recoveries}
+\item 
+\Hypertarget{structtcp__sock_aee03539e4834023f3eeb9f70e31712df}\label{structtcp__sock_aee03539e4834023f3eeb9f70e31712df} 
+u32 {\bfseries total\+\_\+rto\+\_\+time}
+\item 
+\Hypertarget{structtcp__sock_aba5b96ab6e929cf227ecea8c4d4dfdaa}\label{structtcp__sock_aba5b96ab6e929cf227ecea8c4d4dfdaa} 
+u32 {\bfseries urg\+\_\+seq}
+\item 
+\Hypertarget{structtcp__sock_a8d2b1d095ed796b9595dd461542df3cb}\label{structtcp__sock_a8d2b1d095ed796b9595dd461542df3cb} 
+unsigned int {\bfseries keepalive\+\_\+time}
+\item 
+\Hypertarget{structtcp__sock_a6f0d5e4a3ce9382d6b0b9fa12c530ecd}\label{structtcp__sock_a6f0d5e4a3ce9382d6b0b9fa12c530ecd} 
+unsigned int {\bfseries keepalive\+\_\+intvl}
+\item 
+\Hypertarget{structtcp__sock_a6d4a8fb4b441053f031c533e48f6e1f8}\label{structtcp__sock_a6d4a8fb4b441053f031c533e48f6e1f8} 
+int {\bfseries linger2}
+\item 
+\Hypertarget{structtcp__sock_af4242e3e9d27d1f3dd37c306dbb11042}\label{structtcp__sock_af4242e3e9d27d1f3dd37c306dbb11042} 
+u8 {\bfseries bpf\+\_\+sock\+\_\+ops\+\_\+cb\+\_\+flags}
+\item 
+\Hypertarget{structtcp__sock_af9e4eedd24e3a24024aaedda3485b70c}\label{structtcp__sock_af9e4eedd24e3a24024aaedda3485b70c} 
+u8 {\bfseries bpf\+\_\+chg\+\_\+cc\+\_\+inprogress}:\+ 1
+\item 
+\Hypertarget{structtcp__sock_a0eee16e010316c83f4a56c9b5020f0cf}\label{structtcp__sock_a0eee16e010316c83f4a56c9b5020f0cf} 
+u16 {\bfseries timeout\+\_\+rehash}
+\item 
+\Hypertarget{structtcp__sock_aa71b69ebe8fead6e7756e98365946553}\label{structtcp__sock_aa71b69ebe8fead6e7756e98365946553} 
+u32 {\bfseries rcv\+\_\+ooopack}
+\item 
+\Hypertarget{structtcp__sock_a66637322e6c0391b5c66fba7d06cb6e1}\label{structtcp__sock_a66637322e6c0391b5c66fba7d06cb6e1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries probe\_seq\_start}\\
+\>u32 {\bfseries probe\_seq\_end}\\
+\} {\bfseries mtu\_probe}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtcp__sock_a003f7d990515984630a688477b5e7a08}\label{structtcp__sock_a003f7d990515984630a688477b5e7a08} 
+u32 {\bfseries plb\+\_\+rehash}
+\item 
+\Hypertarget{structtcp__sock_a5962cc383816fa2e4dd71f7cc741267a}\label{structtcp__sock_a5962cc383816fa2e4dd71f7cc741267a} 
+bool {\bfseries is\+\_\+mptcp}
+\item 
+\Hypertarget{structtcp__sock_a22191c089d1fc70ffc18a719e4a324f7}\label{structtcp__sock_a22191c089d1fc70ffc18a719e4a324f7} 
+bool {\bfseries syn\+\_\+smc}
+\item 
+\Hypertarget{structtcp__sock_a8a7dc7bc0d3b5baa9e98167c5026c8ab}\label{structtcp__sock_a8a7dc7bc0d3b5baa9e98167c5026c8ab} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries smc\+\_\+hs\+\_\+congested} )(const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__sock_aa10fe7b58f83c75560724059f61ecff0}\label{structtcp__sock_aa10fe7b58f83c75560724059f61ecff0} 
+const struct \doxymbox{\hyperlink{structtcp__sock__af__ops}{tcp\+\_\+sock\+\_\+af\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries af\+\_\+specific}
+\item 
+\Hypertarget{structtcp__sock_a6ab625f1f5a653c4563d14597996da07}\label{structtcp__sock_a6ab625f1f5a653c4563d14597996da07} 
+struct \doxymbox{\hyperlink{structtcp__md5sig__info}{tcp\+\_\+md5sig\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries md5sig\+\_\+info}
+\item 
+\Hypertarget{structtcp__sock_a1a8cb703ff4cad9c1e972d1c6c9f41d5}\label{structtcp__sock_a1a8cb703ff4cad9c1e972d1c6c9f41d5} 
+struct \doxymbox{\hyperlink{structtcp__ao__info}{tcp\+\_\+ao\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries ao\+\_\+info}
+\item 
+\Hypertarget{structtcp__sock_aadd88a4e6bec7de4a6c80ce3ffe53d27}\label{structtcp__sock_aadd88a4e6bec7de4a6c80ce3ffe53d27} 
+struct \doxymbox{\hyperlink{structtcp__fastopen__request}{tcp\+\_\+fastopen\+\_\+request}} \texorpdfstring{$\ast$}{*} {\bfseries fastopen\+\_\+req}
+\item 
+\Hypertarget{structtcp__sock_a8b7487b9661481c633bcd5f4fbdde8b5}\label{structtcp__sock_a8b7487b9661481c633bcd5f4fbdde8b5} 
+struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*} {\bfseries fastopen\+\_\+rsk}
+\item 
+\Hypertarget{structtcp__sock_ac9b052b5fab74380d8a475395cfcad06}\label{structtcp__sock_ac9b052b5fab74380d8a475395cfcad06} 
+struct \doxymbox{\hyperlink{structsaved__syn}{saved\+\_\+syn}} \texorpdfstring{$\ast$}{*} {\bfseries saved\+\_\+syn}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

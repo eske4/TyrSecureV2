@@ -1,0 +1,40 @@
+\doxysection{regcache\+\_\+ops Struct Reference}
+\hypertarget{structregcache__ops}{}\label{structregcache__ops}\index{regcache\_ops@{regcache\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structregcache__ops_ac04625e5815b653c09c22b000444213e}\label{structregcache__ops_ac04625e5815b653c09c22b000444213e} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structregcache__ops_a434df4f19c6a84b7eeea2599ab495611}\label{structregcache__ops_a434df4f19c6a84b7eeea2599ab495611} 
+enum regcache\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structregcache__ops_a7573cd61fae7494fe22dafec1fd80ff2}\label{structregcache__ops_a7573cd61fae7494fe22dafec1fd80ff2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregcache__ops_ade3481479297c6396780b6a1a9df4660}\label{structregcache__ops_ade3481479297c6396780b6a1a9df4660} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries exit} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregcache__ops_a970c42563789404bb5f145629139278c}\label{structregcache__ops_a970c42563789404bb5f145629139278c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries populate} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregcache__ops_a4dff95832f8074c45fed1443e338d05c}\label{structregcache__ops_a4dff95832f8074c45fed1443e338d05c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+init} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregcache__ops_a9918ee295ad73c2b0a0a6bcb12477228}\label{structregcache__ops_a9918ee295ad73c2b0a0a6bcb12477228} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregcache__ops_a74578f8227f7913bda2d944d99b7203d}\label{structregcache__ops_a74578f8227f7913bda2d944d99b7203d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structregcache__ops_ade1c6a36fa68216f9c45e154d825775b}\label{structregcache__ops_ade1c6a36fa68216f9c45e154d825775b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sync} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structregcache__ops_a0d616ebc69a9cadb36bc29538c26c2ca}\label{structregcache__ops_a0d616ebc69a9cadb36bc29538c26c2ca} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries drop} )(struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

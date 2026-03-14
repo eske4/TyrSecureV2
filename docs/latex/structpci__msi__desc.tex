@@ -1,0 +1,42 @@
+\doxysection{pci\+\_\+msi\+\_\+desc Struct Reference}
+\hypertarget{structpci__msi__desc}{}\label{structpci__msi__desc}\index{pci\_msi\_desc@{pci\_msi\_desc}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpci__msi__desc_aa78cd01e055f91513323dc20a21edd79}\label{structpci__msi__desc_aa78cd01e055f91513323dc20a21edd79} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries msi\_mask}\\
+\>u32 {\bfseries msix\_ctrl}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structpci__msi__desc_a98ef3d385ae7d6abfb5e7d764613e89e}\label{structpci__msi__desc_a98ef3d385ae7d6abfb5e7d764613e89e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u8 {\bfseries is\_msix}: 1\\
+\>u8 {\bfseries multiple}: 3\\
+\>u8 {\bfseries multi\_cap}: 3\\
+\>u8 {\bfseries can\_mask}: 1\\
+\>u8 {\bfseries is\_64}: 1\\
+\>u8 {\bfseries is\_virtual}: 1\\
+\>unsigned int {\bfseries default\_irq}\\
+\} {\bfseries msi\_attrib}\\
+
+\end{tabbing}\item 
+\Hypertarget{structpci__msi__desc_a0366a52789775fe66bc257d6c2ae4be0}\label{structpci__msi__desc_a0366a52789775fe66bc257d6c2ae4be0} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u8 {\bfseries mask\_pos}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries mask\_base}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

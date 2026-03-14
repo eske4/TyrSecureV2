@@ -1,0 +1,38 @@
+\doxysection{memory\+\_\+group Struct Reference}
+\hypertarget{structmemory__group}{}\label{structmemory__group}\index{memory\_group@{memory\_group}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmemory__group_a6a72cb3625dcadab7bae4c00fdbe4283}\label{structmemory__group_a6a72cb3625dcadab7bae4c00fdbe4283} 
+int {\bfseries nid}
+\item 
+\Hypertarget{structmemory__group_a7ed19f71fa5aaef4dbe62837e67fc0ee}\label{structmemory__group_a7ed19f71fa5aaef4dbe62837e67fc0ee} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries memory\+\_\+blocks}
+\item 
+\Hypertarget{structmemory__group_ab2e8f24d0b448d7badfa1e22d319742f}\label{structmemory__group_ab2e8f24d0b448d7badfa1e22d319742f} 
+long unsigned int {\bfseries present\+\_\+kernel\+\_\+pages}
+\item 
+\Hypertarget{structmemory__group_a074981edd40690bc6af63d43f898246b}\label{structmemory__group_a074981edd40690bc6af63d43f898246b} 
+long unsigned int {\bfseries present\+\_\+movable\+\_\+pages}
+\item 
+\Hypertarget{structmemory__group_a038fce6dba8d854e8a6212be8c4df0e4}\label{structmemory__group_a038fce6dba8d854e8a6212be8c4df0e4} 
+bool {\bfseries is\+\_\+dynamic}
+\item 
+\Hypertarget{structmemory__group_a9d2bf35722dec05316b55e2b26a352c0}\label{structmemory__group_a9d2bf35722dec05316b55e2b26a352c0} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>long unsigned int {\bfseries max\_pages}\\
+\>\} {\bfseries s}\\
+\>struct \{\\
+\>\>long unsigned int {\bfseries unit\_pages}\\
+\>\} {\bfseries d}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

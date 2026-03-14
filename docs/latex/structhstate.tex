@@ -1,0 +1,70 @@
+\doxysection{hstate Struct Reference}
+\hypertarget{structhstate}{}\label{structhstate}\index{hstate@{hstate}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structhstate_a29acd936b8b8990a8f09b4808e8a2ee1}\label{structhstate_a29acd936b8b8990a8f09b4808e8a2ee1} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries resize\+\_\+lock}
+\item 
+\Hypertarget{structhstate_a99de9cc5f6e52afca2e0482c3362f3e4}\label{structhstate_a99de9cc5f6e52afca2e0482c3362f3e4} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries resize\+\_\+key}
+\item 
+\Hypertarget{structhstate_a65a486a54955fbea177be8f12a203352}\label{structhstate_a65a486a54955fbea177be8f12a203352} 
+int {\bfseries next\+\_\+nid\+\_\+to\+\_\+alloc}
+\item 
+\Hypertarget{structhstate_a7838e3d4380f5a192748ad5e33f99e6d}\label{structhstate_a7838e3d4380f5a192748ad5e33f99e6d} 
+int {\bfseries next\+\_\+nid\+\_\+to\+\_\+free}
+\item 
+\Hypertarget{structhstate_ae775f6fe181f303b349680ad74c4dc06}\label{structhstate_ae775f6fe181f303b349680ad74c4dc06} 
+unsigned int {\bfseries order}
+\item 
+\Hypertarget{structhstate_a4d46a85da077706cc0704de3bbae96e4}\label{structhstate_a4d46a85da077706cc0704de3bbae96e4} 
+unsigned int {\bfseries demote\+\_\+order}
+\item 
+\Hypertarget{structhstate_a00b67dcd3a2e1b66b32a88310125571b}\label{structhstate_a00b67dcd3a2e1b66b32a88310125571b} 
+long unsigned int {\bfseries mask}
+\item 
+\Hypertarget{structhstate_ae61a6e2cbebcf366fd6eb8cc246b2315}\label{structhstate_ae61a6e2cbebcf366fd6eb8cc246b2315} 
+long unsigned int {\bfseries max\+\_\+huge\+\_\+pages}
+\item 
+\Hypertarget{structhstate_ad3f88d328b68c98be4754ccf90b42da6}\label{structhstate_ad3f88d328b68c98be4754ccf90b42da6} 
+long unsigned int {\bfseries nr\+\_\+huge\+\_\+pages}
+\item 
+\Hypertarget{structhstate_a528282ee47c3c76f5292b3d6d2535d1b}\label{structhstate_a528282ee47c3c76f5292b3d6d2535d1b} 
+long unsigned int {\bfseries free\+\_\+huge\+\_\+pages}
+\item 
+\Hypertarget{structhstate_a1d0b24065026a291e177c1a30da48347}\label{structhstate_a1d0b24065026a291e177c1a30da48347} 
+long unsigned int {\bfseries resv\+\_\+huge\+\_\+pages}
+\item 
+\Hypertarget{structhstate_a64963c4ac26b64aa13975382c1051765}\label{structhstate_a64963c4ac26b64aa13975382c1051765} 
+long unsigned int {\bfseries surplus\+\_\+huge\+\_\+pages}
+\item 
+\Hypertarget{structhstate_af1e70ab219969e5e6fd61b0cf14c2e3d}\label{structhstate_af1e70ab219969e5e6fd61b0cf14c2e3d} 
+long unsigned int {\bfseries nr\+\_\+overcommit\+\_\+huge\+\_\+pages}
+\item 
+\Hypertarget{structhstate_abbd1f4d52509099da835b1f35bbbab8b}\label{structhstate_abbd1f4d52509099da835b1f35bbbab8b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries hugepage\+\_\+activelist}
+\item 
+\Hypertarget{structhstate_a6e2b8c225d9ced91e89aba1ee2a5a1ae}\label{structhstate_a6e2b8c225d9ced91e89aba1ee2a5a1ae} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries hugepage\+\_\+freelists} \+[1024]\+
+\item 
+\Hypertarget{structhstate_abc5140ffd873e12bddb4b457ca04db4e}\label{structhstate_abc5140ffd873e12bddb4b457ca04db4e} 
+unsigned int {\bfseries max\+\_\+huge\+\_\+pages\+\_\+node} \+[1024]\+
+\item 
+\Hypertarget{structhstate_a73741fa54af8a4fbf590c93840a45603}\label{structhstate_a73741fa54af8a4fbf590c93840a45603} 
+unsigned int {\bfseries nr\+\_\+huge\+\_\+pages\+\_\+node} \+[1024]\+
+\item 
+\Hypertarget{structhstate_a567f636655c3dde57cce1f1ab1aad77f}\label{structhstate_a567f636655c3dde57cce1f1ab1aad77f} 
+unsigned int {\bfseries free\+\_\+huge\+\_\+pages\+\_\+node} \+[1024]\+
+\item 
+\Hypertarget{structhstate_a88ba04a5ba6ed77d1759bbad243c085f}\label{structhstate_a88ba04a5ba6ed77d1759bbad243c085f} 
+unsigned int {\bfseries surplus\+\_\+huge\+\_\+pages\+\_\+node} \+[1024]\+
+\item 
+\Hypertarget{structhstate_ad1944c21c0cdd1ca26315548bf0540a7}\label{structhstate_ad1944c21c0cdd1ca26315548bf0540a7} 
+char {\bfseries name} \+[32]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\doxysection{btrfs\+\_\+free\+\_\+cluster Struct Reference}
+\hypertarget{structbtrfs__free__cluster}{}\label{structbtrfs__free__cluster}\index{btrfs\_free\_cluster@{btrfs\_free\_cluster}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__free__cluster_a3aafbf855669261d1d49cd9a97cfe946}\label{structbtrfs__free__cluster_a3aafbf855669261d1d49cd9a97cfe946} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structbtrfs__free__cluster_a932684027a4527198727853bdc1f3c0e}\label{structbtrfs__free__cluster_a932684027a4527198727853bdc1f3c0e} 
+spinlock\+\_\+t {\bfseries refill\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__free__cluster_ac43da912137790dea637221c59120095}\label{structbtrfs__free__cluster_ac43da912137790dea637221c59120095} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries root}
+\item 
+\Hypertarget{structbtrfs__free__cluster_a143ceea60ec2db7f1681fd53922f44d9}\label{structbtrfs__free__cluster_a143ceea60ec2db7f1681fd53922f44d9} 
+u64 {\bfseries max\+\_\+size}
+\item 
+\Hypertarget{structbtrfs__free__cluster_ac742c7b04234a33b158ac04cf0b757a6}\label{structbtrfs__free__cluster_ac742c7b04234a33b158ac04cf0b757a6} 
+u64 {\bfseries window\+\_\+start}
+\item 
+\Hypertarget{structbtrfs__free__cluster_adbca96c4e933be4fd5c37e652ba658d8}\label{structbtrfs__free__cluster_adbca96c4e933be4fd5c37e652ba658d8} 
+bool {\bfseries fragmented}
+\item 
+\Hypertarget{structbtrfs__free__cluster_a08e99e1542cf48664ad7eeb40603f3c9}\label{structbtrfs__free__cluster_a08e99e1542cf48664ad7eeb40603f3c9} 
+struct \doxymbox{\hyperlink{structbtrfs__block__group}{btrfs\+\_\+block\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries block\+\_\+group}
+\item 
+\Hypertarget{structbtrfs__free__cluster_a9d7d7bb7923c312bcfe090d285b87d36}\label{structbtrfs__free__cluster_a9d7d7bb7923c312bcfe090d285b87d36} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries block\+\_\+group\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\doxysection{shmem\+\_\+inode\+\_\+info Struct Reference}
+\hypertarget{structshmem__inode__info}{}\label{structshmem__inode__info}\index{shmem\_inode\_info@{shmem\_inode\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structshmem__inode__info_ac0dc2ff76c861c17747184ca1b55171d}\label{structshmem__inode__info_ac0dc2ff76c861c17747184ca1b55171d} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structshmem__inode__info_ab914e49b6130695d4729415d27a60fdd}\label{structshmem__inode__info_ab914e49b6130695d4729415d27a60fdd} 
+unsigned int {\bfseries seals}
+\item 
+\Hypertarget{structshmem__inode__info_a4b9c060c033757c8663ff83363ceec5f}\label{structshmem__inode__info_a4b9c060c033757c8663ff83363ceec5f} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structshmem__inode__info_ac8078a91d64f7eb7fd80a6a5be0df96d}\label{structshmem__inode__info_ac8078a91d64f7eb7fd80a6a5be0df96d} 
+long unsigned int {\bfseries alloced}
+\item 
+\Hypertarget{structshmem__inode__info_a3cc67896137478498d5eede385f325fb}\label{structshmem__inode__info_a3cc67896137478498d5eede385f325fb} 
+long unsigned int {\bfseries swapped}
+\item 
+\Hypertarget{structshmem__inode__info_a921ab923a083d5053571873eec4ed778}\label{structshmem__inode__info_a921ab923a083d5053571873eec4ed778} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structoffset__ctx}{offset\_ctx}} {\bfseries dir\_offsets}\\
+\Hypertarget{unionshmem__inode__info_1_1_0d004146376270273346121336242144047353000220050266_a27d4f709694deba5e9b2ea377e6b5d34}\label{unionshmem__inode__info_1_1_0d004146376270273346121336242144047353000220050266_a27d4f709694deba5e9b2ea377e6b5d34} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries shrinklist}\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries swaplist}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structshmem__inode__info_ad638cf08b2207f6275e598b80d4ab8f6}\label{structshmem__inode__info_ad638cf08b2207f6275e598b80d4ab8f6} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries i\+\_\+crtime}
+\item 
+\Hypertarget{structshmem__inode__info_a7428d6a15cb474ef74f50e03fc825507}\label{structshmem__inode__info_a7428d6a15cb474ef74f50e03fc825507} 
+struct \doxymbox{\hyperlink{structshared__policy}{shared\+\_\+policy}} {\bfseries policy}
+\item 
+\Hypertarget{structshmem__inode__info_abfc3e9ab335731e6ef5004746df29394}\label{structshmem__inode__info_abfc3e9ab335731e6ef5004746df29394} 
+struct \doxymbox{\hyperlink{structsimple__xattrs}{simple\+\_\+xattrs}} {\bfseries xattrs}
+\item 
+\Hypertarget{structshmem__inode__info_ae2608cb70ac97500442cae783cd7a0ca}\label{structshmem__inode__info_ae2608cb70ac97500442cae783cd7a0ca} 
+long unsigned int {\bfseries fallocend}
+\item 
+\Hypertarget{structshmem__inode__info_a820030f1a986ddbf0be41c98730644eb}\label{structshmem__inode__info_a820030f1a986ddbf0be41c98730644eb} 
+unsigned int {\bfseries fsflags}
+\item 
+\Hypertarget{structshmem__inode__info_a96b7e95bb4cda08cbdcccb49a686634f}\label{structshmem__inode__info_a96b7e95bb4cda08cbdcccb49a686634f} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries stop\+\_\+eviction}
+\item 
+\Hypertarget{structshmem__inode__info_ac31ee7525930ea8ce3436b06b950a536}\label{structshmem__inode__info_ac31ee7525930ea8ce3436b06b950a536} 
+struct \doxymbox{\hyperlink{structdquot}{dquot}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+dquot} \+[3]\+
+\item 
+\Hypertarget{structshmem__inode__info_a0d9647cbe530986ecc1b956f0f731ccc}\label{structshmem__inode__info_a0d9647cbe530986ecc1b956f0f731ccc} 
+struct \doxymbox{\hyperlink{structinode}{inode}} {\bfseries vfs\+\_\+inode}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

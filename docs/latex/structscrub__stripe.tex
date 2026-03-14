@@ -1,0 +1,70 @@
+\doxysection{scrub\+\_\+stripe Struct Reference}
+\hypertarget{structscrub__stripe}{}\label{structscrub__stripe}\index{scrub\_stripe@{scrub\_stripe}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structscrub__stripe_a7155b8afe738dff573cd3c4ae587694c}\label{structscrub__stripe_a7155b8afe738dff573cd3c4ae587694c} 
+struct \doxymbox{\hyperlink{structscrub__ctx}{scrub\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries sctx}
+\item 
+\Hypertarget{structscrub__stripe_a270c3e96d024566d9fe180be786335f5}\label{structscrub__stripe_a270c3e96d024566d9fe180be786335f5} 
+struct \doxymbox{\hyperlink{structbtrfs__block__group}{btrfs\+\_\+block\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries bg}
+\item 
+\Hypertarget{structscrub__stripe_abd24a1b1495012440ab3d87221f2d13a}\label{structscrub__stripe_abd24a1b1495012440ab3d87221f2d13a} 
+struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*} {\bfseries folios} \+[16]\+
+\item 
+\Hypertarget{structscrub__stripe_a1070884831659eadf71b5541f006865e}\label{structscrub__stripe_a1070884831659eadf71b5541f006865e} 
+struct \doxymbox{\hyperlink{structscrub__sector__verification}{scrub\+\_\+sector\+\_\+verification}} \texorpdfstring{$\ast$}{*} {\bfseries sectors}
+\item 
+\Hypertarget{structscrub__stripe_aec84af7999da4bc4e526d2db9277df20}\label{structscrub__stripe_aec84af7999da4bc4e526d2db9277df20} 
+struct \doxymbox{\hyperlink{structbtrfs__device}{btrfs\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structscrub__stripe_ae8476cc7647436de48fec2f6bafca881}\label{structscrub__stripe_ae8476cc7647436de48fec2f6bafca881} 
+u64 {\bfseries logical}
+\item 
+\Hypertarget{structscrub__stripe_a03afc3607d8bb2b2a7fdec0bef1c0a41}\label{structscrub__stripe_a03afc3607d8bb2b2a7fdec0bef1c0a41} 
+u64 {\bfseries physical}
+\item 
+\Hypertarget{structscrub__stripe_a26026f8a4d05346f5d144febcc75e7c9}\label{structscrub__stripe_a26026f8a4d05346f5d144febcc75e7c9} 
+u16 {\bfseries mirror\+\_\+num}
+\item 
+\Hypertarget{structscrub__stripe_a41d71eeed7a551e7933e924a44a6c8c9}\label{structscrub__stripe_a41d71eeed7a551e7933e924a44a6c8c9} 
+u16 {\bfseries nr\+\_\+sectors}
+\item 
+\Hypertarget{structscrub__stripe_ae7b5aade411c76ae029b01dad3003b1e}\label{structscrub__stripe_ae7b5aade411c76ae029b01dad3003b1e} 
+u16 {\bfseries nr\+\_\+data\+\_\+extents}
+\item 
+\Hypertarget{structscrub__stripe_a630f788dae21a9bc9a414a7ccd7fe5af}\label{structscrub__stripe_a630f788dae21a9bc9a414a7ccd7fe5af} 
+u16 {\bfseries nr\+\_\+meta\+\_\+extents}
+\item 
+\Hypertarget{structscrub__stripe_a7d10db52d384f54f17b35125dccffc02}\label{structscrub__stripe_a7d10db52d384f54f17b35125dccffc02} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries pending\+\_\+io}
+\item 
+\Hypertarget{structscrub__stripe_ad560727b4b9943d233399e562cd0cdb6}\label{structscrub__stripe_ad560727b4b9943d233399e562cd0cdb6} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries io\+\_\+wait}
+\item 
+\Hypertarget{structscrub__stripe_a89da9d64f5d54c0e1e772c3af2e7b45a}\label{structscrub__stripe_a89da9d64f5d54c0e1e772c3af2e7b45a} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries repair\+\_\+wait}
+\item 
+\Hypertarget{structscrub__stripe_aeb8e7c76e8e1e80b45af6bf250efbbd9}\label{structscrub__stripe_aeb8e7c76e8e1e80b45af6bf250efbbd9} 
+long unsigned int {\bfseries state}
+\item 
+\Hypertarget{structscrub__stripe_a0fbffb563893e27daf8a9737294e5621}\label{structscrub__stripe_a0fbffb563893e27daf8a9737294e5621} 
+long unsigned int {\bfseries bitmaps} \+[2]\+
+\item 
+\Hypertarget{structscrub__stripe_ab567c301d91bddaa518a70ec7199e120}\label{structscrub__stripe_ab567c301d91bddaa518a70ec7199e120} 
+long unsigned int {\bfseries write\+\_\+error\+\_\+bitmap}
+\item 
+\Hypertarget{structscrub__stripe_a6841b8d1b2025560bfff20228d972ff9}\label{structscrub__stripe_a6841b8d1b2025560bfff20228d972ff9} 
+spinlock\+\_\+t {\bfseries write\+\_\+error\+\_\+lock}
+\item 
+\Hypertarget{structscrub__stripe_aabedf46bc65d646c8e010f34319d55ea}\label{structscrub__stripe_aabedf46bc65d646c8e010f34319d55ea} 
+u8 \texorpdfstring{$\ast$}{*} {\bfseries csums}
+\item 
+\Hypertarget{structscrub__stripe_a12ef88f4cd6efd10a5e08441517cd801}\label{structscrub__stripe_a12ef88f4cd6efd10a5e08441517cd801} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries work}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\doxysection{btrfs\+\_\+bio Struct Reference}
+\hypertarget{structbtrfs__bio}{}\label{structbtrfs__bio}\index{btrfs\_bio@{btrfs\_bio}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__bio_ac1e550aa97a7a60ac3029314bffa8fec}\label{structbtrfs__bio_ac1e550aa97a7a60ac3029314bffa8fec} 
+struct \doxymbox{\hyperlink{structbtrfs__inode}{btrfs\+\_\+inode}} \texorpdfstring{$\ast$}{*} {\bfseries inode}
+\item 
+\Hypertarget{structbtrfs__bio_ad2fa84c1df9e258e6d1fc81f009579e5}\label{structbtrfs__bio_ad2fa84c1df9e258e6d1fc81f009579e5} 
+u64 {\bfseries file\+\_\+offset}
+\item 
+\Hypertarget{structbtrfs__bio_adef9884270a6c4852cf701f378ef46a5}\label{structbtrfs__bio_adef9884270a6c4852cf701f378ef46a5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionbtrfs__bio_1_1_0d167232337134236130234052326061107251314074313276_a5946ca4b4fe584cc6f8baff2c1fad724}\label{unionbtrfs__bio_1_1_0d167232337134236130234052326061107251314074313276_a5946ca4b4fe584cc6f8baff2c1fad724} 
+\>struct \{\\
+\>\>u8 \texorpdfstring{$\ast$}{*} {\bfseries csum}\\
+\>\>u8 {\bfseries csum\_inline} \+[64]\+\\
+\>\>struct \doxymbox{\hyperlink{structbvec__iter}{bvec\_iter}} {\bfseries saved\_iter}\\
+\>\} \\
+\Hypertarget{unionbtrfs__bio_1_1_0d167232337134236130234052326061107251314074313276_a161955b389f1ecdf92a749ac952d928f}\label{unionbtrfs__bio_1_1_0d167232337134236130234052326061107251314074313276_a161955b389f1ecdf92a749ac952d928f} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structbtrfs__ordered__extent}{btrfs\_ordered\_extent}} \texorpdfstring{$\ast$}{*} {\bfseries ordered}\\
+\>\>struct \doxymbox{\hyperlink{structbtrfs__ordered__sum}{btrfs\_ordered\_sum}} \texorpdfstring{$\ast$}{*} {\bfseries sums}\\
+\>\>struct \doxymbox{\hyperlink{structwork__struct}{work\_struct}} {\bfseries csum\_work}\\
+\>\>struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries csum\_done}\\
+\>\>struct \doxymbox{\hyperlink{structbvec__iter}{bvec\_iter}} {\bfseries csum\_saved\_iter}\\
+\>\>u64 {\bfseries orig\_physical}\\
+\>\>u64 {\bfseries orig\_logical}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structbtrfs__tree__parent__check}{btrfs\_tree\_parent\_check}} {\bfseries parent\_check}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbtrfs__bio_acce1cf51a338919aaef61ad88ad9d58b}\label{structbtrfs__bio_acce1cf51a338919aaef61ad88ad9d58b} 
+btrfs\+\_\+bio\+\_\+end\+\_\+io\+\_\+t {\bfseries end\+\_\+io}
+\item 
+\Hypertarget{structbtrfs__bio_a515981c7ca1c04a08a4ec34493ba5fb8}\label{structbtrfs__bio_a515981c7ca1c04a08a4ec34493ba5fb8} 
+void \texorpdfstring{$\ast$}{*} {\bfseries private}
+\item 
+\Hypertarget{structbtrfs__bio_a4e565dfe50b9b4bce4fb9ec0e53fd632}\label{structbtrfs__bio_a4e565dfe50b9b4bce4fb9ec0e53fd632} 
+unsigned int {\bfseries mirror\+\_\+num}
+\item 
+\Hypertarget{structbtrfs__bio_a7921481941437e53f59d8285f4a891fd}\label{structbtrfs__bio_a7921481941437e53f59d8285f4a891fd} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries pending\+\_\+ios}
+\item 
+\Hypertarget{structbtrfs__bio_ab9ac8b870bdd0d5d3c940ad3e080b89b}\label{structbtrfs__bio_ab9ac8b870bdd0d5d3c940ad3e080b89b} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries end\+\_\+io\+\_\+work}
+\item 
+\Hypertarget{structbtrfs__bio_a8e8937a3bc16d6e772f3dbc6c589a258}\label{structbtrfs__bio_a8e8937a3bc16d6e772f3dbc6c589a258} 
+blk\+\_\+status\+\_\+t {\bfseries status}
+\item 
+\Hypertarget{structbtrfs__bio_a60e9aaf7c4e9c1274516654f79d1bc29}\label{structbtrfs__bio_a60e9aaf7c4e9c1274516654f79d1bc29} 
+bool {\bfseries csum\+\_\+search\+\_\+commit\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__bio_a6a186de3b894fa57f46d5fb6ec703392}\label{structbtrfs__bio_a6a186de3b894fa57f46d5fb6ec703392} 
+bool {\bfseries is\+\_\+scrub}
+\item 
+\Hypertarget{structbtrfs__bio_a6ec88cc71c6c4292b230c334cb410ea4}\label{structbtrfs__bio_a6ec88cc71c6c4292b230c334cb410ea4} 
+bool {\bfseries async\+\_\+csum}
+\item 
+\Hypertarget{structbtrfs__bio_a666cd0b2194c66886d9528796b11fb24}\label{structbtrfs__bio_a666cd0b2194c66886d9528796b11fb24} 
+bool {\bfseries can\+\_\+use\+\_\+append}
+\item 
+\Hypertarget{structbtrfs__bio_a169d54b03da36c4ed3f34876e20cdc29}\label{structbtrfs__bio_a169d54b03da36c4ed3f34876e20cdc29} 
+struct \doxymbox{\hyperlink{structbio}{bio}} {\bfseries bio}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

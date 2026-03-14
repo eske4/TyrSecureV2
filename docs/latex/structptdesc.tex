@@ -1,0 +1,59 @@
+\doxysection{ptdesc Struct Reference}
+\hypertarget{structptdesc}{}\label{structptdesc}\index{ptdesc@{ptdesc}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structptdesc_a91bce2db8ede226fcf3bbafbe75a3776}\label{structptdesc_a91bce2db8ede226fcf3bbafbe75a3776} 
+\doxymbox{\hyperlink{structmemdesc__flags__t}{memdesc\+\_\+flags\+\_\+t}} {\bfseries pt\+\_\+flags}
+\item 
+\Hypertarget{structptdesc_a2084f7ff65644ea3d3bee3c9a2c2c3c9}\label{structptdesc_a2084f7ff65644ea3d3bee3c9a2c2c3c9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries pt\_rcu\_head}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries pt\_list}\\
+\Hypertarget{unionptdesc_1_1_0d043025247301323120106252226057137143241347225133_af7eab14c939db1880e485f95862fd475}\label{unionptdesc_1_1_0d043025247301323120106252226057137143241347225133_af7eab14c939db1880e485f95862fd475} 
+\>struct \{\\
+\>\>long unsigned int {\bfseries \_pt\_pad\_1}\\
+\>\>pgtable\_t {\bfseries pmd\_huge\_pte}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structptdesc_a03e78ea307732a121cff3c8ffeb88e00}\label{structptdesc_a03e78ea307732a121cff3c8ffeb88e00} 
+long unsigned int {\bfseries \+\_\+\+\_\+page\+\_\+mapping}
+\item 
+\Hypertarget{structptdesc_adbca64e8cfe0dde74fb6c5e69b8cce85}\label{structptdesc_adbca64e8cfe0dde74fb6c5e69b8cce85} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int {\bfseries pt\_index}\\
+\>struct \doxymbox{\hyperlink{structmm__struct}{mm\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries pt\_mm}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries pt\_frag\_refcount}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries pt\_share\_count}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structptdesc_abd9192322e5614cbbc833acfaa6c2462}\label{structptdesc_abd9192322e5614cbbc833acfaa6c2462} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int {\bfseries \_pt\_pad\_2}\\
+\>spinlock\_t {\bfseries ptl}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structptdesc_a6e654fcd1499060d574c2c777afc45d4}\label{structptdesc_a6e654fcd1499060d574c2c777afc45d4} 
+unsigned int {\bfseries \+\_\+\+\_\+page\+\_\+type}
+\item 
+\Hypertarget{structptdesc_ab0956b00ec0af55953afce7c16837ae4}\label{structptdesc_ab0956b00ec0af55953afce7c16837ae4} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries \+\_\+\+\_\+page\+\_\+refcount}
+\item 
+\Hypertarget{structptdesc_a3290262312992773a88be33c553fc10a}\label{structptdesc_a3290262312992773a88be33c553fc10a} 
+long unsigned int {\bfseries pt\+\_\+memcg\+\_\+data}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\doxysection{fs\+\_\+context Struct Reference}
+\hypertarget{structfs__context}{}\label{structfs__context}\index{fs\_context@{fs\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfs__context_afb1472044e77692f9868a060944614e6}\label{structfs__context_afb1472044e77692f9868a060944614e6} 
+const struct \doxymbox{\hyperlink{structfs__context__operations}{fs\+\_\+context\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structfs__context_a5e421f8eb9e0f4c50e6a9e269156f13b}\label{structfs__context_a5e421f8eb9e0f4c50e6a9e269156f13b} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries uapi\+\_\+mutex}
+\item 
+\Hypertarget{structfs__context_afcd059d92c43a2964e1d8514d6736c51}\label{structfs__context_afcd059d92c43a2964e1d8514d6736c51} 
+struct \doxymbox{\hyperlink{structfile__system__type}{file\+\_\+system\+\_\+type}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+type}
+\item 
+\Hypertarget{structfs__context_a6fba4b5bdf3b4c6638c58bb405d3ba95}\label{structfs__context_a6fba4b5bdf3b4c6638c58bb405d3ba95} 
+void \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+private}
+\item 
+\Hypertarget{structfs__context_a1269b5b358e1efad2090a5f65cfece61}\label{structfs__context_a1269b5b358e1efad2090a5f65cfece61} 
+void \texorpdfstring{$\ast$}{*} {\bfseries sget\+\_\+key}
+\item 
+\Hypertarget{structfs__context_a39d640dda993d2dbd9fbcc181b7ba201}\label{structfs__context_a39d640dda993d2dbd9fbcc181b7ba201} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries root}
+\item 
+\Hypertarget{structfs__context_a990c2045df94d359c19b2876103a94a2}\label{structfs__context_a990c2045df94d359c19b2876103a94a2} 
+struct \doxymbox{\hyperlink{structuser__namespace}{user\+\_\+namespace}} \texorpdfstring{$\ast$}{*} {\bfseries user\+\_\+ns}
+\item 
+\Hypertarget{structfs__context_a146a77a0a24131c4492087c859b7b66e}\label{structfs__context_a146a77a0a24131c4492087c859b7b66e} 
+struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*} {\bfseries net\+\_\+ns}
+\item 
+\Hypertarget{structfs__context_a333deaf3c4c6956e7b88e42d7f79b671}\label{structfs__context_a333deaf3c4c6956e7b88e42d7f79b671} 
+const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*} {\bfseries cred}
+\item 
+\Hypertarget{structfs__context_ab93004d322a5bad5c9633e31eba58a3f}\label{structfs__context_ab93004d322a5bad5c9633e31eba58a3f} 
+struct \doxymbox{\hyperlink{structp__log}{p\+\_\+log}} {\bfseries log}
+\item 
+\Hypertarget{structfs__context_af502dcf72cbe0b479cf4e15743a97b45}\label{structfs__context_af502dcf72cbe0b479cf4e15743a97b45} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries source}
+\item 
+\Hypertarget{structfs__context_a8fdba4ba030df0ae9dbaf7c282188956}\label{structfs__context_a8fdba4ba030df0ae9dbaf7c282188956} 
+void \texorpdfstring{$\ast$}{*} {\bfseries security}
+\item 
+\Hypertarget{structfs__context_a42e87ae17020879c6b4277f28e152173}\label{structfs__context_a42e87ae17020879c6b4277f28e152173} 
+void \texorpdfstring{$\ast$}{*} {\bfseries s\+\_\+fs\+\_\+info}
+\item 
+\Hypertarget{structfs__context_a4b0e07d7562cb6a40880ad1fbfe76447}\label{structfs__context_a4b0e07d7562cb6a40880ad1fbfe76447} 
+unsigned int {\bfseries sb\+\_\+flags}
+\item 
+\Hypertarget{structfs__context_a430b225299fef491b378d5954fd70448}\label{structfs__context_a430b225299fef491b378d5954fd70448} 
+unsigned int {\bfseries sb\+\_\+flags\+\_\+mask}
+\item 
+\Hypertarget{structfs__context_a8bd39ab4d20b9624f398dbdcc248ffed}\label{structfs__context_a8bd39ab4d20b9624f398dbdcc248ffed} 
+unsigned int {\bfseries s\+\_\+iflags}
+\item 
+\Hypertarget{structfs__context_abaab7d3e1dc58385024a996d51fbda70}\label{structfs__context_abaab7d3e1dc58385024a996d51fbda70} 
+enum fs\+\_\+context\+\_\+purpose {\bfseries purpose}:\+ 8
+\item 
+\Hypertarget{structfs__context_a828715af907d9a466f7f6470722d96a5}\label{structfs__context_a828715af907d9a466f7f6470722d96a5} 
+enum fs\+\_\+context\+\_\+phase {\bfseries phase}:\+ 8
+\item 
+\Hypertarget{structfs__context_a04954a7b48fc8d482362b23736b4a09a}\label{structfs__context_a04954a7b48fc8d482362b23736b4a09a} 
+bool {\bfseries need\+\_\+free}:\+ 1
+\item 
+\Hypertarget{structfs__context_a6b1dd10aa60a3299032b72c41d5eb2ef}\label{structfs__context_a6b1dd10aa60a3299032b72c41d5eb2ef} 
+bool {\bfseries global}:\+ 1
+\item 
+\Hypertarget{structfs__context_ad1e5ae1fd6d9d6313ea7c0b431fc098f}\label{structfs__context_ad1e5ae1fd6d9d6313ea7c0b431fc098f} 
+bool {\bfseries oldapi}:\+ 1
+\item 
+\Hypertarget{structfs__context_a8fbdce0f1710920f40397eddea6827e1}\label{structfs__context_a8fbdce0f1710920f40397eddea6827e1} 
+bool {\bfseries exclusive}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

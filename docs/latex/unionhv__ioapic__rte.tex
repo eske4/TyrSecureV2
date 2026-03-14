@@ -1,0 +1,40 @@
+\doxysection{hv\+\_\+ioapic\+\_\+rte Union Reference}
+\hypertarget{unionhv__ioapic__rte}{}\label{unionhv__ioapic__rte}\index{hv\_ioapic\_rte@{hv\_ioapic\_rte}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionhv__ioapic__rte_acd3840968afaac8efb7afbde8bf84dad}\label{unionhv__ioapic__rte_acd3840968afaac8efb7afbde8bf84dad} 
+u64 {\bfseries as\+\_\+uint64}
+\item 
+\Hypertarget{unionhv__ioapic__rte_a94ce8b80c0e260893a8fedf47f4f511e}\label{unionhv__ioapic__rte_a94ce8b80c0e260893a8fedf47f4f511e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries vector}: 8\\
+\>u32 {\bfseries delivery\_mode}: 3\\
+\>u32 {\bfseries destination\_mode}: 1\\
+\>u32 {\bfseries delivery\_status}: 1\\
+\>u32 {\bfseries interrupt\_polarity}: 1\\
+\>u32 {\bfseries remote\_irr}: 1\\
+\>u32 {\bfseries trigger\_mode}: 1\\
+\>u32 {\bfseries interrupt\_mask}: 1\\
+\>u32 {\bfseries reserved1}: 15\\
+\>u32 {\bfseries reserved2}: 24\\
+\>u32 {\bfseries destination\_id}: 8\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionhv__ioapic__rte_a65edec2847ab3335b4a62b3ae88fc859}\label{unionhv__ioapic__rte_a65edec2847ab3335b4a62b3ae88fc859} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries low\_uint32}\\
+\>u32 {\bfseries high\_uint32}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

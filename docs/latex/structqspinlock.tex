@@ -1,0 +1,28 @@
+\doxysection{qspinlock Struct Reference}
+\hypertarget{structqspinlock}{}\label{structqspinlock}\index{qspinlock@{qspinlock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structqspinlock_a15dbb5319bf6a8579e648fd9c1a3fb7e}\label{structqspinlock_a15dbb5319bf6a8579e648fd9c1a3fb7e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries val}\\
+\Hypertarget{unionqspinlock_1_1_0d336251210253066210226013137101236153377262203272_a4877a278911d0d50f05649c37ff23fed}\label{unionqspinlock_1_1_0d336251210253066210226013137101236153377262203272_a4877a278911d0d50f05649c37ff23fed} 
+\>struct \{\\
+\>\>u8 {\bfseries locked}\\
+\>\>u8 {\bfseries pending}\\
+\>\} \\
+\Hypertarget{unionqspinlock_1_1_0d336251210253066210226013137101236153377262203272_a970427013baae3b596feb1ba1f4aeec0}\label{unionqspinlock_1_1_0d336251210253066210226013137101236153377262203272_a970427013baae3b596feb1ba1f4aeec0} 
+\>struct \{\\
+\>\>u16 {\bfseries locked\_pending}\\
+\>\>u16 {\bfseries tail}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\doxysection{tty\+\_\+port Struct Reference}
+\hypertarget{structtty__port}{}\label{structtty__port}\index{tty\_port@{tty\_port}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtty__port_a28d1d9cc2b5aeb5362a7ef9bcb9b7743}\label{structtty__port_a28d1d9cc2b5aeb5362a7ef9bcb9b7743} 
+struct \doxymbox{\hyperlink{structtty__bufhead}{tty\+\_\+bufhead}} {\bfseries buf}
+\item 
+\Hypertarget{structtty__port_a26f191a4d0bbb305d239d75e625c484c}\label{structtty__port_a26f191a4d0bbb305d239d75e625c484c} 
+struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries tty}
+\item 
+\Hypertarget{structtty__port_a00a6a8c6c365c0a2c0fc28527154bc4b}\label{structtty__port_a00a6a8c6c365c0a2c0fc28527154bc4b} 
+struct \doxymbox{\hyperlink{structtty__struct}{tty\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries itty}
+\item 
+\Hypertarget{structtty__port_ad73e530032ed03f091393a53746d0f50}\label{structtty__port_ad73e530032ed03f091393a53746d0f50} 
+const struct \doxymbox{\hyperlink{structtty__port__operations}{tty\+\_\+port\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structtty__port_a5b8d7037e73368cc2a6bd954267be1c3}\label{structtty__port_a5b8d7037e73368cc2a6bd954267be1c3} 
+const struct \doxymbox{\hyperlink{structtty__port__client__operations}{tty\+\_\+port\+\_\+client\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries client\+\_\+ops}
+\item 
+\Hypertarget{structtty__port_a3e107e6e89816022e18cb4ee512d8d65}\label{structtty__port_a3e107e6e89816022e18cb4ee512d8d65} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structtty__port_a65a115bfd26a32b13d898902f2ae5d3c}\label{structtty__port_a65a115bfd26a32b13d898902f2ae5d3c} 
+int {\bfseries blocked\+\_\+open}
+\item 
+\Hypertarget{structtty__port_aff2adaff2d9a4caf664b916eb84411ac}\label{structtty__port_aff2adaff2d9a4caf664b916eb84411ac} 
+int {\bfseries count}
+\item 
+\Hypertarget{structtty__port_a75cf6bed9d66b42d20f2808e7191da80}\label{structtty__port_a75cf6bed9d66b42d20f2808e7191da80} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries open\+\_\+wait}
+\item 
+\Hypertarget{structtty__port_ad1f706a6b8169c360cd87bc0fdd0e17c}\label{structtty__port_ad1f706a6b8169c360cd87bc0fdd0e17c} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries delta\+\_\+msr\+\_\+wait}
+\item 
+\Hypertarget{structtty__port_ad3b86c67692171d199df127ca403072c}\label{structtty__port_ad3b86c67692171d199df127ca403072c} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structtty__port_a4ec8e49c4d24b6fc3b9de2789e772101}\label{structtty__port_a4ec8e49c4d24b6fc3b9de2789e772101} 
+long unsigned int {\bfseries iflags}
+\item 
+\Hypertarget{structtty__port_af61fe5133d835da5ea4be9ed7d7dec33}\label{structtty__port_af61fe5133d835da5ea4be9ed7d7dec33} 
+unsigned char {\bfseries console}:\+ 1
+\item 
+\Hypertarget{structtty__port_a60c3a966fe23b1ead3cabc3834bf3030}\label{structtty__port_a60c3a966fe23b1ead3cabc3834bf3030} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structtty__port_a677973880db19e1be723e2ffebf325c5}\label{structtty__port_a677973880db19e1be723e2ffebf325c5} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries buf\+\_\+mutex}
+\item 
+\Hypertarget{structtty__port_a9fc7e41c6f565578d4e63614a70928ac}\label{structtty__port_a9fc7e41c6f565578d4e63614a70928ac} 
+u8 \texorpdfstring{$\ast$}{*} {\bfseries xmit\+\_\+buf}
+\item 
+\Hypertarget{structtty__port_a1867ecff8bb8a15276d23b78a3eb264d}\label{structtty__port_a1867ecff8bb8a15276d23b78a3eb264d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structtty__port_1_1_0d370242054162052010364205160046164233230301012110_a93c138e182bc96ceed13ad21bd31023a}\label{structtty__port_1_1_0d370242054162052010364205160046164233230301012110_a93c138e182bc96ceed13ad21bd31023a} 
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{struct____kfifo}{\_\_kfifo}} {\bfseries kfifo}\\
+\>\>u8 \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>const u8 \texorpdfstring{$\ast$}{*} {\bfseries const\_type}\\
+\>\>char(\texorpdfstring{$\ast$}{*} {\bfseries rectype} )\+[0]\+\\
+\>\>u8 \texorpdfstring{$\ast$}{*} {\bfseries ptr}\\
+\>\>const u8 \texorpdfstring{$\ast$}{*} {\bfseries ptr\_const}\\
+\>\} \\
+\>u8 {\bfseries buf} \+[0]\+\\
+\} {\bfseries xmit\_fifo}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtty__port_a328bd0e5652d1f0c914ac1cacca506e8}\label{structtty__port_a328bd0e5652d1f0c914ac1cacca506e8} 
+unsigned int {\bfseries close\+\_\+delay}
+\item 
+\Hypertarget{structtty__port_a505496e68ce283ddca0acff57e2397ea}\label{structtty__port_a505496e68ce283ddca0acff57e2397ea} 
+unsigned int {\bfseries closing\+\_\+wait}
+\item 
+\Hypertarget{structtty__port_a461f2546318481364bfcf0f63020018d}\label{structtty__port_a461f2546318481364bfcf0f63020018d} 
+int {\bfseries drain\+\_\+delay}
+\item 
+\Hypertarget{structtty__port_a3bf54afeefd7fb1286547348bc07aa7c}\label{structtty__port_a3bf54afeefd7fb1286547348bc07aa7c} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries kref}
+\item 
+\Hypertarget{structtty__port_ac18b8594f4cf0f09dd4a27b66698a6ee}\label{structtty__port_ac18b8594f4cf0f09dd4a27b66698a6ee} 
+void \texorpdfstring{$\ast$}{*} {\bfseries client\+\_\+data}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

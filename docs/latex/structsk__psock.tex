@@ -1,0 +1,103 @@
+\doxysection{sk\+\_\+psock Struct Reference}
+\hypertarget{structsk__psock}{}\label{structsk__psock}\index{sk\_psock@{sk\_psock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsk__psock_ad3a7bcf91c829109f94806e1e38630c8}\label{structsk__psock_ad3a7bcf91c829109f94806e1e38630c8} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries sk}
+\item 
+\Hypertarget{structsk__psock_a9947b119ab83d1ef60368ceb0c86537f}\label{structsk__psock_a9947b119ab83d1ef60368ceb0c86537f} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+redir}
+\item 
+\Hypertarget{structsk__psock_ac085103199d17d9b5bf533159677fb87}\label{structsk__psock_ac085103199d17d9b5bf533159677fb87} 
+u32 {\bfseries apply\+\_\+bytes}
+\item 
+\Hypertarget{structsk__psock_aa8af3dba0e92f1f429260921d97f35f4}\label{structsk__psock_aa8af3dba0e92f1f429260921d97f35f4} 
+u32 {\bfseries cork\+\_\+bytes}
+\item 
+\Hypertarget{structsk__psock_a2f65a7b76043e969184fde20928c1f72}\label{structsk__psock_a2f65a7b76043e969184fde20928c1f72} 
+u32 {\bfseries eval}
+\item 
+\Hypertarget{structsk__psock_a64761350cf501d7339fdf4434b44e206}\label{structsk__psock_a64761350cf501d7339fdf4434b44e206} 
+bool {\bfseries redir\+\_\+ingress}
+\item 
+\Hypertarget{structsk__psock_a56909429dae3f772fd59fb7d2ef1ede8}\label{structsk__psock_a56909429dae3f772fd59fb7d2ef1ede8} 
+struct \doxymbox{\hyperlink{structsk__msg}{sk\+\_\+msg}} \texorpdfstring{$\ast$}{*} {\bfseries cork}
+\item 
+\Hypertarget{structsk__psock_a9a90c6b7bd5a09998722623a1431f0e8}\label{structsk__psock_a9a90c6b7bd5a09998722623a1431f0e8} 
+struct \doxymbox{\hyperlink{structsk__psock__progs}{sk\+\_\+psock\+\_\+progs}} {\bfseries progs}
+\item 
+\Hypertarget{structsk__psock_a712e83d9b464e8381b6f09894341a94e}\label{structsk__psock_a712e83d9b464e8381b6f09894341a94e} 
+struct \doxymbox{\hyperlink{structstrparser}{strparser}} {\bfseries strp}
+\item 
+\Hypertarget{structsk__psock_a866bb68112fc00fa7eb2d8f293548871}\label{structsk__psock_a866bb68112fc00fa7eb2d8f293548871} 
+u32 {\bfseries copied\+\_\+seq}
+\item 
+\Hypertarget{structsk__psock_a68d8829e9373e18c88962456e1c4e434}\label{structsk__psock_a68d8829e9373e18c88962456e1c4e434} 
+u32 {\bfseries ingress\+\_\+bytes}
+\item 
+\Hypertarget{structsk__psock_a09a422c22c6235f9ecd3b09e2cd45066}\label{structsk__psock_a09a422c22c6235f9ecd3b09e2cd45066} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries ingress\+\_\+skb}
+\item 
+\Hypertarget{structsk__psock_ab1ac3b736a905d9570dc053db18d20db}\label{structsk__psock_ab1ac3b736a905d9570dc053db18d20db} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ingress\+\_\+msg}
+\item 
+\Hypertarget{structsk__psock_aa06a970f868a8aad710affdbd230b867}\label{structsk__psock_aa06a970f868a8aad710affdbd230b867} 
+spinlock\+\_\+t {\bfseries ingress\+\_\+lock}
+\item 
+\Hypertarget{structsk__psock_acc75ad73f254a1dfd5aa710bc3b434c5}\label{structsk__psock_acc75ad73f254a1dfd5aa710bc3b434c5} 
+u32 {\bfseries msg\+\_\+tot\+\_\+len}
+\item 
+\Hypertarget{structsk__psock_a0a9d0e946941a65f00d299206d5f77de}\label{structsk__psock_a0a9d0e946941a65f00d299206d5f77de} 
+long unsigned int {\bfseries state}
+\item 
+\Hypertarget{structsk__psock_a35330389fb474c408c166149c51bd87a}\label{structsk__psock_a35330389fb474c408c166149c51bd87a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries link}
+\item 
+\Hypertarget{structsk__psock_adfe1abda5705bc76f339441584d3366d}\label{structsk__psock_adfe1abda5705bc76f339441584d3366d} 
+spinlock\+\_\+t {\bfseries link\+\_\+lock}
+\item 
+\Hypertarget{structsk__psock_a45fbaa885faaa41b8a8b73c0afc226a0}\label{structsk__psock_a45fbaa885faaa41b8a8b73c0afc226a0} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structsk__psock_aebd9362348716522dc742fc58e856ed6}\label{structsk__psock_aebd9362348716522dc742fc58e856ed6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries saved\+\_\+unhash} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsk__psock_add98087be047bbe299c8429b61d07a13}\label{structsk__psock_add98087be047bbe299c8429b61d07a13} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries saved\+\_\+destroy} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsk__psock_ae72cc34f00b83a4b0a04514438b6ba5e}\label{structsk__psock_ae72cc34f00b83a4b0a04514438b6ba5e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries saved\+\_\+close} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, long int)
+\item 
+\Hypertarget{structsk__psock_a9d5b0331682220c56acd5fa585b98f1e}\label{structsk__psock_a9d5b0331682220c56acd5fa585b98f1e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries saved\+\_\+write\+\_\+space} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsk__psock_a5c5ba165886aa9b6bb12a259c9defdaa}\label{structsk__psock_a5c5ba165886aa9b6bb12a259c9defdaa} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries saved\+\_\+data\+\_\+ready} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsk__psock_a46f8a538131cc29d7baee1b65d4131fb}\label{structsk__psock_a46f8a538131cc29d7baee1b65d4131fb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries psock\+\_\+update\+\_\+sk\+\_\+prot} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__psock}{sk\+\_\+psock}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structsk__psock_a8958080a6d0daa79b536338e65c8ab44}\label{structsk__psock_a8958080a6d0daa79b536338e65c8ab44} 
+struct \doxymbox{\hyperlink{structproto}{proto}} \texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+proto}
+\item 
+\Hypertarget{structsk__psock_a6aa86691ecdcf22a84ff173188428b34}\label{structsk__psock_a6aa86691ecdcf22a84ff173188428b34} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries work\+\_\+mutex}
+\item 
+\Hypertarget{structsk__psock_ad4234ba9e24f2d79188c5612584bb314}\label{structsk__psock_ad4234ba9e24f2d79188c5612584bb314} 
+struct \doxymbox{\hyperlink{structsk__psock__work__state}{sk\+\_\+psock\+\_\+work\+\_\+state}} {\bfseries work\+\_\+state}
+\item 
+\Hypertarget{structsk__psock_ad778c1154e2ed221434cf7a81d2f56da}\label{structsk__psock_ad778c1154e2ed221434cf7a81d2f56da} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries work}
+\item 
+\Hypertarget{structsk__psock_aa89bc4e871e0dcc63326935bf9f98b39}\label{structsk__psock_aa89bc4e871e0dcc63326935bf9f98b39} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+pair}
+\item 
+\Hypertarget{structsk__psock_a3780bdd4590a5e78dd29a10fbedf85f4}\label{structsk__psock_a3780bdd4590a5e78dd29a10fbedf85f4} 
+struct \doxymbox{\hyperlink{structrcu__work}{rcu\+\_\+work}} {\bfseries rwork}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

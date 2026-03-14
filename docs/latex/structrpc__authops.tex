@@ -1,0 +1,46 @@
+\doxysection{rpc\+\_\+authops Struct Reference}
+\hypertarget{structrpc__authops}{}\label{structrpc__authops}\index{rpc\_authops@{rpc\_authops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrpc__authops_a8a8ec59edebbab85ad5467f43c768b1a}\label{structrpc__authops_a8a8ec59edebbab85ad5467f43c768b1a} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structrpc__authops_a31c25c05906528fea9b62cbe01836674}\label{structrpc__authops_a31c25c05906528fea9b62cbe01836674} 
+rpc\+\_\+authflavor\+\_\+t {\bfseries au\+\_\+flavor}
+\item 
+\Hypertarget{structrpc__authops_af944bb961d74797d76916616d1339db5}\label{structrpc__authops_af944bb961d74797d76916616d1339db5} 
+char \texorpdfstring{$\ast$}{*} {\bfseries au\+\_\+name}
+\item 
+\Hypertarget{structrpc__authops_a484e1ff1c25d314dc2b202ee56bac7bf}\label{structrpc__authops_a484e1ff1c25d314dc2b202ee56bac7bf} 
+struct \doxymbox{\hyperlink{structrpc__auth}{rpc\+\_\+auth}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries create} )(const struct \doxymbox{\hyperlink{structrpc__auth__create__args}{rpc\+\_\+auth\+\_\+create\+\_\+args}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrpc__clnt}{rpc\+\_\+clnt}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__authops_a4d2d1f1e5118ff4038b06ee2273a8a13}\label{structrpc__authops_a4d2d1f1e5118ff4038b06ee2273a8a13} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy} )(struct \doxymbox{\hyperlink{structrpc__auth}{rpc\+\_\+auth}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__authops_ace607a688facb4338126eef481b9caec}\label{structrpc__authops_ace607a688facb4338126eef481b9caec} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hash\+\_\+cred} )(struct \doxymbox{\hyperlink{structauth__cred}{auth\+\_\+cred}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structrpc__authops_ae469c4928f4ca6fbcb24adb1c2719520}\label{structrpc__authops_ae469c4928f4ca6fbcb24adb1c2719520} 
+struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries lookup\+\_\+cred} )(struct \doxymbox{\hyperlink{structrpc__auth}{rpc\+\_\+auth}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structauth__cred}{auth\+\_\+cred}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structrpc__authops_a7bfdde6d5682dabd25f1e626657627eb}\label{structrpc__authops_a7bfdde6d5682dabd25f1e626657627eb} 
+struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries crcreate} )(struct \doxymbox{\hyperlink{structrpc__auth}{rpc\+\_\+auth}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structauth__cred}{auth\+\_\+cred}} \texorpdfstring{$\ast$}{*}, int, gfp\+\_\+t)
+\item 
+\Hypertarget{structrpc__authops_a34ec9502800807a9915f2e0833053526}\label{structrpc__authops_a34ec9502800807a9915f2e0833053526} 
+rpc\+\_\+authflavor\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries info2flavor} )(struct \doxymbox{\hyperlink{structrpcsec__gss__info}{rpcsec\+\_\+gss\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__authops_afb0e9cd49f4f806e71d4fa995c39de2d}\label{structrpc__authops_afb0e9cd49f4f806e71d4fa995c39de2d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries flavor2info} )(rpc\+\_\+authflavor\+\_\+t, struct \doxymbox{\hyperlink{structrpcsec__gss__info}{rpcsec\+\_\+gss\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__authops_ace7c7ebc78b9777f03831800473d61a4}\label{structrpc__authops_ace7c7ebc78b9777f03831800473d61a4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries key\+\_\+timeout} )(struct \doxymbox{\hyperlink{structrpc__auth}{rpc\+\_\+auth}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__authops_ab3a440a6ca864665d0053448e8bc0f86}\label{structrpc__authops_ab3a440a6ca864665d0053448e8bc0f86} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ping} )(struct \doxymbox{\hyperlink{structrpc__clnt}{rpc\+\_\+clnt}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

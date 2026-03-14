@@ -1,0 +1,71 @@
+\doxysection{fuse\+\_\+file Struct Reference}
+\hypertarget{structfuse__file}{}\label{structfuse__file}\index{fuse\_file@{fuse\_file}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__file_ae713b3cb21d1291ae628005350bd9f30}\label{structfuse__file_ae713b3cb21d1291ae628005350bd9f30} 
+enum \{ {\bfseries IOM\+\_\+\+NONE} = 0
+, {\bfseries IOM\+\_\+\+CACHED} = 1
+, {\bfseries IOM\+\_\+\+UNCACHED} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__file_af39d9e8a3ce35a97fc86024df26f44ba}\label{structfuse__file_af39d9e8a3ce35a97fc86024df26f44ba} 
+struct \doxymbox{\hyperlink{structfuse__mount}{fuse\+\_\+mount}} \texorpdfstring{$\ast$}{*} {\bfseries fm}
+\item 
+\Hypertarget{structfuse__file_afc304b1789c2c039b30ddc3fa550869b}\label{structfuse__file_afc304b1789c2c039b30ddc3fa550869b} 
+union \doxymbox{\hyperlink{unionfuse__file__args}{fuse\+\_\+file\+\_\+args}} \texorpdfstring{$\ast$}{*} {\bfseries args}
+\item 
+\Hypertarget{structfuse__file_a974ee20a7f045cf79930c888702222d1}\label{structfuse__file_a974ee20a7f045cf79930c888702222d1} 
+u64 {\bfseries kh}
+\item 
+\Hypertarget{structfuse__file_a1f62039f05846631ef9e26ea402777ed}\label{structfuse__file_a1f62039f05846631ef9e26ea402777ed} 
+u64 {\bfseries fh}
+\item 
+\Hypertarget{structfuse__file_a70ec7d0d11e0d18255acc6e11fffe469}\label{structfuse__file_a70ec7d0d11e0d18255acc6e11fffe469} 
+u64 {\bfseries nodeid}
+\item 
+\Hypertarget{structfuse__file_a54d20927e9971d4fa98074339bd6f26f}\label{structfuse__file_a54d20927e9971d4fa98074339bd6f26f} 
+refcount\+\_\+t {\bfseries count}
+\item 
+\Hypertarget{structfuse__file_a1e79901dfa4b83ec4b01a6fd762ecb54}\label{structfuse__file_a1e79901dfa4b83ec4b01a6fd762ecb54} 
+u32 {\bfseries open\+\_\+flags}
+\item 
+\Hypertarget{structfuse__file_a45b3ce6f5ed7e7b13f89e36d83ab725d}\label{structfuse__file_a45b3ce6f5ed7e7b13f89e36d83ab725d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries write\+\_\+entry}
+\item 
+\Hypertarget{structfuse__file_a423520402324bfbfd42c6054e38d4a1d}\label{structfuse__file_a423520402324bfbfd42c6054e38d4a1d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>loff\_t {\bfseries pos}\\
+\>loff\_t {\bfseries cache\_off}\\
+\>u64 {\bfseries version}\\
+\} {\bfseries readdir}\\
+
+\end{tabbing}\item 
+\Hypertarget{structfuse__file_a04fa4047a2d5fd9cc07d12d308068f65}\label{structfuse__file_a04fa4047a2d5fd9cc07d12d308068f65} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries polled\+\_\+node}
+\item 
+\Hypertarget{structfuse__file_aec8412442d088bdf994283ecb5975edc}\label{structfuse__file_aec8412442d088bdf994283ecb5975edc} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries poll\+\_\+wait}
+\item 
+\Hypertarget{structfuse__file_addba9510ae5f8d17ed494cbc3e0292b0}\label{structfuse__file_addba9510ae5f8d17ed494cbc3e0292b0} 
+enum fuse\+\_\+file::\+ \{ ... \}  {\bfseries iomode}
+\item 
+\Hypertarget{structfuse__file_ac04437de45f0e67bae74e977479ee04f}\label{structfuse__file_ac04437de45f0e67bae74e977479ee04f} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries passthrough}
+\item 
+\Hypertarget{structfuse__file_a51cb2954597031fad75b7c519478f15a}\label{structfuse__file_a51cb2954597031fad75b7c519478f15a} 
+const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*} {\bfseries cred}
+\item 
+\Hypertarget{structfuse__file_a076d5e44ebd224b40189e129e89f8b94}\label{structfuse__file_a076d5e44ebd224b40189e129e89f8b94} 
+bool {\bfseries flock}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

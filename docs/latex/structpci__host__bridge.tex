@@ -1,0 +1,118 @@
+\doxysection{pci\+\_\+host\+\_\+bridge Struct Reference}
+\hypertarget{structpci__host__bridge}{}\label{structpci__host__bridge}\index{pci\_host\_bridge@{pci\_host\_bridge}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpci__host__bridge_abd8fefa270207f2608300ece804a039c}\label{structpci__host__bridge_abd8fefa270207f2608300ece804a039c} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structpci__host__bridge_acbb730d860c9416112b51588896cf2f9}\label{structpci__host__bridge_acbb730d860c9416112b51588896cf2f9} 
+struct \doxymbox{\hyperlink{structpci__bus}{pci\+\_\+bus}} \texorpdfstring{$\ast$}{*} {\bfseries bus}
+\item 
+\Hypertarget{structpci__host__bridge_a946593eb88fbc82ccc663ca5cc99a2b7}\label{structpci__host__bridge_a946593eb88fbc82ccc663ca5cc99a2b7} 
+struct \doxymbox{\hyperlink{structpci__ops}{pci\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structpci__host__bridge_a66ba674a12e6128869a10646ea8cc342}\label{structpci__host__bridge_a66ba674a12e6128869a10646ea8cc342} 
+struct \doxymbox{\hyperlink{structpci__ops}{pci\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries child\+\_\+ops}
+\item 
+\Hypertarget{structpci__host__bridge_a1daed5d6d011b67c2b87e5ef8d1e6632}\label{structpci__host__bridge_a1daed5d6d011b67c2b87e5ef8d1e6632} 
+void \texorpdfstring{$\ast$}{*} {\bfseries sysdata}
+\item 
+\Hypertarget{structpci__host__bridge_aebb1a9a025681abb82f97a1303b4e73d}\label{structpci__host__bridge_aebb1a9a025681abb82f97a1303b4e73d} 
+int {\bfseries busnr}
+\item 
+\Hypertarget{structpci__host__bridge_ac2a0f8f093c574beb2b8655f536d4f2a}\label{structpci__host__bridge_ac2a0f8f093c574beb2b8655f536d4f2a} 
+int {\bfseries domain\+\_\+nr}
+\item 
+\Hypertarget{structpci__host__bridge_a9e3f0ec9663d1701ff8d15f5923bf7bc}\label{structpci__host__bridge_a9e3f0ec9663d1701ff8d15f5923bf7bc} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries windows}
+\item 
+\Hypertarget{structpci__host__bridge_a6fb3fa57b237e2b19ab70b2703a13198}\label{structpci__host__bridge_a6fb3fa57b237e2b19ab70b2703a13198} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dma\+\_\+ranges}
+\item 
+\Hypertarget{structpci__host__bridge_a6237b85a459479fee2c0b297928b2313}\label{structpci__host__bridge_a6237b85a459479fee2c0b297928b2313} 
+u16 {\bfseries nr\+\_\+ide\+\_\+streams}
+\item 
+\Hypertarget{structpci__host__bridge_aa96855c9ddcdb25b2337f6159b637a5c}\label{structpci__host__bridge_aa96855c9ddcdb25b2337f6159b637a5c} 
+struct \doxymbox{\hyperlink{structida}{ida}} {\bfseries ide\+\_\+stream\+\_\+ida}
+\item 
+\Hypertarget{structpci__host__bridge_ae456f6e2a4e2b6ff40fddb36a32ffd02}\label{structpci__host__bridge_ae456f6e2a4e2b6ff40fddb36a32ffd02} 
+struct \doxymbox{\hyperlink{structida}{ida}} {\bfseries ide\+\_\+stream\+\_\+ids\+\_\+ida}
+\item 
+\Hypertarget{structpci__host__bridge_ab82a119f6e9dab46b29581cc9fc2bf9c}\label{structpci__host__bridge_ab82a119f6e9dab46b29581cc9fc2bf9c} 
+u8(\texorpdfstring{$\ast$}{*} {\bfseries swizzle\+\_\+irq} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpci__host__bridge_ac6ab2a24b7812538ba85ecede4c7e330}\label{structpci__host__bridge_ac6ab2a24b7812538ba85ecede4c7e330} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries map\+\_\+irq} )(const struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*}, u8, u8)
+\item 
+\Hypertarget{structpci__host__bridge_a20f2adac863f7088e1a62b38202f1807}\label{structpci__host__bridge_a20f2adac863f7088e1a62b38202f1807} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+fn} )(struct \doxymbox{\hyperlink{structpci__host__bridge}{pci\+\_\+host\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpci__host__bridge_a8b531560a5eda571c2b8435f61d6b826}\label{structpci__host__bridge_a8b531560a5eda571c2b8435f61d6b826} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+device} )(struct \doxymbox{\hyperlink{structpci__host__bridge}{pci\+\_\+host\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpci__host__bridge_a0e03dd3f5ff928f4073068b6d02420e7}\label{structpci__host__bridge_a0e03dd3f5ff928f4073068b6d02420e7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable\+\_\+device} )(struct \doxymbox{\hyperlink{structpci__host__bridge}{pci\+\_\+host\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpci__host__bridge_ac52359e845705b32b95a3760347d63f1}\label{structpci__host__bridge_ac52359e845705b32b95a3760347d63f1} 
+void \texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+data}
+\item 
+\Hypertarget{structpci__host__bridge_a070dbbee36abc0ac0bc1535ed8b4778a}\label{structpci__host__bridge_a070dbbee36abc0ac0bc1535ed8b4778a} 
+unsigned int {\bfseries ignore\+\_\+reset\+\_\+delay}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a0d41de895444b9ed582698820de65cb9}\label{structpci__host__bridge_a0d41de895444b9ed582698820de65cb9} 
+unsigned int {\bfseries no\+\_\+ext\+\_\+tags}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a1a6afea8579d53d5784bdf035f264099}\label{structpci__host__bridge_a1a6afea8579d53d5784bdf035f264099} 
+unsigned int {\bfseries no\+\_\+inc\+\_\+mrrs}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_ae52d96f1a8ed7d35a87232b737fd4632}\label{structpci__host__bridge_ae52d96f1a8ed7d35a87232b737fd4632} 
+unsigned int {\bfseries native\+\_\+aer}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a7b477a145c3a350b3d479af23736543f}\label{structpci__host__bridge_a7b477a145c3a350b3d479af23736543f} 
+unsigned int {\bfseries native\+\_\+pcie\+\_\+hotplug}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a488e166e598ea3b5dc8ed8c12f7482d5}\label{structpci__host__bridge_a488e166e598ea3b5dc8ed8c12f7482d5} 
+unsigned int {\bfseries native\+\_\+shpc\+\_\+hotplug}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a7b877d7d699bc4be7813df7bbbd7dd5c}\label{structpci__host__bridge_a7b877d7d699bc4be7813df7bbbd7dd5c} 
+unsigned int {\bfseries native\+\_\+pme}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a27511b13e3507d274ffaa44db2c71003}\label{structpci__host__bridge_a27511b13e3507d274ffaa44db2c71003} 
+unsigned int {\bfseries native\+\_\+ltr}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a944ba0cd06599fcd1b77d9d732f5a342}\label{structpci__host__bridge_a944ba0cd06599fcd1b77d9d732f5a342} 
+unsigned int {\bfseries native\+\_\+dpc}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_ad09d60df1f66254ecddba76b7fab63e0}\label{structpci__host__bridge_ad09d60df1f66254ecddba76b7fab63e0} 
+unsigned int {\bfseries native\+\_\+cxl\+\_\+error}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_ad96130c73ada98a23250aa42eeb999d0}\label{structpci__host__bridge_ad96130c73ada98a23250aa42eeb999d0} 
+unsigned int {\bfseries preserve\+\_\+config}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a7b3e8fff82018e280eb07e2ff6adea05}\label{structpci__host__bridge_a7b3e8fff82018e280eb07e2ff6adea05} 
+unsigned int {\bfseries size\+\_\+windows}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a9c9e766123f2c03187365c04d96602b6}\label{structpci__host__bridge_a9c9e766123f2c03187365c04d96602b6} 
+unsigned int {\bfseries msi\+\_\+domain}:\+ 1
+\item 
+\Hypertarget{structpci__host__bridge_a817652b8ccb10d7aa7223ba85a537cb3}\label{structpci__host__bridge_a817652b8ccb10d7aa7223ba85a537cb3} 
+resource\+\_\+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries align\+\_\+resource} )(struct \doxymbox{\hyperlink{structpci__dev}{pci\+\_\+dev}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structresource}{resource}} \texorpdfstring{$\ast$}{*}, resource\+\_\+size\+\_\+t, resource\+\_\+size\+\_\+t, resource\+\_\+size\+\_\+t)
+\item 
+\Hypertarget{structpci__host__bridge_a1b441ccb3954261dbec2bbd2a6c38157}\label{structpci__host__bridge_a1b441ccb3954261dbec2bbd2a6c38157} 
+long :\+ 64
+\item 
+\Hypertarget{structpci__host__bridge_a9e096c8adc0ab617bc3c202f54d395e9}\label{structpci__host__bridge_a9e096c8adc0ab617bc3c202f54d395e9} 
+long :\+ 64
+\item 
+\Hypertarget{structpci__host__bridge_a63b30efd4c453e0f9dc0626188a3e8e9}\label{structpci__host__bridge_a63b30efd4c453e0f9dc0626188a3e8e9} 
+long :\+ 64
+\item 
+\Hypertarget{structpci__host__bridge_ab6e3c9832afc3298685cb48fc763ae9a}\label{structpci__host__bridge_ab6e3c9832afc3298685cb48fc763ae9a} 
+long unsigned int {\bfseries private} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

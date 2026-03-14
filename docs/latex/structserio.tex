@@ -1,0 +1,73 @@
+\doxysection{serio Struct Reference}
+\hypertarget{structserio}{}\label{structserio}\index{serio@{serio}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structserio_a0425e12c6cb64c99ef374412743ae62f}\label{structserio_a0425e12c6cb64c99ef374412743ae62f} 
+void \texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+data}
+\item 
+\Hypertarget{structserio_a241728a920317cc324f5c7ea3195d6bf}\label{structserio_a241728a920317cc324f5c7ea3195d6bf} 
+char {\bfseries name} \+[32]\+
+\item 
+\Hypertarget{structserio_a8a1c44848f0cf23daea4b2a80e6b194d}\label{structserio_a8a1c44848f0cf23daea4b2a80e6b194d} 
+char {\bfseries phys} \+[32]\+
+\item 
+\Hypertarget{structserio_a64a6d861fd09f7d565cfb2e12c696a47}\label{structserio_a64a6d861fd09f7d565cfb2e12c696a47} 
+char {\bfseries firmware\+\_\+id} \+[128]\+
+\item 
+\Hypertarget{structserio_a4c428469eeb42531d057cd84505e9eaa}\label{structserio_a4c428469eeb42531d057cd84505e9eaa} 
+bool {\bfseries manual\+\_\+bind}
+\item 
+\Hypertarget{structserio_ac582e39780d0f2641f85d94c935ddecf}\label{structserio_ac582e39780d0f2641f85d94c935ddecf} 
+struct \doxymbox{\hyperlink{structserio__device__id}{serio\+\_\+device\+\_\+id}} {\bfseries id}
+\item 
+\Hypertarget{structserio_af8cf4520357f365fabc3ad4574d84652}\label{structserio_af8cf4520357f365fabc3ad4574d84652} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structserio_a4f3fc1f556bb9a4104aff38f2e359f50}\label{structserio_a4f3fc1f556bb9a4104aff38f2e359f50} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*}, unsigned char)
+\item 
+\Hypertarget{structserio_a680000cfcc0a81aee9dd2d2561660d09}\label{structserio_a680000cfcc0a81aee9dd2d2561660d09} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio_a168e94a49f831ef4aac5d842cb2869d3}\label{structserio_a168e94a49f831ef4aac5d842cb2869d3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries close} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio_aee8b92fc9f473f0756e5a63543b6f407}\label{structserio_aee8b92fc9f473f0756e5a63543b6f407} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries start} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio_a3ff5a5329664fa1d214cf6b9149c395a}\label{structserio_a3ff5a5329664fa1d214cf6b9149c395a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries stop} )(struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structserio_a1037141fb4ac5ac5cf022cad7717ae0f}\label{structserio_a1037141fb4ac5ac5cf022cad7717ae0f} 
+struct \doxymbox{\hyperlink{structserio}{serio}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structserio_af202b8cc1207e4283a2f77e42213d404}\label{structserio_af202b8cc1207e4283a2f77e42213d404} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries child\+\_\+node}
+\item 
+\Hypertarget{structserio_a7f5f90a423734c3575ca941b14b443e3}\label{structserio_a7f5f90a423734c3575ca941b14b443e3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries children}
+\item 
+\Hypertarget{structserio_aa68da67577305bd2e39b6d1c2e7bd886}\label{structserio_aa68da67577305bd2e39b6d1c2e7bd886} 
+unsigned int {\bfseries depth}
+\item 
+\Hypertarget{structserio_a43c873524aa4e1e02cebafa957c771be}\label{structserio_a43c873524aa4e1e02cebafa957c771be} 
+struct \doxymbox{\hyperlink{structserio__driver}{serio\+\_\+driver}} \texorpdfstring{$\ast$}{*} {\bfseries drv}
+\item 
+\Hypertarget{structserio_a7b2ee5b4db0c4034bf425f82427387ce}\label{structserio_a7b2ee5b4db0c4034bf425f82427387ce} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries drv\+\_\+mutex}
+\item 
+\Hypertarget{structserio_afef0bace149e8a3ad99c8dc9783ae29d}\label{structserio_afef0bace149e8a3ad99c8dc9783ae29d} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structserio_a58a2e5d72fe67cd41ee2827841f91554}\label{structserio_a58a2e5d72fe67cd41ee2827841f91554} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structserio_ad5c939fba3c32b827851e78bbb825fc2}\label{structserio_ad5c939fba3c32b827851e78bbb825fc2} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} \texorpdfstring{$\ast$}{*} {\bfseries ps2\+\_\+cmd\+\_\+mutex}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

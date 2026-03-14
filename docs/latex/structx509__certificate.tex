@@ -1,0 +1,94 @@
+\doxysection{x509\+\_\+certificate Struct Reference}
+\hypertarget{structx509__certificate}{}\label{structx509__certificate}\index{x509\_certificate@{x509\_certificate}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structx509__certificate_a422de8899191a3a57dc09a4d43d4c884}\label{structx509__certificate_a422de8899191a3a57dc09a4d43d4c884} 
+struct \doxymbox{\hyperlink{structx509__certificate}{x509\+\_\+certificate}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\item 
+\Hypertarget{structx509__certificate_acf8d4bf709ec170c2fa729aa266f9ac4}\label{structx509__certificate_acf8d4bf709ec170c2fa729aa266f9ac4} 
+struct \doxymbox{\hyperlink{structx509__certificate}{x509\+\_\+certificate}} \texorpdfstring{$\ast$}{*} {\bfseries signer}
+\item 
+\Hypertarget{structx509__certificate_ad29c777e8c4c68991c82952a2b20427c}\label{structx509__certificate_ad29c777e8c4c68991c82952a2b20427c} 
+struct \doxymbox{\hyperlink{structpublic__key}{public\+\_\+key}} \texorpdfstring{$\ast$}{*} {\bfseries pub}
+\item 
+\Hypertarget{structx509__certificate_abdbd885b5ceb20e04917c66d25a28d16}\label{structx509__certificate_abdbd885b5ceb20e04917c66d25a28d16} 
+struct \doxymbox{\hyperlink{structpublic__key__signature}{public\+\_\+key\+\_\+signature}} \texorpdfstring{$\ast$}{*} {\bfseries sig}
+\item 
+\Hypertarget{structx509__certificate_a28a336d4987c0432268d80ed2a6d7d99}\label{structx509__certificate_a28a336d4987c0432268d80ed2a6d7d99} 
+char \texorpdfstring{$\ast$}{*} {\bfseries issuer}
+\item 
+\Hypertarget{structx509__certificate_afdf9a5d25ff8035dbf34769af8d6f1da}\label{structx509__certificate_afdf9a5d25ff8035dbf34769af8d6f1da} 
+char \texorpdfstring{$\ast$}{*} {\bfseries subject}
+\item 
+\Hypertarget{structx509__certificate_a332a29c9601c6ae7c8d208d90ea85830}\label{structx509__certificate_a332a29c9601c6ae7c8d208d90ea85830} 
+struct \doxymbox{\hyperlink{structasymmetric__key__id}{asymmetric\+\_\+key\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries id}
+\item 
+\Hypertarget{structx509__certificate_ab39f310c2f3a857986af5846d1d8a88c}\label{structx509__certificate_ab39f310c2f3a857986af5846d1d8a88c} 
+struct \doxymbox{\hyperlink{structasymmetric__key__id}{asymmetric\+\_\+key\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries skid}
+\item 
+\Hypertarget{structx509__certificate_ad77abd3cadebeef33bb8ac1feaa3abe4}\label{structx509__certificate_ad77abd3cadebeef33bb8ac1feaa3abe4} 
+time64\+\_\+t {\bfseries valid\+\_\+from}
+\item 
+\Hypertarget{structx509__certificate_aad988e172670f7e3cb49a208276af4d8}\label{structx509__certificate_aad988e172670f7e3cb49a208276af4d8} 
+time64\+\_\+t {\bfseries valid\+\_\+to}
+\item 
+\Hypertarget{structx509__certificate_acd0abfd9ad10f3a26462ba5f4933c070}\label{structx509__certificate_acd0abfd9ad10f3a26462ba5f4933c070} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries tbs}
+\item 
+\Hypertarget{structx509__certificate_a8f2e6fb9b4c2785f4abbeb3d6945ecb3}\label{structx509__certificate_a8f2e6fb9b4c2785f4abbeb3d6945ecb3} 
+unsigned int {\bfseries tbs\+\_\+size}
+\item 
+\Hypertarget{structx509__certificate_aad2c7ed4e97d75f806439b7ad54daff0}\label{structx509__certificate_aad2c7ed4e97d75f806439b7ad54daff0} 
+unsigned int {\bfseries raw\+\_\+sig\+\_\+size}
+\item 
+\Hypertarget{structx509__certificate_a665d0de72ff4441f49ef9040e1a55f1b}\label{structx509__certificate_a665d0de72ff4441f49ef9040e1a55f1b} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+sig}
+\item 
+\Hypertarget{structx509__certificate_a844af327d319d3fe8cec2dd3e0869195}\label{structx509__certificate_a844af327d319d3fe8cec2dd3e0869195} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+serial}
+\item 
+\Hypertarget{structx509__certificate_a053619e7a0d7017562a3c11421d1cd7e}\label{structx509__certificate_a053619e7a0d7017562a3c11421d1cd7e} 
+unsigned int {\bfseries raw\+\_\+serial\+\_\+size}
+\item 
+\Hypertarget{structx509__certificate_a3bec1c1134675611e4e1fe01473eabc9}\label{structx509__certificate_a3bec1c1134675611e4e1fe01473eabc9} 
+unsigned int {\bfseries raw\+\_\+issuer\+\_\+size}
+\item 
+\Hypertarget{structx509__certificate_a0a2af0ee279d7094517e7d1adcb133b8}\label{structx509__certificate_a0a2af0ee279d7094517e7d1adcb133b8} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+issuer}
+\item 
+\Hypertarget{structx509__certificate_a04bd2d555a053ec6270f53de940d0314}\label{structx509__certificate_a04bd2d555a053ec6270f53de940d0314} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+subject}
+\item 
+\Hypertarget{structx509__certificate_adc53ef9f4928de906deb983e6b4e537c}\label{structx509__certificate_adc53ef9f4928de906deb983e6b4e537c} 
+unsigned int {\bfseries raw\+\_\+subject\+\_\+size}
+\item 
+\Hypertarget{structx509__certificate_aefbf3345ebb781171f57ca512ae90786}\label{structx509__certificate_aefbf3345ebb781171f57ca512ae90786} 
+unsigned int {\bfseries raw\+\_\+skid\+\_\+size}
+\item 
+\Hypertarget{structx509__certificate_acd8b5d19f054ac6d03b5881c7fbab5d2}\label{structx509__certificate_acd8b5d19f054ac6d03b5881c7fbab5d2} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+skid}
+\item 
+\Hypertarget{structx509__certificate_ab683ba68ac1c5ca0a8f4e279410f0bbf}\label{structx509__certificate_ab683ba68ac1c5ca0a8f4e279410f0bbf} 
+unsigned int {\bfseries index}
+\item 
+\Hypertarget{structx509__certificate_afff593496824392e143ecaf87d31b52c}\label{structx509__certificate_afff593496824392e143ecaf87d31b52c} 
+bool {\bfseries seen}
+\item 
+\Hypertarget{structx509__certificate_a49624a9024011f5b21bef27104791ec4}\label{structx509__certificate_a49624a9024011f5b21bef27104791ec4} 
+bool {\bfseries verified}
+\item 
+\Hypertarget{structx509__certificate_af7b7a78827203969570657705b4389d2}\label{structx509__certificate_af7b7a78827203969570657705b4389d2} 
+bool {\bfseries self\+\_\+signed}
+\item 
+\Hypertarget{structx509__certificate_abb1264c78c991234087a91ea6ad151f6}\label{structx509__certificate_abb1264c78c991234087a91ea6ad151f6} 
+bool {\bfseries unsupported\+\_\+sig}
+\item 
+\Hypertarget{structx509__certificate_a623dbee7efb9644dce31d7283d606ede}\label{structx509__certificate_a623dbee7efb9644dce31d7283d606ede} 
+bool {\bfseries blacklisted}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

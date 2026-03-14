@@ -1,0 +1,70 @@
+\doxysection{btrfs\+\_\+qgroup Struct Reference}
+\hypertarget{structbtrfs__qgroup}{}\label{structbtrfs__qgroup}\index{btrfs\_qgroup@{btrfs\_qgroup}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__qgroup_adbd5a3e78107a882419c3f2fa30551ce}\label{structbtrfs__qgroup_adbd5a3e78107a882419c3f2fa30551ce} 
+u64 {\bfseries qgroupid}
+\item 
+\Hypertarget{structbtrfs__qgroup_a607b641017cb830f8a33eaf7ec00ded6}\label{structbtrfs__qgroup_a607b641017cb830f8a33eaf7ec00ded6} 
+u64 {\bfseries rfer}
+\item 
+\Hypertarget{structbtrfs__qgroup_a13091c1a02f021444ed2b04e819a5f39}\label{structbtrfs__qgroup_a13091c1a02f021444ed2b04e819a5f39} 
+u64 {\bfseries rfer\+\_\+cmpr}
+\item 
+\Hypertarget{structbtrfs__qgroup_afd8139e356cc4e56eb0c7852ab8175a3}\label{structbtrfs__qgroup_afd8139e356cc4e56eb0c7852ab8175a3} 
+u64 {\bfseries excl}
+\item 
+\Hypertarget{structbtrfs__qgroup_ac3b988a3476ab9f0226a7bfb08770808}\label{structbtrfs__qgroup_ac3b988a3476ab9f0226a7bfb08770808} 
+u64 {\bfseries excl\+\_\+cmpr}
+\item 
+\Hypertarget{structbtrfs__qgroup_aa1f3c20ae58bbadb576ba7e1631d72df}\label{structbtrfs__qgroup_aa1f3c20ae58bbadb576ba7e1631d72df} 
+u64 {\bfseries lim\+\_\+flags}
+\item 
+\Hypertarget{structbtrfs__qgroup_a5f12bb82a533ca97de8bc682ee114850}\label{structbtrfs__qgroup_a5f12bb82a533ca97de8bc682ee114850} 
+u64 {\bfseries max\+\_\+rfer}
+\item 
+\Hypertarget{structbtrfs__qgroup_ad0763289da2e9e5dab3e24e2470092ff}\label{structbtrfs__qgroup_ad0763289da2e9e5dab3e24e2470092ff} 
+u64 {\bfseries max\+\_\+excl}
+\item 
+\Hypertarget{structbtrfs__qgroup_ae37e18d0398c12a10a00f8d1e577797f}\label{structbtrfs__qgroup_ae37e18d0398c12a10a00f8d1e577797f} 
+u64 {\bfseries rsv\+\_\+rfer}
+\item 
+\Hypertarget{structbtrfs__qgroup_ae43869225fff93c832eaf9a9a299f684}\label{structbtrfs__qgroup_ae43869225fff93c832eaf9a9a299f684} 
+u64 {\bfseries rsv\+\_\+excl}
+\item 
+\Hypertarget{structbtrfs__qgroup_ae8839d7aed9de4148dd9fd3671ce1422}\label{structbtrfs__qgroup_ae8839d7aed9de4148dd9fd3671ce1422} 
+struct \doxymbox{\hyperlink{structbtrfs__qgroup__rsv}{btrfs\+\_\+qgroup\+\_\+rsv}} {\bfseries rsv}
+\item 
+\Hypertarget{structbtrfs__qgroup_aefded241bf4ca78eb0dc78b6ff930d6d}\label{structbtrfs__qgroup_aefded241bf4ca78eb0dc78b6ff930d6d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries groups}
+\item 
+\Hypertarget{structbtrfs__qgroup_a9595abacb11ed6ba14142c7450974bcd}\label{structbtrfs__qgroup_a9595abacb11ed6ba14142c7450974bcd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries members}
+\item 
+\Hypertarget{structbtrfs__qgroup_ad09bc502cb8178e40e63f9fe7d156f35}\label{structbtrfs__qgroup_ad09bc502cb8178e40e63f9fe7d156f35} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dirty}
+\item 
+\Hypertarget{structbtrfs__qgroup_a179d23d2403dbc86722a02df494d6a82}\label{structbtrfs__qgroup_a179d23d2403dbc86722a02df494d6a82} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries iterator}
+\item 
+\Hypertarget{structbtrfs__qgroup_a1c09cc5844d0b807378d5818f9e13f67}\label{structbtrfs__qgroup_a1c09cc5844d0b807378d5818f9e13f67} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries nested\+\_\+iterator}
+\item 
+\Hypertarget{structbtrfs__qgroup_a4ebccd81a04e21e6b8c7a8c245c191e3}\label{structbtrfs__qgroup_a4ebccd81a04e21e6b8c7a8c245c191e3} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries node}
+\item 
+\Hypertarget{structbtrfs__qgroup_a715e09ab3325ab9ad95088168700740c}\label{structbtrfs__qgroup_a715e09ab3325ab9ad95088168700740c} 
+u64 {\bfseries old\+\_\+refcnt}
+\item 
+\Hypertarget{structbtrfs__qgroup_a83acbe7dfa5c241893b1fee328570113}\label{structbtrfs__qgroup_a83acbe7dfa5c241893b1fee328570113} 
+u64 {\bfseries new\+\_\+refcnt}
+\item 
+\Hypertarget{structbtrfs__qgroup_a3af9108793e38b2dbbdd928c486b7050}\label{structbtrfs__qgroup_a3af9108793e38b2dbbdd928c486b7050} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} {\bfseries kobj}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\doxysection{dma\+\_\+fence\+\_\+chain Struct Reference}
+\hypertarget{structdma__fence__chain}{}\label{structdma__fence__chain}\index{dma\_fence\_chain@{dma\_fence\_chain}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdma__fence__chain_a583a8e6f9405979a4fddc5c05e8c1b77}\label{structdma__fence__chain_a583a8e6f9405979a4fddc5c05e8c1b77} 
+struct \doxymbox{\hyperlink{structdma__fence}{dma\+\_\+fence}} {\bfseries base}
+\item 
+\Hypertarget{structdma__fence__chain_a363e0a231bd925d6cac4b682eef23a57}\label{structdma__fence__chain_a363e0a231bd925d6cac4b682eef23a57} 
+struct \doxymbox{\hyperlink{structdma__fence}{dma\+\_\+fence}} \texorpdfstring{$\ast$}{*} {\bfseries prev}
+\item 
+\Hypertarget{structdma__fence__chain_a043e24663fe95e395ecd10019a75577f}\label{structdma__fence__chain_a043e24663fe95e395ecd10019a75577f} 
+u64 {\bfseries prev\+\_\+seqno}
+\item 
+\Hypertarget{structdma__fence__chain_a90b28cd9c88749432ea09cf146609572}\label{structdma__fence__chain_a90b28cd9c88749432ea09cf146609572} 
+struct \doxymbox{\hyperlink{structdma__fence}{dma\+\_\+fence}} \texorpdfstring{$\ast$}{*} {\bfseries fence}
+\item 
+\Hypertarget{structdma__fence__chain_a3dd4de472f038879bed489123bc17878}\label{structdma__fence__chain_a3dd4de472f038879bed489123bc17878} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structdma__fence__cb}{dma\_fence\_cb}} {\bfseries cb}\\
+\>struct \doxymbox{\hyperlink{structirq__work}{irq\_work}} {\bfseries work}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdma__fence__chain_a0f22cd7731b39d3968ddd602ccebdbca}\label{structdma__fence__chain_a0f22cd7731b39d3968ddd602ccebdbca} 
+spinlock\+\_\+t {\bfseries lock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

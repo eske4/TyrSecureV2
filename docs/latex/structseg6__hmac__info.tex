@@ -1,0 +1,37 @@
+\doxysection{seg6\+\_\+hmac\+\_\+info Struct Reference}
+\hypertarget{structseg6__hmac__info}{}\label{structseg6__hmac__info}\index{seg6\_hmac\_info@{seg6\_hmac\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structseg6__hmac__info_a090aa42c2f1c49e431681efd83fb06d9}\label{structseg6__hmac__info_a090aa42c2f1c49e431681efd83fb06d9} 
+struct \doxymbox{\hyperlink{structrhash__head}{rhash\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structseg6__hmac__info_a470398ee10c5518365114f723e3b7083}\label{structseg6__hmac__info_a470398ee10c5518365114f723e3b7083} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structseg6__hmac__info_aeef48b0fde1e3e4e36c30411ba63f9f4}\label{structseg6__hmac__info_aeef48b0fde1e3e4e36c30411ba63f9f4} 
+u32 {\bfseries hmackeyid}
+\item 
+\Hypertarget{structseg6__hmac__info_a69bd6a9721def185bcb4b555e1dab296}\label{structseg6__hmac__info_a69bd6a9721def185bcb4b555e1dab296} 
+char {\bfseries secret} \+[64]\+
+\item 
+\Hypertarget{structseg6__hmac__info_a30623906ce5f7584e10399903858ee68}\label{structseg6__hmac__info_a30623906ce5f7584e10399903858ee68} 
+u8 {\bfseries slen}
+\item 
+\Hypertarget{structseg6__hmac__info_a075ac9afac776c00abc4c96f550aec3a}\label{structseg6__hmac__info_a075ac9afac776c00abc4c96f550aec3a} 
+u8 {\bfseries alg\+\_\+id}
+\item 
+\Hypertarget{structseg6__hmac__info_abdfd7b04dc814d9480fe7a60db107b8a}\label{structseg6__hmac__info_abdfd7b04dc814d9480fe7a60db107b8a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhmac__sha1__key}{hmac\_sha1\_key}} {\bfseries sha1}\\
+\>struct \doxymbox{\hyperlink{structhmac__sha256__key}{hmac\_sha256\_key}} {\bfseries sha256}\\
+\} {\bfseries key}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

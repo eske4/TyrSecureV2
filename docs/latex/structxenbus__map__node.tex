@@ -1,0 +1,34 @@
+\doxysection{xenbus\+\_\+map\+\_\+node Struct Reference}
+\hypertarget{structxenbus__map__node}{}\label{structxenbus__map__node}\index{xenbus\_map\_node@{xenbus\_map\_node}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxenbus__map__node_aaed06c00d27c4b2959c485427f57e6c9}\label{structxenbus__map__node_aaed06c00d27c4b2959c485427f57e6c9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries next}
+\item 
+\Hypertarget{structxenbus__map__node_a1271273192ec258750363a91de98b554}\label{structxenbus__map__node_a1271273192ec258750363a91de98b554} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structvm__struct}{vm\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries area}\\
+\>\} {\bfseries pv}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*} {\bfseries pages} \+[16]\+\\
+\>\>long unsigned int {\bfseries addrs} \+[16]\+\\
+\>\>void \texorpdfstring{$\ast$}{*} {\bfseries addr}\\
+\>\} {\bfseries hvm}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structxenbus__map__node_a8d61856bb2541bd1eae3f678402deaaa}\label{structxenbus__map__node_a8d61856bb2541bd1eae3f678402deaaa} 
+grant\+\_\+handle\+\_\+t {\bfseries handles} \+[16]\+
+\item 
+\Hypertarget{structxenbus__map__node_a0ca59f8d5a77f5fd0f32cd3878a50720}\label{structxenbus__map__node_a0ca59f8d5a77f5fd0f32cd3878a50720} 
+unsigned int {\bfseries nr\+\_\+handles}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

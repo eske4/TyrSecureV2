@@ -1,0 +1,59 @@
+\doxysection{kernfs\+\_\+node Struct Reference}
+\hypertarget{structkernfs__node}{}\label{structkernfs__node}\index{kernfs\_node@{kernfs\_node}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkernfs__node_a5dd2e9ed437dc4cc55feefc577bc2d1c}\label{structkernfs__node_a5dd2e9ed437dc4cc55feefc577bc2d1c} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries count}
+\item 
+\Hypertarget{structkernfs__node_a7f74099a134a709b640415ce31f66d01}\label{structkernfs__node_a7f74099a134a709b640415ce31f66d01} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries active}
+\item 
+\Hypertarget{structkernfs__node_a4744fceddc94f717ef3869e8806ade1f}\label{structkernfs__node_a4744fceddc94f717ef3869e8806ade1f} 
+struct \doxymbox{\hyperlink{structkernfs__node}{kernfs\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+\+\_\+parent}
+\item 
+\Hypertarget{structkernfs__node_a2e1c398ae9d138443a61652ad3f0c443}\label{structkernfs__node_a2e1c398ae9d138443a61652ad3f0c443} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structkernfs__node_aaa3e51dc316577067cca825b6519a5f0}\label{structkernfs__node_aaa3e51dc316577067cca825b6519a5f0} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries rb}
+\item 
+\Hypertarget{structkernfs__node_a471a137573d342777a35c69ecfcdbf4f}\label{structkernfs__node_a471a137573d342777a35c69ecfcdbf4f} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries ns}
+\item 
+\Hypertarget{structkernfs__node_a7e52a3e3a88618839636ee05bde03e2a}\label{structkernfs__node_a7e52a3e3a88618839636ee05bde03e2a} 
+unsigned int {\bfseries hash}
+\item 
+\Hypertarget{structkernfs__node_a38ad2c742244df4b1fec3779cede4c06}\label{structkernfs__node_a38ad2c742244df4b1fec3779cede4c06} 
+short unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structkernfs__node_a07a501a285b181fc2fb9f9365b7343e8}\label{structkernfs__node_a07a501a285b181fc2fb9f9365b7343e8} 
+umode\+\_\+t {\bfseries mode}
+\item 
+\Hypertarget{structkernfs__node_adaca2634a7872d1297f97a0fa3265cd0}\label{structkernfs__node_adaca2634a7872d1297f97a0fa3265cd0} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structkernfs__elem__dir}{kernfs\_elem\_dir}} {\bfseries dir}\\
+\>struct \doxymbox{\hyperlink{structkernfs__elem__symlink}{kernfs\_elem\_symlink}} {\bfseries symlink}\\
+\>struct \doxymbox{\hyperlink{structkernfs__elem__attr}{kernfs\_elem\_attr}} {\bfseries attr}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkernfs__node_a7e03ca05f3c7e3ee851c91c13d0525fc}\label{structkernfs__node_a7e03ca05f3c7e3ee851c91c13d0525fc} 
+u64 {\bfseries id}
+\item 
+\Hypertarget{structkernfs__node_ae89daab9f0dbd496177417c935b38f2e}\label{structkernfs__node_ae89daab9f0dbd496177417c935b38f2e} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv}
+\item 
+\Hypertarget{structkernfs__node_a1b16ff10303497610f824c84b88e67cf}\label{structkernfs__node_a1b16ff10303497610f824c84b88e67cf} 
+struct \doxymbox{\hyperlink{structkernfs__iattrs}{kernfs\+\_\+iattrs}} \texorpdfstring{$\ast$}{*} {\bfseries iattr}
+\item 
+\Hypertarget{structkernfs__node_aa96ce09faed5e6b1fd5a4317d1a781da}\label{structkernfs__node_aa96ce09faed5e6b1fd5a4317d1a781da} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

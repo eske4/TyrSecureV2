@@ -1,0 +1,48 @@
+\doxysection{grant\+\_\+entry\+\_\+v2 Union Reference}
+\hypertarget{uniongrant__entry__v2}{}\label{uniongrant__entry__v2}\index{grant\_entry\_v2@{grant\_entry\_v2}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{uniongrant__entry__v2_aaacc9b1662e07d96ba733b927442aaf6}\label{uniongrant__entry__v2_aaacc9b1662e07d96ba733b927442aaf6} 
+struct \doxymbox{\hyperlink{structgrant__entry__header}{grant\+\_\+entry\+\_\+header}} {\bfseries hdr}
+\item 
+\Hypertarget{uniongrant__entry__v2_a08bcdf34559538a62184cdbcc81f9599}\label{uniongrant__entry__v2_a08bcdf34559538a62184cdbcc81f9599} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structgrant__entry__header}{grant\_entry\_header}} {\bfseries hdr}\\
+\>uint32\_t {\bfseries pad0}\\
+\>uint64\_t {\bfseries frame}\\
+\} {\bfseries full\_page}\\
+
+\end{tabbing}\item 
+\Hypertarget{uniongrant__entry__v2_a0f97d325554500990afd9e178fac6782}\label{uniongrant__entry__v2_a0f97d325554500990afd9e178fac6782} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structgrant__entry__header}{grant\_entry\_header}} {\bfseries hdr}\\
+\>uint16\_t {\bfseries page\_off}\\
+\>uint16\_t {\bfseries length}\\
+\>uint64\_t {\bfseries frame}\\
+\} {\bfseries sub\_page}\\
+
+\end{tabbing}\item 
+\Hypertarget{uniongrant__entry__v2_aec1d4bd09eeadc9beadf4e9e5ca3a9db}\label{uniongrant__entry__v2_aec1d4bd09eeadc9beadf4e9e5ca3a9db} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structgrant__entry__header}{grant\_entry\_header}} {\bfseries hdr}\\
+\>domid\_t {\bfseries trans\_domid}\\
+\>uint16\_t {\bfseries pad0}\\
+\>grant\_ref\_t {\bfseries gref}\\
+\} {\bfseries transitive}\\
+
+\end{tabbing}\item 
+\Hypertarget{uniongrant__entry__v2_a60f16dc1b1c8ee8655093a7743f663ec}\label{uniongrant__entry__v2_a60f16dc1b1c8ee8655093a7743f663ec} 
+uint32\+\_\+t {\bfseries \+\_\+\+\_\+spacer} \+[4]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

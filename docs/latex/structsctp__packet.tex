@@ -1,0 +1,52 @@
+\doxysection{sctp\+\_\+packet Struct Reference}
+\hypertarget{structsctp__packet}{}\label{structsctp__packet}\index{sctp\_packet@{sctp\_packet}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsctp__packet_a498b960e7514f94e8bdda4b55bf89d3b}\label{structsctp__packet_a498b960e7514f94e8bdda4b55bf89d3b} 
+\+\_\+\+\_\+u16 {\bfseries source\+\_\+port}
+\item 
+\Hypertarget{structsctp__packet_aaa7e59f700fc192579fc4811c61f5eb8}\label{structsctp__packet_aaa7e59f700fc192579fc4811c61f5eb8} 
+\+\_\+\+\_\+u16 {\bfseries destination\+\_\+port}
+\item 
+\Hypertarget{structsctp__packet_a5eb1a61b23911328cd06e4afec7888c2}\label{structsctp__packet_a5eb1a61b23911328cd06e4afec7888c2} 
+\+\_\+\+\_\+u32 {\bfseries vtag}
+\item 
+\Hypertarget{structsctp__packet_a0faf8be7d78b2623c40760e8cde253a2}\label{structsctp__packet_a0faf8be7d78b2623c40760e8cde253a2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries chunk\+\_\+list}
+\item 
+\Hypertarget{structsctp__packet_acfdc96db1b69b4c03921a6ad8dbb32bb}\label{structsctp__packet_acfdc96db1b69b4c03921a6ad8dbb32bb} 
+size\+\_\+t {\bfseries overhead}
+\item 
+\Hypertarget{structsctp__packet_a60a7aa8d64b492d9899cd8303a9256ae}\label{structsctp__packet_a60a7aa8d64b492d9899cd8303a9256ae} 
+size\+\_\+t {\bfseries size}
+\item 
+\Hypertarget{structsctp__packet_a5cc3992dd266384d9184ef4dba12183b}\label{structsctp__packet_a5cc3992dd266384d9184ef4dba12183b} 
+size\+\_\+t {\bfseries max\+\_\+size}
+\item 
+\Hypertarget{structsctp__packet_a7ddec6b0b64d780fd8acd220d45e8505}\label{structsctp__packet_a7ddec6b0b64d780fd8acd220d45e8505} 
+struct \doxymbox{\hyperlink{structsctp__transport}{sctp\+\_\+transport}} \texorpdfstring{$\ast$}{*} {\bfseries transport}
+\item 
+\Hypertarget{structsctp__packet_a8bd2be648a5afd614af8468e881729c3}\label{structsctp__packet_a8bd2be648a5afd614af8468e881729c3} 
+struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*} {\bfseries auth}
+\item 
+\Hypertarget{structsctp__packet_a5fa14842dfa35adebf4d231373714822}\label{structsctp__packet_a5fa14842dfa35adebf4d231373714822} 
+u8 {\bfseries has\+\_\+cookie\+\_\+echo}:\+ 1
+\item 
+\Hypertarget{structsctp__packet_ab06917050395f5dcccf513fd3a7c6f03}\label{structsctp__packet_ab06917050395f5dcccf513fd3a7c6f03} 
+u8 {\bfseries has\+\_\+sack}:\+ 1
+\item 
+\Hypertarget{structsctp__packet_a43960877f26d33158096fa74ac3e728f}\label{structsctp__packet_a43960877f26d33158096fa74ac3e728f} 
+u8 {\bfseries has\+\_\+auth}:\+ 1
+\item 
+\Hypertarget{structsctp__packet_af8ac63f6e74d4ec393119d60c0f31815}\label{structsctp__packet_af8ac63f6e74d4ec393119d60c0f31815} 
+u8 {\bfseries has\+\_\+data}:\+ 1
+\item 
+\Hypertarget{structsctp__packet_a6a299b7d8a44a1dd93d0133bba060690}\label{structsctp__packet_a6a299b7d8a44a1dd93d0133bba060690} 
+u8 {\bfseries ipfragok}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

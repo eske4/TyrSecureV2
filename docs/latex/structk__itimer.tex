@@ -1,0 +1,102 @@
+\doxysection{k\+\_\+itimer Struct Reference}
+\hypertarget{structk__itimer}{}\label{structk__itimer}\index{k\_itimer@{k\_itimer}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structk__itimer_a6dc0c33ce27b21d0e8d9c219864bbf8d}\label{structk__itimer_a6dc0c33ce27b21d0e8d9c219864bbf8d} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries t\+\_\+hash}
+\item 
+\Hypertarget{structk__itimer_a03466722e75411a4318a3d49dc9dca4c}\label{structk__itimer_a03466722e75411a4318a3d49dc9dca4c} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries list}
+\item 
+\Hypertarget{structk__itimer_a9f78e60785a23a8c52fdd44aaf2edec2}\label{structk__itimer_a9f78e60785a23a8c52fdd44aaf2edec2} 
+timer\+\_\+t {\bfseries it\+\_\+id}
+\item 
+\Hypertarget{structk__itimer_a2084fd4a15859619c5ec6b475a7f961c}\label{structk__itimer_a2084fd4a15859619c5ec6b475a7f961c} 
+clockid\+\_\+t {\bfseries it\+\_\+clock}
+\item 
+\Hypertarget{structk__itimer_a47ce4e64ced35ec3873dffee7c206690}\label{structk__itimer_a47ce4e64ced35ec3873dffee7c206690} 
+int {\bfseries it\+\_\+sigev\+\_\+notify}
+\item 
+\Hypertarget{structk__itimer_af886bf8c2b364404a66881e268984dae}\label{structk__itimer_af886bf8c2b364404a66881e268984dae} 
+enum pid\+\_\+type {\bfseries it\+\_\+pid\+\_\+type}
+\item 
+\Hypertarget{structk__itimer_abfd60cc910cbebe3b115f8b49a2d3ad6}\label{structk__itimer_abfd60cc910cbebe3b115f8b49a2d3ad6} 
+struct \doxymbox{\hyperlink{structsignal__struct}{signal\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries it\+\_\+signal}
+\item 
+\Hypertarget{structk__itimer_a876dfe818d27f2f909e0c863ae1267fb}\label{structk__itimer_a876dfe818d27f2f909e0c863ae1267fb} 
+const struct \doxymbox{\hyperlink{structk__clock}{k\+\_\+clock}} \texorpdfstring{$\ast$}{*} {\bfseries kclock}
+\item 
+\Hypertarget{structk__itimer_a981f6ac9a35a9f91ba2aa7d3f0f6e6de}\label{structk__itimer_a981f6ac9a35a9f91ba2aa7d3f0f6e6de} 
+spinlock\+\_\+t {\bfseries it\+\_\+lock}
+\item 
+\Hypertarget{structk__itimer_a00c63273447c8d97cae9a37c30cf34c0}\label{structk__itimer_a00c63273447c8d97cae9a37c30cf34c0} 
+int {\bfseries it\+\_\+status}
+\item 
+\Hypertarget{structk__itimer_a92b11ff11818b7fb08c822d16caf65a9}\label{structk__itimer_a92b11ff11818b7fb08c822d16caf65a9} 
+bool {\bfseries it\+\_\+sig\+\_\+periodic}
+\item 
+\Hypertarget{structk__itimer_abf560ad2f751870965013989f292fc10}\label{structk__itimer_abf560ad2f751870965013989f292fc10} 
+s64 {\bfseries it\+\_\+overrun}
+\item 
+\Hypertarget{structk__itimer_ad8bd63d62390db5658c2a57ae210c2f5}\label{structk__itimer_ad8bd63d62390db5658c2a57ae210c2f5} 
+s64 {\bfseries it\+\_\+overrun\+\_\+last}
+\item 
+\Hypertarget{structk__itimer_abcc8938cc09a15d73fbda5b94f4b1274}\label{structk__itimer_abcc8938cc09a15d73fbda5b94f4b1274} 
+unsigned int {\bfseries it\+\_\+signal\+\_\+seq}
+\item 
+\Hypertarget{structk__itimer_aa2c5950d69812a1c516e3d8bd3ad54da}\label{structk__itimer_aa2c5950d69812a1c516e3d8bd3ad54da} 
+unsigned int {\bfseries it\+\_\+sigqueue\+\_\+seq}
+\item 
+\Hypertarget{structk__itimer_aea7d129ce67b556773468ca679fc2249}\label{structk__itimer_aea7d129ce67b556773468ca679fc2249} 
+ktime\+\_\+t {\bfseries it\+\_\+interval}
+\item 
+\Hypertarget{structk__itimer_ac71cfa01672b036bf84666f83a236657}\label{structk__itimer_ac71cfa01672b036bf84666f83a236657} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries ignored\+\_\+list}
+\item 
+\Hypertarget{structk__itimer_aa747d4a99ab27aa71237498910223beb}\label{structk__itimer_aa747d4a99ab27aa71237498910223beb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpid}{pid}} \texorpdfstring{$\ast$}{*} {\bfseries it\_pid}\\
+\>struct \doxymbox{\hyperlink{structtask__struct}{task\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries it\_process}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structk__itimer_a65eb69b976381796d96e29a21967691a}\label{structk__itimer_a65eb69b976381796d96e29a21967691a} 
+struct \doxymbox{\hyperlink{structsigqueue}{sigqueue}} {\bfseries sigq}
+\item 
+\Hypertarget{structk__itimer_aef6319c5f7f731642362233c7753c707}\label{structk__itimer_aef6319c5f7f731642362233c7753c707} 
+\doxymbox{\hyperlink{structrcuref__t}{rcuref\+\_\+t}} {\bfseries rcuref}
+\item 
+\Hypertarget{structk__itimer_a073630e2a04cd3025ce696dd7a5667a6}\label{structk__itimer_a073630e2a04cd3025ce696dd7a5667a6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries timer}\\
+\>\} {\bfseries real}\\
+\>struct \doxymbox{\hyperlink{structcpu__timer}{cpu\_timer}} {\bfseries cpu}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structalarm}{alarm}} {\bfseries alarmtimer}\\
+\>\} {\bfseries alarm}\\
+\} {\bfseries it}\\
+
+\end{tabbing}\item 
+\Hypertarget{structk__itimer_a16fabd619f0cf1c5e94b9a8896f960ed}\label{structk__itimer_a16fabd619f0cf1c5e94b9a8896f960ed} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structk__itimer_a4821614d94d0e2f5a53950b9136f7f47}\label{structk__itimer_a4821614d94d0e2f5a53950b9136f7f47} 
+long :\+ 64
+\item 
+\Hypertarget{structk__itimer_a47106325270e05a9f6807e62800e7ebe}\label{structk__itimer_a47106325270e05a9f6807e62800e7ebe} 
+long :\+ 64
+\item 
+\Hypertarget{structk__itimer_a13438ef3b0ba11bc0352cb78bfa3ae3e}\label{structk__itimer_a13438ef3b0ba11bc0352cb78bfa3ae3e} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

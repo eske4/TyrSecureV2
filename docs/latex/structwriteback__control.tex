@@ -1,0 +1,79 @@
+\doxysection{writeback\+\_\+control Struct Reference}
+\hypertarget{structwriteback__control}{}\label{structwriteback__control}\index{writeback\_control@{writeback\_control}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structwriteback__control_a4a22aad0b1d9584e1bfb829d41132cfa}\label{structwriteback__control_a4a22aad0b1d9584e1bfb829d41132cfa} 
+long int {\bfseries nr\+\_\+to\+\_\+write}
+\item 
+\Hypertarget{structwriteback__control_a6bb9514814ed2d9bd0ee074dac9ad853}\label{structwriteback__control_a6bb9514814ed2d9bd0ee074dac9ad853} 
+long int {\bfseries pages\+\_\+skipped}
+\item 
+\Hypertarget{structwriteback__control_adc1ac1e9971e4aa0a626700ec17a346d}\label{structwriteback__control_adc1ac1e9971e4aa0a626700ec17a346d} 
+loff\+\_\+t {\bfseries range\+\_\+start}
+\item 
+\Hypertarget{structwriteback__control_a650818e3208254c2c7e4c82dfe6439c1}\label{structwriteback__control_a650818e3208254c2c7e4c82dfe6439c1} 
+loff\+\_\+t {\bfseries range\+\_\+end}
+\item 
+\Hypertarget{structwriteback__control_a6ae55d09a8c2b905b450a29acb112f33}\label{structwriteback__control_a6ae55d09a8c2b905b450a29acb112f33} 
+enum writeback\+\_\+sync\+\_\+modes {\bfseries sync\+\_\+mode}
+\item 
+\Hypertarget{structwriteback__control_a25f1b644fdfe211fe74c7a41c5bc76e2}\label{structwriteback__control_a25f1b644fdfe211fe74c7a41c5bc76e2} 
+unsigned int {\bfseries for\+\_\+kupdate}:\+ 1
+\item 
+\Hypertarget{structwriteback__control_a11cd869a3a53ff83898a1e3233b084bb}\label{structwriteback__control_a11cd869a3a53ff83898a1e3233b084bb} 
+unsigned int {\bfseries for\+\_\+background}:\+ 1
+\item 
+\Hypertarget{structwriteback__control_abe39421ed4c10d48707de86f074ca42d}\label{structwriteback__control_abe39421ed4c10d48707de86f074ca42d} 
+unsigned int {\bfseries tagged\+\_\+writepages}:\+ 1
+\item 
+\Hypertarget{structwriteback__control_a9ba8b7d2f49e934d344906cab7c93b22}\label{structwriteback__control_a9ba8b7d2f49e934d344906cab7c93b22} 
+unsigned int {\bfseries range\+\_\+cyclic}:\+ 1
+\item 
+\Hypertarget{structwriteback__control_ad53c1df02ac894dc1ddc687151ec0773}\label{structwriteback__control_ad53c1df02ac894dc1ddc687151ec0773} 
+unsigned int {\bfseries for\+\_\+sync}:\+ 1
+\item 
+\Hypertarget{structwriteback__control_a3151aaed975f5552ba76b4ae0c149623}\label{structwriteback__control_a3151aaed975f5552ba76b4ae0c149623} 
+unsigned int {\bfseries unpinned\+\_\+netfs\+\_\+wb}:\+ 1
+\item 
+\Hypertarget{structwriteback__control_a0cc5daa33a271e02c84d7a7d45d8d586}\label{structwriteback__control_a0cc5daa33a271e02c84d7a7d45d8d586} 
+unsigned int {\bfseries no\+\_\+cgroup\+\_\+owner}:\+ 1
+\item 
+\Hypertarget{structwriteback__control_abc0e29bb9242d84d1fcca87f15c692b0}\label{structwriteback__control_abc0e29bb9242d84d1fcca87f15c692b0} 
+struct \doxymbox{\hyperlink{structfolio__batch}{folio\+\_\+batch}} {\bfseries fbatch}
+\item 
+\Hypertarget{structwriteback__control_a05b341b5a761303f8b9c4ff7fb4998c9}\label{structwriteback__control_a05b341b5a761303f8b9c4ff7fb4998c9} 
+long unsigned int {\bfseries index}
+\item 
+\Hypertarget{structwriteback__control_a5c812d1be8a808f14a13f5b6be46cf06}\label{structwriteback__control_a5c812d1be8a808f14a13f5b6be46cf06} 
+int {\bfseries saved\+\_\+err}
+\item 
+\Hypertarget{structwriteback__control_a640d80f4687fa53b38ec2d020fe2a004}\label{structwriteback__control_a640d80f4687fa53b38ec2d020fe2a004} 
+struct \doxymbox{\hyperlink{structbdi__writeback}{bdi\+\_\+writeback}} \texorpdfstring{$\ast$}{*} {\bfseries wb}
+\item 
+\Hypertarget{structwriteback__control_a26b16438c7d68dd1345dc7048e919659}\label{structwriteback__control_a26b16438c7d68dd1345dc7048e919659} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries inode}
+\item 
+\Hypertarget{structwriteback__control_adbfeb9f52a8958b9b748219ebb98b3f8}\label{structwriteback__control_adbfeb9f52a8958b9b748219ebb98b3f8} 
+int {\bfseries wb\+\_\+id}
+\item 
+\Hypertarget{structwriteback__control_a0e8034cefecb3a5fefca6f2549d3b092}\label{structwriteback__control_a0e8034cefecb3a5fefca6f2549d3b092} 
+int {\bfseries wb\+\_\+lcand\+\_\+id}
+\item 
+\Hypertarget{structwriteback__control_adddbd07b8a2e3ff4c9511771b8912003}\label{structwriteback__control_adddbd07b8a2e3ff4c9511771b8912003} 
+int {\bfseries wb\+\_\+tcand\+\_\+id}
+\item 
+\Hypertarget{structwriteback__control_ab9bc64d1d31bf2a85ebd77e7139b5859}\label{structwriteback__control_ab9bc64d1d31bf2a85ebd77e7139b5859} 
+size\+\_\+t {\bfseries wb\+\_\+bytes}
+\item 
+\Hypertarget{structwriteback__control_a1ac87d6b858f94886fe4f3cc15ac2ef0}\label{structwriteback__control_a1ac87d6b858f94886fe4f3cc15ac2ef0} 
+size\+\_\+t {\bfseries wb\+\_\+lcand\+\_\+bytes}
+\item 
+\Hypertarget{structwriteback__control_a046b8d4fb593996f9e2d62b826d1419a}\label{structwriteback__control_a046b8d4fb593996f9e2d62b826d1419a} 
+size\+\_\+t {\bfseries wb\+\_\+tcand\+\_\+bytes}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

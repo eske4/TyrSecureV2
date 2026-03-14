@@ -1,0 +1,124 @@
+\doxysection{packet\+\_\+sock Struct Reference}
+\hypertarget{structpacket__sock}{}\label{structpacket__sock}\index{packet\_sock@{packet\_sock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpacket__sock_a3f8dec35f793ff691aa4ecd54b64d52e}\label{structpacket__sock_a3f8dec35f793ff691aa4ecd54b64d52e} 
+struct \doxymbox{\hyperlink{structsock}{sock}} {\bfseries sk}
+\item 
+\Hypertarget{structpacket__sock_a6c3fd801e9ab67bd1a16cdf9e1b59c41}\label{structpacket__sock_a6c3fd801e9ab67bd1a16cdf9e1b59c41} 
+struct \doxymbox{\hyperlink{structpacket__fanout}{packet\+\_\+fanout}} \texorpdfstring{$\ast$}{*} {\bfseries fanout}
+\item 
+\Hypertarget{structpacket__sock_a2a0cd1c24d371d107e8ba0d66ba235c2}\label{structpacket__sock_a2a0cd1c24d371d107e8ba0d66ba235c2} 
+union \doxymbox{\hyperlink{uniontpacket__stats__u}{tpacket\+\_\+stats\+\_\+u}} {\bfseries stats}
+\item 
+\Hypertarget{structpacket__sock_a8c3169534f1ab192672327480dfcab9c}\label{structpacket__sock_a8c3169534f1ab192672327480dfcab9c} 
+struct \doxymbox{\hyperlink{structpacket__ring__buffer}{packet\+\_\+ring\+\_\+buffer}} {\bfseries rx\+\_\+ring}
+\item 
+\Hypertarget{structpacket__sock_a15627df0fa2e985bedf2ce66ed293c38}\label{structpacket__sock_a15627df0fa2e985bedf2ce66ed293c38} 
+struct \doxymbox{\hyperlink{structpacket__ring__buffer}{packet\+\_\+ring\+\_\+buffer}} {\bfseries tx\+\_\+ring}
+\item 
+\Hypertarget{structpacket__sock_a715abf721f3551ef7ce31a2905c29634}\label{structpacket__sock_a715abf721f3551ef7ce31a2905c29634} 
+int {\bfseries copy\+\_\+thresh}
+\item 
+\Hypertarget{structpacket__sock_a4bb9a1dbb6f61aa92eb63125f88e7f98}\label{structpacket__sock_a4bb9a1dbb6f61aa92eb63125f88e7f98} 
+spinlock\+\_\+t {\bfseries bind\+\_\+lock}
+\item 
+\Hypertarget{structpacket__sock_aabbacae750391f7c8089c0eb5706c6ed}\label{structpacket__sock_aabbacae750391f7c8089c0eb5706c6ed} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries pg\+\_\+vec\+\_\+lock}
+\item 
+\Hypertarget{structpacket__sock_aae360d489e94b4e8b6a301ca9d19af80}\label{structpacket__sock_aae360d489e94b4e8b6a301ca9d19af80} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structpacket__sock_ae55076a9473afffe4748898b7b53a25d}\label{structpacket__sock_ae55076a9473afffe4748898b7b53a25d} 
+int {\bfseries ifindex}
+\item 
+\Hypertarget{structpacket__sock_ad2b0331a17a365df65089c14812393c9}\label{structpacket__sock_ad2b0331a17a365df65089c14812393c9} 
+u8 {\bfseries vnet\+\_\+hdr\+\_\+sz}
+\item 
+\Hypertarget{structpacket__sock_a5aaff5aa00901e37ea50b3e415a5d307}\label{structpacket__sock_a5aaff5aa00901e37ea50b3e415a5d307} 
+\+\_\+\+\_\+be16 {\bfseries num}
+\item 
+\Hypertarget{structpacket__sock_a019b8064f8646818481dc757432e650f}\label{structpacket__sock_a019b8064f8646818481dc757432e650f} 
+struct \doxymbox{\hyperlink{structpacket__rollover}{packet\+\_\+rollover}} \texorpdfstring{$\ast$}{*} {\bfseries rollover}
+\item 
+\Hypertarget{structpacket__sock_ad5107a3101e02ce86e5496fa94a4419d}\label{structpacket__sock_ad5107a3101e02ce86e5496fa94a4419d} 
+struct \doxymbox{\hyperlink{structpacket__mclist}{packet\+\_\+mclist}} \texorpdfstring{$\ast$}{*} {\bfseries mclist}
+\item 
+\Hypertarget{structpacket__sock_af4d2486dbee51378452fc83d4e0671df}\label{structpacket__sock_af4d2486dbee51378452fc83d4e0671df} 
+atomic\+\_\+long\+\_\+t {\bfseries mapped}
+\item 
+\Hypertarget{structpacket__sock_a6ba81b33c8b30368d3480ca37b9870b3}\label{structpacket__sock_a6ba81b33c8b30368d3480ca37b9870b3} 
+enum tpacket\+\_\+versions {\bfseries tp\+\_\+version}
+\item 
+\Hypertarget{structpacket__sock_a9f7addc20c6f1bbdb5a6ef2192678a7f}\label{structpacket__sock_a9f7addc20c6f1bbdb5a6ef2192678a7f} 
+unsigned int {\bfseries tp\+\_\+hdrlen}
+\item 
+\Hypertarget{structpacket__sock_ac8c0f3b0218b10959f64cb2860e0fa1c}\label{structpacket__sock_ac8c0f3b0218b10959f64cb2860e0fa1c} 
+unsigned int {\bfseries tp\+\_\+reserve}
+\item 
+\Hypertarget{structpacket__sock_a498f453d778f7fd32a850b5e53e0fc07}\label{structpacket__sock_a498f453d778f7fd32a850b5e53e0fc07} 
+unsigned int {\bfseries tp\+\_\+tstamp}
+\item 
+\Hypertarget{structpacket__sock_a58ec455e584f82d5ed8607e948eca6a6}\label{structpacket__sock_a58ec455e584f82d5ed8607e948eca6a6} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries skb\+\_\+completion}
+\item 
+\Hypertarget{structpacket__sock_aff1d1ebbc40e9c0796ec90675afb7ad3}\label{structpacket__sock_aff1d1ebbc40e9c0796ec90675afb7ad3} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries cached\+\_\+dev}
+\item 
+\Hypertarget{structpacket__sock_a34f36cdbea75daba523ebecefba11022}\label{structpacket__sock_a34f36cdbea75daba523ebecefba11022} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_aee249bf6e108eb8578832d4b1a7da4a5}\label{structpacket__sock_aee249bf6e108eb8578832d4b1a7da4a5} 
+struct \doxymbox{\hyperlink{structpacket__type}{packet\+\_\+type}} {\bfseries prot\+\_\+hook}
+\item 
+\Hypertarget{structpacket__sock_a6c1fb11b740c64c1db45772de423c2e7}\label{structpacket__sock_a6c1fb11b740c64c1db45772de423c2e7} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_a05594bc9b139b3b21f2fa59c3763fae4}\label{structpacket__sock_a05594bc9b139b3b21f2fa59c3763fae4} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_a2253c84a5462e1b1c81992d14ec6d52c}\label{structpacket__sock_a2253c84a5462e1b1c81992d14ec6d52c} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_af8310a9bb1d3d16d011b8f6510cc9bd4}\label{structpacket__sock_af8310a9bb1d3d16d011b8f6510cc9bd4} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_ac74d016551b6a9ab8ac58b1afd0ded2f}\label{structpacket__sock_ac74d016551b6a9ab8ac58b1afd0ded2f} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_a3cdd29801218ba537d6f9ac393b197c1}\label{structpacket__sock_a3cdd29801218ba537d6f9ac393b197c1} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_ab57c15e8405c424a4b746b32036be6a4}\label{structpacket__sock_ab57c15e8405c424a4b746b32036be6a4} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_a5f1799a9713c0bc4a6cfef25e72dd694}\label{structpacket__sock_a5f1799a9713c0bc4a6cfef25e72dd694} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries tp\+\_\+drops}
+\item 
+\Hypertarget{structpacket__sock_a861e6cc7edb41ff5ec266ee1fb407620}\label{structpacket__sock_a861e6cc7edb41ff5ec266ee1fb407620} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_ace8105477fb6da3d1a19b66c4ec43247}\label{structpacket__sock_ace8105477fb6da3d1a19b66c4ec43247} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_a31408e7aacea7a55ae860137bfb74d5b}\label{structpacket__sock_a31408e7aacea7a55ae860137bfb74d5b} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_a7fc938c7d34e1018fddf9adef5eec06c}\label{structpacket__sock_a7fc938c7d34e1018fddf9adef5eec06c} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_a3b4cf933575df999ab85664dc440e43c}\label{structpacket__sock_a3b4cf933575df999ab85664dc440e43c} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_aec6d882b43b4899e0b0a268453f62a9a}\label{structpacket__sock_aec6d882b43b4899e0b0a268453f62a9a} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__sock_aa288e531d07d894975036a17c66f15a6}\label{structpacket__sock_aa288e531d07d894975036a17c66f15a6} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

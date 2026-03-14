@@ -1,0 +1,112 @@
+\doxysection{rtc\+\_\+device Struct Reference}
+\hypertarget{structrtc__device}{}\label{structrtc__device}\index{rtc\_device@{rtc\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrtc__device_a8803adaaee848e1676713e9d7df2ec69}\label{structrtc__device_a8803adaaee848e1676713e9d7df2ec69} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structrtc__device_a6e9ee8518b47d1ca6c0ca5cb5c60ce47}\label{structrtc__device_a6e9ee8518b47d1ca6c0ca5cb5c60ce47} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structrtc__device_a7ffbd8985841ebe44e4697c0e2bc1d57}\label{structrtc__device_a7ffbd8985841ebe44e4697c0e2bc1d57} 
+int {\bfseries id}
+\item 
+\Hypertarget{structrtc__device_ae2d71ddc820fea93639daaffdbf37f86}\label{structrtc__device_ae2d71ddc820fea93639daaffdbf37f86} 
+const struct \doxymbox{\hyperlink{structrtc__class__ops}{rtc\+\_\+class\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structrtc__device_a2de22dd41d4afc4f2bc2564ce9025def}\label{structrtc__device_a2de22dd41d4afc4f2bc2564ce9025def} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries ops\+\_\+lock}
+\item 
+\Hypertarget{structrtc__device_aed53810abdc2bee65374786df76cb733}\label{structrtc__device_aed53810abdc2bee65374786df76cb733} 
+struct \doxymbox{\hyperlink{structcdev}{cdev}} {\bfseries char\+\_\+dev}
+\item 
+\Hypertarget{structrtc__device_ae14e2e1a5ea2f4da3c9ace6815da0e31}\label{structrtc__device_ae14e2e1a5ea2f4da3c9ace6815da0e31} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structrtc__device_a2a10e4ec1cb41b9375e4125c4db18031}\label{structrtc__device_a2a10e4ec1cb41b9375e4125c4db18031} 
+long unsigned int {\bfseries irq\+\_\+data}
+\item 
+\Hypertarget{structrtc__device_a42e647e9f7ba9d628985d797a27d6788}\label{structrtc__device_a42e647e9f7ba9d628985d797a27d6788} 
+spinlock\+\_\+t {\bfseries irq\+\_\+lock}
+\item 
+\Hypertarget{structrtc__device_a874ba87b61701ebd5ebef16303896e4e}\label{structrtc__device_a874ba87b61701ebd5ebef16303896e4e} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries irq\+\_\+queue}
+\item 
+\Hypertarget{structrtc__device_a5558b021ba3aa1b8a5684582b25fcac4}\label{structrtc__device_a5558b021ba3aa1b8a5684582b25fcac4} 
+struct \doxymbox{\hyperlink{structfasync__struct}{fasync\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries async\+\_\+queue}
+\item 
+\Hypertarget{structrtc__device_a8a03a86edd8ea756cf4d334c6b6e45dd}\label{structrtc__device_a8a03a86edd8ea756cf4d334c6b6e45dd} 
+int {\bfseries irq\+\_\+freq}
+\item 
+\Hypertarget{structrtc__device_afc6042b49f0b3ddc21e56f0b0d57a8d3}\label{structrtc__device_afc6042b49f0b3ddc21e56f0b0d57a8d3} 
+int {\bfseries max\+\_\+user\+\_\+freq}
+\item 
+\Hypertarget{structrtc__device_a60f70ae8cd077a6527dba0b7e3a53072}\label{structrtc__device_a60f70ae8cd077a6527dba0b7e3a53072} 
+struct \doxymbox{\hyperlink{structtimerqueue__head}{timerqueue\+\_\+head}} {\bfseries timerqueue}
+\item 
+\Hypertarget{structrtc__device_a7a5c55394c986f21242736bd4d20504f}\label{structrtc__device_a7a5c55394c986f21242736bd4d20504f} 
+struct \doxymbox{\hyperlink{structrtc__timer}{rtc\+\_\+timer}} {\bfseries aie\+\_\+timer}
+\item 
+\Hypertarget{structrtc__device_aae43e982aa922778bba733c93efd4def}\label{structrtc__device_aae43e982aa922778bba733c93efd4def} 
+struct \doxymbox{\hyperlink{structrtc__timer}{rtc\+\_\+timer}} {\bfseries uie\+\_\+rtctimer}
+\item 
+\Hypertarget{structrtc__device_a1f96e7711d6c2d605cf9317e28b8c6be}\label{structrtc__device_a1f96e7711d6c2d605cf9317e28b8c6be} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries pie\+\_\+timer}
+\item 
+\Hypertarget{structrtc__device_aab4afe5b4966950c204bf899ad646c2f}\label{structrtc__device_aab4afe5b4966950c204bf899ad646c2f} 
+int {\bfseries pie\+\_\+enabled}
+\item 
+\Hypertarget{structrtc__device_a59ed752582c816b1018947c5eba40a17}\label{structrtc__device_a59ed752582c816b1018947c5eba40a17} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries irqwork}
+\item 
+\Hypertarget{structrtc__device_ad35d12dffd7f8cb109483b172ddbe5ba}\label{structrtc__device_ad35d12dffd7f8cb109483b172ddbe5ba} 
+long unsigned int {\bfseries set\+\_\+offset\+\_\+nsec}
+\item 
+\Hypertarget{structrtc__device_a95a2261101b985f6c2893e9138598554}\label{structrtc__device_a95a2261101b985f6c2893e9138598554} 
+long unsigned int {\bfseries features} \+[1]\+
+\item 
+\Hypertarget{structrtc__device_a693e417a3f6417714eea0b7565872c90}\label{structrtc__device_a693e417a3f6417714eea0b7565872c90} 
+time64\+\_\+t {\bfseries range\+\_\+min}
+\item 
+\Hypertarget{structrtc__device_abd99a97ce0c89f070cc944167859c0b2}\label{structrtc__device_abd99a97ce0c89f070cc944167859c0b2} 
+timeu64\+\_\+t {\bfseries range\+\_\+max}
+\item 
+\Hypertarget{structrtc__device_a6ac1cac5f81d696af2ba2935a6f99373}\label{structrtc__device_a6ac1cac5f81d696af2ba2935a6f99373} 
+timeu64\+\_\+t {\bfseries alarm\+\_\+offset\+\_\+max}
+\item 
+\Hypertarget{structrtc__device_a95c6d5d6ba32995773cc48993df7fcc1}\label{structrtc__device_a95c6d5d6ba32995773cc48993df7fcc1} 
+time64\+\_\+t {\bfseries start\+\_\+secs}
+\item 
+\Hypertarget{structrtc__device_ade4d04fb07ca573e89aec7f8cad1ac6c}\label{structrtc__device_ade4d04fb07ca573e89aec7f8cad1ac6c} 
+time64\+\_\+t {\bfseries offset\+\_\+secs}
+\item 
+\Hypertarget{structrtc__device_afeaae64b341649fd071e235e3c3a6292}\label{structrtc__device_afeaae64b341649fd071e235e3c3a6292} 
+bool {\bfseries set\+\_\+start\+\_\+time}
+\item 
+\Hypertarget{structrtc__device_a8331f4a683baa2a50c2abddc3226196d}\label{structrtc__device_a8331f4a683baa2a50c2abddc3226196d} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries uie\+\_\+task}
+\item 
+\Hypertarget{structrtc__device_a5be010821e8745f7b7cfa7c464ac5240}\label{structrtc__device_a5be010821e8745f7b7cfa7c464ac5240} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries uie\+\_\+timer}
+\item 
+\Hypertarget{structrtc__device_a28704fc1c0f81f874dd847fd01d180b6}\label{structrtc__device_a28704fc1c0f81f874dd847fd01d180b6} 
+unsigned int {\bfseries oldsecs}
+\item 
+\Hypertarget{structrtc__device_a5117b5cd9f711fe4317c1fee331d04d2}\label{structrtc__device_a5117b5cd9f711fe4317c1fee331d04d2} 
+unsigned int {\bfseries uie\+\_\+irq\+\_\+active}:\+ 1
+\item 
+\Hypertarget{structrtc__device_aca2dc8d15a5e16df1db6f274a012c03c}\label{structrtc__device_aca2dc8d15a5e16df1db6f274a012c03c} 
+unsigned int {\bfseries stop\+\_\+uie\+\_\+polling}:\+ 1
+\item 
+\Hypertarget{structrtc__device_ad442d45f62fc55bff591af7a53c0e023}\label{structrtc__device_ad442d45f62fc55bff591af7a53c0e023} 
+unsigned int {\bfseries uie\+\_\+task\+\_\+active}:\+ 1
+\item 
+\Hypertarget{structrtc__device_a7273243c7be8baa6514b6fbeebbe8f6e}\label{structrtc__device_a7273243c7be8baa6514b6fbeebbe8f6e} 
+unsigned int {\bfseries uie\+\_\+timer\+\_\+active}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

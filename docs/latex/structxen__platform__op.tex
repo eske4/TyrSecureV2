@@ -1,0 +1,44 @@
+\doxysection{xen\+\_\+platform\+\_\+op Struct Reference}
+\hypertarget{structxen__platform__op}{}\label{structxen__platform__op}\index{xen\_platform\_op@{xen\_platform\_op}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxen__platform__op_a89b34c9ad2a0d9e75efeea039e912caa}\label{structxen__platform__op_a89b34c9ad2a0d9e75efeea039e912caa} 
+uint32\+\_\+t {\bfseries cmd}
+\item 
+\Hypertarget{structxen__platform__op_a26935433c85580ffa6bb27dd3dc90149}\label{structxen__platform__op_a26935433c85580ffa6bb27dd3dc90149} 
+uint32\+\_\+t {\bfseries interface\+\_\+version}
+\item 
+\Hypertarget{structxen__platform__op_a389557309d871fbce651697b2be654d8}\label{structxen__platform__op_a389557309d871fbce651697b2be654d8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structxenpf__settime32}{xenpf\_settime32}} {\bfseries settime32}\\
+\>struct \doxymbox{\hyperlink{structxenpf__settime64}{xenpf\_settime64}} {\bfseries settime64}\\
+\>struct \doxymbox{\hyperlink{structxenpf__add__memtype}{xenpf\_add\_memtype}} {\bfseries add\_memtype}\\
+\>struct \doxymbox{\hyperlink{structxenpf__del__memtype}{xenpf\_del\_memtype}} {\bfseries del\_memtype}\\
+\>struct \doxymbox{\hyperlink{structxenpf__read__memtype}{xenpf\_read\_memtype}} {\bfseries read\_memtype}\\
+\>struct \doxymbox{\hyperlink{structxenpf__microcode__update}{xenpf\_microcode\_update}} {\bfseries microcode}\\
+\>struct \doxymbox{\hyperlink{structxenpf__platform__quirk}{xenpf\_platform\_quirk}} {\bfseries platform\_quirk}\\
+\>struct \doxymbox{\hyperlink{structxenpf__efi__runtime__call}{xenpf\_efi\_runtime\_call}} {\bfseries efi\_runtime\_call}\\
+\>struct \doxymbox{\hyperlink{structxenpf__firmware__info}{xenpf\_firmware\_info}} {\bfseries firmware\_info}\\
+\>struct \doxymbox{\hyperlink{structxenpf__enter__acpi__sleep}{xenpf\_enter\_acpi\_sleep}} {\bfseries enter\_acpi\_sleep}\\
+\>struct \doxymbox{\hyperlink{structxenpf__change__freq}{xenpf\_change\_freq}} {\bfseries change\_freq}\\
+\>struct \doxymbox{\hyperlink{structxenpf__getidletime}{xenpf\_getidletime}} {\bfseries getidletime}\\
+\>struct \doxymbox{\hyperlink{structxenpf__set__processor__pminfo}{xenpf\_set\_processor\_pminfo}} {\bfseries set\_pminfo}\\
+\>struct \doxymbox{\hyperlink{structxenpf__pcpuinfo}{xenpf\_pcpuinfo}} {\bfseries pcpu\_info}\\
+\>struct \doxymbox{\hyperlink{structxenpf__cpu__ol}{xenpf\_cpu\_ol}} {\bfseries cpu\_ol}\\
+\>struct \doxymbox{\hyperlink{structxenpf__cpu__hotadd}{xenpf\_cpu\_hotadd}} {\bfseries cpu\_add}\\
+\>struct \doxymbox{\hyperlink{structxenpf__mem__hotadd}{xenpf\_mem\_hotadd}} {\bfseries mem\_add}\\
+\>struct \doxymbox{\hyperlink{structxenpf__core__parking}{xenpf\_core\_parking}} {\bfseries core\_parking}\\
+\>struct \doxymbox{\hyperlink{structxenpf__symdata}{xenpf\_symdata}} {\bfseries symdata}\\
+\>struct \doxymbox{\hyperlink{structdom0__vga__console__info}{dom0\_vga\_console\_info}} {\bfseries dom0\_console}\\
+\>uint8\_t {\bfseries pad} \+[128]\+\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

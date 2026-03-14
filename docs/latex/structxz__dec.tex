@@ -1,0 +1,112 @@
+\doxysection{xz\+\_\+dec Struct Reference}
+\hypertarget{structxz__dec}{}\label{structxz__dec}\index{xz\_dec@{xz\_dec}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxz__dec_ae68e9cc40cb136e934b744414ca2607a}\label{structxz__dec_ae68e9cc40cb136e934b744414ca2607a} 
+enum \{ \newline
+{\bfseries SEQ\+\_\+\+STREAM\+\_\+\+HEADER} = 0
+, {\bfseries SEQ\+\_\+\+BLOCK\+\_\+\+START} = 1
+, {\bfseries SEQ\+\_\+\+BLOCK\+\_\+\+HEADER} = 2
+, {\bfseries SEQ\+\_\+\+BLOCK\+\_\+\+UNCOMPRESS} = 3
+, \newline
+{\bfseries SEQ\+\_\+\+BLOCK\+\_\+\+PADDING} = 4
+, {\bfseries SEQ\+\_\+\+BLOCK\+\_\+\+CHECK} = 5
+, {\bfseries SEQ\+\_\+\+INDEX} = 6
+, {\bfseries SEQ\+\_\+\+INDEX\+\_\+\+PADDING} = 7
+, \newline
+{\bfseries SEQ\+\_\+\+INDEX\+\_\+\+CRC32} = 8
+, {\bfseries SEQ\+\_\+\+STREAM\+\_\+\+FOOTER} = 9
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxz__dec_a6016f13ec56be9e5932ab3857563ec0e}\label{structxz__dec_a6016f13ec56be9e5932ab3857563ec0e} 
+enum xz\+\_\+dec::\+ \{ ... \}  {\bfseries sequence}
+\item 
+\Hypertarget{structxz__dec_ade453888724a695aad5b8b502f237df7}\label{structxz__dec_ade453888724a695aad5b8b502f237df7} 
+uint32\+\_\+t {\bfseries pos}
+\item 
+\Hypertarget{structxz__dec_a4b53b57adaf48525101fd6b62f25a7ee}\label{structxz__dec_a4b53b57adaf48525101fd6b62f25a7ee} 
+vli\+\_\+type {\bfseries vli}
+\item 
+\Hypertarget{structxz__dec_ad0b84e46c7aa4d4b19b58a9a8aecbbe6}\label{structxz__dec_ad0b84e46c7aa4d4b19b58a9a8aecbbe6} 
+size\+\_\+t {\bfseries in\+\_\+start}
+\item 
+\Hypertarget{structxz__dec_a6a48ff0ad93f943766bc8889a487b955}\label{structxz__dec_a6a48ff0ad93f943766bc8889a487b955} 
+size\+\_\+t {\bfseries out\+\_\+start}
+\item 
+\Hypertarget{structxz__dec_a32dcb6c2a6021648790e7a297e235820}\label{structxz__dec_a32dcb6c2a6021648790e7a297e235820} 
+uint32\+\_\+t {\bfseries crc32}
+\item 
+\Hypertarget{structxz__dec_a09812ace29999f1082554fdec6d7962e}\label{structxz__dec_a09812ace29999f1082554fdec6d7962e} 
+enum xz\+\_\+check {\bfseries check\+\_\+type}
+\item 
+\Hypertarget{structxz__dec_a5684a84ff9e8cab7322f0f8dc33c85b2}\label{structxz__dec_a5684a84ff9e8cab7322f0f8dc33c85b2} 
+enum xz\+\_\+mode {\bfseries mode}
+\item 
+\Hypertarget{structxz__dec_a9e1aed37f4a4fa12e5153c80e243f0b8}\label{structxz__dec_a9e1aed37f4a4fa12e5153c80e243f0b8} 
+bool {\bfseries allow\+\_\+buf\+\_\+error}
+\item 
+\Hypertarget{structxz__dec_a9cd8e40c8f4a4330fa0073d3d1bd1e4a}\label{structxz__dec_a9cd8e40c8f4a4330fa0073d3d1bd1e4a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>vli\_type {\bfseries compressed}\\
+\>vli\_type {\bfseries uncompressed}\\
+\>uint32\_t {\bfseries size}\\
+\} {\bfseries block\_header}\\
+
+\end{tabbing}\item 
+\Hypertarget{structxz__dec_a8b010eb339ed6daddffab8a09a9649fa}\label{structxz__dec_a8b010eb339ed6daddffab8a09a9649fa} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>vli\_type {\bfseries compressed}\\
+\>vli\_type {\bfseries uncompressed}\\
+\>vli\_type {\bfseries count}\\
+\>struct \doxymbox{\hyperlink{structxz__dec__hash}{xz\_dec\_hash}} {\bfseries hash}\\
+\} {\bfseries block}\\
+
+\end{tabbing}\item 
+\Hypertarget{structxz__dec_a96b9746b8ab374514dfda891deec4124}\label{structxz__dec_a96b9746b8ab374514dfda891deec4124} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structxz__dec_1_1_0d257065077073155312073112053113024212133371353235_a3fec5b0ee434d8d882e719b33f3ff87e}\label{structxz__dec_1_1_0d257065077073155312073112053113024212133371353235_a3fec5b0ee434d8d882e719b33f3ff87e} 
+enum \{ {\bfseries SEQ\_INDEX\_COUNT} = 0
+, {\bfseries SEQ\_INDEX\_UNPADDED} = 1
+, {\bfseries SEQ\_INDEX\_UNCOMPRESSED} = 2
+ \}\\
+\>enum xz\_dec:: \{ ... \}  {\bfseries sequence}\\
+\>vli\_type {\bfseries size}\\
+\>vli\_type {\bfseries count}\\
+\>struct \doxymbox{\hyperlink{structxz__dec__hash}{xz\_dec\_hash}} {\bfseries hash}\\
+\} {\bfseries index}\\
+
+\end{tabbing}\item 
+\Hypertarget{structxz__dec_ad88fbd682e56c8187679cfe24c597e50}\label{structxz__dec_ad88fbd682e56c8187679cfe24c597e50} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>size\_t {\bfseries pos}\\
+\>size\_t {\bfseries size}\\
+\>uint8\_t {\bfseries buf} \+[1024]\+\\
+\} {\bfseries temp}\\
+
+\end{tabbing}\item 
+\Hypertarget{structxz__dec_a4cfe68d9a51cc36d2c688979b439898b}\label{structxz__dec_a4cfe68d9a51cc36d2c688979b439898b} 
+struct \doxymbox{\hyperlink{structxz__dec__lzma2}{xz\+\_\+dec\+\_\+lzma2}} \texorpdfstring{$\ast$}{*} {\bfseries lzma2}
+\item 
+\Hypertarget{structxz__dec_a161a8c4382f0348cc61b447ef0d870e8}\label{structxz__dec_a161a8c4382f0348cc61b447ef0d870e8} 
+struct \doxymbox{\hyperlink{structxz__dec__bcj}{xz\+\_\+dec\+\_\+bcj}} \texorpdfstring{$\ast$}{*} {\bfseries bcj}
+\item 
+\Hypertarget{structxz__dec_a2aa89001a49989b3047d8e67f47b3c61}\label{structxz__dec_a2aa89001a49989b3047d8e67f47b3c61} 
+bool {\bfseries bcj\+\_\+active}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

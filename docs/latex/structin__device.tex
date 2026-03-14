@@ -1,0 +1,79 @@
+\doxysection{in\+\_\+device Struct Reference}
+\hypertarget{structin__device}{}\label{structin__device}\index{in\_device@{in\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structin__device_adf99de9a4bd7c3bfc6fabcc914cfb0a4}\label{structin__device_adf99de9a4bd7c3bfc6fabcc914cfb0a4} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structin__device_a668453b0c27fbdb381e8b7b37fc83e34}\label{structin__device_a668453b0c27fbdb381e8b7b37fc83e34} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries dev\+\_\+tracker}
+\item 
+\Hypertarget{structin__device_a3fd4a9eb884d6bce8bad335a33d1536e}\label{structin__device_a3fd4a9eb884d6bce8bad335a33d1536e} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structin__device_a5db41f51da39450dbcb42215d9bc9430}\label{structin__device_a5db41f51da39450dbcb42215d9bc9430} 
+int {\bfseries dead}
+\item 
+\Hypertarget{structin__device_aa1ceb5f648b68ce6bb06caa987773557}\label{structin__device_aa1ceb5f648b68ce6bb06caa987773557} 
+struct \doxymbox{\hyperlink{structin__ifaddr}{in\+\_\+ifaddr}} \texorpdfstring{$\ast$}{*} {\bfseries ifa\+\_\+list}
+\item 
+\Hypertarget{structin__device_a7b38d0d21d4b9bcc8e777207ecea67f5}\label{structin__device_a7b38d0d21d4b9bcc8e777207ecea67f5} 
+struct \doxymbox{\hyperlink{structip__mc__list}{ip\+\_\+mc\+\_\+list}} \texorpdfstring{$\ast$}{*} {\bfseries mc\+\_\+list}
+\item 
+\Hypertarget{structin__device_acad28e5a6ca18355122b9e32360347d8}\label{structin__device_acad28e5a6ca18355122b9e32360347d8} 
+struct \doxymbox{\hyperlink{structip__mc__list}{ip\+\_\+mc\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries mc\+\_\+hash}
+\item 
+\Hypertarget{structin__device_a64feea59e496fdcefa6948dae0c6fa08}\label{structin__device_a64feea59e496fdcefa6948dae0c6fa08} 
+int {\bfseries mc\+\_\+count}
+\item 
+\Hypertarget{structin__device_ad37c9d521eb68329063b51ec6e564602}\label{structin__device_ad37c9d521eb68329063b51ec6e564602} 
+spinlock\+\_\+t {\bfseries mc\+\_\+tomb\+\_\+lock}
+\item 
+\Hypertarget{structin__device_aabbfabb9fb47e44fd4ba94e7678c9542}\label{structin__device_aabbfabb9fb47e44fd4ba94e7678c9542} 
+struct \doxymbox{\hyperlink{structip__mc__list}{ip\+\_\+mc\+\_\+list}} \texorpdfstring{$\ast$}{*} {\bfseries mc\+\_\+tomb}
+\item 
+\Hypertarget{structin__device_afbc2502ec071ca3ca2460956d5544b8c}\label{structin__device_afbc2502ec071ca3ca2460956d5544b8c} 
+long unsigned int {\bfseries mr\+\_\+v1\+\_\+seen}
+\item 
+\Hypertarget{structin__device_a0eaf49bf252b410d028f5045e61d894c}\label{structin__device_a0eaf49bf252b410d028f5045e61d894c} 
+long unsigned int {\bfseries mr\+\_\+v2\+\_\+seen}
+\item 
+\Hypertarget{structin__device_ad3246326e1a22906f46f2cc3e3bf7b30}\label{structin__device_ad3246326e1a22906f46f2cc3e3bf7b30} 
+long unsigned int {\bfseries mr\+\_\+qi}
+\item 
+\Hypertarget{structin__device_a787a70832efe48a82e28350a13895454}\label{structin__device_a787a70832efe48a82e28350a13895454} 
+long unsigned int {\bfseries mr\+\_\+qri}
+\item 
+\Hypertarget{structin__device_a52148f02af1d7d0f9a059d5f401fdf91}\label{structin__device_a52148f02af1d7d0f9a059d5f401fdf91} 
+unsigned char {\bfseries mr\+\_\+qrv}
+\item 
+\Hypertarget{structin__device_aa04535d6e45efd896731831069c6c292}\label{structin__device_aa04535d6e45efd896731831069c6c292} 
+unsigned char {\bfseries mr\+\_\+gq\+\_\+running}
+\item 
+\Hypertarget{structin__device_a83b249c7ebdae2bf3ef051b04a9059ec}\label{structin__device_a83b249c7ebdae2bf3ef051b04a9059ec} 
+u32 {\bfseries mr\+\_\+maxdelay}
+\item 
+\Hypertarget{structin__device_a4d043b28cfbb09f6c3150a85bf35759a}\label{structin__device_a4d043b28cfbb09f6c3150a85bf35759a} 
+u32 {\bfseries mr\+\_\+ifc\+\_\+count}
+\item 
+\Hypertarget{structin__device_a32c5a1687c2c2324f19b00d1c2d44aae}\label{structin__device_a32c5a1687c2c2324f19b00d1c2d44aae} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries mr\+\_\+gq\+\_\+timer}
+\item 
+\Hypertarget{structin__device_a791f45a088e89c27f0becb39fe13a448}\label{structin__device_a791f45a088e89c27f0becb39fe13a448} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries mr\+\_\+ifc\+\_\+timer}
+\item 
+\Hypertarget{structin__device_ae82d0b44b67f1b6d9d75d94a45dcf512}\label{structin__device_ae82d0b44b67f1b6d9d75d94a45dcf512} 
+struct \doxymbox{\hyperlink{structneigh__parms}{neigh\+\_\+parms}} \texorpdfstring{$\ast$}{*} {\bfseries arp\+\_\+parms}
+\item 
+\Hypertarget{structin__device_afdaeacd3db19703d91445d99a13cd516}\label{structin__device_afdaeacd3db19703d91445d99a13cd516} 
+struct \doxymbox{\hyperlink{structipv4__devconf}{ipv4\+\_\+devconf}} {\bfseries cnf}
+\item 
+\Hypertarget{structin__device_a4e80c30aaec490b24f7cfc4bc3a5ca01}\label{structin__device_a4e80c30aaec490b24f7cfc4bc3a5ca01} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries callback\+\_\+head}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

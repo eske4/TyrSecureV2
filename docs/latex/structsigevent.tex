@@ -1,0 +1,32 @@
+\doxysection{sigevent Struct Reference}
+\hypertarget{structsigevent}{}\label{structsigevent}\index{sigevent@{sigevent}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsigevent_aedd1f9ff34678d5cfb6946b4ca5a7521}\label{structsigevent_aedd1f9ff34678d5cfb6946b4ca5a7521} 
+sigval\+\_\+t {\bfseries sigev\+\_\+value}
+\item 
+\Hypertarget{structsigevent_a5c645ec1d12bb46efc3f4097c52b665d}\label{structsigevent_a5c645ec1d12bb46efc3f4097c52b665d} 
+int {\bfseries sigev\+\_\+signo}
+\item 
+\Hypertarget{structsigevent_aae9a19d879c38e0c4e8a9bf738c5081e}\label{structsigevent_aae9a19d879c38e0c4e8a9bf738c5081e} 
+int {\bfseries sigev\+\_\+notify}
+\item 
+\Hypertarget{structsigevent_a6d0790d56841e3f9eff9cf51271f092f}\label{structsigevent_a6d0790d56841e3f9eff9cf51271f092f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int {\bfseries \_pad} \+[12]\+\\
+\>int {\bfseries \_tid}\\
+\>struct \{\\
+\>\>void(\texorpdfstring{$\ast$}{*} {\bfseries \_function} )(sigval\_t)\\
+\>\>void \texorpdfstring{$\ast$}{*} {\bfseries \_attribute}\\
+\>\} {\bfseries \_sigev\_thread}\\
+\} {\bfseries \_sigev\_un}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,111 @@
+\doxysection{blk\+\_\+mq\+\_\+hw\+\_\+ctx Struct Reference}
+\hypertarget{structblk__mq__hw__ctx}{}\label{structblk__mq__hw__ctx}\index{blk\_mq\_hw\_ctx@{blk\_mq\_hw\_ctx}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a753b5220a89cd2df346677da34f1967c}\label{structblk__mq__hw__ctx_a753b5220a89cd2df346677da34f1967c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>spinlock\_t {\bfseries lock}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries dispatch}\\
+\>long unsigned int {\bfseries state}\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structblk__mq__hw__ctx_a80ffe3c6a532d25d4b4d0f2f64b19481}\label{structblk__mq__hw__ctx_a80ffe3c6a532d25d4b4d0f2f64b19481} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries run\+\_\+work}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a4efce07d2fab416da7ff63fb84e7d158}\label{structblk__mq__hw__ctx_a4efce07d2fab416da7ff63fb84e7d158} 
+cpumask\+\_\+var\+\_\+t {\bfseries cpumask}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_aa6c2b0cebea71b852d66dca697b95ceb}\label{structblk__mq__hw__ctx_aa6c2b0cebea71b852d66dca697b95ceb} 
+int {\bfseries next\+\_\+cpu}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a1fe9651a0b7966e4088bbed44fa4da4b}\label{structblk__mq__hw__ctx_a1fe9651a0b7966e4088bbed44fa4da4b} 
+int {\bfseries next\+\_\+cpu\+\_\+batch}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_aed32df27105c6088e6bdcebb4b59e9b9}\label{structblk__mq__hw__ctx_aed32df27105c6088e6bdcebb4b59e9b9} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a4d6ae6206e8fa0bd49c12b8be30eadcb}\label{structblk__mq__hw__ctx_a4d6ae6206e8fa0bd49c12b8be30eadcb} 
+void \texorpdfstring{$\ast$}{*} {\bfseries sched\+\_\+data}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_ac34bc9c939617e81d7420b4a79b9d0a0}\label{structblk__mq__hw__ctx_ac34bc9c939617e81d7420b4a79b9d0a0} 
+struct \doxymbox{\hyperlink{structrequest__queue}{request\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries queue}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a71389da5c12be9ca680c5b6e714e1284}\label{structblk__mq__hw__ctx_a71389da5c12be9ca680c5b6e714e1284} 
+struct \doxymbox{\hyperlink{structblk__flush__queue}{blk\+\_\+flush\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries fq}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a71aeb2268b59c37a4f7133ebd86729c0}\label{structblk__mq__hw__ctx_a71aeb2268b59c37a4f7133ebd86729c0} 
+void \texorpdfstring{$\ast$}{*} {\bfseries driver\+\_\+data}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_afc967f591e80f8e759006fa4260a4bd9}\label{structblk__mq__hw__ctx_afc967f591e80f8e759006fa4260a4bd9} 
+struct \doxymbox{\hyperlink{structsbitmap}{sbitmap}} {\bfseries ctx\+\_\+map}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_aa15a5ed6e9de77d33305d52ccfbf6ae1}\label{structblk__mq__hw__ctx_aa15a5ed6e9de77d33305d52ccfbf6ae1} 
+struct \doxymbox{\hyperlink{structblk__mq__ctx}{blk\+\_\+mq\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries dispatch\+\_\+from}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a5dbcb7c7719ddce125b1ab96273db8b6}\label{structblk__mq__hw__ctx_a5dbcb7c7719ddce125b1ab96273db8b6} 
+unsigned int {\bfseries dispatch\+\_\+busy}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a753f803c652f1851536f6d13692cec62}\label{structblk__mq__hw__ctx_a753f803c652f1851536f6d13692cec62} 
+short unsigned int {\bfseries type}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a68d47f0db1fbaffdace43cb3373fb45d}\label{structblk__mq__hw__ctx_a68d47f0db1fbaffdace43cb3373fb45d} 
+short unsigned int {\bfseries nr\+\_\+ctx}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_ab661236ec21b1444553778317817ad6c}\label{structblk__mq__hw__ctx_ab661236ec21b1444553778317817ad6c} 
+struct \doxymbox{\hyperlink{structblk__mq__ctx}{blk\+\_\+mq\+\_\+ctx}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries ctxs}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_aecc88047b7a6124c8d89f201247b1f8b}\label{structblk__mq__hw__ctx_aecc88047b7a6124c8d89f201247b1f8b} 
+spinlock\+\_\+t {\bfseries dispatch\+\_\+wait\+\_\+lock}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_afb02bc49a69a73f286f4b38eaf36dbf4}\label{structblk__mq__hw__ctx_afb02bc49a69a73f286f4b38eaf36dbf4} 
+wait\+\_\+queue\+\_\+entry\+\_\+t {\bfseries dispatch\+\_\+wait}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a4636f521ed9f181595e0d70333d1c95b}\label{structblk__mq__hw__ctx_a4636f521ed9f181595e0d70333d1c95b} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries wait\+\_\+index}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_af0f5f18ea1364feda4e59e25d9b1e5d5}\label{structblk__mq__hw__ctx_af0f5f18ea1364feda4e59e25d9b1e5d5} 
+struct \doxymbox{\hyperlink{structblk__mq__tags}{blk\+\_\+mq\+\_\+tags}} \texorpdfstring{$\ast$}{*} {\bfseries tags}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_aceca85dae609994fbf0c6543a1e2f288}\label{structblk__mq__hw__ctx_aceca85dae609994fbf0c6543a1e2f288} 
+struct \doxymbox{\hyperlink{structblk__mq__tags}{blk\+\_\+mq\+\_\+tags}} \texorpdfstring{$\ast$}{*} {\bfseries sched\+\_\+tags}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a372ae675da447b0681db5b3c27bc0904}\label{structblk__mq__hw__ctx_a372ae675da447b0681db5b3c27bc0904} 
+unsigned int {\bfseries numa\+\_\+node}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a76b4636a7634e3d1d65992ea45d9f8a4}\label{structblk__mq__hw__ctx_a76b4636a7634e3d1d65992ea45d9f8a4} 
+unsigned int {\bfseries queue\+\_\+num}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a9370ded0d7fd372b6ed96ec8f8f8e9cc}\label{structblk__mq__hw__ctx_a9370ded0d7fd372b6ed96ec8f8f8e9cc} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nr\+\_\+active}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_aefb8e9b380a800772fd91cb3bf17f1fe}\label{structblk__mq__hw__ctx_aefb8e9b380a800772fd91cb3bf17f1fe} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries cpuhp\+\_\+online}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_ae8c72546e5b90a9b1d5f95603ed8f809}\label{structblk__mq__hw__ctx_ae8c72546e5b90a9b1d5f95603ed8f809} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries cpuhp\+\_\+dead}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_aec5757e9f8ead73cd3c7ae58b0e9028b}\label{structblk__mq__hw__ctx_aec5757e9f8ead73cd3c7ae58b0e9028b} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} {\bfseries kobj}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a809f3896937674d54daf01b8faeda4fd}\label{structblk__mq__hw__ctx_a809f3896937674d54daf01b8faeda4fd} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+dir}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_ab21f472ea78ac2fe49b7fd4184a89199}\label{structblk__mq__hw__ctx_ab21f472ea78ac2fe49b7fd4184a89199} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries sched\+\_\+debugfs\+\_\+dir}
+\item 
+\Hypertarget{structblk__mq__hw__ctx_a990435277920b1ce0f0284520c018811}\label{structblk__mq__hw__ctx_a990435277920b1ce0f0284520c018811} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries hctx\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

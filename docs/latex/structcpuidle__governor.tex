@@ -1,0 +1,31 @@
+\doxysection{cpuidle\+\_\+governor Struct Reference}
+\hypertarget{structcpuidle__governor}{}\label{structcpuidle__governor}\index{cpuidle\_governor@{cpuidle\_governor}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcpuidle__governor_acf8c7053f66344810e78797b689f9b30}\label{structcpuidle__governor_acf8c7053f66344810e78797b689f9b30} 
+char {\bfseries name} \+[16]\+
+\item 
+\Hypertarget{structcpuidle__governor_aa73610e5f4487a63a157caf3515d12c5}\label{structcpuidle__governor_aa73610e5f4487a63a157caf3515d12c5} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries governor\+\_\+list}
+\item 
+\Hypertarget{structcpuidle__governor_a743594ae78349d66b5157c00f0a08e49}\label{structcpuidle__governor_a743594ae78349d66b5157c00f0a08e49} 
+unsigned int {\bfseries rating}
+\item 
+\Hypertarget{structcpuidle__governor_a44f8e70d57b0a2b2d0a5bcee9d4a3d3d}\label{structcpuidle__governor_a44f8e70d57b0a2b2d0a5bcee9d4a3d3d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable} )(struct \doxymbox{\hyperlink{structcpuidle__driver}{cpuidle\+\_\+driver}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcpuidle__device}{cpuidle\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpuidle__governor_aa97530b2dd1f9e19603ac21be00949f7}\label{structcpuidle__governor_aa97530b2dd1f9e19603ac21be00949f7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable} )(struct \doxymbox{\hyperlink{structcpuidle__driver}{cpuidle\+\_\+driver}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcpuidle__device}{cpuidle\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpuidle__governor_aafa07d65e0fa68ab1474114991f0fc3c}\label{structcpuidle__governor_aafa07d65e0fa68ab1474114991f0fc3c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries select} )(struct \doxymbox{\hyperlink{structcpuidle__driver}{cpuidle\+\_\+driver}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcpuidle__device}{cpuidle\+\_\+device}} \texorpdfstring{$\ast$}{*}, bool \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpuidle__governor_aa3d37212cca97fe094a500cd612b1b6d}\label{structcpuidle__governor_aa3d37212cca97fe094a500cd612b1b6d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries reflect} )(struct \doxymbox{\hyperlink{structcpuidle__device}{cpuidle\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\doxysection{tracer Struct Reference}
+\hypertarget{structtracer}{}\label{structtracer}\index{tracer@{tracer}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtracer_a08a3bb14c306ce7394df6a5bb56e6eb3}\label{structtracer_a08a3bb14c306ce7394df6a5bb56e6eb3} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structtracer_af599e1eddc3052a0a5e24169a2ee8fdc}\label{structtracer_af599e1eddc3052a0a5e24169a2ee8fdc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structtrace__array}{trace\+\_\+array}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_a6e80410b3e6f05f7fd1f389d23b6db07}\label{structtracer_a6e80410b3e6f05f7fd1f389d23b6db07} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries reset} )(struct \doxymbox{\hyperlink{structtrace__array}{trace\+\_\+array}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_a46d1f735b6a5e849e85dbcbab325f04f}\label{structtracer_a46d1f735b6a5e849e85dbcbab325f04f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries start} )(struct \doxymbox{\hyperlink{structtrace__array}{trace\+\_\+array}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_a2be031a19d9239ad74a39aaf850b2907}\label{structtracer_a2be031a19d9239ad74a39aaf850b2907} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries stop} )(struct \doxymbox{\hyperlink{structtrace__array}{trace\+\_\+array}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_a9c796312212f2b1beba868b51c8e1d5e}\label{structtracer_a9c796312212f2b1beba868b51c8e1d5e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+thresh} )(struct \doxymbox{\hyperlink{structtrace__array}{trace\+\_\+array}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_a9ef2533be12e1e37a65605fee4f57765}\label{structtracer_a9ef2533be12e1e37a65605fee4f57765} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structtrace__iterator}{trace\+\_\+iterator}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_a1a5854a470fb68aeb56e1c6c0599ec1a}\label{structtracer_a1a5854a470fb68aeb56e1c6c0599ec1a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pipe\+\_\+open} )(struct \doxymbox{\hyperlink{structtrace__iterator}{trace\+\_\+iterator}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_a3430a60cd9e4db91dce79e141ac448bc}\label{structtracer_a3430a60cd9e4db91dce79e141ac448bc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries close} )(struct \doxymbox{\hyperlink{structtrace__iterator}{trace\+\_\+iterator}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_a21049f5f9ae8ef8c3b92f590c1968360}\label{structtracer_a21049f5f9ae8ef8c3b92f590c1968360} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pipe\+\_\+close} )(struct \doxymbox{\hyperlink{structtrace__iterator}{trace\+\_\+iterator}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_afd67ee4267205bb67d1d6232a4a97afd}\label{structtracer_afd67ee4267205bb67d1d6232a4a97afd} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structtrace__iterator}{trace\+\_\+iterator}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, size\+\_\+t, loff\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_aaaa9602036090bbd714018ac68e7fcc0}\label{structtracer_aaaa9602036090bbd714018ac68e7fcc0} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries splice\+\_\+read} )(struct \doxymbox{\hyperlink{structtrace__iterator}{trace\+\_\+iterator}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*}, loff\+\_\+t \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpipe__inode__info}{pipe\+\_\+inode\+\_\+info}} \texorpdfstring{$\ast$}{*}, size\+\_\+t, unsigned int)
+\item 
+\Hypertarget{structtracer_a54409fd3e14ce2c2df41c97fac061e98}\label{structtracer_a54409fd3e14ce2c2df41c97fac061e98} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries print\+\_\+header} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_a0cb26cda5943157a16f5d04e260262b3}\label{structtracer_a0cb26cda5943157a16f5d04e260262b3} 
+enum print\+\_\+line\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries print\+\_\+line} )(struct \doxymbox{\hyperlink{structtrace__iterator}{trace\+\_\+iterator}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtracer_afd3762bb164b5fa1cc9cc01ffaaa5dcb}\label{structtracer_afd3762bb164b5fa1cc9cc01ffaaa5dcb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+flag} )(struct \doxymbox{\hyperlink{structtrace__array}{trace\+\_\+array}} \texorpdfstring{$\ast$}{*}, u32, u32, int)
+\item 
+\Hypertarget{structtracer_ae2cb476f1a18b6bb9f5d1d7cf30d62da}\label{structtracer_ae2cb476f1a18b6bb9f5d1d7cf30d62da} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries flag\+\_\+changed} )(struct \doxymbox{\hyperlink{structtrace__array}{trace\+\_\+array}} \texorpdfstring{$\ast$}{*}, u64, int)
+\item 
+\Hypertarget{structtracer_aec6b92c7c58fec94b57b7a2385c3c3c1}\label{structtracer_aec6b92c7c58fec94b57b7a2385c3c3c1} 
+struct \doxymbox{\hyperlink{structtracer}{tracer}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\item 
+\Hypertarget{structtracer_ac11918a4558745d358cba4b0c421fcde}\label{structtracer_ac11918a4558745d358cba4b0c421fcde} 
+struct \doxymbox{\hyperlink{structtracer__flags}{tracer\+\_\+flags}} \texorpdfstring{$\ast$}{*} {\bfseries flags}
+\item 
+\Hypertarget{structtracer_adfca0d70f6f30c1b7e14d081547e462e}\label{structtracer_adfca0d70f6f30c1b7e14d081547e462e} 
+struct \doxymbox{\hyperlink{structtracer__flags}{tracer\+\_\+flags}} \texorpdfstring{$\ast$}{*} {\bfseries default\+\_\+flags}
+\item 
+\Hypertarget{structtracer_a583246b3d05a65d9db97ea31e125282a}\label{structtracer_a583246b3d05a65d9db97ea31e125282a} 
+int {\bfseries enabled}
+\item 
+\Hypertarget{structtracer_a34f47785207d4a5641bb87b66643e4c0}\label{structtracer_a34f47785207d4a5641bb87b66643e4c0} 
+bool {\bfseries print\+\_\+max}
+\item 
+\Hypertarget{structtracer_a197848e7c5e9c50709df739f2fa2d4c6}\label{structtracer_a197848e7c5e9c50709df739f2fa2d4c6} 
+bool {\bfseries allow\+\_\+instances}
+\item 
+\Hypertarget{structtracer_ad476c27439d635a22eae9d3f7d11791e}\label{structtracer_ad476c27439d635a22eae9d3f7d11791e} 
+bool {\bfseries use\+\_\+max\+\_\+tr}
+\item 
+\Hypertarget{structtracer_a46f36095833f16d57ff2272b706ef1c9}\label{structtracer_a46f36095833f16d57ff2272b706ef1c9} 
+bool {\bfseries noboot}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

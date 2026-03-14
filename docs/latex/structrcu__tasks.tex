@@ -1,0 +1,112 @@
+\doxysection{rcu\+\_\+tasks Struct Reference}
+\hypertarget{structrcu__tasks}{}\label{structrcu__tasks}\index{rcu\_tasks@{rcu\_tasks}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrcu__tasks_a56f331bbce6781c204c29255a8af8823}\label{structrcu__tasks_a56f331bbce6781c204c29255a8af8823} 
+struct \doxymbox{\hyperlink{structrcuwait}{rcuwait}} {\bfseries cbs\+\_\+wait}
+\item 
+\Hypertarget{structrcu__tasks_a3eca6aefdf412994aaf9e747676becd2}\label{structrcu__tasks_a3eca6aefdf412994aaf9e747676becd2} 
+raw\+\_\+spinlock\+\_\+t {\bfseries cbs\+\_\+gbl\+\_\+lock}
+\item 
+\Hypertarget{structrcu__tasks_ac9d76651342a9dc52dc479690df89123}\label{structrcu__tasks_ac9d76651342a9dc52dc479690df89123} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries tasks\+\_\+gp\+\_\+mutex}
+\item 
+\Hypertarget{structrcu__tasks_a0e615303075d840cd634aa16db733f23}\label{structrcu__tasks_a0e615303075d840cd634aa16db733f23} 
+int {\bfseries gp\+\_\+state}
+\item 
+\Hypertarget{structrcu__tasks_a5265c7e826312de16c782cd2af8300aa}\label{structrcu__tasks_a5265c7e826312de16c782cd2af8300aa} 
+int {\bfseries gp\+\_\+sleep}
+\item 
+\Hypertarget{structrcu__tasks_a1d8c5c8a5efa81fa737b34164d332791}\label{structrcu__tasks_a1d8c5c8a5efa81fa737b34164d332791} 
+int {\bfseries init\+\_\+fract}
+\item 
+\Hypertarget{structrcu__tasks_afc553cfad10c5aa1e0d11e7cf5858c60}\label{structrcu__tasks_afc553cfad10c5aa1e0d11e7cf5858c60} 
+long unsigned int {\bfseries gp\+\_\+jiffies}
+\item 
+\Hypertarget{structrcu__tasks_aa1d38691bb010bb7fd42255cdbe3509c}\label{structrcu__tasks_aa1d38691bb010bb7fd42255cdbe3509c} 
+long unsigned int {\bfseries gp\+\_\+start}
+\item 
+\Hypertarget{structrcu__tasks_adeac3b1514fcebd5d7bcce4a32e37a50}\label{structrcu__tasks_adeac3b1514fcebd5d7bcce4a32e37a50} 
+long unsigned int {\bfseries tasks\+\_\+gp\+\_\+seq}
+\item 
+\Hypertarget{structrcu__tasks_a89ebde31ec63f989733f932915a1bf0f}\label{structrcu__tasks_a89ebde31ec63f989733f932915a1bf0f} 
+long unsigned int {\bfseries n\+\_\+ipis}
+\item 
+\Hypertarget{structrcu__tasks_a513c0c25c92e4d1492c1aceda0bdb2f7}\label{structrcu__tasks_a513c0c25c92e4d1492c1aceda0bdb2f7} 
+long unsigned int {\bfseries n\+\_\+ipis\+\_\+fails}
+\item 
+\Hypertarget{structrcu__tasks_af5aa8cfbc702e826d842eba05c5a9bb5}\label{structrcu__tasks_af5aa8cfbc702e826d842eba05c5a9bb5} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries kthread\+\_\+ptr}
+\item 
+\Hypertarget{structrcu__tasks_a66e36f8e281ffb8416b7b92fe431d480}\label{structrcu__tasks_a66e36f8e281ffb8416b7b92fe431d480} 
+long unsigned int {\bfseries lazy\+\_\+jiffies}
+\item 
+\Hypertarget{structrcu__tasks_a939c3ff1dba8a73cafd61c9a152b0287}\label{structrcu__tasks_a939c3ff1dba8a73cafd61c9a152b0287} 
+rcu\+\_\+tasks\+\_\+gp\+\_\+func\+\_\+t {\bfseries gp\+\_\+func}
+\item 
+\Hypertarget{structrcu__tasks_a7762a29c86b448766b4587362b640a5f}\label{structrcu__tasks_a7762a29c86b448766b4587362b640a5f} 
+pregp\+\_\+func\+\_\+t {\bfseries pregp\+\_\+func}
+\item 
+\Hypertarget{structrcu__tasks_a0e91eaf2a65bda1011e3ef087339fd58}\label{structrcu__tasks_a0e91eaf2a65bda1011e3ef087339fd58} 
+pertask\+\_\+func\+\_\+t {\bfseries pertask\+\_\+func}
+\item 
+\Hypertarget{structrcu__tasks_ad08db7acbc99f0e1d64359ae46b449d8}\label{structrcu__tasks_ad08db7acbc99f0e1d64359ae46b449d8} 
+postscan\+\_\+func\+\_\+t {\bfseries postscan\+\_\+func}
+\item 
+\Hypertarget{structrcu__tasks_a9587f0f944ca126cd6e13389466d1e0b}\label{structrcu__tasks_a9587f0f944ca126cd6e13389466d1e0b} 
+holdouts\+\_\+func\+\_\+t {\bfseries holdouts\+\_\+func}
+\item 
+\Hypertarget{structrcu__tasks_a504c7f033d40f9072225f7de2e4ec2f4}\label{structrcu__tasks_a504c7f033d40f9072225f7de2e4ec2f4} 
+postgp\+\_\+func\+\_\+t {\bfseries postgp\+\_\+func}
+\item 
+\Hypertarget{structrcu__tasks_ac8e02637d212dd82e9506efb27a1748c}\label{structrcu__tasks_ac8e02637d212dd82e9506efb27a1748c} 
+call\+\_\+rcu\+\_\+func\+\_\+t {\bfseries call\+\_\+func}
+\item 
+\Hypertarget{structrcu__tasks_a051fc3b605088704f4f21c779274a710}\label{structrcu__tasks_a051fc3b605088704f4f21c779274a710} 
+unsigned int {\bfseries wait\+\_\+state}
+\item 
+\Hypertarget{structrcu__tasks_ae01af1cba5be6504365b3c2b10d613b8}\label{structrcu__tasks_ae01af1cba5be6504365b3c2b10d613b8} 
+struct \doxymbox{\hyperlink{structrcu__tasks__percpu}{rcu\+\_\+tasks\+\_\+percpu}} \texorpdfstring{$\ast$}{*} {\bfseries rtpcpu}
+\item 
+\Hypertarget{structrcu__tasks_a353b042743aab401bf1c5f8ab9c3dded}\label{structrcu__tasks_a353b042743aab401bf1c5f8ab9c3dded} 
+struct \doxymbox{\hyperlink{structrcu__tasks__percpu}{rcu\+\_\+tasks\+\_\+percpu}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries rtpcp\+\_\+array}
+\item 
+\Hypertarget{structrcu__tasks_adcf0e06d7bde9574b89f161c06bd8ea2}\label{structrcu__tasks_adcf0e06d7bde9574b89f161c06bd8ea2} 
+int {\bfseries percpu\+\_\+enqueue\+\_\+shift}
+\item 
+\Hypertarget{structrcu__tasks_a88bf39ffab81b2869b22cc19ba130017}\label{structrcu__tasks_a88bf39ffab81b2869b22cc19ba130017} 
+int {\bfseries percpu\+\_\+enqueue\+\_\+lim}
+\item 
+\Hypertarget{structrcu__tasks_a044ca38a3e1e089f0d18200a029db2a1}\label{structrcu__tasks_a044ca38a3e1e089f0d18200a029db2a1} 
+int {\bfseries percpu\+\_\+dequeue\+\_\+lim}
+\item 
+\Hypertarget{structrcu__tasks_a15fa7b0fbe341ee3700896a8a5c1d00a}\label{structrcu__tasks_a15fa7b0fbe341ee3700896a8a5c1d00a} 
+long unsigned int {\bfseries percpu\+\_\+dequeue\+\_\+gpseq}
+\item 
+\Hypertarget{structrcu__tasks_a34baddf7fb75c8a7152954ade359673e}\label{structrcu__tasks_a34baddf7fb75c8a7152954ade359673e} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries barrier\+\_\+q\+\_\+mutex}
+\item 
+\Hypertarget{structrcu__tasks_a63d3eaae9cba99b091a7650740d5704a}\label{structrcu__tasks_a63d3eaae9cba99b091a7650740d5704a} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries barrier\+\_\+q\+\_\+count}
+\item 
+\Hypertarget{structrcu__tasks_a7c73c631b3cde5ae19ac012f0f57ee96}\label{structrcu__tasks_a7c73c631b3cde5ae19ac012f0f57ee96} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries barrier\+\_\+q\+\_\+completion}
+\item 
+\Hypertarget{structrcu__tasks_a1c65a6a0506729da32770749feb129c0}\label{structrcu__tasks_a1c65a6a0506729da32770749feb129c0} 
+long unsigned int {\bfseries barrier\+\_\+q\+\_\+seq}
+\item 
+\Hypertarget{structrcu__tasks_aa25bfa5ee64d9a5e8a0ca4c6e329be90}\label{structrcu__tasks_aa25bfa5ee64d9a5e8a0ca4c6e329be90} 
+long unsigned int {\bfseries barrier\+\_\+q\+\_\+start}
+\item 
+\Hypertarget{structrcu__tasks_a9df9aae0c3e785bad3922054a2e9ca46}\label{structrcu__tasks_a9df9aae0c3e785bad3922054a2e9ca46} 
+char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structrcu__tasks_a1093f39e46c8b51809d86a71081acc1f}\label{structrcu__tasks_a1093f39e46c8b51809d86a71081acc1f} 
+char \texorpdfstring{$\ast$}{*} {\bfseries kname}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,40 @@
+\doxysection{lsm\+\_\+network\+\_\+audit Struct Reference}
+\hypertarget{structlsm__network__audit}{}\label{structlsm__network__audit}\index{lsm\_network\_audit@{lsm\_network\_audit}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structlsm__network__audit_a40e277fb9f8e4374383551f49f70f68b}\label{structlsm__network__audit_a40e277fb9f8e4374383551f49f70f68b} 
+int {\bfseries netif}
+\item 
+\Hypertarget{structlsm__network__audit_ac68b6af7df41afc082ffaf2d21b08372}\label{structlsm__network__audit_ac68b6af7df41afc082ffaf2d21b08372} 
+const struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries sk}
+\item 
+\Hypertarget{structlsm__network__audit_a48426636bab1982db0461ce96363d8d5}\label{structlsm__network__audit_a48426636bab1982db0461ce96363d8d5} 
+u16 {\bfseries family}
+\item 
+\Hypertarget{structlsm__network__audit_a3f6327c6daed3475874c89476b1ea5b8}\label{structlsm__network__audit_a3f6327c6daed3475874c89476b1ea5b8} 
+\+\_\+\+\_\+be16 {\bfseries dport}
+\item 
+\Hypertarget{structlsm__network__audit_abefbeb1d08ab21e8397cf8577ce0deb6}\label{structlsm__network__audit_abefbeb1d08ab21e8397cf8577ce0deb6} 
+\+\_\+\+\_\+be16 {\bfseries sport}
+\item 
+\Hypertarget{structlsm__network__audit_ae4162d6f6d656c5712ce12a8d9318923}\label{structlsm__network__audit_ae4162d6f6d656c5712ce12a8d9318923} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_be32 {\bfseries daddr}\\
+\>\>\_\_be32 {\bfseries saddr}\\
+\>\} {\bfseries v4}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries daddr}\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries saddr}\\
+\>\} {\bfseries v6}\\
+\} {\bfseries fam}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

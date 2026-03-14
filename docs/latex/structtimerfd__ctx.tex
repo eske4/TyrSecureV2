@@ -1,0 +1,52 @@
+\doxysection{timerfd\+\_\+ctx Struct Reference}
+\hypertarget{structtimerfd__ctx}{}\label{structtimerfd__ctx}\index{timerfd\_ctx@{timerfd\_ctx}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtimerfd__ctx_a9c9ab1623e7c3a670194a8e756e6acc7}\label{structtimerfd__ctx_a9c9ab1623e7c3a670194a8e756e6acc7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries tmr}\\
+\>struct \doxymbox{\hyperlink{structalarm}{alarm}} {\bfseries alarm}\\
+\} {\bfseries t}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtimerfd__ctx_aa62cf8cebc061fd71a16e15f4ea5209c}\label{structtimerfd__ctx_aa62cf8cebc061fd71a16e15f4ea5209c} 
+ktime\+\_\+t {\bfseries tintv}
+\item 
+\Hypertarget{structtimerfd__ctx_a5e980680d5c24dce506dd1c94f21a050}\label{structtimerfd__ctx_a5e980680d5c24dce506dd1c94f21a050} 
+ktime\+\_\+t {\bfseries moffs}
+\item 
+\Hypertarget{structtimerfd__ctx_afbf89f17790e4f353e2597c72965c9ea}\label{structtimerfd__ctx_afbf89f17790e4f353e2597c72965c9ea} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wqh}
+\item 
+\Hypertarget{structtimerfd__ctx_a8ca6ce1ad8e07cf16148d0f8cb0c7cf3}\label{structtimerfd__ctx_a8ca6ce1ad8e07cf16148d0f8cb0c7cf3} 
+u64 {\bfseries ticks}
+\item 
+\Hypertarget{structtimerfd__ctx_a1c859970c20d3d860ffceac667771516}\label{structtimerfd__ctx_a1c859970c20d3d860ffceac667771516} 
+int {\bfseries clockid}
+\item 
+\Hypertarget{structtimerfd__ctx_a6c06a17ef86b44ae33cd00c54c384ece}\label{structtimerfd__ctx_a6c06a17ef86b44ae33cd00c54c384ece} 
+short unsigned int {\bfseries expired}
+\item 
+\Hypertarget{structtimerfd__ctx_ac7ceec37034a5d730357607cbfd1f414}\label{structtimerfd__ctx_ac7ceec37034a5d730357607cbfd1f414} 
+short unsigned int {\bfseries settime\+\_\+flags}
+\item 
+\Hypertarget{structtimerfd__ctx_aa81d712fc2546e9e8f34a14a1cac26da}\label{structtimerfd__ctx_aa81d712fc2546e9e8f34a14a1cac26da} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structtimerfd__ctx_a4832bbd280e6fc2d26f4f21f9cb4283c}\label{structtimerfd__ctx_a4832bbd280e6fc2d26f4f21f9cb4283c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries clist}
+\item 
+\Hypertarget{structtimerfd__ctx_a945634cdfc3f77262dec7cb00f438661}\label{structtimerfd__ctx_a945634cdfc3f77262dec7cb00f438661} 
+spinlock\+\_\+t {\bfseries cancel\+\_\+lock}
+\item 
+\Hypertarget{structtimerfd__ctx_a6752d5dee0204da8084f925913b6bec8}\label{structtimerfd__ctx_a6752d5dee0204da8084f925913b6bec8} 
+bool {\bfseries might\+\_\+cancel}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

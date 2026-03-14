@@ -1,0 +1,61 @@
+\doxysection{jbd2\+\_\+journal\+\_\+handle Struct Reference}
+\hypertarget{structjbd2__journal__handle}{}\label{structjbd2__journal__handle}\index{jbd2\_journal\_handle@{jbd2\_journal\_handle}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structjbd2__journal__handle_ad3e0a5c8d580cdb1c6b0e31cb71a87cf}\label{structjbd2__journal__handle_ad3e0a5c8d580cdb1c6b0e31cb71a87cf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>transaction\_t \texorpdfstring{$\ast$}{*} {\bfseries h\_transaction}\\
+\>journal\_t \texorpdfstring{$\ast$}{*} {\bfseries h\_journal}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structjbd2__journal__handle_af3be7492e2aca96d8245cbc05d43b569}\label{structjbd2__journal__handle_af3be7492e2aca96d8245cbc05d43b569} 
+handle\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries h\+\_\+rsv\+\_\+handle}
+\item 
+\Hypertarget{structjbd2__journal__handle_aa84cc48163513c638c5ba811d7768d09}\label{structjbd2__journal__handle_aa84cc48163513c638c5ba811d7768d09} 
+int {\bfseries h\+\_\+total\+\_\+credits}
+\item 
+\Hypertarget{structjbd2__journal__handle_ae60ff9f05f4913a366f4ed08be75a932}\label{structjbd2__journal__handle_ae60ff9f05f4913a366f4ed08be75a932} 
+int {\bfseries h\+\_\+revoke\+\_\+credits}
+\item 
+\Hypertarget{structjbd2__journal__handle_a57a449e14bf6216dca07b2b474f13829}\label{structjbd2__journal__handle_a57a449e14bf6216dca07b2b474f13829} 
+int {\bfseries h\+\_\+revoke\+\_\+credits\+\_\+requested}
+\item 
+\Hypertarget{structjbd2__journal__handle_ad4d02c6d71085a0ddfb576a8ddac4ba4}\label{structjbd2__journal__handle_ad4d02c6d71085a0ddfb576a8ddac4ba4} 
+int {\bfseries h\+\_\+ref}
+\item 
+\Hypertarget{structjbd2__journal__handle_a5ea0c938274f76e1bb28c554b467f3db}\label{structjbd2__journal__handle_a5ea0c938274f76e1bb28c554b467f3db} 
+int {\bfseries h\+\_\+err}
+\item 
+\Hypertarget{structjbd2__journal__handle_a32308c85dcf477fb1d33ce89e5ee3434}\label{structjbd2__journal__handle_a32308c85dcf477fb1d33ce89e5ee3434} 
+unsigned int {\bfseries h\+\_\+sync}:\+ 1
+\item 
+\Hypertarget{structjbd2__journal__handle_aeb311e66b37281c46194a801b23eded9}\label{structjbd2__journal__handle_aeb311e66b37281c46194a801b23eded9} 
+unsigned int {\bfseries h\+\_\+reserved}:\+ 1
+\item 
+\Hypertarget{structjbd2__journal__handle_ac34548a31a9d0ab6e0fd450ee8bc9d79}\label{structjbd2__journal__handle_ac34548a31a9d0ab6e0fd450ee8bc9d79} 
+unsigned int {\bfseries h\+\_\+aborted}:\+ 1
+\item 
+\Hypertarget{structjbd2__journal__handle_a60817597808767aece241dce2d85bee0}\label{structjbd2__journal__handle_a60817597808767aece241dce2d85bee0} 
+unsigned int {\bfseries h\+\_\+type}:\+ 8
+\item 
+\Hypertarget{structjbd2__journal__handle_a2272203ad98d1edaa178c79ceb839104}\label{structjbd2__journal__handle_a2272203ad98d1edaa178c79ceb839104} 
+unsigned int {\bfseries h\+\_\+line\+\_\+no}:\+ 16
+\item 
+\Hypertarget{structjbd2__journal__handle_adaa164f6b02c6803ab932994165fb0ce}\label{structjbd2__journal__handle_adaa164f6b02c6803ab932994165fb0ce} 
+long unsigned int {\bfseries h\+\_\+start\+\_\+jiffies}
+\item 
+\Hypertarget{structjbd2__journal__handle_aa80f7ece562959b47c5b423581d21396}\label{structjbd2__journal__handle_aa80f7ece562959b47c5b423581d21396} 
+unsigned int {\bfseries h\+\_\+requested\+\_\+credits}
+\item 
+\Hypertarget{structjbd2__journal__handle_a80b86d86006394dc9863258feb07d7ae}\label{structjbd2__journal__handle_a80b86d86006394dc9863258feb07d7ae} 
+unsigned int {\bfseries saved\+\_\+alloc\+\_\+context}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\doxysection{mdio\+\_\+device Struct Reference}
+\hypertarget{structmdio__device}{}\label{structmdio__device}\index{mdio\_device@{mdio\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmdio__device_a84fab34b420a1f1f1e4547838b61086f}\label{structmdio__device_a84fab34b420a1f1f1e4547838b61086f} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structmdio__device_ab6667ea0df99bc637d77b2c0256d4b60}\label{structmdio__device_ab6667ea0df99bc637d77b2c0256d4b60} 
+struct \doxymbox{\hyperlink{structmii__bus}{mii\+\_\+bus}} \texorpdfstring{$\ast$}{*} {\bfseries bus}
+\item 
+\Hypertarget{structmdio__device_a38fa79f2e3564f03894c8896090c19b7}\label{structmdio__device_a38fa79f2e3564f03894c8896090c19b7} 
+char {\bfseries modalias} \+[32]\+
+\item 
+\Hypertarget{structmdio__device_a40c72a2cb542323b6f816f2ab2a6ca85}\label{structmdio__device_a40c72a2cb542323b6f816f2ab2a6ca85} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bus\+\_\+match} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmdio__device_af85ab86d68c6d49735ce90cc6622b909}\label{structmdio__device_af85ab86d68c6d49735ce90cc6622b909} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+free} )(struct \doxymbox{\hyperlink{structmdio__device}{mdio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmdio__device_a8aed8618c1f776672d7a6c481369634c}\label{structmdio__device_a8aed8618c1f776672d7a6c481369634c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+remove} )(struct \doxymbox{\hyperlink{structmdio__device}{mdio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmdio__device_a892cb23e50a9ddc648447d7ed94a45ac}\label{structmdio__device_a892cb23e50a9ddc648447d7ed94a45ac} 
+int {\bfseries addr}
+\item 
+\Hypertarget{structmdio__device_a8cfa87aca7d723c00a4b8d534c4e6ba7}\label{structmdio__device_a8cfa87aca7d723c00a4b8d534c4e6ba7} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structmdio__device_a43a613027e1546f1d8102d52ae7cbb29}\label{structmdio__device_a43a613027e1546f1d8102d52ae7cbb29} 
+int {\bfseries reset\+\_\+state}
+\item 
+\Hypertarget{structmdio__device_a7b85ebb9e30beb5f4db3cf229cddbbab}\label{structmdio__device_a7b85ebb9e30beb5f4db3cf229cddbbab} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+gpio}
+\item 
+\Hypertarget{structmdio__device_afa01d006ff7c1bcf6bfb95ad5342805b}\label{structmdio__device_afa01d006ff7c1bcf6bfb95ad5342805b} 
+struct \doxymbox{\hyperlink{structreset__control}{reset\+\_\+control}} \texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+ctrl}
+\item 
+\Hypertarget{structmdio__device_a20655ee11410c820a3e6d2bfcf29c064}\label{structmdio__device_a20655ee11410c820a3e6d2bfcf29c064} 
+unsigned int {\bfseries reset\+\_\+assert\+\_\+delay}
+\item 
+\Hypertarget{structmdio__device_abd50e9da774f2c1b4b011cfa6f056bb5}\label{structmdio__device_abd50e9da774f2c1b4b011cfa6f056bb5} 
+unsigned int {\bfseries reset\+\_\+deassert\+\_\+delay}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

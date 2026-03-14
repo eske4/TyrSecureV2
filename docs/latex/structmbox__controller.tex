@@ -1,0 +1,46 @@
+\doxysection{mbox\+\_\+controller Struct Reference}
+\hypertarget{structmbox__controller}{}\label{structmbox__controller}\index{mbox\_controller@{mbox\_controller}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmbox__controller_a93366be901de38818a1db974ed349866}\label{structmbox__controller_a93366be901de38818a1db974ed349866} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structmbox__controller_a8d668799241b73c8002652c8af391a4e}\label{structmbox__controller_a8d668799241b73c8002652c8af391a4e} 
+const struct \doxymbox{\hyperlink{structmbox__chan__ops}{mbox\+\_\+chan\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structmbox__controller_a68f95c15c7fd65c3e2d799f9054d5f2e}\label{structmbox__controller_a68f95c15c7fd65c3e2d799f9054d5f2e} 
+struct \doxymbox{\hyperlink{structmbox__chan}{mbox\+\_\+chan}} \texorpdfstring{$\ast$}{*} {\bfseries chans}
+\item 
+\Hypertarget{structmbox__controller_af16634e5f90dff8a49bb8372cf3c2fdc}\label{structmbox__controller_af16634e5f90dff8a49bb8372cf3c2fdc} 
+int {\bfseries num\+\_\+chans}
+\item 
+\Hypertarget{structmbox__controller_a53432c64dc1a322c011160ffbe9b8c23}\label{structmbox__controller_a53432c64dc1a322c011160ffbe9b8c23} 
+bool {\bfseries txdone\+\_\+irq}
+\item 
+\Hypertarget{structmbox__controller_a98ec773a44b4c251a84e59f4d6027644}\label{structmbox__controller_a98ec773a44b4c251a84e59f4d6027644} 
+bool {\bfseries txdone\+\_\+poll}
+\item 
+\Hypertarget{structmbox__controller_adfa43a2cc2b025865a0bf27a5ed3b57b}\label{structmbox__controller_adfa43a2cc2b025865a0bf27a5ed3b57b} 
+unsigned int {\bfseries txpoll\+\_\+period}
+\item 
+\Hypertarget{structmbox__controller_a6c76ceab7a4f98d5667b359ae834a770}\label{structmbox__controller_a6c76ceab7a4f98d5667b359ae834a770} 
+struct \doxymbox{\hyperlink{structmbox__chan}{mbox\+\_\+chan}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries fw\+\_\+xlate} )(struct \doxymbox{\hyperlink{structmbox__controller}{mbox\+\_\+controller}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structfwnode__reference__args}{fwnode\+\_\+reference\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmbox__controller_ab7141f46ab003ba9fd5b9c146795d2eb}\label{structmbox__controller_ab7141f46ab003ba9fd5b9c146795d2eb} 
+struct \doxymbox{\hyperlink{structmbox__chan}{mbox\+\_\+chan}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries of\+\_\+xlate} )(struct \doxymbox{\hyperlink{structmbox__controller}{mbox\+\_\+controller}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structof__phandle__args}{of\+\_\+phandle\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmbox__controller_aeaa00e78d2908c65b75574bdd6ff5755}\label{structmbox__controller_aeaa00e78d2908c65b75574bdd6ff5755} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries poll\+\_\+hrt}
+\item 
+\Hypertarget{structmbox__controller_ab65ece5383954edee43e7a059ef3341e}\label{structmbox__controller_ab65ece5383954edee43e7a059ef3341e} 
+spinlock\+\_\+t {\bfseries poll\+\_\+hrt\+\_\+lock}
+\item 
+\Hypertarget{structmbox__controller_af2abd8c8ad6160bf8d1115ed5155a274}\label{structmbox__controller_af2abd8c8ad6160bf8d1115ed5155a274} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

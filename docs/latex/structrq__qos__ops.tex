@@ -1,0 +1,43 @@
+\doxysection{rq\+\_\+qos\+\_\+ops Struct Reference}
+\hypertarget{structrq__qos__ops}{}\label{structrq__qos__ops}\index{rq\_qos\_ops@{rq\_qos\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrq__qos__ops_a9bb02d99473251db9a832e23c611187d}\label{structrq__qos__ops_a9bb02d99473251db9a832e23c611187d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries throttle} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_a0c1f6aca0ecd36c3da6a13d78a6a6577}\label{structrq__qos__ops_a0c1f6aca0ecd36c3da6a13d78a6a6577} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries track} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_aab2c1aadf3dd3323a407d4f1bdb67170}\label{structrq__qos__ops_aab2c1aadf3dd3323a407d4f1bdb67170} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries merge} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_a0d23fab7e7680801910e4c8fce67eae1}\label{structrq__qos__ops_a0d23fab7e7680801910e4c8fce67eae1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries issue} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_a8da9f660244f6cec7776a073cd3433cf}\label{structrq__qos__ops_a8da9f660244f6cec7776a073cd3433cf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries requeue} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_a8f08636d5bf413f446a59620a35c3b0e}\label{structrq__qos__ops_a8f08636d5bf413f446a59620a35c3b0e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries done} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_a367e021ca36d61ca31eeacd72f22373a}\label{structrq__qos__ops_a367e021ca36d61ca31eeacd72f22373a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries done\+\_\+bio} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_a2e74fc712e6c2352022b6e37607b5bd7}\label{structrq__qos__ops_a2e74fc712e6c2352022b6e37607b5bd7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_a12bf4462a034bdca05cf63bfcb57a7d0}\label{structrq__qos__ops_a12bf4462a034bdca05cf63bfcb57a7d0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries queue\+\_\+depth\+\_\+changed} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_ac11e1d3633932368f47abca565d59082}\label{structrq__qos__ops_ac11e1d3633932368f47abca565d59082} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit} )(struct \doxymbox{\hyperlink{structrq__qos}{rq\+\_\+qos}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrq__qos__ops_a025b5161b87b1ae5df122bb5eed35671}\label{structrq__qos__ops_a025b5161b87b1ae5df122bb5eed35671} 
+const struct \doxymbox{\hyperlink{structblk__mq__debugfs__attr}{blk\+\_\+mq\+\_\+debugfs\+\_\+attr}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+attrs}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

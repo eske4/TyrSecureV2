@@ -1,0 +1,43 @@
+\doxysection{devlink\+\_\+region Struct Reference}
+\hypertarget{structdevlink__region}{}\label{structdevlink__region}\index{devlink\_region@{devlink\_region}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdevlink__region_a9609994dfda9cfff6ad30fdfd9064cdd}\label{structdevlink__region_a9609994dfda9cfff6ad30fdfd9064cdd} 
+struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*} {\bfseries devlink}
+\item 
+\Hypertarget{structdevlink__region_a7f2b360eb89c91789ae5f6a5b95c4a2c}\label{structdevlink__region_a7f2b360eb89c91789ae5f6a5b95c4a2c} 
+struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} \texorpdfstring{$\ast$}{*} {\bfseries port}
+\item 
+\Hypertarget{structdevlink__region_a80a5a590c3996c84a58a32daa55bde0b}\label{structdevlink__region_a80a5a590c3996c84a58a32daa55bde0b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structdevlink__region_a73766c58e18ea785997bb01621c0cb65}\label{structdevlink__region_a73766c58e18ea785997bb01621c0cb65} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const struct \doxymbox{\hyperlink{structdevlink__region__ops}{devlink\_region\_ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}\\
+\>const struct \doxymbox{\hyperlink{structdevlink__port__region__ops}{devlink\_port\_region\_ops}} \texorpdfstring{$\ast$}{*} {\bfseries port\_ops}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdevlink__region_aa9de95dfabb21ffe218eaacaff8a7409}\label{structdevlink__region_aa9de95dfabb21ffe218eaacaff8a7409} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries snapshot\+\_\+lock}
+\item 
+\Hypertarget{structdevlink__region_ada9efcc633b6d7aaf6ab0daf47d52858}\label{structdevlink__region_ada9efcc633b6d7aaf6ab0daf47d52858} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries snapshot\+\_\+list}
+\item 
+\Hypertarget{structdevlink__region_a6bc05e935d83eb50349db53beab9b44b}\label{structdevlink__region_a6bc05e935d83eb50349db53beab9b44b} 
+u32 {\bfseries max\+\_\+snapshots}
+\item 
+\Hypertarget{structdevlink__region_a034ea7aba7fde005ef7f17a8dc1ddac0}\label{structdevlink__region_a034ea7aba7fde005ef7f17a8dc1ddac0} 
+u32 {\bfseries cur\+\_\+snapshots}
+\item 
+\Hypertarget{structdevlink__region_a213cfc19182aaf00fa809d8ede09def0}\label{structdevlink__region_a213cfc19182aaf00fa809d8ede09def0} 
+u64 {\bfseries size}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

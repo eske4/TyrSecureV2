@@ -1,0 +1,29 @@
+\doxysection{bpf\+\_\+sock\+\_\+tuple Struct Reference}
+\hypertarget{structbpf__sock__tuple}{}\label{structbpf__sock__tuple}\index{bpf\_sock\_tuple@{bpf\_sock\_tuple}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__sock__tuple_a6bba15786fe78c4ffa38361ecb9a9c89}\label{structbpf__sock__tuple_a6bba15786fe78c4ffa38361ecb9a9c89} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_be32 {\bfseries saddr}\\
+\>\>\_\_be32 {\bfseries daddr}\\
+\>\>\_\_be16 {\bfseries sport}\\
+\>\>\_\_be16 {\bfseries dport}\\
+\>\} {\bfseries ipv4}\\
+\>struct \{\\
+\>\>\_\_be32 {\bfseries saddr} \+[4]\+\\
+\>\>\_\_be32 {\bfseries daddr} \+[4]\+\\
+\>\>\_\_be16 {\bfseries sport}\\
+\>\>\_\_be16 {\bfseries dport}\\
+\>\} {\bfseries ipv6}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

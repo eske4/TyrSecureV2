@@ -1,0 +1,38 @@
+\doxysection{stack\+\_\+record Struct Reference}
+\hypertarget{structstack__record}{}\label{structstack__record}\index{stack\_record@{stack\_record}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structstack__record_a76ac22e43a566891c6b8c12772891426}\label{structstack__record_a76ac22e43a566891c6b8c12772891426} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries hash\+\_\+list}
+\item 
+\Hypertarget{structstack__record_ab5b27ac3c7743111afe847f01c9e5d94}\label{structstack__record_ab5b27ac3c7743111afe847f01c9e5d94} 
+u32 {\bfseries hash}
+\item 
+\Hypertarget{structstack__record_aacaa83b105fd006b7b5c3e830dbf2052}\label{structstack__record_aacaa83b105fd006b7b5c3e830dbf2052} 
+u32 {\bfseries size}
+\item 
+\Hypertarget{structstack__record_a2d8bda4755eb019e3ef54ad6883a3ddb}\label{structstack__record_a2d8bda4755eb019e3ef54ad6883a3ddb} 
+union \doxymbox{\hyperlink{unionhandle__parts}{handle\+\_\+parts}} {\bfseries handle}
+\item 
+\Hypertarget{structstack__record_a5530d710eb4545bd4160278e1d494b7c}\label{structstack__record_a5530d710eb4545bd4160278e1d494b7c} 
+refcount\+\_\+t {\bfseries count}
+\item 
+\Hypertarget{structstack__record_a35e750b2c870be208c78209f9e50fe28}\label{structstack__record_a35e750b2c870be208c78209f9e50fe28} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int {\bfseries entries} \+[64]\+\\
+\Hypertarget{unionstack__record_1_1_0d360003313354111255315302277003051023166130215221_a2a96abd041ecf299a44dea3ce85be3fd}\label{unionstack__record_1_1_0d360003313354111255315302277003051023166130215221_a2a96abd041ecf299a44dea3ce85be3fd} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries free\_list}\\
+\>\>long unsigned int {\bfseries rcu\_state}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

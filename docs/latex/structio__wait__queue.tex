@@ -1,0 +1,43 @@
+\doxysection{io\+\_\+wait\+\_\+queue Struct Reference}
+\hypertarget{structio__wait__queue}{}\label{structio__wait__queue}\index{io\_wait\_queue@{io\_wait\_queue}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__wait__queue_aabacc198654c9e7a07ad172bc9299136}\label{structio__wait__queue_aabacc198654c9e7a07ad172bc9299136} 
+struct \doxymbox{\hyperlink{structwait__queue__entry}{wait\+\_\+queue\+\_\+entry}} {\bfseries wq}
+\item 
+\Hypertarget{structio__wait__queue_adcd5f3c764f82e2cf1a021a6961d9938}\label{structio__wait__queue_adcd5f3c764f82e2cf1a021a6961d9938} 
+struct \doxymbox{\hyperlink{structio__ring__ctx}{io\+\_\+ring\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries ctx}
+\item 
+\Hypertarget{structio__wait__queue_a49cd3f4bf1db92e05ca8c01369cf4235}\label{structio__wait__queue_a49cd3f4bf1db92e05ca8c01369cf4235} 
+unsigned int {\bfseries cq\+\_\+tail}
+\item 
+\Hypertarget{structio__wait__queue_af132e3a049d0d8bec5f4ac32141938d0}\label{structio__wait__queue_af132e3a049d0d8bec5f4ac32141938d0} 
+unsigned int {\bfseries cq\+\_\+min\+\_\+tail}
+\item 
+\Hypertarget{structio__wait__queue_a7eeaca32b232caea5a33c085104e4bbc}\label{structio__wait__queue_a7eeaca32b232caea5a33c085104e4bbc} 
+unsigned int {\bfseries nr\+\_\+timeouts}
+\item 
+\Hypertarget{structio__wait__queue_a9b653db2873a0552a2f4c6c39c232d50}\label{structio__wait__queue_a9b653db2873a0552a2f4c6c39c232d50} 
+int {\bfseries hit\+\_\+timeout}
+\item 
+\Hypertarget{structio__wait__queue_af7ca6fdf9ed3001c02c1e57c1ae4bd29}\label{structio__wait__queue_af7ca6fdf9ed3001c02c1e57c1ae4bd29} 
+ktime\+\_\+t {\bfseries min\+\_\+timeout}
+\item 
+\Hypertarget{structio__wait__queue_ad53c5e1b6c53912829dc3964d404bfd1}\label{structio__wait__queue_ad53c5e1b6c53912829dc3964d404bfd1} 
+ktime\+\_\+t {\bfseries timeout}
+\item 
+\Hypertarget{structio__wait__queue_a847baccf009084f4d89ec055326430fd}\label{structio__wait__queue_a847baccf009084f4d89ec055326430fd} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries t}
+\item 
+\Hypertarget{structio__wait__queue_ae30966e83e450ced7af9955f28d0f975}\label{structio__wait__queue_ae30966e83e450ced7af9955f28d0f975} 
+ktime\+\_\+t {\bfseries napi\+\_\+busy\+\_\+poll\+\_\+dt}
+\item 
+\Hypertarget{structio__wait__queue_a8696350a43ca1d9435da42209805fd70}\label{structio__wait__queue_a8696350a43ca1d9435da42209805fd70} 
+bool {\bfseries napi\+\_\+prefer\+\_\+busy\+\_\+poll}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

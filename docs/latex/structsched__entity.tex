@@ -1,0 +1,88 @@
+\doxysection{sched\+\_\+entity Struct Reference}
+\hypertarget{structsched__entity}{}\label{structsched__entity}\index{sched\_entity@{sched\_entity}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsched__entity_a510885dbe89faea9530e41175a550477}\label{structsched__entity_a510885dbe89faea9530e41175a550477} 
+struct \doxymbox{\hyperlink{structload__weight}{load\+\_\+weight}} {\bfseries load}
+\item 
+\Hypertarget{structsched__entity_a2770acd80c04c648eaf826b7aa95db5e}\label{structsched__entity_a2770acd80c04c648eaf826b7aa95db5e} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries run\+\_\+node}
+\item 
+\Hypertarget{structsched__entity_acd7bbba4e5df052357603e35c04d4740}\label{structsched__entity_acd7bbba4e5df052357603e35c04d4740} 
+u64 {\bfseries deadline}
+\item 
+\Hypertarget{structsched__entity_ac970b3c086a79d5eb8b77e5f151f1b3d}\label{structsched__entity_ac970b3c086a79d5eb8b77e5f151f1b3d} 
+u64 {\bfseries min\+\_\+vruntime}
+\item 
+\Hypertarget{structsched__entity_afc3a863e8376c192f6f82ee802a0f699}\label{structsched__entity_afc3a863e8376c192f6f82ee802a0f699} 
+u64 {\bfseries min\+\_\+slice}
+\item 
+\Hypertarget{structsched__entity_a6ab6cb9cac1425ec05ce2fcc97fadcd8}\label{structsched__entity_a6ab6cb9cac1425ec05ce2fcc97fadcd8} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries group\+\_\+node}
+\item 
+\Hypertarget{structsched__entity_a8ed0d33614ba211e0d56464eaece8af5}\label{structsched__entity_a8ed0d33614ba211e0d56464eaece8af5} 
+unsigned char {\bfseries on\+\_\+rq}
+\item 
+\Hypertarget{structsched__entity_a5ce0ee692e9bf8c99abaf7b89a60c803}\label{structsched__entity_a5ce0ee692e9bf8c99abaf7b89a60c803} 
+unsigned char {\bfseries sched\+\_\+delayed}
+\item 
+\Hypertarget{structsched__entity_a1b7fa9063d089d0cd6424bdb71517d8a}\label{structsched__entity_a1b7fa9063d089d0cd6424bdb71517d8a} 
+unsigned char {\bfseries rel\+\_\+deadline}
+\item 
+\Hypertarget{structsched__entity_a92567c874f4f35f9862cc55bc7e437cf}\label{structsched__entity_a92567c874f4f35f9862cc55bc7e437cf} 
+unsigned char {\bfseries custom\+\_\+slice}
+\item 
+\Hypertarget{structsched__entity_a91e456c3c36512b2ddd64800f8bd22e3}\label{structsched__entity_a91e456c3c36512b2ddd64800f8bd22e3} 
+u64 {\bfseries exec\+\_\+start}
+\item 
+\Hypertarget{structsched__entity_a4606ed9e7993fbb5d2722d2665e6fc9a}\label{structsched__entity_a4606ed9e7993fbb5d2722d2665e6fc9a} 
+u64 {\bfseries sum\+\_\+exec\+\_\+runtime}
+\item 
+\Hypertarget{structsched__entity_a995ad5587599b473320d95f327e96823}\label{structsched__entity_a995ad5587599b473320d95f327e96823} 
+u64 {\bfseries prev\+\_\+sum\+\_\+exec\+\_\+runtime}
+\item 
+\Hypertarget{structsched__entity_aa421e3e503de05d506df9b8a56111c06}\label{structsched__entity_aa421e3e503de05d506df9b8a56111c06} 
+u64 {\bfseries vruntime}
+\item 
+\Hypertarget{structsched__entity_a20627b6bbb20a08c41140b916054168b}\label{structsched__entity_a20627b6bbb20a08c41140b916054168b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>s64 {\bfseries vlag}\\
+\>u64 {\bfseries vprot}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsched__entity_a185a958b34dbc9e03220079ed7d55081}\label{structsched__entity_a185a958b34dbc9e03220079ed7d55081} 
+u64 {\bfseries slice}
+\item 
+\Hypertarget{structsched__entity_ac79515514a53bde55074e519f17a51b6}\label{structsched__entity_ac79515514a53bde55074e519f17a51b6} 
+u64 {\bfseries nr\+\_\+migrations}
+\item 
+\Hypertarget{structsched__entity_a57916928398653a7f8c38cd70763f21a}\label{structsched__entity_a57916928398653a7f8c38cd70763f21a} 
+int {\bfseries depth}
+\item 
+\Hypertarget{structsched__entity_accecd00d35f65568529c327573cbd6ba}\label{structsched__entity_accecd00d35f65568529c327573cbd6ba} 
+struct \doxymbox{\hyperlink{structsched__entity}{sched\+\_\+entity}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structsched__entity_af673e5a03e63baf7b00e8c53b0292302}\label{structsched__entity_af673e5a03e63baf7b00e8c53b0292302} 
+struct \doxymbox{\hyperlink{structcfs__rq}{cfs\+\_\+rq}} \texorpdfstring{$\ast$}{*} {\bfseries cfs\+\_\+rq}
+\item 
+\Hypertarget{structsched__entity_a346ceb5c2d259115989584b30cab6b23}\label{structsched__entity_a346ceb5c2d259115989584b30cab6b23} 
+struct \doxymbox{\hyperlink{structcfs__rq}{cfs\+\_\+rq}} \texorpdfstring{$\ast$}{*} {\bfseries my\+\_\+q}
+\item 
+\Hypertarget{structsched__entity_aaa693583e1f8ef89824ba3fed700b90b}\label{structsched__entity_aaa693583e1f8ef89824ba3fed700b90b} 
+long unsigned int {\bfseries runnable\+\_\+weight}
+\item 
+\Hypertarget{structsched__entity_ae55f7bebcc67100ed792a58c7724c972}\label{structsched__entity_ae55f7bebcc67100ed792a58c7724c972} 
+long :\+ 64
+\item 
+\Hypertarget{structsched__entity_a4ccb3b3a4fcf96bd24d3de59d6d1a5d0}\label{structsched__entity_a4ccb3b3a4fcf96bd24d3de59d6d1a5d0} 
+struct \doxymbox{\hyperlink{structsched__avg}{sched\+\_\+avg}} {\bfseries avg}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

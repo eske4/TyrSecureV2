@@ -1,0 +1,115 @@
+\doxysection{drm\+\_\+file Struct Reference}
+\hypertarget{structdrm__file}{}\label{structdrm__file}\index{drm\_file@{drm\_file}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__file_a980a3d1c62ef36519b8624d98cd04df6}\label{structdrm__file_a980a3d1c62ef36519b8624d98cd04df6} 
+bool {\bfseries authenticated}
+\item 
+\Hypertarget{structdrm__file_a910dabfb88c08f998624bf9b8066cd9a}\label{structdrm__file_a910dabfb88c08f998624bf9b8066cd9a} 
+bool {\bfseries stereo\+\_\+allowed}
+\item 
+\Hypertarget{structdrm__file_aa177d7273ab4a2fe82d9b0a5231862ea}\label{structdrm__file_aa177d7273ab4a2fe82d9b0a5231862ea} 
+bool {\bfseries universal\+\_\+planes}
+\item 
+\Hypertarget{structdrm__file_ab693438a41fddf6bfa9b29939d327699}\label{structdrm__file_ab693438a41fddf6bfa9b29939d327699} 
+bool {\bfseries atomic}
+\item 
+\Hypertarget{structdrm__file_a638d090ecd6cc988a0fcd134c1d92141}\label{structdrm__file_a638d090ecd6cc988a0fcd134c1d92141} 
+bool {\bfseries aspect\+\_\+ratio\+\_\+allowed}
+\item 
+\Hypertarget{structdrm__file_ac32d71066184233aa77f54f7eac0841f}\label{structdrm__file_ac32d71066184233aa77f54f7eac0841f} 
+bool {\bfseries writeback\+\_\+connectors}
+\item 
+\Hypertarget{structdrm__file_a98906c9b096fbc0af9b85a5014495d1f}\label{structdrm__file_a98906c9b096fbc0af9b85a5014495d1f} 
+bool {\bfseries plane\+\_\+color\+\_\+pipeline}
+\item 
+\Hypertarget{structdrm__file_a576008ad2cf0d6f3580cd5377da1efe4}\label{structdrm__file_a576008ad2cf0d6f3580cd5377da1efe4} 
+bool {\bfseries was\+\_\+master}
+\item 
+\Hypertarget{structdrm__file_a7be8dd19d25f0aa35196e9007ad70d47}\label{structdrm__file_a7be8dd19d25f0aa35196e9007ad70d47} 
+bool {\bfseries is\+\_\+master}
+\item 
+\Hypertarget{structdrm__file_a1a8383b6956357b3d4defbf326d5a8a8}\label{structdrm__file_a1a8383b6956357b3d4defbf326d5a8a8} 
+bool {\bfseries supports\+\_\+virtualized\+\_\+cursor\+\_\+plane}
+\item 
+\Hypertarget{structdrm__file_aded24ffd119c3ad3e35512eb07fd5ee2}\label{structdrm__file_aded24ffd119c3ad3e35512eb07fd5ee2} 
+struct \doxymbox{\hyperlink{structdrm__master}{drm\+\_\+master}} \texorpdfstring{$\ast$}{*} {\bfseries master}
+\item 
+\Hypertarget{structdrm__file_aeb011e8e526c7983ca50a2c951cf978c}\label{structdrm__file_aeb011e8e526c7983ca50a2c951cf978c} 
+spinlock\+\_\+t {\bfseries master\+\_\+lookup\+\_\+lock}
+\item 
+\Hypertarget{structdrm__file_a194555cbb425e002cafe77647a5add3d}\label{structdrm__file_a194555cbb425e002cafe77647a5add3d} 
+struct \doxymbox{\hyperlink{structpid}{pid}} \texorpdfstring{$\ast$}{*} {\bfseries pid}
+\item 
+\Hypertarget{structdrm__file_ab23ca488454458b1a0edb95991a5c9c5}\label{structdrm__file_ab23ca488454458b1a0edb95991a5c9c5} 
+u64 {\bfseries client\+\_\+id}
+\item 
+\Hypertarget{structdrm__file_a352f31537ad7aa9d2713ecbf5c5777c3}\label{structdrm__file_a352f31537ad7aa9d2713ecbf5c5777c3} 
+drm\+\_\+magic\+\_\+t {\bfseries magic}
+\item 
+\Hypertarget{structdrm__file_ab6a7fecc3c98250d7b7e0cb875908fe9}\label{structdrm__file_ab6a7fecc3c98250d7b7e0cb875908fe9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries lhead}
+\item 
+\Hypertarget{structdrm__file_a39f48e357b338c4696ca11898465eb23}\label{structdrm__file_a39f48e357b338c4696ca11898465eb23} 
+struct \doxymbox{\hyperlink{structdrm__minor}{drm\+\_\+minor}} \texorpdfstring{$\ast$}{*} {\bfseries minor}
+\item 
+\Hypertarget{structdrm__file_a1dac3ef72972b059654301a1fa9b9fb8}\label{structdrm__file_a1dac3ef72972b059654301a1fa9b9fb8} 
+struct \doxymbox{\hyperlink{structidr}{idr}} {\bfseries object\+\_\+idr}
+\item 
+\Hypertarget{structdrm__file_a0c781bc391f6deddf191a3c1b97c545b}\label{structdrm__file_a0c781bc391f6deddf191a3c1b97c545b} 
+spinlock\+\_\+t {\bfseries table\+\_\+lock}
+\item 
+\Hypertarget{structdrm__file_a9a887189bcdcf9edc7639840979e1c4f}\label{structdrm__file_a9a887189bcdcf9edc7639840979e1c4f} 
+struct \doxymbox{\hyperlink{structidr}{idr}} {\bfseries syncobj\+\_\+idr}
+\item 
+\Hypertarget{structdrm__file_a3d33fa8fec49288c1554cc8de799822e}\label{structdrm__file_a3d33fa8fec49288c1554cc8de799822e} 
+spinlock\+\_\+t {\bfseries syncobj\+\_\+table\+\_\+lock}
+\item 
+\Hypertarget{structdrm__file_a109190d58761b76147505a740e531d9f}\label{structdrm__file_a109190d58761b76147505a740e531d9f} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries filp}
+\item 
+\Hypertarget{structdrm__file_aa4fa7f2751d8ed4e4422d5fc1842a96e}\label{structdrm__file_aa4fa7f2751d8ed4e4422d5fc1842a96e} 
+void \texorpdfstring{$\ast$}{*} {\bfseries driver\+\_\+priv}
+\item 
+\Hypertarget{structdrm__file_a92ecf7ff6a925b2a994a5735e70fc1dd}\label{structdrm__file_a92ecf7ff6a925b2a994a5735e70fc1dd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries fbs}
+\item 
+\Hypertarget{structdrm__file_a170735d3df59d0229e1adedb73ba9df1}\label{structdrm__file_a170735d3df59d0229e1adedb73ba9df1} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries fbs\+\_\+lock}
+\item 
+\Hypertarget{structdrm__file_a3568d3d47f269a11905ddcd64084b0c8}\label{structdrm__file_a3568d3d47f269a11905ddcd64084b0c8} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries blobs}
+\item 
+\Hypertarget{structdrm__file_a4764c0fff056838575449172010f8abd}\label{structdrm__file_a4764c0fff056838575449172010f8abd} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries event\+\_\+wait}
+\item 
+\Hypertarget{structdrm__file_ad32dc8727b400a916801153953862036}\label{structdrm__file_ad32dc8727b400a916801153953862036} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pending\+\_\+event\+\_\+list}
+\item 
+\Hypertarget{structdrm__file_a997fee735bda978f74e5b29ede8adf23}\label{structdrm__file_a997fee735bda978f74e5b29ede8adf23} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries event\+\_\+list}
+\item 
+\Hypertarget{structdrm__file_a03d9ce7d570898c2775404dd4ae63bde}\label{structdrm__file_a03d9ce7d570898c2775404dd4ae63bde} 
+int {\bfseries event\+\_\+space}
+\item 
+\Hypertarget{structdrm__file_af18707f33470b408a6fdfff89fd2009c}\label{structdrm__file_af18707f33470b408a6fdfff89fd2009c} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries event\+\_\+read\+\_\+lock}
+\item 
+\Hypertarget{structdrm__file_a84400b390edd2328a8bd10506aee85e6}\label{structdrm__file_a84400b390edd2328a8bd10506aee85e6} 
+struct \doxymbox{\hyperlink{structdrm__prime__file__private}{drm\+\_\+prime\+\_\+file\+\_\+private}} {\bfseries prime}
+\item 
+\Hypertarget{structdrm__file_aee9e91da62a2cdd4f9244405586e4393}\label{structdrm__file_aee9e91da62a2cdd4f9244405586e4393} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries client\+\_\+name}
+\item 
+\Hypertarget{structdrm__file_a6ec72be2e5e20842f93358c66e90ed51}\label{structdrm__file_a6ec72be2e5e20842f93358c66e90ed51} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries client\+\_\+name\+\_\+lock}
+\item 
+\Hypertarget{structdrm__file_afde0babaf942bf323d87c75ca2f7430b}\label{structdrm__file_afde0babaf942bf323d87c75ca2f7430b} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+client}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

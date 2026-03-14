@@ -1,0 +1,61 @@
+\doxysection{kvm\+\_\+hv Struct Reference}
+\hypertarget{structkvm__hv}{}\label{structkvm__hv}\index{kvm\_hv@{kvm\_hv}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__hv_afdc193e68061d4cddc69adab4cd4c2b3}\label{structkvm__hv_afdc193e68061d4cddc69adab4cd4c2b3} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries hv\+\_\+lock}
+\item 
+\Hypertarget{structkvm__hv_a2349d584baf18902ff24a7d57b7d9cf0}\label{structkvm__hv_a2349d584baf18902ff24a7d57b7d9cf0} 
+u64 {\bfseries hv\+\_\+guest\+\_\+os\+\_\+id}
+\item 
+\Hypertarget{structkvm__hv_ab66e146ce247f536533899f3a73ae473}\label{structkvm__hv_ab66e146ce247f536533899f3a73ae473} 
+u64 {\bfseries hv\+\_\+hypercall}
+\item 
+\Hypertarget{structkvm__hv_a69ce006c15c530c2606982d08e534da3}\label{structkvm__hv_a69ce006c15c530c2606982d08e534da3} 
+u64 {\bfseries hv\+\_\+tsc\+\_\+page}
+\item 
+\Hypertarget{structkvm__hv_a584423f1e13839a350bd65e2c2fc4340}\label{structkvm__hv_a584423f1e13839a350bd65e2c2fc4340} 
+enum hv\+\_\+tsc\+\_\+page\+\_\+status {\bfseries hv\+\_\+tsc\+\_\+page\+\_\+status}
+\item 
+\Hypertarget{structkvm__hv_a2fa7200202d32729f276660812b16247}\label{structkvm__hv_a2fa7200202d32729f276660812b16247} 
+u64 {\bfseries hv\+\_\+crash\+\_\+param} \+[5]\+
+\item 
+\Hypertarget{structkvm__hv_a546d0ef6b97902611ca3784061ffa0d2}\label{structkvm__hv_a546d0ef6b97902611ca3784061ffa0d2} 
+u64 {\bfseries hv\+\_\+crash\+\_\+ctl}
+\item 
+\Hypertarget{structkvm__hv_a99656508a16a69bb1a59202a06abce90}\label{structkvm__hv_a99656508a16a69bb1a59202a06abce90} 
+struct \doxymbox{\hyperlink{structms__hyperv__tsc__page}{ms\+\_\+hyperv\+\_\+tsc\+\_\+page}} {\bfseries tsc\+\_\+ref}
+\item 
+\Hypertarget{structkvm__hv_a99bdcc042b50fd19ba0abab25512fd30}\label{structkvm__hv_a99bdcc042b50fd19ba0abab25512fd30} 
+struct \doxymbox{\hyperlink{structidr}{idr}} {\bfseries conn\+\_\+to\+\_\+evt}
+\item 
+\Hypertarget{structkvm__hv_aef12e8d1fc8638a539420f99b23b7390}\label{structkvm__hv_aef12e8d1fc8638a539420f99b23b7390} 
+u64 {\bfseries hv\+\_\+reenlightenment\+\_\+control}
+\item 
+\Hypertarget{structkvm__hv_ae95bdfb86446fe4bbfac3b188cfeef58}\label{structkvm__hv_ae95bdfb86446fe4bbfac3b188cfeef58} 
+u64 {\bfseries hv\+\_\+tsc\+\_\+emulation\+\_\+control}
+\item 
+\Hypertarget{structkvm__hv_aa2c9951b9f0e128d0b51423c6f5d71e6}\label{structkvm__hv_aa2c9951b9f0e128d0b51423c6f5d71e6} 
+u64 {\bfseries hv\+\_\+tsc\+\_\+emulation\+\_\+status}
+\item 
+\Hypertarget{structkvm__hv_a39536fa60268ab5effeaa990940d9463}\label{structkvm__hv_a39536fa60268ab5effeaa990940d9463} 
+u64 {\bfseries hv\+\_\+invtsc\+\_\+control}
+\item 
+\Hypertarget{structkvm__hv_a8df235d3e489cb1bef546f61be42b39e}\label{structkvm__hv_a8df235d3e489cb1bef546f61be42b39e} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries num\+\_\+mismatched\+\_\+vp\+\_\+indexes}
+\item 
+\Hypertarget{structkvm__hv_a85b89b54aa2d416a1731653182585937}\label{structkvm__hv_a85b89b54aa2d416a1731653182585937} 
+unsigned int {\bfseries synic\+\_\+auto\+\_\+eoi\+\_\+used}
+\item 
+\Hypertarget{structkvm__hv_a39b98e77a167639eccb241026cf83b28}\label{structkvm__hv_a39b98e77a167639eccb241026cf83b28} 
+struct \doxymbox{\hyperlink{structkvm__hv__syndbg}{kvm\+\_\+hv\+\_\+syndbg}} {\bfseries hv\+\_\+syndbg}
+\item 
+\Hypertarget{structkvm__hv_a9974fe1e33def732a4bcf09e7d1b73ff}\label{structkvm__hv_a9974fe1e33def732a4bcf09e7d1b73ff} 
+bool {\bfseries xsaves\+\_\+xsavec\+\_\+checked}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

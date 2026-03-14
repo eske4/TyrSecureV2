@@ -1,0 +1,44 @@
+\doxysection{kvm\+\_\+hyperv\+\_\+exit Struct Reference}
+\hypertarget{structkvm__hyperv__exit}{}\label{structkvm__hyperv__exit}\index{kvm\_hyperv\_exit@{kvm\_hyperv\_exit}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__hyperv__exit_a6ebb4d6f18d03902de8597c87354b158}\label{structkvm__hyperv__exit_a6ebb4d6f18d03902de8597c87354b158} 
+\+\_\+\+\_\+u32 {\bfseries type}
+\item 
+\Hypertarget{structkvm__hyperv__exit_a377b40c7a0245f3533bf8f881d7a81b0}\label{structkvm__hyperv__exit_a377b40c7a0245f3533bf8f881d7a81b0} 
+\+\_\+\+\_\+u32 {\bfseries pad1}
+\item 
+\Hypertarget{structkvm__hyperv__exit_a6173203ed0d375cb1541348501840062}\label{structkvm__hyperv__exit_a6173203ed0d375cb1541348501840062} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries msr}\\
+\>\>\_\_u32 {\bfseries pad2}\\
+\>\>\_\_u64 {\bfseries control}\\
+\>\>\_\_u64 {\bfseries evt\_page}\\
+\>\>\_\_u64 {\bfseries msg\_page}\\
+\>\} {\bfseries synic}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries input}\\
+\>\>\_\_u64 {\bfseries result}\\
+\>\>\_\_u64 {\bfseries params} \+[2]\+\\
+\>\} {\bfseries hcall}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries msr}\\
+\>\>\_\_u32 {\bfseries pad2}\\
+\>\>\_\_u64 {\bfseries control}\\
+\>\>\_\_u64 {\bfseries status}\\
+\>\>\_\_u64 {\bfseries send\_page}\\
+\>\>\_\_u64 {\bfseries recv\_page}\\
+\>\>\_\_u64 {\bfseries pending\_page}\\
+\>\} {\bfseries syndbg}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,340 @@
+\doxysection{fuse\+\_\+conn Struct Reference}
+\hypertarget{structfuse__conn}{}\label{structfuse__conn}\index{fuse\_conn@{fuse\_conn}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__conn_a90831e6437d65b7a11d966057f379c9e}\label{structfuse__conn_a90831e6437d65b7a11d966057f379c9e} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structfuse__conn_ab0b1bc3f9d5c7587e0c6d6ac87321324}\label{structfuse__conn_ab0b1bc3f9d5c7587e0c6d6ac87321324} 
+refcount\+\_\+t {\bfseries count}
+\item 
+\Hypertarget{structfuse__conn_a4cab2226577e7c40bd07a09877dbf02f}\label{structfuse__conn_a4cab2226577e7c40bd07a09877dbf02f} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries dev\+\_\+count}
+\item 
+\Hypertarget{structfuse__conn_a4f6fa21eb0fc4528656016d85dec57da}\label{structfuse__conn_a4f6fa21eb0fc4528656016d85dec57da} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries epoch}
+\item 
+\Hypertarget{structfuse__conn_a75f8f4b440e76b2bdb60ff1337310691}\label{structfuse__conn_a75f8f4b440e76b2bdb60ff1337310691} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries epoch\+\_\+work}
+\item 
+\Hypertarget{structfuse__conn_a7eec4797578d3328078176744eabfe6c}\label{structfuse__conn_a7eec4797578d3328078176744eabfe6c} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structfuse__conn_a7793e457bd376c545442f57ab67a76f9}\label{structfuse__conn_a7793e457bd376c545442f57ab67a76f9} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries user\+\_\+id}
+\item 
+\Hypertarget{structfuse__conn_a61aa934710a6be6cd4406d6a8c0ddcb2}\label{structfuse__conn_a61aa934710a6be6cd4406d6a8c0ddcb2} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries group\+\_\+id}
+\item 
+\Hypertarget{structfuse__conn_a35187ae21ce87fba895f93ff49e26f0e}\label{structfuse__conn_a35187ae21ce87fba895f93ff49e26f0e} 
+struct \doxymbox{\hyperlink{structpid__namespace}{pid\+\_\+namespace}} \texorpdfstring{$\ast$}{*} {\bfseries pid\+\_\+ns}
+\item 
+\Hypertarget{structfuse__conn_a33122e48431bfaa62de602c09c495742}\label{structfuse__conn_a33122e48431bfaa62de602c09c495742} 
+struct \doxymbox{\hyperlink{structuser__namespace}{user\+\_\+namespace}} \texorpdfstring{$\ast$}{*} {\bfseries user\+\_\+ns}
+\item 
+\Hypertarget{structfuse__conn_aee04ecb7c116c4723c7c37af8101c2d7}\label{structfuse__conn_aee04ecb7c116c4723c7c37af8101c2d7} 
+unsigned int {\bfseries max\+\_\+read}
+\item 
+\Hypertarget{structfuse__conn_a2c38bf2047188fd1125e288d69bbb6aa}\label{structfuse__conn_a2c38bf2047188fd1125e288d69bbb6aa} 
+unsigned int {\bfseries max\+\_\+write}
+\item 
+\Hypertarget{structfuse__conn_a0cc6440d459998b87aaacc34cdccd14e}\label{structfuse__conn_a0cc6440d459998b87aaacc34cdccd14e} 
+unsigned int {\bfseries max\+\_\+pages}
+\item 
+\Hypertarget{structfuse__conn_ad0145834bfa38eb75eb27bcf3c9bfd0d}\label{structfuse__conn_ad0145834bfa38eb75eb27bcf3c9bfd0d} 
+unsigned int {\bfseries max\+\_\+pages\+\_\+limit}
+\item 
+\Hypertarget{structfuse__conn_a9cf6fc648beeeeeedb4595303cb464c5}\label{structfuse__conn_a9cf6fc648beeeeeedb4595303cb464c5} 
+struct \doxymbox{\hyperlink{structfuse__iqueue}{fuse\+\_\+iqueue}} {\bfseries iq}
+\item 
+\Hypertarget{structfuse__conn_ae9da4815f1e2e1cc66c96cb741659399}\label{structfuse__conn_ae9da4815f1e2e1cc66c96cb741659399} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries khctr}
+\item 
+\Hypertarget{structfuse__conn_ad96e9433ea430f09674465b84ff07f5a}\label{structfuse__conn_ad96e9433ea430f09674465b84ff07f5a} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries polled\+\_\+files}
+\item 
+\Hypertarget{structfuse__conn_a91184fa2d94ce3424f5023e5862a7a1c}\label{structfuse__conn_a91184fa2d94ce3424f5023e5862a7a1c} 
+unsigned int {\bfseries max\+\_\+background}
+\item 
+\Hypertarget{structfuse__conn_a65299e59cf3d3ddd3f9d249ced6daa1d}\label{structfuse__conn_a65299e59cf3d3ddd3f9d249ced6daa1d} 
+unsigned int {\bfseries congestion\+\_\+threshold}
+\item 
+\Hypertarget{structfuse__conn_a0cf10107f778e271ee6f7e4375509dba}\label{structfuse__conn_a0cf10107f778e271ee6f7e4375509dba} 
+unsigned int {\bfseries num\+\_\+background}
+\item 
+\Hypertarget{structfuse__conn_a5c180412883949f1fdbe5c860fe79b32}\label{structfuse__conn_a5c180412883949f1fdbe5c860fe79b32} 
+unsigned int {\bfseries active\+\_\+background}
+\item 
+\Hypertarget{structfuse__conn_ac50dd28b0e0d600994ef805f1830b8d2}\label{structfuse__conn_ac50dd28b0e0d600994ef805f1830b8d2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries bg\+\_\+queue}
+\item 
+\Hypertarget{structfuse__conn_ab1475e8dd81f3c48a31afe2e1bc0be26}\label{structfuse__conn_ab1475e8dd81f3c48a31afe2e1bc0be26} 
+spinlock\+\_\+t {\bfseries bg\+\_\+lock}
+\item 
+\Hypertarget{structfuse__conn_a6ddd233395a0922d685879c3710d6d40}\label{structfuse__conn_a6ddd233395a0922d685879c3710d6d40} 
+int {\bfseries initialized}
+\item 
+\Hypertarget{structfuse__conn_a2ab0597a2e8d00eacfa36bdcae8d490d}\label{structfuse__conn_a2ab0597a2e8d00eacfa36bdcae8d490d} 
+int {\bfseries blocked}
+\item 
+\Hypertarget{structfuse__conn_aec57e38ce78d6b36b1f87d731d5ff384}\label{structfuse__conn_aec57e38ce78d6b36b1f87d731d5ff384} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries blocked\+\_\+waitq}
+\item 
+\Hypertarget{structfuse__conn_a71f122df7688d0c4b6b712cffa374bbd}\label{structfuse__conn_a71f122df7688d0c4b6b712cffa374bbd} 
+unsigned int {\bfseries connected}
+\item 
+\Hypertarget{structfuse__conn_a14c9c2789c3e6bda1c624bb812e59695}\label{structfuse__conn_a14c9c2789c3e6bda1c624bb812e59695} 
+bool {\bfseries aborted}
+\item 
+\Hypertarget{structfuse__conn_a9ca5fd6fa02835a04761453347016eb3}\label{structfuse__conn_a9ca5fd6fa02835a04761453347016eb3} 
+unsigned int {\bfseries conn\+\_\+error}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a78030194fc7c8a20b9e953940cfc30a5}\label{structfuse__conn_a78030194fc7c8a20b9e953940cfc30a5} 
+unsigned int {\bfseries conn\+\_\+init}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a2c1f84561322cd8ffae27e4518d29863}\label{structfuse__conn_a2c1f84561322cd8ffae27e4518d29863} 
+unsigned int {\bfseries async\+\_\+read}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ad55ee824f5850458b494c6fc8fbb3004}\label{structfuse__conn_ad55ee824f5850458b494c6fc8fbb3004} 
+unsigned int {\bfseries abort\+\_\+err}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ad41ad5dbba31752e32995e070d8cdae3}\label{structfuse__conn_ad41ad5dbba31752e32995e070d8cdae3} 
+unsigned int {\bfseries atomic\+\_\+o\+\_\+trunc}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a764a6aff5713f924513bec8814a2d089}\label{structfuse__conn_a764a6aff5713f924513bec8814a2d089} 
+unsigned int {\bfseries export\+\_\+support}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aedcf74d30cf6c81cf9378cc5670fdd2a}\label{structfuse__conn_aedcf74d30cf6c81cf9378cc5670fdd2a} 
+unsigned int {\bfseries writeback\+\_\+cache}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a9ee669a13a3dd521f357137645a2d384}\label{structfuse__conn_a9ee669a13a3dd521f357137645a2d384} 
+unsigned int {\bfseries parallel\+\_\+dirops}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ae3c52939ccbffb8613aab24f209367d9}\label{structfuse__conn_ae3c52939ccbffb8613aab24f209367d9} 
+unsigned int {\bfseries handle\+\_\+killpriv}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ad0839b4a5a1fecf610209a575d3ffc65}\label{structfuse__conn_ad0839b4a5a1fecf610209a575d3ffc65} 
+unsigned int {\bfseries cache\+\_\+symlinks}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a441a37a0b422ce5d1586f175ef542bb6}\label{structfuse__conn_a441a37a0b422ce5d1586f175ef542bb6} 
+unsigned int {\bfseries legacy\+\_\+opts\+\_\+show}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ab993a767f84f1d4c254e5999523d4c86}\label{structfuse__conn_ab993a767f84f1d4c254e5999523d4c86} 
+unsigned int {\bfseries handle\+\_\+killpriv\+\_\+v2}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ab63ec1c31cc81390d6dfd7c47056ea18}\label{structfuse__conn_ab63ec1c31cc81390d6dfd7c47056ea18} 
+unsigned int {\bfseries no\+\_\+open}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a5cb80d90dbd6d3516e95d30c665af3ef}\label{structfuse__conn_a5cb80d90dbd6d3516e95d30c665af3ef} 
+unsigned int {\bfseries no\+\_\+opendir}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a439088da1dd655bf1af66a9ef7a98110}\label{structfuse__conn_a439088da1dd655bf1af66a9ef7a98110} 
+unsigned int {\bfseries no\+\_\+fsync}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ae998510c96ee8d0b3eb577d9a271e7d4}\label{structfuse__conn_ae998510c96ee8d0b3eb577d9a271e7d4} 
+unsigned int {\bfseries no\+\_\+fsyncdir}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a4e337de96b8abf7b80e70d68384d2eea}\label{structfuse__conn_a4e337de96b8abf7b80e70d68384d2eea} 
+unsigned int {\bfseries no\+\_\+flush}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ae31ad3a705b319acdd3e6abfade000a0}\label{structfuse__conn_ae31ad3a705b319acdd3e6abfade000a0} 
+unsigned int {\bfseries no\+\_\+setxattr}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a2474cebf3632dc7ad6ae2fa84d906010}\label{structfuse__conn_a2474cebf3632dc7ad6ae2fa84d906010} 
+unsigned int {\bfseries setxattr\+\_\+ext}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a6cbe3b04ee665ac0c24eb7a14a5bd502}\label{structfuse__conn_a6cbe3b04ee665ac0c24eb7a14a5bd502} 
+unsigned int {\bfseries no\+\_\+getxattr}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aaa55647268375c30f95663693d906dad}\label{structfuse__conn_aaa55647268375c30f95663693d906dad} 
+unsigned int {\bfseries no\+\_\+listxattr}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a088e502280ef6328626a0a4882ef8725}\label{structfuse__conn_a088e502280ef6328626a0a4882ef8725} 
+unsigned int {\bfseries no\+\_\+removexattr}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aec7a5b13d2bceffa9a8ce92efb5a9a27}\label{structfuse__conn_aec7a5b13d2bceffa9a8ce92efb5a9a27} 
+unsigned int {\bfseries no\+\_\+lock}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_abaf2f2170e1d7fc46ead9f2ae9cc50bd}\label{structfuse__conn_abaf2f2170e1d7fc46ead9f2ae9cc50bd} 
+unsigned int {\bfseries no\+\_\+access}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ab58a6b5c6c8a6a61ec2ce0305735d426}\label{structfuse__conn_ab58a6b5c6c8a6a61ec2ce0305735d426} 
+unsigned int {\bfseries no\+\_\+create}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aa3d492d9f96e31a727378f88a69435be}\label{structfuse__conn_aa3d492d9f96e31a727378f88a69435be} 
+unsigned int {\bfseries no\+\_\+interrupt}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_adc835ddb51697bdae3d4afe259bffa1b}\label{structfuse__conn_adc835ddb51697bdae3d4afe259bffa1b} 
+unsigned int {\bfseries no\+\_\+bmap}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a506e3bcbd8c3349ba5b2b81a4c1623cf}\label{structfuse__conn_a506e3bcbd8c3349ba5b2b81a4c1623cf} 
+unsigned int {\bfseries no\+\_\+poll}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ae218ef479e9b1643eed3f0cd151701de}\label{structfuse__conn_ae218ef479e9b1643eed3f0cd151701de} 
+unsigned int {\bfseries big\+\_\+writes}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aa09ff5c0e78435c00eef9d3692a7397e}\label{structfuse__conn_aa09ff5c0e78435c00eef9d3692a7397e} 
+unsigned int {\bfseries dont\+\_\+mask}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a20716d0ae088b70978108d57a4467dc4}\label{structfuse__conn_a20716d0ae088b70978108d57a4467dc4} 
+unsigned int {\bfseries no\+\_\+flock}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a469a9f496e05cec1f94253d1f221b586}\label{structfuse__conn_a469a9f496e05cec1f94253d1f221b586} 
+unsigned int {\bfseries no\+\_\+fallocate}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a3ff689735fbf3464c93cfe09a71d4c1a}\label{structfuse__conn_a3ff689735fbf3464c93cfe09a71d4c1a} 
+unsigned int {\bfseries no\+\_\+rename2}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aada1a5cb987bf16894263e434d38c182}\label{structfuse__conn_aada1a5cb987bf16894263e434d38c182} 
+unsigned int {\bfseries auto\+\_\+inval\+\_\+data}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a644b0438e9faf754c408043033918d7a}\label{structfuse__conn_a644b0438e9faf754c408043033918d7a} 
+unsigned int {\bfseries explicit\+\_\+inval\+\_\+data}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aab896f9460d82627cd6c012a7ec602c3}\label{structfuse__conn_aab896f9460d82627cd6c012a7ec602c3} 
+unsigned int {\bfseries do\+\_\+readdirplus}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a2a1554eddc163e9a6d03b5f6dad972fc}\label{structfuse__conn_a2a1554eddc163e9a6d03b5f6dad972fc} 
+unsigned int {\bfseries readdirplus\+\_\+auto}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a48f5efc95ecb88d9115d8ac47567306b}\label{structfuse__conn_a48f5efc95ecb88d9115d8ac47567306b} 
+unsigned int {\bfseries async\+\_\+dio}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a9d03194241caeda6d9d1eaf81a1c86e1}\label{structfuse__conn_a9d03194241caeda6d9d1eaf81a1c86e1} 
+unsigned int {\bfseries no\+\_\+lseek}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ae6df591d4f4b76daadbb7a7db8a4a8aa}\label{structfuse__conn_ae6df591d4f4b76daadbb7a7db8a4a8aa} 
+unsigned int {\bfseries posix\+\_\+acl}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a1873e2a4ba1bf92efe65cdffdc63dfc8}\label{structfuse__conn_a1873e2a4ba1bf92efe65cdffdc63dfc8} 
+unsigned int {\bfseries default\+\_\+permissions}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a6ad6191f089a554cd79daffbba17f640}\label{structfuse__conn_a6ad6191f089a554cd79daffbba17f640} 
+unsigned int {\bfseries allow\+\_\+other}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_acaf419baf960756daf3f70b8716799c1}\label{structfuse__conn_acaf419baf960756daf3f70b8716799c1} 
+unsigned int {\bfseries no\+\_\+copy\+\_\+file\+\_\+range}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a7189055c98c9bb523a151d91064367a2}\label{structfuse__conn_a7189055c98c9bb523a151d91064367a2} 
+unsigned int {\bfseries no\+\_\+copy\+\_\+file\+\_\+range\+\_\+64}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ac412c3447bd4272c72c05948b3f91abc}\label{structfuse__conn_ac412c3447bd4272c72c05948b3f91abc} 
+unsigned int {\bfseries destroy}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a4e5e86237e6deb3bbd5b049a66d95715}\label{structfuse__conn_a4e5e86237e6deb3bbd5b049a66d95715} 
+unsigned int {\bfseries delete\+\_\+stale}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a9db730fd57228f1f7a1bdf1d62bbdb77}\label{structfuse__conn_a9db730fd57228f1f7a1bdf1d62bbdb77} 
+unsigned int {\bfseries no\+\_\+control}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a09649bc319000bed9483c137c0d58751}\label{structfuse__conn_a09649bc319000bed9483c137c0d58751} 
+unsigned int {\bfseries no\+\_\+force\+\_\+umount}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_afd858f5058c965e9e5c7205f608ffb7e}\label{structfuse__conn_afd858f5058c965e9e5c7205f608ffb7e} 
+unsigned int {\bfseries auto\+\_\+submounts}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a9f2efc660eeb72192a2c289bde116ad0}\label{structfuse__conn_a9f2efc660eeb72192a2c289bde116ad0} 
+unsigned int {\bfseries sync\+\_\+fs}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aee51f21dd18bbf3824e17d045ba181f3}\label{structfuse__conn_aee51f21dd18bbf3824e17d045ba181f3} 
+unsigned int {\bfseries init\+\_\+security}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_ad66b93549ed19874552fe4701903ca9b}\label{structfuse__conn_ad66b93549ed19874552fe4701903ca9b} 
+unsigned int {\bfseries create\+\_\+supp\+\_\+group}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a5af04124f3acc2d793fa6ffe70728795}\label{structfuse__conn_a5af04124f3acc2d793fa6ffe70728795} 
+unsigned int {\bfseries inode\+\_\+dax}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a728bde298eeb47d593ac60ec7d5bb151}\label{structfuse__conn_a728bde298eeb47d593ac60ec7d5bb151} 
+unsigned int {\bfseries no\+\_\+tmpfile}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_adac03cc99b86a51fdbe47822d72f394a}\label{structfuse__conn_adac03cc99b86a51fdbe47822d72f394a} 
+unsigned int {\bfseries direct\+\_\+io\+\_\+allow\+\_\+mmap}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a343c8e0576cd33dac0a75c2f3f6230ec}\label{structfuse__conn_a343c8e0576cd33dac0a75c2f3f6230ec} 
+unsigned int {\bfseries no\+\_\+statx}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aafec80ffa39aadcf4514e46f17350091}\label{structfuse__conn_aafec80ffa39aadcf4514e46f17350091} 
+unsigned int {\bfseries passthrough}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a444168a3ed0be418467fb18ae6abb098}\label{structfuse__conn_a444168a3ed0be418467fb18ae6abb098} 
+unsigned int {\bfseries use\+\_\+pages\+\_\+for\+\_\+kvec\+\_\+io}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_af6551f6d30bd62b290f1ec5600b8aa2c}\label{structfuse__conn_af6551f6d30bd62b290f1ec5600b8aa2c} 
+unsigned int {\bfseries no\+\_\+link}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_aa487d95541a2f37369a0d4fa8b6e3ade}\label{structfuse__conn_aa487d95541a2f37369a0d4fa8b6e3ade} 
+unsigned int {\bfseries sync\+\_\+init}:\+ 1
+\item 
+\Hypertarget{structfuse__conn_a42a96d3f19912d9c55e8ad05fc12ab11}\label{structfuse__conn_a42a96d3f19912d9c55e8ad05fc12ab11} 
+unsigned int {\bfseries io\+\_\+uring}
+\item 
+\Hypertarget{structfuse__conn_a891067d9357dd2bdeefca8892b53fa9b}\label{structfuse__conn_a891067d9357dd2bdeefca8892b53fa9b} 
+int {\bfseries max\+\_\+stack\+\_\+depth}
+\item 
+\Hypertarget{structfuse__conn_a0251bd16f33d5dfbcd15b442d74e5ad3}\label{structfuse__conn_a0251bd16f33d5dfbcd15b442d74e5ad3} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries num\+\_\+waiting}
+\item 
+\Hypertarget{structfuse__conn_a8b1bdb1360583d3a5753198514155d7c}\label{structfuse__conn_a8b1bdb1360583d3a5753198514155d7c} 
+unsigned int {\bfseries minor}
+\item 
+\Hypertarget{structfuse__conn_ac0e80212ad79297e348d3b67204de000}\label{structfuse__conn_ac0e80212ad79297e348d3b67204de000} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries entry}
+\item 
+\Hypertarget{structfuse__conn_a460b252760decfafee2988d61739a0d6}\label{structfuse__conn_a460b252760decfafee2988d61739a0d6} 
+dev\+\_\+t {\bfseries dev}
+\item 
+\Hypertarget{structfuse__conn_a6603ac0c210279984bc6efa29e68cd74}\label{structfuse__conn_a6603ac0c210279984bc6efa29e68cd74} 
+u32 {\bfseries scramble\+\_\+key} \+[4]\+
+\item 
+\Hypertarget{structfuse__conn_ac1c8b5b7235b6bd0ee684f86a5472cea}\label{structfuse__conn_ac1c8b5b7235b6bd0ee684f86a5472cea} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries attr\+\_\+version}
+\item 
+\Hypertarget{structfuse__conn_a9a6613dd9259b513de5cf238e362850f}\label{structfuse__conn_a9a6613dd9259b513de5cf238e362850f} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries evict\+\_\+ctr}
+\item 
+\Hypertarget{structfuse__conn_acf3aaa0faccecbaa7b0a87d2154d4695}\label{structfuse__conn_acf3aaa0faccecbaa7b0a87d2154d4695} 
+u32 {\bfseries name\+\_\+max}
+\item 
+\Hypertarget{structfuse__conn_af3b5103e3e9182554f946aa9319fd290}\label{structfuse__conn_af3b5103e3e9182554f946aa9319fd290} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structfuse__conn}{fuse\+\_\+conn}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfuse__conn_a3089978842649b074bb65b3f05f4f8f0}\label{structfuse__conn_a3089978842649b074bb65b3f05f4f8f0} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries killsb}
+\item 
+\Hypertarget{structfuse__conn_a19c51c36011a16f563364f8337dc2621}\label{structfuse__conn_a19c51c36011a16f563364f8337dc2621} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries devices}
+\item 
+\Hypertarget{structfuse__conn_ab4845b513f95e3363a91c48aa3207e66}\label{structfuse__conn_ab4845b513f95e3363a91c48aa3207e66} 
+enum fuse\+\_\+dax\+\_\+mode {\bfseries dax\+\_\+mode}
+\item 
+\Hypertarget{structfuse__conn_a16a16760fde71bdbf6583302981110a5}\label{structfuse__conn_a16a16760fde71bdbf6583302981110a5} 
+struct \doxymbox{\hyperlink{structfuse__conn__dax}{fuse\+\_\+conn\+\_\+dax}} \texorpdfstring{$\ast$}{*} {\bfseries dax}
+\item 
+\Hypertarget{structfuse__conn_ad977b1eaea3c8dae17ac5cb6f1a17b0b}\label{structfuse__conn_ad977b1eaea3c8dae17ac5cb6f1a17b0b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries mounts}
+\item 
+\Hypertarget{structfuse__conn_a7c4e2fa547503dd37d8b58af35c0ac50}\label{structfuse__conn_a7c4e2fa547503dd37d8b58af35c0ac50} 
+struct \doxymbox{\hyperlink{structfuse__sync__bucket}{fuse\+\_\+sync\+\_\+bucket}} \texorpdfstring{$\ast$}{*} {\bfseries curr\+\_\+bucket}
+\item 
+\Hypertarget{structfuse__conn_a3a9411eda9b23a5cb3ce4e37d241e462}\label{structfuse__conn_a3a9411eda9b23a5cb3ce4e37d241e462} 
+struct \doxymbox{\hyperlink{structidr}{idr}} {\bfseries backing\+\_\+files\+\_\+map}
+\item 
+\Hypertarget{structfuse__conn_a318bea4d729fd3f0e36072dfe6be61d2}\label{structfuse__conn_a318bea4d729fd3f0e36072dfe6be61d2} 
+struct \doxymbox{\hyperlink{structfuse__ring}{fuse\+\_\+ring}} \texorpdfstring{$\ast$}{*} {\bfseries ring}
+\item 
+\Hypertarget{structfuse__conn_a4473bf7de2bd07890be9c96387652cd3}\label{structfuse__conn_a4473bf7de2bd07890be9c96387652cd3} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structdelayed__work}{delayed\_work}} {\bfseries work}\\
+\>unsigned int {\bfseries req\_timeout}\\
+\} {\bfseries timeout}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

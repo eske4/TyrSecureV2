@@ -1,0 +1,53 @@
+\doxysection{devlink\+\_\+rate Struct Reference}
+\hypertarget{structdevlink__rate}{}\label{structdevlink__rate}\index{devlink\_rate@{devlink\_rate}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdevlink__rate_a851fd61c4b36e78f6cce06e4c36c2382}\label{structdevlink__rate_a851fd61c4b36e78f6cce06e4c36c2382} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structdevlink__rate_a47745a984e059d6169efde16013c80b0}\label{structdevlink__rate_a47745a984e059d6169efde16013c80b0} 
+enum devlink\+\_\+rate\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structdevlink__rate_a159150c95550dc68b4e05530f8c83389}\label{structdevlink__rate_a159150c95550dc68b4e05530f8c83389} 
+struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*} {\bfseries devlink}
+\item 
+\Hypertarget{structdevlink__rate_ada37b129339ba37089b1010a904f07ce}\label{structdevlink__rate_ada37b129339ba37089b1010a904f07ce} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv}
+\item 
+\Hypertarget{structdevlink__rate_a3165beb63fa8340162264f94c202ace6}\label{structdevlink__rate_a3165beb63fa8340162264f94c202ace6} 
+u64 {\bfseries tx\+\_\+share}
+\item 
+\Hypertarget{structdevlink__rate_a95a5589c52cb9d12ebaef2eb0a659f59}\label{structdevlink__rate_a95a5589c52cb9d12ebaef2eb0a659f59} 
+u64 {\bfseries tx\+\_\+max}
+\item 
+\Hypertarget{structdevlink__rate_a2c923d735aa2b98a6c39ac8f626fbef3}\label{structdevlink__rate_a2c923d735aa2b98a6c39ac8f626fbef3} 
+struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structdevlink__rate_ac470af0b7d662ae9c8c2b673acdb74e7}\label{structdevlink__rate_ac470af0b7d662ae9c8c2b673acdb74e7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structdevlink__port}{devlink\_port}} \texorpdfstring{$\ast$}{*} {\bfseries devlink\_port}\\
+\Hypertarget{uniondevlink__rate_1_1_0d177311123333041335205376216301054372235174127354_aacd87da89afa17e3d004deb8ac6eb2a8}\label{uniondevlink__rate_1_1_0d177311123333041335205376216301054372235174127354_aacd87da89afa17e3d004deb8ac6eb2a8} 
+\>struct \{\\
+\>\>char \texorpdfstring{$\ast$}{*} {\bfseries name}\\
+\>\>refcount\_t {\bfseries refcnt}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdevlink__rate_a45646f2bef79102b4a07d60786daee35}\label{structdevlink__rate_a45646f2bef79102b4a07d60786daee35} 
+u32 {\bfseries tx\+\_\+priority}
+\item 
+\Hypertarget{structdevlink__rate_a309deb8ee6bf4ef5c5258eccfc24ceb7}\label{structdevlink__rate_a309deb8ee6bf4ef5c5258eccfc24ceb7} 
+u32 {\bfseries tx\+\_\+weight}
+\item 
+\Hypertarget{structdevlink__rate_a1d6782b2bfabdfb3cf0220675c615be2}\label{structdevlink__rate_a1d6782b2bfabdfb3cf0220675c615be2} 
+u32 {\bfseries tc\+\_\+bw} \+[8]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

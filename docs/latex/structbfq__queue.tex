@@ -1,0 +1,166 @@
+\doxysection{bfq\+\_\+queue Struct Reference}
+\hypertarget{structbfq__queue}{}\label{structbfq__queue}\index{bfq\_queue@{bfq\_queue}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbfq__queue_a4bb7e9d7afc2eae482a57c597d0a8c8d}\label{structbfq__queue_a4bb7e9d7afc2eae482a57c597d0a8c8d} 
+int {\bfseries ref}
+\item 
+\Hypertarget{structbfq__queue_a61379c0d7fea595e6e324f394fcf7ec7}\label{structbfq__queue_a61379c0d7fea595e6e324f394fcf7ec7} 
+int {\bfseries stable\+\_\+ref}
+\item 
+\Hypertarget{structbfq__queue_a52451f323fa8ccd058f421ab1789cabf}\label{structbfq__queue_a52451f323fa8ccd058f421ab1789cabf} 
+struct \doxymbox{\hyperlink{structbfq__data}{bfq\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries bfqd}
+\item 
+\Hypertarget{structbfq__queue_af641cc3284b16f9c194054b4bfd2c5df}\label{structbfq__queue_af641cc3284b16f9c194054b4bfd2c5df} 
+short unsigned int {\bfseries ioprio}
+\item 
+\Hypertarget{structbfq__queue_a1a879b3d97d7456821d0b24e9fb4dd18}\label{structbfq__queue_a1a879b3d97d7456821d0b24e9fb4dd18} 
+short unsigned int {\bfseries ioprio\+\_\+class}
+\item 
+\Hypertarget{structbfq__queue_a84084788ed080933f58e28ddb00a3f09}\label{structbfq__queue_a84084788ed080933f58e28ddb00a3f09} 
+short unsigned int {\bfseries new\+\_\+ioprio}
+\item 
+\Hypertarget{structbfq__queue_a7c24dcc8b8fa5503fc529afe78dec72d}\label{structbfq__queue_a7c24dcc8b8fa5503fc529afe78dec72d} 
+short unsigned int {\bfseries new\+\_\+ioprio\+\_\+class}
+\item 
+\Hypertarget{structbfq__queue_ab705decab35193592ccab00aa2b177ae}\label{structbfq__queue_ab705decab35193592ccab00aa2b177ae} 
+u64 {\bfseries last\+\_\+serv\+\_\+time\+\_\+ns}
+\item 
+\Hypertarget{structbfq__queue_a1eaff7257aefd41d75daf9e3f10c242b}\label{structbfq__queue_a1eaff7257aefd41d75daf9e3f10c242b} 
+unsigned int {\bfseries inject\+\_\+limit}
+\item 
+\Hypertarget{structbfq__queue_ac3c2e66b2d025b51c946c020e28d7fe2}\label{structbfq__queue_ac3c2e66b2d025b51c946c020e28d7fe2} 
+long unsigned int {\bfseries decrease\+\_\+time\+\_\+jif}
+\item 
+\Hypertarget{structbfq__queue_a557a5e5eacc6fc2e8d04c10a7a9e943e}\label{structbfq__queue_a557a5e5eacc6fc2e8d04c10a7a9e943e} 
+struct \doxymbox{\hyperlink{structbfq__queue}{bfq\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries new\+\_\+bfqq}
+\item 
+\Hypertarget{structbfq__queue_ad6fcd169c84c3498579658f1085ffb87}\label{structbfq__queue_ad6fcd169c84c3498579658f1085ffb87} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries pos\+\_\+node}
+\item 
+\Hypertarget{structbfq__queue_ad8b8887cdc7e7aedfed85da89490d9f0}\label{structbfq__queue_ad8b8887cdc7e7aedfed85da89490d9f0} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries pos\+\_\+root}
+\item 
+\Hypertarget{structbfq__queue_a83c262606b079b577195bc9f6319a041}\label{structbfq__queue_a83c262606b079b577195bc9f6319a041} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries sort\+\_\+list}
+\item 
+\Hypertarget{structbfq__queue_a5393b5930288e4794c295426bb3df503}\label{structbfq__queue_a5393b5930288e4794c295426bb3df503} 
+struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*} {\bfseries next\+\_\+rq}
+\item 
+\Hypertarget{structbfq__queue_a10e765f3a42187458e8d54370e22349d}\label{structbfq__queue_a10e765f3a42187458e8d54370e22349d} 
+int {\bfseries queued} \+[2]\+
+\item 
+\Hypertarget{structbfq__queue_a9f22387ac3ad17b6737929a95aee7172}\label{structbfq__queue_a9f22387ac3ad17b6737929a95aee7172} 
+int {\bfseries meta\+\_\+pending}
+\item 
+\Hypertarget{structbfq__queue_a3341f62a73772316debee4655092d26d}\label{structbfq__queue_a3341f62a73772316debee4655092d26d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries fifo}
+\item 
+\Hypertarget{structbfq__queue_ad3716ebc7e855ed10225149148facdd9}\label{structbfq__queue_ad3716ebc7e855ed10225149148facdd9} 
+struct \doxymbox{\hyperlink{structbfq__entity}{bfq\+\_\+entity}} {\bfseries entity}
+\item 
+\Hypertarget{structbfq__queue_a5c1b7e4232869d9123895afbb37977e6}\label{structbfq__queue_a5c1b7e4232869d9123895afbb37977e6} 
+struct \doxymbox{\hyperlink{structbfq__weight__counter}{bfq\+\_\+weight\+\_\+counter}} \texorpdfstring{$\ast$}{*} {\bfseries weight\+\_\+counter}
+\item 
+\Hypertarget{structbfq__queue_a07fd538f0e6074d5a5e4e3c2be58db1e}\label{structbfq__queue_a07fd538f0e6074d5a5e4e3c2be58db1e} 
+int {\bfseries max\+\_\+budget}
+\item 
+\Hypertarget{structbfq__queue_ab294582ae4494fdd62b61d62c06e8385}\label{structbfq__queue_ab294582ae4494fdd62b61d62c06e8385} 
+long unsigned int {\bfseries budget\+\_\+timeout}
+\item 
+\Hypertarget{structbfq__queue_a9b03e290d328eb95dfbce879c5170c59}\label{structbfq__queue_a9b03e290d328eb95dfbce879c5170c59} 
+int {\bfseries dispatched}
+\item 
+\Hypertarget{structbfq__queue_aa7eb9ff8bdca0793c91451723b9ed76f}\label{structbfq__queue_aa7eb9ff8bdca0793c91451723b9ed76f} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structbfq__queue_a8d97491b41161f8311233f20df2b61ec}\label{structbfq__queue_a8d97491b41161f8311233f20df2b61ec} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries bfqq\+\_\+list}
+\item 
+\Hypertarget{structbfq__queue_ab6c271b1a1116458f37e59f0fdfcac19}\label{structbfq__queue_ab6c271b1a1116458f37e59f0fdfcac19} 
+struct \doxymbox{\hyperlink{structbfq__ttime}{bfq\+\_\+ttime}} {\bfseries ttime}
+\item 
+\Hypertarget{structbfq__queue_a91336f2ae5499777fd8f9df7b028ff75}\label{structbfq__queue_a91336f2ae5499777fd8f9df7b028ff75} 
+u64 {\bfseries io\+\_\+start\+\_\+time}
+\item 
+\Hypertarget{structbfq__queue_a3f6cd0b3d484939d2e027af64a2c7d12}\label{structbfq__queue_a3f6cd0b3d484939d2e027af64a2c7d12} 
+u64 {\bfseries tot\+\_\+idle\+\_\+time}
+\item 
+\Hypertarget{structbfq__queue_aaf59de4e2922a07ff46cbbb0c91cb843}\label{structbfq__queue_aaf59de4e2922a07ff46cbbb0c91cb843} 
+u32 {\bfseries seek\+\_\+history}
+\item 
+\Hypertarget{structbfq__queue_a4e5e58aeb5c6488dd3098f23d445f088}\label{structbfq__queue_a4e5e58aeb5c6488dd3098f23d445f088} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries burst\+\_\+list\+\_\+node}
+\item 
+\Hypertarget{structbfq__queue_a0cc135c7311edd253a8067bd9e101646}\label{structbfq__queue_a0cc135c7311edd253a8067bd9e101646} 
+sector\+\_\+t {\bfseries last\+\_\+request\+\_\+pos}
+\item 
+\Hypertarget{structbfq__queue_a0d7e936a11fdd61366bb04cf7d82fde8}\label{structbfq__queue_a0d7e936a11fdd61366bb04cf7d82fde8} 
+unsigned int {\bfseries requests\+\_\+within\+\_\+timer}
+\item 
+\Hypertarget{structbfq__queue_a91b57c5ef90f488e3145f4c9d26275f5}\label{structbfq__queue_a91b57c5ef90f488e3145f4c9d26275f5} 
+pid\+\_\+t {\bfseries pid}
+\item 
+\Hypertarget{structbfq__queue_a54a096e97f355e05c5a20dcb5e523709}\label{structbfq__queue_a54a096e97f355e05c5a20dcb5e523709} 
+struct \doxymbox{\hyperlink{structbfq__io__cq}{bfq\+\_\+io\+\_\+cq}} \texorpdfstring{$\ast$}{*} {\bfseries bic}
+\item 
+\Hypertarget{structbfq__queue_af1de8e0874ec0268a347161e416b597c}\label{structbfq__queue_af1de8e0874ec0268a347161e416b597c} 
+long unsigned int {\bfseries wr\+\_\+cur\+\_\+max\+\_\+time}
+\item 
+\Hypertarget{structbfq__queue_aa90ee554e497f51e735a8edd3b653dae}\label{structbfq__queue_aa90ee554e497f51e735a8edd3b653dae} 
+long unsigned int {\bfseries soft\+\_\+rt\+\_\+next\+\_\+start}
+\item 
+\Hypertarget{structbfq__queue_a3e70fc7718da1aa3a14bf275cad83abd}\label{structbfq__queue_a3e70fc7718da1aa3a14bf275cad83abd} 
+long unsigned int {\bfseries last\+\_\+wr\+\_\+start\+\_\+finish}
+\item 
+\Hypertarget{structbfq__queue_aa148f955753803d2d613ac84cdbd7d2c}\label{structbfq__queue_aa148f955753803d2d613ac84cdbd7d2c} 
+unsigned int {\bfseries wr\+\_\+coeff}
+\item 
+\Hypertarget{structbfq__queue_a5d15d1e5096bfb55198f384a10ded436}\label{structbfq__queue_a5d15d1e5096bfb55198f384a10ded436} 
+long unsigned int {\bfseries last\+\_\+idle\+\_\+bklogged}
+\item 
+\Hypertarget{structbfq__queue_aec1717777b7df554c3c375da3c66f45c}\label{structbfq__queue_aec1717777b7df554c3c375da3c66f45c} 
+long unsigned int {\bfseries service\+\_\+from\+\_\+backlogged}
+\item 
+\Hypertarget{structbfq__queue_a3680c0ff5158724f04dccb1f4e7f82d8}\label{structbfq__queue_a3680c0ff5158724f04dccb1f4e7f82d8} 
+long unsigned int {\bfseries service\+\_\+from\+\_\+wr}
+\item 
+\Hypertarget{structbfq__queue_ab0cf6a95c81af5403b630ef028efa94b}\label{structbfq__queue_ab0cf6a95c81af5403b630ef028efa94b} 
+long unsigned int {\bfseries wr\+\_\+start\+\_\+at\+\_\+switch\+\_\+to\+\_\+srt}
+\item 
+\Hypertarget{structbfq__queue_abf7f75612403d142e2c39175811feb9c}\label{structbfq__queue_abf7f75612403d142e2c39175811feb9c} 
+long unsigned int {\bfseries split\+\_\+time}
+\item 
+\Hypertarget{structbfq__queue_aa84ed9336135cdd20dc36cf059f24a8e}\label{structbfq__queue_aa84ed9336135cdd20dc36cf059f24a8e} 
+long unsigned int {\bfseries first\+\_\+\+IO\+\_\+time}
+\item 
+\Hypertarget{structbfq__queue_a849b4ac73c50e0a79bc43c8f59ac59cb}\label{structbfq__queue_a849b4ac73c50e0a79bc43c8f59ac59cb} 
+long unsigned int {\bfseries creation\+\_\+time}
+\item 
+\Hypertarget{structbfq__queue_abc500ffd2be9c4591d1d5f8929429632}\label{structbfq__queue_abc500ffd2be9c4591d1d5f8929429632} 
+struct \doxymbox{\hyperlink{structbfq__queue}{bfq\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries waker\+\_\+bfqq}
+\item 
+\Hypertarget{structbfq__queue_aa72913d87c144cc703110a17bddd7044}\label{structbfq__queue_aa72913d87c144cc703110a17bddd7044} 
+struct \doxymbox{\hyperlink{structbfq__queue}{bfq\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries tentative\+\_\+waker\+\_\+bfqq}
+\item 
+\Hypertarget{structbfq__queue_a818f6b64ccc00a229f504f0d7c237eea}\label{structbfq__queue_a818f6b64ccc00a229f504f0d7c237eea} 
+unsigned int {\bfseries num\+\_\+waker\+\_\+detections}
+\item 
+\Hypertarget{structbfq__queue_a3cb07d7a9946275462234b790867abab}\label{structbfq__queue_a3cb07d7a9946275462234b790867abab} 
+u64 {\bfseries waker\+\_\+detection\+\_\+started}
+\item 
+\Hypertarget{structbfq__queue_abf90029d539cf9170600e18ac03a0f50}\label{structbfq__queue_abf90029d539cf9170600e18ac03a0f50} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries woken\+\_\+list\+\_\+node}
+\item 
+\Hypertarget{structbfq__queue_a220514889f220db626cd81e466a204f4}\label{structbfq__queue_a220514889f220db626cd81e466a204f4} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries woken\+\_\+list}
+\item 
+\Hypertarget{structbfq__queue_ac1b9e3e7aa74e837d9aca692f575b9bd}\label{structbfq__queue_ac1b9e3e7aa74e837d9aca692f575b9bd} 
+unsigned int {\bfseries actuator\+\_\+idx}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{sock\+\_\+extended\+\_\+err Struct Reference}
+\hypertarget{structsock__extended__err}{}\label{structsock__extended__err}\index{sock\_extended\_err@{sock\_extended\_err}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsock__extended__err_a8a558b2d808367a525df91e9a434826b}\label{structsock__extended__err_a8a558b2d808367a525df91e9a434826b} 
+\+\_\+\+\_\+u32 {\bfseries ee\+\_\+errno}
+\item 
+\Hypertarget{structsock__extended__err_a91712d3039aec310c20c52dd660dc08a}\label{structsock__extended__err_a91712d3039aec310c20c52dd660dc08a} 
+\+\_\+\+\_\+u8 {\bfseries ee\+\_\+origin}
+\item 
+\Hypertarget{structsock__extended__err_ad6058b730a512775c8a4716390ca466d}\label{structsock__extended__err_ad6058b730a512775c8a4716390ca466d} 
+\+\_\+\+\_\+u8 {\bfseries ee\+\_\+type}
+\item 
+\Hypertarget{structsock__extended__err_a8f7fe7359be45597bcb61efa345da400}\label{structsock__extended__err_a8f7fe7359be45597bcb61efa345da400} 
+\+\_\+\+\_\+u8 {\bfseries ee\+\_\+code}
+\item 
+\Hypertarget{structsock__extended__err_a2d2a6ac3257667f9e16646c208adddf0}\label{structsock__extended__err_a2d2a6ac3257667f9e16646c208adddf0} 
+\+\_\+\+\_\+u8 {\bfseries ee\+\_\+pad}
+\item 
+\Hypertarget{structsock__extended__err_abd007ca75582c46687e4085b97fc20e3}\label{structsock__extended__err_abd007ca75582c46687e4085b97fc20e3} 
+\+\_\+\+\_\+u32 {\bfseries ee\+\_\+info}
+\item 
+\Hypertarget{structsock__extended__err_a34800b5e353acbd77e52e7253df21e17}\label{structsock__extended__err_a34800b5e353acbd77e52e7253df21e17} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u32 {\bfseries ee\_data}\\
+\>struct \doxymbox{\hyperlink{structsock__ee__data__rfc4884}{sock\_ee\_data\_rfc4884}} {\bfseries ee\_rfc4884}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

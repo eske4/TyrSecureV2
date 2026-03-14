@@ -1,0 +1,58 @@
+\doxysection{ocontext Struct Reference}
+\hypertarget{structocontext}{}\label{structocontext}\index{ocontext@{ocontext}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structocontext_a65baeb9ef0e4d5e3ba22223f0e59b9b9}\label{structocontext_a65baeb9ef0e4d5e3ba22223f0e59b9b9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>char \texorpdfstring{$\ast$}{*} {\bfseries name}\\
+\>struct \{\\
+\>\>u8 {\bfseries protocol}\\
+\>\>u16 {\bfseries low\_port}\\
+\>\>u16 {\bfseries high\_port}\\
+\>\} {\bfseries port}\\
+\>struct \{\\
+\>\>u32 {\bfseries addr}\\
+\>\>u32 {\bfseries mask}\\
+\>\} {\bfseries node}\\
+\>struct \{\\
+\>\>u32 {\bfseries addr} \+[4]\+\\
+\>\>u32 {\bfseries mask} \+[4]\+\\
+\>\} {\bfseries node6}\\
+\>struct \{\\
+\>\>u64 {\bfseries subnet\_prefix}\\
+\>\>u16 {\bfseries low\_pkey}\\
+\>\>u16 {\bfseries high\_pkey}\\
+\>\} {\bfseries ibpkey}\\
+\>struct \{\\
+\>\>char \texorpdfstring{$\ast$}{*} {\bfseries dev\_name}\\
+\>\>u8 {\bfseries port}\\
+\>\} {\bfseries ibendport}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\item 
+\Hypertarget{structocontext_a55b2379f3d8d78e3190032254af0e637}\label{structocontext_a55b2379f3d8d78e3190032254af0e637} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries sclass}\\
+\>u32 {\bfseries behavior}\\
+\} {\bfseries v}\\
+
+\end{tabbing}\item 
+\Hypertarget{structocontext_ae1c92be3e680926c3ceb80a08f2e7f18}\label{structocontext_ae1c92be3e680926c3ceb80a08f2e7f18} 
+struct \doxymbox{\hyperlink{structcontext______2}{context\+\_\+\+\_\+\+\_\+2}} {\bfseries context} \+[2]\+
+\item 
+\Hypertarget{structocontext_a874f4a61c8b4f8d1e2902c773b95d904}\label{structocontext_a874f4a61c8b4f8d1e2902c773b95d904} 
+u32 {\bfseries sid} \+[2]\+
+\item 
+\Hypertarget{structocontext_a97b64f339c36644cd079e0f9956f056f}\label{structocontext_a97b64f339c36644cd079e0f9956f056f} 
+struct \doxymbox{\hyperlink{structocontext}{ocontext}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

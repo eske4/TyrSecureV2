@@ -1,0 +1,40 @@
+\doxysection{irq\+\_\+alloc\+\_\+info Struct Reference}
+\hypertarget{structirq__alloc__info}{}\label{structirq__alloc__info}\index{irq\_alloc\_info@{irq\_alloc\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structirq__alloc__info_ad17d33a3f21822614699ec7df268a2ac}\label{structirq__alloc__info_ad17d33a3f21822614699ec7df268a2ac} 
+enum irq\+\_\+alloc\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structirq__alloc__info_a88a03ed28c62f647e2c3c6c39ad527e1}\label{structirq__alloc__info_a88a03ed28c62f647e2c3c6c39ad527e1} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structirq__alloc__info_a470ad22c6f92840926bcf317f636a5a3}\label{structirq__alloc__info_a470ad22c6f92840926bcf317f636a5a3} 
+u32 {\bfseries devid}
+\item 
+\Hypertarget{structirq__alloc__info_a4fa507ad35313c93745e9b866661e227}\label{structirq__alloc__info_a4fa507ad35313c93745e9b866661e227} 
+irq\+\_\+hw\+\_\+number\+\_\+t {\bfseries hwirq}
+\item 
+\Hypertarget{structirq__alloc__info_a7e2d71d9c0be14f4f46a2564957072f4}\label{structirq__alloc__info_a7e2d71d9c0be14f4f46a2564957072f4} 
+const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*} {\bfseries mask}
+\item 
+\Hypertarget{structirq__alloc__info_a45574db935ef19ec35ece99d628d05c2}\label{structirq__alloc__info_a45574db935ef19ec35ece99d628d05c2} 
+struct \doxymbox{\hyperlink{structmsi__desc}{msi\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries desc}
+\item 
+\Hypertarget{structirq__alloc__info_aec0c79934cdc9cf7626e13724547838a}\label{structirq__alloc__info_aec0c79934cdc9cf7626e13724547838a} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structirq__alloc__info_a33de645fca2861120b4d9f1f1568180c}\label{structirq__alloc__info_a33de645fca2861120b4d9f1f1568180c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structioapic__alloc__info}{ioapic\_alloc\_info}} {\bfseries ioapic}\\
+\>struct \doxymbox{\hyperlink{structuv__alloc__info}{uv\_alloc\_info}} {\bfseries uv}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\doxysection{io\+\_\+sr\+\_\+msg Struct Reference}
+\hypertarget{structio__sr__msg}{}\label{structio__sr__msg}\index{io\_sr\_msg@{io\_sr\_msg}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__sr__msg_a15ea569b13781ddaa239f2892af5b1c6}\label{structio__sr__msg_a15ea569b13781ddaa239f2892af5b1c6} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries file}
+\item 
+\Hypertarget{structio__sr__msg_a7c590f3a5f9039102aeb56b35a399c0f}\label{structio__sr__msg_a7c590f3a5f9039102aeb56b35a399c0f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structcompat__msghdr}{compat\_msghdr}} \texorpdfstring{$\ast$}{*} {\bfseries umsg\_compat}\\
+\>struct \doxymbox{\hyperlink{structuser__msghdr}{user\_msghdr}} \texorpdfstring{$\ast$}{*} {\bfseries umsg}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries buf}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__sr__msg_a92da7caaf4fd291f8b1eaa913e2ab287}\label{structio__sr__msg_a92da7caaf4fd291f8b1eaa913e2ab287} 
+int {\bfseries len}
+\item 
+\Hypertarget{structio__sr__msg_a2a822a4e3bb4fc67d5177de0beacfa1b}\label{structio__sr__msg_a2a822a4e3bb4fc67d5177de0beacfa1b} 
+unsigned int {\bfseries done\+\_\+io}
+\item 
+\Hypertarget{structio__sr__msg_a186c798c712520c69e202a6d49f9be06}\label{structio__sr__msg_a186c798c712520c69e202a6d49f9be06} 
+unsigned int {\bfseries msg\+\_\+flags}
+\item 
+\Hypertarget{structio__sr__msg_ab1ac6fa3e5ac20c2fb0957417c4e95c8}\label{structio__sr__msg_ab1ac6fa3e5ac20c2fb0957417c4e95c8} 
+unsigned int {\bfseries nr\+\_\+multishot\+\_\+loops}
+\item 
+\Hypertarget{structio__sr__msg_a3a3d898c1ffbeabe010455db3ee553fa}\label{structio__sr__msg_a3a3d898c1ffbeabe010455db3ee553fa} 
+u16 {\bfseries flags}
+\item 
+\Hypertarget{structio__sr__msg_aae599a1743a13e1a08b515b0264cccd4}\label{structio__sr__msg_aae599a1743a13e1a08b515b0264cccd4} 
+u16 {\bfseries buf\+\_\+group}
+\item 
+\Hypertarget{structio__sr__msg_a1f882949c1492cbaca43339f4048db47}\label{structio__sr__msg_a1f882949c1492cbaca43339f4048db47} 
+unsigned int {\bfseries mshot\+\_\+len}
+\item 
+\Hypertarget{structio__sr__msg_ac5aa8551ce7934daf31652780048fffe}\label{structio__sr__msg_ac5aa8551ce7934daf31652780048fffe} 
+unsigned int {\bfseries mshot\+\_\+total\+\_\+len}
+\item 
+\Hypertarget{structio__sr__msg_a32b3538a601b2fd9143e3605219767b5}\label{structio__sr__msg_a32b3538a601b2fd9143e3605219767b5} 
+void \texorpdfstring{$\ast$}{*} {\bfseries msg\+\_\+control}
+\item 
+\Hypertarget{structio__sr__msg_ae31aa0d1d9f777c3de64a1cbdbf11366}\label{structio__sr__msg_ae31aa0d1d9f777c3de64a1cbdbf11366} 
+struct \doxymbox{\hyperlink{structio__kiocb}{io\+\_\+kiocb}} \texorpdfstring{$\ast$}{*} {\bfseries notif}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

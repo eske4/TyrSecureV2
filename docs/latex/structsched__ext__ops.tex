@@ -1,0 +1,136 @@
+\doxysection{sched\+\_\+ext\+\_\+ops Struct Reference}
+\hypertarget{structsched__ext__ops}{}\label{structsched__ext__ops}\index{sched\_ext\_ops@{sched\_ext\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsched__ext__ops_a14c323aa3df3f604488b60b633737d0a}\label{structsched__ext__ops_a14c323aa3df3f604488b60b633737d0a} 
+s32(\texorpdfstring{$\ast$}{*} {\bfseries select\+\_\+cpu} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, s32, u64)
+\item 
+\Hypertarget{structsched__ext__ops_a60230ca3551a165fb4b54061850347a7}\label{structsched__ext__ops_a60230ca3551a165fb4b54061850347a7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enqueue} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structsched__ext__ops_a28a69f87fb154e22ef4b0b5cb27f2257}\label{structsched__ext__ops_a28a69f87fb154e22ef4b0b5cb27f2257} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dequeue} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structsched__ext__ops_a7bd544d3894cb5d6717a85e29b3f4256}\label{structsched__ext__ops_a7bd544d3894cb5d6717a85e29b3f4256} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dispatch} )(s32, struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_ae03624ed59d59f276d340a7867cc7cbb}\label{structsched__ext__ops_ae03624ed59d59f276d340a7867cc7cbb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries tick} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a7513ab874dd2e33ddfb2e5c32056a650}\label{structsched__ext__ops_a7513ab874dd2e33ddfb2e5c32056a650} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries runnable} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structsched__ext__ops_a72196af902d4dd35ee8d9db121538125}\label{structsched__ext__ops_a72196af902d4dd35ee8d9db121538125} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries running} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a8a3a48b20533a6361e76dda3619bba93}\label{structsched__ext__ops_a8a3a48b20533a6361e76dda3619bba93} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries stopping} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structsched__ext__ops_ab829fc97219009b67f64799b151f3bd9}\label{structsched__ext__ops_ab829fc97219009b67f64799b151f3bd9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries quiescent} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structsched__ext__ops_a6a2b3a22c82f286de698885e2e41b7bc}\label{structsched__ext__ops_a6a2b3a22c82f286de698885e2e41b7bc} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries yield} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a098050f980a233e747fa6c89aea99e63}\label{structsched__ext__ops_a098050f980a233e747fa6c89aea99e63} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries core\+\_\+sched\+\_\+before} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a5033cfcfe0ffe79832924233d21f8f11}\label{structsched__ext__ops_a5033cfcfe0ffe79832924233d21f8f11} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+weight} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structsched__ext__ops_a51e99cff008d7fbb3853c9814c837778}\label{structsched__ext__ops_a51e99cff008d7fbb3853c9814c837778} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+cpumask} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_aa1f6b9482d7eb3fbcd0687e748b63b18}\label{structsched__ext__ops_aa1f6b9482d7eb3fbcd0687e748b63b18} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+idle} )(s32, bool)
+\item 
+\Hypertarget{structsched__ext__ops_ac51f1fe4cf9faaa699ef5e3197368562}\label{structsched__ext__ops_ac51f1fe4cf9faaa699ef5e3197368562} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+acquire} )(s32, struct \doxymbox{\hyperlink{structscx__cpu__acquire__args}{scx\+\_\+cpu\+\_\+acquire\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_aba31f8bf27bad793b6a5bb0fec966ae4}\label{structsched__ext__ops_aba31f8bf27bad793b6a5bb0fec966ae4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+release} )(s32, struct \doxymbox{\hyperlink{structscx__cpu__release__args}{scx\+\_\+cpu\+\_\+release\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a0069d4486cfcc05b5952252fa9b0598e}\label{structsched__ext__ops_a0069d4486cfcc05b5952252fa9b0598e} 
+s32(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+task} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscx__init__task__args}{scx\+\_\+init\+\_\+task\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_ac44a2a5df66a181effd21482329ba35e}\label{structsched__ext__ops_ac44a2a5df66a181effd21482329ba35e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit\+\_\+task} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscx__exit__task__args}{scx\+\_\+exit\+\_\+task\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_abf89802aa7df6c4486d3c032c0484535}\label{structsched__ext__ops_abf89802aa7df6c4486d3c032c0484535} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a44e067c74759c93f561746fc28b3c39a}\label{structsched__ext__ops_a44e067c74759c93f561746fc28b3c39a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_ac39510dc0c4619231b52a43a5872928d}\label{structsched__ext__ops_ac39510dc0c4619231b52a43a5872928d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dump} )(struct \doxymbox{\hyperlink{structscx__dump__ctx}{scx\+\_\+dump\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_aba948dd2b56bc829de1a1148815a5985}\label{structsched__ext__ops_aba948dd2b56bc829de1a1148815a5985} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dump\+\_\+cpu} )(struct \doxymbox{\hyperlink{structscx__dump__ctx}{scx\+\_\+dump\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, s32, bool)
+\item 
+\Hypertarget{structsched__ext__ops_aa1a5f512889716fa729e24ae8ab77305}\label{structsched__ext__ops_aa1a5f512889716fa729e24ae8ab77305} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dump\+\_\+task} )(struct \doxymbox{\hyperlink{structscx__dump__ctx}{scx\+\_\+dump\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_ab6e2f0fcdb471237a77fd50b3d957fa0}\label{structsched__ext__ops_ab6e2f0fcdb471237a77fd50b3d957fa0} 
+s32(\texorpdfstring{$\ast$}{*} {\bfseries cgroup\+\_\+init} )(struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structscx__cgroup__init__args}{scx\+\_\+cgroup\+\_\+init\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a48b61ba7a2eae715088eb8cd64e00e91}\label{structsched__ext__ops_a48b61ba7a2eae715088eb8cd64e00e91} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cgroup\+\_\+exit} )(struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a8ba6ad0bd49cf5e0095f6d602c31c1bf}\label{structsched__ext__ops_a8ba6ad0bd49cf5e0095f6d602c31c1bf} 
+s32(\texorpdfstring{$\ast$}{*} {\bfseries cgroup\+\_\+prep\+\_\+move} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_ab69e81d4d037751ec8a3a7053c42ea72}\label{structsched__ext__ops_ab69e81d4d037751ec8a3a7053c42ea72} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cgroup\+\_\+move} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a3daf73fbe226d0934cf5261904260e30}\label{structsched__ext__ops_a3daf73fbe226d0934cf5261904260e30} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cgroup\+\_\+cancel\+\_\+move} )(struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a12fbe902b9412716083337d11759c60d}\label{structsched__ext__ops_a12fbe902b9412716083337d11759c60d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cgroup\+\_\+set\+\_\+weight} )(struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structsched__ext__ops_acbddd24b4b222236fd155e2882925151}\label{structsched__ext__ops_acbddd24b4b222236fd155e2882925151} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cgroup\+\_\+set\+\_\+bandwidth} )(struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*}, u64, u64, u64)
+\item 
+\Hypertarget{structsched__ext__ops_a4d10ff7572e2c703f72728966cb9e8e3}\label{structsched__ext__ops_a4d10ff7572e2c703f72728966cb9e8e3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cgroup\+\_\+set\+\_\+idle} )(struct \doxymbox{\hyperlink{structcgroup}{cgroup}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structsched__ext__ops_af93c1bdc77dc88154956b41a15691072}\label{structsched__ext__ops_af93c1bdc77dc88154956b41a15691072} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+online} )(s32)
+\item 
+\Hypertarget{structsched__ext__ops_a822a207ffb668301f8564c4e6aaded5d}\label{structsched__ext__ops_a822a207ffb668301f8564c4e6aaded5d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+offline} )(s32)
+\item 
+\Hypertarget{structsched__ext__ops_a221254db2a5c124ec55175544a1e63da}\label{structsched__ext__ops_a221254db2a5c124ec55175544a1e63da} 
+s32(\texorpdfstring{$\ast$}{*} {\bfseries init} )(void)
+\item 
+\Hypertarget{structsched__ext__ops_a34757a52452aa64fce93a2969911ae3d}\label{structsched__ext__ops_a34757a52452aa64fce93a2969911ae3d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit} )(struct \doxymbox{\hyperlink{structscx__exit__info}{scx\+\_\+exit\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsched__ext__ops_a686739edd5aad7334e36659f060fdb15}\label{structsched__ext__ops_a686739edd5aad7334e36659f060fdb15} 
+u32 {\bfseries dispatch\+\_\+max\+\_\+batch}
+\item 
+\Hypertarget{structsched__ext__ops_a3e49795586fac5e1bdeff47580cca151}\label{structsched__ext__ops_a3e49795586fac5e1bdeff47580cca151} 
+u64 {\bfseries flags}
+\item 
+\Hypertarget{structsched__ext__ops_a4f779f4dde75017b8f9f26824aa7465c}\label{structsched__ext__ops_a4f779f4dde75017b8f9f26824aa7465c} 
+u32 {\bfseries timeout\+\_\+ms}
+\item 
+\Hypertarget{structsched__ext__ops_a4d98400966d05ce80db697db6829bc27}\label{structsched__ext__ops_a4d98400966d05ce80db697db6829bc27} 
+u32 {\bfseries exit\+\_\+dump\+\_\+len}
+\item 
+\Hypertarget{structsched__ext__ops_a66842e38ce40814227a9bcea2317e443}\label{structsched__ext__ops_a66842e38ce40814227a9bcea2317e443} 
+u64 {\bfseries hotplug\+\_\+seq}
+\item 
+\Hypertarget{structsched__ext__ops_af4632fd046db8af3d3341d79cbf00f67}\label{structsched__ext__ops_af4632fd046db8af3d3341d79cbf00f67} 
+char {\bfseries name} \+[128]\+
+\item 
+\Hypertarget{structsched__ext__ops_a1ed2b8d0be476477ea19c7f3d14306d0}\label{structsched__ext__ops_a1ed2b8d0be476477ea19c7f3d14306d0} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

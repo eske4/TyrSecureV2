@@ -1,0 +1,46 @@
+\doxysection{dbc\+\_\+request Struct Reference}
+\hypertarget{structdbc__request}{}\label{structdbc__request}\index{dbc\_request@{dbc\_request}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdbc__request_a988850f8d6b2235b03dd10dd2abad9b1}\label{structdbc__request_a988850f8d6b2235b03dd10dd2abad9b1} 
+void \texorpdfstring{$\ast$}{*} {\bfseries buf}
+\item 
+\Hypertarget{structdbc__request_a420ef4975c8902cbbe7c98633061b4ac}\label{structdbc__request_a420ef4975c8902cbbe7c98633061b4ac} 
+unsigned int {\bfseries length}
+\item 
+\Hypertarget{structdbc__request_a9f8c0bc4c4997cf5f71c5795a6a59084}\label{structdbc__request_a9f8c0bc4c4997cf5f71c5795a6a59084} 
+dma\+\_\+addr\+\_\+t {\bfseries dma}
+\item 
+\Hypertarget{structdbc__request_a3ef506c4cb79ca058cc6d0dbcf588269}\label{structdbc__request_a3ef506c4cb79ca058cc6d0dbcf588269} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries complete} )(struct \doxymbox{\hyperlink{structxhci__dbc}{xhci\+\_\+dbc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdbc__request}{dbc\+\_\+request}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdbc__request_a86a9a90a355616e2a1b5368982c667a7}\label{structdbc__request_a86a9a90a355616e2a1b5368982c667a7} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list\+\_\+pool}
+\item 
+\Hypertarget{structdbc__request_a6e52469e4cd3ac6e6f933c1335fbaf97}\label{structdbc__request_a6e52469e4cd3ac6e6f933c1335fbaf97} 
+int {\bfseries status}
+\item 
+\Hypertarget{structdbc__request_a2a95e10077babe2c3be3743e22e013c0}\label{structdbc__request_a2a95e10077babe2c3be3743e22e013c0} 
+unsigned int {\bfseries actual}
+\item 
+\Hypertarget{structdbc__request_a6cd2463f15af648148935f7d5a3880e5}\label{structdbc__request_a6cd2463f15af648148935f7d5a3880e5} 
+struct \doxymbox{\hyperlink{structxhci__dbc}{xhci\+\_\+dbc}} \texorpdfstring{$\ast$}{*} {\bfseries dbc}
+\item 
+\Hypertarget{structdbc__request_aa142cfa8b3052cad44a1d811606fc494}\label{structdbc__request_aa142cfa8b3052cad44a1d811606fc494} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list\+\_\+pending}
+\item 
+\Hypertarget{structdbc__request_aaeb1d47fe9c9cc9277370d37486688d1}\label{structdbc__request_aaeb1d47fe9c9cc9277370d37486688d1} 
+dma\+\_\+addr\+\_\+t {\bfseries trb\+\_\+dma}
+\item 
+\Hypertarget{structdbc__request_ad68d792afaa930b455f7e3267ac5f83f}\label{structdbc__request_ad68d792afaa930b455f7e3267ac5f83f} 
+union \doxymbox{\hyperlink{unionxhci__trb}{xhci\+\_\+trb}} \texorpdfstring{$\ast$}{*} {\bfseries trb}
+\item 
+\Hypertarget{structdbc__request_a4a9c9def9472efdc02e88e9261fb0db4}\label{structdbc__request_a4a9c9def9472efdc02e88e9261fb0db4} 
+unsigned int {\bfseries direction}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

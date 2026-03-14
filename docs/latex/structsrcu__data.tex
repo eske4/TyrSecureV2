@@ -1,0 +1,76 @@
+\doxysection{srcu\+\_\+data Struct Reference}
+\hypertarget{structsrcu__data}{}\label{structsrcu__data}\index{srcu\_data@{srcu\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsrcu__data_a2cd9ffada5ba4ed78fc8ecaa040a18e9}\label{structsrcu__data_a2cd9ffada5ba4ed78fc8ecaa040a18e9} 
+struct \doxymbox{\hyperlink{structsrcu__ctr}{srcu\+\_\+ctr}} {\bfseries srcu\+\_\+ctrs} \+[2]\+
+\item 
+\Hypertarget{structsrcu__data_a869a7f0a7544fdd4980a4f4c417b0fc5}\label{structsrcu__data_a869a7f0a7544fdd4980a4f4c417b0fc5} 
+int {\bfseries srcu\+\_\+reader\+\_\+flavor}
+\item 
+\Hypertarget{structsrcu__data_a424822d4130ae2f5df92f0f7960aab58}\label{structsrcu__data_a424822d4130ae2f5df92f0f7960aab58} 
+long :\+ 64
+\item 
+\Hypertarget{structsrcu__data_abbdb24e7df5cdbd398ffec925bd0afc0}\label{structsrcu__data_abbdb24e7df5cdbd398ffec925bd0afc0} 
+long :\+ 64
+\item 
+\Hypertarget{structsrcu__data_a16d9b531aa979f2084643c088a2f5d3a}\label{structsrcu__data_a16d9b531aa979f2084643c088a2f5d3a} 
+long :\+ 64
+\item 
+\Hypertarget{structsrcu__data_a3669f069d3a6cb1fcd8929586b899dc6}\label{structsrcu__data_a3669f069d3a6cb1fcd8929586b899dc6} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structsrcu__data_af7b0b3666329d75bb94df3ad8aa62cb7}\label{structsrcu__data_af7b0b3666329d75bb94df3ad8aa62cb7} 
+struct \doxymbox{\hyperlink{structrcu__segcblist}{rcu\+\_\+segcblist}} {\bfseries srcu\+\_\+cblist}
+\item 
+\Hypertarget{structsrcu__data_a841051395d346e86cb743f3747865c93}\label{structsrcu__data_a841051395d346e86cb743f3747865c93} 
+long unsigned int {\bfseries srcu\+\_\+gp\+\_\+seq\+\_\+needed}
+\item 
+\Hypertarget{structsrcu__data_a8cf7f857ce883ac8f0f1317e3912727d}\label{structsrcu__data_a8cf7f857ce883ac8f0f1317e3912727d} 
+long unsigned int {\bfseries srcu\+\_\+gp\+\_\+seq\+\_\+needed\+\_\+exp}
+\item 
+\Hypertarget{structsrcu__data_afd53ebb778ff0813c402f3d4177a6000}\label{structsrcu__data_afd53ebb778ff0813c402f3d4177a6000} 
+bool {\bfseries srcu\+\_\+cblist\+\_\+invoking}
+\item 
+\Hypertarget{structsrcu__data_a6d41c6740ed9f2dcd995190bc0f19ac5}\label{structsrcu__data_a6d41c6740ed9f2dcd995190bc0f19ac5} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries delay\+\_\+work}
+\item 
+\Hypertarget{structsrcu__data_ab45636bd3ba6ebc596b43d7249e47bea}\label{structsrcu__data_ab45636bd3ba6ebc596b43d7249e47bea} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries work}
+\item 
+\Hypertarget{structsrcu__data_a2315ef67d73611818bb28f252ed230d3}\label{structsrcu__data_a2315ef67d73611818bb28f252ed230d3} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries srcu\+\_\+barrier\+\_\+head}
+\item 
+\Hypertarget{structsrcu__data_a291029eaca4a880ed8d11898ecf7e415}\label{structsrcu__data_a291029eaca4a880ed8d11898ecf7e415} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries srcu\+\_\+ec\+\_\+head}
+\item 
+\Hypertarget{structsrcu__data_a078f1e8a6a81d1ca255c215622eeb254}\label{structsrcu__data_a078f1e8a6a81d1ca255c215622eeb254} 
+int {\bfseries srcu\+\_\+ec\+\_\+state}
+\item 
+\Hypertarget{structsrcu__data_a9af8c7dbd13519c1eb87d2ecb4ee0108}\label{structsrcu__data_a9af8c7dbd13519c1eb87d2ecb4ee0108} 
+struct \doxymbox{\hyperlink{structsrcu__node}{srcu\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries mynode}
+\item 
+\Hypertarget{structsrcu__data_a6a2d339d2b483b8256cce2853a7eab52}\label{structsrcu__data_a6a2d339d2b483b8256cce2853a7eab52} 
+long unsigned int {\bfseries grpmask}
+\item 
+\Hypertarget{structsrcu__data_a183c7575214533015962a8d7eacdf641}\label{structsrcu__data_a183c7575214533015962a8d7eacdf641} 
+int {\bfseries cpu}
+\item 
+\Hypertarget{structsrcu__data_a3806836c0379d78236a589c1b7eda7e5}\label{structsrcu__data_a3806836c0379d78236a589c1b7eda7e5} 
+struct \doxymbox{\hyperlink{structsrcu__struct}{srcu\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries ssp}
+\item 
+\Hypertarget{structsrcu__data_ad1f141aa68246756d9569eeda2c1a6d2}\label{structsrcu__data_ad1f141aa68246756d9569eeda2c1a6d2} 
+long :\+ 64
+\item 
+\Hypertarget{structsrcu__data_a500f7a0dae6b990f4a90ed0b5a0751d3}\label{structsrcu__data_a500f7a0dae6b990f4a90ed0b5a0751d3} 
+long :\+ 64
+\item 
+\Hypertarget{structsrcu__data_a794952a78c9c2dcdbcb918978f0b9f4c}\label{structsrcu__data_a794952a78c9c2dcdbcb918978f0b9f4c} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,35 @@
+\doxysection{br\+\_\+ip Struct Reference}
+\hypertarget{structbr__ip}{}\label{structbr__ip}\index{br\_ip@{br\_ip}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbr__ip_a2693db2e9151b639ddbdb95c3d76245d}\label{structbr__ip_a2693db2e9151b639ddbdb95c3d76245d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries ip4}\\
+\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries ip6}\\
+\} {\bfseries src}\\
+
+\end{tabbing}\item 
+\Hypertarget{structbr__ip_a0da9ff9c47999262d28abbc25938d0d2}\label{structbr__ip_a0da9ff9c47999262d28abbc25938d0d2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries ip4}\\
+\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries ip6}\\
+\>unsigned char {\bfseries mac\_addr} \+[6]\+\\
+\} {\bfseries dst}\\
+
+\end{tabbing}\item 
+\Hypertarget{structbr__ip_a92f0766dacb3cbcbb1e32e7c0d8e4d4a}\label{structbr__ip_a92f0766dacb3cbcbb1e32e7c0d8e4d4a} 
+\+\_\+\+\_\+be16 {\bfseries proto}
+\item 
+\Hypertarget{structbr__ip_a33964d1e00d6baf1064a210519376599}\label{structbr__ip_a33964d1e00d6baf1064a210519376599} 
+\+\_\+\+\_\+u16 {\bfseries vid}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

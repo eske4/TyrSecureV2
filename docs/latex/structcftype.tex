@@ -1,0 +1,73 @@
+\doxysection{cftype Struct Reference}
+\hypertarget{structcftype}{}\label{structcftype}\index{cftype@{cftype}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcftype_a4d05cb0744b8e74736881fb83992b1df}\label{structcftype_a4d05cb0744b8e74736881fb83992b1df} 
+char {\bfseries name} \+[64]\+
+\item 
+\Hypertarget{structcftype_a3223c96f31d217cadc0c1543011901af}\label{structcftype_a3223c96f31d217cadc0c1543011901af} 
+long unsigned int {\bfseries private}
+\item 
+\Hypertarget{structcftype_a6678d9dfdc80862957995ca55e24f5b2}\label{structcftype_a6678d9dfdc80862957995ca55e24f5b2} 
+size\+\_\+t {\bfseries max\+\_\+write\+\_\+len}
+\item 
+\Hypertarget{structcftype_aa4e3e91d6160950020605d0e984a7527}\label{structcftype_aa4e3e91d6160950020605d0e984a7527} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structcftype_a644b90f4fab25b823727999143be8cef}\label{structcftype_a644b90f4fab25b823727999143be8cef} 
+unsigned int {\bfseries file\+\_\+offset}
+\item 
+\Hypertarget{structcftype_a3b0986e1ddaa5e9b94c6c6a577a34329}\label{structcftype_a3b0986e1ddaa5e9b94c6c6a577a34329} 
+struct \doxymbox{\hyperlink{structcgroup__subsys}{cgroup\+\_\+subsys}} \texorpdfstring{$\ast$}{*} {\bfseries ss}
+\item 
+\Hypertarget{structcftype_a52117bacca614c38b30e4ef46edb1cd3}\label{structcftype_a52117bacca614c38b30e4ef46edb1cd3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structcftype_a43c884900ae329ee8c8ec0b255376b7b}\label{structcftype_a43c884900ae329ee8c8ec0b255376b7b} 
+struct \doxymbox{\hyperlink{structkernfs__ops}{kernfs\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries kf\+\_\+ops}
+\item 
+\Hypertarget{structcftype_a35117e2e8f312629dfe44e51c50b31d4}\label{structcftype_a35117e2e8f312629dfe44e51c50b31d4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcftype_a54dcbce08c9ea09536f6d5b36472c7e1}\label{structcftype_a54dcbce08c9ea09536f6d5b36472c7e1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcftype_af526093b3a6872056b573e4943ee81e5}\label{structcftype_af526093b3a6872056b573e4943ee81e5} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+u64} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcftype}{cftype}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcftype_a3ff91abe6c53e2230c4437fc40486b83}\label{structcftype_a3ff91abe6c53e2230c4437fc40486b83} 
+s64(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+s64} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcftype}{cftype}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcftype_ae2e0307395989c263bca64dbf219c437}\label{structcftype_ae2e0307395989c263bca64dbf219c437} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries seq\+\_\+show} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcftype_aa4204e439fd16d64b23618a730e67658}\label{structcftype_aa4204e439fd16d64b23618a730e67658} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries seq\+\_\+start} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, loff\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcftype_adaaa00e1c46d02369df483c7f9b7b71e}\label{structcftype_adaaa00e1c46d02369df483c7f9b7b71e} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries seq\+\_\+next} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, loff\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcftype_a830791658a51d7038509edfb13608260}\label{structcftype_a830791658a51d7038509edfb13608260} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries seq\+\_\+stop} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcftype_a0db0f6e8f1ad10f63d5be694d5b2a9ce}\label{structcftype_a0db0f6e8f1ad10f63d5be694d5b2a9ce} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+u64} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcftype}{cftype}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structcftype_a91d51fa07826e90586c42cb4479c64c8}\label{structcftype_a91d51fa07826e90586c42cb4479c64c8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+s64} )(struct \doxymbox{\hyperlink{structcgroup__subsys__state}{cgroup\+\_\+subsys\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcftype}{cftype}} \texorpdfstring{$\ast$}{*}, s64)
+\item 
+\Hypertarget{structcftype_aa9f268209d56390258f25e057f9a4960}\label{structcftype_aa9f268209d56390258f25e057f9a4960} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, size\+\_\+t, loff\+\_\+t)
+\item 
+\Hypertarget{structcftype_a151b7de8439e388ecd9e915ce1802946}\label{structcftype_a151b7de8439e388ecd9e915ce1802946} 
+\+\_\+\+\_\+poll\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries poll} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpoll__table__struct}{poll\+\_\+table\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcftype_a4e331cff6a441b5d948a43f531a449b4}\label{structcftype_a4e331cff6a441b5d948a43f531a449b4} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries lockdep\+\_\+key}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

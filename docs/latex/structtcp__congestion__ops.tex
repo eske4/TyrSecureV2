@@ -1,0 +1,79 @@
+\doxysection{tcp\+\_\+congestion\+\_\+ops Struct Reference}
+\hypertarget{structtcp__congestion__ops}{}\label{structtcp__congestion__ops}\index{tcp\_congestion\_ops@{tcp\_congestion\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtcp__congestion__ops_ad70f8e70d397be2e3c29a8acca2ee5ce}\label{structtcp__congestion__ops_ad70f8e70d397be2e3c29a8acca2ee5ce} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries ssthresh} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__congestion__ops_a76b7f055693073c4570ed0c3bc8a1352}\label{structtcp__congestion__ops_a76b7f055693073c4570ed0c3bc8a1352} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cong\+\_\+avoid} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, u32, u32)
+\item 
+\Hypertarget{structtcp__congestion__ops_a358948f2a62a4461d16bc4b71c88cb22}\label{structtcp__congestion__ops_a358948f2a62a4461d16bc4b71c88cb22} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+state} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structtcp__congestion__ops_a87e191d7fafbec0593181b23f010016c}\label{structtcp__congestion__ops_a87e191d7fafbec0593181b23f010016c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cwnd\+\_\+event} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, enum tcp\+\_\+ca\+\_\+event)
+\item 
+\Hypertarget{structtcp__congestion__ops_a6003f23f094e671d4f6c1c1db44ef4cf}\label{structtcp__congestion__ops_a6003f23f094e671d4f6c1c1db44ef4cf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries in\+\_\+ack\+\_\+event} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structtcp__congestion__ops_a318c4f05209eb45277c73da61d813734}\label{structtcp__congestion__ops_a318c4f05209eb45277c73da61d813734} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pkts\+\_\+acked} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structack__sample}{ack\+\_\+sample}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__congestion__ops_a3713e73d2193c5c642b2056a01ecb103}\label{structtcp__congestion__ops_a3713e73d2193c5c642b2056a01ecb103} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries min\+\_\+tso\+\_\+segs} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__congestion__ops_a7b211b3e987b049fa57f029aeb618aa1}\label{structtcp__congestion__ops_a7b211b3e987b049fa57f029aeb618aa1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cong\+\_\+control} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, u32, int, const struct \doxymbox{\hyperlink{structrate__sample}{rate\+\_\+sample}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__congestion__ops_af616fd48ac7e558f2533eafa6939a44a}\label{structtcp__congestion__ops_af616fd48ac7e558f2533eafa6939a44a} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries undo\+\_\+cwnd} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__congestion__ops_a55bec7bda389e40cdcc08f58a693de06}\label{structtcp__congestion__ops_a55bec7bda389e40cdcc08f58a693de06} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries sndbuf\+\_\+expand} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__congestion__ops_a0a154e761eda51cb6d0d732355e81076}\label{structtcp__congestion__ops_a0a154e761eda51cb6d0d732355e81076} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+info} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, u32, int \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{uniontcp__cc__info}{tcp\+\_\+cc\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__congestion__ops_a6a44ee9acb3c974871a22d4c25693b39}\label{structtcp__congestion__ops_a6a44ee9acb3c974871a22d4c25693b39} 
+char {\bfseries name} \+[16]\+
+\item 
+\Hypertarget{structtcp__congestion__ops_aa2a58a2e506323b2a96daa0f7cd4c704}\label{structtcp__congestion__ops_aa2a58a2e506323b2a96daa0f7cd4c704} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structtcp__congestion__ops_a91239cfe588b4fb53d586eb62d2d595d}\label{structtcp__congestion__ops_a91239cfe588b4fb53d586eb62d2d595d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structtcp__congestion__ops_a51a5ea7408550ce8b8b9afef3927468b}\label{structtcp__congestion__ops_a51a5ea7408550ce8b8b9afef3927468b} 
+u32 {\bfseries key}
+\item 
+\Hypertarget{structtcp__congestion__ops_acc553baec06634166850f2336e699710}\label{structtcp__congestion__ops_acc553baec06634166850f2336e699710} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structtcp__congestion__ops_ac026c19643905b177506004476aaa092}\label{structtcp__congestion__ops_ac026c19643905b177506004476aaa092} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__congestion__ops_af3a1d77ce069c6b08ea93231c191756a}\label{structtcp__congestion__ops_af3a1d77ce069c6b08ea93231c191756a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtcp__congestion__ops_aaec1972fa5d1ac1d2a8fdd3b62939c5c}\label{structtcp__congestion__ops_aaec1972fa5d1ac1d2a8fdd3b62939c5c} 
+long :\+ 64
+\item 
+\Hypertarget{structtcp__congestion__ops_afc806e14234aaffa83033b9cc82b90e1}\label{structtcp__congestion__ops_afc806e14234aaffa83033b9cc82b90e1} 
+long :\+ 64
+\item 
+\Hypertarget{structtcp__congestion__ops_af4f475855a52454aa6657fe2db31bb34}\label{structtcp__congestion__ops_af4f475855a52454aa6657fe2db31bb34} 
+long :\+ 64
+\item 
+\Hypertarget{structtcp__congestion__ops_afcbb556477867136fce105a56a599f86}\label{structtcp__congestion__ops_afcbb556477867136fce105a56a599f86} 
+long :\+ 64
+\item 
+\Hypertarget{structtcp__congestion__ops_a6eff0749d9df24ba2535be64e3e6a53a}\label{structtcp__congestion__ops_a6eff0749d9df24ba2535be64e3e6a53a} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

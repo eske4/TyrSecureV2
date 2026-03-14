@@ -1,0 +1,46 @@
+\doxysection{efi\+\_\+runtime\+\_\+services\+\_\+t Union Reference}
+\hypertarget{unionefi__runtime__services__t}{}\label{unionefi__runtime__services__t}\index{efi\_runtime\_services\_t@{efi\_runtime\_services\_t}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionefi__runtime__services__t_a50a3d2bf1f9d7432e2852565fd8cb158}\label{unionefi__runtime__services__t_a50a3d2bf1f9d7432e2852565fd8cb158} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\doxymbox{\hyperlink{structefi__table__hdr__t}{efi\_table\_hdr\_t}} {\bfseries hdr}\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries get\_time} )(\doxymbox{\hyperlink{structefi__time__t}{efi\_time\_t}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structefi__time__cap__t}{efi\_time\_cap\_t}} \texorpdfstring{$\ast$}{*})\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries set\_time} )(\doxymbox{\hyperlink{structefi__time__t}{efi\_time\_t}} \texorpdfstring{$\ast$}{*})\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries get\_wakeup\_time} )(efi\_bool\_t \texorpdfstring{$\ast$}{*}, efi\_bool\_t \texorpdfstring{$\ast$}{*},\\
+\>\> \doxymbox{\hyperlink{structefi__time__t}{efi\_time\_t}} \texorpdfstring{$\ast$}{*})\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries set\_wakeup\_time} )(efi\_bool\_t, \doxymbox{\hyperlink{structefi__time__t}{efi\_time\_t}} \texorpdfstring{$\ast$}{*})\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries set\_virtual\_address\_map} )(long unsigned int, long \\
+\>\>unsigned int, u32,\\
+\>\> \doxymbox{\hyperlink{structefi__memory__desc__t}{efi\_memory\_desc\_t}} \texorpdfstring{$\ast$}{*})\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries convert\_pointer}\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries get\_variable} )(efi\_char16\_t \texorpdfstring{$\ast$}{*}, efi\_guid\_t \texorpdfstring{$\ast$}{*},\\
+\>\> u32 \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*},\\
+\>\> void \texorpdfstring{$\ast$}{*})\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries get\_next\_variable} )(long unsigned int \texorpdfstring{$\ast$}{*},\\
+\>\> efi\_char16\_t \texorpdfstring{$\ast$}{*}, efi\_guid\_t \texorpdfstring{$\ast$}{*})\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries set\_variable} )(efi\_char16\_t \texorpdfstring{$\ast$}{*}, efi\_guid\_t \texorpdfstring{$\ast$}{*},\\
+\>\> u32, long unsigned int, void \texorpdfstring{$\ast$}{*})\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries get\_next\_high\_mono\_count} )(u32 \texorpdfstring{$\ast$}{*})\\
+\>void(\texorpdfstring{$\ast$}{*} {\bfseries reset\_system} )(int, efi\_status\_t, long \\
+\>\>unsigned int, efi\_char16\_t \texorpdfstring{$\ast$}{*})\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries update\_capsule} )(\doxymbox{\hyperlink{structefi__capsule__header__t}{efi\_capsule\_header\_t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*},\\
+\>\> long unsigned int, long \\
+\>\>unsigned int)\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries query\_capsule\_caps} )(\doxymbox{\hyperlink{structefi__capsule__header__t}{efi\_capsule\_header\_t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*},\\
+\>\> long unsigned int, u64 \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})\\
+\>efi\_status\_t(\texorpdfstring{$\ast$}{*} {\bfseries query\_variable\_info} )(u32, u64 \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*})\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__runtime__services__t_a2fe33754f7af2093a6eaec0d7b8f3304}\label{unionefi__runtime__services__t_a2fe33754f7af2093a6eaec0d7b8f3304} 
+\doxymbox{\hyperlink{structefi__runtime__services__32__t}{efi\+\_\+runtime\+\_\+services\+\_\+32\+\_\+t}} {\bfseries mixed\+\_\+mode}
+\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

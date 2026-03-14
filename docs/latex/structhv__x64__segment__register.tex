@@ -1,0 +1,39 @@
+\doxysection{hv\+\_\+x64\+\_\+segment\+\_\+register Struct Reference}
+\hypertarget{structhv__x64__segment__register}{}\label{structhv__x64__segment__register}\index{hv\_x64\_segment\_register@{hv\_x64\_segment\_register}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structhv__x64__segment__register_a3b94adf3535ded67b1dd6550307ab23d}\label{structhv__x64__segment__register_a3b94adf3535ded67b1dd6550307ab23d} 
+u64 {\bfseries base}
+\item 
+\Hypertarget{structhv__x64__segment__register_a3a46930fd9bc568aa7652e049cb8b0e8}\label{structhv__x64__segment__register_a3a46930fd9bc568aa7652e049cb8b0e8} 
+u32 {\bfseries limit}
+\item 
+\Hypertarget{structhv__x64__segment__register_ab3d2c166c9a21f0f05719e9edadc737b}\label{structhv__x64__segment__register_ab3d2c166c9a21f0f05719e9edadc737b} 
+u16 {\bfseries selector}
+\item 
+\Hypertarget{structhv__x64__segment__register_a3e9368f13aae6eb1ae9735098a53235a}\label{structhv__x64__segment__register_a3e9368f13aae6eb1ae9735098a53235a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionhv__x64__segment__register_1_1_0d102055231200303053115310274057357007143066255275_a445861ba6fe1befdaa8425511d0eb72e}\label{unionhv__x64__segment__register_1_1_0d102055231200303053115310274057357007143066255275_a445861ba6fe1befdaa8425511d0eb72e} 
+\>struct \{\\
+\>\>u16 {\bfseries segment\_type}: 4\\
+\>\>u16 {\bfseries non\_system\_segment}: 1\\
+\>\>u16 {\bfseries descriptor\_privilege\_level}: 2\\
+\>\>u16 {\bfseries present}: 1\\
+\>\>u16 {\bfseries reserved}: 4\\
+\>\>u16 {\bfseries available}: 1\\
+\>\>u16 {\bfseries \_long}: 1\\
+\>\>u16 {\bfseries \_default}: 1\\
+\>\>u16 {\bfseries granularity}: 1\\
+\>\} \\
+\>u16 {\bfseries attributes}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

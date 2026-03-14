@@ -1,0 +1,46 @@
+\doxysection{packet\+\_\+ring\+\_\+buffer Struct Reference}
+\hypertarget{structpacket__ring__buffer}{}\label{structpacket__ring__buffer}\index{packet\_ring\_buffer@{packet\_ring\_buffer}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpacket__ring__buffer_ae06456e7db69837509b899faceebf497}\label{structpacket__ring__buffer_ae06456e7db69837509b899faceebf497} 
+struct \doxymbox{\hyperlink{structpgv}{pgv}} \texorpdfstring{$\ast$}{*} {\bfseries pg\+\_\+vec}
+\item 
+\Hypertarget{structpacket__ring__buffer_a7cdf543a9a2efb5fa6c6acab8d993b2a}\label{structpacket__ring__buffer_a7cdf543a9a2efb5fa6c6acab8d993b2a} 
+unsigned int {\bfseries head}
+\item 
+\Hypertarget{structpacket__ring__buffer_aada2151b41c268c2a0ecd612f610fe41}\label{structpacket__ring__buffer_aada2151b41c268c2a0ecd612f610fe41} 
+unsigned int {\bfseries frames\+\_\+per\+\_\+block}
+\item 
+\Hypertarget{structpacket__ring__buffer_ab117aed1d58601106a62a31c50f91c2b}\label{structpacket__ring__buffer_ab117aed1d58601106a62a31c50f91c2b} 
+unsigned int {\bfseries frame\+\_\+size}
+\item 
+\Hypertarget{structpacket__ring__buffer_a765a1b955aaf9f786c9717b9c4ebce84}\label{structpacket__ring__buffer_a765a1b955aaf9f786c9717b9c4ebce84} 
+unsigned int {\bfseries frame\+\_\+max}
+\item 
+\Hypertarget{structpacket__ring__buffer_a4e784ddf526840d07f8b01cc00482ec7}\label{structpacket__ring__buffer_a4e784ddf526840d07f8b01cc00482ec7} 
+unsigned int {\bfseries pg\+\_\+vec\+\_\+order}
+\item 
+\Hypertarget{structpacket__ring__buffer_ad87d4f4853ce6be6180136a69feda6ec}\label{structpacket__ring__buffer_ad87d4f4853ce6be6180136a69feda6ec} 
+unsigned int {\bfseries pg\+\_\+vec\+\_\+pages}
+\item 
+\Hypertarget{structpacket__ring__buffer_a475782494760b9e1ed56cf9ee1ccc800}\label{structpacket__ring__buffer_a475782494760b9e1ed56cf9ee1ccc800} 
+unsigned int {\bfseries pg\+\_\+vec\+\_\+len}
+\item 
+\Hypertarget{structpacket__ring__buffer_afd334a675356eab7b407c5b14e0d10d4}\label{structpacket__ring__buffer_afd334a675356eab7b407c5b14e0d10d4} 
+unsigned int \texorpdfstring{$\ast$}{*} {\bfseries pending\+\_\+refcnt}
+\item 
+\Hypertarget{structpacket__ring__buffer_a7b069473e9aba3e7c9604feb103fe9c9}\label{structpacket__ring__buffer_a7b069473e9aba3e7c9604feb103fe9c9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries rx\_owner\_map}\\
+\>struct \doxymbox{\hyperlink{structtpacket__kbdq__core}{tpacket\_kbdq\_core}} {\bfseries prb\_bdqc}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

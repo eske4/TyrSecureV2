@@ -1,0 +1,70 @@
+\doxysection{mptcp\+\_\+pm\+\_\+data Struct Reference}
+\hypertarget{structmptcp__pm__data}{}\label{structmptcp__pm__data}\index{mptcp\_pm\_data@{mptcp\_pm\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmptcp__pm__data_aa533d35370b2814d76107d81c48b8702}\label{structmptcp__pm__data_aa533d35370b2814d76107d81c48b8702} 
+struct \doxymbox{\hyperlink{structmptcp__addr__info}{mptcp\+\_\+addr\+\_\+info}} {\bfseries local}
+\item 
+\Hypertarget{structmptcp__pm__data_abdd81c2dec16b92edc0c1798dae700cc}\label{structmptcp__pm__data_abdd81c2dec16b92edc0c1798dae700cc} 
+struct \doxymbox{\hyperlink{structmptcp__addr__info}{mptcp\+\_\+addr\+\_\+info}} {\bfseries remote}
+\item 
+\Hypertarget{structmptcp__pm__data_a2652a2fe57836797a753a330556a0d79}\label{structmptcp__pm__data_a2652a2fe57836797a753a330556a0d79} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries anno\+\_\+list}
+\item 
+\Hypertarget{structmptcp__pm__data_a9756c630601eb15a77c0de0090556f0b}\label{structmptcp__pm__data_a9756c630601eb15a77c0de0090556f0b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries userspace\+\_\+pm\+\_\+local\+\_\+addr\+\_\+list}
+\item 
+\Hypertarget{structmptcp__pm__data_a7349670453510ec95fb2745aa346d334}\label{structmptcp__pm__data_a7349670453510ec95fb2745aa346d334} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structmptcp__pm__data_a2e78d33a73980cb13dc1b953ad8e1526}\label{structmptcp__pm__data_a2e78d33a73980cb13dc1b953ad8e1526} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionmptcp__pm__data_1_1_0d340271253065353172203240066352212047316252315273_ad9767b36468174f4f0476cd273506b8a}\label{unionmptcp__pm__data_1_1_0d340271253065353172203240066352212047316252315273_ad9767b36468174f4f0476cd273506b8a} 
+\>struct \{\\
+\>\>u8 {\bfseries addr\_signal}\\
+\>\>bool {\bfseries server\_side}\\
+\>\>bool {\bfseries work\_pending}\\
+\>\>bool {\bfseries accept\_addr}\\
+\>\>bool {\bfseries accept\_subflow}\\
+\>\>bool {\bfseries remote\_deny\_join\_id0}\\
+\>\>u8 {\bfseries add\_addr\_signaled}\\
+\>\>u8 {\bfseries add\_addr\_accepted}\\
+\>\>u8 {\bfseries local\_addr\_used}\\
+\>\>u8 {\bfseries pm\_type}\\
+\>\>u8 {\bfseries extra\_subflows}\\
+\>\>u8 {\bfseries status}\\
+\>\} \\
+\>struct \{\\
+\>\>u8 {\bfseries addr\_signal}\\
+\>\>bool {\bfseries server\_side}\\
+\>\>bool {\bfseries work\_pending}\\
+\>\>bool {\bfseries accept\_addr}\\
+\>\>bool {\bfseries accept\_subflow}\\
+\>\>bool {\bfseries remote\_deny\_join\_id0}\\
+\>\>u8 {\bfseries add\_addr\_signaled}\\
+\>\>u8 {\bfseries add\_addr\_accepted}\\
+\>\>u8 {\bfseries local\_addr\_used}\\
+\>\>u8 {\bfseries pm\_type}\\
+\>\>u8 {\bfseries extra\_subflows}\\
+\>\>u8 {\bfseries status}\\
+\>\} {\bfseries reset}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmptcp__pm__data_ab6d5215d95b9dad74d71f25ccb4ec110}\label{structmptcp__pm__data_ab6d5215d95b9dad74d71f25ccb4ec110} 
+long unsigned int {\bfseries id\+\_\+avail\+\_\+bitmap} \+[4]\+
+\item 
+\Hypertarget{structmptcp__pm__data_aafc5e049b919973a9f7b3a2551b14a98}\label{structmptcp__pm__data_aafc5e049b919973a9f7b3a2551b14a98} 
+struct \doxymbox{\hyperlink{structmptcp__rm__list}{mptcp\+\_\+rm\+\_\+list}} {\bfseries rm\+\_\+list\+\_\+tx}
+\item 
+\Hypertarget{structmptcp__pm__data_a4ca5c561afe6d71f84e176dc80cb18a4}\label{structmptcp__pm__data_a4ca5c561afe6d71f84e176dc80cb18a4} 
+struct \doxymbox{\hyperlink{structmptcp__rm__list}{mptcp\+\_\+rm\+\_\+list}} {\bfseries rm\+\_\+list\+\_\+rx}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

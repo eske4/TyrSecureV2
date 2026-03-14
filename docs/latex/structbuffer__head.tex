@@ -1,0 +1,55 @@
+\doxysection{buffer\+\_\+head Struct Reference}
+\hypertarget{structbuffer__head}{}\label{structbuffer__head}\index{buffer\_head@{buffer\_head}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbuffer__head_ac71ee6c0ff77b2dc0239cb749b8278d2}\label{structbuffer__head_ac71ee6c0ff77b2dc0239cb749b8278d2} 
+long unsigned int {\bfseries b\+\_\+state}
+\item 
+\Hypertarget{structbuffer__head_a3e58a4cd2be7ad0acfcd0bbbac57cb39}\label{structbuffer__head_a3e58a4cd2be7ad0acfcd0bbbac57cb39} 
+struct \doxymbox{\hyperlink{structbuffer__head}{buffer\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+this\+\_\+page}
+\item 
+\Hypertarget{structbuffer__head_a82c64a05f09ad565e305a29bd02cd79d}\label{structbuffer__head_a82c64a05f09ad565e305a29bd02cd79d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*} {\bfseries b\_page}\\
+\>struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*} {\bfseries b\_folio}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbuffer__head_abd9f289988d200d48a70ef9bd655ee27}\label{structbuffer__head_abd9f289988d200d48a70ef9bd655ee27} 
+sector\+\_\+t {\bfseries b\+\_\+blocknr}
+\item 
+\Hypertarget{structbuffer__head_a32db5d2f4834fae045b5eaedb056e4dc}\label{structbuffer__head_a32db5d2f4834fae045b5eaedb056e4dc} 
+size\+\_\+t {\bfseries b\+\_\+size}
+\item 
+\Hypertarget{structbuffer__head_af6df18ba0e6d99b48860f0721cfa287a}\label{structbuffer__head_af6df18ba0e6d99b48860f0721cfa287a} 
+char \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+data}
+\item 
+\Hypertarget{structbuffer__head_a1ebd9e38342ccdcbbc28d3704e7edf01}\label{structbuffer__head_a1ebd9e38342ccdcbbc28d3704e7edf01} 
+struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+bdev}
+\item 
+\Hypertarget{structbuffer__head_a91ddf2b04118f4083917282e04ed8788}\label{structbuffer__head_a91ddf2b04118f4083917282e04ed8788} 
+bh\+\_\+end\+\_\+io\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+end\+\_\+io}
+\item 
+\Hypertarget{structbuffer__head_a49f59edacae00840b27cadae8e35a693}\label{structbuffer__head_a49f59edacae00840b27cadae8e35a693} 
+void \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+private}
+\item 
+\Hypertarget{structbuffer__head_a0fa29a3ba037bf929a626b4c3c00e528}\label{structbuffer__head_a0fa29a3ba037bf929a626b4c3c00e528} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries b\+\_\+assoc\+\_\+buffers}
+\item 
+\Hypertarget{structbuffer__head_a6c7ad086f2c6a5790896b944ffd0bc26}\label{structbuffer__head_a6c7ad086f2c6a5790896b944ffd0bc26} 
+struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*} {\bfseries b\+\_\+assoc\+\_\+map}
+\item 
+\Hypertarget{structbuffer__head_aaa53c0448a77ae7ca1a8102ef9b7391c}\label{structbuffer__head_aaa53c0448a77ae7ca1a8102ef9b7391c} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries b\+\_\+count}
+\item 
+\Hypertarget{structbuffer__head_ae4f959accb0fd781c255b4545cfe7c31}\label{structbuffer__head_ae4f959accb0fd781c255b4545cfe7c31} 
+spinlock\+\_\+t {\bfseries b\+\_\+uptodate\+\_\+lock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

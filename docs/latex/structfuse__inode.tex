@@ -1,0 +1,83 @@
+\doxysection{fuse\+\_\+inode Struct Reference}
+\hypertarget{structfuse__inode}{}\label{structfuse__inode}\index{fuse\_inode@{fuse\_inode}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__inode_a15f297cfba456548b5d307fe80993184}\label{structfuse__inode_a15f297cfba456548b5d307fe80993184} 
+struct \doxymbox{\hyperlink{structinode}{inode}} {\bfseries inode}
+\item 
+\Hypertarget{structfuse__inode_a8676a0e7b6d508d48aa7e5bb8ff025af}\label{structfuse__inode_a8676a0e7b6d508d48aa7e5bb8ff025af} 
+u64 {\bfseries nodeid}
+\item 
+\Hypertarget{structfuse__inode_a04b4aed82dc3e651e7287abc6fcdf368}\label{structfuse__inode_a04b4aed82dc3e651e7287abc6fcdf368} 
+u64 {\bfseries nlookup}
+\item 
+\Hypertarget{structfuse__inode_a56a602c1a9cd5376bab4a5d9d2426194}\label{structfuse__inode_a56a602c1a9cd5376bab4a5d9d2426194} 
+struct \doxymbox{\hyperlink{structfuse__forget__link}{fuse\+\_\+forget\+\_\+link}} \texorpdfstring{$\ast$}{*} {\bfseries forget}
+\item 
+\Hypertarget{structfuse__inode_abbcc8262dda4cb2460d7b0abddc88bb0}\label{structfuse__inode_abbcc8262dda4cb2460d7b0abddc88bb0} 
+u64 {\bfseries i\+\_\+time}
+\item 
+\Hypertarget{structfuse__inode_a1871bc05b2a36a1b75c205f2aa18b572}\label{structfuse__inode_a1871bc05b2a36a1b75c205f2aa18b572} 
+u32 {\bfseries inval\+\_\+mask}
+\item 
+\Hypertarget{structfuse__inode_a516bdbca489aec7d8171eefa66a97e46}\label{structfuse__inode_a516bdbca489aec7d8171eefa66a97e46} 
+umode\+\_\+t {\bfseries orig\+\_\+i\+\_\+mode}
+\item 
+\Hypertarget{structfuse__inode_a0c7c6cb82eb91b9c6cd7ab654aa751d7}\label{structfuse__inode_a0c7c6cb82eb91b9c6cd7ab654aa751d7} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries i\+\_\+btime}
+\item 
+\Hypertarget{structfuse__inode_a2c2d5dd8b332b0fad40a9e637220ad46}\label{structfuse__inode_a2c2d5dd8b332b0fad40a9e637220ad46} 
+u64 {\bfseries orig\+\_\+ino}
+\item 
+\Hypertarget{structfuse__inode_a59dd2de308e28d6b434ca4754e478321}\label{structfuse__inode_a59dd2de308e28d6b434ca4754e478321} 
+u64 {\bfseries attr\+\_\+version}
+\item 
+\Hypertarget{structfuse__inode_a505dfb7caf224db22c888499138c88c7}\label{structfuse__inode_a505dfb7caf224db22c888499138c88c7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionfuse__inode_1_1_0d233344155344133040323266123001231217016045072335_a33be1c4d255f4577e6a6d9363fc81709}\label{unionfuse__inode_1_1_0d233344155344133040323266123001231217016045072335_a33be1c4d255f4577e6a6d9363fc81709} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries write\_files}\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries queued\_writes}\\
+\>\>int {\bfseries writectr}\\
+\>\>int {\bfseries iocachectr}\\
+\>\>wait\_queue\_head\_t {\bfseries page\_waitq}\\
+\>\>wait\_queue\_head\_t {\bfseries direct\_io\_waitq}\\
+\>\} \\
+\>struct \{\\
+\>\>bool {\bfseries cached}\\
+\>\>loff\_t {\bfseries size}\\
+\>\>loff\_t {\bfseries pos}\\
+\>\>u64 {\bfseries version}\\
+\>\>struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries mtime}\\
+\>\>u64 {\bfseries iversion}\\
+\>\>spinlock\_t {\bfseries lock}\\
+\>\} {\bfseries rdc}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structfuse__inode_aaa2fd5943564ab04346a9d1f40c04584}\label{structfuse__inode_aaa2fd5943564ab04346a9d1f40c04584} 
+long unsigned int {\bfseries state}
+\item 
+\Hypertarget{structfuse__inode_ae2cf58673369007da5c1b1096863700c}\label{structfuse__inode_ae2cf58673369007da5c1b1096863700c} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structfuse__inode_aad9862216d614ff691197dcba9301c44}\label{structfuse__inode_aad9862216d614ff691197dcba9301c44} 
+struct \doxymbox{\hyperlink{structfuse__inode__dax}{fuse\+\_\+inode\+\_\+dax}} \texorpdfstring{$\ast$}{*} {\bfseries dax}
+\item 
+\Hypertarget{structfuse__inode_adc3ec7741467d2937391121907a90a05}\label{structfuse__inode_adc3ec7741467d2937391121907a90a05} 
+struct \doxymbox{\hyperlink{structfuse__submount__lookup}{fuse\+\_\+submount\+\_\+lookup}} \texorpdfstring{$\ast$}{*} {\bfseries submount\+\_\+lookup}
+\item 
+\Hypertarget{structfuse__inode_acbfbe2b5eab7a312e4fdb734ce8796c0}\label{structfuse__inode_acbfbe2b5eab7a312e4fdb734ce8796c0} 
+struct \doxymbox{\hyperlink{structfuse__backing}{fuse\+\_\+backing}} \texorpdfstring{$\ast$}{*} {\bfseries fb}
+\item 
+\Hypertarget{structfuse__inode_af3b14daa195ce38c098b06f1b48cc569}\label{structfuse__inode_af3b14daa195ce38c098b06f1b48cc569} 
+u8 {\bfseries cached\+\_\+i\+\_\+blkbits}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

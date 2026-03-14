@@ -1,0 +1,103 @@
+\doxysection{transaction\+\_\+s Struct Reference}
+\hypertarget{structtransaction__s}{}\label{structtransaction__s}\index{transaction\_s@{transaction\_s}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtransaction__s_a342488df94b497d6da8b1d684184b7f1}\label{structtransaction__s_a342488df94b497d6da8b1d684184b7f1} 
+enum \{ \newline
+{\bfseries T\+\_\+\+RUNNING} = 0
+, {\bfseries T\+\_\+\+LOCKED} = 1
+, {\bfseries T\+\_\+\+SWITCH} = 2
+, {\bfseries T\+\_\+\+FLUSH} = 3
+, \newline
+{\bfseries T\+\_\+\+COMMIT} = 4
+, {\bfseries T\+\_\+\+COMMIT\+\_\+\+DFLUSH} = 5
+, {\bfseries T\+\_\+\+COMMIT\+\_\+\+JFLUSH} = 6
+, {\bfseries T\+\_\+\+COMMIT\+\_\+\+CALLBACK} = 7
+, \newline
+{\bfseries T\+\_\+\+FINISHED} = 8
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtransaction__s_a7d7bec9f51e659fd28d65bfe6dcca58f}\label{structtransaction__s_a7d7bec9f51e659fd28d65bfe6dcca58f} 
+journal\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries t\+\_\+journal}
+\item 
+\Hypertarget{structtransaction__s_a6cf946e64cbfb62c9e001e84c55f054b}\label{structtransaction__s_a6cf946e64cbfb62c9e001e84c55f054b} 
+tid\+\_\+t {\bfseries t\+\_\+tid}
+\item 
+\Hypertarget{structtransaction__s_aedaeebdc1fbeb8982e6d92ab418c5e48}\label{structtransaction__s_aedaeebdc1fbeb8982e6d92ab418c5e48} 
+enum transaction\+\_\+s::\+ \{ ... \}  {\bfseries t\+\_\+state}
+\item 
+\Hypertarget{structtransaction__s_aa36c15a8f5381419c1403ff9e0a271ac}\label{structtransaction__s_aa36c15a8f5381419c1403ff9e0a271ac} 
+long unsigned int {\bfseries t\+\_\+log\+\_\+start}
+\item 
+\Hypertarget{structtransaction__s_adca6c24d11a3f5101be69baadce497d4}\label{structtransaction__s_adca6c24d11a3f5101be69baadce497d4} 
+int {\bfseries t\+\_\+nr\+\_\+buffers}
+\item 
+\Hypertarget{structtransaction__s_aa06a83f206a5b3467672e6240a7a2197}\label{structtransaction__s_aa06a83f206a5b3467672e6240a7a2197} 
+struct \doxymbox{\hyperlink{structjournal__head}{journal\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries t\+\_\+reserved\+\_\+list}
+\item 
+\Hypertarget{structtransaction__s_a82d5daa76dd016c9bc1b30abfe58cc20}\label{structtransaction__s_a82d5daa76dd016c9bc1b30abfe58cc20} 
+struct \doxymbox{\hyperlink{structjournal__head}{journal\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries t\+\_\+buffers}
+\item 
+\Hypertarget{structtransaction__s_a2f9bb364052e9818d31277164938b1a2}\label{structtransaction__s_a2f9bb364052e9818d31277164938b1a2} 
+struct \doxymbox{\hyperlink{structjournal__head}{journal\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries t\+\_\+forget}
+\item 
+\Hypertarget{structtransaction__s_a633e9a1142933220ae8cba694d1d82c6}\label{structtransaction__s_a633e9a1142933220ae8cba694d1d82c6} 
+struct \doxymbox{\hyperlink{structjournal__head}{journal\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries t\+\_\+checkpoint\+\_\+list}
+\item 
+\Hypertarget{structtransaction__s_ac26d1e87fe453dacf2200d06470af759}\label{structtransaction__s_ac26d1e87fe453dacf2200d06470af759} 
+struct \doxymbox{\hyperlink{structjournal__head}{journal\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries t\+\_\+shadow\+\_\+list}
+\item 
+\Hypertarget{structtransaction__s_a309b4355cdf00fa858e3790820eef7ff}\label{structtransaction__s_a309b4355cdf00fa858e3790820eef7ff} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries t\+\_\+inode\+\_\+list}
+\item 
+\Hypertarget{structtransaction__s_a0eb1e270669a98eacb8cfafdc88c9f69}\label{structtransaction__s_a0eb1e270669a98eacb8cfafdc88c9f69} 
+long unsigned int {\bfseries t\+\_\+max\+\_\+wait}
+\item 
+\Hypertarget{structtransaction__s_a8181772af17f49fc98e832939fc3929f}\label{structtransaction__s_a8181772af17f49fc98e832939fc3929f} 
+long unsigned int {\bfseries t\+\_\+start}
+\item 
+\Hypertarget{structtransaction__s_a8e1913df165b7ba4f42eabe1fc9001ac}\label{structtransaction__s_a8e1913df165b7ba4f42eabe1fc9001ac} 
+long unsigned int {\bfseries t\+\_\+requested}
+\item 
+\Hypertarget{structtransaction__s_a6fdd9bbf4688c35795f556024a7bde28}\label{structtransaction__s_a6fdd9bbf4688c35795f556024a7bde28} 
+struct \doxymbox{\hyperlink{structtransaction__chp__stats__s}{transaction\+\_\+chp\+\_\+stats\+\_\+s}} {\bfseries t\+\_\+chp\+\_\+stats}
+\item 
+\Hypertarget{structtransaction__s_ad84415158182a0566e304b18d12efe51}\label{structtransaction__s_ad84415158182a0566e304b18d12efe51} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries t\+\_\+updates}
+\item 
+\Hypertarget{structtransaction__s_a82a3c0a1a966c8dbe182b68ec9998f4b}\label{structtransaction__s_a82a3c0a1a966c8dbe182b68ec9998f4b} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries t\+\_\+outstanding\+\_\+credits}
+\item 
+\Hypertarget{structtransaction__s_a67232e44be610ab5edb40f62cfb50862}\label{structtransaction__s_a67232e44be610ab5edb40f62cfb50862} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries t\+\_\+outstanding\+\_\+revokes}
+\item 
+\Hypertarget{structtransaction__s_afc3f99b8af40da0ba7111698051507b8}\label{structtransaction__s_afc3f99b8af40da0ba7111698051507b8} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries t\+\_\+handle\+\_\+count}
+\item 
+\Hypertarget{structtransaction__s_a6046f9a202517a5988fcb1e7fb0d21d9}\label{structtransaction__s_a6046f9a202517a5988fcb1e7fb0d21d9} 
+transaction\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries t\+\_\+cpnext}
+\item 
+\Hypertarget{structtransaction__s_ade3c80e81d61084d63a5cfca73e32508}\label{structtransaction__s_ade3c80e81d61084d63a5cfca73e32508} 
+transaction\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries t\+\_\+cpprev}
+\item 
+\Hypertarget{structtransaction__s_a1e08fe87e0c4de9b93a2d51a86744926}\label{structtransaction__s_a1e08fe87e0c4de9b93a2d51a86744926} 
+long unsigned int {\bfseries t\+\_\+expires}
+\item 
+\Hypertarget{structtransaction__s_a2cd224b8eac1deb9f8110adc90b3f8a2}\label{structtransaction__s_a2cd224b8eac1deb9f8110adc90b3f8a2} 
+ktime\+\_\+t {\bfseries t\+\_\+start\+\_\+time}
+\item 
+\Hypertarget{structtransaction__s_aa2ac8a16262061d723c4ddcbb92ff261}\label{structtransaction__s_aa2ac8a16262061d723c4ddcbb92ff261} 
+unsigned int {\bfseries t\+\_\+synchronous\+\_\+commit}:\+ 1
+\item 
+\Hypertarget{structtransaction__s_afe58fef2d0a95cc3ce18c33ee1ece92d}\label{structtransaction__s_afe58fef2d0a95cc3ce18c33ee1ece92d} 
+int {\bfseries t\+\_\+need\+\_\+data\+\_\+flush}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\doxysection{mmu\+\_\+notifier\+\_\+subscriptions Struct Reference}
+\hypertarget{structmmu__notifier__subscriptions}{}\label{structmmu__notifier__subscriptions}\index{mmu\_notifier\_subscriptions@{mmu\_notifier\_subscriptions}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmmu__notifier__subscriptions_aea1a7ace29930585a43bc724cc7af675}\label{structmmu__notifier__subscriptions_aea1a7ace29930585a43bc724cc7af675} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structmmu__notifier__subscriptions_a24987cf45fc0c005fb0c2056d38942a7}\label{structmmu__notifier__subscriptions_a24987cf45fc0c005fb0c2056d38942a7} 
+bool {\bfseries has\+\_\+itree}
+\item 
+\Hypertarget{structmmu__notifier__subscriptions_ad558c98a87048c6ab7a3abe2fadbc7a4}\label{structmmu__notifier__subscriptions_ad558c98a87048c6ab7a3abe2fadbc7a4} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structmmu__notifier__subscriptions_a7ef9bc650377298489000eab9f40f5a2}\label{structmmu__notifier__subscriptions_a7ef9bc650377298489000eab9f40f5a2} 
+long unsigned int {\bfseries invalidate\+\_\+seq}
+\item 
+\Hypertarget{structmmu__notifier__subscriptions_a9f666160544732283d202ce02d773401}\label{structmmu__notifier__subscriptions_a9f666160544732283d202ce02d773401} 
+long unsigned int {\bfseries active\+\_\+invalidate\+\_\+ranges}
+\item 
+\Hypertarget{structmmu__notifier__subscriptions_ab4cb9e8f8945d77d5e29eb475239c602}\label{structmmu__notifier__subscriptions_ab4cb9e8f8945d77d5e29eb475239c602} 
+struct \doxymbox{\hyperlink{structrb__root__cached}{rb\+\_\+root\+\_\+cached}} {\bfseries itree}
+\item 
+\Hypertarget{structmmu__notifier__subscriptions_a031926d3620b9db51f9a69a544c0b8c2}\label{structmmu__notifier__subscriptions_a031926d3620b9db51f9a69a544c0b8c2} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wq}
+\item 
+\Hypertarget{structmmu__notifier__subscriptions_aed34de3462594722e4bd746eb13f3b81}\label{structmmu__notifier__subscriptions_aed34de3462594722e4bd746eb13f3b81} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries deferred\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

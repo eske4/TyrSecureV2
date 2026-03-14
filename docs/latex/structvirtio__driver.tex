@@ -1,0 +1,58 @@
+\doxysection{virtio\+\_\+driver Struct Reference}
+\hypertarget{structvirtio__driver}{}\label{structvirtio__driver}\index{virtio\_driver@{virtio\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtio__driver_ae794fa25f17657233c6d5b882a59aace}\label{structvirtio__driver_ae794fa25f17657233c6d5b882a59aace} 
+struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} {\bfseries driver}
+\item 
+\Hypertarget{structvirtio__driver_ada4d08885408eb24e3ee1460e537abe2}\label{structvirtio__driver_ada4d08885408eb24e3ee1460e537abe2} 
+const struct \doxymbox{\hyperlink{structvirtio__device__id}{virtio\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries id\+\_\+table}
+\item 
+\Hypertarget{structvirtio__driver_ad3973246bf658b50681a9eaaec2784d7}\label{structvirtio__driver_ad3973246bf658b50681a9eaaec2784d7} 
+const unsigned int \texorpdfstring{$\ast$}{*} {\bfseries feature\+\_\+table}
+\item 
+\Hypertarget{structvirtio__driver_a6630ddf70843cd24af7a69740900b37c}\label{structvirtio__driver_a6630ddf70843cd24af7a69740900b37c} 
+unsigned int {\bfseries feature\+\_\+table\+\_\+size}
+\item 
+\Hypertarget{structvirtio__driver_a9a471f2e4e097dc8a073cadd1afac2e2}\label{structvirtio__driver_a9a471f2e4e097dc8a073cadd1afac2e2} 
+const unsigned int \texorpdfstring{$\ast$}{*} {\bfseries feature\+\_\+table\+\_\+legacy}
+\item 
+\Hypertarget{structvirtio__driver_a962f2f64e24e068b066c2cda628239a1}\label{structvirtio__driver_a962f2f64e24e068b066c2cda628239a1} 
+unsigned int {\bfseries feature\+\_\+table\+\_\+size\+\_\+legacy}
+\item 
+\Hypertarget{structvirtio__driver_ac3060c6fb69527d681dafa8ef6c5d46d}\label{structvirtio__driver_ac3060c6fb69527d681dafa8ef6c5d46d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries validate} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__driver_ab3fdd9ba046241c777ef7cc8e9d51aa5}\label{structvirtio__driver_ab3fdd9ba046241c777ef7cc8e9d51aa5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__driver_aef35aae87223d7552624ba1a6137955f}\label{structvirtio__driver_aef35aae87223d7552624ba1a6137955f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries scan} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__driver_a949c491fe582ec8d1121b5d9500d4d43}\label{structvirtio__driver_a949c491fe582ec8d1121b5d9500d4d43} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__driver_a10183e3f5b7652113b017415ad4e37d3}\label{structvirtio__driver_a10183e3f5b7652113b017415ad4e37d3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries config\+\_\+changed} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__driver_a4970fde8d7f18387f8613f4798ff56d3}\label{structvirtio__driver_a4970fde8d7f18387f8613f4798ff56d3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries freeze} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__driver_af13d8955208fa85bce545f64fafdd71c}\label{structvirtio__driver_af13d8955208fa85bce545f64fafdd71c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries restore} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__driver_a1cbc36cf7544f0e60a35bdeb90e96c0a}\label{structvirtio__driver_a1cbc36cf7544f0e60a35bdeb90e96c0a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+prepare} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__driver_a0e5e7293964c0e6f4bef32b390d37a55}\label{structvirtio__driver_a0e5e7293964c0e6f4bef32b390d37a55} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+done} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__driver_a106e7f909a6bd612d0d6c0d131417ef8}\label{structvirtio__driver_a106e7f909a6bd612d0d6c0d131417ef8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries shutdown} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

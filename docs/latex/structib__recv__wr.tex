@@ -1,0 +1,28 @@
+\doxysection{ib\+\_\+recv\+\_\+wr Struct Reference}
+\hypertarget{structib__recv__wr}{}\label{structib__recv__wr}\index{ib\_recv\_wr@{ib\_recv\_wr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structib__recv__wr_a5b9214f7246735bb74639620c087c528}\label{structib__recv__wr_a5b9214f7246735bb74639620c087c528} 
+struct \doxymbox{\hyperlink{structib__recv__wr}{ib\+\_\+recv\+\_\+wr}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\item 
+\Hypertarget{structib__recv__wr_ac88d9c8495af5b38b68e453ff9749f17}\label{structib__recv__wr_ac88d9c8495af5b38b68e453ff9749f17} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries wr\_id}\\
+\>struct \doxymbox{\hyperlink{structib__cqe}{ib\_cqe}} \texorpdfstring{$\ast$}{*} {\bfseries wr\_cqe}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structib__recv__wr_ad6d5ff2b989f5a976ab0b80ab2bea9c2}\label{structib__recv__wr_ad6d5ff2b989f5a976ab0b80ab2bea9c2} 
+struct \doxymbox{\hyperlink{structib__sge}{ib\+\_\+sge}} \texorpdfstring{$\ast$}{*} {\bfseries sg\+\_\+list}
+\item 
+\Hypertarget{structib__recv__wr_a82aa19d7a2abc8214cb1081464ae1af7}\label{structib__recv__wr_a82aa19d7a2abc8214cb1081464ae1af7} 
+int {\bfseries num\+\_\+sge}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

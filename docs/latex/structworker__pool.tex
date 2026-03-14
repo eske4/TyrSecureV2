@@ -1,0 +1,79 @@
+\doxysection{worker\+\_\+pool Struct Reference}
+\hypertarget{structworker__pool}{}\label{structworker__pool}\index{worker\_pool@{worker\_pool}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structworker__pool_a1bc937f38427fbf40e3fab001bd201ca}\label{structworker__pool_a1bc937f38427fbf40e3fab001bd201ca} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structworker__pool_a3ff436d8674a46b1700cbd579c94a8f8}\label{structworker__pool_a3ff436d8674a46b1700cbd579c94a8f8} 
+int {\bfseries cpu}
+\item 
+\Hypertarget{structworker__pool_ae9378a4b4bfbd5c0c3375b2da6a81bb3}\label{structworker__pool_ae9378a4b4bfbd5c0c3375b2da6a81bb3} 
+int {\bfseries node}
+\item 
+\Hypertarget{structworker__pool_ab3bf1d5a6b91dc95c874f1169cd24c8f}\label{structworker__pool_ab3bf1d5a6b91dc95c874f1169cd24c8f} 
+int {\bfseries id}
+\item 
+\Hypertarget{structworker__pool_add83a72af7240e15873a0c6c010dc5ff}\label{structworker__pool_add83a72af7240e15873a0c6c010dc5ff} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structworker__pool_ace41a63764eba14105ce9eb5c3a108b3}\label{structworker__pool_ace41a63764eba14105ce9eb5c3a108b3} 
+long unsigned int {\bfseries watchdog\+\_\+ts}
+\item 
+\Hypertarget{structworker__pool_a2fcceed3bfb193a7dc882344d60aa457}\label{structworker__pool_a2fcceed3bfb193a7dc882344d60aa457} 
+bool {\bfseries cpu\+\_\+stall}
+\item 
+\Hypertarget{structworker__pool_a83d9c69bec7d420de4ed46aa69ea2a5e}\label{structworker__pool_a83d9c69bec7d420de4ed46aa69ea2a5e} 
+int {\bfseries nr\+\_\+running}
+\item 
+\Hypertarget{structworker__pool_a3148f0053c6488acfc8e5f049bd70ed6}\label{structworker__pool_a3148f0053c6488acfc8e5f049bd70ed6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries worklist}
+\item 
+\Hypertarget{structworker__pool_a79317708a5047fcc719ed19c558ef849}\label{structworker__pool_a79317708a5047fcc719ed19c558ef849} 
+int {\bfseries nr\+\_\+workers}
+\item 
+\Hypertarget{structworker__pool_ac4b63b4f0db9bcbc750573013048f7ef}\label{structworker__pool_ac4b63b4f0db9bcbc750573013048f7ef} 
+int {\bfseries nr\+\_\+idle}
+\item 
+\Hypertarget{structworker__pool_a3f8785484910e5e8a1eea9a0192a8722}\label{structworker__pool_a3f8785484910e5e8a1eea9a0192a8722} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries idle\+\_\+list}
+\item 
+\Hypertarget{structworker__pool_a89205558523d5c2d38c99440ab18545d}\label{structworker__pool_a89205558523d5c2d38c99440ab18545d} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries idle\+\_\+timer}
+\item 
+\Hypertarget{structworker__pool_a0984567262487e3923cd35c663dbe3f7}\label{structworker__pool_a0984567262487e3923cd35c663dbe3f7} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries idle\+\_\+cull\+\_\+work}
+\item 
+\Hypertarget{structworker__pool_acce6daf346645cd050ce7c19f8fba4a0}\label{structworker__pool_acce6daf346645cd050ce7c19f8fba4a0} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries mayday\+\_\+timer}
+\item 
+\Hypertarget{structworker__pool_af74dd0c1cbb5921c1c00c126c74b9976}\label{structworker__pool_af74dd0c1cbb5921c1c00c126c74b9976} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries busy\+\_\+hash} \+[64]\+
+\item 
+\Hypertarget{structworker__pool_ae081ecfbcdaf4974228199fdf48e3966}\label{structworker__pool_ae081ecfbcdaf4974228199fdf48e3966} 
+struct \doxymbox{\hyperlink{structworker}{worker}} \texorpdfstring{$\ast$}{*} {\bfseries manager}
+\item 
+\Hypertarget{structworker__pool_ae29f8df704a74b5b1e22c16100d3d8ef}\label{structworker__pool_ae29f8df704a74b5b1e22c16100d3d8ef} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries workers}
+\item 
+\Hypertarget{structworker__pool_a5d83961e5a1fdc05fb50af447ade5bec}\label{structworker__pool_a5d83961e5a1fdc05fb50af447ade5bec} 
+struct \doxymbox{\hyperlink{structida}{ida}} {\bfseries worker\+\_\+ida}
+\item 
+\Hypertarget{structworker__pool_ac1fd3fa3cc4d03931fffec011696c775}\label{structworker__pool_ac1fd3fa3cc4d03931fffec011696c775} 
+struct \doxymbox{\hyperlink{structworkqueue__attrs}{workqueue\+\_\+attrs}} \texorpdfstring{$\ast$}{*} {\bfseries attrs}
+\item 
+\Hypertarget{structworker__pool_a49e3eed507f554f81fb54d5d502284ec}\label{structworker__pool_a49e3eed507f554f81fb54d5d502284ec} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries hash\+\_\+node}
+\item 
+\Hypertarget{structworker__pool_a8be5553437c5fb03e5ecbd2df34992c6}\label{structworker__pool_a8be5553437c5fb03e5ecbd2df34992c6} 
+int {\bfseries refcnt}
+\item 
+\Hypertarget{structworker__pool_ade085b26d2eb3368bd7005b4fd30a28d}\label{structworker__pool_ade085b26d2eb3368bd7005b4fd30a28d} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

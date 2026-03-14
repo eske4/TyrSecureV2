@@ -1,0 +1,53 @@
+\doxysection{genl\+\_\+split\+\_\+ops Struct Reference}
+\hypertarget{structgenl__split__ops}{}\label{structgenl__split__ops}\index{genl\_split\_ops@{genl\_split\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structgenl__split__ops_a80bfc4bacb73b230bae344cb651d211b}\label{structgenl__split__ops_a80bfc4bacb73b230bae344cb651d211b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{uniongenl__split__ops_1_1_0d357132136327342166366152100357010270302041225214_a8f9a38766346ee3839704c393c46c7c6}\label{uniongenl__split__ops_1_1_0d357132136327342166366152100357010270302041225214_a8f9a38766346ee3839704c393c46c7c6} 
+\>struct \{\\
+\>\>int(\texorpdfstring{$\ast$}{*} {\bfseries pre\_doit} )(const struct \doxymbox{\hyperlink{structgenl__split__ops}{genl\_split\_ops}} \texorpdfstring{$\ast$}{*},\\
+\>\>\> struct \doxymbox{\hyperlink{structsk__buff}{sk\_buff}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\>\doxymbox{\hyperlink{structgenl__info}{genl\_info}} \texorpdfstring{$\ast$}{*})\\
+\>\>int(\texorpdfstring{$\ast$}{*} {\bfseries doit} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\_buff}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\>\doxymbox{\hyperlink{structgenl__info}{genl\_info}} \texorpdfstring{$\ast$}{*})\\
+\>\>void(\texorpdfstring{$\ast$}{*} {\bfseries post\_doit} )(const struct \doxymbox{\hyperlink{structgenl__split__ops}{genl\_split\_ops}} \texorpdfstring{$\ast$}{*},\\
+\>\>\> struct \doxymbox{\hyperlink{structsk__buff}{sk\_buff}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\>\doxymbox{\hyperlink{structgenl__info}{genl\_info}} \texorpdfstring{$\ast$}{*})\\
+\>\} \\
+\Hypertarget{uniongenl__split__ops_1_1_0d357132136327342166366152100357010270302041225214_a757f7a0e8bb21f0000ce64df1b28d06d}\label{uniongenl__split__ops_1_1_0d357132136327342166366152100357010270302041225214_a757f7a0e8bb21f0000ce64df1b28d06d} 
+\>struct \{\\
+\>\>int(\texorpdfstring{$\ast$}{*} {\bfseries start} )(struct \doxymbox{\hyperlink{structnetlink__callback}{netlink\_callback}} \texorpdfstring{$\ast$}{*})\\
+\>\>int(\texorpdfstring{$\ast$}{*} {\bfseries dumpit} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\_buff}} \texorpdfstring{$\ast$}{*}, struct \\
+\>\>\>\doxymbox{\hyperlink{structnetlink__callback}{netlink\_callback}} \texorpdfstring{$\ast$}{*})\\
+\>\>int(\texorpdfstring{$\ast$}{*} {\bfseries done} )(struct \doxymbox{\hyperlink{structnetlink__callback}{netlink\_callback}} \texorpdfstring{$\ast$}{*})\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structgenl__split__ops_a8f7955e3db7d349d09646c4599e3c1af}\label{structgenl__split__ops_a8f7955e3db7d349d09646c4599e3c1af} 
+const struct \doxymbox{\hyperlink{structnla__policy}{nla\+\_\+policy}} \texorpdfstring{$\ast$}{*} {\bfseries policy}
+\item 
+\Hypertarget{structgenl__split__ops_a3bf4caad8347b0f014e92045a0b0392b}\label{structgenl__split__ops_a3bf4caad8347b0f014e92045a0b0392b} 
+unsigned int {\bfseries maxattr}
+\item 
+\Hypertarget{structgenl__split__ops_aab42968d3cc091f7efac9144a2abc570}\label{structgenl__split__ops_aab42968d3cc091f7efac9144a2abc570} 
+u8 {\bfseries cmd}
+\item 
+\Hypertarget{structgenl__split__ops_a9a5c1a18ce95929e57e67b712228fc88}\label{structgenl__split__ops_a9a5c1a18ce95929e57e67b712228fc88} 
+u8 {\bfseries internal\+\_\+flags}
+\item 
+\Hypertarget{structgenl__split__ops_ab5fbe3bcac96b59e591f6d7af33f4c82}\label{structgenl__split__ops_ab5fbe3bcac96b59e591f6d7af33f4c82} 
+u8 {\bfseries flags}
+\item 
+\Hypertarget{structgenl__split__ops_af4cc6215247b49e4f77a541c34349d65}\label{structgenl__split__ops_af4cc6215247b49e4f77a541c34349d65} 
+u8 {\bfseries validate}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

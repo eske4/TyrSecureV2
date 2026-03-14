@@ -1,0 +1,46 @@
+\doxysection{i2c\+\_\+driver Struct Reference}
+\hypertarget{structi2c__driver}{}\label{structi2c__driver}\index{i2c\_driver@{i2c\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structi2c__driver_aab1c03548d0ee3c2347d2f4eeb1d214a}\label{structi2c__driver_aab1c03548d0ee3c2347d2f4eeb1d214a} 
+unsigned int {\bfseries class}
+\item 
+\Hypertarget{structi2c__driver_ad2addbadcfbc5b25786961a070852d00}\label{structi2c__driver_ad2addbadcfbc5b25786961a070852d00} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\+\_\+client}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__driver_af13e37b3f425f1f3c60b759dcf7218c9}\label{structi2c__driver_af13e37b3f425f1f3c60b759dcf7218c9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\+\_\+client}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__driver_ac4fb315e7c102b27abc09757d7f939be}\label{structi2c__driver_ac4fb315e7c102b27abc09757d7f939be} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries shutdown} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\+\_\+client}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__driver_a117cc52a34d71d3b6fa879f982bf0af6}\label{structi2c__driver_a117cc52a34d71d3b6fa879f982bf0af6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries alert} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\+\_\+client}} \texorpdfstring{$\ast$}{*}, enum i2c\+\_\+alert\+\_\+protocol, unsigned int)
+\item 
+\Hypertarget{structi2c__driver_a386ee0626f47f1298a65be07836d72e2}\label{structi2c__driver_a386ee0626f47f1298a65be07836d72e2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries command} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\+\_\+client}} \texorpdfstring{$\ast$}{*}, unsigned int, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__driver_ad92ed622612cba5a31d0db16544d7990}\label{structi2c__driver_ad92ed622612cba5a31d0db16544d7990} 
+struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} {\bfseries driver}
+\item 
+\Hypertarget{structi2c__driver_a69a52ad443bbdbef516f15ae119b12d4}\label{structi2c__driver_a69a52ad443bbdbef516f15ae119b12d4} 
+const struct \doxymbox{\hyperlink{structi2c__device__id}{i2c\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries id\+\_\+table}
+\item 
+\Hypertarget{structi2c__driver_ae1bc1e2ae29b569403df5b86b4a650d1}\label{structi2c__driver_ae1bc1e2ae29b569403df5b86b4a650d1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries detect} )(struct \doxymbox{\hyperlink{structi2c__client}{i2c\+\_\+client}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structi2c__board__info}{i2c\+\_\+board\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structi2c__driver_aecd107deac1f712a946e26b4f4f907ef}\label{structi2c__driver_aecd107deac1f712a946e26b4f4f907ef} 
+const short unsigned int \texorpdfstring{$\ast$}{*} {\bfseries address\+\_\+list}
+\item 
+\Hypertarget{structi2c__driver_a0d716ad6c26f15d5fe5303cee07e88b1}\label{structi2c__driver_a0d716ad6c26f15d5fe5303cee07e88b1} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries clients}
+\item 
+\Hypertarget{structi2c__driver_ad398c92ce5f5af9f25c0c2f4550ed89d}\label{structi2c__driver_ad398c92ce5f5af9f25c0c2f4550ed89d} 
+u32 {\bfseries flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

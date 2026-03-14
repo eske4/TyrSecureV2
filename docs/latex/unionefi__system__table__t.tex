@@ -1,0 +1,33 @@
+\doxysection{efi\+\_\+system\+\_\+table\+\_\+t Union Reference}
+\hypertarget{unionefi__system__table__t}{}\label{unionefi__system__table__t}\index{efi\_system\_table\_t@{efi\_system\_table\_t}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionefi__system__table__t_ac2d0a4e5e91fb26b36d1b7550a7a2cf8}\label{unionefi__system__table__t_ac2d0a4e5e91fb26b36d1b7550a7a2cf8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\doxymbox{\hyperlink{structefi__table__hdr__t}{efi\_table\_hdr\_t}} {\bfseries hdr}\\
+\>long unsigned int {\bfseries fw\_vendor}\\
+\>u32 {\bfseries fw\_revision}\\
+\>long unsigned int {\bfseries con\_in\_handle}\\
+\>efi\_simple\_text\_input\_protocol\_t \texorpdfstring{$\ast$}{*} {\bfseries con\_in}\\
+\>long unsigned int {\bfseries con\_out\_handle}\\
+\>efi\_simple\_text\_output\_protocol\_t \texorpdfstring{$\ast$}{*} {\bfseries con\_out}\\
+\>long unsigned int {\bfseries stderr\_handle}\\
+\>long unsigned int {\bfseries stderr}\\
+\>\doxymbox{\hyperlink{unionefi__runtime__services__t}{efi\_runtime\_services\_t}} \texorpdfstring{$\ast$}{*} {\bfseries runtime}\\
+\>efi\_boot\_services\_t \texorpdfstring{$\ast$}{*} {\bfseries boottime}\\
+\>long unsigned int {\bfseries nr\_tables}\\
+\>long unsigned int {\bfseries tables}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionefi__system__table__t_a991bc864c8deebbafb7d70a0ef6c44ac}\label{unionefi__system__table__t_a991bc864c8deebbafb7d70a0ef6c44ac} 
+\doxymbox{\hyperlink{structefi__system__table__32__t}{efi\+\_\+system\+\_\+table\+\_\+32\+\_\+t}} {\bfseries mixed\+\_\+mode}
+\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

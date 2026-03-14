@@ -1,0 +1,119 @@
+\doxysection{mount Struct Reference}
+\hypertarget{structmount}{}\label{structmount}\index{mount@{mount}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmount_a319058dd8837f25f05ded167f40da49e}\label{structmount_a319058dd8837f25f05ded167f40da49e} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries mnt\+\_\+hash}
+\item 
+\Hypertarget{structmount_a07d3f6bdf114b74df7a84ecc60344897}\label{structmount_a07d3f6bdf114b74df7a84ecc60344897} 
+struct \doxymbox{\hyperlink{structmount}{mount}} \texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+parent}
+\item 
+\Hypertarget{structmount_a5b15848e51f00cce0c0c1f4305a12cac}\label{structmount_a5b15848e51f00cce0c0c1f4305a12cac} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+mountpoint}
+\item 
+\Hypertarget{structmount_abbdf0fce29d0d38f61ded51152d5faf3}\label{structmount_abbdf0fce29d0d38f61ded51152d5faf3} 
+struct \doxymbox{\hyperlink{structvfsmount}{vfsmount}} {\bfseries mnt}
+\item 
+\Hypertarget{structmount_a037db2a72bee643f9867953df420cf8a}\label{structmount_a037db2a72bee643f9867953df420cf8a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structrb__node}{rb\_node}} {\bfseries mnt\_node}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries mnt\_rcu}\\
+\>struct \doxymbox{\hyperlink{structllist__node}{llist\_node}} {\bfseries mnt\_llist}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmount_a42dc938e2120975a068cffb9f49942e2}\label{structmount_a42dc938e2120975a068cffb9f49942e2} 
+struct \doxymbox{\hyperlink{structmnt__pcp}{mnt\+\_\+pcp}} \texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+pcp}
+\item 
+\Hypertarget{structmount_aba5b6a7ab4b279d9823bb622e8045e6e}\label{structmount_aba5b6a7ab4b279d9823bb622e8045e6e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries mnt\+\_\+mounts}
+\item 
+\Hypertarget{structmount_aa3714e09bfb5ff31844a48d9798e762d}\label{structmount_aa3714e09bfb5ff31844a48d9798e762d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries mnt\+\_\+child}
+\item 
+\Hypertarget{structmount_a567bc8735917b78898425732013a99a9}\label{structmount_a567bc8735917b78898425732013a99a9} 
+struct \doxymbox{\hyperlink{structmount}{mount}} \texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+next\+\_\+for\+\_\+sb}
+\item 
+\Hypertarget{structmount_a086bc4514d3b6c12b33965f468e9c18d}\label{structmount_a086bc4514d3b6c12b33965f468e9c18d} 
+struct \doxymbox{\hyperlink{structmount}{mount}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+pprev\+\_\+for\+\_\+sb}
+\item 
+\Hypertarget{structmount_ab20af7434ce8e6963dee7bec0a3eb6e3}\label{structmount_ab20af7434ce8e6963dee7bec0a3eb6e3} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+devname}
+\item 
+\Hypertarget{structmount_a541055c02667e2024206610921f9798c}\label{structmount_a541055c02667e2024206610921f9798c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries mnt\+\_\+list}
+\item 
+\Hypertarget{structmount_ac58e7c727876159677b7d106d1eb376d}\label{structmount_ac58e7c727876159677b7d106d1eb376d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries mnt\+\_\+expire}
+\item 
+\Hypertarget{structmount_a9fd6e48c4207514ecb29ca0c371e8804}\label{structmount_a9fd6e48c4207514ecb29ca0c371e8804} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries mnt\+\_\+share}
+\item 
+\Hypertarget{structmount_a8c731ec142788bf183bf3658f7373e0c}\label{structmount_a8c731ec142788bf183bf3658f7373e0c} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries mnt\+\_\+slave\+\_\+list}
+\item 
+\Hypertarget{structmount_a73a57436909fc758c4911bea28affd18}\label{structmount_a73a57436909fc758c4911bea28affd18} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries mnt\+\_\+slave}
+\item 
+\Hypertarget{structmount_a688370bedec17cfc74137071f523183e}\label{structmount_a688370bedec17cfc74137071f523183e} 
+struct \doxymbox{\hyperlink{structmount}{mount}} \texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+master}
+\item 
+\Hypertarget{structmount_a8175187c32812b4d02ef07a9875762d7}\label{structmount_a8175187c32812b4d02ef07a9875762d7} 
+struct \doxymbox{\hyperlink{structmnt__namespace}{mnt\+\_\+namespace}} \texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+ns}
+\item 
+\Hypertarget{structmount_aa95d4b41c930f444dfb791e4a74da639}\label{structmount_aa95d4b41c930f444dfb791e4a74da639} 
+struct \doxymbox{\hyperlink{structmountpoint}{mountpoint}} \texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+mp}
+\item 
+\Hypertarget{structmount_a3fd00106c2074e600c6fa11bbdf98e98}\label{structmount_a3fd00106c2074e600c6fa11bbdf98e98} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries mnt\_mp\_list}\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries mnt\_umount}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmount_a4549fcdbdea9aaa45a7d4e6f119934a6}\label{structmount_a4549fcdbdea9aaa45a7d4e6f119934a6} 
+struct \doxymbox{\hyperlink{structfsnotify__mark__connector}{fsnotify\+\_\+mark\+\_\+connector}} \texorpdfstring{$\ast$}{*} {\bfseries mnt\+\_\+fsnotify\+\_\+marks}
+\item 
+\Hypertarget{structmount_a4c8ee35bff02dfae947b406c570b46f6}\label{structmount_a4c8ee35bff02dfae947b406c570b46f6} 
+\+\_\+\+\_\+u32 {\bfseries mnt\+\_\+fsnotify\+\_\+mask}
+\item 
+\Hypertarget{structmount_a67ac5d55f3fabe13c8a2af05ff5ad6de}\label{structmount_a67ac5d55f3fabe13c8a2af05ff5ad6de} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries to\+\_\+notify}
+\item 
+\Hypertarget{structmount_a96bbbcd2454a6db54e5961f17d4dae43}\label{structmount_a96bbbcd2454a6db54e5961f17d4dae43} 
+struct \doxymbox{\hyperlink{structmnt__namespace}{mnt\+\_\+namespace}} \texorpdfstring{$\ast$}{*} {\bfseries prev\+\_\+ns}
+\item 
+\Hypertarget{structmount_a5a27a1e342a02725d4e4eca7d2babc8a}\label{structmount_a5a27a1e342a02725d4e4eca7d2babc8a} 
+int {\bfseries mnt\+\_\+t\+\_\+flags}
+\item 
+\Hypertarget{structmount_af07dff570fc9c08b57a5b41d2644cbd9}\label{structmount_af07dff570fc9c08b57a5b41d2644cbd9} 
+int {\bfseries mnt\+\_\+id}
+\item 
+\Hypertarget{structmount_a8c778030cee7dbad658539661f7a9b20}\label{structmount_a8c778030cee7dbad658539661f7a9b20} 
+u64 {\bfseries mnt\+\_\+id\+\_\+unique}
+\item 
+\Hypertarget{structmount_a8fb78f4157fb1fcbaa780da27f877341}\label{structmount_a8fb78f4157fb1fcbaa780da27f877341} 
+int {\bfseries mnt\+\_\+group\+\_\+id}
+\item 
+\Hypertarget{structmount_a53336a8d0ab7ec932422d0fbc054313a}\label{structmount_a53336a8d0ab7ec932422d0fbc054313a} 
+int {\bfseries mnt\+\_\+expiry\+\_\+mark}
+\item 
+\Hypertarget{structmount_a2f429b9fafb26a9ad9087b9dcbc99346}\label{structmount_a2f429b9fafb26a9ad9087b9dcbc99346} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries mnt\+\_\+pins}
+\item 
+\Hypertarget{structmount_adbc968bcbfce1eba68fffc26fb6173c3}\label{structmount_adbc968bcbfce1eba68fffc26fb6173c3} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries mnt\+\_\+stuck\+\_\+children}
+\item 
+\Hypertarget{structmount_afe3f6a5a9c42641dfcb06c5b74630550}\label{structmount_afe3f6a5a9c42641dfcb06c5b74630550} 
+struct \doxymbox{\hyperlink{structmount}{mount}} \texorpdfstring{$\ast$}{*} {\bfseries overmount}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

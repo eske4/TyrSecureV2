@@ -1,0 +1,82 @@
+\doxysection{bpf\+\_\+mem\+\_\+cache Struct Reference}
+\hypertarget{structbpf__mem__cache}{}\label{structbpf__mem__cache}\index{bpf\_mem\_cache@{bpf\_mem\_cache}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__mem__cache_add5aedfd229e6b10197786be7d4f4922}\label{structbpf__mem__cache_add5aedfd229e6b10197786be7d4f4922} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries free\+\_\+llist}
+\item 
+\Hypertarget{structbpf__mem__cache_a86b13051847307995771e84431611696}\label{structbpf__mem__cache_a86b13051847307995771e84431611696} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries active}
+\item 
+\Hypertarget{structbpf__mem__cache_a4e3b295718383032c1d97c146c013c63}\label{structbpf__mem__cache_a4e3b295718383032c1d97c146c013c63} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries free\+\_\+llist\+\_\+extra}
+\item 
+\Hypertarget{structbpf__mem__cache_ab246de8529d5e2b9b52559589cb086f7}\label{structbpf__mem__cache_ab246de8529d5e2b9b52559589cb086f7} 
+struct \doxymbox{\hyperlink{structirq__work}{irq\+\_\+work}} {\bfseries refill\+\_\+work}
+\item 
+\Hypertarget{structbpf__mem__cache_acbd588146a94b10e0a6b01d16d0a143a}\label{structbpf__mem__cache_acbd588146a94b10e0a6b01d16d0a143a} 
+struct \doxymbox{\hyperlink{structobj__cgroup}{obj\+\_\+cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries objcg}
+\item 
+\Hypertarget{structbpf__mem__cache_a3b9258ed36d5043f83b84b8e4098ccbe}\label{structbpf__mem__cache_a3b9258ed36d5043f83b84b8e4098ccbe} 
+int {\bfseries unit\+\_\+size}
+\item 
+\Hypertarget{structbpf__mem__cache_a4d90e55f26b895b746f29d0741085f30}\label{structbpf__mem__cache_a4d90e55f26b895b746f29d0741085f30} 
+int {\bfseries free\+\_\+cnt}
+\item 
+\Hypertarget{structbpf__mem__cache_af7ec8f05eddfe9a5fde90f7b5e499322}\label{structbpf__mem__cache_af7ec8f05eddfe9a5fde90f7b5e499322} 
+int {\bfseries low\+\_\+watermark}
+\item 
+\Hypertarget{structbpf__mem__cache_a9a428b32c226cfebab67cdce430cf5ab}\label{structbpf__mem__cache_a9a428b32c226cfebab67cdce430cf5ab} 
+int {\bfseries high\+\_\+watermark}
+\item 
+\Hypertarget{structbpf__mem__cache_a84704cafc4b2d547be7a2d31543e43ef}\label{structbpf__mem__cache_a84704cafc4b2d547be7a2d31543e43ef} 
+int {\bfseries batch}
+\item 
+\Hypertarget{structbpf__mem__cache_a2dab017aaa58d028154ffbaf057c33aa}\label{structbpf__mem__cache_a2dab017aaa58d028154ffbaf057c33aa} 
+int {\bfseries percpu\+\_\+size}
+\item 
+\Hypertarget{structbpf__mem__cache_a552eaed38a7aeb49abd54daf100aacdf}\label{structbpf__mem__cache_a552eaed38a7aeb49abd54daf100aacdf} 
+bool {\bfseries draining}
+\item 
+\Hypertarget{structbpf__mem__cache_aacaff76b05d0fafc83389e846e3d2966}\label{structbpf__mem__cache_aacaff76b05d0fafc83389e846e3d2966} 
+struct \doxymbox{\hyperlink{structbpf__mem__cache}{bpf\+\_\+mem\+\_\+cache}} \texorpdfstring{$\ast$}{*} {\bfseries tgt}
+\item 
+\Hypertarget{structbpf__mem__cache_a922bdd13cf9dd60f891d228e6d172a36}\label{structbpf__mem__cache_a922bdd13cf9dd60f891d228e6d172a36} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries free\+\_\+by\+\_\+rcu}
+\item 
+\Hypertarget{structbpf__mem__cache_a4bd0fa448fdc66ee231470ef5e7dbe4c}\label{structbpf__mem__cache_a4bd0fa448fdc66ee231470ef5e7dbe4c} 
+struct \doxymbox{\hyperlink{structllist__node}{llist\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+by\+\_\+rcu\+\_\+tail}
+\item 
+\Hypertarget{structbpf__mem__cache_a83ca16de88e2780c2ee20abe09badbd5}\label{structbpf__mem__cache_a83ca16de88e2780c2ee20abe09badbd5} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries waiting\+\_\+for\+\_\+gp}
+\item 
+\Hypertarget{structbpf__mem__cache_a0d8e1d0dc2679cec70fe28b6973ed689}\label{structbpf__mem__cache_a0d8e1d0dc2679cec70fe28b6973ed689} 
+struct \doxymbox{\hyperlink{structllist__node}{llist\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries waiting\+\_\+for\+\_\+gp\+\_\+tail}
+\item 
+\Hypertarget{structbpf__mem__cache_a6a5e526e10c5f3f41569eedc05ab9251}\label{structbpf__mem__cache_a6a5e526e10c5f3f41569eedc05ab9251} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structbpf__mem__cache_ad58202b2cd84c646459db2fa4b371e57}\label{structbpf__mem__cache_ad58202b2cd84c646459db2fa4b371e57} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries call\+\_\+rcu\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structbpf__mem__cache_a6fdff816cc37ab76f6c2c83f1425cde1}\label{structbpf__mem__cache_a6fdff816cc37ab76f6c2c83f1425cde1} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries free\+\_\+llist\+\_\+extra\+\_\+rcu}
+\item 
+\Hypertarget{structbpf__mem__cache_ab95c27b1bd10a61896d7b169c82cf563}\label{structbpf__mem__cache_ab95c27b1bd10a61896d7b169c82cf563} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries free\+\_\+by\+\_\+rcu\+\_\+ttrace}
+\item 
+\Hypertarget{structbpf__mem__cache_aff0f68fb191cc3efd1f0a4a7a3a88579}\label{structbpf__mem__cache_aff0f68fb191cc3efd1f0a4a7a3a88579} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries waiting\+\_\+for\+\_\+gp\+\_\+ttrace}
+\item 
+\Hypertarget{structbpf__mem__cache_af675f740bf0251c49d133d3e4a0a7257}\label{structbpf__mem__cache_af675f740bf0251c49d133d3e4a0a7257} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu\+\_\+ttrace}
+\item 
+\Hypertarget{structbpf__mem__cache_a514473a41791bcde493819fe32aef9e6}\label{structbpf__mem__cache_a514473a41791bcde493819fe32aef9e6} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries call\+\_\+rcu\+\_\+ttrace\+\_\+in\+\_\+progress}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

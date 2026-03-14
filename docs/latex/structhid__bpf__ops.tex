@@ -1,0 +1,34 @@
+\doxysection{hid\+\_\+bpf\+\_\+ops Struct Reference}
+\hypertarget{structhid__bpf__ops}{}\label{structhid__bpf__ops}\index{hid\_bpf\_ops@{hid\_bpf\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structhid__bpf__ops_a2087b339dff3908b650927adf25eaf81}\label{structhid__bpf__ops_a2087b339dff3908b650927adf25eaf81} 
+int {\bfseries hid\+\_\+id}
+\item 
+\Hypertarget{structhid__bpf__ops_a2a4c2da7004a327bd494d134059fcf87}\label{structhid__bpf__ops_a2a4c2da7004a327bd494d134059fcf87} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structhid__bpf__ops_aa472b5a7c4742ea3fcbc5c10023dd5e1}\label{structhid__bpf__ops_aa472b5a7c4742ea3fcbc5c10023dd5e1} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structhid__bpf__ops_a823be5c315f68e5ad25b405e50fde8f6}\label{structhid__bpf__ops_a823be5c315f68e5ad25b405e50fde8f6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hid\+\_\+device\+\_\+event} )(struct \doxymbox{\hyperlink{structhid__bpf__ctx}{hid\+\_\+bpf\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, enum hid\+\_\+report\+\_\+type, u64)
+\item 
+\Hypertarget{structhid__bpf__ops_a26e553f9509d7d6ce8fe54530ba26c9a}\label{structhid__bpf__ops_a26e553f9509d7d6ce8fe54530ba26c9a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hid\+\_\+rdesc\+\_\+fixup} )(struct \doxymbox{\hyperlink{structhid__bpf__ctx}{hid\+\_\+bpf\+\_\+ctx}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhid__bpf__ops_a20fdfae1a999f5598122ae9b09182fbf}\label{structhid__bpf__ops_a20fdfae1a999f5598122ae9b09182fbf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hid\+\_\+hw\+\_\+request} )(struct \doxymbox{\hyperlink{structhid__bpf__ctx}{hid\+\_\+bpf\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, unsigned char, enum hid\+\_\+report\+\_\+type, enum hid\+\_\+class\+\_\+request, u64)
+\item 
+\Hypertarget{structhid__bpf__ops_ac8d4a8803d28a50c4455acb7b38bc67c}\label{structhid__bpf__ops_ac8d4a8803d28a50c4455acb7b38bc67c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hid\+\_\+hw\+\_\+output\+\_\+report} )(struct \doxymbox{\hyperlink{structhid__bpf__ctx}{hid\+\_\+bpf\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structhid__bpf__ops_a8b88c79db755c6cba2e95a5b138e9a3a}\label{structhid__bpf__ops_a8b88c79db755c6cba2e95a5b138e9a3a} 
+struct \doxymbox{\hyperlink{structhid__device}{hid\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries hdev}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

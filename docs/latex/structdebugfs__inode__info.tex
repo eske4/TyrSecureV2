@@ -1,0 +1,27 @@
+\doxysection{debugfs\+\_\+inode\+\_\+info Struct Reference}
+\hypertarget{structdebugfs__inode__info}{}\label{structdebugfs__inode__info}\index{debugfs\_inode\_info@{debugfs\_inode\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdebugfs__inode__info_addd1e17c36c390397c56d36d3051f23d}\label{structdebugfs__inode__info_addd1e17c36c390397c56d36d3051f23d} 
+struct \doxymbox{\hyperlink{structinode}{inode}} {\bfseries vfs\+\_\+inode}
+\item 
+\Hypertarget{structdebugfs__inode__info_a19b50e524616f23f1b4aec17b467a94f}\label{structdebugfs__inode__info_a19b50e524616f23f1b4aec17b467a94f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const void \texorpdfstring{$\ast$}{*} {\bfseries raw}\\
+\>const struct \doxymbox{\hyperlink{structfile__operations}{file\_operations}} \texorpdfstring{$\ast$}{*} {\bfseries real\_fops}\\
+\>const struct \doxymbox{\hyperlink{structdebugfs__short__fops}{debugfs\_short\_fops}} \texorpdfstring{$\ast$}{*} {\bfseries short\_fops}\\
+\>debugfs\_automount\_t {\bfseries automount}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdebugfs__inode__info_a0c472d4c1ed035cef2f3d5cb82e65df4}\label{structdebugfs__inode__info_a0c472d4c1ed035cef2f3d5cb82e65df4} 
+void \texorpdfstring{$\ast$}{*} {\bfseries aux}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

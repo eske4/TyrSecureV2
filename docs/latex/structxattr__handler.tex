@@ -1,0 +1,28 @@
+\doxysection{xattr\+\_\+handler Struct Reference}
+\hypertarget{structxattr__handler}{}\label{structxattr__handler}\index{xattr\_handler@{xattr\_handler}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxattr__handler_a70ec6cfed2cf1e4b83127d016576258d}\label{structxattr__handler_a70ec6cfed2cf1e4b83127d016576258d} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structxattr__handler_a60ac696c1950b0b5a9b323e3200d3d3d}\label{structxattr__handler_a60ac696c1950b0b5a9b323e3200d3d3d} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries prefix}
+\item 
+\Hypertarget{structxattr__handler_a11ea8c7d6d51ecb794dbf94cf62cf87c}\label{structxattr__handler_a11ea8c7d6d51ecb794dbf94cf62cf87c} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structxattr__handler_a642e93b4ddd8f49eeb263d4a6b7342e8}\label{structxattr__handler_a642e93b4ddd8f49eeb263d4a6b7342e8} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries list} )(struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxattr__handler_ab2a25d0fcb6c0fba952cb552e1281196}\label{structxattr__handler_ab2a25d0fcb6c0fba952cb552e1281196} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get} )(const struct \doxymbox{\hyperlink{structxattr__handler}{xattr\+\_\+handler}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structxattr__handler_a3a38c34514df61e1ea3bdbe429043aa7}\label{structxattr__handler_a3a38c34514df61e1ea3bdbe429043aa7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set} )(const struct \doxymbox{\hyperlink{structxattr__handler}{xattr\+\_\+handler}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmnt__idmap}{mnt\+\_\+idmap}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t, int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

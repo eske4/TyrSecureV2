@@ -1,0 +1,37 @@
+\doxysection{fuse\+\_\+conn\+\_\+dax Struct Reference}
+\hypertarget{structfuse__conn__dax}{}\label{structfuse__conn__dax}\index{fuse\_conn\_dax@{fuse\_conn\_dax}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__conn__dax_adc395e1391546531e514b69a2a0ced03}\label{structfuse__conn__dax_adc395e1391546531e514b69a2a0ced03} 
+struct \doxymbox{\hyperlink{structdax__device}{dax\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structfuse__conn__dax_acda9a5408058fdbba3991a0434889ddb}\label{structfuse__conn__dax_acda9a5408058fdbba3991a0434889ddb} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structfuse__conn__dax_add220884cdd23d4d58ace14d2cd9d654}\label{structfuse__conn__dax_add220884cdd23d4d58ace14d2cd9d654} 
+long unsigned int {\bfseries nr\+\_\+busy\+\_\+ranges}
+\item 
+\Hypertarget{structfuse__conn__dax_a6c1b753339fcbee4757abe27bed36e77}\label{structfuse__conn__dax_a6c1b753339fcbee4757abe27bed36e77} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries busy\+\_\+ranges}
+\item 
+\Hypertarget{structfuse__conn__dax_a9ab27967b108b37bdffe991eebcadc51}\label{structfuse__conn__dax_a9ab27967b108b37bdffe991eebcadc51} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries free\+\_\+work}
+\item 
+\Hypertarget{structfuse__conn__dax_ae2d75a489baf1e375ec9318515d245ce}\label{structfuse__conn__dax_ae2d75a489baf1e375ec9318515d245ce} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries range\+\_\+waitq}
+\item 
+\Hypertarget{structfuse__conn__dax_a64f43812e571378ee08df8614bad556a}\label{structfuse__conn__dax_a64f43812e571378ee08df8614bad556a} 
+long int {\bfseries nr\+\_\+free\+\_\+ranges}
+\item 
+\Hypertarget{structfuse__conn__dax_a98edabe15788ec52b8ac05ddaa5d84f2}\label{structfuse__conn__dax_a98edabe15788ec52b8ac05ddaa5d84f2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries free\+\_\+ranges}
+\item 
+\Hypertarget{structfuse__conn__dax_a213928d900c3ef1b314f816ff4b6c607}\label{structfuse__conn__dax_a213928d900c3ef1b314f816ff4b6c607} 
+long unsigned int {\bfseries nr\+\_\+ranges}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

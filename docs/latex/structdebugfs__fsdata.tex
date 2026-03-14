@@ -1,0 +1,28 @@
+\doxysection{debugfs\+\_\+fsdata Struct Reference}
+\hypertarget{structdebugfs__fsdata}{}\label{structdebugfs__fsdata}\index{debugfs\_fsdata@{debugfs\_fsdata}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdebugfs__fsdata_a31647837aac3069b005340f05e526f8b}\label{structdebugfs__fsdata_a31647837aac3069b005340f05e526f8b} 
+const struct \doxymbox{\hyperlink{structfile__operations}{file\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries real\+\_\+fops}
+\item 
+\Hypertarget{structdebugfs__fsdata_ab85fd2780f5fc881df0d06b764b7c280}\label{structdebugfs__fsdata_ab85fd2780f5fc881df0d06b764b7c280} 
+const struct \doxymbox{\hyperlink{structdebugfs__short__fops}{debugfs\+\_\+short\+\_\+fops}} \texorpdfstring{$\ast$}{*} {\bfseries short\+\_\+fops}
+\item 
+\Hypertarget{structdebugfs__fsdata_a93ae7f962aa8396c906fe44e42c62fcf}\label{structdebugfs__fsdata_a93ae7f962aa8396c906fe44e42c62fcf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>refcount\_t {\bfseries active\_users}\\
+\>struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries active\_users\_drained}\\
+\>struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries cancellations\_mtx}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries cancellations}\\
+\>unsigned int {\bfseries methods}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

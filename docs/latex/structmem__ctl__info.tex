@@ -1,0 +1,133 @@
+\doxysection{mem\+\_\+ctl\+\_\+info Struct Reference}
+\hypertarget{structmem__ctl__info}{}\label{structmem__ctl__info}\index{mem\_ctl\_info@{mem\_ctl\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmem__ctl__info_ae6e9bd699f88518cd1cd8e80482bf836}\label{structmem__ctl__info_ae6e9bd699f88518cd1cd8e80482bf836} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structmem__ctl__info_a0d3411cf67ae81965f64383c1478b0f6}\label{structmem__ctl__info_a0d3411cf67ae81965f64383c1478b0f6} 
+const struct \doxymbox{\hyperlink{structbus__type}{bus\+\_\+type}} \texorpdfstring{$\ast$}{*} {\bfseries bus}
+\item 
+\Hypertarget{structmem__ctl__info_a24428b69f40fa21e5bd0a9329ad9484b}\label{structmem__ctl__info_a24428b69f40fa21e5bd0a9329ad9484b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries link}
+\item 
+\Hypertarget{structmem__ctl__info_ab0e4e28ed15e102006d3e22949031959}\label{structmem__ctl__info_ab0e4e28ed15e102006d3e22949031959} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structmem__ctl__info_af3c5c3f14b39c3bc824d229a1fec0647}\label{structmem__ctl__info_af3c5c3f14b39c3bc824d229a1fec0647} 
+long unsigned int {\bfseries mtype\+\_\+cap}
+\item 
+\Hypertarget{structmem__ctl__info_a6d98b258380ff90ea40f00b11cba73c2}\label{structmem__ctl__info_a6d98b258380ff90ea40f00b11cba73c2} 
+long unsigned int {\bfseries edac\+\_\+ctl\+\_\+cap}
+\item 
+\Hypertarget{structmem__ctl__info_a7075b3c356755baad8f873ff9cb24ac5}\label{structmem__ctl__info_a7075b3c356755baad8f873ff9cb24ac5} 
+long unsigned int {\bfseries edac\+\_\+cap}
+\item 
+\Hypertarget{structmem__ctl__info_a96ef9aea6ae7c15e55ce3a917cee5f16}\label{structmem__ctl__info_a96ef9aea6ae7c15e55ce3a917cee5f16} 
+long unsigned int {\bfseries scrub\+\_\+cap}
+\item 
+\Hypertarget{structmem__ctl__info_a4fb0fab2d90cabbfb925f4f8918b3f5f}\label{structmem__ctl__info_a4fb0fab2d90cabbfb925f4f8918b3f5f} 
+enum scrub\+\_\+type {\bfseries scrub\+\_\+mode}
+\item 
+\Hypertarget{structmem__ctl__info_a2c8cb0e64698cafa9c6c63925431bf30}\label{structmem__ctl__info_a2c8cb0e64698cafa9c6c63925431bf30} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+sdram\+\_\+scrub\+\_\+rate} )(struct \doxymbox{\hyperlink{structmem__ctl__info}{mem\+\_\+ctl\+\_\+info}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structmem__ctl__info_a0272731ac397c0a3bc51a4f8f948c041}\label{structmem__ctl__info_a0272731ac397c0a3bc51a4f8f948c041} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+sdram\+\_\+scrub\+\_\+rate} )(struct \doxymbox{\hyperlink{structmem__ctl__info}{mem\+\_\+ctl\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmem__ctl__info_a11f862227abad6c1a57f0396502a4943}\label{structmem__ctl__info_a11f862227abad6c1a57f0396502a4943} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries edac\+\_\+check} )(struct \doxymbox{\hyperlink{structmem__ctl__info}{mem\+\_\+ctl\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmem__ctl__info_a0cfa600c2758d9e8dab32bcb853a7011}\label{structmem__ctl__info_a0cfa600c2758d9e8dab32bcb853a7011} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries ctl\+\_\+page\+\_\+to\+\_\+phys} )(struct \doxymbox{\hyperlink{structmem__ctl__info}{mem\+\_\+ctl\+\_\+info}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structmem__ctl__info_a686a1655b9b2d1e93e0d40d556ae10fa}\label{structmem__ctl__info_a686a1655b9b2d1e93e0d40d556ae10fa} 
+int {\bfseries mc\+\_\+idx}
+\item 
+\Hypertarget{structmem__ctl__info_a87b369f1011f7d0e6bc14b98af6bcdf6}\label{structmem__ctl__info_a87b369f1011f7d0e6bc14b98af6bcdf6} 
+struct \doxymbox{\hyperlink{structcsrow__info}{csrow\+\_\+info}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries csrows}
+\item 
+\Hypertarget{structmem__ctl__info_ac4196bfd2591135eecb253a1afe97b83}\label{structmem__ctl__info_ac4196bfd2591135eecb253a1afe97b83} 
+unsigned int {\bfseries nr\+\_\+csrows}
+\item 
+\Hypertarget{structmem__ctl__info_a91afb17336dad5119ae5f66c31110190}\label{structmem__ctl__info_a91afb17336dad5119ae5f66c31110190} 
+unsigned int {\bfseries num\+\_\+cschannel}
+\item 
+\Hypertarget{structmem__ctl__info_a7bdd3fbb2327a457c159f494edc0c836}\label{structmem__ctl__info_a7bdd3fbb2327a457c159f494edc0c836} 
+unsigned int {\bfseries n\+\_\+layers}
+\item 
+\Hypertarget{structmem__ctl__info_a3866f6358715e6578554a4d4972c8177}\label{structmem__ctl__info_a3866f6358715e6578554a4d4972c8177} 
+struct \doxymbox{\hyperlink{structedac__mc__layer}{edac\+\_\+mc\+\_\+layer}} \texorpdfstring{$\ast$}{*} {\bfseries layers}
+\item 
+\Hypertarget{structmem__ctl__info_a28ad096af7b2c1d831b8e51636ecc7d1}\label{structmem__ctl__info_a28ad096af7b2c1d831b8e51636ecc7d1} 
+bool {\bfseries csbased}
+\item 
+\Hypertarget{structmem__ctl__info_af9fa17876c2403987a1bd71f6cddb788}\label{structmem__ctl__info_af9fa17876c2403987a1bd71f6cddb788} 
+unsigned int {\bfseries tot\+\_\+dimms}
+\item 
+\Hypertarget{structmem__ctl__info_af4b11677d567485e066dd671ab726f99}\label{structmem__ctl__info_af4b11677d567485e066dd671ab726f99} 
+struct \doxymbox{\hyperlink{structdimm__info}{dimm\+\_\+info}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries dimms}
+\item 
+\Hypertarget{structmem__ctl__info_aa216f1bd472bfc6b9359873d4509bd4c}\label{structmem__ctl__info_aa216f1bd472bfc6b9359873d4509bd4c} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries pdev}
+\item 
+\Hypertarget{structmem__ctl__info_aa5518c8b5735e78dfd7e3d9415b2831f}\label{structmem__ctl__info_aa5518c8b5735e78dfd7e3d9415b2831f} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries mod\+\_\+name}
+\item 
+\Hypertarget{structmem__ctl__info_a146311389df82f786cc82e5dd522ffa5}\label{structmem__ctl__info_a146311389df82f786cc82e5dd522ffa5} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries ctl\+\_\+name}
+\item 
+\Hypertarget{structmem__ctl__info_a865f439bb18c1783d2443ebf62465f72}\label{structmem__ctl__info_a865f439bb18c1783d2443ebf62465f72} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+name}
+\item 
+\Hypertarget{structmem__ctl__info_a38a2fe438dccb0585f97f85ad3ea3992}\label{structmem__ctl__info_a38a2fe438dccb0585f97f85ad3ea3992} 
+void \texorpdfstring{$\ast$}{*} {\bfseries pvt\+\_\+info}
+\item 
+\Hypertarget{structmem__ctl__info_ad9f4c12e8853fa720b4d2da289a21a3e}\label{structmem__ctl__info_ad9f4c12e8853fa720b4d2da289a21a3e} 
+long unsigned int {\bfseries start\+\_\+time}
+\item 
+\Hypertarget{structmem__ctl__info_ab786140c0c83af64f4f38b86d2a1fa92}\label{structmem__ctl__info_ab786140c0c83af64f4f38b86d2a1fa92} 
+u32 {\bfseries ce\+\_\+noinfo\+\_\+count}
+\item 
+\Hypertarget{structmem__ctl__info_a38f51d8529728730ba7b787f6a6aa612}\label{structmem__ctl__info_a38f51d8529728730ba7b787f6a6aa612} 
+u32 {\bfseries ue\+\_\+noinfo\+\_\+count}
+\item 
+\Hypertarget{structmem__ctl__info_a380b70afc5ebb2a0c19dbc9c12e5b32f}\label{structmem__ctl__info_a380b70afc5ebb2a0c19dbc9c12e5b32f} 
+u32 {\bfseries ue\+\_\+mc}
+\item 
+\Hypertarget{structmem__ctl__info_a729bc02b1aa77339b40a8b5e784593e8}\label{structmem__ctl__info_a729bc02b1aa77339b40a8b5e784593e8} 
+u32 {\bfseries ce\+\_\+mc}
+\item 
+\Hypertarget{structmem__ctl__info_a5a9078044cb964c529a5412e84435a73}\label{structmem__ctl__info_a5a9078044cb964c529a5412e84435a73} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries complete}
+\item 
+\Hypertarget{structmem__ctl__info_a1f104da7b9961ae29f66c767e5a46c6b}\label{structmem__ctl__info_a1f104da7b9961ae29f66c767e5a46c6b} 
+const struct mcidev\+\_\+sysfs\+\_\+attribute \texorpdfstring{$\ast$}{*} {\bfseries mc\+\_\+driver\+\_\+sysfs\+\_\+attributes}
+\item 
+\Hypertarget{structmem__ctl__info_a1df23884a45ce1dcc925f000a52be120}\label{structmem__ctl__info_a1df23884a45ce1dcc925f000a52be120} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries work}
+\item 
+\Hypertarget{structmem__ctl__info_a16578b07d1e644d229bec2b710367159}\label{structmem__ctl__info_a16578b07d1e644d229bec2b710367159} 
+struct \doxymbox{\hyperlink{structedac__raw__error__desc}{edac\+\_\+raw\+\_\+error\+\_\+desc}} {\bfseries error\+\_\+desc}
+\item 
+\Hypertarget{structmem__ctl__info_a6dd49e80311d897c03c1e6567bd512ef}\label{structmem__ctl__info_a6dd49e80311d897c03c1e6567bd512ef} 
+int {\bfseries op\+\_\+state}
+\item 
+\Hypertarget{structmem__ctl__info_a6773164391094520c325973a48592fb3}\label{structmem__ctl__info_a6773164391094520c325973a48592fb3} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs}
+\item 
+\Hypertarget{structmem__ctl__info_aefec42ed0e86b43d6adfa46cc0d2e6a8}\label{structmem__ctl__info_aefec42ed0e86b43d6adfa46cc0d2e6a8} 
+u8 {\bfseries fake\+\_\+inject\+\_\+layer} \+[3]\+
+\item 
+\Hypertarget{structmem__ctl__info_aabaa088824431f18ce333aa6ea11959f}\label{structmem__ctl__info_aabaa088824431f18ce333aa6ea11959f} 
+bool {\bfseries fake\+\_\+inject\+\_\+ue}
+\item 
+\Hypertarget{structmem__ctl__info_a504764da79319c1da6e0ea491274e02d}\label{structmem__ctl__info_a504764da79319c1da6e0ea491274e02d} 
+u16 {\bfseries fake\+\_\+inject\+\_\+count}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

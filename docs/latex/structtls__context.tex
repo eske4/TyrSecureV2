@@ -1,0 +1,91 @@
+\doxysection{tls\+\_\+context Struct Reference}
+\hypertarget{structtls__context}{}\label{structtls__context}\index{tls\_context@{tls\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtls__context_a4b7be7126239d48931e137932fb94bf7}\label{structtls__context_a4b7be7126239d48931e137932fb94bf7} 
+struct \doxymbox{\hyperlink{structtls__prot__info}{tls\+\_\+prot\+\_\+info}} {\bfseries prot\+\_\+info}
+\item 
+\Hypertarget{structtls__context_a97c9d07457857e13aa5b82cc8fcd635c}\label{structtls__context_a97c9d07457857e13aa5b82cc8fcd635c} 
+u8 {\bfseries tx\+\_\+conf}:\+ 3
+\item 
+\Hypertarget{structtls__context_a69d2987203ce67a0ec528b4c19910858}\label{structtls__context_a69d2987203ce67a0ec528b4c19910858} 
+u8 {\bfseries rx\+\_\+conf}:\+ 3
+\item 
+\Hypertarget{structtls__context_ad5f525508171c11654aca03fea230536}\label{structtls__context_ad5f525508171c11654aca03fea230536} 
+u8 {\bfseries zerocopy\+\_\+sendfile}:\+ 1
+\item 
+\Hypertarget{structtls__context_a41a735d572d75b1684c33f9cb2f5c1d0}\label{structtls__context_a41a735d572d75b1684c33f9cb2f5c1d0} 
+u8 {\bfseries rx\+\_\+no\+\_\+pad}:\+ 1
+\item 
+\Hypertarget{structtls__context_a8e9956536a361eb11d5ae764c3318922}\label{structtls__context_a8e9956536a361eb11d5ae764c3318922} 
+u16 {\bfseries tx\+\_\+max\+\_\+payload\+\_\+len}
+\item 
+\Hypertarget{structtls__context_a3208d86b4abaf71c0343912de2771000}\label{structtls__context_a3208d86b4abaf71c0343912de2771000} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries push\+\_\+pending\+\_\+record} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structtls__context_aa04198008016b5fe001cbb1983532ece}\label{structtls__context_aa04198008016b5fe001cbb1983532ece} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+write\+\_\+space} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtls__context_a7a7b8af9526edbe3f20d3c6112c38207}\label{structtls__context_a7a7b8af9526edbe3f20d3c6112c38207} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv\+\_\+ctx\+\_\+tx}
+\item 
+\Hypertarget{structtls__context_abe0dab536f97d17b6bc6fb43713080ba}\label{structtls__context_abe0dab536f97d17b6bc6fb43713080ba} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv\+\_\+ctx\+\_\+rx}
+\item 
+\Hypertarget{structtls__context_a1cbb91ecb5db6314475f74259534831a}\label{structtls__context_a1cbb91ecb5db6314475f74259534831a} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries netdev}
+\item 
+\Hypertarget{structtls__context_ac1135d725ff36a316c5850358a44dd9a}\label{structtls__context_ac1135d725ff36a316c5850358a44dd9a} 
+struct \doxymbox{\hyperlink{structcipher__context}{cipher\+\_\+context}} {\bfseries tx}
+\item 
+\Hypertarget{structtls__context_aeb72e8ccf8affbae9b5d9ed844396b4a}\label{structtls__context_aeb72e8ccf8affbae9b5d9ed844396b4a} 
+struct \doxymbox{\hyperlink{structcipher__context}{cipher\+\_\+context}} {\bfseries rx}
+\item 
+\Hypertarget{structtls__context_ac7a1919de866e4724377e9fc79b089a6}\label{structtls__context_ac7a1919de866e4724377e9fc79b089a6} 
+struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*} {\bfseries partially\+\_\+sent\+\_\+record}
+\item 
+\Hypertarget{structtls__context_a927ba86121bb1a5b1c732826e678e081}\label{structtls__context_a927ba86121bb1a5b1c732826e678e081} 
+u16 {\bfseries partially\+\_\+sent\+\_\+offset}
+\item 
+\Hypertarget{structtls__context_ad7d63c789c6f829f454485092fd4dee0}\label{structtls__context_ad7d63c789c6f829f454485092fd4dee0} 
+bool {\bfseries splicing\+\_\+pages}
+\item 
+\Hypertarget{structtls__context_adfb016f2eef7cc3c978eb997e1b0c846}\label{structtls__context_adfb016f2eef7cc3c978eb997e1b0c846} 
+bool {\bfseries pending\+\_\+open\+\_\+record\+\_\+frags}
+\item 
+\Hypertarget{structtls__context_a795d75b60f2e9d682d34dcb6df4583be}\label{structtls__context_a795d75b60f2e9d682d34dcb6df4583be} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries tx\+\_\+lock}
+\item 
+\Hypertarget{structtls__context_a28b41ddf49849aee006b9c60664a87e6}\label{structtls__context_a28b41ddf49849aee006b9c60664a87e6} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structtls__context_af99d33a177f056f0269962985b84daf8}\label{structtls__context_af99d33a177f056f0269962985b84daf8} 
+struct \doxymbox{\hyperlink{structproto}{proto}} \texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+proto}
+\item 
+\Hypertarget{structtls__context_ac4f06f8a7c4ec784cca6034f3a6a29d8}\label{structtls__context_ac4f06f8a7c4ec784cca6034f3a6a29d8} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries sk}
+\item 
+\Hypertarget{structtls__context_aa1a1a08f293f0bd602900270632dff35}\label{structtls__context_aa1a1a08f293f0bd602900270632dff35} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sk\+\_\+destruct} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtls__context_a63b66115444a91aaf4bb89d31042d2b5}\label{structtls__context_a63b66115444a91aaf4bb89d31042d2b5} 
+union \doxymbox{\hyperlink{uniontls__crypto__context}{tls\+\_\+crypto\+\_\+context}} {\bfseries crypto\+\_\+send}
+\item 
+\Hypertarget{structtls__context_a766eb1d60371b0e2130f81bd025d5a75}\label{structtls__context_a766eb1d60371b0e2130f81bd025d5a75} 
+union \doxymbox{\hyperlink{uniontls__crypto__context}{tls\+\_\+crypto\+\_\+context}} {\bfseries crypto\+\_\+recv}
+\item 
+\Hypertarget{structtls__context_a695a55ae1319168a55653eadd4bc5734}\label{structtls__context_a695a55ae1319168a55653eadd4bc5734} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structtls__context_a0303a13f3ef96d9aaefeddd523c0deff}\label{structtls__context_a0303a13f3ef96d9aaefeddd523c0deff} 
+refcount\+\_\+t {\bfseries refcount}
+\item 
+\Hypertarget{structtls__context_ac81b2e8c8e83e5d88644ad2082deec35}\label{structtls__context_ac81b2e8c8e83e5d88644ad2082deec35} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

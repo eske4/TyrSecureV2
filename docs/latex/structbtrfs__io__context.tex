@@ -1,0 +1,58 @@
+\doxysection{btrfs\+\_\+io\+\_\+context Struct Reference}
+\hypertarget{structbtrfs__io__context}{}\label{structbtrfs__io__context}\index{btrfs\_io\_context@{btrfs\_io\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__io__context_a3a34c564d129a44435b864c63c632f04}\label{structbtrfs__io__context_a3a34c564d129a44435b864c63c632f04} 
+refcount\+\_\+t {\bfseries refs}
+\item 
+\Hypertarget{structbtrfs__io__context_af56a3bc05ecd714b0c22aea92c0eae5d}\label{structbtrfs__io__context_af56a3bc05ecd714b0c22aea92c0eae5d} 
+struct \doxymbox{\hyperlink{structbtrfs__fs__info}{btrfs\+\_\+fs\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{structbtrfs__io__context_aa9e9476c0ca62ae58007269143fca738}\label{structbtrfs__io__context_aa9e9476c0ca62ae58007269143fca738} 
+u64 {\bfseries map\+\_\+type}
+\item 
+\Hypertarget{structbtrfs__io__context_af785b69746d32ffcb510b14a20172b83}\label{structbtrfs__io__context_af785b69746d32ffcb510b14a20172b83} 
+struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*} {\bfseries orig\+\_\+bio}
+\item 
+\Hypertarget{structbtrfs__io__context_aa4810dfbf10cf81e78fc1d20e4a03af5}\label{structbtrfs__io__context_aa4810dfbf10cf81e78fc1d20e4a03af5} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries error}
+\item 
+\Hypertarget{structbtrfs__io__context_a7702a55db7bacaf13b5cdcdabf09ff73}\label{structbtrfs__io__context_a7702a55db7bacaf13b5cdcdabf09ff73} 
+u16 {\bfseries max\+\_\+errors}
+\item 
+\Hypertarget{structbtrfs__io__context_a29e66c09c94b4ac59e33335508ce766c}\label{structbtrfs__io__context_a29e66c09c94b4ac59e33335508ce766c} 
+bool {\bfseries use\+\_\+rst}
+\item 
+\Hypertarget{structbtrfs__io__context_aadd38b2e3c0b0b75ab028aadac1eb8d5}\label{structbtrfs__io__context_aadd38b2e3c0b0b75ab028aadac1eb8d5} 
+u64 {\bfseries logical}
+\item 
+\Hypertarget{structbtrfs__io__context_a2634c6033a2ea432bc7b366aff6c1201}\label{structbtrfs__io__context_a2634c6033a2ea432bc7b366aff6c1201} 
+u64 {\bfseries size}
+\item 
+\Hypertarget{structbtrfs__io__context_af8f46e25032d37543b3ef678693b9257}\label{structbtrfs__io__context_af8f46e25032d37543b3ef678693b9257} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rst\+\_\+ordered\+\_\+entry}
+\item 
+\Hypertarget{structbtrfs__io__context_a64bd2ae42978d0bd33f29ef935d8463e}\label{structbtrfs__io__context_a64bd2ae42978d0bd33f29ef935d8463e} 
+u16 {\bfseries num\+\_\+stripes}
+\item 
+\Hypertarget{structbtrfs__io__context_a612de254b6e999b83ec7f4df81ed3443}\label{structbtrfs__io__context_a612de254b6e999b83ec7f4df81ed3443} 
+u16 {\bfseries mirror\+\_\+num}
+\item 
+\Hypertarget{structbtrfs__io__context_aa92f7f83eba46ab893472d3960e883f3}\label{structbtrfs__io__context_aa92f7f83eba46ab893472d3960e883f3} 
+u16 {\bfseries replace\+\_\+nr\+\_\+stripes}
+\item 
+\Hypertarget{structbtrfs__io__context_abe6a113bebdc0865c322b1873b3bbf2e}\label{structbtrfs__io__context_abe6a113bebdc0865c322b1873b3bbf2e} 
+s16 {\bfseries replace\+\_\+stripe\+\_\+src}
+\item 
+\Hypertarget{structbtrfs__io__context_a6553dbc771b7d81e9ea9e9a0a289b387}\label{structbtrfs__io__context_a6553dbc771b7d81e9ea9e9a0a289b387} 
+u64 {\bfseries full\+\_\+stripe\+\_\+logical}
+\item 
+\Hypertarget{structbtrfs__io__context_a4ddb7b204c4fbaf6c0a9195c92fc1835}\label{structbtrfs__io__context_a4ddb7b204c4fbaf6c0a9195c92fc1835} 
+struct \doxymbox{\hyperlink{structbtrfs__io__stripe}{btrfs\+\_\+io\+\_\+stripe}} {\bfseries stripes} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\doxysection{scrub\+\_\+ctx Struct Reference}
+\hypertarget{structscrub__ctx}{}\label{structscrub__ctx}\index{scrub\_ctx@{scrub\_ctx}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structscrub__ctx_a6d1ce5a364b8ca3ad1a0371e42d3e937}\label{structscrub__ctx_a6d1ce5a364b8ca3ad1a0371e42d3e937} 
+struct \doxymbox{\hyperlink{structscrub__stripe}{scrub\+\_\+stripe}} {\bfseries stripes} \+[128]\+
+\item 
+\Hypertarget{structscrub__ctx_a97fba9db28f5af5969cb70275a06b114}\label{structscrub__ctx_a97fba9db28f5af5969cb70275a06b114} 
+struct \doxymbox{\hyperlink{structscrub__stripe}{scrub\+\_\+stripe}} \texorpdfstring{$\ast$}{*} {\bfseries raid56\+\_\+data\+\_\+stripes}
+\item 
+\Hypertarget{structscrub__ctx_a2b023b97c87f23e6b89c6f82fafc75af}\label{structscrub__ctx_a2b023b97c87f23e6b89c6f82fafc75af} 
+struct \doxymbox{\hyperlink{structbtrfs__fs__info}{btrfs\+\_\+fs\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{structscrub__ctx_ae4647397ac4b7b893f0f783d1800cd2e}\label{structscrub__ctx_ae4647397ac4b7b893f0f783d1800cd2e} 
+struct \doxymbox{\hyperlink{structbtrfs__path}{btrfs\+\_\+path}} {\bfseries extent\+\_\+path}
+\item 
+\Hypertarget{structscrub__ctx_a33de4567da4115894acdbf89b6bdfd36}\label{structscrub__ctx_a33de4567da4115894acdbf89b6bdfd36} 
+struct \doxymbox{\hyperlink{structbtrfs__path}{btrfs\+\_\+path}} {\bfseries csum\+\_\+path}
+\item 
+\Hypertarget{structscrub__ctx_a7dba210c62d5b48b0b34e935b6e8bdb8}\label{structscrub__ctx_a7dba210c62d5b48b0b34e935b6e8bdb8} 
+int {\bfseries first\+\_\+free}
+\item 
+\Hypertarget{structscrub__ctx_a2c8fb98193d1e37749552ab927624236}\label{structscrub__ctx_a2c8fb98193d1e37749552ab927624236} 
+int {\bfseries cur\+\_\+stripe}
+\item 
+\Hypertarget{structscrub__ctx_a890fe05ffdf5b52e3cfcf2d8837e7d0a}\label{structscrub__ctx_a890fe05ffdf5b52e3cfcf2d8837e7d0a} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries cancel\+\_\+req}
+\item 
+\Hypertarget{structscrub__ctx_a3a01a8499f522f71f2ae85e49dffee9d}\label{structscrub__ctx_a3a01a8499f522f71f2ae85e49dffee9d} 
+int {\bfseries readonly}
+\item 
+\Hypertarget{structscrub__ctx_af49cbdc163622ccc86654aede676cc30}\label{structscrub__ctx_af49cbdc163622ccc86654aede676cc30} 
+ktime\+\_\+t {\bfseries throttle\+\_\+deadline}
+\item 
+\Hypertarget{structscrub__ctx_a68eab8b6087eb2c50226658e036dc7a8}\label{structscrub__ctx_a68eab8b6087eb2c50226658e036dc7a8} 
+u64 {\bfseries throttle\+\_\+sent}
+\item 
+\Hypertarget{structscrub__ctx_a2f45a68f4e8145a43eae2604e579274a}\label{structscrub__ctx_a2f45a68f4e8145a43eae2604e579274a} 
+bool {\bfseries is\+\_\+dev\+\_\+replace}
+\item 
+\Hypertarget{structscrub__ctx_af8a922168e688b7d1cd2f812e0b376d3}\label{structscrub__ctx_af8a922168e688b7d1cd2f812e0b376d3} 
+u64 {\bfseries write\+\_\+pointer}
+\item 
+\Hypertarget{structscrub__ctx_a4d5232162f362eed46b7a87ef36ca5f9}\label{structscrub__ctx_a4d5232162f362eed46b7a87ef36ca5f9} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries wr\+\_\+lock}
+\item 
+\Hypertarget{structscrub__ctx_a8b77e9096010b883fb9ca4aa4fe05125}\label{structscrub__ctx_a8b77e9096010b883fb9ca4aa4fe05125} 
+struct \doxymbox{\hyperlink{structbtrfs__device}{btrfs\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries wr\+\_\+tgtdev}
+\item 
+\Hypertarget{structscrub__ctx_a248faaf24e5805f9b6e71f7ab2e5ff95}\label{structscrub__ctx_a248faaf24e5805f9b6e71f7ab2e5ff95} 
+struct \doxymbox{\hyperlink{structbtrfs__scrub__progress}{btrfs\+\_\+scrub\+\_\+progress}} {\bfseries stat}
+\item 
+\Hypertarget{structscrub__ctx_ae4ebbe48df3e180406734e07119374af}\label{structscrub__ctx_ae4ebbe48df3e180406734e07119374af} 
+spinlock\+\_\+t {\bfseries stat\+\_\+lock}
+\item 
+\Hypertarget{structscrub__ctx_a84de2d365dc4d9fa930f9cf0736e8ba0}\label{structscrub__ctx_a84de2d365dc4d9fa930f9cf0736e8ba0} 
+refcount\+\_\+t {\bfseries refs}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

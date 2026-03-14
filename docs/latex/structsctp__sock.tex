@@ -1,0 +1,157 @@
+\doxysection{sctp\+\_\+sock Struct Reference}
+\hypertarget{structsctp__sock}{}\label{structsctp__sock}\index{sctp\_sock@{sctp\_sock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsctp__sock_a4f9d2c28d34c32c6fd5e06ea37951dbf}\label{structsctp__sock_a4f9d2c28d34c32c6fd5e06ea37951dbf} 
+struct \doxymbox{\hyperlink{structinet__sock}{inet\+\_\+sock}} {\bfseries inet}
+\item 
+\Hypertarget{structsctp__sock_a3afaac479ade8dda2a8acfb1a1027e64}\label{structsctp__sock_a3afaac479ade8dda2a8acfb1a1027e64} 
+enum sctp\+\_\+socket\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structsctp__sock_a47d3cf60c1127ba26697ee0b5812b32e}\label{structsctp__sock_a47d3cf60c1127ba26697ee0b5812b32e} 
+struct \doxymbox{\hyperlink{structsctp__pf}{sctp\+\_\+pf}} \texorpdfstring{$\ast$}{*} {\bfseries pf}
+\item 
+\Hypertarget{structsctp__sock_a9e3b7b3c26fb14ab5347c860531e6d8e}\label{structsctp__sock_a9e3b7b3c26fb14ab5347c860531e6d8e} 
+struct \doxymbox{\hyperlink{structsctp__endpoint}{sctp\+\_\+endpoint}} \texorpdfstring{$\ast$}{*} {\bfseries ep}
+\item 
+\Hypertarget{structsctp__sock_a9502939ca17e704bd7c528fd21eef8fc}\label{structsctp__sock_a9502939ca17e704bd7c528fd21eef8fc} 
+struct \doxymbox{\hyperlink{structsctp__bind__bucket}{sctp\+\_\+bind\+\_\+bucket}} \texorpdfstring{$\ast$}{*} {\bfseries bind\+\_\+hash}
+\item 
+\Hypertarget{structsctp__sock_adacddc1d4c33e7521b1a8c98a15c549b}\label{structsctp__sock_adacddc1d4c33e7521b1a8c98a15c549b} 
+\+\_\+\+\_\+u16 {\bfseries default\+\_\+stream}
+\item 
+\Hypertarget{structsctp__sock_ad914d99a02fa27d3ecfde530a1fbef17}\label{structsctp__sock_ad914d99a02fa27d3ecfde530a1fbef17} 
+\+\_\+\+\_\+u32 {\bfseries default\+\_\+ppid}
+\item 
+\Hypertarget{structsctp__sock_aa414b3d9cef84fe0a81b151b407ee6f0}\label{structsctp__sock_aa414b3d9cef84fe0a81b151b407ee6f0} 
+\+\_\+\+\_\+u16 {\bfseries default\+\_\+flags}
+\item 
+\Hypertarget{structsctp__sock_afc352d138d9e06486f490060d8df378b}\label{structsctp__sock_afc352d138d9e06486f490060d8df378b} 
+\+\_\+\+\_\+u32 {\bfseries default\+\_\+context}
+\item 
+\Hypertarget{structsctp__sock_ac790a5528b11c32a51c3c1db4c153f56}\label{structsctp__sock_ac790a5528b11c32a51c3c1db4c153f56} 
+\+\_\+\+\_\+u32 {\bfseries default\+\_\+timetolive}
+\item 
+\Hypertarget{structsctp__sock_aba536689bb90964a80e8ff402b9e5087}\label{structsctp__sock_aba536689bb90964a80e8ff402b9e5087} 
+\+\_\+\+\_\+u32 {\bfseries default\+\_\+rcv\+\_\+context}
+\item 
+\Hypertarget{structsctp__sock_a6c09c96ddac57c64337300066e74f034}\label{structsctp__sock_a6c09c96ddac57c64337300066e74f034} 
+int {\bfseries max\+\_\+burst}
+\item 
+\Hypertarget{structsctp__sock_af7a7b46db69d08430232ba8599c1d665}\label{structsctp__sock_af7a7b46db69d08430232ba8599c1d665} 
+\+\_\+\+\_\+u32 {\bfseries hbinterval}
+\item 
+\Hypertarget{structsctp__sock_a218658da03b3aa7cea470674e9372d5e}\label{structsctp__sock_a218658da03b3aa7cea470674e9372d5e} 
+\+\_\+\+\_\+u32 {\bfseries probe\+\_\+interval}
+\item 
+\Hypertarget{structsctp__sock_a5d3c80562cc01e7f18db47c787713433}\label{structsctp__sock_a5d3c80562cc01e7f18db47c787713433} 
+\+\_\+\+\_\+be16 {\bfseries udp\+\_\+port}
+\item 
+\Hypertarget{structsctp__sock_a39e8da90cc470c83318a362e4c2e251d}\label{structsctp__sock_a39e8da90cc470c83318a362e4c2e251d} 
+\+\_\+\+\_\+be16 {\bfseries encap\+\_\+port}
+\item 
+\Hypertarget{structsctp__sock_a692fe660f1d43da0e66107ff4782d67a}\label{structsctp__sock_a692fe660f1d43da0e66107ff4782d67a} 
+\+\_\+\+\_\+u16 {\bfseries pathmaxrxt}
+\item 
+\Hypertarget{structsctp__sock_a8abe7d00082b3bc21f8a8749143ff437}\label{structsctp__sock_a8abe7d00082b3bc21f8a8749143ff437} 
+\+\_\+\+\_\+u32 {\bfseries flowlabel}
+\item 
+\Hypertarget{structsctp__sock_af1aa0a1ed5cbf39921a0b06d992b4fa9}\label{structsctp__sock_af1aa0a1ed5cbf39921a0b06d992b4fa9} 
+\+\_\+\+\_\+u8 {\bfseries dscp}
+\item 
+\Hypertarget{structsctp__sock_af4a7d24a021c66b7bddd857011d8eae3}\label{structsctp__sock_af4a7d24a021c66b7bddd857011d8eae3} 
+\+\_\+\+\_\+u16 {\bfseries pf\+\_\+retrans}
+\item 
+\Hypertarget{structsctp__sock_a3c6bc23064326b7a61ac9e311ec3ab1a}\label{structsctp__sock_a3c6bc23064326b7a61ac9e311ec3ab1a} 
+\+\_\+\+\_\+u16 {\bfseries ps\+\_\+retrans}
+\item 
+\Hypertarget{structsctp__sock_a833e79cdd72e2fb89e5e074b87489deb}\label{structsctp__sock_a833e79cdd72e2fb89e5e074b87489deb} 
+\+\_\+\+\_\+u32 {\bfseries pathmtu}
+\item 
+\Hypertarget{structsctp__sock_a9497da579510c0edb313df8b0221b522}\label{structsctp__sock_a9497da579510c0edb313df8b0221b522} 
+\+\_\+\+\_\+u32 {\bfseries sackdelay}
+\item 
+\Hypertarget{structsctp__sock_a7dca47f6724b25cfd0bc6f9762705442}\label{structsctp__sock_a7dca47f6724b25cfd0bc6f9762705442} 
+\+\_\+\+\_\+u32 {\bfseries sackfreq}
+\item 
+\Hypertarget{structsctp__sock_a21aa3df085401a0d4a966b9758fbbfaa}\label{structsctp__sock_a21aa3df085401a0d4a966b9758fbbfaa} 
+\+\_\+\+\_\+u32 {\bfseries param\+\_\+flags}
+\item 
+\Hypertarget{structsctp__sock_a64e90b02816ad47139835eb7d62a8875}\label{structsctp__sock_a64e90b02816ad47139835eb7d62a8875} 
+\+\_\+\+\_\+u32 {\bfseries default\+\_\+ss}
+\item 
+\Hypertarget{structsctp__sock_ad1a538340cbe5e3d26aebba588c98b85}\label{structsctp__sock_ad1a538340cbe5e3d26aebba588c98b85} 
+struct \doxymbox{\hyperlink{structsctp__rtoinfo}{sctp\+\_\+rtoinfo}} {\bfseries rtoinfo}
+\item 
+\Hypertarget{structsctp__sock_a24bc2359471dbbc437298085a163f4c8}\label{structsctp__sock_a24bc2359471dbbc437298085a163f4c8} 
+struct \doxymbox{\hyperlink{structsctp__paddrparams}{sctp\+\_\+paddrparams}} {\bfseries paddrparam}
+\item 
+\Hypertarget{structsctp__sock_ac0e28db7598e92e8f565b03dc0844005}\label{structsctp__sock_ac0e28db7598e92e8f565b03dc0844005} 
+struct \doxymbox{\hyperlink{structsctp__assocparams}{sctp\+\_\+assocparams}} {\bfseries assocparams}
+\item 
+\Hypertarget{structsctp__sock_a94dd95717a8ca79d10c7340985e1ddf0}\label{structsctp__sock_a94dd95717a8ca79d10c7340985e1ddf0} 
+\+\_\+\+\_\+u16 {\bfseries subscribe}
+\item 
+\Hypertarget{structsctp__sock_a9ae978001d0c7da5689c43b14a4257ff}\label{structsctp__sock_a9ae978001d0c7da5689c43b14a4257ff} 
+struct \doxymbox{\hyperlink{structsctp__initmsg}{sctp\+\_\+initmsg}} {\bfseries initmsg}
+\item 
+\Hypertarget{structsctp__sock_aba846566163f6f8f456350fc832fffb2}\label{structsctp__sock_aba846566163f6f8f456350fc832fffb2} 
+int {\bfseries user\+\_\+frag}
+\item 
+\Hypertarget{structsctp__sock_a54ea8f5e9be207f929e4325655a820cf}\label{structsctp__sock_a54ea8f5e9be207f929e4325655a820cf} 
+\+\_\+\+\_\+u32 {\bfseries autoclose}
+\item 
+\Hypertarget{structsctp__sock_ac4b18914d8eb5324314de4c33cb210a2}\label{structsctp__sock_ac4b18914d8eb5324314de4c33cb210a2} 
+\+\_\+\+\_\+u32 {\bfseries adaptation\+\_\+ind}
+\item 
+\Hypertarget{structsctp__sock_a9ee2e11356e1e55cd8be60a929c8ccaa}\label{structsctp__sock_a9ee2e11356e1e55cd8be60a929c8ccaa} 
+\+\_\+\+\_\+u32 {\bfseries pd\+\_\+point}
+\item 
+\Hypertarget{structsctp__sock_a7e983d8dcbb55ded888e7fba463a9823}\label{structsctp__sock_a7e983d8dcbb55ded888e7fba463a9823} 
+\+\_\+\+\_\+u16 {\bfseries nodelay}:\+ 1
+\item 
+\Hypertarget{structsctp__sock_a07428b3d793384c609f5072a4b7b5853}\label{structsctp__sock_a07428b3d793384c609f5072a4b7b5853} 
+\+\_\+\+\_\+u16 {\bfseries pf\+\_\+expose}:\+ 2
+\item 
+\Hypertarget{structsctp__sock_a353a86f8846284637370a3a22ef7c1b8}\label{structsctp__sock_a353a86f8846284637370a3a22ef7c1b8} 
+\+\_\+\+\_\+u16 {\bfseries reuse}:\+ 1
+\item 
+\Hypertarget{structsctp__sock_a223ab0fc64b1f511d4e004bb18b6c2a8}\label{structsctp__sock_a223ab0fc64b1f511d4e004bb18b6c2a8} 
+\+\_\+\+\_\+u16 {\bfseries disable\+\_\+fragments}:\+ 1
+\item 
+\Hypertarget{structsctp__sock_a0a39576b0036bb09b874794b39916c46}\label{structsctp__sock_a0a39576b0036bb09b874794b39916c46} 
+\+\_\+\+\_\+u16 {\bfseries v4mapped}:\+ 1
+\item 
+\Hypertarget{structsctp__sock_aa3974163e915fba364923ef7a7b14532}\label{structsctp__sock_aa3974163e915fba364923ef7a7b14532} 
+\+\_\+\+\_\+u16 {\bfseries frag\+\_\+interleave}:\+ 1
+\item 
+\Hypertarget{structsctp__sock_afa82c7dbad5412748085a49fd5867874}\label{structsctp__sock_afa82c7dbad5412748085a49fd5867874} 
+\+\_\+\+\_\+u16 {\bfseries recvrcvinfo}:\+ 1
+\item 
+\Hypertarget{structsctp__sock_a2015385845e5cd996906700382f40eb3}\label{structsctp__sock_a2015385845e5cd996906700382f40eb3} 
+\+\_\+\+\_\+u16 {\bfseries recvnxtinfo}:\+ 1
+\item 
+\Hypertarget{structsctp__sock_a5a29a4a8472ec1a5f17814fe46574ca5}\label{structsctp__sock_a5a29a4a8472ec1a5f17814fe46574ca5} 
+\+\_\+\+\_\+u16 {\bfseries data\+\_\+ready\+\_\+signalled}:\+ 1
+\item 
+\Hypertarget{structsctp__sock_a08b6089da438654975f36e1e44c709d5}\label{structsctp__sock_a08b6089da438654975f36e1e44c709d5} 
+\+\_\+\+\_\+u16 {\bfseries cookie\+\_\+auth\+\_\+enable}:\+ 1
+\item 
+\Hypertarget{structsctp__sock_a61734dc78012e8d81adcad0e4a48bb7b}\label{structsctp__sock_a61734dc78012e8d81adcad0e4a48bb7b} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries pd\+\_\+mode}
+\item 
+\Hypertarget{structsctp__sock_a1f5d2876eab16fef730b4781b2913ca1}\label{structsctp__sock_a1f5d2876eab16fef730b4781b2913ca1} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries pd\+\_\+lobby}
+\item 
+\Hypertarget{structsctp__sock_a3221e6c9563a40704552e3fc43c08f1b}\label{structsctp__sock_a3221e6c9563a40704552e3fc43c08f1b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries auto\+\_\+asconf\+\_\+list}
+\item 
+\Hypertarget{structsctp__sock_a09c67e8b5dda1c5f3ae7427308664c48}\label{structsctp__sock_a09c67e8b5dda1c5f3ae7427308664c48} 
+int {\bfseries do\+\_\+auto\+\_\+asconf}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

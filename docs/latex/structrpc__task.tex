@@ -1,0 +1,94 @@
+\doxysection{rpc\+\_\+task Struct Reference}
+\hypertarget{structrpc__task}{}\label{structrpc__task}\index{rpc\_task@{rpc\_task}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrpc__task_ad84327eadaed33d36c282834dd6936fc}\label{structrpc__task_ad84327eadaed33d36c282834dd6936fc} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries tk\+\_\+count}
+\item 
+\Hypertarget{structrpc__task_a27799cd6c9310fa48f5f6529fcf3bd4c}\label{structrpc__task_a27799cd6c9310fa48f5f6529fcf3bd4c} 
+int {\bfseries tk\+\_\+status}
+\item 
+\Hypertarget{structrpc__task_aa825458e08d031016f09a29c26ecc62d}\label{structrpc__task_aa825458e08d031016f09a29c26ecc62d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tk\+\_\+task}
+\item 
+\Hypertarget{structrpc__task_af7931d5ef468d22d93f6d1f91d6282ba}\label{structrpc__task_af7931d5ef468d22d93f6d1f91d6282ba} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+callback} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__task_ae62184c12b4fa5af1de720018978491b}\label{structrpc__task_ae62184c12b4fa5af1de720018978491b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+action} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__task_a7867b82966d099c620c1870910e9ca01}\label{structrpc__task_a7867b82966d099c620c1870910e9ca01} 
+long unsigned int {\bfseries tk\+\_\+timeout}
+\item 
+\Hypertarget{structrpc__task_a405a5e8435b1524fd2047d36f6af6131}\label{structrpc__task_a405a5e8435b1524fd2047d36f6af6131} 
+long unsigned int {\bfseries tk\+\_\+runstate}
+\item 
+\Hypertarget{structrpc__task_acef827d55bb06e00a91fe54a4791393c}\label{structrpc__task_acef827d55bb06e00a91fe54a4791393c} 
+struct \doxymbox{\hyperlink{structrpc__wait__queue}{rpc\+\_\+wait\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+waitqueue}
+\item 
+\Hypertarget{structrpc__task_acd2c03ce5a961880750f04026b03c7df}\label{structrpc__task_acd2c03ce5a961880750f04026b03c7df} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structwork__struct}{work\_struct}} {\bfseries tk\_work}\\
+\>struct \doxymbox{\hyperlink{structrpc__wait}{rpc\_wait}} {\bfseries tk\_wait}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\item 
+\Hypertarget{structrpc__task_a87d1f289d010465fd1c9d20146831e94}\label{structrpc__task_a87d1f289d010465fd1c9d20146831e94} 
+struct \doxymbox{\hyperlink{structrpc__message}{rpc\+\_\+message}} {\bfseries tk\+\_\+msg}
+\item 
+\Hypertarget{structrpc__task_aef64970713b059f73bbdc24a3f7bb12c}\label{structrpc__task_aef64970713b059f73bbdc24a3f7bb12c} 
+void \texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+calldata}
+\item 
+\Hypertarget{structrpc__task_aa469eb8c8101adf6f467a0fe665d084a}\label{structrpc__task_aa469eb8c8101adf6f467a0fe665d084a} 
+const struct \doxymbox{\hyperlink{structrpc__call__ops}{rpc\+\_\+call\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+ops}
+\item 
+\Hypertarget{structrpc__task_a76c1cec934805afb8cc3adcf9cb9ecc0}\label{structrpc__task_a76c1cec934805afb8cc3adcf9cb9ecc0} 
+struct \doxymbox{\hyperlink{structrpc__clnt}{rpc\+\_\+clnt}} \texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+client}
+\item 
+\Hypertarget{structrpc__task_ade721227f87ed2c10308db877cba8c42}\label{structrpc__task_ade721227f87ed2c10308db877cba8c42} 
+struct \doxymbox{\hyperlink{structrpc__xprt}{rpc\+\_\+xprt}} \texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+xprt}
+\item 
+\Hypertarget{structrpc__task_ac06bf20eb3ee9d31299e939a432d93c4}\label{structrpc__task_ac06bf20eb3ee9d31299e939a432d93c4} 
+struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+op\+\_\+cred}
+\item 
+\Hypertarget{structrpc__task_a2e3fe3a75ff006d1b9a411d098ff239e}\label{structrpc__task_a2e3fe3a75ff006d1b9a411d098ff239e} 
+struct \doxymbox{\hyperlink{structrpc__rqst}{rpc\+\_\+rqst}} \texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+rqstp}
+\item 
+\Hypertarget{structrpc__task_ab9707803a5c4e497322231361a7fb8bc}\label{structrpc__task_ab9707803a5c4e497322231361a7fb8bc} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries tk\+\_\+workqueue}
+\item 
+\Hypertarget{structrpc__task_a798c119925748192013405c20fd4914d}\label{structrpc__task_a798c119925748192013405c20fd4914d} 
+ktime\+\_\+t {\bfseries tk\+\_\+start}
+\item 
+\Hypertarget{structrpc__task_ad15ae03269c12c87dfacde9e44e87ad8}\label{structrpc__task_ad15ae03269c12c87dfacde9e44e87ad8} 
+pid\+\_\+t {\bfseries tk\+\_\+owner}
+\item 
+\Hypertarget{structrpc__task_afb392c6a8f5fd397c9b4dc6ebfaec0d0}\label{structrpc__task_afb392c6a8f5fd397c9b4dc6ebfaec0d0} 
+int {\bfseries tk\+\_\+rpc\+\_\+status}
+\item 
+\Hypertarget{structrpc__task_afac362f83c0fb7b61346664f11012dc9}\label{structrpc__task_afac362f83c0fb7b61346664f11012dc9} 
+short unsigned int {\bfseries tk\+\_\+flags}
+\item 
+\Hypertarget{structrpc__task_a6ca95ce730420af6bf6f848c65f8193e}\label{structrpc__task_a6ca95ce730420af6bf6f848c65f8193e} 
+short unsigned int {\bfseries tk\+\_\+timeouts}
+\item 
+\Hypertarget{structrpc__task_a0dc9f8494f775cdeba3b6ebd8c4ea481}\label{structrpc__task_a0dc9f8494f775cdeba3b6ebd8c4ea481} 
+short unsigned int {\bfseries tk\+\_\+pid}
+\item 
+\Hypertarget{structrpc__task_a741814c8fa1c35eaa2ce07d80f96bd10}\label{structrpc__task_a741814c8fa1c35eaa2ce07d80f96bd10} 
+unsigned char {\bfseries tk\+\_\+priority}:\+ 2
+\item 
+\Hypertarget{structrpc__task_ab96c1404c6062fbf6b7475694c87593b}\label{structrpc__task_ab96c1404c6062fbf6b7475694c87593b} 
+unsigned char {\bfseries tk\+\_\+garb\+\_\+retry}:\+ 2
+\item 
+\Hypertarget{structrpc__task_aa36cd5a81f42c596f1839cd5b99ae28f}\label{structrpc__task_aa36cd5a81f42c596f1839cd5b99ae28f} 
+unsigned char {\bfseries tk\+\_\+cred\+\_\+retry}:\+ 2
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

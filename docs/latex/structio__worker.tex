@@ -1,0 +1,58 @@
+\doxysection{io\+\_\+worker Struct Reference}
+\hypertarget{structio__worker}{}\label{structio__worker}\index{io\_worker@{io\_worker}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__worker_a97bb303f20faf8bae5decde46a9a809e}\label{structio__worker_a97bb303f20faf8bae5decde46a9a809e} 
+refcount\+\_\+t {\bfseries ref}
+\item 
+\Hypertarget{structio__worker_a7b24ca5d3f13c2a75214e57a9cffc4aa}\label{structio__worker_a7b24ca5d3f13c2a75214e57a9cffc4aa} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structio__worker_a94800ec2c9110664fe5d4be018236456}\label{structio__worker_a94800ec2c9110664fe5d4be018236456} 
+struct \doxymbox{\hyperlink{structhlist__nulls__node}{hlist\+\_\+nulls\+\_\+node}} {\bfseries nulls\+\_\+node}
+\item 
+\Hypertarget{structio__worker_a94ca16b8e1210919fb46f1a63a81fd04}\label{structio__worker_a94ca16b8e1210919fb46f1a63a81fd04} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries all\+\_\+list}
+\item 
+\Hypertarget{structio__worker_a350a011c60d1a98184c92e56781eb8b4}\label{structio__worker_a350a011c60d1a98184c92e56781eb8b4} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries task}
+\item 
+\Hypertarget{structio__worker_a90cda9b62d34a9ca2fba7347192b75b6}\label{structio__worker_a90cda9b62d34a9ca2fba7347192b75b6} 
+struct \doxymbox{\hyperlink{structio__wq}{io\+\_\+wq}} \texorpdfstring{$\ast$}{*} {\bfseries wq}
+\item 
+\Hypertarget{structio__worker_a8fc5ebb9f82f73d8ac8f62f0acdbc2aa}\label{structio__worker_a8fc5ebb9f82f73d8ac8f62f0acdbc2aa} 
+struct \doxymbox{\hyperlink{structio__wq__acct}{io\+\_\+wq\+\_\+acct}} \texorpdfstring{$\ast$}{*} {\bfseries acct}
+\item 
+\Hypertarget{structio__worker_a4c74fbd5ca836a416c8426c5e41204b7}\label{structio__worker_a4c74fbd5ca836a416c8426c5e41204b7} 
+struct \doxymbox{\hyperlink{structio__wq__work}{io\+\_\+wq\+\_\+work}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+\_\+work}
+\item 
+\Hypertarget{structio__worker_addba904de8c5ed78e044a4115d48b12b}\label{structio__worker_addba904de8c5ed78e044a4115d48b12b} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structio__worker_abdf7cd620c61467ab359182cb58b1371}\label{structio__worker_abdf7cd620c61467ab359182cb58b1371} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries ref\+\_\+done}
+\item 
+\Hypertarget{structio__worker_aaf6fe71147427c154584590d110a68c3}\label{structio__worker_aaf6fe71147427c154584590d110a68c3} 
+long unsigned int {\bfseries create\+\_\+state}
+\item 
+\Hypertarget{structio__worker_ac1be1a5eaed0fb6a57a73d6e064cb361}\label{structio__worker_ac1be1a5eaed0fb6a57a73d6e064cb361} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries create\+\_\+work}
+\item 
+\Hypertarget{structio__worker_ae96bc7ef14ebfff355a352d34a770cb9}\label{structio__worker_ae96bc7ef14ebfff355a352d34a770cb9} 
+int {\bfseries init\+\_\+retries}
+\item 
+\Hypertarget{structio__worker_a8edc18250e5102fcace98d4149148069}\label{structio__worker_a8edc18250e5102fcace98d4149148069} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries rcu}\\
+\>struct \doxymbox{\hyperlink{structdelayed__work}{delayed\_work}} {\bfseries work}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

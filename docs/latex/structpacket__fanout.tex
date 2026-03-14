@@ -1,0 +1,76 @@
+\doxysection{packet\+\_\+fanout Struct Reference}
+\hypertarget{structpacket__fanout}{}\label{structpacket__fanout}\index{packet\_fanout@{packet\_fanout}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpacket__fanout_a12516df2ed427252829d3230cf683bad}\label{structpacket__fanout_a12516df2ed427252829d3230cf683bad} 
+\doxymbox{\hyperlink{structpossible__net__t}{possible\+\_\+net\+\_\+t}} {\bfseries net}
+\item 
+\Hypertarget{structpacket__fanout_a46841080564a3297293ad645ee721abf}\label{structpacket__fanout_a46841080564a3297293ad645ee721abf} 
+unsigned int {\bfseries num\+\_\+members}
+\item 
+\Hypertarget{structpacket__fanout_a0c3a3ed4964118e1dd9c16781323cd52}\label{structpacket__fanout_a0c3a3ed4964118e1dd9c16781323cd52} 
+u32 {\bfseries max\+\_\+num\+\_\+members}
+\item 
+\Hypertarget{structpacket__fanout_aaacc8ab40072a910e858622b4d0d8684}\label{structpacket__fanout_aaacc8ab40072a910e858622b4d0d8684} 
+u16 {\bfseries id}
+\item 
+\Hypertarget{structpacket__fanout_afac89b8ba2379ed2c70c913995c7f29b}\label{structpacket__fanout_afac89b8ba2379ed2c70c913995c7f29b} 
+u8 {\bfseries type}
+\item 
+\Hypertarget{structpacket__fanout_ade43fab1edf572ed57e48880603e7bf3}\label{structpacket__fanout_ade43fab1edf572ed57e48880603e7bf3} 
+u8 {\bfseries flags}
+\item 
+\Hypertarget{structpacket__fanout_af8e79e505020d63e85fd606551c65adf}\label{structpacket__fanout_af8e79e505020d63e85fd606551c65adf} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries rr\_cur}\\
+\>struct \doxymbox{\hyperlink{structbpf__prog}{bpf\_prog}} \texorpdfstring{$\ast$}{*} {\bfseries bpf\_prog}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structpacket__fanout_a8ff0c8ab7878d8e53035eef904aac25b}\label{structpacket__fanout_a8ff0c8ab7878d8e53035eef904aac25b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structpacket__fanout_a90e23bc0b7c3e7c02d2adb51b35f6873}\label{structpacket__fanout_a90e23bc0b7c3e7c02d2adb51b35f6873} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structpacket__fanout_a2fbc2573f0decc92f1e231c17d920b0f}\label{structpacket__fanout_a2fbc2573f0decc92f1e231c17d920b0f} 
+refcount\+\_\+t {\bfseries sk\+\_\+ref}
+\item 
+\Hypertarget{structpacket__fanout_ae9778d95c5168a1dadb2e1faf7f645ed}\label{structpacket__fanout_ae9778d95c5168a1dadb2e1faf7f645ed} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__fanout_af6c84319a2a7146853d2f77413dfd026}\label{structpacket__fanout_af6c84319a2a7146853d2f77413dfd026} 
+struct \doxymbox{\hyperlink{structpacket__type}{packet\+\_\+type}} {\bfseries prot\+\_\+hook}
+\item 
+\Hypertarget{structpacket__fanout_a12b4675b0f74b1542c6564e9a1153f4c}\label{structpacket__fanout_a12b4675b0f74b1542c6564e9a1153f4c} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries arr} \+[0]\+
+\item 
+\Hypertarget{structpacket__fanout_ab856493fbed0506d298a30e268ea6db7}\label{structpacket__fanout_ab856493fbed0506d298a30e268ea6db7} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__fanout_a46b011be6bd784ecb408458601b30c86}\label{structpacket__fanout_a46b011be6bd784ecb408458601b30c86} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__fanout_a7450a5744cadcef38e9d645cbb942b51}\label{structpacket__fanout_a7450a5744cadcef38e9d645cbb942b51} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__fanout_a03463c3ee4bd4528a4ee26f8108de6d0}\label{structpacket__fanout_a03463c3ee4bd4528a4ee26f8108de6d0} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__fanout_a758815bf8b0e1097705ffa57104f72f6}\label{structpacket__fanout_a758815bf8b0e1097705ffa57104f72f6} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__fanout_ac768080d76b30121a58502ec3c76cdb4}\label{structpacket__fanout_ac768080d76b30121a58502ec3c76cdb4} 
+long :\+ 64
+\item 
+\Hypertarget{structpacket__fanout_a13efa6799a03d7181b191c2ee3365500}\label{structpacket__fanout_a13efa6799a03d7181b191c2ee3365500} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

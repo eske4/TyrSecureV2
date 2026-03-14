@@ -1,0 +1,130 @@
+\doxysection{inet6\+\_\+dev Struct Reference}
+\hypertarget{structinet6__dev}{}\label{structinet6__dev}\index{inet6\_dev@{inet6\_dev}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinet6__dev_a1278e18363c422fe0a1eb69f45a1f637}\label{structinet6__dev_a1278e18363c422fe0a1eb69f45a1f637} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structinet6__dev_a247a7ccb177dcc217d562843271a268a}\label{structinet6__dev_a247a7ccb177dcc217d562843271a268a} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries dev\+\_\+tracker}
+\item 
+\Hypertarget{structinet6__dev_a410079f87c432806fe40cd38db66e35e}\label{structinet6__dev_a410079f87c432806fe40cd38db66e35e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries addr\+\_\+list}
+\item 
+\Hypertarget{structinet6__dev_a3b383fdd7d6970a4ad07a83819ab29ff}\label{structinet6__dev_a3b383fdd7d6970a4ad07a83819ab29ff} 
+struct \doxymbox{\hyperlink{structifmcaddr6}{ifmcaddr6}} \texorpdfstring{$\ast$}{*} {\bfseries mc\+\_\+list}
+\item 
+\Hypertarget{structinet6__dev_af2f02c3869f58130862282b074828c39}\label{structinet6__dev_af2f02c3869f58130862282b074828c39} 
+struct \doxymbox{\hyperlink{structifmcaddr6}{ifmcaddr6}} \texorpdfstring{$\ast$}{*} {\bfseries mc\+\_\+tomb}
+\item 
+\Hypertarget{structinet6__dev_a5d7771f3feb9a6b0bc5488a0e997167b}\label{structinet6__dev_a5d7771f3feb9a6b0bc5488a0e997167b} 
+unsigned char {\bfseries mc\+\_\+qrv}
+\item 
+\Hypertarget{structinet6__dev_ac1ba37e83a25fd1827a5ec9e976bfbc2}\label{structinet6__dev_ac1ba37e83a25fd1827a5ec9e976bfbc2} 
+unsigned char {\bfseries mc\+\_\+gq\+\_\+running}
+\item 
+\Hypertarget{structinet6__dev_a8fbc70e99fc70202b719301493fea7cc}\label{structinet6__dev_a8fbc70e99fc70202b719301493fea7cc} 
+unsigned char {\bfseries mc\+\_\+ifc\+\_\+count}
+\item 
+\Hypertarget{structinet6__dev_ab33f36790dffc7bcfa9144dce3a62949}\label{structinet6__dev_ab33f36790dffc7bcfa9144dce3a62949} 
+unsigned char {\bfseries mc\+\_\+dad\+\_\+count}
+\item 
+\Hypertarget{structinet6__dev_a315daaf86f6fdfd4eff4886dfde4b292}\label{structinet6__dev_a315daaf86f6fdfd4eff4886dfde4b292} 
+long unsigned int {\bfseries mc\+\_\+v1\+\_\+seen}
+\item 
+\Hypertarget{structinet6__dev_a2bdd1ac26ab68a94787deacbcc9767be}\label{structinet6__dev_a2bdd1ac26ab68a94787deacbcc9767be} 
+long unsigned int {\bfseries mc\+\_\+qi}
+\item 
+\Hypertarget{structinet6__dev_a2907ab3fc0099d8ec45d3edfe5869210}\label{structinet6__dev_a2907ab3fc0099d8ec45d3edfe5869210} 
+long unsigned int {\bfseries mc\+\_\+qri}
+\item 
+\Hypertarget{structinet6__dev_ae92465aca38aff26f047b975eb895b60}\label{structinet6__dev_ae92465aca38aff26f047b975eb895b60} 
+long unsigned int {\bfseries mc\+\_\+maxdelay}
+\item 
+\Hypertarget{structinet6__dev_a2054ff3dc973327d1681554205c820be}\label{structinet6__dev_a2054ff3dc973327d1681554205c820be} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries mc\+\_\+gq\+\_\+work}
+\item 
+\Hypertarget{structinet6__dev_a202170705bc8b3097d147e9db2a7ae7f}\label{structinet6__dev_a202170705bc8b3097d147e9db2a7ae7f} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries mc\+\_\+ifc\+\_\+work}
+\item 
+\Hypertarget{structinet6__dev_a030909c7d6bea344afa2a443dcbae885}\label{structinet6__dev_a030909c7d6bea344afa2a443dcbae885} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries mc\+\_\+dad\+\_\+work}
+\item 
+\Hypertarget{structinet6__dev_a5493de8c032cd27bb1c31c28398885e3}\label{structinet6__dev_a5493de8c032cd27bb1c31c28398885e3} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries mc\+\_\+query\+\_\+work}
+\item 
+\Hypertarget{structinet6__dev_a340e2346e97747d27362cec3954a32d3}\label{structinet6__dev_a340e2346e97747d27362cec3954a32d3} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries mc\+\_\+report\+\_\+work}
+\item 
+\Hypertarget{structinet6__dev_aca8edea85f507dc644e385eafa81e1ce}\label{structinet6__dev_aca8edea85f507dc644e385eafa81e1ce} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries mc\+\_\+query\+\_\+queue}
+\item 
+\Hypertarget{structinet6__dev_a4da797a13496811601d52af4b2493c07}\label{structinet6__dev_a4da797a13496811601d52af4b2493c07} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries mc\+\_\+report\+\_\+queue}
+\item 
+\Hypertarget{structinet6__dev_a5ea90bd043d693b304ca776a67f27622}\label{structinet6__dev_a5ea90bd043d693b304ca776a67f27622} 
+spinlock\+\_\+t {\bfseries mc\+\_\+query\+\_\+lock}
+\item 
+\Hypertarget{structinet6__dev_a7f4875ab1d01bc49a6a6414593766b34}\label{structinet6__dev_a7f4875ab1d01bc49a6a6414593766b34} 
+spinlock\+\_\+t {\bfseries mc\+\_\+report\+\_\+lock}
+\item 
+\Hypertarget{structinet6__dev_a34e9f4027b6237fbbefa202ff5c1a15a}\label{structinet6__dev_a34e9f4027b6237fbbefa202ff5c1a15a} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mc\+\_\+lock}
+\item 
+\Hypertarget{structinet6__dev_a60f24bf0523553325799fffa1a486c94}\label{structinet6__dev_a60f24bf0523553325799fffa1a486c94} 
+struct \doxymbox{\hyperlink{structifacaddr6}{ifacaddr6}} \texorpdfstring{$\ast$}{*} {\bfseries ac\+\_\+list}
+\item 
+\Hypertarget{structinet6__dev_ab7073f1920bb060f7864cda100898f85}\label{structinet6__dev_ab7073f1920bb060f7864cda100898f85} 
+\doxymbox{\hyperlink{structrwlock__t}{rwlock\+\_\+t}} {\bfseries lock}
+\item 
+\Hypertarget{structinet6__dev_a02dadcbf8466b66c968e0fbf53091094}\label{structinet6__dev_a02dadcbf8466b66c968e0fbf53091094} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structinet6__dev_a04c13812b5da96c27b3ed597b742e86d}\label{structinet6__dev_a04c13812b5da96c27b3ed597b742e86d} 
+\+\_\+\+\_\+u32 {\bfseries if\+\_\+flags}
+\item 
+\Hypertarget{structinet6__dev_a46f07a3190e822c6fdd13c8bd19daf72}\label{structinet6__dev_a46f07a3190e822c6fdd13c8bd19daf72} 
+int {\bfseries dead}
+\item 
+\Hypertarget{structinet6__dev_a4fd7b3f36ed744688eb75d969be615ba}\label{structinet6__dev_a4fd7b3f36ed744688eb75d969be615ba} 
+u32 {\bfseries desync\+\_\+factor}
+\item 
+\Hypertarget{structinet6__dev_ab11a55bf4c413b58fd58ba4fee0de387}\label{structinet6__dev_ab11a55bf4c413b58fd58ba4fee0de387} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tempaddr\+\_\+list}
+\item 
+\Hypertarget{structinet6__dev_a9db651ea6a4c75bce17557067f2520da}\label{structinet6__dev_a9db651ea6a4c75bce17557067f2520da} 
+struct \doxymbox{\hyperlink{structin6__addr}{in6\+\_\+addr}} {\bfseries token}
+\item 
+\Hypertarget{structinet6__dev_a61c5a207d0600037f16d0a839b8c16be}\label{structinet6__dev_a61c5a207d0600037f16d0a839b8c16be} 
+struct \doxymbox{\hyperlink{structneigh__parms}{neigh\+\_\+parms}} \texorpdfstring{$\ast$}{*} {\bfseries nd\+\_\+parms}
+\item 
+\Hypertarget{structinet6__dev_afb42a70698740be68b71f7e0de43841a}\label{structinet6__dev_afb42a70698740be68b71f7e0de43841a} 
+struct \doxymbox{\hyperlink{structipv6__devconf}{ipv6\+\_\+devconf}} {\bfseries cnf}
+\item 
+\Hypertarget{structinet6__dev_a86381856489b18d01bbbc85bccbbef4d}\label{structinet6__dev_a86381856489b18d01bbbc85bccbbef4d} 
+struct \doxymbox{\hyperlink{structipv6__devstat}{ipv6\+\_\+devstat}} {\bfseries stats}
+\item 
+\Hypertarget{structinet6__dev_ac3adf36c2ac142e5bd7a926dc97bb81b}\label{structinet6__dev_ac3adf36c2ac142e5bd7a926dc97bb81b} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries rs\+\_\+timer}
+\item 
+\Hypertarget{structinet6__dev_ae82df2b378b9a3f7c9a100b83c42d20d}\label{structinet6__dev_ae82df2b378b9a3f7c9a100b83c42d20d} 
+\+\_\+\+\_\+s32 {\bfseries rs\+\_\+interval}
+\item 
+\Hypertarget{structinet6__dev_af90852a2e29df03c043992f5e6262fac}\label{structinet6__dev_af90852a2e29df03c043992f5e6262fac} 
+\+\_\+\+\_\+u8 {\bfseries rs\+\_\+probes}
+\item 
+\Hypertarget{structinet6__dev_a969ab2bc43629467d28b4fff7a6f73bc}\label{structinet6__dev_a969ab2bc43629467d28b4fff7a6f73bc} 
+long unsigned int {\bfseries tstamp}
+\item 
+\Hypertarget{structinet6__dev_ab5bb491d6be8e65e65cbd38ecb01e4bd}\label{structinet6__dev_ab5bb491d6be8e65e65cbd38ecb01e4bd} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structinet6__dev_abf05335dd6de8b18405b68438cdc3be6}\label{structinet6__dev_abf05335dd6de8b18405b68438cdc3be6} 
+unsigned int {\bfseries ra\+\_\+mtu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

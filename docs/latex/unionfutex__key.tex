@@ -1,0 +1,45 @@
+\doxysection{futex\+\_\+key Union Reference}
+\hypertarget{unionfutex__key}{}\label{unionfutex__key}\index{futex\_key@{futex\_key}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionfutex__key_aa2c8b97197c4e4845628edf84206a80e}\label{unionfutex__key_aa2c8b97197c4e4845628edf84206a80e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u64 {\bfseries i\_seq}\\
+\>long unsigned int {\bfseries pgoff}\\
+\>unsigned int {\bfseries offset}\\
+\} {\bfseries shared}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionfutex__key_abd3695050dc99d74738818996168d0d6}\label{unionfutex__key_abd3695050dc99d74738818996168d0d6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structfutex__key_1_1_0d223111002353362332165005052045357116307030073332_ae19eb7145ae506f378b81e53a0afc221}\label{structfutex__key_1_1_0d223111002353362332165005052045357116307030073332_ae19eb7145ae506f378b81e53a0afc221} 
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{structmm__struct}{mm\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries mm}\\
+\>\>u64 {\bfseries \_\_tmp}\\
+\>\} \\
+\>long unsigned int {\bfseries address}\\
+\>unsigned int {\bfseries offset}\\
+\} {\bfseries private}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionfutex__key_a2d5c6ec3b13ecb15fee98b948cec31b6}\label{unionfutex__key_a2d5c6ec3b13ecb15fee98b948cec31b6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u64 {\bfseries ptr}\\
+\>long unsigned int {\bfseries word}\\
+\>unsigned int {\bfseries offset}\\
+\>unsigned int {\bfseries node}\\
+\} {\bfseries both}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

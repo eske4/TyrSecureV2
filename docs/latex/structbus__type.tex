@@ -1,0 +1,73 @@
+\doxysection{bus\+\_\+type Struct Reference}
+\hypertarget{structbus__type}{}\label{structbus__type}\index{bus\_type@{bus\_type}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbus__type_a1d64961cc06958e3e4b7702a203f6d58}\label{structbus__type_a1d64961cc06958e3e4b7702a203f6d58} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structbus__type_afc9da6ab48844ef29a611d10fbc5c177}\label{structbus__type_afc9da6ab48844ef29a611d10fbc5c177} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+name}
+\item 
+\Hypertarget{structbus__type_a1ae8ecb6e56b0668869f52ee27cb8393}\label{structbus__type_a1ae8ecb6e56b0668869f52ee27cb8393} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries bus\+\_\+groups}
+\item 
+\Hypertarget{structbus__type_a04161d9f5d6501e564fb1c5b2a0682a0}\label{structbus__type_a04161d9f5d6501e564fb1c5b2a0682a0} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+groups}
+\item 
+\Hypertarget{structbus__type_a085ba68de3d2465e82051aac8e4612d6}\label{structbus__type_a085ba68de3d2465e82051aac8e4612d6} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries drv\+\_\+groups}
+\item 
+\Hypertarget{structbus__type_ae9d0ad1542bad1a1a38fb5c98b550c4d}\label{structbus__type_ae9d0ad1542bad1a1a38fb5c98b550c4d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries match} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_a45eb91934e3993ac8626d60d7987c36d}\label{structbus__type_a45eb91934e3993ac8626d60d7987c36d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries uevent} )(const struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkobj__uevent__env}{kobj\+\_\+uevent\+\_\+env}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_ad153654adcb2ab7eca4cfb8f1dd61d7a}\label{structbus__type_ad153654adcb2ab7eca4cfb8f1dd61d7a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_a1e180ea0e8c9146578e76ba87c0d2a7a}\label{structbus__type_a1e180ea0e8c9146578e76ba87c0d2a7a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+state} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_acc14db31b53b772478c40dce612841a7}\label{structbus__type_acc14db31b53b772478c40dce612841a7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_acbfa68947a3927a5b32f2afc328076e4}\label{structbus__type_acbfa68947a3927a5b32f2afc328076e4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries shutdown} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_a5448b7ad2a0b6caa2357205d3c7a33cf}\label{structbus__type_a5448b7ad2a0b6caa2357205d3c7a33cf} 
+const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+get\+\_\+affinity} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structbus__type_a6182f3dcda277a641766f38342ab984b}\label{structbus__type_a6182f3dcda277a641766f38342ab984b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries online} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_aac3c72999a7c4448145d1432d830ae0b}\label{structbus__type_aac3c72999a7c4448145d1432d830ae0b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries offline} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_aa23e6048f72b91ce22824aa268f9f2c7}\label{structbus__type_aa23e6048f72b91ce22824aa268f9f2c7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, pm\+\_\+message\+\_\+t)
+\item 
+\Hypertarget{structbus__type_a9e9d840a53eede307445566196005773}\label{structbus__type_a9e9d840a53eede307445566196005773} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_aeeb26d6de463a390d776961a336bd0b8}\label{structbus__type_aeeb26d6de463a390d776961a336bd0b8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries num\+\_\+vf} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_aba9fe99401e6bfdf13885f46be11c1a2}\label{structbus__type_aba9fe99401e6bfdf13885f46be11c1a2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+configure} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_a4a6dadef200be98e7fe56bb5bf2eb82a}\label{structbus__type_a4a6dadef200be98e7fe56bb5bf2eb82a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+cleanup} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structbus__type_a77fd8e535b3fab5f43c792441e2b2417}\label{structbus__type_a77fd8e535b3fab5f43c792441e2b2417} 
+const struct \doxymbox{\hyperlink{structdev__pm__ops}{dev\+\_\+pm\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries pm}
+\item 
+\Hypertarget{structbus__type_a9e49c0c92629ae6eaa10a8b4d58b8829}\label{structbus__type_a9e49c0c92629ae6eaa10a8b4d58b8829} 
+bool {\bfseries need\+\_\+parent\+\_\+lock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

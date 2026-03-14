@@ -1,0 +1,115 @@
+\doxysection{perf\+\_\+buffer Struct Reference}
+\hypertarget{structperf__buffer}{}\label{structperf__buffer}\index{perf\_buffer@{perf\_buffer}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structperf__buffer_a74e839bf041cf52a505575d66280c67b}\label{structperf__buffer_a74e839bf041cf52a505575d66280c67b} 
+refcount\+\_\+t {\bfseries refcount}
+\item 
+\Hypertarget{structperf__buffer_a63607a3fe3afe2aba8152802452291b9}\label{structperf__buffer_a63607a3fe3afe2aba8152802452291b9} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries callback\+\_\+head}
+\item 
+\Hypertarget{structperf__buffer_a4e5446a5ceefab57d0d3d330e5b60d9c}\label{structperf__buffer_a4e5446a5ceefab57d0d3d330e5b60d9c} 
+int {\bfseries nr\+\_\+pages}
+\item 
+\Hypertarget{structperf__buffer_a5c8688d4f29626852e8d97b46a7a5554}\label{structperf__buffer_a5c8688d4f29626852e8d97b46a7a5554} 
+int {\bfseries overwrite}
+\item 
+\Hypertarget{structperf__buffer_aa045a246025cbfd3ed79897b51034d5c}\label{structperf__buffer_aa045a246025cbfd3ed79897b51034d5c} 
+int {\bfseries paused}
+\item 
+\Hypertarget{structperf__buffer_aec355382563367825529f0fdf4ab023e}\label{structperf__buffer_aec355382563367825529f0fdf4ab023e} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries poll}
+\item 
+\Hypertarget{structperf__buffer_a4b59c418ab95c31dd0330bf8aca8f4a9}\label{structperf__buffer_a4b59c418ab95c31dd0330bf8aca8f4a9} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries head}
+\item 
+\Hypertarget{structperf__buffer_ab5466eb5774b9472b450e8d163abf837}\label{structperf__buffer_ab5466eb5774b9472b450e8d163abf837} 
+unsigned int {\bfseries nest}
+\item 
+\Hypertarget{structperf__buffer_adcde351e349cdb35f1d4d472905ead74}\label{structperf__buffer_adcde351e349cdb35f1d4d472905ead74} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries events}
+\item 
+\Hypertarget{structperf__buffer_a8048a33e23058e00161da27cc247af83}\label{structperf__buffer_a8048a33e23058e00161da27cc247af83} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries wakeup}
+\item 
+\Hypertarget{structperf__buffer_aef86a588bb09d3b7236ebd112bcc7d9a}\label{structperf__buffer_aef86a588bb09d3b7236ebd112bcc7d9a} 
+\doxymbox{\hyperlink{structlocal__t}{local\+\_\+t}} {\bfseries lost}
+\item 
+\Hypertarget{structperf__buffer_a22a96c64520a909ec204d2706534ddc8}\label{structperf__buffer_a22a96c64520a909ec204d2706534ddc8} 
+long int {\bfseries watermark}
+\item 
+\Hypertarget{structperf__buffer_ae33149b9910823d0919746be98371396}\label{structperf__buffer_ae33149b9910823d0919746be98371396} 
+long int {\bfseries aux\+\_\+watermark}
+\item 
+\Hypertarget{structperf__buffer_a5d8b5994a47107a62e6f87c8ff5f7f13}\label{structperf__buffer_a5d8b5994a47107a62e6f87c8ff5f7f13} 
+spinlock\+\_\+t {\bfseries event\+\_\+lock}
+\item 
+\Hypertarget{structperf__buffer_a24722e9d3f72b2f7316a76b9053700d3}\label{structperf__buffer_a24722e9d3f72b2f7316a76b9053700d3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries event\+\_\+list}
+\item 
+\Hypertarget{structperf__buffer_a148a66c0cd319a7914a65dd9cdbe915e}\label{structperf__buffer_a148a66c0cd319a7914a65dd9cdbe915e} 
+refcount\+\_\+t {\bfseries mmap\+\_\+count}
+\item 
+\Hypertarget{structperf__buffer_acc12f7e51130bc94444f61a562a734b9}\label{structperf__buffer_acc12f7e51130bc94444f61a562a734b9} 
+long unsigned int {\bfseries mmap\+\_\+locked}
+\item 
+\Hypertarget{structperf__buffer_a9709d17ce3a8b1148d74aa5ec41b95f7}\label{structperf__buffer_a9709d17ce3a8b1148d74aa5ec41b95f7} 
+struct \doxymbox{\hyperlink{structuser__struct}{user\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries mmap\+\_\+user}
+\item 
+\Hypertarget{structperf__buffer_a21b055b340298758d29ea30d0e6e85fa}\label{structperf__buffer_a21b055b340298758d29ea30d0e6e85fa} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries aux\+\_\+mutex}
+\item 
+\Hypertarget{structperf__buffer_a22a8099731ad473df43aa6ba4ea13422}\label{structperf__buffer_a22a8099731ad473df43aa6ba4ea13422} 
+long int {\bfseries aux\+\_\+head}
+\item 
+\Hypertarget{structperf__buffer_ae9bfc1953aec9e0ceb3ef3d22860df3a}\label{structperf__buffer_ae9bfc1953aec9e0ceb3ef3d22860df3a} 
+unsigned int {\bfseries aux\+\_\+nest}
+\item 
+\Hypertarget{structperf__buffer_ab335acf402f6a6283965e7ce70c3b17c}\label{structperf__buffer_ab335acf402f6a6283965e7ce70c3b17c} 
+long int {\bfseries aux\+\_\+wakeup}
+\item 
+\Hypertarget{structperf__buffer_ae7ff07364929c905c334ad3eaf32884d}\label{structperf__buffer_ae7ff07364929c905c334ad3eaf32884d} 
+long unsigned int {\bfseries aux\+\_\+pgoff}
+\item 
+\Hypertarget{structperf__buffer_ad5ce3f20c3c64a84ef483062d477e690}\label{structperf__buffer_ad5ce3f20c3c64a84ef483062d477e690} 
+int {\bfseries aux\+\_\+nr\+\_\+pages}
+\item 
+\Hypertarget{structperf__buffer_aad554d91e53fb3c0fad1f79652cc383f}\label{structperf__buffer_aad554d91e53fb3c0fad1f79652cc383f} 
+int {\bfseries aux\+\_\+overwrite}
+\item 
+\Hypertarget{structperf__buffer_a921ad639cc4ace2d5e005d302e1d3ddc}\label{structperf__buffer_a921ad639cc4ace2d5e005d302e1d3ddc} 
+refcount\+\_\+t {\bfseries aux\+\_\+mmap\+\_\+count}
+\item 
+\Hypertarget{structperf__buffer_a62de93674cb9b7c7d5b92a5d75b6b89b}\label{structperf__buffer_a62de93674cb9b7c7d5b92a5d75b6b89b} 
+long unsigned int {\bfseries aux\+\_\+mmap\+\_\+locked}
+\item 
+\Hypertarget{structperf__buffer_ac4182695341001daf9644dc92ae42d16}\label{structperf__buffer_ac4182695341001daf9644dc92ae42d16} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+aux} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structperf__buffer_a2a6db978df173f9f42d9dfa164f9b0d2}\label{structperf__buffer_a2a6db978df173f9f42d9dfa164f9b0d2} 
+refcount\+\_\+t {\bfseries aux\+\_\+refcount}
+\item 
+\Hypertarget{structperf__buffer_a72f1d6ca952dbbc69cf6454dd90eeca8}\label{structperf__buffer_a72f1d6ca952dbbc69cf6454dd90eeca8} 
+int {\bfseries aux\+\_\+in\+\_\+sampling}
+\item 
+\Hypertarget{structperf__buffer_a1c33112439d8ee499f6b866cc11e7363}\label{structperf__buffer_a1c33112439d8ee499f6b866cc11e7363} 
+int {\bfseries aux\+\_\+in\+\_\+pause\+\_\+resume}
+\item 
+\Hypertarget{structperf__buffer_a6ffd29683e8ca326c5e75b15819338ee}\label{structperf__buffer_a6ffd29683e8ca326c5e75b15819338ee} 
+void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries aux\+\_\+pages}
+\item 
+\Hypertarget{structperf__buffer_a93c1e2f10c1dde61c25c336b5db319c9}\label{structperf__buffer_a93c1e2f10c1dde61c25c336b5db319c9} 
+void \texorpdfstring{$\ast$}{*} {\bfseries aux\+\_\+priv}
+\item 
+\Hypertarget{structperf__buffer_a01383122cd9b3f759f8091ef1fe66f3d}\label{structperf__buffer_a01383122cd9b3f759f8091ef1fe66f3d} 
+struct \doxymbox{\hyperlink{structperf__event__mmap__page}{perf\+\_\+event\+\_\+mmap\+\_\+page}} \texorpdfstring{$\ast$}{*} {\bfseries user\+\_\+page}
+\item 
+\Hypertarget{structperf__buffer_a768b69fabf6c360b313f8328c886ec14}\label{structperf__buffer_a768b69fabf6c360b313f8328c886ec14} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data\+\_\+pages} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

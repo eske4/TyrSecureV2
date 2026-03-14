@@ -1,0 +1,67 @@
+\doxysection{tpm\+\_\+tis\+\_\+data Struct Reference}
+\hypertarget{structtpm__tis__data}{}\label{structtpm__tis__data}\index{tpm\_tis\_data@{tpm\_tis\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtpm__tis__data_a0efa5b416bc89490b80ab9573185fa85}\label{structtpm__tis__data_a0efa5b416bc89490b80ab9573185fa85} 
+struct \doxymbox{\hyperlink{structtpm__chip}{tpm\+\_\+chip}} \texorpdfstring{$\ast$}{*} {\bfseries chip}
+\item 
+\Hypertarget{structtpm__tis__data_a7f19e7cbdefa56961aaf1c46fce9f5df}\label{structtpm__tis__data_a7f19e7cbdefa56961aaf1c46fce9f5df} 
+u16 {\bfseries manufacturer\+\_\+id}
+\item 
+\Hypertarget{structtpm__tis__data_a7c31f6080d645b7f13d926a9a8f0c972}\label{structtpm__tis__data_a7c31f6080d645b7f13d926a9a8f0c972} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries locality\+\_\+count\+\_\+mutex}
+\item 
+\Hypertarget{structtpm__tis__data_a14b68e2c9e6ac463acedbc44ff4a896f}\label{structtpm__tis__data_a14b68e2c9e6ac463acedbc44ff4a896f} 
+unsigned int {\bfseries locality\+\_\+count}
+\item 
+\Hypertarget{structtpm__tis__data_aea76be852d914c07fde0d054763091b0}\label{structtpm__tis__data_aea76be852d914c07fde0d054763091b0} 
+int {\bfseries locality}
+\item 
+\Hypertarget{structtpm__tis__data_a43eb347d8fb3281384e3e26d2cbe1240}\label{structtpm__tis__data_a43eb347d8fb3281384e3e26d2cbe1240} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structtpm__tis__data_ac1362b38a4ef7c70952930cd808b97d3}\label{structtpm__tis__data_ac1362b38a4ef7c70952930cd808b97d3} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries free\+\_\+irq\+\_\+work}
+\item 
+\Hypertarget{structtpm__tis__data_a6c713af1e7e280f9414efdab8eb0af54}\label{structtpm__tis__data_a6c713af1e7e280f9414efdab8eb0af54} 
+long unsigned int {\bfseries last\+\_\+unhandled\+\_\+irq}
+\item 
+\Hypertarget{structtpm__tis__data_a6653c1d633851fe8f0856612a152a198}\label{structtpm__tis__data_a6653c1d633851fe8f0856612a152a198} 
+unsigned int {\bfseries unhandled\+\_\+irqs}
+\item 
+\Hypertarget{structtpm__tis__data_acfd728542e165fdbb171a087a7f132b5}\label{structtpm__tis__data_acfd728542e165fdbb171a087a7f132b5} 
+unsigned int {\bfseries int\+\_\+mask}
+\item 
+\Hypertarget{structtpm__tis__data_aadfec7b26e236dc7555f284d56411973}\label{structtpm__tis__data_aadfec7b26e236dc7555f284d56411973} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structtpm__tis__data_a36f455a129f90a3571c8ab19e1da1375}\label{structtpm__tis__data_a36f455a129f90a3571c8ab19e1da1375} 
+void \texorpdfstring{$\ast$}{*} {\bfseries ilb\+\_\+base\+\_\+addr}
+\item 
+\Hypertarget{structtpm__tis__data_a6469a1602de9d63bb11ab26f5bef7f74}\label{structtpm__tis__data_a6469a1602de9d63bb11ab26f5bef7f74} 
+u16 {\bfseries clkrun\+\_\+enabled}
+\item 
+\Hypertarget{structtpm__tis__data_a050ea703d151ce013253405aaa04df7d}\label{structtpm__tis__data_a050ea703d151ce013253405aaa04df7d} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries int\+\_\+queue}
+\item 
+\Hypertarget{structtpm__tis__data_ad48f39df3278ea2dcc570f859bbdf108}\label{structtpm__tis__data_ad48f39df3278ea2dcc570f859bbdf108} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries read\+\_\+queue}
+\item 
+\Hypertarget{structtpm__tis__data_a1b8a253809fb96dc6b52497cd8ef1453}\label{structtpm__tis__data_a1b8a253809fb96dc6b52497cd8ef1453} 
+const struct \doxymbox{\hyperlink{structtpm__tis__phy__ops}{tpm\+\_\+tis\+\_\+phy\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries phy\+\_\+ops}
+\item 
+\Hypertarget{structtpm__tis__data_a39eb2cc7a09abb5d01b0e68943e25621}\label{structtpm__tis__data_a39eb2cc7a09abb5d01b0e68943e25621} 
+short unsigned int {\bfseries rng\+\_\+quality}
+\item 
+\Hypertarget{structtpm__tis__data_a27afbac4215dac4037aca73a12eb32bc}\label{structtpm__tis__data_a27afbac4215dac4037aca73a12eb32bc} 
+unsigned int {\bfseries timeout\+\_\+min}
+\item 
+\Hypertarget{structtpm__tis__data_a143e401840bffb4f307fa363615ff0c7}\label{structtpm__tis__data_a143e401840bffb4f307fa363615ff0c7} 
+unsigned int {\bfseries timeout\+\_\+max}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

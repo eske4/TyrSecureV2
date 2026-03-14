@@ -1,0 +1,46 @@
+\doxysection{msi\+\_\+desc Struct Reference}
+\hypertarget{structmsi__desc}{}\label{structmsi__desc}\index{msi\_desc@{msi\_desc}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmsi__desc_ab692d2e387a387e6893b5674ea247877}\label{structmsi__desc_ab692d2e387a387e6893b5674ea247877} 
+unsigned int {\bfseries irq}
+\item 
+\Hypertarget{structmsi__desc_afbfd9ae5abcc6ce310aee4338648e23f}\label{structmsi__desc_afbfd9ae5abcc6ce310aee4338648e23f} 
+unsigned int {\bfseries nvec\+\_\+used}
+\item 
+\Hypertarget{structmsi__desc_a5df255c6c761c090f3c29601bd324689}\label{structmsi__desc_a5df255c6c761c090f3c29601bd324689} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structmsi__desc_a7dc524c0b42f65f893f9417b286eb3cb}\label{structmsi__desc_a7dc524c0b42f65f893f9417b286eb3cb} 
+struct \doxymbox{\hyperlink{structmsi__msg}{msi\+\_\+msg}} {\bfseries msg}
+\item 
+\Hypertarget{structmsi__desc_a03a191a94c640bbc532ea0fb2c8a4b3f}\label{structmsi__desc_a03a191a94c640bbc532ea0fb2c8a4b3f} 
+struct \doxymbox{\hyperlink{structirq__affinity__desc}{irq\+\_\+affinity\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries affinity}
+\item 
+\Hypertarget{structmsi__desc_a64622322a21e6e80df2642d5a458d4bf}\label{structmsi__desc_a64622322a21e6e80df2642d5a458d4bf} 
+struct \doxymbox{\hyperlink{structdevice__attribute}{device\+\_\+attribute}} \texorpdfstring{$\ast$}{*} {\bfseries sysfs\+\_\+attrs}
+\item 
+\Hypertarget{structmsi__desc_ab14e7e5e451c6ab0f8de14063aa20dfb}\label{structmsi__desc_ab14e7e5e451c6ab0f8de14063aa20dfb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+msi\+\_\+msg} )(struct \doxymbox{\hyperlink{structmsi__desc}{msi\+\_\+desc}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmsi__desc_a453130de73d92cdb94779980e69848f1}\label{structmsi__desc_a453130de73d92cdb94779980e69848f1} 
+void \texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+msi\+\_\+msg\+\_\+data}
+\item 
+\Hypertarget{structmsi__desc_aa5cc6fad72eafa55fe5d2e57ee27a5ec}\label{structmsi__desc_aa5cc6fad72eafa55fe5d2e57ee27a5ec} 
+u16 {\bfseries msi\+\_\+index}
+\item 
+\Hypertarget{structmsi__desc_a60139aac4c71f5b966f106e2c043a3b1}\label{structmsi__desc_a60139aac4c71f5b966f106e2c043a3b1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpci__msi__desc}{pci\_msi\_desc}} {\bfseries pci}\\
+\>struct \doxymbox{\hyperlink{structmsi__desc__data}{msi\_desc\_data}} {\bfseries data}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

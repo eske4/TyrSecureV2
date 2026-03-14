@@ -1,0 +1,62 @@
+\doxysection{cxl\+\_\+cper\+\_\+sec\+\_\+prot\+\_\+err Struct Reference}
+\hypertarget{structcxl__cper__sec__prot__err}{}\label{structcxl__cper__sec__prot__err}\index{cxl\_cper\_sec\_prot\_err@{cxl\_cper\_sec\_prot\_err}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcxl__cper__sec__prot__err_a50eab953437d34ce5b9a1563d7d02cf9}\label{structcxl__cper__sec__prot__err_a50eab953437d34ce5b9a1563d7d02cf9} 
+u64 {\bfseries valid\+\_\+bits}
+\item 
+\Hypertarget{structcxl__cper__sec__prot__err_a496f72808f4465dd26b9c6184e8972fc}\label{structcxl__cper__sec__prot__err_a496f72808f4465dd26b9c6184e8972fc} 
+u8 {\bfseries agent\+\_\+type}
+\item 
+\Hypertarget{structcxl__cper__sec__prot__err_a1a900422be5f62aebe6b8e2b05770aa1}\label{structcxl__cper__sec__prot__err_a1a900422be5f62aebe6b8e2b05770aa1} 
+u8 {\bfseries reserved} \+[7]\+
+\item 
+\Hypertarget{structcxl__cper__sec__prot__err_a28de15e320e6bfb9839796bfc57743e2}\label{structcxl__cper__sec__prot__err_a28de15e320e6bfb9839796bfc57743e2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries rcrb\_base\_addr}\\
+\} {\bfseries agent\_addr}\\
+
+\end{tabbing}\item 
+\Hypertarget{structcxl__cper__sec__prot__err_a6169294560d5f9c472602a4066092bc6}\label{structcxl__cper__sec__prot__err_a6169294560d5f9c472602a4066092bc6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u16 {\bfseries vendor\_id}\\
+\>u16 {\bfseries device\_id}\\
+\>u16 {\bfseries subsystem\_vendor\_id}\\
+\>u16 {\bfseries subsystem\_id}\\
+\>u8 {\bfseries class\_code} \+[2]\+\\
+\>u16 {\bfseries slot}\\
+\>u8 {\bfseries reserved\_1} \+[4]\+\\
+\} {\bfseries device\_id}\\
+
+\end{tabbing}\item 
+\Hypertarget{structcxl__cper__sec__prot__err_ae5188274404c93dcd5fcba2dd2370095}\label{structcxl__cper__sec__prot__err_ae5188274404c93dcd5fcba2dd2370095} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries lower\_dw}\\
+\>u32 {\bfseries upper\_dw}\\
+\} {\bfseries dev\_serial\_num}\\
+
+\end{tabbing}\item 
+\Hypertarget{structcxl__cper__sec__prot__err_a7ea093a5889dceaa12cf506b69521179}\label{structcxl__cper__sec__prot__err_a7ea093a5889dceaa12cf506b69521179} 
+u8 {\bfseries capability} \+[60]\+
+\item 
+\Hypertarget{structcxl__cper__sec__prot__err_abc7a68e4992d9b47a09d6765f4552a3e}\label{structcxl__cper__sec__prot__err_abc7a68e4992d9b47a09d6765f4552a3e} 
+u16 {\bfseries dvsec\+\_\+len}
+\item 
+\Hypertarget{structcxl__cper__sec__prot__err_ad306bddab7758a98dcd1317500d25530}\label{structcxl__cper__sec__prot__err_ad306bddab7758a98dcd1317500d25530} 
+u16 {\bfseries err\+\_\+len}
+\item 
+\Hypertarget{structcxl__cper__sec__prot__err_acc1d2dc3bb74431811f20dca6e6025c0}\label{structcxl__cper__sec__prot__err_acc1d2dc3bb74431811f20dca6e6025c0} 
+u8 {\bfseries reserved\+\_\+2} \+[4]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

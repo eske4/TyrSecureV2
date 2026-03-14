@@ -1,0 +1,78 @@
+\doxysection{irq\+\_\+info\+\_\+\+\_\+\+\_\+2 Struct Reference}
+\hypertarget{structirq__info______2}{}\label{structirq__info______2}\index{irq\_info\_\_\_2@{irq\_info\_\_\_2}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structirq__info______2_a28f803d8567450d09c10a60ca7584331}\label{structirq__info______2_a28f803d8567450d09c10a60ca7584331} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structirq__info______2_a7441730015eb00cf13e444b056e231dc}\label{structirq__info______2_a7441730015eb00cf13e444b056e231dc} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries eoi\+\_\+list}
+\item 
+\Hypertarget{structirq__info______2_a9685e338757570c30d293d543496157b}\label{structirq__info______2_a9685e338757570c30d293d543496157b} 
+struct \doxymbox{\hyperlink{structrcu__work}{rcu\+\_\+work}} {\bfseries rwork}
+\item 
+\Hypertarget{structirq__info______2_a4b264e3cc705507a5b429d19cafc6aa2}\label{structirq__info______2_a4b264e3cc705507a5b429d19cafc6aa2} 
+short int {\bfseries refcnt}
+\item 
+\Hypertarget{structirq__info______2_afb71ef778da9c32134d30effffd5e3e5}\label{structirq__info______2_afb71ef778da9c32134d30effffd5e3e5} 
+u8 {\bfseries spurious\+\_\+cnt}
+\item 
+\Hypertarget{structirq__info______2_a7fdea8e0185255eb4553c519c40604a0}\label{structirq__info______2_a7fdea8e0185255eb4553c519c40604a0} 
+u8 {\bfseries is\+\_\+accounted}
+\item 
+\Hypertarget{structirq__info______2_aacc619ce934a869e9a5da8490da88dc9}\label{structirq__info______2_aacc619ce934a869e9a5da8490da88dc9} 
+short int {\bfseries type}
+\item 
+\Hypertarget{structirq__info______2_ad56968784fabd495edd679de7c421f09}\label{structirq__info______2_ad56968784fabd495edd679de7c421f09} 
+u8 {\bfseries mask\+\_\+reason}
+\item 
+\Hypertarget{structirq__info______2_ae277274810bb5cecf3c3f093d4d39b14}\label{structirq__info______2_ae277274810bb5cecf3c3f093d4d39b14} 
+u8 {\bfseries is\+\_\+active}
+\item 
+\Hypertarget{structirq__info______2_a3b0e2a305a4e48c6d4251265d37404e5}\label{structirq__info______2_a3b0e2a305a4e48c6d4251265d37404e5} 
+unsigned int {\bfseries irq}
+\item 
+\Hypertarget{structirq__info______2_a4875ff5fbbcba5f5ac591edf57e4b723}\label{structirq__info______2_a4875ff5fbbcba5f5ac591edf57e4b723} 
+evtchn\+\_\+port\+\_\+t {\bfseries evtchn}
+\item 
+\Hypertarget{structirq__info______2_afdc79351a4b28e4f84d69cc411bce467}\label{structirq__info______2_afdc79351a4b28e4f84d69cc411bce467} 
+short unsigned int {\bfseries cpu}
+\item 
+\Hypertarget{structirq__info______2_a1258912bce615dc3fc59ccd89682ba65}\label{structirq__info______2_a1258912bce615dc3fc59ccd89682ba65} 
+short unsigned int {\bfseries eoi\+\_\+cpu}
+\item 
+\Hypertarget{structirq__info______2_ab6f8a318d1b9f396996319e39ce2adef}\label{structirq__info______2_ab6f8a318d1b9f396996319e39ce2adef} 
+unsigned int {\bfseries irq\+\_\+epoch}
+\item 
+\Hypertarget{structirq__info______2_a3be014290684080ed2c2913c28b819e4}\label{structirq__info______2_a3be014290684080ed2c2913c28b819e4} 
+u64 {\bfseries eoi\+\_\+time}
+\item 
+\Hypertarget{structirq__info______2_a14c4b47f572ab136cb46fd65479a893c}\label{structirq__info______2_a14c4b47f572ab136cb46fd65479a893c} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structirq__info______2_a7375a57132d163546c6066e3d23855a7}\label{structirq__info______2_a7375a57132d163546c6066e3d23855a7} 
+bool {\bfseries is\+\_\+static}
+\item 
+\Hypertarget{structirq__info______2_acb77261964a480427dcbbc23ec4122c5}\label{structirq__info______2_acb77261964a480427dcbbc23ec4122c5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>short unsigned int {\bfseries virq}\\
+\>enum ipi\_vector {\bfseries ipi}\\
+\>struct \{\\
+\>\>short unsigned int {\bfseries pirq}\\
+\>\>short unsigned int {\bfseries gsi}\\
+\>\>unsigned char {\bfseries vector}\\
+\>\>unsigned char {\bfseries flags}\\
+\>\>uint16\_t {\bfseries domid}\\
+\>\} {\bfseries pirq}\\
+\>struct \doxymbox{\hyperlink{structxenbus__device}{xenbus\_device}} \texorpdfstring{$\ast$}{*} {\bfseries interdomain}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

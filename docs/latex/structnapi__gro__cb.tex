@@ -1,0 +1,90 @@
+\doxysection{napi\+\_\+gro\+\_\+cb Struct Reference}
+\hypertarget{structnapi__gro__cb}{}\label{structnapi__gro__cb}\index{napi\_gro\_cb@{napi\_gro\_cb}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnapi__gro__cb_a880eeb1a60ebe4673da6286683193833}\label{structnapi__gro__cb_a880eeb1a60ebe4673da6286683193833} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionnapi__gro__cb_1_1_0d301226103156035266317011243132272316263145176202_a9c8ae26b24a17adc56614bd318d5f184}\label{unionnapi__gro__cb_1_1_0d301226103156035266317011243132272316263145176202_a9c8ae26b24a17adc56614bd318d5f184} 
+\>struct \{\\
+\>\>void \texorpdfstring{$\ast$}{*} {\bfseries frag0}\\
+\>\>unsigned int {\bfseries frag0\_len}\\
+\>\} \\
+\Hypertarget{unionnapi__gro__cb_1_1_0d301226103156035266317011243132272316263145176202_ab0dc0b79b6c8a574bbe9afc56a7b0f4e}\label{unionnapi__gro__cb_1_1_0d301226103156035266317011243132272316263145176202_ab0dc0b79b6c8a574bbe9afc56a7b0f4e} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structsk__buff}{sk\_buff}} \texorpdfstring{$\ast$}{*} {\bfseries last}\\
+\>\>long unsigned int {\bfseries age}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnapi__gro__cb_afbd555b6345ef4ac2d4630343bbd7781}\label{structnapi__gro__cb_afbd555b6345ef4ac2d4630343bbd7781} 
+int {\bfseries data\+\_\+offset}
+\item 
+\Hypertarget{structnapi__gro__cb_a89fbc54031272105f2751f6dc55249af}\label{structnapi__gro__cb_a89fbc54031272105f2751f6dc55249af} 
+u16 {\bfseries flush}
+\item 
+\Hypertarget{structnapi__gro__cb_af6e5573d335d2b8603baed37c014c995}\label{structnapi__gro__cb_af6e5573d335d2b8603baed37c014c995} 
+u16 {\bfseries count}
+\item 
+\Hypertarget{structnapi__gro__cb_af10e601c36cd4b969dc958555f575f7c}\label{structnapi__gro__cb_af10e601c36cd4b969dc958555f575f7c} 
+u16 {\bfseries proto}
+\item 
+\Hypertarget{structnapi__gro__cb_a291e33102cb76a636963513b06432230}\label{structnapi__gro__cb_a291e33102cb76a636963513b06432230} 
+u16 {\bfseries pad}
+\item 
+\Hypertarget{structnapi__gro__cb_ab9e18ba1981075b5c55c3bd70cfeb3d9}\label{structnapi__gro__cb_ab9e18ba1981075b5c55c3bd70cfeb3d9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionnapi__gro__cb_1_1_0d323152240115001047131235171300274140324174104352_a179b68710209a6209d8107eb7942d1f7}\label{unionnapi__gro__cb_1_1_0d323152240115001047131235171300274140324174104352_a179b68710209a6209d8107eb7942d1f7} 
+\>struct \{\\
+\>\>u16 {\bfseries gro\_remcsum\_start}\\
+\>\>u8 {\bfseries same\_flow}: 1\\
+\>\>u8 {\bfseries encap\_mark}: 1\\
+\>\>u8 {\bfseries csum\_valid}: 1\\
+\>\>u8 {\bfseries csum\_cnt}: 3\\
+\>\>u8 {\bfseries free}: 2\\
+\>\>u8 {\bfseries is\_fou}: 1\\
+\>\>u8 {\bfseries ip\_fixedid}: 2\\
+\>\>u8 {\bfseries recursion\_counter}: 4\\
+\>\>u8 {\bfseries is\_flist}: 1\\
+\>\} \\
+\>struct \{\\
+\>\>u16 {\bfseries gro\_remcsum\_start}\\
+\>\>u8 {\bfseries same\_flow}: 1\\
+\>\>u8 {\bfseries encap\_mark}: 1\\
+\>\>u8 {\bfseries csum\_valid}: 1\\
+\>\>u8 {\bfseries csum\_cnt}: 3\\
+\>\>u8 {\bfseries free}: 2\\
+\>\>u8 {\bfseries is\_fou}: 1\\
+\>\>u8 {\bfseries ip\_fixedid}: 2\\
+\>\>u8 {\bfseries recursion\_counter}: 4\\
+\>\>u8 {\bfseries is\_flist}: 1\\
+\>\} {\bfseries zeroed}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnapi__gro__cb_a59b7ad905c4cdc51a0de952393131202}\label{structnapi__gro__cb_a59b7ad905c4cdc51a0de952393131202} 
+\+\_\+\+\_\+wsum {\bfseries csum}
+\item 
+\Hypertarget{structnapi__gro__cb_a2e4322e57b58e099e5576f3b7f0b1e70}\label{structnapi__gro__cb_a2e4322e57b58e099e5576f3b7f0b1e70} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionnapi__gro__cb_1_1_0d353252235332121052014230217271227260351062136141_a6c319c4d2c2f34f5418d708bb8027d85}\label{unionnapi__gro__cb_1_1_0d353252235332121052014230217271227260351062136141_a6c319c4d2c2f34f5418d708bb8027d85} 
+\>struct \{\\
+\>\>u16 {\bfseries network\_offset}\\
+\>\>u16 {\bfseries inner\_network\_offset}\\
+\>\} \\
+\>u16 {\bfseries network\_offsets} \+[2]\+\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

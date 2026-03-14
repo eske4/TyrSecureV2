@@ -1,0 +1,67 @@
+\doxysection{Launcher::\+GLauncher Class Reference}
+\hypertarget{classLauncher_1_1GLauncher}{}\label{classLauncher_1_1GLauncher}\index{Launcher::GLauncher@{Launcher::GLauncher}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classLauncher_1_1GLauncher_ab6277ebdb3762999bf77e6f3b3a74ec3}\label{classLauncher_1_1GLauncher_ab6277ebdb3762999bf77e6f3b3a74ec3} 
+{\bfseries GLauncher} (const GLauncher \&)=delete
+\item 
+\Hypertarget{classLauncher_1_1GLauncher_a6d9ecfcf245bd37c1636b1b56f5060ae}\label{classLauncher_1_1GLauncher_a6d9ecfcf245bd37c1636b1b56f5060ae} 
+GLauncher \& {\bfseries operator=} (const GLauncher \&)=delete
+\item 
+\Hypertarget{classLauncher_1_1GLauncher_ab2c9faea65848ebd3381fdc90b471a8a}\label{classLauncher_1_1GLauncher_ab2c9faea65848ebd3381fdc90b471a8a} 
+{\bfseries GLauncher} (GLauncher \&\&)=delete
+\item 
+\Hypertarget{classLauncher_1_1GLauncher_a85126e61534b77526c221e1c2d59b576}\label{classLauncher_1_1GLauncher_a85126e61534b77526c221e1c2d59b576} 
+GLauncher \& {\bfseries operator=} (GLauncher \&\&)=delete
+\item 
+bool \doxymbox{\hyperlink{classLauncher_1_1GLauncher_a08077d040c21b30e553b07065670591c}{setup}} (const std::\+filesystem::\+path \&bin\+\_\+path, const std::\+filesystem::\+path \&game\+\_\+working\+\_\+dir\+\_\+path, const \doxymbox{\hyperlink{classsys_1_1CGroup}{sys::\+\+CGroup}} \&cgroup\+\_\+parent)
+\begin{DoxyCompactList}\small\item\em Prepares the environment for the launcher. \end{DoxyCompactList}\item 
+\Hypertarget{classLauncher_1_1GLauncher_a7c5737e1a79edf8a04a57ebf29aad015}\label{classLauncher_1_1GLauncher_a7c5737e1a79edf8a04a57ebf29aad015} 
+void {\bfseries start} ()
+\item 
+\Hypertarget{classLauncher_1_1GLauncher_a9493683a9797ec9b2fcf33a6e3f73e89}\label{classLauncher_1_1GLauncher_a9493683a9797ec9b2fcf33a6e3f73e89} 
+void {\bfseries stop} ()
+\item 
+\Hypertarget{classLauncher_1_1GLauncher_a0ec4e2e3b6fa20e5e7475efe75b7cb74}\label{classLauncher_1_1GLauncher_a0ec4e2e3b6fa20e5e7475efe75b7cb74} 
+bool {\bfseries is\+Active} () const
+\item 
+\Hypertarget{classLauncher_1_1GLauncher_acfcc61f7461c5843d5452d0e826f1988}\label{classLauncher_1_1GLauncher_acfcc61f7461c5843d5452d0e826f1988} 
+bool {\bfseries is\+Prepared} () const
+\item 
+\Hypertarget{classLauncher_1_1GLauncher_a9f2d6b09fd10c66249ecf55b4980496a}\label{classLauncher_1_1GLauncher_a9f2d6b09fd10c66249ecf55b4980496a} 
+pid\+\_\+t {\bfseries get\+Gpid} () const
+\item 
+\Hypertarget{classLauncher_1_1GLauncher_aaf141ebe37118ef155abb4317e7c9bb8}\label{classLauncher_1_1GLauncher_aaf141ebe37118ef155abb4317e7c9bb8} 
+const \doxymbox{\hyperlink{structLContext}{LContext}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Session\+Info} () const
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classLauncher_1_1GLauncher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLauncher_1_1GLauncher_a08077d040c21b30e553b07065670591c}\index{Launcher::GLauncher@{Launcher::GLauncher}!setup@{setup}}
+\index{setup@{setup}!Launcher::GLauncher@{Launcher::GLauncher}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily \label{classLauncher_1_1GLauncher_a08077d040c21b30e553b07065670591c} 
+bool Launcher::\+\+GLauncher::\+setup (\begin{DoxyParamCaption}\item[{const std::\+filesystem::\+path \&}]{bin\+\_\+path}{, }\item[{const std::\+filesystem::\+path \&}]{game\+\_\+working\+\_\+dir\+\_\+path}{, }\item[{const \doxymbox{\hyperlink{classsys_1_1CGroup}{sys::\+\+CGroup}} \&}]{cgroup\+\_\+parent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Prepares the environment for the launcher. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin\+\_\+path} & Path to the executable. \\
+\hline
+{\em game\+\_\+root\+\_\+dir} & Path to the working directory. \\
+\hline
+{\em cgroup\+\_\+name} & The name/\+path for the new CGroup. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+src/\+daemon/\+launcher/\+include/\+GLauncher.\+hpp\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+src/\+daemon/\+launcher/\+GLauncher.\+cpp\end{DoxyCompactItemize}

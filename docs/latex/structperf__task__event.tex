@@ -1,0 +1,29 @@
+\doxysection{perf\+\_\+task\+\_\+event Struct Reference}
+\hypertarget{structperf__task__event}{}\label{structperf__task__event}\index{perf\_task\_event@{perf\_task\_event}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structperf__task__event_a8971e512a02fb0244d518dc128ac5fb5}\label{structperf__task__event_a8971e512a02fb0244d518dc128ac5fb5} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries task}
+\item 
+\Hypertarget{structperf__task__event_a01eced33e173a101c96d19e01a7e2fbc}\label{structperf__task__event_a01eced33e173a101c96d19e01a7e2fbc} 
+struct \doxymbox{\hyperlink{structperf__event__context}{perf\+\_\+event\+\_\+context}} \texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+ctx}
+\item 
+\Hypertarget{structperf__task__event_a8d7e0e11dcb472156db659b51f4bab65}\label{structperf__task__event_a8d7e0e11dcb472156db659b51f4bab65} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structperf__event__header}{perf\_event\_header}} {\bfseries header}\\
+\>u32 {\bfseries pid}\\
+\>u32 {\bfseries ppid}\\
+\>u32 {\bfseries tid}\\
+\>u32 {\bfseries ptid}\\
+\>u64 {\bfseries time}\\
+\} {\bfseries event\_id}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

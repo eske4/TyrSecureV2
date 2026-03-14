@@ -1,0 +1,82 @@
+\doxysection{bpf\+\_\+htab Struct Reference}
+\hypertarget{structbpf__htab}{}\label{structbpf__htab}\index{bpf\_htab@{bpf\_htab}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__htab_a04d3e41f3aa4c24fe450717b17d8ce88}\label{structbpf__htab_a04d3e41f3aa4c24fe450717b17d8ce88} 
+struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} {\bfseries map}
+\item 
+\Hypertarget{structbpf__htab_a6a584f1fecd8e4bc09f41cede0fe40f8}\label{structbpf__htab_a6a584f1fecd8e4bc09f41cede0fe40f8} 
+struct \doxymbox{\hyperlink{structbpf__mem__alloc}{bpf\+\_\+mem\+\_\+alloc}} {\bfseries ma}
+\item 
+\Hypertarget{structbpf__htab_aae6a4f451af33a27c7eaf31136fd3e9f}\label{structbpf__htab_aae6a4f451af33a27c7eaf31136fd3e9f} 
+struct \doxymbox{\hyperlink{structbpf__mem__alloc}{bpf\+\_\+mem\+\_\+alloc}} {\bfseries pcpu\+\_\+ma}
+\item 
+\Hypertarget{structbpf__htab_ae0fa096cabfa63fff08d924381b20e9c}\label{structbpf__htab_ae0fa096cabfa63fff08d924381b20e9c} 
+struct \doxymbox{\hyperlink{structbucket}{bucket}} \texorpdfstring{$\ast$}{*} {\bfseries buckets}
+\item 
+\Hypertarget{structbpf__htab_a76255cecab3faf3281e894b58b0e57d1}\label{structbpf__htab_a76255cecab3faf3281e894b58b0e57d1} 
+void \texorpdfstring{$\ast$}{*} {\bfseries elems}
+\item 
+\Hypertarget{structbpf__htab_af2000295fa5b60d7b7d9420988ad5fe9}\label{structbpf__htab_af2000295fa5b60d7b7d9420988ad5fe9} 
+long :\+ 64
+\item 
+\Hypertarget{structbpf__htab_a5b11e46b80998947bcdff834e76c2a07}\label{structbpf__htab_a5b11e46b80998947bcdff834e76c2a07} 
+long :\+ 64
+\item 
+\Hypertarget{structbpf__htab_afc8aea2ac3834569e0d061b5548cb13a}\label{structbpf__htab_afc8aea2ac3834569e0d061b5548cb13a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpcpu__freelist}{pcpu\_freelist}} {\bfseries freelist}\\
+\>struct \doxymbox{\hyperlink{structbpf__lru}{bpf\_lru}} {\bfseries lru}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__htab_a2e8f3d0483b5b61e7c71561d22e93785}\label{structbpf__htab_a2e8f3d0483b5b61e7c71561d22e93785} 
+struct \doxymbox{\hyperlink{structhtab__elem}{htab\+\_\+elem}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries extra\+\_\+elems}
+\item 
+\Hypertarget{structbpf__htab_a69748192b473beaa0e47c58a00491f3d}\label{structbpf__htab_a69748192b473beaa0e47c58a00491f3d} 
+struct \doxymbox{\hyperlink{structpercpu__counter}{percpu\+\_\+counter}} {\bfseries pcount}
+\item 
+\Hypertarget{structbpf__htab_a38af79f96946a5fbb029450333eb7e82}\label{structbpf__htab_a38af79f96946a5fbb029450333eb7e82} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries count}
+\item 
+\Hypertarget{structbpf__htab_ab8865ed6b0c8f060bb313454f4a90c53}\label{structbpf__htab_ab8865ed6b0c8f060bb313454f4a90c53} 
+bool {\bfseries use\+\_\+percpu\+\_\+counter}
+\item 
+\Hypertarget{structbpf__htab_a50f18b3ea59b522db77c2505197f816a}\label{structbpf__htab_a50f18b3ea59b522db77c2505197f816a} 
+u32 {\bfseries n\+\_\+buckets}
+\item 
+\Hypertarget{structbpf__htab_af723a936c798556486efb496a6ee43e6}\label{structbpf__htab_af723a936c798556486efb496a6ee43e6} 
+u32 {\bfseries elem\+\_\+size}
+\item 
+\Hypertarget{structbpf__htab_ae31112146e7595ee85ddfa9c35a42ded}\label{structbpf__htab_ae31112146e7595ee85ddfa9c35a42ded} 
+u32 {\bfseries hashrnd}
+\item 
+\Hypertarget{structbpf__htab_a38433f344b81910ade6d026a8584c096}\label{structbpf__htab_a38433f344b81910ade6d026a8584c096} 
+long :\+ 64
+\item 
+\Hypertarget{structbpf__htab_aaa58cc9f2623805405746575f7470d46}\label{structbpf__htab_aaa58cc9f2623805405746575f7470d46} 
+long :\+ 64
+\item 
+\Hypertarget{structbpf__htab_a6428ad406fbc32efa1a0a61a8afa5d51}\label{structbpf__htab_a6428ad406fbc32efa1a0a61a8afa5d51} 
+long :\+ 64
+\item 
+\Hypertarget{structbpf__htab_a5c94c03187a12f4845f6805073d4f626}\label{structbpf__htab_a5c94c03187a12f4845f6805073d4f626} 
+long :\+ 64
+\item 
+\Hypertarget{structbpf__htab_a5a94edc8423bcd8cbda77a31c087bbde}\label{structbpf__htab_a5a94edc8423bcd8cbda77a31c087bbde} 
+long :\+ 64
+\item 
+\Hypertarget{structbpf__htab_a8034957a76a8e9d0461885035ef59f18}\label{structbpf__htab_a8034957a76a8e9d0461885035ef59f18} 
+long :\+ 64
+\item 
+\Hypertarget{structbpf__htab_abf0162ad67a47548a76b6ec8c1b2ae92}\label{structbpf__htab_abf0162ad67a47548a76b6ec8c1b2ae92} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

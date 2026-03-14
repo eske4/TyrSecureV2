@@ -1,0 +1,67 @@
+\doxysection{worker Struct Reference}
+\hypertarget{structworker}{}\label{structworker}\index{worker@{worker}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structworker_a15d0a6f2f2861eca850b38a13aa0f846}\label{structworker_a15d0a6f2f2861eca850b38a13aa0f846} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries entry}\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries hentry}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structworker_a327eeb6ad5c2391cb6bdef27493195cb}\label{structworker_a327eeb6ad5c2391cb6bdef27493195cb} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries current\+\_\+work}
+\item 
+\Hypertarget{structworker_a85f4b799710ef10d17515d4533182a7d}\label{structworker_a85f4b799710ef10d17515d4533182a7d} 
+work\+\_\+func\+\_\+t {\bfseries current\+\_\+func}
+\item 
+\Hypertarget{structworker_abb0fcc46ce455c9befe19c3e415eaa51}\label{structworker_abb0fcc46ce455c9befe19c3e415eaa51} 
+struct \doxymbox{\hyperlink{structpool__workqueue}{pool\+\_\+workqueue}} \texorpdfstring{$\ast$}{*} {\bfseries current\+\_\+pwq}
+\item 
+\Hypertarget{structworker_a6e9ea70c61ff5caccd368d5837a9a069}\label{structworker_a6e9ea70c61ff5caccd368d5837a9a069} 
+u64 {\bfseries current\+\_\+at}
+\item 
+\Hypertarget{structworker_a3c03bde1e399f0b0c96440c5dcc5f93a}\label{structworker_a3c03bde1e399f0b0c96440c5dcc5f93a} 
+unsigned int {\bfseries current\+\_\+color}
+\item 
+\Hypertarget{structworker_ac31f82fad28ddf6587bb23ef8e2e99a1}\label{structworker_ac31f82fad28ddf6587bb23ef8e2e99a1} 
+int {\bfseries sleeping}
+\item 
+\Hypertarget{structworker_a92fc3025d65761d497c630a3c5a200e8}\label{structworker_a92fc3025d65761d497c630a3c5a200e8} 
+work\+\_\+func\+\_\+t {\bfseries last\+\_\+func}
+\item 
+\Hypertarget{structworker_ac0a1de1ff661db20b6c692c06deb5a95}\label{structworker_ac0a1de1ff661db20b6c692c06deb5a95} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries scheduled}
+\item 
+\Hypertarget{structworker_a45351a089057179149dc177543e9e650}\label{structworker_a45351a089057179149dc177543e9e650} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries task}
+\item 
+\Hypertarget{structworker_adda7ff3341ee6a6dad8870646915f352}\label{structworker_adda7ff3341ee6a6dad8870646915f352} 
+struct \doxymbox{\hyperlink{structworker__pool}{worker\+\_\+pool}} \texorpdfstring{$\ast$}{*} {\bfseries pool}
+\item 
+\Hypertarget{structworker_a835ad2424ddc6512910f621d5e9e8b93}\label{structworker_a835ad2424ddc6512910f621d5e9e8b93} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structworker_ace54c64a725c6f77bba85ebe4914e5aa}\label{structworker_ace54c64a725c6f77bba85ebe4914e5aa} 
+long unsigned int {\bfseries last\+\_\+active}
+\item 
+\Hypertarget{structworker_aab4a75c1cd7e144c6008d761a24ae773}\label{structworker_aab4a75c1cd7e144c6008d761a24ae773} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structworker_a606c735e97972da146580e6c712958ce}\label{structworker_a606c735e97972da146580e6c712958ce} 
+int {\bfseries id}
+\item 
+\Hypertarget{structworker_ad994507a17f1b33f282f28df455c346b}\label{structworker_ad994507a17f1b33f282f28df455c346b} 
+char {\bfseries desc} \+[32]\+
+\item 
+\Hypertarget{structworker_a475a61c74fba017b41a83bb2c0d0b5ee}\label{structworker_a475a61c74fba017b41a83bb2c0d0b5ee} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries rescue\+\_\+wq}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

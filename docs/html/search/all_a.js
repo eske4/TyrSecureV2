@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['jailhouse_5fsetup_5fdata_0',['jailhouse_setup_data',['../structjailhouse__setup__data.html',1,'']]],
+  ['jbd2_5fbuffer_5ftrigger_5ftype_1',['jbd2_buffer_trigger_type',['../structjbd2__buffer__trigger__type.html',1,'']]],
+  ['jbd2_5finode_2',['jbd2_inode',['../structjbd2__inode.html',1,'']]],
+  ['jbd2_5fjournal_5fblock_5ftail_3',['jbd2_journal_block_tail',['../structjbd2__journal__block__tail.html',1,'']]],
+  ['jbd2_5fjournal_5fhandle_4',['jbd2_journal_handle',['../structjbd2__journal__handle.html',1,'']]],
+  ['jbd2_5fjournal_5frevoke_5fheader_5fs_5',['jbd2_journal_revoke_header_s',['../structjbd2__journal__revoke__header__s.html',1,'']]],
+  ['jbd2_5frevoke_5frecord_5fs_6',['jbd2_revoke_record_s',['../structjbd2__revoke__record__s.html',1,'']]],
+  ['jbd2_5frevoke_5ftable_5fs_7',['jbd2_revoke_table_s',['../structjbd2__revoke__table__s.html',1,'']]],
+  ['jbd2_5fstats_5fproc_5fsession_8',['jbd2_stats_proc_session',['../structjbd2__stats__proc__session.html',1,'']]],
+  ['jit_5fcontext_9',['jit_context',['../structjit__context.html',1,'']]],
+  ['jitterentropy_10',['jitterentropy',['../structjitterentropy.html',1,'']]],
+  ['join_5fentry_11',['join_entry',['../structjoin__entry.html',1,'']]],
+  ['journal_5fblock_5ftag3_5fs_12',['journal_block_tag3_s',['../structjournal__block__tag3__s.html',1,'']]],
+  ['journal_5fblock_5ftag_5fs_13',['journal_block_tag_s',['../structjournal__block__tag__s.html',1,'']]],
+  ['journal_5fhead_14',['journal_head',['../structjournal__head.html',1,'']]],
+  ['journal_5fheader_5fs_15',['journal_header_s',['../structjournal__header__s.html',1,'']]],
+  ['journal_5fs_16',['journal_s',['../structjournal__s.html',1,'']]],
+  ['journal_5fsuperblock_5fs_17',['journal_superblock_s',['../structjournal__superblock__s.html',1,'']]],
+  ['jump_5fentry_18',['jump_entry',['../structjump__entry.html',1,'']]],
+  ['jump_5flabel_5fpatch_19',['jump_label_patch',['../structjump__label__patch.html',1,'']]],
+  ['jvc_5fdec_20',['jvc_dec',['../structjvc__dec.html',1,'']]]
+];

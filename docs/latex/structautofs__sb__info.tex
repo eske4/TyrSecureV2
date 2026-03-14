@@ -1,0 +1,73 @@
+\doxysection{autofs\+\_\+sb\+\_\+info Struct Reference}
+\hypertarget{structautofs__sb__info}{}\label{structautofs__sb__info}\index{autofs\_sb\_info@{autofs\_sb\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structautofs__sb__info_a2809993e0cc045b6b7d42f5d61a6e53f}\label{structautofs__sb__info_a2809993e0cc045b6b7d42f5d61a6e53f} 
+u32 {\bfseries magic}
+\item 
+\Hypertarget{structautofs__sb__info_a68aefd83113e068a2eafbc8d6a725ec4}\label{structautofs__sb__info_a68aefd83113e068a2eafbc8d6a725ec4} 
+int {\bfseries pipefd}
+\item 
+\Hypertarget{structautofs__sb__info_a9bb770c86fea247966c0031fa9e01e3b}\label{structautofs__sb__info_a9bb770c86fea247966c0031fa9e01e3b} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries pipe}
+\item 
+\Hypertarget{structautofs__sb__info_aff50d323173388a23e4b982342a20986}\label{structautofs__sb__info_aff50d323173388a23e4b982342a20986} 
+struct \doxymbox{\hyperlink{structpid}{pid}} \texorpdfstring{$\ast$}{*} {\bfseries oz\+\_\+pgrp}
+\item 
+\Hypertarget{structautofs__sb__info_afbb544db656cb58a244a208f6ede9832}\label{structautofs__sb__info_afbb544db656cb58a244a208f6ede9832} 
+u64 {\bfseries mnt\+\_\+ns\+\_\+id}
+\item 
+\Hypertarget{structautofs__sb__info_a27786bf51cf508fe4f07022857473143}\label{structautofs__sb__info_a27786bf51cf508fe4f07022857473143} 
+int {\bfseries version}
+\item 
+\Hypertarget{structautofs__sb__info_a59207d59f9dc11ea8f7ef770de70e2bf}\label{structautofs__sb__info_a59207d59f9dc11ea8f7ef770de70e2bf} 
+int {\bfseries sub\+\_\+version}
+\item 
+\Hypertarget{structautofs__sb__info_a35854cefda3a6f02704f1231acdc5700}\label{structautofs__sb__info_a35854cefda3a6f02704f1231acdc5700} 
+int {\bfseries min\+\_\+proto}
+\item 
+\Hypertarget{structautofs__sb__info_a560e45651b677d52299f485bac9f5c1f}\label{structautofs__sb__info_a560e45651b677d52299f485bac9f5c1f} 
+int {\bfseries max\+\_\+proto}
+\item 
+\Hypertarget{structautofs__sb__info_a64b06de96560a9e9d93c8930c380ed3f}\label{structautofs__sb__info_a64b06de96560a9e9d93c8930c380ed3f} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structautofs__sb__info_ac01de507603c631f132b4bb9cf0efd8d}\label{structautofs__sb__info_ac01de507603c631f132b4bb9cf0efd8d} 
+long unsigned int {\bfseries exp\+\_\+timeout}
+\item 
+\Hypertarget{structautofs__sb__info_a34a8a43e05daad995849c1016237a3ce}\label{structautofs__sb__info_a34a8a43e05daad995849c1016237a3ce} 
+unsigned int {\bfseries type}
+\item 
+\Hypertarget{structautofs__sb__info_aab4c0f45218f8b47810be2b7b81d510f}\label{structautofs__sb__info_aab4c0f45218f8b47810be2b7b81d510f} 
+struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*} {\bfseries sb}
+\item 
+\Hypertarget{structautofs__sb__info_a25460b2ce9bc3697255258021555ecd0}\label{structautofs__sb__info_a25460b2ce9bc3697255258021555ecd0} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries wq\+\_\+mutex}
+\item 
+\Hypertarget{structautofs__sb__info_a6e4a61b189fc7ee197f69eda0666e604}\label{structautofs__sb__info_a6e4a61b189fc7ee197f69eda0666e604} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries pipe\+\_\+mutex}
+\item 
+\Hypertarget{structautofs__sb__info_a87b027f85058ed8ffefa7806a12cf89d}\label{structautofs__sb__info_a87b027f85058ed8ffefa7806a12cf89d} 
+spinlock\+\_\+t {\bfseries fs\+\_\+lock}
+\item 
+\Hypertarget{structautofs__sb__info_acb94b692fe5bf3f856d4e3d5bf717273}\label{structautofs__sb__info_acb94b692fe5bf3f856d4e3d5bf717273} 
+struct \doxymbox{\hyperlink{structautofs__wait__queue}{autofs\+\_\+wait\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries queues}
+\item 
+\Hypertarget{structautofs__sb__info_a88903d8d643369f0d74747523575a788}\label{structautofs__sb__info_a88903d8d643369f0d74747523575a788} 
+spinlock\+\_\+t {\bfseries lookup\+\_\+lock}
+\item 
+\Hypertarget{structautofs__sb__info_a467dbef844a7837fb8c57fb74d9f8f93}\label{structautofs__sb__info_a467dbef844a7837fb8c57fb74d9f8f93} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries active\+\_\+list}
+\item 
+\Hypertarget{structautofs__sb__info_aaed2760efe4e959a71fe5ab2a353f2be}\label{structautofs__sb__info_aaed2760efe4e959a71fe5ab2a353f2be} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries expiring\+\_\+list}
+\item 
+\Hypertarget{structautofs__sb__info_ae680bab5fab939c0053d4a3445852e2b}\label{structautofs__sb__info_ae680bab5fab939c0053d4a3445852e2b} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\doxysection{dev\+\_\+pagemap Struct Reference}
+\hypertarget{structdev__pagemap}{}\label{structdev__pagemap}\index{dev\_pagemap@{dev\_pagemap}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdev__pagemap_aec79b9cd758373ccc1c4bc3d3d40f3c9}\label{structdev__pagemap_aec79b9cd758373ccc1c4bc3d3d40f3c9} 
+struct \doxymbox{\hyperlink{structvmem__altmap}{vmem\+\_\+altmap}} {\bfseries altmap}
+\item 
+\Hypertarget{structdev__pagemap_af41cf291be6b2c877252dadee0637299}\label{structdev__pagemap_af41cf291be6b2c877252dadee0637299} 
+struct \doxymbox{\hyperlink{structpercpu__ref}{percpu\+\_\+ref}} {\bfseries ref}
+\item 
+\Hypertarget{structdev__pagemap_aa4a2bd8c043a62d5f027fc726949388f}\label{structdev__pagemap_aa4a2bd8c043a62d5f027fc726949388f} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries done}
+\item 
+\Hypertarget{structdev__pagemap_a66be0370d6cb920299672b514d690deb}\label{structdev__pagemap_a66be0370d6cb920299672b514d690deb} 
+enum memory\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structdev__pagemap_a5d605a2de48ce4d0aa79866fed2e7665}\label{structdev__pagemap_a5d605a2de48ce4d0aa79866fed2e7665} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structdev__pagemap_a3c851d62f95054d3cb0c1a836e98bb08}\label{structdev__pagemap_a3c851d62f95054d3cb0c1a836e98bb08} 
+long unsigned int {\bfseries vmemmap\+\_\+shift}
+\item 
+\Hypertarget{structdev__pagemap_a297adfff929d9a6c5bc752d585f0233f}\label{structdev__pagemap_a297adfff929d9a6c5bc752d585f0233f} 
+const struct \doxymbox{\hyperlink{structdev__pagemap__ops}{dev\+\_\+pagemap\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structdev__pagemap_a075400f94d02e0c14d56b04045b79dd4}\label{structdev__pagemap_a075400f94d02e0c14d56b04045b79dd4} 
+void \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structdev__pagemap_a78212bd2cd14ce37026faefa7ee291c3}\label{structdev__pagemap_a78212bd2cd14ce37026faefa7ee291c3} 
+int {\bfseries nr\+\_\+range}
+\item 
+\Hypertarget{structdev__pagemap_a17f342d100e76c018e2517ca4db98601}\label{structdev__pagemap_a17f342d100e76c018e2517ca4db98601} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structrange}{range}} {\bfseries range}\\
+\Hypertarget{uniondev__pagemap_1_1_0d154354007337107230130255336067031067137117030225_abc648900d372ec16f6687a528d4fa7de}\label{uniondev__pagemap_1_1_0d154354007337107230130255336067031067137117030225_abc648900d372ec16f6687a528d4fa7de} 
+\>struct \{\\
+\>\>struct \{\\
+\>\>\} {\bfseries \_\_empty\_ranges}\\
+\>\>struct \doxymbox{\hyperlink{structrange}{range}} {\bfseries ranges} \+[0]\+\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

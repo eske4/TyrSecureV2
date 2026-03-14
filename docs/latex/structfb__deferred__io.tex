@@ -1,0 +1,34 @@
+\doxysection{fb\+\_\+deferred\+\_\+io Struct Reference}
+\hypertarget{structfb__deferred__io}{}\label{structfb__deferred__io}\index{fb\_deferred\_io@{fb\_deferred\_io}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfb__deferred__io_a3b46de8dcd472d46a3b71aa074684daa}\label{structfb__deferred__io_a3b46de8dcd472d46a3b71aa074684daa} 
+long unsigned int {\bfseries delay}
+\item 
+\Hypertarget{structfb__deferred__io_af52ad0aa7938fb303dc6c2562eb88438}\label{structfb__deferred__io_af52ad0aa7938fb303dc6c2562eb88438} 
+bool {\bfseries sort\+\_\+pagereflist}
+\item 
+\Hypertarget{structfb__deferred__io_a83b9371fe08875dbd3fd2fd1fbeffda3}\label{structfb__deferred__io_a83b9371fe08875dbd3fd2fd1fbeffda3} 
+int {\bfseries open\+\_\+count}
+\item 
+\Hypertarget{structfb__deferred__io_afb9af81df641a66d4af918b13ec1b495}\label{structfb__deferred__io_afb9af81df641a66d4af918b13ec1b495} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries lock}
+\item 
+\Hypertarget{structfb__deferred__io_a0804d1158e462400d905a83f24f0ad59}\label{structfb__deferred__io_a0804d1158e462400d905a83f24f0ad59} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pagereflist}
+\item 
+\Hypertarget{structfb__deferred__io_a32877c9814b8aef62dc7ae17ca08a1d1}\label{structfb__deferred__io_a32877c9814b8aef62dc7ae17ca08a1d1} 
+struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*} {\bfseries mapping}
+\item 
+\Hypertarget{structfb__deferred__io_a4ff14549c6b4c5470ab8fe0c739901cf}\label{structfb__deferred__io_a4ff14549c6b4c5470ab8fe0c739901cf} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+page} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structfb__deferred__io_ac77b62b593b2ddf4069b8992e2e9c0bd}\label{structfb__deferred__io_ac77b62b593b2ddf4069b8992e2e9c0bd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries deferred\+\_\+io} )(struct \doxymbox{\hyperlink{structfb__info}{fb\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

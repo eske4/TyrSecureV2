@@ -1,0 +1,130 @@
+\doxysection{pv\+\_\+mmu\+\_\+ops Struct Reference}
+\hypertarget{structpv__mmu__ops}{}\label{structpv__mmu__ops}\index{pv\_mmu\_ops@{pv\_mmu\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpv__mmu__ops_a88cdf20502ddc1b51132e55799150ced}\label{structpv__mmu__ops_a88cdf20502ddc1b51132e55799150ced} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+tlb\+\_\+user} )(void)
+\item 
+\Hypertarget{structpv__mmu__ops_a08ab8227619e4f92431c82d79987794a}\label{structpv__mmu__ops_a08ab8227619e4f92431c82d79987794a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+tlb\+\_\+kernel} )(void)
+\item 
+\Hypertarget{structpv__mmu__ops_a361beba4b151f3edd6f421ac0160bb7c}\label{structpv__mmu__ops_a361beba4b151f3edd6f421ac0160bb7c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+tlb\+\_\+one\+\_\+user} )(long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_ae5da52a3337bce70fa6d97b1ed2ea6ef}\label{structpv__mmu__ops_ae5da52a3337bce70fa6d97b1ed2ea6ef} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+tlb\+\_\+multi} )(const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structflush__tlb__info}{flush\+\_\+tlb\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__mmu__ops_a63e1907f663842e9df3c43415a9a4416}\label{structpv__mmu__ops_a63e1907f663842e9df3c43415a9a4416} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit\+\_\+mmap} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__mmu__ops_a321db7da0e9319ae3afc24ce2eb9ebac}\label{structpv__mmu__ops_a321db7da0e9319ae3afc24ce2eb9ebac} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries notify\+\_\+page\+\_\+enc\+\_\+status\+\_\+changed} )(long unsigned int, int, bool)
+\item 
+\Hypertarget{structpv__mmu__ops_ae6071b592a4e1093f2d2f1d544501027}\label{structpv__mmu__ops_ae6071b592a4e1093f2d2f1d544501027} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries read\+\_\+cr2}
+\item 
+\Hypertarget{structpv__mmu__ops_afd9c4733ee4211ccccf15f372e6a202a}\label{structpv__mmu__ops_afd9c4733ee4211ccccf15f372e6a202a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+cr2} )(long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_ab87b709311bb9da189009831cc42df67}\label{structpv__mmu__ops_ab87b709311bb9da189009831cc42df67} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+cr3} )(void)
+\item 
+\Hypertarget{structpv__mmu__ops_a737efefe1f1d4b6f1fb1de2a87e9145a}\label{structpv__mmu__ops_a737efefe1f1d4b6f1fb1de2a87e9145a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+cr3} )(long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_a1d30e0907973600a2d4c223759ad3f14}\label{structpv__mmu__ops_a1d30e0907973600a2d4c223759ad3f14} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enter\+\_\+mmap} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__mmu__ops_aab7323a3e7671f594ddfd3050a57ddf5}\label{structpv__mmu__ops_aab7323a3e7671f594ddfd3050a57ddf5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pgd\+\_\+alloc} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__mmu__ops_a603900eeabdcd5b1c64d6d34b89c4e35}\label{structpv__mmu__ops_a603900eeabdcd5b1c64d6d34b89c4e35} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pgd\+\_\+free} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structpgd__t}{pgd\+\_\+t}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__mmu__ops_acef9b1ba6c06f604544709b9f6498824}\label{structpv__mmu__ops_acef9b1ba6c06f604544709b9f6498824} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+pte} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_a9e9c74b7d36b6cd387f42e889a88f9ca}\label{structpv__mmu__ops_a9e9c74b7d36b6cd387f42e889a88f9ca} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+pmd} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_af4517395d6382c64747a56e500f30a4e}\label{structpv__mmu__ops_af4517395d6382c64747a56e500f30a4e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+pud} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_a702528dec90e816978845edda699df79}\label{structpv__mmu__ops_a702528dec90e816978845edda699df79} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+p4d} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_a908eba202dcb7d6f614c44328459b650}\label{structpv__mmu__ops_a908eba202dcb7d6f614c44328459b650} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+pte} )(long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_abfaa1896a1804580e7fe4e1e0dc2bfb4}\label{structpv__mmu__ops_abfaa1896a1804580e7fe4e1e0dc2bfb4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+pmd} )(long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_ac0a29956107815fee4e0fde392228834}\label{structpv__mmu__ops_ac0a29956107815fee4e0fde392228834} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+pud} )(long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_a5cbf6e58c32c9fe939f98bb7336a4bda}\label{structpv__mmu__ops_a5cbf6e58c32c9fe939f98bb7336a4bda} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+p4d} )(long unsigned int)
+\item 
+\Hypertarget{structpv__mmu__ops_ac7bebc8f3cb6fb31f26aa26481bf25ac}\label{structpv__mmu__ops_ac7bebc8f3cb6fb31f26aa26481bf25ac} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+pte} )(\doxymbox{\hyperlink{structpte__t}{pte\+\_\+t}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structpte__t}{pte\+\_\+t}})
+\item 
+\Hypertarget{structpv__mmu__ops_a4993d46223040d3dcb05a14aaceaafe9}\label{structpv__mmu__ops_a4993d46223040d3dcb05a14aaceaafe9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+pmd} )(\doxymbox{\hyperlink{structpmd__t}{pmd\+\_\+t}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structpmd__t}{pmd\+\_\+t}})
+\item 
+\Hypertarget{structpv__mmu__ops_ac6279e829155f6d97bdcce2b02c8f8bd}\label{structpv__mmu__ops_ac6279e829155f6d97bdcce2b02c8f8bd} 
+\doxymbox{\hyperlink{structpte__t}{pte\+\_\+t}}(\texorpdfstring{$\ast$}{*} {\bfseries ptep\+\_\+modify\+\_\+prot\+\_\+start} )(struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int, \doxymbox{\hyperlink{structpte__t}{pte\+\_\+t}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpv__mmu__ops_ad028e45b5ef25d706c5f206c85d86271}\label{structpv__mmu__ops_ad028e45b5ef25d706c5f206c85d86271} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ptep\+\_\+modify\+\_\+prot\+\_\+commit} )(struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int, \doxymbox{\hyperlink{structpte__t}{pte\+\_\+t}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structpte__t}{pte\+\_\+t}})
+\item 
+\Hypertarget{structpv__mmu__ops_a5edf82862bc1310e02a14ad27a6ae583}\label{structpv__mmu__ops_a5edf82862bc1310e02a14ad27a6ae583} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries pte\+\_\+val}
+\item 
+\Hypertarget{structpv__mmu__ops_a37bf82340e91f7d61ce2a3dbe18be2ba}\label{structpv__mmu__ops_a37bf82340e91f7d61ce2a3dbe18be2ba} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries make\+\_\+pte}
+\item 
+\Hypertarget{structpv__mmu__ops_a730f019662d3fe1407fba84d598c2a32}\label{structpv__mmu__ops_a730f019662d3fe1407fba84d598c2a32} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries pgd\+\_\+val}
+\item 
+\Hypertarget{structpv__mmu__ops_abf99cb14e3cd2e43c5555c034c4d3f4f}\label{structpv__mmu__ops_abf99cb14e3cd2e43c5555c034c4d3f4f} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries make\+\_\+pgd}
+\item 
+\Hypertarget{structpv__mmu__ops_ad0b193a6c947afebac143d34f9377542}\label{structpv__mmu__ops_ad0b193a6c947afebac143d34f9377542} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+pud} )(\doxymbox{\hyperlink{structpud__t}{pud\+\_\+t}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structpud__t}{pud\+\_\+t}})
+\item 
+\Hypertarget{structpv__mmu__ops_a2e4a4751c5b77fb8fa5a1002c9a35d88}\label{structpv__mmu__ops_a2e4a4751c5b77fb8fa5a1002c9a35d88} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries pmd\+\_\+val}
+\item 
+\Hypertarget{structpv__mmu__ops_a636b57698b3baab4eca84d492d637933}\label{structpv__mmu__ops_a636b57698b3baab4eca84d492d637933} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries make\+\_\+pmd}
+\item 
+\Hypertarget{structpv__mmu__ops_a1d1c17c3132a6a87d30d701697aeeca5}\label{structpv__mmu__ops_a1d1c17c3132a6a87d30d701697aeeca5} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries pud\+\_\+val}
+\item 
+\Hypertarget{structpv__mmu__ops_aa104b238b952cd9f069df174b05351fb}\label{structpv__mmu__ops_aa104b238b952cd9f069df174b05351fb} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries make\+\_\+pud}
+\item 
+\Hypertarget{structpv__mmu__ops_a259e53156b34de2cd45c88896daf67cb}\label{structpv__mmu__ops_a259e53156b34de2cd45c88896daf67cb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+p4d} )(\doxymbox{\hyperlink{structp4d__t}{p4d\+\_\+t}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structp4d__t}{p4d\+\_\+t}})
+\item 
+\Hypertarget{structpv__mmu__ops_a714cfe47f2349e5e028fe9914cc5a0a3}\label{structpv__mmu__ops_a714cfe47f2349e5e028fe9914cc5a0a3} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries p4d\+\_\+val}
+\item 
+\Hypertarget{structpv__mmu__ops_a462c0ee294e9e1faa9b5c78817c84c99}\label{structpv__mmu__ops_a462c0ee294e9e1faa9b5c78817c84c99} 
+struct \doxymbox{\hyperlink{structparavirt__callee__save}{paravirt\+\_\+callee\+\_\+save}} {\bfseries make\+\_\+p4d}
+\item 
+\Hypertarget{structpv__mmu__ops_ac291b57e8d7b99aa9cd289ee91f1d522}\label{structpv__mmu__ops_ac291b57e8d7b99aa9cd289ee91f1d522} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+pgd} )(\doxymbox{\hyperlink{structpgd__t}{pgd\+\_\+t}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{structpgd__t}{pgd\+\_\+t}})
+\item 
+\Hypertarget{structpv__mmu__ops_a0315c1f933f198f0ce58cb4f377d72be}\label{structpv__mmu__ops_a0315c1f933f198f0ce58cb4f377d72be} 
+struct \doxymbox{\hyperlink{structpv__lazy__ops}{pv\+\_\+lazy\+\_\+ops}} {\bfseries lazy\+\_\+mode}
+\item 
+\Hypertarget{structpv__mmu__ops_a94a5b5ed27ee1d64730a59efccf85bb3}\label{structpv__mmu__ops_a94a5b5ed27ee1d64730a59efccf85bb3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+fixmap} )(unsigned int, phys\+\_\+addr\+\_\+t, pgprot\+\_\+t)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

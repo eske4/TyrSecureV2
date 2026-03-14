@@ -1,0 +1,55 @@
+\doxysection{macsec\+\_\+context Struct Reference}
+\hypertarget{structmacsec__context}{}\label{structmacsec__context}\index{macsec\_context@{macsec\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmacsec__context_a9b68451b18e784936a12fb4eba9a4e3f}\label{structmacsec__context_a9b68451b18e784936a12fb4eba9a4e3f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structnet__device}{net\_device}} \texorpdfstring{$\ast$}{*} {\bfseries netdev}\\
+\>struct \doxymbox{\hyperlink{structphy__device}{phy\_device}} \texorpdfstring{$\ast$}{*} {\bfseries phydev}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmacsec__context_a4fd2d11a1a420710e866db0441e66992}\label{structmacsec__context_a4fd2d11a1a420710e866db0441e66992} 
+enum macsec\+\_\+offload {\bfseries offload}
+\item 
+\Hypertarget{structmacsec__context_ac7deee94a985fc34d6a80df2eef3217b}\label{structmacsec__context_ac7deee94a985fc34d6a80df2eef3217b} 
+struct \doxymbox{\hyperlink{structmacsec__secy}{macsec\+\_\+secy}} \texorpdfstring{$\ast$}{*} {\bfseries secy}
+\item 
+\Hypertarget{structmacsec__context_ad14220528599bb148a8e011b4472213c}\label{structmacsec__context_ad14220528599bb148a8e011b4472213c} 
+struct \doxymbox{\hyperlink{structmacsec__rx__sc}{macsec\+\_\+rx\+\_\+sc}} \texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+sc}
+\item 
+\Hypertarget{structmacsec__context_ad078da83371fb0aba9da6b20473423ac}\label{structmacsec__context_ad078da83371fb0aba9da6b20473423ac} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>bool {\bfseries update\_pn}\\
+\>unsigned char {\bfseries assoc\_num}\\
+\>u8 {\bfseries key} \+[128]\+\\
+\Hypertarget{structmacsec__context_1_1_0d325233341130067347064002237035057330224046037206_a28697caa6e6c6fb295bb3d37f37092cb}\label{structmacsec__context_1_1_0d325233341130067347064002237035057330224046037206_a28697caa6e6c6fb295bb3d37f37092cb} 
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{structmacsec__rx__sa}{macsec\_rx\_sa}} \texorpdfstring{$\ast$}{*} {\bfseries rx\_sa}\\
+\>\>struct \doxymbox{\hyperlink{structmacsec__tx__sa}{macsec\_tx\_sa}} \texorpdfstring{$\ast$}{*} {\bfseries tx\_sa}\\
+\>\} \\
+\} {\bfseries sa}\\
+
+\end{tabbing}\item 
+\Hypertarget{structmacsec__context_a2a18f14ac531bed98c77fdc966880d15}\label{structmacsec__context_a2a18f14ac531bed98c77fdc966880d15} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structmacsec__tx__sc__stats}{macsec\_tx\_sc\_stats}} \texorpdfstring{$\ast$}{*} {\bfseries tx\_sc\_stats}\\
+\>struct \doxymbox{\hyperlink{structmacsec__tx__sa__stats}{macsec\_tx\_sa\_stats}} \texorpdfstring{$\ast$}{*} {\bfseries tx\_sa\_stats}\\
+\>struct \doxymbox{\hyperlink{structmacsec__rx__sc__stats}{macsec\_rx\_sc\_stats}} \texorpdfstring{$\ast$}{*} {\bfseries rx\_sc\_stats}\\
+\>struct \doxymbox{\hyperlink{structmacsec__rx__sa__stats}{macsec\_rx\_sa\_stats}} \texorpdfstring{$\ast$}{*} {\bfseries rx\_sa\_stats}\\
+\>struct \doxymbox{\hyperlink{structmacsec__dev__stats}{macsec\_dev\_stats}} \texorpdfstring{$\ast$}{*} {\bfseries dev\_stats}\\
+\} {\bfseries stats}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

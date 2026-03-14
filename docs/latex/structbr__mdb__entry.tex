@@ -1,0 +1,35 @@
+\doxysection{br\+\_\+mdb\+\_\+entry Struct Reference}
+\hypertarget{structbr__mdb__entry}{}\label{structbr__mdb__entry}\index{br\_mdb\_entry@{br\_mdb\_entry}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbr__mdb__entry_a333cc2d3db31c59dc65db7830644c55d}\label{structbr__mdb__entry_a333cc2d3db31c59dc65db7830644c55d} 
+\+\_\+\+\_\+u32 {\bfseries ifindex}
+\item 
+\Hypertarget{structbr__mdb__entry_a4f5b0232b40aba780bf854acaffb4c1f}\label{structbr__mdb__entry_a4f5b0232b40aba780bf854acaffb4c1f} 
+\+\_\+\+\_\+u8 {\bfseries state}
+\item 
+\Hypertarget{structbr__mdb__entry_a4af8e91638665446356cd4c628a00525}\label{structbr__mdb__entry_a4af8e91638665446356cd4c628a00525} 
+\+\_\+\+\_\+u8 {\bfseries flags}
+\item 
+\Hypertarget{structbr__mdb__entry_a5e25f7ff457e947a2beb2806d65c868f}\label{structbr__mdb__entry_a5e25f7ff457e947a2beb2806d65c868f} 
+\+\_\+\+\_\+u16 {\bfseries vid}
+\item 
+\Hypertarget{structbr__mdb__entry_acf44af2ce0e4b7f8906fd503f825e961}\label{structbr__mdb__entry_acf44af2ce0e4b7f8906fd503f825e961} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>union \{\\
+\>\>\_\_be32 {\bfseries ip4}\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries ip6}\\
+\>\>unsigned char {\bfseries mac\_addr} \+[6]\+\\
+\>\} {\bfseries u}\\
+\>\_\_be16 {\bfseries proto}\\
+\} {\bfseries addr}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

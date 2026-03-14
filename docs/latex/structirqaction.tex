@@ -1,0 +1,67 @@
+\doxysection{irqaction Struct Reference}
+\hypertarget{structirqaction}{}\label{structirqaction}\index{irqaction@{irqaction}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structirqaction_ae68f9d08235982389a01ccc12214330b}\label{structirqaction_ae68f9d08235982389a01ccc12214330b} 
+irq\+\_\+handler\+\_\+t {\bfseries handler}
+\item 
+\Hypertarget{structirqaction_a7e0661560394380ca6193192e5efe205}\label{structirqaction_a7e0661560394380ca6193192e5efe205} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries dev\_id}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries percpu\_dev\_id}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structirqaction_ac322799607e7f4542c0e251249b6f8d8}\label{structirqaction_ac322799607e7f4542c0e251249b6f8d8} 
+const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*} {\bfseries affinity}
+\item 
+\Hypertarget{structirqaction_a25bdabc72d8e695e16d2a25064e5ac07}\label{structirqaction_a25bdabc72d8e695e16d2a25064e5ac07} 
+struct \doxymbox{\hyperlink{structirqaction}{irqaction}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\item 
+\Hypertarget{structirqaction_a0e351bba9cb3ef59a54451e37cb78ce4}\label{structirqaction_a0e351bba9cb3ef59a54451e37cb78ce4} 
+irq\+\_\+handler\+\_\+t {\bfseries thread\+\_\+fn}
+\item 
+\Hypertarget{structirqaction_a48dca39fc6683f63ab94da0a38ea242e}\label{structirqaction_a48dca39fc6683f63ab94da0a38ea242e} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries thread}
+\item 
+\Hypertarget{structirqaction_ae479169f520c00188ef97089db65d26c}\label{structirqaction_ae479169f520c00188ef97089db65d26c} 
+struct \doxymbox{\hyperlink{structirqaction}{irqaction}} \texorpdfstring{$\ast$}{*} {\bfseries secondary}
+\item 
+\Hypertarget{structirqaction_a3be899b787a3aa6a1141ad9a2212bf19}\label{structirqaction_a3be899b787a3aa6a1141ad9a2212bf19} 
+unsigned int {\bfseries irq}
+\item 
+\Hypertarget{structirqaction_adec8ba1486b7d14a483ae5fbcad29295}\label{structirqaction_adec8ba1486b7d14a483ae5fbcad29295} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structirqaction_ace5e68c1b8c221e2b0111deaed557d4a}\label{structirqaction_ace5e68c1b8c221e2b0111deaed557d4a} 
+long unsigned int {\bfseries thread\+\_\+flags}
+\item 
+\Hypertarget{structirqaction_a06e582a80b30d1bcc7804d950493fe15}\label{structirqaction_a06e582a80b30d1bcc7804d950493fe15} 
+long unsigned int {\bfseries thread\+\_\+mask}
+\item 
+\Hypertarget{structirqaction_ad65ac787d4d9014da42e79f638e8ac6c}\label{structirqaction_ad65ac787d4d9014da42e79f638e8ac6c} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structirqaction_a22f505ba93852627269b6f8820951db8}\label{structirqaction_a22f505ba93852627269b6f8820951db8} 
+struct \doxymbox{\hyperlink{structproc__dir__entry}{proc\+\_\+dir\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries dir}
+\item 
+\Hypertarget{structirqaction_a7f539c82392bf3d401539fc1c754f07a}\label{structirqaction_a7f539c82392bf3d401539fc1c754f07a} 
+long :\+ 64
+\item 
+\Hypertarget{structirqaction_a6bf28d30e6a93017973e8ca629f95a00}\label{structirqaction_a6bf28d30e6a93017973e8ca629f95a00} 
+long :\+ 64
+\item 
+\Hypertarget{structirqaction_a979272e8d8d9c6bf0887d4f34e48ca39}\label{structirqaction_a979272e8d8d9c6bf0887d4f34e48ca39} 
+long :\+ 64
+\item 
+\Hypertarget{structirqaction_ad7d9ef08ede1c0a22f57a2e85d430de7}\label{structirqaction_ad7d9ef08ede1c0a22f57a2e85d430de7} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

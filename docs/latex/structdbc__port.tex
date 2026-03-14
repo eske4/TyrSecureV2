@@ -1,0 +1,43 @@
+\doxysection{dbc\+\_\+port Struct Reference}
+\hypertarget{structdbc__port}{}\label{structdbc__port}\index{dbc\_port@{dbc\_port}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdbc__port_aac5f6af50a8d38ed4bb427cdb07b812c}\label{structdbc__port_aac5f6af50a8d38ed4bb427cdb07b812c} 
+struct \doxymbox{\hyperlink{structtty__port}{tty\+\_\+port}} {\bfseries port}
+\item 
+\Hypertarget{structdbc__port_a8add56cc0a222b16f114f473e1fbce9f}\label{structdbc__port_a8add56cc0a222b16f114f473e1fbce9f} 
+spinlock\+\_\+t {\bfseries port\+\_\+lock}
+\item 
+\Hypertarget{structdbc__port_a1b569cd4f7923e2363518262a9ef8cab}\label{structdbc__port_a1b569cd4f7923e2363518262a9ef8cab} 
+int {\bfseries minor}
+\item 
+\Hypertarget{structdbc__port_a9871724e3532c780eec096a31279e5ca}\label{structdbc__port_a9871724e3532c780eec096a31279e5ca} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries read\+\_\+pool}
+\item 
+\Hypertarget{structdbc__port_a514cf595cd9cbaf74132f31d4c39fa9e}\label{structdbc__port_a514cf595cd9cbaf74132f31d4c39fa9e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries read\+\_\+queue}
+\item 
+\Hypertarget{structdbc__port_a0eb9c91063e9b8c5f346e1306545315d}\label{structdbc__port_a0eb9c91063e9b8c5f346e1306545315d} 
+unsigned int {\bfseries n\+\_\+read}
+\item 
+\Hypertarget{structdbc__port_af968946611b363952fed7f46a390f5ca}\label{structdbc__port_af968946611b363952fed7f46a390f5ca} 
+struct \doxymbox{\hyperlink{structtasklet__struct}{tasklet\+\_\+struct}} {\bfseries push}
+\item 
+\Hypertarget{structdbc__port_afa7e4fd164d16353d5afe52ad0e85d34}\label{structdbc__port_afa7e4fd164d16353d5afe52ad0e85d34} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries write\+\_\+pool}
+\item 
+\Hypertarget{structdbc__port_a375650860e7455db73b261afb0bc018c}\label{structdbc__port_a375650860e7455db73b261afb0bc018c} 
+unsigned int {\bfseries tx\+\_\+boundary}
+\item 
+\Hypertarget{structdbc__port_a93fa1aad412b23b92eb07b61e5c883d9}\label{structdbc__port_a93fa1aad412b23b92eb07b61e5c883d9} 
+bool {\bfseries registered}
+\item 
+\Hypertarget{structdbc__port_ac4c82b9e8c193525b47cc41df769049d}\label{structdbc__port_ac4c82b9e8c193525b47cc41df769049d} 
+bool {\bfseries tx\+\_\+running}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

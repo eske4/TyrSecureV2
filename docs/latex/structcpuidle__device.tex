@@ -1,0 +1,52 @@
+\doxysection{cpuidle\+\_\+device Struct Reference}
+\hypertarget{structcpuidle__device}{}\label{structcpuidle__device}\index{cpuidle\_device@{cpuidle\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcpuidle__device_ade9a22d32039c808a86a195245ecbad4}\label{structcpuidle__device_ade9a22d32039c808a86a195245ecbad4} 
+unsigned int {\bfseries registered}:\+ 1
+\item 
+\Hypertarget{structcpuidle__device_a96a4a4a2d222496c3619c60d6aa4d144}\label{structcpuidle__device_a96a4a4a2d222496c3619c60d6aa4d144} 
+unsigned int {\bfseries enabled}:\+ 1
+\item 
+\Hypertarget{structcpuidle__device_a6b64c1ef96fdaf54d25ce3db8e5eb034}\label{structcpuidle__device_a6b64c1ef96fdaf54d25ce3db8e5eb034} 
+unsigned int {\bfseries poll\+\_\+time\+\_\+limit}:\+ 1
+\item 
+\Hypertarget{structcpuidle__device_a23bb50b0db0299275a4a9b599b393453}\label{structcpuidle__device_a23bb50b0db0299275a4a9b599b393453} 
+unsigned int {\bfseries cpu}
+\item 
+\Hypertarget{structcpuidle__device_aca068bb81e2788eb4c3b1487b949d58c}\label{structcpuidle__device_aca068bb81e2788eb4c3b1487b949d58c} 
+ktime\+\_\+t {\bfseries next\+\_\+hrtimer}
+\item 
+\Hypertarget{structcpuidle__device_a69c6db734e1d97130a938cce584ccbae}\label{structcpuidle__device_a69c6db734e1d97130a938cce584ccbae} 
+int {\bfseries last\+\_\+state\+\_\+idx}
+\item 
+\Hypertarget{structcpuidle__device_afa253d642a0503b59b7ed21dac6053c1}\label{structcpuidle__device_afa253d642a0503b59b7ed21dac6053c1} 
+u64 {\bfseries last\+\_\+residency\+\_\+ns}
+\item 
+\Hypertarget{structcpuidle__device_ab5c43af825656deb23fb955d81ef30ba}\label{structcpuidle__device_ab5c43af825656deb23fb955d81ef30ba} 
+u64 {\bfseries poll\+\_\+limit\+\_\+ns}
+\item 
+\Hypertarget{structcpuidle__device_a1b4b93f37bad381fefa9e815b074c66d}\label{structcpuidle__device_a1b4b93f37bad381fefa9e815b074c66d} 
+u64 {\bfseries forced\+\_\+idle\+\_\+latency\+\_\+limit\+\_\+ns}
+\item 
+\Hypertarget{structcpuidle__device_a1096a51fe3233fde4f248666614bac4b}\label{structcpuidle__device_a1096a51fe3233fde4f248666614bac4b} 
+struct \doxymbox{\hyperlink{structcpuidle__state__usage}{cpuidle\+\_\+state\+\_\+usage}} {\bfseries states\+\_\+usage} \+[10]\+
+\item 
+\Hypertarget{structcpuidle__device_abbe453faf21196456757c2b727aab0ec}\label{structcpuidle__device_abbe453faf21196456757c2b727aab0ec} 
+struct \doxymbox{\hyperlink{structcpuidle__state__kobj}{cpuidle\+\_\+state\+\_\+kobj}} \texorpdfstring{$\ast$}{*} {\bfseries kobjs} \+[10]\+
+\item 
+\Hypertarget{structcpuidle__device_a40bca0e203aa8bc5e25e7170d057edfa}\label{structcpuidle__device_a40bca0e203aa8bc5e25e7170d057edfa} 
+struct cpuidle\+\_\+driver\+\_\+kobj \texorpdfstring{$\ast$}{*} {\bfseries kobj\+\_\+driver}
+\item 
+\Hypertarget{structcpuidle__device_a201b6d728fc10272c1f0716889d57ae0}\label{structcpuidle__device_a201b6d728fc10272c1f0716889d57ae0} 
+struct \doxymbox{\hyperlink{structcpuidle__device__kobj}{cpuidle\+\_\+device\+\_\+kobj}} \texorpdfstring{$\ast$}{*} {\bfseries kobj\+\_\+dev}
+\item 
+\Hypertarget{structcpuidle__device_ac177b56a36ccb8df88d91de4122aa14c}\label{structcpuidle__device_ac177b56a36ccb8df88d91de4122aa14c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries device\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

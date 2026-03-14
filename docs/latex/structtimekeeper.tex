@@ -1,0 +1,100 @@
+\doxysection{timekeeper Struct Reference}
+\hypertarget{structtimekeeper}{}\label{structtimekeeper}\index{timekeeper@{timekeeper}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtimekeeper_a49ba1b3421a2683254d73acf5681b277}\label{structtimekeeper_a49ba1b3421a2683254d73acf5681b277} 
+struct \doxymbox{\hyperlink{structtk__read__base}{tk\+\_\+read\+\_\+base}} {\bfseries tkr\+\_\+mono}
+\item 
+\Hypertarget{structtimekeeper_a69c26d40c232d039fe378ae7841d3467}\label{structtimekeeper_a69c26d40c232d039fe378ae7841d3467} 
+u64 {\bfseries xtime\+\_\+sec}
+\item 
+\Hypertarget{structtimekeeper_aaa27e8466ff917cd7fd581d2811ba38d}\label{structtimekeeper_aaa27e8466ff917cd7fd581d2811ba38d} 
+long unsigned int {\bfseries ktime\+\_\+sec}
+\item 
+\Hypertarget{structtimekeeper_a8740cd943be07ed79368bf19d45c318d}\label{structtimekeeper_a8740cd943be07ed79368bf19d45c318d} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries wall\+\_\+to\+\_\+monotonic}
+\item 
+\Hypertarget{structtimekeeper_a01dc5cde17a32502b8703e060f5ed8b0}\label{structtimekeeper_a01dc5cde17a32502b8703e060f5ed8b0} 
+ktime\+\_\+t {\bfseries offs\+\_\+real}
+\item 
+\Hypertarget{structtimekeeper_a09ca1f57189104fd9e2b304c85917720}\label{structtimekeeper_a09ca1f57189104fd9e2b304c85917720} 
+ktime\+\_\+t {\bfseries offs\+\_\+boot}
+\item 
+\Hypertarget{structtimekeeper_a2c272c75b4c6f630872094632c3a5ab2}\label{structtimekeeper_a2c272c75b4c6f630872094632c3a5ab2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>ktime\_t {\bfseries offs\_tai}\\
+\>ktime\_t {\bfseries offs\_aux}\\
+\} {\bfseries \_\_attribute\_\_}\\
+
+\end{tabbing}\item 
+\Hypertarget{structtimekeeper_a49cf8ad8edf452c328b72be3cdaaafe5}\label{structtimekeeper_a49cf8ad8edf452c328b72be3cdaaafe5} 
+u32 {\bfseries coarse\+\_\+nsec}
+\item 
+\Hypertarget{structtimekeeper_ab363e70c451317507d2989b7537c286f}\label{structtimekeeper_ab363e70c451317507d2989b7537c286f} 
+enum timekeeper\+\_\+ids {\bfseries id}
+\item 
+\Hypertarget{structtimekeeper_a240fb2fa9218eb6ec1af68f242448f60}\label{structtimekeeper_a240fb2fa9218eb6ec1af68f242448f60} 
+struct \doxymbox{\hyperlink{structtk__read__base}{tk\+\_\+read\+\_\+base}} {\bfseries tkr\+\_\+raw}
+\item 
+\Hypertarget{structtimekeeper_ab7eced367fa1b111d04e44256bad8901}\label{structtimekeeper_ab7eced367fa1b111d04e44256bad8901} 
+u64 {\bfseries raw\+\_\+sec}
+\item 
+\Hypertarget{structtimekeeper_a9fc99262c52c51704a8b914a871c82f1}\label{structtimekeeper_a9fc99262c52c51704a8b914a871c82f1} 
+unsigned int {\bfseries clock\+\_\+was\+\_\+set\+\_\+seq}
+\item 
+\Hypertarget{structtimekeeper_afdd9fec764dbc0f3685f51329faa8089}\label{structtimekeeper_afdd9fec764dbc0f3685f51329faa8089} 
+u8 {\bfseries cs\+\_\+was\+\_\+changed\+\_\+seq}
+\item 
+\Hypertarget{structtimekeeper_ad8676808e790ba073067c8a99aef4cc9}\label{structtimekeeper_ad8676808e790ba073067c8a99aef4cc9} 
+u8 {\bfseries clock\+\_\+valid}
+\item 
+\Hypertarget{structtimekeeper_a837623582ea293d9771f3480980c40a3}\label{structtimekeeper_a837623582ea293d9771f3480980c40a3} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries monotonic\_to\_boot}\\
+\>struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries monotonic\_to\_aux}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structtimekeeper_adddd122425a1c3b9a1462cacb02d01fb}\label{structtimekeeper_adddd122425a1c3b9a1462cacb02d01fb} 
+u64 {\bfseries cycle\+\_\+interval}
+\item 
+\Hypertarget{structtimekeeper_ad4aff0cef6e6dd485bcdd32d78cb4134}\label{structtimekeeper_ad4aff0cef6e6dd485bcdd32d78cb4134} 
+u64 {\bfseries xtime\+\_\+interval}
+\item 
+\Hypertarget{structtimekeeper_ae48cc100e4480aeb7b3ec0589eb1e8f6}\label{structtimekeeper_ae48cc100e4480aeb7b3ec0589eb1e8f6} 
+s64 {\bfseries xtime\+\_\+remainder}
+\item 
+\Hypertarget{structtimekeeper_aaaaa5a9a61bececc950b11a33859912c}\label{structtimekeeper_aaaaa5a9a61bececc950b11a33859912c} 
+u64 {\bfseries raw\+\_\+interval}
+\item 
+\Hypertarget{structtimekeeper_a72c1cc62048ee98ecc9e03c88ba388ff}\label{structtimekeeper_a72c1cc62048ee98ecc9e03c88ba388ff} 
+ktime\+\_\+t {\bfseries next\+\_\+leap\+\_\+ktime}
+\item 
+\Hypertarget{structtimekeeper_a179dee32a4941a823d7fe4611d65ed2b}\label{structtimekeeper_a179dee32a4941a823d7fe4611d65ed2b} 
+u64 {\bfseries ntp\+\_\+tick}
+\item 
+\Hypertarget{structtimekeeper_adb3a1e269f43f1312b10f8c3b2072900}\label{structtimekeeper_adb3a1e269f43f1312b10f8c3b2072900} 
+s64 {\bfseries ntp\+\_\+error}
+\item 
+\Hypertarget{structtimekeeper_a53583fd44a6b571223b888f2942d0a1a}\label{structtimekeeper_a53583fd44a6b571223b888f2942d0a1a} 
+u32 {\bfseries ntp\+\_\+error\+\_\+shift}
+\item 
+\Hypertarget{structtimekeeper_a2d4de9b6b84f242a6b724e450fbe280b}\label{structtimekeeper_a2d4de9b6b84f242a6b724e450fbe280b} 
+u32 {\bfseries ntp\+\_\+err\+\_\+mult}
+\item 
+\Hypertarget{structtimekeeper_ae8e325479ae9d2c76af69069793ac187}\label{structtimekeeper_ae8e325479ae9d2c76af69069793ac187} 
+u32 {\bfseries skip\+\_\+second\+\_\+overflow}
+\item 
+\Hypertarget{structtimekeeper_ada3bf3cf66a4ee1c5a47f74da4b85c04}\label{structtimekeeper_ada3bf3cf66a4ee1c5a47f74da4b85c04} 
+s32 {\bfseries tai\+\_\+offset}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

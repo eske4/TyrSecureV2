@@ -1,0 +1,112 @@
+\doxysection{neigh\+\_\+table Struct Reference}
+\hypertarget{structneigh__table}{}\label{structneigh__table}\index{neigh\_table@{neigh\_table}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structneigh__table_a648a0425082f662d3b3d7b7c7019647d}\label{structneigh__table_a648a0425082f662d3b3d7b7c7019647d} 
+int {\bfseries family}
+\item 
+\Hypertarget{structneigh__table_a3533c1821c600907b5b414c6526f7929}\label{structneigh__table_a3533c1821c600907b5b414c6526f7929} 
+unsigned int {\bfseries entry\+\_\+size}
+\item 
+\Hypertarget{structneigh__table_ae35329817cc96e73c069ec21e4568123}\label{structneigh__table_ae35329817cc96e73c069ec21e4568123} 
+unsigned int {\bfseries key\+\_\+len}
+\item 
+\Hypertarget{structneigh__table_aeb0f80b6ab1b43d058436c58df742436}\label{structneigh__table_aeb0f80b6ab1b43d058436c58df742436} 
+\+\_\+\+\_\+be16 {\bfseries protocol}
+\item 
+\Hypertarget{structneigh__table_af78592a2e77cf2cc5ca90df4214fd887}\label{structneigh__table_af78592a2e77cf2cc5ca90df4214fd887} 
+\+\_\+\+\_\+u32(\texorpdfstring{$\ast$}{*} {\bfseries hash} )(const void \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structneigh__table_aa3dffe98e42546f546ee5ef3f81eee98}\label{structneigh__table_aa3dffe98e42546f546ee5ef3f81eee98} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries key\+\_\+eq} )(const struct \doxymbox{\hyperlink{structneighbour}{neighbour}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structneigh__table_a04c22e631929faeac8d83236d7c16c45}\label{structneigh__table_a04c22e631929faeac8d83236d7c16c45} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries constructor} )(struct \doxymbox{\hyperlink{structneighbour}{neighbour}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structneigh__table_ae46cb9c997f3b20554a1c6974a858227}\label{structneigh__table_ae46cb9c997f3b20554a1c6974a858227} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pconstructor} )(struct \doxymbox{\hyperlink{structpneigh__entry}{pneigh\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structneigh__table_a47c0ab868c938f34b5ee9ebf1509921c}\label{structneigh__table_a47c0ab868c938f34b5ee9ebf1509921c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pdestructor} )(struct \doxymbox{\hyperlink{structpneigh__entry}{pneigh\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structneigh__table_a8accf9c53f26ba3c3c526e663daa5e4a}\label{structneigh__table_a8accf9c53f26ba3c3c526e663daa5e4a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries proxy\+\_\+redo} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structneigh__table_abb60f367685d59e7edc910854110f43e}\label{structneigh__table_abb60f367685d59e7edc910854110f43e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+multicast} )(const void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structneigh__table_a8fee91393f690ca576e1cfcc074e0780}\label{structneigh__table_a8fee91393f690ca576e1cfcc074e0780} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries allow\+\_\+add} )(const struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structneigh__table_a747cb2e5649d2dc4bd2eac040504dcaa}\label{structneigh__table_a747cb2e5649d2dc4bd2eac040504dcaa} 
+char \texorpdfstring{$\ast$}{*} {\bfseries id}
+\item 
+\Hypertarget{structneigh__table_a5d3ccbcde4999a846af9bc598d8c1194}\label{structneigh__table_a5d3ccbcde4999a846af9bc598d8c1194} 
+struct \doxymbox{\hyperlink{structneigh__parms}{neigh\+\_\+parms}} {\bfseries parms}
+\item 
+\Hypertarget{structneigh__table_a8bb1ff75c8936923743c7e1ec7ba4a3c}\label{structneigh__table_a8bb1ff75c8936923743c7e1ec7ba4a3c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries parms\+\_\+list}
+\item 
+\Hypertarget{structneigh__table_a204cd8940e655a79d36c501faaa2abd2}\label{structneigh__table_a204cd8940e655a79d36c501faaa2abd2} 
+int {\bfseries gc\+\_\+interval}
+\item 
+\Hypertarget{structneigh__table_aaab5db7af754489c02de94dcc57c7721}\label{structneigh__table_aaab5db7af754489c02de94dcc57c7721} 
+int {\bfseries gc\+\_\+thresh1}
+\item 
+\Hypertarget{structneigh__table_a7e0a332f7ebf54839ecc2ed3ab8d9eb6}\label{structneigh__table_a7e0a332f7ebf54839ecc2ed3ab8d9eb6} 
+int {\bfseries gc\+\_\+thresh2}
+\item 
+\Hypertarget{structneigh__table_ae4ca6b901d8cf99f9ee460ba6ca80f79}\label{structneigh__table_ae4ca6b901d8cf99f9ee460ba6ca80f79} 
+int {\bfseries gc\+\_\+thresh3}
+\item 
+\Hypertarget{structneigh__table_ad73587a26355ce127e246ce175901cfb}\label{structneigh__table_ad73587a26355ce127e246ce175901cfb} 
+long unsigned int {\bfseries last\+\_\+flush}
+\item 
+\Hypertarget{structneigh__table_af98bbe3a63780dbf001f55e0e83144c4}\label{structneigh__table_af98bbe3a63780dbf001f55e0e83144c4} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries gc\+\_\+work}
+\item 
+\Hypertarget{structneigh__table_a90413c5795da47514999950290dbcb2b}\label{structneigh__table_a90413c5795da47514999950290dbcb2b} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries managed\+\_\+work}
+\item 
+\Hypertarget{structneigh__table_a95595c1f33fbad72e8df18e748c1f1d0}\label{structneigh__table_a95595c1f33fbad72e8df18e748c1f1d0} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries proxy\+\_\+timer}
+\item 
+\Hypertarget{structneigh__table_a19d590b0990f6edec99806935317a9e5}\label{structneigh__table_a19d590b0990f6edec99806935317a9e5} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries proxy\+\_\+queue}
+\item 
+\Hypertarget{structneigh__table_a093e848ca41e593dffeb92273138d777}\label{structneigh__table_a093e848ca41e593dffeb92273138d777} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries entries}
+\item 
+\Hypertarget{structneigh__table_a58d23192ec07ca23a8b5f5a82d68278f}\label{structneigh__table_a58d23192ec07ca23a8b5f5a82d68278f} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries gc\+\_\+entries}
+\item 
+\Hypertarget{structneigh__table_aa6fff35a136e1b63bdda8b8a6e6d6eab}\label{structneigh__table_aa6fff35a136e1b63bdda8b8a6e6d6eab} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries gc\+\_\+list}
+\item 
+\Hypertarget{structneigh__table_acbbf0aea64c64f510e36df5f345db6f4}\label{structneigh__table_acbbf0aea64c64f510e36df5f345db6f4} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries managed\+\_\+list}
+\item 
+\Hypertarget{structneigh__table_a3d7bf4eb375eff613506cceb04927db4}\label{structneigh__table_a3d7bf4eb375eff613506cceb04927db4} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structneigh__table_aa7aef0e7775349e58a0b2c2bca3c2a85}\label{structneigh__table_aa7aef0e7775349e58a0b2c2bca3c2a85} 
+long unsigned int {\bfseries last\+\_\+rand}
+\item 
+\Hypertarget{structneigh__table_a86bfd4b97f458b289da058997ee65486}\label{structneigh__table_a86bfd4b97f458b289da058997ee65486} 
+struct \doxymbox{\hyperlink{structneigh__statistics}{neigh\+\_\+statistics}} \texorpdfstring{$\ast$}{*} {\bfseries stats}
+\item 
+\Hypertarget{structneigh__table_a0e9c22dd5e2938942fa6c867e37c6830}\label{structneigh__table_a0e9c22dd5e2938942fa6c867e37c6830} 
+struct \doxymbox{\hyperlink{structneigh__hash__table}{neigh\+\_\+hash\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries nht}
+\item 
+\Hypertarget{structneigh__table_ab377cd32037d33ec059d1d9060d5ee57}\label{structneigh__table_ab377cd32037d33ec059d1d9060d5ee57} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries phash\+\_\+lock}
+\item 
+\Hypertarget{structneigh__table_aff12220e6f2b0a449c352845940ea430}\label{structneigh__table_aff12220e6f2b0a449c352845940ea430} 
+struct \doxymbox{\hyperlink{structpneigh__entry}{pneigh\+\_\+entry}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries phash\+\_\+buckets}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

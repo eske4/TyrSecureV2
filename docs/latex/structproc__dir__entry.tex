@@ -1,0 +1,94 @@
+\doxysection{proc\+\_\+dir\+\_\+entry Struct Reference}
+\hypertarget{structproc__dir__entry}{}\label{structproc__dir__entry}\index{proc\_dir\_entry@{proc\_dir\_entry}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structproc__dir__entry_a3c376823a0d70ca43d2d1344c8ed7cdb}\label{structproc__dir__entry_a3c376823a0d70ca43d2d1344c8ed7cdb} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries in\+\_\+use}
+\item 
+\Hypertarget{structproc__dir__entry_ab5894dc81df18051b827291fe0aeba43}\label{structproc__dir__entry_ab5894dc81df18051b827291fe0aeba43} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structproc__dir__entry_a9ea4a53289ce8ced8994de40934d3f0a}\label{structproc__dir__entry_a9ea4a53289ce8ced8994de40934d3f0a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pde\+\_\+openers}
+\item 
+\Hypertarget{structproc__dir__entry_afe7d1979b74d7c2802707a5b6ea79678}\label{structproc__dir__entry_afe7d1979b74d7c2802707a5b6ea79678} 
+spinlock\+\_\+t {\bfseries pde\+\_\+unload\+\_\+lock}
+\item 
+\Hypertarget{structproc__dir__entry_addac3e9e29054de4df030fa7a93aa4fa}\label{structproc__dir__entry_addac3e9e29054de4df030fa7a93aa4fa} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} \texorpdfstring{$\ast$}{*} {\bfseries pde\+\_\+unload\+\_\+completion}
+\item 
+\Hypertarget{structproc__dir__entry_aa6ce7c7a2582890c0dd9b2013838b8b3}\label{structproc__dir__entry_aa6ce7c7a2582890c0dd9b2013838b8b3} 
+const struct \doxymbox{\hyperlink{structinode__operations}{inode\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries proc\+\_\+iops}
+\item 
+\Hypertarget{structproc__dir__entry_a5bf24e0edd4b22d99d04a97098a13c50}\label{structproc__dir__entry_a5bf24e0edd4b22d99d04a97098a13c50} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const struct \doxymbox{\hyperlink{structproc__ops}{proc\_ops}} \texorpdfstring{$\ast$}{*} {\bfseries proc\_ops}\\
+\>const struct \doxymbox{\hyperlink{structfile__operations}{file\_operations}} \texorpdfstring{$\ast$}{*} {\bfseries proc\_dir\_ops}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structproc__dir__entry_a47406c4b8482d1e4125d86793196caab}\label{structproc__dir__entry_a47406c4b8482d1e4125d86793196caab} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const struct \doxymbox{\hyperlink{structseq__operations}{seq\_operations}} \texorpdfstring{$\ast$}{*} {\bfseries seq\_ops}\\
+\>int(\texorpdfstring{$\ast$}{*} {\bfseries single\_show} )(struct \doxymbox{\hyperlink{structseq__file}{seq\_file}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structproc__dir__entry_aab645caec7adc164c615c4bfa1d38e58}\label{structproc__dir__entry_aab645caec7adc164c615c4bfa1d38e58} 
+proc\+\_\+write\+\_\+t {\bfseries write}
+\item 
+\Hypertarget{structproc__dir__entry_a0f8fad8459a9255919822024a9b02072}\label{structproc__dir__entry_a0f8fad8459a9255919822024a9b02072} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structproc__dir__entry_ae32da88c15ba42a3a96d69e749f46331}\label{structproc__dir__entry_ae32da88c15ba42a3a96d69e749f46331} 
+unsigned int {\bfseries state\+\_\+size}
+\item 
+\Hypertarget{structproc__dir__entry_a92b62ec32ce70a01351648236eae84dd}\label{structproc__dir__entry_a92b62ec32ce70a01351648236eae84dd} 
+unsigned int {\bfseries low\+\_\+ino}
+\item 
+\Hypertarget{structproc__dir__entry_aaf3f3c6662d992f4aaa744c211be9cbd}\label{structproc__dir__entry_aaf3f3c6662d992f4aaa744c211be9cbd} 
+nlink\+\_\+t {\bfseries nlink}
+\item 
+\Hypertarget{structproc__dir__entry_ade0cf900d4d50c27b62ccc5d4cf45fbe}\label{structproc__dir__entry_ade0cf900d4d50c27b62ccc5d4cf45fbe} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries uid}
+\item 
+\Hypertarget{structproc__dir__entry_aa42f088ac9f8d7fbc1fca4be4724f1bf}\label{structproc__dir__entry_aa42f088ac9f8d7fbc1fca4be4724f1bf} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries gid}
+\item 
+\Hypertarget{structproc__dir__entry_a4f0ed7cc424cc38aad5a402c4fd840d7}\label{structproc__dir__entry_a4f0ed7cc424cc38aad5a402c4fd840d7} 
+loff\+\_\+t {\bfseries size}
+\item 
+\Hypertarget{structproc__dir__entry_aa5301786d37a56b7709ea25d81732cac}\label{structproc__dir__entry_aa5301786d37a56b7709ea25d81732cac} 
+struct \doxymbox{\hyperlink{structproc__dir__entry}{proc\+\_\+dir\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structproc__dir__entry_a8ca7aeeb1adb9227731b56c6071bcc1a}\label{structproc__dir__entry_a8ca7aeeb1adb9227731b56c6071bcc1a} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries subdir}
+\item 
+\Hypertarget{structproc__dir__entry_ae6746000fcf47539bc8d925e97183a83}\label{structproc__dir__entry_ae6746000fcf47539bc8d925e97183a83} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries subdir\+\_\+node}
+\item 
+\Hypertarget{structproc__dir__entry_a071f49bb3674f6dcfb5b1a21b8b368b1}\label{structproc__dir__entry_a071f49bb3674f6dcfb5b1a21b8b368b1} 
+char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structproc__dir__entry_ae1bec2722623921b057ae631b367f658}\label{structproc__dir__entry_ae1bec2722623921b057ae631b367f658} 
+umode\+\_\+t {\bfseries mode}
+\item 
+\Hypertarget{structproc__dir__entry_a4c05368862bbf2a86111140c0d04a3a7}\label{structproc__dir__entry_a4c05368862bbf2a86111140c0d04a3a7} 
+u8 {\bfseries flags}
+\item 
+\Hypertarget{structproc__dir__entry_a7d99ed170592e852c87807d547426d81}\label{structproc__dir__entry_a7d99ed170592e852c87807d547426d81} 
+u8 {\bfseries namelen}
+\item 
+\Hypertarget{structproc__dir__entry_a5520e49d8de1ecd59e0c316e9fa5a36a}\label{structproc__dir__entry_a5520e49d8de1ecd59e0c316e9fa5a36a} 
+char {\bfseries inline\+\_\+name} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\doxysection{kvm\+\_\+vcpu\+\_\+hv Struct Reference}
+\hypertarget{structkvm__vcpu__hv}{}\label{structkvm__vcpu__hv}\index{kvm\_vcpu\_hv@{kvm\_vcpu\_hv}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__vcpu__hv_a042cd3c72db8f57b739e713109eb0329}\label{structkvm__vcpu__hv_a042cd3c72db8f57b739e713109eb0329} 
+struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*} {\bfseries vcpu}
+\item 
+\Hypertarget{structkvm__vcpu__hv_ad571705dfb47a152b8e6f68765d33742}\label{structkvm__vcpu__hv_ad571705dfb47a152b8e6f68765d33742} 
+u32 {\bfseries vp\+\_\+index}
+\item 
+\Hypertarget{structkvm__vcpu__hv_a22264395a0d3bbdc7213e82ea6a29172}\label{structkvm__vcpu__hv_a22264395a0d3bbdc7213e82ea6a29172} 
+u64 {\bfseries hv\+\_\+vapic}
+\item 
+\Hypertarget{structkvm__vcpu__hv_a06d0c09e1838739c0f54384cf392684a}\label{structkvm__vcpu__hv_a06d0c09e1838739c0f54384cf392684a} 
+s64 {\bfseries runtime\+\_\+offset}
+\item 
+\Hypertarget{structkvm__vcpu__hv_a6752c4611d9c686d2145ee07384007a4}\label{structkvm__vcpu__hv_a6752c4611d9c686d2145ee07384007a4} 
+struct \doxymbox{\hyperlink{structkvm__vcpu__hv__synic}{kvm\+\_\+vcpu\+\_\+hv\+\_\+synic}} {\bfseries synic}
+\item 
+\Hypertarget{structkvm__vcpu__hv_a8e28f952004de8229f8819dc6b364167}\label{structkvm__vcpu__hv_a8e28f952004de8229f8819dc6b364167} 
+struct \doxymbox{\hyperlink{structkvm__hyperv__exit}{kvm\+\_\+hyperv\+\_\+exit}} {\bfseries exit}
+\item 
+\Hypertarget{structkvm__vcpu__hv_a91e8147365824f164e0001aa72b5e5d4}\label{structkvm__vcpu__hv_a91e8147365824f164e0001aa72b5e5d4} 
+struct \doxymbox{\hyperlink{structkvm__vcpu__hv__stimer}{kvm\+\_\+vcpu\+\_\+hv\+\_\+stimer}} {\bfseries stimer} \+[4]\+
+\item 
+\Hypertarget{structkvm__vcpu__hv_a51ca119dd3b0f670bdb68644c1eda0de}\label{structkvm__vcpu__hv_a51ca119dd3b0f670bdb68644c1eda0de} 
+long unsigned int {\bfseries stimer\+\_\+pending\+\_\+bitmap} \+[1]\+
+\item 
+\Hypertarget{structkvm__vcpu__hv_a0b22bbede45d6f29d1c066736e963177}\label{structkvm__vcpu__hv_a0b22bbede45d6f29d1c066736e963177} 
+bool {\bfseries enforce\+\_\+cpuid}
+\item 
+\Hypertarget{structkvm__vcpu__hv_a470d5dbfc9dea99c9d73b9bd27b73bf5}\label{structkvm__vcpu__hv_a470d5dbfc9dea99c9d73b9bd27b73bf5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries features\_eax}\\
+\>u32 {\bfseries features\_ebx}\\
+\>u32 {\bfseries features\_edx}\\
+\>u32 {\bfseries enlightenments\_eax}\\
+\>u32 {\bfseries enlightenments\_ebx}\\
+\>u32 {\bfseries syndbg\_cap\_eax}\\
+\>u32 {\bfseries nested\_eax}\\
+\>u32 {\bfseries nested\_ebx}\\
+\} {\bfseries cpuid\_cache}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__hv_ab4be45d7e31553076bb8269a1c26d950}\label{structkvm__vcpu__hv_ab4be45d7e31553076bb8269a1c26d950} 
+struct \doxymbox{\hyperlink{structkvm__vcpu__hv__tlb__flush__fifo}{kvm\+\_\+vcpu\+\_\+hv\+\_\+tlb\+\_\+flush\+\_\+fifo}} {\bfseries tlb\+\_\+flush\+\_\+fifo} \+[2]\+
+\item 
+\Hypertarget{structkvm__vcpu__hv_a2c9df691ce4055b12bb6e1c3b656f84c}\label{structkvm__vcpu__hv_a2c9df691ce4055b12bb6e1c3b656f84c} 
+u64 {\bfseries sparse\+\_\+banks} \+[64]\+
+\item 
+\Hypertarget{structkvm__vcpu__hv_a157d69dd7a07fe127ade6f444ef28159}\label{structkvm__vcpu__hv_a157d69dd7a07fe127ade6f444ef28159} 
+long unsigned int {\bfseries vcpu\+\_\+mask} \+[16]\+
+\item 
+\Hypertarget{structkvm__vcpu__hv_a372acd626bf5621f2981d7b6c21cc622}\label{structkvm__vcpu__hv_a372acd626bf5621f2981d7b6c21cc622} 
+struct \doxymbox{\hyperlink{structhv__vp__assist__page}{hv\+\_\+vp\+\_\+assist\+\_\+page}} {\bfseries vp\+\_\+assist\+\_\+page}
+\item 
+\Hypertarget{structkvm__vcpu__hv_abf8ade3023d7414924fef8f4b5f6fcc7}\label{structkvm__vcpu__hv_abf8ade3023d7414924fef8f4b5f6fcc7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u64 {\bfseries pa\_page\_gpa}\\
+\>u64 {\bfseries vm\_id}\\
+\>u32 {\bfseries vp\_id}\\
+\} {\bfseries nested}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

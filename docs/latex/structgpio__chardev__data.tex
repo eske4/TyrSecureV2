@@ -1,0 +1,48 @@
+\doxysection{gpio\+\_\+chardev\+\_\+data Struct Reference}
+\hypertarget{structgpio__chardev__data}{}\label{structgpio__chardev__data}\index{gpio\_chardev\_data@{gpio\_chardev\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structgpio__chardev__data_a2a48b069363e5ad6c6fe4c4e90125c8a}\label{structgpio__chardev__data_a2a48b069363e5ad6c6fe4c4e90125c8a} 
+struct \doxymbox{\hyperlink{structgpio__device}{gpio\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries gdev}
+\item 
+\Hypertarget{structgpio__chardev__data_af7a2b209ea96326c703f014f3d65b896}\label{structgpio__chardev__data_af7a2b209ea96326c703f014f3d65b896} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\item 
+\Hypertarget{structgpio__chardev__data_a8311438654bf6ed228dd30c0cdfaa60e}\label{structgpio__chardev__data_a8311438654bf6ed228dd30c0cdfaa60e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structgpio__chardev__data_1_1_0d320317156102302130026331247162261127302163157224_a73b302798a9a5150aba3fd98c9c183b2}\label{structgpio__chardev__data_1_1_0d320317156102302130026331247162261127302163157224_a73b302798a9a5150aba3fd98c9c183b2} 
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{struct____kfifo}{\_\_kfifo}} {\bfseries kfifo}\\
+\>\>struct \doxymbox{\hyperlink{structgpio__v2__line__info__changed}{gpio\_v2\_line\_info\_changed}} \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>const struct \doxymbox{\hyperlink{structgpio__v2__line__info__changed}{gpio\_v2\_line\_info\_changed}} \texorpdfstring{$\ast$}{*} {\bfseries const\_type}\\
+\>\>char(\texorpdfstring{$\ast$}{*} {\bfseries rectype} )\+[0]\+\\
+\>\>struct \doxymbox{\hyperlink{structgpio__v2__line__info__changed}{gpio\_v2\_line\_info\_changed}} \texorpdfstring{$\ast$}{*} {\bfseries ptr}\\
+\>\>const struct \doxymbox{\hyperlink{structgpio__v2__line__info__changed}{gpio\_v2\_line\_info\_changed}} \texorpdfstring{$\ast$}{*} {\bfseries ptr\_const}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structgpio__v2__line__info__changed}{gpio\_v2\_line\_info\_changed}} {\bfseries buf} \+[32]\+\\
+\} {\bfseries events}\\
+
+\end{tabbing}\item 
+\Hypertarget{structgpio__chardev__data_ac1ef1232d282ef8fcfca8cc91f462ab3}\label{structgpio__chardev__data_ac1ef1232d282ef8fcfca8cc91f462ab3} 
+struct \doxymbox{\hyperlink{structnotifier__block}{notifier\+\_\+block}} {\bfseries lineinfo\+\_\+changed\+\_\+nb}
+\item 
+\Hypertarget{structgpio__chardev__data_a3862b852b693dd89c82c87f4d227579e}\label{structgpio__chardev__data_a3862b852b693dd89c82c87f4d227579e} 
+struct \doxymbox{\hyperlink{structnotifier__block}{notifier\+\_\+block}} {\bfseries device\+\_\+unregistered\+\_\+nb}
+\item 
+\Hypertarget{structgpio__chardev__data_a5319db3e49e4975419173002d6e1f1f1}\label{structgpio__chardev__data_a5319db3e49e4975419173002d6e1f1f1} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries watched\+\_\+lines}
+\item 
+\Hypertarget{structgpio__chardev__data_adc61e18e50258feb3f0c04d67e421e7c}\label{structgpio__chardev__data_adc61e18e50258feb3f0c04d67e421e7c} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries watch\+\_\+abi\+\_\+version}
+\item 
+\Hypertarget{structgpio__chardev__data_acf234fee220ac46b51abd5bf39465add}\label{structgpio__chardev__data_acf234fee220ac46b51abd5bf39465add} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries fp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

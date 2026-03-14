@@ -1,0 +1,39 @@
+\doxysection{usb\+\_\+hub\+\_\+descriptor Struct Reference}
+\hypertarget{structusb__hub__descriptor}{}\label{structusb__hub__descriptor}\index{usb\_hub\_descriptor@{usb\_hub\_descriptor}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusb__hub__descriptor_ad01da3fa1a2beedb4cfaa240a33467dd}\label{structusb__hub__descriptor_ad01da3fa1a2beedb4cfaa240a33467dd} 
+\+\_\+\+\_\+u8 {\bfseries b\+Desc\+Length}
+\item 
+\Hypertarget{structusb__hub__descriptor_a6837046482d9beed0dbfce144c371e56}\label{structusb__hub__descriptor_a6837046482d9beed0dbfce144c371e56} 
+\+\_\+\+\_\+u8 {\bfseries b\+Descriptor\+Type}
+\item 
+\Hypertarget{structusb__hub__descriptor_aa29954b809c9468492b9ed7598aad311}\label{structusb__hub__descriptor_aa29954b809c9468492b9ed7598aad311} 
+\+\_\+\+\_\+u8 {\bfseries b\+Nbr\+Ports}
+\item 
+\Hypertarget{structusb__hub__descriptor_a2680e44174ebf96476c8976c4156ee09}\label{structusb__hub__descriptor_a2680e44174ebf96476c8976c4156ee09} 
+\+\_\+\+\_\+le16 {\bfseries w\+Hub\+Characteristics}
+\item 
+\Hypertarget{structusb__hub__descriptor_a7408f79a18b21a8b19f3d677b7ed17af}\label{structusb__hub__descriptor_a7408f79a18b21a8b19f3d677b7ed17af} 
+\+\_\+\+\_\+u8 {\bfseries b\+Pwr\+On2\+Pwr\+Good}
+\item 
+\Hypertarget{structusb__hub__descriptor_a145ca2178ded8ab3ea9dea0a48775b6d}\label{structusb__hub__descriptor_a145ca2178ded8ab3ea9dea0a48775b6d} 
+\+\_\+\+\_\+u8 {\bfseries b\+Hub\+Contr\+Current}
+\item 
+\Hypertarget{structusb__hub__descriptor_aea5e0307ef04c3081aa7df7c5aeffe4c}\label{structusb__hub__descriptor_aea5e0307ef04c3081aa7df7c5aeffe4c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u8 {\bfseries DeviceRemovable} \+[4]\+\\
+\>\>\_\_u8 {\bfseries PortPwrCtrlMask} \+[4]\+\\
+\>\} {\bfseries hs}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

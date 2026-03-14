@@ -1,0 +1,85 @@
+\doxysection{ata\+\_\+queued\+\_\+cmd Struct Reference}
+\hypertarget{structata__queued__cmd}{}\label{structata__queued__cmd}\index{ata\_queued\_cmd@{ata\_queued\_cmd}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structata__queued__cmd_a25084c3dc7425d5c78c9cae37a5975c5}\label{structata__queued__cmd_a25084c3dc7425d5c78c9cae37a5975c5} 
+struct \doxymbox{\hyperlink{structata__port}{ata\+\_\+port}} \texorpdfstring{$\ast$}{*} {\bfseries ap}
+\item 
+\Hypertarget{structata__queued__cmd_a16b22d4d84cdcc468fa7a3fd01551b33}\label{structata__queued__cmd_a16b22d4d84cdcc468fa7a3fd01551b33} 
+struct \doxymbox{\hyperlink{structata__device}{ata\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structata__queued__cmd_a8656759259ed7a930b4d5516668bf0c0}\label{structata__queued__cmd_a8656759259ed7a930b4d5516668bf0c0} 
+struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*} {\bfseries scsicmd}
+\item 
+\Hypertarget{structata__queued__cmd_abc8a69cb1670fec65dd9d3f3bca99bfc}\label{structata__queued__cmd_abc8a69cb1670fec65dd9d3f3bca99bfc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries scsidone} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structata__queued__cmd_ae1e96da6c3ca75c5f4748287ea2ae478}\label{structata__queued__cmd_ae1e96da6c3ca75c5f4748287ea2ae478} 
+struct \doxymbox{\hyperlink{structata__taskfile}{ata\+\_\+taskfile}} {\bfseries tf}
+\item 
+\Hypertarget{structata__queued__cmd_a0fcab67acce523ad15b9c1098cc68f6f}\label{structata__queued__cmd_a0fcab67acce523ad15b9c1098cc68f6f} 
+u8 {\bfseries cdb} \+[16]\+
+\item 
+\Hypertarget{structata__queued__cmd_af421e5456138889199b29b200e843c78}\label{structata__queued__cmd_af421e5456138889199b29b200e843c78} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structata__queued__cmd_a13afc9c7824c9122a56cad12fbef26f9}\label{structata__queued__cmd_a13afc9c7824c9122a56cad12fbef26f9} 
+unsigned int {\bfseries tag}
+\item 
+\Hypertarget{structata__queued__cmd_a164f773593c0186ffc467df88df47f97}\label{structata__queued__cmd_a164f773593c0186ffc467df88df47f97} 
+unsigned int {\bfseries hw\+\_\+tag}
+\item 
+\Hypertarget{structata__queued__cmd_a5cb3e22555209a05dff2770523c3b330}\label{structata__queued__cmd_a5cb3e22555209a05dff2770523c3b330} 
+unsigned int {\bfseries n\+\_\+elem}
+\item 
+\Hypertarget{structata__queued__cmd_a39f3a21987366775640d9692e5d6a9f5}\label{structata__queued__cmd_a39f3a21987366775640d9692e5d6a9f5} 
+unsigned int {\bfseries orig\+\_\+n\+\_\+elem}
+\item 
+\Hypertarget{structata__queued__cmd_ab8bcdd9239bd1adaff7af293095b32ae}\label{structata__queued__cmd_ab8bcdd9239bd1adaff7af293095b32ae} 
+int {\bfseries dma\+\_\+dir}
+\item 
+\Hypertarget{structata__queued__cmd_ac415031a051369a2a259ba04e4986847}\label{structata__queued__cmd_ac415031a051369a2a259ba04e4986847} 
+unsigned int {\bfseries sect\+\_\+size}
+\item 
+\Hypertarget{structata__queued__cmd_a45b25c0daf14820fda62974808d83c77}\label{structata__queued__cmd_a45b25c0daf14820fda62974808d83c77} 
+unsigned int {\bfseries nbytes}
+\item 
+\Hypertarget{structata__queued__cmd_aa37738fa0e873c971ae9cde048bc6682}\label{structata__queued__cmd_aa37738fa0e873c971ae9cde048bc6682} 
+unsigned int {\bfseries extrabytes}
+\item 
+\Hypertarget{structata__queued__cmd_a59edbffc8c60398ece6f20df59beceb6}\label{structata__queued__cmd_a59edbffc8c60398ece6f20df59beceb6} 
+unsigned int {\bfseries curbytes}
+\item 
+\Hypertarget{structata__queued__cmd_a1b6b7198fb63bbda1560defc4cd8f1c3}\label{structata__queued__cmd_a1b6b7198fb63bbda1560defc4cd8f1c3} 
+struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} {\bfseries sgent}
+\item 
+\Hypertarget{structata__queued__cmd_a8603f390d24fe450098aa9d10a57816a}\label{structata__queued__cmd_a8603f390d24fe450098aa9d10a57816a} 
+struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*} {\bfseries sg}
+\item 
+\Hypertarget{structata__queued__cmd_ab2a8f53ff0201f8072ea011e32831b7f}\label{structata__queued__cmd_ab2a8f53ff0201f8072ea011e32831b7f} 
+struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*} {\bfseries cursg}
+\item 
+\Hypertarget{structata__queued__cmd_a7d26a0f7b353458fdce849737e011370}\label{structata__queued__cmd_a7d26a0f7b353458fdce849737e011370} 
+unsigned int {\bfseries cursg\+\_\+ofs}
+\item 
+\Hypertarget{structata__queued__cmd_af9e96bf279640d5f33059f1ec7a86d30}\label{structata__queued__cmd_af9e96bf279640d5f33059f1ec7a86d30} 
+unsigned int {\bfseries err\+\_\+mask}
+\item 
+\Hypertarget{structata__queued__cmd_acceeea8e58d9cc764484952d1cb23fd8}\label{structata__queued__cmd_acceeea8e58d9cc764484952d1cb23fd8} 
+struct \doxymbox{\hyperlink{structata__taskfile}{ata\+\_\+taskfile}} {\bfseries result\+\_\+tf}
+\item 
+\Hypertarget{structata__queued__cmd_a9fc0a931b724f63135fdbc5ffe46cf43}\label{structata__queued__cmd_a9fc0a931b724f63135fdbc5ffe46cf43} 
+ata\+\_\+qc\+\_\+cb\+\_\+t {\bfseries complete\+\_\+fn}
+\item 
+\Hypertarget{structata__queued__cmd_a9fb670153568df6292a504d23d0549e4}\label{structata__queued__cmd_a9fb670153568df6292a504d23d0549e4} 
+void \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+data}
+\item 
+\Hypertarget{structata__queued__cmd_afbc43b7e74bdf03c7b922fae18291942}\label{structata__queued__cmd_afbc43b7e74bdf03c7b922fae18291942} 
+void \texorpdfstring{$\ast$}{*} {\bfseries lldd\+\_\+task}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

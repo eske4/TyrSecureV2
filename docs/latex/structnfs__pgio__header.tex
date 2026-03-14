@@ -1,0 +1,103 @@
+\doxysection{nfs\+\_\+pgio\+\_\+header Struct Reference}
+\hypertarget{structnfs__pgio__header}{}\label{structnfs__pgio__header}\index{nfs\_pgio\_header@{nfs\_pgio\_header}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs__pgio__header_a9414c20c274658d190dac9c4d13f5c69}\label{structnfs__pgio__header_a9414c20c274658d190dac9c4d13f5c69} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries inode}
+\item 
+\Hypertarget{structnfs__pgio__header_a116c413ef888cad893270e11669c09e8}\label{structnfs__pgio__header_a116c413ef888cad893270e11669c09e8} 
+const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*} {\bfseries cred}
+\item 
+\Hypertarget{structnfs__pgio__header_a4cf23771b98fc491fd8114e207195c94}\label{structnfs__pgio__header_a4cf23771b98fc491fd8114e207195c94} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pages}
+\item 
+\Hypertarget{structnfs__pgio__header_a260d080441a022a230fab991b3f75286}\label{structnfs__pgio__header_a260d080441a022a230fab991b3f75286} 
+struct nfs\+\_\+page \texorpdfstring{$\ast$}{*} {\bfseries req}
+\item 
+\Hypertarget{structnfs__pgio__header_a2079f8b28727aecd4c20cacb4c8e0b15}\label{structnfs__pgio__header_a2079f8b28727aecd4c20cacb4c8e0b15} 
+struct \doxymbox{\hyperlink{structnfs__writeverf}{nfs\+\_\+writeverf}} {\bfseries verf}
+\item 
+\Hypertarget{structnfs__pgio__header_af337d749d15032561bd381c77922ef8d}\label{structnfs__pgio__header_af337d749d15032561bd381c77922ef8d} 
+fmode\+\_\+t {\bfseries rw\+\_\+mode}
+\item 
+\Hypertarget{structnfs__pgio__header_ab2411e5c35efdc3cba7952d6571a7163}\label{structnfs__pgio__header_ab2411e5c35efdc3cba7952d6571a7163} 
+struct pnfs\+\_\+layout\+\_\+segment \texorpdfstring{$\ast$}{*} {\bfseries lseg}
+\item 
+\Hypertarget{structnfs__pgio__header_ae2854a32a6539aba094675d6c70e18a0}\label{structnfs__pgio__header_ae2854a32a6539aba094675d6c70e18a0} 
+loff\+\_\+t {\bfseries io\+\_\+start}
+\item 
+\Hypertarget{structnfs__pgio__header_a473b4f387970b8d85b40bdbeb441a532}\label{structnfs__pgio__header_a473b4f387970b8d85b40bdbeb441a532} 
+const struct \doxymbox{\hyperlink{structrpc__call__ops}{rpc\+\_\+call\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries mds\+\_\+ops}
+\item 
+\Hypertarget{structnfs__pgio__header_adfb1976d5c212452673f1e02e1c5e5a5}\label{structnfs__pgio__header_adfb1976d5c212452673f1e02e1c5e5a5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structnfs__pgio__header}{nfs\+\_\+pgio\+\_\+header}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs__pgio__header_a98c5555c2519a9814791b2dcf55546a2}\label{structnfs__pgio__header_a98c5555c2519a9814791b2dcf55546a2} 
+const struct \doxymbox{\hyperlink{structnfs__pgio__completion__ops}{nfs\+\_\+pgio\+\_\+completion\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries completion\+\_\+ops}
+\item 
+\Hypertarget{structnfs__pgio__header_a2c01c53012b00f890d50cd108394b116}\label{structnfs__pgio__header_a2c01c53012b00f890d50cd108394b116} 
+const struct nfs\+\_\+rw\+\_\+ops \texorpdfstring{$\ast$}{*} {\bfseries rw\+\_\+ops}
+\item 
+\Hypertarget{structnfs__pgio__header_a9be7dc458e3c26f58f48e89af7cd3ac4}\label{structnfs__pgio__header_a9be7dc458e3c26f58f48e89af7cd3ac4} 
+struct nfs\+\_\+io\+\_\+completion \texorpdfstring{$\ast$}{*} {\bfseries io\+\_\+completion}
+\item 
+\Hypertarget{structnfs__pgio__header_a0703d4e206eeff1faa75736620360a17}\label{structnfs__pgio__header_a0703d4e206eeff1faa75736620360a17} 
+struct nfs\+\_\+direct\+\_\+req \texorpdfstring{$\ast$}{*} {\bfseries dreq}
+\item 
+\Hypertarget{structnfs__pgio__header_a3f2846d3220acd70a374c4a0f3e8ec46}\label{structnfs__pgio__header_a3f2846d3220acd70a374c4a0f3e8ec46} 
+void \texorpdfstring{$\ast$}{*} {\bfseries netfs}
+\item 
+\Hypertarget{structnfs__pgio__header_a3632a068c0f86d880e48c5e8302d804d}\label{structnfs__pgio__header_a3632a068c0f86d880e48c5e8302d804d} 
+short unsigned int {\bfseries retrans}
+\item 
+\Hypertarget{structnfs__pgio__header_ab5f9997e4f437178f61bb2905b801198}\label{structnfs__pgio__header_ab5f9997e4f437178f61bb2905b801198} 
+int {\bfseries pnfs\+\_\+error}
+\item 
+\Hypertarget{structnfs__pgio__header_ad66c4ac6175d8e56105cc0f6bed726b0}\label{structnfs__pgio__header_ad66c4ac6175d8e56105cc0f6bed726b0} 
+int {\bfseries error}
+\item 
+\Hypertarget{structnfs__pgio__header_a5d521e94b578187850bf079b84fa80b8}\label{structnfs__pgio__header_a5d521e94b578187850bf079b84fa80b8} 
+unsigned int {\bfseries good\+\_\+bytes}
+\item 
+\Hypertarget{structnfs__pgio__header_a1f1766512f8c7d12c298d11114f686f4}\label{structnfs__pgio__header_a1f1766512f8c7d12c298d11114f686f4} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structnfs__pgio__header_ae96b7204b033f136754e7be15a3e5b2f}\label{structnfs__pgio__header_ae96b7204b033f136754e7be15a3e5b2f} 
+struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} {\bfseries task}
+\item 
+\Hypertarget{structnfs__pgio__header_a835a27fdbd124bde60c2fce32ae87a86}\label{structnfs__pgio__header_a835a27fdbd124bde60c2fce32ae87a86} 
+struct \doxymbox{\hyperlink{structnfs__fattr}{nfs\+\_\+fattr}} {\bfseries fattr}
+\item 
+\Hypertarget{structnfs__pgio__header_ad5c70d46a8b25b643b94dacfa8f50f92}\label{structnfs__pgio__header_ad5c70d46a8b25b643b94dacfa8f50f92} 
+struct \doxymbox{\hyperlink{structnfs__pgio__args}{nfs\+\_\+pgio\+\_\+args}} {\bfseries args}
+\item 
+\Hypertarget{structnfs__pgio__header_afebe8ce4f88dfa5cbc7f89363d8d3882}\label{structnfs__pgio__header_afebe8ce4f88dfa5cbc7f89363d8d3882} 
+struct \doxymbox{\hyperlink{structnfs__pgio__res}{nfs\+\_\+pgio\+\_\+res}} {\bfseries res}
+\item 
+\Hypertarget{structnfs__pgio__header_ac322173f22a1005396530093f2f3683e}\label{structnfs__pgio__header_ac322173f22a1005396530093f2f3683e} 
+long unsigned int {\bfseries timestamp}
+\item 
+\Hypertarget{structnfs__pgio__header_ac54a93aa0685fd9920e35e8e9a43dc82}\label{structnfs__pgio__header_ac54a93aa0685fd9920e35e8e9a43dc82} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pgio\+\_\+done\+\_\+cb} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnfs__pgio__header}{nfs\+\_\+pgio\+\_\+header}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs__pgio__header_a5d9509c63c52ae19548adfd5f5f98bb8}\label{structnfs__pgio__header_a5d9509c63c52ae19548adfd5f5f98bb8} 
+\+\_\+\+\_\+u64 {\bfseries mds\+\_\+offset}
+\item 
+\Hypertarget{structnfs__pgio__header_a6d9ab3637d0ed042cba4e34b845c4bbf}\label{structnfs__pgio__header_a6d9ab3637d0ed042cba4e34b845c4bbf} 
+struct \doxymbox{\hyperlink{structnfs__page__array}{nfs\+\_\+page\+\_\+array}} {\bfseries page\+\_\+array}
+\item 
+\Hypertarget{structnfs__pgio__header_ae13ad655ab5b12a9f54686f835e2ba91}\label{structnfs__pgio__header_ae13ad655ab5b12a9f54686f835e2ba91} 
+struct \doxymbox{\hyperlink{structnfs__client}{nfs\+\_\+client}} \texorpdfstring{$\ast$}{*} {\bfseries ds\+\_\+clp}
+\item 
+\Hypertarget{structnfs__pgio__header_a1568891b1c53c78c4381be7815866a2f}\label{structnfs__pgio__header_a1568891b1c53c78c4381be7815866a2f} 
+u32 {\bfseries ds\+\_\+commit\+\_\+idx}
+\item 
+\Hypertarget{structnfs__pgio__header_a5fe1bf688ddfa1bceaa3698fe8c7b24a}\label{structnfs__pgio__header_a5fe1bf688ddfa1bceaa3698fe8c7b24a} 
+u32 {\bfseries pgio\+\_\+mirror\+\_\+idx}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

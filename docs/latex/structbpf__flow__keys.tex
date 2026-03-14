@@ -1,0 +1,63 @@
+\doxysection{bpf\+\_\+flow\+\_\+keys Struct Reference}
+\hypertarget{structbpf__flow__keys}{}\label{structbpf__flow__keys}\index{bpf\_flow\_keys@{bpf\_flow\_keys}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__flow__keys_a6fcac418cf2599323c3e86a9cdbf5d14}\label{structbpf__flow__keys_a6fcac418cf2599323c3e86a9cdbf5d14} 
+\+\_\+\+\_\+u16 {\bfseries nhoff}
+\item 
+\Hypertarget{structbpf__flow__keys_ac2b05448523fa76242069672131915fe}\label{structbpf__flow__keys_ac2b05448523fa76242069672131915fe} 
+\+\_\+\+\_\+u16 {\bfseries thoff}
+\item 
+\Hypertarget{structbpf__flow__keys_a38ced0b5b031b75d4181c088527b1829}\label{structbpf__flow__keys_a38ced0b5b031b75d4181c088527b1829} 
+\+\_\+\+\_\+u16 {\bfseries addr\+\_\+proto}
+\item 
+\Hypertarget{structbpf__flow__keys_a3d9541b5c6c4834a70d70c141158629d}\label{structbpf__flow__keys_a3d9541b5c6c4834a70d70c141158629d} 
+\+\_\+\+\_\+u8 {\bfseries is\+\_\+frag}
+\item 
+\Hypertarget{structbpf__flow__keys_af45e8e32d9b2c8ce78cce70b6e907121}\label{structbpf__flow__keys_af45e8e32d9b2c8ce78cce70b6e907121} 
+\+\_\+\+\_\+u8 {\bfseries is\+\_\+first\+\_\+frag}
+\item 
+\Hypertarget{structbpf__flow__keys_a6a4c2abf9b5808046c160844d67f22a6}\label{structbpf__flow__keys_a6a4c2abf9b5808046c160844d67f22a6} 
+\+\_\+\+\_\+u8 {\bfseries is\+\_\+encap}
+\item 
+\Hypertarget{structbpf__flow__keys_aa47d539efb8f28eed2116762c6ce7de0}\label{structbpf__flow__keys_aa47d539efb8f28eed2116762c6ce7de0} 
+\+\_\+\+\_\+u8 {\bfseries ip\+\_\+proto}
+\item 
+\Hypertarget{structbpf__flow__keys_a423fe93728068baecd2c7cdaf9a3a8e1}\label{structbpf__flow__keys_a423fe93728068baecd2c7cdaf9a3a8e1} 
+\+\_\+\+\_\+be16 {\bfseries n\+\_\+proto}
+\item 
+\Hypertarget{structbpf__flow__keys_a3018f3a4dc87bcd61afc4bc04b0eb31b}\label{structbpf__flow__keys_a3018f3a4dc87bcd61afc4bc04b0eb31b} 
+\+\_\+\+\_\+be16 {\bfseries sport}
+\item 
+\Hypertarget{structbpf__flow__keys_a97f02c22ab2fca44c75f111b6c54152a}\label{structbpf__flow__keys_a97f02c22ab2fca44c75f111b6c54152a} 
+\+\_\+\+\_\+be16 {\bfseries dport}
+\item 
+\Hypertarget{structbpf__flow__keys_a303de48b5cb43c7bb1fbe5208d5aed24}\label{structbpf__flow__keys_a303de48b5cb43c7bb1fbe5208d5aed24} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionbpf__flow__keys_1_1_0d343204007123201242070022222342147245121227123156_adbe78edaef59eb0a132318fd0a7448a5}\label{unionbpf__flow__keys_1_1_0d343204007123201242070022222342147245121227123156_adbe78edaef59eb0a132318fd0a7448a5} 
+\>struct \{\\
+\>\>\_\_be32 {\bfseries ipv4\_src}\\
+\>\>\_\_be32 {\bfseries ipv4\_dst}\\
+\>\} \\
+\Hypertarget{unionbpf__flow__keys_1_1_0d343204007123201242070022222342147245121227123156_ac0f786dbebc17f5e56383df51195bb8e}\label{unionbpf__flow__keys_1_1_0d343204007123201242070022222342147245121227123156_ac0f786dbebc17f5e56383df51195bb8e} 
+\>struct \{\\
+\>\>\_\_u32 {\bfseries ipv6\_src} \+[4]\+\\
+\>\>\_\_u32 {\bfseries ipv6\_dst} \+[4]\+\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__flow__keys_a1282e31b3e71963f35a4c3fbcccd5d93}\label{structbpf__flow__keys_a1282e31b3e71963f35a4c3fbcccd5d93} 
+\+\_\+\+\_\+u32 {\bfseries flags}
+\item 
+\Hypertarget{structbpf__flow__keys_aaac2c46172b37652b7f936aeafa6136e}\label{structbpf__flow__keys_aaac2c46172b37652b7f936aeafa6136e} 
+\+\_\+\+\_\+be32 {\bfseries flow\+\_\+label}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+\doxysection{LContext.\+hpp}
+\hypertarget{LContext_8hpp_source}{}\label{LContext_8hpp_source}\index{/home/eske/Documents/git/TyrSecureV2/include/daemon/LContext.hpp@{/home/eske/Documents/git/TyrSecureV2/include/daemon/LContext.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <sys/types.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}system/CGroup.hpp"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structLContext}{LContext}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \doxymbox{\hyperlink{classsys_1_1CGroup}{sys::CGroup}}\ cg;}
+\DoxyCodeLine{00011\ \ \ \ \ \doxymbox{\hyperlink{classsys_1_1FD}{sys::FD}}\ executable\_fd;}
+\DoxyCodeLine{00012\ \ \ \ \ \doxymbox{\hyperlink{classsys_1_1FD}{sys::FD}}\ working\_dir\_fd;}
+\DoxyCodeLine{00013\ \ \ \ \ uid\_t\ uid\ =\ -\/1;}
+\DoxyCodeLine{00014\ \ \ \ \ gid\_t\ gid\ =\ -\/1;}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ game\_name;}
+\DoxyCodeLine{00016\ \ \ \ \ std::vector<std::string>\ envp;}
+\DoxyCodeLine{00017\ \ \ \ \ std::vector<std::string>\ argv;}
+\DoxyCodeLine{00018\ \};}
+
+\end{DoxyCode}

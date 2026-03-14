@@ -1,0 +1,40 @@
+\doxysection{fuse\+\_\+ring Struct Reference}
+\hypertarget{structfuse__ring}{}\label{structfuse__ring}\index{fuse\_ring@{fuse\_ring}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__ring_ad41495df0ba7de56e940a72370fbcc63}\label{structfuse__ring_ad41495df0ba7de56e940a72370fbcc63} 
+struct \doxymbox{\hyperlink{structfuse__conn}{fuse\+\_\+conn}} \texorpdfstring{$\ast$}{*} {\bfseries fc}
+\item 
+\Hypertarget{structfuse__ring_adf8347df8e7d63c24a0e4db060ef5ea8}\label{structfuse__ring_adf8347df8e7d63c24a0e4db060ef5ea8} 
+size\+\_\+t {\bfseries nr\+\_\+queues}
+\item 
+\Hypertarget{structfuse__ring_aca38f6bd66fb1d2a725d799c0af47d54}\label{structfuse__ring_aca38f6bd66fb1d2a725d799c0af47d54} 
+size\+\_\+t {\bfseries max\+\_\+payload\+\_\+sz}
+\item 
+\Hypertarget{structfuse__ring_a9d9bd0db07a13f1611e24500391f0109}\label{structfuse__ring_a9d9bd0db07a13f1611e24500391f0109} 
+struct \doxymbox{\hyperlink{structfuse__ring__queue}{fuse\+\_\+ring\+\_\+queue}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries queues}
+\item 
+\Hypertarget{structfuse__ring_a71fa31e477e64a4e43bada4488ff01c2}\label{structfuse__ring_a71fa31e477e64a4e43bada4488ff01c2} 
+unsigned int {\bfseries stop\+\_\+debug\+\_\+log}:\+ 1
+\item 
+\Hypertarget{structfuse__ring_a93554c8c7dc5d559c76487dddd05f7fa}\label{structfuse__ring_a93554c8c7dc5d559c76487dddd05f7fa} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries stop\+\_\+waitq}
+\item 
+\Hypertarget{structfuse__ring_a72a056afe765235a82a23c82659d9395}\label{structfuse__ring_a72a056afe765235a82a23c82659d9395} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries async\+\_\+teardown\+\_\+work}
+\item 
+\Hypertarget{structfuse__ring_a46e31e1d4a33da6ce86870bd1bd17e0f}\label{structfuse__ring_a46e31e1d4a33da6ce86870bd1bd17e0f} 
+long unsigned int {\bfseries teardown\+\_\+time}
+\item 
+\Hypertarget{structfuse__ring_a8b7f338ac25d70d54eb4aed00d5a3f01}\label{structfuse__ring_a8b7f338ac25d70d54eb4aed00d5a3f01} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries queue\+\_\+refs}
+\item 
+\Hypertarget{structfuse__ring_ac7f0735ba5728e4b96ed9eaaafd1b621}\label{structfuse__ring_ac7f0735ba5728e4b96ed9eaaafd1b621} 
+bool {\bfseries ready}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

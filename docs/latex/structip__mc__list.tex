@@ -1,0 +1,79 @@
+\doxysection{ip\+\_\+mc\+\_\+list Struct Reference}
+\hypertarget{structip__mc__list}{}\label{structip__mc__list}\index{ip\_mc\_list@{ip\_mc\_list}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structip__mc__list_a9a28b9244fb908aec795d7a131ce227e}\label{structip__mc__list_a9a28b9244fb908aec795d7a131ce227e} 
+struct \doxymbox{\hyperlink{structin__device}{in\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries interface}
+\item 
+\Hypertarget{structip__mc__list_aa6f5092ced9a7b177f148a1f338abe66}\label{structip__mc__list_aa6f5092ced9a7b177f148a1f338abe66} 
+\+\_\+\+\_\+be32 {\bfseries multiaddr}
+\item 
+\Hypertarget{structip__mc__list_a62e62b5b1b0b3933bca71b02291e2205}\label{structip__mc__list_a62e62b5b1b0b3933bca71b02291e2205} 
+unsigned int {\bfseries sfmode}
+\item 
+\Hypertarget{structip__mc__list_a25fd8e548d4b125b5c3528db1aac976f}\label{structip__mc__list_a25fd8e548d4b125b5c3528db1aac976f} 
+struct \doxymbox{\hyperlink{structip__sf__list}{ip\+\_\+sf\+\_\+list}} \texorpdfstring{$\ast$}{*} {\bfseries sources}
+\item 
+\Hypertarget{structip__mc__list_a767625e24062135219ae22931bd5f027}\label{structip__mc__list_a767625e24062135219ae22931bd5f027} 
+struct \doxymbox{\hyperlink{structip__sf__list}{ip\+\_\+sf\+\_\+list}} \texorpdfstring{$\ast$}{*} {\bfseries tomb}
+\item 
+\Hypertarget{structip__mc__list_a10aa7d8417a8fa1e42d771fd434c2936}\label{structip__mc__list_a10aa7d8417a8fa1e42d771fd434c2936} 
+long unsigned int {\bfseries sfcount} \+[2]\+
+\item 
+\Hypertarget{structip__mc__list_ad6521297cd693f2067bd76ffb161b061}\label{structip__mc__list_ad6521297cd693f2067bd76ffb161b061} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structip__mc__list}{ip\_mc\_list}} \texorpdfstring{$\ast$}{*} {\bfseries next}\\
+\>struct \doxymbox{\hyperlink{structip__mc__list}{ip\_mc\_list}} \texorpdfstring{$\ast$}{*} {\bfseries next\_rcu}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structip__mc__list_a53ae219127650ea5f018a9b9dddf8881}\label{structip__mc__list_a53ae219127650ea5f018a9b9dddf8881} 
+struct \doxymbox{\hyperlink{structip__mc__list}{ip\+\_\+mc\+\_\+list}} \texorpdfstring{$\ast$}{*} {\bfseries next\+\_\+hash}
+\item 
+\Hypertarget{structip__mc__list_a3cafffdd04facede2dd4772fc2a7bc20}\label{structip__mc__list_a3cafffdd04facede2dd4772fc2a7bc20} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries timer}
+\item 
+\Hypertarget{structip__mc__list_a8f5c409a41a600bd983be843a18c3cea}\label{structip__mc__list_a8f5c409a41a600bd983be843a18c3cea} 
+int {\bfseries users}
+\item 
+\Hypertarget{structip__mc__list_a4675d18b1966330311349bd3d88ee76d}\label{structip__mc__list_a4675d18b1966330311349bd3d88ee76d} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structip__mc__list_a87baa3ec3fa1819f0a91d36fde77eeab}\label{structip__mc__list_a87baa3ec3fa1819f0a91d36fde77eeab} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structip__mc__list_a4616115ee1f41d65cd1c1af96831cb1e}\label{structip__mc__list_a4616115ee1f41d65cd1c1af96831cb1e} 
+char {\bfseries tm\+\_\+running}
+\item 
+\Hypertarget{structip__mc__list_ab9f4ba2be7d15811e07058a3f388df24}\label{structip__mc__list_ab9f4ba2be7d15811e07058a3f388df24} 
+char {\bfseries reporter}
+\item 
+\Hypertarget{structip__mc__list_a93a6686308265a7adedb34d7b8c2507a}\label{structip__mc__list_a93a6686308265a7adedb34d7b8c2507a} 
+char {\bfseries unsolicit\+\_\+count}
+\item 
+\Hypertarget{structip__mc__list_abe2a2a9a9aa655a9755bc4407191d15c}\label{structip__mc__list_abe2a2a9a9aa655a9755bc4407191d15c} 
+char {\bfseries loaded}
+\item 
+\Hypertarget{structip__mc__list_ad697dc6d00809fe87e8fd0c01e1266d7}\label{structip__mc__list_ad697dc6d00809fe87e8fd0c01e1266d7} 
+unsigned char {\bfseries gsquery}
+\item 
+\Hypertarget{structip__mc__list_a84fb928cbdcc1743db92d13a53393bb9}\label{structip__mc__list_a84fb928cbdcc1743db92d13a53393bb9} 
+unsigned char {\bfseries crcount}
+\item 
+\Hypertarget{structip__mc__list_a8f473277d849ce680d4a3433057404ef}\label{structip__mc__list_a8f473277d849ce680d4a3433057404ef} 
+long unsigned int {\bfseries mca\+\_\+cstamp}
+\item 
+\Hypertarget{structip__mc__list_a94399cde9254fef11d65ab09fec99d78}\label{structip__mc__list_a94399cde9254fef11d65ab09fec99d78} 
+long unsigned int {\bfseries mca\+\_\+tstamp}
+\item 
+\Hypertarget{structip__mc__list_a392ee38091e30eb349221e1bb66fb8ef}\label{structip__mc__list_a392ee38091e30eb349221e1bb66fb8ef} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

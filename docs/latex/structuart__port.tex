@@ -1,0 +1,205 @@
+\doxysection{uart\+\_\+port Struct Reference}
+\hypertarget{structuart__port}{}\label{structuart__port}\index{uart\_port@{uart\_port}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structuart__port_ae9dc6659829491bdd232b2f63b16633a}\label{structuart__port_ae9dc6659829491bdd232b2f63b16633a} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structuart__port_a870c6fa336d78c848c40f944ef0293cb}\label{structuart__port_a870c6fa336d78c848c40f944ef0293cb} 
+long unsigned int {\bfseries iobase}
+\item 
+\Hypertarget{structuart__port_a69c493a6cb4523d1523e7b467896792d}\label{structuart__port_a69c493a6cb4523d1523e7b467896792d} 
+unsigned char \texorpdfstring{$\ast$}{*} {\bfseries membase}
+\item 
+\Hypertarget{structuart__port_abfe03cd69582ee0b80e5593a55399a52}\label{structuart__port_abfe03cd69582ee0b80e5593a55399a52} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries serial\+\_\+in} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structuart__port_a0750248d0105f3a088ab0e59f3226441}\label{structuart__port_a0750248d0105f3a088ab0e59f3226441} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries serial\+\_\+out} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, u32)
+\item 
+\Hypertarget{structuart__port_a92c78943925507db71ac9d8b6b9cc8c4}\label{structuart__port_a92c78943925507db71ac9d8b6b9cc8c4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+termios} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structktermios}{ktermios}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structktermios}{ktermios}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a2f2ac8aff38e047430c3c3f5b90426ae}\label{structuart__port_a2f2ac8aff38e047430c3c3f5b90426ae} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+ldisc} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structktermios}{ktermios}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a70c29f2fdf0601ec9e39c3a4e58db752}\label{structuart__port_a70c29f2fdf0601ec9e39c3a4e58db752} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+mctrl} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_af1963560d00ccfb2f3255cb4bc3cdd24}\label{structuart__port_af1963560d00ccfb2f3255cb4bc3cdd24} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+mctrl} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structuart__port_a258be257eef306b38d55c17da3a80c67}\label{structuart__port_a258be257eef306b38d55c17da3a80c67} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+divisor} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a62927f2825d7cba81ac408e17e050278}\label{structuart__port_a62927f2825d7cba81ac408e17e050278} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+divisor} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int, unsigned int)
+\item 
+\Hypertarget{structuart__port_a6f49e635cb54385816465c5583f5bbd1}\label{structuart__port_a6f49e635cb54385816465c5583f5bbd1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries startup} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a899f161d5c3939e36cd285262c18e9f5}\label{structuart__port_a899f161d5c3939e36cd285262c18e9f5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries shutdown} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_aacefa486e340075a323f2705c404f41d}\label{structuart__port_aacefa486e340075a323f2705c404f41d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries throttle} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a683020f42ab883a20c24ee1be5f8d2f2}\label{structuart__port_a683020f42ab883a20c24ee1be5f8d2f2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unthrottle} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a833d902b6ca819e1309b4cfd94f376cf}\label{structuart__port_a833d902b6ca819e1309b4cfd94f376cf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+irq} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a9b7e64491ce48232aa456f6239a8ce6a}\label{structuart__port_a9b7e64491ce48232aa456f6239a8ce6a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pm} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structuart__port_a6ff83c59f8dbef07a1a0915639357571}\label{structuart__port_a6ff83c59f8dbef07a1a0915639357571} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+break} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a9a91d8eaa41dc4a8fbf2e5f9481745fe}\label{structuart__port_a9a91d8eaa41dc4a8fbf2e5f9481745fe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rs485\+\_\+config} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structktermios}{ktermios}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structserial__rs485}{serial\+\_\+rs485}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a03e9540b3c9b9ae4c610a5aa626fd14c}\label{structuart__port_a03e9540b3c9b9ae4c610a5aa626fd14c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries iso7816\+\_\+config} )(struct \doxymbox{\hyperlink{structuart__port}{uart\+\_\+port}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structserial__iso7816}{serial\+\_\+iso7816}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structuart__port_a9b4a3675467399f73bf6c66287ae8cde}\label{structuart__port_a9b4a3675467399f73bf6c66287ae8cde} 
+unsigned int {\bfseries ctrl\+\_\+id}
+\item 
+\Hypertarget{structuart__port_ab8e73ce592db53f12526c566f37bdf19}\label{structuart__port_ab8e73ce592db53f12526c566f37bdf19} 
+unsigned int {\bfseries port\+\_\+id}
+\item 
+\Hypertarget{structuart__port_a2de9b3f21bb72980e6efd632fc1b99cb}\label{structuart__port_a2de9b3f21bb72980e6efd632fc1b99cb} 
+unsigned int {\bfseries irq}
+\item 
+\Hypertarget{structuart__port_a5e460afe17b93b43fdf56f049fb3c9f4}\label{structuart__port_a5e460afe17b93b43fdf56f049fb3c9f4} 
+long unsigned int {\bfseries irqflags}
+\item 
+\Hypertarget{structuart__port_add4839291c4b692f1ca6d6cf29fc8320}\label{structuart__port_add4839291c4b692f1ca6d6cf29fc8320} 
+unsigned int {\bfseries uartclk}
+\item 
+\Hypertarget{structuart__port_abfc889863f1e9a23429bc795a57b674f}\label{structuart__port_abfc889863f1e9a23429bc795a57b674f} 
+unsigned int {\bfseries fifosize}
+\item 
+\Hypertarget{structuart__port_a8a8d5fac67c485364e16bb4b56b6d7c6}\label{structuart__port_a8a8d5fac67c485364e16bb4b56b6d7c6} 
+unsigned char {\bfseries x\+\_\+char}
+\item 
+\Hypertarget{structuart__port_a8f183b0e4b04ab95b07dffa491029609}\label{structuart__port_a8f183b0e4b04ab95b07dffa491029609} 
+unsigned char {\bfseries regshift}
+\item 
+\Hypertarget{structuart__port_af7861c0e727978fd0d29bce63761c59d}\label{structuart__port_af7861c0e727978fd0d29bce63761c59d} 
+unsigned char {\bfseries quirks}
+\item 
+\Hypertarget{structuart__port_a9d9a7fdc8a561602a86b0b6bc16b3402}\label{structuart__port_a9d9a7fdc8a561602a86b0b6bc16b3402} 
+enum uart\+\_\+iotype {\bfseries iotype}
+\item 
+\Hypertarget{structuart__port_a2461da4eec5b7ed5be78b49edd124ff1}\label{structuart__port_a2461da4eec5b7ed5be78b49edd124ff1} 
+unsigned int {\bfseries read\+\_\+status\+\_\+mask}
+\item 
+\Hypertarget{structuart__port_acebbcca7d873395489f8475d2e59bfb4}\label{structuart__port_acebbcca7d873395489f8475d2e59bfb4} 
+unsigned int {\bfseries ignore\+\_\+status\+\_\+mask}
+\item 
+\Hypertarget{structuart__port_a20f6ab4cbe15d0044d1becbd4bf81e11}\label{structuart__port_a20f6ab4cbe15d0044d1becbd4bf81e11} 
+struct \doxymbox{\hyperlink{structuart__state}{uart\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries state}
+\item 
+\Hypertarget{structuart__port_a8dda71ad7b67068be3b1dd3443ea347e}\label{structuart__port_a8dda71ad7b67068be3b1dd3443ea347e} 
+struct \doxymbox{\hyperlink{structuart__icount}{uart\+\_\+icount}} {\bfseries icount}
+\item 
+\Hypertarget{structuart__port_a2d0c5f162a586c71bf56fff522cdb77f}\label{structuart__port_a2d0c5f162a586c71bf56fff522cdb77f} 
+struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*} {\bfseries cons}
+\item 
+\Hypertarget{structuart__port_a7810b66af3c8143bfce6b5799882349b}\label{structuart__port_a7810b66af3c8143bfce6b5799882349b} 
+upf\+\_\+t {\bfseries flags}
+\item 
+\Hypertarget{structuart__port_a60ab78606c5c047fd052e0642c41f3b2}\label{structuart__port_a60ab78606c5c047fd052e0642c41f3b2} 
+upstat\+\_\+t {\bfseries status}
+\item 
+\Hypertarget{structuart__port_af75a2fd4fab4aae894fe9ac7034e6720}\label{structuart__port_af75a2fd4fab4aae894fe9ac7034e6720} 
+bool {\bfseries hw\+\_\+stopped}
+\item 
+\Hypertarget{structuart__port_abfcc28b99746659108a40e2509753620}\label{structuart__port_abfcc28b99746659108a40e2509753620} 
+unsigned int {\bfseries mctrl}
+\item 
+\Hypertarget{structuart__port_ab7f0acca36f38628d5186942e0734cef}\label{structuart__port_ab7f0acca36f38628d5186942e0734cef} 
+unsigned int {\bfseries frame\+\_\+time}
+\item 
+\Hypertarget{structuart__port_a5e38092b5639682ae4aa08a0bf108c7f}\label{structuart__port_a5e38092b5639682ae4aa08a0bf108c7f} 
+unsigned int {\bfseries type}
+\item 
+\Hypertarget{structuart__port_a58b8b285e9981ef0ce3136282e4a5ceb}\label{structuart__port_a58b8b285e9981ef0ce3136282e4a5ceb} 
+const struct \doxymbox{\hyperlink{structuart__ops}{uart\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structuart__port_ae077fc6f7fe9713a22e0377d41ca7911}\label{structuart__port_ae077fc6f7fe9713a22e0377d41ca7911} 
+unsigned int {\bfseries custom\+\_\+divisor}
+\item 
+\Hypertarget{structuart__port_ad3fae632be92358ef3a2745ce1af3cd6}\label{structuart__port_ad3fae632be92358ef3a2745ce1af3cd6} 
+unsigned int {\bfseries line}
+\item 
+\Hypertarget{structuart__port_a7c3c1dd9a0944846d632f21dad2d9187}\label{structuart__port_a7c3c1dd9a0944846d632f21dad2d9187} 
+unsigned int {\bfseries minor}
+\item 
+\Hypertarget{structuart__port_a5988a84597084be631d6ea9b6b7b6c07}\label{structuart__port_a5988a84597084be631d6ea9b6b7b6c07} 
+resource\+\_\+size\+\_\+t {\bfseries mapbase}
+\item 
+\Hypertarget{structuart__port_afd1733cba7eaa849290018ace7d0a714}\label{structuart__port_afd1733cba7eaa849290018ace7d0a714} 
+resource\+\_\+size\+\_\+t {\bfseries mapsize}
+\item 
+\Hypertarget{structuart__port_a20f3f654dc67c75fd48468628986c3c5}\label{structuart__port_a20f3f654dc67c75fd48468628986c3c5} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structuart__port_a4fe51497ee2acc1e043cfca32903e687}\label{structuart__port_a4fe51497ee2acc1e043cfca32903e687} 
+struct \doxymbox{\hyperlink{structserial__port__device}{serial\+\_\+port\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+dev}
+\item 
+\Hypertarget{structuart__port_aaf348a70e7b6ffd3e71b6d455f7cc223}\label{structuart__port_aaf348a70e7b6ffd3e71b6d455f7cc223} 
+long unsigned int {\bfseries sysrq}
+\item 
+\Hypertarget{structuart__port_adeb97e7cf762d3730f628fb54f342556}\label{structuart__port_adeb97e7cf762d3730f628fb54f342556} 
+u8 {\bfseries sysrq\+\_\+ch}
+\item 
+\Hypertarget{structuart__port_a19a4b43b1105543c40f966ea6e446d01}\label{structuart__port_a19a4b43b1105543c40f966ea6e446d01} 
+unsigned char {\bfseries has\+\_\+sysrq}
+\item 
+\Hypertarget{structuart__port_af40a6d6d8b6c85e91c7f19e065a048f9}\label{structuart__port_af40a6d6d8b6c85e91c7f19e065a048f9} 
+unsigned char {\bfseries sysrq\+\_\+seq}
+\item 
+\Hypertarget{structuart__port_a434fb5d086742ae21404c498b4a29160}\label{structuart__port_a434fb5d086742ae21404c498b4a29160} 
+unsigned char {\bfseries hub6}
+\item 
+\Hypertarget{structuart__port_aba13ba8cf4613ab537cf7d3120353c36}\label{structuart__port_aba13ba8cf4613ab537cf7d3120353c36} 
+unsigned char {\bfseries suspended}
+\item 
+\Hypertarget{structuart__port_aac7ddf0a04f6e5d2646919141d5e3e85}\label{structuart__port_aac7ddf0a04f6e5d2646919141d5e3e85} 
+unsigned char {\bfseries console\+\_\+reinit}
+\item 
+\Hypertarget{structuart__port_aa02d68f4be6b68ae386318f8dd7b3fe0}\label{structuart__port_aa02d68f4be6b68ae386318f8dd7b3fe0} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structuart__port_a4443d9dbfe3fe4bc24111398be2abc79}\label{structuart__port_a4443d9dbfe3fe4bc24111398be2abc79} 
+struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries attr\+\_\+group}
+\item 
+\Hypertarget{structuart__port_aa1a573adfff7262af78988da4ca9415e}\label{structuart__port_aa1a573adfff7262af78988da4ca9415e} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries tty\+\_\+groups}
+\item 
+\Hypertarget{structuart__port_af825184378bbb95f247d338bfc57dea9}\label{structuart__port_af825184378bbb95f247d338bfc57dea9} 
+struct \doxymbox{\hyperlink{structserial__rs485}{serial\+\_\+rs485}} {\bfseries rs485}
+\item 
+\Hypertarget{structuart__port_a98d958af31050d1bd4ae2c390c3418fd}\label{structuart__port_a98d958af31050d1bd4ae2c390c3418fd} 
+struct \doxymbox{\hyperlink{structserial__rs485}{serial\+\_\+rs485}} {\bfseries rs485\+\_\+supported}
+\item 
+\Hypertarget{structuart__port_a69904713c27a83bb0edd892e1ae42015}\label{structuart__port_a69904713c27a83bb0edd892e1ae42015} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries rs485\+\_\+term\+\_\+gpio}
+\item 
+\Hypertarget{structuart__port_a244b0bc86686b31f798bc2c4d779bb31}\label{structuart__port_a244b0bc86686b31f798bc2c4d779bb31} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries rs485\+\_\+rx\+\_\+during\+\_\+tx\+\_\+gpio}
+\item 
+\Hypertarget{structuart__port_a5114e8cb196c0224fbc31ba5ee8060d3}\label{structuart__port_a5114e8cb196c0224fbc31ba5ee8060d3} 
+struct \doxymbox{\hyperlink{structserial__iso7816}{serial\+\_\+iso7816}} {\bfseries iso7816}
+\item 
+\Hypertarget{structuart__port_a0924ba82e83b25632bcf1a7b13d34c49}\label{structuart__port_a0924ba82e83b25632bcf1a7b13d34c49} 
+void \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+data}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

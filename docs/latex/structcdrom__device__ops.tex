@@ -1,0 +1,52 @@
+\doxysection{cdrom\+\_\+device\+\_\+ops Struct Reference}
+\hypertarget{structcdrom__device__ops}{}\label{structcdrom__device__ops}\index{cdrom\_device\_ops@{cdrom\_device\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcdrom__device__ops_a723188253b65614dc9e2e3e1f463246e}\label{structcdrom__device__ops_a723188253b65614dc9e2e3e1f463246e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structcdrom__device__ops_ac7f7e386104480bb6ccd7b25a242a5d4}\label{structcdrom__device__ops_ac7f7e386104480bb6ccd7b25a242a5d4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcdrom__device__ops_a190031612cb16de6fd927fb12786fe72}\label{structcdrom__device__ops_a190031612cb16de6fd927fb12786fe72} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries drive\+\_\+status} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structcdrom__device__ops_a7daae15eb2e821ba379854a4707975a7}\label{structcdrom__device__ops_a7daae15eb2e821ba379854a4707975a7} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+events} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, unsigned int, int)
+\item 
+\Hypertarget{structcdrom__device__ops_a0d2f28a79fc60e32d28ed9a3b3c23694}\label{structcdrom__device__ops_a0d2f28a79fc60e32d28ed9a3b3c23694} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries tray\+\_\+move} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structcdrom__device__ops_a1a5725e75ef5f69fe30ff518380285b8}\label{structcdrom__device__ops_a1a5725e75ef5f69fe30ff518380285b8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries lock\+\_\+door} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structcdrom__device__ops_a46370bb71ed53c600d4a76c1b331381b}\label{structcdrom__device__ops_a46370bb71ed53c600d4a76c1b331381b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries select\+\_\+speed} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structcdrom__device__ops_ab65bb9d9ad6dadc395c5dab9a3ea81ba}\label{structcdrom__device__ops_ab65bb9d9ad6dadc395c5dab9a3ea81ba} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+last\+\_\+session} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcdrom__multisession}{cdrom\+\_\+multisession}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcdrom__device__ops_ab1eb085d025e81dadcf5372f42b28de3}\label{structcdrom__device__ops_ab1eb085d025e81dadcf5372f42b28de3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+mcn} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcdrom__mcn}{cdrom\+\_\+mcn}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcdrom__device__ops_a886ca64d974218e743e3910115fc61f2}\label{structcdrom__device__ops_a886ca64d974218e743e3910115fc61f2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reset} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcdrom__device__ops_a8bf892e25e30a60398d1c0dcb223cad3}\label{structcdrom__device__ops_a8bf892e25e30a60398d1c0dcb223cad3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries audio\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, unsigned int, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcdrom__device__ops_aded19af1a8356beb63700d5d89505e95}\label{structcdrom__device__ops_aded19af1a8356beb63700d5d89505e95} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries generic\+\_\+packet} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpacket__command}{packet\+\_\+command}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcdrom__device__ops_a9a880a4afbdeb8774225d05d1460ff53}\label{structcdrom__device__ops_a9a880a4afbdeb8774225d05d1460ff53} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+cdda\+\_\+bpc} )(struct \doxymbox{\hyperlink{structcdrom__device__info}{cdrom\+\_\+device\+\_\+info}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32, u32, u8 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcdrom__device__ops_a95121c5208c4defc47c65b11014d8c0a}\label{structcdrom__device__ops_a95121c5208c4defc47c65b11014d8c0a} 
+const int {\bfseries capability}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

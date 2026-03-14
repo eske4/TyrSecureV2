@@ -1,0 +1,49 @@
+\doxysection{ptrace\+\_\+syscall\+\_\+info Struct Reference}
+\hypertarget{structptrace__syscall__info}{}\label{structptrace__syscall__info}\index{ptrace\_syscall\_info@{ptrace\_syscall\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structptrace__syscall__info_abe0da8ea5e3e73577a4cc483fb1a19b8}\label{structptrace__syscall__info_abe0da8ea5e3e73577a4cc483fb1a19b8} 
+\+\_\+\+\_\+u8 {\bfseries op}
+\item 
+\Hypertarget{structptrace__syscall__info_a3e063b1a043795c157e3d201ca207d5e}\label{structptrace__syscall__info_a3e063b1a043795c157e3d201ca207d5e} 
+\+\_\+\+\_\+u8 {\bfseries reserved}
+\item 
+\Hypertarget{structptrace__syscall__info_a80cf02fa797bc2238e726823218b4638}\label{structptrace__syscall__info_a80cf02fa797bc2238e726823218b4638} 
+\+\_\+\+\_\+u16 {\bfseries flags}
+\item 
+\Hypertarget{structptrace__syscall__info_aaf731b6982ea4af9d26159b7c08bd4a2}\label{structptrace__syscall__info_aaf731b6982ea4af9d26159b7c08bd4a2} 
+\+\_\+\+\_\+u32 {\bfseries arch}
+\item 
+\Hypertarget{structptrace__syscall__info_a86461daf1221c614fd787143f5380423}\label{structptrace__syscall__info_a86461daf1221c614fd787143f5380423} 
+\+\_\+\+\_\+u64 {\bfseries instruction\+\_\+pointer}
+\item 
+\Hypertarget{structptrace__syscall__info_aff1a9f3dba84df207668ab0aa987bd57}\label{structptrace__syscall__info_aff1a9f3dba84df207668ab0aa987bd57} 
+\+\_\+\+\_\+u64 {\bfseries stack\+\_\+pointer}
+\item 
+\Hypertarget{structptrace__syscall__info_a6f521bbe707475721efb6d5d9c4e5516}\label{structptrace__syscall__info_a6f521bbe707475721efb6d5d9c4e5516} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries nr}\\
+\>\>\_\_u64 {\bfseries args} \+[6]\+\\
+\>\} {\bfseries entry}\\
+\>struct \{\\
+\>\>\_\_s64 {\bfseries rval}\\
+\>\>\_\_u8 {\bfseries is\_error}\\
+\>\} {\bfseries exit}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries nr}\\
+\>\>\_\_u64 {\bfseries args} \+[6]\+\\
+\>\>\_\_u32 {\bfseries ret\_data}\\
+\>\>\_\_u32 {\bfseries reserved2}\\
+\>\} {\bfseries seccomp}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

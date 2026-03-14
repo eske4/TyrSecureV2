@@ -1,0 +1,64 @@
+\doxysection{shmem\+\_\+sb\+\_\+info Struct Reference}
+\hypertarget{structshmem__sb__info}{}\label{structshmem__sb__info}\index{shmem\_sb\_info@{shmem\_sb\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structshmem__sb__info_a312cb6cd778128c881e523b36ef89bbf}\label{structshmem__sb__info_a312cb6cd778128c881e523b36ef89bbf} 
+long unsigned int {\bfseries max\+\_\+blocks}
+\item 
+\Hypertarget{structshmem__sb__info_aed1a8dd1159a6c45dfc6cc7de9e4aab1}\label{structshmem__sb__info_aed1a8dd1159a6c45dfc6cc7de9e4aab1} 
+struct \doxymbox{\hyperlink{structpercpu__counter}{percpu\+\_\+counter}} {\bfseries used\+\_\+blocks}
+\item 
+\Hypertarget{structshmem__sb__info_a6cbbc593726422cfd854ff118a1301d1}\label{structshmem__sb__info_a6cbbc593726422cfd854ff118a1301d1} 
+long unsigned int {\bfseries max\+\_\+inodes}
+\item 
+\Hypertarget{structshmem__sb__info_a215616c88959bf953930be851d8cd6fb}\label{structshmem__sb__info_a215616c88959bf953930be851d8cd6fb} 
+long unsigned int {\bfseries free\+\_\+ispace}
+\item 
+\Hypertarget{structshmem__sb__info_a3e3922571a6659d5d93e7142b0119acd}\label{structshmem__sb__info_a3e3922571a6659d5d93e7142b0119acd} 
+raw\+\_\+spinlock\+\_\+t {\bfseries stat\+\_\+lock}
+\item 
+\Hypertarget{structshmem__sb__info_a4a3c21f9e7257f3e02f4ae1f6ab282e4}\label{structshmem__sb__info_a4a3c21f9e7257f3e02f4ae1f6ab282e4} 
+umode\+\_\+t {\bfseries mode}
+\item 
+\Hypertarget{structshmem__sb__info_a735b5bb3a3953cc79a7007c469cffd29}\label{structshmem__sb__info_a735b5bb3a3953cc79a7007c469cffd29} 
+unsigned char {\bfseries huge}
+\item 
+\Hypertarget{structshmem__sb__info_af4fceee0de46cba37bc6e82734ca032a}\label{structshmem__sb__info_af4fceee0de46cba37bc6e82734ca032a} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries uid}
+\item 
+\Hypertarget{structshmem__sb__info_a2fbb54e023ac8d431d462a1c115381cf}\label{structshmem__sb__info_a2fbb54e023ac8d431d462a1c115381cf} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries gid}
+\item 
+\Hypertarget{structshmem__sb__info_af92bf14b83f6e77cfacf42f01f9582e1}\label{structshmem__sb__info_af92bf14b83f6e77cfacf42f01f9582e1} 
+bool {\bfseries full\+\_\+inums}
+\item 
+\Hypertarget{structshmem__sb__info_a667dc57c04dc6b9d8dca1da60eb17189}\label{structshmem__sb__info_a667dc57c04dc6b9d8dca1da60eb17189} 
+bool {\bfseries noswap}
+\item 
+\Hypertarget{structshmem__sb__info_aa56c74e313fbd4dee276dd1f99de6fa4}\label{structshmem__sb__info_aa56c74e313fbd4dee276dd1f99de6fa4} 
+ino\+\_\+t {\bfseries next\+\_\+ino}
+\item 
+\Hypertarget{structshmem__sb__info_ac02cef480d993fb860ce3be4b42c98f4}\label{structshmem__sb__info_ac02cef480d993fb860ce3be4b42c98f4} 
+ino\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries ino\+\_\+batch}
+\item 
+\Hypertarget{structshmem__sb__info_a67aafc35b5c8b71a04edfd6d7ad2973d}\label{structshmem__sb__info_a67aafc35b5c8b71a04edfd6d7ad2973d} 
+struct \doxymbox{\hyperlink{structmempolicy}{mempolicy}} \texorpdfstring{$\ast$}{*} {\bfseries mpol}
+\item 
+\Hypertarget{structshmem__sb__info_a76a803369e300b0e7d8ac948c60bb3cf}\label{structshmem__sb__info_a76a803369e300b0e7d8ac948c60bb3cf} 
+spinlock\+\_\+t {\bfseries shrinklist\+\_\+lock}
+\item 
+\Hypertarget{structshmem__sb__info_a2429d3771759e129e0725afbeeb79eb9}\label{structshmem__sb__info_a2429d3771759e129e0725afbeeb79eb9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries shrinklist}
+\item 
+\Hypertarget{structshmem__sb__info_a30609bb78a39147edcbaa3a08d9c89f3}\label{structshmem__sb__info_a30609bb78a39147edcbaa3a08d9c89f3} 
+long unsigned int {\bfseries shrinklist\+\_\+len}
+\item 
+\Hypertarget{structshmem__sb__info_a0f1c77072ed09cf9c5ceb98b20213ad6}\label{structshmem__sb__info_a0f1c77072ed09cf9c5ceb98b20213ad6} 
+struct \doxymbox{\hyperlink{structshmem__quota__limits}{shmem\+\_\+quota\+\_\+limits}} {\bfseries qlimits}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

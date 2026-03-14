@@ -1,0 +1,139 @@
+\doxysection{io\+\_\+uring\+\_\+sqe Struct Reference}
+\hypertarget{structio__uring__sqe}{}\label{structio__uring__sqe}\index{io\_uring\_sqe@{io\_uring\_sqe}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__uring__sqe_a00497bfb4cdc5a036e50266759bc3f5a}\label{structio__uring__sqe_a00497bfb4cdc5a036e50266759bc3f5a} 
+\+\_\+\+\_\+u8 {\bfseries opcode}
+\item 
+\Hypertarget{structio__uring__sqe_a0a11108c417cb20e4c954c54512da174}\label{structio__uring__sqe_a0a11108c417cb20e4c954c54512da174} 
+\+\_\+\+\_\+u8 {\bfseries flags}
+\item 
+\Hypertarget{structio__uring__sqe_a88837296899ef8b417c05b1577f5bd1d}\label{structio__uring__sqe_a88837296899ef8b417c05b1577f5bd1d} 
+\+\_\+\+\_\+u16 {\bfseries ioprio}
+\item 
+\Hypertarget{structio__uring__sqe_a8bb8f67a1d8d65214776b807feffbff3}\label{structio__uring__sqe_a8bb8f67a1d8d65214776b807feffbff3} 
+\+\_\+\+\_\+s32 {\bfseries fd}
+\item 
+\Hypertarget{structio__uring__sqe_a58d7c8464e4b1db9d1e38128fd183279}\label{structio__uring__sqe_a58d7c8464e4b1db9d1e38128fd183279} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u64 {\bfseries off}\\
+\>\_\_u64 {\bfseries addr2}\\
+\Hypertarget{unionio__uring__sqe_1_1_0d275247050310010125221111276073315016362355217220_a0e2c730bf6074987ec281614c3d9db85}\label{unionio__uring__sqe_1_1_0d275247050310010125221111276073315016362355217220_a0e2c730bf6074987ec281614c3d9db85} 
+\>struct \{\\
+\>\>\_\_u32 {\bfseries cmd\_op}\\
+\>\>\_\_u32 {\bfseries \_\_pad1}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__uring__sqe_ad9a842b996f9738a2c8aafcbe72c74e1}\label{structio__uring__sqe_ad9a842b996f9738a2c8aafcbe72c74e1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u64 {\bfseries addr}\\
+\>\_\_u64 {\bfseries splice\_off\_in}\\
+\Hypertarget{unionio__uring__sqe_1_1_0d245035360262151264141324374162005263026263067112_a83999828fb963e854393fd04aab0b2ad}\label{unionio__uring__sqe_1_1_0d245035360262151264141324374162005263026263067112_a83999828fb963e854393fd04aab0b2ad} 
+\>struct \{\\
+\>\>\_\_u32 {\bfseries level}\\
+\>\>\_\_u32 {\bfseries optname}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__uring__sqe_a63db961462b592e1ff6eda59036bb886}\label{structio__uring__sqe_a63db961462b592e1ff6eda59036bb886} 
+\+\_\+\+\_\+u32 {\bfseries len}
+\item 
+\Hypertarget{structio__uring__sqe_ae65dfc867c7fd5e0661254b019efad03}\label{structio__uring__sqe_ae65dfc867c7fd5e0661254b019efad03} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u32 {\bfseries rw\_flags}\\
+\>\_\_u32 {\bfseries fsync\_flags}\\
+\>\_\_u16 {\bfseries poll\_events}\\
+\>\_\_u32 {\bfseries poll32\_events}\\
+\>\_\_u32 {\bfseries sync\_range\_flags}\\
+\>\_\_u32 {\bfseries msg\_flags}\\
+\>\_\_u32 {\bfseries timeout\_flags}\\
+\>\_\_u32 {\bfseries accept\_flags}\\
+\>\_\_u32 {\bfseries cancel\_flags}\\
+\>\_\_u32 {\bfseries open\_flags}\\
+\>\_\_u32 {\bfseries statx\_flags}\\
+\>\_\_u32 {\bfseries fadvise\_advice}\\
+\>\_\_u32 {\bfseries splice\_flags}\\
+\>\_\_u32 {\bfseries rename\_flags}\\
+\>\_\_u32 {\bfseries unlink\_flags}\\
+\>\_\_u32 {\bfseries hardlink\_flags}\\
+\>\_\_u32 {\bfseries xattr\_flags}\\
+\>\_\_u32 {\bfseries msg\_ring\_flags}\\
+\>\_\_u32 {\bfseries uring\_cmd\_flags}\\
+\>\_\_u32 {\bfseries waitid\_flags}\\
+\>\_\_u32 {\bfseries futex\_flags}\\
+\>\_\_u32 {\bfseries install\_fd\_flags}\\
+\>\_\_u32 {\bfseries nop\_flags}\\
+\>\_\_u32 {\bfseries pipe\_flags}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__uring__sqe_abc3388068aa56d0d4f21127308c17093}\label{structio__uring__sqe_abc3388068aa56d0d4f21127308c17093} 
+\+\_\+\+\_\+u64 {\bfseries user\+\_\+data}
+\item 
+\Hypertarget{structio__uring__sqe_ace07dd419fa1471e5321f9f5681a434a}\label{structio__uring__sqe_ace07dd419fa1471e5321f9f5681a434a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u16 {\bfseries buf\_index}\\
+\>\_\_u16 {\bfseries buf\_group}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__uring__sqe_a131538c0e8c3a220d03f4355185a1268}\label{structio__uring__sqe_a131538c0e8c3a220d03f4355185a1268} 
+\+\_\+\+\_\+u16 {\bfseries personality}
+\item 
+\Hypertarget{structio__uring__sqe_ac54d54a846276e3afc967f578fcfb33e}\label{structio__uring__sqe_ac54d54a846276e3afc967f578fcfb33e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_s32 {\bfseries splice\_fd\_in}\\
+\>\_\_u32 {\bfseries file\_index}\\
+\>\_\_u32 {\bfseries zcrx\_ifq\_idx}\\
+\>\_\_u32 {\bfseries optlen}\\
+\Hypertarget{unionio__uring__sqe_1_1_0d114342103072117216263363173115167071022302164102_a95243fb07559260b668858db71b9f010}\label{unionio__uring__sqe_1_1_0d114342103072117216263363173115167071022302164102_a95243fb07559260b668858db71b9f010} 
+\>struct \{\\
+\>\>\_\_u16 {\bfseries addr\_len}\\
+\>\>\_\_u16 {\bfseries \_\_pad3} \+[1]\+\\
+\>\} \\
+\Hypertarget{unionio__uring__sqe_1_1_0d114342103072117216263363173115167071022302164102_aeda9bcef4656fba45f7959480aab39e2}\label{unionio__uring__sqe_1_1_0d114342103072117216263363173115167071022302164102_aeda9bcef4656fba45f7959480aab39e2} 
+\>struct \{\\
+\>\>\_\_u8 {\bfseries write\_stream}\\
+\>\>\_\_u8 {\bfseries \_\_pad4} \+[3]\+\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__uring__sqe_a3cd2acb84cd50e83a522719cb355e84e}\label{structio__uring__sqe_a3cd2acb84cd50e83a522719cb355e84e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionio__uring__sqe_1_1_0d366231004014012355136045027146310054031022132207_a146c6071bc3fff1b34e93d9c1b8fe3f4}\label{unionio__uring__sqe_1_1_0d366231004014012355136045027146310054031022132207_a146c6071bc3fff1b34e93d9c1b8fe3f4} 
+\>struct \{\\
+\>\>\_\_u64 {\bfseries addr3}\\
+\>\>\_\_u64 {\bfseries \_\_pad2} \+[1]\+\\
+\>\} \\
+\Hypertarget{unionio__uring__sqe_1_1_0d366231004014012355136045027146310054031022132207_aa5c3e3a9ff4d1a804bdd0e7376d4ed6d}\label{unionio__uring__sqe_1_1_0d366231004014012355136045027146310054031022132207_aa5c3e3a9ff4d1a804bdd0e7376d4ed6d} 
+\>struct \{\\
+\>\>\_\_u64 {\bfseries attr\_ptr}\\
+\>\>\_\_u64 {\bfseries attr\_type\_mask}\\
+\>\} \\
+\>\_\_u64 {\bfseries optval}\\
+\>\_\_u8 {\bfseries cmd} \+[0]\+\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

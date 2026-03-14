@@ -1,0 +1,160 @@
+\doxysection{ext4\+\_\+inode\+\_\+info Struct Reference}
+\hypertarget{structext4__inode__info}{}\label{structext4__inode__info}\index{ext4\_inode\_info@{ext4\_inode\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structext4__inode__info_a880c24a1faba6eb7c3b248dddef368f9}\label{structext4__inode__info_a880c24a1faba6eb7c3b248dddef368f9} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+data} \+[15]\+
+\item 
+\Hypertarget{structext4__inode__info_a080c0318f54bd42a2c8974a1fbe02cb5}\label{structext4__inode__info_a080c0318f54bd42a2c8974a1fbe02cb5} 
+\+\_\+\+\_\+u32 {\bfseries i\+\_\+dtime}
+\item 
+\Hypertarget{structext4__inode__info_a78bb31bc14e3c936153bd35ee5c171ac}\label{structext4__inode__info_a78bb31bc14e3c936153bd35ee5c171ac} 
+ext4\+\_\+fsblk\+\_\+t {\bfseries i\+\_\+file\+\_\+acl}
+\item 
+\Hypertarget{structext4__inode__info_ace5c80e430e16baddfacc94286ded8d7}\label{structext4__inode__info_ace5c80e430e16baddfacc94286ded8d7} 
+ext4\+\_\+group\+\_\+t {\bfseries i\+\_\+block\+\_\+group}
+\item 
+\Hypertarget{structext4__inode__info_a1a3a40b985dccd285660f42c3688e816}\label{structext4__inode__info_a1a3a40b985dccd285660f42c3688e816} 
+ext4\+\_\+lblk\+\_\+t {\bfseries i\+\_\+dir\+\_\+start\+\_\+lookup}
+\item 
+\Hypertarget{structext4__inode__info_ae8595c93e9f1da381c2bd57828a71547}\label{structext4__inode__info_ae8595c93e9f1da381c2bd57828a71547} 
+long unsigned int {\bfseries i\+\_\+flags}
+\item 
+\Hypertarget{structext4__inode__info_a40b5cc5d6ed19eb206fe25f10d7eb5be}\label{structext4__inode__info_a40b5cc5d6ed19eb206fe25f10d7eb5be} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries xattr\+\_\+sem}
+\item 
+\Hypertarget{structext4__inode__info_aa1f15f60c960d59601092d75b7adbe36}\label{structext4__inode__info_aa1f15f60c960d59601092d75b7adbe36} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries i\_orphan}\\
+\>unsigned int {\bfseries i\_orphan\_idx}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structext4__inode__info_affc0e110fd4f35c8141d5c71bf20f3b6}\label{structext4__inode__info_affc0e110fd4f35c8141d5c71bf20f3b6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries i\+\_\+fc\+\_\+dilist}
+\item 
+\Hypertarget{structext4__inode__info_add60e9fddb38cf3921d0a64c306454e2}\label{structext4__inode__info_add60e9fddb38cf3921d0a64c306454e2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries i\+\_\+fc\+\_\+list}
+\item 
+\Hypertarget{structext4__inode__info_a07dc9f7e097e37cbe75af2983aa0eb83}\label{structext4__inode__info_a07dc9f7e097e37cbe75af2983aa0eb83} 
+ext4\+\_\+lblk\+\_\+t {\bfseries i\+\_\+fc\+\_\+lblk\+\_\+start}
+\item 
+\Hypertarget{structext4__inode__info_a2c74fb8cae8c204de8382b0cfc478fd5}\label{structext4__inode__info_a2c74fb8cae8c204de8382b0cfc478fd5} 
+ext4\+\_\+lblk\+\_\+t {\bfseries i\+\_\+fc\+\_\+lblk\+\_\+len}
+\item 
+\Hypertarget{structext4__inode__info_a545c46e4f01bfe752d31df354dc5a8f8}\label{structext4__inode__info_a545c46e4f01bfe752d31df354dc5a8f8} 
+spinlock\+\_\+t {\bfseries i\+\_\+raw\+\_\+lock}
+\item 
+\Hypertarget{structext4__inode__info_a8e2a040d9569c5baa209777b6b42cceb}\label{structext4__inode__info_a8e2a040d9569c5baa209777b6b42cceb} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries i\+\_\+fc\+\_\+wait}
+\item 
+\Hypertarget{structext4__inode__info_a2c6a4f602fb152cd2accb7b0d6575219}\label{structext4__inode__info_a2c6a4f602fb152cd2accb7b0d6575219} 
+spinlock\+\_\+t {\bfseries i\+\_\+fc\+\_\+lock}
+\item 
+\Hypertarget{structext4__inode__info_a52e56861248a6a9fad1a2c514b9e9914}\label{structext4__inode__info_a52e56861248a6a9fad1a2c514b9e9914} 
+loff\+\_\+t {\bfseries i\+\_\+disksize}
+\item 
+\Hypertarget{structext4__inode__info_a0978ed5e94569430d5e4287a4c62d650}\label{structext4__inode__info_a0978ed5e94569430d5e4287a4c62d650} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries i\+\_\+data\+\_\+sem}
+\item 
+\Hypertarget{structext4__inode__info_a764c8e689957f0959891957a95251d57}\label{structext4__inode__info_a764c8e689957f0959891957a95251d57} 
+struct \doxymbox{\hyperlink{structinode}{inode}} {\bfseries vfs\+\_\+inode}
+\item 
+\Hypertarget{structext4__inode__info_adc1c3bf809e63da881f237f60d2fa6ea}\label{structext4__inode__info_adc1c3bf809e63da881f237f60d2fa6ea} 
+struct \doxymbox{\hyperlink{structjbd2__inode}{jbd2\+\_\+inode}} \texorpdfstring{$\ast$}{*} {\bfseries jinode}
+\item 
+\Hypertarget{structext4__inode__info_a9a8cbde45a62a183415b71044680fcfd}\label{structext4__inode__info_a9a8cbde45a62a183415b71044680fcfd} 
+struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} {\bfseries i\+\_\+crtime}
+\item 
+\Hypertarget{structext4__inode__info_a410c8f049ec20eb724329ba6f6841a47}\label{structext4__inode__info_a410c8f049ec20eb724329ba6f6841a47} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries i\+\_\+prealloc\+\_\+active}
+\item 
+\Hypertarget{structext4__inode__info_a7ad9c9a47d6c894ba614c3b603d8f249}\label{structext4__inode__info_a7ad9c9a47d6c894ba614c3b603d8f249} 
+unsigned int {\bfseries i\+\_\+reserved\+\_\+data\+\_\+blocks}
+\item 
+\Hypertarget{structext4__inode__info_aec81dd95f817af3414a40bc35f8e13eb}\label{structext4__inode__info_aec81dd95f817af3414a40bc35f8e13eb} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries i\+\_\+prealloc\+\_\+node}
+\item 
+\Hypertarget{structext4__inode__info_a23cdb985d304310122ff64e2cb3b0818}\label{structext4__inode__info_a23cdb985d304310122ff64e2cb3b0818} 
+\doxymbox{\hyperlink{structrwlock__t}{rwlock\+\_\+t}} {\bfseries i\+\_\+prealloc\+\_\+lock}
+\item 
+\Hypertarget{structext4__inode__info_a035299230decea3fc14aba616612e03b}\label{structext4__inode__info_a035299230decea3fc14aba616612e03b} 
+struct \doxymbox{\hyperlink{structext4__es__tree}{ext4\+\_\+es\+\_\+tree}} {\bfseries i\+\_\+es\+\_\+tree}
+\item 
+\Hypertarget{structext4__inode__info_a0acb1ad0689bff5f32ecc051ce8f0109}\label{structext4__inode__info_a0acb1ad0689bff5f32ecc051ce8f0109} 
+\doxymbox{\hyperlink{structrwlock__t}{rwlock\+\_\+t}} {\bfseries i\+\_\+es\+\_\+lock}
+\item 
+\Hypertarget{structext4__inode__info_a54bcb54f39ba2b0d19b1a2d82c09f01d}\label{structext4__inode__info_a54bcb54f39ba2b0d19b1a2d82c09f01d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries i\+\_\+es\+\_\+list}
+\item 
+\Hypertarget{structext4__inode__info_a4c3af80b7200f0a08f5c86e864ddca5b}\label{structext4__inode__info_a4c3af80b7200f0a08f5c86e864ddca5b} 
+unsigned int {\bfseries i\+\_\+es\+\_\+all\+\_\+nr}
+\item 
+\Hypertarget{structext4__inode__info_a4b5645bbdc97853896951eba4e4ea4f0}\label{structext4__inode__info_a4b5645bbdc97853896951eba4e4ea4f0} 
+unsigned int {\bfseries i\+\_\+es\+\_\+shk\+\_\+nr}
+\item 
+\Hypertarget{structext4__inode__info_a9e0e6c5b701341cc631c8821bee6b987}\label{structext4__inode__info_a9e0e6c5b701341cc631c8821bee6b987} 
+ext4\+\_\+lblk\+\_\+t {\bfseries i\+\_\+es\+\_\+shrink\+\_\+lblk}
+\item 
+\Hypertarget{structext4__inode__info_a2a6ec2796bb9c869387fc9ca58c2b38d}\label{structext4__inode__info_a2a6ec2796bb9c869387fc9ca58c2b38d} 
+u64 {\bfseries i\+\_\+es\+\_\+seq}
+\item 
+\Hypertarget{structext4__inode__info_ac43fd35d4635b1d21948572e15c829c4}\label{structext4__inode__info_ac43fd35d4635b1d21948572e15c829c4} 
+ext4\+\_\+group\+\_\+t {\bfseries i\+\_\+last\+\_\+alloc\+\_\+group}
+\item 
+\Hypertarget{structext4__inode__info_ad9528f16402045788739b2541d015707}\label{structext4__inode__info_ad9528f16402045788739b2541d015707} 
+struct \doxymbox{\hyperlink{structext4__pending__tree}{ext4\+\_\+pending\+\_\+tree}} {\bfseries i\+\_\+pending\+\_\+tree}
+\item 
+\Hypertarget{structext4__inode__info_ab4f2cddcb4bfdca9c92b92235e661c1c}\label{structext4__inode__info_ab4f2cddcb4bfdca9c92b92235e661c1c} 
+\+\_\+\+\_\+u16 {\bfseries i\+\_\+extra\+\_\+isize}
+\item 
+\Hypertarget{structext4__inode__info_a72055ae18a8cd95ea32169b4745ca4d4}\label{structext4__inode__info_a72055ae18a8cd95ea32169b4745ca4d4} 
+u16 {\bfseries i\+\_\+inline\+\_\+off}
+\item 
+\Hypertarget{structext4__inode__info_a127c19db183c0a8f96faa15dadfa0956}\label{structext4__inode__info_a127c19db183c0a8f96faa15dadfa0956} 
+u16 {\bfseries i\+\_\+inline\+\_\+size}
+\item 
+\Hypertarget{structext4__inode__info_a03ea2756f99db7f3805ae22575d3bad7}\label{structext4__inode__info_a03ea2756f99db7f3805ae22575d3bad7} 
+qsize\+\_\+t {\bfseries i\+\_\+reserved\+\_\+quota}
+\item 
+\Hypertarget{structext4__inode__info_aa260610336c143935840b52eaa055dcd}\label{structext4__inode__info_aa260610336c143935840b52eaa055dcd} 
+spinlock\+\_\+t {\bfseries i\+\_\+block\+\_\+reservation\+\_\+lock}
+\item 
+\Hypertarget{structext4__inode__info_aaf0473ecdc86d8cfb901b5ff695420ec}\label{structext4__inode__info_aaf0473ecdc86d8cfb901b5ff695420ec} 
+spinlock\+\_\+t {\bfseries i\+\_\+completed\+\_\+io\+\_\+lock}
+\item 
+\Hypertarget{structext4__inode__info_a253b7730e1b04558ce60ae3ace3dd947}\label{structext4__inode__info_a253b7730e1b04558ce60ae3ace3dd947} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries i\+\_\+rsv\+\_\+conversion\+\_\+list}
+\item 
+\Hypertarget{structext4__inode__info_a3af095f8c898969adacac1a9c12aca16}\label{structext4__inode__info_a3af095f8c898969adacac1a9c12aca16} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries i\+\_\+rsv\+\_\+conversion\+\_\+work}
+\item 
+\Hypertarget{structext4__inode__info_a49234d3244cacafec4e6d041ca9d6aa2}\label{structext4__inode__info_a49234d3244cacafec4e6d041ca9d6aa2} 
+tid\+\_\+t {\bfseries i\+\_\+sync\+\_\+tid}
+\item 
+\Hypertarget{structext4__inode__info_a3d4a516ac195d5012fdf839a45d2671e}\label{structext4__inode__info_a3d4a516ac195d5012fdf839a45d2671e} 
+tid\+\_\+t {\bfseries i\+\_\+datasync\+\_\+tid}
+\item 
+\Hypertarget{structext4__inode__info_a6dda2f3960e9108d4d0d44f38a9c3dce}\label{structext4__inode__info_a6dda2f3960e9108d4d0d44f38a9c3dce} 
+struct \doxymbox{\hyperlink{structdquot}{dquot}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+dquot} \+[3]\+
+\item 
+\Hypertarget{structext4__inode__info_a870b5ee821f9f075d0c0397d6c02e190}\label{structext4__inode__info_a870b5ee821f9f075d0c0397d6c02e190} 
+\+\_\+\+\_\+u32 {\bfseries i\+\_\+csum\+\_\+seed}
+\item 
+\Hypertarget{structext4__inode__info_ab4fbec78b75dc4530148f41b676cfc9d}\label{structext4__inode__info_ab4fbec78b75dc4530148f41b676cfc9d} 
+\doxymbox{\hyperlink{structkprojid__t}{kprojid\+\_\+t}} {\bfseries i\+\_\+projid}
+\item 
+\Hypertarget{structext4__inode__info_ab5ccde3d40cd93c096769dacc3f45f9b}\label{structext4__inode__info_ab5ccde3d40cd93c096769dacc3f45f9b} 
+struct \doxymbox{\hyperlink{structfscrypt__inode__info}{fscrypt\+\_\+inode\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+crypt\+\_\+info}
+\item 
+\Hypertarget{structext4__inode__info_a2b910ad2b459257d7afde778d5dddec1}\label{structext4__inode__info_a2b910ad2b459257d7afde778d5dddec1} 
+struct \doxymbox{\hyperlink{structfsverity__info}{fsverity\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+verity\+\_\+info}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

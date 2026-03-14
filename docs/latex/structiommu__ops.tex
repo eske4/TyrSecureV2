@@ -1,0 +1,85 @@
+\doxysection{iommu\+\_\+ops Struct Reference}
+\hypertarget{structiommu__ops}{}\label{structiommu__ops}\index{iommu\_ops@{iommu\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structiommu__ops_afe6c6dee1806a39925e35e03243fab7a}\label{structiommu__ops_afe6c6dee1806a39925e35e03243fab7a} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries capable} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, enum iommu\+\_\+cap)
+\item 
+\Hypertarget{structiommu__ops_a26f1e0cbb09e3d7c780837e863f75a2a}\label{structiommu__ops_a26f1e0cbb09e3d7c780837e863f75a2a} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries hw\+\_\+info} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, enum iommu\+\_\+hw\+\_\+info\+\_\+type \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_ac028c4383344a340b8a27824896f004a}\label{structiommu__ops_ac028c4383344a340b8a27824896f004a} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries domain\+\_\+alloc\+\_\+identity} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a4a6c52165dcf8e4c7001daab627e9f2f}\label{structiommu__ops_a4a6c52165dcf8e4c7001daab627e9f2f} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries domain\+\_\+alloc\+\_\+paging\+\_\+flags} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, u32, const struct \doxymbox{\hyperlink{structiommu__user__data}{iommu\+\_\+user\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a4e529d5909df44c336bb61951849e20a}\label{structiommu__ops_a4e529d5909df44c336bb61951849e20a} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries domain\+\_\+alloc\+\_\+paging} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a0e332c783132fcc9f7cb0d349aa0b83b}\label{structiommu__ops_a0e332c783132fcc9f7cb0d349aa0b83b} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries domain\+\_\+alloc\+\_\+sva} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_acb10dda9a77b845a76d25f58a49a6422}\label{structiommu__ops_acb10dda9a77b845a76d25f58a49a6422} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries domain\+\_\+alloc\+\_\+nested} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, u32, const struct \doxymbox{\hyperlink{structiommu__user__data}{iommu\+\_\+user\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a4ead2918151a6f1d47b909bf4f3d1cb0}\label{structiommu__ops_a4ead2918151a6f1d47b909bf4f3d1cb0} 
+struct \doxymbox{\hyperlink{structiommu__device}{iommu\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries probe\+\_\+device} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_abac1c19fb203a6afd446c160b1f0e6b4}\label{structiommu__ops_abac1c19fb203a6afd446c160b1f0e6b4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+device} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a485391bad9ede985a855a3bff9e4d3e1}\label{structiommu__ops_a485391bad9ede985a855a3bff9e4d3e1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries probe\+\_\+finalize} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a6548ad5ebfc27bb15bec80f5485e96a4}\label{structiommu__ops_a6548ad5ebfc27bb15bec80f5485e96a4} 
+struct \doxymbox{\hyperlink{structiommu__group}{iommu\+\_\+group}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+group} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a9d3ae88d611243277d1901b61ec135f2}\label{structiommu__ops_a9d3ae88d611243277d1901b61ec135f2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+resv\+\_\+regions} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a20383248dcdbf1ae58351c4634b5cc28}\label{structiommu__ops_a20383248dcdbf1ae58351c4634b5cc28} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries of\+\_\+xlate} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structof__phandle__args}{of\+\_\+phandle\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_aec6aa1050b99fea7f1666c3076726e9d}\label{structiommu__ops_aec6aa1050b99fea7f1666c3076726e9d} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+attach\+\_\+deferred} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_ab4214b00207a540010f89d3f2a95c23a}\label{structiommu__ops_ab4214b00207a540010f89d3f2a95c23a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries page\+\_\+response} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiopf__fault}{iopf\+\_\+fault}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiommu__page__response}{iommu\+\_\+page\+\_\+response}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a8bb8a37db340cd4fc454791c12e987ff}\label{structiommu__ops_a8bb8a37db340cd4fc454791c12e987ff} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries def\+\_\+domain\+\_\+type} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a16cebc6dbf7b4dba37e85e12c7f57a3f}\label{structiommu__ops_a16cebc6dbf7b4dba37e85e12c7f57a3f} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+viommu\+\_\+size} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, enum iommu\+\_\+viommu\+\_\+type)
+\item 
+\Hypertarget{structiommu__ops_a733754f669580fe4c2c88a8f8a0f7796}\label{structiommu__ops_a733754f669580fe4c2c88a8f8a0f7796} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries viommu\+\_\+init} )(struct \doxymbox{\hyperlink{structiommufd__viommu}{iommufd\+\_\+viommu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structiommu__user__data}{iommu\+\_\+user\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__ops_a7ade86c277bb695458b0e51c793b7dd2}\label{structiommu__ops_a7ade86c277bb695458b0e51c793b7dd2} 
+const struct \doxymbox{\hyperlink{structiommu__domain__ops}{iommu\+\_\+domain\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries default\+\_\+domain\+\_\+ops}
+\item 
+\Hypertarget{structiommu__ops_a6dfd7fbe931c782580252a39eeab41f9}\label{structiommu__ops_a6dfd7fbe931c782580252a39eeab41f9} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structiommu__ops_a2a6b4bd7ba66e5464b49d36e9fe6658d}\label{structiommu__ops_a2a6b4bd7ba66e5464b49d36e9fe6658d} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries identity\+\_\+domain}
+\item 
+\Hypertarget{structiommu__ops_af8ddc09bd031c85eb0e654bd8bf2ae05}\label{structiommu__ops_af8ddc09bd031c85eb0e654bd8bf2ae05} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries blocked\+\_\+domain}
+\item 
+\Hypertarget{structiommu__ops_a8e4342fea767aeffdb2580b4d2e3c053}\label{structiommu__ops_a8e4342fea767aeffdb2580b4d2e3c053} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+domain}
+\item 
+\Hypertarget{structiommu__ops_a388f32e3eaf986c21ebd28a6e7dbe3aa}\label{structiommu__ops_a388f32e3eaf986c21ebd28a6e7dbe3aa} 
+struct \doxymbox{\hyperlink{structiommu__domain}{iommu\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries default\+\_\+domain}
+\item 
+\Hypertarget{structiommu__ops_a80846ba8143d92059cfd54fc18a51fd3}\label{structiommu__ops_a80846ba8143d92059cfd54fc18a51fd3} 
+u8 {\bfseries user\+\_\+pasid\+\_\+table}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

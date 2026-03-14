@@ -1,0 +1,61 @@
+\doxysection{nexthop Struct Reference}
+\hypertarget{structnexthop}{}\label{structnexthop}\index{nexthop@{nexthop}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnexthop_a3f78e7ce465d8b5ed7c8bf6e23545d9c}\label{structnexthop_a3f78e7ce465d8b5ed7c8bf6e23545d9c} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries rb\+\_\+node}
+\item 
+\Hypertarget{structnexthop_a8e5ec7c6a53e1d5956005df2aaa8e889}\label{structnexthop_a8e5ec7c6a53e1d5956005df2aaa8e889} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries fi\+\_\+list}
+\item 
+\Hypertarget{structnexthop_a6c1bc7898aa6c62817a43183b04743c3}\label{structnexthop_a6c1bc7898aa6c62817a43183b04743c3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries f6i\+\_\+list}
+\item 
+\Hypertarget{structnexthop_aae679e2b301bf3996c332fb7d542f1c9}\label{structnexthop_aae679e2b301bf3996c332fb7d542f1c9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries fdb\+\_\+list}
+\item 
+\Hypertarget{structnexthop_ac195f4bbd9b87d7b77fe382107772715}\label{structnexthop_ac195f4bbd9b87d7b77fe382107772715} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries grp\+\_\+list}
+\item 
+\Hypertarget{structnexthop_ab4a189e07eaf4d91cfdd03cc2d4a53f0}\label{structnexthop_ab4a189e07eaf4d91cfdd03cc2d4a53f0} 
+struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*} {\bfseries net}
+\item 
+\Hypertarget{structnexthop_a0ba7d5b2bed755a7687dfdecd4454183}\label{structnexthop_a0ba7d5b2bed755a7687dfdecd4454183} 
+u32 {\bfseries id}
+\item 
+\Hypertarget{structnexthop_a12f6d9b420ba06723633c9f9c80d2c47}\label{structnexthop_a12f6d9b420ba06723633c9f9c80d2c47} 
+u8 {\bfseries protocol}
+\item 
+\Hypertarget{structnexthop_a1ba3960b9213e55064282f342f85433c}\label{structnexthop_a1ba3960b9213e55064282f342f85433c} 
+u8 {\bfseries nh\+\_\+flags}
+\item 
+\Hypertarget{structnexthop_a99936418b6a6315f0961682c9358ccca}\label{structnexthop_a99936418b6a6315f0961682c9358ccca} 
+bool {\bfseries is\+\_\+group}
+\item 
+\Hypertarget{structnexthop_aabae99e10fd9751887b250b060270145}\label{structnexthop_aabae99e10fd9751887b250b060270145} 
+bool {\bfseries dead}
+\item 
+\Hypertarget{structnexthop_ab4569511a9823e893224dc6600147959}\label{structnexthop_ab4569511a9823e893224dc6600147959} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structnexthop_a9b60debfa3aa976a5d4cc98ebe007bbf}\label{structnexthop_a9b60debfa3aa976a5d4cc98ebe007bbf} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structnexthop_a05f3d9fc93c0c0a47b6ae4a67faa8256}\label{structnexthop_a05f3d9fc93c0c0a47b6ae4a67faa8256} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structnexthop_addbed6a628ce565cdfd3147b45a62ebd}\label{structnexthop_addbed6a628ce565cdfd3147b45a62ebd} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structnh__info}{nh\_info}} \texorpdfstring{$\ast$}{*} {\bfseries nh\_info}\\
+\>struct \doxymbox{\hyperlink{structnh__group}{nh\_group}} \texorpdfstring{$\ast$}{*} {\bfseries nh\_grp}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\doxysection{journal\+\_\+superblock\+\_\+s Struct Reference}
+\hypertarget{structjournal__superblock__s}{}\label{structjournal__superblock__s}\index{journal\_superblock\_s@{journal\_superblock\_s}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structjournal__superblock__s_afd224e158383fa3524b00a57ec882d30}\label{structjournal__superblock__s_afd224e158383fa3524b00a57ec882d30} 
+journal\+\_\+header\+\_\+t {\bfseries s\+\_\+header}
+\item 
+\Hypertarget{structjournal__superblock__s_a93f0593f298f9df05b906602a791912e}\label{structjournal__superblock__s_a93f0593f298f9df05b906602a791912e} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+blocksize}
+\item 
+\Hypertarget{structjournal__superblock__s_a808a74a200045d8ff98f46df8a40fff5}\label{structjournal__superblock__s_a808a74a200045d8ff98f46df8a40fff5} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+maxlen}
+\item 
+\Hypertarget{structjournal__superblock__s_a45e80ba426faf07934b6b71ce62ee97a}\label{structjournal__superblock__s_a45e80ba426faf07934b6b71ce62ee97a} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+first}
+\item 
+\Hypertarget{structjournal__superblock__s_a2df84c5c902e1ed5641f4d2aee4cab73}\label{structjournal__superblock__s_a2df84c5c902e1ed5641f4d2aee4cab73} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+sequence}
+\item 
+\Hypertarget{structjournal__superblock__s_a8dbe8c4b13f251191b693b7cda330257}\label{structjournal__superblock__s_a8dbe8c4b13f251191b693b7cda330257} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+start}
+\item 
+\Hypertarget{structjournal__superblock__s_a0a018c710edf680ed62564de11151765}\label{structjournal__superblock__s_a0a018c710edf680ed62564de11151765} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+errno}
+\item 
+\Hypertarget{structjournal__superblock__s_a74554f07a838bebbb869674c617eabe2}\label{structjournal__superblock__s_a74554f07a838bebbb869674c617eabe2} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+feature\+\_\+compat}
+\item 
+\Hypertarget{structjournal__superblock__s_a3d87ac1d9bcb596ddb1f58ea303b7126}\label{structjournal__superblock__s_a3d87ac1d9bcb596ddb1f58ea303b7126} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+feature\+\_\+incompat}
+\item 
+\Hypertarget{structjournal__superblock__s_aa3456370f8ddc1e208bf2deb7c7a7732}\label{structjournal__superblock__s_aa3456370f8ddc1e208bf2deb7c7a7732} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+feature\+\_\+ro\+\_\+compat}
+\item 
+\Hypertarget{structjournal__superblock__s_a39c7229e210b9c2515d38266f8baec99}\label{structjournal__superblock__s_a39c7229e210b9c2515d38266f8baec99} 
+\+\_\+\+\_\+u8 {\bfseries s\+\_\+uuid} \+[16]\+
+\item 
+\Hypertarget{structjournal__superblock__s_a09cdc078dd5bd70e1716805c94569144}\label{structjournal__superblock__s_a09cdc078dd5bd70e1716805c94569144} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+nr\+\_\+users}
+\item 
+\Hypertarget{structjournal__superblock__s_a6371832ac666fb72afd4828ecec58c24}\label{structjournal__superblock__s_a6371832ac666fb72afd4828ecec58c24} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+dynsuper}
+\item 
+\Hypertarget{structjournal__superblock__s_a36438e894af7f91e94dc95414727211a}\label{structjournal__superblock__s_a36438e894af7f91e94dc95414727211a} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+max\+\_\+transaction}
+\item 
+\Hypertarget{structjournal__superblock__s_a6584fb1e8fa7356ca22b7c6a680acac2}\label{structjournal__superblock__s_a6584fb1e8fa7356ca22b7c6a680acac2} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+max\+\_\+trans\+\_\+data}
+\item 
+\Hypertarget{structjournal__superblock__s_a92c6531da2965f89902dcd1df89601f6}\label{structjournal__superblock__s_a92c6531da2965f89902dcd1df89601f6} 
+\+\_\+\+\_\+u8 {\bfseries s\+\_\+checksum\+\_\+type}
+\item 
+\Hypertarget{structjournal__superblock__s_a64f4e8de426c86b5a2a728acd5a6e356}\label{structjournal__superblock__s_a64f4e8de426c86b5a2a728acd5a6e356} 
+\+\_\+\+\_\+u8 {\bfseries s\+\_\+padding2} \+[3]\+
+\item 
+\Hypertarget{structjournal__superblock__s_ad442841e5ca2f4ec3518b1dcde0d6f0f}\label{structjournal__superblock__s_ad442841e5ca2f4ec3518b1dcde0d6f0f} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+num\+\_\+fc\+\_\+blks}
+\item 
+\Hypertarget{structjournal__superblock__s_a2ff8a9fb7607ad0b60564bc2b63e3150}\label{structjournal__superblock__s_a2ff8a9fb7607ad0b60564bc2b63e3150} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+head}
+\item 
+\Hypertarget{structjournal__superblock__s_aa41e0b600a9b23619a76dde2d92a932b}\label{structjournal__superblock__s_aa41e0b600a9b23619a76dde2d92a932b} 
+\+\_\+\+\_\+u32 {\bfseries s\+\_\+padding} \+[40]\+
+\item 
+\Hypertarget{structjournal__superblock__s_a06122b2739508ae7b8c7f87d933919c1}\label{structjournal__superblock__s_a06122b2739508ae7b8c7f87d933919c1} 
+\+\_\+\+\_\+be32 {\bfseries s\+\_\+checksum}
+\item 
+\Hypertarget{structjournal__superblock__s_ae7e6df29b23a5a9612c90929648c6c21}\label{structjournal__superblock__s_ae7e6df29b23a5a9612c90929648c6c21} 
+\+\_\+\+\_\+u8 {\bfseries s\+\_\+users} \+[768]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

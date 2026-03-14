@@ -1,0 +1,46 @@
+\doxysection{fanotify\+\_\+perm\+\_\+event Struct Reference}
+\hypertarget{structfanotify__perm__event}{}\label{structfanotify__perm__event}\index{fanotify\_perm\_event@{fanotify\_perm\_event}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfanotify__perm__event_a1ea866cc551900c3af895faab0d6b4f3}\label{structfanotify__perm__event_a1ea866cc551900c3af895faab0d6b4f3} 
+struct \doxymbox{\hyperlink{structfanotify__event}{fanotify\+\_\+event}} {\bfseries fae}
+\item 
+\Hypertarget{structfanotify__perm__event_a91ce007813b5bdbf8dc5bf737b9f7e8f}\label{structfanotify__perm__event_a91ce007813b5bdbf8dc5bf737b9f7e8f} 
+struct \doxymbox{\hyperlink{structpath}{path}} {\bfseries path}
+\item 
+\Hypertarget{structfanotify__perm__event_a3049e5b949c076cb369c7c5a8c8039c2}\label{structfanotify__perm__event_a3049e5b949c076cb369c7c5a8c8039c2} 
+const loff\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries ppos}
+\item 
+\Hypertarget{structfanotify__perm__event_a4c6a49d099a2154d60c0090f2951614e}\label{structfanotify__perm__event_a4c6a49d099a2154d60c0090f2951614e} 
+size\+\_\+t {\bfseries count}
+\item 
+\Hypertarget{structfanotify__perm__event_ab3b1785594935bb133162b28bec5872c}\label{structfanotify__perm__event_ab3b1785594935bb133162b28bec5872c} 
+u32 {\bfseries response}
+\item 
+\Hypertarget{structfanotify__perm__event_ad68bb065930e28f79bce34a94f814f8f}\label{structfanotify__perm__event_ad68bb065930e28f79bce34a94f814f8f} 
+short unsigned int {\bfseries state}
+\item 
+\Hypertarget{structfanotify__perm__event_a08a5aa4cbff1489897f2ece3268b4a06}\label{structfanotify__perm__event_a08a5aa4cbff1489897f2ece3268b4a06} 
+short unsigned int {\bfseries watchdog\+\_\+cnt}
+\item 
+\Hypertarget{structfanotify__perm__event_ad29df905a85d40ba1aef6939f32f30b1}\label{structfanotify__perm__event_ad29df905a85d40ba1aef6939f32f30b1} 
+int {\bfseries fd}
+\item 
+\Hypertarget{structfanotify__perm__event_a744014e3016697f3d6be06866c42ee30}\label{structfanotify__perm__event_a744014e3016697f3d6be06866c42ee30} 
+pid\+\_\+t {\bfseries recv\+\_\+pid}
+\item 
+\Hypertarget{structfanotify__perm__event_afd60f91b6bfb69af741b35fdbcff156a}\label{structfanotify__perm__event_afd60f91b6bfb69af741b35fdbcff156a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structfanotify__response__info__header}{fanotify\_response\_info\_header}} {\bfseries hdr}\\
+\>struct \doxymbox{\hyperlink{structfanotify__response__info__audit__rule}{fanotify\_response\_info\_audit\_rule}} {\bfseries audit\_rule}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

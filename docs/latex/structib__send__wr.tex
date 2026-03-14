@@ -1,0 +1,43 @@
+\doxysection{ib\+\_\+send\+\_\+wr Struct Reference}
+\hypertarget{structib__send__wr}{}\label{structib__send__wr}\index{ib\_send\_wr@{ib\_send\_wr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structib__send__wr_aaaf8135da304bb10e1b3b7747f084868}\label{structib__send__wr_aaaf8135da304bb10e1b3b7747f084868} 
+struct \doxymbox{\hyperlink{structib__send__wr}{ib\+\_\+send\+\_\+wr}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\item 
+\Hypertarget{structib__send__wr_a7697fcee735f3be1c0c9334acefb11fb}\label{structib__send__wr_a7697fcee735f3be1c0c9334acefb11fb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries wr\_id}\\
+\>struct \doxymbox{\hyperlink{structib__cqe}{ib\_cqe}} \texorpdfstring{$\ast$}{*} {\bfseries wr\_cqe}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structib__send__wr_a645c8f1c617fbe4239684c551e96d313}\label{structib__send__wr_a645c8f1c617fbe4239684c551e96d313} 
+struct \doxymbox{\hyperlink{structib__sge}{ib\+\_\+sge}} \texorpdfstring{$\ast$}{*} {\bfseries sg\+\_\+list}
+\item 
+\Hypertarget{structib__send__wr_a3e8d4dc3dcc9e920a85bafeb379daeac}\label{structib__send__wr_a3e8d4dc3dcc9e920a85bafeb379daeac} 
+int {\bfseries num\+\_\+sge}
+\item 
+\Hypertarget{structib__send__wr_a6a778b216d11e85ee373e84384252265}\label{structib__send__wr_a6a778b216d11e85ee373e84384252265} 
+enum ib\+\_\+wr\+\_\+opcode {\bfseries opcode}
+\item 
+\Hypertarget{structib__send__wr_afcadc781a3561cb47d3811a2e8629fea}\label{structib__send__wr_afcadc781a3561cb47d3811a2e8629fea} 
+int {\bfseries send\+\_\+flags}
+\item 
+\Hypertarget{structib__send__wr_a2d868edbcf2201ba63c9ac4b6441152d}\label{structib__send__wr_a2d868edbcf2201ba63c9ac4b6441152d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries imm\_data}\\
+\>u32 {\bfseries invalidate\_rkey}\\
+\} {\bfseries ex}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\doxysection{bpf\+\_\+subprog\+\_\+info Struct Reference}
+\hypertarget{structbpf__subprog__info}{}\label{structbpf__subprog__info}\index{bpf\_subprog\_info@{bpf\_subprog\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__subprog__info_aeaea15e85d31761a22ab7f933d80375c}\label{structbpf__subprog__info_aeaea15e85d31761a22ab7f933d80375c} 
+u32 {\bfseries start}
+\item 
+\Hypertarget{structbpf__subprog__info_a3b4f5c1112e9d15efe41f06ee85354d8}\label{structbpf__subprog__info_a3b4f5c1112e9d15efe41f06ee85354d8} 
+u32 {\bfseries linfo\+\_\+idx}
+\item 
+\Hypertarget{structbpf__subprog__info_a0c0db0fefb005f4af32fac9eb5775114}\label{structbpf__subprog__info_a0c0db0fefb005f4af32fac9eb5775114} 
+u32 {\bfseries postorder\+\_\+start}
+\item 
+\Hypertarget{structbpf__subprog__info_af70448e82d48733b0ed54b9d3922a1b7}\label{structbpf__subprog__info_af70448e82d48733b0ed54b9d3922a1b7} 
+u32 {\bfseries exit\+\_\+idx}
+\item 
+\Hypertarget{structbpf__subprog__info_a060f50355e0e64bb6fefc4fdbd188f04}\label{structbpf__subprog__info_a060f50355e0e64bb6fefc4fdbd188f04} 
+u16 {\bfseries stack\+\_\+depth}
+\item 
+\Hypertarget{structbpf__subprog__info_a32a3df7c73328b61cea1a040872493b7}\label{structbpf__subprog__info_a32a3df7c73328b61cea1a040872493b7} 
+u16 {\bfseries stack\+\_\+extra}
+\item 
+\Hypertarget{structbpf__subprog__info_acbf2fd2f4f3b083c74067e6b389ee09a}\label{structbpf__subprog__info_acbf2fd2f4f3b083c74067e6b389ee09a} 
+s16 {\bfseries fastcall\+\_\+stack\+\_\+off}
+\item 
+\Hypertarget{structbpf__subprog__info_aba2b7970000aa9b06266b07112ee864c}\label{structbpf__subprog__info_aba2b7970000aa9b06266b07112ee864c} 
+bool {\bfseries has\+\_\+tail\+\_\+call}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_aea1c744dd69caf01befc0211c7a6d425}\label{structbpf__subprog__info_aea1c744dd69caf01befc0211c7a6d425} 
+bool {\bfseries tail\+\_\+call\+\_\+reachable}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_a50f4756929f3fca6be350c2a63b323f9}\label{structbpf__subprog__info_a50f4756929f3fca6be350c2a63b323f9} 
+bool {\bfseries has\+\_\+ld\+\_\+abs}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_a93ec447d08578be9be396997603b176c}\label{structbpf__subprog__info_a93ec447d08578be9be396997603b176c} 
+bool {\bfseries is\+\_\+cb}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_aa9b2266754f4df98acde641a7844f490}\label{structbpf__subprog__info_aa9b2266754f4df98acde641a7844f490} 
+bool {\bfseries is\+\_\+async\+\_\+cb}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_aec197b44da82567da44ea7439bb3e5ee}\label{structbpf__subprog__info_aec197b44da82567da44ea7439bb3e5ee} 
+bool {\bfseries is\+\_\+exception\+\_\+cb}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_a870ca208159b370232940c65e8b73967}\label{structbpf__subprog__info_a870ca208159b370232940c65e8b73967} 
+bool {\bfseries args\+\_\+cached}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_ab1956887857dbe6364848133c23868ef}\label{structbpf__subprog__info_ab1956887857dbe6364848133c23868ef} 
+bool {\bfseries keep\+\_\+fastcall\+\_\+stack}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_a8113b73f0d12b01bb6fd8f6ba505799c}\label{structbpf__subprog__info_a8113b73f0d12b01bb6fd8f6ba505799c} 
+bool {\bfseries changes\+\_\+pkt\+\_\+data}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_afc5e984020bc96e710b1d471bfd81689}\label{structbpf__subprog__info_afc5e984020bc96e710b1d471bfd81689} 
+bool {\bfseries might\+\_\+sleep}:\+ 1
+\item 
+\Hypertarget{structbpf__subprog__info_ae63e34418556d4594a453564f4f0f7f8}\label{structbpf__subprog__info_ae63e34418556d4594a453564f4f0f7f8} 
+u8 {\bfseries arg\+\_\+cnt}:\+ 3
+\item 
+\Hypertarget{structbpf__subprog__info_a8c7830e8bcc63fc0379c03a73d1ccea8}\label{structbpf__subprog__info_a8c7830e8bcc63fc0379c03a73d1ccea8} 
+enum priv\+\_\+stack\+\_\+mode {\bfseries priv\+\_\+stack\+\_\+mode}
+\item 
+\Hypertarget{structbpf__subprog__info_a74253351246ea6da1a8819a8f71bf183}\label{structbpf__subprog__info_a74253351246ea6da1a8819a8f71bf183} 
+struct \doxymbox{\hyperlink{structbpf__subprog__arg__info}{bpf\+\_\+subprog\+\_\+arg\+\_\+info}} {\bfseries args} \+[5]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

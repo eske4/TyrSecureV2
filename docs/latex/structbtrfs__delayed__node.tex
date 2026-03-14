@@ -1,0 +1,64 @@
+\doxysection{btrfs\+\_\+delayed\+\_\+node Struct Reference}
+\hypertarget{structbtrfs__delayed__node}{}\label{structbtrfs__delayed__node}\index{btrfs\_delayed\_node@{btrfs\_delayed\_node}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a7ee9c84e46e6fd610c3c6bd7dcaeea53}\label{structbtrfs__delayed__node_a7ee9c84e46e6fd610c3c6bd7dcaeea53} 
+u64 {\bfseries inode\+\_\+id}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a25a2c5f88d070a51f82394330dae2ad8}\label{structbtrfs__delayed__node_a25a2c5f88d070a51f82394330dae2ad8} 
+u64 {\bfseries bytes\+\_\+reserved}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a012c016d987aa1903f38609424be465c}\label{structbtrfs__delayed__node_a012c016d987aa1903f38609424be465c} 
+struct \doxymbox{\hyperlink{structbtrfs__root}{btrfs\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries root}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a1ee9ef6528c9d988d5312bcd22424998}\label{structbtrfs__delayed__node_a1ee9ef6528c9d988d5312bcd22424998} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries n\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a63c1b4673b71496e6660cf1d684514b4}\label{structbtrfs__delayed__node_a63c1b4673b71496e6660cf1d684514b4} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries p\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a82d3017a495855c853849863caa6cf68}\label{structbtrfs__delayed__node_a82d3017a495855c853849863caa6cf68} 
+struct \doxymbox{\hyperlink{structrb__root__cached}{rb\+\_\+root\+\_\+cached}} {\bfseries ins\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__delayed__node_aaaebaccc403ea60c5094c2dc93707dbe}\label{structbtrfs__delayed__node_aaaebaccc403ea60c5094c2dc93707dbe} 
+struct \doxymbox{\hyperlink{structrb__root__cached}{rb\+\_\+root\+\_\+cached}} {\bfseries del\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a084fc732c3ba539b5a91f9968b6cbe1a}\label{structbtrfs__delayed__node_a084fc732c3ba539b5a91f9968b6cbe1a} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structbtrfs__delayed__node_ae521efe05073a82c50a93c4417656036}\label{structbtrfs__delayed__node_ae521efe05073a82c50a93c4417656036} 
+struct \doxymbox{\hyperlink{structbtrfs__inode__item}{btrfs\+\_\+inode\+\_\+item}} {\bfseries inode\+\_\+item}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a38f1fafd726ba1bb6e9c815cc2291466}\label{structbtrfs__delayed__node_a38f1fafd726ba1bb6e9c815cc2291466} 
+refcount\+\_\+t {\bfseries refs}
+\item 
+\Hypertarget{structbtrfs__delayed__node_aacd28c1dcd38f9dff45ae414cc217cd5}\label{structbtrfs__delayed__node_aacd28c1dcd38f9dff45ae414cc217cd5} 
+int {\bfseries count}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a00156054a09838ab831613059d3d2a47}\label{structbtrfs__delayed__node_a00156054a09838ab831613059d3d2a47} 
+u64 {\bfseries index\+\_\+cnt}
+\item 
+\Hypertarget{structbtrfs__delayed__node_aba22ceb5418ad820a2b0a0669e1dc53e}\label{structbtrfs__delayed__node_aba22ceb5418ad820a2b0a0669e1dc53e} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structbtrfs__delayed__node_af834aa769ac811d9ebb8ce2918bbfdf7}\label{structbtrfs__delayed__node_af834aa769ac811d9ebb8ce2918bbfdf7} 
+u32 {\bfseries curr\+\_\+index\+\_\+batch\+\_\+size}
+\item 
+\Hypertarget{structbtrfs__delayed__node_aa5531545bfba73a252090d3081454afe}\label{structbtrfs__delayed__node_aa5531545bfba73a252090d3081454afe} 
+u32 {\bfseries index\+\_\+item\+\_\+leaves}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a4c9b5ef5826b6f6a35a0966e8a373a9d}\label{structbtrfs__delayed__node_a4c9b5ef5826b6f6a35a0966e8a373a9d} 
+struct \doxymbox{\hyperlink{structbtrfs__ref__tracker__dir}{btrfs\+\_\+ref\+\_\+tracker\+\_\+dir}} {\bfseries ref\+\_\+dir}
+\item 
+\Hypertarget{structbtrfs__delayed__node_ae747b70802bd42ab473663b1c1baf04c}\label{structbtrfs__delayed__node_ae747b70802bd42ab473663b1c1baf04c} 
+struct \doxymbox{\hyperlink{structbtrfs__ref__tracker}{btrfs\+\_\+ref\+\_\+tracker}} {\bfseries node\+\_\+list\+\_\+tracker}
+\item 
+\Hypertarget{structbtrfs__delayed__node_a342d3424ddd86be543d564602eee41bd}\label{structbtrfs__delayed__node_a342d3424ddd86be543d564602eee41bd} 
+struct \doxymbox{\hyperlink{structbtrfs__ref__tracker}{btrfs\+\_\+ref\+\_\+tracker}} {\bfseries inode\+\_\+cache\+\_\+tracker}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

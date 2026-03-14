@@ -1,0 +1,103 @@
+\doxysection{apic Struct Reference}
+\hypertarget{structapic}{}\label{structapic}\index{apic@{apic}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structapic_a682fc2ca6d6b0cbaa7cfae9eabb2eb49}\label{structapic_a682fc2ca6d6b0cbaa7cfae9eabb2eb49} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries eoi} )(void)
+\item 
+\Hypertarget{structapic_a2f1362c5d3e9d391b5ce8f6d9e2fdf8a}\label{structapic_a2f1362c5d3e9d391b5ce8f6d9e2fdf8a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries native\+\_\+eoi} )(void)
+\item 
+\Hypertarget{structapic_ae1ebcd120dcc792de657c46613d00ff1}\label{structapic_ae1ebcd120dcc792de657c46613d00ff1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write} )(u32, u32)
+\item 
+\Hypertarget{structapic_a4071a403e8b31e6263a5241da9d8b9b5}\label{structapic_a4071a403e8b31e6263a5241da9d8b9b5} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries read} )(u32)
+\item 
+\Hypertarget{structapic_a43f7c513427b343f0292401d3b388269}\label{structapic_a43f7c513427b343f0292401d3b388269} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries wait\+\_\+icr\+\_\+idle} )(void)
+\item 
+\Hypertarget{structapic_ac7006b3a00197bfc5f1b5b4c7cb869da}\label{structapic_ac7006b3a00197bfc5f1b5b4c7cb869da} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries safe\+\_\+wait\+\_\+icr\+\_\+idle} )(void)
+\item 
+\Hypertarget{structapic_a51a1bb65a1db0459a9d51d777c5e9736}\label{structapic_a51a1bb65a1db0459a9d51d777c5e9736} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI} )(int, int)
+\item 
+\Hypertarget{structapic_a3b469931dfd04451fd81f561b98dba1a}\label{structapic_a3b469931dfd04451fd81f561b98dba1a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+mask} )(const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structapic_a88fdae7a084a19a2003be554a2ece7b8}\label{structapic_a88fdae7a084a19a2003be554a2ece7b8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+mask\+\_\+allbutself} )(const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structapic_a4804e53a8ee75ca3632cfe96a81f1adb}\label{structapic_a4804e53a8ee75ca3632cfe96a81f1adb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+allbutself} )(int)
+\item 
+\Hypertarget{structapic_a60bee62b0f2c53078d617dcb192fe359}\label{structapic_a60bee62b0f2c53078d617dcb192fe359} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+all} )(int)
+\item 
+\Hypertarget{structapic_ae119400fb674d5ea99bc1c0aa562a05a}\label{structapic_ae119400fb674d5ea99bc1c0aa562a05a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries send\+\_\+\+IPI\+\_\+self} )(int)
+\item 
+\Hypertarget{structapic_abcad0d575e3e7e9e426e69d366d2c17d}\label{structapic_abcad0d575e3e7e9e426e69d366d2c17d} 
+u32 {\bfseries disable\+\_\+esr}:\+ 1
+\item 
+\Hypertarget{structapic_abc433f50019f62ff0c8c1eeaa3bc9095}\label{structapic_abc433f50019f62ff0c8c1eeaa3bc9095} 
+u32 {\bfseries dest\+\_\+mode\+\_\+logical}:\+ 1
+\item 
+\Hypertarget{structapic_af011f4af2ce5265ca1a2194d83581cb9}\label{structapic_af011f4af2ce5265ca1a2194d83581cb9} 
+u32 {\bfseries x2apic\+\_\+set\+\_\+max\+\_\+apicid}:\+ 1
+\item 
+\Hypertarget{structapic_aca4ed89776627f0df729d51c50117ab6}\label{structapic_aca4ed89776627f0df729d51c50117ab6} 
+u32 {\bfseries nmi\+\_\+to\+\_\+offline\+\_\+cpu}:\+ 1
+\item 
+\Hypertarget{structapic_ab56672c9feed91edd7c01256dba46cfc}\label{structapic_ab56672c9feed91edd7c01256dba46cfc} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries calc\+\_\+dest\+\_\+apicid} )(unsigned int)
+\item 
+\Hypertarget{structapic_a0cfcae1895d8908df93ec2554c929936}\label{structapic_a0cfcae1895d8908df93ec2554c929936} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries icr\+\_\+read} )(void)
+\item 
+\Hypertarget{structapic_a4c2adbf3cc147358e65ee508c6d9f60d}\label{structapic_a4c2adbf3cc147358e65ee508c6d9f60d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries icr\+\_\+write} )(u32, u32)
+\item 
+\Hypertarget{structapic_a975a97f275ccf71218fc2190807b9dbf}\label{structapic_a975a97f275ccf71218fc2190807b9dbf} 
+u32 {\bfseries max\+\_\+apic\+\_\+id}
+\item 
+\Hypertarget{structapic_a1977d9e1d4dcf8d372348145562d3da0}\label{structapic_a1977d9e1d4dcf8d372348145562d3da0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(void)
+\item 
+\Hypertarget{structapic_a0f237949df462a0e201d891b12876b74}\label{structapic_a0f237949df462a0e201d891b12876b74} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries setup} )(void)
+\item 
+\Hypertarget{structapic_a1243530cac3b4309fe4a4e10077ce9d8}\label{structapic_a1243530cac3b4309fe4a4e10077ce9d8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries teardown} )(void)
+\item 
+\Hypertarget{structapic_aed1472c04acb0f1c3c20b70c3aff694b}\label{structapic_aed1472c04acb0f1c3c20b70c3aff694b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries acpi\+\_\+madt\+\_\+oem\+\_\+check} )(char \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structapic_a4cf3f8ff5596429a97c71e34b2333c81}\label{structapic_a4cf3f8ff5596429a97c71e34b2333c81} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+apic\+\_\+ldr} )(void)
+\item 
+\Hypertarget{structapic_a217b937f602808e80321740a55654e81}\label{structapic_a217b937f602808e80321740a55654e81} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+present\+\_\+to\+\_\+apicid} )(int)
+\item 
+\Hypertarget{structapic_ade942ffd16fec0a73be1fdea0bf73254}\label{structapic_ade942ffd16fec0a73be1fdea0bf73254} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+apic\+\_\+id} )(u32)
+\item 
+\Hypertarget{structapic_a9ac5a358035df429d0ae283d790e1eca}\label{structapic_a9ac5a358035df429d0ae283d790e1eca} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries wakeup\+\_\+secondary\+\_\+cpu} )(u32, long unsigned int, unsigned int)
+\item 
+\Hypertarget{structapic_aa6abee4bfd97dbc6f21117c17867f59a}\label{structapic_aa6abee4bfd97dbc6f21117c17867f59a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries wakeup\+\_\+secondary\+\_\+cpu\+\_\+64} )(u32, long unsigned int, unsigned int)
+\item 
+\Hypertarget{structapic_a08fcbabaa6024d23b0e09b70527eb24a}\label{structapic_a08fcbabaa6024d23b0e09b70527eb24a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+vector} )(unsigned int, unsigned int, bool)
+\item 
+\Hypertarget{structapic_a9acd37ab879de8376da62addb2e36012}\label{structapic_a9acd37ab879de8376da62addb2e36012} 
+char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

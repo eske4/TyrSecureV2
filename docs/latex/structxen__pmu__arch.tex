@@ -1,0 +1,41 @@
+\doxysection{xen\+\_\+pmu\+\_\+arch Struct Reference}
+\hypertarget{structxen__pmu__arch}{}\label{structxen__pmu__arch}\index{xen\_pmu\_arch@{xen\_pmu\_arch}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxen__pmu__arch_adb398904d88989dd540558b51cadc98c}\label{structxen__pmu__arch_adb398904d88989dd540558b51cadc98c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structxen__pmu__regs}{xen\_pmu\_regs}} {\bfseries regs}\\
+\>uint8\_t {\bfseries pad} \+[64]\+\\
+\} {\bfseries r}\\
+
+\end{tabbing}\item 
+\Hypertarget{structxen__pmu__arch_a593823d52224f3569ff6a4ab8bff39ad}\label{structxen__pmu__arch_a593823d52224f3569ff6a4ab8bff39ad} 
+uint64\+\_\+t {\bfseries pmu\+\_\+flags}
+\item 
+\Hypertarget{structxen__pmu__arch_a7dc8a79cf7f3a74975c222d54a10c9de}\label{structxen__pmu__arch_a7dc8a79cf7f3a74975c222d54a10c9de} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint32\_t {\bfseries lapic\_lvtpc}\\
+\>uint64\_t {\bfseries pad}\\
+\} {\bfseries l}\\
+
+\end{tabbing}\item 
+\Hypertarget{structxen__pmu__arch_a6d2356bf61e18e1452cbfb097a8ac3d1}\label{structxen__pmu__arch_a6d2356bf61e18e1452cbfb097a8ac3d1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structxen__pmu__amd__ctxt}{xen\_pmu\_amd\_ctxt}} {\bfseries amd}\\
+\>struct \doxymbox{\hyperlink{structxen__pmu__intel__ctxt}{xen\_pmu\_intel\_ctxt}} {\bfseries intel}\\
+\>uint8\_t {\bfseries pad} \+[128]\+\\
+\} {\bfseries c}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,289 @@
+\doxysection{net\+\_\+device\+\_\+ops Struct Reference}
+\hypertarget{structnet__device__ops}{}\label{structnet__device__ops}\index{net\_device\_ops@{net\_device\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnet__device__ops_a5a5eb834042593838c696b0881dcb141}\label{structnet__device__ops_a5a5eb834042593838c696b0881dcb141} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+init} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_adb5c7ee4957a71440b0392a12785175b}\label{structnet__device__ops_adb5c7ee4957a71440b0392a12785175b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+uninit} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a4fb4e337250d1a7528984a796f416b2e}\label{structnet__device__ops_a4fb4e337250d1a7528984a796f416b2e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+open} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a0a882d0406ca21c900edd9818831dab8}\label{structnet__device__ops_a0a882d0406ca21c900edd9818831dab8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+stop} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a99e3a5a762b578464de3319da6baca9a}\label{structnet__device__ops_a99e3a5a762b578464de3319da6baca9a} 
+netdev\+\_\+tx\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+start\+\_\+xmit} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a2040b8aee5eb9cf8fe93a958a8de0392}\label{structnet__device__ops_a2040b8aee5eb9cf8fe93a958a8de0392} 
+netdev\+\_\+features\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+features\+\_\+check} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, netdev\+\_\+features\+\_\+t)
+\item 
+\Hypertarget{structnet__device__ops_a146380089f51fa99d4b0e69834aeac5b}\label{structnet__device__ops_a146380089f51fa99d4b0e69834aeac5b} 
+u16(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+select\+\_\+queue} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a75123a91e0890bf3d9becf3b3f4a99e0}\label{structnet__device__ops_a75123a91e0890bf3d9becf3b3f4a99e0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+change\+\_\+rx\+\_\+flags} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_a87c459d9acb2ac3c65b300c8f00c017d}\label{structnet__device__ops_a87c459d9acb2ac3c65b300c8f00c017d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+rx\+\_\+mode} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a3513af83c3013d5d1a8dabab8db1cb45}\label{structnet__device__ops_a3513af83c3013d5d1a8dabab8db1cb45} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+mac\+\_\+address} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_aa680868bd09f13237ee1d96dfe93497c}\label{structnet__device__ops_aa680868bd09f13237ee1d96dfe93497c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+validate\+\_\+addr} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_aefcf2836d4b84d2a1b702931b74a07d0}\label{structnet__device__ops_aefcf2836d4b84d2a1b702931b74a07d0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+do\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structifreq}{ifreq}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_aab675e139e9f2cf6cb6c8e6b37edc3fe}\label{structnet__device__ops_aab675e139e9f2cf6cb6c8e6b37edc3fe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+eth\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structifreq}{ifreq}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_a46c441f016b8cb45c7befe42a87a1d9e}\label{structnet__device__ops_a46c441f016b8cb45c7befe42a87a1d9e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+siocbond} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structifreq}{ifreq}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_a3f4ea3882c78dd8dd4c0ab7705ddd2f3}\label{structnet__device__ops_a3f4ea3882c78dd8dd4c0ab7705ddd2f3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+siocwandev} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structif__settings}{if\+\_\+settings}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_ac2a6e0a6651ef8ade64b21d60c5da1e1}\label{structnet__device__ops_ac2a6e0a6651ef8ade64b21d60c5da1e1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+siocdevprivate} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structifreq}{ifreq}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_a0fd795d75e0fe09d2842a5ec3368e3eb}\label{structnet__device__ops_a0fd795d75e0fe09d2842a5ec3368e3eb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+config} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structifmap}{ifmap}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a8215eaa5373f1870ef154a1addaad84a}\label{structnet__device__ops_a8215eaa5373f1870ef154a1addaad84a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+change\+\_\+mtu} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_aaf261d4676ae95c0592bf861f6bb1d2f}\label{structnet__device__ops_aaf261d4676ae95c0592bf861f6bb1d2f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+neigh\+\_\+setup} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structneigh__parms}{neigh\+\_\+parms}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a1f6149675e2e26f183341215553c8c47}\label{structnet__device__ops_a1f6149675e2e26f183341215553c8c47} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+tx\+\_\+timeout} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structnet__device__ops_a8e0c0ca062bb2e02075770ee68e6adeb}\label{structnet__device__ops_a8e0c0ca062bb2e02075770ee68e6adeb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+stats64} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrtnl__link__stats64}{rtnl\+\_\+link\+\_\+stats64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_af10e82bc7ca0a180a0139134ae727c5b}\label{structnet__device__ops_af10e82bc7ca0a180a0139134ae727c5b} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+has\+\_\+offload\+\_\+stats} )(const struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_a9abbb00299738fad2be95c69c8de2c35}\label{structnet__device__ops_a9abbb00299738fad2be95c69c8de2c35} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+offload\+\_\+stats} )(int, const struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_ab1df61dc4aecf070f4446fa15c1a2edb}\label{structnet__device__ops_ab1df61dc4aecf070f4446fa15c1a2edb} 
+struct \doxymbox{\hyperlink{structnet__device__stats}{net\+\_\+device\+\_\+stats}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+stats} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a09885f87439c9b2c4f294d4416384a15}\label{structnet__device__ops_a09885f87439c9b2c4f294d4416384a15} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+vlan\+\_\+rx\+\_\+add\+\_\+vid} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+be16, u16)
+\item 
+\Hypertarget{structnet__device__ops_ac65264fa247d58a181ea30ca74642c06}\label{structnet__device__ops_ac65264fa247d58a181ea30ca74642c06} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+vlan\+\_\+rx\+\_\+kill\+\_\+vid} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+be16, u16)
+\item 
+\Hypertarget{structnet__device__ops_a362e780f7c087dbaf521705b7f1e55ab}\label{structnet__device__ops_a362e780f7c087dbaf521705b7f1e55ab} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+poll\+\_\+controller} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a1815e088316a15fa6c19f3874e997236}\label{structnet__device__ops_a1815e088316a15fa6c19f3874e997236} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+netpoll\+\_\+setup} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_aba72b05ad9780b6cd2bb9e14e55c741b}\label{structnet__device__ops_aba72b05ad9780b6cd2bb9e14e55c741b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+netpoll\+\_\+cleanup} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a39bcc51482d54b5decf3e4bac68d1620}\label{structnet__device__ops_a39bcc51482d54b5decf3e4bac68d1620} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+vf\+\_\+mac} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u8 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a4c56a141119394842170b279e51df31f}\label{structnet__device__ops_a4c56a141119394842170b279e51df31f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+vf\+\_\+vlan} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u16, u8, \+\_\+\+\_\+be16)
+\item 
+\Hypertarget{structnet__device__ops_a0b921897d20332f5caaacda88afd23bd}\label{structnet__device__ops_a0b921897d20332f5caaacda88afd23bd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+vf\+\_\+rate} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, int, int)
+\item 
+\Hypertarget{structnet__device__ops_aa2f576d31dfb96fff7cbda48b5a3616d}\label{structnet__device__ops_aa2f576d31dfb96fff7cbda48b5a3616d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+vf\+\_\+spoofchk} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, bool)
+\item 
+\Hypertarget{structnet__device__ops_a148b51449c0d3414c762ef93ae185892}\label{structnet__device__ops_a148b51449c0d3414c762ef93ae185892} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+vf\+\_\+trust} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, bool)
+\item 
+\Hypertarget{structnet__device__ops_a81d425a2c85939723d6fb65509e66572}\label{structnet__device__ops_a81d425a2c85939723d6fb65509e66572} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+vf\+\_\+config} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structifla__vf__info}{ifla\+\_\+vf\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a06ca24909408fdf315dfff5123cf215c}\label{structnet__device__ops_a06ca24909408fdf315dfff5123cf215c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+vf\+\_\+link\+\_\+state} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structnet__device__ops_a6ed6396b95921f7c9f167b060e22897b}\label{structnet__device__ops_a6ed6396b95921f7c9f167b060e22897b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+vf\+\_\+stats} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structifla__vf__stats}{ifla\+\_\+vf\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a251e9c4496b2a95e0cbde69df711bf71}\label{structnet__device__ops_a251e9c4496b2a95e0cbde69df711bf71} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+vf\+\_\+port} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a609f331a9639b67c553c218c1f8e3f67}\label{structnet__device__ops_a609f331a9639b67c553c218c1f8e3f67} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+vf\+\_\+port} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a03fa0791b17634569936d20ea86025ba}\label{structnet__device__ops_a03fa0791b17634569936d20ea86025ba} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+vf\+\_\+guid} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structifla__vf__guid}{ifla\+\_\+vf\+\_\+guid}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structifla__vf__guid}{ifla\+\_\+vf\+\_\+guid}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a90cd8b405a1fa11da339b42c9ec738f3}\label{structnet__device__ops_a90cd8b405a1fa11da339b42c9ec738f3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+vf\+\_\+guid} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u64, int)
+\item 
+\Hypertarget{structnet__device__ops_a7ee82d6a36938b4610f8b5574267561d}\label{structnet__device__ops_a7ee82d6a36938b4610f8b5574267561d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+vf\+\_\+rss\+\_\+query\+\_\+en} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, bool)
+\item 
+\Hypertarget{structnet__device__ops_a731d698cae29e367a0dd19e01f5613c4}\label{structnet__device__ops_a731d698cae29e367a0dd19e01f5613c4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+setup\+\_\+tc} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, enum tc\+\_\+setup\+\_\+type, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a05ca9f799eed07d239df56ef839e0213}\label{structnet__device__ops_a05ca9f799eed07d239df56ef839e0213} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fcoe\+\_\+enable} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_ad885dc17b47d390f8b1c233a33fcf1e5}\label{structnet__device__ops_ad885dc17b47d390f8b1c233a33fcf1e5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fcoe\+\_\+disable} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a87f0e88874cca8044cb630d990f35bd2}\label{structnet__device__ops_a87f0e88874cca8044cb630d990f35bd2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fcoe\+\_\+ddp\+\_\+setup} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, u16, struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structnet__device__ops_a426070bbc2c779b8f018226c19b98170}\label{structnet__device__ops_a426070bbc2c779b8f018226c19b98170} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fcoe\+\_\+ddp\+\_\+done} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, u16)
+\item 
+\Hypertarget{structnet__device__ops_a3ab4c2caf93224f6f5c5cbdd21437d3d}\label{structnet__device__ops_a3ab4c2caf93224f6f5c5cbdd21437d3d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fcoe\+\_\+ddp\+\_\+target} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, u16, struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structnet__device__ops_af9601b1eabdcec5de7cb141c951da494}\label{structnet__device__ops_af9601b1eabdcec5de7cb141c951da494} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fcoe\+\_\+get\+\_\+hbainfo} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetdev__fcoe__hbainfo}{netdev\+\_\+fcoe\+\_\+hbainfo}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_af7d25ac0d8b457c3078e09672964be24}\label{structnet__device__ops_af7d25ac0d8b457c3078e09672964be24} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fcoe\+\_\+get\+\_\+wwn} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_a2d19b7258a449a3e279cc26115fb74b3}\label{structnet__device__ops_a2d19b7258a449a3e279cc26115fb74b3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+rx\+\_\+flow\+\_\+steer} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, u16, u32)
+\item 
+\Hypertarget{structnet__device__ops_ac0f8f8307b8651cf2b728aa8f8d0f925}\label{structnet__device__ops_ac0f8f8307b8651cf2b728aa8f8d0f925} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+add\+\_\+slave} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_af2ee76efc6b850926f396d2ea1b9673a}\label{structnet__device__ops_af2ee76efc6b850926f396d2ea1b9673a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+del\+\_\+slave} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a37bb750baa6571e1b56874ed8fe67d90}\label{structnet__device__ops_a37bb750baa6571e1b56874ed8fe67d90} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+xmit\+\_\+slave} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structnet__device__ops_aaee730fec7c9d92888a51472869e9536}\label{structnet__device__ops_aaee730fec7c9d92888a51472869e9536} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+sk\+\_\+get\+\_\+lower\+\_\+dev} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a73c0ddfa29e72c817271e90c4af896af}\label{structnet__device__ops_a73c0ddfa29e72c817271e90c4af896af} 
+netdev\+\_\+features\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fix\+\_\+features} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, netdev\+\_\+features\+\_\+t)
+\item 
+\Hypertarget{structnet__device__ops_a0d230e16083878c7e9ae5b5c7402b0fd}\label{structnet__device__ops_a0d230e16083878c7e9ae5b5c7402b0fd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+features} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, netdev\+\_\+features\+\_\+t)
+\item 
+\Hypertarget{structnet__device__ops_ad1c4aa1a653ef95b6d66eb8998f84daa}\label{structnet__device__ops_ad1c4aa1a653ef95b6d66eb8998f84daa} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+neigh\+\_\+construct} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structneighbour}{neighbour}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a19089b082fc28bbeec494c13d977fd54}\label{structnet__device__ops_a19089b082fc28bbeec494c13d977fd54} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+neigh\+\_\+destroy} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structneighbour}{neighbour}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a7b3711eeb10971de70d80c5e08861ada}\label{structnet__device__ops_a7b3711eeb10971de70d80c5e08861ada} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fdb\+\_\+add} )(struct \doxymbox{\hyperlink{structndmsg}{ndmsg}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, const unsigned char \texorpdfstring{$\ast$}{*}, u16, u16, bool \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a094bd6bb22928dce637633716b24c795}\label{structnet__device__ops_a094bd6bb22928dce637633716b24c795} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fdb\+\_\+del} )(struct \doxymbox{\hyperlink{structndmsg}{ndmsg}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, const unsigned char \texorpdfstring{$\ast$}{*}, u16, bool \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a045493f339983b179dbf14d802c7ef15}\label{structnet__device__ops_a045493f339983b179dbf14d802c7ef15} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fdb\+\_\+del\+\_\+bulk} )(struct \doxymbox{\hyperlink{structnlmsghdr}{nlmsghdr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a731910751a85199ac7db7b331755b1e1}\label{structnet__device__ops_a731910751a85199ac7db7b331755b1e1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fdb\+\_\+dump} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__callback}{netlink\+\_\+callback}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_aaedb117e1ec6f6be76f9da6200a0e502}\label{structnet__device__ops_aaedb117e1ec6f6be76f9da6200a0e502} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fdb\+\_\+get} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, const unsigned char \texorpdfstring{$\ast$}{*}, u16, u32, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a802e43410983d4e12e9b10e6b8bf843c}\label{structnet__device__ops_a802e43410983d4e12e9b10e6b8bf843c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+mdb\+\_\+add} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, u16, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a2de081f5f90a56420dba45c2b96116cf}\label{structnet__device__ops_a2de081f5f90a56420dba45c2b96116cf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+mdb\+\_\+del} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a559eb54d87e2e3cb0885ade1ff4bc39e}\label{structnet__device__ops_a559eb54d87e2e3cb0885ade1ff4bc39e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+mdb\+\_\+del\+\_\+bulk} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_add37834480b2d1cff402c04f8c112770}\label{structnet__device__ops_add37834480b2d1cff402c04f8c112770} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+mdb\+\_\+dump} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__callback}{netlink\+\_\+callback}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a22f8c877c798c7fc03f80f92e46a6177}\label{structnet__device__ops_a22f8c877c798c7fc03f80f92e46a6177} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+mdb\+\_\+get} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, u32, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a17c5c8acdace307824638c261cb6464a}\label{structnet__device__ops_a17c5c8acdace307824638c261cb6464a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+bridge\+\_\+setlink} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlmsghdr}{nlmsghdr}} \texorpdfstring{$\ast$}{*}, u16, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a9ac53850ee4c988b4cbdb224546a58bd}\label{structnet__device__ops_a9ac53850ee4c988b4cbdb224546a58bd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+bridge\+\_\+getlink} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, u32, u32, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, int)
+\item 
+\Hypertarget{structnet__device__ops_a7e8b2a02a0998446c9e7921c80d04072}\label{structnet__device__ops_a7e8b2a02a0998446c9e7921c80d04072} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+bridge\+\_\+dellink} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlmsghdr}{nlmsghdr}} \texorpdfstring{$\ast$}{*}, u16)
+\item 
+\Hypertarget{structnet__device__ops_af05b1177599d1521296176d37f1212bb}\label{structnet__device__ops_af05b1177599d1521296176d37f1212bb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+change\+\_\+carrier} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structnet__device__ops_aab45c751eef5e77e14fd2e1d7025f344}\label{structnet__device__ops_aab45c751eef5e77e14fd2e1d7025f344} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+phys\+\_\+port\+\_\+id} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetdev__phys__item__id}{netdev\+\_\+phys\+\_\+item\+\_\+id}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a3d5bb0b7349b6c2c957d0aca25050240}\label{structnet__device__ops_a3d5bb0b7349b6c2c957d0aca25050240} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+port\+\_\+parent\+\_\+id} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetdev__phys__item__id}{netdev\+\_\+phys\+\_\+item\+\_\+id}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a8772b583d76aafb774ee679acf02d148}\label{structnet__device__ops_a8772b583d76aafb774ee679acf02d148} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+phys\+\_\+port\+\_\+name} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structnet__device__ops_af35505f406d18ecba9bd432a586520cc}\label{structnet__device__ops_af35505f406d18ecba9bd432a586520cc} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+dfwd\+\_\+add\+\_\+station} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_afdda39a4a22f261a42560b038a48f33c}\label{structnet__device__ops_afdda39a4a22f261a42560b038a48f33c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+dfwd\+\_\+del\+\_\+station} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_ade77cfb8292df0447544dc6455a27dc0}\label{structnet__device__ops_ade77cfb8292df0447544dc6455a27dc0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+tx\+\_\+maxrate} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u32)
+\item 
+\Hypertarget{structnet__device__ops_a46e41cf75e837d63c313adb6c0a27b79}\label{structnet__device__ops_a46e41cf75e837d63c313adb6c0a27b79} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+iflink} )(const struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a170b6c14c0148b97b909b4b918a60297}\label{structnet__device__ops_a170b6c14c0148b97b909b4b918a60297} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fill\+\_\+metadata\+\_\+dst} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a6cc4e77ec4c92463868a05320b0835e8}\label{structnet__device__ops_a6cc4e77ec4c92463868a05320b0835e8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+set\+\_\+rx\+\_\+headroom} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_a64d084b480301f16286f440afe325f67}\label{structnet__device__ops_a64d084b480301f16286f440afe325f67} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+bpf} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetdev__bpf}{netdev\+\_\+bpf}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a8650135fbc285b4644c40db72aafd9b9}\label{structnet__device__ops_a8650135fbc285b4644c40db72aafd9b9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+xdp\+\_\+xmit} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structxdp__frame}{xdp\+\_\+frame}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structnet__device__ops_ad66cf1fccb8c14203da6bd31977d9dda}\label{structnet__device__ops_ad66cf1fccb8c14203da6bd31977d9dda} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+xdp\+\_\+get\+\_\+xmit\+\_\+slave} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxdp__buff}{xdp\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a183529108371df3e17d337b3a38c2b1b}\label{structnet__device__ops_a183529108371df3e17d337b3a38c2b1b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+xsk\+\_\+wakeup} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, u32, u32)
+\item 
+\Hypertarget{structnet__device__ops_a22abc03d136d28f456d91e4abe2686f0}\label{structnet__device__ops_a22abc03d136d28f456d91e4abe2686f0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+tunnel\+\_\+ctl} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structip__tunnel__parm__kern}{ip\+\_\+tunnel\+\_\+parm\+\_\+kern}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnet__device__ops_a2f745c440567ec1783a8a1b6055c9281}\label{structnet__device__ops_a2f745c440567ec1783a8a1b6055c9281} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+peer\+\_\+dev} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a97df9643d64432b59951119db42f2a42}\label{structnet__device__ops_a97df9643d64432b59951119db42f2a42} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+fill\+\_\+forward\+\_\+path} )(struct \doxymbox{\hyperlink{structnet__device__path__ctx}{net\+\_\+device\+\_\+path\+\_\+ctx}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device__path}{net\+\_\+device\+\_\+path}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a154fade6aec39cba249b15d7150329bf}\label{structnet__device__ops_a154fade6aec39cba249b15d7150329bf} 
+ktime\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+get\+\_\+tstamp} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structskb__shared__hwtstamps}{skb\+\_\+shared\+\_\+hwtstamps}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structnet__device__ops_a80b9b95c9a7c025d95074f6e8ec3cc79}\label{structnet__device__ops_a80b9b95c9a7c025d95074f6e8ec3cc79} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+hwtstamp\+\_\+get} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkernel__hwtstamp__config}{kernel\+\_\+hwtstamp\+\_\+config}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a30c98ea72782f13537c2be397bf7b308}\label{structnet__device__ops_a30c98ea72782f13537c2be397bf7b308} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ndo\+\_\+hwtstamp\+\_\+set} )(struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkernel__hwtstamp__config}{kernel\+\_\+hwtstamp\+\_\+config}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnet__device__ops_a6261798ba99a0b792009ab88ec419fc8}\label{structnet__device__ops_a6261798ba99a0b792009ab88ec419fc8} 
+const struct \doxymbox{\hyperlink{structnet__shaper__ops}{net\+\_\+shaper\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries net\+\_\+shaper\+\_\+ops}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

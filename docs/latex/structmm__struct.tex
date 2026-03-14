@@ -1,0 +1,120 @@
+\doxysection{mm\+\_\+struct Struct Reference}
+\hypertarget{structmm__struct}{}\label{structmm__struct}\index{mm\_struct@{mm\_struct}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmm__struct_a8eef66cda12a77db3e537c0f57c9aa17}\label{structmm__struct_a8eef66cda12a77db3e537c0f57c9aa17} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structmm__struct_1_1_0d315310160316353343365240350264162331156151217215_a6729791bbf3c9bbd7a0ce839a974042c}\label{structmm__struct_1_1_0d315310160316353343365240350264162331156151217215_a6729791bbf3c9bbd7a0ce839a974042c} 
+\>struct \{\\
+\>\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries mm\_count}\\
+\>\>long : 64\\
+\>\>long : 64\\
+\>\>long : 64\\
+\>\>long : 64\\
+\>\>long : 64\\
+\>\>long : 64\\
+\>\>long : 64\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structmaple__tree}{maple\_tree}} {\bfseries mm\_mt}\\
+\>long unsigned int {\bfseries mmap\_base}\\
+\>long unsigned int {\bfseries mmap\_legacy\_base}\\
+\>long unsigned int {\bfseries mmap\_compat\_base}\\
+\>long unsigned int {\bfseries mmap\_compat\_legacy\_base}\\
+\>long unsigned int {\bfseries task\_size}\\
+\>\doxymbox{\hyperlink{structpgd__t}{pgd\_t}} \texorpdfstring{$\ast$}{*} {\bfseries pgd}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries membarrier\_state}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries mm\_users}\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>struct \doxymbox{\hyperlink{structmm__mm__cid}{mm\_mm\_cid}} {\bfseries mm\_cid}\\
+\>atomic\_long\_t {\bfseries pgtables\_bytes}\\
+\>int {\bfseries map\_count}\\
+\>spinlock\_t {\bfseries page\_table\_lock}\\
+\>struct \doxymbox{\hyperlink{structrw__semaphore}{rw\_semaphore}} {\bfseries mmap\_lock}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries mmlist}\\
+\>struct \doxymbox{\hyperlink{structrcuwait}{rcuwait}} {\bfseries vma\_writer\_wait}\\
+\>seqcount\_t {\bfseries mm\_lock\_seq}\\
+\>struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries futex\_hash\_lock}\\
+\>struct \doxymbox{\hyperlink{structfutex__private__hash}{futex\_private\_hash}} \texorpdfstring{$\ast$}{*} {\bfseries futex\_phash}\\
+\>struct \doxymbox{\hyperlink{structfutex__private__hash}{futex\_private\_hash}} \texorpdfstring{$\ast$}{*} {\bfseries futex\_phash\_new}\\
+\>long unsigned int {\bfseries futex\_batches}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries futex\_rcu}\\
+\>atomic\_long\_t {\bfseries futex\_atomic}\\
+\>unsigned int \texorpdfstring{$\ast$}{*} {\bfseries futex\_ref}\\
+\>long unsigned int {\bfseries hiwater\_rss}\\
+\>long unsigned int {\bfseries hiwater\_vm}\\
+\>long unsigned int {\bfseries total\_vm}\\
+\>long unsigned int {\bfseries locked\_vm}\\
+\>\doxymbox{\hyperlink{structatomic64__t}{atomic64\_t}} {\bfseries pinned\_vm}\\
+\>long unsigned int {\bfseries data\_vm}\\
+\>long unsigned int {\bfseries exec\_vm}\\
+\>long unsigned int {\bfseries stack\_vm}\\
+\>vm\_flags\_t {\bfseries def\_flags}\\
+\>seqcount\_t {\bfseries write\_protect\_seq}\\
+\>spinlock\_t {\bfseries arg\_lock}\\
+\>long unsigned int {\bfseries start\_code}\\
+\>long unsigned int {\bfseries end\_code}\\
+\>long unsigned int {\bfseries start\_data}\\
+\>long unsigned int {\bfseries end\_data}\\
+\>long unsigned int {\bfseries start\_brk}\\
+\>long unsigned int {\bfseries brk}\\
+\>long unsigned int {\bfseries start\_stack}\\
+\>long unsigned int {\bfseries arg\_start}\\
+\>long unsigned int {\bfseries arg\_end}\\
+\>long unsigned int {\bfseries env\_start}\\
+\>long unsigned int {\bfseries env\_end}\\
+\>long unsigned int {\bfseries saved\_auxv} \+[52]\+\\
+\>struct \doxymbox{\hyperlink{structpercpu__counter}{percpu\_counter}} {\bfseries rss\_stat} \+[4]\+\\
+\>struct \doxymbox{\hyperlink{structlinux__binfmt}{linux\_binfmt}} \texorpdfstring{$\ast$}{*} {\bfseries binfmt}\\
+\>\doxymbox{\hyperlink{structmm__context__t}{mm\_context\_t}} {\bfseries context}\\
+\>\doxymbox{\hyperlink{structmm__flags__t}{mm\_flags\_t}} {\bfseries flags}\\
+\>spinlock\_t {\bfseries ioctx\_lock}\\
+\>struct \doxymbox{\hyperlink{structkioctx__table}{kioctx\_table}} \texorpdfstring{$\ast$}{*} {\bfseries ioctx\_table}\\
+\>struct \doxymbox{\hyperlink{structtask__struct}{task\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries owner}\\
+\>struct \doxymbox{\hyperlink{structuser__namespace}{user\_namespace}} \texorpdfstring{$\ast$}{*} {\bfseries user\_ns}\\
+\>struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries exe\_file}\\
+\>struct \doxymbox{\hyperlink{structmmu__notifier__subscriptions}{mmu\_notifier\_subscriptions}} \texorpdfstring{$\ast$}{*} {\bfseries notifier\_subscriptions}\\
+\>long unsigned int {\bfseries numa\_next\_scan}\\
+\>long unsigned int {\bfseries numa\_scan\_offset}\\
+\>int {\bfseries numa\_scan\_seq}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries tlb\_flush\_pending}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries tlb\_flush\_batched}\\
+\>struct \doxymbox{\hyperlink{structuprobes__state}{uprobes\_state}} {\bfseries uprobes\_state}\\
+\>atomic\_long\_t {\bfseries hugetlb\_usage}\\
+\>struct \doxymbox{\hyperlink{structwork__struct}{work\_struct}} {\bfseries async\_put\_work}\\
+\>struct \doxymbox{\hyperlink{structiommu__mm__data}{iommu\_mm\_data}} \texorpdfstring{$\ast$}{*} {\bfseries iommu\_mm}\\
+\>long unsigned int {\bfseries ksm\_merging\_pages}\\
+\>long unsigned int {\bfseries ksm\_rmap\_items}\\
+\>atomic\_long\_t {\bfseries ksm\_zero\_pages}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries list}\\
+\>\>long unsigned int {\bfseries bitmap}\\
+\>\>struct \doxymbox{\hyperlink{structmem__cgroup}{mem\_cgroup}} \texorpdfstring{$\ast$}{*} {\bfseries memcg}\\
+\>\} {\bfseries lru\_gen}\\
+\>mm\_id\_t {\bfseries mm\_id}\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\>long : 64\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmm__struct_a4c23ec98e913a0e42f056d764c58345f}\label{structmm__struct_a4c23ec98e913a0e42f056d764c58345f} 
+char {\bfseries flexible\+\_\+array} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

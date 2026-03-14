@@ -1,0 +1,47 @@
+\doxysection{nf\+\_\+conntrack\+\_\+tuple Struct Reference}
+\hypertarget{structnf__conntrack__tuple}{}\label{structnf__conntrack__tuple}\index{nf\_conntrack\_tuple@{nf\_conntrack\_tuple}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnf__conntrack__tuple_a607f606c57332c3c0af1d0e30f8443b0}\label{structnf__conntrack__tuple_a607f606c57332c3c0af1d0e30f8443b0} 
+struct \doxymbox{\hyperlink{structnf__conntrack__man}{nf\+\_\+conntrack\+\_\+man}} {\bfseries src}
+\item 
+\Hypertarget{structnf__conntrack__tuple_a485a67c7ab158bd10a503ac480b6455c}\label{structnf__conntrack__tuple_a485a67c7ab158bd10a503ac480b6455c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>union \doxymbox{\hyperlink{unionnf__inet__addr}{nf\_inet\_addr}} {\bfseries u3}\\
+\>union \{\\
+\>\>\_\_be16 {\bfseries all}\\
+\>\>struct \{\\
+\>\>\>\_\_be16 {\bfseries port}\\
+\>\>\} {\bfseries tcp}\\
+\>\>struct \{\\
+\>\>\>\_\_be16 {\bfseries port}\\
+\>\>\} {\bfseries udp}\\
+\>\>struct \{\\
+\>\>\>u\_int8\_t {\bfseries type}\\
+\>\>\>u\_int8\_t {\bfseries code}\\
+\>\>\} {\bfseries icmp}\\
+\>\>struct \{\\
+\>\>\>\_\_be16 {\bfseries port}\\
+\>\>\} {\bfseries dccp}\\
+\>\>struct \{\\
+\>\>\>\_\_be16 {\bfseries port}\\
+\>\>\} {\bfseries sctp}\\
+\>\>struct \{\\
+\>\>\>\_\_be16 {\bfseries key}\\
+\>\>\} {\bfseries gre}\\
+\>\} {\bfseries u}\\
+\>u\_int8\_t {\bfseries protonum}\\
+\>struct \{\\
+\>\} {\bfseries \_\_nfct\_hash\_offsetend}\\
+\>u\_int8\_t {\bfseries dir}\\
+\} {\bfseries dst}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\doxysection{key\+\_\+type Struct Reference}
+\hypertarget{structkey__type}{}\label{structkey__type}\index{key\_type@{key\_type}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkey__type_ae34f466a938b18088b3c717a16ecd6c8}\label{structkey__type_ae34f466a938b18088b3c717a16ecd6c8} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structkey__type_a942e7c151dda5239743d9c8f617695c0}\label{structkey__type_a942e7c151dda5239743d9c8f617695c0} 
+size\+\_\+t {\bfseries def\+\_\+datalen}
+\item 
+\Hypertarget{structkey__type_a595c4b600b820ea70ad23d8a3e885a0f}\label{structkey__type_a595c4b600b820ea70ad23d8a3e885a0f} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structkey__type_a281774c0222b088b76eeadec89072eb6}\label{structkey__type_a281774c0222b088b76eeadec89072eb6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vet\+\_\+description} )(const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_ab775a6e22610620c34218fd9e34ca5c8}\label{structkey__type_ab775a6e22610620c34218fd9e34ca5c8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries preparse} )(struct \doxymbox{\hyperlink{structkey__preparsed__payload}{key\+\_\+preparsed\+\_\+payload}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_a7de8e1ac75c1eb2abbda66cc55b5d53f}\label{structkey__type_a7de8e1ac75c1eb2abbda66cc55b5d53f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+preparse} )(struct \doxymbox{\hyperlink{structkey__preparsed__payload}{key\+\_\+preparsed\+\_\+payload}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_ad3a935e9444cf21f061525838c6271df}\label{structkey__type_ad3a935e9444cf21f061525838c6271df} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries instantiate} )(struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkey__preparsed__payload}{key\+\_\+preparsed\+\_\+payload}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_a3b37a6d551f91de89e2e0ccb7991cf2d}\label{structkey__type_a3b37a6d551f91de89e2e0ccb7991cf2d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries update} )(struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkey__preparsed__payload}{key\+\_\+preparsed\+\_\+payload}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_a412e32e40c80e97bc46f218f41f530c6}\label{structkey__type_a412e32e40c80e97bc46f218f41f530c6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries match\+\_\+preparse} )(struct \doxymbox{\hyperlink{structkey__match__data}{key\+\_\+match\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_a4a7e2d5438cff1bc82dc30b49d1d91d2}\label{structkey__type_a4a7e2d5438cff1bc82dc30b49d1d91d2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries match\+\_\+free} )(struct \doxymbox{\hyperlink{structkey__match__data}{key\+\_\+match\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_abf53ac3f3ed63dcba2ca8ce3e9ec5fce}\label{structkey__type_abf53ac3f3ed63dcba2ca8ce3e9ec5fce} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries revoke} )(struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_adfe1840bb6cd9d4c74a7f7505ec146ce}\label{structkey__type_adfe1840bb6cd9d4c74a7f7505ec146ce} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy} )(struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_a5d2aaf6ee0889a3ce7a92d7d0549683d}\label{structkey__type_a5d2aaf6ee0889a3ce7a92d7d0549683d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries describe} )(const struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_ab9c0fcb7d6803b392b00521040392831}\label{structkey__type_ab9c0fcb7d6803b392b00521040392831} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries read} )(const struct \doxymbox{\hyperlink{structkey}{key}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structkey__type_a28829f4c9e91c370db3a6686523ec903}\label{structkey__type_a28829f4c9e91c370db3a6686523ec903} 
+request\+\_\+key\+\_\+actor\+\_\+t {\bfseries request\+\_\+key}
+\item 
+\Hypertarget{structkey__type_a11b50d5604ec391530f5c3b2bba67854}\label{structkey__type_a11b50d5604ec391530f5c3b2bba67854} 
+struct \doxymbox{\hyperlink{structkey__restriction}{key\+\_\+restriction}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries lookup\+\_\+restriction} )(const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_a4444374a675262ba68d3db0187b29992}\label{structkey__type_a4444374a675262ba68d3db0187b29992} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries asym\+\_\+query} )(const struct \doxymbox{\hyperlink{structkernel__pkey__params}{kernel\+\_\+pkey\+\_\+params}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkernel__pkey__query}{kernel\+\_\+pkey\+\_\+query}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_a52ade6bca56b2fc58595407ca96a85f6}\label{structkey__type_a52ade6bca56b2fc58595407ca96a85f6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries asym\+\_\+eds\+\_\+op} )(struct \doxymbox{\hyperlink{structkernel__pkey__params}{kernel\+\_\+pkey\+\_\+params}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_a3e8447377b67d31474724a4844f547f2}\label{structkey__type_a3e8447377b67d31474724a4844f547f2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries asym\+\_\+verify\+\_\+signature} )(struct \doxymbox{\hyperlink{structkernel__pkey__params}{kernel\+\_\+pkey\+\_\+params}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkey__type_ac61ddd4dd1baa6ea9e018f40be6123ac}\label{structkey__type_ac61ddd4dd1baa6ea9e018f40be6123ac} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries link}
+\item 
+\Hypertarget{structkey__type_a1662d77617f52741c9cff876be9236de}\label{structkey__type_a1662d77617f52741c9cff876be9236de} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries lock\+\_\+class}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

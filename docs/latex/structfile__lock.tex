@@ -1,0 +1,42 @@
+\doxysection{file\+\_\+lock Struct Reference}
+\hypertarget{structfile__lock}{}\label{structfile__lock}\index{file\_lock@{file\_lock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfile__lock_acdcefb586f6e9a0068a347edda6b4a37}\label{structfile__lock_acdcefb586f6e9a0068a347edda6b4a37} 
+struct \doxymbox{\hyperlink{structfile__lock__core}{file\+\_\+lock\+\_\+core}} {\bfseries c}
+\item 
+\Hypertarget{structfile__lock_ab4b4c69e0a77fa3a9963f7554c4f93b9}\label{structfile__lock_ab4b4c69e0a77fa3a9963f7554c4f93b9} 
+loff\+\_\+t {\bfseries fl\+\_\+start}
+\item 
+\Hypertarget{structfile__lock_a241a671876697093823ebc376d314ee1}\label{structfile__lock_a241a671876697093823ebc376d314ee1} 
+loff\+\_\+t {\bfseries fl\+\_\+end}
+\item 
+\Hypertarget{structfile__lock_a91d422e61e687b1b6b98f08bbb55267f}\label{structfile__lock_a91d422e61e687b1b6b98f08bbb55267f} 
+const struct \doxymbox{\hyperlink{structfile__lock__operations}{file\+\_\+lock\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries fl\+\_\+ops}
+\item 
+\Hypertarget{structfile__lock_a1d9985f2e57eb0943ee259da8b6bc58b}\label{structfile__lock_a1d9985f2e57eb0943ee259da8b6bc58b} 
+const struct \doxymbox{\hyperlink{structlock__manager__operations}{lock\+\_\+manager\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries fl\+\_\+lmops}
+\item 
+\Hypertarget{structfile__lock_ad9ba4f4cb86a60036d5605169fa46e0b}\label{structfile__lock_ad9ba4f4cb86a60036d5605169fa46e0b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structnfs__lock__info}{nfs\_lock\_info}} {\bfseries nfs\_fl}\\
+\>struct \doxymbox{\hyperlink{structnfs4__lock__info}{nfs4\_lock\_info}} {\bfseries nfs4\_fl}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries link}\\
+\>\>int {\bfseries state}\\
+\>\>unsigned int {\bfseries debug\_id}\\
+\>\} {\bfseries afs}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries inode}\\
+\>\} {\bfseries ceph}\\
+\} {\bfseries fl\_u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

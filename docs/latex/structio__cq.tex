@@ -1,0 +1,37 @@
+\doxysection{io\+\_\+cq Struct Reference}
+\hypertarget{structio__cq}{}\label{structio__cq}\index{io\_cq@{io\_cq}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__cq_a7091a167b69275126cf748303e131cce}\label{structio__cq_a7091a167b69275126cf748303e131cce} 
+struct \doxymbox{\hyperlink{structrequest__queue}{request\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries q}
+\item 
+\Hypertarget{structio__cq_a64c565f36b518403820308b844bddb0b}\label{structio__cq_a64c565f36b518403820308b844bddb0b} 
+struct \doxymbox{\hyperlink{structio__context}{io\+\_\+context}} \texorpdfstring{$\ast$}{*} {\bfseries ioc}
+\item 
+\Hypertarget{structio__cq_a5ad4afc5475e31a350bd21c81fd3f981}\label{structio__cq_a5ad4afc5475e31a350bd21c81fd3f981} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries q\_node}\\
+\>struct \doxymbox{\hyperlink{structkmem__cache}{kmem\_cache}} \texorpdfstring{$\ast$}{*} {\bfseries \_\_rcu\_icq\_cache}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__cq_ac58d26b5fb737fd8bd1413b76a347fd7}\label{structio__cq_ac58d26b5fb737fd8bd1413b76a347fd7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries ioc\_node}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries \_\_rcu\_head}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structio__cq_ae23b637a1cb42f4227fcc3b122dc73eb}\label{structio__cq_ae23b637a1cb42f4227fcc3b122dc73eb} 
+unsigned int {\bfseries flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\doxysection{eventfs\+\_\+inode Struct Reference}
+\hypertarget{structeventfs__inode}{}\label{structeventfs__inode}\index{eventfs\_inode@{eventfs\_inode}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structeventfs__inode_a1cf201a0fd5de3245645370c4541dba4}\label{structeventfs__inode_a1cf201a0fd5de3245645370c4541dba4} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries list}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries rcu}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structeventfs__inode_aa4a8da042b300a459a6e38461cc91a7a}\label{structeventfs__inode_aa4a8da042b300a459a6e38461cc91a7a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries children}
+\item 
+\Hypertarget{structeventfs__inode_a22e063c50811effed25738921cb5ac9e}\label{structeventfs__inode_a22e063c50811effed25738921cb5ac9e} 
+const struct \doxymbox{\hyperlink{structeventfs__entry}{eventfs\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries entries}
+\item 
+\Hypertarget{structeventfs__inode_ad97de4b78b5e87743059aa45fd513fe8}\label{structeventfs__inode_ad97de4b78b5e87743059aa45fd513fe8} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structeventfs__inode_a66b0251d30c0931fe372d3bb4fe86cba}\label{structeventfs__inode_a66b0251d30c0931fe372d3bb4fe86cba} 
+struct \doxymbox{\hyperlink{structeventfs__attr}{eventfs\+\_\+attr}} \texorpdfstring{$\ast$}{*} {\bfseries entry\+\_\+attrs}
+\item 
+\Hypertarget{structeventfs__inode_a0f4e0b5900bbc1bfc2803857ffce9ebc}\label{structeventfs__inode_a0f4e0b5900bbc1bfc2803857ffce9ebc} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structeventfs__inode_a6177ff45b9867e1027a674dc527583a9}\label{structeventfs__inode_a6177ff45b9867e1027a674dc527583a9} 
+struct \doxymbox{\hyperlink{structeventfs__attr}{eventfs\+\_\+attr}} {\bfseries attr}
+\item 
+\Hypertarget{structeventfs__inode_ae4b2b46257ea265ba0cf6c28c073a8ed}\label{structeventfs__inode_ae4b2b46257ea265ba0cf6c28c073a8ed} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries kref}
+\item 
+\Hypertarget{structeventfs__inode_a3dc59297b0b86a50794ce4328534ed8d}\label{structeventfs__inode_a3dc59297b0b86a50794ce4328534ed8d} 
+unsigned int {\bfseries is\+\_\+freed}:\+ 1
+\item 
+\Hypertarget{structeventfs__inode_a9fda11269695a08b0114bce6b2e8538f}\label{structeventfs__inode_a9fda11269695a08b0114bce6b2e8538f} 
+unsigned int {\bfseries is\+\_\+events}:\+ 1
+\item 
+\Hypertarget{structeventfs__inode_ab9937c51a4787effd315f76a5345f9ed}\label{structeventfs__inode_ab9937c51a4787effd315f76a5345f9ed} 
+unsigned int {\bfseries nr\+\_\+entries}:\+ 30
+\item 
+\Hypertarget{structeventfs__inode_aae68f8ce9913dbfdcee639ce0e8f0fef}\label{structeventfs__inode_aae68f8ce9913dbfdcee639ce0e8f0fef} 
+unsigned int {\bfseries ino}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

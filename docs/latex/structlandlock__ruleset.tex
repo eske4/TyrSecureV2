@@ -1,0 +1,35 @@
+\doxysection{landlock\+\_\+ruleset Struct Reference}
+\hypertarget{structlandlock__ruleset}{}\label{structlandlock__ruleset}\index{landlock\_ruleset@{landlock\_ruleset}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structlandlock__ruleset_a371c32efdb9f2e79509f923af1f50a72}\label{structlandlock__ruleset_a371c32efdb9f2e79509f923af1f50a72} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries root\+\_\+inode}
+\item 
+\Hypertarget{structlandlock__ruleset_afaf4af34a7be9f0d2142c767ed0b0f4f}\label{structlandlock__ruleset_afaf4af34a7be9f0d2142c767ed0b0f4f} 
+struct \doxymbox{\hyperlink{structrb__root}{rb\+\_\+root}} {\bfseries root\+\_\+net\+\_\+port}
+\item 
+\Hypertarget{structlandlock__ruleset_af4b72c3c9ce504bbca433f4325848930}\label{structlandlock__ruleset_af4b72c3c9ce504bbca433f4325848930} 
+struct \doxymbox{\hyperlink{structlandlock__hierarchy}{landlock\+\_\+hierarchy}} \texorpdfstring{$\ast$}{*} {\bfseries hierarchy}
+\item 
+\Hypertarget{structlandlock__ruleset_a1ab03a245e39fa8e3db4ea039064d50a}\label{structlandlock__ruleset_a1ab03a245e39fa8e3db4ea039064d50a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structwork__struct}{work\_struct}} {\bfseries work\_free}\\
+\Hypertarget{unionlandlock__ruleset_1_1_0d364343215234147263336142076116210152104347000335_a834db4183943ae968e6a019eae04973c}\label{unionlandlock__ruleset_1_1_0d364343215234147263336142076116210152104347000335_a834db4183943ae968e6a019eae04973c} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries lock}\\
+\>\>refcount\_t {\bfseries usage}\\
+\>\>u32 {\bfseries num\_rules}\\
+\>\>u32 {\bfseries num\_layers}\\
+\>\>struct \doxymbox{\hyperlink{structaccess__masks}{access\_masks}} {\bfseries access\_masks} \+[0]\+\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

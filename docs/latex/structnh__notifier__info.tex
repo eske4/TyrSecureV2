@@ -1,0 +1,34 @@
+\doxysection{nh\+\_\+notifier\+\_\+info Struct Reference}
+\hypertarget{structnh__notifier__info}{}\label{structnh__notifier__info}\index{nh\_notifier\_info@{nh\_notifier\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnh__notifier__info_a2ffced430b1503baafdba349b4fa0e4c}\label{structnh__notifier__info_a2ffced430b1503baafdba349b4fa0e4c} 
+struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*} {\bfseries net}
+\item 
+\Hypertarget{structnh__notifier__info_a68868a05e0b8eee07921ba223a6b7250}\label{structnh__notifier__info_a68868a05e0b8eee07921ba223a6b7250} 
+struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*} {\bfseries extack}
+\item 
+\Hypertarget{structnh__notifier__info_ad3eb07efd53ccafe70d6907be409c810}\label{structnh__notifier__info_ad3eb07efd53ccafe70d6907be409c810} 
+u32 {\bfseries id}
+\item 
+\Hypertarget{structnh__notifier__info_a6ce1c2dbccd9c304d62a5dc73f1933a4}\label{structnh__notifier__info_a6ce1c2dbccd9c304d62a5dc73f1933a4} 
+enum nh\+\_\+notifier\+\_\+info\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structnh__notifier__info_a6a1571aa8bfc6420986dd04e1621e4a7}\label{structnh__notifier__info_a6a1571aa8bfc6420986dd04e1621e4a7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structnh__notifier__single__info}{nh\_notifier\_single\_info}} \texorpdfstring{$\ast$}{*} {\bfseries nh}\\
+\>struct \doxymbox{\hyperlink{structnh__notifier__grp__info}{nh\_notifier\_grp\_info}} \texorpdfstring{$\ast$}{*} {\bfseries nh\_grp}\\
+\>struct \doxymbox{\hyperlink{structnh__notifier__res__table__info}{nh\_notifier\_res\_table\_info}} \texorpdfstring{$\ast$}{*} {\bfseries nh\_res\_table}\\
+\>struct \doxymbox{\hyperlink{structnh__notifier__res__bucket__info}{nh\_notifier\_res\_bucket\_info}} \texorpdfstring{$\ast$}{*} {\bfseries nh\_res\_bucket}\\
+\>struct \doxymbox{\hyperlink{structnh__notifier__grp__hw__stats__info}{nh\_notifier\_grp\_hw\_stats\_info}} \texorpdfstring{$\ast$}{*} {\bfseries nh\_grp\_hw\_stats}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

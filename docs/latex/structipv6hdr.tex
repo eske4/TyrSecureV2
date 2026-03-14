@@ -1,0 +1,44 @@
+\doxysection{ipv6hdr Struct Reference}
+\hypertarget{structipv6hdr}{}\label{structipv6hdr}\index{ipv6hdr@{ipv6hdr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structipv6hdr_ae051a892c46ab3b29fb1ec609ac13325}\label{structipv6hdr_ae051a892c46ab3b29fb1ec609ac13325} 
+\+\_\+\+\_\+u8 {\bfseries priority}:\+ 4
+\item 
+\Hypertarget{structipv6hdr_a715dc7195aad42549d4295ea8e11458b}\label{structipv6hdr_a715dc7195aad42549d4295ea8e11458b} 
+\+\_\+\+\_\+u8 {\bfseries version}:\+ 4
+\item 
+\Hypertarget{structipv6hdr_a12a2cd070922eb3429e8204064b2ecb6}\label{structipv6hdr_a12a2cd070922eb3429e8204064b2ecb6} 
+\+\_\+\+\_\+u8 {\bfseries flow\+\_\+lbl} \+[3]\+
+\item 
+\Hypertarget{structipv6hdr_a3853d255c97b55768fb650ef68dbecaa}\label{structipv6hdr_a3853d255c97b55768fb650ef68dbecaa} 
+\+\_\+\+\_\+be16 {\bfseries payload\+\_\+len}
+\item 
+\Hypertarget{structipv6hdr_a3ea6ae8cbdfd2372badd72da0d68a048}\label{structipv6hdr_a3ea6ae8cbdfd2372badd72da0d68a048} 
+\+\_\+\+\_\+u8 {\bfseries nexthdr}
+\item 
+\Hypertarget{structipv6hdr_a5b8691ed79c9479e90a4a13dd0d8b2df}\label{structipv6hdr_a5b8691ed79c9479e90a4a13dd0d8b2df} 
+\+\_\+\+\_\+u8 {\bfseries hop\+\_\+limit}
+\item 
+\Hypertarget{structipv6hdr_a362637eaf80dcdc99716d89ceca62f46}\label{structipv6hdr_a362637eaf80dcdc99716d89ceca62f46} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionipv6hdr_1_1_0d043106163224272136075307340033201173011106054136_a191ea158b1d9167203c43a3fa727d01e}\label{unionipv6hdr_1_1_0d043106163224272136075307340033201173011106054136_a191ea158b1d9167203c43a3fa727d01e} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries saddr}\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries daddr}\\
+\>\} \\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries saddr}\\
+\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries daddr}\\
+\>\} {\bfseries addrs}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

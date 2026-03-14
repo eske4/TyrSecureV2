@@ -1,0 +1,67 @@
+\doxysection{svc\+\_\+serv Struct Reference}
+\hypertarget{structsvc__serv}{}\label{structsvc__serv}\index{svc\_serv@{svc\_serv}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsvc__serv_af59504f4b6396d3be57a8e0496d91ea6}\label{structsvc__serv_af59504f4b6396d3be57a8e0496d91ea6} 
+struct \doxymbox{\hyperlink{structsvc__program}{svc\+\_\+program}} \texorpdfstring{$\ast$}{*} {\bfseries sv\+\_\+programs}
+\item 
+\Hypertarget{structsvc__serv_aada0f2082067fcda463f2c3bfca9d8f9}\label{structsvc__serv_aada0f2082067fcda463f2c3bfca9d8f9} 
+struct \doxymbox{\hyperlink{structsvc__stat}{svc\+\_\+stat}} \texorpdfstring{$\ast$}{*} {\bfseries sv\+\_\+stats}
+\item 
+\Hypertarget{structsvc__serv_ac2135393268fe34837296a0b191e3888}\label{structsvc__serv_ac2135393268fe34837296a0b191e3888} 
+spinlock\+\_\+t {\bfseries sv\+\_\+lock}
+\item 
+\Hypertarget{structsvc__serv_a831a5c10bdddce024fc44d4b3995997a}\label{structsvc__serv_a831a5c10bdddce024fc44d4b3995997a} 
+unsigned int {\bfseries sv\+\_\+nprogs}
+\item 
+\Hypertarget{structsvc__serv_a317315266971b9d6a93a791543d11687}\label{structsvc__serv_a317315266971b9d6a93a791543d11687} 
+unsigned int {\bfseries sv\+\_\+nrthreads}
+\item 
+\Hypertarget{structsvc__serv_a9d1ff64ad392e56d27cd272688db17c1}\label{structsvc__serv_a9d1ff64ad392e56d27cd272688db17c1} 
+unsigned int {\bfseries sv\+\_\+max\+\_\+payload}
+\item 
+\Hypertarget{structsvc__serv_af902035ee7d71840df4c1fa634936d3e}\label{structsvc__serv_af902035ee7d71840df4c1fa634936d3e} 
+unsigned int {\bfseries sv\+\_\+max\+\_\+mesg}
+\item 
+\Hypertarget{structsvc__serv_a08a14fe08702e5fd2f5e58af38bb45f6}\label{structsvc__serv_a08a14fe08702e5fd2f5e58af38bb45f6} 
+unsigned int {\bfseries sv\+\_\+xdrsize}
+\item 
+\Hypertarget{structsvc__serv_a25cd647b8b1cb098f85b653a90a0eea2}\label{structsvc__serv_a25cd647b8b1cb098f85b653a90a0eea2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries sv\+\_\+permsocks}
+\item 
+\Hypertarget{structsvc__serv_af6ffa98c544b9f159e77c45c381f0175}\label{structsvc__serv_af6ffa98c544b9f159e77c45c381f0175} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries sv\+\_\+tempsocks}
+\item 
+\Hypertarget{structsvc__serv_ad4b67a7bdfb984b7b6dffb7774d06df4}\label{structsvc__serv_ad4b67a7bdfb984b7b6dffb7774d06df4} 
+int {\bfseries sv\+\_\+tmpcnt}
+\item 
+\Hypertarget{structsvc__serv_a0dcc2a327217c6cd9a82c7bdc5634f43}\label{structsvc__serv_a0dcc2a327217c6cd9a82c7bdc5634f43} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries sv\+\_\+temptimer}
+\item 
+\Hypertarget{structsvc__serv_a91d28860cd237154b51fb22635a22582}\label{structsvc__serv_a91d28860cd237154b51fb22635a22582} 
+char \texorpdfstring{$\ast$}{*} {\bfseries sv\+\_\+name}
+\item 
+\Hypertarget{structsvc__serv_a0ab72587af3d6a0c5afae1504a31c5b5}\label{structsvc__serv_a0ab72587af3d6a0c5afae1504a31c5b5} 
+unsigned int {\bfseries sv\+\_\+nrpools}
+\item 
+\Hypertarget{structsvc__serv_a524c458df9811b968558695d62e976f0}\label{structsvc__serv_a524c458df9811b968558695d62e976f0} 
+bool {\bfseries sv\+\_\+is\+\_\+pooled}
+\item 
+\Hypertarget{structsvc__serv_afc1af34aca6c474d1428702b7baea9a1}\label{structsvc__serv_afc1af34aca6c474d1428702b7baea9a1} 
+struct \doxymbox{\hyperlink{structsvc__pool}{svc\+\_\+pool}} \texorpdfstring{$\ast$}{*} {\bfseries sv\+\_\+pools}
+\item 
+\Hypertarget{structsvc__serv_a2da9168d9c62b6b2cd7ba2738595124e}\label{structsvc__serv_a2da9168d9c62b6b2cd7ba2738595124e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sv\+\_\+threadfn} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsvc__serv_a6580b8c16c102c52c0b12f2a6ab0a931}\label{structsvc__serv_a6580b8c16c102c52c0b12f2a6ab0a931} 
+struct \doxymbox{\hyperlink{structlwq}{lwq}} {\bfseries sv\+\_\+cb\+\_\+list}
+\item 
+\Hypertarget{structsvc__serv_a55c9dda9d1805ee24d3b22fb9c91a250}\label{structsvc__serv_a55c9dda9d1805ee24d3b22fb9c91a250} 
+bool {\bfseries sv\+\_\+bc\+\_\+enabled}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

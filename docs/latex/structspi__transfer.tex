@@ -1,0 +1,94 @@
+\doxysection{spi\+\_\+transfer Struct Reference}
+\hypertarget{structspi__transfer}{}\label{structspi__transfer}\index{spi\_transfer@{spi\_transfer}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structspi__transfer_aa0f53a8080ead009513fb4db0be15b8a}\label{structspi__transfer_aa0f53a8080ead009513fb4db0be15b8a} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries tx\+\_\+buf}
+\item 
+\Hypertarget{structspi__transfer_af8a411d138d5ef7e2ed85b9bce5b14ee}\label{structspi__transfer_af8a411d138d5ef7e2ed85b9bce5b14ee} 
+void \texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+buf}
+\item 
+\Hypertarget{structspi__transfer_a1e233cf3ab88ecad9ff575dde336b89b}\label{structspi__transfer_a1e233cf3ab88ecad9ff575dde336b89b} 
+unsigned int {\bfseries len}
+\item 
+\Hypertarget{structspi__transfer_a8aceab9ff3d28c528ab21c3ecf609317}\label{structspi__transfer_a8aceab9ff3d28c528ab21c3ecf609317} 
+u16 {\bfseries error}
+\item 
+\Hypertarget{structspi__transfer_a31a588762424c50f8a5bc0e412e3afef}\label{structspi__transfer_a31a588762424c50f8a5bc0e412e3afef} 
+bool {\bfseries tx\+\_\+sg\+\_\+mapped}
+\item 
+\Hypertarget{structspi__transfer_a1227d4ec1d6b0cbc2e1e2c47be0e58b2}\label{structspi__transfer_a1227d4ec1d6b0cbc2e1e2c47be0e58b2} 
+bool {\bfseries rx\+\_\+sg\+\_\+mapped}
+\item 
+\Hypertarget{structspi__transfer_a4d93d9e28297285de692368c6501f83b}\label{structspi__transfer_a4d93d9e28297285de692368c6501f83b} 
+struct \doxymbox{\hyperlink{structsg__table}{sg\+\_\+table}} {\bfseries tx\+\_\+sg}
+\item 
+\Hypertarget{structspi__transfer_aade7e167204c8b41ea4c9d37335a8899}\label{structspi__transfer_aade7e167204c8b41ea4c9d37335a8899} 
+struct \doxymbox{\hyperlink{structsg__table}{sg\+\_\+table}} {\bfseries rx\+\_\+sg}
+\item 
+\Hypertarget{structspi__transfer_af8d7adf4129aea3c39a4fc375b639450}\label{structspi__transfer_af8d7adf4129aea3c39a4fc375b639450} 
+dma\+\_\+addr\+\_\+t {\bfseries tx\+\_\+dma}
+\item 
+\Hypertarget{structspi__transfer_a96ab78171dfb6a2b7d65f1746e640267}\label{structspi__transfer_a96ab78171dfb6a2b7d65f1746e640267} 
+dma\+\_\+addr\+\_\+t {\bfseries rx\+\_\+dma}
+\item 
+\Hypertarget{structspi__transfer_adf4f19a0325955edd4c242bd2711cb75}\label{structspi__transfer_adf4f19a0325955edd4c242bd2711cb75} 
+unsigned int {\bfseries dummy\+\_\+data}:\+ 1
+\item 
+\Hypertarget{structspi__transfer_a04761fa327ff3b3ac51b21e62507c078}\label{structspi__transfer_a04761fa327ff3b3ac51b21e62507c078} 
+unsigned int {\bfseries cs\+\_\+off}:\+ 1
+\item 
+\Hypertarget{structspi__transfer_a6ab2ccac74a186f23e21262976942145}\label{structspi__transfer_a6ab2ccac74a186f23e21262976942145} 
+unsigned int {\bfseries cs\+\_\+change}:\+ 1
+\item 
+\Hypertarget{structspi__transfer_acf03b806361aa0768f32a69b6db37c47}\label{structspi__transfer_acf03b806361aa0768f32a69b6db37c47} 
+unsigned int {\bfseries tx\+\_\+nbits}:\+ 4
+\item 
+\Hypertarget{structspi__transfer_a85d9212ea81b844678a7aaed00803284}\label{structspi__transfer_a85d9212ea81b844678a7aaed00803284} 
+unsigned int {\bfseries rx\+\_\+nbits}:\+ 4
+\item 
+\Hypertarget{structspi__transfer_a5abbe4205b8439df2ec2dfe8155dcfff}\label{structspi__transfer_a5abbe4205b8439df2ec2dfe8155dcfff} 
+unsigned int {\bfseries timestamped}:\+ 1
+\item 
+\Hypertarget{structspi__transfer_ad5fd901cc6d1e4c626466ec0b1fb4276}\label{structspi__transfer_ad5fd901cc6d1e4c626466ec0b1fb4276} 
+bool {\bfseries dtr\+\_\+mode}
+\item 
+\Hypertarget{structspi__transfer_a4a2893f5c655627573d0370e7200834f}\label{structspi__transfer_a4a2893f5c655627573d0370e7200834f} 
+u8 {\bfseries bits\+\_\+per\+\_\+word}
+\item 
+\Hypertarget{structspi__transfer_ad1352ccddbefbf3f62109b9b7c5dc8ee}\label{structspi__transfer_ad1352ccddbefbf3f62109b9b7c5dc8ee} 
+struct \doxymbox{\hyperlink{structspi__delay}{spi\+\_\+delay}} {\bfseries delay}
+\item 
+\Hypertarget{structspi__transfer_a3d97a9545d6ab9896f43914c18343e09}\label{structspi__transfer_a3d97a9545d6ab9896f43914c18343e09} 
+struct \doxymbox{\hyperlink{structspi__delay}{spi\+\_\+delay}} {\bfseries cs\+\_\+change\+\_\+delay}
+\item 
+\Hypertarget{structspi__transfer_a5735fbc3256271c3b3b4974be835ad36}\label{structspi__transfer_a5735fbc3256271c3b3b4974be835ad36} 
+struct \doxymbox{\hyperlink{structspi__delay}{spi\+\_\+delay}} {\bfseries word\+\_\+delay}
+\item 
+\Hypertarget{structspi__transfer_a73486bff504e8322ae1b0fbc11f1b771}\label{structspi__transfer_a73486bff504e8322ae1b0fbc11f1b771} 
+u32 {\bfseries speed\+\_\+hz}
+\item 
+\Hypertarget{structspi__transfer_ab99105a4e5d8cd69ae04376c76e128a0}\label{structspi__transfer_ab99105a4e5d8cd69ae04376c76e128a0} 
+u32 {\bfseries effective\+\_\+speed\+\_\+hz}
+\item 
+\Hypertarget{structspi__transfer_a5062a1d9666188ad5af82e3aeccf6799}\label{structspi__transfer_a5062a1d9666188ad5af82e3aeccf6799} 
+unsigned int {\bfseries offload\+\_\+flags}
+\item 
+\Hypertarget{structspi__transfer_ae950607441278f0c1b4aa6667bdf0c63}\label{structspi__transfer_ae950607441278f0c1b4aa6667bdf0c63} 
+unsigned int {\bfseries ptp\+\_\+sts\+\_\+word\+\_\+pre}
+\item 
+\Hypertarget{structspi__transfer_a792b75517d670b7e7e409ba60b0ee0d8}\label{structspi__transfer_a792b75517d670b7e7e409ba60b0ee0d8} 
+unsigned int {\bfseries ptp\+\_\+sts\+\_\+word\+\_\+post}
+\item 
+\Hypertarget{structspi__transfer_ad2e77c63819120d7e7703e368a008c77}\label{structspi__transfer_ad2e77c63819120d7e7703e368a008c77} 
+struct \doxymbox{\hyperlink{structptp__system__timestamp}{ptp\+\_\+system\+\_\+timestamp}} \texorpdfstring{$\ast$}{*} {\bfseries ptp\+\_\+sts}
+\item 
+\Hypertarget{structspi__transfer_a2eb0f29fa09d3f4d1006cfa9b78f3e63}\label{structspi__transfer_a2eb0f29fa09d3f4d1006cfa9b78f3e63} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries transfer\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

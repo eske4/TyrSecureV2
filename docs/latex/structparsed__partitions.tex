@@ -1,0 +1,40 @@
+\doxysection{parsed\+\_\+partitions Struct Reference}
+\hypertarget{structparsed__partitions}{}\label{structparsed__partitions}\index{parsed\_partitions@{parsed\_partitions}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structparsed__partitions_a4a9ec32350ba4bab783078efdec2fb33}\label{structparsed__partitions_a4a9ec32350ba4bab783078efdec2fb33} 
+struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*} {\bfseries disk}
+\item 
+\Hypertarget{structparsed__partitions_a9a1db2b6a76d094fa0976269a25fb978}\label{structparsed__partitions_a9a1db2b6a76d094fa0976269a25fb978} 
+char {\bfseries name} \+[32]\+
+\item 
+\Hypertarget{structparsed__partitions_a8be4efc200d7ec23471ef3bd8cfad7ca}\label{structparsed__partitions_a8be4efc200d7ec23471ef3bd8cfad7ca} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>sector\_t {\bfseries from}\\
+\>sector\_t {\bfseries size}\\
+\>int {\bfseries flags}\\
+\>bool {\bfseries has\_info}\\
+\>struct \doxymbox{\hyperlink{structpartition__meta__info}{partition\_meta\_info}} {\bfseries info}\\
+\} \texorpdfstring{$\ast$}{*} {\bfseries parts}\\
+
+\end{tabbing}\item 
+\Hypertarget{structparsed__partitions_a963a21bc928fc9ebbd3729d9ee9c53c1}\label{structparsed__partitions_a963a21bc928fc9ebbd3729d9ee9c53c1} 
+int {\bfseries next}
+\item 
+\Hypertarget{structparsed__partitions_a09bfc3e9f4ca7507b63475a91af0f25f}\label{structparsed__partitions_a09bfc3e9f4ca7507b63475a91af0f25f} 
+int {\bfseries limit}
+\item 
+\Hypertarget{structparsed__partitions_a9a305d73abfe6efd7141b81f2347cb75}\label{structparsed__partitions_a9a305d73abfe6efd7141b81f2347cb75} 
+bool {\bfseries access\+\_\+beyond\+\_\+eod}
+\item 
+\Hypertarget{structparsed__partitions_a731811abc89ced6d376e310bdd00ed2a}\label{structparsed__partitions_a731811abc89ced6d376e310bdd00ed2a} 
+char \texorpdfstring{$\ast$}{*} {\bfseries pp\+\_\+buf}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

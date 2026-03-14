@@ -1,0 +1,64 @@
+\doxysection{eventpoll Struct Reference}
+\hypertarget{structeventpoll}{}\label{structeventpoll}\index{eventpoll@{eventpoll}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structeventpoll_a233361467e715fd9566f0f9c9a3dba0e}\label{structeventpoll_a233361467e715fd9566f0f9c9a3dba0e} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mtx}
+\item 
+\Hypertarget{structeventpoll_ab5263d93f4eb0004e5bb2ad848f97b60}\label{structeventpoll_ab5263d93f4eb0004e5bb2ad848f97b60} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wq}
+\item 
+\Hypertarget{structeventpoll_a9da574e5feb1abaef9e860a7e82ad16a}\label{structeventpoll_a9da574e5feb1abaef9e860a7e82ad16a} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries poll\+\_\+wait}
+\item 
+\Hypertarget{structeventpoll_a02ea7388c27619b9da421d8ffeb09a58}\label{structeventpoll_a02ea7388c27619b9da421d8ffeb09a58} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rdllist}
+\item 
+\Hypertarget{structeventpoll_a4b7e2fb9c29068500752388a86f0ec9d}\label{structeventpoll_a4b7e2fb9c29068500752388a86f0ec9d} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structeventpoll_ae28ebd041acb87557be7805ee87bda3f}\label{structeventpoll_ae28ebd041acb87557be7805ee87bda3f} 
+struct \doxymbox{\hyperlink{structrb__root__cached}{rb\+\_\+root\+\_\+cached}} {\bfseries rbr}
+\item 
+\Hypertarget{structeventpoll_a86fba7483e0c63924b6a40601421b848}\label{structeventpoll_a86fba7483e0c63924b6a40601421b848} 
+struct \doxymbox{\hyperlink{structepitem}{epitem}} \texorpdfstring{$\ast$}{*} {\bfseries ovflist}
+\item 
+\Hypertarget{structeventpoll_aebba98f6d4eb0001bee67f1ba9875416}\label{structeventpoll_aebba98f6d4eb0001bee67f1ba9875416} 
+struct \doxymbox{\hyperlink{structwakeup__source}{wakeup\+\_\+source}} \texorpdfstring{$\ast$}{*} {\bfseries ws}
+\item 
+\Hypertarget{structeventpoll_a27ca301404dd6818b202e1bbf84eefcc}\label{structeventpoll_a27ca301404dd6818b202e1bbf84eefcc} 
+struct \doxymbox{\hyperlink{structuser__struct}{user\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries user}
+\item 
+\Hypertarget{structeventpoll_a1543e6b17a75b7b7de7c8d16f71971bc}\label{structeventpoll_a1543e6b17a75b7b7de7c8d16f71971bc} 
+struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*} {\bfseries file}
+\item 
+\Hypertarget{structeventpoll_aaac7f4154520d24a7bb1417ca393c8e5}\label{structeventpoll_aaac7f4154520d24a7bb1417ca393c8e5} 
+u64 {\bfseries gen}
+\item 
+\Hypertarget{structeventpoll_a151feffc8f0f511f828892ccc9e28eb6}\label{structeventpoll_a151feffc8f0f511f828892ccc9e28eb6} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries refs}
+\item 
+\Hypertarget{structeventpoll_a60ab47e5f75b94ee2962b53eedf0f007}\label{structeventpoll_a60ab47e5f75b94ee2962b53eedf0f007} 
+u8 {\bfseries loop\+\_\+check\+\_\+depth}
+\item 
+\Hypertarget{structeventpoll_a87afd7ffebfa6825432801d5e5601053}\label{structeventpoll_a87afd7ffebfa6825432801d5e5601053} 
+refcount\+\_\+t {\bfseries refcount}
+\item 
+\Hypertarget{structeventpoll_aa3ada91eec91b94d548bc64fc51563ff}\label{structeventpoll_aa3ada91eec91b94d548bc64fc51563ff} 
+unsigned int {\bfseries napi\+\_\+id}
+\item 
+\Hypertarget{structeventpoll_a6fe39aee5c52c417dc4441a79daef891}\label{structeventpoll_a6fe39aee5c52c417dc4441a79daef891} 
+u32 {\bfseries busy\+\_\+poll\+\_\+usecs}
+\item 
+\Hypertarget{structeventpoll_a062053ea7f60843a168645c43c418b8b}\label{structeventpoll_a062053ea7f60843a168645c43c418b8b} 
+u16 {\bfseries busy\+\_\+poll\+\_\+budget}
+\item 
+\Hypertarget{structeventpoll_a1f5f39c8753d55329670d03c65a5fdb9}\label{structeventpoll_a1f5f39c8753d55329670d03c65a5fdb9} 
+bool {\bfseries prefer\+\_\+busy\+\_\+poll}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\doxysection{gpio\+\_\+device Struct Reference}
+\hypertarget{structgpio__device}{}\label{structgpio__device}\index{gpio\_device@{gpio\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structgpio__device_a90798b19a60ced04e7a7eb698bf0998b}\label{structgpio__device_a90798b19a60ced04e7a7eb698bf0998b} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structgpio__device_a726b4348ac9c33ebf625a334cfd21a03}\label{structgpio__device_a726b4348ac9c33ebf625a334cfd21a03} 
+struct \doxymbox{\hyperlink{structcdev}{cdev}} {\bfseries chrdev}
+\item 
+\Hypertarget{structgpio__device_a308343712afbb3fbff2cfe3195fe5fe5}\label{structgpio__device_a308343712afbb3fbff2cfe3195fe5fe5} 
+int {\bfseries id}
+\item 
+\Hypertarget{structgpio__device_a4d75cedb7a72b736160b901912b9224b}\label{structgpio__device_a4d75cedb7a72b736160b901912b9224b} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structgpio__device_a922423a600915dbe98ffacc7b4cb03b1}\label{structgpio__device_a922423a600915dbe98ffacc7b4cb03b1} 
+struct \doxymbox{\hyperlink{structgpio__chip}{gpio\+\_\+chip}} \texorpdfstring{$\ast$}{*} {\bfseries chip}
+\item 
+\Hypertarget{structgpio__device_a9d1855462fb2df894dd3e056230e9fdd}\label{structgpio__device_a9d1855462fb2df894dd3e056230e9fdd} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries descs}
+\item 
+\Hypertarget{structgpio__device_a6caf768b0e22e9490e78a4fe4592250f}\label{structgpio__device_a6caf768b0e22e9490e78a4fe4592250f} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries valid\+\_\+mask}
+\item 
+\Hypertarget{structgpio__device_a124c7e3e848c1c96fbffc1efbda18223}\label{structgpio__device_a124c7e3e848c1c96fbffc1efbda18223} 
+struct \doxymbox{\hyperlink{structsrcu__struct}{srcu\+\_\+struct}} {\bfseries desc\+\_\+srcu}
+\item 
+\Hypertarget{structgpio__device_afc62a93a99312bcfe415a0520d01be36}\label{structgpio__device_afc62a93a99312bcfe415a0520d01be36} 
+unsigned int {\bfseries base}
+\item 
+\Hypertarget{structgpio__device_a65b6e52290ed73d4b6c02fef49cbf382}\label{structgpio__device_a65b6e52290ed73d4b6c02fef49cbf382} 
+u16 {\bfseries ngpio}
+\item 
+\Hypertarget{structgpio__device_af676204fe0d0182427ce219d4eee4259}\label{structgpio__device_af676204fe0d0182427ce219d4eee4259} 
+bool {\bfseries can\+\_\+sleep}
+\item 
+\Hypertarget{structgpio__device_a5de732ae36f05d53f8d2f8610c5b11fb}\label{structgpio__device_a5de732ae36f05d53f8d2f8610c5b11fb} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries label}
+\item 
+\Hypertarget{structgpio__device_a53524a7d84b52e75e49e250ca3490b5e}\label{structgpio__device_a53524a7d84b52e75e49e250ca3490b5e} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structgpio__device_a376f13fc4e467ef9cd1ee993d2f23faf}\label{structgpio__device_a376f13fc4e467ef9cd1ee993d2f23faf} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structgpio__device_a0ad0755d07488c8c169f3f84032fb195}\label{structgpio__device_a0ad0755d07488c8c169f3f84032fb195} 
+struct \doxymbox{\hyperlink{structraw__notifier__head}{raw\+\_\+notifier\+\_\+head}} {\bfseries line\+\_\+state\+\_\+notifier}
+\item 
+\Hypertarget{structgpio__device_ad1c7bcca87477e5d37c6903295021b5c}\label{structgpio__device_ad1c7bcca87477e5d37c6903295021b5c} 
+\doxymbox{\hyperlink{structrwlock__t}{rwlock\+\_\+t}} {\bfseries line\+\_\+state\+\_\+lock}
+\item 
+\Hypertarget{structgpio__device_a56a125dec924abbb5550236e54f0d786}\label{structgpio__device_a56a125dec924abbb5550236e54f0d786} 
+struct \doxymbox{\hyperlink{structworkqueue__struct}{workqueue\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries line\+\_\+state\+\_\+wq}
+\item 
+\Hypertarget{structgpio__device_af8311fbd2911dbabd18e0f2b19ec0235}\label{structgpio__device_af8311fbd2911dbabd18e0f2b19ec0235} 
+struct \doxymbox{\hyperlink{structblocking__notifier__head}{blocking\+\_\+notifier\+\_\+head}} {\bfseries device\+\_\+notifier}
+\item 
+\Hypertarget{structgpio__device_af0cf17902198cf0f58d48f22eb1b113a}\label{structgpio__device_af0cf17902198cf0f58d48f22eb1b113a} 
+struct \doxymbox{\hyperlink{structsrcu__struct}{srcu\+\_\+struct}} {\bfseries srcu}
+\item 
+\Hypertarget{structgpio__device_aa2fe13918f2ab1c0c9470461e1a4e65e}\label{structgpio__device_aa2fe13918f2ab1c0c9470461e1a4e65e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pin\+\_\+ranges}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

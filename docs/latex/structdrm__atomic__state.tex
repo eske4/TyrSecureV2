@@ -1,0 +1,64 @@
+\doxysection{drm\+\_\+atomic\+\_\+state Struct Reference}
+\hypertarget{structdrm__atomic__state}{}\label{structdrm__atomic__state}\index{drm\_atomic\_state@{drm\_atomic\_state}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__atomic__state_aafb52c62d54c20723cb48b1f43f77dc2}\label{structdrm__atomic__state_aafb52c62d54c20723cb48b1f43f77dc2} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries ref}
+\item 
+\Hypertarget{structdrm__atomic__state_a2b7b23ea003ce4b4fb99bae93dba35ee}\label{structdrm__atomic__state_a2b7b23ea003ce4b4fb99bae93dba35ee} 
+struct \doxymbox{\hyperlink{structdrm__device}{drm\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structdrm__atomic__state_a73ee9723654fdd3b994f3d7ca65d60de}\label{structdrm__atomic__state_a73ee9723654fdd3b994f3d7ca65d60de} 
+bool {\bfseries allow\+\_\+modeset}:\+ 1
+\item 
+\Hypertarget{structdrm__atomic__state_ad6a67bc88b07613c4469b2a9ee81f16b}\label{structdrm__atomic__state_ad6a67bc88b07613c4469b2a9ee81f16b} 
+bool {\bfseries legacy\+\_\+cursor\+\_\+update}:\+ 1
+\item 
+\Hypertarget{structdrm__atomic__state_a6c4d324cdb4048d4b570bb66c9cd78ad}\label{structdrm__atomic__state_a6c4d324cdb4048d4b570bb66c9cd78ad} 
+bool {\bfseries async\+\_\+update}:\+ 1
+\item 
+\Hypertarget{structdrm__atomic__state_a0ffdade9da55b2392286c1e43f7082fc}\label{structdrm__atomic__state_a0ffdade9da55b2392286c1e43f7082fc} 
+bool {\bfseries duplicated}:\+ 1
+\item 
+\Hypertarget{structdrm__atomic__state_ac87ad80b58433792857db7ccdadba685}\label{structdrm__atomic__state_ac87ad80b58433792857db7ccdadba685} 
+bool {\bfseries checked}:\+ 1
+\item 
+\Hypertarget{structdrm__atomic__state_a441ff09b7e5b2b4992aebcc0debd99b6}\label{structdrm__atomic__state_a441ff09b7e5b2b4992aebcc0debd99b6} 
+bool {\bfseries plane\+\_\+color\+\_\+pipeline}:\+ 1
+\item 
+\Hypertarget{structdrm__atomic__state_a6cbf01bc408374eb263d9430135dd83f}\label{structdrm__atomic__state_a6cbf01bc408374eb263d9430135dd83f} 
+struct \doxymbox{\hyperlink{struct____drm__colorops__state}{\+\_\+\+\_\+drm\+\_\+colorops\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries colorops}
+\item 
+\Hypertarget{structdrm__atomic__state_a83ccbe792b0dc002381d942b4ad54d5b}\label{structdrm__atomic__state_a83ccbe792b0dc002381d942b4ad54d5b} 
+struct \doxymbox{\hyperlink{struct____drm__planes__state}{\+\_\+\+\_\+drm\+\_\+planes\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries planes}
+\item 
+\Hypertarget{structdrm__atomic__state_a146a8517e644a5f17f8c70504123f582}\label{structdrm__atomic__state_a146a8517e644a5f17f8c70504123f582} 
+struct \doxymbox{\hyperlink{struct____drm__crtcs__state}{\+\_\+\+\_\+drm\+\_\+crtcs\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries crtcs}
+\item 
+\Hypertarget{structdrm__atomic__state_a45f09446f63bfee2ee0523c28922813a}\label{structdrm__atomic__state_a45f09446f63bfee2ee0523c28922813a} 
+int {\bfseries num\+\_\+connector}
+\item 
+\Hypertarget{structdrm__atomic__state_abe8ac526a8f465be6473b4d93e1ba3cc}\label{structdrm__atomic__state_abe8ac526a8f465be6473b4d93e1ba3cc} 
+struct \doxymbox{\hyperlink{struct____drm__connnectors__state}{\+\_\+\+\_\+drm\+\_\+connnectors\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries connectors}
+\item 
+\Hypertarget{structdrm__atomic__state_af76029f9e99bf3100edb490e7a21f316}\label{structdrm__atomic__state_af76029f9e99bf3100edb490e7a21f316} 
+int {\bfseries num\+\_\+private\+\_\+objs}
+\item 
+\Hypertarget{structdrm__atomic__state_a51173343a13459b2a621706fa5a40f75}\label{structdrm__atomic__state_a51173343a13459b2a621706fa5a40f75} 
+struct \doxymbox{\hyperlink{struct____drm__private__objs__state}{\+\_\+\+\_\+drm\+\_\+private\+\_\+objs\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+objs}
+\item 
+\Hypertarget{structdrm__atomic__state_a18e3d83ff68984dfaa80742e3d84d27f}\label{structdrm__atomic__state_a18e3d83ff68984dfaa80742e3d84d27f} 
+struct \doxymbox{\hyperlink{structdrm__modeset__acquire__ctx}{drm\+\_\+modeset\+\_\+acquire\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries acquire\+\_\+ctx}
+\item 
+\Hypertarget{structdrm__atomic__state_a66d37eec6c8f01d80ccab3363c57c097}\label{structdrm__atomic__state_a66d37eec6c8f01d80ccab3363c57c097} 
+struct \doxymbox{\hyperlink{structdrm__crtc__commit}{drm\+\_\+crtc\+\_\+commit}} \texorpdfstring{$\ast$}{*} {\bfseries fake\+\_\+commit}
+\item 
+\Hypertarget{structdrm__atomic__state_adcea8e357e08ef477751348c027c5b35}\label{structdrm__atomic__state_adcea8e357e08ef477751348c027c5b35} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries commit\+\_\+work}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

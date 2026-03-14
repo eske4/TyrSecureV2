@@ -1,0 +1,66 @@
+\doxysection{spi\+\_\+mem\+\_\+op Struct Reference}
+\hypertarget{structspi__mem__op}{}\label{structspi__mem__op}\index{spi\_mem\_op@{spi\_mem\_op}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structspi__mem__op_a5aadf3742ba370ca48769e6fef1ad63c}\label{structspi__mem__op_a5aadf3742ba370ca48769e6fef1ad63c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u8 {\bfseries nbytes}\\
+\>u8 {\bfseries buswidth}\\
+\>u8 {\bfseries dtr}: 1\\
+\>u8 : 7\\
+\>u16 {\bfseries opcode}\\
+\} {\bfseries cmd}\\
+
+\end{tabbing}\item 
+\Hypertarget{structspi__mem__op_a68381bfa9dd0a548087d0c2b34ba229b}\label{structspi__mem__op_a68381bfa9dd0a548087d0c2b34ba229b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u8 {\bfseries nbytes}\\
+\>u8 {\bfseries buswidth}\\
+\>u8 {\bfseries dtr}: 1\\
+\>u8 : 7\\
+\>u64 {\bfseries val}\\
+\} {\bfseries addr}\\
+
+\end{tabbing}\item 
+\Hypertarget{structspi__mem__op_ac2e03c30689c81067044964a2222490a}\label{structspi__mem__op_ac2e03c30689c81067044964a2222490a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u8 {\bfseries nbytes}\\
+\>u8 {\bfseries buswidth}\\
+\>u8 {\bfseries dtr}: 1\\
+\>u8 : 7\\
+\} {\bfseries dummy}\\
+
+\end{tabbing}\item 
+\Hypertarget{structspi__mem__op_a684db2c310399cb564d710d3c3ac80e0}\label{structspi__mem__op_a684db2c310399cb564d710d3c3ac80e0} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u8 {\bfseries buswidth}\\
+\>u8 {\bfseries dtr}: 1\\
+\>u8 {\bfseries ecc}: 1\\
+\>u8 {\bfseries swap16}: 1\\
+\>u8 : 5\\
+\>enum spi\_mem\_data\_dir {\bfseries dir}\\
+\>unsigned int {\bfseries nbytes}\\
+\>union \{\\
+\>\>void \texorpdfstring{$\ast$}{*} {\bfseries in}\\
+\>\>const void \texorpdfstring{$\ast$}{*} {\bfseries out}\\
+\>\} {\bfseries buf}\\
+\} {\bfseries data}\\
+
+\end{tabbing}\item 
+\Hypertarget{structspi__mem__op_ac5548afbe5354edd5b61b92716e8d864}\label{structspi__mem__op_ac5548afbe5354edd5b61b92716e8d864} 
+unsigned int {\bfseries max\+\_\+freq}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

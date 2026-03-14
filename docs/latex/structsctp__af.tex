@@ -1,0 +1,91 @@
+\doxysection{sctp\+\_\+af Struct Reference}
+\hypertarget{structsctp__af}{}\label{structsctp__af}\index{sctp\_af@{sctp\_af}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsctp__af_a7822abdd3836b0d9bc40cb06ca85bb36}\label{structsctp__af_a7822abdd3836b0d9bc40cb06ca85bb36} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sctp\+\_\+xmit} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsctp__transport}{sctp\+\_\+transport}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_ae092a4b44b5368b85706e7708ee3c726}\label{structsctp__af_ae092a4b44b5368b85706e7708ee3c726} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setsockopt} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int, int, \doxymbox{\hyperlink{structsockptr__t}{sockptr\+\_\+t}}, unsigned int)
+\item 
+\Hypertarget{structsctp__af_a032f3bb5ccff9d8db50207e1f91006f9}\label{structsctp__af_a032f3bb5ccff9d8db50207e1f91006f9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries getsockopt} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int, int, char \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_ad54b8aabc39ab108696f81125e1c3feb}\label{structsctp__af_ad54b8aabc39ab108696f81125e1c3feb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+dst} )(struct \doxymbox{\hyperlink{structsctp__transport}{sctp\+\_\+transport}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi}{flowi}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a0979a3305667dc46283cd39ccb3fe302}\label{structsctp__af_a0979a3305667dc46283cd39ccb3fe302} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+saddr} )(struct \doxymbox{\hyperlink{structsctp__sock}{sctp\+\_\+sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsctp__transport}{sctp\+\_\+transport}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structflowi}{flowi}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a524ae6a82f57680e4e1367a3bd9f1e41}\label{structsctp__af_a524ae6a82f57680e4e1367a3bd9f1e41} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries copy\+\_\+addrlist} )(struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a7f64eb1e670bfdea4728cd4a210b446d}\label{structsctp__af_a7f64eb1e670bfdea4728cd4a210b446d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cmp\+\_\+addr} )(const union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, const union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a7b4f792b15238e0b42f43178d6a6de12}\label{structsctp__af_a7b4f792b15238e0b42f43178d6a6de12} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries addr\+\_\+copy} )(union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a31d5f1958dd846c27a90cd5d35e74bb7}\label{structsctp__af_a31d5f1958dd846c27a90cd5d35e74bb7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries from\+\_\+skb} )(union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structsctp__af_a86bd7a359a5b8e455580bbb94d43ad15}\label{structsctp__af_a86bd7a359a5b8e455580bbb94d43ad15} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries from\+\_\+sk} )(union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_ad03cf92cd66765e5f049c45125bd7c04}\label{structsctp__af_ad03cf92cd66765e5f049c45125bd7c04} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries from\+\_\+addr\+\_\+param} )(union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionsctp__addr__param}{sctp\+\_\+addr\+\_\+param}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+be16, int)
+\item 
+\Hypertarget{structsctp__af_a070977a28f15544c182a085bcd9c4c3e}\label{structsctp__af_a070977a28f15544c182a085bcd9c4c3e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries to\+\_\+addr\+\_\+param} )(const union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionsctp__addr__param}{sctp\+\_\+addr\+\_\+param}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_af36afadde74a72aad2ea45ea2d050071}\label{structsctp__af_af36afadde74a72aad2ea45ea2d050071} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries addr\+\_\+valid} )(union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsctp__sock}{sctp\+\_\+sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a23907441a14864ef8998e59575aab4d4}\label{structsctp__af_a23907441a14864ef8998e59575aab4d4} 
+enum sctp\+\_\+scope(\texorpdfstring{$\ast$}{*} {\bfseries scope} )(union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_ad1a5721f540f1dcd7c688c53cf8a2d13}\label{structsctp__af_ad1a5721f540f1dcd7c688c53cf8a2d13} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inaddr\+\_\+any} )(union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+be16)
+\item 
+\Hypertarget{structsctp__af_a7b10ba2c676001f5cc692ef7804b29b3}\label{structsctp__af_a7b10ba2c676001f5cc692ef7804b29b3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+any} )(const union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_af4ec1b40e22c94135e48712e10720c1d}\label{structsctp__af_af4ec1b40e22c94135e48712e10720c1d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries available} )(union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsctp__sock}{sctp\+\_\+sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a16f021808654e589abb0fc9d950dd75e}\label{structsctp__af_a16f021808654e589abb0fc9d950dd75e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries skb\+\_\+iif} )(const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a6995b7c61c86c0ef0f9f715ba64a9a2d}\label{structsctp__af_a6995b7c61c86c0ef0f9f715ba64a9a2d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries skb\+\_\+sdif} )(const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a9bae06c531ccfe0220fc4c1ab0e59871}\label{structsctp__af_a9bae06c531ccfe0220fc4c1ab0e59871} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+ce} )(const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a04b62c6a54498b7d5ef50ea986306dd9}\label{structsctp__af_a04b62c6a54498b7d5ef50ea986306dd9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries seq\+\_\+dump\+\_\+addr} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, union \doxymbox{\hyperlink{unionsctp__addr}{sctp\+\_\+addr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a640f15b459a3a6cb980930bc32137d25}\label{structsctp__af_a640f15b459a3a6cb980930bc32137d25} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ecn\+\_\+capable} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_a0d8ce76864cf674488338cc9114491d0}\label{structsctp__af_a0d8ce76864cf674488338cc9114491d0} 
+\+\_\+\+\_\+u16 {\bfseries net\+\_\+header\+\_\+len}
+\item 
+\Hypertarget{structsctp__af_aad1e8cc56fa7a30b25b391177d095e10}\label{structsctp__af_aad1e8cc56fa7a30b25b391177d095e10} 
+int {\bfseries sockaddr\+\_\+len}
+\item 
+\Hypertarget{structsctp__af_aff4a08417c21d9b8b4b7e73196a1d853}\label{structsctp__af_aff4a08417c21d9b8b4b7e73196a1d853} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ip\+\_\+options\+\_\+len} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structsctp__af_aca6f8171040d15235cc8713a6270df5b}\label{structsctp__af_aca6f8171040d15235cc8713a6270df5b} 
+sa\+\_\+family\+\_\+t {\bfseries sa\+\_\+family}
+\item 
+\Hypertarget{structsctp__af_a258b0faa21b326c9f748d2d7ef60b857}\label{structsctp__af_a258b0faa21b326c9f748d2d7ef60b857} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

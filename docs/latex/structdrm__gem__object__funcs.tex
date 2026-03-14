@@ -1,0 +1,55 @@
+\doxysection{drm\+\_\+gem\+\_\+object\+\_\+funcs Struct Reference}
+\hypertarget{structdrm__gem__object__funcs}{}\label{structdrm__gem__object__funcs}\index{drm\_gem\_object\_funcs@{drm\_gem\_object\_funcs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__gem__object__funcs_abdc3fb1ee353dce810bf253d65b16956}\label{structdrm__gem__object__funcs_abdc3fb1ee353dce810bf253d65b16956} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_a371568feae85964860db608db97f9abc}\label{structdrm__gem__object__funcs_a371568feae85964860db608db97f9abc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__file}{drm\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_a775c248234d840adaaab53e3db81c28c}\label{structdrm__gem__object__funcs_a775c248234d840adaaab53e3db81c28c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries close} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__file}{drm\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_a84c4acd3345bf7e409d98cb36fd9cb1c}\label{structdrm__gem__object__funcs_a84c4acd3345bf7e409d98cb36fd9cb1c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries print\+\_\+info} )(struct \doxymbox{\hyperlink{structdrm__printer}{drm\+\_\+printer}} \texorpdfstring{$\ast$}{*}, unsigned int, const struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_ab073307d0cda651372612c35b0b506c1}\label{structdrm__gem__object__funcs_ab073307d0cda651372612c35b0b506c1} 
+struct \doxymbox{\hyperlink{structdma__buf}{dma\+\_\+buf}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries export} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structdrm__gem__object__funcs_ac126bd684abbb9a7d7db04e09555d948}\label{structdrm__gem__object__funcs_ac126bd684abbb9a7d7db04e09555d948} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pin} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_a26f04fac979eb04c42671efd4e04260f}\label{structdrm__gem__object__funcs_a26f04fac979eb04c42671efd4e04260f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unpin} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_a6e028db78ece414e6d29bf3e15884564}\label{structdrm__gem__object__funcs_a6e028db78ece414e6d29bf3e15884564} 
+struct \doxymbox{\hyperlink{structsg__table}{sg\+\_\+table}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+sg\+\_\+table} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_a0a01352cbd167337a985cf79cf286e0e}\label{structdrm__gem__object__funcs_a0a01352cbd167337a985cf79cf286e0e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vmap} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiosys__map}{iosys\+\_\+map}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_a9430d99f77af27b3749ac94781cf24a3}\label{structdrm__gem__object__funcs_a9430d99f77af27b3749ac94781cf24a3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vunmap} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structiosys__map}{iosys\+\_\+map}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_afc8def01e7a7dabcb44a87fdded2b69f}\label{structdrm__gem__object__funcs_afc8def01e7a7dabcb44a87fdded2b69f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mmap} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_a3f2494a9751a2cf95c7306efbae06d9e}\label{structdrm__gem__object__funcs_a3f2494a9751a2cf95c7306efbae06d9e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries evict} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_a084a91b311a9fed2b5919ba9b923e65e}\label{structdrm__gem__object__funcs_a084a91b311a9fed2b5919ba9b923e65e} 
+enum drm\+\_\+gem\+\_\+object\+\_\+status(\texorpdfstring{$\ast$}{*} {\bfseries status} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_ad799306cc8e3c0af3f9c77608193358d}\label{structdrm__gem__object__funcs_ad799306cc8e3c0af3f9c77608193358d} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries rss} )(struct \doxymbox{\hyperlink{structdrm__gem__object}{drm\+\_\+gem\+\_\+object}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__gem__object__funcs_ab93d6ab7e9f21f9101f6bcea0b375f09}\label{structdrm__gem__object__funcs_ab93d6ab7e9f21f9101f6bcea0b375f09} 
+const struct \doxymbox{\hyperlink{structvm__operations__struct}{vm\+\_\+operations\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+ops}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

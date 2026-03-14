@@ -1,0 +1,52 @@
+\doxysection{sctp\+\_\+ulpevent Struct Reference}
+\hypertarget{structsctp__ulpevent}{}\label{structsctp__ulpevent}\index{sctp\_ulpevent@{sctp\_ulpevent}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsctp__ulpevent_a0585473ddbd931d7322efcddf198fec0}\label{structsctp__ulpevent_a0585473ddbd931d7322efcddf198fec0} 
+struct \doxymbox{\hyperlink{structsctp__association}{sctp\+\_\+association}} \texorpdfstring{$\ast$}{*} {\bfseries asoc}
+\item 
+\Hypertarget{structsctp__ulpevent_a432e1bbfceae55aadc7c6bd9482c9d06}\label{structsctp__ulpevent_a432e1bbfceae55aadc7c6bd9482c9d06} 
+struct \doxymbox{\hyperlink{structsctp__chunk}{sctp\+\_\+chunk}} \texorpdfstring{$\ast$}{*} {\bfseries chunk}
+\item 
+\Hypertarget{structsctp__ulpevent_a5fbd754c6cc926d4b00ef0f4c0fd6a00}\label{structsctp__ulpevent_a5fbd754c6cc926d4b00ef0f4c0fd6a00} 
+unsigned int {\bfseries rmem\+\_\+len}
+\item 
+\Hypertarget{structsctp__ulpevent_aa45b50ee867b3db2eb7e1805cdbd7199}\label{structsctp__ulpevent_aa45b50ee867b3db2eb7e1805cdbd7199} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u32 {\bfseries mid}\\
+\>\_\_u16 {\bfseries ssn}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsctp__ulpevent_acc21ccdb0838a2ec93bf1eedb4b59d83}\label{structsctp__ulpevent_acc21ccdb0838a2ec93bf1eedb4b59d83} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u32 {\bfseries ppid}\\
+\>\_\_u32 {\bfseries fsn}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structsctp__ulpevent_a2e33478f594750a16ab6ff60d51e6f82}\label{structsctp__ulpevent_a2e33478f594750a16ab6ff60d51e6f82} 
+\+\_\+\+\_\+u32 {\bfseries tsn}
+\item 
+\Hypertarget{structsctp__ulpevent_a95133418d18e720453857110969c1991}\label{structsctp__ulpevent_a95133418d18e720453857110969c1991} 
+\+\_\+\+\_\+u32 {\bfseries cumtsn}
+\item 
+\Hypertarget{structsctp__ulpevent_adffb4a11d9c151b51976afebabd7348e}\label{structsctp__ulpevent_adffb4a11d9c151b51976afebabd7348e} 
+\+\_\+\+\_\+u16 {\bfseries stream}
+\item 
+\Hypertarget{structsctp__ulpevent_a1476fe545cb2c39cbccc2b3f5288290a}\label{structsctp__ulpevent_a1476fe545cb2c39cbccc2b3f5288290a} 
+\+\_\+\+\_\+u16 {\bfseries flags}
+\item 
+\Hypertarget{structsctp__ulpevent_a03de7437d582d8c3bf54b48ee74d0b97}\label{structsctp__ulpevent_a03de7437d582d8c3bf54b48ee74d0b97} 
+\+\_\+\+\_\+u16 {\bfseries msg\+\_\+flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

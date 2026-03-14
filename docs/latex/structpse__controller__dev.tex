@@ -1,0 +1,75 @@
+\doxysection{pse\+\_\+controller\+\_\+dev Struct Reference}
+\hypertarget{structpse__controller__dev}{}\label{structpse__controller__dev}\index{pse\_controller\_dev@{pse\_controller\_dev}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpse__controller__dev_a373d88eab423369bd5b1b4cfe674d02a}\label{structpse__controller__dev_a373d88eab423369bd5b1b4cfe674d02a} 
+const struct \doxymbox{\hyperlink{structpse__controller__ops}{pse\+\_\+controller\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structpse__controller__dev_a5e72505d6833ea4c4abcc328c80af4b0}\label{structpse__controller__dev_a5e72505d6833ea4c4abcc328c80af4b0} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structpse__controller__dev_aca6d525d3091ac68df6ae83efb2d9857}\label{structpse__controller__dev_aca6d525d3091ac68df6ae83efb2d9857} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structpse__controller__dev_acf9f60b62be4f9633af3f579f57b0fb4}\label{structpse__controller__dev_acf9f60b62be4f9633af3f579f57b0fb4} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pse\+\_\+control\+\_\+head}
+\item 
+\Hypertarget{structpse__controller__dev_aef1ede53435f17d8e98e8d4ef631054c}\label{structpse__controller__dev_aef1ede53435f17d8e98e8d4ef631054c} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structpse__controller__dev_af18c8a970a1979c0749c2c45401df8e1}\label{structpse__controller__dev_af18c8a970a1979c0749c2c45401df8e1} 
+int {\bfseries of\+\_\+pse\+\_\+n\+\_\+cells}
+\item 
+\Hypertarget{structpse__controller__dev_a1663ad3088caca25a0c383391ddf52a7}\label{structpse__controller__dev_a1663ad3088caca25a0c383391ddf52a7} 
+unsigned int {\bfseries nr\+\_\+lines}
+\item 
+\Hypertarget{structpse__controller__dev_aecb349c73c53479dd627309a37fd5b20}\label{structpse__controller__dev_aecb349c73c53479dd627309a37fd5b20} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries lock}
+\item 
+\Hypertarget{structpse__controller__dev_ae86cdd57fb24674aefeededd51b26717}\label{structpse__controller__dev_ae86cdd57fb24674aefeededd51b26717} 
+enum ethtool\+\_\+pse\+\_\+types {\bfseries types}
+\item 
+\Hypertarget{structpse__controller__dev_ac99f9fc07f4eea983247d12db54450a4}\label{structpse__controller__dev_ac99f9fc07f4eea983247d12db54450a4} 
+struct \doxymbox{\hyperlink{structpse__pi}{pse\+\_\+pi}} \texorpdfstring{$\ast$}{*} {\bfseries pi}
+\item 
+\Hypertarget{structpse__controller__dev_a3ac41b8b31c7f17cb2d88bb72885ba2d}\label{structpse__controller__dev_a3ac41b8b31c7f17cb2d88bb72885ba2d} 
+bool {\bfseries no\+\_\+of\+\_\+pse\+\_\+pi}
+\item 
+\Hypertarget{structpse__controller__dev_a59bef3596c369a7ab70474a43f72824f}\label{structpse__controller__dev_a59bef3596c369a7ab70474a43f72824f} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structpse__controller__dev_ac7c0d414ce6762fbc65a52a039849df3}\label{structpse__controller__dev_ac7c0d414ce6762fbc65a52a039849df3} 
+unsigned int {\bfseries pis\+\_\+prio\+\_\+max}
+\item 
+\Hypertarget{structpse__controller__dev_a085a1f8d66a85d6d45b3f39790afd747}\label{structpse__controller__dev_a085a1f8d66a85d6d45b3f39790afd747} 
+u32 {\bfseries supp\+\_\+budget\+\_\+eval\+\_\+strategies}
+\item 
+\Hypertarget{structpse__controller__dev_a5b6bbf4b923dc34ce9a15ce1f535222f}\label{structpse__controller__dev_a5b6bbf4b923dc34ce9a15ce1f535222f} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries ntf\+\_\+work}
+\item 
+\Hypertarget{structpse__controller__dev_aba6728352da20dadda885ffe1f967ff9}\label{structpse__controller__dev_aba6728352da20dadda885ffe1f967ff9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structpse__controller__dev_1_1_0d247243126367116334177145137313255053301260313006_aea73d71cb0388b800152fac917279aa3}\label{structpse__controller__dev_1_1_0d247243126367116334177145137313255053301260313006_aea73d71cb0388b800152fac917279aa3} 
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{struct____kfifo}{\_\_kfifo}} {\bfseries kfifo}\\
+\>\>struct \doxymbox{\hyperlink{structpse__ntf}{pse\_ntf}} \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>const struct \doxymbox{\hyperlink{structpse__ntf}{pse\_ntf}} \texorpdfstring{$\ast$}{*} {\bfseries const\_type}\\
+\>\>char(\texorpdfstring{$\ast$}{*} {\bfseries rectype} )\+[0]\+\\
+\>\>struct \doxymbox{\hyperlink{structpse__ntf}{pse\_ntf}} \texorpdfstring{$\ast$}{*} {\bfseries ptr}\\
+\>\>const struct \doxymbox{\hyperlink{structpse__ntf}{pse\_ntf}} \texorpdfstring{$\ast$}{*} {\bfseries ptr\_const}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structpse__ntf}{pse\_ntf}} {\bfseries buf} \+[0]\+\\
+\} {\bfseries ntf\_fifo}\\
+
+\end{tabbing}\item 
+\Hypertarget{structpse__controller__dev_a200d4a5a748e47b1bb4ad41d7fb02fef}\label{structpse__controller__dev_a200d4a5a748e47b1bb4ad41d7fb02fef} 
+spinlock\+\_\+t {\bfseries ntf\+\_\+fifo\+\_\+lock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

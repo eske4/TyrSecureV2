@@ -1,0 +1,61 @@
+\doxysection{vring\+\_\+virtqueue Struct Reference}
+\hypertarget{structvring__virtqueue}{}\label{structvring__virtqueue}\index{vring\_virtqueue@{vring\_virtqueue}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvring__virtqueue_a4d0035582c9f86bca6f0cb3f6f2f76bc}\label{structvring__virtqueue_a4d0035582c9f86bca6f0cb3f6f2f76bc} 
+struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} {\bfseries vq}
+\item 
+\Hypertarget{structvring__virtqueue_a4d40eca55aa3b9ea278149a1e4578bc7}\label{structvring__virtqueue_a4d40eca55aa3b9ea278149a1e4578bc7} 
+bool {\bfseries packed\+\_\+ring}
+\item 
+\Hypertarget{structvring__virtqueue_a7320ff3bacb5321b779f834dbf553036}\label{structvring__virtqueue_a7320ff3bacb5321b779f834dbf553036} 
+bool {\bfseries use\+\_\+map\+\_\+api}
+\item 
+\Hypertarget{structvring__virtqueue_a818b4aa44bad91141cce60403f54d596}\label{structvring__virtqueue_a818b4aa44bad91141cce60403f54d596} 
+bool {\bfseries weak\+\_\+barriers}
+\item 
+\Hypertarget{structvring__virtqueue_ab688a8e89d1e6f7fb1c84105b4e4372e}\label{structvring__virtqueue_ab688a8e89d1e6f7fb1c84105b4e4372e} 
+bool {\bfseries broken}
+\item 
+\Hypertarget{structvring__virtqueue_a1c5f57ca312b6768727963251310ed5d}\label{structvring__virtqueue_a1c5f57ca312b6768727963251310ed5d} 
+bool {\bfseries indirect}
+\item 
+\Hypertarget{structvring__virtqueue_a27d2bb284fc2e050ac0e231243285e45}\label{structvring__virtqueue_a27d2bb284fc2e050ac0e231243285e45} 
+bool {\bfseries event}
+\item 
+\Hypertarget{structvring__virtqueue_ac3e67d47b3e874019d4e131c325544b8}\label{structvring__virtqueue_ac3e67d47b3e874019d4e131c325544b8} 
+unsigned int {\bfseries free\+\_\+head}
+\item 
+\Hypertarget{structvring__virtqueue_a000a88031b6d0215b25a5d136b721233}\label{structvring__virtqueue_a000a88031b6d0215b25a5d136b721233} 
+unsigned int {\bfseries num\+\_\+added}
+\item 
+\Hypertarget{structvring__virtqueue_a79c4837263bd00fe01ae426fd0420856}\label{structvring__virtqueue_a79c4837263bd00fe01ae426fd0420856} 
+u16 {\bfseries last\+\_\+used\+\_\+idx}
+\item 
+\Hypertarget{structvring__virtqueue_ad1733238d7bde9b238c3ff3f304be87d}\label{structvring__virtqueue_ad1733238d7bde9b238c3ff3f304be87d} 
+bool {\bfseries event\+\_\+triggered}
+\item 
+\Hypertarget{structvring__virtqueue_ac77b4af6b8eb6e521db84aaf28430fc6}\label{structvring__virtqueue_ac77b4af6b8eb6e521db84aaf28430fc6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structvring__virtqueue__split}{vring\_virtqueue\_split}} {\bfseries split}\\
+\>struct \doxymbox{\hyperlink{structvring__virtqueue__packed}{vring\_virtqueue\_packed}} {\bfseries packed}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structvring__virtqueue_ada4f0a195ce10cfb67e91587e56c8879}\label{structvring__virtqueue_ada4f0a195ce10cfb67e91587e56c8879} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries notify} )(struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvring__virtqueue_aa57dab27001ba6848d9d67e304e0de96}\label{structvring__virtqueue_aa57dab27001ba6848d9d67e304e0de96} 
+bool {\bfseries we\+\_\+own\+\_\+ring}
+\item 
+\Hypertarget{structvring__virtqueue_a32845865bac0121973cb05056094ab54}\label{structvring__virtqueue_a32845865bac0121973cb05056094ab54} 
+union \doxymbox{\hyperlink{unionvirtio__map}{virtio\+\_\+map}} {\bfseries map}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

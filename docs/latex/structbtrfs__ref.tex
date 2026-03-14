@@ -1,0 +1,43 @@
+\doxysection{btrfs\+\_\+ref Struct Reference}
+\hypertarget{structbtrfs__ref}{}\label{structbtrfs__ref}\index{btrfs\_ref@{btrfs\_ref}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__ref_ae575f04d8c624c0c07a37aed222cb6da}\label{structbtrfs__ref_ae575f04d8c624c0c07a37aed222cb6da} 
+enum btrfs\+\_\+ref\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structbtrfs__ref_a90c12a6641ff221f84a8d18f8acd7a6a}\label{structbtrfs__ref_a90c12a6641ff221f84a8d18f8acd7a6a} 
+enum btrfs\+\_\+delayed\+\_\+ref\+\_\+action {\bfseries action}
+\item 
+\Hypertarget{structbtrfs__ref_a72a6494b7943c1a6ac8219c76c502159}\label{structbtrfs__ref_a72a6494b7943c1a6ac8219c76c502159} 
+bool {\bfseries skip\+\_\+qgroup}
+\item 
+\Hypertarget{structbtrfs__ref_aa3dca0da1e2e7fbac1493bee60ace5c5}\label{structbtrfs__ref_aa3dca0da1e2e7fbac1493bee60ace5c5} 
+u64 {\bfseries bytenr}
+\item 
+\Hypertarget{structbtrfs__ref_af6f8542ed3ef8449078e1e2d5e6efa0b}\label{structbtrfs__ref_af6f8542ed3ef8449078e1e2d5e6efa0b} 
+u64 {\bfseries num\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__ref_a62355830944487f76a989e9d0fe5d43f}\label{structbtrfs__ref_a62355830944487f76a989e9d0fe5d43f} 
+u64 {\bfseries owning\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__ref_aa2be686e768e358d6f842612106bdb4d}\label{structbtrfs__ref_aa2be686e768e358d6f842612106bdb4d} 
+u64 {\bfseries ref\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__ref_a1525c6be7354ce4cb5e9cdbdfc6d09a2}\label{structbtrfs__ref_a1525c6be7354ce4cb5e9cdbdfc6d09a2} 
+u64 {\bfseries parent}
+\item 
+\Hypertarget{structbtrfs__ref_ae2350c62b0e86a13472008460ed6be5e}\label{structbtrfs__ref_ae2350c62b0e86a13472008460ed6be5e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structbtrfs__data__ref}{btrfs\_data\_ref}} {\bfseries data\_ref}\\
+\>struct \doxymbox{\hyperlink{structbtrfs__tree__ref}{btrfs\_tree\_ref}} {\bfseries tree\_ref}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

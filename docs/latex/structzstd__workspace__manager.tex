@@ -1,0 +1,28 @@
+\doxysection{zstd\+\_\+workspace\+\_\+manager Struct Reference}
+\hypertarget{structzstd__workspace__manager}{}\label{structzstd__workspace__manager}\index{zstd\_workspace\_manager@{zstd\_workspace\_manager}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structzstd__workspace__manager_ad94edee91555ed36a8bef5040dddd576}\label{structzstd__workspace__manager_ad94edee91555ed36a8bef5040dddd576} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structzstd__workspace__manager_a12cdb6d025f6c65456dfb3f5c90e9088}\label{structzstd__workspace__manager_a12cdb6d025f6c65456dfb3f5c90e9088} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries lru\+\_\+list}
+\item 
+\Hypertarget{structzstd__workspace__manager_aa4a0b1d72ffc84ae25cbeb50a1512d97}\label{structzstd__workspace__manager_aa4a0b1d72ffc84ae25cbeb50a1512d97} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries idle\+\_\+ws} \+[15]\+
+\item 
+\Hypertarget{structzstd__workspace__manager_a6c4e5140cb54a9f401a6ae085a471a18}\label{structzstd__workspace__manager_a6c4e5140cb54a9f401a6ae085a471a18} 
+long unsigned int {\bfseries active\+\_\+map}
+\item 
+\Hypertarget{structzstd__workspace__manager_ad11030389a2c805d016045ae205d280d}\label{structzstd__workspace__manager_ad11030389a2c805d016045ae205d280d} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\item 
+\Hypertarget{structzstd__workspace__manager_a94f12adfc9d9e6c0a48c27911c3eefb9}\label{structzstd__workspace__manager_a94f12adfc9d9e6c0a48c27911c3eefb9} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries timer}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\doxysection{netlbl\+\_\+calipso\+\_\+ops Struct Reference}
+\hypertarget{structnetlbl__calipso__ops}{}\label{structnetlbl__calipso__ops}\index{netlbl\_calipso\_ops@{netlbl\_calipso\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnetlbl__calipso__ops_ae4b4c3cd766f888a4e0d081b3bd12983}\label{structnetlbl__calipso__ops_ae4b4c3cd766f888a4e0d081b3bd12983} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries doi\+\_\+add} )(struct \doxymbox{\hyperlink{structcalipso__doi}{calipso\+\_\+doi}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlbl__audit}{netlbl\+\_\+audit}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_aa6a2778181afd1053e200f16875cd394}\label{structnetlbl__calipso__ops_aa6a2778181afd1053e200f16875cd394} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries doi\+\_\+free} )(struct \doxymbox{\hyperlink{structcalipso__doi}{calipso\+\_\+doi}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_acc4612db89d78baffb06a57fcd75c2a1}\label{structnetlbl__calipso__ops_acc4612db89d78baffb06a57fcd75c2a1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries doi\+\_\+remove} )(u32, struct \doxymbox{\hyperlink{structnetlbl__audit}{netlbl\+\_\+audit}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_af63ea8f28749d972b8183fbdba3a0db8}\label{structnetlbl__calipso__ops_af63ea8f28749d972b8183fbdba3a0db8} 
+struct \doxymbox{\hyperlink{structcalipso__doi}{calipso\+\_\+doi}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries doi\+\_\+getdef} )(u32)
+\item 
+\Hypertarget{structnetlbl__calipso__ops_acb894408cce340c516b1827d814b5392}\label{structnetlbl__calipso__ops_acb894408cce340c516b1827d814b5392} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries doi\+\_\+putdef} )(struct \doxymbox{\hyperlink{structcalipso__doi}{calipso\+\_\+doi}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_a2935a2d5e925b662d3450187a53ae2fe}\label{structnetlbl__calipso__ops_a2935a2d5e925b662d3450187a53ae2fe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries doi\+\_\+walk} )(u32 \texorpdfstring{$\ast$}{*}, int(\texorpdfstring{$\ast$}{*})(struct \doxymbox{\hyperlink{structcalipso__doi}{calipso\+\_\+doi}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}), void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_a30df8903615f64b2543eb35308915fae}\label{structnetlbl__calipso__ops_a30df8903615f64b2543eb35308915fae} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sock\+\_\+getattr} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlbl__lsm__secattr}{netlbl\+\_\+lsm\+\_\+secattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_ab005e3109d530223cd344f9a0cc8a5de}\label{structnetlbl__calipso__ops_ab005e3109d530223cd344f9a0cc8a5de} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sock\+\_\+setattr} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcalipso__doi}{calipso\+\_\+doi}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structnetlbl__lsm__secattr}{netlbl\+\_\+lsm\+\_\+secattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_ad449c1728459e17ae820186ed391b857}\label{structnetlbl__calipso__ops_ad449c1728459e17ae820186ed391b857} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sock\+\_\+delattr} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_acec57ea85072e1f9d96932b2c0f11f98}\label{structnetlbl__calipso__ops_acec57ea85072e1f9d96932b2c0f11f98} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries req\+\_\+setattr} )(struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcalipso__doi}{calipso\+\_\+doi}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structnetlbl__lsm__secattr}{netlbl\+\_\+lsm\+\_\+secattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_a04c0b7bd750b0ece91113ab0644fba90}\label{structnetlbl__calipso__ops_a04c0b7bd750b0ece91113ab0644fba90} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries req\+\_\+delattr} )(struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_a6d5e69aea6bc8c975bbea6aca4454992}\label{structnetlbl__calipso__ops_a6d5e69aea6bc8c975bbea6aca4454992} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries opt\+\_\+getattr} )(const unsigned char \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlbl__lsm__secattr}{netlbl\+\_\+lsm\+\_\+secattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_a3ff150d5d16ffaad5e7021f4afea36ad}\label{structnetlbl__calipso__ops_a3ff150d5d16ffaad5e7021f4afea36ad} 
+unsigned char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries skbuff\+\_\+optptr} )(const struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_adabd0e67079f8f403628dfa81458dda3}\label{structnetlbl__calipso__ops_adabd0e67079f8f403628dfa81458dda3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries skbuff\+\_\+setattr} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcalipso__doi}{calipso\+\_\+doi}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structnetlbl__lsm__secattr}{netlbl\+\_\+lsm\+\_\+secattr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_aa86cf77df893d338f7170d9768e3b808}\label{structnetlbl__calipso__ops_aa86cf77df893d338f7170d9768e3b808} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries skbuff\+\_\+delattr} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlbl__calipso__ops_a6de7d5e135567d07021b99fa0b8fc39b}\label{structnetlbl__calipso__ops_a6de7d5e135567d07021b99fa0b8fc39b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cache\+\_\+invalidate} )(void)
+\item 
+\Hypertarget{structnetlbl__calipso__ops_a9772dd6565a42c92365250e9d9c7d7c4}\label{structnetlbl__calipso__ops_a9772dd6565a42c92365250e9d9c7d7c4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cache\+\_\+add} )(const unsigned char \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structnetlbl__lsm__secattr}{netlbl\+\_\+lsm\+\_\+secattr}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\doxysection{ctl\+\_\+table\+\_\+header Struct Reference}
+\hypertarget{structctl__table__header}{}\label{structctl__table__header}\index{ctl\_table\_header@{ctl\_table\_header}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structctl__table__header_a0117a56872857a4320a6c3efb946def8}\label{structctl__table__header_a0117a56872857a4320a6c3efb946def8} 
+enum \{ {\bfseries SYSCTL\+\_\+\+TABLE\+\_\+\+TYPE\+\_\+\+DEFAULT} = 0
+, {\bfseries SYSCTL\+\_\+\+TABLE\+\_\+\+TYPE\+\_\+\+PERMANENTLY\+\_\+\+EMPTY} = 1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structctl__table__header_a649f47a24c7794eac4e37ae160650eff}\label{structctl__table__header_a649f47a24c7794eac4e37ae160650eff} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionctl__table__header_1_1_0d166011012042206205334041066227300332052275256177_aa960cdbf8b644be4802fea556d5fdaa9}\label{unionctl__table__header_1_1_0d166011012042206205334041066227300332052275256177_aa960cdbf8b644be4802fea556d5fdaa9} 
+\>struct \{\\
+\>\>const struct \doxymbox{\hyperlink{structctl__table}{ctl\_table}} \texorpdfstring{$\ast$}{*} {\bfseries ctl\_table}\\
+\>\>int {\bfseries ctl\_table\_size}\\
+\>\>int {\bfseries used}\\
+\>\>int {\bfseries count}\\
+\>\>int {\bfseries nreg}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries rcu}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structctl__table__header_a0ab53e43d74303ca26efdfe826a6e829}\label{structctl__table__header_a0ab53e43d74303ca26efdfe826a6e829} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} \texorpdfstring{$\ast$}{*} {\bfseries unregistering}
+\item 
+\Hypertarget{structctl__table__header_a62154cb6196bea1dc8410a0093b4cf5b}\label{structctl__table__header_a62154cb6196bea1dc8410a0093b4cf5b} 
+const struct \doxymbox{\hyperlink{structctl__table}{ctl\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries ctl\+\_\+table\+\_\+arg}
+\item 
+\Hypertarget{structctl__table__header_a8c6b2f9ca01d1db65c22bbc1ba32be15}\label{structctl__table__header_a8c6b2f9ca01d1db65c22bbc1ba32be15} 
+struct \doxymbox{\hyperlink{structctl__table__root}{ctl\+\_\+table\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries root}
+\item 
+\Hypertarget{structctl__table__header_ac91ec4cb5f2dc37ffcb388d3fbf48768}\label{structctl__table__header_ac91ec4cb5f2dc37ffcb388d3fbf48768} 
+struct \doxymbox{\hyperlink{structctl__table__set}{ctl\+\_\+table\+\_\+set}} \texorpdfstring{$\ast$}{*} {\bfseries set}
+\item 
+\Hypertarget{structctl__table__header_a1f8dda428704c0fd052a5a92f641e474}\label{structctl__table__header_a1f8dda428704c0fd052a5a92f641e474} 
+struct \doxymbox{\hyperlink{structctl__dir}{ctl\+\_\+dir}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structctl__table__header_abc9a0bbeb50c28ecf0162dd18c755e5f}\label{structctl__table__header_abc9a0bbeb50c28ecf0162dd18c755e5f} 
+struct \doxymbox{\hyperlink{structctl__node}{ctl\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries node}
+\item 
+\Hypertarget{structctl__table__header_af3c90e4912e6f4f3e94935c8c2c2189e}\label{structctl__table__header_af3c90e4912e6f4f3e94935c8c2c2189e} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries inodes}
+\item 
+\Hypertarget{structctl__table__header_a4c69afd79bb08148bcb8174491c270c6}\label{structctl__table__header_a4c69afd79bb08148bcb8174491c270c6} 
+enum ctl\+\_\+table\+\_\+header::\+ \{ ... \}  {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+\doxysection{xenbus\+\_\+device Struct Reference}
+\hypertarget{structxenbus__device}{}\label{structxenbus__device}\index{xenbus\_device@{xenbus\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxenbus__device_ae1aa9dd9419dd8867ba68e59c7616153}\label{structxenbus__device_ae1aa9dd9419dd8867ba68e59c7616153} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries devicetype}
+\item 
+\Hypertarget{structxenbus__device_afdbad1db177393e16eda970b9fd375c2}\label{structxenbus__device_afdbad1db177393e16eda970b9fd375c2} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries nodename}
+\item 
+\Hypertarget{structxenbus__device_a70b28720cde3081bbd52ccc70556cb41}\label{structxenbus__device_a70b28720cde3081bbd52ccc70556cb41} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries otherend}
+\item 
+\Hypertarget{structxenbus__device_a4561c1625f6a28cdfb8daa759b07021b}\label{structxenbus__device_a4561c1625f6a28cdfb8daa759b07021b} 
+int {\bfseries otherend\+\_\+id}
+\item 
+\Hypertarget{structxenbus__device_a455bf80022fbf85ab8025317393dc0a8}\label{structxenbus__device_a455bf80022fbf85ab8025317393dc0a8} 
+struct \doxymbox{\hyperlink{structxenbus__watch}{xenbus\+\_\+watch}} {\bfseries otherend\+\_\+watch}
+\item 
+\Hypertarget{structxenbus__device_a672f58703aece6a6274ec28a770c36ab}\label{structxenbus__device_a672f58703aece6a6274ec28a770c36ab} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structxenbus__device_a63bd4c5dd6070f027057a51229be387a}\label{structxenbus__device_a63bd4c5dd6070f027057a51229be387a} 
+enum xenbus\+\_\+state {\bfseries state}
+\item 
+\Hypertarget{structxenbus__device_ab601c09ecd005af28df0bc83f4013d4d}\label{structxenbus__device_ab601c09ecd005af28df0bc83f4013d4d} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries down}
+\item 
+\Hypertarget{structxenbus__device_ad029578d4ed36f09e2121ab872dc49a9}\label{structxenbus__device_ad029578d4ed36f09e2121ab872dc49a9} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries work}
+\item 
+\Hypertarget{structxenbus__device_ae024db82eed41c3b4092e917803b4a68}\label{structxenbus__device_ae024db82eed41c3b4092e917803b4a68} 
+struct \doxymbox{\hyperlink{structsemaphore}{semaphore}} {\bfseries reclaim\+\_\+sem}
+\item 
+\Hypertarget{structxenbus__device_a1923921a818b9a75b9ef868a1c63c12e}\label{structxenbus__device_a1923921a818b9a75b9ef868a1c63c12e} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries event\+\_\+channels}
+\item 
+\Hypertarget{structxenbus__device_a8c27a12cc5bc2db556e0b90afaee5342}\label{structxenbus__device_a8c27a12cc5bc2db556e0b90afaee5342} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries events}
+\item 
+\Hypertarget{structxenbus__device_abeaaef236af9d8cff20565c2c97157ec}\label{structxenbus__device_abeaaef236af9d8cff20565c2c97157ec} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries spurious\+\_\+events}
+\item 
+\Hypertarget{structxenbus__device_aac759c18a681915f8c7544f5f1e15e7b}\label{structxenbus__device_aac759c18a681915f8c7544f5f1e15e7b} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries jiffies\+\_\+eoi\+\_\+delayed}
+\item 
+\Hypertarget{structxenbus__device_aa5b7b5fac0521561016445b1bc2f8a57}\label{structxenbus__device_aa5b7b5fac0521561016445b1bc2f8a57} 
+unsigned int {\bfseries spurious\+\_\+threshold}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

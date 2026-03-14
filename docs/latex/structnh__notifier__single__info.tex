@@ -1,0 +1,37 @@
+\doxysection{nh\+\_\+notifier\+\_\+single\+\_\+info Struct Reference}
+\hypertarget{structnh__notifier__single__info}{}\label{structnh__notifier__single__info}\index{nh\_notifier\_single\_info@{nh\_notifier\_single\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnh__notifier__single__info_ac577ac3fde2a753860a668109123fab4}\label{structnh__notifier__single__info_ac577ac3fde2a753860a668109123fab4} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structnh__notifier__single__info_a0329764f2b3e928a8da7fb04902e45d8}\label{structnh__notifier__single__info_a0329764f2b3e928a8da7fb04902e45d8} 
+u8 {\bfseries gw\+\_\+family}
+\item 
+\Hypertarget{structnh__notifier__single__info_a40cc2b4fcd30e1af771be1bf89dfee64}\label{structnh__notifier__single__info_a40cc2b4fcd30e1af771be1bf89dfee64} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries ipv4}\\
+\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries ipv6}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnh__notifier__single__info_a392d26e74d54fc2a821c9f6708d8d2a4}\label{structnh__notifier__single__info_a392d26e74d54fc2a821c9f6708d8d2a4} 
+u32 {\bfseries id}
+\item 
+\Hypertarget{structnh__notifier__single__info_ab9cfb224a1eda14b0cf0b62ea4c0d92e}\label{structnh__notifier__single__info_ab9cfb224a1eda14b0cf0b62ea4c0d92e} 
+u8 {\bfseries is\+\_\+reject}:\+ 1
+\item 
+\Hypertarget{structnh__notifier__single__info_a88257d59d998599ee4936d257cdac29a}\label{structnh__notifier__single__info_a88257d59d998599ee4936d257cdac29a} 
+u8 {\bfseries is\+\_\+fdb}:\+ 1
+\item 
+\Hypertarget{structnh__notifier__single__info_a7782fa8c116ea6fda75a0ff98f894a7c}\label{structnh__notifier__single__info_a7782fa8c116ea6fda75a0ff98f894a7c} 
+u8 {\bfseries has\+\_\+encap}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

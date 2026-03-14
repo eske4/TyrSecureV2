@@ -1,0 +1,136 @@
+\doxysection{drm\+\_\+bridge\+\_\+funcs Struct Reference}
+\hypertarget{structdrm__bridge__funcs}{}\label{structdrm__bridge__funcs}\index{drm\_bridge\_funcs@{drm\_bridge\_funcs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdrm__bridge__funcs_a4fad4d913f68b78e006633ad5f77b2d5}\label{structdrm__bridge__funcs_a4fad4d913f68b78e006633ad5f77b2d5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries attach} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__encoder}{drm\+\_\+encoder}} \texorpdfstring{$\ast$}{*}, enum drm\+\_\+bridge\+\_\+attach\+\_\+flags)
+\item 
+\Hypertarget{structdrm__bridge__funcs_a0b626ff145cf059135d496d9c952c33d}\label{structdrm__bridge__funcs_a0b626ff145cf059135d496d9c952c33d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_afb260ebe2283661263230a6cef08a269}\label{structdrm__bridge__funcs_afb260ebe2283661263230a6cef08a269} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries detach} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a50cdfbd2a07f3cc9e11c467521c0554f}\label{structdrm__bridge__funcs_a50cdfbd2a07f3cc9e11c467521c0554f} 
+enum drm\+\_\+mode\+\_\+status(\texorpdfstring{$\ast$}{*} {\bfseries mode\+\_\+valid} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__info}{drm\+\_\+display\+\_\+info}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_af79773b927691c1c72a93f8bfca75481}\label{structdrm__bridge__funcs_af79773b927691c1c72a93f8bfca75481} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries mode\+\_\+fixup} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a4930da90acd6712f76b7d98835f6b1f8}\label{structdrm__bridge__funcs_a4930da90acd6712f76b7d98835f6b1f8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_ade0697f002821cd567b6dd5c8df9a1af}\label{structdrm__bridge__funcs_ade0697f002821cd567b6dd5c8df9a1af} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+disable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_af14fdf6c6b71d669e290f779100c9dc3}\label{structdrm__bridge__funcs_af14fdf6c6b71d669e290f779100c9dc3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries mode\+\_\+set} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_ad4c1e23a1e173ffdb75599582abd238b}\label{structdrm__bridge__funcs_ad4c1e23a1e173ffdb75599582abd238b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pre\+\_\+enable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a21600d4a2efbc6c3601df300ce96074a}\label{structdrm__bridge__funcs_a21600d4a2efbc6c3601df300ce96074a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_ab11aaac76247ae68fc6a330ea28113de}\label{structdrm__bridge__funcs_ab11aaac76247ae68fc6a330ea28113de} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+pre\+\_\+enable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a564a3f6ac700a2d50c4a296a4d5ae9b7}\label{structdrm__bridge__funcs_a564a3f6ac700a2d50c4a296a4d5ae9b7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+enable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a4f2aa9c93b41df0235faacdaf0b6198c}\label{structdrm__bridge__funcs_a4f2aa9c93b41df0235faacdaf0b6198c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+disable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_ad352acad2e9745f2d513dd7ece9c0f51}\label{structdrm__bridge__funcs_ad352acad2e9745f2d513dd7ece9c0f51} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+post\+\_\+disable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__atomic__state}{drm\+\_\+atomic\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a46605a6fca0779fe23f76fd867f65c6c}\label{structdrm__bridge__funcs_a46605a6fca0779fe23f76fd867f65c6c} 
+struct \doxymbox{\hyperlink{structdrm__bridge__state}{drm\+\_\+bridge\+\_\+state}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+duplicate\+\_\+state} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a9cdb6d0f40a34787a19feacc16e5bcba}\label{structdrm__bridge__funcs_a9cdb6d0f40a34787a19feacc16e5bcba} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+destroy\+\_\+state} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__bridge__state}{drm\+\_\+bridge\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a84acf88f193f210b3ef84ace26ec3a2a}\label{structdrm__bridge__funcs_a84acf88f193f210b3ef84ace26ec3a2a} 
+u32 \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+get\+\_\+output\+\_\+bus\+\_\+fmts} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__bridge__state}{drm\+\_\+bridge\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector__state}{drm\+\_\+connector\+\_\+state}} \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_add63df49ebfb01a50898b314719e8097}\label{structdrm__bridge__funcs_add63df49ebfb01a50898b314719e8097} 
+u32 \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+get\+\_\+input\+\_\+bus\+\_\+fmts} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__bridge__state}{drm\+\_\+bridge\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector__state}{drm\+\_\+connector\+\_\+state}} \texorpdfstring{$\ast$}{*}, u32, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a675060dddccc4b287447ee2de47d2f60}\label{structdrm__bridge__funcs_a675060dddccc4b287447ee2de47d2f60} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+check} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__bridge__state}{drm\+\_\+bridge\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__crtc__state}{drm\+\_\+crtc\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector__state}{drm\+\_\+connector\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a335369e19a38a91ed460b24a7f83184a}\label{structdrm__bridge__funcs_a335369e19a38a91ed460b24a7f83184a} 
+struct \doxymbox{\hyperlink{structdrm__bridge__state}{drm\+\_\+bridge\+\_\+state}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries atomic\+\_\+reset} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a9c64ee556bb3fa8479f2693ee3334755}\label{structdrm__bridge__funcs_a9c64ee556bb3fa8479f2693ee3334755} 
+enum drm\+\_\+connector\+\_\+status(\texorpdfstring{$\ast$}{*} {\bfseries detect} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_ae54d41f72927935d28e1f0b24071e8ee}\label{structdrm__bridge__funcs_ae54d41f72927935d28e1f0b24071e8ee} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+modes} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_ac9ab7ef8ab24dc96b565c301f24187e9}\label{structdrm__bridge__funcs_ac9ab7ef8ab24dc96b565c301f24187e9} 
+const struct \doxymbox{\hyperlink{structdrm__edid}{drm\+\_\+edid}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries edid\+\_\+read} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_ac51c498b05741136d2e8195bb1ed3fa7}\label{structdrm__bridge__funcs_ac51c498b05741136d2e8195bb1ed3fa7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hpd\+\_\+notify} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, enum drm\+\_\+connector\+\_\+status)
+\item 
+\Hypertarget{structdrm__bridge__funcs_aca4f17299ec9aaa0477468f7fe6df56d}\label{structdrm__bridge__funcs_aca4f17299ec9aaa0477468f7fe6df56d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hpd\+\_\+enable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a75f9a6702b96dd97f35942819f261f4a}\label{structdrm__bridge__funcs_a75f9a6702b96dd97f35942819f261f4a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hpd\+\_\+disable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a0b2bd4ab99ae186d8c880e32efeccb75}\label{structdrm__bridge__funcs_a0b2bd4ab99ae186d8c880e32efeccb75} 
+enum drm\+\_\+mode\+\_\+status(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+tmds\+\_\+char\+\_\+rate\+\_\+valid} )(const struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdrm__display__mode}{drm\+\_\+display\+\_\+mode}} \texorpdfstring{$\ast$}{*}, long long unsigned int)
+\item 
+\Hypertarget{structdrm__bridge__funcs_ace67ed0028b9bc55d623e5ac3588a3e7}\label{structdrm__bridge__funcs_ace67ed0028b9bc55d623e5ac3588a3e7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+clear\+\_\+infoframe} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, enum hdmi\+\_\+infoframe\+\_\+type)
+\item 
+\Hypertarget{structdrm__bridge__funcs_abf99f211013092d438338b9557a32c0e}\label{structdrm__bridge__funcs_abf99f211013092d438338b9557a32c0e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+write\+\_\+infoframe} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, enum hdmi\+\_\+infoframe\+\_\+type, const u8 \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structdrm__bridge__funcs_a75ed3bcf62f2cd2662b60978b4623ef6}\label{structdrm__bridge__funcs_a75ed3bcf62f2cd2662b60978b4623ef6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+audio\+\_\+startup} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a284df6fe3314ff02880f72915380441f}\label{structdrm__bridge__funcs_a284df6fe3314ff02880f72915380441f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+audio\+\_\+prepare} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, struct hdmi\+\_\+codec\+\_\+daifmt \texorpdfstring{$\ast$}{*}, struct hdmi\+\_\+codec\+\_\+params \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a01df63005d967bf941ea171a875873a7}\label{structdrm__bridge__funcs_a01df63005d967bf941ea171a875873a7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+audio\+\_\+shutdown} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_afd25e359bbad78376b8d901c706de23c}\label{structdrm__bridge__funcs_afd25e359bbad78376b8d901c706de23c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+audio\+\_\+mute\+\_\+stream} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, bool, int)
+\item 
+\Hypertarget{structdrm__bridge__funcs_a55a9d7a7a1c5f5d63de46783299288b0}\label{structdrm__bridge__funcs_a55a9d7a7a1c5f5d63de46783299288b0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+cec\+\_\+init} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a64a0891f5fa5e8600a9cdff3583b6fb2}\label{structdrm__bridge__funcs_a64a0891f5fa5e8600a9cdff3583b6fb2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+cec\+\_\+enable} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structdrm__bridge__funcs_abc1bdcfbb3259d7fde12bf844cd54f58}\label{structdrm__bridge__funcs_abc1bdcfbb3259d7fde12bf844cd54f58} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+cec\+\_\+log\+\_\+addr} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structdrm__bridge__funcs_a61ab8bee13233dac6e73e50bb1bee3e9}\label{structdrm__bridge__funcs_a61ab8bee13233dac6e73e50bb1bee3e9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries hdmi\+\_\+cec\+\_\+transmit} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, u8, u32, struct cec\+\_\+msg \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a129d1d519e4f9af7a202ebcf0f75ec61}\label{structdrm__bridge__funcs_a129d1d519e4f9af7a202ebcf0f75ec61} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dp\+\_\+audio\+\_\+startup} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_aa5ccae6541068cbe16879c8239c09844}\label{structdrm__bridge__funcs_aa5ccae6541068cbe16879c8239c09844} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dp\+\_\+audio\+\_\+prepare} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, struct hdmi\+\_\+codec\+\_\+daifmt \texorpdfstring{$\ast$}{*}, struct hdmi\+\_\+codec\+\_\+params \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_a41f170e7e11d62e55a488ca586dd0165}\label{structdrm__bridge__funcs_a41f170e7e11d62e55a488ca586dd0165} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries dp\+\_\+audio\+\_\+shutdown} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdrm__bridge__funcs_af95f5be2bf73e1af392048d5d6eebfee}\label{structdrm__bridge__funcs_af95f5be2bf73e1af392048d5d6eebfee} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dp\+\_\+audio\+\_\+mute\+\_\+stream} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdrm__connector}{drm\+\_\+connector}} \texorpdfstring{$\ast$}{*}, bool, int)
+\item 
+\Hypertarget{structdrm__bridge__funcs_a6bdd365040d54af94000acfef0d74387}\label{structdrm__bridge__funcs_a6bdd365040d54af94000acfef0d74387} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+init} )(struct \doxymbox{\hyperlink{structdrm__bridge}{drm\+\_\+bridge}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

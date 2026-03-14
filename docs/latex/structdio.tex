@@ -1,0 +1,79 @@
+\doxysection{dio Struct Reference}
+\hypertarget{structdio}{}\label{structdio}\index{dio@{dio}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdio_ad927241f0f0d1cc974a756c1d225fc5b}\label{structdio_ad927241f0f0d1cc974a756c1d225fc5b} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structdio_a7d67cde7eeea3c9ec46ceb0cdc1b35bb}\label{structdio_a7d67cde7eeea3c9ec46ceb0cdc1b35bb} 
+blk\+\_\+opf\+\_\+t {\bfseries opf}
+\item 
+\Hypertarget{structdio_a6a4bd1a310d08109298aeb33246500de}\label{structdio_a6a4bd1a310d08109298aeb33246500de} 
+struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*} {\bfseries bio\+\_\+disk}
+\item 
+\Hypertarget{structdio_a6dc516fc0c24ee764cc85dd8ba240210}\label{structdio_a6dc516fc0c24ee764cc85dd8ba240210} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries inode}
+\item 
+\Hypertarget{structdio_a7f36c71b9e066a603d0afd406f158243}\label{structdio_a7f36c71b9e066a603d0afd406f158243} 
+loff\+\_\+t {\bfseries i\+\_\+size}
+\item 
+\Hypertarget{structdio_a36a4bdbee3494fde16ccc495e06f17d4}\label{structdio_a36a4bdbee3494fde16ccc495e06f17d4} 
+dio\+\_\+iodone\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+io}
+\item 
+\Hypertarget{structdio_a2574fcc4f4d8a34bfdadafb3eecdd442}\label{structdio_a2574fcc4f4d8a34bfdadafb3eecdd442} 
+bool {\bfseries is\+\_\+pinned}
+\item 
+\Hypertarget{structdio_aed324859cf02bc685c574ce09a04ec03}\label{structdio_aed324859cf02bc685c574ce09a04ec03} 
+void \texorpdfstring{$\ast$}{*} {\bfseries private}
+\item 
+\Hypertarget{structdio_ad3fd3582e2fc1b4b4cd512560e162e79}\label{structdio_ad3fd3582e2fc1b4b4cd512560e162e79} 
+spinlock\+\_\+t {\bfseries bio\+\_\+lock}
+\item 
+\Hypertarget{structdio_a51050df2fdfe9643d86b1272d734c862}\label{structdio_a51050df2fdfe9643d86b1272d734c862} 
+int {\bfseries page\+\_\+errors}
+\item 
+\Hypertarget{structdio_a90923e256c8e65d1d526eeed8212b8f3}\label{structdio_a90923e256c8e65d1d526eeed8212b8f3} 
+int {\bfseries is\+\_\+async}
+\item 
+\Hypertarget{structdio_a95706a4b1c67fdf27a17cad6fcf8dcdf}\label{structdio_a95706a4b1c67fdf27a17cad6fcf8dcdf} 
+bool {\bfseries defer\+\_\+completion}
+\item 
+\Hypertarget{structdio_acbee249568d49c5498e528d8d6ca0da5}\label{structdio_acbee249568d49c5498e528d8d6ca0da5} 
+bool {\bfseries should\+\_\+dirty}
+\item 
+\Hypertarget{structdio_adb7ac0b31999d2319f98511fc8c15a99}\label{structdio_adb7ac0b31999d2319f98511fc8c15a99} 
+int {\bfseries io\+\_\+error}
+\item 
+\Hypertarget{structdio_aac882baf29f7e004af0ff7775d594b72}\label{structdio_aac882baf29f7e004af0ff7775d594b72} 
+long unsigned int {\bfseries refcount}
+\item 
+\Hypertarget{structdio_ad2454bff11dc35e751e0ee163310844a}\label{structdio_ad2454bff11dc35e751e0ee163310844a} 
+struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*} {\bfseries bio\+\_\+list}
+\item 
+\Hypertarget{structdio_ab2617c1486588bad6eace554bbfaa310}\label{structdio_ab2617c1486588bad6eace554bbfaa310} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries waiter}
+\item 
+\Hypertarget{structdio_a2668cbae797e5b2a54bb3e8c61132288}\label{structdio_a2668cbae797e5b2a54bb3e8c61132288} 
+struct \doxymbox{\hyperlink{structkiocb}{kiocb}} \texorpdfstring{$\ast$}{*} {\bfseries iocb}
+\item 
+\Hypertarget{structdio_a4a4cc3d9ff807206d2ba5cdbda1bc5ed}\label{structdio_a4a4cc3d9ff807206d2ba5cdbda1bc5ed} 
+ssize\+\_\+t {\bfseries result}
+\item 
+\Hypertarget{structdio_a10ff912c1eef95fc65f80cfe47a0bb1d}\label{structdio_a10ff912c1eef95fc65f80cfe47a0bb1d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*} {\bfseries pages} \+[64]\+\\
+\>struct \doxymbox{\hyperlink{structwork__struct}{work\_struct}} {\bfseries complete\_work}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdio_a488e2bcec4a83d10cd80c33067d8e774}\label{structdio_a488e2bcec4a83d10cd80c33067d8e774} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\doxysection{cpufreq\+\_\+driver Struct Reference}
+\hypertarget{structcpufreq__driver}{}\label{structcpufreq__driver}\index{cpufreq\_driver@{cpufreq\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcpufreq__driver_abef754c25a302de69dd4ee162bc96f3f}\label{structcpufreq__driver_abef754c25a302de69dd4ee162bc96f3f} 
+char {\bfseries name} \+[16]\+
+\item 
+\Hypertarget{structcpufreq__driver_a3a8371c8c03c8ff60650adc528a843ea}\label{structcpufreq__driver_a3a8371c8c03c8ff60650adc528a843ea} 
+u16 {\bfseries flags}
+\item 
+\Hypertarget{structcpufreq__driver_a253f3b4faf511b21f6c752a9c60961e6}\label{structcpufreq__driver_a253f3b4faf511b21f6c752a9c60961e6} 
+void \texorpdfstring{$\ast$}{*} {\bfseries driver\+\_\+data}
+\item 
+\Hypertarget{structcpufreq__driver_aeb1a6fab58ec2d5f56d596e1536e832e}\label{structcpufreq__driver_aeb1a6fab58ec2d5f56d596e1536e832e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_a5092eb719e4ec714ca88cb65ad00c137}\label{structcpufreq__driver_a5092eb719e4ec714ca88cb65ad00c137} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries verify} )(struct \doxymbox{\hyperlink{structcpufreq__policy__data}{cpufreq\+\_\+policy\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_acb5e6d20c4da6117f3bcba0745300e01}\label{structcpufreq__driver_acb5e6d20c4da6117f3bcba0745300e01} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setpolicy} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_a909e1a1b6d985d2c02578aaa7b83bc08}\label{structcpufreq__driver_a909e1a1b6d985d2c02578aaa7b83bc08} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries target} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structcpufreq__driver_af960f4fa2f7264bccdd18c2eec8aaba0}\label{structcpufreq__driver_af960f4fa2f7264bccdd18c2eec8aaba0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries target\+\_\+index} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structcpufreq__driver_a3db2091edf7a3181fa3ba852a7035787}\label{structcpufreq__driver_a3db2091edf7a3181fa3ba852a7035787} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries fast\+\_\+switch} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structcpufreq__driver_a6387bb221fd0a4088283dd6165701c1c}\label{structcpufreq__driver_a6387bb221fd0a4088283dd6165701c1c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries adjust\+\_\+perf} )(unsigned int, long unsigned int, long unsigned int, long unsigned int)
+\item 
+\Hypertarget{structcpufreq__driver_a40a9d7398bc48f78486571d320b42d6b}\label{structcpufreq__driver_a40a9d7398bc48f78486571d320b42d6b} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+intermediate} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structcpufreq__driver_a0ca98a6d8c2bc66ccd370c5cd263520f}\label{structcpufreq__driver_a0ca98a6d8c2bc66ccd370c5cd263520f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries target\+\_\+intermediate} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structcpufreq__driver_a4c6f7eaed63350aee69386387ff7ea72}\label{structcpufreq__driver_a4c6f7eaed63350aee69386387ff7ea72} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get} )(unsigned int)
+\item 
+\Hypertarget{structcpufreq__driver_ac0ebaf889ad150beb3bd38957f66c905}\label{structcpufreq__driver_ac0ebaf889ad150beb3bd38957f66c905} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+limits} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_aa9a8592f0116ee8b1b8e476243c8b3e2}\label{structcpufreq__driver_aa9a8592f0116ee8b1b8e476243c8b3e2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bios\+\_\+limit} )(int, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_a59b1f4b937dbbb837831b701385e358b}\label{structcpufreq__driver_a59b1f4b937dbbb837831b701385e358b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries online} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_a1ff66a6f0f8c5ad5c38b6bb49380cc91}\label{structcpufreq__driver_a1ff66a6f0f8c5ad5c38b6bb49380cc91} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries offline} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_afe9c6e288508a188bd5f16d6eafa491e}\label{structcpufreq__driver_afe9c6e288508a188bd5f16d6eafa491e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_a9cba1d2131f560c374c06808e1e6ab70}\label{structcpufreq__driver_a9cba1d2131f560c374c06808e1e6ab70} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_a92ccce634cff28a5995b3337b8970d47}\label{structcpufreq__driver_a92ccce634cff28a5995b3337b8970d47} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_ae07409bc1bab44b837dc1f59644ea6fe}\label{structcpufreq__driver_ae07409bc1bab44b837dc1f59644ea6fe} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ready} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcpufreq__driver_a1bd6b066aea410eb42ad7106a70c7b25}\label{structcpufreq__driver_a1bd6b066aea410eb42ad7106a70c7b25} 
+struct \doxymbox{\hyperlink{structfreq__attr}{freq\+\_\+attr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries attr}
+\item 
+\Hypertarget{structcpufreq__driver_a9bee11e1c8e7f48836dbd23a167f9fba}\label{structcpufreq__driver_a9bee11e1c8e7f48836dbd23a167f9fba} 
+bool {\bfseries boost\+\_\+enabled}
+\item 
+\Hypertarget{structcpufreq__driver_a5de31d20bbe06447c117bcc64d7cf0d1}\label{structcpufreq__driver_a5de31d20bbe06447c117bcc64d7cf0d1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+boost} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structcpufreq__driver_a4dee059a36c31a13342ef212313e0bec}\label{structcpufreq__driver_a4dee059a36c31a13342ef212313e0bec} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries register\+\_\+em} )(struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

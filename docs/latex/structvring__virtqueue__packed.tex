@@ -1,0 +1,54 @@
+\doxysection{vring\+\_\+virtqueue\+\_\+packed Struct Reference}
+\hypertarget{structvring__virtqueue__packed}{}\label{structvring__virtqueue__packed}\index{vring\_virtqueue\_packed@{vring\_virtqueue\_packed}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvring__virtqueue__packed_a2f2bdc1c2a8298bde74381f8eb3a2d68}\label{structvring__virtqueue__packed_a2f2bdc1c2a8298bde74381f8eb3a2d68} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries num}\\
+\>struct \doxymbox{\hyperlink{structvring__packed__desc}{vring\_packed\_desc}} \texorpdfstring{$\ast$}{*} {\bfseries desc}\\
+\>struct \doxymbox{\hyperlink{structvring__packed__desc__event}{vring\_packed\_desc\_event}} \texorpdfstring{$\ast$}{*} {\bfseries driver}\\
+\>struct \doxymbox{\hyperlink{structvring__packed__desc__event}{vring\_packed\_desc\_event}} \texorpdfstring{$\ast$}{*} {\bfseries device}\\
+\} {\bfseries vring}\\
+
+\end{tabbing}\item 
+\Hypertarget{structvring__virtqueue__packed_a9dfa1798d4a2ab27f65689e45b6a4646}\label{structvring__virtqueue__packed_a9dfa1798d4a2ab27f65689e45b6a4646} 
+bool {\bfseries avail\+\_\+wrap\+\_\+counter}
+\item 
+\Hypertarget{structvring__virtqueue__packed_a6bb83e22e4fe5ba297263a73a908a148}\label{structvring__virtqueue__packed_a6bb83e22e4fe5ba297263a73a908a148} 
+u16 {\bfseries avail\+\_\+used\+\_\+flags}
+\item 
+\Hypertarget{structvring__virtqueue__packed_a34d4f36c7700e06abd85352993a3e6b1}\label{structvring__virtqueue__packed_a34d4f36c7700e06abd85352993a3e6b1} 
+u16 {\bfseries next\+\_\+avail\+\_\+idx}
+\item 
+\Hypertarget{structvring__virtqueue__packed_ab1524a02195b5620e08ced7a11878326}\label{structvring__virtqueue__packed_ab1524a02195b5620e08ced7a11878326} 
+u16 {\bfseries event\+\_\+flags\+\_\+shadow}
+\item 
+\Hypertarget{structvring__virtqueue__packed_a86bf3b0cb02818d034e1eb275fd6c2ff}\label{structvring__virtqueue__packed_a86bf3b0cb02818d034e1eb275fd6c2ff} 
+struct \doxymbox{\hyperlink{structvring__desc__state__packed}{vring\+\_\+desc\+\_\+state\+\_\+packed}} \texorpdfstring{$\ast$}{*} {\bfseries desc\+\_\+state}
+\item 
+\Hypertarget{structvring__virtqueue__packed_a889e38d68c32334b0cd72e13afa8257d}\label{structvring__virtqueue__packed_a889e38d68c32334b0cd72e13afa8257d} 
+struct \doxymbox{\hyperlink{structvring__desc__extra}{vring\+\_\+desc\+\_\+extra}} \texorpdfstring{$\ast$}{*} {\bfseries desc\+\_\+extra}
+\item 
+\Hypertarget{structvring__virtqueue__packed_ab977e5009a1cfce9d4ac3277a4baaa5f}\label{structvring__virtqueue__packed_ab977e5009a1cfce9d4ac3277a4baaa5f} 
+dma\+\_\+addr\+\_\+t {\bfseries ring\+\_\+dma\+\_\+addr}
+\item 
+\Hypertarget{structvring__virtqueue__packed_a1ccfb61e0d075a5bbb1a6c72f32fbf14}\label{structvring__virtqueue__packed_a1ccfb61e0d075a5bbb1a6c72f32fbf14} 
+dma\+\_\+addr\+\_\+t {\bfseries driver\+\_\+event\+\_\+dma\+\_\+addr}
+\item 
+\Hypertarget{structvring__virtqueue__packed_adef96f3a8bd3d3c98dd56fefe604664f}\label{structvring__virtqueue__packed_adef96f3a8bd3d3c98dd56fefe604664f} 
+dma\+\_\+addr\+\_\+t {\bfseries device\+\_\+event\+\_\+dma\+\_\+addr}
+\item 
+\Hypertarget{structvring__virtqueue__packed_ad302431c3bcc444683b440270fe16fd9}\label{structvring__virtqueue__packed_ad302431c3bcc444683b440270fe16fd9} 
+size\+\_\+t {\bfseries ring\+\_\+size\+\_\+in\+\_\+bytes}
+\item 
+\Hypertarget{structvring__virtqueue__packed_acac0add3d3a36d935d5ceb97bf7b814b}\label{structvring__virtqueue__packed_acac0add3d3a36d935d5ceb97bf7b814b} 
+size\+\_\+t {\bfseries event\+\_\+size\+\_\+in\+\_\+bytes}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

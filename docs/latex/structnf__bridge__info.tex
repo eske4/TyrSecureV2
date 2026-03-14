@@ -1,0 +1,53 @@
+\doxysection{nf\+\_\+bridge\+\_\+info Struct Reference}
+\hypertarget{structnf__bridge__info}{}\label{structnf__bridge__info}\index{nf\_bridge\_info@{nf\_bridge\_info}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnf__bridge__info_ab229a0306852e5435ba81f81864b977c}\label{structnf__bridge__info_ab229a0306852e5435ba81f81864b977c} 
+enum \{ {\bfseries BRNF\+\_\+\+PROTO\+\_\+\+UNCHANGED} = 0
+, {\bfseries BRNF\+\_\+\+PROTO\+\_\+8021Q} = 1
+, {\bfseries BRNF\+\_\+\+PROTO\+\_\+\+PPPOE} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnf__bridge__info_aee81229c4ba1fd66d2629f0574e1f4ce}\label{structnf__bridge__info_aee81229c4ba1fd66d2629f0574e1f4ce} 
+enum nf\+\_\+bridge\+\_\+info::\+ \{ ... \}  {\bfseries orig\+\_\+proto}
+\item 
+\Hypertarget{structnf__bridge__info_aa28fe9d304df23d1ea28708e45578503}\label{structnf__bridge__info_aa28fe9d304df23d1ea28708e45578503} 
+u8 {\bfseries pkt\+\_\+otherhost}:\+ 1
+\item 
+\Hypertarget{structnf__bridge__info_aa1401ff5b9355aeae0be434f3787bec0}\label{structnf__bridge__info_aa1401ff5b9355aeae0be434f3787bec0} 
+u8 {\bfseries in\+\_\+prerouting}:\+ 1
+\item 
+\Hypertarget{structnf__bridge__info_a3b4ea0c0e9a5b465047393115e19b5bb}\label{structnf__bridge__info_a3b4ea0c0e9a5b465047393115e19b5bb} 
+u8 {\bfseries bridged\+\_\+dnat}:\+ 1
+\item 
+\Hypertarget{structnf__bridge__info_a13e11e0d70c61ede7445cda8cdddd643}\label{structnf__bridge__info_a13e11e0d70c61ede7445cda8cdddd643} 
+u8 {\bfseries sabotage\+\_\+in\+\_\+done}:\+ 1
+\item 
+\Hypertarget{structnf__bridge__info_a9bd432b31996114455eb3cde33be50d1}\label{structnf__bridge__info_a9bd432b31996114455eb3cde33be50d1} 
+\+\_\+\+\_\+u16 {\bfseries frag\+\_\+max\+\_\+size}
+\item 
+\Hypertarget{structnf__bridge__info_a971abbe4997ae4651edfa4263497311f}\label{structnf__bridge__info_a971abbe4997ae4651edfa4263497311f} 
+int {\bfseries physinif}
+\item 
+\Hypertarget{structnf__bridge__info_a0963e109e690045549791a2b10f0ddf1}\label{structnf__bridge__info_a0963e109e690045549791a2b10f0ddf1} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries physoutdev}
+\item 
+\Hypertarget{structnf__bridge__info_aa45567f87a7d0ae9027d19715f49f47b}\label{structnf__bridge__info_aa45567f87a7d0ae9027d19715f49f47b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries ipv4\_daddr}\\
+\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries ipv6\_daddr}\\
+\>char {\bfseries neigh\_header} \+[8]\+\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

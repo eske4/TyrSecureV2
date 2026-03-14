@@ -1,0 +1,138 @@
+\doxysection{bpf\+\_\+link\+\_\+info Struct Reference}
+\hypertarget{structbpf__link__info}{}\label{structbpf__link__info}\index{bpf\_link\_info@{bpf\_link\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__link__info_aa89699b686b0f32d84a20cfd2068d68d}\label{structbpf__link__info_aa89699b686b0f32d84a20cfd2068d68d} 
+\+\_\+\+\_\+u32 {\bfseries type}
+\item 
+\Hypertarget{structbpf__link__info_af8f72501819e75df5b0445dd2aa4e965}\label{structbpf__link__info_af8f72501819e75df5b0445dd2aa4e965} 
+\+\_\+\+\_\+u32 {\bfseries id}
+\item 
+\Hypertarget{structbpf__link__info_a26e00551c82c84279913cbeaa9960f2c}\label{structbpf__link__info_a26e00551c82c84279913cbeaa9960f2c} 
+\+\_\+\+\_\+u32 {\bfseries prog\+\_\+id}
+\item 
+\Hypertarget{structbpf__link__info_acc862496d3b2033fafbf815bf1224ca3}\label{structbpf__link__info_acc862496d3b2033fafbf815bf1224ca3} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries tp\_name}\\
+\>\>\_\_u32 {\bfseries tp\_name\_len}\\
+\>\>\_\_u64 {\bfseries cookie}\\
+\>\} {\bfseries raw\_tracepoint}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries attach\_type}\\
+\>\>\_\_u32 {\bfseries target\_obj\_id}\\
+\>\>\_\_u32 {\bfseries target\_btf\_id}\\
+\>\>\_\_u64 {\bfseries cookie}\\
+\>\} {\bfseries tracing}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries cgroup\_id}\\
+\>\>\_\_u32 {\bfseries attach\_type}\\
+\>\} {\bfseries cgroup}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries target\_name}\\
+\>\>\_\_u32 {\bfseries target\_name\_len}\\
+\Hypertarget{structbpf__link__info_1_1_0d061343157111036061017202325317130274127336055354_1_1_0d272263001154109ba171c66fe3819439f5cf3296141e9_a3c7825ad4f4ac201e3db555ac5355ca0}\label{structbpf__link__info_1_1_0d061343157111036061017202325317130274127336055354_1_1_0d272263001154109ba171c66fe3819439f5cf3296141e9_a3c7825ad4f4ac201e3db555ac5355ca0} 
+\>\>union \{\\
+\>\>\>struct \{\\
+\>\>\>\>\_\_u32 {\bfseries map\_id}\\
+\>\>\>\} {\bfseries map}\\
+\>\>\} \\
+\Hypertarget{structbpf__link__info_1_1_0d061343157111036061017202325317130274127336055354_1_1_0d272263001154109ba171c66fe3819439f5cf3296141e9_a9978f362a816dd186a7816b85e0a7eb4}\label{structbpf__link__info_1_1_0d061343157111036061017202325317130274127336055354_1_1_0d272263001154109ba171c66fe3819439f5cf3296141e9_a9978f362a816dd186a7816b85e0a7eb4} 
+\>\>union \{\\
+\>\>\>struct \{\\
+\>\>\>\>\_\_u64 {\bfseries cgroup\_id}\\
+\>\>\>\>\_\_u32 {\bfseries order}\\
+\>\>\>\} {\bfseries cgroup}\\
+\>\>\>struct \{\\
+\>\>\>\>\_\_u32 {\bfseries tid}\\
+\>\>\>\>\_\_u32 {\bfseries pid}\\
+\>\>\>\} {\bfseries task}\\
+\>\>\} \\
+\>\} {\bfseries iter}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries netns\_ino}\\
+\>\>\_\_u32 {\bfseries attach\_type}\\
+\>\} {\bfseries netns}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries ifindex}\\
+\>\} {\bfseries xdp}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries map\_id}\\
+\>\} {\bfseries struct\_ops}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries pf}\\
+\>\>\_\_u32 {\bfseries hooknum}\\
+\>\>\_\_s32 {\bfseries priority}\\
+\>\>\_\_u32 {\bfseries flags}\\
+\>\} {\bfseries netfilter}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries addrs}\\
+\>\>\_\_u32 {\bfseries count}\\
+\>\>\_\_u32 {\bfseries flags}\\
+\>\>\_\_u64 {\bfseries missed}\\
+\>\>\_\_u64 {\bfseries cookies}\\
+\>\} {\bfseries kprobe\_multi}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries path}\\
+\>\>\_\_u64 {\bfseries offsets}\\
+\>\>\_\_u64 {\bfseries ref\_ctr\_offsets}\\
+\>\>\_\_u64 {\bfseries cookies}\\
+\>\>\_\_u32 {\bfseries path\_size}\\
+\>\>\_\_u32 {\bfseries count}\\
+\>\>\_\_u32 {\bfseries flags}\\
+\>\>\_\_u32 {\bfseries pid}\\
+\>\} {\bfseries uprobe\_multi}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries type}\\
+\Hypertarget{structbpf__link__info_1_1_0d061343157111036061017202325317130274127336055354_1_1_0d0723062640433ee039cc3606f6c753d62d312f7345275_a13d3c22c05aaf566bbe59d309bdaa813}\label{structbpf__link__info_1_1_0d061343157111036061017202325317130274127336055354_1_1_0d0723062640433ee039cc3606f6c753d62d312f7345275_a13d3c22c05aaf566bbe59d309bdaa813} 
+\>\>union \{\\
+\>\>\>struct \{\\
+\>\>\>\>\_\_u64 {\bfseries file\_name}\\
+\>\>\>\>\_\_u32 {\bfseries name\_len}\\
+\>\>\>\>\_\_u32 {\bfseries offset}\\
+\>\>\>\>\_\_u64 {\bfseries cookie}\\
+\>\>\>\>\_\_u64 {\bfseries ref\_ctr\_offset}\\
+\>\>\>\} {\bfseries uprobe}\\
+\>\>\>struct \{\\
+\>\>\>\>\_\_u64 {\bfseries func\_name}\\
+\>\>\>\>\_\_u32 {\bfseries name\_len}\\
+\>\>\>\>\_\_u32 {\bfseries offset}\\
+\>\>\>\>\_\_u64 {\bfseries addr}\\
+\>\>\>\>\_\_u64 {\bfseries missed}\\
+\>\>\>\>\_\_u64 {\bfseries cookie}\\
+\>\>\>\} {\bfseries kprobe}\\
+\>\>\>struct \{\\
+\>\>\>\>\_\_u64 {\bfseries tp\_name}\\
+\>\>\>\>\_\_u32 {\bfseries name\_len}\\
+\>\>\>\>\_\_u64 {\bfseries cookie}\\
+\>\>\>\} {\bfseries tracepoint}\\
+\>\>\>struct \{\\
+\>\>\>\>\_\_u64 {\bfseries config}\\
+\>\>\>\>\_\_u32 {\bfseries type}\\
+\>\>\>\>\_\_u64 {\bfseries cookie}\\
+\>\>\>\} {\bfseries event}\\
+\>\>\} \\
+\>\} {\bfseries perf\_event}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries ifindex}\\
+\>\>\_\_u32 {\bfseries attach\_type}\\
+\>\} {\bfseries tcx}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries ifindex}\\
+\>\>\_\_u32 {\bfseries attach\_type}\\
+\>\} {\bfseries netkit}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries map\_id}\\
+\>\>\_\_u32 {\bfseries attach\_type}\\
+\>\} {\bfseries sockmap}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

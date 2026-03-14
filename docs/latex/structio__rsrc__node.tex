@@ -1,0 +1,28 @@
+\doxysection{io\+\_\+rsrc\+\_\+node Struct Reference}
+\hypertarget{structio__rsrc__node}{}\label{structio__rsrc__node}\index{io\_rsrc\_node@{io\_rsrc\_node}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structio__rsrc__node_ae10666bb42fe3caefaebe95ff05e3b74}\label{structio__rsrc__node_ae10666bb42fe3caefaebe95ff05e3b74} 
+unsigned char {\bfseries type}
+\item 
+\Hypertarget{structio__rsrc__node_a86214708fd591fc759359e80637b9b11}\label{structio__rsrc__node_a86214708fd591fc759359e80637b9b11} 
+int {\bfseries refs}
+\item 
+\Hypertarget{structio__rsrc__node_a46f172068865b18d9d8fc7c6e966f2ca}\label{structio__rsrc__node_a46f172068865b18d9d8fc7c6e966f2ca} 
+u64 {\bfseries tag}
+\item 
+\Hypertarget{structio__rsrc__node_a698bfffa2b004d5a78ccf35d24ef3741}\label{structio__rsrc__node_a698bfffa2b004d5a78ccf35d24ef3741} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int {\bfseries file\_ptr}\\
+\>struct \doxymbox{\hyperlink{structio__mapped__ubuf}{io\_mapped\_ubuf}} \texorpdfstring{$\ast$}{*} {\bfseries buf}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

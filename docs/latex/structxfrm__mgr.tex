@@ -1,0 +1,37 @@
+\doxysection{xfrm\+\_\+mgr Struct Reference}
+\hypertarget{structxfrm__mgr}{}\label{structxfrm__mgr}\index{xfrm\_mgr@{xfrm\_mgr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxfrm__mgr_a8d065ad2e8eebacbff6caa312cc254d1}\label{structxfrm__mgr_a8d065ad2e8eebacbff6caa312cc254d1} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structxfrm__mgr_a4466d57f07212de8256e55fa5ba17ea1}\label{structxfrm__mgr_a4466d57f07212de8256e55fa5ba17ea1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries notify} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structkm__event}{km\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mgr_ab9345989df1897ff2e4e28deb06f424f}\label{structxfrm__mgr_ab9345989df1897ff2e4e28deb06f424f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries acquire} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxfrm__tmpl}{xfrm\+\_\+tmpl}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxfrm__policy}{xfrm\+\_\+policy}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mgr_ac994d613be06cc7fc94b0bfb44cc5eac}\label{structxfrm__mgr_ac994d613be06cc7fc94b0bfb44cc5eac} 
+struct \doxymbox{\hyperlink{structxfrm__policy}{xfrm\+\_\+policy}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries compile\+\_\+policy} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, int, u8 \texorpdfstring{$\ast$}{*}, int, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mgr_a2eda6980434e3edc3bd3be598d4ef576}\label{structxfrm__mgr_a2eda6980434e3edc3bd3be598d4ef576} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries new\+\_\+mapping} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{unionxfrm__address__t}{xfrm\+\_\+address\+\_\+t}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+be16)
+\item 
+\Hypertarget{structxfrm__mgr_a9fb426565e0148a587eb2c3c1d452087}\label{structxfrm__mgr_a9fb426565e0148a587eb2c3c1d452087} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries notify\+\_\+policy} )(struct \doxymbox{\hyperlink{structxfrm__policy}{xfrm\+\_\+policy}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structkm__event}{km\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mgr_a77e6db7b3c5eb477b1303b81e50f0db4}\label{structxfrm__mgr_a77e6db7b3c5eb477b1303b81e50f0db4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries report} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, u8, struct \doxymbox{\hyperlink{structxfrm__selector}{xfrm\+\_\+selector}} \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{unionxfrm__address__t}{xfrm\+\_\+address\+\_\+t}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mgr_ab0f4d3c91a3037911cb65326905d8e72}\label{structxfrm__mgr_ab0f4d3c91a3037911cb65326905d8e72} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries migrate} )(const struct \doxymbox{\hyperlink{structxfrm__selector}{xfrm\+\_\+selector}} \texorpdfstring{$\ast$}{*}, u8, u8, const struct \doxymbox{\hyperlink{structxfrm__migrate}{xfrm\+\_\+migrate}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structxfrm__kmaddress}{xfrm\+\_\+kmaddress}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structxfrm__encap__tmpl}{xfrm\+\_\+encap\+\_\+tmpl}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mgr_ae2e3e11e0793a352a1b0e2f7ea36f2c4}\label{structxfrm__mgr_ae2e3e11e0793a352a1b0e2f7ea36f2c4} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+alive} )(const struct \doxymbox{\hyperlink{structkm__event}{km\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

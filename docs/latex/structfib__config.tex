@@ -1,0 +1,85 @@
+\doxysection{fib\+\_\+config Struct Reference}
+\hypertarget{structfib__config}{}\label{structfib__config}\index{fib\_config@{fib\_config}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfib__config_adcc5a76173c39a87bead6b4d3293a326}\label{structfib__config_adcc5a76173c39a87bead6b4d3293a326} 
+u8 {\bfseries fc\+\_\+dst\+\_\+len}
+\item 
+\Hypertarget{structfib__config_a2475e5232ceb134d2e1c897e45855f89}\label{structfib__config_a2475e5232ceb134d2e1c897e45855f89} 
+dscp\+\_\+t {\bfseries fc\+\_\+dscp}
+\item 
+\Hypertarget{structfib__config_ac941ae6dca3e78105f91139e3d39471b}\label{structfib__config_ac941ae6dca3e78105f91139e3d39471b} 
+u8 {\bfseries fc\+\_\+protocol}
+\item 
+\Hypertarget{structfib__config_aec5b424f615592903d4ebf67f46ca4e4}\label{structfib__config_aec5b424f615592903d4ebf67f46ca4e4} 
+u8 {\bfseries fc\+\_\+scope}
+\item 
+\Hypertarget{structfib__config_a946cfde0d9e176d7df4ffe0b7e08886d}\label{structfib__config_a946cfde0d9e176d7df4ffe0b7e08886d} 
+u8 {\bfseries fc\+\_\+type}
+\item 
+\Hypertarget{structfib__config_aed21a513b90a4fdd713f716afc4db84e}\label{structfib__config_aed21a513b90a4fdd713f716afc4db84e} 
+u8 {\bfseries fc\+\_\+gw\+\_\+family}
+\item 
+\Hypertarget{structfib__config_a82d8f7a874a474764eeffc7ecd902831}\label{structfib__config_a82d8f7a874a474764eeffc7ecd902831} 
+u32 {\bfseries fc\+\_\+table}
+\item 
+\Hypertarget{structfib__config_a7214bb07c72af39ffd2d3ffd1068b2a3}\label{structfib__config_a7214bb07c72af39ffd2d3ffd1068b2a3} 
+\+\_\+\+\_\+be32 {\bfseries fc\+\_\+dst}
+\item 
+\Hypertarget{structfib__config_a05f4afc1b519aafcb0f4cf4b5f54fc68}\label{structfib__config_a05f4afc1b519aafcb0f4cf4b5f54fc68} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries fc\_gw4}\\
+\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries fc\_gw6}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structfib__config_a9e39f74d1027068156be7602f0890176}\label{structfib__config_a9e39f74d1027068156be7602f0890176} 
+int {\bfseries fc\+\_\+oif}
+\item 
+\Hypertarget{structfib__config_af378a06c3050a9bafd9d9ff9ebc4f1e8}\label{structfib__config_af378a06c3050a9bafd9d9ff9ebc4f1e8} 
+u32 {\bfseries fc\+\_\+flags}
+\item 
+\Hypertarget{structfib__config_a76041455477be5866ddf18d4ab8673e1}\label{structfib__config_a76041455477be5866ddf18d4ab8673e1} 
+u32 {\bfseries fc\+\_\+priority}
+\item 
+\Hypertarget{structfib__config_a16a737c1a4fabcac1c17a93e33ad4670}\label{structfib__config_a16a737c1a4fabcac1c17a93e33ad4670} 
+\+\_\+\+\_\+be32 {\bfseries fc\+\_\+prefsrc}
+\item 
+\Hypertarget{structfib__config_a3135110ce081790dd0081fa096efe0f9}\label{structfib__config_a3135110ce081790dd0081fa096efe0f9} 
+u32 {\bfseries fc\+\_\+nh\+\_\+id}
+\item 
+\Hypertarget{structfib__config_a791e4eee799e08a6f9a17cdbf8669d75}\label{structfib__config_a791e4eee799e08a6f9a17cdbf8669d75} 
+struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*} {\bfseries fc\+\_\+mx}
+\item 
+\Hypertarget{structfib__config_a8ae0df692f20be4f540cd9379602f4eb}\label{structfib__config_a8ae0df692f20be4f540cd9379602f4eb} 
+struct \doxymbox{\hyperlink{structrtnexthop}{rtnexthop}} \texorpdfstring{$\ast$}{*} {\bfseries fc\+\_\+mp}
+\item 
+\Hypertarget{structfib__config_acc84c3c1b4c6f6d1b7072dc4c37e5bfe}\label{structfib__config_acc84c3c1b4c6f6d1b7072dc4c37e5bfe} 
+int {\bfseries fc\+\_\+mx\+\_\+len}
+\item 
+\Hypertarget{structfib__config_aab9437007cb140eab90998c899fb1739}\label{structfib__config_aab9437007cb140eab90998c899fb1739} 
+int {\bfseries fc\+\_\+mp\+\_\+len}
+\item 
+\Hypertarget{structfib__config_aedfa7e2eeaec5fcf904e959e4e48f7cf}\label{structfib__config_aedfa7e2eeaec5fcf904e959e4e48f7cf} 
+u32 {\bfseries fc\+\_\+flow}
+\item 
+\Hypertarget{structfib__config_a3b48f0ff1ddc4dd47a9c7b29f9c9fe72}\label{structfib__config_a3b48f0ff1ddc4dd47a9c7b29f9c9fe72} 
+u32 {\bfseries fc\+\_\+nlflags}
+\item 
+\Hypertarget{structfib__config_aafa16ac512f4cbfe3b3caf5e50c1ab03}\label{structfib__config_aafa16ac512f4cbfe3b3caf5e50c1ab03} 
+struct \doxymbox{\hyperlink{structnl__info}{nl\+\_\+info}} {\bfseries fc\+\_\+nlinfo}
+\item 
+\Hypertarget{structfib__config_ab97c605089a03991fee3d298b9d7257c}\label{structfib__config_ab97c605089a03991fee3d298b9d7257c} 
+struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*} {\bfseries fc\+\_\+encap}
+\item 
+\Hypertarget{structfib__config_a8f6e834c308c5a05a1c70b6334231e78}\label{structfib__config_a8f6e834c308c5a05a1c70b6334231e78} 
+u16 {\bfseries fc\+\_\+encap\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

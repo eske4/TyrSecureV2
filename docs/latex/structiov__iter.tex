@@ -1,0 +1,53 @@
+\doxysection{iov\+\_\+iter Struct Reference}
+\hypertarget{structiov__iter}{}\label{structiov__iter}\index{iov\_iter@{iov\_iter}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structiov__iter_a078eb13839b17824520548165e8c4140}\label{structiov__iter_a078eb13839b17824520548165e8c4140} 
+u8 {\bfseries iter\+\_\+type}
+\item 
+\Hypertarget{structiov__iter_a2c72f659c9d4726820b5b2355bf22c66}\label{structiov__iter_a2c72f659c9d4726820b5b2355bf22c66} 
+bool {\bfseries nofault}
+\item 
+\Hypertarget{structiov__iter_a5c0447ecce329f37191e61b251efde92}\label{structiov__iter_a5c0447ecce329f37191e61b251efde92} 
+bool {\bfseries data\+\_\+source}
+\item 
+\Hypertarget{structiov__iter_aedde15d0532a0b688be2848834376a10}\label{structiov__iter_aedde15d0532a0b688be2848834376a10} 
+size\+\_\+t {\bfseries iov\+\_\+offset}
+\item 
+\Hypertarget{structiov__iter_af26832800e96733c447b42e630d063bb}\label{structiov__iter_af26832800e96733c447b42e630d063bb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structiovec}{iovec}} {\bfseries \_\_ubuf\_iovec}\\
+\Hypertarget{unioniov__iter_1_1_0d264144204061114315352060344017033056270064023047_aa47dbc42220a636a4ce16f834f84d2ed}\label{unioniov__iter_1_1_0d264144204061114315352060344017033056270064023047_aa47dbc42220a636a4ce16f834f84d2ed} 
+\>struct \{\\
+\Hypertarget{structiov__iter_1_1_0d264144204061114315352060344017033056270064023047_1_1_0d206200104230160307136055347111243021262156030025_a3259abf0d1b3fe3b14f17fb1e765b19a}\label{structiov__iter_1_1_0d264144204061114315352060344017033056270064023047_1_1_0d206200104230160307136055347111243021262156030025_a3259abf0d1b3fe3b14f17fb1e765b19a} 
+\>\>union \{\\
+\>\>\>const struct \doxymbox{\hyperlink{structiovec}{iovec}} \texorpdfstring{$\ast$}{*} {\bfseries \_\_iov}\\
+\>\>\>const struct \doxymbox{\hyperlink{structkvec}{kvec}} \texorpdfstring{$\ast$}{*} {\bfseries kvec}\\
+\>\>\>const struct \doxymbox{\hyperlink{structbio__vec}{bio\_vec}} \texorpdfstring{$\ast$}{*} {\bfseries bvec}\\
+\>\>\>const struct \doxymbox{\hyperlink{structfolio__queue}{folio\_queue}} \texorpdfstring{$\ast$}{*} {\bfseries folioq}\\
+\>\>\>struct \doxymbox{\hyperlink{structxarray}{xarray}} \texorpdfstring{$\ast$}{*} {\bfseries xarray}\\
+\>\>\>void \texorpdfstring{$\ast$}{*} {\bfseries ubuf}\\
+\>\>\} \\
+\>\>size\_t {\bfseries count}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structiov__iter_aa7c56208e89fee17a872dbce7c51351f}\label{structiov__iter_aa7c56208e89fee17a872dbce7c51351f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long unsigned int {\bfseries nr\_segs}\\
+\>u8 {\bfseries folioq\_slot}\\
+\>loff\_t {\bfseries xarray\_start}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

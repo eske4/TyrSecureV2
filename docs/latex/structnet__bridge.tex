@@ -1,0 +1,181 @@
+\doxysection{net\+\_\+bridge Struct Reference}
+\hypertarget{structnet__bridge}{}\label{structnet__bridge}\index{net\_bridge@{net\_bridge}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnet__bridge_a1996bc11be5591f72ce2fad0a70f2f69}\label{structnet__bridge_a1996bc11be5591f72ce2fad0a70f2f69} 
+enum \{ {\bfseries BR\+\_\+\+NO\+\_\+\+STP} = 0
+, {\bfseries BR\+\_\+\+KERNEL\+\_\+\+STP} = 1
+, {\bfseries BR\+\_\+\+USER\+\_\+\+STP} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnet__bridge_aaed1e1ee2b29ba1ea5f7dee59a7d0a87}\label{structnet__bridge_aaed1e1ee2b29ba1ea5f7dee59a7d0a87} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structnet__bridge_a10126054eca21dcdfb2bb56a7563fa5d}\label{structnet__bridge_a10126054eca21dcdfb2bb56a7563fa5d} 
+spinlock\+\_\+t {\bfseries hash\+\_\+lock}
+\item 
+\Hypertarget{structnet__bridge_ace81c00775fce2702dbb78b435245d5c}\label{structnet__bridge_ace81c00775fce2702dbb78b435245d5c} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries frame\+\_\+type\+\_\+list}
+\item 
+\Hypertarget{structnet__bridge_af6961136c0c38e65b85d1328e8fc8ce8}\label{structnet__bridge_af6961136c0c38e65b85d1328e8fc8ce8} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structnet__bridge_acfefb3ae1a4dc8c4ca6a9596f9004377}\label{structnet__bridge_acfefb3ae1a4dc8c4ca6a9596f9004377} 
+long unsigned int {\bfseries options}
+\item 
+\Hypertarget{structnet__bridge_af4b6d850cf4198b1d98385677f9557a3}\label{structnet__bridge_af4b6d850cf4198b1d98385677f9557a3} 
+\+\_\+\+\_\+be16 {\bfseries vlan\+\_\+proto}
+\item 
+\Hypertarget{structnet__bridge_ab0188b9994836b4391b942408509f95b}\label{structnet__bridge_ab0188b9994836b4391b942408509f95b} 
+u16 {\bfseries default\+\_\+pvid}
+\item 
+\Hypertarget{structnet__bridge_a65d96d25a0e1fe3256909a6177e7bf95}\label{structnet__bridge_a65d96d25a0e1fe3256909a6177e7bf95} 
+struct \doxymbox{\hyperlink{structnet__bridge__vlan__group}{net\+\_\+bridge\+\_\+vlan\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries vlgrp}
+\item 
+\Hypertarget{structnet__bridge_a792d85028f43ae69523c54743a805718}\label{structnet__bridge_a792d85028f43ae69523c54743a805718} 
+struct \doxymbox{\hyperlink{structrhashtable}{rhashtable}} {\bfseries fdb\+\_\+hash\+\_\+tbl}
+\item 
+\Hypertarget{structnet__bridge_a4f62e0d7144f39ff864a0654e63d9e6b}\label{structnet__bridge_a4f62e0d7144f39ff864a0654e63d9e6b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries port\+\_\+list}
+\item 
+\Hypertarget{structnet__bridge_af04917bcbdae5fe76bfe1f7ae1b817a8}\label{structnet__bridge_af04917bcbdae5fe76bfe1f7ae1b817a8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structrtable}{rtable}} {\bfseries fake\_rtable}\\
+\>struct \doxymbox{\hyperlink{structrt6__info}{rt6\_info}} {\bfseries fake\_rt6\_info}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnet__bridge_ac08a50ac244761e9ba6baaaf2949eacb}\label{structnet__bridge_ac08a50ac244761e9ba6baaaf2949eacb} 
+u32 {\bfseries metrics} \+[17]\+
+\item 
+\Hypertarget{structnet__bridge_a5d3a2853ee0fbd8a8cff19ebad3d86ab}\label{structnet__bridge_a5d3a2853ee0fbd8a8cff19ebad3d86ab} 
+u16 {\bfseries group\+\_\+fwd\+\_\+mask}
+\item 
+\Hypertarget{structnet__bridge_afecaad5af19078abe4fcfe3ee3ec43c2}\label{structnet__bridge_afecaad5af19078abe4fcfe3ee3ec43c2} 
+u16 {\bfseries group\+\_\+fwd\+\_\+mask\+\_\+required}
+\item 
+\Hypertarget{structnet__bridge_a8b54f04b3a4800262f345c8362b51633}\label{structnet__bridge_a8b54f04b3a4800262f345c8362b51633} 
+\doxymbox{\hyperlink{structbridge__id}{bridge\+\_\+id}} {\bfseries designated\+\_\+root}
+\item 
+\Hypertarget{structnet__bridge_a10d666c3528b9cce8ce1a30db17afa32}\label{structnet__bridge_a10d666c3528b9cce8ce1a30db17afa32} 
+\doxymbox{\hyperlink{structbridge__id}{bridge\+\_\+id}} {\bfseries bridge\+\_\+id}
+\item 
+\Hypertarget{structnet__bridge_a203371f4a978bc0f8dc0532630cbce73}\label{structnet__bridge_a203371f4a978bc0f8dc0532630cbce73} 
+unsigned char {\bfseries topology\+\_\+change}
+\item 
+\Hypertarget{structnet__bridge_aa3817090df4e4d5e61e7d7d1e6ef2299}\label{structnet__bridge_aa3817090df4e4d5e61e7d7d1e6ef2299} 
+unsigned char {\bfseries topology\+\_\+change\+\_\+detected}
+\item 
+\Hypertarget{structnet__bridge_ae62b168b5ad701d7ebd9eb67dc441fd1}\label{structnet__bridge_ae62b168b5ad701d7ebd9eb67dc441fd1} 
+u16 {\bfseries root\+\_\+port}
+\item 
+\Hypertarget{structnet__bridge_acc97918a20f7248f3a7e27c193f05162}\label{structnet__bridge_acc97918a20f7248f3a7e27c193f05162} 
+long unsigned int {\bfseries max\+\_\+age}
+\item 
+\Hypertarget{structnet__bridge_a5e8314ac597ca708ba7e6ac8ba4672b3}\label{structnet__bridge_a5e8314ac597ca708ba7e6ac8ba4672b3} 
+long unsigned int {\bfseries hello\+\_\+time}
+\item 
+\Hypertarget{structnet__bridge_a07510b1d81b8dc15fffd5e4af851fd6a}\label{structnet__bridge_a07510b1d81b8dc15fffd5e4af851fd6a} 
+long unsigned int {\bfseries forward\+\_\+delay}
+\item 
+\Hypertarget{structnet__bridge_a0ec957000bb3bf1947a5e7ec4941d5b8}\label{structnet__bridge_a0ec957000bb3bf1947a5e7ec4941d5b8} 
+long unsigned int {\bfseries ageing\+\_\+time}
+\item 
+\Hypertarget{structnet__bridge_ab8571eaa9b89c2b128b1cd0f217735bf}\label{structnet__bridge_ab8571eaa9b89c2b128b1cd0f217735bf} 
+long unsigned int {\bfseries bridge\+\_\+max\+\_\+age}
+\item 
+\Hypertarget{structnet__bridge_a74dde9e40f1c18b8cb70a4d997fa8eac}\label{structnet__bridge_a74dde9e40f1c18b8cb70a4d997fa8eac} 
+long unsigned int {\bfseries bridge\+\_\+hello\+\_\+time}
+\item 
+\Hypertarget{structnet__bridge_a0de8029aabe475a25e9bf6b156809ddd}\label{structnet__bridge_a0de8029aabe475a25e9bf6b156809ddd} 
+long unsigned int {\bfseries bridge\+\_\+forward\+\_\+delay}
+\item 
+\Hypertarget{structnet__bridge_a4e8c2c3c3d0de26b4aaff3f9d120041d}\label{structnet__bridge_a4e8c2c3c3d0de26b4aaff3f9d120041d} 
+long unsigned int {\bfseries bridge\+\_\+ageing\+\_\+time}
+\item 
+\Hypertarget{structnet__bridge_a14c47e088383ae26212084fc67b42a52}\label{structnet__bridge_a14c47e088383ae26212084fc67b42a52} 
+u32 {\bfseries root\+\_\+path\+\_\+cost}
+\item 
+\Hypertarget{structnet__bridge_a4fc1e6d235f16a699c9e489d55ab08c1}\label{structnet__bridge_a4fc1e6d235f16a699c9e489d55ab08c1} 
+u8 {\bfseries group\+\_\+addr} \+[6]\+
+\item 
+\Hypertarget{structnet__bridge_af936b59cf2187184c4a45e854027cbcd}\label{structnet__bridge_af936b59cf2187184c4a45e854027cbcd} 
+enum net\+\_\+bridge::\+ \{ ... \}  {\bfseries stp\+\_\+enabled}
+\item 
+\Hypertarget{structnet__bridge_ae17f4ec9db732fa6a7e9e4ac93ac6220}\label{structnet__bridge_ae17f4ec9db732fa6a7e9e4ac93ac6220} 
+struct \doxymbox{\hyperlink{structnet__bridge__mcast}{net\+\_\+bridge\+\_\+mcast}} {\bfseries multicast\+\_\+ctx}
+\item 
+\Hypertarget{structnet__bridge_a25ae65db8bf9eff5ca5c25eaf4bfdbd9}\label{structnet__bridge_a25ae65db8bf9eff5ca5c25eaf4bfdbd9} 
+struct \doxymbox{\hyperlink{structbridge__mcast__stats}{bridge\+\_\+mcast\+\_\+stats}} \texorpdfstring{$\ast$}{*} {\bfseries mcast\+\_\+stats}
+\item 
+\Hypertarget{structnet__bridge_ac1f67022233be9a4c8bb70126b414df5}\label{structnet__bridge_ac1f67022233be9a4c8bb70126b414df5} 
+u32 {\bfseries hash\+\_\+max}
+\item 
+\Hypertarget{structnet__bridge_ada695ebf815abb133f69612ce93d1d19}\label{structnet__bridge_ada695ebf815abb133f69612ce93d1d19} 
+spinlock\+\_\+t {\bfseries multicast\+\_\+lock}
+\item 
+\Hypertarget{structnet__bridge_ae3e4a25db6b98eb57e5e126e4f85b9c7}\label{structnet__bridge_ae3e4a25db6b98eb57e5e126e4f85b9c7} 
+struct \doxymbox{\hyperlink{structrhashtable}{rhashtable}} {\bfseries mdb\+\_\+hash\+\_\+tbl}
+\item 
+\Hypertarget{structnet__bridge_a722c4ee498a182140b8d3c800e4f4347}\label{structnet__bridge_a722c4ee498a182140b8d3c800e4f4347} 
+struct \doxymbox{\hyperlink{structrhashtable}{rhashtable}} {\bfseries sg\+\_\+port\+\_\+tbl}
+\item 
+\Hypertarget{structnet__bridge_a565b8865e6dcfdc62981b4b76e86a925}\label{structnet__bridge_a565b8865e6dcfdc62981b4b76e86a925} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries mcast\+\_\+gc\+\_\+list}
+\item 
+\Hypertarget{structnet__bridge_a552027b9b4566a49cbc07baf473bf5d4}\label{structnet__bridge_a552027b9b4566a49cbc07baf473bf5d4} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries mdb\+\_\+list}
+\item 
+\Hypertarget{structnet__bridge_a6eb8c4ce8a88de18ed471f58f789c582}\label{structnet__bridge_a6eb8c4ce8a88de18ed471f58f789c582} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries mcast\+\_\+gc\+\_\+work}
+\item 
+\Hypertarget{structnet__bridge_af6b4d7057066b9f55b337d1a81bc9bc9}\label{structnet__bridge_af6b4d7057066b9f55b337d1a81bc9bc9} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries hello\+\_\+timer}
+\item 
+\Hypertarget{structnet__bridge_a07e3b4e045d6762810fb39e8e2fdf871}\label{structnet__bridge_a07e3b4e045d6762810fb39e8e2fdf871} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries tcn\+\_\+timer}
+\item 
+\Hypertarget{structnet__bridge_a214a93328417e6124a423ce8977c5ab7}\label{structnet__bridge_a214a93328417e6124a423ce8977c5ab7} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries topology\+\_\+change\+\_\+timer}
+\item 
+\Hypertarget{structnet__bridge_a9506f7d5ba80b76d9f05efb68b23c993}\label{structnet__bridge_a9506f7d5ba80b76d9f05efb68b23c993} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries gc\+\_\+work}
+\item 
+\Hypertarget{structnet__bridge_aab9235e522965e21b3db0960fc09b7ae}\label{structnet__bridge_aab9235e522965e21b3db0960fc09b7ae} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} \texorpdfstring{$\ast$}{*} {\bfseries ifobj}
+\item 
+\Hypertarget{structnet__bridge_ae0bfe6d9758b8db67db310b94262e3ff}\label{structnet__bridge_ae0bfe6d9758b8db67db310b94262e3ff} 
+u32 {\bfseries auto\+\_\+cnt}
+\item 
+\Hypertarget{structnet__bridge_a66aadf0a2b02794ff9d365b664d53a67}\label{structnet__bridge_a66aadf0a2b02794ff9d365b664d53a67} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries fdb\+\_\+n\+\_\+learned}
+\item 
+\Hypertarget{structnet__bridge_a3af8f3cd08af8a08ee606527fbefc352}\label{structnet__bridge_a3af8f3cd08af8a08ee606527fbefc352} 
+u32 {\bfseries fdb\+\_\+max\+\_\+learned}
+\item 
+\Hypertarget{structnet__bridge_ab1ac77b5743198988bde562cff099393}\label{structnet__bridge_ab1ac77b5743198988bde562cff099393} 
+int {\bfseries last\+\_\+hwdom}
+\item 
+\Hypertarget{structnet__bridge_a57aee7918f93c256aa5bc4aa6df62478}\label{structnet__bridge_a57aee7918f93c256aa5bc4aa6df62478} 
+long unsigned int {\bfseries busy\+\_\+hwdoms}
+\item 
+\Hypertarget{structnet__bridge_affa41b3b1448631c087b39a2188b548e}\label{structnet__bridge_affa41b3b1448631c087b39a2188b548e} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries fdb\+\_\+list}
+\item 
+\Hypertarget{structnet__bridge_a31b4e359bf33a4bd1c7e3b1fc75396eb}\label{structnet__bridge_a31b4e359bf33a4bd1c7e3b1fc75396eb} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries mrp\+\_\+list}
+\item 
+\Hypertarget{structnet__bridge_a71bfcfd8d11921ac095c52454b03125c}\label{structnet__bridge_a71bfcfd8d11921ac095c52454b03125c} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries mep\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

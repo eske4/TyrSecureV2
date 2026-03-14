@@ -1,0 +1,85 @@
+\doxysection{agp\+\_\+bridge\+\_\+driver Struct Reference}
+\hypertarget{structagp__bridge__driver}{}\label{structagp__bridge__driver}\index{agp\_bridge\_driver@{agp\_bridge\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structagp__bridge__driver_afdf0c31cb9d43bca2d9e65a9e44d7b70}\label{structagp__bridge__driver_afdf0c31cb9d43bca2d9e65a9e44d7b70} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structagp__bridge__driver_aff44e7bfb332de43800d3c4ef2fde802}\label{structagp__bridge__driver_aff44e7bfb332de43800d3c4ef2fde802} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries aperture\+\_\+sizes}
+\item 
+\Hypertarget{structagp__bridge__driver_affffc349ccad43a16deb0f6fdbf27bfe}\label{structagp__bridge__driver_affffc349ccad43a16deb0f6fdbf27bfe} 
+int {\bfseries num\+\_\+aperture\+\_\+sizes}
+\item 
+\Hypertarget{structagp__bridge__driver_a47d2dd47a3ff3b16c4356c5058be122c}\label{structagp__bridge__driver_a47d2dd47a3ff3b16c4356c5058be122c} 
+enum aper\+\_\+size\+\_\+type {\bfseries size\+\_\+type}
+\item 
+\Hypertarget{structagp__bridge__driver_a101524acae25b4aa55673f27f08f7e61}\label{structagp__bridge__driver_a101524acae25b4aa55673f27f08f7e61} 
+bool {\bfseries cant\+\_\+use\+\_\+aperture}
+\item 
+\Hypertarget{structagp__bridge__driver_a9dc563dd167aabcc6750a44633523cfd}\label{structagp__bridge__driver_a9dc563dd167aabcc6750a44633523cfd} 
+bool {\bfseries needs\+\_\+scratch\+\_\+page}
+\item 
+\Hypertarget{structagp__bridge__driver_ad692def9821c7fa7e66bf54cb1184822}\label{structagp__bridge__driver_ad692def9821c7fa7e66bf54cb1184822} 
+const struct \doxymbox{\hyperlink{structgatt__mask}{gatt\+\_\+mask}} \texorpdfstring{$\ast$}{*} {\bfseries masks}
+\item 
+\Hypertarget{structagp__bridge__driver_a9f34b584bbf6db88acf6fd26871af66e}\label{structagp__bridge__driver_a9f34b584bbf6db88acf6fd26871af66e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fetch\+\_\+size} )(void)
+\item 
+\Hypertarget{structagp__bridge__driver_a7c1c5f7eac276d7d23b9eb1ce13e0192}\label{structagp__bridge__driver_a7c1c5f7eac276d7d23b9eb1ce13e0192} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries configure} )(void)
+\item 
+\Hypertarget{structagp__bridge__driver_a8f6f54cb7a9f65ea962c1bd7d38ec508}\label{structagp__bridge__driver_a8f6f54cb7a9f65ea962c1bd7d38ec508} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries agp\+\_\+enable} )(struct \doxymbox{\hyperlink{structagp__bridge__data}{agp\+\_\+bridge\+\_\+data}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structagp__bridge__driver_ad79089b8e3e1c9f04478689ca1e468ba}\label{structagp__bridge__driver_ad79089b8e3e1c9f04478689ca1e468ba} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup} )(void)
+\item 
+\Hypertarget{structagp__bridge__driver_a50c90588762ef4242aafe0cf6c91afd0}\label{structagp__bridge__driver_a50c90588762ef4242aafe0cf6c91afd0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries tlb\+\_\+flush} )(struct \doxymbox{\hyperlink{structagp__memory}{agp\+\_\+memory}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structagp__bridge__driver_a714f2aad2ff391dbb8dc7bab232f5e1d}\label{structagp__bridge__driver_a714f2aad2ff391dbb8dc7bab232f5e1d} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries mask\+\_\+memory} )(struct \doxymbox{\hyperlink{structagp__bridge__data}{agp\+\_\+bridge\+\_\+data}} \texorpdfstring{$\ast$}{*}, dma\+\_\+addr\+\_\+t, int)
+\item 
+\Hypertarget{structagp__bridge__driver_ae380adf23d5093f38d5cc5776bfd9bd0}\label{structagp__bridge__driver_ae380adf23d5093f38d5cc5776bfd9bd0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cache\+\_\+flush} )(void)
+\item 
+\Hypertarget{structagp__bridge__driver_a0bfe7c8252dc683a2f30c800176ac0c8}\label{structagp__bridge__driver_a0bfe7c8252dc683a2f30c800176ac0c8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries create\+\_\+gatt\+\_\+table} )(struct \doxymbox{\hyperlink{structagp__bridge__data}{agp\+\_\+bridge\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structagp__bridge__driver_aaf7b0b528dca7c1271f35ab93ce83131}\label{structagp__bridge__driver_aaf7b0b528dca7c1271f35ab93ce83131} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+gatt\+\_\+table} )(struct \doxymbox{\hyperlink{structagp__bridge__data}{agp\+\_\+bridge\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structagp__bridge__driver_a3cfbc36df915da21f8ae6c66cd462b5f}\label{structagp__bridge__driver_a3cfbc36df915da21f8ae6c66cd462b5f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries insert\+\_\+memory} )(struct \doxymbox{\hyperlink{structagp__memory}{agp\+\_\+memory}} \texorpdfstring{$\ast$}{*}, off\+\_\+t, int)
+\item 
+\Hypertarget{structagp__bridge__driver_a4906453b2c2d34a01a05d90d8ca61068}\label{structagp__bridge__driver_a4906453b2c2d34a01a05d90d8ca61068} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries remove\+\_\+memory} )(struct \doxymbox{\hyperlink{structagp__memory}{agp\+\_\+memory}} \texorpdfstring{$\ast$}{*}, off\+\_\+t, int)
+\item 
+\Hypertarget{structagp__bridge__driver_a26e342556b262860e088badf98ab33aa}\label{structagp__bridge__driver_a26e342556b262860e088badf98ab33aa} 
+struct \doxymbox{\hyperlink{structagp__memory}{agp\+\_\+memory}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+by\+\_\+type} )(size\+\_\+t, int)
+\item 
+\Hypertarget{structagp__bridge__driver_a2bb5dd89db3b50b3a5f84e66a0dbcd92}\label{structagp__bridge__driver_a2bb5dd89db3b50b3a5f84e66a0dbcd92} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+by\+\_\+type} )(struct \doxymbox{\hyperlink{structagp__memory}{agp\+\_\+memory}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structagp__bridge__driver_a60e6b12dcff13017d6b52b9d1d98e9b3}\label{structagp__bridge__driver_a60e6b12dcff13017d6b52b9d1d98e9b3} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries agp\+\_\+alloc\+\_\+page} )(struct \doxymbox{\hyperlink{structagp__bridge__data}{agp\+\_\+bridge\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structagp__bridge__driver_a0a2688cb5c369ffb93875f98b87eecaa}\label{structagp__bridge__driver_a0a2688cb5c369ffb93875f98b87eecaa} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries agp\+\_\+alloc\+\_\+pages} )(struct \doxymbox{\hyperlink{structagp__bridge__data}{agp\+\_\+bridge\+\_\+data}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structagp__memory}{agp\+\_\+memory}} \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structagp__bridge__driver_aed81d64260a2f3347678a193ad5c070d}\label{structagp__bridge__driver_aed81d64260a2f3347678a193ad5c070d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries agp\+\_\+destroy\+\_\+page} )(struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structagp__bridge__driver_ac2c485b9e3e4415eb1702caf03d269bc}\label{structagp__bridge__driver_ac2c485b9e3e4415eb1702caf03d269bc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries agp\+\_\+destroy\+\_\+pages} )(struct \doxymbox{\hyperlink{structagp__memory}{agp\+\_\+memory}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structagp__bridge__driver_a51bb5179f13ff24ec30a4011e6f0a7a1}\label{structagp__bridge__driver_a51bb5179f13ff24ec30a4011e6f0a7a1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries agp\+\_\+type\+\_\+to\+\_\+mask\+\_\+type} )(struct \doxymbox{\hyperlink{structagp__bridge__data}{agp\+\_\+bridge\+\_\+data}} \texorpdfstring{$\ast$}{*}, int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

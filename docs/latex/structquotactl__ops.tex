@@ -1,0 +1,43 @@
+\doxysection{quotactl\+\_\+ops Struct Reference}
+\hypertarget{structquotactl__ops}{}\label{structquotactl__ops}\index{quotactl\_ops@{quotactl\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structquotactl__ops_ad9c1eff76878cc95ad968ec45cc3f55f}\label{structquotactl__ops_ad9c1eff76878cc95ad968ec45cc3f55f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries quota\+\_\+on} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, int, int, const struct \doxymbox{\hyperlink{structpath}{path}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structquotactl__ops_a78be9f9607a3c59312228b97523c08af}\label{structquotactl__ops_a78be9f9607a3c59312228b97523c08af} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries quota\+\_\+off} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structquotactl__ops_a8ae2053ddf2b9f614c3f924e2bd17f09}\label{structquotactl__ops_a8ae2053ddf2b9f614c3f924e2bd17f09} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries quota\+\_\+enable} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structquotactl__ops_af95731a6e9bd44e4e7dfcf829b56a993}\label{structquotactl__ops_af95731a6e9bd44e4e7dfcf829b56a993} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries quota\+\_\+disable} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structquotactl__ops_ad56ff0478b0f0db665ebd2272714d1e7}\label{structquotactl__ops_ad56ff0478b0f0db665ebd2272714d1e7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries quota\+\_\+sync} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structquotactl__ops_accf6070d8a3566cd2d9354e7876dc512}\label{structquotactl__ops_accf6070d8a3566cd2d9354e7876dc512} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+info} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, int, struct \doxymbox{\hyperlink{structqc__info}{qc\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structquotactl__ops_af629cc686c136af4f41d7b0e15f62e59}\label{structquotactl__ops_af629cc686c136af4f41d7b0e15f62e59} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+dqblk} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkqid}{kqid}}, struct \doxymbox{\hyperlink{structqc__dqblk}{qc\+\_\+dqblk}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structquotactl__ops_a843d8ad5a437adfdd12132ca6c7ccd76}\label{structquotactl__ops_a843d8ad5a437adfdd12132ca6c7ccd76} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+nextdqblk} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkqid}{kqid}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structqc__dqblk}{qc\+\_\+dqblk}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structquotactl__ops_a9fb036bd4b88fb537c195081c96e1940}\label{structquotactl__ops_a9fb036bd4b88fb537c195081c96e1940} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+dqblk} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkqid}{kqid}}, struct \doxymbox{\hyperlink{structqc__dqblk}{qc\+\_\+dqblk}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structquotactl__ops_a255aae5a87b4d5e1c94f2d5c760b3b31}\label{structquotactl__ops_a255aae5a87b4d5e1c94f2d5c760b3b31} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+state} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structqc__state}{qc\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structquotactl__ops_ab5341c01544cfe86194f036bf95fee3a}\label{structquotactl__ops_ab5341c01544cfe86194f036bf95fee3a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rm\+\_\+xquota} )(struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

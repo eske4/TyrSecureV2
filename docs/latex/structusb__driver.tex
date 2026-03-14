@@ -1,0 +1,64 @@
+\doxysection{usb\+\_\+driver Struct Reference}
+\hypertarget{structusb__driver}{}\label{structusb__driver}\index{usb\_driver@{usb\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusb__driver_a945e7308377c42be3de0b36b597249d0}\label{structusb__driver_a945e7308377c42be3de0b36b597249d0} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structusb__driver_a10ed988fb1b2487a9ea8f6b0d3f52553}\label{structusb__driver_a10ed988fb1b2487a9ea8f6b0d3f52553} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structusb__device__id}{usb\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__driver_a9a49b0030e5c8c78713fa9237d6d6d3f}\label{structusb__driver_a9a49b0030e5c8c78713fa9237d6d6d3f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disconnect} )(struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__driver_aed25aedb787ffd00caf254470d95be21}\label{structusb__driver_aed25aedb787ffd00caf254470d95be21} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries unlocked\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*}, unsigned int, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__driver_af28dc4ef42b0a0688bc32b2ae10b3caf}\label{structusb__driver_af28dc4ef42b0a0688bc32b2ae10b3caf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*}, pm\+\_\+message\+\_\+t)
+\item 
+\Hypertarget{structusb__driver_a7f67c0188969847e22d1adf21851e202}\label{structusb__driver_a7f67c0188969847e22d1adf21851e202} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__driver_a2c627640175f10f7e39d953e7f780353}\label{structusb__driver_a2c627640175f10f7e39d953e7f780353} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reset\+\_\+resume} )(struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__driver_a734d06f55c26760d13bc13f224ca6e86}\label{structusb__driver_a734d06f55c26760d13bc13f224ca6e86} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pre\+\_\+reset} )(struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__driver_af53aecff9853c11aff174280402d5fbb}\label{structusb__driver_af53aecff9853c11aff174280402d5fbb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+reset} )(struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__driver_ac85a29cf88cca62cec1ca11da3cab60c}\label{structusb__driver_ac85a29cf88cca62cec1ca11da3cab60c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries shutdown} )(struct \doxymbox{\hyperlink{structusb__interface}{usb\+\_\+interface}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structusb__driver_a39e97c0711ecbff20cbda80bfcc2658a}\label{structusb__driver_a39e97c0711ecbff20cbda80bfcc2658a} 
+const struct \doxymbox{\hyperlink{structusb__device__id}{usb\+\_\+device\+\_\+id}} \texorpdfstring{$\ast$}{*} {\bfseries id\+\_\+table}
+\item 
+\Hypertarget{structusb__driver_a9c6bb5746adc629058eaef21e695aeab}\label{structusb__driver_a9c6bb5746adc629058eaef21e695aeab} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+groups}
+\item 
+\Hypertarget{structusb__driver_abaef559ffc3e0471ccc72ab6e55168cd}\label{structusb__driver_abaef559ffc3e0471ccc72ab6e55168cd} 
+struct \doxymbox{\hyperlink{structusb__dynids}{usb\+\_\+dynids}} {\bfseries dynids}
+\item 
+\Hypertarget{structusb__driver_ae7adb51f070736cc497684d6e9f037cd}\label{structusb__driver_ae7adb51f070736cc497684d6e9f037cd} 
+struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} {\bfseries driver}
+\item 
+\Hypertarget{structusb__driver_a19be01bbe9a564acdc0fd2ce8bb022fd}\label{structusb__driver_a19be01bbe9a564acdc0fd2ce8bb022fd} 
+unsigned int {\bfseries no\+\_\+dynamic\+\_\+id}:\+ 1
+\item 
+\Hypertarget{structusb__driver_a549bed7d44b8132f28373b7e7c6d5aa3}\label{structusb__driver_a549bed7d44b8132f28373b7e7c6d5aa3} 
+unsigned int {\bfseries supports\+\_\+autosuspend}:\+ 1
+\item 
+\Hypertarget{structusb__driver_a362936229aae8893a6849efd57ef7fe0}\label{structusb__driver_a362936229aae8893a6849efd57ef7fe0} 
+unsigned int {\bfseries disable\+\_\+hub\+\_\+initiated\+\_\+lpm}:\+ 1
+\item 
+\Hypertarget{structusb__driver_a1ae559392769515a860b9b1538e65c9d}\label{structusb__driver_a1ae559392769515a860b9b1538e65c9d} 
+unsigned int {\bfseries soft\+\_\+unbind}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\doxysection{rpc\+\_\+credops Struct Reference}
+\hypertarget{structrpc__credops}{}\label{structrpc__credops}\index{rpc\_credops@{rpc\_credops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrpc__credops_ab2d8a7c6d9a3c12fe4fb9ec9e339f49e}\label{structrpc__credops_ab2d8a7c6d9a3c12fe4fb9ec9e339f49e} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries cr\+\_\+name}
+\item 
+\Hypertarget{structrpc__credops_af05a99df5b7616abf48a6f2c008a80ae}\label{structrpc__credops_af05a99df5b7616abf48a6f2c008a80ae} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cr\+\_\+init} )(struct \doxymbox{\hyperlink{structrpc__auth}{rpc\+\_\+auth}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__credops_a31ff3777156e3fbb8898b6560075bb50}\label{structrpc__credops_a31ff3777156e3fbb8898b6560075bb50} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries crdestroy} )(struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__credops_afbde66364d253a73f45efcd5793cfa9f}\label{structrpc__credops_afbde66364d253a73f45efcd5793cfa9f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crmatch} )(struct \doxymbox{\hyperlink{structauth__cred}{auth\+\_\+cred}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structrpc__credops_a5e20e8e9514cbddb7486a0108d0372fa}\label{structrpc__credops_a5e20e8e9514cbddb7486a0108d0372fa} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crmarshal} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxdr__stream}{xdr\+\_\+stream}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__credops_a7372cf75206e00e47843910718b104d1}\label{structrpc__credops_a7372cf75206e00e47843910718b104d1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crrefresh} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__credops_ae8b7e3b36a45e189ef1c9b9b60fd0c5f}\label{structrpc__credops_ae8b7e3b36a45e189ef1c9b9b60fd0c5f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crvalidate} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxdr__stream}{xdr\+\_\+stream}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__credops_a219c3e9a871b29f9ff3ec66db7b4251a}\label{structrpc__credops_a219c3e9a871b29f9ff3ec66db7b4251a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crwrap\+\_\+req} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxdr__stream}{xdr\+\_\+stream}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__credops_aa39c77102dde130ad83cee312f081e98}\label{structrpc__credops_aa39c77102dde130ad83cee312f081e98} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crunwrap\+\_\+resp} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxdr__stream}{xdr\+\_\+stream}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__credops_aa4998b3ca3e797737dd75a33080fe31c}\label{structrpc__credops_aa4998b3ca3e797737dd75a33080fe31c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries crkey\+\_\+timeout} )(struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__credops_ac28f8bddf1c0eba1da44f82a1992de8b}\label{structrpc__credops_ac28f8bddf1c0eba1da44f82a1992de8b} 
+char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries crstringify\+\_\+acceptor} )(struct \doxymbox{\hyperlink{structrpc__cred}{rpc\+\_\+cred}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrpc__credops_a4e007f2b33a75b3ee8d81ec104355ffd}\label{structrpc__credops_a4e007f2b33a75b3ee8d81ec104355ffd} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries crneed\+\_\+reencode} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

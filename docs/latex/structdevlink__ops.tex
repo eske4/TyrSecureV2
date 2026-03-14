@@ -1,0 +1,163 @@
+\doxysection{devlink\+\_\+ops Struct Reference}
+\hypertarget{structdevlink__ops}{}\label{structdevlink__ops}\index{devlink\_ops@{devlink\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdevlink__ops_a2c664341cdb3ebb1776c5212928a2424}\label{structdevlink__ops_a2c664341cdb3ebb1776c5212928a2424} 
+u32 {\bfseries supported\+\_\+flash\+\_\+update\+\_\+params}
+\item 
+\Hypertarget{structdevlink__ops_a87e6fc60769f37a144ac4bb02d033e1a}\label{structdevlink__ops_a87e6fc60769f37a144ac4bb02d033e1a} 
+long unsigned int {\bfseries reload\+\_\+actions}
+\item 
+\Hypertarget{structdevlink__ops_ab1ab295d3ce3ae68b7936403e53515a8}\label{structdevlink__ops_ab1ab295d3ce3ae68b7936403e53515a8} 
+long unsigned int {\bfseries reload\+\_\+limits}
+\item 
+\Hypertarget{structdevlink__ops_a499c7c00964198320c43dde8c3d28e4e}\label{structdevlink__ops_a499c7c00964198320c43dde8c3d28e4e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reload\+\_\+down} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, bool, enum devlink\+\_\+reload\+\_\+action, enum devlink\+\_\+reload\+\_\+limit, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a008a47f1b84423464b98135694eaa5f8}\label{structdevlink__ops_a008a47f1b84423464b98135694eaa5f8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reload\+\_\+up} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, enum devlink\+\_\+reload\+\_\+action, enum devlink\+\_\+reload\+\_\+limit, u32 \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_aec7a47e3d3663db14d40c6591bbc376e}\label{structdevlink__ops_aec7a47e3d3663db14d40c6591bbc376e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+pool\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, struct \doxymbox{\hyperlink{structdevlink__sb__pool__info}{devlink\+\_\+sb\+\_\+pool\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_aeba0f8df374810534a2c514ba868ba23}\label{structdevlink__ops_aeba0f8df374810534a2c514ba868ba23} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+pool\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, u32, enum devlink\+\_\+sb\+\_\+threshold\+\_\+type, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a491872f400bb446f06ec934d11c21ddf}\label{structdevlink__ops_a491872f400bb446f06ec934d11c21ddf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+port\+\_\+pool\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a930e6284b364d6c513ef520fee51a64c}\label{structdevlink__ops_a930e6284b364d6c513ef520fee51a64c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+port\+\_\+pool\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a688472556df429e3d8cac671d4cade0d}\label{structdevlink__ops_a688472556df429e3d8cac671d4cade0d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+tc\+\_\+pool\+\_\+bind\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, enum devlink\+\_\+sb\+\_\+pool\+\_\+type, u16 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a335250b1e915273e46e53dc59af1b284}\label{structdevlink__ops_a335250b1e915273e46e53dc59af1b284} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+tc\+\_\+pool\+\_\+bind\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, enum devlink\+\_\+sb\+\_\+pool\+\_\+type, u16, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a5716d3dbd11b3f86102a972d348e8c4c}\label{structdevlink__ops_a5716d3dbd11b3f86102a972d348e8c4c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+occ\+\_\+snapshot} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structdevlink__ops_a599b688527b1b4aef0733e3d3469cc86}\label{structdevlink__ops_a599b688527b1b4aef0733e3d3469cc86} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+occ\+\_\+max\+\_\+clear} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structdevlink__ops_a727d048dc8109297832c8dd13acff47a}\label{structdevlink__ops_a727d048dc8109297832c8dd13acff47a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+occ\+\_\+port\+\_\+pool\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, u32 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a5d60a22968288813d34c6b869c3f3333}\label{structdevlink__ops_a5d60a22968288813d34c6b869c3f3333} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sb\+\_\+occ\+\_\+tc\+\_\+port\+\_\+bind\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} \texorpdfstring{$\ast$}{*}, unsigned int, u16, enum devlink\+\_\+sb\+\_\+pool\+\_\+type, u32 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a0a79e0a6b512231c8152b6f591d5007e}\label{structdevlink__ops_a0a79e0a6b512231c8152b6f591d5007e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eswitch\+\_\+mode\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, u16 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ade8e4a4e33d43843a64e879340316a52}\label{structdevlink__ops_ade8e4a4e33d43843a64e879340316a52} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eswitch\+\_\+mode\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, u16, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a40e9df1fb103be8a068b14b3c151eadc}\label{structdevlink__ops_a40e9df1fb103be8a068b14b3c151eadc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eswitch\+\_\+inline\+\_\+mode\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a961bd0472694930789194f6c2318d5dd}\label{structdevlink__ops_a961bd0472694930789194f6c2318d5dd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eswitch\+\_\+inline\+\_\+mode\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, u8, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a07fab394241c75f051e9c7d3f29a33b9}\label{structdevlink__ops_a07fab394241c75f051e9c7d3f29a33b9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eswitch\+\_\+encap\+\_\+mode\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, enum devlink\+\_\+eswitch\+\_\+encap\+\_\+mode \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ad5f37fcb136971ae251bdca814174bdf}\label{structdevlink__ops_ad5f37fcb136971ae251bdca814174bdf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eswitch\+\_\+encap\+\_\+mode\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, enum devlink\+\_\+eswitch\+\_\+encap\+\_\+mode, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ac6ab3189fa1d36c2dc592f64062828d2}\label{structdevlink__ops_ac6ab3189fa1d36c2dc592f64062828d2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries info\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevlink__info__req}{devlink\+\_\+info\+\_\+req}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ac52b0686371032ea4d1530ff6817e014}\label{structdevlink__ops_ac52b0686371032ea4d1530ff6817e014} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries flash\+\_\+update} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevlink__flash__update__params}{devlink\+\_\+flash\+\_\+update\+\_\+params}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ad15d2052baac3f05f774d0069efe8c59}\label{structdevlink__ops_ad15d2052baac3f05f774d0069efe8c59} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+init} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap}{devlink\+\_\+trap}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a158f1a5ad7be9a4b82446908a507f6d1}\label{structdevlink__ops_a158f1a5ad7be9a4b82446908a507f6d1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+fini} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap}{devlink\+\_\+trap}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ae1b7dbb2aceca2c7a97f1aa28b4fde79}\label{structdevlink__ops_ae1b7dbb2aceca2c7a97f1aa28b4fde79} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+action\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap}{devlink\+\_\+trap}} \texorpdfstring{$\ast$}{*}, enum devlink\+\_\+trap\+\_\+action, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a8c8a2f8f5947a25e5c36d0167bc0d071}\label{structdevlink__ops_a8c8a2f8f5947a25e5c36d0167bc0d071} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+group\+\_\+init} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap__group}{devlink\+\_\+trap\+\_\+group}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ac43aa630b83ef4d071c7c84b84903bd7}\label{structdevlink__ops_ac43aa630b83ef4d071c7c84b84903bd7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+group\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap__group}{devlink\+\_\+trap\+\_\+group}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap__policer}{devlink\+\_\+trap\+\_\+policer}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a272b8dee66a7116bda3646023e871374}\label{structdevlink__ops_a272b8dee66a7116bda3646023e871374} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+group\+\_\+action\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap__group}{devlink\+\_\+trap\+\_\+group}} \texorpdfstring{$\ast$}{*}, enum devlink\+\_\+trap\+\_\+action, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ac821c31e2aa518b385edd911c60e24b9}\label{structdevlink__ops_ac821c31e2aa518b385edd911c60e24b9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+drop\+\_\+counter\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap}{devlink\+\_\+trap}} \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a28eb346cacb32f08bb65066b1a9c5cb4}\label{structdevlink__ops_a28eb346cacb32f08bb65066b1a9c5cb4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+policer\+\_\+init} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap__policer}{devlink\+\_\+trap\+\_\+policer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_acd55536d61205a17c2767e8f9c5e779b}\label{structdevlink__ops_acd55536d61205a17c2767e8f9c5e779b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+policer\+\_\+fini} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap__policer}{devlink\+\_\+trap\+\_\+policer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_aa0b24d2f331f3061d92bc0bc1e7b5816}\label{structdevlink__ops_aa0b24d2f331f3061d92bc0bc1e7b5816} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+policer\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap__policer}{devlink\+\_\+trap\+\_\+policer}} \texorpdfstring{$\ast$}{*}, u64, u64, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a1410c8655d8d3f640dc7c4b1cacf90fe}\label{structdevlink__ops_a1410c8655d8d3f640dc7c4b1cacf90fe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries trap\+\_\+policer\+\_\+counter\+\_\+get} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__trap__policer}{devlink\+\_\+trap\+\_\+policer}} \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ab70cda442c0c4c51e0f002ddc7979099}\label{structdevlink__ops_ab70cda442c0c4c51e0f002ddc7979099} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries port\+\_\+new} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevlink__port__new__attrs}{devlink\+\_\+port\+\_\+new\+\_\+attrs}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevlink__port}{devlink\+\_\+port}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a4704d70b70ffe082d3e850f2112af7d9}\label{structdevlink__ops_a4704d70b70ffe082d3e850f2112af7d9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+leaf\+\_\+tx\+\_\+share\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u64, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ac155d457e6c7f13d57bc40b11e3ea181}\label{structdevlink__ops_ac155d457e6c7f13d57bc40b11e3ea181} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+leaf\+\_\+tx\+\_\+max\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u64, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a9293a2e141ea848ee2c53858d732c35a}\label{structdevlink__ops_a9293a2e141ea848ee2c53858d732c35a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+leaf\+\_\+tx\+\_\+priority\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_aa007b7ae152732068c12f5186edfcdfb}\label{structdevlink__ops_aa007b7ae152732068c12f5186edfcdfb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+leaf\+\_\+tx\+\_\+weight\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a871c931e88cd339abfc894bc876f02f0}\label{structdevlink__ops_a871c931e88cd339abfc894bc876f02f0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+leaf\+\_\+tc\+\_\+bw\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ac5e424429aa2cbb0b3a89c376004bb84}\label{structdevlink__ops_ac5e424429aa2cbb0b3a89c376004bb84} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+node\+\_\+tx\+\_\+share\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u64, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ab4988f07f8d00b9eb976140a82b92861}\label{structdevlink__ops_ab4988f07f8d00b9eb976140a82b92861} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+node\+\_\+tx\+\_\+max\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u64, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ac72d19ab7a186ade67a42cbaa25e2ca5}\label{structdevlink__ops_ac72d19ab7a186ade67a42cbaa25e2ca5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+node\+\_\+tx\+\_\+priority\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_af1ef72afc0eb968c382ed3e60775853e}\label{structdevlink__ops_af1ef72afc0eb968c382ed3e60775853e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+node\+\_\+tx\+\_\+weight\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ab0cf96ae7f98ed7b55b915cf8526b3c3}\label{structdevlink__ops_ab0cf96ae7f98ed7b55b915cf8526b3c3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+node\+\_\+tc\+\_\+bw\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a3ff950f3d13d716606ae24b16530a872}\label{structdevlink__ops_a3ff950f3d13d716606ae24b16530a872} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+node\+\_\+new} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ad51a0ed3c79ffde5e6623bed93461e4d}\label{structdevlink__ops_ad51a0ed3c79ffde5e6623bed93461e4d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+node\+\_\+del} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_a597d515aa09d4d2158692dc69336d66b}\label{structdevlink__ops_a597d515aa09d4d2158692dc69336d66b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+leaf\+\_\+parent\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_aad35755c029ee593372eb06558b51f6b}\label{structdevlink__ops_aad35755c029ee593372eb06558b51f6b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+node\+\_\+parent\+\_\+set} )(struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ab191a27e46c42ca24026ad39f9c4b44b}\label{structdevlink__ops_ab191a27e46c42ca24026ad39f9c4b44b} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries selftest\+\_\+check} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, unsigned int, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdevlink__ops_ad2dbf4bebd7d5257c9e2f5132021282d}\label{structdevlink__ops_ad2dbf4bebd7d5257c9e2f5132021282d} 
+enum devlink\+\_\+selftest\+\_\+status(\texorpdfstring{$\ast$}{*} {\bfseries selftest\+\_\+run} )(struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*}, unsigned int, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,427 @@
+\doxysection{kvm\+\_\+x86\+\_\+ops Struct Reference}
+\hypertarget{structkvm__x86__ops}{}\label{structkvm__x86__ops}\index{kvm\_x86\_ops@{kvm\_x86\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__x86__ops_acc1c9ddbe54b5a94fe065c289ab52ae9}\label{structkvm__x86__ops_acc1c9ddbe54b5a94fe065c289ab52ae9} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structkvm__x86__ops_a3ae96a387cf31c2443d1aec25a3227d7}\label{structkvm__x86__ops_a3ae96a387cf31c2443d1aec25a3227d7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+processor\+\_\+compatibility} )(void)
+\item 
+\Hypertarget{structkvm__x86__ops_a68fc49948bb20508505e3fcb1d456763}\label{structkvm__x86__ops_a68fc49948bb20508505e3fcb1d456763} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+virtualization\+\_\+cpu} )(void)
+\item 
+\Hypertarget{structkvm__x86__ops_a7fa43ba472fd7efb41d28057a1e70827}\label{structkvm__x86__ops_a7fa43ba472fd7efb41d28057a1e70827} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries disable\+\_\+virtualization\+\_\+cpu} )(void)
+\item 
+\Hypertarget{structkvm__x86__ops_a58abb31bfb652880413c198d5bffbd19}\label{structkvm__x86__ops_a58abb31bfb652880413c198d5bffbd19} 
+cpu\+\_\+emergency\+\_\+virt\+\_\+cb \texorpdfstring{$\ast$}{*} {\bfseries emergency\+\_\+disable\+\_\+virtualization\+\_\+cpu}
+\item 
+\Hypertarget{structkvm__x86__ops_a3232400485be4df865e6be0028296248}\label{structkvm__x86__ops_a3232400485be4df865e6be0028296248} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hardware\+\_\+unsetup} )(void)
+\item 
+\Hypertarget{structkvm__x86__ops_a26ef69e2e9a64e5d4c47cdf7c93e4a42}\label{structkvm__x86__ops_a26ef69e2e9a64e5d4c47cdf7c93e4a42} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries has\+\_\+emulated\+\_\+msr} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structkvm__x86__ops_acfd7ce6d5471b1743a09688679978ed0}\label{structkvm__x86__ops_acfd7ce6d5471b1743a09688679978ed0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+after\+\_\+set\+\_\+cpuid} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a6483153152d018e4ed140ab847bc5562}\label{structkvm__x86__ops_a6483153152d018e4ed140ab847bc5562} 
+unsigned int {\bfseries vm\+\_\+size}
+\item 
+\Hypertarget{structkvm__x86__ops_a61c81b58615a753fed3ed4169f7f236d}\label{structkvm__x86__ops_a61c81b58615a753fed3ed4169f7f236d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+init} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a201b8102282b0c0876c686c9a578ae05}\label{structkvm__x86__ops_a201b8102282b0c0876c686c9a578ae05} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+destroy} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ae56f189ac126116dc82125b074bf40a3}\label{structkvm__x86__ops_ae56f189ac126116dc82125b074bf40a3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+pre\+\_\+destroy} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a48dfb2a6b433266f822349dce1a80278}\label{structkvm__x86__ops_a48dfb2a6b433266f822349dce1a80278} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+precreate} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_aef4a3f0b62f10b0d2c5720015e531171}\label{structkvm__x86__ops_aef4a3f0b62f10b0d2c5720015e531171} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+create} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a63afe1920becd99f0f0db3b0ee72e24c}\label{structkvm__x86__ops_a63afe1920becd99f0f0db3b0ee72e24c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+free} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a8da278d1556508b8fe753e21067118c6}\label{structkvm__x86__ops_a8da278d1556508b8fe753e21067118c6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+reset} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structkvm__x86__ops_af0f3aa7d99da104ecec7db74ab672d7c}\label{structkvm__x86__ops_af0f3aa7d99da104ecec7db74ab672d7c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+switch\+\_\+to\+\_\+guest} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ab7a36a025be9bb93080c9329d5ddbd9c}\label{structkvm__x86__ops_ab7a36a025be9bb93080c9329d5ddbd9c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+load} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__x86__ops_aef641d684f794c1d593cd796c34a438a}\label{structkvm__x86__ops_aef641d684f794c1d593cd796c34a438a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+put} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a83afdc64ed49e5ff7ed5f0cffc16d311}\label{structkvm__x86__ops_a83afdc64ed49e5ff7ed5f0cffc16d311} 
+const u64 {\bfseries HOST\+\_\+\+OWNED\+\_\+\+DEBUGCTL}
+\item 
+\Hypertarget{structkvm__x86__ops_aed362fad9fa0c2379664504afdbd4880}\label{structkvm__x86__ops_aed362fad9fa0c2379664504afdbd4880} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+exception\+\_\+bitmap} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ae753dbad78553eed486472db0a4d6766}\label{structkvm__x86__ops_ae753dbad78553eed486472db0a4d6766} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+msr} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsr__data}{msr\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a32a4b72c9a051faf449bd776eb2eb56f}\label{structkvm__x86__ops_a32a4b72c9a051faf449bd776eb2eb56f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+msr} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmsr__data}{msr\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_abe6407948009ae9e84ec84c37887be87}\label{structkvm__x86__ops_abe6407948009ae9e84ec84c37887be87} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+segment\+\_\+base} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__x86__ops_a2004c063104f4c6bc945bc995a559d23}\label{structkvm__x86__ops_a2004c063104f4c6bc945bc995a559d23} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+segment} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__x86__ops_ac28e71c138e72e013d22254e0f21bd8d}\label{structkvm__x86__ops_ac28e71c138e72e013d22254e0f21bd8d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+cpl} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ace672c72e82dd01bf27d42fd1cfe61e0}\label{structkvm__x86__ops_ace672c72e82dd01bf27d42fd1cfe61e0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+cpl\+\_\+no\+\_\+cache} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_aff5278781445a7b241a3ab3b27ca4a6f}\label{structkvm__x86__ops_aff5278781445a7b241a3ab3b27ca4a6f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+segment} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm__segment}{kvm\+\_\+segment}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__x86__ops_aff2207e9584dc0bbaf24949ee739876e}\label{structkvm__x86__ops_aff2207e9584dc0bbaf24949ee739876e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+cs\+\_\+db\+\_\+l\+\_\+bits} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a83f4200466daad57757b177952f6e696}\label{structkvm__x86__ops_a83f4200466daad57757b177952f6e696} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+valid\+\_\+cr0} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_a6118c664f975629c74adc6797a8ef765}\label{structkvm__x86__ops_a6118c664f975629c74adc6797a8ef765} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+cr0} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_a336e657f82bd4f35065dec4c2814ca6a}\label{structkvm__x86__ops_a336e657f82bd4f35065dec4c2814ca6a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries post\+\_\+set\+\_\+cr3} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_a9c6384f21222e91ae233aeff36b903f6}\label{structkvm__x86__ops_a9c6384f21222e91ae233aeff36b903f6} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+valid\+\_\+cr4} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_a5592e1b873cfb158c3dbbc7cabef32f3}\label{structkvm__x86__ops_a5592e1b873cfb158c3dbbc7cabef32f3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+cr4} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_ac41cd9999c45c408a2b2b814ad7109a0}\label{structkvm__x86__ops_ac41cd9999c45c408a2b2b814ad7109a0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+efer} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structkvm__x86__ops_a704b32ebb2236c8cdc2d304f11e1e514}\label{structkvm__x86__ops_a704b32ebb2236c8cdc2d304f11e1e514} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+idt} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdesc__ptr}{desc\+\_\+ptr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ab931005312e7f4b9a6123f4ad725d64a}\label{structkvm__x86__ops_ab931005312e7f4b9a6123f4ad725d64a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+idt} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdesc__ptr}{desc\+\_\+ptr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ac1f840ec78589aa1191d7ef0fda1c821}\label{structkvm__x86__ops_ac1f840ec78589aa1191d7ef0fda1c821} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+gdt} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdesc__ptr}{desc\+\_\+ptr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a993ff1e00c636db98e5f05951fed5b0f}\label{structkvm__x86__ops_a993ff1e00c636db98e5f05951fed5b0f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+gdt} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdesc__ptr}{desc\+\_\+ptr}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a9083a06708c1fb1fdf6cb21726927ac9}\label{structkvm__x86__ops_a9083a06708c1fb1fdf6cb21726927ac9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+dirty\+\_\+debug\+\_\+regs} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ad5164451ff7607c4570194fc6a70a355}\label{structkvm__x86__ops_ad5164451ff7607c4570194fc6a70a355} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+dr7} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_a3e17be718fa45de791e85beb8273720d}\label{structkvm__x86__ops_a3e17be718fa45de791e85beb8273720d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cache\+\_\+reg} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, enum kvm\+\_\+reg)
+\item 
+\Hypertarget{structkvm__x86__ops_a252d392b33467b740c5b57f51669403b}\label{structkvm__x86__ops_a252d392b33467b740c5b57f51669403b} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+rflags} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_add71758d1fac4eda716bd4976d32e5c3}\label{structkvm__x86__ops_add71758d1fac4eda716bd4976d32e5c3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+rflags} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_a8302d53e8f0dbca3cb8a8507715ac98e}\label{structkvm__x86__ops_a8302d53e8f0dbca3cb8a8507715ac98e} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+if\+\_\+flag} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a8d63fc2512695abdb4284c7fc6c34d50}\label{structkvm__x86__ops_a8d63fc2512695abdb4284c7fc6c34d50} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+tlb\+\_\+all} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a187d3d99deca79b59c904beccfbafef4}\label{structkvm__x86__ops_a187d3d99deca79b59c904beccfbafef4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+tlb\+\_\+current} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a48c27f45135d64ccf110d7fd7e70ead1}\label{structkvm__x86__ops_a48c27f45135d64ccf110d7fd7e70ead1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+remote\+\_\+tlbs} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_acd540f0f94a6cadec6315436a0f95971}\label{structkvm__x86__ops_acd540f0f94a6cadec6315436a0f95971} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+remote\+\_\+tlbs\+\_\+range} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, gfn\+\_\+t, gfn\+\_\+t)
+\item 
+\Hypertarget{structkvm__x86__ops_a01f87a4a6b2b23e97f67b7c05aecca6a}\label{structkvm__x86__ops_a01f87a4a6b2b23e97f67b7c05aecca6a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+tlb\+\_\+gva} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, gva\+\_\+t)
+\item 
+\Hypertarget{structkvm__x86__ops_aff3f42ff29d15916d55fceaf80eca5ff}\label{structkvm__x86__ops_aff3f42ff29d15916d55fceaf80eca5ff} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries flush\+\_\+tlb\+\_\+guest} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_afc22e2f8b3f10b7323df2b9c28ad5048}\label{structkvm__x86__ops_afc22e2f8b3f10b7323df2b9c28ad5048} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+pre\+\_\+run} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a247ccef2337063a6e4a87f4ba41a0c97}\label{structkvm__x86__ops_a247ccef2337063a6e4a87f4ba41a0c97} 
+enum exit\+\_\+fastpath\+\_\+completion(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+run} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structkvm__x86__ops_a0e674b979967a58d55feaa9305d1a247}\label{structkvm__x86__ops_a0e674b979967a58d55feaa9305d1a247} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+exit} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, enum exit\+\_\+fastpath\+\_\+completion)
+\item 
+\Hypertarget{structkvm__x86__ops_a1bdd88caf99d524d758cff46be5b6c92}\label{structkvm__x86__ops_a1bdd88caf99d524d758cff46be5b6c92} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries skip\+\_\+emulated\+\_\+instruction} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a4fdebe172ea343208d1ed402cb419300}\label{structkvm__x86__ops_a4fdebe172ea343208d1ed402cb419300} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+emulated\+\_\+instruction} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a86c5096c8510ec1895bd6cfd8020b69b}\label{structkvm__x86__ops_a86c5096c8510ec1895bd6cfd8020b69b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+interrupt\+\_\+shadow} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__x86__ops_ab920653484e0d8faabeb9d26b878a16a}\label{structkvm__x86__ops_ab920653484e0d8faabeb9d26b878a16a} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+interrupt\+\_\+shadow} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a2a5fa8eafc3d4b53e92d697ccc8fc397}\label{structkvm__x86__ops_a2a5fa8eafc3d4b53e92d697ccc8fc397} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries patch\+\_\+hypercall} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, unsigned char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a884b8be4b1b1b85fc766381e375ef8ab}\label{structkvm__x86__ops_a884b8be4b1b1b85fc766381e375ef8ab} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inject\+\_\+irq} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structkvm__x86__ops_a35f60d3d54c41916685a6e8e60f82aed}\label{structkvm__x86__ops_a35f60d3d54c41916685a6e8e60f82aed} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inject\+\_\+nmi} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ad6b8d97f71fa950e4b79c1944e0cb15d}\label{structkvm__x86__ops_ad6b8d97f71fa950e4b79c1944e0cb15d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries inject\+\_\+exception} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ae8609da7834927de8e6b6498612d5c4f}\label{structkvm__x86__ops_ae8609da7834927de8e6b6498612d5c4f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cancel\+\_\+injection} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a92a0baea4b6606323f554134ae87cfc3}\label{structkvm__x86__ops_a92a0baea4b6606323f554134ae87cfc3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries interrupt\+\_\+allowed} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structkvm__x86__ops_a8b3c6e79f5a971916ec21f4600508f42}\label{structkvm__x86__ops_a8b3c6e79f5a971916ec21f4600508f42} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries nmi\+\_\+allowed} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structkvm__x86__ops_a11799391a8dba6dfa6173ae0c19d9c5e}\label{structkvm__x86__ops_a11799391a8dba6dfa6173ae0c19d9c5e} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+nmi\+\_\+mask} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a3fffb4c31d67346be3e750ce879d1886}\label{structkvm__x86__ops_a3fffb4c31d67346be3e750ce879d1886} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+nmi\+\_\+mask} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structkvm__x86__ops_a5b82591a9f578b6d39e529f3957dcf31}\label{structkvm__x86__ops_a5b82591a9f578b6d39e529f3957dcf31} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+vnmi\+\_\+pending} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a55c925c1c7069a8a7e55c54f7db31752}\label{structkvm__x86__ops_a55c925c1c7069a8a7e55c54f7db31752} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+vnmi\+\_\+pending} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a0b41f5da7903a0cd9e6205b2900ca86b}\label{structkvm__x86__ops_a0b41f5da7903a0cd9e6205b2900ca86b} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+nmi\+\_\+window} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_aad34a739c29a6523381edde951befd8e}\label{structkvm__x86__ops_aad34a739c29a6523381edde951befd8e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+irq\+\_\+window} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_aa43f0de15c4ec1e404f41bfc63819d6f}\label{structkvm__x86__ops_aa43f0de15c4ec1e404f41bfc63819d6f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+cr8\+\_\+intercept} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structkvm__x86__ops_a6af84c1074ed60a3797e4a48eaa746e3}\label{structkvm__x86__ops_a6af84c1074ed60a3797e4a48eaa746e3} 
+const bool {\bfseries x2apic\+\_\+icr\+\_\+is\+\_\+split}
+\item 
+\Hypertarget{structkvm__x86__ops_a8cc6ff6fbc8406fad205d7919019080e}\label{structkvm__x86__ops_a8cc6ff6fbc8406fad205d7919019080e} 
+const long unsigned int {\bfseries required\+\_\+apicv\+\_\+inhibits}
+\item 
+\Hypertarget{structkvm__x86__ops_a202f4a3e9d7f5ec4afcc59adcda6e747}\label{structkvm__x86__ops_a202f4a3e9d7f5ec4afcc59adcda6e747} 
+bool {\bfseries allow\+\_\+apicv\+\_\+in\+\_\+x2apic\+\_\+without\+\_\+x2apic\+\_\+virtualization}
+\item 
+\Hypertarget{structkvm__x86__ops_a86b06371445ac4a437aa500ecca0dc46}\label{structkvm__x86__ops_a86b06371445ac4a437aa500ecca0dc46} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries refresh\+\_\+apicv\+\_\+exec\+\_\+ctrl} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a6041922a92d8e33e679a269cf9e48223}\label{structkvm__x86__ops_a6041922a92d8e33e679a269cf9e48223} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hwapic\+\_\+isr\+\_\+update} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__x86__ops_ae2e4cf08abe2ac9c56a7e9a4eca6cb05}\label{structkvm__x86__ops_ae2e4cf08abe2ac9c56a7e9a4eca6cb05} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries load\+\_\+eoi\+\_\+exitmap} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ae816648eb38f8a3230ce74a2d897ff0e}\label{structkvm__x86__ops_ae816648eb38f8a3230ce74a2d897ff0e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+virtual\+\_\+apic\+\_\+mode} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_afe691118dfc263794f01763d32b5408c}\label{structkvm__x86__ops_afe691118dfc263794f01763d32b5408c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+apic\+\_\+access\+\_\+page\+\_\+addr} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ad31544d03a105164f73e08831cb5c2e2}\label{structkvm__x86__ops_ad31544d03a105164f73e08831cb5c2e2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries deliver\+\_\+interrupt} )(struct kvm\+\_\+lapic \texorpdfstring{$\ast$}{*}, int, int, int)
+\item 
+\Hypertarget{structkvm__x86__ops_a26e0db01576051b346bb19ae46449f75}\label{structkvm__x86__ops_a26e0db01576051b346bb19ae46449f75} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries sync\+\_\+pir\+\_\+to\+\_\+irr} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a4485518d3df27988de6418c806d76421}\label{structkvm__x86__ops_a4485518d3df27988de6418c806d76421} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+tss\+\_\+addr} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_a20e7bc0562dcab93fe8f350eb16828c6}\label{structkvm__x86__ops_a20e7bc0562dcab93fe8f350eb16828c6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+identity\+\_\+map\+\_\+addr} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, u64)
+\item 
+\Hypertarget{structkvm__x86__ops_a04432a65e3597c2c88eafe1e1edfa390}\label{structkvm__x86__ops_a04432a65e3597c2c88eafe1e1edfa390} 
+u8(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+mt\+\_\+mask} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, gfn\+\_\+t, bool)
+\item 
+\Hypertarget{structkvm__x86__ops_ad065024094bc6c61c7f2a44a72112c0e}\label{structkvm__x86__ops_ad065024094bc6c61c7f2a44a72112c0e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries load\+\_\+mmu\+\_\+pgd} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, hpa\+\_\+t, int)
+\item 
+\Hypertarget{structkvm__x86__ops_a258ecc45db11fd94653a06f60b55f14e}\label{structkvm__x86__ops_a258ecc45db11fd94653a06f60b55f14e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries link\+\_\+external\+\_\+spt} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, gfn\+\_\+t, enum pg\+\_\+level, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a1dc1995630b2334b258736691d553eaa}\label{structkvm__x86__ops_a1dc1995630b2334b258736691d553eaa} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+external\+\_\+spte} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, gfn\+\_\+t, enum pg\+\_\+level, u64)
+\item 
+\Hypertarget{structkvm__x86__ops_a384a82d3a586c5c70f2435bc37cb5eeb}\label{structkvm__x86__ops_a384a82d3a586c5c70f2435bc37cb5eeb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+external\+\_\+spt} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, gfn\+\_\+t, enum pg\+\_\+level, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_aa595c74a5a8c121843b7040263ef9be4}\label{structkvm__x86__ops_aa595c74a5a8c121843b7040263ef9be4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove\+\_\+external\+\_\+spte} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, gfn\+\_\+t, enum pg\+\_\+level, u64)
+\item 
+\Hypertarget{structkvm__x86__ops_a8e239f4ca2928e6cbe01dac5bc2f6cc9}\label{structkvm__x86__ops_a8e239f4ca2928e6cbe01dac5bc2f6cc9} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries has\+\_\+wbinvd\+\_\+exit} )(void)
+\item 
+\Hypertarget{structkvm__x86__ops_abb7e453ad8f54a1840f34d70b93ff69f}\label{structkvm__x86__ops_abb7e453ad8f54a1840f34d70b93ff69f} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+l2\+\_\+tsc\+\_\+offset} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a7691bb8da821810f83cf62850ea385dc}\label{structkvm__x86__ops_a7691bb8da821810f83cf62850ea385dc} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+l2\+\_\+tsc\+\_\+multiplier} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a7843f0d3c4f9a5c2fbfc86f6acc1cd42}\label{structkvm__x86__ops_a7843f0d3c4f9a5c2fbfc86f6acc1cd42} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+tsc\+\_\+offset} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a9960a164b6e6c46f418bec2a8b9459e8}\label{structkvm__x86__ops_a9960a164b6e6c46f418bec2a8b9459e8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+tsc\+\_\+multiplier} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a5dd996ea7b35cea24ee32fdb4a67827e}\label{structkvm__x86__ops_a5dd996ea7b35cea24ee32fdb4a67827e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+exit\+\_\+info} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_adb824be12255f67cad2aa3f5754e1394}\label{structkvm__x86__ops_adb824be12255f67cad2aa3f5754e1394} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+entry\+\_\+info} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a0da8646476107903e1b5b7eeb496a52b}\label{structkvm__x86__ops_a0da8646476107903e1b5b7eeb496a52b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+intercept} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, struct x86\+\_\+instruction\+\_\+info \texorpdfstring{$\ast$}{*}, enum x86\+\_\+intercept\+\_\+stage, struct x86\+\_\+exception \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a182425950e1ac4cd8e8c5ffdd503bb3a}\label{structkvm__x86__ops_a182425950e1ac4cd8e8c5ffdd503bb3a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+exit\+\_\+irqoff} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a3360f544ea98027b96710b3da5a7db65}\label{structkvm__x86__ops_a3360f544ea98027b96710b3da5a7db65} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+cpu\+\_\+dirty\+\_\+logging} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_adc68aec51c1f454eae5febc3ca35749a}\label{structkvm__x86__ops_adc68aec51c1f454eae5febc3ca35749a} 
+const struct \doxymbox{\hyperlink{structkvm__x86__nested__ops}{kvm\+\_\+x86\+\_\+nested\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries nested\+\_\+ops}
+\item 
+\Hypertarget{structkvm__x86__ops_a290d405d0fc81623f3f0cadce16ba8d4}\label{structkvm__x86__ops_a290d405d0fc81623f3f0cadce16ba8d4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+blocking} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a26fe278eac3115e6ace37cd0d5c4792f}\label{structkvm__x86__ops_a26fe278eac3115e6ace37cd0d5c4792f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+unblocking} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a7d573548d2c97a0cd598c6a7047f9fd7}\label{structkvm__x86__ops_a7d573548d2c97a0cd598c6a7047f9fd7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries pi\+\_\+update\+\_\+irte} )(struct kvm\+\_\+kernel\+\_\+irqfd \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, unsigned int, uint32\+\_\+t, struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structkvm__x86__ops_aa8406f169477f176750a2e62d10e16f9}\label{structkvm__x86__ops_aa8406f169477f176750a2e62d10e16f9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pi\+\_\+start\+\_\+bypass} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ad9f76f6b1a8caf593ba265d12d05268f}\label{structkvm__x86__ops_ad9f76f6b1a8caf593ba265d12d05268f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries apicv\+\_\+pre\+\_\+state\+\_\+restore} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ad6550c18f206c38ae033d52177e8680d}\label{structkvm__x86__ops_ad6550c18f206c38ae033d52177e8680d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries apicv\+\_\+post\+\_\+state\+\_\+restore} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a187ccd604d7b7acefca4cb69b28ceaa0}\label{structkvm__x86__ops_a187ccd604d7b7acefca4cb69b28ceaa0} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries dy\+\_\+apicv\+\_\+has\+\_\+pending\+\_\+interrupt} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a824214069d0dd92319d40d8deabd0643}\label{structkvm__x86__ops_a824214069d0dd92319d40d8deabd0643} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries protected\+\_\+apic\+\_\+has\+\_\+interrupt} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a25a4776263ca16b2b49c3b958cb5566d}\label{structkvm__x86__ops_a25a4776263ca16b2b49c3b958cb5566d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+hv\+\_\+timer} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, u64, bool \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_aebb10a2aab8736f0af8b0064cc833509}\label{structkvm__x86__ops_aebb10a2aab8736f0af8b0064cc833509} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cancel\+\_\+hv\+\_\+timer} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a4604d2268a6aa63762ee6a89a45f4924}\label{structkvm__x86__ops_a4604d2268a6aa63762ee6a89a45f4924} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries setup\+\_\+mce} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a0ab5f6197920c5ac0b9e19408e299d86}\label{structkvm__x86__ops_a0ab5f6197920c5ac0b9e19408e299d86} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries smi\+\_\+allowed} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structkvm__x86__ops_a5b3616193cf62100192c9dfdd41b5064}\label{structkvm__x86__ops_a5b3616193cf62100192c9dfdd41b5064} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enter\+\_\+smm} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, union kvm\+\_\+smram \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ad2103654984413a52f84ec66aba9d924}\label{structkvm__x86__ops_ad2103654984413a52f84ec66aba9d924} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries leave\+\_\+smm} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, const union kvm\+\_\+smram \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a75902b6581b8fc5bd7c3ffd9f1d3aad2}\label{structkvm__x86__ops_a75902b6581b8fc5bd7c3ffd9f1d3aad2} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+smi\+\_\+window} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ab6f88e2cc12b5f9757c09ff2f8060ed0}\label{structkvm__x86__ops_ab6f88e2cc12b5f9757c09ff2f8060ed0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+get\+\_\+attr} )(u32, u64, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ac8d4418db10bf933e17de2443cb93bd2}\label{structkvm__x86__ops_ac8d4418db10bf933e17de2443cb93bd2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mem\+\_\+enc\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ac2d384949e8f95b05f6c3688165609d3}\label{structkvm__x86__ops_ac2d384949e8f95b05f6c3688165609d3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+mem\+\_\+enc\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_aa0ca8dae6bbf230e6a75d6af9e20b92d}\label{structkvm__x86__ops_aa0ca8dae6bbf230e6a75d6af9e20b92d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+mem\+\_\+enc\+\_\+unlocked\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ac701dfac11aa88eda24c621a89acfd6f}\label{structkvm__x86__ops_ac701dfac11aa88eda24c621a89acfd6f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mem\+\_\+enc\+\_\+register\+\_\+region} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm__enc__region}{kvm\+\_\+enc\+\_\+region}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_ab9f11fd57414dc431f894bb0a37f9c7c}\label{structkvm__x86__ops_ab9f11fd57414dc431f894bb0a37f9c7c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mem\+\_\+enc\+\_\+unregister\+\_\+region} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structkvm__enc__region}{kvm\+\_\+enc\+\_\+region}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_af9181d6d2d27db870492b7390d8b305e}\label{structkvm__x86__ops_af9181d6d2d27db870492b7390d8b305e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+copy\+\_\+enc\+\_\+context\+\_\+from} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_a362780ab0955307a862b449327280b0e}\label{structkvm__x86__ops_a362780ab0955307a862b449327280b0e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries vm\+\_\+move\+\_\+enc\+\_\+context\+\_\+from} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_a584495864a6bc333207f53cdcac41338}\label{structkvm__x86__ops_a584495864a6bc333207f53cdcac41338} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries guest\+\_\+memory\+\_\+reclaimed} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a376314700f053b984ef9ed46eae0d5e2}\label{structkvm__x86__ops_a376314700f053b984ef9ed46eae0d5e2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+feature\+\_\+msr} )(u32, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_afb1380c520f261b3903abeb8a321ccfd}\label{structkvm__x86__ops_afb1380c520f261b3903abeb8a321ccfd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+emulate\+\_\+instruction} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, int, void \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__x86__ops_a566c01c69c45a8a778b040fe4ee33649}\label{structkvm__x86__ops_a566c01c69c45a8a778b040fe4ee33649} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries apic\+\_\+init\+\_\+signal\+\_\+blocked} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_aacc393f9bcf4ff4d9f01ed7582ddc28b}\label{structkvm__x86__ops_aacc393f9bcf4ff4d9f01ed7582ddc28b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+l2\+\_\+tlb\+\_\+flush} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_afea4183b5d89cc6dd945ca85c386162d}\label{structkvm__x86__ops_afea4183b5d89cc6dd945ca85c386162d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries migrate\+\_\+timers} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a0b5b5ab48cbfb8631cb59a89870d9b1c}\label{structkvm__x86__ops_a0b5b5ab48cbfb8631cb59a89870d9b1c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries recalc\+\_\+intercepts} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_aa9fb094c6d4fd37dd87f0500c2124450}\label{structkvm__x86__ops_aa9fb094c6d4fd37dd87f0500c2124450} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries complete\+\_\+emulated\+\_\+msr} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structkvm__x86__ops_a60c139d8ce46d3e375895d9f9c4e05f5}\label{structkvm__x86__ops_a60c139d8ce46d3e375895d9f9c4e05f5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+deliver\+\_\+sipi\+\_\+vector} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structkvm__x86__ops_a35741b5a537188bf3d636a683d930d69}\label{structkvm__x86__ops_a35741b5a537188bf3d636a683d930d69} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries vcpu\+\_\+get\+\_\+apicv\+\_\+inhibit\+\_\+reasons} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a7f6b09ff1e11ae0c160b3cc3ef644765}\label{structkvm__x86__ops_a7f6b09ff1e11ae0c160b3cc3ef644765} 
+gva\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+untagged\+\_\+addr} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*}, gva\+\_\+t, unsigned int)
+\item 
+\Hypertarget{structkvm__x86__ops_ab5026c6647d2ffe13173f391a3011121}\label{structkvm__x86__ops_ab5026c6647d2ffe13173f391a3011121} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+apic\+\_\+backing\+\_\+page} )(struct \doxymbox{\hyperlink{structkvm__vcpu}{kvm\+\_\+vcpu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkvm__x86__ops_a78211870ee67843821cc753614a186a5}\label{structkvm__x86__ops_a78211870ee67843821cc753614a186a5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries gmem\+\_\+prepare} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, kvm\+\_\+pfn\+\_\+t, gfn\+\_\+t, int)
+\item 
+\Hypertarget{structkvm__x86__ops_a9b5a71b5c27194041040fae807e94f21}\label{structkvm__x86__ops_a9b5a71b5c27194041040fae807e94f21} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries gmem\+\_\+invalidate} )(kvm\+\_\+pfn\+\_\+t, kvm\+\_\+pfn\+\_\+t)
+\item 
+\Hypertarget{structkvm__x86__ops_ac3f9243ec581d07104e24ab08907fcf1}\label{structkvm__x86__ops_ac3f9243ec581d07104e24ab08907fcf1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries gmem\+\_\+max\+\_\+mapping\+\_\+level} )(struct \doxymbox{\hyperlink{structkvm}{kvm}} \texorpdfstring{$\ast$}{*}, kvm\+\_\+pfn\+\_\+t, bool)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

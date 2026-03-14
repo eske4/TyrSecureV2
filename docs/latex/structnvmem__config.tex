@@ -1,0 +1,82 @@
+\doxysection{nvmem\+\_\+config Struct Reference}
+\hypertarget{structnvmem__config}{}\label{structnvmem__config}\index{nvmem\_config@{nvmem\_config}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnvmem__config_aa18636b3d0c08b61e46d056d01f0f9b0}\label{structnvmem__config_aa18636b3d0c08b61e46d056d01f0f9b0} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structnvmem__config_a260ca4e8ffe760c8fdf2ca9ae23d1390}\label{structnvmem__config_a260ca4e8ffe760c8fdf2ca9ae23d1390} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structnvmem__config_ab5459e484d8b184bf76b9ed973dc26f6}\label{structnvmem__config_ab5459e484d8b184bf76b9ed973dc26f6} 
+int {\bfseries id}
+\item 
+\Hypertarget{structnvmem__config_a7cca3f377651fe384d9b713ded79340f}\label{structnvmem__config_a7cca3f377651fe384d9b713ded79340f} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structnvmem__config_a6a702bd3219096b8b7082b02044a7461}\label{structnvmem__config_a6a702bd3219096b8b7082b02044a7461} 
+const struct \doxymbox{\hyperlink{structnvmem__cell__info}{nvmem\+\_\+cell\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries cells}
+\item 
+\Hypertarget{structnvmem__config_a26a606a71063566f2b89f4d0641dd710}\label{structnvmem__config_a26a606a71063566f2b89f4d0641dd710} 
+int {\bfseries ncells}
+\item 
+\Hypertarget{structnvmem__config_a4debb19ae94d092c6e69ae39acd628da}\label{structnvmem__config_a4debb19ae94d092c6e69ae39acd628da} 
+bool {\bfseries add\+\_\+legacy\+\_\+fixed\+\_\+of\+\_\+cells}
+\item 
+\Hypertarget{structnvmem__config_a69be0c8ba7c7b6a9d7e069819cc39380}\label{structnvmem__config_a69be0c8ba7c7b6a9d7e069819cc39380} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries fixup\+\_\+dt\+\_\+cell\+\_\+info} )(struct \doxymbox{\hyperlink{structnvmem__device}{nvmem\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnvmem__cell__info}{nvmem\+\_\+cell\+\_\+info}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnvmem__config_accb696869440e69662b5cb7d3ea72f87}\label{structnvmem__config_accb696869440e69662b5cb7d3ea72f87} 
+const struct \doxymbox{\hyperlink{structnvmem__keepout}{nvmem\+\_\+keepout}} \texorpdfstring{$\ast$}{*} {\bfseries keepout}
+\item 
+\Hypertarget{structnvmem__config_a27b274cab7e49394b0cf533553a63c4a}\label{structnvmem__config_a27b274cab7e49394b0cf533553a63c4a} 
+unsigned int {\bfseries nkeepout}
+\item 
+\Hypertarget{structnvmem__config_a6986af928d9926ca78ce6cba9452cedc}\label{structnvmem__config_a6986af928d9926ca78ce6cba9452cedc} 
+enum nvmem\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structnvmem__config_a63096339fd6e15f4f5445f91c0ecd004}\label{structnvmem__config_a63096339fd6e15f4f5445f91c0ecd004} 
+bool {\bfseries read\+\_\+only}
+\item 
+\Hypertarget{structnvmem__config_a9d38ae1e67f323835ad217ae559acb39}\label{structnvmem__config_a9d38ae1e67f323835ad217ae559acb39} 
+bool {\bfseries root\+\_\+only}
+\item 
+\Hypertarget{structnvmem__config_a33064966e232a3213abd7204a7ef76f3}\label{structnvmem__config_a33064966e232a3213abd7204a7ef76f3} 
+bool {\bfseries ignore\+\_\+wp}
+\item 
+\Hypertarget{structnvmem__config_a7d1edc928a472d886c8c3a0e92479efc}\label{structnvmem__config_a7d1edc928a472d886c8c3a0e92479efc} 
+struct \doxymbox{\hyperlink{structnvmem__layout}{nvmem\+\_\+layout}} \texorpdfstring{$\ast$}{*} {\bfseries layout}
+\item 
+\Hypertarget{structnvmem__config_ab871705a2b187d9aa0b72e78fb044dcc}\label{structnvmem__config_ab871705a2b187d9aa0b72e78fb044dcc} 
+struct \doxymbox{\hyperlink{structdevice__node}{device\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries of\+\_\+node}
+\item 
+\Hypertarget{structnvmem__config_afc15d0e144e0b09a253492dd049276b1}\label{structnvmem__config_afc15d0e144e0b09a253492dd049276b1} 
+nvmem\+\_\+reg\+\_\+read\+\_\+t {\bfseries reg\+\_\+read}
+\item 
+\Hypertarget{structnvmem__config_acb2bf882abf687b3c97fb629e4c7716c}\label{structnvmem__config_acb2bf882abf687b3c97fb629e4c7716c} 
+nvmem\+\_\+reg\+\_\+write\+\_\+t {\bfseries reg\+\_\+write}
+\item 
+\Hypertarget{structnvmem__config_a859f2629ec184a88a879b31ab2e3e6a3}\label{structnvmem__config_a859f2629ec184a88a879b31ab2e3e6a3} 
+int {\bfseries size}
+\item 
+\Hypertarget{structnvmem__config_a60936e6982455fad732d696ecdf9308e}\label{structnvmem__config_a60936e6982455fad732d696ecdf9308e} 
+int {\bfseries word\+\_\+size}
+\item 
+\Hypertarget{structnvmem__config_a8f59d17a6756d07fb026c9c26359da4c}\label{structnvmem__config_a8f59d17a6756d07fb026c9c26359da4c} 
+int {\bfseries stride}
+\item 
+\Hypertarget{structnvmem__config_ad4937c2e85e55cd3418296c50f684c10}\label{structnvmem__config_ad4937c2e85e55cd3418296c50f684c10} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv}
+\item 
+\Hypertarget{structnvmem__config_a30c72d82d0b425d71fb9eff459438ad2}\label{structnvmem__config_a30c72d82d0b425d71fb9eff459438ad2} 
+bool {\bfseries compat}
+\item 
+\Hypertarget{structnvmem__config_abdf33076bb47faa7893e9ad4be8380aa}\label{structnvmem__config_abdf33076bb47faa7893e9ad4be8380aa} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries base\+\_\+dev}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

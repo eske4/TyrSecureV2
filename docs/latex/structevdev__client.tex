@@ -1,0 +1,49 @@
+\doxysection{evdev\+\_\+client Struct Reference}
+\hypertarget{structevdev__client}{}\label{structevdev__client}\index{evdev\_client@{evdev\_client}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structevdev__client_ad67f1348642394e3a283b6bbefeec491}\label{structevdev__client_ad67f1348642394e3a283b6bbefeec491} 
+unsigned int {\bfseries head}
+\item 
+\Hypertarget{structevdev__client_a8bc5150953dfe8312cd484a5c68462fb}\label{structevdev__client_a8bc5150953dfe8312cd484a5c68462fb} 
+unsigned int {\bfseries tail}
+\item 
+\Hypertarget{structevdev__client_ad5671274d5d95217f9e7b1503c53138d}\label{structevdev__client_ad5671274d5d95217f9e7b1503c53138d} 
+unsigned int {\bfseries packet\+\_\+head}
+\item 
+\Hypertarget{structevdev__client_ae0990809d3f08c4dcd796e9cdc3ab155}\label{structevdev__client_ae0990809d3f08c4dcd796e9cdc3ab155} 
+spinlock\+\_\+t {\bfseries buffer\+\_\+lock}
+\item 
+\Hypertarget{structevdev__client_a45bf955d3935d6d5117914482a1ba243}\label{structevdev__client_a45bf955d3935d6d5117914482a1ba243} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\item 
+\Hypertarget{structevdev__client_a34ec07ac1e71e9125725292539f65bc7}\label{structevdev__client_a34ec07ac1e71e9125725292539f65bc7} 
+struct \doxymbox{\hyperlink{structfasync__struct}{fasync\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries fasync}
+\item 
+\Hypertarget{structevdev__client_aaecf626ef963cb1e00bf9c9866e33473}\label{structevdev__client_aaecf626ef963cb1e00bf9c9866e33473} 
+struct \doxymbox{\hyperlink{structevdev}{evdev}} \texorpdfstring{$\ast$}{*} {\bfseries evdev}
+\item 
+\Hypertarget{structevdev__client_a8864444c4873b77cbedc073e4e0da1f5}\label{structevdev__client_a8864444c4873b77cbedc073e4e0da1f5} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structevdev__client_af93ad2061964af6ccef5c3e531dc33bc}\label{structevdev__client_af93ad2061964af6ccef5c3e531dc33bc} 
+enum input\+\_\+clock\+\_\+type {\bfseries clk\+\_\+type}
+\item 
+\Hypertarget{structevdev__client_aff6ef36200ea1d5a8537c1fca51e2b17}\label{structevdev__client_aff6ef36200ea1d5a8537c1fca51e2b17} 
+bool {\bfseries revoked}
+\item 
+\Hypertarget{structevdev__client_abf39c01113a693df7c30fa357535366a}\label{structevdev__client_abf39c01113a693df7c30fa357535366a} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries evmasks} \+[32]\+
+\item 
+\Hypertarget{structevdev__client_a99bb065b1b08eef4870af5ab3951d51c}\label{structevdev__client_a99bb065b1b08eef4870af5ab3951d51c} 
+unsigned int {\bfseries bufsize}
+\item 
+\Hypertarget{structevdev__client_a2185ed358654dcc673ea6ae4abbe6014}\label{structevdev__client_a2185ed358654dcc673ea6ae4abbe6014} 
+struct \doxymbox{\hyperlink{structinput__event}{input\+\_\+event}} {\bfseries buffer} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

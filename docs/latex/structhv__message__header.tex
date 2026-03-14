@@ -1,0 +1,31 @@
+\doxysection{hv\+\_\+message\+\_\+header Struct Reference}
+\hypertarget{structhv__message__header}{}\label{structhv__message__header}\index{hv\_message\_header@{hv\_message\_header}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structhv__message__header_a4c3ae4b09058b37dd1699d22dfef4e4b}\label{structhv__message__header_a4c3ae4b09058b37dd1699d22dfef4e4b} 
+u32 {\bfseries message\+\_\+type}
+\item 
+\Hypertarget{structhv__message__header_ae8554baa2d281224177e2ae13b84118b}\label{structhv__message__header_ae8554baa2d281224177e2ae13b84118b} 
+u8 {\bfseries payload\+\_\+size}
+\item 
+\Hypertarget{structhv__message__header_a009af0734a45f707310e5fe49f15a43d}\label{structhv__message__header_a009af0734a45f707310e5fe49f15a43d} 
+union \doxymbox{\hyperlink{unionhv__message__flags}{hv\+\_\+message\+\_\+flags}} {\bfseries message\+\_\+flags}
+\item 
+\Hypertarget{structhv__message__header_a93d539cf0493ad153952a7d778946629}\label{structhv__message__header_a93d539cf0493ad153952a7d778946629} 
+u8 {\bfseries reserved} \+[2]\+
+\item 
+\Hypertarget{structhv__message__header_a9d8f5974230b9580fcf8e52a3347a193}\label{structhv__message__header_a9d8f5974230b9580fcf8e52a3347a193} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u64 {\bfseries sender}\\
+\>union \doxymbox{\hyperlink{unionhv__port__id}{hv\_port\_id}} {\bfseries port}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

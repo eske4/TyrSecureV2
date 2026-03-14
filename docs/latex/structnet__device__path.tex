@@ -1,0 +1,63 @@
+\doxysection{net\+\_\+device\+\_\+path Struct Reference}
+\hypertarget{structnet__device__path}{}\label{structnet__device__path}\index{net\_device\_path@{net\_device\_path}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnet__device__path_a5092ff5e60d293687243ef4b8eb56099}\label{structnet__device__path_a5092ff5e60d293687243ef4b8eb56099} 
+enum net\+\_\+device\+\_\+path\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structnet__device__path_a061802a4c587b9c45fcc1d9769f9c140}\label{structnet__device__path_a061802a4c587b9c45fcc1d9769f9c140} 
+const struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structnet__device__path_a377bf70ad3f8d3bfd550acb9da6dc8ec}\label{structnet__device__path_a377bf70ad3f8d3bfd550acb9da6dc8ec} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>u16 {\bfseries id}\\
+\>\>\_\_be16 {\bfseries proto}\\
+\>\>u8 {\bfseries h\_dest} \+[6]\+\\
+\>\} {\bfseries encap}\\
+\>struct \{\\
+\Hypertarget{structnet__device__path_1_1_0d365210245307101000065125341165262174310277263160_1_1_0d307267121178f62d3b60bcae3a4852f0631fe34dd2f_a400408b05cce77fe60cae94622420232}\label{structnet__device__path_1_1_0d365210245307101000065125341165262174310277263160_1_1_0d307267121178f62d3b60bcae3a4852f0631fe34dd2f_a400408b05cce77fe60cae94622420232} 
+\>\>union \{\\
+\>\>\>struct \doxymbox{\hyperlink{structin__addr}{in\_addr}} {\bfseries src\_v4}\\
+\>\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries src\_v6}\\
+\>\>\} \\
+\Hypertarget{structnet__device__path_1_1_0d365210245307101000065125341165262174310277263160_1_1_0d307267121178f62d3b60bcae3a4852f0631fe34dd2f_a4b2c23eb8755f94a8e58808b8771b5c7}\label{structnet__device__path_1_1_0d365210245307101000065125341165262174310277263160_1_1_0d307267121178f62d3b60bcae3a4852f0631fe34dd2f_a4b2c23eb8755f94a8e58808b8771b5c7} 
+\>\>union \{\\
+\>\>\>struct \doxymbox{\hyperlink{structin__addr}{in\_addr}} {\bfseries dst\_v4}\\
+\>\>\>struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} {\bfseries dst\_v6}\\
+\>\>\} \\
+\>\>u8 {\bfseries l3\_proto}\\
+\>\} {\bfseries tun}\\
+\>struct \{\\
+\Hypertarget{structnet__device__path_1_1_0d365210245307101000065125341165262174310277263160_1_1_0d137122005067c01728c822e2ed6f2a60c33e05a3f55_aba0e9848d2820ac70281805c6c1f9c7a}\label{structnet__device__path_1_1_0d365210245307101000065125341165262174310277263160_1_1_0d137122005067c01728c822e2ed6f2a60c33e05a3f55_aba0e9848d2820ac70281805c6c1f9c7a} 
+enum \{ {\bfseries DEV\_PATH\_BR\_VLAN\_KEEP} = 0
+, {\bfseries DEV\_PATH\_BR\_VLAN\_TAG} = 1
+, {\bfseries DEV\_PATH\_BR\_VLAN\_UNTAG} = 2
+, {\bfseries DEV\_PATH\_BR\_VLAN\_UNTAG\_HW} = 3
+ \}\\
+\>\>enum net\_device\_path:: \{ ... \}  {\bfseries vlan\_mode}\\
+\>\>u16 {\bfseries vlan\_id}\\
+\>\>\_\_be16 {\bfseries vlan\_proto}\\
+\>\} {\bfseries bridge}\\
+\>struct \{\\
+\>\>int {\bfseries port}\\
+\>\>u16 {\bfseries proto}\\
+\>\} {\bfseries dsa}\\
+\>struct \{\\
+\>\>u8 {\bfseries wdma\_idx}\\
+\>\>u8 {\bfseries queue}\\
+\>\>u16 {\bfseries wcid}\\
+\>\>u8 {\bfseries bss}\\
+\>\>u8 {\bfseries amsdu}\\
+\>\} {\bfseries mtk\_wdma}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

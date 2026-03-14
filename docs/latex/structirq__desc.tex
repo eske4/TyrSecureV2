@@ -1,0 +1,127 @@
+\doxysection{irq\+\_\+desc Struct Reference}
+\hypertarget{structirq__desc}{}\label{structirq__desc}\index{irq\_desc@{irq\_desc}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structirq__desc_a33059dc55b218583e2f2e5a6946b4ecd}\label{structirq__desc_a33059dc55b218583e2f2e5a6946b4ecd} 
+struct \doxymbox{\hyperlink{structirq__common__data}{irq\+\_\+common\+\_\+data}} {\bfseries irq\+\_\+common\+\_\+data}
+\item 
+\Hypertarget{structirq__desc_aee5d3047b53e5a0fea2be19f7f2cf05d}\label{structirq__desc_aee5d3047b53e5a0fea2be19f7f2cf05d} 
+struct \doxymbox{\hyperlink{structirq__data}{irq\+\_\+data}} {\bfseries irq\+\_\+data}
+\item 
+\Hypertarget{structirq__desc_a1edacba36433703d02c988dacf03255f}\label{structirq__desc_a1edacba36433703d02c988dacf03255f} 
+struct \doxymbox{\hyperlink{structirqstat}{irqstat}} \texorpdfstring{$\ast$}{*} {\bfseries kstat\+\_\+irqs}
+\item 
+\Hypertarget{structirq__desc_ac0f21b3a1d7fea61b31bfda54cb64681}\label{structirq__desc_ac0f21b3a1d7fea61b31bfda54cb64681} 
+irq\+\_\+flow\+\_\+handler\+\_\+t {\bfseries handle\+\_\+irq}
+\item 
+\Hypertarget{structirq__desc_a1ff7acd0dbec386c864ca21e6a4f7dc9}\label{structirq__desc_a1ff7acd0dbec386c864ca21e6a4f7dc9} 
+struct \doxymbox{\hyperlink{structirqaction}{irqaction}} \texorpdfstring{$\ast$}{*} {\bfseries action}
+\item 
+\Hypertarget{structirq__desc_af70e25ae365f85368d19ae43ef2670d0}\label{structirq__desc_af70e25ae365f85368d19ae43ef2670d0} 
+unsigned int {\bfseries status\+\_\+use\+\_\+accessors}
+\item 
+\Hypertarget{structirq__desc_a7f2302b0aa149650eeffc594c71df219}\label{structirq__desc_a7f2302b0aa149650eeffc594c71df219} 
+unsigned int {\bfseries core\+\_\+internal\+\_\+state\+\_\+\+\_\+do\+\_\+not\+\_\+mess\+\_\+with\+\_\+it}
+\item 
+\Hypertarget{structirq__desc_a506dea4f3eabd735fb9b22019fd662e1}\label{structirq__desc_a506dea4f3eabd735fb9b22019fd662e1} 
+unsigned int {\bfseries depth}
+\item 
+\Hypertarget{structirq__desc_aeab529a46425a090f2df9a7b08e23c5f}\label{structirq__desc_aeab529a46425a090f2df9a7b08e23c5f} 
+unsigned int {\bfseries wake\+\_\+depth}
+\item 
+\Hypertarget{structirq__desc_af31cb8a69af059133eb5e0de32223b71}\label{structirq__desc_af31cb8a69af059133eb5e0de32223b71} 
+unsigned int {\bfseries tot\+\_\+count}
+\item 
+\Hypertarget{structirq__desc_af57af5dea65238abe3cf88761c40e921}\label{structirq__desc_af57af5dea65238abe3cf88761c40e921} 
+unsigned int {\bfseries irq\+\_\+count}
+\item 
+\Hypertarget{structirq__desc_ae9ebe5b9b72ab6b975837743baf4298e}\label{structirq__desc_ae9ebe5b9b72ab6b975837743baf4298e} 
+long unsigned int {\bfseries last\+\_\+unhandled}
+\item 
+\Hypertarget{structirq__desc_a24450a13db19cb2581afe99615617624}\label{structirq__desc_a24450a13db19cb2581afe99615617624} 
+unsigned int {\bfseries irqs\+\_\+unhandled}
+\item 
+\Hypertarget{structirq__desc_a26ab165f1c35c4144d75dcd208d09a35}\label{structirq__desc_a26ab165f1c35c4144d75dcd208d09a35} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries threads\+\_\+handled}
+\item 
+\Hypertarget{structirq__desc_ae0283941a51560ab77501856eb2db511}\label{structirq__desc_ae0283941a51560ab77501856eb2db511} 
+int {\bfseries threads\+\_\+handled\+\_\+last}
+\item 
+\Hypertarget{structirq__desc_a926c152446419d9b1c37f0ab1a67e2fe}\label{structirq__desc_a926c152446419d9b1c37f0ab1a67e2fe} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structirq__desc_a62348dc09c8e6cfa6144e5c6665ed77a}\label{structirq__desc_a62348dc09c8e6cfa6144e5c6665ed77a} 
+struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*} {\bfseries percpu\+\_\+enabled}
+\item 
+\Hypertarget{structirq__desc_a8d5fba12ffad23162e1f8dbe64a2bd99}\label{structirq__desc_a8d5fba12ffad23162e1f8dbe64a2bd99} 
+const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*} {\bfseries affinity\+\_\+hint}
+\item 
+\Hypertarget{structirq__desc_a91d4b2229ae2db523e1a07b774095358}\label{structirq__desc_a91d4b2229ae2db523e1a07b774095358} 
+struct \doxymbox{\hyperlink{structirq__affinity__notify}{irq\+\_\+affinity\+\_\+notify}} \texorpdfstring{$\ast$}{*} {\bfseries affinity\+\_\+notify}
+\item 
+\Hypertarget{structirq__desc_a6d4afc4d22a8c4ccc88c4563fb1ad81f}\label{structirq__desc_a6d4afc4d22a8c4ccc88c4563fb1ad81f} 
+cpumask\+\_\+var\+\_\+t {\bfseries pending\+\_\+mask}
+\item 
+\Hypertarget{structirq__desc_af72cb55087d24cf1eb16c4b21f5509cf}\label{structirq__desc_af72cb55087d24cf1eb16c4b21f5509cf} 
+long unsigned int {\bfseries threads\+\_\+oneshot}
+\item 
+\Hypertarget{structirq__desc_a93841b72fffc9b8fb3cd61edf9e147cf}\label{structirq__desc_a93841b72fffc9b8fb3cd61edf9e147cf} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries threads\+\_\+active}
+\item 
+\Hypertarget{structirq__desc_a9558a1c3d685a46d6510ac8856ac8d81}\label{structirq__desc_a9558a1c3d685a46d6510ac8856ac8d81} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait\+\_\+for\+\_\+threads}
+\item 
+\Hypertarget{structirq__desc_ac68cb2eda0355ddb3bddd9a6944b1d5f}\label{structirq__desc_ac68cb2eda0355ddb3bddd9a6944b1d5f} 
+unsigned int {\bfseries nr\+\_\+actions}
+\item 
+\Hypertarget{structirq__desc_a92f9683d7e42d6bb003d0713512649a8}\label{structirq__desc_a92f9683d7e42d6bb003d0713512649a8} 
+unsigned int {\bfseries no\+\_\+suspend\+\_\+depth}
+\item 
+\Hypertarget{structirq__desc_a534476317a548e818191432b9ab43cf5}\label{structirq__desc_a534476317a548e818191432b9ab43cf5} 
+unsigned int {\bfseries cond\+\_\+suspend\+\_\+depth}
+\item 
+\Hypertarget{structirq__desc_ac867f93b8d9de0a0fece9c37320b228b}\label{structirq__desc_ac867f93b8d9de0a0fece9c37320b228b} 
+unsigned int {\bfseries force\+\_\+resume\+\_\+depth}
+\item 
+\Hypertarget{structirq__desc_a94e3e9f7714a436b8d8f6f87bd92c5ef}\label{structirq__desc_a94e3e9f7714a436b8d8f6f87bd92c5ef} 
+struct \doxymbox{\hyperlink{structproc__dir__entry}{proc\+\_\+dir\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries dir}
+\item 
+\Hypertarget{structirq__desc_aa3ba75f4943eeb5519283cd834036350}\label{structirq__desc_aa3ba75f4943eeb5519283cd834036350} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structirq__desc_ac8a66a0d6c54cc46644029b5c6036477}\label{structirq__desc_ac8a66a0d6c54cc46644029b5c6036477} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} {\bfseries kobj}
+\item 
+\Hypertarget{structirq__desc_a3e2b6823d1e7414a7d2952a32e2be856}\label{structirq__desc_a3e2b6823d1e7414a7d2952a32e2be856} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries request\+\_\+mutex}
+\item 
+\Hypertarget{structirq__desc_ac1aca63b2aa202162b62af7cf9c04401}\label{structirq__desc_ac1aca63b2aa202162b62af7cf9c04401} 
+int {\bfseries parent\+\_\+irq}
+\item 
+\Hypertarget{structirq__desc_a12a3a45684cd86fdae4f1f092a011e98}\label{structirq__desc_a12a3a45684cd86fdae4f1f092a011e98} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structirq__desc_ab3ccf9b3caecb746100a502cfd7d7056}\label{structirq__desc_ab3ccf9b3caecb746100a502cfd7d7056} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structirq__desc_acd12d445a58055ba3af247573fd8e12b}\label{structirq__desc_acd12d445a58055ba3af247573fd8e12b} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries resend\+\_\+node}
+\item 
+\Hypertarget{structirq__desc_a1f6fcc4e6321285e0851bfa0de30385c}\label{structirq__desc_a1f6fcc4e6321285e0851bfa0de30385c} 
+long :\+ 64
+\item 
+\Hypertarget{structirq__desc_a1a574663373e4cc25df712c1e683dd26}\label{structirq__desc_a1a574663373e4cc25df712c1e683dd26} 
+long :\+ 64
+\item 
+\Hypertarget{structirq__desc_a2cbac532799c50baceb05babb29cbcdf}\label{structirq__desc_a2cbac532799c50baceb05babb29cbcdf} 
+long :\+ 64
+\item 
+\Hypertarget{structirq__desc_a979364e1d6443ee74c7cbe4e17143007}\label{structirq__desc_a979364e1d6443ee74c7cbe4e17143007} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

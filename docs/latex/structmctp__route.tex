@@ -1,0 +1,54 @@
+\doxysection{mctp\+\_\+route Struct Reference}
+\hypertarget{structmctp__route}{}\label{structmctp__route}\index{mctp\_route@{mctp\_route}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmctp__route_a940b72e4c3acad8ad49f385a466982cc}\label{structmctp__route_a940b72e4c3acad8ad49f385a466982cc} 
+enum \{ {\bfseries MCTP\+\_\+\+ROUTE\+\_\+\+DIRECT} = 0
+, {\bfseries MCTP\+\_\+\+ROUTE\+\_\+\+GATEWAY} = 1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmctp__route_a1c289149be38490ead5401405b735f39}\label{structmctp__route_a1c289149be38490ead5401405b735f39} 
+mctp\+\_\+eid\+\_\+t {\bfseries min}
+\item 
+\Hypertarget{structmctp__route_a0f64f9881936c947c3752d4cfaf06b2c}\label{structmctp__route_a0f64f9881936c947c3752d4cfaf06b2c} 
+mctp\+\_\+eid\+\_\+t {\bfseries max}
+\item 
+\Hypertarget{structmctp__route_aba00011c1803515e8fc746f5af8eaba1}\label{structmctp__route_aba00011c1803515e8fc746f5af8eaba1} 
+unsigned char {\bfseries type}
+\item 
+\Hypertarget{structmctp__route_a23caf4a6b07986470e050819e4d54297}\label{structmctp__route_a23caf4a6b07986470e050819e4d54297} 
+unsigned int {\bfseries mtu}
+\item 
+\Hypertarget{structmctp__route_a9a2c3a1c35341cac0a16c5bbf952b6dc}\label{structmctp__route_a9a2c3a1c35341cac0a16c5bbf952b6dc} 
+enum mctp\+\_\+route::\+ \{ ... \}  {\bfseries dst\+\_\+type}
+\item 
+\Hypertarget{structmctp__route_a76cd5ad6554197be0dd24c7b33a657ad}\label{structmctp__route_a76cd5ad6554197be0dd24c7b33a657ad} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structmctp__dev}{mctp\_dev}} \texorpdfstring{$\ast$}{*} {\bfseries dev}\\
+\>struct \doxymbox{\hyperlink{structmctp__fq__addr}{mctp\_fq\_addr}} {\bfseries gateway}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmctp__route_a7b1bebc2267d366a33c6ad214aea3cd8}\label{structmctp__route_a7b1bebc2267d366a33c6ad214aea3cd8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries output} )(struct \doxymbox{\hyperlink{structmctp__dst}{mctp\+\_\+dst}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmctp__route_a6c97d61c9d1b1cf495eb31bb4ec2a230}\label{structmctp__route_a6c97d61c9d1b1cf495eb31bb4ec2a230} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structmctp__route_a4f668a3991975767eb20af495a6ada95}\label{structmctp__route_a4f668a3991975767eb20af495a6ada95} 
+refcount\+\_\+t {\bfseries refs}
+\item 
+\Hypertarget{structmctp__route_ac69f16a440c6a3bc0c68ea35d2725193}\label{structmctp__route_ac69f16a440c6a3bc0c68ea35d2725193} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

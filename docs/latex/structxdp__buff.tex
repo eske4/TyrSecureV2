@@ -1,0 +1,41 @@
+\doxysection{xdp\+\_\+buff Struct Reference}
+\hypertarget{structxdp__buff}{}\label{structxdp__buff}\index{xdp\_buff@{xdp\_buff}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxdp__buff_a2ff71129db4f5329a1e8e66f470343bc}\label{structxdp__buff_a2ff71129db4f5329a1e8e66f470343bc} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structxdp__buff_aa466cd00d05503bdc3b3d5e13062e655}\label{structxdp__buff_aa466cd00d05503bdc3b3d5e13062e655} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data\+\_\+end}
+\item 
+\Hypertarget{structxdp__buff_a7c830baa44cac163f3d462acffa091d0}\label{structxdp__buff_a7c830baa44cac163f3d462acffa091d0} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data\+\_\+meta}
+\item 
+\Hypertarget{structxdp__buff_af26525041c1613c09c5bd0a193e31ec3}\label{structxdp__buff_af26525041c1613c09c5bd0a193e31ec3} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data\+\_\+hard\+\_\+start}
+\item 
+\Hypertarget{structxdp__buff_a915420236e5eac41ebfff07ec9fdbdd4}\label{structxdp__buff_a915420236e5eac41ebfff07ec9fdbdd4} 
+struct \doxymbox{\hyperlink{structxdp__rxq__info}{xdp\+\_\+rxq\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries rxq}
+\item 
+\Hypertarget{structxdp__buff_acdb0491a07e4a646097095ab548dcfec}\label{structxdp__buff_acdb0491a07e4a646097095ab548dcfec} 
+struct \doxymbox{\hyperlink{structxdp__txq__info}{xdp\+\_\+txq\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries txq}
+\item 
+\Hypertarget{structxdp__buff_a4bd5d17fc246694d067db32a6f81c82e}\label{structxdp__buff_a4bd5d17fc246694d067db32a6f81c82e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionxdp__buff_1_1_0d264135347144164301002216263046177220173231171174_a7209d6f3adcd9c0d0e0a06d6a4e15b89}\label{unionxdp__buff_1_1_0d264135347144164301002216263046177220173231171174_a7209d6f3adcd9c0d0e0a06d6a4e15b89} 
+\>struct \{\\
+\>\>u32 {\bfseries frame\_sz}\\
+\>\>u32 {\bfseries flags}\\
+\>\} \\
+\>u64 {\bfseries frame\_sz\_flags\_init}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

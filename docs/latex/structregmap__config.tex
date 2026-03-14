@@ -1,0 +1,175 @@
+\doxysection{regmap\+\_\+config Struct Reference}
+\hypertarget{structregmap__config}{}\label{structregmap__config}\index{regmap\_config@{regmap\_config}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structregmap__config_a39f8fe9f40a481f6c982134b827ed11b}\label{structregmap__config_a39f8fe9f40a481f6c982134b827ed11b} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structregmap__config_abd33c94345987ed0dee31142bf8f0069}\label{structregmap__config_abd33c94345987ed0dee31142bf8f0069} 
+int {\bfseries reg\+\_\+bits}
+\item 
+\Hypertarget{structregmap__config_a2de467c88f8f8f49e4e64fe9cb303896}\label{structregmap__config_a2de467c88f8f8f49e4e64fe9cb303896} 
+int {\bfseries reg\+\_\+stride}
+\item 
+\Hypertarget{structregmap__config_a5f1a75823f6ffc55fd54e921ab20519a}\label{structregmap__config_a5f1a75823f6ffc55fd54e921ab20519a} 
+int {\bfseries reg\+\_\+shift}
+\item 
+\Hypertarget{structregmap__config_a9599fc0800195d9c2749b00be598459b}\label{structregmap__config_a9599fc0800195d9c2749b00be598459b} 
+unsigned int {\bfseries reg\+\_\+base}
+\item 
+\Hypertarget{structregmap__config_a0087588e886bd68f02152de04e5f3ca6}\label{structregmap__config_a0087588e886bd68f02152de04e5f3ca6} 
+int {\bfseries pad\+\_\+bits}
+\item 
+\Hypertarget{structregmap__config_a468ca0b656313bc2afa4a218189c65cb}\label{structregmap__config_a468ca0b656313bc2afa4a218189c65cb} 
+int {\bfseries val\+\_\+bits}
+\item 
+\Hypertarget{structregmap__config_add89066e0ce3a5f4f9ec3cf43ca25c75}\label{structregmap__config_add89066e0ce3a5f4f9ec3cf43ca25c75} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries writeable\+\_\+reg} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregmap__config_a8dfaa51e6018aa761771f11618786143}\label{structregmap__config_a8dfaa51e6018aa761771f11618786143} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries readable\+\_\+reg} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregmap__config_a7a06d1a5fcc14aad91daaac0243b12b1}\label{structregmap__config_a7a06d1a5fcc14aad91daaac0243b12b1} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries volatile\+\_\+reg} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregmap__config_adcccbfc21c489c34faaef4d8a319b899}\label{structregmap__config_adcccbfc21c489c34faaef4d8a319b899} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries precious\+\_\+reg} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregmap__config_ab5076431f2613b6c8ed9f4610f94af95}\label{structregmap__config_ab5076431f2613b6c8ed9f4610f94af95} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries writeable\+\_\+noinc\+\_\+reg} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregmap__config_a0acc0362ddc3fca0a3f20f677bf72767}\label{structregmap__config_a0acc0362ddc3fca0a3f20f677bf72767} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries readable\+\_\+noinc\+\_\+reg} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structregmap__config_a311330868f1aa183cee67b756019fcfe}\label{structregmap__config_a311330868f1aa183cee67b756019fcfe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+read} )(void \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structregmap__config_aa8dd4355e4dbdead4069d5413bc85b74}\label{structregmap__config_aa8dd4355e4dbdead4069d5413bc85b74} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+write} )(void \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structregmap__config_a69950a66e760057135ca5b1550c62c6f}\label{structregmap__config_a69950a66e760057135ca5b1550c62c6f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+update\+\_\+bits} )(void \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int, unsigned int)
+\item 
+\Hypertarget{structregmap__config_a07441607b4f042be9580b967bec91219}\label{structregmap__config_a07441607b4f042be9580b967bec91219} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read} )(void \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t, void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structregmap__config_ada6d6e7a29a8647a7d2368daa7c08f3d}\label{structregmap__config_ada6d6e7a29a8647a7d2368daa7c08f3d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write} )(void \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structregmap__config_ad71e1644bc92eb4db31f9e86fe10967b}\label{structregmap__config_ad71e1644bc92eb4db31f9e86fe10967b} 
+size\+\_\+t {\bfseries max\+\_\+raw\+\_\+read}
+\item 
+\Hypertarget{structregmap__config_a289104b79fb019999bd9c2992139b6bf}\label{structregmap__config_a289104b79fb019999bd9c2992139b6bf} 
+size\+\_\+t {\bfseries max\+\_\+raw\+\_\+write}
+\item 
+\Hypertarget{structregmap__config_afdc16bd42a93ea87e6cfb81fc094989b}\label{structregmap__config_afdc16bd42a93ea87e6cfb81fc094989b} 
+bool {\bfseries can\+\_\+sleep}
+\item 
+\Hypertarget{structregmap__config_a641f8bdc3f5919638494292a13faba15}\label{structregmap__config_a641f8bdc3f5919638494292a13faba15} 
+bool {\bfseries fast\+\_\+io}
+\item 
+\Hypertarget{structregmap__config_ae3b8ac69d2aa7ef470e523dc0246036d}\label{structregmap__config_ae3b8ac69d2aa7ef470e523dc0246036d} 
+bool {\bfseries io\+\_\+port}
+\item 
+\Hypertarget{structregmap__config_aeb7474385b11e0bfe89de4da92725831}\label{structregmap__config_aeb7474385b11e0bfe89de4da92725831} 
+bool {\bfseries disable\+\_\+locking}
+\item 
+\Hypertarget{structregmap__config_a745edd2572dddc592af62a5126bf21c7}\label{structregmap__config_a745edd2572dddc592af62a5126bf21c7} 
+regmap\+\_\+lock {\bfseries lock}
+\item 
+\Hypertarget{structregmap__config_a254c7785bc0a99a46bfec522b8d2fc43}\label{structregmap__config_a254c7785bc0a99a46bfec522b8d2fc43} 
+regmap\+\_\+unlock {\bfseries unlock}
+\item 
+\Hypertarget{structregmap__config_aa55d91a5eb45b32828cb85edeb8b1bc2}\label{structregmap__config_aa55d91a5eb45b32828cb85edeb8b1bc2} 
+void \texorpdfstring{$\ast$}{*} {\bfseries lock\+\_\+arg}
+\item 
+\Hypertarget{structregmap__config_a851c8f6aa2175bdb5bbd1bb574d57c0b}\label{structregmap__config_a851c8f6aa2175bdb5bbd1bb574d57c0b} 
+unsigned int {\bfseries max\+\_\+register}
+\item 
+\Hypertarget{structregmap__config_ac10461ddaedcf9a354823d0599bc24f6}\label{structregmap__config_ac10461ddaedcf9a354823d0599bc24f6} 
+bool {\bfseries max\+\_\+register\+\_\+is\+\_\+0}
+\item 
+\Hypertarget{structregmap__config_a02fcd6e49d21683c4a3cdd14aecd558e}\label{structregmap__config_a02fcd6e49d21683c4a3cdd14aecd558e} 
+const struct \doxymbox{\hyperlink{structregmap__access__table}{regmap\+\_\+access\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries wr\+\_\+table}
+\item 
+\Hypertarget{structregmap__config_a8175b73d8a43660919d43ac6c4b4e27d}\label{structregmap__config_a8175b73d8a43660919d43ac6c4b4e27d} 
+const struct \doxymbox{\hyperlink{structregmap__access__table}{regmap\+\_\+access\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries rd\+\_\+table}
+\item 
+\Hypertarget{structregmap__config_a57afa07ed4101395ff8d804048490206}\label{structregmap__config_a57afa07ed4101395ff8d804048490206} 
+const struct \doxymbox{\hyperlink{structregmap__access__table}{regmap\+\_\+access\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries volatile\+\_\+table}
+\item 
+\Hypertarget{structregmap__config_ab2dfa8a885a46cc234c5f77fb188e90a}\label{structregmap__config_ab2dfa8a885a46cc234c5f77fb188e90a} 
+const struct \doxymbox{\hyperlink{structregmap__access__table}{regmap\+\_\+access\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries precious\+\_\+table}
+\item 
+\Hypertarget{structregmap__config_a06088b8df239b3f6d001f9d3086687bc}\label{structregmap__config_a06088b8df239b3f6d001f9d3086687bc} 
+const struct \doxymbox{\hyperlink{structregmap__access__table}{regmap\+\_\+access\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries wr\+\_\+noinc\+\_\+table}
+\item 
+\Hypertarget{structregmap__config_a5637a640a7f9a70e94d3d3bf6cd1ec62}\label{structregmap__config_a5637a640a7f9a70e94d3d3bf6cd1ec62} 
+const struct \doxymbox{\hyperlink{structregmap__access__table}{regmap\+\_\+access\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries rd\+\_\+noinc\+\_\+table}
+\item 
+\Hypertarget{structregmap__config_aff5b2d51e13defe7b1ea1102e1d55f30}\label{structregmap__config_aff5b2d51e13defe7b1ea1102e1d55f30} 
+const struct \doxymbox{\hyperlink{structreg__default}{reg\+\_\+default}} \texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+defaults}
+\item 
+\Hypertarget{structregmap__config_a8119db63ea0e7883d960b5e5265bf3a6}\label{structregmap__config_a8119db63ea0e7883d960b5e5265bf3a6} 
+unsigned int {\bfseries num\+\_\+reg\+\_\+defaults}
+\item 
+\Hypertarget{structregmap__config_afc8abf0e9cc2bcd2cd6cf6ade03a2fdc}\label{structregmap__config_afc8abf0e9cc2bcd2cd6cf6ade03a2fdc} 
+enum regcache\+\_\+type {\bfseries cache\+\_\+type}
+\item 
+\Hypertarget{structregmap__config_a5f620f19f74bc26cefbaf0eddfed97f6}\label{structregmap__config_a5f620f19f74bc26cefbaf0eddfed97f6} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries reg\+\_\+defaults\+\_\+raw}
+\item 
+\Hypertarget{structregmap__config_af62b273b9ff2b2cc1edca1fa9786de76}\label{structregmap__config_af62b273b9ff2b2cc1edca1fa9786de76} 
+unsigned int {\bfseries num\+\_\+reg\+\_\+defaults\+\_\+raw}
+\item 
+\Hypertarget{structregmap__config_a7b8472fce2a052b18cfd5c3539c6676a}\label{structregmap__config_a7b8472fce2a052b18cfd5c3539c6676a} 
+long unsigned int {\bfseries read\+\_\+flag\+\_\+mask}
+\item 
+\Hypertarget{structregmap__config_aaa26eed5917e6e4211e9764fa0be16ee}\label{structregmap__config_aaa26eed5917e6e4211e9764fa0be16ee} 
+long unsigned int {\bfseries write\+\_\+flag\+\_\+mask}
+\item 
+\Hypertarget{structregmap__config_a338e1f78bf15aba4ba2e44c61a928323}\label{structregmap__config_a338e1f78bf15aba4ba2e44c61a928323} 
+bool {\bfseries zero\+\_\+flag\+\_\+mask}
+\item 
+\Hypertarget{structregmap__config_a3e00b8d93b5f4af7ca37b7f9c7a59f92}\label{structregmap__config_a3e00b8d93b5f4af7ca37b7f9c7a59f92} 
+bool {\bfseries use\+\_\+single\+\_\+read}
+\item 
+\Hypertarget{structregmap__config_a9639bf9d99c5d5adfbea742802a11c24}\label{structregmap__config_a9639bf9d99c5d5adfbea742802a11c24} 
+bool {\bfseries use\+\_\+single\+\_\+write}
+\item 
+\Hypertarget{structregmap__config_abcc0d361c49292ffda0ac8de6dcc31db}\label{structregmap__config_abcc0d361c49292ffda0ac8de6dcc31db} 
+bool {\bfseries use\+\_\+relaxed\+\_\+mmio}
+\item 
+\Hypertarget{structregmap__config_a108bd18c32e2ce87ff9f68a5fd07a6c2}\label{structregmap__config_a108bd18c32e2ce87ff9f68a5fd07a6c2} 
+bool {\bfseries can\+\_\+multi\+\_\+write}
+\item 
+\Hypertarget{structregmap__config_aa4cf3015bcc41ba87b35660039c71d43}\label{structregmap__config_aa4cf3015bcc41ba87b35660039c71d43} 
+bool {\bfseries use\+\_\+hwlock}
+\item 
+\Hypertarget{structregmap__config_a01eeb3cca3632e6a2fc3f790c86761e2}\label{structregmap__config_a01eeb3cca3632e6a2fc3f790c86761e2} 
+bool {\bfseries use\+\_\+raw\+\_\+spinlock}
+\item 
+\Hypertarget{structregmap__config_af92e11dc8ec616731f08db0830320dfd}\label{structregmap__config_af92e11dc8ec616731f08db0830320dfd} 
+unsigned int {\bfseries hwlock\+\_\+id}
+\item 
+\Hypertarget{structregmap__config_a07b287daec2c45c53103e476831ad6e6}\label{structregmap__config_a07b287daec2c45c53103e476831ad6e6} 
+unsigned int {\bfseries hwlock\+\_\+mode}
+\item 
+\Hypertarget{structregmap__config_a6813ab19a98a5aa28fcf9e17ea08f20f}\label{structregmap__config_a6813ab19a98a5aa28fcf9e17ea08f20f} 
+enum regmap\+\_\+endian {\bfseries reg\+\_\+format\+\_\+endian}
+\item 
+\Hypertarget{structregmap__config_a1e15480c9ce07b02a36c1a48674fac12}\label{structregmap__config_a1e15480c9ce07b02a36c1a48674fac12} 
+enum regmap\+\_\+endian {\bfseries val\+\_\+format\+\_\+endian}
+\item 
+\Hypertarget{structregmap__config_a47275bea3d34de7dee11d0a4f7fdf334}\label{structregmap__config_a47275bea3d34de7dee11d0a4f7fdf334} 
+const struct \doxymbox{\hyperlink{structregmap__range__cfg}{regmap\+\_\+range\+\_\+cfg}} \texorpdfstring{$\ast$}{*} {\bfseries ranges}
+\item 
+\Hypertarget{structregmap__config_a406f7e784467f184dcbffa20dd2eb5c6}\label{structregmap__config_a406f7e784467f184dcbffa20dd2eb5c6} 
+unsigned int {\bfseries num\+\_\+ranges}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

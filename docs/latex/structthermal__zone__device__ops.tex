@@ -1,0 +1,40 @@
+\doxysection{thermal\+\_\+zone\+\_\+device\+\_\+ops Struct Reference}
+\hypertarget{structthermal__zone__device__ops}{}\label{structthermal__zone__device__ops}\index{thermal\_zone\_device\_ops@{thermal\_zone\_device\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structthermal__zone__device__ops_a85254455c3d771ee6d1f8283f6057e19}\label{structthermal__zone__device__ops_a85254455c3d771ee6d1f8283f6057e19} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries should\+\_\+bind} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structthermal__trip}{thermal\+\_\+trip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structthermal__cooling__device}{thermal\+\_\+cooling\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structcooling__spec}{cooling\+\_\+spec}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structthermal__zone__device__ops_a7e927035152d79b59aa169d86990aea2}\label{structthermal__zone__device__ops_a7e927035152d79b59aa169d86990aea2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+temp} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structthermal__zone__device__ops_a9888f8300b93651f6df78c50f7f6702d}\label{structthermal__zone__device__ops_a9888f8300b93651f6df78c50f7f6702d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+trips} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structthermal__zone__device__ops_a38d55f6c8ddcc75d6679a39145cdc068}\label{structthermal__zone__device__ops_a38d55f6c8ddcc75d6679a39145cdc068} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries change\+\_\+mode} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, enum thermal\+\_\+device\+\_\+mode)
+\item 
+\Hypertarget{structthermal__zone__device__ops_a9f90bb7a9a6f7415cd58363320a22709}\label{structthermal__zone__device__ops_a9f90bb7a9a6f7415cd58363320a22709} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+trip\+\_\+temp} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structthermal__trip}{thermal\+\_\+trip}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structthermal__zone__device__ops_a94d254d97dd4cae43e3db4f8d1f9c5ba}\label{structthermal__zone__device__ops_a94d254d97dd4cae43e3db4f8d1f9c5ba} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+crit\+\_\+temp} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structthermal__zone__device__ops_ac925f1147ad9f4de4508d65d53fb5686}\label{structthermal__zone__device__ops_ac925f1147ad9f4de4508d65d53fb5686} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+emul\+\_\+temp} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structthermal__zone__device__ops_aaea39a4c68c8e92b432f3798e87a57a2}\label{structthermal__zone__device__ops_aaea39a4c68c8e92b432f3798e87a57a2} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+trend} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structthermal__trip}{thermal\+\_\+trip}} \texorpdfstring{$\ast$}{*}, enum thermal\+\_\+trend \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structthermal__zone__device__ops_a28187bfe910bdefd861df9e0f6fd03dc}\label{structthermal__zone__device__ops_a28187bfe910bdefd861df9e0f6fd03dc} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries hot} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structthermal__zone__device__ops_a786f9d95f5e6411ef06165d29f207d62}\label{structthermal__zone__device__ops_a786f9d95f5e6411ef06165d29f207d62} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries critical} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

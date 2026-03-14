@@ -1,0 +1,34 @@
+\doxysection{scsi\+\_\+driver Struct Reference}
+\hypertarget{structscsi__driver}{}\label{structscsi__driver}\index{scsi\_driver@{scsi\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structscsi__driver_a77712ed89a7db16b518ebbc6e8ff9a6a}\label{structscsi__driver_a77712ed89a7db16b518ebbc6e8ff9a6a} 
+struct \doxymbox{\hyperlink{structdevice__driver}{device\+\_\+driver}} {\bfseries gendrv}
+\item 
+\Hypertarget{structscsi__driver_a5243ceaac0499fa6b18e2d21dcdc70ac}\label{structscsi__driver_a5243ceaac0499fa6b18e2d21dcdc70ac} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__driver_aa12f01454b621f7cd3c0119970f78360}\label{structscsi__driver_aa12f01454b621f7cd3c0119970f78360} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries rescan} )(struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__driver_a38244963caf6bab1b679ad101a764afd}\label{structscsi__driver_a38244963caf6bab1b679ad101a764afd} 
+blk\+\_\+status\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+command} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__driver_ac38df570d02fe37368b4f21ccfe7e987}\label{structscsi__driver_ac38df570d02fe37368b4f21ccfe7e987} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries uninit\+\_\+command} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__driver_a62233f8ce582dbe5b36d9d3f5fc6879d}\label{structscsi__driver_a62233f8ce582dbe5b36d9d3f5fc6879d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries done} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structscsi__driver_aa4db78ae7786af4bc726fe130969e6ca}\label{structscsi__driver_aa4db78ae7786af4bc726fe130969e6ca} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+action} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structscsi__driver_a70d6add0e44f7d70513fe8e1d4398fad}\label{structscsi__driver_a70d6add0e44f7d70513fe8e1d4398fad} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries eh\+\_\+reset} )(struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

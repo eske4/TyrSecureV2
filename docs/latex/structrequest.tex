@@ -1,0 +1,142 @@
+\doxysection{request Struct Reference}
+\hypertarget{structrequest}{}\label{structrequest}\index{request@{request}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrequest_a0431924fb2edc969e31c1d8cd3ece0c9}\label{structrequest_a0431924fb2edc969e31c1d8cd3ece0c9} 
+struct \doxymbox{\hyperlink{structrequest__queue}{request\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries q}
+\item 
+\Hypertarget{structrequest_a1bc05f2a3013c6bc68bd97d285462f2e}\label{structrequest_a1bc05f2a3013c6bc68bd97d285462f2e} 
+struct \doxymbox{\hyperlink{structblk__mq__ctx}{blk\+\_\+mq\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries mq\+\_\+ctx}
+\item 
+\Hypertarget{structrequest_aa20c1d769d596012bf51cbb1ea347494}\label{structrequest_aa20c1d769d596012bf51cbb1ea347494} 
+struct \doxymbox{\hyperlink{structblk__mq__hw__ctx}{blk\+\_\+mq\+\_\+hw\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries mq\+\_\+hctx}
+\item 
+\Hypertarget{structrequest_a06626846eab58ffde333a9ebd303da4e}\label{structrequest_a06626846eab58ffde333a9ebd303da4e} 
+blk\+\_\+opf\+\_\+t {\bfseries cmd\+\_\+flags}
+\item 
+\Hypertarget{structrequest_aa809aa7ea2f65d7e6283679e47e23efd}\label{structrequest_aa809aa7ea2f65d7e6283679e47e23efd} 
+req\+\_\+flags\+\_\+t {\bfseries rq\+\_\+flags}
+\item 
+\Hypertarget{structrequest_a279d09f1b8eaf1702bac1cfe9bc4d355}\label{structrequest_a279d09f1b8eaf1702bac1cfe9bc4d355} 
+int {\bfseries tag}
+\item 
+\Hypertarget{structrequest_a204cb333286e6dc3de8afec60c34420a}\label{structrequest_a204cb333286e6dc3de8afec60c34420a} 
+int {\bfseries internal\+\_\+tag}
+\item 
+\Hypertarget{structrequest_acf0e766623f8c0e931ce19c3b1af06e4}\label{structrequest_acf0e766623f8c0e931ce19c3b1af06e4} 
+unsigned int {\bfseries timeout}
+\item 
+\Hypertarget{structrequest_a5c04a5310480a0af74fdf46780b29ca8}\label{structrequest_a5c04a5310480a0af74fdf46780b29ca8} 
+unsigned int {\bfseries \+\_\+\+\_\+data\+\_\+len}
+\item 
+\Hypertarget{structrequest_a99f349daed27ecd035d346b94b062a68}\label{structrequest_a99f349daed27ecd035d346b94b062a68} 
+sector\+\_\+t {\bfseries \+\_\+\+\_\+sector}
+\item 
+\Hypertarget{structrequest_a50dfd67c8af7d7ed6a71e953bbf53506}\label{structrequest_a50dfd67c8af7d7ed6a71e953bbf53506} 
+struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*} {\bfseries bio}
+\item 
+\Hypertarget{structrequest_a633bd8c5c10507652850a98a3476da4c}\label{structrequest_a633bd8c5c10507652850a98a3476da4c} 
+struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*} {\bfseries biotail}
+\item 
+\Hypertarget{structrequest_a2c90d36e04588c61eee47222ac9c2c71}\label{structrequest_a2c90d36e04588c61eee47222ac9c2c71} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries queuelist}\\
+\>struct \doxymbox{\hyperlink{structrequest}{request}} \texorpdfstring{$\ast$}{*} {\bfseries rq\_next}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structrequest_ac469fdf6976965c159ebd7f4ff26b8d4}\label{structrequest_ac469fdf6976965c159ebd7f4ff26b8d4} 
+struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries part}
+\item 
+\Hypertarget{structrequest_a8a7128cebce46e52bcf74fc5b8a1e94e}\label{structrequest_a8a7128cebce46e52bcf74fc5b8a1e94e} 
+u64 {\bfseries alloc\+\_\+time\+\_\+ns}
+\item 
+\Hypertarget{structrequest_a5a61d7628cc74ab0c6f200d383ec9f5e}\label{structrequest_a5a61d7628cc74ab0c6f200d383ec9f5e} 
+u64 {\bfseries start\+\_\+time\+\_\+ns}
+\item 
+\Hypertarget{structrequest_afbe2a4eb7e369e05f9eeafe4aa3fb96f}\label{structrequest_afbe2a4eb7e369e05f9eeafe4aa3fb96f} 
+u64 {\bfseries io\+\_\+start\+\_\+time\+\_\+ns}
+\item 
+\Hypertarget{structrequest_a35ee37669e2fd074e45b427da6ef4b31}\label{structrequest_a35ee37669e2fd074e45b427da6ef4b31} 
+short unsigned int {\bfseries wbt\+\_\+flags}
+\item 
+\Hypertarget{structrequest_a75a885d27c72ffd98e1ee75fee388e67}\label{structrequest_a75a885d27c72ffd98e1ee75fee388e67} 
+short unsigned int {\bfseries stats\+\_\+sectors}
+\item 
+\Hypertarget{structrequest_a2052414a79f24ee9a70ab5c68e2d6390}\label{structrequest_a2052414a79f24ee9a70ab5c68e2d6390} 
+short unsigned int {\bfseries nr\+\_\+phys\+\_\+segments}
+\item 
+\Hypertarget{structrequest_af6a1db62e767617ffe2da4565f312205}\label{structrequest_af6a1db62e767617ffe2da4565f312205} 
+short unsigned int {\bfseries nr\+\_\+integrity\+\_\+segments}
+\item 
+\Hypertarget{structrequest_ac57c48eda69e826ac85777afe2177b56}\label{structrequest_ac57c48eda69e826ac85777afe2177b56} 
+unsigned char {\bfseries phys\+\_\+gap\+\_\+bit}
+\item 
+\Hypertarget{structrequest_a3af21ac27d369469e512b2e86f017c52}\label{structrequest_a3af21ac27d369469e512b2e86f017c52} 
+struct \doxymbox{\hyperlink{structbio__crypt__ctx}{bio\+\_\+crypt\+\_\+ctx}} \texorpdfstring{$\ast$}{*} {\bfseries crypt\+\_\+ctx}
+\item 
+\Hypertarget{structrequest_a2bff8fce6be206c49d0f3e6c64f10c99}\label{structrequest_a2bff8fce6be206c49d0f3e6c64f10c99} 
+struct \doxymbox{\hyperlink{structblk__crypto__keyslot}{blk\+\_\+crypto\+\_\+keyslot}} \texorpdfstring{$\ast$}{*} {\bfseries crypt\+\_\+keyslot}
+\item 
+\Hypertarget{structrequest_a1932526831355accff8e849469fe280d}\label{structrequest_a1932526831355accff8e849469fe280d} 
+enum mq\+\_\+rq\+\_\+state {\bfseries state}
+\item 
+\Hypertarget{structrequest_a11578f2215e7bbcc5feb8bb92661e98e}\label{structrequest_a11578f2215e7bbcc5feb8bb92661e98e} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries ref}
+\item 
+\Hypertarget{structrequest_a95a39b86a224227ceaa61280c3bf8d66}\label{structrequest_a95a39b86a224227ceaa61280c3bf8d66} 
+long unsigned int {\bfseries deadline}
+\item 
+\Hypertarget{structrequest_a53aafffa621bc3d21fb092502b3cdd91}\label{structrequest_a53aafffa621bc3d21fb092502b3cdd91} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhlist__node}{hlist\_node}} {\bfseries hash}\\
+\>struct \doxymbox{\hyperlink{structllist__node}{llist\_node}} {\bfseries ipi\_list}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structrequest_a999eaf52ea3c08ed0469afc913d17ab8}\label{structrequest_a999eaf52ea3c08ed0469afc913d17ab8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structrb__node}{rb\_node}} {\bfseries rb\_node}\\
+\>struct \doxymbox{\hyperlink{structbio__vec}{bio\_vec}} {\bfseries special\_vec}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structrequest_a93a9166b5ddbab2b4f2973c5794f1105}\label{structrequest_a93a9166b5ddbab2b4f2973c5794f1105} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structio__cq}{io\_cq}} \texorpdfstring{$\ast$}{*} {\bfseries icq}\\
+\>void \texorpdfstring{$\ast$}{*} {\bfseries priv} \+[2]\+\\
+\} {\bfseries elv}\\
+
+\end{tabbing}\item 
+\Hypertarget{structrequest_aaa1d56f64d6c37c686d30b1be11b3bb5}\label{structrequest_aaa1d56f64d6c37c686d30b1be11b3bb5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries seq}\\
+\>rq\_end\_io\_fn \texorpdfstring{$\ast$}{*} {\bfseries saved\_end\_io}\\
+\} {\bfseries flush}\\
+
+\end{tabbing}\item 
+\Hypertarget{structrequest_a4fce35e5275bf60d7a76c4b19a7467ca}\label{structrequest_a4fce35e5275bf60d7a76c4b19a7467ca} 
+u64 {\bfseries fifo\+\_\+time}
+\item 
+\Hypertarget{structrequest_ad6dceb7cd547d1350c7689e9bfd543d5}\label{structrequest_ad6dceb7cd547d1350c7689e9bfd543d5} 
+rq\+\_\+end\+\_\+io\+\_\+fn \texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+io}
+\item 
+\Hypertarget{structrequest_a7aec1c3bbc62579640c9a0dce6de9912}\label{structrequest_a7aec1c3bbc62579640c9a0dce6de9912} 
+void \texorpdfstring{$\ast$}{*} {\bfseries end\+\_\+io\+\_\+data}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

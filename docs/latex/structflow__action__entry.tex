@@ -1,0 +1,131 @@
+\doxysection{flow\+\_\+action\+\_\+entry Struct Reference}
+\hypertarget{structflow__action__entry}{}\label{structflow__action__entry}\index{flow\_action\_entry@{flow\_action\_entry}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structflow__action__entry_af1e296d04b45499c718f530b8b7bf564}\label{structflow__action__entry_af1e296d04b45499c718f530b8b7bf564} 
+enum flow\+\_\+action\+\_\+id {\bfseries id}
+\item 
+\Hypertarget{structflow__action__entry_a6ee7258ad667cd91e7305b2c68968e18}\label{structflow__action__entry_a6ee7258ad667cd91e7305b2c68968e18} 
+u32 {\bfseries hw\+\_\+index}
+\item 
+\Hypertarget{structflow__action__entry_a0e454b3759ea750b5952953f244c9adf}\label{structflow__action__entry_a0e454b3759ea750b5952953f244c9adf} 
+long unsigned int {\bfseries cookie}
+\item 
+\Hypertarget{structflow__action__entry_a1ec685263df34f1f6f69c6aa6a87e558}\label{structflow__action__entry_a1ec685263df34f1f6f69c6aa6a87e558} 
+u64 {\bfseries miss\+\_\+cookie}
+\item 
+\Hypertarget{structflow__action__entry_aacf707058c2a9bdee01016d563ce17de}\label{structflow__action__entry_aacf707058c2a9bdee01016d563ce17de} 
+enum flow\+\_\+action\+\_\+hw\+\_\+stats {\bfseries hw\+\_\+stats}
+\item 
+\Hypertarget{structflow__action__entry_adf101beb8eaa801242224f673a346f54}\label{structflow__action__entry_adf101beb8eaa801242224f673a346f54} 
+action\+\_\+destr {\bfseries destructor}
+\item 
+\Hypertarget{structflow__action__entry_a722010a31da04bc54da24683e27fe056}\label{structflow__action__entry_a722010a31da04bc54da24683e27fe056} 
+void \texorpdfstring{$\ast$}{*} {\bfseries destructor\+\_\+priv}
+\item 
+\Hypertarget{structflow__action__entry_a8a9b6a1ead6baf823ca5899fedf05666}\label{structflow__action__entry_a8a9b6a1ead6baf823ca5899fedf05666} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries chain\_index}\\
+\>struct \doxymbox{\hyperlink{structnet__device}{net\_device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}\\
+\>struct \{\\
+\>\>u16 {\bfseries vid}\\
+\>\>\_\_be16 {\bfseries proto}\\
+\>\>u8 {\bfseries prio}\\
+\>\} {\bfseries vlan}\\
+\>struct \{\\
+\>\>unsigned char {\bfseries dst} \+[6]\+\\
+\>\>unsigned char {\bfseries src} \+[6]\+\\
+\>\} {\bfseries vlan\_push\_eth}\\
+\>struct \{\\
+\>\>enum flow\_action\_mangle\_base {\bfseries htype}\\
+\>\>u32 {\bfseries offset}\\
+\>\>u32 {\bfseries mask}\\
+\>\>u32 {\bfseries val}\\
+\>\} {\bfseries mangle}\\
+\>struct \doxymbox{\hyperlink{structip__tunnel__info}{ip\_tunnel\_info}} \texorpdfstring{$\ast$}{*} {\bfseries tunnel}\\
+\>u32 {\bfseries csum\_flags}\\
+\>u32 {\bfseries mark}\\
+\>u16 {\bfseries ptype}\\
+\>u16 {\bfseries rx\_queue}\\
+\>u32 {\bfseries priority}\\
+\>struct \{\\
+\>\>u32 {\bfseries ctx}\\
+\>\>u32 {\bfseries index}\\
+\>\>u8 {\bfseries vf}\\
+\>\} {\bfseries queue}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structpsample__group}{psample\_group}} \texorpdfstring{$\ast$}{*} {\bfseries psample\_group}\\
+\>\>u32 {\bfseries rate}\\
+\>\>u32 {\bfseries trunc\_size}\\
+\>\>bool {\bfseries truncate}\\
+\>\} {\bfseries sample}\\
+\>struct \{\\
+\>\>u32 {\bfseries burst}\\
+\>\>u64 {\bfseries rate\_bytes\_ps}\\
+\>\>u64 {\bfseries peakrate\_bytes\_ps}\\
+\>\>u32 {\bfseries avrate}\\
+\>\>u16 {\bfseries overhead}\\
+\>\>u64 {\bfseries burst\_pkt}\\
+\>\>u64 {\bfseries rate\_pkt\_ps}\\
+\>\>u32 {\bfseries mtu}\\
+\>\>struct \{\\
+\>\>\>enum flow\_action\_id {\bfseries act\_id}\\
+\>\>\>u32 {\bfseries extval}\\
+\>\>\} {\bfseries exceed}\\
+\>\>struct \{\\
+\>\>\>enum flow\_action\_id {\bfseries act\_id}\\
+\>\>\>u32 {\bfseries extval}\\
+\>\>\} {\bfseries notexceed}\\
+\>\} {\bfseries police}\\
+\>struct \{\\
+\>\>int {\bfseries action}\\
+\>\>u16 {\bfseries zone}\\
+\>\>struct nf\_flowtable \texorpdfstring{$\ast$}{*} {\bfseries flow\_table}\\
+\>\} {\bfseries ct}\\
+\>struct \{\\
+\>\>long unsigned int {\bfseries cookie}\\
+\>\>u32 {\bfseries mark}\\
+\>\>u32 {\bfseries labels} \+[4]\+\\
+\>\>bool {\bfseries orig\_dir}\\
+\>\} {\bfseries ct\_metadata}\\
+\>struct \{\\
+\>\>u32 {\bfseries label}\\
+\>\>\_\_be16 {\bfseries proto}\\
+\>\>u8 {\bfseries tc}\\
+\>\>u8 {\bfseries bos}\\
+\>\>u8 {\bfseries ttl}\\
+\>\} {\bfseries mpls\_push}\\
+\>struct \{\\
+\>\>\_\_be16 {\bfseries proto}\\
+\>\} {\bfseries mpls\_pop}\\
+\>struct \{\\
+\>\>u32 {\bfseries label}\\
+\>\>u8 {\bfseries tc}\\
+\>\>u8 {\bfseries bos}\\
+\>\>u8 {\bfseries ttl}\\
+\>\} {\bfseries mpls\_mangle}\\
+\>struct \{\\
+\>\>s32 {\bfseries prio}\\
+\>\>u64 {\bfseries basetime}\\
+\>\>u64 {\bfseries cycletime}\\
+\>\>u64 {\bfseries cycletimeext}\\
+\>\>u32 {\bfseries num\_entries}\\
+\>\>struct \doxymbox{\hyperlink{structaction__gate__entry}{action\_gate\_entry}} \texorpdfstring{$\ast$}{*} {\bfseries entries}\\
+\>\} {\bfseries gate}\\
+\>struct \{\\
+\>\>u16 {\bfseries sid}\\
+\>\} {\bfseries pppoe}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structflow__action__entry_a41bcb63053fea584469f2bcb4a1ce5ae}\label{structflow__action__entry_a41bcb63053fea584469f2bcb4a1ce5ae} 
+struct \doxymbox{\hyperlink{structflow__action__cookie}{flow\+\_\+action\+\_\+cookie}} \texorpdfstring{$\ast$}{*} {\bfseries user\+\_\+cookie}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

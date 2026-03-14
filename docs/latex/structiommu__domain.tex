@@ -1,0 +1,55 @@
+\doxysection{iommu\+\_\+domain Struct Reference}
+\hypertarget{structiommu__domain}{}\label{structiommu__domain}\index{iommu\_domain@{iommu\_domain}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structiommu__domain_ad322a04adb32cb8b067f7c18fa8884f8}\label{structiommu__domain_ad322a04adb32cb8b067f7c18fa8884f8} 
+unsigned int {\bfseries type}
+\item 
+\Hypertarget{structiommu__domain_a037de8bb631ed72435b4f9a7249eeb62}\label{structiommu__domain_a037de8bb631ed72435b4f9a7249eeb62} 
+enum iommu\+\_\+domain\+\_\+cookie\+\_\+type {\bfseries cookie\+\_\+type}
+\item 
+\Hypertarget{structiommu__domain_acf7a14f64b172dfb39bc2b270dc856e5}\label{structiommu__domain_acf7a14f64b172dfb39bc2b270dc856e5} 
+const struct \doxymbox{\hyperlink{structiommu__domain__ops}{iommu\+\_\+domain\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structiommu__domain_affc39a7cba36243ef6d763e7aed5dd9b}\label{structiommu__domain_affc39a7cba36243ef6d763e7aed5dd9b} 
+const struct \doxymbox{\hyperlink{structiommu__dirty__ops}{iommu\+\_\+dirty\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries dirty\+\_\+ops}
+\item 
+\Hypertarget{structiommu__domain_a07c8f53583d10ac1be8010f9ba1394f1}\label{structiommu__domain_a07c8f53583d10ac1be8010f9ba1394f1} 
+const struct \doxymbox{\hyperlink{structiommu__ops}{iommu\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structiommu__domain_adcc1343b704cc73f5eb9a68c5f3a9bb0}\label{structiommu__domain_adcc1343b704cc73f5eb9a68c5f3a9bb0} 
+long unsigned int {\bfseries pgsize\+\_\+bitmap}
+\item 
+\Hypertarget{structiommu__domain_a69253a784f58c5232a00e3c585c69c0a}\label{structiommu__domain_a69253a784f58c5232a00e3c585c69c0a} 
+struct \doxymbox{\hyperlink{structiommu__domain__geometry}{iommu\+\_\+domain\+\_\+geometry}} {\bfseries geometry}
+\item 
+\Hypertarget{structiommu__domain_ab5cf3cc4121bd280d826b55c90200c72}\label{structiommu__domain_ab5cf3cc4121bd280d826b55c90200c72} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries iopf\+\_\+handler} )(struct \doxymbox{\hyperlink{structiopf__group}{iopf\+\_\+group}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structiommu__domain_a4bf37c80ac4d2111721004e03884c1ec}\label{structiommu__domain_a4bf37c80ac4d2111721004e03884c1ec} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structiommu__dma__cookie}{iommu\_dma\_cookie}} \texorpdfstring{$\ast$}{*} {\bfseries iova\_cookie}\\
+\>struct \doxymbox{\hyperlink{structiommu__dma__msi__cookie}{iommu\_dma\_msi\_cookie}} \texorpdfstring{$\ast$}{*} {\bfseries msi\_cookie}\\
+\>struct \doxymbox{\hyperlink{structiommufd__hw__pagetable}{iommufd\_hw\_pagetable}} \texorpdfstring{$\ast$}{*} {\bfseries iommufd\_hwpt}\\
+\Hypertarget{unioniommu__domain_1_1_0d322242127076001067051331155262273344274112007031_aedb05ef8d2c185fc955c0ef1c7cd4828}\label{unioniommu__domain_1_1_0d322242127076001067051331155262273344274112007031_aedb05ef8d2c185fc955c0ef1c7cd4828} 
+\>struct \{\\
+\>\>iommu\_fault\_handler\_t {\bfseries handler}\\
+\>\>void \texorpdfstring{$\ast$}{*} {\bfseries handler\_token}\\
+\>\} \\
+\Hypertarget{unioniommu__domain_1_1_0d322242127076001067051331155262273344274112007031_a48a3b92e81cb9f080177bb556c3b6011}\label{unioniommu__domain_1_1_0d322242127076001067051331155262273344274112007031_a48a3b92e81cb9f080177bb556c3b6011} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structmm__struct}{mm\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries mm}\\
+\>\>int {\bfseries users}\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries next}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

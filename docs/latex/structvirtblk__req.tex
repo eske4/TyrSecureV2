@@ -1,0 +1,34 @@
+\doxysection{virtblk\+\_\+req Struct Reference}
+\hypertarget{structvirtblk__req}{}\label{structvirtblk__req}\index{virtblk\_req@{virtblk\_req}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtblk__req_a8e71852715b3e78d1d4cf64b86f8bea2}\label{structvirtblk__req_a8e71852715b3e78d1d4cf64b86f8bea2} 
+struct \doxymbox{\hyperlink{structvirtio__blk__outhdr}{virtio\+\_\+blk\+\_\+outhdr}} {\bfseries out\+\_\+hdr}
+\item 
+\Hypertarget{structvirtblk__req_ade499d7b9078e52aa2a9f25a77955681}\label{structvirtblk__req_ade499d7b9078e52aa2a9f25a77955681} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u8 {\bfseries status}\\
+\>struct \{\\
+\>\>\_\_virtio64 {\bfseries sector}\\
+\>\>u8 {\bfseries status}\\
+\>\} {\bfseries zone\_append}\\
+\} {\bfseries in\_hdr}\\
+
+\end{tabbing}\item 
+\Hypertarget{structvirtblk__req_af204709e87f0eda3ecdd96cda069e748}\label{structvirtblk__req_af204709e87f0eda3ecdd96cda069e748} 
+size\+\_\+t {\bfseries in\+\_\+hdr\+\_\+len}
+\item 
+\Hypertarget{structvirtblk__req_a25de3fc1790688f7576407305a5aaddc}\label{structvirtblk__req_a25de3fc1790688f7576407305a5aaddc} 
+struct \doxymbox{\hyperlink{structsg__table}{sg\+\_\+table}} {\bfseries sg\+\_\+table}
+\item 
+\Hypertarget{structvirtblk__req_a321d3d08f5b89d9bd29523a9c98ae1ba}\label{structvirtblk__req_a321d3d08f5b89d9bd29523a9c98ae1ba} 
+struct \doxymbox{\hyperlink{structscatterlist}{scatterlist}} {\bfseries sg} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

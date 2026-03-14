@@ -1,0 +1,67 @@
+\doxysection{sctp\+\_\+endpoint Struct Reference}
+\hypertarget{structsctp__endpoint}{}\label{structsctp__endpoint}\index{sctp\_endpoint@{sctp\_endpoint}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsctp__endpoint_ad67ca17cb5df3a66876dac63856ac0a1}\label{structsctp__endpoint_ad67ca17cb5df3a66876dac63856ac0a1} 
+struct \doxymbox{\hyperlink{structsctp__ep__common}{sctp\+\_\+ep\+\_\+common}} {\bfseries base}
+\item 
+\Hypertarget{structsctp__endpoint_a76f2f3da5d9574b383b0637a1723a069}\label{structsctp__endpoint_a76f2f3da5d9574b383b0637a1723a069} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries node}
+\item 
+\Hypertarget{structsctp__endpoint_a60b6db40a4c80b563528530f24c9ac8c}\label{structsctp__endpoint_a60b6db40a4c80b563528530f24c9ac8c} 
+int {\bfseries hashent}
+\item 
+\Hypertarget{structsctp__endpoint_adb5d5fffcb3ed077400e34ffd3ce510f}\label{structsctp__endpoint_adb5d5fffcb3ed077400e34ffd3ce510f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries asocs}
+\item 
+\Hypertarget{structsctp__endpoint_a5d7e7d0a4e8694105a2a698b44ad90c2}\label{structsctp__endpoint_a5d7e7d0a4e8694105a2a698b44ad90c2} 
+struct \doxymbox{\hyperlink{structhmac__sha256__key}{hmac\+\_\+sha256\+\_\+key}} {\bfseries cookie\+\_\+auth\+\_\+key}
+\item 
+\Hypertarget{structsctp__endpoint_a43ad06043c84cc68b7190f854f907af3}\label{structsctp__endpoint_a43ad06043c84cc68b7190f854f907af3} 
+\+\_\+\+\_\+u32 {\bfseries sndbuf\+\_\+policy}
+\item 
+\Hypertarget{structsctp__endpoint_a9ab6e680cf3ac0460d7d7bc7b680bade}\label{structsctp__endpoint_a9ab6e680cf3ac0460d7d7bc7b680bade} 
+\+\_\+\+\_\+u32 {\bfseries rcvbuf\+\_\+policy}
+\item 
+\Hypertarget{structsctp__endpoint_a06dbbcc53a201bc2289b9709ec2bf85f}\label{structsctp__endpoint_a06dbbcc53a201bc2289b9709ec2bf85f} 
+struct \doxymbox{\hyperlink{structsctp__hmac__algo__param}{sctp\+\_\+hmac\+\_\+algo\+\_\+param}} \texorpdfstring{$\ast$}{*} {\bfseries auth\+\_\+hmacs\+\_\+list}
+\item 
+\Hypertarget{structsctp__endpoint_a8dc159bf4e005bf1982852d4f13bd23b}\label{structsctp__endpoint_a8dc159bf4e005bf1982852d4f13bd23b} 
+struct \doxymbox{\hyperlink{structsctp__chunks__param}{sctp\+\_\+chunks\+\_\+param}} \texorpdfstring{$\ast$}{*} {\bfseries auth\+\_\+chunk\+\_\+list}
+\item 
+\Hypertarget{structsctp__endpoint_a946b80247ac3d6ce0ea2998fe09123af}\label{structsctp__endpoint_a946b80247ac3d6ce0ea2998fe09123af} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries endpoint\+\_\+shared\+\_\+keys}
+\item 
+\Hypertarget{structsctp__endpoint_afe2249c26cf7255b8df908f8d638cb9e}\label{structsctp__endpoint_afe2249c26cf7255b8df908f8d638cb9e} 
+\+\_\+\+\_\+u16 {\bfseries active\+\_\+key\+\_\+id}
+\item 
+\Hypertarget{structsctp__endpoint_a31ac9428b2fd00532f0bec538a074142}\label{structsctp__endpoint_a31ac9428b2fd00532f0bec538a074142} 
+\+\_\+\+\_\+u8 {\bfseries ecn\+\_\+enable}:\+ 1
+\item 
+\Hypertarget{structsctp__endpoint_a6cb49511fc257f8b3168c015ef7f4e21}\label{structsctp__endpoint_a6cb49511fc257f8b3168c015ef7f4e21} 
+\+\_\+\+\_\+u8 {\bfseries auth\+\_\+enable}:\+ 1
+\item 
+\Hypertarget{structsctp__endpoint_a9ec96e9e60c7be6fecdcab211f890828}\label{structsctp__endpoint_a9ec96e9e60c7be6fecdcab211f890828} 
+\+\_\+\+\_\+u8 {\bfseries intl\+\_\+enable}:\+ 1
+\item 
+\Hypertarget{structsctp__endpoint_a17d393a90e46d61afc4261e8dc9cd7e3}\label{structsctp__endpoint_a17d393a90e46d61afc4261e8dc9cd7e3} 
+\+\_\+\+\_\+u8 {\bfseries prsctp\+\_\+enable}:\+ 1
+\item 
+\Hypertarget{structsctp__endpoint_a569be136741e9cdbca30e190124e11de}\label{structsctp__endpoint_a569be136741e9cdbca30e190124e11de} 
+\+\_\+\+\_\+u8 {\bfseries asconf\+\_\+enable}:\+ 1
+\item 
+\Hypertarget{structsctp__endpoint_aae88cc98c664a4f4a0e0ec4ece3eef08}\label{structsctp__endpoint_aae88cc98c664a4f4a0e0ec4ece3eef08} 
+\+\_\+\+\_\+u8 {\bfseries reconf\+\_\+enable}:\+ 1
+\item 
+\Hypertarget{structsctp__endpoint_a0bc90dc6f702c36dfadfd6931c313df2}\label{structsctp__endpoint_a0bc90dc6f702c36dfadfd6931c313df2} 
+\+\_\+\+\_\+u8 {\bfseries strreset\+\_\+enable}
+\item 
+\Hypertarget{structsctp__endpoint_a783e6919f3dfc1517cdada40cf504838}\label{structsctp__endpoint_a783e6919f3dfc1517cdada40cf504838} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

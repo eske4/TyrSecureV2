@@ -1,0 +1,184 @@
+\doxysection{btrfs\+\_\+root Struct Reference}
+\hypertarget{structbtrfs__root}{}\label{structbtrfs__root}\index{btrfs\_root@{btrfs\_root}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__root_aa3f5502e4ffc0778c50f8c9dcd91540c}\label{structbtrfs__root_aa3f5502e4ffc0778c50f8c9dcd91540c} 
+struct \doxymbox{\hyperlink{structrb__node}{rb\+\_\+node}} {\bfseries rb\+\_\+node}
+\item 
+\Hypertarget{structbtrfs__root_ab58cb322fb363e9bdb88dbdfa7eb48f8}\label{structbtrfs__root_ab58cb322fb363e9bdb88dbdfa7eb48f8} 
+struct \doxymbox{\hyperlink{structextent__buffer}{extent\+\_\+buffer}} \texorpdfstring{$\ast$}{*} {\bfseries node}
+\item 
+\Hypertarget{structbtrfs__root_abdb5772927f82396f00a974affa8aece}\label{structbtrfs__root_abdb5772927f82396f00a974affa8aece} 
+struct \doxymbox{\hyperlink{structextent__buffer}{extent\+\_\+buffer}} \texorpdfstring{$\ast$}{*} {\bfseries commit\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__root_ac658d5a4536ddcc498de2467fdef07f9}\label{structbtrfs__root_ac658d5a4536ddcc498de2467fdef07f9} 
+struct \doxymbox{\hyperlink{structbtrfs__root}{btrfs\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries log\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__root_a0665634b4624ae541e62ef2b8af8ad5d}\label{structbtrfs__root_a0665634b4624ae541e62ef2b8af8ad5d} 
+struct \doxymbox{\hyperlink{structbtrfs__root}{btrfs\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries reloc\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__root_a2173457fa287bc9611e059ccd2a22ce6}\label{structbtrfs__root_a2173457fa287bc9611e059ccd2a22ce6} 
+long unsigned int {\bfseries state}
+\item 
+\Hypertarget{structbtrfs__root_ab1042f816e6b45d8de8ab1a006878ac7}\label{structbtrfs__root_ab1042f816e6b45d8de8ab1a006878ac7} 
+struct \doxymbox{\hyperlink{structbtrfs__root__item}{btrfs\+\_\+root\+\_\+item}} {\bfseries root\+\_\+item}
+\item 
+\Hypertarget{structbtrfs__root_a8949fc093ae23b588ef6c9c91066ad7e}\label{structbtrfs__root_a8949fc093ae23b588ef6c9c91066ad7e} 
+struct \doxymbox{\hyperlink{structbtrfs__key}{btrfs\+\_\+key}} {\bfseries root\+\_\+key}
+\item 
+\Hypertarget{structbtrfs__root_a27c75df9c70bb302d2d84057a2a0d474}\label{structbtrfs__root_a27c75df9c70bb302d2d84057a2a0d474} 
+struct \doxymbox{\hyperlink{structbtrfs__fs__info}{btrfs\+\_\+fs\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{structbtrfs__root_a3f63f8ad736e56313ea70216fc14bbec}\label{structbtrfs__root_a3f63f8ad736e56313ea70216fc14bbec} 
+struct \doxymbox{\hyperlink{structextent__io__tree}{extent\+\_\+io\+\_\+tree}} {\bfseries dirty\+\_\+log\+\_\+pages}
+\item 
+\Hypertarget{structbtrfs__root_a0992866986fe7b901f0db220da860459}\label{structbtrfs__root_a0992866986fe7b901f0db220da860459} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries objectid\+\_\+mutex}
+\item 
+\Hypertarget{structbtrfs__root_a86f8746066e9326eeb57155434ce1dfc}\label{structbtrfs__root_a86f8746066e9326eeb57155434ce1dfc} 
+spinlock\+\_\+t {\bfseries accounting\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__root_afa8293cad0c870921a38d21c3e69f8e2}\label{structbtrfs__root_afa8293cad0c870921a38d21c3e69f8e2} 
+struct \doxymbox{\hyperlink{structbtrfs__block__rsv}{btrfs\+\_\+block\+\_\+rsv}} \texorpdfstring{$\ast$}{*} {\bfseries block\+\_\+rsv}
+\item 
+\Hypertarget{structbtrfs__root_a0d94696e2a6301f1e0f0aadea05a2f9c}\label{structbtrfs__root_a0d94696e2a6301f1e0f0aadea05a2f9c} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries log\+\_\+mutex}
+\item 
+\Hypertarget{structbtrfs__root_a1d5af734f38ecf928933c0ca50ee3c14}\label{structbtrfs__root_a1d5af734f38ecf928933c0ca50ee3c14} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries log\+\_\+writer\+\_\+wait}
+\item 
+\Hypertarget{structbtrfs__root_a9eb89c2645649a1f22de3fd2455a691f}\label{structbtrfs__root_a9eb89c2645649a1f22de3fd2455a691f} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries log\+\_\+commit\+\_\+wait} \+[2]\+
+\item 
+\Hypertarget{structbtrfs__root_ab556bb7ccefdbe68295b5853d498eb5a}\label{structbtrfs__root_ab556bb7ccefdbe68295b5853d498eb5a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries log\+\_\+ctxs} \+[2]\+
+\item 
+\Hypertarget{structbtrfs__root_a937e27c5267f1d664e262b8a003724b8}\label{structbtrfs__root_a937e27c5267f1d664e262b8a003724b8} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries log\+\_\+writers}
+\item 
+\Hypertarget{structbtrfs__root_a067a83ba951944831666cc0f385e914f}\label{structbtrfs__root_a067a83ba951944831666cc0f385e914f} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries log\+\_\+commit} \+[2]\+
+\item 
+\Hypertarget{structbtrfs__root_a4cad3e55b06df417d8374f08ded69fe5}\label{structbtrfs__root_a4cad3e55b06df417d8374f08ded69fe5} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries log\+\_\+batch}
+\item 
+\Hypertarget{structbtrfs__root_a19564b65d7a331ff8b28b9931b76dfb3}\label{structbtrfs__root_a19564b65d7a331ff8b28b9931b76dfb3} 
+int {\bfseries log\+\_\+transid}
+\item 
+\Hypertarget{structbtrfs__root_a510b9a8747616060408efee808248367}\label{structbtrfs__root_a510b9a8747616060408efee808248367} 
+int {\bfseries log\+\_\+transid\+\_\+committed}
+\item 
+\Hypertarget{structbtrfs__root_adcf875d2e34eea976b1debb3c5ac9db6}\label{structbtrfs__root_adcf875d2e34eea976b1debb3c5ac9db6} 
+int {\bfseries last\+\_\+log\+\_\+commit}
+\item 
+\Hypertarget{structbtrfs__root_ac8c4e8b09f55d1203b15ead6a63c6de6}\label{structbtrfs__root_ac8c4e8b09f55d1203b15ead6a63c6de6} 
+pid\+\_\+t {\bfseries log\+\_\+start\+\_\+pid}
+\item 
+\Hypertarget{structbtrfs__root_af0877f564861e90dca10034d74fd420a}\label{structbtrfs__root_af0877f564861e90dca10034d74fd420a} 
+u64 {\bfseries last\+\_\+trans}
+\item 
+\Hypertarget{structbtrfs__root_a000984de93953cd67f58dc9eeb2ae257}\label{structbtrfs__root_a000984de93953cd67f58dc9eeb2ae257} 
+u64 {\bfseries free\+\_\+objectid}
+\item 
+\Hypertarget{structbtrfs__root_a5cfd82391e4faad9f3b220ed2e85c505}\label{structbtrfs__root_a5cfd82391e4faad9f3b220ed2e85c505} 
+struct \doxymbox{\hyperlink{structbtrfs__key}{btrfs\+\_\+key}} {\bfseries defrag\+\_\+progress}
+\item 
+\Hypertarget{structbtrfs__root_afd331033021cee339f4eca8eb50067fd}\label{structbtrfs__root_afd331033021cee339f4eca8eb50067fd} 
+struct \doxymbox{\hyperlink{structbtrfs__key}{btrfs\+\_\+key}} {\bfseries defrag\+\_\+max}
+\item 
+\Hypertarget{structbtrfs__root_a613e0768fb910fc3ac2455844a38aa55}\label{structbtrfs__root_a613e0768fb910fc3ac2455844a38aa55} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dirty\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__root_a8c469b9ffa425ae764719c6a98ef2936}\label{structbtrfs__root_a8c469b9ffa425ae764719c6a98ef2936} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries root\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__root_ac2e7a8a8bf2faa5d3cdcafb3c50c158e}\label{structbtrfs__root_ac2e7a8a8bf2faa5d3cdcafb3c50c158e} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries inodes}
+\item 
+\Hypertarget{structbtrfs__root_ae462437c6c3a8bf327b8d44877c30dc6}\label{structbtrfs__root_ae462437c6c3a8bf327b8d44877c30dc6} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries delayed\+\_\+nodes}
+\item 
+\Hypertarget{structbtrfs__root_a4c0ebd27111d2f22d719ce638ae8a312}\label{structbtrfs__root_a4c0ebd27111d2f22d719ce638ae8a312} 
+dev\+\_\+t {\bfseries anon\+\_\+dev}
+\item 
+\Hypertarget{structbtrfs__root_abb7adc89a9529df24b3f4e2f713eaed6}\label{structbtrfs__root_abb7adc89a9529df24b3f4e2f713eaed6} 
+spinlock\+\_\+t {\bfseries root\+\_\+item\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__root_abda5b959ee945afdaaed12318341b2bb}\label{structbtrfs__root_abda5b959ee945afdaaed12318341b2bb} 
+refcount\+\_\+t {\bfseries refs}
+\item 
+\Hypertarget{structbtrfs__root_aff39643e508c4688a744a64b25dade67}\label{structbtrfs__root_aff39643e508c4688a744a64b25dade67} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries delalloc\+\_\+mutex}
+\item 
+\Hypertarget{structbtrfs__root_adea243eba186207c1a13c34ec78bb003}\label{structbtrfs__root_adea243eba186207c1a13c34ec78bb003} 
+spinlock\+\_\+t {\bfseries delalloc\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__root_a6c527c3d55ab61e017b5b036039269ca}\label{structbtrfs__root_a6c527c3d55ab61e017b5b036039269ca} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries delalloc\+\_\+inodes}
+\item 
+\Hypertarget{structbtrfs__root_a3d411386ffdf96c7bff564ca8619d951}\label{structbtrfs__root_a3d411386ffdf96c7bff564ca8619d951} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries delalloc\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__root_ae4b485687da23ec45a821d1e0517ab3c}\label{structbtrfs__root_ae4b485687da23ec45a821d1e0517ab3c} 
+u64 {\bfseries nr\+\_\+delalloc\+\_\+inodes}
+\item 
+\Hypertarget{structbtrfs__root_a80a7cc88db34231f1897493484533ebd}\label{structbtrfs__root_a80a7cc88db34231f1897493484533ebd} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries ordered\+\_\+extent\+\_\+mutex}
+\item 
+\Hypertarget{structbtrfs__root_a27b1fcefbe6cea833cd942721cd2cda7}\label{structbtrfs__root_a27b1fcefbe6cea833cd942721cd2cda7} 
+spinlock\+\_\+t {\bfseries ordered\+\_\+extent\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__root_a0f05f1dd0c65aa3b4c19ac58281ae6f8}\label{structbtrfs__root_a0f05f1dd0c65aa3b4c19ac58281ae6f8} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ordered\+\_\+extents}
+\item 
+\Hypertarget{structbtrfs__root_ad8ed3a986cce3b7ba24be670a8c84dc0}\label{structbtrfs__root_ad8ed3a986cce3b7ba24be670a8c84dc0} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ordered\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__root_a03d7a7067c985344a7dee4255ce932b4}\label{structbtrfs__root_a03d7a7067c985344a7dee4255ce932b4} 
+u64 {\bfseries nr\+\_\+ordered\+\_\+extents}
+\item 
+\Hypertarget{structbtrfs__root_af169c7cca97f14e5055b1a9838a8fd8e}\label{structbtrfs__root_af169c7cca97f14e5055b1a9838a8fd8e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries reloc\+\_\+dirty\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__root_a096aa301227de7544c98085ec8404923}\label{structbtrfs__root_a096aa301227de7544c98085ec8404923} 
+int {\bfseries send\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structbtrfs__root_aa804860e6531a430f744a6a7d54e2b1f}\label{structbtrfs__root_aa804860e6531a430f744a6a7d54e2b1f} 
+int {\bfseries dedupe\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structbtrfs__root_aae294c48ac22e68567641e416c43f2e1}\label{structbtrfs__root_aae294c48ac22e68567641e416c43f2e1} 
+struct \doxymbox{\hyperlink{structbtrfs__drew__lock}{btrfs\+\_\+drew\+\_\+lock}} {\bfseries snapshot\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__root_a3114ebc728f95acdcdd3470bd35c151a}\label{structbtrfs__root_a3114ebc728f95acdcdd3470bd35c151a} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries snapshot\+\_\+force\+\_\+cow}
+\item 
+\Hypertarget{structbtrfs__root_a10072334ed447a75435c9aa9a25981f0}\label{structbtrfs__root_a10072334ed447a75435c9aa9a25981f0} 
+spinlock\+\_\+t {\bfseries qgroup\+\_\+meta\+\_\+rsv\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__root_aed4efd67da2070bfdf00c2476b967a92}\label{structbtrfs__root_aed4efd67da2070bfdf00c2476b967a92} 
+u64 {\bfseries qgroup\+\_\+meta\+\_\+rsv\+\_\+pertrans}
+\item 
+\Hypertarget{structbtrfs__root_a6c629991ebeca6fc3391a3cdcebdffd9}\label{structbtrfs__root_a6c629991ebeca6fc3391a3cdcebdffd9} 
+u64 {\bfseries qgroup\+\_\+meta\+\_\+rsv\+\_\+prealloc}
+\item 
+\Hypertarget{structbtrfs__root_a5452afc49f7ffa4e7bc28cd1d545aef3}\label{structbtrfs__root_a5452afc49f7ffa4e7bc28cd1d545aef3} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries qgroup\+\_\+flush\+\_\+wait}
+\item 
+\Hypertarget{structbtrfs__root_aa032a3d9b337ab8214e74673edbb0abd}\label{structbtrfs__root_aa032a3d9b337ab8214e74673edbb0abd} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nr\+\_\+swapfiles}
+\item 
+\Hypertarget{structbtrfs__root_af75d4ba3dd509138f3ebcf9b2103be21}\label{structbtrfs__root_af75d4ba3dd509138f3ebcf9b2103be21} 
+struct \doxymbox{\hyperlink{structbtrfs__qgroup__swapped__blocks}{btrfs\+\_\+qgroup\+\_\+swapped\+\_\+blocks}} {\bfseries swapped\+\_\+blocks}
+\item 
+\Hypertarget{structbtrfs__root_abb21097e276f33c76f8c92aa83cd42b7}\label{structbtrfs__root_abb21097e276f33c76f8c92aa83cd42b7} 
+struct \doxymbox{\hyperlink{structextent__io__tree}{extent\+\_\+io\+\_\+tree}} {\bfseries log\+\_\+csum\+\_\+range}
+\item 
+\Hypertarget{structbtrfs__root_a702e4efdd9a4067a4dad1c183b1f2d1b}\label{structbtrfs__root_a702e4efdd9a4067a4dad1c183b1f2d1b} 
+u64 {\bfseries relocation\+\_\+src\+\_\+root}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

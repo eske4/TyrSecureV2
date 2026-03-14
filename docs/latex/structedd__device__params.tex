@@ -1,0 +1,143 @@
+\doxysection{edd\+\_\+device\+\_\+params Struct Reference}
+\hypertarget{structedd__device__params}{}\label{structedd__device__params}\index{edd\_device\_params@{edd\_device\_params}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structedd__device__params_aff556c0e20ab2c46a7baaacd1248f91a}\label{structedd__device__params_aff556c0e20ab2c46a7baaacd1248f91a} 
+\+\_\+\+\_\+u16 {\bfseries length}
+\item 
+\Hypertarget{structedd__device__params_ad475ede4c083a5a8daf47a4b020d0db2}\label{structedd__device__params_ad475ede4c083a5a8daf47a4b020d0db2} 
+\+\_\+\+\_\+u16 {\bfseries info\+\_\+flags}
+\item 
+\Hypertarget{structedd__device__params_ae1ce699c7ff329585f56c0d1d0348097}\label{structedd__device__params_ae1ce699c7ff329585f56c0d1d0348097} 
+\+\_\+\+\_\+u32 {\bfseries num\+\_\+default\+\_\+cylinders}
+\item 
+\Hypertarget{structedd__device__params_ab9a5d4c6a383ec9797daf15f65f39064}\label{structedd__device__params_ab9a5d4c6a383ec9797daf15f65f39064} 
+\+\_\+\+\_\+u32 {\bfseries num\+\_\+default\+\_\+heads}
+\item 
+\Hypertarget{structedd__device__params_ad749d4f005b4e9bfca7d0bc58e3a9354}\label{structedd__device__params_ad749d4f005b4e9bfca7d0bc58e3a9354} 
+\+\_\+\+\_\+u32 {\bfseries sectors\+\_\+per\+\_\+track}
+\item 
+\Hypertarget{structedd__device__params_a9badacf372a0c30b31aaeeba6b72a54a}\label{structedd__device__params_a9badacf372a0c30b31aaeeba6b72a54a} 
+\+\_\+\+\_\+u64 {\bfseries number\+\_\+of\+\_\+sectors}
+\item 
+\Hypertarget{structedd__device__params_a59c46c471d40fa672446fb8017a3d5cb}\label{structedd__device__params_a59c46c471d40fa672446fb8017a3d5cb} 
+\+\_\+\+\_\+u16 {\bfseries bytes\+\_\+per\+\_\+sector}
+\item 
+\Hypertarget{structedd__device__params_af5bc44b662cccd1566ea9247519b6f4f}\label{structedd__device__params_af5bc44b662cccd1566ea9247519b6f4f} 
+\+\_\+\+\_\+u32 {\bfseries dpte\+\_\+ptr}
+\item 
+\Hypertarget{structedd__device__params_a15c11646a4673e1d28c8e7512427b309}\label{structedd__device__params_a15c11646a4673e1d28c8e7512427b309} 
+\+\_\+\+\_\+u16 {\bfseries key}
+\item 
+\Hypertarget{structedd__device__params_a1f754f64345ce05f8105f73c364b111d}\label{structedd__device__params_a1f754f64345ce05f8105f73c364b111d} 
+\+\_\+\+\_\+u8 {\bfseries device\+\_\+path\+\_\+info\+\_\+length}
+\item 
+\Hypertarget{structedd__device__params_a91a5e5fec62cbd97a0d85081e3b781bf}\label{structedd__device__params_a91a5e5fec62cbd97a0d85081e3b781bf} 
+\+\_\+\+\_\+u8 {\bfseries reserved2}
+\item 
+\Hypertarget{structedd__device__params_acd401264146e85cdbc0e1a0e87538789}\label{structedd__device__params_acd401264146e85cdbc0e1a0e87538789} 
+\+\_\+\+\_\+u16 {\bfseries reserved3}
+\item 
+\Hypertarget{structedd__device__params_a1d8f0dd423bf481d3d29b7bc9f4522dd}\label{structedd__device__params_a1d8f0dd423bf481d3d29b7bc9f4522dd} 
+\+\_\+\+\_\+u8 {\bfseries host\+\_\+bus\+\_\+type} \+[4]\+
+\item 
+\Hypertarget{structedd__device__params_ae8b7cef8137b5bb810d5658a27b00e1a}\label{structedd__device__params_ae8b7cef8137b5bb810d5658a27b00e1a} 
+\+\_\+\+\_\+u8 {\bfseries interface\+\_\+type} \+[8]\+
+\item 
+\Hypertarget{structedd__device__params_abe137c019de5e6241ddf146f0ea5c5aa}\label{structedd__device__params_abe137c019de5e6241ddf146f0ea5c5aa} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u16 {\bfseries base\_address}\\
+\>\>\_\_u16 {\bfseries reserved1}\\
+\>\>\_\_u32 {\bfseries reserved2}\\
+\>\} {\bfseries isa}\\
+\>struct \{\\
+\>\>\_\_u8 {\bfseries bus}\\
+\>\>\_\_u8 {\bfseries slot}\\
+\>\>\_\_u8 {\bfseries function}\\
+\>\>\_\_u8 {\bfseries channel}\\
+\>\>\_\_u32 {\bfseries reserved}\\
+\>\} {\bfseries pci}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries reserved}\\
+\>\} {\bfseries ibnd}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries reserved}\\
+\>\} {\bfseries xprs}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries reserved}\\
+\>\} {\bfseries htpt}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries reserved}\\
+\>\} {\bfseries unknown}\\
+\} {\bfseries interface\_path}\\
+
+\end{tabbing}\item 
+\Hypertarget{structedd__device__params_a8a5fa5d6149813bd7e91d22fe9b2c015}\label{structedd__device__params_a8a5fa5d6149813bd7e91d22fe9b2c015} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_u8 {\bfseries device}\\
+\>\>\_\_u8 {\bfseries reserved1}\\
+\>\>\_\_u16 {\bfseries reserved2}\\
+\>\>\_\_u32 {\bfseries reserved3}\\
+\>\>\_\_u64 {\bfseries reserved4}\\
+\>\} {\bfseries ata}\\
+\>struct \{\\
+\>\>\_\_u8 {\bfseries device}\\
+\>\>\_\_u8 {\bfseries lun}\\
+\>\>\_\_u8 {\bfseries reserved1}\\
+\>\>\_\_u8 {\bfseries reserved2}\\
+\>\>\_\_u32 {\bfseries reserved3}\\
+\>\>\_\_u64 {\bfseries reserved4}\\
+\>\} {\bfseries atapi}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries serial\_number}\\
+\>\>\_\_u64 {\bfseries reserved}\\
+\>\} {\bfseries usb}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries eui}\\
+\>\>\_\_u64 {\bfseries reserved}\\
+\>\} {\bfseries i1394}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries wwid}\\
+\>\>\_\_u64 {\bfseries lun}\\
+\>\} {\bfseries fibre}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries identity\_tag}\\
+\>\>\_\_u64 {\bfseries reserved}\\
+\>\} {\bfseries i2o}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries array\_number}\\
+\>\>\_\_u32 {\bfseries reserved1}\\
+\>\>\_\_u64 {\bfseries reserved2}\\
+\>\} {\bfseries raid}\\
+\>struct \{\\
+\>\>\_\_u8 {\bfseries device}\\
+\>\>\_\_u8 {\bfseries reserved1}\\
+\>\>\_\_u16 {\bfseries reserved2}\\
+\>\>\_\_u32 {\bfseries reserved3}\\
+\>\>\_\_u64 {\bfseries reserved4}\\
+\>\} {\bfseries sata}\\
+\>struct \{\\
+\>\>\_\_u64 {\bfseries reserved1}\\
+\>\>\_\_u64 {\bfseries reserved2}\\
+\>\} {\bfseries unknown}\\
+\} {\bfseries device\_path}\\
+
+\end{tabbing}\item 
+\Hypertarget{structedd__device__params_a1ea95df76d282c72511a4c9f7651f058}\label{structedd__device__params_a1ea95df76d282c72511a4c9f7651f058} 
+\+\_\+\+\_\+u8 {\bfseries reserved4}
+\item 
+\Hypertarget{structedd__device__params_aff9d6afaf0502d8cf6628ae56ab453b4}\label{structedd__device__params_aff9d6afaf0502d8cf6628ae56ab453b4} 
+\+\_\+\+\_\+u8 {\bfseries checksum}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

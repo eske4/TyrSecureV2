@@ -1,0 +1,70 @@
+\doxysection{net\+\_\+bridge\+\_\+vlan Struct Reference}
+\hypertarget{structnet__bridge__vlan}{}\label{structnet__bridge__vlan}\index{net\_bridge\_vlan@{net\_bridge\_vlan}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnet__bridge__vlan_a3a66dd9eb295392a6d6197c8fcd46f5d}\label{structnet__bridge__vlan_a3a66dd9eb295392a6d6197c8fcd46f5d} 
+struct \doxymbox{\hyperlink{structrhash__head}{rhash\+\_\+head}} {\bfseries vnode}
+\item 
+\Hypertarget{structnet__bridge__vlan_af5bd9bd061da35444c0f9476b469651e}\label{structnet__bridge__vlan_af5bd9bd061da35444c0f9476b469651e} 
+struct \doxymbox{\hyperlink{structrhash__head}{rhash\+\_\+head}} {\bfseries tnode}
+\item 
+\Hypertarget{structnet__bridge__vlan_a366f1aea5527f821a0724b8deb9b2f32}\label{structnet__bridge__vlan_a366f1aea5527f821a0724b8deb9b2f32} 
+u16 {\bfseries vid}
+\item 
+\Hypertarget{structnet__bridge__vlan_a8c8da4f9da0181968b0a8a5186585454}\label{structnet__bridge__vlan_a8c8da4f9da0181968b0a8a5186585454} 
+u16 {\bfseries flags}
+\item 
+\Hypertarget{structnet__bridge__vlan_a3371a561f9b9fc46d376b60ba017c43f}\label{structnet__bridge__vlan_a3371a561f9b9fc46d376b60ba017c43f} 
+u16 {\bfseries priv\+\_\+flags}
+\item 
+\Hypertarget{structnet__bridge__vlan_aa7d07b5e2783fd31509cb9c0c1684a3b}\label{structnet__bridge__vlan_aa7d07b5e2783fd31509cb9c0c1684a3b} 
+u8 {\bfseries state}
+\item 
+\Hypertarget{structnet__bridge__vlan_a2dbbae452cd7d2ebe326de87f804db30}\label{structnet__bridge__vlan_a2dbbae452cd7d2ebe326de87f804db30} 
+struct \doxymbox{\hyperlink{structpcpu__sw__netstats}{pcpu\+\_\+sw\+\_\+netstats}} \texorpdfstring{$\ast$}{*} {\bfseries stats}
+\item 
+\Hypertarget{structnet__bridge__vlan_a502a41daeda1e7131242bfe38b263e3f}\label{structnet__bridge__vlan_a502a41daeda1e7131242bfe38b263e3f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structnet__bridge}{net\_bridge}} \texorpdfstring{$\ast$}{*} {\bfseries br}\\
+\>struct \doxymbox{\hyperlink{structnet__bridge__port}{net\_bridge\_port}} \texorpdfstring{$\ast$}{*} {\bfseries port}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnet__bridge__vlan_a97bab9569dd8333dbef8977c152bea09}\label{structnet__bridge__vlan_a97bab9569dd8333dbef8977c152bea09} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>refcount\_t {\bfseries refcnt}\\
+\>struct \doxymbox{\hyperlink{structnet__bridge__vlan}{net\_bridge\_vlan}} \texorpdfstring{$\ast$}{*} {\bfseries brvlan}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnet__bridge__vlan_a0a43af5fd59a78b7fd535c0edb9491a8}\label{structnet__bridge__vlan_a0a43af5fd59a78b7fd535c0edb9491a8} 
+struct \doxymbox{\hyperlink{structbr__tunnel__info}{br\+\_\+tunnel\+\_\+info}} {\bfseries tinfo}
+\item 
+\Hypertarget{structnet__bridge__vlan_a1431f90547765c6b0fb37e0decb66ffb}\label{structnet__bridge__vlan_a1431f90547765c6b0fb37e0decb66ffb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structnet__bridge__mcast}{net\_bridge\_mcast}} {\bfseries br\_mcast\_ctx}\\
+\>struct \doxymbox{\hyperlink{structnet__bridge__mcast__port}{net\_bridge\_mcast\_port}} {\bfseries port\_mcast\_ctx}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structnet__bridge__vlan_a7205e45b18d13e259e087c09640581c0}\label{structnet__bridge__vlan_a7205e45b18d13e259e087c09640581c0} 
+u16 {\bfseries msti}
+\item 
+\Hypertarget{structnet__bridge__vlan_ab6be636b8d64be2e36889a1dede71e2b}\label{structnet__bridge__vlan_ab6be636b8d64be2e36889a1dede71e2b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries vlist}
+\item 
+\Hypertarget{structnet__bridge__vlan_a045e7c0da6a3443cab49fa45c4d2ea3c}\label{structnet__bridge__vlan_a045e7c0da6a3443cab49fa45c4d2ea3c} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

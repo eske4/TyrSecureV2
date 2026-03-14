@@ -1,0 +1,58 @@
+\doxysection{sugov\+\_\+policy Struct Reference}
+\hypertarget{structsugov__policy}{}\label{structsugov__policy}\index{sugov\_policy@{sugov\_policy}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsugov__policy_a5d14d3a33b531d31e260cbde8b1caffc}\label{structsugov__policy_a5d14d3a33b531d31e260cbde8b1caffc} 
+struct \doxymbox{\hyperlink{structcpufreq__policy}{cpufreq\+\_\+policy}} \texorpdfstring{$\ast$}{*} {\bfseries policy}
+\item 
+\Hypertarget{structsugov__policy_a1c91d1c3cd834c9811ca74857691438d}\label{structsugov__policy_a1c91d1c3cd834c9811ca74857691438d} 
+struct \doxymbox{\hyperlink{structsugov__tunables}{sugov\+\_\+tunables}} \texorpdfstring{$\ast$}{*} {\bfseries tunables}
+\item 
+\Hypertarget{structsugov__policy_aee77cfb7b5bda8cb97beb172e2f4e54d}\label{structsugov__policy_aee77cfb7b5bda8cb97beb172e2f4e54d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries tunables\+\_\+hook}
+\item 
+\Hypertarget{structsugov__policy_a3ff2c41e136212ec449286a8fdaf791b}\label{structsugov__policy_a3ff2c41e136212ec449286a8fdaf791b} 
+raw\+\_\+spinlock\+\_\+t {\bfseries update\+\_\+lock}
+\item 
+\Hypertarget{structsugov__policy_ac4610f2dabb5d58f4031adf2c4e637d2}\label{structsugov__policy_ac4610f2dabb5d58f4031adf2c4e637d2} 
+u64 {\bfseries last\+\_\+freq\+\_\+update\+\_\+time}
+\item 
+\Hypertarget{structsugov__policy_ae958e6aff40c652db18a83f09c131402}\label{structsugov__policy_ae958e6aff40c652db18a83f09c131402} 
+s64 {\bfseries freq\+\_\+update\+\_\+delay\+\_\+ns}
+\item 
+\Hypertarget{structsugov__policy_a637554b666dc38ab435eb47a9bddc090}\label{structsugov__policy_a637554b666dc38ab435eb47a9bddc090} 
+unsigned int {\bfseries next\+\_\+freq}
+\item 
+\Hypertarget{structsugov__policy_aa1844ac578491b4b0277aca46cc3b97c}\label{structsugov__policy_aa1844ac578491b4b0277aca46cc3b97c} 
+unsigned int {\bfseries cached\+\_\+raw\+\_\+freq}
+\item 
+\Hypertarget{structsugov__policy_a3500eba5b46af46bfc7a7a6813992623}\label{structsugov__policy_a3500eba5b46af46bfc7a7a6813992623} 
+struct \doxymbox{\hyperlink{structirq__work}{irq\+\_\+work}} {\bfseries irq\+\_\+work}
+\item 
+\Hypertarget{structsugov__policy_ad0454f82ae75af5beed9127d72bbe216}\label{structsugov__policy_ad0454f82ae75af5beed9127d72bbe216} 
+struct \doxymbox{\hyperlink{structkthread__work}{kthread\+\_\+work}} {\bfseries work}
+\item 
+\Hypertarget{structsugov__policy_abf40a5f765ee7eda41de93dc30e93277}\label{structsugov__policy_abf40a5f765ee7eda41de93dc30e93277} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries work\+\_\+lock}
+\item 
+\Hypertarget{structsugov__policy_a3a57a6c0fe80d82662f1604cba0615ef}\label{structsugov__policy_a3a57a6c0fe80d82662f1604cba0615ef} 
+struct \doxymbox{\hyperlink{structkthread__worker}{kthread\+\_\+worker}} {\bfseries worker}
+\item 
+\Hypertarget{structsugov__policy_af2c24f5dd94f5a9159156e56568783ae}\label{structsugov__policy_af2c24f5dd94f5a9159156e56568783ae} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries thread}
+\item 
+\Hypertarget{structsugov__policy_a4bb14e72ae204698daffd7397f945ea7}\label{structsugov__policy_a4bb14e72ae204698daffd7397f945ea7} 
+bool {\bfseries work\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structsugov__policy_aac24f75faee2ecb205b379bce27858f1}\label{structsugov__policy_aac24f75faee2ecb205b379bce27858f1} 
+bool {\bfseries limits\+\_\+changed}
+\item 
+\Hypertarget{structsugov__policy_a701999dc0f7a6b2ecb811627f054d750}\label{structsugov__policy_a701999dc0f7a6b2ecb811627f054d750} 
+bool {\bfseries need\+\_\+freq\+\_\+update}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

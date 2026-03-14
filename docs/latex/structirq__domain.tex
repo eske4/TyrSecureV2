@@ -1,0 +1,70 @@
+\doxysection{irq\+\_\+domain Struct Reference}
+\hypertarget{structirq__domain}{}\label{structirq__domain}\index{irq\_domain@{irq\_domain}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structirq__domain_a5746a3c6c46a5bc6a2ea8cf98cad61ce}\label{structirq__domain_a5746a3c6c46a5bc6a2ea8cf98cad61ce} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries link}
+\item 
+\Hypertarget{structirq__domain_a66667de339e790b1aee2bc6913aef247}\label{structirq__domain_a66667de339e790b1aee2bc6913aef247} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structirq__domain_aa3c73c115ad20d6cbd65cffd173f6846}\label{structirq__domain_aa3c73c115ad20d6cbd65cffd173f6846} 
+const struct \doxymbox{\hyperlink{structirq__domain__ops}{irq\+\_\+domain\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structirq__domain_a9d1ca7d7824d9340820cdaaa779d0fff}\label{structirq__domain_a9d1ca7d7824d9340820cdaaa779d0fff} 
+void \texorpdfstring{$\ast$}{*} {\bfseries host\+\_\+data}
+\item 
+\Hypertarget{structirq__domain_ab838b99a8066fcee7dee938b840288c8}\label{structirq__domain_ab838b99a8066fcee7dee938b840288c8} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structirq__domain_a6dc1378eaeb6ed563cc135d90d931934}\label{structirq__domain_a6dc1378eaeb6ed563cc135d90d931934} 
+unsigned int {\bfseries mapcount}
+\item 
+\Hypertarget{structirq__domain_a827af7515bd8eea42ecea509d0907b39}\label{structirq__domain_a827af7515bd8eea42ecea509d0907b39} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structirq__domain_a6ba1b0382094ff5fa2f4be3af2b4e951}\label{structirq__domain_a6ba1b0382094ff5fa2f4be3af2b4e951} 
+struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries root}
+\item 
+\Hypertarget{structirq__domain_ac00f456bc6f86db3c09d2a44c96b8a89}\label{structirq__domain_ac00f456bc6f86db3c09d2a44c96b8a89} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*} {\bfseries fwnode}
+\item 
+\Hypertarget{structirq__domain_a4059db9542629f3b16a817fc02c1bb34}\label{structirq__domain_a4059db9542629f3b16a817fc02c1bb34} 
+enum irq\+\_\+domain\+\_\+bus\+\_\+token {\bfseries bus\+\_\+token}
+\item 
+\Hypertarget{structirq__domain_a91d30cd483916556633b916c4609104c}\label{structirq__domain_a91d30cd483916556633b916c4609104c} 
+struct \doxymbox{\hyperlink{structirq__domain__chip__generic}{irq\+\_\+domain\+\_\+chip\+\_\+generic}} \texorpdfstring{$\ast$}{*} {\bfseries gc}
+\item 
+\Hypertarget{structirq__domain_add9419d8e18d7d97207b86adec66bcf5}\label{structirq__domain_add9419d8e18d7d97207b86adec66bcf5} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structirq__domain_a87a9e369329daa7f4157016e3e3a75d0}\label{structirq__domain_a87a9e369329daa7f4157016e3e3a75d0} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries pm\+\_\+dev}
+\item 
+\Hypertarget{structirq__domain_a4cd8394954dc4a2612b42d901ac6a40d}\label{structirq__domain_a4cd8394954dc4a2612b42d901ac6a40d} 
+struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structirq__domain_a7957a60f7ef62dbcc5416358e9bb2372}\label{structirq__domain_a7957a60f7ef62dbcc5416358e9bb2372} 
+const struct \doxymbox{\hyperlink{structmsi__parent__ops}{msi\+\_\+parent\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries msi\+\_\+parent\+\_\+ops}
+\item 
+\Hypertarget{structirq__domain_ab04c7c997e08969394bca20120fdda00}\label{structirq__domain_ab04c7c997e08969394bca20120fdda00} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries exit} )(struct \doxymbox{\hyperlink{structirq__domain}{irq\+\_\+domain}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structirq__domain_a7c6da924aeed812c015d618000cf86f5}\label{structirq__domain_a7c6da924aeed812c015d618000cf86f5} 
+irq\+\_\+hw\+\_\+number\+\_\+t {\bfseries hwirq\+\_\+max}
+\item 
+\Hypertarget{structirq__domain_ad51af4d4024f51bec18871b62b31ca62}\label{structirq__domain_ad51af4d4024f51bec18871b62b31ca62} 
+unsigned int {\bfseries revmap\+\_\+size}
+\item 
+\Hypertarget{structirq__domain_a147663fdefdff193fa2739459f4a1f21}\label{structirq__domain_a147663fdefdff193fa2739459f4a1f21} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries revmap\+\_\+tree}
+\item 
+\Hypertarget{structirq__domain_a8f0491f0d8d17cba11051ec1bdee4429}\label{structirq__domain_a8f0491f0d8d17cba11051ec1bdee4429} 
+struct \doxymbox{\hyperlink{structirq__data}{irq\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries revmap} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

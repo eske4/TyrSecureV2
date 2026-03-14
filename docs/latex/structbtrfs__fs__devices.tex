@@ -1,0 +1,97 @@
+\doxysection{btrfs\+\_\+fs\+\_\+devices Struct Reference}
+\hypertarget{structbtrfs__fs__devices}{}\label{structbtrfs__fs__devices}\index{btrfs\_fs\_devices@{btrfs\_fs\_devices}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__fs__devices_aaa28952f7a3d9bb982d74ec83dd66330}\label{structbtrfs__fs__devices_aaa28952f7a3d9bb982d74ec83dd66330} 
+u8 {\bfseries fsid} \+[16]\+
+\item 
+\Hypertarget{structbtrfs__fs__devices_aabedcedc5a359c60cc05d64a9579c5e7}\label{structbtrfs__fs__devices_aabedcedc5a359c60cc05d64a9579c5e7} 
+u8 {\bfseries metadata\+\_\+uuid} \+[16]\+
+\item 
+\Hypertarget{structbtrfs__fs__devices_a4652ae766d7e824c16a02f7ebd7f1b34}\label{structbtrfs__fs__devices_a4652ae766d7e824c16a02f7ebd7f1b34} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries fs\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a528244d169e1b7a13082b35411824a8a}\label{structbtrfs__fs__devices_a528244d169e1b7a13082b35411824a8a} 
+u64 {\bfseries num\+\_\+devices}
+\item 
+\Hypertarget{structbtrfs__fs__devices_acc0c39fbab2bc9d2ad1adc9fcd82b533}\label{structbtrfs__fs__devices_acc0c39fbab2bc9d2ad1adc9fcd82b533} 
+u64 {\bfseries open\+\_\+devices}
+\item 
+\Hypertarget{structbtrfs__fs__devices_aa079c135b4a187a85ed8464738a76e40}\label{structbtrfs__fs__devices_aa079c135b4a187a85ed8464738a76e40} 
+u64 {\bfseries rw\+\_\+devices}
+\item 
+\Hypertarget{structbtrfs__fs__devices_ab4c7a0183b02290420f06f1f6e3369db}\label{structbtrfs__fs__devices_ab4c7a0183b02290420f06f1f6e3369db} 
+u64 {\bfseries missing\+\_\+devices}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a72e9d678fdaa13a5e5debe8e36c322a8}\label{structbtrfs__fs__devices_a72e9d678fdaa13a5e5debe8e36c322a8} 
+u64 {\bfseries total\+\_\+rw\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a755f1f9af7beab06f3b7ed0f6409de10}\label{structbtrfs__fs__devices_a755f1f9af7beab06f3b7ed0f6409de10} 
+u64 {\bfseries total\+\_\+devices}
+\item 
+\Hypertarget{structbtrfs__fs__devices_ae612382862561c7c425557bec6bc86a0}\label{structbtrfs__fs__devices_ae612382862561c7c425557bec6bc86a0} 
+u64 {\bfseries latest\+\_\+generation}
+\item 
+\Hypertarget{structbtrfs__fs__devices_abf03303c0421c555d0ed9207c4ee523f}\label{structbtrfs__fs__devices_abf03303c0421c555d0ed9207c4ee523f} 
+struct \doxymbox{\hyperlink{structbtrfs__device}{btrfs\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries latest\+\_\+dev}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a67f41f6ec937ac781af42b0d4590ab6e}\label{structbtrfs__fs__devices_a67f41f6ec937ac781af42b0d4590ab6e} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries device\+\_\+list\+\_\+mutex}
+\item 
+\Hypertarget{structbtrfs__fs__devices_abaeb01db1418759e0b88936437341d63}\label{structbtrfs__fs__devices_abaeb01db1418759e0b88936437341d63} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries devices}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a72480675a22e2a5a72266574a0b25d6e}\label{structbtrfs__fs__devices_a72480675a22e2a5a72266574a0b25d6e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries alloc\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a00be24ba893c0fdc98a3df50c03ead52}\label{structbtrfs__fs__devices_a00be24ba893c0fdc98a3df50c03ead52} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries seed\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__fs__devices_ab3b6c32f9230ac4f6c1ce05630462586}\label{structbtrfs__fs__devices_ab3b6c32f9230ac4f6c1ce05630462586} 
+int {\bfseries opened}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a2691c813fbdffde17f572b67e675eb2a}\label{structbtrfs__fs__devices_a2691c813fbdffde17f572b67e675eb2a} 
+int {\bfseries holding}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a9b203566470905caaf1cc472a8e5dbae}\label{structbtrfs__fs__devices_a9b203566470905caaf1cc472a8e5dbae} 
+bool {\bfseries rotating}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a984db296928f447522c26a1ca8c0e164}\label{structbtrfs__fs__devices_a984db296928f447522c26a1ca8c0e164} 
+bool {\bfseries discardable}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a27104f81303fbc768f12f1cb778dc2dc}\label{structbtrfs__fs__devices_a27104f81303fbc768f12f1cb778dc2dc} 
+bool {\bfseries seeding}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a228b84d967ce7577506fd0cb17330b68}\label{structbtrfs__fs__devices_a228b84d967ce7577506fd0cb17330b68} 
+bool {\bfseries temp\+\_\+fsid}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a81d9c4ca5715a95968e22e0f3db7be09}\label{structbtrfs__fs__devices_a81d9c4ca5715a95968e22e0f3db7be09} 
+bool {\bfseries collect\+\_\+fs\+\_\+stats}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a380261c2e313d617e211ec96120ede8f}\label{structbtrfs__fs__devices_a380261c2e313d617e211ec96120ede8f} 
+struct \doxymbox{\hyperlink{structbtrfs__fs__info}{btrfs\+\_\+fs\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{structbtrfs__fs__devices_ae6d69c2f038e58ff8679770f1f4bb388}\label{structbtrfs__fs__devices_ae6d69c2f038e58ff8679770f1f4bb388} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} {\bfseries fsid\+\_\+kobj}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a8df99fa43168b6149bde69617edd60c2}\label{structbtrfs__fs__devices_a8df99fa43168b6149bde69617edd60c2} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} \texorpdfstring{$\ast$}{*} {\bfseries devices\+\_\+kobj}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a1c2ace97d4b50dc75148158ff215441b}\label{structbtrfs__fs__devices_a1c2ace97d4b50dc75148158ff215441b} 
+struct \doxymbox{\hyperlink{structkobject}{kobject}} \texorpdfstring{$\ast$}{*} {\bfseries devinfo\+\_\+kobj}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a800a5c85b68a095f549b1fc55d29a005}\label{structbtrfs__fs__devices_a800a5c85b68a095f549b1fc55d29a005} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries kobj\+\_\+unregister}
+\item 
+\Hypertarget{structbtrfs__fs__devices_afa1ca8492043652558d739d020df8070}\label{structbtrfs__fs__devices_afa1ca8492043652558d739d020df8070} 
+enum btrfs\+\_\+chunk\+\_\+allocation\+\_\+policy {\bfseries chunk\+\_\+alloc\+\_\+policy}
+\item 
+\Hypertarget{structbtrfs__fs__devices_a6c22198525f3e6af68100f18e66af59e}\label{structbtrfs__fs__devices_a6c22198525f3e6af68100f18e66af59e} 
+enum btrfs\+\_\+read\+\_\+policy {\bfseries read\+\_\+policy}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

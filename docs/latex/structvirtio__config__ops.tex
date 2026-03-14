@@ -1,0 +1,64 @@
+\doxysection{virtio\+\_\+config\+\_\+ops Struct Reference}
+\hypertarget{structvirtio__config__ops}{}\label{structvirtio__config__ops}\index{virtio\_config\_ops@{virtio\_config\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtio__config__ops_ac00eed7d0d40d43b70dec6f15c71fca9}\label{structvirtio__config__ops_ac00eed7d0d40d43b70dec6f15c71fca9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*}, unsigned int, void \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structvirtio__config__ops_a7dd5a25071de6ae6d112f9f45a0d1309}\label{structvirtio__config__ops_a7dd5a25071de6ae6d112f9f45a0d1309} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*}, unsigned int, const void \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structvirtio__config__ops_add89ff6d01dab9c98ff7a24b3726a5b4}\label{structvirtio__config__ops_add89ff6d01dab9c98ff7a24b3726a5b4} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries generation} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a261eb5d58a773a2e93d0cbbd37229376}\label{structvirtio__config__ops_a261eb5d58a773a2e93d0cbbd37229376} 
+u8(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+status} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a1f6926f2c480918db58fa1d18b7969c4}\label{structvirtio__config__ops_a1f6926f2c480918db58fa1d18b7969c4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+status} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structvirtio__config__ops_a5bfdc73c1171bb372e5676943eef7ddd}\label{structvirtio__config__ops_a5bfdc73c1171bb372e5676943eef7ddd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries reset} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a3053d402a3cb47ec4726f1ba6872c171}\label{structvirtio__config__ops_a3053d402a3cb47ec4726f1ba6872c171} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries find\+\_\+vqs} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*}, unsigned int, struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvirtqueue__info}{virtqueue\+\_\+info}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structirq__affinity}{irq\+\_\+affinity}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_acd5567cb2facaa3955c03183f8d49f80}\label{structvirtio__config__ops_acd5567cb2facaa3955c03183f8d49f80} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries del\+\_\+vqs} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a0c1bea548ba1846a7dbe5dd5b6cd49cf}\label{structvirtio__config__ops_a0c1bea548ba1846a7dbe5dd5b6cd49cf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries synchronize\+\_\+cbs} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_aaf3f007f0cf2f8a3ead2f6c6f16bbae6}\label{structvirtio__config__ops_aaf3f007f0cf2f8a3ead2f6c6f16bbae6} 
+u64(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+features} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a917c4af0144fbfc32a8d5a84bb3fb591}\label{structvirtio__config__ops_a917c4af0144fbfc32a8d5a84bb3fb591} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+extended\+\_\+features} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a02b7aadaf5d9383b42db7693938c7967}\label{structvirtio__config__ops_a02b7aadaf5d9383b42db7693938c7967} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries finalize\+\_\+features} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a1cceccbbec452d9b44fa1167d4d5ccd0}\label{structvirtio__config__ops_a1cceccbbec452d9b44fa1167d4d5ccd0} 
+const char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries bus\+\_\+name} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a8c9bb80785b6380f4bb90403f3ac6d10}\label{structvirtio__config__ops_a8c9bb80785b6380f4bb90403f3ac6d10} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+vq\+\_\+affinity} )(struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a0f67f236f36866e74a307cbb0e373b53}\label{structvirtio__config__ops_a0f67f236f36866e74a307cbb0e373b53} 
+const struct \doxymbox{\hyperlink{structcpumask}{cpumask}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+vq\+\_\+affinity} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structvirtio__config__ops_ab84483bec5caa20e3b88167e6e2d7001}\label{structvirtio__config__ops_ab84483bec5caa20e3b88167e6e2d7001} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+shm\+\_\+region} )(struct \doxymbox{\hyperlink{structvirtio__device}{virtio\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvirtio__shm__region}{virtio\+\_\+shm\+\_\+region}} \texorpdfstring{$\ast$}{*}, u8)
+\item 
+\Hypertarget{structvirtio__config__ops_a7cdcbda3a914cf38679a72552c1a0b81}\label{structvirtio__config__ops_a7cdcbda3a914cf38679a72552c1a0b81} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries disable\+\_\+vq\+\_\+and\+\_\+reset} )(struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structvirtio__config__ops_a57fc6db33ad088a094ac89e96bb4a049}\label{structvirtio__config__ops_a57fc6db33ad088a094ac89e96bb4a049} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enable\+\_\+vq\+\_\+after\+\_\+reset} )(struct \doxymbox{\hyperlink{structvirtqueue}{virtqueue}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

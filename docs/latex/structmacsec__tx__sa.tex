@@ -1,0 +1,40 @@
+\doxysection{macsec\+\_\+tx\+\_\+sa Struct Reference}
+\hypertarget{structmacsec__tx__sa}{}\label{structmacsec__tx__sa}\index{macsec\_tx\_sa@{macsec\_tx\_sa}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmacsec__tx__sa_a24c4f5ecdde96fc949fa0d82220e0573}\label{structmacsec__tx__sa_a24c4f5ecdde96fc949fa0d82220e0573} 
+struct \doxymbox{\hyperlink{structmacsec__key}{macsec\+\_\+key}} {\bfseries key}
+\item 
+\Hypertarget{structmacsec__tx__sa_a9b8462e39cf93a33a8c3c63705b87b6f}\label{structmacsec__tx__sa_a9b8462e39cf93a33a8c3c63705b87b6f} 
+ssci\+\_\+t {\bfseries ssci}
+\item 
+\Hypertarget{structmacsec__tx__sa_a158bf3687c0731ade9cea3a1904b1654}\label{structmacsec__tx__sa_a158bf3687c0731ade9cea3a1904b1654} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structmacsec__tx__sa_a6f76a1b6b0c2e3a59938b9becc7c8c11}\label{structmacsec__tx__sa_a6f76a1b6b0c2e3a59938b9becc7c8c11} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>pn\_t {\bfseries next\_pn\_halves}\\
+\>u64 {\bfseries next\_pn}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmacsec__tx__sa_a589619139039e186fa19f377bca79c39}\label{structmacsec__tx__sa_a589619139039e186fa19f377bca79c39} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structmacsec__tx__sa_a9acbf015f213b5b8ea0a026bba998f45}\label{structmacsec__tx__sa_a9acbf015f213b5b8ea0a026bba998f45} 
+bool {\bfseries active}
+\item 
+\Hypertarget{structmacsec__tx__sa_a61401001019ac07556a30d1fca87f79c}\label{structmacsec__tx__sa_a61401001019ac07556a30d1fca87f79c} 
+struct \doxymbox{\hyperlink{structmacsec__tx__sa__stats}{macsec\+\_\+tx\+\_\+sa\+\_\+stats}} \texorpdfstring{$\ast$}{*} {\bfseries stats}
+\item 
+\Hypertarget{structmacsec__tx__sa_a7e2e95e70bde5463398262b4e0fb1aa1}\label{structmacsec__tx__sa_a7e2e95e70bde5463398262b4e0fb1aa1} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+\doxysection{xfrm\+\_\+mode\+\_\+cbs Struct Reference}
+\hypertarget{structxfrm__mode__cbs}{}\label{structxfrm__mode__cbs}\index{xfrm\_mode\_cbs@{xfrm\_mode\_cbs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxfrm__mode__cbs_acae9e49780744419e28fcbc0da8b3b34}\label{structxfrm__mode__cbs_acae9e49780744419e28fcbc0da8b3b34} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structxfrm__mode__cbs_aee1372c3bd51e4f9c799f96dbddbb2e0}\label{structxfrm__mode__cbs_aee1372c3bd51e4f9c799f96dbddbb2e0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+state} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mode__cbs_a3d7b4b97a34bf563fd7c1074a835341d}\label{structxfrm__mode__cbs_a3d7b4b97a34bf563fd7c1074a835341d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries clone\+\_\+state} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mode__cbs_aa6bb19dba12402b9a3a6973598c945d5}\label{structxfrm__mode__cbs_aa6bb19dba12402b9a3a6973598c945d5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy\+\_\+state} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mode__cbs_a3c66cc8bc886de39dabade68e04c966c}\label{structxfrm__mode__cbs_a3c66cc8bc886de39dabade68e04c966c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries user\+\_\+init} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mode__cbs_aa9d2b8fad98e0bf23759c0d111a69382}\label{structxfrm__mode__cbs_aa9d2b8fad98e0bf23759c0d111a69382} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries copy\+\_\+to\+\_\+user} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mode__cbs_a10bdd0755588cf3af9c6a704d787eec2}\label{structxfrm__mode__cbs_a10bdd0755588cf3af9c6a704d787eec2} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries sa\+\_\+len} )(const struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mode__cbs_ac3647add3d1c733eab55df18dd5395b5}\label{structxfrm__mode__cbs_ac3647add3d1c733eab55df18dd5395b5} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+inner\+\_\+mtu} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structxfrm__mode__cbs_aba633928d68da3ea543c0119beaaa057}\label{structxfrm__mode__cbs_aba633928d68da3ea543c0119beaaa057} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries input} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mode__cbs_a111aaee084884ee29516981ebe2b3808}\label{structxfrm__mode__cbs_a111aaee084884ee29516981ebe2b3808} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries output} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structxfrm__mode__cbs_a8b8c2115b5fd015f6aa145201217ae98}\label{structxfrm__mode__cbs_a8b8c2115b5fd015f6aa145201217ae98} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+output} )(struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

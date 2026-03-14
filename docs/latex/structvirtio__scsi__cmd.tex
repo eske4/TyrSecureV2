@@ -1,0 +1,41 @@
+\doxysection{virtio\+\_\+scsi\+\_\+cmd Struct Reference}
+\hypertarget{structvirtio__scsi__cmd}{}\label{structvirtio__scsi__cmd}\index{virtio\_scsi\_cmd@{virtio\_scsi\_cmd}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtio__scsi__cmd_a76edfd5a48239e6c19527ed043f49a95}\label{structvirtio__scsi__cmd_a76edfd5a48239e6c19527ed043f49a95} 
+struct \doxymbox{\hyperlink{structscsi__cmnd}{scsi\+\_\+cmnd}} \texorpdfstring{$\ast$}{*} {\bfseries sc}
+\item 
+\Hypertarget{structvirtio__scsi__cmd_ac598b2efcdd51727b991712cc84ca5f1}\label{structvirtio__scsi__cmd_ac598b2efcdd51727b991712cc84ca5f1} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} \texorpdfstring{$\ast$}{*} {\bfseries comp}
+\item 
+\Hypertarget{structvirtio__scsi__cmd_ae4870910533cba854a7b20aa66366550}\label{structvirtio__scsi__cmd_ae4870910533cba854a7b20aa66366550} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structvirtio__scsi__cmd__req}{virtio\_scsi\_cmd\_req}} {\bfseries cmd}\\
+\>struct \doxymbox{\hyperlink{structvirtio__scsi__cmd__req__pi}{virtio\_scsi\_cmd\_req\_pi}} {\bfseries cmd\_pi}\\
+\>struct \doxymbox{\hyperlink{structvirtio__scsi__ctrl__tmf__req}{virtio\_scsi\_ctrl\_tmf\_req}} {\bfseries tmf}\\
+\>struct \doxymbox{\hyperlink{structvirtio__scsi__ctrl__an__req}{virtio\_scsi\_ctrl\_an\_req}} {\bfseries an}\\
+\} {\bfseries req}\\
+
+\end{tabbing}\item 
+\Hypertarget{structvirtio__scsi__cmd_a139919ce4a905747fd8e7165cc89b649}\label{structvirtio__scsi__cmd_a139919ce4a905747fd8e7165cc89b649} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structvirtio__scsi__cmd__resp}{virtio\_scsi\_cmd\_resp}} {\bfseries cmd}\\
+\>struct \doxymbox{\hyperlink{structvirtio__scsi__ctrl__tmf__resp}{virtio\_scsi\_ctrl\_tmf\_resp}} {\bfseries tmf}\\
+\>struct \doxymbox{\hyperlink{structvirtio__scsi__ctrl__an__resp}{virtio\_scsi\_ctrl\_an\_resp}} {\bfseries an}\\
+\>struct \doxymbox{\hyperlink{structvirtio__scsi__event}{virtio\_scsi\_event}} {\bfseries evt}\\
+\} {\bfseries resp}\\
+
+\end{tabbing}\item 
+\Hypertarget{structvirtio__scsi__cmd_a76a551a87d0ed9a14b919887c1509cf0}\label{structvirtio__scsi__cmd_a76a551a87d0ed9a14b919887c1509cf0} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

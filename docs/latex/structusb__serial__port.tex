@@ -1,0 +1,109 @@
+\doxysection{usb\+\_\+serial\+\_\+port Struct Reference}
+\hypertarget{structusb__serial__port}{}\label{structusb__serial__port}\index{usb\_serial\_port@{usb\_serial\_port}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusb__serial__port_a84fb1bea536b3e5c91fc33c93cb8f791}\label{structusb__serial__port_a84fb1bea536b3e5c91fc33c93cb8f791} 
+struct \doxymbox{\hyperlink{structusb__serial}{usb\+\_\+serial}} \texorpdfstring{$\ast$}{*} {\bfseries serial}
+\item 
+\Hypertarget{structusb__serial__port_ad7f109b4f8dc5e2bca9144c5bcd169da}\label{structusb__serial__port_ad7f109b4f8dc5e2bca9144c5bcd169da} 
+struct \doxymbox{\hyperlink{structtty__port}{tty\+\_\+port}} {\bfseries port}
+\item 
+\Hypertarget{structusb__serial__port_a6d1eedea6553f26d2db91c819dd4a777}\label{structusb__serial__port_a6d1eedea6553f26d2db91c819dd4a777} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structusb__serial__port_a18160c62484406eeab05c800f450ecf3}\label{structusb__serial__port_a18160c62484406eeab05c800f450ecf3} 
+u32 {\bfseries minor}
+\item 
+\Hypertarget{structusb__serial__port_a70e33b69a2fc7ca1657fd3ed34cb6c53}\label{structusb__serial__port_a70e33b69a2fc7ca1657fd3ed34cb6c53} 
+u8 {\bfseries port\+\_\+number}
+\item 
+\Hypertarget{structusb__serial__port_a2eea008907393d7650eeb1d45789f713}\label{structusb__serial__port_a2eea008907393d7650eeb1d45789f713} 
+unsigned char \texorpdfstring{$\ast$}{*} {\bfseries interrupt\+\_\+in\+\_\+buffer}
+\item 
+\Hypertarget{structusb__serial__port_a256bec4e88cc26ea42d1e8cd12855019}\label{structusb__serial__port_a256bec4e88cc26ea42d1e8cd12855019} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries interrupt\+\_\+in\+\_\+urb}
+\item 
+\Hypertarget{structusb__serial__port_aa20c7a8411c481795e2c5f282bafa936}\label{structusb__serial__port_aa20c7a8411c481795e2c5f282bafa936} 
+\+\_\+\+\_\+u8 {\bfseries interrupt\+\_\+in\+\_\+endpoint\+Address}
+\item 
+\Hypertarget{structusb__serial__port_ae689f8443274f0f7e043499e2967c33d}\label{structusb__serial__port_ae689f8443274f0f7e043499e2967c33d} 
+unsigned char \texorpdfstring{$\ast$}{*} {\bfseries interrupt\+\_\+out\+\_\+buffer}
+\item 
+\Hypertarget{structusb__serial__port_ad09cdc37eb0db576403a98830f5735d5}\label{structusb__serial__port_ad09cdc37eb0db576403a98830f5735d5} 
+int {\bfseries interrupt\+\_\+out\+\_\+size}
+\item 
+\Hypertarget{structusb__serial__port_a572da56b390fc873a760f22f94b94bf6}\label{structusb__serial__port_a572da56b390fc873a760f22f94b94bf6} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries interrupt\+\_\+out\+\_\+urb}
+\item 
+\Hypertarget{structusb__serial__port_ab2a47c5aad1c8168201f47d285a4c227}\label{structusb__serial__port_ab2a47c5aad1c8168201f47d285a4c227} 
+\+\_\+\+\_\+u8 {\bfseries interrupt\+\_\+out\+\_\+endpoint\+Address}
+\item 
+\Hypertarget{structusb__serial__port_a6ff516588dcc4e598e8817f086c153f4}\label{structusb__serial__port_a6ff516588dcc4e598e8817f086c153f4} 
+unsigned char \texorpdfstring{$\ast$}{*} {\bfseries bulk\+\_\+in\+\_\+buffer}
+\item 
+\Hypertarget{structusb__serial__port_a7bf538622d504a2e848a15db89700b2b}\label{structusb__serial__port_a7bf538622d504a2e848a15db89700b2b} 
+int {\bfseries bulk\+\_\+in\+\_\+size}
+\item 
+\Hypertarget{structusb__serial__port_a7b29b73210ec27421c5834a71bbb3d3b}\label{structusb__serial__port_a7b29b73210ec27421c5834a71bbb3d3b} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+urb}
+\item 
+\Hypertarget{structusb__serial__port_ae30af16f4f89df2adbd63615996d6873}\label{structusb__serial__port_ae30af16f4f89df2adbd63615996d6873} 
+\+\_\+\+\_\+u8 {\bfseries bulk\+\_\+in\+\_\+endpoint\+Address}
+\item 
+\Hypertarget{structusb__serial__port_ae3f20ae58dd3ed73cd2c4fc54823d552}\label{structusb__serial__port_ae3f20ae58dd3ed73cd2c4fc54823d552} 
+unsigned char \texorpdfstring{$\ast$}{*} {\bfseries bulk\+\_\+in\+\_\+buffers} \+[2]\+
+\item 
+\Hypertarget{structusb__serial__port_a5cbd154e3f7f577d0bcee0a3705e9439}\label{structusb__serial__port_a5cbd154e3f7f577d0bcee0a3705e9439} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+urbs} \+[2]\+
+\item 
+\Hypertarget{structusb__serial__port_abb8ef76121c853803c1da0b74aaed37e}\label{structusb__serial__port_abb8ef76121c853803c1da0b74aaed37e} 
+long unsigned int {\bfseries read\+\_\+urbs\+\_\+free}
+\item 
+\Hypertarget{structusb__serial__port_afc74e04db218fa882b715a63c5fea9aa}\label{structusb__serial__port_afc74e04db218fa882b715a63c5fea9aa} 
+unsigned char \texorpdfstring{$\ast$}{*} {\bfseries bulk\+\_\+out\+\_\+buffer}
+\item 
+\Hypertarget{structusb__serial__port_ac17f8232354a8cc0136ef8bc531732ca}\label{structusb__serial__port_ac17f8232354a8cc0136ef8bc531732ca} 
+int {\bfseries bulk\+\_\+out\+\_\+size}
+\item 
+\Hypertarget{structusb__serial__port_a5a76b588f0c7f976e6e8b3f238f3c71e}\label{structusb__serial__port_a5a76b588f0c7f976e6e8b3f238f3c71e} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+urb}
+\item 
+\Hypertarget{structusb__serial__port_a9e7e996e7982626c96edac63824e75cb}\label{structusb__serial__port_a9e7e996e7982626c96edac63824e75cb} 
+struct \doxymbox{\hyperlink{structkfifo}{kfifo}} {\bfseries write\+\_\+fifo}
+\item 
+\Hypertarget{structusb__serial__port_a1a870d052017c3b6ab8f09d2a52dc5a2}\label{structusb__serial__port_a1a870d052017c3b6ab8f09d2a52dc5a2} 
+unsigned char \texorpdfstring{$\ast$}{*} {\bfseries bulk\+\_\+out\+\_\+buffers} \+[2]\+
+\item 
+\Hypertarget{structusb__serial__port_abb07ae8d7b148b4f7f979c553eb55dba}\label{structusb__serial__port_abb07ae8d7b148b4f7f979c553eb55dba} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+urbs} \+[2]\+
+\item 
+\Hypertarget{structusb__serial__port_a78bd06ee0c1b72772842cf7165457613}\label{structusb__serial__port_a78bd06ee0c1b72772842cf7165457613} 
+long unsigned int {\bfseries write\+\_\+urbs\+\_\+free}
+\item 
+\Hypertarget{structusb__serial__port_a85875e4a63400996cd0fda821eaca872}\label{structusb__serial__port_a85875e4a63400996cd0fda821eaca872} 
+\+\_\+\+\_\+u8 {\bfseries bulk\+\_\+out\+\_\+endpoint\+Address}
+\item 
+\Hypertarget{structusb__serial__port_afd6fd97f6e635ed047c774870a398a0c}\label{structusb__serial__port_afd6fd97f6e635ed047c774870a398a0c} 
+struct \doxymbox{\hyperlink{structasync__icount}{async\+\_\+icount}} {\bfseries icount}
+\item 
+\Hypertarget{structusb__serial__port_afb85dfe8835c6b74c0974747d7d2c68c}\label{structusb__serial__port_afb85dfe8835c6b74c0974747d7d2c68c} 
+int {\bfseries tx\+\_\+bytes}
+\item 
+\Hypertarget{structusb__serial__port_a082090121a69a385b1282153e79072d1}\label{structusb__serial__port_a082090121a69a385b1282153e79072d1} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structusb__serial__port_ac30bd33ab18fc597091fe1ff994f572b}\label{structusb__serial__port_ac30bd33ab18fc597091fe1ff994f572b} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries work}
+\item 
+\Hypertarget{structusb__serial__port_a87a7163d29cecf7b7720a2283ec993f4}\label{structusb__serial__port_a87a7163d29cecf7b7720a2283ec993f4} 
+long unsigned int {\bfseries sysrq}
+\item 
+\Hypertarget{structusb__serial__port_a2451f9d23463740de2cbd73032c81340}\label{structusb__serial__port_a2451f9d23463740de2cbd73032c81340} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

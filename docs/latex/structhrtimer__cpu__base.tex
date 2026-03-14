@@ -1,0 +1,79 @@
+\doxysection{hrtimer\+\_\+cpu\+\_\+base Struct Reference}
+\hypertarget{structhrtimer__cpu__base}{}\label{structhrtimer__cpu__base}\index{hrtimer\_cpu\_base@{hrtimer\_cpu\_base}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structhrtimer__cpu__base_a7ee782e99add1351880c769c418a7379}\label{structhrtimer__cpu__base_a7ee782e99add1351880c769c418a7379} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structhrtimer__cpu__base_adeb4c9e69ed5a14fc4a5e99dd50bd02a}\label{structhrtimer__cpu__base_adeb4c9e69ed5a14fc4a5e99dd50bd02a} 
+unsigned int {\bfseries cpu}
+\item 
+\Hypertarget{structhrtimer__cpu__base_af1ee8440c8494415f31eaaa61c4742d1}\label{structhrtimer__cpu__base_af1ee8440c8494415f31eaaa61c4742d1} 
+unsigned int {\bfseries active\+\_\+bases}
+\item 
+\Hypertarget{structhrtimer__cpu__base_ae73ac2d0642c72a470dbd2e8dd049e1f}\label{structhrtimer__cpu__base_ae73ac2d0642c72a470dbd2e8dd049e1f} 
+unsigned int {\bfseries clock\+\_\+was\+\_\+set\+\_\+seq}
+\item 
+\Hypertarget{structhrtimer__cpu__base_a37b6b2c61451b04d27ca204eea05ce17}\label{structhrtimer__cpu__base_a37b6b2c61451b04d27ca204eea05ce17} 
+unsigned int {\bfseries hres\+\_\+active}:\+ 1
+\item 
+\Hypertarget{structhrtimer__cpu__base_a8ab6e10bf80608034543284c40240cc1}\label{structhrtimer__cpu__base_a8ab6e10bf80608034543284c40240cc1} 
+unsigned int {\bfseries in\+\_\+hrtirq}:\+ 1
+\item 
+\Hypertarget{structhrtimer__cpu__base_a5d9eb33414a3a2223d3931227256a176}\label{structhrtimer__cpu__base_a5d9eb33414a3a2223d3931227256a176} 
+unsigned int {\bfseries hang\+\_\+detected}:\+ 1
+\item 
+\Hypertarget{structhrtimer__cpu__base_a40b486f9559f8ce39f41853d6fef741b}\label{structhrtimer__cpu__base_a40b486f9559f8ce39f41853d6fef741b} 
+unsigned int {\bfseries softirq\+\_\+activated}:\+ 1
+\item 
+\Hypertarget{structhrtimer__cpu__base_a594d4bd6b3eb017f79216532d53c3a63}\label{structhrtimer__cpu__base_a594d4bd6b3eb017f79216532d53c3a63} 
+unsigned int {\bfseries online}:\+ 1
+\item 
+\Hypertarget{structhrtimer__cpu__base_a3d7653a21c71fc3c50c4359794d77ce9}\label{structhrtimer__cpu__base_a3d7653a21c71fc3c50c4359794d77ce9} 
+unsigned int {\bfseries nr\+\_\+events}
+\item 
+\Hypertarget{structhrtimer__cpu__base_a6232e910e7893cf1c9443b31374d0de3}\label{structhrtimer__cpu__base_a6232e910e7893cf1c9443b31374d0de3} 
+short unsigned int {\bfseries nr\+\_\+retries}
+\item 
+\Hypertarget{structhrtimer__cpu__base_a8d4954a37141f712013f77d231a0c6eb}\label{structhrtimer__cpu__base_a8d4954a37141f712013f77d231a0c6eb} 
+short unsigned int {\bfseries nr\+\_\+hangs}
+\item 
+\Hypertarget{structhrtimer__cpu__base_abba907a7c93adc3683704a9f77f97d0e}\label{structhrtimer__cpu__base_abba907a7c93adc3683704a9f77f97d0e} 
+unsigned int {\bfseries max\+\_\+hang\+\_\+time}
+\item 
+\Hypertarget{structhrtimer__cpu__base_af3944cd06d50f1336bb42cfa19a90c24}\label{structhrtimer__cpu__base_af3944cd06d50f1336bb42cfa19a90c24} 
+ktime\+\_\+t {\bfseries expires\+\_\+next}
+\item 
+\Hypertarget{structhrtimer__cpu__base_a0743677800eafd479a2bdcea31ab0561}\label{structhrtimer__cpu__base_a0743677800eafd479a2bdcea31ab0561} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} \texorpdfstring{$\ast$}{*} {\bfseries next\+\_\+timer}
+\item 
+\Hypertarget{structhrtimer__cpu__base_a71421c195a2e627715c29497bbfb661b}\label{structhrtimer__cpu__base_a71421c195a2e627715c29497bbfb661b} 
+ktime\+\_\+t {\bfseries softirq\+\_\+expires\+\_\+next}
+\item 
+\Hypertarget{structhrtimer__cpu__base_aa33808da4d9f230c678390079935a599}\label{structhrtimer__cpu__base_aa33808da4d9f230c678390079935a599} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} \texorpdfstring{$\ast$}{*} {\bfseries softirq\+\_\+next\+\_\+timer}
+\item 
+\Hypertarget{structhrtimer__cpu__base_a2565eb61b8f5967619f6a9f977f759c1}\label{structhrtimer__cpu__base_a2565eb61b8f5967619f6a9f977f759c1} 
+struct \doxymbox{\hyperlink{structhrtimer__clock__base}{hrtimer\+\_\+clock\+\_\+base}} {\bfseries clock\+\_\+base} \+[8]\+
+\item 
+\Hypertarget{structhrtimer__cpu__base_a22437e780082488c3e2780870f81287d}\label{structhrtimer__cpu__base_a22437e780082488c3e2780870f81287d} 
+call\+\_\+single\+\_\+data\+\_\+t {\bfseries csd}
+\item 
+\Hypertarget{structhrtimer__cpu__base_a6df44f83142cd7f0316cb2be891773ef}\label{structhrtimer__cpu__base_a6df44f83142cd7f0316cb2be891773ef} 
+long :\+ 64
+\item 
+\Hypertarget{structhrtimer__cpu__base_abda7160a3cab85714feda80257007b26}\label{structhrtimer__cpu__base_abda7160a3cab85714feda80257007b26} 
+long :\+ 64
+\item 
+\Hypertarget{structhrtimer__cpu__base_a42f5dcc5037df01ead1038dd6d52e335}\label{structhrtimer__cpu__base_a42f5dcc5037df01ead1038dd6d52e335} 
+long :\+ 64
+\item 
+\Hypertarget{structhrtimer__cpu__base_aebd5cb342ce4caac17f705dfba9227b5}\label{structhrtimer__cpu__base_aebd5cb342ce4caac17f705dfba9227b5} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

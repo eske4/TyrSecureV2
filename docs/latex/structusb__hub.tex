@@ -1,0 +1,124 @@
+\doxysection{usb\+\_\+hub Struct Reference}
+\hypertarget{structusb__hub}{}\label{structusb__hub}\index{usb\_hub@{usb\_hub}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structusb__hub_a119c7501fd2114564f9e331a56613486}\label{structusb__hub_a119c7501fd2114564f9e331a56613486} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries intfdev}
+\item 
+\Hypertarget{structusb__hub_a45e85404e245dc38e055a161113695e1}\label{structusb__hub_a45e85404e245dc38e055a161113695e1} 
+struct \doxymbox{\hyperlink{structusb__device}{usb\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries hdev}
+\item 
+\Hypertarget{structusb__hub_a69db4be25aa277b5d94764cbbe27ecd6}\label{structusb__hub_a69db4be25aa277b5d94764cbbe27ecd6} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries kref}
+\item 
+\Hypertarget{structusb__hub_a7b2a347c5ff1b1188f6d5818e298ea30}\label{structusb__hub_a7b2a347c5ff1b1188f6d5818e298ea30} 
+struct \doxymbox{\hyperlink{structurb}{urb}} \texorpdfstring{$\ast$}{*} {\bfseries urb}
+\item 
+\Hypertarget{structusb__hub_af5dded08b09eb8c48691c578b6d69364}\label{structusb__hub_af5dded08b09eb8c48691c578b6d69364} 
+u8(\texorpdfstring{$\ast$}{*} {\bfseries buffer} )\+[8]\+
+\item 
+\Hypertarget{structusb__hub_a19a125f43cb29abf169ce47e6652ad49}\label{structusb__hub_a19a125f43cb29abf169ce47e6652ad49} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structusb__hub__status}{usb\_hub\_status}} {\bfseries hub}\\
+\>struct \doxymbox{\hyperlink{structusb__port__status}{usb\_port\_status}} {\bfseries port}\\
+\} \texorpdfstring{$\ast$}{*} {\bfseries status}\\
+
+\end{tabbing}\item 
+\Hypertarget{structusb__hub_a47ed58a6d09e12beb10ba38d90d6c9be}\label{structusb__hub_a47ed58a6d09e12beb10ba38d90d6c9be} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries status\+\_\+mutex}
+\item 
+\Hypertarget{structusb__hub_af4bfed19ba9e822769d4caf7c3346df2}\label{structusb__hub_af4bfed19ba9e822769d4caf7c3346df2} 
+int {\bfseries error}
+\item 
+\Hypertarget{structusb__hub_ac45333da79bee3ac9e66e23f2ce82ed1}\label{structusb__hub_ac45333da79bee3ac9e66e23f2ce82ed1} 
+int {\bfseries nerrors}
+\item 
+\Hypertarget{structusb__hub_aea4b0649421c2413b8d98c64e477d9a3}\label{structusb__hub_aea4b0649421c2413b8d98c64e477d9a3} 
+long unsigned int {\bfseries event\+\_\+bits} \+[1]\+
+\item 
+\Hypertarget{structusb__hub_a786d34d7b361063724b28a721abf0f23}\label{structusb__hub_a786d34d7b361063724b28a721abf0f23} 
+long unsigned int {\bfseries change\+\_\+bits} \+[1]\+
+\item 
+\Hypertarget{structusb__hub_ac3b8da407715ee9a83ee9a4c33a167eb}\label{structusb__hub_ac3b8da407715ee9a83ee9a4c33a167eb} 
+long unsigned int {\bfseries removed\+\_\+bits} \+[1]\+
+\item 
+\Hypertarget{structusb__hub_a840c52aff37628490ce16f83753921fb}\label{structusb__hub_a840c52aff37628490ce16f83753921fb} 
+long unsigned int {\bfseries wakeup\+\_\+bits} \+[1]\+
+\item 
+\Hypertarget{structusb__hub_a116f894e8e34eeaeac2a7594f6be1b0b}\label{structusb__hub_a116f894e8e34eeaeac2a7594f6be1b0b} 
+long unsigned int {\bfseries power\+\_\+bits} \+[1]\+
+\item 
+\Hypertarget{structusb__hub_a66b97c4d1248abeee609748361ad60f5}\label{structusb__hub_a66b97c4d1248abeee609748361ad60f5} 
+long unsigned int {\bfseries child\+\_\+usage\+\_\+bits} \+[1]\+
+\item 
+\Hypertarget{structusb__hub_af1dcbf05141f4abffcc0eee7a446d525}\label{structusb__hub_af1dcbf05141f4abffcc0eee7a446d525} 
+long unsigned int {\bfseries warm\+\_\+reset\+\_\+bits} \+[1]\+
+\item 
+\Hypertarget{structusb__hub_a8e7972136edc11ac436146ca6f4b4738}\label{structusb__hub_a8e7972136edc11ac436146ca6f4b4738} 
+struct \doxymbox{\hyperlink{structusb__hub__descriptor}{usb\+\_\+hub\+\_\+descriptor}} \texorpdfstring{$\ast$}{*} {\bfseries descriptor}
+\item 
+\Hypertarget{structusb__hub_a1f8c123985b5ff7ea23dce37de2eea75}\label{structusb__hub_a1f8c123985b5ff7ea23dce37de2eea75} 
+struct \doxymbox{\hyperlink{structusb__tt}{usb\+\_\+tt}} {\bfseries tt}
+\item 
+\Hypertarget{structusb__hub_a1149cf57c1c6bed608b21526eb5fa725}\label{structusb__hub_a1149cf57c1c6bed608b21526eb5fa725} 
+unsigned int {\bfseries m\+A\+\_\+per\+\_\+port}
+\item 
+\Hypertarget{structusb__hub_abcab05125efa639b0515c16d688ddc3a}\label{structusb__hub_abcab05125efa639b0515c16d688ddc3a} 
+unsigned int {\bfseries wakeup\+\_\+enabled\+\_\+descendants}
+\item 
+\Hypertarget{structusb__hub_a6e26cfe5b7b89530489011e471e7323d}\label{structusb__hub_a6e26cfe5b7b89530489011e471e7323d} 
+unsigned int {\bfseries limited\+\_\+power}:\+ 1
+\item 
+\Hypertarget{structusb__hub_adcde92fc7ad08ead8bb7cc2ee68defec}\label{structusb__hub_adcde92fc7ad08ead8bb7cc2ee68defec} 
+unsigned int {\bfseries quiescing}:\+ 1
+\item 
+\Hypertarget{structusb__hub_ae2dc59cca81061edd3cd2447c1dc6237}\label{structusb__hub_ae2dc59cca81061edd3cd2447c1dc6237} 
+unsigned int {\bfseries disconnected}:\+ 1
+\item 
+\Hypertarget{structusb__hub_a1f1218d78f5f4f5811a8e86fddff247c}\label{structusb__hub_a1f1218d78f5f4f5811a8e86fddff247c} 
+unsigned int {\bfseries in\+\_\+reset}:\+ 1
+\item 
+\Hypertarget{structusb__hub_a3123a7f1f466e21aba6101c292dd4a92}\label{structusb__hub_a3123a7f1f466e21aba6101c292dd4a92} 
+unsigned int {\bfseries quirk\+\_\+disable\+\_\+autosuspend}:\+ 1
+\item 
+\Hypertarget{structusb__hub_ae651157f9cc19df50bfbe57a07dde055}\label{structusb__hub_ae651157f9cc19df50bfbe57a07dde055} 
+unsigned int {\bfseries quirk\+\_\+check\+\_\+port\+\_\+auto\+\_\+suspend}:\+ 1
+\item 
+\Hypertarget{structusb__hub_ac91c03c77aa572b53c92f0b835d65c78}\label{structusb__hub_ac91c03c77aa572b53c92f0b835d65c78} 
+unsigned int {\bfseries has\+\_\+indicators}:\+ 1
+\item 
+\Hypertarget{structusb__hub_a8f6cf53e99a38ca02ace5e4c139fee55}\label{structusb__hub_a8f6cf53e99a38ca02ace5e4c139fee55} 
+u8 {\bfseries indicator} \+[31]\+
+\item 
+\Hypertarget{structusb__hub_a332c3be99222a1c98ffb9c7ea0c91508}\label{structusb__hub_a332c3be99222a1c98ffb9c7ea0c91508} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries leds}
+\item 
+\Hypertarget{structusb__hub_a92cfebf9ac4134818164ad3c84f72788}\label{structusb__hub_a92cfebf9ac4134818164ad3c84f72788} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries init\+\_\+work}
+\item 
+\Hypertarget{structusb__hub_a6e0e4579851d59e59ef05e4704c54022}\label{structusb__hub_a6e0e4579851d59e59ef05e4704c54022} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries post\+\_\+resume\+\_\+work}
+\item 
+\Hypertarget{structusb__hub_ab6c46edfbb494e4ed3a8757a64c2ea49}\label{structusb__hub_ab6c46edfbb494e4ed3a8757a64c2ea49} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries events}
+\item 
+\Hypertarget{structusb__hub_abc07226a6fe4ede1f716c31b994fc0c6}\label{structusb__hub_abc07226a6fe4ede1f716c31b994fc0c6} 
+spinlock\+\_\+t {\bfseries irq\+\_\+urb\+\_\+lock}
+\item 
+\Hypertarget{structusb__hub_af700d0e80296860e61b47f2b1d69f799}\label{structusb__hub_af700d0e80296860e61b47f2b1d69f799} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries irq\+\_\+urb\+\_\+retry}
+\item 
+\Hypertarget{structusb__hub_a4b595830260baef098eed9f54e7a96ef}\label{structusb__hub_a4b595830260baef098eed9f54e7a96ef} 
+struct \doxymbox{\hyperlink{structusb__port}{usb\+\_\+port}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries ports}
+\item 
+\Hypertarget{structusb__hub_a2265b69ae901b39c8dd9004382acf6d3}\label{structusb__hub_a2265b69ae901b39c8dd9004382acf6d3} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries onboard\+\_\+devs}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

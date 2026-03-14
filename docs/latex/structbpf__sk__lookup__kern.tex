@@ -1,0 +1,49 @@
+\doxysection{bpf\+\_\+sk\+\_\+lookup\+\_\+kern Struct Reference}
+\hypertarget{structbpf__sk__lookup__kern}{}\label{structbpf__sk__lookup__kern}\index{bpf\_sk\_lookup\_kern@{bpf\_sk\_lookup\_kern}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__sk__lookup__kern_a4439d7018f9e8c8b11a09e5247c13677}\label{structbpf__sk__lookup__kern_a4439d7018f9e8c8b11a09e5247c13677} 
+u16 {\bfseries family}
+\item 
+\Hypertarget{structbpf__sk__lookup__kern_af1d2617279082d36174c0331c792715d}\label{structbpf__sk__lookup__kern_af1d2617279082d36174c0331c792715d} 
+u16 {\bfseries protocol}
+\item 
+\Hypertarget{structbpf__sk__lookup__kern_a6289c7bfd371d1da477afceb06aae9a9}\label{structbpf__sk__lookup__kern_a6289c7bfd371d1da477afceb06aae9a9} 
+\+\_\+\+\_\+be16 {\bfseries sport}
+\item 
+\Hypertarget{structbpf__sk__lookup__kern_a0375495385d794e7e48bad6fabbd749d}\label{structbpf__sk__lookup__kern_a0375495385d794e7e48bad6fabbd749d} 
+u16 {\bfseries dport}
+\item 
+\Hypertarget{structbpf__sk__lookup__kern_a30f372581fc01693966f92db831add1a}\label{structbpf__sk__lookup__kern_a30f372581fc01693966f92db831add1a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_be32 {\bfseries saddr}\\
+\>\_\_be32 {\bfseries daddr}\\
+\} {\bfseries v4}\\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__sk__lookup__kern_a0b8cf4166b2fd916277e01a55f4d416b}\label{structbpf__sk__lookup__kern_a0b8cf4166b2fd916277e01a55f4d416b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>const struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} \texorpdfstring{$\ast$}{*} {\bfseries saddr}\\
+\>const struct \doxymbox{\hyperlink{structin6__addr}{in6\_addr}} \texorpdfstring{$\ast$}{*} {\bfseries daddr}\\
+\} {\bfseries v6}\\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__sk__lookup__kern_a738d821f305ce58acbede3f35fffe12b}\label{structbpf__sk__lookup__kern_a738d821f305ce58acbede3f35fffe12b} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries selected\+\_\+sk}
+\item 
+\Hypertarget{structbpf__sk__lookup__kern_ab92d3d33df61de9eb513090b89f8f61e}\label{structbpf__sk__lookup__kern_ab92d3d33df61de9eb513090b89f8f61e} 
+u32 {\bfseries ingress\+\_\+ifindex}
+\item 
+\Hypertarget{structbpf__sk__lookup__kern_a4c0381d319b6b0b244c179408a5f6be4}\label{structbpf__sk__lookup__kern_a4c0381d319b6b0b244c179408a5f6be4} 
+bool {\bfseries no\+\_\+reuseport}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

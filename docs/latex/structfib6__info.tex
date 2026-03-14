@@ -1,0 +1,100 @@
+\doxysection{fib6\+\_\+info Struct Reference}
+\hypertarget{structfib6__info}{}\label{structfib6__info}\index{fib6\_info@{fib6\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfib6__info_a6f4e69ed5b0cdb580ceacf978c0d5ede}\label{structfib6__info_a6f4e69ed5b0cdb580ceacf978c0d5ede} 
+struct \doxymbox{\hyperlink{structfib6__table}{fib6\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+table}
+\item 
+\Hypertarget{structfib6__info_a7ff4fbe3a52e92f2949a16524b618939}\label{structfib6__info_a7ff4fbe3a52e92f2949a16524b618939} 
+struct \doxymbox{\hyperlink{structfib6__info}{fib6\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+next}
+\item 
+\Hypertarget{structfib6__info_adde224cb373ba96c0736f2f147231e08}\label{structfib6__info_adde224cb373ba96c0736f2f147231e08} 
+struct \doxymbox{\hyperlink{structfib6__node}{fib6\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+node}
+\item 
+\Hypertarget{structfib6__info_a7a8c365d8d47b5b4cf9470eced1b045a}\label{structfib6__info_a7a8c365d8d47b5b4cf9470eced1b045a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries fib6\_siblings}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries nh\_list}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structfib6__info_abd46b85aab4b53c6d9094212d3cd78b8}\label{structfib6__info_abd46b85aab4b53c6d9094212d3cd78b8} 
+unsigned int {\bfseries fib6\+\_\+nsiblings}
+\item 
+\Hypertarget{structfib6__info_a8dbc2b1321686f7268c2470bf31f285b}\label{structfib6__info_a8dbc2b1321686f7268c2470bf31f285b} 
+refcount\+\_\+t {\bfseries fib6\+\_\+ref}
+\item 
+\Hypertarget{structfib6__info_afde5f362a4a657bdbaf8d2d942210972}\label{structfib6__info_afde5f362a4a657bdbaf8d2d942210972} 
+long unsigned int {\bfseries expires}
+\item 
+\Hypertarget{structfib6__info_a24fbe8f140d4b99abbd4c13b2bbab12e}\label{structfib6__info_a24fbe8f140d4b99abbd4c13b2bbab12e} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries gc\+\_\+link}
+\item 
+\Hypertarget{structfib6__info_aef450193ce4f9b89d49d3ff9d7a51f5e}\label{structfib6__info_aef450193ce4f9b89d49d3ff9d7a51f5e} 
+struct \doxymbox{\hyperlink{structdst__metrics}{dst\+\_\+metrics}} \texorpdfstring{$\ast$}{*} {\bfseries fib6\+\_\+metrics}
+\item 
+\Hypertarget{structfib6__info_a1e61d904c809254871481cbc4a7853a1}\label{structfib6__info_a1e61d904c809254871481cbc4a7853a1} 
+struct \doxymbox{\hyperlink{structrt6key}{rt6key}} {\bfseries fib6\+\_\+dst}
+\item 
+\Hypertarget{structfib6__info_aa4b99645ee3d4e88714e14c02e04908d}\label{structfib6__info_aa4b99645ee3d4e88714e14c02e04908d} 
+u32 {\bfseries fib6\+\_\+flags}
+\item 
+\Hypertarget{structfib6__info_a0f5be77c8b416a273b6b4f51f59fe513}\label{structfib6__info_a0f5be77c8b416a273b6b4f51f59fe513} 
+struct \doxymbox{\hyperlink{structrt6key}{rt6key}} {\bfseries fib6\+\_\+src}
+\item 
+\Hypertarget{structfib6__info_a0d6fac1072f26de2444cce1c8ade657b}\label{structfib6__info_a0d6fac1072f26de2444cce1c8ade657b} 
+struct \doxymbox{\hyperlink{structrt6key}{rt6key}} {\bfseries fib6\+\_\+prefsrc}
+\item 
+\Hypertarget{structfib6__info_aaad384ea39d1d174e35a7b3780a673f4}\label{structfib6__info_aaad384ea39d1d174e35a7b3780a673f4} 
+u32 {\bfseries fib6\+\_\+metric}
+\item 
+\Hypertarget{structfib6__info_a633ac284fadcb2c03a528226e380c761}\label{structfib6__info_a633ac284fadcb2c03a528226e380c761} 
+u8 {\bfseries fib6\+\_\+protocol}
+\item 
+\Hypertarget{structfib6__info_ad74aa6ad416f2831c638a33b8cf97ea1}\label{structfib6__info_ad74aa6ad416f2831c638a33b8cf97ea1} 
+u8 {\bfseries fib6\+\_\+type}
+\item 
+\Hypertarget{structfib6__info_a16894f4a0a32189c35ec72b1c5cd03a4}\label{structfib6__info_a16894f4a0a32189c35ec72b1c5cd03a4} 
+u8 {\bfseries offload}
+\item 
+\Hypertarget{structfib6__info_a55e58675b49434d4479822b60b1180c5}\label{structfib6__info_a55e58675b49434d4479822b60b1180c5} 
+u8 {\bfseries trap}
+\item 
+\Hypertarget{structfib6__info_a6b7544643c787f76a8d662586c836b4c}\label{structfib6__info_a6b7544643c787f76a8d662586c836b4c} 
+u8 {\bfseries offload\+\_\+failed}
+\item 
+\Hypertarget{structfib6__info_a73129cc34a800115dec28a20c3248555}\label{structfib6__info_a73129cc34a800115dec28a20c3248555} 
+u8 {\bfseries should\+\_\+flush}:\+ 1
+\item 
+\Hypertarget{structfib6__info_a0c3e29c073773a5088f91c52049da3ce}\label{structfib6__info_a0c3e29c073773a5088f91c52049da3ce} 
+u8 {\bfseries dst\+\_\+nocount}:\+ 1
+\item 
+\Hypertarget{structfib6__info_a5142aef84e9e369d50eda712a7fd7c6b}\label{structfib6__info_a5142aef84e9e369d50eda712a7fd7c6b} 
+u8 {\bfseries dst\+\_\+nopolicy}:\+ 1
+\item 
+\Hypertarget{structfib6__info_ae46fc88b3a670d1d10d195b7eda99415}\label{structfib6__info_ae46fc88b3a670d1d10d195b7eda99415} 
+u8 {\bfseries fib6\+\_\+destroying}:\+ 1
+\item 
+\Hypertarget{structfib6__info_a3836091a39e226c13846a11aeba605d4}\label{structfib6__info_a3836091a39e226c13846a11aeba605d4} 
+u8 {\bfseries unused}:\+ 4
+\item 
+\Hypertarget{structfib6__info_a9d300db7b8d6faaa9d2325070c54130c}\label{structfib6__info_a9d300db7b8d6faaa9d2325070c54130c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries purge\+\_\+link}
+\item 
+\Hypertarget{structfib6__info_a30aecd8e85551abe8b745f30fcb14bec}\label{structfib6__info_a30aecd8e85551abe8b745f30fcb14bec} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structfib6__info_a002256b21df5267e3afb4f276508ac27}\label{structfib6__info_a002256b21df5267e3afb4f276508ac27} 
+struct \doxymbox{\hyperlink{structnexthop}{nexthop}} \texorpdfstring{$\ast$}{*} {\bfseries nh}
+\item 
+\Hypertarget{structfib6__info_ad1ffd7cc3fc874a0a78fa57942944188}\label{structfib6__info_ad1ffd7cc3fc874a0a78fa57942944188} 
+struct \doxymbox{\hyperlink{structfib6__nh}{fib6\+\_\+nh}} {\bfseries fib6\+\_\+nh} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

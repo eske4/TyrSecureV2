@@ -1,0 +1,78 @@
+\doxysection{kvm\+\_\+vcpu\+\_\+events Struct Reference}
+\hypertarget{structkvm__vcpu__events}{}\label{structkvm__vcpu__events}\index{kvm\_vcpu\_events@{kvm\_vcpu\_events}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__vcpu__events_aaf097a7c63ab50e77416d6ad1a0dfcb7}\label{structkvm__vcpu__events_aaf097a7c63ab50e77416d6ad1a0dfcb7} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u8 {\bfseries injected}\\
+\>\_\_u8 {\bfseries nr}\\
+\>\_\_u8 {\bfseries has\_error\_code}\\
+\>\_\_u8 {\bfseries pending}\\
+\>\_\_u32 {\bfseries error\_code}\\
+\} {\bfseries exception}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__events_aebdf4603409a2082deb54fe0b1576bb9}\label{structkvm__vcpu__events_aebdf4603409a2082deb54fe0b1576bb9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u8 {\bfseries injected}\\
+\>\_\_u8 {\bfseries nr}\\
+\>\_\_u8 {\bfseries soft}\\
+\>\_\_u8 {\bfseries shadow}\\
+\} {\bfseries interrupt}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__events_a99c6d5aeb2cb485022b49f17fdfa937f}\label{structkvm__vcpu__events_a99c6d5aeb2cb485022b49f17fdfa937f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u8 {\bfseries injected}\\
+\>\_\_u8 {\bfseries pending}\\
+\>\_\_u8 {\bfseries masked}\\
+\>\_\_u8 {\bfseries pad}\\
+\} {\bfseries nmi}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__events_a8119eddca1c36258fed136ff9ee0f98b}\label{structkvm__vcpu__events_a8119eddca1c36258fed136ff9ee0f98b} 
+\+\_\+\+\_\+u32 {\bfseries sipi\+\_\+vector}
+\item 
+\Hypertarget{structkvm__vcpu__events_aa8fab986b3d02fb3745eac1b13dda528}\label{structkvm__vcpu__events_aa8fab986b3d02fb3745eac1b13dda528} 
+\+\_\+\+\_\+u32 {\bfseries flags}
+\item 
+\Hypertarget{structkvm__vcpu__events_a540aec1fba28d2b8097654d839e9a0f1}\label{structkvm__vcpu__events_a540aec1fba28d2b8097654d839e9a0f1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u8 {\bfseries smm}\\
+\>\_\_u8 {\bfseries pending}\\
+\>\_\_u8 {\bfseries smm\_inside\_nmi}\\
+\>\_\_u8 {\bfseries latched\_init}\\
+\} {\bfseries smi}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__events_a45286661c196148d51fe7742f9208fa5}\label{structkvm__vcpu__events_a45286661c196148d51fe7742f9208fa5} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u8 {\bfseries pending}\\
+\} {\bfseries triple\_fault}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__vcpu__events_a569c5559f808b771b47573790469524d}\label{structkvm__vcpu__events_a569c5559f808b771b47573790469524d} 
+\+\_\+\+\_\+u8 {\bfseries reserved} \+[26]\+
+\item 
+\Hypertarget{structkvm__vcpu__events_af24630b00a8f1b557428bde3941f0d0e}\label{structkvm__vcpu__events_af24630b00a8f1b557428bde3941f0d0e} 
+\+\_\+\+\_\+u8 {\bfseries exception\+\_\+has\+\_\+payload}
+\item 
+\Hypertarget{structkvm__vcpu__events_a0064bfc8032aeb886899ae269d8d0f64}\label{structkvm__vcpu__events_a0064bfc8032aeb886899ae269d8d0f64} 
+\+\_\+\+\_\+u64 {\bfseries exception\+\_\+payload}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

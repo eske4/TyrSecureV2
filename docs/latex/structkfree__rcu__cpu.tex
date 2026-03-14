@@ -1,0 +1,55 @@
+\doxysection{kfree\+\_\+rcu\+\_\+cpu Struct Reference}
+\hypertarget{structkfree__rcu__cpu}{}\label{structkfree__rcu__cpu}\index{kfree\_rcu\_cpu@{kfree\_rcu\_cpu}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkfree__rcu__cpu_a764b1e5f153f7dd7736b07bdd7732e1e}\label{structkfree__rcu__cpu_a764b1e5f153f7dd7736b07bdd7732e1e} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries head}
+\item 
+\Hypertarget{structkfree__rcu__cpu_af14cfddb6cb966b954e12c48970af30e}\label{structkfree__rcu__cpu_af14cfddb6cb966b954e12c48970af30e} 
+long unsigned int {\bfseries head\+\_\+gp\+\_\+snap}
+\item 
+\Hypertarget{structkfree__rcu__cpu_adff2d2392607684dc5cb4a68d244740f}\label{structkfree__rcu__cpu_adff2d2392607684dc5cb4a68d244740f} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries head\+\_\+count}
+\item 
+\Hypertarget{structkfree__rcu__cpu_a99d174dffb1446f246ddcd3063c3d0b0}\label{structkfree__rcu__cpu_a99d174dffb1446f246ddcd3063c3d0b0} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries bulk\+\_\+head} \+[2]\+
+\item 
+\Hypertarget{structkfree__rcu__cpu_ade1fd3e87260ef496d92c25390b22436}\label{structkfree__rcu__cpu_ade1fd3e87260ef496d92c25390b22436} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries bulk\+\_\+count} \+[2]\+
+\item 
+\Hypertarget{structkfree__rcu__cpu_ad89d0c1ea01a20dca4b6643ca8532842}\label{structkfree__rcu__cpu_ad89d0c1ea01a20dca4b6643ca8532842} 
+struct \doxymbox{\hyperlink{structkfree__rcu__cpu__work}{kfree\+\_\+rcu\+\_\+cpu\+\_\+work}} {\bfseries krw\+\_\+arr} \+[2]\+
+\item 
+\Hypertarget{structkfree__rcu__cpu_aa99025c6d117e6be5a2334ba77d2baa8}\label{structkfree__rcu__cpu_aa99025c6d117e6be5a2334ba77d2baa8} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structkfree__rcu__cpu_a8d4e82ad6e5d1c50decccb7d6ce542a5}\label{structkfree__rcu__cpu_a8d4e82ad6e5d1c50decccb7d6ce542a5} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries monitor\+\_\+work}
+\item 
+\Hypertarget{structkfree__rcu__cpu_acaf2f6e4c98a5b3c6255fe8b7360ac3a}\label{structkfree__rcu__cpu_acaf2f6e4c98a5b3c6255fe8b7360ac3a} 
+bool {\bfseries initialized}
+\item 
+\Hypertarget{structkfree__rcu__cpu_ab1a38ace6fe66d8be9fee2a8fee1cac8}\label{structkfree__rcu__cpu_ab1a38ace6fe66d8be9fee2a8fee1cac8} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries page\+\_\+cache\+\_\+work}
+\item 
+\Hypertarget{structkfree__rcu__cpu_a140dd2492a598ab321c7cc8593cf7dea}\label{structkfree__rcu__cpu_a140dd2492a598ab321c7cc8593cf7dea} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries backoff\+\_\+page\+\_\+cache\+\_\+fill}
+\item 
+\Hypertarget{structkfree__rcu__cpu_aec6158f7f5ab8b325968cb22c9aeb9d4}\label{structkfree__rcu__cpu_aec6158f7f5ab8b325968cb22c9aeb9d4} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries work\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structkfree__rcu__cpu_ad2e63bbf432aba2edff13c09a190c29b}\label{structkfree__rcu__cpu_ad2e63bbf432aba2edff13c09a190c29b} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries hrtimer}
+\item 
+\Hypertarget{structkfree__rcu__cpu_aa0470bff1fc85e648b6c58b196d80b73}\label{structkfree__rcu__cpu_aa0470bff1fc85e648b6c58b196d80b73} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries bkvcache}
+\item 
+\Hypertarget{structkfree__rcu__cpu_add44ac3d88a48bfcf1df938e6c5fee38}\label{structkfree__rcu__cpu_add44ac3d88a48bfcf1df938e6c5fee38} 
+int {\bfseries nr\+\_\+bkv\+\_\+objs}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

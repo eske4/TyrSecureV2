@@ -1,0 +1,82 @@
+\doxysection{dst\+\_\+entry Struct Reference}
+\hypertarget{structdst__entry}{}\label{structdst__entry}\index{dst\_entry@{dst\_entry}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdst__entry_a85a285566535dbbbb792b2430004bcac}\label{structdst__entry_a85a285566535dbbbb792b2430004bcac} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structnet__device}{net\_device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}\\
+\>struct \doxymbox{\hyperlink{structnet__device}{net\_device}} \texorpdfstring{$\ast$}{*} {\bfseries dev\_rcu}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdst__entry_a6a57ccb5c9100bb7a62fd9ca95d6d765}\label{structdst__entry_a6a57ccb5c9100bb7a62fd9ca95d6d765} 
+struct \doxymbox{\hyperlink{structdst__ops}{dst\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structdst__entry_abe52fb3c8b0c2066bc0e6e725ef70bd2}\label{structdst__entry_abe52fb3c8b0c2066bc0e6e725ef70bd2} 
+long unsigned int {\bfseries \+\_\+metrics}
+\item 
+\Hypertarget{structdst__entry_a2dea1534056a48a7ec1a085abbd44396}\label{structdst__entry_a2dea1534056a48a7ec1a085abbd44396} 
+long unsigned int {\bfseries expires}
+\item 
+\Hypertarget{structdst__entry_ab3468240ba70239594001de8aceb37f3}\label{structdst__entry_ab3468240ba70239594001de8aceb37f3} 
+struct \doxymbox{\hyperlink{structxfrm__state}{xfrm\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries xfrm}
+\item 
+\Hypertarget{structdst__entry_aeffe06a977401e153de47f40f30d6d48}\label{structdst__entry_aeffe06a977401e153de47f40f30d6d48} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries input} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__entry_a96e7df789dcf4522f062fcd49d428cc3}\label{structdst__entry_a96e7df789dcf4522f062fcd49d428cc3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries output} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__entry_a4302262098cfa1c4b99ffde57261b126}\label{structdst__entry_a4302262098cfa1c4b99ffde57261b126} 
+short unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structdst__entry_a0e29df1c5b2cc0b121c44b9ca4c68bb5}\label{structdst__entry_a0e29df1c5b2cc0b121c44b9ca4c68bb5} 
+short int {\bfseries obsolete}
+\item 
+\Hypertarget{structdst__entry_abfe8d4211194c91409f3fe9c202a6f61}\label{structdst__entry_abfe8d4211194c91409f3fe9c202a6f61} 
+short unsigned int {\bfseries header\+\_\+len}
+\item 
+\Hypertarget{structdst__entry_a118ce55002684bfaf2df9cdfbe1be926}\label{structdst__entry_a118ce55002684bfaf2df9cdfbe1be926} 
+short unsigned int {\bfseries trailer\+\_\+len}
+\item 
+\Hypertarget{structdst__entry_a73d2dd516adc09d6d25e89d6c32e6ce3}\label{structdst__entry_a73d2dd516adc09d6d25e89d6c32e6ce3} 
+\doxymbox{\hyperlink{structrcuref__t}{rcuref\+\_\+t}} {\bfseries \+\_\+\+\_\+rcuref}
+\item 
+\Hypertarget{structdst__entry_a2907f090cff3751a7b413104492f7e9b}\label{structdst__entry_a2907f090cff3751a7b413104492f7e9b} 
+int {\bfseries \+\_\+\+\_\+use}
+\item 
+\Hypertarget{structdst__entry_a80453533455f37ce9d831a9334d440f6}\label{structdst__entry_a80453533455f37ce9d831a9334d440f6} 
+long unsigned int {\bfseries lastuse}
+\item 
+\Hypertarget{structdst__entry_af8f41d5a453262fd0fe44d6205a73be8}\label{structdst__entry_af8f41d5a453262fd0fe44d6205a73be8} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries callback\+\_\+head}
+\item 
+\Hypertarget{structdst__entry_a8975d406bbd75afa7a11d54090e9b994}\label{structdst__entry_a8975d406bbd75afa7a11d54090e9b994} 
+short int {\bfseries error}
+\item 
+\Hypertarget{structdst__entry_af3b2eb983286546f7536e4f5a7c1a305}\label{structdst__entry_af3b2eb983286546f7536e4f5a7c1a305} 
+short int {\bfseries \+\_\+\+\_\+pad}
+\item 
+\Hypertarget{structdst__entry_a676b82b6915f737bf53ab5f91ac1f6f9}\label{structdst__entry_a676b82b6915f737bf53ab5f91ac1f6f9} 
+\+\_\+\+\_\+u32 {\bfseries tclassid}
+\item 
+\Hypertarget{structdst__entry_af3c8df77d40ac00a56e010f0fee181ea}\label{structdst__entry_af3c8df77d40ac00a56e010f0fee181ea} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries dev\+\_\+tracker}
+\item 
+\Hypertarget{structdst__entry_a551dc1fdf27819250c181dcef23b370b}\label{structdst__entry_a551dc1fdf27819250c181dcef23b370b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rt\+\_\+uncached}
+\item 
+\Hypertarget{structdst__entry_a5dfba35b2f4a3533a128a4057ced4c93}\label{structdst__entry_a5dfba35b2f4a3533a128a4057ced4c93} 
+struct \doxymbox{\hyperlink{structuncached__list}{uncached\+\_\+list}} \texorpdfstring{$\ast$}{*} {\bfseries rt\+\_\+uncached\+\_\+list}
+\item 
+\Hypertarget{structdst__entry_a059f8eb2fe596858d8f4e4a85ba4cb4a}\label{structdst__entry_a059f8eb2fe596858d8f4e4a85ba4cb4a} 
+struct \doxymbox{\hyperlink{structlwtunnel__state}{lwtunnel\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries lwtstate}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

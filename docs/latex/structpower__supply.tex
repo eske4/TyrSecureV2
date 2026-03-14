@@ -1,0 +1,85 @@
+\doxysection{power\+\_\+supply Struct Reference}
+\hypertarget{structpower__supply}{}\label{structpower__supply}\index{power\_supply@{power\_supply}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpower__supply_a5462637702e309fefffa75337bb06bef}\label{structpower__supply_a5462637702e309fefffa75337bb06bef} 
+const struct \doxymbox{\hyperlink{structpower__supply__desc}{power\+\_\+supply\+\_\+desc}} \texorpdfstring{$\ast$}{*} {\bfseries desc}
+\item 
+\Hypertarget{structpower__supply_ac29608a370cb95a70ed100237e03786e}\label{structpower__supply_ac29608a370cb95a70ed100237e03786e} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries supplied\+\_\+to}
+\item 
+\Hypertarget{structpower__supply_a557d9f35a83779051c3211d216fc5d2b}\label{structpower__supply_a557d9f35a83779051c3211d216fc5d2b} 
+size\+\_\+t {\bfseries num\+\_\+supplicants}
+\item 
+\Hypertarget{structpower__supply_a7ff19e80a8c738699d9cfae9523e7349}\label{structpower__supply_a7ff19e80a8c738699d9cfae9523e7349} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries supplied\+\_\+from}
+\item 
+\Hypertarget{structpower__supply_a0b1442c8e78a1924babd57ecd99b3c33}\label{structpower__supply_a0b1442c8e78a1924babd57ecd99b3c33} 
+size\+\_\+t {\bfseries num\+\_\+supplies}
+\item 
+\Hypertarget{structpower__supply_ad0a1ba98131e2b2ea79624b4e06af782}\label{structpower__supply_ad0a1ba98131e2b2ea79624b4e06af782} 
+void \texorpdfstring{$\ast$}{*} {\bfseries drv\+\_\+data}
+\item 
+\Hypertarget{structpower__supply_a2ee43d7c87ad57f03b3baef7e1a2ff5d}\label{structpower__supply_a2ee43d7c87ad57f03b3baef7e1a2ff5d} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structpower__supply_a29cdbaa9244f43d6eddb31f1fc9a372b}\label{structpower__supply_a29cdbaa9244f43d6eddb31f1fc9a372b} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries changed\+\_\+work}
+\item 
+\Hypertarget{structpower__supply_a3e0e0c12e9d830181fa9ab737b4f6220}\label{structpower__supply_a3e0e0c12e9d830181fa9ab737b4f6220} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries deferred\+\_\+register\+\_\+work}
+\item 
+\Hypertarget{structpower__supply_af6031b9da863c4ce03cc7031a51dc92b}\label{structpower__supply_af6031b9da863c4ce03cc7031a51dc92b} 
+spinlock\+\_\+t {\bfseries changed\+\_\+lock}
+\item 
+\Hypertarget{structpower__supply_acb820abf57e17dc34e12282903f9e514}\label{structpower__supply_acb820abf57e17dc34e12282903f9e514} 
+bool {\bfseries changed}
+\item 
+\Hypertarget{structpower__supply_ae67b77100faac5d44825fe12aa44e2ed}\label{structpower__supply_ae67b77100faac5d44825fe12aa44e2ed} 
+bool {\bfseries update\+\_\+groups}
+\item 
+\Hypertarget{structpower__supply_a77bccdfa805fd69950e491a595e733bc}\label{structpower__supply_a77bccdfa805fd69950e491a595e733bc} 
+bool {\bfseries initialized}
+\item 
+\Hypertarget{structpower__supply_af9a1204c486ffdd258ead880ac4281cf}\label{structpower__supply_af9a1204c486ffdd258ead880ac4281cf} 
+bool {\bfseries removing}
+\item 
+\Hypertarget{structpower__supply_acaa01f86f89cf23647a35e48c2a6375f}\label{structpower__supply_acaa01f86f89cf23647a35e48c2a6375f} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries use\+\_\+cnt}
+\item 
+\Hypertarget{structpower__supply_acad8d8bf25fef284b76fef11e7cea683}\label{structpower__supply_acad8d8bf25fef284b76fef11e7cea683} 
+struct \doxymbox{\hyperlink{structpower__supply__battery__info}{power\+\_\+supply\+\_\+battery\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries battery\+\_\+info}
+\item 
+\Hypertarget{structpower__supply_a0a7b49af07c025e51236e084dd68e741}\label{structpower__supply_a0a7b49af07c025e51236e084dd68e741} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries extensions\+\_\+sem}
+\item 
+\Hypertarget{structpower__supply_ac94cdc21f52abff2bd29fd3d24a209f1}\label{structpower__supply_ac94cdc21f52abff2bd29fd3d24a209f1} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries extensions}
+\item 
+\Hypertarget{structpower__supply_a1454105cfe9a3571473ebac2493519d9}\label{structpower__supply_a1454105cfe9a3571473ebac2493519d9} 
+struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries tzd}
+\item 
+\Hypertarget{structpower__supply_ade95c4e224f4717986c916568a62037a}\label{structpower__supply_ade95c4e224f4717986c916568a62037a} 
+struct \doxymbox{\hyperlink{structthermal__cooling__device}{thermal\+\_\+cooling\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries tcd}
+\item 
+\Hypertarget{structpower__supply_a323325c9f93803bf5ac2500078a338ef}\label{structpower__supply_a323325c9f93803bf5ac2500078a338ef} 
+struct \doxymbox{\hyperlink{structled__trigger}{led\+\_\+trigger}} \texorpdfstring{$\ast$}{*} {\bfseries trig}
+\item 
+\Hypertarget{structpower__supply_afe1d6d5ae65b9b2f9293b619a2b19b2b}\label{structpower__supply_afe1d6d5ae65b9b2f9293b619a2b19b2b} 
+struct \doxymbox{\hyperlink{structled__trigger}{led\+\_\+trigger}} \texorpdfstring{$\ast$}{*} {\bfseries charging\+\_\+trig}
+\item 
+\Hypertarget{structpower__supply_ae72875d9482775d2cc976046ad996921}\label{structpower__supply_ae72875d9482775d2cc976046ad996921} 
+struct \doxymbox{\hyperlink{structled__trigger}{led\+\_\+trigger}} \texorpdfstring{$\ast$}{*} {\bfseries full\+\_\+trig}
+\item 
+\Hypertarget{structpower__supply_ac55e7982dcc324b0a0698f7e780a9e06}\label{structpower__supply_ac55e7982dcc324b0a0698f7e780a9e06} 
+struct \doxymbox{\hyperlink{structled__trigger}{led\+\_\+trigger}} \texorpdfstring{$\ast$}{*} {\bfseries charging\+\_\+blink\+\_\+full\+\_\+solid\+\_\+trig}
+\item 
+\Hypertarget{structpower__supply_af9a273208b0984a01215b32633d9cd8a}\label{structpower__supply_af9a273208b0984a01215b32633d9cd8a} 
+struct \doxymbox{\hyperlink{structled__trigger}{led\+\_\+trigger}} \texorpdfstring{$\ast$}{*} {\bfseries charging\+\_\+orange\+\_\+full\+\_\+green\+\_\+trig}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

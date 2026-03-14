@@ -1,0 +1,49 @@
+\doxysection{netpoll Struct Reference}
+\hypertarget{structnetpoll}{}\label{structnetpoll}\index{netpoll@{netpoll}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnetpoll_a06efb19633929ef704aab5d71d6d12fb}\label{structnetpoll_a06efb19633929ef704aab5d71d6d12fb} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structnetpoll_a04f027ec0b102c7167105c6b7fc3c28f}\label{structnetpoll_a04f027ec0b102c7167105c6b7fc3c28f} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries dev\+\_\+tracker}
+\item 
+\Hypertarget{structnetpoll_aa81e2057a8152c86191433353979d3c2}\label{structnetpoll_aa81e2057a8152c86191433353979d3c2} 
+char {\bfseries dev\+\_\+name} \+[16]\+
+\item 
+\Hypertarget{structnetpoll_ad8a4fa3b0f54e94ec0fa3c43a98ba69a}\label{structnetpoll_ad8a4fa3b0f54e94ec0fa3c43a98ba69a} 
+u8 {\bfseries dev\+\_\+mac} \+[6]\+
+\item 
+\Hypertarget{structnetpoll_ad73cf0165ae7deebdf8f26db9a5c34f7}\label{structnetpoll_ad73cf0165ae7deebdf8f26db9a5c34f7} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structnetpoll_ab80ddc517f57a8088fc935b1f4c967b1}\label{structnetpoll_ab80ddc517f57a8088fc935b1f4c967b1} 
+union \doxymbox{\hyperlink{unioninet__addr}{inet\+\_\+addr}} {\bfseries local\+\_\+ip}
+\item 
+\Hypertarget{structnetpoll_a7213c6e061ba2988f37cf4128ed9bc00}\label{structnetpoll_a7213c6e061ba2988f37cf4128ed9bc00} 
+union \doxymbox{\hyperlink{unioninet__addr}{inet\+\_\+addr}} {\bfseries remote\+\_\+ip}
+\item 
+\Hypertarget{structnetpoll_a4d9c033b1c8e27cde913c779f0b4c85d}\label{structnetpoll_a4d9c033b1c8e27cde913c779f0b4c85d} 
+bool {\bfseries ipv6}
+\item 
+\Hypertarget{structnetpoll_a501685bebf05bf43a4f6c9af7c3bc910}\label{structnetpoll_a501685bebf05bf43a4f6c9af7c3bc910} 
+u16 {\bfseries local\+\_\+port}
+\item 
+\Hypertarget{structnetpoll_a9776a61ae7da5f3b7bb5c3b17079cd6e}\label{structnetpoll_a9776a61ae7da5f3b7bb5c3b17079cd6e} 
+u16 {\bfseries remote\+\_\+port}
+\item 
+\Hypertarget{structnetpoll_adec4b602fe27eb7ae6b6510509d7a7e6}\label{structnetpoll_adec4b602fe27eb7ae6b6510509d7a7e6} 
+u8 {\bfseries remote\+\_\+mac} \+[6]\+
+\item 
+\Hypertarget{structnetpoll_a6c00f6c619fab2c2099c8c5f3d1eb731}\label{structnetpoll_a6c00f6c619fab2c2099c8c5f3d1eb731} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries skb\+\_\+pool}
+\item 
+\Hypertarget{structnetpoll_a26ffe2b5f7e262f6a6b3aa82202bc6f6}\label{structnetpoll_a26ffe2b5f7e262f6a6b3aa82202bc6f6} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries refill\+\_\+wq}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

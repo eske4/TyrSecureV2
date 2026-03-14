@@ -1,0 +1,28 @@
+\doxysection{kthread\+\_\+worker Struct Reference}
+\hypertarget{structkthread__worker}{}\label{structkthread__worker}\index{kthread\_worker@{kthread\_worker}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkthread__worker_a15f3706265434da23afde055dc11a313}\label{structkthread__worker_a15f3706265434da23afde055dc11a313} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structkthread__worker_a26cabcc4c8808956b56ec88cc20caffb}\label{structkthread__worker_a26cabcc4c8808956b56ec88cc20caffb} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structkthread__worker_a9a5d924725a377ebd67fbc543fcbc7bd}\label{structkthread__worker_a9a5d924725a377ebd67fbc543fcbc7bd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries work\+\_\+list}
+\item 
+\Hypertarget{structkthread__worker_aa4f3cd1ee1ed7905db28d165c532e36f}\label{structkthread__worker_aa4f3cd1ee1ed7905db28d165c532e36f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries delayed\+\_\+work\+\_\+list}
+\item 
+\Hypertarget{structkthread__worker_a86c053c19d7cbb4d8710d23de02f6ce8}\label{structkthread__worker_a86c053c19d7cbb4d8710d23de02f6ce8} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries task}
+\item 
+\Hypertarget{structkthread__worker_af5756b4ef1677a17c43b5eadae75aa8d}\label{structkthread__worker_af5756b4ef1677a17c43b5eadae75aa8d} 
+struct \doxymbox{\hyperlink{structkthread__work}{kthread\+\_\+work}} \texorpdfstring{$\ast$}{*} {\bfseries current\+\_\+work}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

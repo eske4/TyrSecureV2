@@ -1,0 +1,91 @@
+\doxysection{compact\+\_\+control Struct Reference}
+\hypertarget{structcompact__control}{}\label{structcompact__control}\index{compact\_control@{compact\_control}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcompact__control_a40f19b11f3db248484d87bdc6cb98215}\label{structcompact__control_a40f19b11f3db248484d87bdc6cb98215} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries freepages} \+[11]\+
+\item 
+\Hypertarget{structcompact__control_a449131727f12548b0ad9c3e9ef9cc4ec}\label{structcompact__control_a449131727f12548b0ad9c3e9ef9cc4ec} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries migratepages}
+\item 
+\Hypertarget{structcompact__control_a911cbef1bb396065edf43e5418bbadda}\label{structcompact__control_a911cbef1bb396065edf43e5418bbadda} 
+unsigned int {\bfseries nr\+\_\+freepages}
+\item 
+\Hypertarget{structcompact__control_a4c5170774a683cc476b9e4bd4a6272ee}\label{structcompact__control_a4c5170774a683cc476b9e4bd4a6272ee} 
+unsigned int {\bfseries nr\+\_\+migratepages}
+\item 
+\Hypertarget{structcompact__control_a710861134a99db35c72058e232770fde}\label{structcompact__control_a710861134a99db35c72058e232770fde} 
+long unsigned int {\bfseries free\+\_\+pfn}
+\item 
+\Hypertarget{structcompact__control_a5369fa57f8f46517ff6249a0ca9130e1}\label{structcompact__control_a5369fa57f8f46517ff6249a0ca9130e1} 
+long unsigned int {\bfseries migrate\+\_\+pfn}
+\item 
+\Hypertarget{structcompact__control_a21659afec4f08c2935cad91e647e40c6}\label{structcompact__control_a21659afec4f08c2935cad91e647e40c6} 
+long unsigned int {\bfseries fast\+\_\+start\+\_\+pfn}
+\item 
+\Hypertarget{structcompact__control_a30b177c52697b7a8270da02935fd5dc7}\label{structcompact__control_a30b177c52697b7a8270da02935fd5dc7} 
+struct \doxymbox{\hyperlink{structzone}{zone}} \texorpdfstring{$\ast$}{*} {\bfseries zone}
+\item 
+\Hypertarget{structcompact__control_a325d8776fe455da1697ae3cf93069f84}\label{structcompact__control_a325d8776fe455da1697ae3cf93069f84} 
+long unsigned int {\bfseries total\+\_\+migrate\+\_\+scanned}
+\item 
+\Hypertarget{structcompact__control_a2f3a3744a0980fe332679198a71526b8}\label{structcompact__control_a2f3a3744a0980fe332679198a71526b8} 
+long unsigned int {\bfseries total\+\_\+free\+\_\+scanned}
+\item 
+\Hypertarget{structcompact__control_aa14e4a33c7b0110e5cccec1823a2e5d9}\label{structcompact__control_aa14e4a33c7b0110e5cccec1823a2e5d9} 
+short unsigned int {\bfseries fast\+\_\+search\+\_\+fail}
+\item 
+\Hypertarget{structcompact__control_a16b1845accdedf9903cd6989eb472612}\label{structcompact__control_a16b1845accdedf9903cd6989eb472612} 
+short int {\bfseries search\+\_\+order}
+\item 
+\Hypertarget{structcompact__control_ae19ae6d8cee7dc4f263e1aff9275dbf1}\label{structcompact__control_ae19ae6d8cee7dc4f263e1aff9275dbf1} 
+const gfp\+\_\+t {\bfseries gfp\+\_\+mask}
+\item 
+\Hypertarget{structcompact__control_a29930118d791f8cc520c7aea555b61fc}\label{structcompact__control_a29930118d791f8cc520c7aea555b61fc} 
+int {\bfseries order}
+\item 
+\Hypertarget{structcompact__control_acc544eada5ef68d3edd5db61bb238861}\label{structcompact__control_acc544eada5ef68d3edd5db61bb238861} 
+int {\bfseries migratetype}
+\item 
+\Hypertarget{structcompact__control_a93430f3e4bb0f7ed2d24aea06329169a}\label{structcompact__control_a93430f3e4bb0f7ed2d24aea06329169a} 
+const unsigned int {\bfseries alloc\+\_\+flags}
+\item 
+\Hypertarget{structcompact__control_a8492535d7f302db2d4ff65f909343e25}\label{structcompact__control_a8492535d7f302db2d4ff65f909343e25} 
+const int {\bfseries highest\+\_\+zoneidx}
+\item 
+\Hypertarget{structcompact__control_a01a498c17b5f53a0d4c0b545e9a5d77f}\label{structcompact__control_a01a498c17b5f53a0d4c0b545e9a5d77f} 
+enum migrate\+\_\+mode {\bfseries mode}
+\item 
+\Hypertarget{structcompact__control_a23e3dc7c9dd65ca626b11304405e15db}\label{structcompact__control_a23e3dc7c9dd65ca626b11304405e15db} 
+bool {\bfseries ignore\+\_\+skip\+\_\+hint}
+\item 
+\Hypertarget{structcompact__control_ac55fdcbae928be298e645e5e4490bca5}\label{structcompact__control_ac55fdcbae928be298e645e5e4490bca5} 
+bool {\bfseries no\+\_\+set\+\_\+skip\+\_\+hint}
+\item 
+\Hypertarget{structcompact__control_a2c4f8f54849138d0f74b92c2c6750af7}\label{structcompact__control_a2c4f8f54849138d0f74b92c2c6750af7} 
+bool {\bfseries ignore\+\_\+block\+\_\+suitable}
+\item 
+\Hypertarget{structcompact__control_a973db1ce2b739c0a9d1af6ac92feeb76}\label{structcompact__control_a973db1ce2b739c0a9d1af6ac92feeb76} 
+bool {\bfseries direct\+\_\+compaction}
+\item 
+\Hypertarget{structcompact__control_aa222a747a91922d3cdd02fedd796d080}\label{structcompact__control_aa222a747a91922d3cdd02fedd796d080} 
+bool {\bfseries proactive\+\_\+compaction}
+\item 
+\Hypertarget{structcompact__control_a32f49a00137cf71ae7d74c1c11c585e2}\label{structcompact__control_a32f49a00137cf71ae7d74c1c11c585e2} 
+bool {\bfseries whole\+\_\+zone}
+\item 
+\Hypertarget{structcompact__control_ace16d929f6ef9342b73e9846a4a0a3bc}\label{structcompact__control_ace16d929f6ef9342b73e9846a4a0a3bc} 
+bool {\bfseries contended}
+\item 
+\Hypertarget{structcompact__control_a0ffef464644531de10a6acf8ffc1983d}\label{structcompact__control_a0ffef464644531de10a6acf8ffc1983d} 
+bool {\bfseries finish\+\_\+pageblock}
+\item 
+\Hypertarget{structcompact__control_aec6e30319f229592dba2fef067f07012}\label{structcompact__control_aec6e30319f229592dba2fef067f07012} 
+bool {\bfseries alloc\+\_\+contig}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

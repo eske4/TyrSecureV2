@@ -1,0 +1,43 @@
+\doxysection{xenpf\+\_\+firmware\+\_\+info Struct Reference}
+\hypertarget{structxenpf__firmware__info}{}\label{structxenpf__firmware__info}\index{xenpf\_firmware\_info@{xenpf\_firmware\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxenpf__firmware__info_a39d2e6828f0365558dee27928647cf4b}\label{structxenpf__firmware__info_a39d2e6828f0365558dee27928647cf4b} 
+uint32\+\_\+t {\bfseries type}
+\item 
+\Hypertarget{structxenpf__firmware__info_ae2dddfb282b7ed57409d60d4bf47e5e2}\label{structxenpf__firmware__info_ae2dddfb282b7ed57409d60d4bf47e5e2} 
+uint32\+\_\+t {\bfseries index}
+\item 
+\Hypertarget{structxenpf__firmware__info_a7b2e017fa4aed43b605d5574c0c6fd7e}\label{structxenpf__firmware__info_a7b2e017fa4aed43b605d5574c0c6fd7e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t {\bfseries device}\\
+\>\>uint8\_t {\bfseries version}\\
+\>\>uint16\_t {\bfseries interface\_support}\\
+\>\>uint16\_t {\bfseries legacy\_max\_cylinder}\\
+\>\>uint8\_t {\bfseries legacy\_max\_head}\\
+\>\>uint8\_t {\bfseries legacy\_sectors\_per\_track}\\
+\>\>\_\_guest\_handle\_void {\bfseries edd\_params}\\
+\>\} {\bfseries disk\_info}\\
+\>struct \{\\
+\>\>uint8\_t {\bfseries device}\\
+\>\>uint32\_t {\bfseries mbr\_signature}\\
+\>\} {\bfseries disk\_mbr\_signature}\\
+\>struct \{\\
+\>\>uint8\_t {\bfseries capabilities}\\
+\>\>uint8\_t {\bfseries edid\_transfer\_time}\\
+\>\>\_\_guest\_handle\_uchar {\bfseries edid}\\
+\>\} {\bfseries vbeddc\_info}\\
+\>union \doxymbox{\hyperlink{unionxenpf__efi__info}{xenpf\_efi\_info}} {\bfseries efi\_info}\\
+\>uint8\_t {\bfseries kbd\_shift\_flags}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

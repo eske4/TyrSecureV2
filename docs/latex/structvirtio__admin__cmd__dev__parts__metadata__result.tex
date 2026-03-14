@@ -1,0 +1,30 @@
+\doxysection{virtio\+\_\+admin\+\_\+cmd\+\_\+dev\+\_\+parts\+\_\+metadata\+\_\+result Struct Reference}
+\hypertarget{structvirtio__admin__cmd__dev__parts__metadata__result}{}\label{structvirtio__admin__cmd__dev__parts__metadata__result}\index{virtio\_admin\_cmd\_dev\_parts\_metadata\_result@{virtio\_admin\_cmd\_dev\_parts\_metadata\_result}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvirtio__admin__cmd__dev__parts__metadata__result_a620103f883caab387d62fe67025375e2}\label{structvirtio__admin__cmd__dev__parts__metadata__result_a620103f883caab387d62fe67025375e2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_le32 {\bfseries size}\\
+\>\>\_\_le32 {\bfseries reserved}\\
+\>\} {\bfseries parts\_size}\\
+\>struct \{\\
+\>\>\_\_le32 {\bfseries count}\\
+\>\>\_\_le32 {\bfseries reserved}\\
+\>\} {\bfseries hdr\_list\_count}\\
+\>struct \{\\
+\>\>\_\_le32 {\bfseries count}\\
+\>\>\_\_le32 {\bfseries reserved}\\
+\>\>struct \doxymbox{\hyperlink{structvirtio__dev__part__hdr}{virtio\_dev\_part\_hdr}} {\bfseries hdrs} \+[0]\+\\
+\>\} {\bfseries hdr\_list}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

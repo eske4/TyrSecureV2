@@ -1,0 +1,133 @@
+\doxysection{pmu Struct Reference}
+\hypertarget{structpmu}{}\label{structpmu}\index{pmu@{pmu}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpmu_a708eafa4a2d37a47ad9d8806fd3b6e6b}\label{structpmu_a708eafa4a2d37a47ad9d8806fd3b6e6b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries entry}
+\item 
+\Hypertarget{structpmu_addf3398f997ebfccf057ded2724155b1}\label{structpmu_addf3398f997ebfccf057ded2724155b1} 
+spinlock\+\_\+t {\bfseries events\+\_\+lock}
+\item 
+\Hypertarget{structpmu_a73cfb58e21553ee8fb9f662759aa2f84}\label{structpmu_a73cfb58e21553ee8fb9f662759aa2f84} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries events}
+\item 
+\Hypertarget{structpmu_a2b7e036823ac5f0fcb2a76ce1fd8f6c2}\label{structpmu_a2b7e036823ac5f0fcb2a76ce1fd8f6c2} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries module}
+\item 
+\Hypertarget{structpmu_a2695195fafe0d538ee81199a21f11abf}\label{structpmu_a2695195fafe0d538ee81199a21f11abf} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structpmu_a128c07da7e44dbdfdf62a886709a3f1f}\label{structpmu_a128c07da7e44dbdfdf62a886709a3f1f} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\item 
+\Hypertarget{structpmu_a5cbc9d6c14cbcf483e6824a34f074d7a}\label{structpmu_a5cbc9d6c14cbcf483e6824a34f074d7a} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries attr\+\_\+groups}
+\item 
+\Hypertarget{structpmu_abb10c897110e5958d1861f9c9b660032}\label{structpmu_abb10c897110e5958d1861f9c9b660032} 
+const struct \doxymbox{\hyperlink{structattribute__group}{attribute\+\_\+group}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries attr\+\_\+update}
+\item 
+\Hypertarget{structpmu_ad9ae2cfe1d17930ba604b75a0686c874}\label{structpmu_ad9ae2cfe1d17930ba604b75a0686c874} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structpmu_a1fd16429b5856af8742a48aa0a2e1d0c}\label{structpmu_a1fd16429b5856af8742a48aa0a2e1d0c} 
+int {\bfseries type}
+\item 
+\Hypertarget{structpmu_acd1a4498a94b00e52a7ca99ff5f23573}\label{structpmu_acd1a4498a94b00e52a7ca99ff5f23573} 
+int {\bfseries capabilities}
+\item 
+\Hypertarget{structpmu_a2cf5bd0a209df7b2c000d5fa33dd6061}\label{structpmu_a2cf5bd0a209df7b2c000d5fa33dd6061} 
+unsigned int {\bfseries scope}
+\item 
+\Hypertarget{structpmu_a814ba209072ea10326feb31c9c18201d}\label{structpmu_a814ba209072ea10326feb31c9c18201d} 
+struct \doxymbox{\hyperlink{structperf__cpu__pmu__context}{perf\+\_\+cpu\+\_\+pmu\+\_\+context}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+pmu\+\_\+context}
+\item 
+\Hypertarget{structpmu_a23843d54006243fca08e2ae83d5c6f13}\label{structpmu_a23843d54006243fca08e2ae83d5c6f13} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries exclusive\+\_\+cnt}
+\item 
+\Hypertarget{structpmu_ae84d76c7b9a51cb7f11ccbc4af9700c7}\label{structpmu_ae84d76c7b9a51cb7f11ccbc4af9700c7} 
+int {\bfseries task\+\_\+ctx\+\_\+nr}
+\item 
+\Hypertarget{structpmu_a27bb6861c361c7aac7273dcbd521ad0f}\label{structpmu_a27bb6861c361c7aac7273dcbd521ad0f} 
+int {\bfseries hrtimer\+\_\+interval\+\_\+ms}
+\item 
+\Hypertarget{structpmu_ad505eb091593c531159600caa960a09a}\label{structpmu_ad505eb091593c531159600caa960a09a} 
+unsigned int {\bfseries nr\+\_\+addr\+\_\+filters}
+\item 
+\Hypertarget{structpmu_ac333a84105c76878a9d4b2e27f70657c}\label{structpmu_ac333a84105c76878a9d4b2e27f70657c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pmu\+\_\+enable} )(struct \doxymbox{\hyperlink{structpmu}{pmu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_aa6314fb958980ab0eb298057d1282d85}\label{structpmu_aa6314fb958980ab0eb298057d1282d85} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries pmu\+\_\+disable} )(struct \doxymbox{\hyperlink{structpmu}{pmu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_af8a0bd6af5228f62ebf8004c795cb862}\label{structpmu_af8a0bd6af5228f62ebf8004c795cb862} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+init} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_a0e63c4d50d672865d71bcf272af15ae6}\label{structpmu_a0e63c4d50d672865d71bcf272af15ae6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+mapped} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_aa93257e68e735ee11c73c5085e899d12}\label{structpmu_aa93257e68e735ee11c73c5085e899d12} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+unmapped} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_a0aeee1602d5d51679fb21972b7159dc8}\label{structpmu_a0aeee1602d5d51679fb21972b7159dc8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries add} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structpmu_a8e7be853bccaf3e16e7755d13c4ddba8}\label{structpmu_a8e7be853bccaf3e16e7755d13c4ddba8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries del} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structpmu_a156ac12f7dd49259c48c171a42f3b5af}\label{structpmu_a156ac12f7dd49259c48c171a42f3b5af} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries start} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structpmu_a033a72844f609dea5d30a6aca0ee5c38}\label{structpmu_a033a72844f609dea5d30a6aca0ee5c38} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries stop} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structpmu_a6ccc89c5dfccbfbb84ab98649823fab8}\label{structpmu_a6ccc89c5dfccbfbb84ab98649823fab8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_abd77d0e8aec9e7f9f73525b4426c478c}\label{structpmu_abd77d0e8aec9e7f9f73525b4426c478c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries start\+\_\+txn} )(struct \doxymbox{\hyperlink{structpmu}{pmu}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpmu_acfa79d36ff6f9b7791ba1c3121bda1e1}\label{structpmu_acfa79d36ff6f9b7791ba1c3121bda1e1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries commit\+\_\+txn} )(struct \doxymbox{\hyperlink{structpmu}{pmu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_a86b68705c94ba3958a99a33ff9eb4c43}\label{structpmu_a86b68705c94ba3958a99a33ff9eb4c43} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cancel\+\_\+txn} )(struct \doxymbox{\hyperlink{structpmu}{pmu}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_a13efa42d5a8a24ad723b054270398c14}\label{structpmu_a13efa42d5a8a24ad723b054270398c14} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries event\+\_\+idx} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_ad9817b470e5187a65f2c676b395445fd}\label{structpmu_ad9817b470e5187a65f2c676b395445fd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries sched\+\_\+task} )(struct \doxymbox{\hyperlink{structperf__event__pmu__context}{perf\+\_\+event\+\_\+pmu\+\_\+context}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structpmu_ad35141fb51d5b0ed1fe9a93df733d2a2}\label{structpmu_ad35141fb51d5b0ed1fe9a93df733d2a2} 
+struct \doxymbox{\hyperlink{structkmem__cache}{kmem\+\_\+cache}} \texorpdfstring{$\ast$}{*} {\bfseries task\+\_\+ctx\+\_\+cache}
+\item 
+\Hypertarget{structpmu_a05723cc33c9375d7b653ef0882441d43}\label{structpmu_a05723cc33c9375d7b653ef0882441d43} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries setup\+\_\+aux} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, int, bool)
+\item 
+\Hypertarget{structpmu_ac3fc83c6545d06187e6330548d4c88f8}\label{structpmu_ac3fc83c6545d06187e6330548d4c88f8} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+aux} )(void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_a07aa81f1b4098f503f81b5cae7a0bc2a}\label{structpmu_a07aa81f1b4098f503f81b5cae7a0bc2a} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries snapshot\+\_\+aux} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structperf__output__handle}{perf\+\_\+output\+\_\+handle}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structpmu_a52bbe3c4ecec4fbf6949d730834c5689}\label{structpmu_a52bbe3c4ecec4fbf6949d730834c5689} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries addr\+\_\+filters\+\_\+validate} )(struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_a8af45790182f56f25ee8163d29ab8671}\label{structpmu_a8af45790182f56f25ee8163d29ab8671} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries addr\+\_\+filters\+\_\+sync} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_aa0ae04a3d0252ab8ea544cbd9f703e70}\label{structpmu_aa0ae04a3d0252ab8ea544cbd9f703e70} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries aux\+\_\+output\+\_\+match} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpmu_ad59d30e7f90007b6ad74e803c393daec}\label{structpmu_ad59d30e7f90007b6ad74e803c393daec} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries filter} )(struct \doxymbox{\hyperlink{structpmu}{pmu}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structpmu_a53a930f842c80341701e223194060cef}\label{structpmu_a53a930f842c80341701e223194060cef} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+period} )(struct \doxymbox{\hyperlink{structperf__event}{perf\+\_\+event}} \texorpdfstring{$\ast$}{*}, u64)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

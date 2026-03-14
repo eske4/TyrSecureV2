@@ -1,0 +1,65 @@
+\doxysection{btrfs\+\_\+backref\+\_\+node Struct Reference}
+\hypertarget{structbtrfs__backref__node}{}\label{structbtrfs__backref__node}\index{btrfs\_backref\_node@{btrfs\_backref\_node}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__backref__node_aead794e4120f06228612ac024b40bd52}\label{structbtrfs__backref__node_aead794e4120f06228612ac024b40bd52} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionbtrfs__backref__node_1_1_0d012122246136376120264266351354064011255101116175_ad09ef892c12aa2fb9be1f7d05e7f939b}\label{unionbtrfs__backref__node_1_1_0d012122246136376120264266351354064011255101116175_ad09ef892c12aa2fb9be1f7d05e7f939b} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structrb__node}{rb\_node}} {\bfseries rb\_node}\\
+\>\>u64 {\bfseries bytenr}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structrb__simple__node}{rb\_simple\_node}} {\bfseries simple\_node}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbtrfs__backref__node_a0d4b2df762b6937fa29c8c305a2bc854}\label{structbtrfs__backref__node_a0d4b2df762b6937fa29c8c305a2bc854} 
+u64 {\bfseries new\+\_\+bytenr}
+\item 
+\Hypertarget{structbtrfs__backref__node_a371736458ae9948c45f459dbf960aee8}\label{structbtrfs__backref__node_a371736458ae9948c45f459dbf960aee8} 
+u64 {\bfseries owner}
+\item 
+\Hypertarget{structbtrfs__backref__node_af05ce30f89cbdf856109b544e93374aa}\label{structbtrfs__backref__node_af05ce30f89cbdf856109b544e93374aa} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structbtrfs__backref__node_a4b0c731b34cd4fd1915c95557f8893c8}\label{structbtrfs__backref__node_a4b0c731b34cd4fd1915c95557f8893c8} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries upper}
+\item 
+\Hypertarget{structbtrfs__backref__node_a33167a9f095787b32d4a6c71035e7ab9}\label{structbtrfs__backref__node_a33167a9f095787b32d4a6c71035e7ab9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries lower}
+\item 
+\Hypertarget{structbtrfs__backref__node_a4dec5f1c49ec7ae495890ca55cc5e004}\label{structbtrfs__backref__node_a4dec5f1c49ec7ae495890ca55cc5e004} 
+struct \doxymbox{\hyperlink{structbtrfs__root}{btrfs\+\_\+root}} \texorpdfstring{$\ast$}{*} {\bfseries root}
+\item 
+\Hypertarget{structbtrfs__backref__node_aa6489a73cbf35489b9bbed63c4b8d45f}\label{structbtrfs__backref__node_aa6489a73cbf35489b9bbed63c4b8d45f} 
+struct \doxymbox{\hyperlink{structextent__buffer}{extent\+\_\+buffer}} \texorpdfstring{$\ast$}{*} {\bfseries eb}
+\item 
+\Hypertarget{structbtrfs__backref__node_ab912368b9ae95c2767adac78e140e9b0}\label{structbtrfs__backref__node_ab912368b9ae95c2767adac78e140e9b0} 
+unsigned int {\bfseries level}:\+ 8
+\item 
+\Hypertarget{structbtrfs__backref__node_a6338e4d119e8363fa8146f5d82cfd24e}\label{structbtrfs__backref__node_a6338e4d119e8363fa8146f5d82cfd24e} 
+unsigned int {\bfseries locked}:\+ 1
+\item 
+\Hypertarget{structbtrfs__backref__node_ad36aae121cf294b50f3b94b9e4a3479d}\label{structbtrfs__backref__node_ad36aae121cf294b50f3b94b9e4a3479d} 
+unsigned int {\bfseries processed}:\+ 1
+\item 
+\Hypertarget{structbtrfs__backref__node_ab761790eaf54177cd2e49f303e98a16c}\label{structbtrfs__backref__node_ab761790eaf54177cd2e49f303e98a16c} 
+unsigned int {\bfseries checked}:\+ 1
+\item 
+\Hypertarget{structbtrfs__backref__node_aa25d320f7e00865a20185ed4dbc6e375}\label{structbtrfs__backref__node_aa25d320f7e00865a20185ed4dbc6e375} 
+unsigned int {\bfseries pending}:\+ 1
+\item 
+\Hypertarget{structbtrfs__backref__node_adcdf0b38f5ff52ac5b0e9957128162cf}\label{structbtrfs__backref__node_adcdf0b38f5ff52ac5b0e9957128162cf} 
+unsigned int {\bfseries detached}:\+ 1
+\item 
+\Hypertarget{structbtrfs__backref__node_a91b8bcd5adbb28921bad947649a85706}\label{structbtrfs__backref__node_a91b8bcd5adbb28921bad947649a85706} 
+unsigned int {\bfseries is\+\_\+reloc\+\_\+root}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

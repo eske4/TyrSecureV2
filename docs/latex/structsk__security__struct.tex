@@ -1,0 +1,46 @@
+\doxysection{sk\+\_\+security\+\_\+struct Struct Reference}
+\hypertarget{structsk__security__struct}{}\label{structsk__security__struct}\index{sk\_security\_struct@{sk\_security\_struct}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsk__security__struct_aa617d8608cc5fbcd42c06fa630b31f9d}\label{structsk__security__struct_aa617d8608cc5fbcd42c06fa630b31f9d} 
+enum \{ \newline
+{\bfseries NLBL\+\_\+\+UNSET} = 0
+, {\bfseries NLBL\+\_\+\+REQUIRE} = 1
+, {\bfseries NLBL\+\_\+\+LABELED} = 2
+, {\bfseries NLBL\+\_\+\+REQSKB} = 3
+, \newline
+{\bfseries NLBL\+\_\+\+CONNLABELED} = 4
+ \}
+\item 
+\Hypertarget{structsk__security__struct_ae5f013bdd36349b1221dbf7af5b18b27}\label{structsk__security__struct_ae5f013bdd36349b1221dbf7af5b18b27} 
+enum \{ {\bfseries SCTP\+\_\+\+ASSOC\+\_\+\+UNSET} = 0
+, {\bfseries SCTP\+\_\+\+ASSOC\+\_\+\+SET} = 1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsk__security__struct_a94f71bcdcae1c967d709630816dbb9cb}\label{structsk__security__struct_a94f71bcdcae1c967d709630816dbb9cb} 
+enum sk\+\_\+security\+\_\+struct::\+ \{ ... \}  {\bfseries nlbl\+\_\+state}
+\item 
+\Hypertarget{structsk__security__struct_a332196f81306b581782ebb39addd882b}\label{structsk__security__struct_a332196f81306b581782ebb39addd882b} 
+struct \doxymbox{\hyperlink{structnetlbl__lsm__secattr}{netlbl\+\_\+lsm\+\_\+secattr}} \texorpdfstring{$\ast$}{*} {\bfseries nlbl\+\_\+secattr}
+\item 
+\Hypertarget{structsk__security__struct_af13657d03513c5280f60487e7090910d}\label{structsk__security__struct_af13657d03513c5280f60487e7090910d} 
+u32 {\bfseries sid}
+\item 
+\Hypertarget{structsk__security__struct_ad98490eb060bfbef7a67dff84c048afc}\label{structsk__security__struct_ad98490eb060bfbef7a67dff84c048afc} 
+u32 {\bfseries peer\+\_\+sid}
+\item 
+\Hypertarget{structsk__security__struct_a28590be46c846a61393b03014c9308f0}\label{structsk__security__struct_a28590be46c846a61393b03014c9308f0} 
+u16 {\bfseries sclass}
+\item 
+\Hypertarget{structsk__security__struct_a99bfd4c8471422dec17ac0548bc79656}\label{structsk__security__struct_a99bfd4c8471422dec17ac0548bc79656} 
+enum sk\+\_\+security\+\_\+struct::\+ \{ ... \}  {\bfseries sctp\+\_\+assoc\+\_\+state}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

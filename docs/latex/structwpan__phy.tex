@@ -1,0 +1,79 @@
+\doxysection{wpan\+\_\+phy Struct Reference}
+\hypertarget{structwpan__phy}{}\label{structwpan__phy}\index{wpan\_phy@{wpan\_phy}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structwpan__phy_aa28910dc46dfc9c8a95d159b186eb9f6}\label{structwpan__phy_aa28910dc46dfc9c8a95d159b186eb9f6} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries privid}
+\item 
+\Hypertarget{structwpan__phy_a385e23f7d99f3ddd476503006317d82b}\label{structwpan__phy_a385e23f7d99f3ddd476503006317d82b} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structwpan__phy_af662a81f8de4ee004a33c47361388706}\label{structwpan__phy_af662a81f8de4ee004a33c47361388706} 
+u8 {\bfseries current\+\_\+channel}
+\item 
+\Hypertarget{structwpan__phy_a4dd7be1dd978f2a36c6cb0e9eb7b4d46}\label{structwpan__phy_a4dd7be1dd978f2a36c6cb0e9eb7b4d46} 
+u8 {\bfseries current\+\_\+page}
+\item 
+\Hypertarget{structwpan__phy_a101ea0e4570f9d7de75ef421ad3719d1}\label{structwpan__phy_a101ea0e4570f9d7de75ef421ad3719d1} 
+struct \doxymbox{\hyperlink{structwpan__phy__supported}{wpan\+\_\+phy\+\_\+supported}} {\bfseries supported}
+\item 
+\Hypertarget{structwpan__phy_a34b2e3c636ca123049debaad6aff39d5}\label{structwpan__phy_a34b2e3c636ca123049debaad6aff39d5} 
+s32 {\bfseries transmit\+\_\+power}
+\item 
+\Hypertarget{structwpan__phy_a173740684c19ff80d9f53fca5f4985fd}\label{structwpan__phy_a173740684c19ff80d9f53fca5f4985fd} 
+struct \doxymbox{\hyperlink{structwpan__phy__cca}{wpan\+\_\+phy\+\_\+cca}} {\bfseries cca}
+\item 
+\Hypertarget{structwpan__phy_a65a6c162c211ecc8420d8977ac1fd4a4}\label{structwpan__phy_a65a6c162c211ecc8420d8977ac1fd4a4} 
+\+\_\+\+\_\+le64 {\bfseries perm\+\_\+extended\+\_\+addr}
+\item 
+\Hypertarget{structwpan__phy_ac837315b751885176fe3ec2dafcb6391}\label{structwpan__phy_ac837315b751885176fe3ec2dafcb6391} 
+s32 {\bfseries cca\+\_\+ed\+\_\+level}
+\item 
+\Hypertarget{structwpan__phy_a40e39eea10bd2d2c9f2b14fc704b1352}\label{structwpan__phy_a40e39eea10bd2d2c9f2b14fc704b1352} 
+u32 {\bfseries symbol\+\_\+duration}
+\item 
+\Hypertarget{structwpan__phy_aae6b0da21b54aed190728415126e82eb}\label{structwpan__phy_aae6b0da21b54aed190728415126e82eb} 
+u16 {\bfseries lifs\+\_\+period}
+\item 
+\Hypertarget{structwpan__phy_a55ae62cc2a4e57683d46fc9ce982877e}\label{structwpan__phy_a55ae62cc2a4e57683d46fc9ce982877e} 
+u16 {\bfseries sifs\+\_\+period}
+\item 
+\Hypertarget{structwpan__phy_a63c8ab5d6b20c0c7f46614bbc80deb00}\label{structwpan__phy_a63c8ab5d6b20c0c7f46614bbc80deb00} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structwpan__phy_a8cc1d60da7c3d2d0875102d5e7cc8c26}\label{structwpan__phy_a8cc1d60da7c3d2d0875102d5e7cc8c26} 
+\doxymbox{\hyperlink{structpossible__net__t}{possible\+\_\+net\+\_\+t}} {\bfseries \+\_\+net}
+\item 
+\Hypertarget{structwpan__phy_af82e0efb513c3313170041bdfe6fb393}\label{structwpan__phy_af82e0efb513c3313170041bdfe6fb393} 
+spinlock\+\_\+t {\bfseries queue\+\_\+lock}
+\item 
+\Hypertarget{structwpan__phy_a05de4100fc2fc1daf804679f24ec4e7b}\label{structwpan__phy_a05de4100fc2fc1daf804679f24ec4e7b} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries ongoing\+\_\+txs}
+\item 
+\Hypertarget{structwpan__phy_aafe52952058da54cfb088658e1ef95ed}\label{structwpan__phy_aafe52952058da54cfb088658e1ef95ed} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries hold\+\_\+txs}
+\item 
+\Hypertarget{structwpan__phy_a607c2e5c1664ca9eb3bb8a7ca66a8259}\label{structwpan__phy_a607c2e5c1664ca9eb3bb8a7ca66a8259} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries sync\+\_\+txq}
+\item 
+\Hypertarget{structwpan__phy_a8f92a3a8f3428e0f528a1e68cb2daa72}\label{structwpan__phy_a8f92a3a8f3428e0f528a1e68cb2daa72} 
+enum ieee802154\+\_\+filtering\+\_\+level {\bfseries filtering}
+\item 
+\Hypertarget{structwpan__phy_a2698ee0aa895f47344b230b1da271500}\label{structwpan__phy_a2698ee0aa895f47344b230b1da271500} 
+long :\+ 64
+\item 
+\Hypertarget{structwpan__phy_aceb22299ed8ad97e31032dd1fdc0eb94}\label{structwpan__phy_aceb22299ed8ad97e31032dd1fdc0eb94} 
+long :\+ 64
+\item 
+\Hypertarget{structwpan__phy_af8ed664fac681009413810e05e3a6f2f}\label{structwpan__phy_af8ed664fac681009413810e05e3a6f2f} 
+long :\+ 64
+\item 
+\Hypertarget{structwpan__phy_a285ea7c34b973662ed6cc342929fcaa1}\label{structwpan__phy_a285ea7c34b973662ed6cc342929fcaa1} 
+char {\bfseries priv} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

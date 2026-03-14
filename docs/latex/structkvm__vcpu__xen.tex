@@ -1,0 +1,67 @@
+\doxysection{kvm\+\_\+vcpu\+\_\+xen Struct Reference}
+\hypertarget{structkvm__vcpu__xen}{}\label{structkvm__vcpu__xen}\index{kvm\_vcpu\_xen@{kvm\_vcpu\_xen}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__vcpu__xen_aba6b69102041c5378e1996f42965c0cf}\label{structkvm__vcpu__xen_aba6b69102041c5378e1996f42965c0cf} 
+u64 {\bfseries hypercall\+\_\+rip}
+\item 
+\Hypertarget{structkvm__vcpu__xen_a867f30fe7b10615223d3ece6a268eb93}\label{structkvm__vcpu__xen_a867f30fe7b10615223d3ece6a268eb93} 
+u32 {\bfseries current\+\_\+runstate}
+\item 
+\Hypertarget{structkvm__vcpu__xen_a4554a710546b3a835c71f626f452a7d7}\label{structkvm__vcpu__xen_a4554a710546b3a835c71f626f452a7d7} 
+u8 {\bfseries upcall\+\_\+vector}
+\item 
+\Hypertarget{structkvm__vcpu__xen_ad908ec7d3d16c41dc066abc47ab557ba}\label{structkvm__vcpu__xen_ad908ec7d3d16c41dc066abc47ab557ba} 
+struct \doxymbox{\hyperlink{structgfn__to__pfn__cache}{gfn\+\_\+to\+\_\+pfn\+\_\+cache}} {\bfseries vcpu\+\_\+info\+\_\+cache}
+\item 
+\Hypertarget{structkvm__vcpu__xen_adbfadf43116ee17e5b876aa462577cf7}\label{structkvm__vcpu__xen_adbfadf43116ee17e5b876aa462577cf7} 
+struct \doxymbox{\hyperlink{structgfn__to__pfn__cache}{gfn\+\_\+to\+\_\+pfn\+\_\+cache}} {\bfseries vcpu\+\_\+time\+\_\+info\+\_\+cache}
+\item 
+\Hypertarget{structkvm__vcpu__xen_a74af78491051db5ab5912467d9be5f9a}\label{structkvm__vcpu__xen_a74af78491051db5ab5912467d9be5f9a} 
+struct \doxymbox{\hyperlink{structgfn__to__pfn__cache}{gfn\+\_\+to\+\_\+pfn\+\_\+cache}} {\bfseries runstate\+\_\+cache}
+\item 
+\Hypertarget{structkvm__vcpu__xen_ac7bfaa3b7a90dea66bb03517ecfa22ab}\label{structkvm__vcpu__xen_ac7bfaa3b7a90dea66bb03517ecfa22ab} 
+struct \doxymbox{\hyperlink{structgfn__to__pfn__cache}{gfn\+\_\+to\+\_\+pfn\+\_\+cache}} {\bfseries runstate2\+\_\+cache}
+\item 
+\Hypertarget{structkvm__vcpu__xen_a14200f900053bf6e84e2084a7c168797}\label{structkvm__vcpu__xen_a14200f900053bf6e84e2084a7c168797} 
+u64 {\bfseries last\+\_\+steal}
+\item 
+\Hypertarget{structkvm__vcpu__xen_aa775b9394ff2250a9fbf6a7267731f77}\label{structkvm__vcpu__xen_aa775b9394ff2250a9fbf6a7267731f77} 
+u64 {\bfseries runstate\+\_\+entry\+\_\+time}
+\item 
+\Hypertarget{structkvm__vcpu__xen_afd0d9725d63aa5da54afe2df1a58c83d}\label{structkvm__vcpu__xen_afd0d9725d63aa5da54afe2df1a58c83d} 
+u64 {\bfseries runstate\+\_\+times} \+[4]\+
+\item 
+\Hypertarget{structkvm__vcpu__xen_aeca62f49df3b244d149705eb18159b78}\label{structkvm__vcpu__xen_aeca62f49df3b244d149705eb18159b78} 
+long unsigned int {\bfseries evtchn\+\_\+pending\+\_\+sel}
+\item 
+\Hypertarget{structkvm__vcpu__xen_aeda5e5e5f5baf2e68b4e627305a794dc}\label{structkvm__vcpu__xen_aeda5e5e5f5baf2e68b4e627305a794dc} 
+u32 {\bfseries vcpu\+\_\+id}
+\item 
+\Hypertarget{structkvm__vcpu__xen_a24eda53dc096d4ebf016e68adff8af36}\label{structkvm__vcpu__xen_a24eda53dc096d4ebf016e68adff8af36} 
+u32 {\bfseries timer\+\_\+virq}
+\item 
+\Hypertarget{structkvm__vcpu__xen_ae7be8deee74da7ff5d7827b74ec037e6}\label{structkvm__vcpu__xen_ae7be8deee74da7ff5d7827b74ec037e6} 
+u64 {\bfseries timer\+\_\+expires}
+\item 
+\Hypertarget{structkvm__vcpu__xen_a7b188481bcefef2c6c71e11b3040099a}\label{structkvm__vcpu__xen_a7b188481bcefef2c6c71e11b3040099a} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries timer\+\_\+pending}
+\item 
+\Hypertarget{structkvm__vcpu__xen_a136d6ca4d93ab031551ea70bb959f9a8}\label{structkvm__vcpu__xen_a136d6ca4d93ab031551ea70bb959f9a8} 
+struct \doxymbox{\hyperlink{structhrtimer}{hrtimer}} {\bfseries timer}
+\item 
+\Hypertarget{structkvm__vcpu__xen_a1cf4f76beb365cb6ed83e3cfdc9a9e70}\label{structkvm__vcpu__xen_a1cf4f76beb365cb6ed83e3cfdc9a9e70} 
+int {\bfseries poll\+\_\+evtchn}
+\item 
+\Hypertarget{structkvm__vcpu__xen_aa9319bfc55f0180cac2c8e1eddbad365}\label{structkvm__vcpu__xen_aa9319bfc55f0180cac2c8e1eddbad365} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries poll\+\_\+timer}
+\item 
+\Hypertarget{structkvm__vcpu__xen_a93503b070006177e60ea3b76e5e9e2ba}\label{structkvm__vcpu__xen_a93503b070006177e60ea3b76e5e9e2ba} 
+struct \doxymbox{\hyperlink{structkvm__hypervisor__cpuid}{kvm\+\_\+hypervisor\+\_\+cpuid}} {\bfseries cpuid}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

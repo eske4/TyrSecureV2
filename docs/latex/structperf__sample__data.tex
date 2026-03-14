@@ -1,0 +1,112 @@
+\doxysection{perf\+\_\+sample\+\_\+data Struct Reference}
+\hypertarget{structperf__sample__data}{}\label{structperf__sample__data}\index{perf\_sample\_data@{perf\_sample\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structperf__sample__data_a4164bef0026d8d388e7ed253912a8995}\label{structperf__sample__data_a4164bef0026d8d388e7ed253912a8995} 
+u64 {\bfseries sample\+\_\+flags}
+\item 
+\Hypertarget{structperf__sample__data_af281b9b8f13d2bf24655d431792ef224}\label{structperf__sample__data_af281b9b8f13d2bf24655d431792ef224} 
+u64 {\bfseries period}
+\item 
+\Hypertarget{structperf__sample__data_ae80b289501c6afa4e29c56ff85d76e67}\label{structperf__sample__data_ae80b289501c6afa4e29c56ff85d76e67} 
+u64 {\bfseries dyn\+\_\+size}
+\item 
+\Hypertarget{structperf__sample__data_a988739700428df7d828666955ffa385c}\label{structperf__sample__data_a988739700428df7d828666955ffa385c} 
+u64 {\bfseries type}
+\item 
+\Hypertarget{structperf__sample__data_a8222700c7156cc71f20cdc824bf23134}\label{structperf__sample__data_a8222700c7156cc71f20cdc824bf23134} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries pid}\\
+\>u32 {\bfseries tid}\\
+\} {\bfseries tid\_entry}\\
+
+\end{tabbing}\item 
+\Hypertarget{structperf__sample__data_a502dcd8037393a9c1bec1ad4e5468536}\label{structperf__sample__data_a502dcd8037393a9c1bec1ad4e5468536} 
+u64 {\bfseries time}
+\item 
+\Hypertarget{structperf__sample__data_ac84c23bda68073448e6840235ebaff5e}\label{structperf__sample__data_ac84c23bda68073448e6840235ebaff5e} 
+u64 {\bfseries id}
+\item 
+\Hypertarget{structperf__sample__data_a45489f7eef1dc7ba6d96ef39f0d3a1aa}\label{structperf__sample__data_a45489f7eef1dc7ba6d96ef39f0d3a1aa} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>u32 {\bfseries cpu}\\
+\>u32 {\bfseries reserved}\\
+\} {\bfseries cpu\_entry}\\
+
+\end{tabbing}\item 
+\Hypertarget{structperf__sample__data_a3146a9e45509d626a90ececd14adddac}\label{structperf__sample__data_a3146a9e45509d626a90ececd14adddac} 
+u64 {\bfseries ip}
+\item 
+\Hypertarget{structperf__sample__data_a97f0c658f77ac6711aef6e1e3ab7482f}\label{structperf__sample__data_a97f0c658f77ac6711aef6e1e3ab7482f} 
+struct \doxymbox{\hyperlink{structperf__callchain__entry}{perf\+\_\+callchain\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries callchain}
+\item 
+\Hypertarget{structperf__sample__data_a902c2928dfdbf8baeb82cfd0a0e191aa}\label{structperf__sample__data_a902c2928dfdbf8baeb82cfd0a0e191aa} 
+struct \doxymbox{\hyperlink{structperf__raw__record}{perf\+\_\+raw\+\_\+record}} \texorpdfstring{$\ast$}{*} {\bfseries raw}
+\item 
+\Hypertarget{structperf__sample__data_a93c5e5f67cb55505c038a4344767bc4c}\label{structperf__sample__data_a93c5e5f67cb55505c038a4344767bc4c} 
+struct \doxymbox{\hyperlink{structperf__branch__stack}{perf\+\_\+branch\+\_\+stack}} \texorpdfstring{$\ast$}{*} {\bfseries br\+\_\+stack}
+\item 
+\Hypertarget{structperf__sample__data_abb3e3029f15ad20e18dfe67bc270de47}\label{structperf__sample__data_abb3e3029f15ad20e18dfe67bc270de47} 
+u64 \texorpdfstring{$\ast$}{*} {\bfseries br\+\_\+stack\+\_\+cntr}
+\item 
+\Hypertarget{structperf__sample__data_a1f3bb87cb96b3da93b9af9a6b43e5040}\label{structperf__sample__data_a1f3bb87cb96b3da93b9af9a6b43e5040} 
+union \doxymbox{\hyperlink{unionperf__sample__weight}{perf\+\_\+sample\+\_\+weight}} {\bfseries weight}
+\item 
+\Hypertarget{structperf__sample__data_a23ca301ed0c1f92febd182128c5d201b}\label{structperf__sample__data_a23ca301ed0c1f92febd182128c5d201b} 
+union \doxymbox{\hyperlink{unionperf__mem__data__src}{perf\+\_\+mem\+\_\+data\+\_\+src}} {\bfseries data\+\_\+src}
+\item 
+\Hypertarget{structperf__sample__data_a8f1877b56aac0f4de12263dbb7afef2f}\label{structperf__sample__data_a8f1877b56aac0f4de12263dbb7afef2f} 
+u64 {\bfseries txn}
+\item 
+\Hypertarget{structperf__sample__data_a9d800c34f9e7db3f3e1ba4db82565d9e}\label{structperf__sample__data_a9d800c34f9e7db3f3e1ba4db82565d9e} 
+struct \doxymbox{\hyperlink{structperf__regs}{perf\+\_\+regs}} {\bfseries regs\+\_\+user}
+\item 
+\Hypertarget{structperf__sample__data_a03e0eae08a5a7256faa9e0b2ebe07622}\label{structperf__sample__data_a03e0eae08a5a7256faa9e0b2ebe07622} 
+struct \doxymbox{\hyperlink{structperf__regs}{perf\+\_\+regs}} {\bfseries regs\+\_\+intr}
+\item 
+\Hypertarget{structperf__sample__data_af6138f6ac22a0ba30ad541f961689ac8}\label{structperf__sample__data_af6138f6ac22a0ba30ad541f961689ac8} 
+u64 {\bfseries stack\+\_\+user\+\_\+size}
+\item 
+\Hypertarget{structperf__sample__data_a902d9eac9bff60aff73df235a31309a8}\label{structperf__sample__data_a902d9eac9bff60aff73df235a31309a8} 
+u64 {\bfseries stream\+\_\+id}
+\item 
+\Hypertarget{structperf__sample__data_a105f8b0f5511837939bef28560873032}\label{structperf__sample__data_a105f8b0f5511837939bef28560873032} 
+u64 {\bfseries cgroup}
+\item 
+\Hypertarget{structperf__sample__data_a7bf9c878291161d39a6be4f638d6a056}\label{structperf__sample__data_a7bf9c878291161d39a6be4f638d6a056} 
+u64 {\bfseries addr}
+\item 
+\Hypertarget{structperf__sample__data_a696556e45805e28fdfde18cd4ef4362d}\label{structperf__sample__data_a696556e45805e28fdfde18cd4ef4362d} 
+u64 {\bfseries phys\+\_\+addr}
+\item 
+\Hypertarget{structperf__sample__data_a76080d4e79861553c5bd8bb17dd9d09f}\label{structperf__sample__data_a76080d4e79861553c5bd8bb17dd9d09f} 
+u64 {\bfseries data\+\_\+page\+\_\+size}
+\item 
+\Hypertarget{structperf__sample__data_a41c501470ec138daa62d8e7069b55073}\label{structperf__sample__data_a41c501470ec138daa62d8e7069b55073} 
+u64 {\bfseries code\+\_\+page\+\_\+size}
+\item 
+\Hypertarget{structperf__sample__data_aa25910de5b4577b46e9265502679ffb9}\label{structperf__sample__data_aa25910de5b4577b46e9265502679ffb9} 
+u64 {\bfseries aux\+\_\+size}
+\item 
+\Hypertarget{structperf__sample__data_acc040afc2c79e871dbecae002b5fc975}\label{structperf__sample__data_acc040afc2c79e871dbecae002b5fc975} 
+long :\+ 64
+\item 
+\Hypertarget{structperf__sample__data_ab5bd3d4ed37caadde42e358c8a2d708a}\label{structperf__sample__data_ab5bd3d4ed37caadde42e358c8a2d708a} 
+long :\+ 64
+\item 
+\Hypertarget{structperf__sample__data_a39576903ad1d670eb190d41263ae4d93}\label{structperf__sample__data_a39576903ad1d670eb190d41263ae4d93} 
+long :\+ 64
+\item 
+\Hypertarget{structperf__sample__data_ad0e8f7776c8cd9fe1679bd5d2917b146}\label{structperf__sample__data_ad0e8f7776c8cd9fe1679bd5d2917b146} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

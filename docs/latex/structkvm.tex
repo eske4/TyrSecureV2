@@ -1,0 +1,177 @@
+\doxysection{kvm Struct Reference}
+\hypertarget{structkvm}{}\label{structkvm}\index{kvm@{kvm}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm_a00b8ad73333c699058f2a44b5957529b}\label{structkvm_a00b8ad73333c699058f2a44b5957529b} 
+\doxymbox{\hyperlink{structrwlock__t}{rwlock\+\_\+t}} {\bfseries mmu\+\_\+lock}
+\item 
+\Hypertarget{structkvm_a17ff24ea653195301f2c459230b966b4}\label{structkvm_a17ff24ea653195301f2c459230b966b4} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries slots\+\_\+lock}
+\item 
+\Hypertarget{structkvm_aef4549e9be3e10525d6b2305c0388e49}\label{structkvm_aef4549e9be3e10525d6b2305c0388e49} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries slots\+\_\+arch\+\_\+lock}
+\item 
+\Hypertarget{structkvm_ae9115f5d30b0b363f16a2f02cda148b7}\label{structkvm_ae9115f5d30b0b363f16a2f02cda148b7} 
+struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries mm}
+\item 
+\Hypertarget{structkvm_a4fa89ca4b223c6d5b7653b2fdf6165c1}\label{structkvm_a4fa89ca4b223c6d5b7653b2fdf6165c1} 
+long unsigned int {\bfseries nr\+\_\+memslot\+\_\+pages}
+\item 
+\Hypertarget{structkvm_a659d4380e50aa04252ca864547717abf}\label{structkvm_a659d4380e50aa04252ca864547717abf} 
+struct \doxymbox{\hyperlink{structkvm__memslots}{kvm\+\_\+memslots}} {\bfseries \+\_\+\+\_\+memslots} \+[4]\+
+\item 
+\Hypertarget{structkvm_a4bdb669bfe7b0a525cf40afa39e29153}\label{structkvm_a4bdb669bfe7b0a525cf40afa39e29153} 
+struct \doxymbox{\hyperlink{structkvm__memslots}{kvm\+\_\+memslots}} \texorpdfstring{$\ast$}{*} {\bfseries memslots} \+[2]\+
+\item 
+\Hypertarget{structkvm_a42aa8458d60b3f30f328cb03bea30ec3}\label{structkvm_a42aa8458d60b3f30f328cb03bea30ec3} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries vcpu\+\_\+array}
+\item 
+\Hypertarget{structkvm_a6dce23f87aee9595b5227da9a4044f90}\label{structkvm_a6dce23f87aee9595b5227da9a4044f90} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nr\+\_\+memslots\+\_\+dirty\+\_\+logging}
+\item 
+\Hypertarget{structkvm_a086ed29cff59efa2c1c415f92cfa91ec}\label{structkvm_a086ed29cff59efa2c1c415f92cfa91ec} 
+spinlock\+\_\+t {\bfseries mn\+\_\+invalidate\+\_\+lock}
+\item 
+\Hypertarget{structkvm_ac76a24150ae2bed262063d1c3a667090}\label{structkvm_ac76a24150ae2bed262063d1c3a667090} 
+long unsigned int {\bfseries mn\+\_\+active\+\_\+invalidate\+\_\+count}
+\item 
+\Hypertarget{structkvm_a4073c32d9b499bb69651188b6269731f}\label{structkvm_a4073c32d9b499bb69651188b6269731f} 
+struct \doxymbox{\hyperlink{structrcuwait}{rcuwait}} {\bfseries mn\+\_\+memslots\+\_\+update\+\_\+rcuwait}
+\item 
+\Hypertarget{structkvm_a6cdf3b0654716c7e3b05fe2a6fca6985}\label{structkvm_a6cdf3b0654716c7e3b05fe2a6fca6985} 
+spinlock\+\_\+t {\bfseries gpc\+\_\+lock}
+\item 
+\Hypertarget{structkvm_a597c976ab4872fb33736b4cc0f0fa23a}\label{structkvm_a597c976ab4872fb33736b4cc0f0fa23a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries gpc\+\_\+list}
+\item 
+\Hypertarget{structkvm_a44f08a257a72e1cb4c32d419a6b558a8}\label{structkvm_a44f08a257a72e1cb4c32d419a6b558a8} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries online\+\_\+vcpus}
+\item 
+\Hypertarget{structkvm_a8e1e45ddaba177beccb0b723c86f1044}\label{structkvm_a8e1e45ddaba177beccb0b723c86f1044} 
+int {\bfseries max\+\_\+vcpus}
+\item 
+\Hypertarget{structkvm_acfc75f60f3afe502c4fa86eb59f2ce7b}\label{structkvm_acfc75f60f3afe502c4fa86eb59f2ce7b} 
+int {\bfseries created\+\_\+vcpus}
+\item 
+\Hypertarget{structkvm_a8a5dc0f2827761df54f2f56e1f8d67fe}\label{structkvm_a8a5dc0f2827761df54f2f56e1f8d67fe} 
+int {\bfseries last\+\_\+boosted\+\_\+vcpu}
+\item 
+\Hypertarget{structkvm_aa18d35dd68fb3d46590c5f07fff551a1}\label{structkvm_aa18d35dd68fb3d46590c5f07fff551a1} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries vm\+\_\+list}
+\item 
+\Hypertarget{structkvm_abfe3d2113e1369442ac3050f239ce108}\label{structkvm_abfe3d2113e1369442ac3050f239ce108} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries lock}
+\item 
+\Hypertarget{structkvm_a52f6e829050151044c7ec70fc2d491a5}\label{structkvm_a52f6e829050151044c7ec70fc2d491a5} 
+struct \doxymbox{\hyperlink{structkvm__io__bus}{kvm\+\_\+io\+\_\+bus}} \texorpdfstring{$\ast$}{*} {\bfseries buses} \+[5]\+
+\item 
+\Hypertarget{structkvm_aae095b2093bc535591f8f31bb493f0bb}\label{structkvm_aae095b2093bc535591f8f31bb493f0bb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>spinlock\_t {\bfseries lock}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries items}\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries resampler\_list}\\
+\>struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries resampler\_lock}\\
+\} {\bfseries irqfds}\\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm_a37fb5f3c77c2c1fad52ac7600d33ae30}\label{structkvm_a37fb5f3c77c2c1fad52ac7600d33ae30} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ioeventfds}
+\item 
+\Hypertarget{structkvm_ae30506f85971ada6b0b2f3b080ac65cd}\label{structkvm_ae30506f85971ada6b0b2f3b080ac65cd} 
+struct \doxymbox{\hyperlink{structkvm__vm__stat}{kvm\+\_\+vm\+\_\+stat}} {\bfseries stat}
+\item 
+\Hypertarget{structkvm_ab8382311b10fe0ecea0e79f845e0f95c}\label{structkvm_ab8382311b10fe0ecea0e79f845e0f95c} 
+struct \doxymbox{\hyperlink{structkvm__arch}{kvm\+\_\+arch}} {\bfseries arch}
+\item 
+\Hypertarget{structkvm_a121d752f7b2e927bb847bfeb80f01eeb}\label{structkvm_a121d752f7b2e927bb847bfeb80f01eeb} 
+refcount\+\_\+t {\bfseries users\+\_\+count}
+\item 
+\Hypertarget{structkvm_a478dde56eacf6dc0a4a5c958995fc293}\label{structkvm_a478dde56eacf6dc0a4a5c958995fc293} 
+struct \doxymbox{\hyperlink{structkvm__coalesced__mmio__ring}{kvm\+\_\+coalesced\+\_\+mmio\+\_\+ring}} \texorpdfstring{$\ast$}{*} {\bfseries coalesced\+\_\+mmio\+\_\+ring}
+\item 
+\Hypertarget{structkvm_a75fef09c02c36eb003cff2856b3c799a}\label{structkvm_a75fef09c02c36eb003cff2856b3c799a} 
+spinlock\+\_\+t {\bfseries ring\+\_\+lock}
+\item 
+\Hypertarget{structkvm_a0c47f543bd09f36f66df52c19768ad6d}\label{structkvm_a0c47f543bd09f36f66df52c19768ad6d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries coalesced\+\_\+zones}
+\item 
+\Hypertarget{structkvm_a064c0cd309569998aed6d20fbd9f5e44}\label{structkvm_a064c0cd309569998aed6d20fbd9f5e44} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries irq\+\_\+lock}
+\item 
+\Hypertarget{structkvm_a6384d8aa2cfe3f7d887518c67b4e70ce}\label{structkvm_a6384d8aa2cfe3f7d887518c67b4e70ce} 
+struct \doxymbox{\hyperlink{structkvm__irq__routing__table}{kvm\+\_\+irq\+\_\+routing\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+routing}
+\item 
+\Hypertarget{structkvm_a48688133cb4576f4a95a2434889b8ddd}\label{structkvm_a48688133cb4576f4a95a2434889b8ddd} 
+struct \doxymbox{\hyperlink{structhlist__head}{hlist\+\_\+head}} {\bfseries irq\+\_\+ack\+\_\+notifier\+\_\+list}
+\item 
+\Hypertarget{structkvm_ad97560cf769a803d445fa60ef2ea9168}\label{structkvm_ad97560cf769a803d445fa60ef2ea9168} 
+struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} {\bfseries mmu\+\_\+notifier}
+\item 
+\Hypertarget{structkvm_aa5dffe2f5f7276e9e9511622a308025e}\label{structkvm_aa5dffe2f5f7276e9e9511622a308025e} 
+long unsigned int {\bfseries mmu\+\_\+invalidate\+\_\+seq}
+\item 
+\Hypertarget{structkvm_aedb4f7eb0997c4cd9f58121231fd57fe}\label{structkvm_aedb4f7eb0997c4cd9f58121231fd57fe} 
+long int {\bfseries mmu\+\_\+invalidate\+\_\+in\+\_\+progress}
+\item 
+\Hypertarget{structkvm_a034847e36791fc36754a6487bc85ef6c}\label{structkvm_a034847e36791fc36754a6487bc85ef6c} 
+gfn\+\_\+t {\bfseries mmu\+\_\+invalidate\+\_\+range\+\_\+start}
+\item 
+\Hypertarget{structkvm_aeb1bd1b27c3be2a03e4fdda28e379bd2}\label{structkvm_aeb1bd1b27c3be2a03e4fdda28e379bd2} 
+gfn\+\_\+t {\bfseries mmu\+\_\+invalidate\+\_\+range\+\_\+end}
+\item 
+\Hypertarget{structkvm_adf2efc71948b72f27edae4845868a0cb}\label{structkvm_adf2efc71948b72f27edae4845868a0cb} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries devices}
+\item 
+\Hypertarget{structkvm_a61e18ef793524505b4f46b58b44dcf83}\label{structkvm_a61e18ef793524505b4f46b58b44dcf83} 
+u64 {\bfseries manual\+\_\+dirty\+\_\+log\+\_\+protect}
+\item 
+\Hypertarget{structkvm_ae1ad5615d57f223ec1195f73dbb6ea28}\label{structkvm_ae1ad5615d57f223ec1195f73dbb6ea28} 
+struct \doxymbox{\hyperlink{structdentry}{dentry}} \texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+dentry}
+\item 
+\Hypertarget{structkvm_a5869643a98a4f2f7c103ed1a986b0b76}\label{structkvm_a5869643a98a4f2f7c103ed1a986b0b76} 
+struct \doxymbox{\hyperlink{structkvm__stat__data}{kvm\+\_\+stat\+\_\+data}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries debugfs\+\_\+stat\+\_\+data}
+\item 
+\Hypertarget{structkvm_ad84f7cedfd9e67f5899b5b155575f6af}\label{structkvm_ad84f7cedfd9e67f5899b5b155575f6af} 
+struct \doxymbox{\hyperlink{structsrcu__struct}{srcu\+\_\+struct}} {\bfseries srcu}
+\item 
+\Hypertarget{structkvm_ae1fbe6b5ad527962742e846e216f5a44}\label{structkvm_ae1fbe6b5ad527962742e846e216f5a44} 
+struct \doxymbox{\hyperlink{structsrcu__struct}{srcu\+\_\+struct}} {\bfseries irq\+\_\+srcu}
+\item 
+\Hypertarget{structkvm_a8d1e22228d92392018d1c0afbd4b17b1}\label{structkvm_a8d1e22228d92392018d1c0afbd4b17b1} 
+pid\+\_\+t {\bfseries userspace\+\_\+pid}
+\item 
+\Hypertarget{structkvm_ab7c31a76f8bfe266049966155c25f33b}\label{structkvm_ab7c31a76f8bfe266049966155c25f33b} 
+bool {\bfseries override\+\_\+halt\+\_\+poll\+\_\+ns}
+\item 
+\Hypertarget{structkvm_a71d8f4882f46ba8d8866ba5dfbac2714}\label{structkvm_a71d8f4882f46ba8d8866ba5dfbac2714} 
+unsigned int {\bfseries max\+\_\+halt\+\_\+poll\+\_\+ns}
+\item 
+\Hypertarget{structkvm_abb0d91cf3739a563ee16242c946d9b07}\label{structkvm_abb0d91cf3739a563ee16242c946d9b07} 
+u32 {\bfseries dirty\+\_\+ring\+\_\+size}
+\item 
+\Hypertarget{structkvm_ab7a7d479cbc4b111ba16a4b20b10f2a2}\label{structkvm_ab7a7d479cbc4b111ba16a4b20b10f2a2} 
+bool {\bfseries dirty\+\_\+ring\+\_\+with\+\_\+bitmap}
+\item 
+\Hypertarget{structkvm_ae24d082193aafdd4de67c2a67275e9bd}\label{structkvm_ae24d082193aafdd4de67c2a67275e9bd} 
+bool {\bfseries vm\+\_\+bugged}
+\item 
+\Hypertarget{structkvm_acead147315d389b9d2c8b03fa5eb8f17}\label{structkvm_acead147315d389b9d2c8b03fa5eb8f17} 
+bool {\bfseries vm\+\_\+dead}
+\item 
+\Hypertarget{structkvm_afc64b276d25a5edc50e30df2ff164686}\label{structkvm_afc64b276d25a5edc50e30df2ff164686} 
+struct \doxymbox{\hyperlink{structnotifier__block}{notifier\+\_\+block}} {\bfseries pm\+\_\+notifier}
+\item 
+\Hypertarget{structkvm_ac24344e2fa18f4421244d01f7bca4f47}\label{structkvm_ac24344e2fa18f4421244d01f7bca4f47} 
+struct \doxymbox{\hyperlink{structxarray}{xarray}} {\bfseries mem\+\_\+attr\+\_\+array}
+\item 
+\Hypertarget{structkvm_ac7c657de2335d0207f9990d5a28a1be1}\label{structkvm_ac7c657de2335d0207f9990d5a28a1be1} 
+char {\bfseries stats\+\_\+id} \+[48]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\doxysection{ehci\+\_\+regs Struct Reference}
+\hypertarget{structehci__regs}{}\label{structehci__regs}\index{ehci\_regs@{ehci\_regs}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structehci__regs_ae8b81792b4f9832d47c5871e8507ba5e}\label{structehci__regs_ae8b81792b4f9832d47c5871e8507ba5e} 
+u32 {\bfseries command}
+\item 
+\Hypertarget{structehci__regs_a45413c8b5ae066d67d2a9c2042cdcd4c}\label{structehci__regs_a45413c8b5ae066d67d2a9c2042cdcd4c} 
+u32 {\bfseries status}
+\item 
+\Hypertarget{structehci__regs_a1ce1b7ba559014fcab8a7eed8be9abba}\label{structehci__regs_a1ce1b7ba559014fcab8a7eed8be9abba} 
+u32 {\bfseries intr\+\_\+enable}
+\item 
+\Hypertarget{structehci__regs_a8650974b4ca9b82f0d05f6f0f228a6f0}\label{structehci__regs_a8650974b4ca9b82f0d05f6f0f228a6f0} 
+u32 {\bfseries frame\+\_\+index}
+\item 
+\Hypertarget{structehci__regs_a827f9d7875f37eb8e081710900bdc6f7}\label{structehci__regs_a827f9d7875f37eb8e081710900bdc6f7} 
+u32 {\bfseries segment}
+\item 
+\Hypertarget{structehci__regs_a83b5c8020ba2aa8d3a16eda68058c506}\label{structehci__regs_a83b5c8020ba2aa8d3a16eda68058c506} 
+u32 {\bfseries frame\+\_\+list}
+\item 
+\Hypertarget{structehci__regs_a65656d00f1354e9f673ca315d5efd652}\label{structehci__regs_a65656d00f1354e9f673ca315d5efd652} 
+u32 {\bfseries async\+\_\+next}
+\item 
+\Hypertarget{structehci__regs_ad8d28ded030ed3f8af4530a4c4ab5560}\label{structehci__regs_ad8d28ded030ed3f8af4530a4c4ab5560} 
+u32 {\bfseries reserved1} \+[2]\+
+\item 
+\Hypertarget{structehci__regs_abe9b5719e23d0da6a5e2bcf0e0141641}\label{structehci__regs_abe9b5719e23d0da6a5e2bcf0e0141641} 
+u32 {\bfseries txfill\+\_\+tuning}
+\item 
+\Hypertarget{structehci__regs_abca3938fc8632aa87c1fcee0ddad0583}\label{structehci__regs_abca3938fc8632aa87c1fcee0ddad0583} 
+u32 {\bfseries reserved2} \+[6]\+
+\item 
+\Hypertarget{structehci__regs_a1f2e63fcad30f283a95654c64743f8cb}\label{structehci__regs_a1f2e63fcad30f283a95654c64743f8cb} 
+u32 {\bfseries configured\+\_\+flag}
+\item 
+\Hypertarget{structehci__regs_a68caa63bbe91e7771e3c1711cac95fb4}\label{structehci__regs_a68caa63bbe91e7771e3c1711cac95fb4} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u32 {\bfseries port\_status} \+[15]\+\\
+\Hypertarget{unionehci__regs_1_1_0d200243031071063070155271023054064336276173265145_ab716263ee016c898988ee6ad851bf183}\label{unionehci__regs_1_1_0d200243031071063070155271023054064336276173265145_ab716263ee016c898988ee6ad851bf183} 
+\>struct \{\\
+\>\>u32 {\bfseries reserved3} \+[9]\+\\
+\>\>u32 {\bfseries usbmode}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structehci__regs_acacb8b71617a8466ce1447ceb80a8517}\label{structehci__regs_acacb8b71617a8466ce1447ceb80a8517} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionehci__regs_1_1_0d273263133231264132150214000363042107116246343362_a1d3985625ca0316864ebfbeb4e8cb9ec}\label{unionehci__regs_1_1_0d273263133231264132150214000363042107116246343362_a1d3985625ca0316864ebfbeb4e8cb9ec} 
+\>struct \{\\
+\>\>u32 {\bfseries reserved4}\\
+\>\>u32 {\bfseries hostpc} \+[15]\+\\
+\>\} \\
+\>u32 {\bfseries brcm\_insnreg} \+[4]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structehci__regs_af1f85ddcd82398f896b9d67a67cef777}\label{structehci__regs_af1f85ddcd82398f896b9d67a67cef777} 
+u32 {\bfseries reserved5} \+[2]\+
+\item 
+\Hypertarget{structehci__regs_afa70a7e6197fc1d3dd63f5fa9d7504ac}\label{structehci__regs_afa70a7e6197fc1d3dd63f5fa9d7504ac} 
+u32 {\bfseries usbmode\+\_\+ex}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

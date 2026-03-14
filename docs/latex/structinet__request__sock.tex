@@ -1,0 +1,56 @@
+\doxysection{inet\+\_\+request\+\_\+sock Struct Reference}
+\hypertarget{structinet__request__sock}{}\label{structinet__request__sock}\index{inet\_request\_sock@{inet\_request\_sock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinet__request__sock_aeba30846dedbd0e427d6b795b7322ecd}\label{structinet__request__sock_aeba30846dedbd0e427d6b795b7322ecd} 
+struct \doxymbox{\hyperlink{structrequest__sock}{request\+\_\+sock}} {\bfseries req}
+\item 
+\Hypertarget{structinet__request__sock_a83add55dd3fe7058c00fc0800bb3e983}\label{structinet__request__sock_a83add55dd3fe7058c00fc0800bb3e983} 
+u16 {\bfseries snd\+\_\+wscale}:\+ 4
+\item 
+\Hypertarget{structinet__request__sock_aa2a9be8bcfa87e987084314aaf5e1c5e}\label{structinet__request__sock_aa2a9be8bcfa87e987084314aaf5e1c5e} 
+u16 {\bfseries rcv\+\_\+wscale}:\+ 4
+\item 
+\Hypertarget{structinet__request__sock_a34a32c86d6fe343ff6f38082c2c4df51}\label{structinet__request__sock_a34a32c86d6fe343ff6f38082c2c4df51} 
+u16 {\bfseries tstamp\+\_\+ok}:\+ 1
+\item 
+\Hypertarget{structinet__request__sock_a273498c53d08fe5a472063566d39cb6b}\label{structinet__request__sock_a273498c53d08fe5a472063566d39cb6b} 
+u16 {\bfseries sack\+\_\+ok}:\+ 1
+\item 
+\Hypertarget{structinet__request__sock_a470d794611d604462c8b2b138a912471}\label{structinet__request__sock_a470d794611d604462c8b2b138a912471} 
+u16 {\bfseries wscale\+\_\+ok}:\+ 1
+\item 
+\Hypertarget{structinet__request__sock_a49dca285e571a85426491867106acb21}\label{structinet__request__sock_a49dca285e571a85426491867106acb21} 
+u16 {\bfseries ecn\+\_\+ok}:\+ 1
+\item 
+\Hypertarget{structinet__request__sock_af30bab9939a108a35779365950f6d90d}\label{structinet__request__sock_af30bab9939a108a35779365950f6d90d} 
+u16 {\bfseries acked}:\+ 1
+\item 
+\Hypertarget{structinet__request__sock_a15a12463e642faa4f9e309bef9823130}\label{structinet__request__sock_a15a12463e642faa4f9e309bef9823130} 
+u16 {\bfseries no\+\_\+srccheck}:\+ 1
+\item 
+\Hypertarget{structinet__request__sock_a55e9cf33db75f611abf8890a70ea459a}\label{structinet__request__sock_a55e9cf33db75f611abf8890a70ea459a} 
+u16 {\bfseries smc\+\_\+ok}:\+ 1
+\item 
+\Hypertarget{structinet__request__sock_aa5fbb104dee2da0c315ce5227b055772}\label{structinet__request__sock_aa5fbb104dee2da0c315ce5227b055772} 
+u32 {\bfseries ir\+\_\+mark}
+\item 
+\Hypertarget{structinet__request__sock_a48042d872138791ccb223968d6d634df}\label{structinet__request__sock_a48042d872138791ccb223968d6d634df} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structip__options__rcu}{ip\_options\_rcu}} \texorpdfstring{$\ast$}{*} {\bfseries ireq\_opt}\\
+\Hypertarget{unioninet__request__sock_1_1_0d042223130236022262166224213222210230206063270043_aef4f1fdb3680583fca44d5fc401403c0}\label{unioninet__request__sock_1_1_0d042223130236022262166224213222210230206063270043_aef4f1fdb3680583fca44d5fc401403c0} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structipv6__txoptions}{ipv6\_txoptions}} \texorpdfstring{$\ast$}{*} {\bfseries ipv6\_opt}\\
+\>\>struct \doxymbox{\hyperlink{structsk__buff}{sk\_buff}} \texorpdfstring{$\ast$}{*} {\bfseries pktopts}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

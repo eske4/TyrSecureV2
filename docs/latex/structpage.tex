@@ -1,0 +1,70 @@
+\doxysection{page Struct Reference}
+\hypertarget{structpage}{}\label{structpage}\index{page@{page}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpage_a53aec4c8cc7b59590ed68b766415b43b}\label{structpage_a53aec4c8cc7b59590ed68b766415b43b} 
+\doxymbox{\hyperlink{structmemdesc__flags__t}{memdesc\+\_\+flags\+\_\+t}} {\bfseries flags}
+\item 
+\Hypertarget{structpage_a217ad8f30ad44a3bf9be7399b8b9b3b1}\label{structpage_a217ad8f30ad44a3bf9be7399b8b9b3b1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionpage_1_1_0d362047313337042024100074044353021254131311041150_ae0b8cb7be742887fc30f82217899cba0}\label{unionpage_1_1_0d362047313337042024100074044353021254131311041150_ae0b8cb7be742887fc30f82217899cba0} 
+\>struct \{\\
+\Hypertarget{structpage_1_1_0d362047313337042024100074044353021254131311041150_1_1_0d137321102010357104016356165331143102133061247063_aa5ea3f7367d490d17a0f032df0953112}\label{structpage_1_1_0d362047313337042024100074044353021254131311041150_1_1_0d137321102010357104016356165331143102133061247063_aa5ea3f7367d490d17a0f032df0953112} 
+\>\>union \{\\
+\>\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries lru}\\
+\>\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries buddy\_list}\\
+\>\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries pcp\_list}\\
+\>\>\>struct \doxymbox{\hyperlink{structllist__node}{llist\_node}} {\bfseries pcp\_llist}\\
+\>\>\} \\
+\>\>struct \doxymbox{\hyperlink{structaddress__space}{address\_space}} \texorpdfstring{$\ast$}{*} {\bfseries mapping}\\
+\Hypertarget{structpage_1_1_0d362047313337042024100074044353021254131311041150_1_1_0d137321102010357104016356165331143102133061247063_a2c56b37371afec7eb4ffb9986e41c8fa}\label{structpage_1_1_0d362047313337042024100074044353021254131311041150_1_1_0d137321102010357104016356165331143102133061247063_a2c56b37371afec7eb4ffb9986e41c8fa} 
+\>\>union \{\\
+\>\>\>long unsigned int {\bfseries \_\_folio\_index}\\
+\>\>\>long unsigned int {\bfseries share}\\
+\>\>\} \\
+\>\>long unsigned int {\bfseries private}\\
+\>\} \\
+\Hypertarget{unionpage_1_1_0d362047313337042024100074044353021254131311041150_a799e244b58a5c05d69699e88eaed63e4}\label{unionpage_1_1_0d362047313337042024100074044353021254131311041150_a799e244b58a5c05d69699e88eaed63e4} 
+\>struct \{\\
+\>\>long unsigned int {\bfseries pp\_magic}\\
+\>\>struct \doxymbox{\hyperlink{structpage__pool}{page\_pool}} \texorpdfstring{$\ast$}{*} {\bfseries pp}\\
+\>\>long unsigned int {\bfseries \_pp\_mapping\_pad}\\
+\>\>long unsigned int {\bfseries dma\_addr}\\
+\>\>atomic\_long\_t {\bfseries pp\_ref\_count}\\
+\>\} \\
+\Hypertarget{unionpage_1_1_0d362047313337042024100074044353021254131311041150_a75c18dfe6a0966729be5092a52f56c75}\label{unionpage_1_1_0d362047313337042024100074044353021254131311041150_a75c18dfe6a0966729be5092a52f56c75} 
+\>struct \{\\
+\>\>long unsigned int {\bfseries compound\_head}\\
+\>\} \\
+\Hypertarget{unionpage_1_1_0d362047313337042024100074044353021254131311041150_ace6613907e2979aaff134e68540dfa97}\label{unionpage_1_1_0d362047313337042024100074044353021254131311041150_ace6613907e2979aaff134e68540dfa97} 
+\>struct \{\\
+\>\>void \texorpdfstring{$\ast$}{*} {\bfseries \_unused\_pgmap\_compound\_head}\\
+\>\>void \texorpdfstring{$\ast$}{*} {\bfseries zone\_device\_data}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries callback\_head}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structpage_a69302f062d25ee47fc511987a50b2946}\label{structpage_a69302f062d25ee47fc511987a50b2946} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>unsigned int {\bfseries page\_type}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries \_mapcount}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structpage_a218047cc025253af9d599fe917edf9d8}\label{structpage_a218047cc025253af9d599fe917edf9d8} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries \+\_\+refcount}
+\item 
+\Hypertarget{structpage_a7141e816a5f5c67a10b0f295520a5fa6}\label{structpage_a7141e816a5f5c67a10b0f295520a5fa6} 
+long unsigned int {\bfseries memcg\+\_\+data}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

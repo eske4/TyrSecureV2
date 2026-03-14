@@ -1,0 +1,184 @@
+\doxysection{phy\+\_\+driver Struct Reference}
+\hypertarget{structphy__driver}{}\label{structphy__driver}\index{phy\_driver@{phy\_driver}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structphy__driver_ad83f55c6f4d5c40de9951962636980ec}\label{structphy__driver_ad83f55c6f4d5c40de9951962636980ec} 
+struct \doxymbox{\hyperlink{structmdio__driver__common}{mdio\+\_\+driver\+\_\+common}} {\bfseries mdiodrv}
+\item 
+\Hypertarget{structphy__driver_a2f9dd57fde29a6c5153fe8f48cd702b8}\label{structphy__driver_a2f9dd57fde29a6c5153fe8f48cd702b8} 
+u32 {\bfseries phy\+\_\+id}
+\item 
+\Hypertarget{structphy__driver_a0dd12324c37dbf22617091dec7cf1a26}\label{structphy__driver_a0dd12324c37dbf22617091dec7cf1a26} 
+char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structphy__driver_a923bd1fa3f8807d9771a7ad5fb6c5be5}\label{structphy__driver_a923bd1fa3f8807d9771a7ad5fb6c5be5} 
+u32 {\bfseries phy\+\_\+id\+\_\+mask}
+\item 
+\Hypertarget{structphy__driver_a2d7ae8cdfd9d731b57ae1e2f72b1aae7}\label{structphy__driver_a2d7ae8cdfd9d731b57ae1e2f72b1aae7} 
+const long unsigned int \texorpdfstring{$\ast$}{*}const {\bfseries features}
+\item 
+\Hypertarget{structphy__driver_a9bf0d892d62fb4e971d1c3e60b5694c1}\label{structphy__driver_a9bf0d892d62fb4e971d1c3e60b5694c1} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structphy__driver_a41ad30dd4a08fd8e40ecc09269fa643d}\label{structphy__driver_a41ad30dd4a08fd8e40ecc09269fa643d} 
+const void \texorpdfstring{$\ast$}{*} {\bfseries driver\+\_\+data}
+\item 
+\Hypertarget{structphy__driver_a6d65eaa0fcba0dcd4993691b28966796}\label{structphy__driver_a6d65eaa0fcba0dcd4993691b28966796} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries soft\+\_\+reset} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a44119693fadb8731e1001968eaf25cbc}\label{structphy__driver_a44119693fadb8731e1001968eaf25cbc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries config\+\_\+init} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a5cb85d90bbb735f81ec03cc42cdf2d8f}\label{structphy__driver_a5cb85d90bbb735f81ec03cc42cdf2d8f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries probe} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a6ae9d85afcf8a5d5201c86bcdf122a55}\label{structphy__driver_a6ae9d85afcf8a5d5201c86bcdf122a55} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+features} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a7fdf59a9797e81305192aa367b9d06fa}\label{structphy__driver_a7fdf59a9797e81305192aa367b9d06fa} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries inband\+\_\+caps} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, phy\+\_\+interface\+\_\+t)
+\item 
+\Hypertarget{structphy__driver_ab082a4d879ba0d4fd2f7c0f34d839468}\label{structphy__driver_ab082a4d879ba0d4fd2f7c0f34d839468} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries config\+\_\+inband} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structphy__driver_ac86008a1f77c22621f78ec49e39fd1c7}\label{structphy__driver_ac86008a1f77c22621f78ec49e39fd1c7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+rate\+\_\+matching} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, phy\+\_\+interface\+\_\+t)
+\item 
+\Hypertarget{structphy__driver_a68c4757bdbd303502dece6cd99b8d0c1}\label{structphy__driver_a68c4757bdbd303502dece6cd99b8d0c1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries suspend} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a24667ee285915f83778ee616e46043dc}\label{structphy__driver_a24667ee285915f83778ee616e46043dc} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries resume} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_af46a2039cb7e2672eed2eb7f65d56485}\label{structphy__driver_af46a2039cb7e2672eed2eb7f65d56485} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries config\+\_\+aneg} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_ab0b0e4b1a93c87f636aa21267902cc57}\label{structphy__driver_ab0b0e4b1a93c87f636aa21267902cc57} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries aneg\+\_\+done} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a4e0b6a0ce70613fe3851427c0ab53fc0}\label{structphy__driver_a4e0b6a0ce70613fe3851427c0ab53fc0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+status} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a5ad129bf9f1801591dbbd27b0b8a603e}\label{structphy__driver_a5ad129bf9f1801591dbbd27b0b8a603e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries config\+\_\+intr} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a3b69080155391cf61de6af2d446293d5}\label{structphy__driver_a3b69080155391cf61de6af2d446293d5} 
+irqreturn\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+interrupt} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a37f3f0cb0801de08fa1160fa3782b933}\label{structphy__driver_a37f3f0cb0801de08fa1160fa3782b933} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries remove} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_ace073f954949dec3f6bd71edecb0f34d}\label{structphy__driver_ace073f954949dec3f6bd71edecb0f34d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries match\+\_\+phy\+\_\+device} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structphy__driver}{phy\+\_\+driver}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a9ace0b847edaceaea62ee4205f1826ee}\label{structphy__driver_a9ace0b847edaceaea62ee4205f1826ee} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+wol} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__wolinfo}{ethtool\+\_\+wolinfo}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a7efc6bad9a5ebdaf5a6bbe7aae983913}\label{structphy__driver_a7efc6bad9a5ebdaf5a6bbe7aae983913} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+wol} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__wolinfo}{ethtool\+\_\+wolinfo}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a4e73b694a30ced07cbbc85f3cf4cc934}\label{structphy__driver_a4e73b694a30ced07cbbc85f3cf4cc934} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries link\+\_\+change\+\_\+notify} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a9f5f4fe50bd88dc0494d17ffdd48141b}\label{structphy__driver_a9f5f4fe50bd88dc0494d17ffdd48141b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+mmd} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u16)
+\item 
+\Hypertarget{structphy__driver_ae39068bf92791640adaa791b9d318784}\label{structphy__driver_ae39068bf92791640adaa791b9d318784} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+mmd} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, u16, u16)
+\item 
+\Hypertarget{structphy__driver_aecf9a9a8c28fedf73e0a7b9d5a018f8f}\label{structphy__driver_aecf9a9a8c28fedf73e0a7b9d5a018f8f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+page} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_aa780920b35831efb54ef24c715341b68}\label{structphy__driver_aa780920b35831efb54ef24c715341b68} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+page} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structphy__driver_a8c1fdfd6d6326b0e00ee93a3806f88e3}\label{structphy__driver_a8c1fdfd6d6326b0e00ee93a3806f88e3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries module\+\_\+info} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__modinfo}{ethtool\+\_\+modinfo}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a46474e0e6ac6fa7f3a22d8b4dc64620d}\label{structphy__driver_a46474e0e6ac6fa7f3a22d8b4dc64620d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries module\+\_\+eeprom} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__eeprom}{ethtool\+\_\+eeprom}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a1c2d612078f4d70163737c9843149380}\label{structphy__driver_a1c2d612078f4d70163737c9843149380} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cable\+\_\+test\+\_\+start} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_ac0644864b0364e93afbbcbe03b141419}\label{structphy__driver_ac0644864b0364e93afbbcbe03b141419} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cable\+\_\+test\+\_\+tdr\+\_\+start} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structphy__tdr__config}{phy\+\_\+tdr\+\_\+config}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_ad28811fca06b412928bd52e815e44752}\label{structphy__driver_ad28811fca06b412928bd52e815e44752} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cable\+\_\+test\+\_\+get\+\_\+status} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, bool \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_aee7a68238121ecabdf54ffbcba4b000c}\label{structphy__driver_aee7a68238121ecabdf54ffbcba4b000c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+phy\+\_\+stats} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__eth__phy__stats}{ethtool\+\_\+eth\+\_\+phy\+\_\+stats}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__phy__stats}{ethtool\+\_\+phy\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_adea85284f903783f446ed784f866df70}\label{structphy__driver_adea85284f903783f446ed784f866df70} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+link\+\_\+stats} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__link__ext__stats}{ethtool\+\_\+link\+\_\+ext\+\_\+stats}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_ab2b8b3680a4892a784b4a15ddafd2a37}\label{structphy__driver_ab2b8b3680a4892a784b4a15ddafd2a37} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+stats} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_ae6be7cab76e5915e76b4c6b08cf79fc7}\label{structphy__driver_ae6be7cab76e5915e76b4c6b08cf79fc7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+sset\+\_\+count} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a52520b95c7d615024ebf7b61ff0131a1}\label{structphy__driver_a52520b95c7d615024ebf7b61ff0131a1} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+strings} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a0d6ba05b62b6d518c79a09fbaef57c31}\label{structphy__driver_a0d6ba05b62b6d518c79a09fbaef57c31} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+stats} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__stats}{ethtool\+\_\+stats}} \texorpdfstring{$\ast$}{*}, u64 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a31902a881a4c780cd1eeb74afe985b23}\label{structphy__driver_a31902a881a4c780cd1eeb74afe985b23} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+tunable} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__tunable}{ethtool\+\_\+tunable}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a8cdae065b5ac72bccc6bf0e358d161c0}\label{structphy__driver_a8cdae065b5ac72bccc6bf0e358d161c0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+tunable} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structethtool__tunable}{ethtool\+\_\+tunable}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a0f46b37339722444f0aa0a9dc563ea92}\label{structphy__driver_a0f46b37339722444f0aa0a9dc563ea92} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+loopback} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, bool, int)
+\item 
+\Hypertarget{structphy__driver_aacb817f2385e6d4715365279879d0f10}\label{structphy__driver_aacb817f2385e6d4715365279879d0f10} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+sqi} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a12484225e07bc3fc03acb29d2c2840ab}\label{structphy__driver_a12484225e07bc3fc03acb29d2c2840ab} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+sqi\+\_\+max} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a497a373af6a504c5a1603a1f1fa3f2a8}\label{structphy__driver_a497a373af6a504c5a1603a1f1fa3f2a8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+mse\+\_\+capability} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structphy__mse__capability}{phy\+\_\+mse\+\_\+capability}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a229e5a5db1cc986f129aa923de7c71b5}\label{structphy__driver_a229e5a5db1cc986f129aa923de7c71b5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+mse\+\_\+snapshot} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, enum phy\+\_\+mse\+\_\+channel, struct \doxymbox{\hyperlink{structphy__mse__snapshot}{phy\+\_\+mse\+\_\+snapshot}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a14cf90ec531c71f6ac11d4f51c61b6ac}\label{structphy__driver_a14cf90ec531c71f6ac11d4f51c61b6ac} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+plca\+\_\+cfg} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structphy__plca__cfg}{phy\+\_\+plca\+\_\+cfg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_ab146dfc73ede904b635a3df3b2966f44}\label{structphy__driver_ab146dfc73ede904b635a3df3b2966f44} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+plca\+\_\+cfg} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structphy__plca__cfg}{phy\+\_\+plca\+\_\+cfg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a0580b84ceeb271c0784dece8d30d4c03}\label{structphy__driver_a0580b84ceeb271c0784dece8d30d4c03} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+plca\+\_\+status} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structphy__plca__status}{phy\+\_\+plca\+\_\+status}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_a624697e27a7de82777dd0d5d20ec56c3}\label{structphy__driver_a624697e27a7de82777dd0d5d20ec56c3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries led\+\_\+brightness\+\_\+set} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, u8, enum led\+\_\+brightness)
+\item 
+\Hypertarget{structphy__driver_a151e23deb6689f9b27b4d9903af7845b}\label{structphy__driver_a151e23deb6689f9b27b4d9903af7845b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries led\+\_\+blink\+\_\+set} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, u8, long unsigned int \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_abcd5b4097cee9b9f39a7543180bf7c27}\label{structphy__driver_abcd5b4097cee9b9f39a7543180bf7c27} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries led\+\_\+hw\+\_\+is\+\_\+supported} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, u8, long unsigned int)
+\item 
+\Hypertarget{structphy__driver_a6d93b8ac1586aec60b3041d83562f16d}\label{structphy__driver_a6d93b8ac1586aec60b3041d83562f16d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries led\+\_\+hw\+\_\+control\+\_\+set} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, u8, long unsigned int)
+\item 
+\Hypertarget{structphy__driver_abd4e46e5a42ae55afec316b54e6270b6}\label{structphy__driver_abd4e46e5a42ae55afec316b54e6270b6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries led\+\_\+hw\+\_\+control\+\_\+get} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, u8, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structphy__driver_ae3281a13659552e5c0142a0c668d551b}\label{structphy__driver_ae3281a13659552e5c0142a0c668d551b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries led\+\_\+polarity\+\_\+set} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*}, int, long unsigned int)
+\item 
+\Hypertarget{structphy__driver_ab34ed03d299062b94c2cd4fa6e59a04c}\label{structphy__driver_ab34ed03d299062b94c2cd4fa6e59a04c} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+next\+\_\+update\+\_\+time} )(struct \doxymbox{\hyperlink{structphy__device}{phy\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

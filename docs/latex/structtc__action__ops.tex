@@ -1,0 +1,61 @@
+\doxysection{tc\+\_\+action\+\_\+ops Struct Reference}
+\hypertarget{structtc__action__ops}{}\label{structtc__action__ops}\index{tc\_action\_ops@{tc\_action\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structtc__action__ops_a0554d8c90b5693c82f2a05305ec38b88}\label{structtc__action__ops_a0554d8c90b5693c82f2a05305ec38b88} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries head}
+\item 
+\Hypertarget{structtc__action__ops_a511147d2e43df13d0a12446b6a14d9cb}\label{structtc__action__ops_a511147d2e43df13d0a12446b6a14d9cb} 
+char {\bfseries kind} \+[16]\+
+\item 
+\Hypertarget{structtc__action__ops_ac1d9f917368e9c8826461e88c50c5472}\label{structtc__action__ops_ac1d9f917368e9c8826461e88c50c5472} 
+enum tca\+\_\+id {\bfseries id}
+\item 
+\Hypertarget{structtc__action__ops_a21786be5007a1c5fdffdf7cbb0c713c6}\label{structtc__action__ops_a21786be5007a1c5fdffdf7cbb0c713c6} 
+unsigned int {\bfseries net\+\_\+id}
+\item 
+\Hypertarget{structtc__action__ops_af3e7a2b1efc540ec2783666b8c771336}\label{structtc__action__ops_af3e7a2b1efc540ec2783666b8c771336} 
+size\+\_\+t {\bfseries size}
+\item 
+\Hypertarget{structtc__action__ops_ab39853d18a2d289e74694734e6794f5d}\label{structtc__action__ops_ab39853d18a2d289e74694734e6794f5d} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structtc__action__ops_a645f3b6127ac673f1e93d691367724ce}\label{structtc__action__ops_a645f3b6127ac673f1e93d691367724ce} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries act} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcf__result}{tcf\+\_\+result}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtc__action__ops_a761d0169de4223269265b9197ca8a0f0}\label{structtc__action__ops_a761d0169de4223269265b9197ca8a0f0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dump} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*}, int, int)
+\item 
+\Hypertarget{structtc__action__ops_a69f582841c705e74155002161355331a}\label{structtc__action__ops_a69f582841c705e74155002161355331a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup} )(struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtc__action__ops_a356260efe16a0aad2052303e05a5fe98}\label{structtc__action__ops_a356260efe16a0aad2052303e05a5fe98} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries lookup} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structtc__action__ops_a062e62a041368a99156a97b1f31288ba}\label{structtc__action__ops_a062e62a041368a99156a97b1f31288ba} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcf__proto}{tcf\+\_\+proto}} \texorpdfstring{$\ast$}{*}, u32, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtc__action__ops_a32e2bbfa5863252991c68299e6284bff}\label{structtc__action__ops_a32e2bbfa5863252991c68299e6284bff} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries walk} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__callback}{netlink\+\_\+callback}} \texorpdfstring{$\ast$}{*}, int, const struct \doxymbox{\hyperlink{structtc__action__ops}{tc\+\_\+action\+\_\+ops}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtc__action__ops_a549af9cac79984a2c76e5814e26e456a}\label{structtc__action__ops_a549af9cac79984a2c76e5814e26e456a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries stats\+\_\+update} )(struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*}, u64, u64, u64, u64, bool)
+\item 
+\Hypertarget{structtc__action__ops_a35226fd0db9f00d88aa29a6e3bc27830}\label{structtc__action__ops_a35226fd0db9f00d88aa29a6e3bc27830} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+fill\+\_\+size} )(const struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtc__action__ops_a486b6f100e90414d2a0b7603e3244fac}\label{structtc__action__ops_a486b6f100e90414d2a0b7603e3244fac} 
+struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+dev} )(const struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*}, tc\+\_\+action\+\_\+priv\+\_\+destructor \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtc__action__ops_a0c1c13c1042bc59c081ca9a64f064c72}\label{structtc__action__ops_a0c1c13c1042bc59c081ca9a64f064c72} 
+struct \doxymbox{\hyperlink{structpsample__group}{psample\+\_\+group}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+psample\+\_\+group} )(const struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*}, tc\+\_\+action\+\_\+priv\+\_\+destructor \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structtc__action__ops_afca8e596a4115a588ccd5d7c710ce096}\label{structtc__action__ops_afca8e596a4115a588ccd5d7c710ce096} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries offload\+\_\+act\+\_\+setup} )(struct \doxymbox{\hyperlink{structtc__action}{tc\+\_\+action}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*}, bool, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

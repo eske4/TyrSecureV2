@@ -1,0 +1,102 @@
+\doxysection{key Struct Reference}
+\hypertarget{structkey}{}\label{structkey}\index{key@{key}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkey_a458be12960980d5ebfc268318e353f33}\label{structkey_a458be12960980d5ebfc268318e353f33} 
+refcount\+\_\+t {\bfseries usage}
+\item 
+\Hypertarget{structkey_af68d2c2737426f6f800ba0c963115650}\label{structkey_af68d2c2737426f6f800ba0c963115650} 
+key\+\_\+serial\+\_\+t {\bfseries serial}
+\item 
+\Hypertarget{structkey_aef92c7043c00131c62d42751f3583b9b}\label{structkey_aef92c7043c00131c62d42751f3583b9b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries graveyard\_link}\\
+\>struct \doxymbox{\hyperlink{structrb__node}{rb\_node}} {\bfseries serial\_node}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkey_ae69c079cb0d39944cd7cde095da2ef3f}\label{structkey_ae69c079cb0d39944cd7cde095da2ef3f} 
+struct \doxymbox{\hyperlink{structwatch__list}{watch\+\_\+list}} \texorpdfstring{$\ast$}{*} {\bfseries watchers}
+\item 
+\Hypertarget{structkey_a02eeb34b4060658a01594e4b8a3bca98}\label{structkey_a02eeb34b4060658a01594e4b8a3bca98} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries sem}
+\item 
+\Hypertarget{structkey_aae2a0a66616a6d286d9a449b8e7a1b85}\label{structkey_aae2a0a66616a6d286d9a449b8e7a1b85} 
+struct \doxymbox{\hyperlink{structkey__user}{key\+\_\+user}} \texorpdfstring{$\ast$}{*} {\bfseries user}
+\item 
+\Hypertarget{structkey_aec61ab2122bc1cdcbf73373031e70b40}\label{structkey_aec61ab2122bc1cdcbf73373031e70b40} 
+void \texorpdfstring{$\ast$}{*} {\bfseries security}
+\item 
+\Hypertarget{structkey_aad0b5a1c4d1ec0d2fa67a9b065f7721c}\label{structkey_aad0b5a1c4d1ec0d2fa67a9b065f7721c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>time64\_t {\bfseries expiry}\\
+\>time64\_t {\bfseries revoked\_at}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkey_a0330ddd58074db0266f310e6c3cc2d67}\label{structkey_a0330ddd58074db0266f310e6c3cc2d67} 
+time64\+\_\+t {\bfseries last\+\_\+used\+\_\+at}
+\item 
+\Hypertarget{structkey_a59c21bccd9490a41d82e2c17d730239d}\label{structkey_a59c21bccd9490a41d82e2c17d730239d} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries uid}
+\item 
+\Hypertarget{structkey_a0a1e8e1bf2a7d7871442ee9ccaf9f504}\label{structkey_a0a1e8e1bf2a7d7871442ee9ccaf9f504} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries gid}
+\item 
+\Hypertarget{structkey_a26a6ba4443012c0935d41eef53aa134b}\label{structkey_a26a6ba4443012c0935d41eef53aa134b} 
+key\+\_\+perm\+\_\+t {\bfseries perm}
+\item 
+\Hypertarget{structkey_a85210e53ffc11f930174704431af6ab2}\label{structkey_a85210e53ffc11f930174704431af6ab2} 
+short unsigned int {\bfseries quotalen}
+\item 
+\Hypertarget{structkey_aa881d09ec25260ea17ee14518f9a0a44}\label{structkey_aa881d09ec25260ea17ee14518f9a0a44} 
+short unsigned int {\bfseries datalen}
+\item 
+\Hypertarget{structkey_a0b06c65cebf0218a07236b4c75653bd4}\label{structkey_a0b06c65cebf0218a07236b4c75653bd4} 
+short int {\bfseries state}
+\item 
+\Hypertarget{structkey_a6c7dbcad39aa0167df3c20c14ad91cbb}\label{structkey_a6c7dbcad39aa0167df3c20c14ad91cbb} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structkey_a2adaea03dbe0ca6d06203f2117a7b8d6}\label{structkey_a2adaea03dbe0ca6d06203f2117a7b8d6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structkeyring__index__key}{keyring\_index\_key}} {\bfseries index\_key}\\
+\Hypertarget{unionkey_1_1_0d266254360273344304064073222243314327306314115005_af1a376f842233bb0ba54fb854a4ce6a8}\label{unionkey_1_1_0d266254360273344304064073222243314327306314115005_af1a376f842233bb0ba54fb854a4ce6a8} 
+\>struct \{\\
+\>\>long unsigned int {\bfseries hash}\\
+\>\>long unsigned int {\bfseries len\_desc}\\
+\>\>struct \doxymbox{\hyperlink{structkey__type}{key\_type}} \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>struct \doxymbox{\hyperlink{structkey__tag}{key\_tag}} \texorpdfstring{$\ast$}{*} {\bfseries domain\_tag}\\
+\>\>char \texorpdfstring{$\ast$}{*} {\bfseries description}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkey_a499e5a0b9668548ef1bcd90d44107853}\label{structkey_a499e5a0b9668548ef1bcd90d44107853} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>union \doxymbox{\hyperlink{unionkey__payload}{key\_payload}} {\bfseries payload}\\
+\Hypertarget{unionkey_1_1_0d053216304006270234367363170012027354142124214330_ab30c5596841b4c6cb83cb74b952d0da2}\label{unionkey_1_1_0d053216304006270234367363170012027354142124214330_ab30c5596841b4c6cb83cb74b952d0da2} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries name\_link}\\
+\>\>struct \doxymbox{\hyperlink{structassoc__array}{assoc\_array}} {\bfseries keys}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkey_aa39d09c95c13cf8f5317a50592618af1}\label{structkey_aa39d09c95c13cf8f5317a50592618af1} 
+struct \doxymbox{\hyperlink{structkey__restriction}{key\+\_\+restriction}} \texorpdfstring{$\ast$}{*} {\bfseries restrict\+\_\+link}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

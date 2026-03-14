@@ -1,0 +1,73 @@
+\doxysection{dst\+\_\+ops Struct Reference}
+\hypertarget{structdst__ops}{}\label{structdst__ops}\index{dst\_ops@{dst\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdst__ops_aa5d1df3e9c44624a3309f58dad2a82d1}\label{structdst__ops_aa5d1df3e9c44624a3309f58dad2a82d1} 
+short unsigned int {\bfseries family}
+\item 
+\Hypertarget{structdst__ops_a09703f1d6a5904f0579660fdf9cdf97f}\label{structdst__ops_a09703f1d6a5904f0579660fdf9cdf97f} 
+unsigned int {\bfseries gc\+\_\+thresh}
+\item 
+\Hypertarget{structdst__ops_a1d83e7e9683035c41a15b67873d11c56}\label{structdst__ops_a1d83e7e9683035c41a15b67873d11c56} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries gc} )(struct \doxymbox{\hyperlink{structdst__ops}{dst\+\_\+ops}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_a4b885761f8ae42e0e5a7c41af66c7a57}\label{structdst__ops_a4b885761f8ae42e0e5a7c41af66c7a57} 
+struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries check} )(struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}, \+\_\+\+\_\+u32)
+\item 
+\Hypertarget{structdst__ops_a44d734eba495355a26fa692bd9f76b84}\label{structdst__ops_a44d734eba495355a26fa692bd9f76b84} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries default\+\_\+advmss} )(const struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_a89a6f566cc5683a60141a3ec1798cf38}\label{structdst__ops_a89a6f566cc5683a60141a3ec1798cf38} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries mtu} )(const struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_af836ecb3a98f56da8e8b9dbe27bd8955}\label{structdst__ops_af836ecb3a98f56da8e8b9dbe27bd8955} 
+u32 \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries cow\+\_\+metrics} )(struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structdst__ops_aa88f6ef20a39b79070bdcc3cd68b355a}\label{structdst__ops_aa88f6ef20a39b79070bdcc3cd68b355a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries destroy} )(struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_a7dd59bef028203af8b17fe1bf4da7118}\label{structdst__ops_a7dd59bef028203af8b17fe1bf4da7118} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ifdown} )(struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnet__device}{net\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_ab1418bd0f132df94a27cb45c59ced8a4}\label{structdst__ops_ab1418bd0f132df94a27cb45c59ced8a4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries negative\+\_\+advice} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_a4d3d61aad01abf20d2de2faea5d16ff6}\label{structdst__ops_a4d3d61aad01abf20d2de2faea5d16ff6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries link\+\_\+failure} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_a356c31b86e403464eba774a39c0578b6}\label{structdst__ops_a356c31b86e403464eba774a39c0578b6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+pmtu} )(struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, u32, bool)
+\item 
+\Hypertarget{structdst__ops_a2fafd7d595727ef0159ec33ee9ceecb5}\label{structdst__ops_a2fafd7d595727ef0159ec33ee9ceecb5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries redirect} )(struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_a0cd885609dc3164efe041492456538ec}\label{structdst__ops_a0cd885609dc3164efe041492456538ec} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries local\+\_\+out} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_a9998baebe7982d05dc50b31d752ad2c8}\label{structdst__ops_a9998baebe7982d05dc50b31d752ad2c8} 
+struct \doxymbox{\hyperlink{structneighbour}{neighbour}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries neigh\+\_\+lookup} )(const struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_a24cb6a9f51724f32edcdef5b4e435d08}\label{structdst__ops_a24cb6a9f51724f32edcdef5b4e435d08} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries confirm\+\_\+neigh} )(const struct \doxymbox{\hyperlink{structdst__entry}{dst\+\_\+entry}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdst__ops_a3eb4dc0f45afb6c780aba8c012cbbd25}\label{structdst__ops_a3eb4dc0f45afb6c780aba8c012cbbd25} 
+struct \doxymbox{\hyperlink{structkmem__cache}{kmem\+\_\+cache}} \texorpdfstring{$\ast$}{*} {\bfseries kmem\+\_\+cachep}
+\item 
+\Hypertarget{structdst__ops_a21ca325bde5e06c7fe11fddd6d81c879}\label{structdst__ops_a21ca325bde5e06c7fe11fddd6d81c879} 
+struct \doxymbox{\hyperlink{structpercpu__counter}{percpu\+\_\+counter}} {\bfseries pcpuc\+\_\+entries}
+\item 
+\Hypertarget{structdst__ops_a8e69078985642e3a452e70f2e488a73e}\label{structdst__ops_a8e69078985642e3a452e70f2e488a73e} 
+long :\+ 64
+\item 
+\Hypertarget{structdst__ops_a86b5f9ec73c2f38dee1a13f751e65906}\label{structdst__ops_a86b5f9ec73c2f38dee1a13f751e65906} 
+long :\+ 64
+\item 
+\Hypertarget{structdst__ops_a85117b30b06edb8fe6ed1830d64a5078}\label{structdst__ops_a85117b30b06edb8fe6ed1830d64a5078} 
+long :\+ 64
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

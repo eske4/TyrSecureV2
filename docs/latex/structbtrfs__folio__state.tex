@@ -1,0 +1,25 @@
+\doxysection{btrfs\+\_\+folio\+\_\+state Struct Reference}
+\hypertarget{structbtrfs__folio__state}{}\label{structbtrfs__folio__state}\index{btrfs\_folio\_state@{btrfs\_folio\_state}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__folio__state_affbcdaff4c9b4033fe9c2a0417af387c}\label{structbtrfs__folio__state_affbcdaff4c9b4033fe9c2a0417af387c} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structbtrfs__folio__state_a001afdf9dfb7d3118a27f6a16b9f063c}\label{structbtrfs__folio__state_a001afdf9dfb7d3118a27f6a16b9f063c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries eb\_refs}\\
+\>\doxymbox{\hyperlink{structatomic__t}{atomic\_t}} {\bfseries nr\_locked}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbtrfs__folio__state_ab4ddce295b94e3b0d64a6f9acc45b7bc}\label{structbtrfs__folio__state_ab4ddce295b94e3b0d64a6f9acc45b7bc} 
+long unsigned int {\bfseries bitmaps} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

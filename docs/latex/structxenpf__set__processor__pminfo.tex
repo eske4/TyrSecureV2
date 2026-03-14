@@ -1,0 +1,26 @@
+\doxysection{xenpf\+\_\+set\+\_\+processor\+\_\+pminfo Struct Reference}
+\hypertarget{structxenpf__set__processor__pminfo}{}\label{structxenpf__set__processor__pminfo}\index{xenpf\_set\_processor\_pminfo@{xenpf\_set\_processor\_pminfo}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structxenpf__set__processor__pminfo_aa9678fb9083c92bb7de741fbe640864d}\label{structxenpf__set__processor__pminfo_aa9678fb9083c92bb7de741fbe640864d} 
+uint32\+\_\+t {\bfseries id}
+\item 
+\Hypertarget{structxenpf__set__processor__pminfo_a0144a916f2af905b6a8eaceca2d4708d}\label{structxenpf__set__processor__pminfo_a0144a916f2af905b6a8eaceca2d4708d} 
+uint32\+\_\+t {\bfseries type}
+\item 
+\Hypertarget{structxenpf__set__processor__pminfo_a9c1343c42bce023d1f1dd84d901972cc}\label{structxenpf__set__processor__pminfo_a9c1343c42bce023d1f1dd84d901972cc} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structxen__processor__power}{xen\_processor\_power}} {\bfseries power}\\
+\>struct \doxymbox{\hyperlink{structxen__processor__performance}{xen\_processor\_performance}} {\bfseries perf}\\
+\>\_\_guest\_handle\_uint32\_t {\bfseries pdc}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

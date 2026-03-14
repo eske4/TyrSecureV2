@@ -1,0 +1,58 @@
+\doxysection{acpi\+\_\+processor\+\_\+throttling Struct Reference}
+\hypertarget{structacpi__processor__throttling}{}\label{structacpi__processor__throttling}\index{acpi\_processor\_throttling@{acpi\_processor\_throttling}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structacpi__processor__throttling_af23fc61d330e3d16c18229b5c8de1e11}\label{structacpi__processor__throttling_af23fc61d330e3d16c18229b5c8de1e11} 
+unsigned int {\bfseries state}
+\item 
+\Hypertarget{structacpi__processor__throttling_a58825530f6693d99fec6c73b37debf6e}\label{structacpi__processor__throttling_a58825530f6693d99fec6c73b37debf6e} 
+unsigned int {\bfseries platform\+\_\+limit}
+\item 
+\Hypertarget{structacpi__processor__throttling_a0d2c93e2ad01f51594b038d44a73d6e7}\label{structacpi__processor__throttling_a0d2c93e2ad01f51594b038d44a73d6e7} 
+struct \doxymbox{\hyperlink{structacpi__pct__register}{acpi\+\_\+pct\+\_\+register}} {\bfseries control\+\_\+register}
+\item 
+\Hypertarget{structacpi__processor__throttling_ac131feb037087a75ec317d557be30970}\label{structacpi__processor__throttling_ac131feb037087a75ec317d557be30970} 
+struct \doxymbox{\hyperlink{structacpi__pct__register}{acpi\+\_\+pct\+\_\+register}} {\bfseries status\+\_\+register}
+\item 
+\Hypertarget{structacpi__processor__throttling_a49c39e4439386719039896d1820cba9d}\label{structacpi__processor__throttling_a49c39e4439386719039896d1820cba9d} 
+unsigned int {\bfseries state\+\_\+count}
+\item 
+\Hypertarget{structacpi__processor__throttling_a3a401dd9c244ebed9e674ee201e3f8da}\label{structacpi__processor__throttling_a3a401dd9c244ebed9e674ee201e3f8da} 
+struct \doxymbox{\hyperlink{structacpi__processor__tx__tss}{acpi\+\_\+processor\+\_\+tx\+\_\+tss}} \texorpdfstring{$\ast$}{*} {\bfseries states\+\_\+tss}
+\item 
+\Hypertarget{structacpi__processor__throttling_a9d81c8c47bd7d76d4e582cc5073d4585}\label{structacpi__processor__throttling_a9d81c8c47bd7d76d4e582cc5073d4585} 
+struct \doxymbox{\hyperlink{structacpi__tsd__package}{acpi\+\_\+tsd\+\_\+package}} {\bfseries domain\+\_\+info}
+\item 
+\Hypertarget{structacpi__processor__throttling_a399204b0a5791a1fc4b38828371ceb56}\label{structacpi__processor__throttling_a399204b0a5791a1fc4b38828371ceb56} 
+cpumask\+\_\+var\+\_\+t {\bfseries shared\+\_\+cpu\+\_\+map}
+\item 
+\Hypertarget{structacpi__processor__throttling_a8d6e10adfc3114d3899ef06ad84d9793}\label{structacpi__processor__throttling_a8d6e10adfc3114d3899ef06ad84d9793} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries acpi\+\_\+processor\+\_\+get\+\_\+throttling} )(struct \doxymbox{\hyperlink{structacpi__processor}{acpi\+\_\+processor}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structacpi__processor__throttling_a9a9ba7e3bb13285b015951ddda8b43cf}\label{structacpi__processor__throttling_a9a9ba7e3bb13285b015951ddda8b43cf} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries acpi\+\_\+processor\+\_\+set\+\_\+throttling} )(struct \doxymbox{\hyperlink{structacpi__processor}{acpi\+\_\+processor}} \texorpdfstring{$\ast$}{*}, int, bool)
+\item 
+\Hypertarget{structacpi__processor__throttling_a6463ee12483ce1e46213e63d94b36592}\label{structacpi__processor__throttling_a6463ee12483ce1e46213e63d94b36592} 
+u32 {\bfseries address}
+\item 
+\Hypertarget{structacpi__processor__throttling_a8a90cc675acf9354dce8c4db046c40d1}\label{structacpi__processor__throttling_a8a90cc675acf9354dce8c4db046c40d1} 
+u8 {\bfseries duty\+\_\+offset}
+\item 
+\Hypertarget{structacpi__processor__throttling_a4dcf833ed36c50a071bac09ba8c37b23}\label{structacpi__processor__throttling_a4dcf833ed36c50a071bac09ba8c37b23} 
+u8 {\bfseries duty\+\_\+width}
+\item 
+\Hypertarget{structacpi__processor__throttling_a294879f80c35e57ecaf2c7f480e04c61}\label{structacpi__processor__throttling_a294879f80c35e57ecaf2c7f480e04c61} 
+u8 {\bfseries tsd\+\_\+valid\+\_\+flag}
+\item 
+\Hypertarget{structacpi__processor__throttling_add9a8cc8dd553297a2fb6a9762f4934a}\label{structacpi__processor__throttling_add9a8cc8dd553297a2fb6a9762f4934a} 
+unsigned int {\bfseries shared\+\_\+type}
+\item 
+\Hypertarget{structacpi__processor__throttling_ad0ee7195ad18b31d414d5290b508f6c5}\label{structacpi__processor__throttling_ad0ee7195ad18b31d414d5290b508f6c5} 
+struct \doxymbox{\hyperlink{structacpi__processor__tx}{acpi\+\_\+processor\+\_\+tx}} {\bfseries states} \+[16]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

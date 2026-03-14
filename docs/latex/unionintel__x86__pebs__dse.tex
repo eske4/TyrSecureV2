@@ -1,0 +1,75 @@
+\doxysection{intel\+\_\+x86\+\_\+pebs\+\_\+dse Union Reference}
+\hypertarget{unionintel__x86__pebs__dse}{}\label{unionintel__x86__pebs__dse}\index{intel\_x86\_pebs\_dse@{intel\_x86\_pebs\_dse}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionintel__x86__pebs__dse_a9124e8628d36a3266511b858fd5d3ec6}\label{unionintel__x86__pebs__dse_a9124e8628d36a3266511b858fd5d3ec6} 
+u64 {\bfseries val}
+\item 
+\Hypertarget{unionintel__x86__pebs__dse_addbf1c3217f30b543d3c7a5125617ec2}\label{unionintel__x86__pebs__dse_addbf1c3217f30b543d3c7a5125617ec2} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries ld\_dse}: 4\\
+\>unsigned int {\bfseries ld\_stlb\_miss}: 1\\
+\>unsigned int {\bfseries ld\_locked}: 1\\
+\>unsigned int {\bfseries ld\_data\_blk}: 1\\
+\>unsigned int {\bfseries ld\_addr\_blk}: 1\\
+\>unsigned int {\bfseries ld\_reserved}: 24\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionintel__x86__pebs__dse_a65d648381c678bad2d493c62d3cd2657}\label{unionintel__x86__pebs__dse_a65d648381c678bad2d493c62d3cd2657} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries st\_l1d\_hit}: 1\\
+\>unsigned int {\bfseries st\_reserved1}: 3\\
+\>unsigned int {\bfseries st\_stlb\_miss}: 1\\
+\>unsigned int {\bfseries st\_locked}: 1\\
+\>unsigned int {\bfseries st\_reserved2}: 26\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionintel__x86__pebs__dse_ad6149121a512504f137f54c2ca8dd63a}\label{unionintel__x86__pebs__dse_ad6149121a512504f137f54c2ca8dd63a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries st\_lat\_dse}: 4\\
+\>unsigned int {\bfseries st\_lat\_stlb\_miss}: 1\\
+\>unsigned int {\bfseries st\_lat\_locked}: 1\\
+\>unsigned int {\bfseries ld\_reserved3}: 26\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionintel__x86__pebs__dse_a7e35fba249f2fa389b433dd63b4fdb78}\label{unionintel__x86__pebs__dse_a7e35fba249f2fa389b433dd63b4fdb78} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries mtl\_dse}: 5\\
+\>unsigned int {\bfseries mtl\_locked}: 1\\
+\>unsigned int {\bfseries mtl\_stlb\_miss}: 1\\
+\>unsigned int {\bfseries mtl\_fwd\_blk}: 1\\
+\>unsigned int {\bfseries ld\_reserved4}: 24\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionintel__x86__pebs__dse_a6ecb4cad8a0597c4b126cc90f455484d}\label{unionintel__x86__pebs__dse_a6ecb4cad8a0597c4b126cc90f455484d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries lnc\_dse}: 8\\
+\>unsigned int {\bfseries ld\_reserved5}: 2\\
+\>unsigned int {\bfseries lnc\_stlb\_miss}: 1\\
+\>unsigned int {\bfseries lnc\_locked}: 1\\
+\>unsigned int {\bfseries lnc\_data\_blk}: 1\\
+\>unsigned int {\bfseries lnc\_addr\_blk}: 1\\
+\>unsigned int {\bfseries ld\_reserved6}: 18\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

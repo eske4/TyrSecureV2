@@ -1,0 +1,66 @@
+\doxysection{crypto\+\_\+alg Struct Reference}
+\hypertarget{structcrypto__alg}{}\label{structcrypto__alg}\index{crypto\_alg@{crypto\_alg}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcrypto__alg_a170eb75c6d2ca90a3510da1ab3bd1553}\label{structcrypto__alg_a170eb75c6d2ca90a3510da1ab3bd1553} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cra\+\_\+list}
+\item 
+\Hypertarget{structcrypto__alg_a1eb280a18ed98111c65f6c6f604abfb2}\label{structcrypto__alg_a1eb280a18ed98111c65f6c6f604abfb2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries cra\+\_\+users}
+\item 
+\Hypertarget{structcrypto__alg_a1abe52d19f98b75f27c78f27de42c7f1}\label{structcrypto__alg_a1abe52d19f98b75f27c78f27de42c7f1} 
+u32 {\bfseries cra\+\_\+flags}
+\item 
+\Hypertarget{structcrypto__alg_ab08a2fcb7e3e0aea3ca699ca38136729}\label{structcrypto__alg_ab08a2fcb7e3e0aea3ca699ca38136729} 
+unsigned int {\bfseries cra\+\_\+blocksize}
+\item 
+\Hypertarget{structcrypto__alg_ac4d049a728b44524c952819cc10f0140}\label{structcrypto__alg_ac4d049a728b44524c952819cc10f0140} 
+unsigned int {\bfseries cra\+\_\+ctxsize}
+\item 
+\Hypertarget{structcrypto__alg_a3d998d1faa9374418bd7a8c89536f0c6}\label{structcrypto__alg_a3d998d1faa9374418bd7a8c89536f0c6} 
+unsigned int {\bfseries cra\+\_\+alignmask}
+\item 
+\Hypertarget{structcrypto__alg_a7fdbdb2bef35ab1ea3caf14406d8149a}\label{structcrypto__alg_a7fdbdb2bef35ab1ea3caf14406d8149a} 
+unsigned int {\bfseries cra\+\_\+reqsize}
+\item 
+\Hypertarget{structcrypto__alg_aa784d1ee36c0b5d7cc1bd831ae17702c}\label{structcrypto__alg_aa784d1ee36c0b5d7cc1bd831ae17702c} 
+int {\bfseries cra\+\_\+priority}
+\item 
+\Hypertarget{structcrypto__alg_a02f9f99ab2df1d5a5d7e427bbe448985}\label{structcrypto__alg_a02f9f99ab2df1d5a5d7e427bbe448985} 
+refcount\+\_\+t {\bfseries cra\+\_\+refcnt}
+\item 
+\Hypertarget{structcrypto__alg_a35ed5c3b7a3437a848e38c381143a007}\label{structcrypto__alg_a35ed5c3b7a3437a848e38c381143a007} 
+char {\bfseries cra\+\_\+name} \+[128]\+
+\item 
+\Hypertarget{structcrypto__alg_aa726615d9677bd21b51b7dd79cd3347d}\label{structcrypto__alg_aa726615d9677bd21b51b7dd79cd3347d} 
+char {\bfseries cra\+\_\+driver\+\_\+name} \+[128]\+
+\item 
+\Hypertarget{structcrypto__alg_a1da1a0158bb5b5c41eca7dbd5a820457}\label{structcrypto__alg_a1da1a0158bb5b5c41eca7dbd5a820457} 
+const struct \doxymbox{\hyperlink{structcrypto__type}{crypto\+\_\+type}} \texorpdfstring{$\ast$}{*} {\bfseries cra\+\_\+type}
+\item 
+\Hypertarget{structcrypto__alg_a00417024d2c1034f4349d9c39c71fa7d}\label{structcrypto__alg_a00417024d2c1034f4349d9c39c71fa7d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structcipher__alg}{cipher\_alg}} {\bfseries cipher}\\
+\} {\bfseries cra\_u}\\
+
+\end{tabbing}\item 
+\Hypertarget{structcrypto__alg_a86853620c5bfb9a3e1c9da883aadb3eb}\label{structcrypto__alg_a86853620c5bfb9a3e1c9da883aadb3eb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries cra\+\_\+init} )(struct \doxymbox{\hyperlink{structcrypto__tfm}{crypto\+\_\+tfm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcrypto__alg_a58ed641b8cd54ef2f2b5794ecca08f75}\label{structcrypto__alg_a58ed641b8cd54ef2f2b5794ecca08f75} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cra\+\_\+exit} )(struct \doxymbox{\hyperlink{structcrypto__tfm}{crypto\+\_\+tfm}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcrypto__alg_a6c486d755f61a17c7c86b6bbaceabbf5}\label{structcrypto__alg_a6c486d755f61a17c7c86b6bbaceabbf5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cra\+\_\+destroy} )(struct \doxymbox{\hyperlink{structcrypto__alg}{crypto\+\_\+alg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structcrypto__alg_ac5ad63b0d452d845697546ebcae51eaf}\label{structcrypto__alg_ac5ad63b0d452d845697546ebcae51eaf} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries cra\+\_\+module}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

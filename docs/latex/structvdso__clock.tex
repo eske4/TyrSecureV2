@@ -1,0 +1,40 @@
+\doxysection{vdso\+\_\+clock Struct Reference}
+\hypertarget{structvdso__clock}{}\label{structvdso__clock}\index{vdso\_clock@{vdso\_clock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvdso__clock_a605ba336fe9c9d331452fb436f466de6}\label{structvdso__clock_a605ba336fe9c9d331452fb436f466de6} 
+u32 {\bfseries seq}
+\item 
+\Hypertarget{structvdso__clock_acf8df946ef54b7e0d6a21ecef566d1c5}\label{structvdso__clock_acf8df946ef54b7e0d6a21ecef566d1c5} 
+s32 {\bfseries clock\+\_\+mode}
+\item 
+\Hypertarget{structvdso__clock_ad155a5f6d5acd76f619de724e05af5fd}\label{structvdso__clock_ad155a5f6d5acd76f619de724e05af5fd} 
+u64 {\bfseries cycle\+\_\+last}
+\item 
+\Hypertarget{structvdso__clock_a6a5b20208207c5e8c191371e59fced4e}\label{structvdso__clock_a6a5b20208207c5e8c191371e59fced4e} 
+u64 {\bfseries max\+\_\+cycles}
+\item 
+\Hypertarget{structvdso__clock_ae70610217fbd8b44b9f9bd46c7f9f086}\label{structvdso__clock_ae70610217fbd8b44b9f9bd46c7f9f086} 
+u64 {\bfseries mask}
+\item 
+\Hypertarget{structvdso__clock_aced003441a6b10c994ec57c4ea4a5e33}\label{structvdso__clock_aced003441a6b10c994ec57c4ea4a5e33} 
+u32 {\bfseries mult}
+\item 
+\Hypertarget{structvdso__clock_a897b5892a3f0d1fcba02d115255e2c50}\label{structvdso__clock_a897b5892a3f0d1fcba02d115255e2c50} 
+u32 {\bfseries shift}
+\item 
+\Hypertarget{structvdso__clock_a70fb4e19b4dbbbc1bc4445861f5c792b}\label{structvdso__clock_a70fb4e19b4dbbbc1bc4445861f5c792b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structvdso__timestamp}{vdso\_timestamp}} {\bfseries basetime} \+[12]\+\\
+\>struct \doxymbox{\hyperlink{structtimens__offset}{timens\_offset}} {\bfseries offset} \+[12]\+\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

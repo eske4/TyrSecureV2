@@ -1,0 +1,79 @@
+\doxysection{srcu\+\_\+usage Struct Reference}
+\hypertarget{structsrcu__usage}{}\label{structsrcu__usage}\index{srcu\_usage@{srcu\_usage}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsrcu__usage_a244f0a13ad5127abe6154116edbde95f}\label{structsrcu__usage_a244f0a13ad5127abe6154116edbde95f} 
+struct \doxymbox{\hyperlink{structsrcu__node}{srcu\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries node}
+\item 
+\Hypertarget{structsrcu__usage_a1bc548405d593b44ee8549ea1a3354cf}\label{structsrcu__usage_a1bc548405d593b44ee8549ea1a3354cf} 
+struct \doxymbox{\hyperlink{structsrcu__node}{srcu\+\_\+node}} \texorpdfstring{$\ast$}{*} {\bfseries level} \+[4]\+
+\item 
+\Hypertarget{structsrcu__usage_a18b5cc45b1ed433c00f3f6cd5bf4f89c}\label{structsrcu__usage_a18b5cc45b1ed433c00f3f6cd5bf4f89c} 
+int {\bfseries srcu\+\_\+size\+\_\+state}
+\item 
+\Hypertarget{structsrcu__usage_a89ad1718b3a210273c7c1e9a3df7ff37}\label{structsrcu__usage_a89ad1718b3a210273c7c1e9a3df7ff37} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries srcu\+\_\+cb\+\_\+mutex}
+\item 
+\Hypertarget{structsrcu__usage_af96a71dfa31b7e122620bf5f461f8c20}\label{structsrcu__usage_af96a71dfa31b7e122620bf5f461f8c20} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structsrcu__usage_a9d922c75af9295ba47cf34f29bbab41a}\label{structsrcu__usage_a9d922c75af9295ba47cf34f29bbab41a} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries srcu\+\_\+gp\+\_\+mutex}
+\item 
+\Hypertarget{structsrcu__usage_a1e359bde6dd3df0c2671dc61bf98a225}\label{structsrcu__usage_a1e359bde6dd3df0c2671dc61bf98a225} 
+long unsigned int {\bfseries srcu\+\_\+gp\+\_\+seq}
+\item 
+\Hypertarget{structsrcu__usage_a7e2fa50a4e305424d9f349ebcf64e5b1}\label{structsrcu__usage_a7e2fa50a4e305424d9f349ebcf64e5b1} 
+long unsigned int {\bfseries srcu\+\_\+gp\+\_\+seq\+\_\+needed}
+\item 
+\Hypertarget{structsrcu__usage_a8dedba4fe32c165c759c7f34636c84f3}\label{structsrcu__usage_a8dedba4fe32c165c759c7f34636c84f3} 
+long unsigned int {\bfseries srcu\+\_\+gp\+\_\+seq\+\_\+needed\+\_\+exp}
+\item 
+\Hypertarget{structsrcu__usage_a8b273ef486bb0ac4af509b01479be03c}\label{structsrcu__usage_a8b273ef486bb0ac4af509b01479be03c} 
+long unsigned int {\bfseries srcu\+\_\+gp\+\_\+start}
+\item 
+\Hypertarget{structsrcu__usage_ac773eafef8ed93fd1675ad6aedd28cdb}\label{structsrcu__usage_ac773eafef8ed93fd1675ad6aedd28cdb} 
+long unsigned int {\bfseries srcu\+\_\+last\+\_\+gp\+\_\+end}
+\item 
+\Hypertarget{structsrcu__usage_a35d7215c292afa83582e686e09b40aea}\label{structsrcu__usage_a35d7215c292afa83582e686e09b40aea} 
+long unsigned int {\bfseries srcu\+\_\+size\+\_\+jiffies}
+\item 
+\Hypertarget{structsrcu__usage_ad853547be59446d00718dfbfe474b813}\label{structsrcu__usage_ad853547be59446d00718dfbfe474b813} 
+long unsigned int {\bfseries srcu\+\_\+n\+\_\+lock\+\_\+retries}
+\item 
+\Hypertarget{structsrcu__usage_ae22a30e1ac125615a058acdc58b173a6}\label{structsrcu__usage_ae22a30e1ac125615a058acdc58b173a6} 
+long unsigned int {\bfseries srcu\+\_\+n\+\_\+exp\+\_\+nodelay}
+\item 
+\Hypertarget{structsrcu__usage_af54981726d23937e7ef54f3198e5f8ef}\label{structsrcu__usage_af54981726d23937e7ef54f3198e5f8ef} 
+bool {\bfseries sda\+\_\+is\+\_\+static}
+\item 
+\Hypertarget{structsrcu__usage_a8243aad357bc191e50e6a153991d99bf}\label{structsrcu__usage_a8243aad357bc191e50e6a153991d99bf} 
+long unsigned int {\bfseries srcu\+\_\+barrier\+\_\+seq}
+\item 
+\Hypertarget{structsrcu__usage_acae3df18c35f6e058439020478e1566d}\label{structsrcu__usage_acae3df18c35f6e058439020478e1566d} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries srcu\+\_\+barrier\+\_\+mutex}
+\item 
+\Hypertarget{structsrcu__usage_a947f42cf96f10bc6cfb428c1139f08f0}\label{structsrcu__usage_a947f42cf96f10bc6cfb428c1139f08f0} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries srcu\+\_\+barrier\+\_\+completion}
+\item 
+\Hypertarget{structsrcu__usage_a18a10729905d313a85fec85f9012242e}\label{structsrcu__usage_a18a10729905d313a85fec85f9012242e} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries srcu\+\_\+barrier\+\_\+cpu\+\_\+cnt}
+\item 
+\Hypertarget{structsrcu__usage_a81b9a9cf7c4b15696949e67698097080}\label{structsrcu__usage_a81b9a9cf7c4b15696949e67698097080} 
+long unsigned int {\bfseries reschedule\+\_\+jiffies}
+\item 
+\Hypertarget{structsrcu__usage_a41d0254f501b8c5ef2c00b53b602fd20}\label{structsrcu__usage_a41d0254f501b8c5ef2c00b53b602fd20} 
+long unsigned int {\bfseries reschedule\+\_\+count}
+\item 
+\Hypertarget{structsrcu__usage_ad33cc326a6ec3d2419b729d6413826c2}\label{structsrcu__usage_ad33cc326a6ec3d2419b729d6413826c2} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries work}
+\item 
+\Hypertarget{structsrcu__usage_ad6e650867ad8d52e5c6ab69fd870d061}\label{structsrcu__usage_ad6e650867ad8d52e5c6ab69fd870d061} 
+struct \doxymbox{\hyperlink{structsrcu__struct}{srcu\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries srcu\+\_\+ssp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

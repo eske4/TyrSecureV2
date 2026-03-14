@@ -1,0 +1,61 @@
+\doxysection{x86\+\_\+platform\+\_\+ops Struct Reference}
+\hypertarget{structx86__platform__ops}{}\label{structx86__platform__ops}\index{x86\_platform\_ops@{x86\_platform\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structx86__platform__ops_a443be36cab610e8d810377adf4f72521}\label{structx86__platform__ops_a443be36cab610e8d810377adf4f72521} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries calibrate\+\_\+cpu} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_a7e671afcba7247630a56e8054ba31922}\label{structx86__platform__ops_a7e671afcba7247630a56e8054ba31922} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries calibrate\+\_\+tsc} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_ae598343071ad8427497e320aad290df9}\label{structx86__platform__ops_ae598343071ad8427497e320aad290df9} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+wallclock} )(struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__platform__ops_af9ac5fa6d280dea6513eb9b25177b22d}\label{structx86__platform__ops_af9ac5fa6d280dea6513eb9b25177b22d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+wallclock} )(const struct \doxymbox{\hyperlink{structtimespec64}{timespec64}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structx86__platform__ops_aa12426ec46aeeb9a014497e7d5581325}\label{structx86__platform__ops_aa12426ec46aeeb9a014497e7d5581325} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries iommu\+\_\+shutdown} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_aab0e1fa14fbb6949d107df1de160cea4}\label{structx86__platform__ops_aab0e1fa14fbb6949d107df1de160cea4} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries is\+\_\+untracked\+\_\+pat\+\_\+range} )(u64, u64)
+\item 
+\Hypertarget{structx86__platform__ops_a64f11e490e16d3215846123db4cb7346}\label{structx86__platform__ops_a64f11e490e16d3215846123db4cb7346} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries nmi\+\_\+init} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_a41708068939b8e7e42ac590b1d316361}\label{structx86__platform__ops_a41708068939b8e7e42ac590b1d316361} 
+unsigned char(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+nmi\+\_\+reason} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_ab65fd03dcdbc99547e59f1ada7653d2c}\label{structx86__platform__ops_ab65fd03dcdbc99547e59f1ada7653d2c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries save\+\_\+sched\+\_\+clock\+\_\+state} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_a5cd0a91b905ce6969dd2ffd233bc32ba}\label{structx86__platform__ops_a5cd0a91b905ce6969dd2ffd233bc32ba} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries restore\+\_\+sched\+\_\+clock\+\_\+state} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_a56b62f19c7f54711bd91b1112e404124}\label{structx86__platform__ops_a56b62f19c7f54711bd91b1112e404124} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries apic\+\_\+post\+\_\+init} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_a1b6d3f93788aeadfc398e295977dc28d}\label{structx86__platform__ops_a1b6d3f93788aeadfc398e295977dc28d} 
+struct \doxymbox{\hyperlink{structx86__legacy__features}{x86\+\_\+legacy\+\_\+features}} {\bfseries legacy}
+\item 
+\Hypertarget{structx86__platform__ops_a1339417c0a40b308a0ba0da7c4f15adf}\label{structx86__platform__ops_a1339417c0a40b308a0ba0da7c4f15adf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+legacy\+\_\+features} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_a0f3ebcaab00b02407f6f3621e586b1fd}\label{structx86__platform__ops_a0f3ebcaab00b02407f6f3621e586b1fd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries realmode\+\_\+reserve} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_aeb9d100d99fe45a89ea9d51306bdcb16}\label{structx86__platform__ops_aeb9d100d99fe45a89ea9d51306bdcb16} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries realmode\+\_\+init} )(void)
+\item 
+\Hypertarget{structx86__platform__ops_a532a879e44ae139277914a71bd776ab3}\label{structx86__platform__ops_a532a879e44ae139277914a71bd776ab3} 
+struct \doxymbox{\hyperlink{structx86__hyper__runtime}{x86\+\_\+hyper\+\_\+runtime}} {\bfseries hyper}
+\item 
+\Hypertarget{structx86__platform__ops_a9e7f9695f89745e1a61db6f88452d17e}\label{structx86__platform__ops_a9e7f9695f89745e1a61db6f88452d17e} 
+struct \doxymbox{\hyperlink{structx86__guest}{x86\+\_\+guest}} {\bfseries guest}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

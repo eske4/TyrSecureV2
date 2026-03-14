@@ -1,0 +1,121 @@
+\doxysection{btrfs\+\_\+super\+\_\+block Struct Reference}
+\hypertarget{structbtrfs__super__block}{}\label{structbtrfs__super__block}\index{btrfs\_super\_block@{btrfs\_super\_block}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__super__block_a7e430e7e30953c8eb3a8b019b31e0539}\label{structbtrfs__super__block_a7e430e7e30953c8eb3a8b019b31e0539} 
+\+\_\+\+\_\+u8 {\bfseries csum} \+[32]\+
+\item 
+\Hypertarget{structbtrfs__super__block_a242063f74f87ccd13ebd72860f9c4cdc}\label{structbtrfs__super__block_a242063f74f87ccd13ebd72860f9c4cdc} 
+\+\_\+\+\_\+u8 {\bfseries fsid} \+[16]\+
+\item 
+\Hypertarget{structbtrfs__super__block_a2d985c5246c1c00b1d136022c0b9edc0}\label{structbtrfs__super__block_a2d985c5246c1c00b1d136022c0b9edc0} 
+\+\_\+\+\_\+le64 {\bfseries bytenr}
+\item 
+\Hypertarget{structbtrfs__super__block_ae41692dcaa0a07bc8952b88c7be353ea}\label{structbtrfs__super__block_ae41692dcaa0a07bc8952b88c7be353ea} 
+\+\_\+\+\_\+le64 {\bfseries flags}
+\item 
+\Hypertarget{structbtrfs__super__block_a3f3435557a4dd14eb4eea1f97804335b}\label{structbtrfs__super__block_a3f3435557a4dd14eb4eea1f97804335b} 
+\+\_\+\+\_\+le64 {\bfseries magic}
+\item 
+\Hypertarget{structbtrfs__super__block_a7dea134013ed1f1db006961bc946de93}\label{structbtrfs__super__block_a7dea134013ed1f1db006961bc946de93} 
+\+\_\+\+\_\+le64 {\bfseries generation}
+\item 
+\Hypertarget{structbtrfs__super__block_a5e016541d4cf9fd069b8e9691f52d59f}\label{structbtrfs__super__block_a5e016541d4cf9fd069b8e9691f52d59f} 
+\+\_\+\+\_\+le64 {\bfseries root}
+\item 
+\Hypertarget{structbtrfs__super__block_ac50f2bbb2a9a3d00ca95df49d6d0d3eb}\label{structbtrfs__super__block_ac50f2bbb2a9a3d00ca95df49d6d0d3eb} 
+\+\_\+\+\_\+le64 {\bfseries chunk\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__super__block_a4a0319941b47ebd7f62f68160fae005a}\label{structbtrfs__super__block_a4a0319941b47ebd7f62f68160fae005a} 
+\+\_\+\+\_\+le64 {\bfseries log\+\_\+root}
+\item 
+\Hypertarget{structbtrfs__super__block_a2ea3fffcbf319774e0457fc40f0862e4}\label{structbtrfs__super__block_a2ea3fffcbf319774e0457fc40f0862e4} 
+\+\_\+\+\_\+le64 {\bfseries \+\_\+\+\_\+unused\+\_\+log\+\_\+root\+\_\+transid}
+\item 
+\Hypertarget{structbtrfs__super__block_a9f4ade99ec2bd8c14855cddb2665e968}\label{structbtrfs__super__block_a9f4ade99ec2bd8c14855cddb2665e968} 
+\+\_\+\+\_\+le64 {\bfseries total\+\_\+bytes}
+\item 
+\Hypertarget{structbtrfs__super__block_a6b5b6897b5f38ccae28c6f9581843426}\label{structbtrfs__super__block_a6b5b6897b5f38ccae28c6f9581843426} 
+\+\_\+\+\_\+le64 {\bfseries bytes\+\_\+used}
+\item 
+\Hypertarget{structbtrfs__super__block_ac969c4e7a3d97022a0ca3a608e13556b}\label{structbtrfs__super__block_ac969c4e7a3d97022a0ca3a608e13556b} 
+\+\_\+\+\_\+le64 {\bfseries root\+\_\+dir\+\_\+objectid}
+\item 
+\Hypertarget{structbtrfs__super__block_abe707c2f41e0e90ea13eabbd8bc73ac3}\label{structbtrfs__super__block_abe707c2f41e0e90ea13eabbd8bc73ac3} 
+\+\_\+\+\_\+le64 {\bfseries num\+\_\+devices}
+\item 
+\Hypertarget{structbtrfs__super__block_a75aca5bec364b4872e4f9d74ae8afa2d}\label{structbtrfs__super__block_a75aca5bec364b4872e4f9d74ae8afa2d} 
+\+\_\+\+\_\+le32 {\bfseries sectorsize}
+\item 
+\Hypertarget{structbtrfs__super__block_a552fed5a3c92f35c275d7a1eb6bc6d91}\label{structbtrfs__super__block_a552fed5a3c92f35c275d7a1eb6bc6d91} 
+\+\_\+\+\_\+le32 {\bfseries nodesize}
+\item 
+\Hypertarget{structbtrfs__super__block_a7ae7d30c176a537c8cc6efe7940a32fd}\label{structbtrfs__super__block_a7ae7d30c176a537c8cc6efe7940a32fd} 
+\+\_\+\+\_\+le32 {\bfseries \+\_\+\+\_\+unused\+\_\+leafsize}
+\item 
+\Hypertarget{structbtrfs__super__block_adb6145153b546b0741af7a12f1d101c1}\label{structbtrfs__super__block_adb6145153b546b0741af7a12f1d101c1} 
+\+\_\+\+\_\+le32 {\bfseries stripesize}
+\item 
+\Hypertarget{structbtrfs__super__block_ab07e05e287da508bfc86f0e55780aa37}\label{structbtrfs__super__block_ab07e05e287da508bfc86f0e55780aa37} 
+\+\_\+\+\_\+le32 {\bfseries sys\+\_\+chunk\+\_\+array\+\_\+size}
+\item 
+\Hypertarget{structbtrfs__super__block_a6a406fa2cf0542a93c4692097a055619}\label{structbtrfs__super__block_a6a406fa2cf0542a93c4692097a055619} 
+\+\_\+\+\_\+le64 {\bfseries chunk\+\_\+root\+\_\+generation}
+\item 
+\Hypertarget{structbtrfs__super__block_a3bb883fe93525ed11a24db8cee1d13bf}\label{structbtrfs__super__block_a3bb883fe93525ed11a24db8cee1d13bf} 
+\+\_\+\+\_\+le64 {\bfseries compat\+\_\+flags}
+\item 
+\Hypertarget{structbtrfs__super__block_ab68c0934aa9391f9f4f951ca2e762312}\label{structbtrfs__super__block_ab68c0934aa9391f9f4f951ca2e762312} 
+\+\_\+\+\_\+le64 {\bfseries compat\+\_\+ro\+\_\+flags}
+\item 
+\Hypertarget{structbtrfs__super__block_a98e5123dec330696b19786235ee8c15e}\label{structbtrfs__super__block_a98e5123dec330696b19786235ee8c15e} 
+\+\_\+\+\_\+le64 {\bfseries incompat\+\_\+flags}
+\item 
+\Hypertarget{structbtrfs__super__block_a805ba57db21619c31549ff627edb9cfa}\label{structbtrfs__super__block_a805ba57db21619c31549ff627edb9cfa} 
+\+\_\+\+\_\+le16 {\bfseries csum\+\_\+type}
+\item 
+\Hypertarget{structbtrfs__super__block_a9dc634c7e9a51152b225636a7bd7311f}\label{structbtrfs__super__block_a9dc634c7e9a51152b225636a7bd7311f} 
+\+\_\+\+\_\+u8 {\bfseries root\+\_\+level}
+\item 
+\Hypertarget{structbtrfs__super__block_a5fb67d0d2c771af3eb430920cb6d3661}\label{structbtrfs__super__block_a5fb67d0d2c771af3eb430920cb6d3661} 
+\+\_\+\+\_\+u8 {\bfseries chunk\+\_\+root\+\_\+level}
+\item 
+\Hypertarget{structbtrfs__super__block_a8102644948a65869aeb75e92843e375a}\label{structbtrfs__super__block_a8102644948a65869aeb75e92843e375a} 
+\+\_\+\+\_\+u8 {\bfseries log\+\_\+root\+\_\+level}
+\item 
+\Hypertarget{structbtrfs__super__block_a23c9bbdf5ff44a9dc94eaa36ddf20822}\label{structbtrfs__super__block_a23c9bbdf5ff44a9dc94eaa36ddf20822} 
+struct \doxymbox{\hyperlink{structbtrfs__dev__item}{btrfs\+\_\+dev\+\_\+item}} {\bfseries dev\+\_\+item}
+\item 
+\Hypertarget{structbtrfs__super__block_aa7d24c136fc8ee81acc65d75e5c9ce32}\label{structbtrfs__super__block_aa7d24c136fc8ee81acc65d75e5c9ce32} 
+char {\bfseries label} \+[256]\+
+\item 
+\Hypertarget{structbtrfs__super__block_ae433c135d25702d1243dbf7f58fa7018}\label{structbtrfs__super__block_ae433c135d25702d1243dbf7f58fa7018} 
+\+\_\+\+\_\+le64 {\bfseries cache\+\_\+generation}
+\item 
+\Hypertarget{structbtrfs__super__block_acd0e659d80bff98a777f5c392bfe9f25}\label{structbtrfs__super__block_acd0e659d80bff98a777f5c392bfe9f25} 
+\+\_\+\+\_\+le64 {\bfseries uuid\+\_\+tree\+\_\+generation}
+\item 
+\Hypertarget{structbtrfs__super__block_aacae8154c3c0cd2e4353f4cd38601fce}\label{structbtrfs__super__block_aacae8154c3c0cd2e4353f4cd38601fce} 
+\+\_\+\+\_\+u8 {\bfseries metadata\+\_\+uuid} \+[16]\+
+\item 
+\Hypertarget{structbtrfs__super__block_a7ec7e30b70ea23836ae8ff827dab920d}\label{structbtrfs__super__block_a7ec7e30b70ea23836ae8ff827dab920d} 
+\+\_\+\+\_\+u64 {\bfseries nr\+\_\+global\+\_\+roots}
+\item 
+\Hypertarget{structbtrfs__super__block_ae2de9042fd266ea8c51784969aecdca6}\label{structbtrfs__super__block_ae2de9042fd266ea8c51784969aecdca6} 
+\+\_\+\+\_\+le64 {\bfseries reserved} \+[27]\+
+\item 
+\Hypertarget{structbtrfs__super__block_a8c42403aac309a00f226267a3c2048d0}\label{structbtrfs__super__block_a8c42403aac309a00f226267a3c2048d0} 
+\+\_\+\+\_\+u8 {\bfseries sys\+\_\+chunk\+\_\+array} \+[2048]\+
+\item 
+\Hypertarget{structbtrfs__super__block_a957f8e406e6a9c4a118e0cfd7046a2fc}\label{structbtrfs__super__block_a957f8e406e6a9c4a118e0cfd7046a2fc} 
+struct \doxymbox{\hyperlink{structbtrfs__root__backup}{btrfs\+\_\+root\+\_\+backup}} {\bfseries super\+\_\+roots} \+[4]\+
+\item 
+\Hypertarget{structbtrfs__super__block_a1bcc6c76d711821838a09a7ee4365cd6}\label{structbtrfs__super__block_a1bcc6c76d711821838a09a7ee4365cd6} 
+\+\_\+\+\_\+u8 {\bfseries padding} \+[565]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

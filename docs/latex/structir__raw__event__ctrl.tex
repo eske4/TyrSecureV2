@@ -1,0 +1,90 @@
+\doxysection{ir\+\_\+raw\+\_\+event\+\_\+ctrl Struct Reference}
+\hypertarget{structir__raw__event__ctrl}{}\label{structir__raw__event__ctrl}\index{ir\_raw\_event\_ctrl@{ir\_raw\_event\_ctrl}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structir__raw__event__ctrl_ad64a5ed49552cab4a1ee06efac400b62}\label{structir__raw__event__ctrl_ad64a5ed49552cab4a1ee06efac400b62} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structir__raw__event__ctrl_aae6da24dac92aca363603c75fc530fef}\label{structir__raw__event__ctrl_aae6da24dac92aca363603c75fc530fef} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries thread}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a6c7a5aca68b8bd8969030554b4ad90ad}\label{structir__raw__event__ctrl_a6c7a5aca68b8bd8969030554b4ad90ad} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structir__raw__event__ctrl_1_1_0d156036005267017255333005167216375224303156073031_af5ce0479f1ce8d744bd873276173ffc7}\label{structir__raw__event__ctrl_1_1_0d156036005267017255333005167216375224303156073031_af5ce0479f1ce8d744bd873276173ffc7} 
+\>union \{\\
+\>\>struct \doxymbox{\hyperlink{struct____kfifo}{\_\_kfifo}} {\bfseries kfifo}\\
+\>\>struct \doxymbox{\hyperlink{structir__raw__event}{ir\_raw\_event}} \texorpdfstring{$\ast$}{*} {\bfseries type}\\
+\>\>const struct \doxymbox{\hyperlink{structir__raw__event}{ir\_raw\_event}} \texorpdfstring{$\ast$}{*} {\bfseries const\_type}\\
+\>\>char(\texorpdfstring{$\ast$}{*} {\bfseries rectype} )\+[0]\+\\
+\>\>struct \doxymbox{\hyperlink{structir__raw__event}{ir\_raw\_event}} \texorpdfstring{$\ast$}{*} {\bfseries ptr}\\
+\>\>const struct \doxymbox{\hyperlink{structir__raw__event}{ir\_raw\_event}} \texorpdfstring{$\ast$}{*} {\bfseries ptr\_const}\\
+\>\} \\
+\>struct \doxymbox{\hyperlink{structir__raw__event}{ir\_raw\_event}} {\bfseries buf} \+[512]\+\\
+\} {\bfseries kfifo}\\
+
+\end{tabbing}\item 
+\Hypertarget{structir__raw__event__ctrl_affa68c961128628651e3736f132950de}\label{structir__raw__event__ctrl_affa68c961128628651e3736f132950de} 
+ktime\+\_\+t {\bfseries last\+\_\+event}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a334978cc624e8e3124d31e0877b02292}\label{structir__raw__event__ctrl_a334978cc624e8e3124d31e0877b02292} 
+struct \doxymbox{\hyperlink{structrc__dev}{rc\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a73d5f82280068fb0d284559916308179}\label{structir__raw__event__ctrl_a73d5f82280068fb0d284559916308179} 
+spinlock\+\_\+t {\bfseries edge\+\_\+spinlock}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a431238f6c8424220d7dd0dc455d6bcf1}\label{structir__raw__event__ctrl_a431238f6c8424220d7dd0dc455d6bcf1} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries edge\+\_\+handle}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a972b81c85f3755048cea1c32a63ddccd}\label{structir__raw__event__ctrl_a972b81c85f3755048cea1c32a63ddccd} 
+struct \doxymbox{\hyperlink{structir__raw__event}{ir\+\_\+raw\+\_\+event}} {\bfseries prev\+\_\+ev}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a68ffb3077ae7631581081a9c074c9831}\label{structir__raw__event__ctrl_a68ffb3077ae7631581081a9c074c9831} 
+struct \doxymbox{\hyperlink{structir__raw__event}{ir\+\_\+raw\+\_\+event}} {\bfseries this\+\_\+ev}
+\item 
+\Hypertarget{structir__raw__event__ctrl_ad87850d174bcba3cad0a8ec838f71574}\label{structir__raw__event__ctrl_ad87850d174bcba3cad0a8ec838f71574} 
+u32 {\bfseries bpf\+\_\+sample}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a357ca0dfae6a17f2753303a099449cae}\label{structir__raw__event__ctrl_a357ca0dfae6a17f2753303a099449cae} 
+struct \doxymbox{\hyperlink{structbpf__prog__array}{bpf\+\_\+prog\+\_\+array}} \texorpdfstring{$\ast$}{*} {\bfseries progs}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a60783447747638c5ad2678dffff392e5}\label{structir__raw__event__ctrl_a60783447747638c5ad2678dffff392e5} 
+struct \doxymbox{\hyperlink{structnec__dec}{nec\+\_\+dec}} {\bfseries nec}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a69c48ffaf9e177c674be2689eb05cd95}\label{structir__raw__event__ctrl_a69c48ffaf9e177c674be2689eb05cd95} 
+struct \doxymbox{\hyperlink{structrc5__dec}{rc5\+\_\+dec}} {\bfseries rc5}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a615403b88db20b5f6bcfc16d8cb4acc0}\label{structir__raw__event__ctrl_a615403b88db20b5f6bcfc16d8cb4acc0} 
+struct \doxymbox{\hyperlink{structrc6__dec}{rc6\+\_\+dec}} {\bfseries rc6}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a998522786696fe126701b18011476642}\label{structir__raw__event__ctrl_a998522786696fe126701b18011476642} 
+struct \doxymbox{\hyperlink{structsony__dec}{sony\+\_\+dec}} {\bfseries sony}
+\item 
+\Hypertarget{structir__raw__event__ctrl_ae90a158a63d2f6013650c0c89e1c5af3}\label{structir__raw__event__ctrl_ae90a158a63d2f6013650c0c89e1c5af3} 
+struct \doxymbox{\hyperlink{structjvc__dec}{jvc\+\_\+dec}} {\bfseries jvc}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a20b301976cce85cdcc07480b896152f1}\label{structir__raw__event__ctrl_a20b301976cce85cdcc07480b896152f1} 
+struct \doxymbox{\hyperlink{structsanyo__dec}{sanyo\+\_\+dec}} {\bfseries sanyo}
+\item 
+\Hypertarget{structir__raw__event__ctrl_af69c067095cbda4d476d75cbfa3e40fb}\label{structir__raw__event__ctrl_af69c067095cbda4d476d75cbfa3e40fb} 
+struct \doxymbox{\hyperlink{structsharp__dec}{sharp\+\_\+dec}} {\bfseries sharp}
+\item 
+\Hypertarget{structir__raw__event__ctrl_ab85798fcea192ff93d0232348a767180}\label{structir__raw__event__ctrl_ab85798fcea192ff93d0232348a767180} 
+struct \doxymbox{\hyperlink{structmce__kbd__dec}{mce\+\_\+kbd\+\_\+dec}} {\bfseries mce\+\_\+kbd}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a4511364888e7a03889e023998b14ca46}\label{structir__raw__event__ctrl_a4511364888e7a03889e023998b14ca46} 
+struct \doxymbox{\hyperlink{structxmp__dec}{xmp\+\_\+dec}} {\bfseries xmp}
+\item 
+\Hypertarget{structir__raw__event__ctrl_aaca3a261b4d1fff109ab8b4b9e21a6e2}\label{structir__raw__event__ctrl_aaca3a261b4d1fff109ab8b4b9e21a6e2} 
+struct \doxymbox{\hyperlink{structimon__dec}{imon\+\_\+dec}} {\bfseries imon}
+\item 
+\Hypertarget{structir__raw__event__ctrl_a3b381b76d5400c83ac53fd28e876fab2}\label{structir__raw__event__ctrl_a3b381b76d5400c83ac53fd28e876fab2} 
+struct \doxymbox{\hyperlink{structrcmm__dec}{rcmm\+\_\+dec}} {\bfseries rcmm}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

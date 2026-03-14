@@ -1,0 +1,97 @@
+\doxysection{console Struct Reference}
+\hypertarget{structconsole}{}\label{structconsole}\index{console@{console}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structconsole_a9e8773775cd02368a88c04a894627b5c}\label{structconsole_a9e8773775cd02368a88c04a894627b5c} 
+char {\bfseries name} \+[16]\+
+\item 
+\Hypertarget{structconsole_ae4a9815a751d18c262c0024aad211558}\label{structconsole_ae4a9815a751d18c262c0024aad211558} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structconsole_a15281630997dfd69d16ec3c397db4edd}\label{structconsole_a15281630997dfd69d16ec3c397db4edd} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structconsole_a52a3947f938178914eae179557f8ce1b}\label{structconsole_a52a3947f938178914eae179557f8ce1b} 
+struct \doxymbox{\hyperlink{structtty__driver}{tty\+\_\+driver}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries device} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structconsole_a5024f3063be49d54b73072373d98d044}\label{structconsole_a5024f3063be49d54b73072373d98d044} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unblank} )(void)
+\item 
+\Hypertarget{structconsole_a341bfc82cba29d4b314890d8d51ade38}\label{structconsole_a341bfc82cba29d4b314890d8d51ade38} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setup} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structconsole_aacc0143215b4ceb91eec6c18dafdf59c}\label{structconsole_aacc0143215b4ceb91eec6c18dafdf59c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries exit} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structconsole_a4ba24167cabaf45bdb52e91652f3589e}\label{structconsole_a4ba24167cabaf45bdb52e91652f3589e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries match} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, int, char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structconsole_ae9e480bfe277b71c3dcc2673ab7e69a6}\label{structconsole_ae9e480bfe277b71c3dcc2673ab7e69a6} 
+short int {\bfseries flags}
+\item 
+\Hypertarget{structconsole_a45aa5536d34360539333fd59930e2887}\label{structconsole_a45aa5536d34360539333fd59930e2887} 
+short int {\bfseries index}
+\item 
+\Hypertarget{structconsole_ae1f7280efb1d6e002d4eec4711fc6e5b}\label{structconsole_ae1f7280efb1d6e002d4eec4711fc6e5b} 
+int {\bfseries cflag}
+\item 
+\Hypertarget{structconsole_ae5a599dfd50d9636d58136444f199509}\label{structconsole_ae5a599dfd50d9636d58136444f199509} 
+uint {\bfseries ispeed}
+\item 
+\Hypertarget{structconsole_a5f0c1e6e6e69ec2ecf53fa32c1f0248d}\label{structconsole_a5f0c1e6e6e69ec2ecf53fa32c1f0248d} 
+uint {\bfseries ospeed}
+\item 
+\Hypertarget{structconsole_a94408f86d0374c1bcdb3cc4404bbde36}\label{structconsole_a94408f86d0374c1bcdb3cc4404bbde36} 
+u64 {\bfseries seq}
+\item 
+\Hypertarget{structconsole_a3b4a4af481a87402d323349f9b6de021}\label{structconsole_a3b4a4af481a87402d323349f9b6de021} 
+long unsigned int {\bfseries dropped}
+\item 
+\Hypertarget{structconsole_a9d3983e2c255f079783b32bb8b9be505}\label{structconsole_a9d3983e2c255f079783b32bb8b9be505} 
+void \texorpdfstring{$\ast$}{*} {\bfseries data}
+\item 
+\Hypertarget{structconsole_acc7de93235c9666a5ab2567acf0b020d}\label{structconsole_acc7de93235c9666a5ab2567acf0b020d} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries node}
+\item 
+\Hypertarget{structconsole_aab64f31ad42104756c8c3847f824076d}\label{structconsole_aab64f31ad42104756c8c3847f824076d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+atomic} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnbcon__write__context}{nbcon\+\_\+write\+\_\+context}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structconsole_a3a6e12f38b4c9f33d007263ccbc5076a}\label{structconsole_a3a6e12f38b4c9f33d007263ccbc5076a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+thread} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnbcon__write__context}{nbcon\+\_\+write\+\_\+context}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structconsole_a9ffddbcd43b17df6e78dbe3004e390b0}\label{structconsole_a9ffddbcd43b17df6e78dbe3004e390b0} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+lock} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structconsole_a832f05a1592b6c8613e0a26d34bac5a4}\label{structconsole_a832f05a1592b6c8613e0a26d34bac5a4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+unlock} )(struct \doxymbox{\hyperlink{structconsole}{console}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structconsole_a77f56f0c5c89943cda5b937ea01b94c0}\label{structconsole_a77f56f0c5c89943cda5b937ea01b94c0} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries nbcon\+\_\+state}
+\item 
+\Hypertarget{structconsole_afd82e4145d559e91ae31cd9cc0da3abd}\label{structconsole_afd82e4145d559e91ae31cd9cc0da3abd} 
+atomic\+\_\+long\+\_\+t {\bfseries nbcon\+\_\+seq}
+\item 
+\Hypertarget{structconsole_a63e7567f8722b169471ee201e8a50515}\label{structconsole_a63e7567f8722b169471ee201e8a50515} 
+struct \doxymbox{\hyperlink{structnbcon__context}{nbcon\+\_\+context}} {\bfseries nbcon\+\_\+device\+\_\+ctxt}
+\item 
+\Hypertarget{structconsole_ac25ed32b670289d11ee7fcd9f5e3042a}\label{structconsole_ac25ed32b670289d11ee7fcd9f5e3042a} 
+atomic\+\_\+long\+\_\+t {\bfseries nbcon\+\_\+prev\+\_\+seq}
+\item 
+\Hypertarget{structconsole_afb53043382c3752689def4e5644a1514}\label{structconsole_afb53043382c3752689def4e5644a1514} 
+struct \doxymbox{\hyperlink{structprintk__buffers}{printk\+\_\+buffers}} \texorpdfstring{$\ast$}{*} {\bfseries pbufs}
+\item 
+\Hypertarget{structconsole_a98e4bcae8024a003704b9d77a8097d44}\label{structconsole_a98e4bcae8024a003704b9d77a8097d44} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries kthread}
+\item 
+\Hypertarget{structconsole_ab8a4b70524ec30ec8625e546037e2bf4}\label{structconsole_ab8a4b70524ec30ec8625e546037e2bf4} 
+struct \doxymbox{\hyperlink{structrcuwait}{rcuwait}} {\bfseries rcuwait}
+\item 
+\Hypertarget{structconsole_ab66e1b4e3b4e32586b5856da9ec72dbc}\label{structconsole_ab66e1b4e3b4e32586b5856da9ec72dbc} 
+struct \doxymbox{\hyperlink{structirq__work}{irq\+\_\+work}} {\bfseries irq\+\_\+work}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,169 @@
+\doxysection{dw\+\_\+i2c\+\_\+dev Struct Reference}
+\hypertarget{structdw__i2c__dev}{}\label{structdw__i2c__dev}\index{dw\_i2c\_dev@{dw\_i2c\_dev}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdw__i2c__dev_aa4acc0c4ff4c51d974e6b7a32dce8ef6}\label{structdw__i2c__dev_aa4acc0c4ff4c51d974e6b7a32dce8ef6} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structdw__i2c__dev_a1b8d291ebef5e81c412160be3cc5ee9c}\label{structdw__i2c__dev_a1b8d291ebef5e81c412160be3cc5ee9c} 
+struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*} {\bfseries map}
+\item 
+\Hypertarget{structdw__i2c__dev_a7417e6ecba347940727c4c19c82d4a55}\label{structdw__i2c__dev_a7417e6ecba347940727c4c19c82d4a55} 
+struct \doxymbox{\hyperlink{structregmap}{regmap}} \texorpdfstring{$\ast$}{*} {\bfseries sysmap}
+\item 
+\Hypertarget{structdw__i2c__dev_a0f64459c269135f5068fcbfb7457ee7b}\label{structdw__i2c__dev_a0f64459c269135f5068fcbfb7457ee7b} 
+void \texorpdfstring{$\ast$}{*} {\bfseries base}
+\item 
+\Hypertarget{structdw__i2c__dev_aa8ab10d9518eaf17fce07434fdeda25b}\label{structdw__i2c__dev_aa8ab10d9518eaf17fce07434fdeda25b} 
+void \texorpdfstring{$\ast$}{*} {\bfseries ext}
+\item 
+\Hypertarget{structdw__i2c__dev_ad30710d9cdfbe1aa6c7c4edc5971a2c5}\label{structdw__i2c__dev_ad30710d9cdfbe1aa6c7c4edc5971a2c5} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries cmd\+\_\+complete}
+\item 
+\Hypertarget{structdw__i2c__dev_aed9e287a0e95af19993b5af9212c74f2}\label{structdw__i2c__dev_aed9e287a0e95af19993b5af9212c74f2} 
+struct \doxymbox{\hyperlink{structclk}{clk}} \texorpdfstring{$\ast$}{*} {\bfseries clk}
+\item 
+\Hypertarget{structdw__i2c__dev_ad5d8d3a997d9d2babd9767cf0cbac8ea}\label{structdw__i2c__dev_ad5d8d3a997d9d2babd9767cf0cbac8ea} 
+struct \doxymbox{\hyperlink{structclk}{clk}} \texorpdfstring{$\ast$}{*} {\bfseries pclk}
+\item 
+\Hypertarget{structdw__i2c__dev_a08ffd1f6d7bfaa10f5f61016534e4c18}\label{structdw__i2c__dev_a08ffd1f6d7bfaa10f5f61016534e4c18} 
+struct \doxymbox{\hyperlink{structreset__control}{reset\+\_\+control}} \texorpdfstring{$\ast$}{*} {\bfseries rst}
+\item 
+\Hypertarget{structdw__i2c__dev_a3f164d579767099b881aa2713a7fcaf0}\label{structdw__i2c__dev_a3f164d579767099b881aa2713a7fcaf0} 
+struct \doxymbox{\hyperlink{structi2c__client}{i2c\+\_\+client}} \texorpdfstring{$\ast$}{*} {\bfseries slave}
+\item 
+\Hypertarget{structdw__i2c__dev_a075d3862a09ed4b408dd770969390db7}\label{structdw__i2c__dev_a075d3862a09ed4b408dd770969390db7} 
+u32(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+clk\+\_\+rate\+\_\+khz} )(struct \doxymbox{\hyperlink{structdw__i2c__dev}{dw\+\_\+i2c\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdw__i2c__dev_af7153dbf02ea92c5be40dd6068f19d64}\label{structdw__i2c__dev_af7153dbf02ea92c5be40dd6068f19d64} 
+int {\bfseries cmd\+\_\+err}
+\item 
+\Hypertarget{structdw__i2c__dev_a05f84608399c796df31bb5c556fedb42}\label{structdw__i2c__dev_a05f84608399c796df31bb5c556fedb42} 
+struct \doxymbox{\hyperlink{structi2c__msg}{i2c\+\_\+msg}} \texorpdfstring{$\ast$}{*} {\bfseries msgs}
+\item 
+\Hypertarget{structdw__i2c__dev_ad834d63a9051bf99e3c7a9cb4419c233}\label{structdw__i2c__dev_ad834d63a9051bf99e3c7a9cb4419c233} 
+int {\bfseries msgs\+\_\+num}
+\item 
+\Hypertarget{structdw__i2c__dev_a9486d0c1520987e660de1cdf635fcdfd}\label{structdw__i2c__dev_a9486d0c1520987e660de1cdf635fcdfd} 
+int {\bfseries msg\+\_\+write\+\_\+idx}
+\item 
+\Hypertarget{structdw__i2c__dev_aeca50d9e73385871e3c98748e6775f8b}\label{structdw__i2c__dev_aeca50d9e73385871e3c98748e6775f8b} 
+u32 {\bfseries tx\+\_\+buf\+\_\+len}
+\item 
+\Hypertarget{structdw__i2c__dev_aced7e90978fb87f14440417ab26e2da8}\label{structdw__i2c__dev_aced7e90978fb87f14440417ab26e2da8} 
+u8 \texorpdfstring{$\ast$}{*} {\bfseries tx\+\_\+buf}
+\item 
+\Hypertarget{structdw__i2c__dev_a8c325312473d7f45a6d153c3008626b1}\label{structdw__i2c__dev_a8c325312473d7f45a6d153c3008626b1} 
+int {\bfseries msg\+\_\+read\+\_\+idx}
+\item 
+\Hypertarget{structdw__i2c__dev_aa1f3a7d44bcf37e3d2e3e3863556a135}\label{structdw__i2c__dev_aa1f3a7d44bcf37e3d2e3e3863556a135} 
+u32 {\bfseries rx\+\_\+buf\+\_\+len}
+\item 
+\Hypertarget{structdw__i2c__dev_ae6570e2c763673dde13a96116d25c396}\label{structdw__i2c__dev_ae6570e2c763673dde13a96116d25c396} 
+u8 \texorpdfstring{$\ast$}{*} {\bfseries rx\+\_\+buf}
+\item 
+\Hypertarget{structdw__i2c__dev_aaa06b537ffda072b04feba0a1bf6ec87}\label{structdw__i2c__dev_aaa06b537ffda072b04feba0a1bf6ec87} 
+int {\bfseries msg\+\_\+err}
+\item 
+\Hypertarget{structdw__i2c__dev_a2d3dce17939b15599dcd6c116bf76c18}\label{structdw__i2c__dev_a2d3dce17939b15599dcd6c116bf76c18} 
+unsigned int {\bfseries status}
+\item 
+\Hypertarget{structdw__i2c__dev_ad0bc6b6b9dffe444d3c98465ea8532e9}\label{structdw__i2c__dev_ad0bc6b6b9dffe444d3c98465ea8532e9} 
+unsigned int {\bfseries abort\+\_\+source}
+\item 
+\Hypertarget{structdw__i2c__dev_ae5c6521bf03e9c14149c7476e47f35f8}\label{structdw__i2c__dev_ae5c6521bf03e9c14149c7476e47f35f8} 
+unsigned int {\bfseries sw\+\_\+mask}
+\item 
+\Hypertarget{structdw__i2c__dev_acc436b4e7e25919b694f6fadb2c705cf}\label{structdw__i2c__dev_acc436b4e7e25919b694f6fadb2c705cf} 
+int {\bfseries irq}
+\item 
+\Hypertarget{structdw__i2c__dev_a19f9ff2f0271ce32605399772450e6b4}\label{structdw__i2c__dev_a19f9ff2f0271ce32605399772450e6b4} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structdw__i2c__dev_a48cb723f8ae25b89f6e00135ebc4c869}\label{structdw__i2c__dev_a48cb723f8ae25b89f6e00135ebc4c869} 
+struct \doxymbox{\hyperlink{structi2c__adapter}{i2c\+\_\+adapter}} {\bfseries adapter}
+\item 
+\Hypertarget{structdw__i2c__dev_a6baba1b3f8cbb0030791ee84635b3301}\label{structdw__i2c__dev_a6baba1b3f8cbb0030791ee84635b3301} 
+u32 {\bfseries functionality}
+\item 
+\Hypertarget{structdw__i2c__dev_a8fcc15502328fb438975dd3235c0c6f8}\label{structdw__i2c__dev_a8fcc15502328fb438975dd3235c0c6f8} 
+u32 {\bfseries master\+\_\+cfg}
+\item 
+\Hypertarget{structdw__i2c__dev_a8c21b9e3130e0b7bb870050e22ead926}\label{structdw__i2c__dev_a8c21b9e3130e0b7bb870050e22ead926} 
+u32 {\bfseries slave\+\_\+cfg}
+\item 
+\Hypertarget{structdw__i2c__dev_af20192791dd83e277bf8088ca7068bb4}\label{structdw__i2c__dev_af20192791dd83e277bf8088ca7068bb4} 
+unsigned int {\bfseries tx\+\_\+fifo\+\_\+depth}
+\item 
+\Hypertarget{structdw__i2c__dev_a60ae8ceef810e164e5bbc450391df994}\label{structdw__i2c__dev_a60ae8ceef810e164e5bbc450391df994} 
+unsigned int {\bfseries rx\+\_\+fifo\+\_\+depth}
+\item 
+\Hypertarget{structdw__i2c__dev_ae02c81aa60cfbdf4f981c067b0b03d9b}\label{structdw__i2c__dev_ae02c81aa60cfbdf4f981c067b0b03d9b} 
+int {\bfseries rx\+\_\+outstanding}
+\item 
+\Hypertarget{structdw__i2c__dev_a628d34bb026c6e0f517dfaf6d26a78ce}\label{structdw__i2c__dev_a628d34bb026c6e0f517dfaf6d26a78ce} 
+struct \doxymbox{\hyperlink{structi2c__timings}{i2c\+\_\+timings}} {\bfseries timings}
+\item 
+\Hypertarget{structdw__i2c__dev_ab22f24a0af4b976a45478a61d682de3f}\label{structdw__i2c__dev_ab22f24a0af4b976a45478a61d682de3f} 
+u32 {\bfseries sda\+\_\+hold\+\_\+time}
+\item 
+\Hypertarget{structdw__i2c__dev_a4884347af9e743c3a04a605e71175b31}\label{structdw__i2c__dev_a4884347af9e743c3a04a605e71175b31} 
+u16 {\bfseries ss\+\_\+hcnt}
+\item 
+\Hypertarget{structdw__i2c__dev_a67666018637b14ec1091864c8a7060fb}\label{structdw__i2c__dev_a67666018637b14ec1091864c8a7060fb} 
+u16 {\bfseries ss\+\_\+lcnt}
+\item 
+\Hypertarget{structdw__i2c__dev_afc9c6e0a47cb074e77ec10e3a11b68c0}\label{structdw__i2c__dev_afc9c6e0a47cb074e77ec10e3a11b68c0} 
+u16 {\bfseries fs\+\_\+hcnt}
+\item 
+\Hypertarget{structdw__i2c__dev_a3c8400c0d6adcbfe0f3e4b5de0c0b1a4}\label{structdw__i2c__dev_a3c8400c0d6adcbfe0f3e4b5de0c0b1a4} 
+u16 {\bfseries fs\+\_\+lcnt}
+\item 
+\Hypertarget{structdw__i2c__dev_a641affc6b362a4cd57b48a6a10ecab35}\label{structdw__i2c__dev_a641affc6b362a4cd57b48a6a10ecab35} 
+u16 {\bfseries fp\+\_\+hcnt}
+\item 
+\Hypertarget{structdw__i2c__dev_a2d42fbe4251715928c83c7170cd0d991}\label{structdw__i2c__dev_a2d42fbe4251715928c83c7170cd0d991} 
+u16 {\bfseries fp\+\_\+lcnt}
+\item 
+\Hypertarget{structdw__i2c__dev_ab10417efa43d827667cc1ec0a31f18a8}\label{structdw__i2c__dev_ab10417efa43d827667cc1ec0a31f18a8} 
+u16 {\bfseries hs\+\_\+hcnt}
+\item 
+\Hypertarget{structdw__i2c__dev_a75373464cb36df54a64f873844df027d}\label{structdw__i2c__dev_a75373464cb36df54a64f873844df027d} 
+u16 {\bfseries hs\+\_\+lcnt}
+\item 
+\Hypertarget{structdw__i2c__dev_a6ab747359bf509a34672b0b8ac435bea}\label{structdw__i2c__dev_a6ab747359bf509a34672b0b8ac435bea} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries acquire\+\_\+lock} )(void)
+\item 
+\Hypertarget{structdw__i2c__dev_ac5cda63494ef5eb10cf7c3d8da06458f}\label{structdw__i2c__dev_ac5cda63494ef5eb10cf7c3d8da06458f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release\+\_\+lock} )(void)
+\item 
+\Hypertarget{structdw__i2c__dev_afe928d0808fea5da6f02820d765f01a1}\label{structdw__i2c__dev_afe928d0808fea5da6f02820d765f01a1} 
+int {\bfseries semaphore\+\_\+idx}
+\item 
+\Hypertarget{structdw__i2c__dev_a3c4dcefcfa8c305ae6574cc99a80f3ab}\label{structdw__i2c__dev_a3c4dcefcfa8c305ae6574cc99a80f3ab} 
+bool {\bfseries shared\+\_\+with\+\_\+punit}
+\item 
+\Hypertarget{structdw__i2c__dev_a6105138e075fed8b6e817380ffb26a4e}\label{structdw__i2c__dev_a6105138e075fed8b6e817380ffb26a4e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structdw__i2c__dev}{dw\+\_\+i2c\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdw__i2c__dev_ae44f859cdedb5e2a42b72755daf0a8c6}\label{structdw__i2c__dev_ae44f859cdedb5e2a42b72755daf0a8c6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+sda\+\_\+hold\+\_\+time} )(struct \doxymbox{\hyperlink{structdw__i2c__dev}{dw\+\_\+i2c\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structdw__i2c__dev_a39a0acd9d7f1d9d4d86a4439e2bc99cc}\label{structdw__i2c__dev_a39a0acd9d7f1d9d4d86a4439e2bc99cc} 
+int {\bfseries mode}
+\item 
+\Hypertarget{structdw__i2c__dev_a9432c5126891d4ea6df0416601c150d3}\label{structdw__i2c__dev_a9432c5126891d4ea6df0416601c150d3} 
+struct \doxymbox{\hyperlink{structi2c__bus__recovery__info}{i2c\+\_\+bus\+\_\+recovery\+\_\+info}} {\bfseries rinfo}
+\item 
+\Hypertarget{structdw__i2c__dev_ab36c29f5171f3ea9e808e7e64b5f1a3f}\label{structdw__i2c__dev_ab36c29f5171f3ea9e808e7e64b5f1a3f} 
+u32 {\bfseries bus\+\_\+capacitance\+\_\+pF}
+\item 
+\Hypertarget{structdw__i2c__dev_a06882922e9e4e590b99a34e6f07fd570}\label{structdw__i2c__dev_a06882922e9e4e590b99a34e6f07fd570} 
+bool {\bfseries clk\+\_\+freq\+\_\+optimized}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

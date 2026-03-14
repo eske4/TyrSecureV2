@@ -1,0 +1,79 @@
+\doxysection{fwnode\+\_\+operations Struct Reference}
+\hypertarget{structfwnode__operations}{}\label{structfwnode__operations}\index{fwnode\_operations@{fwnode\_operations}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfwnode__operations_a22ab1adb32bc5159af0fd0ec5332f4ce}\label{structfwnode__operations_a22ab1adb32bc5159af0fd0ec5332f4ce} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get} )(struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a7bd473afda4f92faf080df40f45f13f3}\label{structfwnode__operations_a7bd473afda4f92faf080df40f45f13f3} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries put} )(struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_ae5d2ef68d157a90be43e1f2f3f1a6c61}\label{structfwnode__operations_ae5d2ef68d157a90be43e1f2f3f1a6c61} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+is\+\_\+available} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a8ad9a267c45ba42dfd65b47a97640c19}\label{structfwnode__operations_a8ad9a267c45ba42dfd65b47a97640c19} 
+const void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+get\+\_\+match\+\_\+data} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a296fec379964cfe192bdce661b4bfb04}\label{structfwnode__operations_a296fec379964cfe192bdce661b4bfb04} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+dma\+\_\+supported} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_aed2a3ecaff01360854e7e883509fae4c}\label{structfwnode__operations_aed2a3ecaff01360854e7e883509fae4c} 
+enum dev\+\_\+dma\+\_\+attr(\texorpdfstring{$\ast$}{*} {\bfseries device\+\_\+get\+\_\+dma\+\_\+attr} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_aa4f3cffd6ba0098f9b6effa5d0f8a450}\label{structfwnode__operations_aa4f3cffd6ba0098f9b6effa5d0f8a450} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries property\+\_\+present} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_ac26c50816659ddd4eb9964629e8dca61}\label{structfwnode__operations_ac26c50816659ddd4eb9964629e8dca61} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries property\+\_\+read\+\_\+bool} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a3124af90bcbf1861ab3a62409d8e3191}\label{structfwnode__operations_a3124af90bcbf1861ab3a62409d8e3191} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries property\+\_\+read\+\_\+int\+\_\+array} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, unsigned int, void \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structfwnode__operations_ab109e3dbe6fd39a8197218816de7173d}\label{structfwnode__operations_ab109e3dbe6fd39a8197218816de7173d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries property\+\_\+read\+\_\+string\+\_\+array} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+\Hypertarget{structfwnode__operations_a5b1adf4126a2b8b18c6b74d34038e47e}\label{structfwnode__operations_a5b1adf4126a2b8b18c6b74d34038e47e} 
+const char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+name} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_aa91420a24c7b4d8ddac05cfa30800f8f}\label{structfwnode__operations_aa91420a24c7b4d8ddac05cfa30800f8f} 
+const char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+name\+\_\+prefix} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a223e5ca00cb0b8d17b82c61b78193bf0}\label{structfwnode__operations_a223e5ca00cb0b8d17b82c61b78193bf0} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+parent} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_ae1ff0fa4eebc2021f59542d90c756c4c}\label{structfwnode__operations_ae1ff0fa4eebc2021f59542d90c756c4c} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+next\+\_\+child\+\_\+node} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a3cd2358a21af3970787f3093f30a216b}\label{structfwnode__operations_a3cd2358a21af3970787f3093f30a216b} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+named\+\_\+child\+\_\+node} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a29073e3beb668fe3b237643b598a218d}\label{structfwnode__operations_a29073e3beb668fe3b237643b598a218d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+reference\+\_\+args} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int, struct \doxymbox{\hyperlink{structfwnode__reference__args}{fwnode\+\_\+reference\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a27164331d6030781525bb58fc979a63a}\label{structfwnode__operations_a27164331d6030781525bb58fc979a63a} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries graph\+\_\+get\+\_\+next\+\_\+endpoint} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_ae54604c72e134b467e2445af47a83401}\label{structfwnode__operations_ae54604c72e134b467e2445af47a83401} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries graph\+\_\+get\+\_\+remote\+\_\+endpoint} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a9553f7ddac97425e38e52f25a2b8909d}\label{structfwnode__operations_a9553f7ddac97425e38e52f25a2b8909d} 
+struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries graph\+\_\+get\+\_\+port\+\_\+parent} )(struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a43ab7c425e72b11c17eb469675092f91}\label{structfwnode__operations_a43ab7c425e72b11c17eb469675092f91} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries graph\+\_\+parse\+\_\+endpoint} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfwnode__endpoint}{fwnode\+\_\+endpoint}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structfwnode__operations_a6fde940dc17b1c3dc84062d73309b8ed}\label{structfwnode__operations_a6fde940dc17b1c3dc84062d73309b8ed} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries iomap} )(struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structfwnode__operations_a21a5744c070441c8509d9c38de16923d}\label{structfwnode__operations_a21a5744c070441c8509d9c38de16923d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries irq\+\_\+get} )(const struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structfwnode__operations_ab76fa8a10761f5edf4e5043a5c9f0958}\label{structfwnode__operations_ab76fa8a10761f5edf4e5043a5c9f0958} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries add\+\_\+links} )(struct \doxymbox{\hyperlink{structfwnode__handle}{fwnode\+\_\+handle}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

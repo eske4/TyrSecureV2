@@ -1,0 +1,79 @@
+\doxysection{compat\+\_\+siginfo Struct Reference}
+\hypertarget{structcompat__siginfo}{}\label{structcompat__siginfo}\index{compat\_siginfo@{compat\_siginfo}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcompat__siginfo_a1cfda75f31c7a17c6332dff2d5b07dea}\label{structcompat__siginfo_a1cfda75f31c7a17c6332dff2d5b07dea} 
+int {\bfseries si\+\_\+signo}
+\item 
+\Hypertarget{structcompat__siginfo_afdc79ddc9af47192f198c31c7118c4f7}\label{structcompat__siginfo_afdc79ddc9af47192f198c31c7118c4f7} 
+int {\bfseries si\+\_\+errno}
+\item 
+\Hypertarget{structcompat__siginfo_a837d67ba0044a9a24df74fe2d07fcb46}\label{structcompat__siginfo_a837d67ba0044a9a24df74fe2d07fcb46} 
+int {\bfseries si\+\_\+code}
+\item 
+\Hypertarget{structcompat__siginfo_a529925cb17452859973d7ef7ed7d6d59}\label{structcompat__siginfo_a529925cb17452859973d7ef7ed7d6d59} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int {\bfseries \_pad} \+[29]\+\\
+\>struct \{\\
+\>\>compat\_pid\_t {\bfseries \_pid}\\
+\>\>\_\_compat\_uid32\_t {\bfseries \_uid}\\
+\>\} {\bfseries \_kill}\\
+\>struct \{\\
+\>\>compat\_timer\_t {\bfseries \_tid}\\
+\>\>int {\bfseries \_overrun}\\
+\>\>compat\_sigval\_t {\bfseries \_sigval}\\
+\>\} {\bfseries \_timer}\\
+\>struct \{\\
+\>\>compat\_pid\_t {\bfseries \_pid}\\
+\>\>\_\_compat\_uid32\_t {\bfseries \_uid}\\
+\>\>compat\_sigval\_t {\bfseries \_sigval}\\
+\>\} {\bfseries \_rt}\\
+\>struct \{\\
+\>\>compat\_pid\_t {\bfseries \_pid}\\
+\>\>\_\_compat\_uid32\_t {\bfseries \_uid}\\
+\>\>int {\bfseries \_status}\\
+\>\>compat\_clock\_t {\bfseries \_utime}\\
+\>\>compat\_clock\_t {\bfseries \_stime}\\
+\>\} {\bfseries \_sigchld}\\
+\>struct \{\\
+\>\>compat\_uptr\_t {\bfseries \_addr}\\
+\Hypertarget{structcompat__siginfo_1_1_0d331165034162223347023177035062071020231204105332_1_1_0d2661343721353e58e269c67aac1a0ef6dfbdd521151e1_a410cf83d4c1bcc55b26cd6f105a5d99c}\label{structcompat__siginfo_1_1_0d331165034162223347023177035062071020231204105332_1_1_0d2661343721353e58e269c67aac1a0ef6dfbdd521151e1_a410cf83d4c1bcc55b26cd6f105a5d99c} 
+\>\>union \{\\
+\>\>\>int {\bfseries \_trapno}\\
+\>\>\>short int {\bfseries \_addr\_lsb}\\
+\>\>\>struct \{\\
+\>\>\>\>char {\bfseries \_dummy\_bnd} \+[4]\+\\
+\>\>\>\>compat\_uptr\_t {\bfseries \_lower}\\
+\>\>\>\>compat\_uptr\_t {\bfseries \_upper}\\
+\>\>\>\} {\bfseries \_addr\_bnd}\\
+\>\>\>struct \{\\
+\>\>\>\>char {\bfseries \_dummy\_pkey} \+[4]\+\\
+\>\>\>\>u32 {\bfseries \_pkey}\\
+\>\>\>\} {\bfseries \_addr\_pkey}\\
+\>\>\>struct \{\\
+\>\>\>\>compat\_ulong\_t {\bfseries \_data}\\
+\>\>\>\>u32 {\bfseries \_type}\\
+\>\>\>\>u32 {\bfseries \_flags}\\
+\>\>\>\} {\bfseries \_perf}\\
+\>\>\} \\
+\>\} {\bfseries \_sigfault}\\
+\>struct \{\\
+\>\>compat\_long\_t {\bfseries \_band}\\
+\>\>int {\bfseries \_fd}\\
+\>\} {\bfseries \_sigpoll}\\
+\>struct \{\\
+\>\>compat\_uptr\_t {\bfseries \_call\_addr}\\
+\>\>int {\bfseries \_syscall}\\
+\>\>unsigned int {\bfseries \_arch}\\
+\>\} {\bfseries \_sigsys}\\
+\} {\bfseries \_sifields}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

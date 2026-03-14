@@ -1,0 +1,64 @@
+\doxysection{block\+\_\+device\+\_\+operations Struct Reference}
+\hypertarget{structblock__device__operations}{}\label{structblock__device__operations}\index{block\_device\_operations@{block\_device\_operations}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structblock__device__operations_a42c3aba133c03b8e79c40cbde97b8f51}\label{structblock__device__operations_a42c3aba133c03b8e79c40cbde97b8f51} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries submit\+\_\+bio} )(struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblock__device__operations_a56f4dc2d6b120f94a30204124b23df84}\label{structblock__device__operations_a56f4dc2d6b120f94a30204124b23df84} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries poll\+\_\+bio} )(struct \doxymbox{\hyperlink{structbio}{bio}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structio__comp__batch}{io\+\_\+comp\+\_\+batch}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structblock__device__operations_a34517b16d5e99f3ef0fcb3912bc83d6e}\label{structblock__device__operations_a34517b16d5e99f3ef0fcb3912bc83d6e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*}, blk\+\_\+mode\+\_\+t)
+\item 
+\Hypertarget{structblock__device__operations_a5056689c4e1eefc303198b1bd6a5319f}\label{structblock__device__operations_a5056689c4e1eefc303198b1bd6a5319f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblock__device__operations_a8f677225f440be76e60a38ec49e71ea6}\label{structblock__device__operations_a8f677225f440be76e60a38ec49e71ea6} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries ioctl} )(struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*}, blk\+\_\+mode\+\_\+t, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structblock__device__operations_a680b6f875a75ee990f6e8afe62791a0f}\label{structblock__device__operations_a680b6f875a75ee990f6e8afe62791a0f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries compat\+\_\+ioctl} )(struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*}, blk\+\_\+mode\+\_\+t, unsigned int, long unsigned int)
+\item 
+\Hypertarget{structblock__device__operations_a3ed1c7596be2cc6b12046684932e8132}\label{structblock__device__operations_a3ed1c7596be2cc6b12046684932e8132} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries check\+\_\+events} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structblock__device__operations_a51456e97c1132469e85d44be0182f629}\label{structblock__device__operations_a51456e97c1132469e85d44be0182f629} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unlock\+\_\+native\+\_\+capacity} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblock__device__operations_a8b45b4294363b6d20312766fe758c7f8}\label{structblock__device__operations_a8b45b4294363b6d20312766fe758c7f8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries getgeo} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structhd__geometry}{hd\+\_\+geometry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblock__device__operations_afc80cc6a3e162f84cc3c76505868aa4b}\label{structblock__device__operations_afc80cc6a3e162f84cc3c76505868aa4b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+read\+\_\+only} )(struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structblock__device__operations_a95efde65e9f064403633aa42de3f0f1a}\label{structblock__device__operations_a95efde65e9f064403633aa42de3f0f1a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+disk} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblock__device__operations_af5a0e230fb7049814986d085e74ce190}\label{structblock__device__operations_af5a0e230fb7049814986d085e74ce190} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries swap\+\_\+slot\+\_\+free\+\_\+notify} )(struct \doxymbox{\hyperlink{structblock__device}{block\+\_\+device}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structblock__device__operations_a46b72b4e3c60350596840311a8d9046c}\label{structblock__device__operations_a46b72b4e3c60350596840311a8d9046c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries report\+\_\+zones} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*}, sector\+\_\+t, unsigned int, struct \doxymbox{\hyperlink{structblk__report__zones__args}{blk\+\_\+report\+\_\+zones\+\_\+args}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblock__device__operations_ab471ec8a31eff397b005a8e4ad1c3d4c}\label{structblock__device__operations_ab471ec8a31eff397b005a8e4ad1c3d4c} 
+char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries devnode} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*}, umode\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structblock__device__operations_aeb3acf282ba5304252db87a525852dab}\label{structblock__device__operations_aeb3acf282ba5304252db87a525852dab} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+unique\+\_\+id} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*}, u8 \texorpdfstring{$\ast$}{*}, enum blk\+\_\+unique\+\_\+id)
+\item 
+\Hypertarget{structblock__device__operations_adced4e11498c2b2e0faa4309d359aa9a}\label{structblock__device__operations_adced4e11498c2b2e0faa4309d359aa9a} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries owner}
+\item 
+\Hypertarget{structblock__device__operations_a22e711c3ebdde7c76d74456dfd33efd3}\label{structblock__device__operations_a22e711c3ebdde7c76d74456dfd33efd3} 
+const struct \doxymbox{\hyperlink{structpr__ops}{pr\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries pr\+\_\+ops}
+\item 
+\Hypertarget{structblock__device__operations_a33e1c55ff20c3a5af87687bc53ea00ad}\label{structblock__device__operations_a33e1c55ff20c3a5af87687bc53ea00ad} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries alternative\+\_\+gpt\+\_\+sector} )(struct \doxymbox{\hyperlink{structgendisk}{gendisk}} \texorpdfstring{$\ast$}{*}, sector\+\_\+t \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

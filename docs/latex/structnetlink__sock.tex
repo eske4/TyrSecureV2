@@ -1,0 +1,79 @@
+\doxysection{netlink\+\_\+sock Struct Reference}
+\hypertarget{structnetlink__sock}{}\label{structnetlink__sock}\index{netlink\_sock@{netlink\_sock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnetlink__sock_a5dfcdafd45c1dce043d8d368c87ab16f}\label{structnetlink__sock_a5dfcdafd45c1dce043d8d368c87ab16f} 
+struct \doxymbox{\hyperlink{structsock}{sock}} {\bfseries sk}
+\item 
+\Hypertarget{structnetlink__sock_aff53a7e4e42467e39a4db486fd3ec440}\label{structnetlink__sock_aff53a7e4e42467e39a4db486fd3ec440} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structnetlink__sock_a186e872a3a7b0d2985fb7ccff40a042c}\label{structnetlink__sock_a186e872a3a7b0d2985fb7ccff40a042c} 
+u32 {\bfseries portid}
+\item 
+\Hypertarget{structnetlink__sock_a166b6840afd70e6651ebab838e6470a7}\label{structnetlink__sock_a166b6840afd70e6651ebab838e6470a7} 
+u32 {\bfseries dst\+\_\+portid}
+\item 
+\Hypertarget{structnetlink__sock_a657dc31f34586ec6383193264d3afd64}\label{structnetlink__sock_a657dc31f34586ec6383193264d3afd64} 
+u32 {\bfseries dst\+\_\+group}
+\item 
+\Hypertarget{structnetlink__sock_a8024d668577a18f8b6a7fe1302e287b9}\label{structnetlink__sock_a8024d668577a18f8b6a7fe1302e287b9} 
+u32 {\bfseries subscriptions}
+\item 
+\Hypertarget{structnetlink__sock_a33864e6a6434cb25b6a63e393f7cf6bc}\label{structnetlink__sock_a33864e6a6434cb25b6a63e393f7cf6bc} 
+u32 {\bfseries ngroups}
+\item 
+\Hypertarget{structnetlink__sock_a5c891788eb987b8f028bc4c4f78b617a}\label{structnetlink__sock_a5c891788eb987b8f028bc4c4f78b617a} 
+long unsigned int \texorpdfstring{$\ast$}{*} {\bfseries groups}
+\item 
+\Hypertarget{structnetlink__sock_a66d39cea67164f267c9737793e15455f}\label{structnetlink__sock_a66d39cea67164f267c9737793e15455f} 
+long unsigned int {\bfseries state}
+\item 
+\Hypertarget{structnetlink__sock_a665e3a4522d95eba9e530894bb90ef13}\label{structnetlink__sock_a665e3a4522d95eba9e530894bb90ef13} 
+size\+\_\+t {\bfseries max\+\_\+recvmsg\+\_\+len}
+\item 
+\Hypertarget{structnetlink__sock_a4afed8b8a3a274e2833fb698f861f8ae}\label{structnetlink__sock_a4afed8b8a3a274e2833fb698f861f8ae} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wait}
+\item 
+\Hypertarget{structnetlink__sock_ac3180d73c5f362d9fc1796769102cf74}\label{structnetlink__sock_ac3180d73c5f362d9fc1796769102cf74} 
+bool {\bfseries bound}
+\item 
+\Hypertarget{structnetlink__sock_ac452e529f92bca9226707930c4aad8ec}\label{structnetlink__sock_ac452e529f92bca9226707930c4aad8ec} 
+bool {\bfseries cb\+\_\+running}
+\item 
+\Hypertarget{structnetlink__sock_a83484d42a41b17d67ca844017687c7bb}\label{structnetlink__sock_a83484d42a41b17d67ca844017687c7bb} 
+int {\bfseries dump\+\_\+done\+\_\+errno}
+\item 
+\Hypertarget{structnetlink__sock_a371038661279d34cd69955736b486f00}\label{structnetlink__sock_a371038661279d34cd69955736b486f00} 
+struct \doxymbox{\hyperlink{structnetlink__callback}{netlink\+\_\+callback}} {\bfseries cb}
+\item 
+\Hypertarget{structnetlink__sock_aa162f30fc75c6bc9ce1ae6c1985a8f1e}\label{structnetlink__sock_aa162f30fc75c6bc9ce1ae6c1985a8f1e} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries nl\+\_\+cb\+\_\+mutex}
+\item 
+\Hypertarget{structnetlink__sock_a942abbc8a9ec7df4742514147e993227}\label{structnetlink__sock_a942abbc8a9ec7df4742514147e993227} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries netlink\+\_\+rcv} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlink__sock_a499d39586b802a78fcbba2e25313a030}\label{structnetlink__sock_a499d39586b802a78fcbba2e25313a030} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries netlink\+\_\+bind} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnetlink__sock_af9cf5598716e27caf883d9644d42e657}\label{structnetlink__sock_af9cf5598716e27caf883d9644d42e657} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries netlink\+\_\+unbind} )(struct \doxymbox{\hyperlink{structnet}{net}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structnetlink__sock_a78d8c1afdc3feccaae13e5fbfddc498c}\label{structnetlink__sock_a78d8c1afdc3feccaae13e5fbfddc498c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries netlink\+\_\+release} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnetlink__sock_a4a5c8f90c6aa953093afea3221e46a80}\label{structnetlink__sock_a4a5c8f90c6aa953093afea3221e46a80} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries module}
+\item 
+\Hypertarget{structnetlink__sock_ae7fafcf414f3647f1687526b86164589}\label{structnetlink__sock_ae7fafcf414f3647f1687526b86164589} 
+struct \doxymbox{\hyperlink{structrhash__head}{rhash\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structnetlink__sock_a840b9c4460624d301d01671520938f77}\label{structnetlink__sock_a840b9c4460624d301d01671520938f77} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

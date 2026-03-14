@@ -1,0 +1,226 @@
+\doxysection{bpf\+\_\+verifier\+\_\+env Struct Reference}
+\hypertarget{structbpf__verifier__env}{}\label{structbpf__verifier__env}\index{bpf\_verifier\_env@{bpf\_verifier\_env}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__verifier__env_acd61e00a44a78cf061ec2ea0acadac4a}\label{structbpf__verifier__env_acd61e00a44a78cf061ec2ea0acadac4a} 
+u32 {\bfseries insn\+\_\+idx}
+\item 
+\Hypertarget{structbpf__verifier__env_aa699f7d22619aad2f172b533eb133c4a}\label{structbpf__verifier__env_aa699f7d22619aad2f172b533eb133c4a} 
+u32 {\bfseries prev\+\_\+insn\+\_\+idx}
+\item 
+\Hypertarget{structbpf__verifier__env_a95ba785f78307620c10ed23a390c7a0c}\label{structbpf__verifier__env_a95ba785f78307620c10ed23a390c7a0c} 
+struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*} {\bfseries prog}
+\item 
+\Hypertarget{structbpf__verifier__env_aaf2a3b104aad280aaf7ac949a0cafd92}\label{structbpf__verifier__env_aaf2a3b104aad280aaf7ac949a0cafd92} 
+const struct \doxymbox{\hyperlink{structbpf__verifier__ops}{bpf\+\_\+verifier\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structbpf__verifier__env_a8b4e78922ebedaa109fb927848bd6562}\label{structbpf__verifier__env_a8b4e78922ebedaa109fb927848bd6562} 
+struct \doxymbox{\hyperlink{structmodule}{module}} \texorpdfstring{$\ast$}{*} {\bfseries attach\+\_\+btf\+\_\+mod}
+\item 
+\Hypertarget{structbpf__verifier__env_a261f7031f5a45f797961894104c868c0}\label{structbpf__verifier__env_a261f7031f5a45f797961894104c868c0} 
+struct \doxymbox{\hyperlink{structbpf__verifier__stack__elem}{bpf\+\_\+verifier\+\_\+stack\+\_\+elem}} \texorpdfstring{$\ast$}{*} {\bfseries head}
+\item 
+\Hypertarget{structbpf__verifier__env_ac0b47aaf78f89f07d569833d1aefb3a3}\label{structbpf__verifier__env_ac0b47aaf78f89f07d569833d1aefb3a3} 
+int {\bfseries stack\+\_\+size}
+\item 
+\Hypertarget{structbpf__verifier__env_ac52fbc29dfd64bb71103a5cbb07f62dd}\label{structbpf__verifier__env_ac52fbc29dfd64bb71103a5cbb07f62dd} 
+bool {\bfseries strict\+\_\+alignment}
+\item 
+\Hypertarget{structbpf__verifier__env_a96c6451ee72c04e3f4a8521982e5b4d6}\label{structbpf__verifier__env_a96c6451ee72c04e3f4a8521982e5b4d6} 
+bool {\bfseries test\+\_\+state\+\_\+freq}
+\item 
+\Hypertarget{structbpf__verifier__env_ab24aa1245431742d64f94293da3f80e9}\label{structbpf__verifier__env_ab24aa1245431742d64f94293da3f80e9} 
+bool {\bfseries test\+\_\+reg\+\_\+invariants}
+\item 
+\Hypertarget{structbpf__verifier__env_a9e383dd2c87ca66e304ce11208b32fd7}\label{structbpf__verifier__env_a9e383dd2c87ca66e304ce11208b32fd7} 
+struct \doxymbox{\hyperlink{structbpf__verifier__state}{bpf\+\_\+verifier\+\_\+state}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+\_\+state}
+\item 
+\Hypertarget{structbpf__verifier__env_a729881fff209614a62565e7741b64660}\label{structbpf__verifier__env_a729881fff209614a62565e7741b64660} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} \texorpdfstring{$\ast$}{*} {\bfseries explored\+\_\+states}
+\item 
+\Hypertarget{structbpf__verifier__env_a8d084bfaf2e9dc9f06c756bc214b9b8c}\label{structbpf__verifier__env_a8d084bfaf2e9dc9f06c756bc214b9b8c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries free\+\_\+list}
+\item 
+\Hypertarget{structbpf__verifier__env_a7692c64bc223112630842976a596fd9f}\label{structbpf__verifier__env_a7692c64bc223112630842976a596fd9f} 
+struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*} {\bfseries used\+\_\+maps} \+[64]\+
+\item 
+\Hypertarget{structbpf__verifier__env_a9d08556884cb1f8bc285f3c7674194d9}\label{structbpf__verifier__env_a9d08556884cb1f8bc285f3c7674194d9} 
+struct \doxymbox{\hyperlink{structbtf__mod__pair}{btf\+\_\+mod\+\_\+pair}} {\bfseries used\+\_\+btfs} \+[64]\+
+\item 
+\Hypertarget{structbpf__verifier__env_ad0ccca93b96992ec0f9afcdd17d56987}\label{structbpf__verifier__env_ad0ccca93b96992ec0f9afcdd17d56987} 
+struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*} {\bfseries insn\+\_\+array\+\_\+maps} \+[64]\+
+\item 
+\Hypertarget{structbpf__verifier__env_aae0e91c4b933ea36d20a4ef5d77fab95}\label{structbpf__verifier__env_aae0e91c4b933ea36d20a4ef5d77fab95} 
+u32 {\bfseries used\+\_\+map\+\_\+cnt}
+\item 
+\Hypertarget{structbpf__verifier__env_a471be3bfa938fc3e5b5212594f654a5e}\label{structbpf__verifier__env_a471be3bfa938fc3e5b5212594f654a5e} 
+u32 {\bfseries used\+\_\+btf\+\_\+cnt}
+\item 
+\Hypertarget{structbpf__verifier__env_affb84ddd1b9dc0fc32373512ffd21fda}\label{structbpf__verifier__env_affb84ddd1b9dc0fc32373512ffd21fda} 
+u32 {\bfseries insn\+\_\+array\+\_\+map\+\_\+cnt}
+\item 
+\Hypertarget{structbpf__verifier__env_a1545d75f37c8ea1525592dc59d114b38}\label{structbpf__verifier__env_a1545d75f37c8ea1525592dc59d114b38} 
+u32 {\bfseries id\+\_\+gen}
+\item 
+\Hypertarget{structbpf__verifier__env_a8ece08291e2680c29e9fdb5b556e0081}\label{structbpf__verifier__env_a8ece08291e2680c29e9fdb5b556e0081} 
+u32 {\bfseries hidden\+\_\+subprog\+\_\+cnt}
+\item 
+\Hypertarget{structbpf__verifier__env_aae5b57468d6d262eb45c7d867ef25542}\label{structbpf__verifier__env_aae5b57468d6d262eb45c7d867ef25542} 
+int {\bfseries exception\+\_\+callback\+\_\+subprog}
+\item 
+\Hypertarget{structbpf__verifier__env_ae2e42f69b86e7611bf2c6471cf0ade8d}\label{structbpf__verifier__env_ae2e42f69b86e7611bf2c6471cf0ade8d} 
+bool {\bfseries explore\+\_\+alu\+\_\+limits}
+\item 
+\Hypertarget{structbpf__verifier__env_a38b86458c93979fcb9f776484476a76f}\label{structbpf__verifier__env_a38b86458c93979fcb9f776484476a76f} 
+bool {\bfseries allow\+\_\+ptr\+\_\+leaks}
+\item 
+\Hypertarget{structbpf__verifier__env_a9d0b7b52190c4cd5276e7a1054751b3e}\label{structbpf__verifier__env_a9d0b7b52190c4cd5276e7a1054751b3e} 
+bool {\bfseries allow\+\_\+uninit\+\_\+stack}
+\item 
+\Hypertarget{structbpf__verifier__env_a3f5bf4f829ff92ad849b4430e34af761}\label{structbpf__verifier__env_a3f5bf4f829ff92ad849b4430e34af761} 
+bool {\bfseries bpf\+\_\+capable}
+\item 
+\Hypertarget{structbpf__verifier__env_ae03feda88915534be908a44f58e6f34f}\label{structbpf__verifier__env_ae03feda88915534be908a44f58e6f34f} 
+bool {\bfseries bypass\+\_\+spec\+\_\+v1}
+\item 
+\Hypertarget{structbpf__verifier__env_a80565e2928f2fbff1d5f9e603a1fc94b}\label{structbpf__verifier__env_a80565e2928f2fbff1d5f9e603a1fc94b} 
+bool {\bfseries bypass\+\_\+spec\+\_\+v4}
+\item 
+\Hypertarget{structbpf__verifier__env_a21b5327d84ca503164a01dfbc75dc9b1}\label{structbpf__verifier__env_a21b5327d84ca503164a01dfbc75dc9b1} 
+bool {\bfseries seen\+\_\+direct\+\_\+write}
+\item 
+\Hypertarget{structbpf__verifier__env_a62718e8bfa5f0ca23a1810ade065042f}\label{structbpf__verifier__env_a62718e8bfa5f0ca23a1810ade065042f} 
+bool {\bfseries seen\+\_\+exception}
+\item 
+\Hypertarget{structbpf__verifier__env_a1369d20f4b7d7abc700df23036439907}\label{structbpf__verifier__env_a1369d20f4b7d7abc700df23036439907} 
+struct \doxymbox{\hyperlink{structbpf__insn__aux__data}{bpf\+\_\+insn\+\_\+aux\+\_\+data}} \texorpdfstring{$\ast$}{*} {\bfseries insn\+\_\+aux\+\_\+data}
+\item 
+\Hypertarget{structbpf__verifier__env_a64c99e916926e550b67d0031d2f5ab05}\label{structbpf__verifier__env_a64c99e916926e550b67d0031d2f5ab05} 
+const struct \doxymbox{\hyperlink{structbpf__line__info}{bpf\+\_\+line\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries prev\+\_\+linfo}
+\item 
+\Hypertarget{structbpf__verifier__env_a531f1637c6d0bed2d6ab76272f078bf0}\label{structbpf__verifier__env_a531f1637c6d0bed2d6ab76272f078bf0} 
+struct \doxymbox{\hyperlink{structbpf__verifier__log}{bpf\+\_\+verifier\+\_\+log}} {\bfseries log}
+\item 
+\Hypertarget{structbpf__verifier__env_aa0c3e35a29ebfbe5066d598eb0b4b040}\label{structbpf__verifier__env_aa0c3e35a29ebfbe5066d598eb0b4b040} 
+struct \doxymbox{\hyperlink{structbpf__subprog__info}{bpf\+\_\+subprog\+\_\+info}} {\bfseries subprog\+\_\+info} \+[258]\+
+\item 
+\Hypertarget{structbpf__verifier__env_affa693978111c66f466e396d1730d84d}\label{structbpf__verifier__env_affa693978111c66f466e396d1730d84d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structbpf__idmap}{bpf\_idmap}} {\bfseries idmap\_scratch}\\
+\>struct \doxymbox{\hyperlink{structbpf__idset}{bpf\_idset}} {\bfseries idset\_scratch}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__verifier__env_a3090d7940dd0337660357b705dbeb74f}\label{structbpf__verifier__env_a3090d7940dd0337660357b705dbeb74f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int \texorpdfstring{$\ast$}{*} {\bfseries insn\_state}\\
+\>int \texorpdfstring{$\ast$}{*} {\bfseries insn\_stack}\\
+\>int \texorpdfstring{$\ast$}{*} {\bfseries insn\_postorder}\\
+\>int {\bfseries cur\_stack}\\
+\>int {\bfseries cur\_postorder}\\
+\} {\bfseries cfg}\\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__verifier__env_a40e65fadfd429371a9fbc0180a75986d}\label{structbpf__verifier__env_a40e65fadfd429371a9fbc0180a75986d} 
+struct \doxymbox{\hyperlink{structbacktrack__state}{backtrack\+\_\+state}} {\bfseries bt}
+\item 
+\Hypertarget{structbpf__verifier__env_a085d988f4e46eeeaab8cbe170d42b187}\label{structbpf__verifier__env_a085d988f4e46eeeaab8cbe170d42b187} 
+struct \doxymbox{\hyperlink{structbpf__jmp__history__entry}{bpf\+\_\+jmp\+\_\+history\+\_\+entry}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+\_\+hist\+\_\+ent}
+\item 
+\Hypertarget{structbpf__verifier__env_a02465eaff10740026471c1a391624567}\label{structbpf__verifier__env_a02465eaff10740026471c1a391624567} 
+u32 {\bfseries pass\+\_\+cnt}
+\item 
+\Hypertarget{structbpf__verifier__env_a4ba541158dab3553cfd5f8863f6bc31f}\label{structbpf__verifier__env_a4ba541158dab3553cfd5f8863f6bc31f} 
+u32 {\bfseries subprog\+\_\+cnt}
+\item 
+\Hypertarget{structbpf__verifier__env_a4b80942112981b1cd790a5ffa49df8cb}\label{structbpf__verifier__env_a4b80942112981b1cd790a5ffa49df8cb} 
+u32 {\bfseries prev\+\_\+insn\+\_\+processed}
+\item 
+\Hypertarget{structbpf__verifier__env_ac88def753b8f8c749f344f9bf5e288bc}\label{structbpf__verifier__env_ac88def753b8f8c749f344f9bf5e288bc} 
+u32 {\bfseries insn\+\_\+processed}
+\item 
+\Hypertarget{structbpf__verifier__env_a0d5dff1e865cf388fcfad7f6ee120c77}\label{structbpf__verifier__env_a0d5dff1e865cf388fcfad7f6ee120c77} 
+u32 {\bfseries prev\+\_\+jmps\+\_\+processed}
+\item 
+\Hypertarget{structbpf__verifier__env_a9f93b4ca2d80054ea900efcd629a334e}\label{structbpf__verifier__env_a9f93b4ca2d80054ea900efcd629a334e} 
+u32 {\bfseries jmps\+\_\+processed}
+\item 
+\Hypertarget{structbpf__verifier__env_a1c86f9fd373011d08b32c397d9fc2a41}\label{structbpf__verifier__env_a1c86f9fd373011d08b32c397d9fc2a41} 
+u64 {\bfseries verification\+\_\+time}
+\item 
+\Hypertarget{structbpf__verifier__env_a0eecb3281ef6b813410e57d48491ed9d}\label{structbpf__verifier__env_a0eecb3281ef6b813410e57d48491ed9d} 
+u32 {\bfseries max\+\_\+states\+\_\+per\+\_\+insn}
+\item 
+\Hypertarget{structbpf__verifier__env_acbd50bca0a975441a728b90bd55e80e1}\label{structbpf__verifier__env_acbd50bca0a975441a728b90bd55e80e1} 
+u32 {\bfseries total\+\_\+states}
+\item 
+\Hypertarget{structbpf__verifier__env_ae0c56e4fb66075ba0ba403c534889b12}\label{structbpf__verifier__env_ae0c56e4fb66075ba0ba403c534889b12} 
+u32 {\bfseries peak\+\_\+states}
+\item 
+\Hypertarget{structbpf__verifier__env_a857103a0b934372b9929a225d913010e}\label{structbpf__verifier__env_a857103a0b934372b9929a225d913010e} 
+u32 {\bfseries longest\+\_\+mark\+\_\+read\+\_\+walk}
+\item 
+\Hypertarget{structbpf__verifier__env_ae43b42d40cfe656379c955518fdc2036}\label{structbpf__verifier__env_ae43b42d40cfe656379c955518fdc2036} 
+u32 {\bfseries free\+\_\+list\+\_\+size}
+\item 
+\Hypertarget{structbpf__verifier__env_aee12553bd0341653172374f95b9ea8c2}\label{structbpf__verifier__env_aee12553bd0341653172374f95b9ea8c2} 
+u32 {\bfseries explored\+\_\+states\+\_\+size}
+\item 
+\Hypertarget{structbpf__verifier__env_a4fecf6ed8801995b68413209d1ee33bd}\label{structbpf__verifier__env_a4fecf6ed8801995b68413209d1ee33bd} 
+u32 {\bfseries num\+\_\+backedges}
+\item 
+\Hypertarget{structbpf__verifier__env_a5976f356f58e7046b3f7e48aaa71a8da}\label{structbpf__verifier__env_a5976f356f58e7046b3f7e48aaa71a8da} 
+bpfptr\+\_\+t {\bfseries fd\+\_\+array}
+\item 
+\Hypertarget{structbpf__verifier__env_ab8a1dc5f029824ea39b3fbdec2c90186}\label{structbpf__verifier__env_ab8a1dc5f029824ea39b3fbdec2c90186} 
+u32 {\bfseries scratched\+\_\+regs}
+\item 
+\Hypertarget{structbpf__verifier__env_adacf29daae0e9abe61922c1b6d500fc7}\label{structbpf__verifier__env_adacf29daae0e9abe61922c1b6d500fc7} 
+u64 {\bfseries scratched\+\_\+stack\+\_\+slots}
+\item 
+\Hypertarget{structbpf__verifier__env_abb99071b0dfdc4b1b0e782c336723b53}\label{structbpf__verifier__env_abb99071b0dfdc4b1b0e782c336723b53} 
+u64 {\bfseries prev\+\_\+log\+\_\+pos}
+\item 
+\Hypertarget{structbpf__verifier__env_a8a1c6033ddab98e03bf45bd4069eb8f4}\label{structbpf__verifier__env_a8a1c6033ddab98e03bf45bd4069eb8f4} 
+u64 {\bfseries prev\+\_\+insn\+\_\+print\+\_\+pos}
+\item 
+\Hypertarget{structbpf__verifier__env_a067f84ac449dcb3b6aacf92c9c5be7e1}\label{structbpf__verifier__env_a067f84ac449dcb3b6aacf92c9c5be7e1} 
+struct \doxymbox{\hyperlink{structbpf__reg__state}{bpf\+\_\+reg\+\_\+state}} {\bfseries fake\+\_\+reg} \+[2]\+
+\item 
+\Hypertarget{structbpf__verifier__env_a94348f2cd98e1474e240aa9e418f2be6}\label{structbpf__verifier__env_a94348f2cd98e1474e240aa9e418f2be6} 
+char {\bfseries tmp\+\_\+str\+\_\+buf} \+[320]\+
+\item 
+\Hypertarget{structbpf__verifier__env_a3e4c73308edbc7dd3fead45da4525d5e}\label{structbpf__verifier__env_a3e4c73308edbc7dd3fead45da4525d5e} 
+struct \doxymbox{\hyperlink{structbpf__insn}{bpf\+\_\+insn}} {\bfseries insn\+\_\+buf} \+[32]\+
+\item 
+\Hypertarget{structbpf__verifier__env_a86b445a6b0650a8376033d54aa6131f8}\label{structbpf__verifier__env_a86b445a6b0650a8376033d54aa6131f8} 
+struct \doxymbox{\hyperlink{structbpf__insn}{bpf\+\_\+insn}} {\bfseries epilogue\+\_\+buf} \+[32]\+
+\item 
+\Hypertarget{structbpf__verifier__env_aa2d9c638037087f5a3d396a5f9ad0118}\label{structbpf__verifier__env_aa2d9c638037087f5a3d396a5f9ad0118} 
+struct \doxymbox{\hyperlink{structbpf__scc__callchain}{bpf\+\_\+scc\+\_\+callchain}} {\bfseries callchain\+\_\+buf}
+\item 
+\Hypertarget{structbpf__verifier__env_abd8c9c6131e57980cce0b6d3c0d78f9d}\label{structbpf__verifier__env_abd8c9c6131e57980cce0b6d3c0d78f9d} 
+struct \doxymbox{\hyperlink{structbpf__liveness}{bpf\+\_\+liveness}} \texorpdfstring{$\ast$}{*} {\bfseries liveness}
+\item 
+\Hypertarget{structbpf__verifier__env_aa46860fb5963ff6dcefac785b2fd872c}\label{structbpf__verifier__env_aa46860fb5963ff6dcefac785b2fd872c} 
+struct \doxymbox{\hyperlink{structbpf__scc__info}{bpf\+\_\+scc\+\_\+info}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries scc\+\_\+info}
+\item 
+\Hypertarget{structbpf__verifier__env_a1af4aa9db91aace9d0785b9dc3779d65}\label{structbpf__verifier__env_a1af4aa9db91aace9d0785b9dc3779d65} 
+u32 {\bfseries scc\+\_\+cnt}
+\item 
+\Hypertarget{structbpf__verifier__env_a98cff757e08c3eb58b20bd6c230f0b27}\label{structbpf__verifier__env_a98cff757e08c3eb58b20bd6c230f0b27} 
+struct \doxymbox{\hyperlink{structbpf__iarray}{bpf\+\_\+iarray}} \texorpdfstring{$\ast$}{*} {\bfseries succ}
+\item 
+\Hypertarget{structbpf__verifier__env_a15e2beeb3de95ff29292ab2dfd216642}\label{structbpf__verifier__env_a15e2beeb3de95ff29292ab2dfd216642} 
+struct \doxymbox{\hyperlink{structbpf__iarray}{bpf\+\_\+iarray}} \texorpdfstring{$\ast$}{*} {\bfseries gotox\+\_\+tmp\+\_\+buf}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

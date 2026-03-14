@@ -1,0 +1,61 @@
+\doxysection{ehci\+\_\+qh Struct Reference}
+\hypertarget{structehci__qh}{}\label{structehci__qh}\index{ehci\_qh@{ehci\_qh}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structehci__qh_ac6f7e8e5968784567bc906bbb9706eef}\label{structehci__qh_ac6f7e8e5968784567bc906bbb9706eef} 
+struct \doxymbox{\hyperlink{structehci__qh__hw}{ehci\+\_\+qh\+\_\+hw}} \texorpdfstring{$\ast$}{*} {\bfseries hw}
+\item 
+\Hypertarget{structehci__qh_a1ed0032130c94a8ab624078e7101f1a1}\label{structehci__qh_a1ed0032130c94a8ab624078e7101f1a1} 
+dma\+\_\+addr\+\_\+t {\bfseries qh\+\_\+dma}
+\item 
+\Hypertarget{structehci__qh_ac09fcd087af5ef4de4845d4d32d04bce}\label{structehci__qh_ac09fcd087af5ef4de4845d4d32d04bce} 
+union \doxymbox{\hyperlink{unionehci__shadow}{ehci\+\_\+shadow}} {\bfseries qh\+\_\+next}
+\item 
+\Hypertarget{structehci__qh_ab685d481883f8bf4e53b4b80d8bf2522}\label{structehci__qh_ab685d481883f8bf4e53b4b80d8bf2522} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries qtd\+\_\+list}
+\item 
+\Hypertarget{structehci__qh_ab540c6c5294e3a0ca34c6d5811c84652}\label{structehci__qh_ab540c6c5294e3a0ca34c6d5811c84652} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries intr\+\_\+node}
+\item 
+\Hypertarget{structehci__qh_a0a698ad2805bc981bd1648ab5de2d924}\label{structehci__qh_a0a698ad2805bc981bd1648ab5de2d924} 
+struct \doxymbox{\hyperlink{structehci__qtd}{ehci\+\_\+qtd}} \texorpdfstring{$\ast$}{*} {\bfseries dummy}
+\item 
+\Hypertarget{structehci__qh_a3ef164c8b68a58d117b61a727b2dc59e}\label{structehci__qh_a3ef164c8b68a58d117b61a727b2dc59e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries unlink\+\_\+node}
+\item 
+\Hypertarget{structehci__qh_ad6e4f17f1a2a9300940983a438762d02}\label{structehci__qh_ad6e4f17f1a2a9300940983a438762d02} 
+struct \doxymbox{\hyperlink{structehci__per__sched}{ehci\+\_\+per\+\_\+sched}} {\bfseries ps}
+\item 
+\Hypertarget{structehci__qh_ab62048ec15f537ed4bf0d33ef62654ae}\label{structehci__qh_ab62048ec15f537ed4bf0d33ef62654ae} 
+unsigned int {\bfseries unlink\+\_\+cycle}
+\item 
+\Hypertarget{structehci__qh_a93e0e32fd49190e905f5f84020d351dd}\label{structehci__qh_a93e0e32fd49190e905f5f84020d351dd} 
+u8 {\bfseries qh\+\_\+state}
+\item 
+\Hypertarget{structehci__qh_aa24dd7aba591535ecd0e90b9b8a613ab}\label{structehci__qh_aa24dd7aba591535ecd0e90b9b8a613ab} 
+u8 {\bfseries xacterrs}
+\item 
+\Hypertarget{structehci__qh_ad3ecb86a5656da891d9ba657d09e0e60}\label{structehci__qh_ad3ecb86a5656da891d9ba657d09e0e60} 
+u8 {\bfseries unlink\+\_\+reason}
+\item 
+\Hypertarget{structehci__qh_a585902077ab7b4a1e422f2557e08c273}\label{structehci__qh_a585902077ab7b4a1e422f2557e08c273} 
+u8 {\bfseries gap\+\_\+uf}
+\item 
+\Hypertarget{structehci__qh_a0844103517a439764c33eb8f3bfa4a5d}\label{structehci__qh_a0844103517a439764c33eb8f3bfa4a5d} 
+unsigned int {\bfseries is\+\_\+out}:\+ 1
+\item 
+\Hypertarget{structehci__qh_ae49d5e7bcea354f157f6d1e694802638}\label{structehci__qh_ae49d5e7bcea354f157f6d1e694802638} 
+unsigned int {\bfseries clearing\+\_\+tt}:\+ 1
+\item 
+\Hypertarget{structehci__qh_a54bf5627641863b4268eabbe40c05b43}\label{structehci__qh_a54bf5627641863b4268eabbe40c05b43} 
+unsigned int {\bfseries dequeue\+\_\+during\+\_\+giveback}:\+ 1
+\item 
+\Hypertarget{structehci__qh_ad003cc02f01c820152942aa27c1a0fb7}\label{structehci__qh_ad003cc02f01c820152942aa27c1a0fb7} 
+unsigned int {\bfseries should\+\_\+be\+\_\+inactive}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\doxysection{rcu\+\_\+tasks\+\_\+percpu Struct Reference}
+\hypertarget{structrcu__tasks__percpu}{}\label{structrcu__tasks__percpu}\index{rcu\_tasks\_percpu@{rcu\_tasks\_percpu}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrcu__tasks__percpu_ad5403263c4f393d6055a9f8deae9da24}\label{structrcu__tasks__percpu_ad5403263c4f393d6055a9f8deae9da24} 
+struct \doxymbox{\hyperlink{structrcu__segcblist}{rcu\+\_\+segcblist}} {\bfseries cblist}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a556423a48f986ea07ee9e21011bfcdda}\label{structrcu__tasks__percpu_a556423a48f986ea07ee9e21011bfcdda} 
+raw\+\_\+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a03978f22bf027e25ca4270ed83575565}\label{structrcu__tasks__percpu_a03978f22bf027e25ca4270ed83575565} 
+long unsigned int {\bfseries rtp\+\_\+jiffies}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a16a8a4f3b537594e0ac66d1b275d8a22}\label{structrcu__tasks__percpu_a16a8a4f3b537594e0ac66d1b275d8a22} 
+long unsigned int {\bfseries rtp\+\_\+n\+\_\+lock\+\_\+retries}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a739595ac899f3b9acb16b8e040804327}\label{structrcu__tasks__percpu_a739595ac899f3b9acb16b8e040804327} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries lazy\+\_\+timer}
+\item 
+\Hypertarget{structrcu__tasks__percpu_ac9e66046c7f7c0e26d9d58d39094d798}\label{structrcu__tasks__percpu_ac9e66046c7f7c0e26d9d58d39094d798} 
+unsigned int {\bfseries urgent\+\_\+gp}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a0ba4bad451564f8943b9b8577a679b45}\label{structrcu__tasks__percpu_a0ba4bad451564f8943b9b8577a679b45} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries rtp\+\_\+work}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a8278c9de3026b2b41c4c15971a30316a}\label{structrcu__tasks__percpu_a8278c9de3026b2b41c4c15971a30316a} 
+struct \doxymbox{\hyperlink{structirq__work}{irq\+\_\+work}} {\bfseries rtp\+\_\+irq\+\_\+work}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a42eeea6e9734f1c26d95439a40158dac}\label{structrcu__tasks__percpu_a42eeea6e9734f1c26d95439a40158dac} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries barrier\+\_\+q\+\_\+head}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a51dd1986d0973da624bed49de7b71908}\label{structrcu__tasks__percpu_a51dd1986d0973da624bed49de7b71908} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rtp\+\_\+blkd\+\_\+tasks}
+\item 
+\Hypertarget{structrcu__tasks__percpu_ad9a892451f6667ceacdb0838789655e6}\label{structrcu__tasks__percpu_ad9a892451f6667ceacdb0838789655e6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries rtp\+\_\+exit\+\_\+list}
+\item 
+\Hypertarget{structrcu__tasks__percpu_ae0af8f8c805e1713086144e1d9525739}\label{structrcu__tasks__percpu_ae0af8f8c805e1713086144e1d9525739} 
+int {\bfseries cpu}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a762f047c2678b565a539ed6b79b5180e}\label{structrcu__tasks__percpu_a762f047c2678b565a539ed6b79b5180e} 
+int {\bfseries index}
+\item 
+\Hypertarget{structrcu__tasks__percpu_a61630529e6486d2f44db0a0606b40d67}\label{structrcu__tasks__percpu_a61630529e6486d2f44db0a0606b40d67} 
+struct \doxymbox{\hyperlink{structrcu__tasks}{rcu\+\_\+tasks}} \texorpdfstring{$\ast$}{*} {\bfseries rtpp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

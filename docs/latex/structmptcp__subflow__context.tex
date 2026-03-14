@@ -1,0 +1,179 @@
+\doxysection{mptcp\+\_\+subflow\+\_\+context Struct Reference}
+\hypertarget{structmptcp__subflow__context}{}\label{structmptcp__subflow__context}\index{mptcp\_subflow\_context@{mptcp\_subflow\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmptcp__subflow__context_a53fa7cbfa7bcf70261d7a125cdf5f539}\label{structmptcp__subflow__context_a53fa7cbfa7bcf70261d7a125cdf5f539} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structmptcp__subflow__context_a053242a3206bc57b98ca79a809e33d1f}\label{structmptcp__subflow__context_a053242a3206bc57b98ca79a809e33d1f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionmptcp__subflow__context_1_1_0d151154323044116212067070110263027156153047102244_ab1e4204cbe23bebeb8302b6c114d6401}\label{unionmptcp__subflow__context_1_1_0d151154323044116212067070110263027156153047102244_ab1e4204cbe23bebeb8302b6c114d6401} 
+\>struct \{\\
+\>\>long unsigned int {\bfseries avg\_pacing\_rate}\\
+\>\>u64 {\bfseries local\_key}\\
+\>\>u64 {\bfseries remote\_key}\\
+\>\>u64 {\bfseries idsn}\\
+\>\>u64 {\bfseries map\_seq}\\
+\>\>u64 {\bfseries rcv\_wnd\_sent}\\
+\>\>u32 {\bfseries snd\_isn}\\
+\>\>u32 {\bfseries token}\\
+\>\>u32 {\bfseries rel\_write\_seq}\\
+\>\>u32 {\bfseries map\_subflow\_seq}\\
+\>\>u32 {\bfseries ssn\_offset}\\
+\>\>u32 {\bfseries map\_data\_len}\\
+\>\>\_\_wsum {\bfseries map\_data\_csum}\\
+\>\>u32 {\bfseries map\_csum\_len}\\
+\>\>u32 {\bfseries request\_mptcp}: 1\\
+\>\>u32 {\bfseries request\_join}: 1\\
+\>\>u32 {\bfseries request\_bkup}: 1\\
+\>\>u32 {\bfseries mp\_capable}: 1\\
+\>\>u32 {\bfseries mp\_join}: 1\\
+\>\>u32 {\bfseries pm\_notified}: 1\\
+\>\>u32 {\bfseries conn\_finished}: 1\\
+\>\>u32 {\bfseries map\_valid}: 1\\
+\>\>u32 {\bfseries map\_csum\_reqd}: 1\\
+\>\>u32 {\bfseries map\_data\_fin}: 1\\
+\>\>u32 {\bfseries mpc\_map}: 1\\
+\>\>u32 {\bfseries backup}: 1\\
+\>\>u32 {\bfseries send\_mp\_prio}: 1\\
+\>\>u32 {\bfseries send\_mp\_fail}: 1\\
+\>\>u32 {\bfseries send\_fastclose}: 1\\
+\>\>u32 {\bfseries send\_infinite\_map}: 1\\
+\>\>u32 {\bfseries remote\_key\_valid}: 1\\
+\>\>u32 {\bfseries disposable}: 1\\
+\>\>u32 {\bfseries closing}: 1\\
+\>\>u32 {\bfseries stale}: 1\\
+\>\>u32 {\bfseries valid\_csum\_seen}: 1\\
+\>\>u32 {\bfseries is\_mptfo}: 1\\
+\>\>u32 {\bfseries close\_event\_done}: 1\\
+\>\>u32 {\bfseries mpc\_drop}: 1\\
+\>\>u32 {\bfseries \_\_unused}: 8\\
+\>\>bool {\bfseries data\_avail}\\
+\>\>bool {\bfseries scheduled}\\
+\>\>bool {\bfseries pm\_listener}\\
+\>\>bool {\bfseries fully\_established}\\
+\>\>u32 {\bfseries lent\_mem\_frag}\\
+\>\>u32 {\bfseries remote\_nonce}\\
+\>\>u64 {\bfseries thmac}\\
+\>\>u32 {\bfseries local\_nonce}\\
+\>\>u32 {\bfseries remote\_token}\\
+\Hypertarget{structmptcp__subflow__context_1_1_0d151154323044116212067070110263027156153047102244_1_1_0d10237cacf16e08c8fe8bae01db133f5a07036_ac877060b41ae0a88dbc152b2ab6a1c34}\label{structmptcp__subflow__context_1_1_0d151154323044116212067070110263027156153047102244_1_1_0d10237cacf16e08c8fe8bae01db133f5a07036_ac877060b41ae0a88dbc152b2ab6a1c34} 
+\>\>union \{\\
+\>\>\>u8 {\bfseries hmac} \+[20]\+\\
+\>\>\>u64 {\bfseries iasn}\\
+\>\>\} \\
+\>\>s16 {\bfseries local\_id}\\
+\>\>u8 {\bfseries remote\_id}\\
+\>\>u8 {\bfseries reset\_seen}: 1\\
+\>\>u8 {\bfseries reset\_transient}: 1\\
+\>\>u8 {\bfseries reset\_reason}: 4\\
+\>\>u8 {\bfseries stale\_count}\\
+\>\>u32 {\bfseries subflow\_id}\\
+\>\>long int {\bfseries delegated\_status}\\
+\>\>long unsigned int {\bfseries fail\_tout}\\
+\>\} \\
+\>struct \{\\
+\>\>long unsigned int {\bfseries avg\_pacing\_rate}\\
+\>\>u64 {\bfseries local\_key}\\
+\>\>u64 {\bfseries remote\_key}\\
+\>\>u64 {\bfseries idsn}\\
+\>\>u64 {\bfseries map\_seq}\\
+\>\>u64 {\bfseries rcv\_wnd\_sent}\\
+\>\>u32 {\bfseries snd\_isn}\\
+\>\>u32 {\bfseries token}\\
+\>\>u32 {\bfseries rel\_write\_seq}\\
+\>\>u32 {\bfseries map\_subflow\_seq}\\
+\>\>u32 {\bfseries ssn\_offset}\\
+\>\>u32 {\bfseries map\_data\_len}\\
+\>\>\_\_wsum {\bfseries map\_data\_csum}\\
+\>\>u32 {\bfseries map\_csum\_len}\\
+\>\>u32 {\bfseries request\_mptcp}: 1\\
+\>\>u32 {\bfseries request\_join}: 1\\
+\>\>u32 {\bfseries request\_bkup}: 1\\
+\>\>u32 {\bfseries mp\_capable}: 1\\
+\>\>u32 {\bfseries mp\_join}: 1\\
+\>\>u32 {\bfseries pm\_notified}: 1\\
+\>\>u32 {\bfseries conn\_finished}: 1\\
+\>\>u32 {\bfseries map\_valid}: 1\\
+\>\>u32 {\bfseries map\_csum\_reqd}: 1\\
+\>\>u32 {\bfseries map\_data\_fin}: 1\\
+\>\>u32 {\bfseries mpc\_map}: 1\\
+\>\>u32 {\bfseries backup}: 1\\
+\>\>u32 {\bfseries send\_mp\_prio}: 1\\
+\>\>u32 {\bfseries send\_mp\_fail}: 1\\
+\>\>u32 {\bfseries send\_fastclose}: 1\\
+\>\>u32 {\bfseries send\_infinite\_map}: 1\\
+\>\>u32 {\bfseries remote\_key\_valid}: 1\\
+\>\>u32 {\bfseries disposable}: 1\\
+\>\>u32 {\bfseries closing}: 1\\
+\>\>u32 {\bfseries stale}: 1\\
+\>\>u32 {\bfseries valid\_csum\_seen}: 1\\
+\>\>u32 {\bfseries is\_mptfo}: 1\\
+\>\>u32 {\bfseries close\_event\_done}: 1\\
+\>\>u32 {\bfseries mpc\_drop}: 1\\
+\>\>u32 {\bfseries \_\_unused}: 8\\
+\>\>bool {\bfseries data\_avail}\\
+\>\>bool {\bfseries scheduled}\\
+\>\>bool {\bfseries pm\_listener}\\
+\>\>bool {\bfseries fully\_established}\\
+\>\>u32 {\bfseries lent\_mem\_frag}\\
+\>\>u32 {\bfseries remote\_nonce}\\
+\>\>u64 {\bfseries thmac}\\
+\>\>u32 {\bfseries local\_nonce}\\
+\>\>u32 {\bfseries remote\_token}\\
+\Hypertarget{structmptcp__subflow__context_1_1_0d151154323044116212067070110263027156153047102244_1_1_0d35515bf48e0adf3b0fa350ca11ffaea490bf5_a50c156401e3b2d20fe747740f62447f9}\label{structmptcp__subflow__context_1_1_0d151154323044116212067070110263027156153047102244_1_1_0d35515bf48e0adf3b0fa350ca11ffaea490bf5_a50c156401e3b2d20fe747740f62447f9} 
+\>\>union \{\\
+\>\>\>u8 {\bfseries hmac} \+[20]\+\\
+\>\>\>u64 {\bfseries iasn}\\
+\>\>\} \\
+\>\>s16 {\bfseries local\_id}\\
+\>\>u8 {\bfseries remote\_id}\\
+\>\>u8 {\bfseries reset\_seen}: 1\\
+\>\>u8 {\bfseries reset\_transient}: 1\\
+\>\>u8 {\bfseries reset\_reason}: 4\\
+\>\>u8 {\bfseries stale\_count}\\
+\>\>u32 {\bfseries subflow\_id}\\
+\>\>long int {\bfseries delegated\_status}\\
+\>\>long unsigned int {\bfseries fail\_tout}\\
+\>\} {\bfseries reset}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmptcp__subflow__context_a2968f7afc10677f0a8efdb38c7822ec5}\label{structmptcp__subflow__context_a2968f7afc10677f0a8efdb38c7822ec5} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries delegated\+\_\+node}
+\item 
+\Hypertarget{structmptcp__subflow__context_a1a3b425dce920a066516d57afb884023}\label{structmptcp__subflow__context_a1a3b425dce920a066516d57afb884023} 
+u32 {\bfseries setsockopt\+\_\+seq}
+\item 
+\Hypertarget{structmptcp__subflow__context_a7a70ca94f9e75090263f273ae9bcc1d1}\label{structmptcp__subflow__context_a7a70ca94f9e75090263f273ae9bcc1d1} 
+u32 {\bfseries stale\+\_\+rcv\+\_\+tstamp}
+\item 
+\Hypertarget{structmptcp__subflow__context_aa06d95fe63ae4d6823a24fccbc29e572}\label{structmptcp__subflow__context_aa06d95fe63ae4d6823a24fccbc29e572} 
+int {\bfseries cached\+\_\+sndbuf}
+\item 
+\Hypertarget{structmptcp__subflow__context_ad5aadd6ffe3ea20c4d7f0c239d899099}\label{structmptcp__subflow__context_ad5aadd6ffe3ea20c4d7f0c239d899099} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries tcp\+\_\+sock}
+\item 
+\Hypertarget{structmptcp__subflow__context_a8aba6c9b27e2ed0149ba7f93ef13a224}\label{structmptcp__subflow__context_a8aba6c9b27e2ed0149ba7f93ef13a224} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries conn}
+\item 
+\Hypertarget{structmptcp__subflow__context_ad9745dd07560160b01b665d557f3900c}\label{structmptcp__subflow__context_ad9745dd07560160b01b665d557f3900c} 
+const struct \doxymbox{\hyperlink{structinet__connection__sock__af__ops}{inet\+\_\+connection\+\_\+sock\+\_\+af\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries icsk\+\_\+af\+\_\+ops}
+\item 
+\Hypertarget{structmptcp__subflow__context_a3da51ce73f726b19e1f90a758077c6bf}\label{structmptcp__subflow__context_a3da51ce73f726b19e1f90a758077c6bf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries tcp\+\_\+state\+\_\+change} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmptcp__subflow__context_ab4dbb36da4a86a303352b68a148f93ec}\label{structmptcp__subflow__context_ab4dbb36da4a86a303352b68a148f93ec} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries tcp\+\_\+error\+\_\+report} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmptcp__subflow__context_a1f4fb2c9c6e057eefcb172b16bfb7e95}\label{structmptcp__subflow__context_a1f4fb2c9c6e057eefcb172b16bfb7e95} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

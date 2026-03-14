@@ -1,0 +1,50 @@
+\doxysection{mr\+\_\+mfc Struct Reference}
+\hypertarget{structmr__mfc}{}\label{structmr__mfc}\index{mr\_mfc@{mr\_mfc}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmr__mfc_a43ca803c53e6b1887a4904c5a863ad94}\label{structmr__mfc_a43ca803c53e6b1887a4904c5a863ad94} 
+struct \doxymbox{\hyperlink{structrhlist__head}{rhlist\+\_\+head}} {\bfseries mnode}
+\item 
+\Hypertarget{structmr__mfc_abf0f4b7ca35ecf65043db913da2cac50}\label{structmr__mfc_abf0f4b7ca35ecf65043db913da2cac50} 
+short unsigned int {\bfseries mfc\+\_\+parent}
+\item 
+\Hypertarget{structmr__mfc_a170e9693686cd226e66c0c000868ad8a}\label{structmr__mfc_a170e9693686cd226e66c0c000868ad8a} 
+int {\bfseries mfc\+\_\+flags}
+\item 
+\Hypertarget{structmr__mfc_a89c85fc25a7af1853ae1762cdf41cc9c}\label{structmr__mfc_a89c85fc25a7af1853ae1762cdf41cc9c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>long unsigned int {\bfseries expires}\\
+\>\>struct \doxymbox{\hyperlink{structsk__buff__head}{sk\_buff\_head}} {\bfseries unresolved}\\
+\>\} {\bfseries unres}\\
+\>struct \{\\
+\>\>long unsigned int {\bfseries last\_assert}\\
+\>\>int {\bfseries minvif}\\
+\>\>int {\bfseries maxvif}\\
+\>\>atomic\_long\_t {\bfseries bytes}\\
+\>\>atomic\_long\_t {\bfseries pkt}\\
+\>\>atomic\_long\_t {\bfseries wrong\_if}\\
+\>\>long unsigned int {\bfseries lastuse}\\
+\>\>unsigned char {\bfseries ttls} \+[32]\+\\
+\>\>refcount\_t {\bfseries refcount}\\
+\>\} {\bfseries res}\\
+\} {\bfseries mfc\_un}\\
+
+\end{tabbing}\item 
+\Hypertarget{structmr__mfc_a0f8f5a2d5ad143ab1f6d95df049b0d0d}\label{structmr__mfc_a0f8f5a2d5ad143ab1f6d95df049b0d0d} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structmr__mfc_a207f1eaba238c976c362ae41a2ae272c}\label{structmr__mfc_a207f1eaba238c976c362ae41a2ae272c} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structmr__mfc_a31ea77df442f00cf800b0a8183676a87}\label{structmr__mfc_a31ea77df442f00cf800b0a8183676a87} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free} )(struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

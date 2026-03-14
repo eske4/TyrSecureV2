@@ -1,0 +1,67 @@
+\doxysection{nfs\+\_\+commit\+\_\+data Struct Reference}
+\hypertarget{structnfs__commit__data}{}\label{structnfs__commit__data}\index{nfs\_commit\_data@{nfs\_commit\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs__commit__data_a1df22d97c80bf7569b7a69ec05a2256c}\label{structnfs__commit__data_a1df22d97c80bf7569b7a69ec05a2256c} 
+struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} {\bfseries task}
+\item 
+\Hypertarget{structnfs__commit__data_a73305379ec611722b2a211cb473dd728}\label{structnfs__commit__data_a73305379ec611722b2a211cb473dd728} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries inode}
+\item 
+\Hypertarget{structnfs__commit__data_a3dac49d85d3fd196219fa5d414bf1b59}\label{structnfs__commit__data_a3dac49d85d3fd196219fa5d414bf1b59} 
+const struct \doxymbox{\hyperlink{structcred}{cred}} \texorpdfstring{$\ast$}{*} {\bfseries cred}
+\item 
+\Hypertarget{structnfs__commit__data_a2dd0eb2ebed047a907f28e3ea141b5e2}\label{structnfs__commit__data_a2dd0eb2ebed047a907f28e3ea141b5e2} 
+struct \doxymbox{\hyperlink{structnfs__fattr}{nfs\+\_\+fattr}} {\bfseries fattr}
+\item 
+\Hypertarget{structnfs__commit__data_a48df0285484e130111c7d4cd563b33c5}\label{structnfs__commit__data_a48df0285484e130111c7d4cd563b33c5} 
+struct \doxymbox{\hyperlink{structnfs__writeverf}{nfs\+\_\+writeverf}} {\bfseries verf}
+\item 
+\Hypertarget{structnfs__commit__data_ae7ceeba91bbf986b57e84153bee0bcf1}\label{structnfs__commit__data_ae7ceeba91bbf986b57e84153bee0bcf1} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pages}
+\item 
+\Hypertarget{structnfs__commit__data_a60c7cc870334ab288d73f252e933f03b}\label{structnfs__commit__data_a60c7cc870334ab288d73f252e933f03b} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structnfs__commit__data_a338e86e6b3298d15a807afbf0f16abd7}\label{structnfs__commit__data_a338e86e6b3298d15a807afbf0f16abd7} 
+struct nfs\+\_\+direct\+\_\+req \texorpdfstring{$\ast$}{*} {\bfseries dreq}
+\item 
+\Hypertarget{structnfs__commit__data_a398309245cc96e43f8ad3e761b198d81}\label{structnfs__commit__data_a398309245cc96e43f8ad3e761b198d81} 
+struct \doxymbox{\hyperlink{structnfs__commitargs}{nfs\+\_\+commitargs}} {\bfseries args}
+\item 
+\Hypertarget{structnfs__commit__data_aa450bd89c82ebc7bef0d8d65e114053d}\label{structnfs__commit__data_aa450bd89c82ebc7bef0d8d65e114053d} 
+struct \doxymbox{\hyperlink{structnfs__commitres}{nfs\+\_\+commitres}} {\bfseries res}
+\item 
+\Hypertarget{structnfs__commit__data_ab50aa6242f93e4a81ccd9324da349ac1}\label{structnfs__commit__data_ab50aa6242f93e4a81ccd9324da349ac1} 
+struct \doxymbox{\hyperlink{structnfs__open__context}{nfs\+\_\+open\+\_\+context}} \texorpdfstring{$\ast$}{*} {\bfseries context}
+\item 
+\Hypertarget{structnfs__commit__data_a24008427275f509c39d8a3a2bfddb074}\label{structnfs__commit__data_a24008427275f509c39d8a3a2bfddb074} 
+struct pnfs\+\_\+layout\+\_\+segment \texorpdfstring{$\ast$}{*} {\bfseries lseg}
+\item 
+\Hypertarget{structnfs__commit__data_a8a17cfbe450bc3a9d1f2f82b1e71feda}\label{structnfs__commit__data_a8a17cfbe450bc3a9d1f2f82b1e71feda} 
+struct \doxymbox{\hyperlink{structnfs__client}{nfs\+\_\+client}} \texorpdfstring{$\ast$}{*} {\bfseries ds\+\_\+clp}
+\item 
+\Hypertarget{structnfs__commit__data_a79509ab33023a7a01e30d98cc7011f38}\label{structnfs__commit__data_a79509ab33023a7a01e30d98cc7011f38} 
+int {\bfseries ds\+\_\+commit\+\_\+index}
+\item 
+\Hypertarget{structnfs__commit__data_a40972dab02a16ddba730619ea26afea2}\label{structnfs__commit__data_a40972dab02a16ddba730619ea26afea2} 
+loff\+\_\+t {\bfseries lwb}
+\item 
+\Hypertarget{structnfs__commit__data_ac01af3aff908fdb9254ba4d82dbbadc1}\label{structnfs__commit__data_ac01af3aff908fdb9254ba4d82dbbadc1} 
+const struct \doxymbox{\hyperlink{structrpc__call__ops}{rpc\+\_\+call\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries mds\+\_\+ops}
+\item 
+\Hypertarget{structnfs__commit__data_abec066dd5fafe39f25c2586b045eaa6f}\label{structnfs__commit__data_abec066dd5fafe39f25c2586b045eaa6f} 
+const struct \doxymbox{\hyperlink{structnfs__commit__completion__ops}{nfs\+\_\+commit\+\_\+completion\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries completion\+\_\+ops}
+\item 
+\Hypertarget{structnfs__commit__data_af8c32f89c250c4ac4efe4327ad37f677}\label{structnfs__commit__data_af8c32f89c250c4ac4efe4327ad37f677} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries commit\+\_\+done\+\_\+cb} )(struct \doxymbox{\hyperlink{structrpc__task}{rpc\+\_\+task}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnfs__commit__data}{nfs\+\_\+commit\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structnfs__commit__data_a33df56504e11e3b00e2dcccbe7767b27}\label{structnfs__commit__data_a33df56504e11e3b00e2dcccbe7767b27} 
+long unsigned int {\bfseries flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

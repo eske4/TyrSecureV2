@@ -1,0 +1,32 @@
+\doxysection{icmp6hdr Struct Reference}
+\hypertarget{structicmp6hdr}{}\label{structicmp6hdr}\index{icmp6hdr@{icmp6hdr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structicmp6hdr_a4b0d44e92e61dec5757da842687618d4}\label{structicmp6hdr_a4b0d44e92e61dec5757da842687618d4} 
+\+\_\+\+\_\+u8 {\bfseries icmp6\+\_\+type}
+\item 
+\Hypertarget{structicmp6hdr_ab9dab19b4546235e329f0a86eb7493ba}\label{structicmp6hdr_ab9dab19b4546235e329f0a86eb7493ba} 
+\+\_\+\+\_\+u8 {\bfseries icmp6\+\_\+code}
+\item 
+\Hypertarget{structicmp6hdr_a24eecac1886b7fa3a6a84a718118248f}\label{structicmp6hdr_a24eecac1886b7fa3a6a84a718118248f} 
+\+\_\+\+\_\+sum16 {\bfseries icmp6\+\_\+cksum}
+\item 
+\Hypertarget{structicmp6hdr_afa91066212cf1e300d81c922f6015ec1}\label{structicmp6hdr_afa91066212cf1e300d81c922f6015ec1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries un\_data32} \+[1]\+\\
+\>\_\_be16 {\bfseries un\_data16} \+[2]\+\\
+\>\_\_u8 {\bfseries un\_data8} \+[4]\+\\
+\>struct \doxymbox{\hyperlink{structicmpv6__echo}{icmpv6\_echo}} {\bfseries u\_echo}\\
+\>struct \doxymbox{\hyperlink{structicmpv6__nd__advt}{icmpv6\_nd\_advt}} {\bfseries u\_nd\_advt}\\
+\>struct \doxymbox{\hyperlink{structicmpv6__nd__ra}{icmpv6\_nd\_ra}} {\bfseries u\_nd\_ra}\\
+\} {\bfseries icmp6\_dataun}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

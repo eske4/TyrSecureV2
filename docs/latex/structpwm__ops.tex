@@ -1,0 +1,40 @@
+\doxysection{pwm\+\_\+ops Struct Reference}
+\hypertarget{structpwm__ops}{}\label{structpwm__ops}\index{pwm\_ops@{pwm\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpwm__ops_a1612de0a25d5f2e1344d3867a146c4a3}\label{structpwm__ops_a1612de0a25d5f2e1344d3867a146c4a3} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries request} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpwm__ops_a0c35f70c82f543fcf69f5c7a04909a64}\label{structpwm__ops_a0c35f70c82f543fcf69f5c7a04909a64} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpwm__ops_aac239501b02e437b049db4e4dc19cf18}\label{structpwm__ops_aac239501b02e437b049db4e4dc19cf18} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries capture} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__capture}{pwm\+\_\+capture}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structpwm__ops_a6a8ab9e5c102cf5a48a0d8f862646111}\label{structpwm__ops_a6a8ab9e5c102cf5a48a0d8f862646111} 
+size\+\_\+t {\bfseries sizeof\+\_\+wfhw}
+\item 
+\Hypertarget{structpwm__ops_adcbc4cce116631167139c0faa4f92062}\label{structpwm__ops_adcbc4cce116631167139c0faa4f92062} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries round\+\_\+waveform\+\_\+tohw} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structpwm__waveform}{pwm\+\_\+waveform}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpwm__ops_aef59d8e23cb013d6d37eed25c4c7b11d}\label{structpwm__ops_aef59d8e23cb013d6d37eed25c4c7b11d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries round\+\_\+waveform\+\_\+fromhw} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__waveform}{pwm\+\_\+waveform}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpwm__ops_af0ae988ad5423cf87610f9f80aba729c}\label{structpwm__ops_af0ae988ad5423cf87610f9f80aba729c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read\+\_\+waveform} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpwm__ops_a0b2c8465eb0cf72833a7a1b07c48ef6e}\label{structpwm__ops_a0b2c8465eb0cf72833a7a1b07c48ef6e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries write\+\_\+waveform} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpwm__ops_a654844e5e3c24a690e2429d0fb88cb3d}\label{structpwm__ops_a654844e5e3c24a690e2429d0fb88cb3d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries apply} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structpwm__state}{pwm\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpwm__ops_a3b98800f58c47a3e7025f2144f594e6e}\label{structpwm__ops_a3b98800f58c47a3e7025f2144f594e6e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+state} )(struct \doxymbox{\hyperlink{structpwm__chip}{pwm\+\_\+chip}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__device}{pwm\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpwm__state}{pwm\+\_\+state}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

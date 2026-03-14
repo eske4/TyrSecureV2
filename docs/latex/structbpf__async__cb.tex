@@ -1,0 +1,34 @@
+\doxysection{bpf\+\_\+async\+\_\+cb Struct Reference}
+\hypertarget{structbpf__async__cb}{}\label{structbpf__async__cb}\index{bpf\_async\_cb@{bpf\_async\_cb}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__async__cb_a028ed2b51eac17bfcf6295408749f1ac}\label{structbpf__async__cb_a028ed2b51eac17bfcf6295408749f1ac} 
+struct \doxymbox{\hyperlink{structbpf__map}{bpf\+\_\+map}} \texorpdfstring{$\ast$}{*} {\bfseries map}
+\item 
+\Hypertarget{structbpf__async__cb_aa00dea5e0f6bf0095e34356943d6efe3}\label{structbpf__async__cb_aa00dea5e0f6bf0095e34356943d6efe3} 
+struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*} {\bfseries prog}
+\item 
+\Hypertarget{structbpf__async__cb_a071f3884eb01c6208bf2e40eb2ca601f}\label{structbpf__async__cb_a071f3884eb01c6208bf2e40eb2ca601f} 
+void \texorpdfstring{$\ast$}{*} {\bfseries callback\+\_\+fn}
+\item 
+\Hypertarget{structbpf__async__cb_a743ff003571b53d9e162e9d0e6b12370}\label{structbpf__async__cb_a743ff003571b53d9e162e9d0e6b12370} 
+void \texorpdfstring{$\ast$}{*} {\bfseries value}
+\item 
+\Hypertarget{structbpf__async__cb_a65a632ff9ed01e7a7e096a37e80b4034}\label{structbpf__async__cb_a65a632ff9ed01e7a7e096a37e80b4034} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries rcu}\\
+\>struct \doxymbox{\hyperlink{structwork__struct}{work\_struct}} {\bfseries delete\_work}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__async__cb_a3f6fb6012a3a4c36340d750d600b0799}\label{structbpf__async__cb_a3f6fb6012a3a4c36340d750d600b0799} 
+u64 {\bfseries flags}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

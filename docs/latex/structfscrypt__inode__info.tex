@@ -1,0 +1,55 @@
+\doxysection{fscrypt\+\_\+inode\+\_\+info Struct Reference}
+\hypertarget{structfscrypt__inode__info}{}\label{structfscrypt__inode__info}\index{fscrypt\_inode\_info@{fscrypt\_inode\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfscrypt__inode__info_a3042141d14f7c59c63dee67a7802ce2f}\label{structfscrypt__inode__info_a3042141d14f7c59c63dee67a7802ce2f} 
+struct \doxymbox{\hyperlink{structfscrypt__prepared__key}{fscrypt\+\_\+prepared\+\_\+key}} {\bfseries ci\+\_\+enc\+\_\+key}
+\item 
+\Hypertarget{structfscrypt__inode__info_a5754b31e8197205a85b5955f10f7aca6}\label{structfscrypt__inode__info_a5754b31e8197205a85b5955f10f7aca6} 
+u8 {\bfseries ci\+\_\+owns\+\_\+key}:\+ 1
+\item 
+\Hypertarget{structfscrypt__inode__info_ac723a54c7a4127da044e6a7ad42cddce}\label{structfscrypt__inode__info_ac723a54c7a4127da044e6a7ad42cddce} 
+u8 {\bfseries ci\+\_\+inlinecrypt}:\+ 1
+\item 
+\Hypertarget{structfscrypt__inode__info_a637e68293582243d7d4195b71aeb083f}\label{structfscrypt__inode__info_a637e68293582243d7d4195b71aeb083f} 
+u8 {\bfseries ci\+\_\+dirhash\+\_\+key\+\_\+initialized}:\+ 1
+\item 
+\Hypertarget{structfscrypt__inode__info_a929756631f0596e436bdc37015112553}\label{structfscrypt__inode__info_a929756631f0596e436bdc37015112553} 
+u8 {\bfseries ci\+\_\+data\+\_\+unit\+\_\+bits}
+\item 
+\Hypertarget{structfscrypt__inode__info_a4fc413ef6899b7030ce911a9a36c2b2c}\label{structfscrypt__inode__info_a4fc413ef6899b7030ce911a9a36c2b2c} 
+u8 {\bfseries ci\+\_\+data\+\_\+units\+\_\+per\+\_\+block\+\_\+bits}
+\item 
+\Hypertarget{structfscrypt__inode__info_afee19fd3c3fed679a8ebcce3db344def}\label{structfscrypt__inode__info_afee19fd3c3fed679a8ebcce3db344def} 
+u32 {\bfseries ci\+\_\+hashed\+\_\+ino}
+\item 
+\Hypertarget{structfscrypt__inode__info_aa3569201e74a2f6371c34915285db33b}\label{structfscrypt__inode__info_aa3569201e74a2f6371c34915285db33b} 
+struct \doxymbox{\hyperlink{structfscrypt__mode}{fscrypt\+\_\+mode}} \texorpdfstring{$\ast$}{*} {\bfseries ci\+\_\+mode}
+\item 
+\Hypertarget{structfscrypt__inode__info_aa8479e16838e96e2eb59dd4a4fcb88e1}\label{structfscrypt__inode__info_aa8479e16838e96e2eb59dd4a4fcb88e1} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries ci\+\_\+inode}
+\item 
+\Hypertarget{structfscrypt__inode__info_aa760d59d9be3600bbaf905a03681b445}\label{structfscrypt__inode__info_aa760d59d9be3600bbaf905a03681b445} 
+struct \doxymbox{\hyperlink{structfscrypt__master__key}{fscrypt\+\_\+master\+\_\+key}} \texorpdfstring{$\ast$}{*} {\bfseries ci\+\_\+master\+\_\+key}
+\item 
+\Hypertarget{structfscrypt__inode__info_a2996a3b001e0727b71f45dfbe7868b08}\label{structfscrypt__inode__info_a2996a3b001e0727b71f45dfbe7868b08} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries ci\+\_\+master\+\_\+key\+\_\+link}
+\item 
+\Hypertarget{structfscrypt__inode__info_abd22d82415ab18e4434a15f2c6d2525f}\label{structfscrypt__inode__info_abd22d82415ab18e4434a15f2c6d2525f} 
+struct \doxymbox{\hyperlink{structfscrypt__direct__key}{fscrypt\+\_\+direct\+\_\+key}} \texorpdfstring{$\ast$}{*} {\bfseries ci\+\_\+direct\+\_\+key}
+\item 
+\Hypertarget{structfscrypt__inode__info_a08daee0ec8473d6587b8efb6c543c351}\label{structfscrypt__inode__info_a08daee0ec8473d6587b8efb6c543c351} 
+\doxymbox{\hyperlink{structsiphash__key__t}{siphash\+\_\+key\+\_\+t}} {\bfseries ci\+\_\+dirhash\+\_\+key}
+\item 
+\Hypertarget{structfscrypt__inode__info_a9b43bebe07236ba8e125bb27d1994cd3}\label{structfscrypt__inode__info_a9b43bebe07236ba8e125bb27d1994cd3} 
+union \doxymbox{\hyperlink{unionfscrypt__policy}{fscrypt\+\_\+policy}} {\bfseries ci\+\_\+policy}
+\item 
+\Hypertarget{structfscrypt__inode__info_ae32bd991f1b8ffbebe8eabb281bacac3}\label{structfscrypt__inode__info_ae32bd991f1b8ffbebe8eabb281bacac3} 
+u8 {\bfseries ci\+\_\+nonce} \+[16]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

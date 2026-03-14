@@ -1,0 +1,70 @@
+\doxysection{scsi\+\_\+target Struct Reference}
+\hypertarget{structscsi__target}{}\label{structscsi__target}\index{scsi\_target@{scsi\_target}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structscsi__target_a7f5310b60e319f8807bbd546a48890d8}\label{structscsi__target_a7f5310b60e319f8807bbd546a48890d8} 
+struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries starget\+\_\+sdev\+\_\+user}
+\item 
+\Hypertarget{structscsi__target_a7d206c202d53ba1fa80d0ec4b2e3dd73}\label{structscsi__target_a7d206c202d53ba1fa80d0ec4b2e3dd73} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries siblings}
+\item 
+\Hypertarget{structscsi__target_a49188c914dcbdf602d322e9244c56475}\label{structscsi__target_a49188c914dcbdf602d322e9244c56475} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries devices}
+\item 
+\Hypertarget{structscsi__target_a041c62e42bb66e183d711aa44999881e}\label{structscsi__target_a041c62e42bb66e183d711aa44999881e} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structscsi__target_a1e0a96fdc29734be022001d17d64ec3e}\label{structscsi__target_a1e0a96fdc29734be022001d17d64ec3e} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries reap\+\_\+ref}
+\item 
+\Hypertarget{structscsi__target_a59475968abd9ae5974abd0b209bd6132}\label{structscsi__target_a59475968abd9ae5974abd0b209bd6132} 
+unsigned int {\bfseries channel}
+\item 
+\Hypertarget{structscsi__target_a6dda933eb20060c69af3395b42167c01}\label{structscsi__target_a6dda933eb20060c69af3395b42167c01} 
+unsigned int {\bfseries id}
+\item 
+\Hypertarget{structscsi__target_a1b49b648a1e57bc948ff64b41849a018}\label{structscsi__target_a1b49b648a1e57bc948ff64b41849a018} 
+unsigned int {\bfseries create}:\+ 1
+\item 
+\Hypertarget{structscsi__target_a6b3fc6bbbb435b624d0526e03241dc15}\label{structscsi__target_a6b3fc6bbbb435b624d0526e03241dc15} 
+unsigned int {\bfseries single\+\_\+lun}:\+ 1
+\item 
+\Hypertarget{structscsi__target_af661b3cc35873b228fbf258afd92b822}\label{structscsi__target_af661b3cc35873b228fbf258afd92b822} 
+unsigned int {\bfseries pdt\+\_\+1f\+\_\+for\+\_\+no\+\_\+lun}:\+ 1
+\item 
+\Hypertarget{structscsi__target_af6768e2fd60fa1e6d42e0dbc03d2593d}\label{structscsi__target_af6768e2fd60fa1e6d42e0dbc03d2593d} 
+unsigned int {\bfseries no\+\_\+report\+\_\+luns}:\+ 1
+\item 
+\Hypertarget{structscsi__target_ac507723aa1504cab4b702043495f1ea2}\label{structscsi__target_ac507723aa1504cab4b702043495f1ea2} 
+unsigned int {\bfseries expecting\+\_\+lun\+\_\+change}:\+ 1
+\item 
+\Hypertarget{structscsi__target_a13877e72feb5bebf23b4aaf1bfe072ae}\label{structscsi__target_a13877e72feb5bebf23b4aaf1bfe072ae} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries target\+\_\+busy}
+\item 
+\Hypertarget{structscsi__target_a910dfb1ce8256de11198c662633b60fe}\label{structscsi__target_a910dfb1ce8256de11198c662633b60fe} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries target\+\_\+blocked}
+\item 
+\Hypertarget{structscsi__target_ad22df4982343e8c9007257e54b6a9cb4}\label{structscsi__target_ad22df4982343e8c9007257e54b6a9cb4} 
+unsigned int {\bfseries can\+\_\+queue}
+\item 
+\Hypertarget{structscsi__target_a5cd0dcdb6dbe7d2208f0ad30163ab52e}\label{structscsi__target_a5cd0dcdb6dbe7d2208f0ad30163ab52e} 
+unsigned int {\bfseries max\+\_\+target\+\_\+blocked}
+\item 
+\Hypertarget{structscsi__target_a96c487ee24db64bb8973c1e675fbf616}\label{structscsi__target_a96c487ee24db64bb8973c1e675fbf616} 
+char {\bfseries scsi\+\_\+level}
+\item 
+\Hypertarget{structscsi__target_a2dc5177673f304e4997d9c7bc0b21aac}\label{structscsi__target_a2dc5177673f304e4997d9c7bc0b21aac} 
+enum scsi\+\_\+target\+\_\+state {\bfseries state}
+\item 
+\Hypertarget{structscsi__target_a7cb0c56805785035c362918f0e3d4f52}\label{structscsi__target_a7cb0c56805785035c362918f0e3d4f52} 
+void \texorpdfstring{$\ast$}{*} {\bfseries hostdata}
+\item 
+\Hypertarget{structscsi__target_a37971056fbe1a306902fa9a873cef902}\label{structscsi__target_a37971056fbe1a306902fa9a873cef902} 
+long unsigned int {\bfseries starget\+\_\+data} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

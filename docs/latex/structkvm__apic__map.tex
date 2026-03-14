@@ -1,0 +1,31 @@
+\doxysection{kvm\+\_\+apic\+\_\+map Struct Reference}
+\hypertarget{structkvm__apic__map}{}\label{structkvm__apic__map}\index{kvm\_apic\_map@{kvm\_apic\_map}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkvm__apic__map_adcdafed34dceb84816ae747db84598a7}\label{structkvm__apic__map_adcdafed34dceb84816ae747db84598a7} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structkvm__apic__map_a6925c2ae8b893deb194f11ee222bd463}\label{structkvm__apic__map_a6925c2ae8b893deb194f11ee222bd463} 
+enum kvm\+\_\+apic\+\_\+logical\+\_\+mode {\bfseries logical\+\_\+mode}
+\item 
+\Hypertarget{structkvm__apic__map_aff4265bb474f376b85088de6505a6eb0}\label{structkvm__apic__map_aff4265bb474f376b85088de6505a6eb0} 
+u32 {\bfseries max\+\_\+apic\+\_\+id}
+\item 
+\Hypertarget{structkvm__apic__map_a7ae5810451492f049739048a789cfa9c}\label{structkvm__apic__map_a7ae5810451492f049739048a789cfa9c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct kvm\_lapic \texorpdfstring{$\ast$}{*} {\bfseries xapic\_flat\_map} \+[8]\+\\
+\>struct kvm\_lapic \texorpdfstring{$\ast$}{*} {\bfseries xapic\_cluster\_map} \+[64]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structkvm__apic__map_a405f3ebd3fdb89dedbdd77f84dec0835}\label{structkvm__apic__map_a405f3ebd3fdb89dedbdd77f84dec0835} 
+struct kvm\+\_\+lapic \texorpdfstring{$\ast$}{*} {\bfseries phys\+\_\+map} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

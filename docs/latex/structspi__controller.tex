@@ -1,0 +1,250 @@
+\doxysection{spi\+\_\+controller Struct Reference}
+\hypertarget{structspi__controller}{}\label{structspi__controller}\index{spi\_controller@{spi\_controller}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structspi__controller_adaabd6f96c306280c95174d14013e3c1}\label{structspi__controller_adaabd6f96c306280c95174d14013e3c1} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structspi__controller_a4d9ca585aec4778e64e9fdfaa6db7133}\label{structspi__controller_a4d9ca585aec4778e64e9fdfaa6db7133} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structspi__controller_a09e4f2cf7983bf9684695db6d7a0e141}\label{structspi__controller_a09e4f2cf7983bf9684695db6d7a0e141} 
+s16 {\bfseries bus\+\_\+num}
+\item 
+\Hypertarget{structspi__controller_adb5ae22424ec1b311b07bbd7b40c3d1e}\label{structspi__controller_adb5ae22424ec1b311b07bbd7b40c3d1e} 
+u16 {\bfseries num\+\_\+chipselect}
+\item 
+\Hypertarget{structspi__controller_aeefc61fe585581575131e9638daf15b0}\label{structspi__controller_aeefc61fe585581575131e9638daf15b0} 
+u16 {\bfseries dma\+\_\+alignment}
+\item 
+\Hypertarget{structspi__controller_a347485c18249b66c2ac15292d3ba3e00}\label{structspi__controller_a347485c18249b66c2ac15292d3ba3e00} 
+u32 {\bfseries mode\+\_\+bits}
+\item 
+\Hypertarget{structspi__controller_a166b5cab2e04847dc666f55ac406afb6}\label{structspi__controller_a166b5cab2e04847dc666f55ac406afb6} 
+u32 {\bfseries buswidth\+\_\+override\+\_\+bits}
+\item 
+\Hypertarget{structspi__controller_a995f43c42c193d0cb8438088e1fe49a4}\label{structspi__controller_a995f43c42c193d0cb8438088e1fe49a4} 
+u32 {\bfseries bits\+\_\+per\+\_\+word\+\_\+mask}
+\item 
+\Hypertarget{structspi__controller_acf4d8de7695a06d81a2c99e9c8e79acc}\label{structspi__controller_acf4d8de7695a06d81a2c99e9c8e79acc} 
+u32 {\bfseries min\+\_\+speed\+\_\+hz}
+\item 
+\Hypertarget{structspi__controller_a0878f1fe407fe65acb836861b1a18185}\label{structspi__controller_a0878f1fe407fe65acb836861b1a18185} 
+u32 {\bfseries max\+\_\+speed\+\_\+hz}
+\item 
+\Hypertarget{structspi__controller_a6b683f6df243dc527c25f43db25c793c}\label{structspi__controller_a6b683f6df243dc527c25f43db25c793c} 
+u16 {\bfseries flags}
+\item 
+\Hypertarget{structspi__controller_ad634fb15792abeeb10835d9c14994b5d}\label{structspi__controller_ad634fb15792abeeb10835d9c14994b5d} 
+bool {\bfseries devm\+\_\+allocated}
+\item 
+\Hypertarget{structspi__controller_a716cf64746890308a82cb5df109d170b}\label{structspi__controller_a716cf64746890308a82cb5df109d170b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>bool {\bfseries slave}\\
+\>bool {\bfseries target}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structspi__controller_ae39239920fca4704646be94dc2e19e63}\label{structspi__controller_ae39239920fca4704646be94dc2e19e63} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries max\+\_\+transfer\+\_\+size} )(struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_aafcb55a11eb56e7c828276bf062ca161}\label{structspi__controller_aafcb55a11eb56e7c828276bf062ca161} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries max\+\_\+message\+\_\+size} )(struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_af9716074e3545f4bf139536ded9bba85}\label{structspi__controller_af9716074e3545f4bf139536ded9bba85} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries io\+\_\+mutex}
+\item 
+\Hypertarget{structspi__controller_a49fe01672d19b42c0a3f8060db9d0999}\label{structspi__controller_a49fe01672d19b42c0a3f8060db9d0999} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries add\+\_\+lock}
+\item 
+\Hypertarget{structspi__controller_a39f8e88d3d963dec963ae449d4cf3203}\label{structspi__controller_a39f8e88d3d963dec963ae449d4cf3203} 
+spinlock\+\_\+t {\bfseries bus\+\_\+lock\+\_\+spinlock}
+\item 
+\Hypertarget{structspi__controller_a9d28a76e495dcb485fcc6326d5b8ca15}\label{structspi__controller_a9d28a76e495dcb485fcc6326d5b8ca15} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries bus\+\_\+lock\+\_\+mutex}
+\item 
+\Hypertarget{structspi__controller_a8207208ef2a2488c2bef995b2ef3441f}\label{structspi__controller_a8207208ef2a2488c2bef995b2ef3441f} 
+bool {\bfseries bus\+\_\+lock\+\_\+flag}
+\item 
+\Hypertarget{structspi__controller_a51bd3c4d083f2b982b91bc52728aaaa0}\label{structspi__controller_a51bd3c4d083f2b982b91bc52728aaaa0} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setup} )(struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a3f1b110935e627f73c1fbd46bc41881a}\label{structspi__controller_a3f1b110935e627f73c1fbd46bc41881a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+cs\+\_\+timing} )(struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_ade605cfd85a809c41c9161c04b2d06f1}\label{structspi__controller_ade605cfd85a809c41c9161c04b2d06f1} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries transfer} )(struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structspi__message}{spi\+\_\+message}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a511ef35defcfb3383a4b50eec2b74deb}\label{structspi__controller_a511ef35defcfb3383a4b50eec2b74deb} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup} )(struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a7fc4a93f7c91dd7e771904cce1be49ae}\label{structspi__controller_a7fc4a93f7c91dd7e771904cce1be49ae} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries can\+\_\+dma} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structspi__transfer}{spi\+\_\+transfer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a6e2f3f2bbf1d075d4ef0ea9acee3f675}\label{structspi__controller_a6e2f3f2bbf1d075d4ef0ea9acee3f675} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+map\+\_\+dev}
+\item 
+\Hypertarget{structspi__controller_ade1dfd161f687792454baf305a95ecd3}\label{structspi__controller_ade1dfd161f687792454baf305a95ecd3} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+\_\+rx\+\_\+dma\+\_\+dev}
+\item 
+\Hypertarget{structspi__controller_a1ad176119f86db9a00fb8d23bef45802}\label{structspi__controller_a1ad176119f86db9a00fb8d23bef45802} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+\_\+tx\+\_\+dma\+\_\+dev}
+\item 
+\Hypertarget{structspi__controller_aaf630915abb940343b0f6b41ec0cb5a5}\label{structspi__controller_aaf630915abb940343b0f6b41ec0cb5a5} 
+bool {\bfseries queued}
+\item 
+\Hypertarget{structspi__controller_acd450c66770a3f48f0e42a27f1dc8b92}\label{structspi__controller_acd450c66770a3f48f0e42a27f1dc8b92} 
+struct \doxymbox{\hyperlink{structkthread__worker}{kthread\+\_\+worker}} \texorpdfstring{$\ast$}{*} {\bfseries kworker}
+\item 
+\Hypertarget{structspi__controller_a70a36fc07ecb127a6fb15e304fc5dcf1}\label{structspi__controller_a70a36fc07ecb127a6fb15e304fc5dcf1} 
+struct \doxymbox{\hyperlink{structkthread__work}{kthread\+\_\+work}} {\bfseries pump\+\_\+messages}
+\item 
+\Hypertarget{structspi__controller_a14bde3981cf2ad062de329729358417a}\label{structspi__controller_a14bde3981cf2ad062de329729358417a} 
+spinlock\+\_\+t {\bfseries queue\+\_\+lock}
+\item 
+\Hypertarget{structspi__controller_a21125b098379f23db68823c5d28cdbbf}\label{structspi__controller_a21125b098379f23db68823c5d28cdbbf} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries queue}
+\item 
+\Hypertarget{structspi__controller_ac9e0fefb1af11c92627ef08f00517116}\label{structspi__controller_ac9e0fefb1af11c92627ef08f00517116} 
+struct \doxymbox{\hyperlink{structspi__message}{spi\+\_\+message}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+\_\+msg}
+\item 
+\Hypertarget{structspi__controller_ab569083ac1e807e42c7a87b1438abd2b}\label{structspi__controller_ab569083ac1e807e42c7a87b1438abd2b} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries cur\+\_\+msg\+\_\+completion}
+\item 
+\Hypertarget{structspi__controller_a96dee1252457f0a2a4da03439d7d8c11}\label{structspi__controller_a96dee1252457f0a2a4da03439d7d8c11} 
+bool {\bfseries cur\+\_\+msg\+\_\+incomplete}
+\item 
+\Hypertarget{structspi__controller_ad7fd5d1601ed7b2d5257f6151c322fa3}\label{structspi__controller_ad7fd5d1601ed7b2d5257f6151c322fa3} 
+bool {\bfseries cur\+\_\+msg\+\_\+need\+\_\+completion}
+\item 
+\Hypertarget{structspi__controller_a4bd00f7ecd48217c66e64b9ae57664bf}\label{structspi__controller_a4bd00f7ecd48217c66e64b9ae57664bf} 
+bool {\bfseries busy}
+\item 
+\Hypertarget{structspi__controller_ae6eaba6e914cca076db4f8bb1a74245c}\label{structspi__controller_ae6eaba6e914cca076db4f8bb1a74245c} 
+bool {\bfseries running}
+\item 
+\Hypertarget{structspi__controller_add70748fc67c01640b1528f4e127c43a}\label{structspi__controller_add70748fc67c01640b1528f4e127c43a} 
+bool {\bfseries rt}
+\item 
+\Hypertarget{structspi__controller_a2f3014c1f6252cb88537bc2fb485aecd}\label{structspi__controller_a2f3014c1f6252cb88537bc2fb485aecd} 
+bool {\bfseries auto\+\_\+runtime\+\_\+pm}
+\item 
+\Hypertarget{structspi__controller_ac703002a182281b4f60259373b515c2c}\label{structspi__controller_ac703002a182281b4f60259373b515c2c} 
+bool {\bfseries fallback}
+\item 
+\Hypertarget{structspi__controller_aae0da60b2932a6a6f7508eff01ae72f0}\label{structspi__controller_aae0da60b2932a6a6f7508eff01ae72f0} 
+bool {\bfseries last\+\_\+cs\+\_\+mode\+\_\+high}
+\item 
+\Hypertarget{structspi__controller_af284b47caac32cc8348046f9d2d1aad9}\label{structspi__controller_af284b47caac32cc8348046f9d2d1aad9} 
+s8 {\bfseries last\+\_\+cs} \+[4]\+
+\item 
+\Hypertarget{structspi__controller_a9ee9f3d624674a20c82b341560348da3}\label{structspi__controller_a9ee9f3d624674a20c82b341560348da3} 
+u32 {\bfseries last\+\_\+cs\+\_\+index\+\_\+mask}:\+ 4
+\item 
+\Hypertarget{structspi__controller_af461dd879368a8b592e142bbdcbc2ca7}\label{structspi__controller_af461dd879368a8b592e142bbdcbc2ca7} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries xfer\+\_\+completion}
+\item 
+\Hypertarget{structspi__controller_a384cd19d0c3aa8d070127881dc908a04}\label{structspi__controller_a384cd19d0c3aa8d070127881dc908a04} 
+size\+\_\+t {\bfseries max\+\_\+dma\+\_\+len}
+\item 
+\Hypertarget{structspi__controller_a4fd083918accc52fb11f83e387ea41d4}\label{structspi__controller_a4fd083918accc52fb11f83e387ea41d4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries optimize\+\_\+message} )(struct \doxymbox{\hyperlink{structspi__message}{spi\+\_\+message}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a2fdfb1e0c2ee8298c27e5b2c92b4980d}\label{structspi__controller_a2fdfb1e0c2ee8298c27e5b2c92b4980d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries unoptimize\+\_\+message} )(struct \doxymbox{\hyperlink{structspi__message}{spi\+\_\+message}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a4bcd274efd4aa114bfce6b3e3a01179a}\label{structspi__controller_a4bcd274efd4aa114bfce6b3e3a01179a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+transfer\+\_\+hardware} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a1f66d217a1dd4c9c91a9fd7ceee02a6f}\label{structspi__controller_a1f66d217a1dd4c9c91a9fd7ceee02a6f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries transfer\+\_\+one\+\_\+message} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structspi__message}{spi\+\_\+message}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_aae0ee42021700d081557b9227195d37f}\label{structspi__controller_aae0ee42021700d081557b9227195d37f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries unprepare\+\_\+transfer\+\_\+hardware} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a93ab10e3c8a9e91a52e14885322499e8}\label{structspi__controller_a93ab10e3c8a9e91a52e14885322499e8} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries prepare\+\_\+message} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structspi__message}{spi\+\_\+message}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a14e7c15e8cc6f5ab877f1689a3f06916}\label{structspi__controller_a14e7c15e8cc6f5ab877f1689a3f06916} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries unprepare\+\_\+message} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structspi__message}{spi\+\_\+message}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_acf197d73721e54420eca40b2b311b6fe}\label{structspi__controller_acf197d73721e54420eca40b2b311b6fe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries target\+\_\+abort} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a52180923fe6665d40d14c0b4f8f679ad}\label{structspi__controller_a52180923fe6665d40d14c0b4f8f679ad} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+cs} )(struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structspi__controller_a15c8dd3854461e5fab61b54f531b361c}\label{structspi__controller_a15c8dd3854461e5fab61b54f531b361c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries transfer\+\_\+one} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structspi__transfer}{spi\+\_\+transfer}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_a6a129b4a62b07a8acb872a3bbbb338cd}\label{structspi__controller_a6a129b4a62b07a8acb872a3bbbb338cd} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries handle\+\_\+err} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structspi__message}{spi\+\_\+message}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_afc43fc50a77edf80e8dccb56dc5f0943}\label{structspi__controller_afc43fc50a77edf80e8dccb56dc5f0943} 
+const struct \doxymbox{\hyperlink{structspi__controller__mem__ops}{spi\+\_\+controller\+\_\+mem\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries mem\+\_\+ops}
+\item 
+\Hypertarget{structspi__controller_aec4f9a5cca8364c89bfb196514897450}\label{structspi__controller_aec4f9a5cca8364c89bfb196514897450} 
+const struct \doxymbox{\hyperlink{structspi__controller__mem__caps}{spi\+\_\+controller\+\_\+mem\+\_\+caps}} \texorpdfstring{$\ast$}{*} {\bfseries mem\+\_\+caps}
+\item 
+\Hypertarget{structspi__controller_a8ef35e687d6a76e74a78843d4f142f9e}\label{structspi__controller_a8ef35e687d6a76e74a78843d4f142f9e} 
+bool {\bfseries dtr\+\_\+caps}
+\item 
+\Hypertarget{structspi__controller_aa060132a19295c8fee6eb1ff11d557e2}\label{structspi__controller_aa060132a19295c8fee6eb1ff11d557e2} 
+struct \doxymbox{\hyperlink{structspi__offload}{spi\+\_\+offload}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+offload} )(struct \doxymbox{\hyperlink{structspi__device}{spi\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structspi__offload__config}{spi\+\_\+offload\+\_\+config}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_acb0584a5d2811f9cbdc74e2edfba593d}\label{structspi__controller_acb0584a5d2811f9cbdc74e2edfba593d} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries put\+\_\+offload} )(struct \doxymbox{\hyperlink{structspi__offload}{spi\+\_\+offload}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structspi__controller_ac925e0ed2bf4312aafc5448adf334f08}\label{structspi__controller_ac925e0ed2bf4312aafc5448adf334f08} 
+struct \doxymbox{\hyperlink{structgpio__desc}{gpio\+\_\+desc}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries cs\+\_\+gpiods}
+\item 
+\Hypertarget{structspi__controller_a300f3f4feb3af740ee053c95583ae723}\label{structspi__controller_a300f3f4feb3af740ee053c95583ae723} 
+bool {\bfseries use\+\_\+gpio\+\_\+descriptors}
+\item 
+\Hypertarget{structspi__controller_a2b5f0da3940f054d8701b56a77f10dfb}\label{structspi__controller_a2b5f0da3940f054d8701b56a77f10dfb} 
+s8 {\bfseries unused\+\_\+native\+\_\+cs}
+\item 
+\Hypertarget{structspi__controller_a808e2db190c4909aed5587377df75162}\label{structspi__controller_a808e2db190c4909aed5587377df75162} 
+s8 {\bfseries max\+\_\+native\+\_\+cs}
+\item 
+\Hypertarget{structspi__controller_a452dbdf676d1c3d5d91616f4ab886f64}\label{structspi__controller_a452dbdf676d1c3d5d91616f4ab886f64} 
+struct \doxymbox{\hyperlink{structspi__statistics}{spi\+\_\+statistics}} \texorpdfstring{$\ast$}{*} {\bfseries pcpu\+\_\+statistics}
+\item 
+\Hypertarget{structspi__controller_a868be4a8a8933e733fc991c559394812}\label{structspi__controller_a868be4a8a8933e733fc991c559394812} 
+struct \doxymbox{\hyperlink{structdma__chan}{dma\+\_\+chan}} \texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+tx}
+\item 
+\Hypertarget{structspi__controller_a5d37fee99785f53b0cdc7598e7c1a7eb}\label{structspi__controller_a5d37fee99785f53b0cdc7598e7c1a7eb} 
+struct \doxymbox{\hyperlink{structdma__chan}{dma\+\_\+chan}} \texorpdfstring{$\ast$}{*} {\bfseries dma\+\_\+rx}
+\item 
+\Hypertarget{structspi__controller_a49864fd82faf4bf911cbc322a7d948e2}\label{structspi__controller_a49864fd82faf4bf911cbc322a7d948e2} 
+void \texorpdfstring{$\ast$}{*} {\bfseries dummy\+\_\+rx}
+\item 
+\Hypertarget{structspi__controller_a0e8a724654a994703531b629f068cf52}\label{structspi__controller_a0e8a724654a994703531b629f068cf52} 
+void \texorpdfstring{$\ast$}{*} {\bfseries dummy\+\_\+tx}
+\item 
+\Hypertarget{structspi__controller_a3e29f01544683635e6ff599364c94adb}\label{structspi__controller_a3e29f01544683635e6ff599364c94adb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries fw\+\_\+translate\+\_\+cs} )(struct \doxymbox{\hyperlink{structspi__controller}{spi\+\_\+controller}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structspi__controller_a31e289d6af644a3e50b173dc1e180fe2}\label{structspi__controller_a31e289d6af644a3e50b173dc1e180fe2} 
+bool {\bfseries ptp\+\_\+sts\+\_\+supported}
+\item 
+\Hypertarget{structspi__controller_a947cf5580984024371d8f84d0721010c}\label{structspi__controller_a947cf5580984024371d8f84d0721010c} 
+long unsigned int {\bfseries irq\+\_\+flags}
+\item 
+\Hypertarget{structspi__controller_a13e8d9fc923bfe08b0c9f0e39bd447fd}\label{structspi__controller_a13e8d9fc923bfe08b0c9f0e39bd447fd} 
+bool {\bfseries queue\+\_\+empty}
+\item 
+\Hypertarget{structspi__controller_a81409f3d2238bd2a39922927b262243a}\label{structspi__controller_a81409f3d2238bd2a39922927b262243a} 
+bool {\bfseries must\+\_\+async}
+\item 
+\Hypertarget{structspi__controller_acfeb010b0cb0ba47ed8fa2ad68293d0f}\label{structspi__controller_acfeb010b0cb0ba47ed8fa2ad68293d0f} 
+bool {\bfseries defer\+\_\+optimize\+\_\+message}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

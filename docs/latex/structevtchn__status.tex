@@ -1,0 +1,38 @@
+\doxysection{evtchn\+\_\+status Struct Reference}
+\hypertarget{structevtchn__status}{}\label{structevtchn__status}\index{evtchn\_status@{evtchn\_status}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structevtchn__status_ab2af6d86b1121d78bcd44a7deab22429}\label{structevtchn__status_ab2af6d86b1121d78bcd44a7deab22429} 
+domid\+\_\+t {\bfseries dom}
+\item 
+\Hypertarget{structevtchn__status_a371c715eff52f12ecc45b8c0396724a2}\label{structevtchn__status_a371c715eff52f12ecc45b8c0396724a2} 
+evtchn\+\_\+port\+\_\+t {\bfseries port}
+\item 
+\Hypertarget{structevtchn__status_a366e123cce2040e4a9c098b893647077}\label{structevtchn__status_a366e123cce2040e4a9c098b893647077} 
+uint32\+\_\+t {\bfseries status}
+\item 
+\Hypertarget{structevtchn__status_a73b3355dc9a49f0f463944c963d9c99a}\label{structevtchn__status_a73b3355dc9a49f0f463944c963d9c99a} 
+uint32\+\_\+t {\bfseries vcpu}
+\item 
+\Hypertarget{structevtchn__status_ab674f230aab81635837d2af208da10b9}\label{structevtchn__status_ab674f230aab81635837d2af208da10b9} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>domid\_t {\bfseries dom}\\
+\>\} {\bfseries unbound}\\
+\>struct \{\\
+\>\>domid\_t {\bfseries dom}\\
+\>\>evtchn\_port\_t {\bfseries port}\\
+\>\} {\bfseries interdomain}\\
+\>uint32\_t {\bfseries pirq}\\
+\>uint32\_t {\bfseries virq}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

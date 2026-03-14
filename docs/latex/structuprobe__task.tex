@@ -1,0 +1,57 @@
+\doxysection{uprobe\+\_\+task Struct Reference}
+\hypertarget{structuprobe__task}{}\label{structuprobe__task}\index{uprobe\_task@{uprobe\_task}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structuprobe__task_af286294a03359f0ca23f5a8ac03cc61f}\label{structuprobe__task_af286294a03359f0ca23f5a8ac03cc61f} 
+enum uprobe\+\_\+task\+\_\+state {\bfseries state}
+\item 
+\Hypertarget{structuprobe__task_a372e8292d68b1b03d08eb6ce108dc471}\label{structuprobe__task_a372e8292d68b1b03d08eb6ce108dc471} 
+unsigned int {\bfseries depth}
+\item 
+\Hypertarget{structuprobe__task_a77a84135a56d5db33b8785a95451bd2a}\label{structuprobe__task_a77a84135a56d5db33b8785a95451bd2a} 
+struct \doxymbox{\hyperlink{structreturn__instance}{return\+\_\+instance}} \texorpdfstring{$\ast$}{*} {\bfseries return\+\_\+instances}
+\item 
+\Hypertarget{structuprobe__task_adea7e70fdc94bb7ae8c8a560091f87bb}\label{structuprobe__task_adea7e70fdc94bb7ae8c8a560091f87bb} 
+struct \doxymbox{\hyperlink{structreturn__instance}{return\+\_\+instance}} \texorpdfstring{$\ast$}{*} {\bfseries ri\+\_\+pool}
+\item 
+\Hypertarget{structuprobe__task_a45644041d8fa2708d08f3e81aa231a7b}\label{structuprobe__task_a45644041d8fa2708d08f3e81aa231a7b} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries ri\+\_\+timer}
+\item 
+\Hypertarget{structuprobe__task_accf374dea74301567e46e3a9233249f7}\label{structuprobe__task_accf374dea74301567e46e3a9233249f7} 
+seqcount\+\_\+t {\bfseries ri\+\_\+seqcount}
+\item 
+\Hypertarget{structuprobe__task_a11b76c620aa23f547ff92ce4bca919ff}\label{structuprobe__task_a11b76c620aa23f547ff92ce4bca919ff} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionuprobe__task_1_1_0d271147323074343245156151072224033271160126044116_a0b59dcb7ce1e23f4f5ce15192c3ae049}\label{unionuprobe__task_1_1_0d271147323074343245156151072224033271160126044116_a0b59dcb7ce1e23f4f5ce15192c3ae049} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structarch__uprobe__task}{arch\_uprobe\_task}} {\bfseries autask}\\
+\>\>long unsigned int {\bfseries vaddr}\\
+\>\} \\
+\Hypertarget{unionuprobe__task_1_1_0d271147323074343245156151072224033271160126044116_ab1c6bcfd663e4fe50a398d0ca4900fa4}\label{unionuprobe__task_1_1_0d271147323074343245156151072224033271160126044116_ab1c6bcfd663e4fe50a398d0ca4900fa4} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries dup\_xol\_work}\\
+\>\>long unsigned int {\bfseries dup\_xol\_addr}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structuprobe__task_a1a9022ec3065dfedd2c30866dfd26fb0}\label{structuprobe__task_a1a9022ec3065dfedd2c30866dfd26fb0} 
+struct \doxymbox{\hyperlink{structuprobe}{uprobe}} \texorpdfstring{$\ast$}{*} {\bfseries active\+\_\+uprobe}
+\item 
+\Hypertarget{structuprobe__task_a69c553112029cd53f2ebd85bddf47b6e}\label{structuprobe__task_a69c553112029cd53f2ebd85bddf47b6e} 
+long unsigned int {\bfseries xol\+\_\+vaddr}
+\item 
+\Hypertarget{structuprobe__task_a63de1c03c79ee33fa2a7f20abd5c9041}\label{structuprobe__task_a63de1c03c79ee33fa2a7f20abd5c9041} 
+bool {\bfseries signal\+\_\+denied}
+\item 
+\Hypertarget{structuprobe__task_ae85f22ecceee9abfdc3076abeb45d6b8}\label{structuprobe__task_ae85f22ecceee9abfdc3076abeb45d6b8} 
+struct \doxymbox{\hyperlink{structarch__uprobe}{arch\+\_\+uprobe}} \texorpdfstring{$\ast$}{*} {\bfseries auprobe}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

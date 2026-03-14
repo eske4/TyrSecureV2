@@ -1,0 +1,36 @@
+\doxysection{icmphdr Struct Reference}
+\hypertarget{structicmphdr}{}\label{structicmphdr}\index{icmphdr@{icmphdr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structicmphdr_ac722860349e9d7fef49417fd9a652879}\label{structicmphdr_ac722860349e9d7fef49417fd9a652879} 
+\+\_\+\+\_\+u8 {\bfseries type}
+\item 
+\Hypertarget{structicmphdr_ac0e6ebb3ab118263b2a954b871cadb99}\label{structicmphdr_ac0e6ebb3ab118263b2a954b871cadb99} 
+\+\_\+\+\_\+u8 {\bfseries code}
+\item 
+\Hypertarget{structicmphdr_a96b0b5f3496ac4e965961df33dc3b750}\label{structicmphdr_a96b0b5f3496ac4e965961df33dc3b750} 
+\+\_\+\+\_\+sum16 {\bfseries checksum}
+\item 
+\Hypertarget{structicmphdr_a284407bf66bca19645aeae425da5d525}\label{structicmphdr_a284407bf66bca19645aeae425da5d525} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_be16 {\bfseries id}\\
+\>\>\_\_be16 {\bfseries sequence}\\
+\>\} {\bfseries echo}\\
+\>\_\_be32 {\bfseries gateway}\\
+\>struct \{\\
+\>\>\_\_be16 {\bfseries \_\_unused}\\
+\>\>\_\_be16 {\bfseries mtu}\\
+\>\} {\bfseries frag}\\
+\>\_\_u8 {\bfseries reserved} \+[4]\+\\
+\} {\bfseries un}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{pipe\+\_\+inode\+\_\+info Struct Reference}
+\hypertarget{structpipe__inode__info}{}\label{structpipe__inode__info}\index{pipe\_inode\_info@{pipe\_inode\_info}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpipe__inode__info_a0a4c5f95eb289eb1a532a979842e6648}\label{structpipe__inode__info_a0a4c5f95eb289eb1a532a979842e6648} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structpipe__inode__info_af1e20374a51016520342d11b1ecf75f1}\label{structpipe__inode__info_af1e20374a51016520342d11b1ecf75f1} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries rd\+\_\+wait}
+\item 
+\Hypertarget{structpipe__inode__info_aad6863176245908ed4f09ea3d41ef5e9}\label{structpipe__inode__info_aad6863176245908ed4f09ea3d41ef5e9} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries wr\+\_\+wait}
+\item 
+\Hypertarget{structpipe__inode__info_a2c10aa617624bd9d1d352ea0762c6fa1}\label{structpipe__inode__info_a2c10aa617624bd9d1d352ea0762c6fa1} 
+unsigned int {\bfseries max\+\_\+usage}
+\item 
+\Hypertarget{structpipe__inode__info_a67183cdcbc4fa7c76285b5d5a8c581a9}\label{structpipe__inode__info_a67183cdcbc4fa7c76285b5d5a8c581a9} 
+unsigned int {\bfseries ring\+\_\+size}
+\item 
+\Hypertarget{structpipe__inode__info_ad517f6d6ec4dac0159a928cc7b0c6c05}\label{structpipe__inode__info_ad517f6d6ec4dac0159a928cc7b0c6c05} 
+unsigned int {\bfseries nr\+\_\+accounted}
+\item 
+\Hypertarget{structpipe__inode__info_a23107b0c1c367d98f422b2912acd449a}\label{structpipe__inode__info_a23107b0c1c367d98f422b2912acd449a} 
+unsigned int {\bfseries readers}
+\item 
+\Hypertarget{structpipe__inode__info_afd04d304b1e68679da654e66e2a4d840}\label{structpipe__inode__info_afd04d304b1e68679da654e66e2a4d840} 
+unsigned int {\bfseries writers}
+\item 
+\Hypertarget{structpipe__inode__info_a8895f5e4a4f772fb8b2aef7117d221f2}\label{structpipe__inode__info_a8895f5e4a4f772fb8b2aef7117d221f2} 
+unsigned int {\bfseries files}
+\item 
+\Hypertarget{structpipe__inode__info_ad5fa8365873ff6fe7690722c47121f11}\label{structpipe__inode__info_ad5fa8365873ff6fe7690722c47121f11} 
+unsigned int {\bfseries r\+\_\+counter}
+\item 
+\Hypertarget{structpipe__inode__info_adff7f14df12b8b6003ddf65b2e255536}\label{structpipe__inode__info_adff7f14df12b8b6003ddf65b2e255536} 
+unsigned int {\bfseries w\+\_\+counter}
+\item 
+\Hypertarget{structpipe__inode__info_adb4a08e5baa502552cfdf1868e64010c}\label{structpipe__inode__info_adb4a08e5baa502552cfdf1868e64010c} 
+bool {\bfseries poll\+\_\+usage}
+\item 
+\Hypertarget{structpipe__inode__info_afd518866b95dface3e02ee5f59871fd5}\label{structpipe__inode__info_afd518866b95dface3e02ee5f59871fd5} 
+bool {\bfseries note\+\_\+loss}
+\item 
+\Hypertarget{structpipe__inode__info_ac9d1c9d7dbf8dbf249a3970efc39d42c}\label{structpipe__inode__info_ac9d1c9d7dbf8dbf249a3970efc39d42c} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*} {\bfseries tmp\+\_\+page} \+[2]\+
+\item 
+\Hypertarget{structpipe__inode__info_a6630d4e85a52a61d2229c7fff77371bc}\label{structpipe__inode__info_a6630d4e85a52a61d2229c7fff77371bc} 
+struct \doxymbox{\hyperlink{structfasync__struct}{fasync\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries fasync\+\_\+readers}
+\item 
+\Hypertarget{structpipe__inode__info_ac035428552159dd8cb4203d739c7ab85}\label{structpipe__inode__info_ac035428552159dd8cb4203d739c7ab85} 
+struct \doxymbox{\hyperlink{structfasync__struct}{fasync\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries fasync\+\_\+writers}
+\item 
+\Hypertarget{structpipe__inode__info_aae2f15618d1b0b3424adf89ed18e3a6b}\label{structpipe__inode__info_aae2f15618d1b0b3424adf89ed18e3a6b} 
+struct \doxymbox{\hyperlink{structpipe__buffer}{pipe\+\_\+buffer}} \texorpdfstring{$\ast$}{*} {\bfseries bufs}
+\item 
+\Hypertarget{structpipe__inode__info_a0c06695a4caaf2d720b26559593516fe}\label{structpipe__inode__info_a0c06695a4caaf2d720b26559593516fe} 
+struct \doxymbox{\hyperlink{structuser__struct}{user\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries user}
+\item 
+\Hypertarget{structpipe__inode__info_ab91b26ed84bca06b6dc0f07dacc32c14}\label{structpipe__inode__info_ab91b26ed84bca06b6dc0f07dacc32c14} 
+struct \doxymbox{\hyperlink{structwatch__queue}{watch\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries watch\+\_\+queue}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

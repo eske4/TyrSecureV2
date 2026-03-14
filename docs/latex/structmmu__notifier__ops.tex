@@ -1,0 +1,37 @@
+\doxysection{mmu\+\_\+notifier\+\_\+ops Struct Reference}
+\hypertarget{structmmu__notifier__ops}{}\label{structmmu__notifier__ops}\index{mmu\_notifier\_ops@{mmu\_notifier\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmmu__notifier__ops_a61a304d29a63f5ee67b20199be31bb46}\label{structmmu__notifier__ops_a61a304d29a63f5ee67b20199be31bb46} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmmu__notifier__ops_aaedba0424f798272130dd7780c199e92}\label{structmmu__notifier__ops_aaedba0424f798272130dd7780c199e92} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries clear\+\_\+flush\+\_\+young} )(struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int)
+\item 
+\Hypertarget{structmmu__notifier__ops_a892b1945e78ca64a55d9e5633286670c}\label{structmmu__notifier__ops_a892b1945e78ca64a55d9e5633286670c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries clear\+\_\+young} )(struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int)
+\item 
+\Hypertarget{structmmu__notifier__ops_a02d753203706641abee6ddaa436c0b42}\label{structmmu__notifier__ops_a02d753203706641abee6ddaa436c0b42} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries test\+\_\+young} )(struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structmmu__notifier__ops_acf0597a7944a3dec330c9bf521eab74a}\label{structmmu__notifier__ops_acf0597a7944a3dec330c9bf521eab74a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries invalidate\+\_\+range\+\_\+start} )(struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structmmu__notifier__range}{mmu\+\_\+notifier\+\_\+range}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmmu__notifier__ops_ab04619d9e37d1499b1be174658e43516}\label{structmmu__notifier__ops_ab04619d9e37d1499b1be174658e43516} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries invalidate\+\_\+range\+\_\+end} )(struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structmmu__notifier__range}{mmu\+\_\+notifier\+\_\+range}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmmu__notifier__ops_ae9faf94b40c22b48ee3f1b6f8f299bca}\label{structmmu__notifier__ops_ae9faf94b40c22b48ee3f1b6f8f299bca} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries arch\+\_\+invalidate\+\_\+secondary\+\_\+tlbs} )(struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*}, long unsigned int, long unsigned int)
+\item 
+\Hypertarget{structmmu__notifier__ops_a8121dc5d6c9938dca3a4340197b2db0f}\label{structmmu__notifier__ops_a8121dc5d6c9938dca3a4340197b2db0f} 
+struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries alloc\+\_\+notifier} )(struct \doxymbox{\hyperlink{structmm__struct}{mm\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmmu__notifier__ops_ab602819bb78d8ce0d22507b7746af64c}\label{structmmu__notifier__ops_ab602819bb78d8ce0d22507b7746af64c} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free\+\_\+notifier} )(struct \doxymbox{\hyperlink{structmmu__notifier}{mmu\+\_\+notifier}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

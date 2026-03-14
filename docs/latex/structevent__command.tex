@@ -1,0 +1,52 @@
+\doxysection{event\+\_\+command Struct Reference}
+\hypertarget{structevent__command}{}\label{structevent__command}\index{event\_command@{event\_command}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structevent__command_a5f513c2562b8880582d2d84b5e8c65f9}\label{structevent__command_a5f513c2562b8880582d2d84b5e8c65f9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structevent__command_a11b1d9583844b46a202b2d44e8ce4d5c}\label{structevent__command_a11b1d9583844b46a202b2d44e8ce4d5c} 
+char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structevent__command_a911228c07a8b72dda10f29ced1337367}\label{structevent__command_a911228c07a8b72dda10f29ced1337367} 
+enum event\+\_\+trigger\+\_\+type {\bfseries trigger\+\_\+type}
+\item 
+\Hypertarget{structevent__command_a5a9a89fc3accde5ddc68be8c4d4a67b1}\label{structevent__command_a5a9a89fc3accde5ddc68be8c4d4a67b1} 
+int {\bfseries flags}
+\item 
+\Hypertarget{structevent__command_a54e71adf6edb369027c3ca0a95427738}\label{structevent__command_a54e71adf6edb369027c3ca0a95427738} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries parse} )(struct \doxymbox{\hyperlink{structevent__command}{event\+\_\+command}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtrace__event__file}{trace\+\_\+event\+\_\+file}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevent__command_a910db9c5730ccfa375a151583d665afe}\label{structevent__command_a910db9c5730ccfa375a151583d665afe} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries reg} )(char \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structevent__trigger__data}{event\+\_\+trigger\+\_\+data}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtrace__event__file}{trace\+\_\+event\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevent__command_a48330c758e6202e0fb86bd3e8f44dcff}\label{structevent__command_a48330c758e6202e0fb86bd3e8f44dcff} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unreg} )(char \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structevent__trigger__data}{event\+\_\+trigger\+\_\+data}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtrace__event__file}{trace\+\_\+event\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevent__command_aa6f85dc01609a77a94264687594c2ab6}\label{structevent__command_aa6f85dc01609a77a94264687594c2ab6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unreg\+\_\+all} )(struct \doxymbox{\hyperlink{structtrace__event__file}{trace\+\_\+event\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevent__command_ae3997b5687157c6b51302d52aff8766b}\label{structevent__command_ae3997b5687157c6b51302d52aff8766b} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+filter} )(char \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structevent__trigger__data}{event\+\_\+trigger\+\_\+data}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtrace__event__file}{trace\+\_\+event\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevent__command_a1769d5cb9b0f8a7dbce5c7778d975115}\label{structevent__command_a1769d5cb9b0f8a7dbce5c7778d975115} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries trigger} )(struct \doxymbox{\hyperlink{structevent__trigger__data}{event\+\_\+trigger\+\_\+data}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtrace__buffer}{trace\+\_\+buffer}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structring__buffer__event}{ring\+\_\+buffer\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevent__command_a5d44cd5562651c2855550c7026e5fdc8}\label{structevent__command_a5d44cd5562651c2855550c7026e5fdc8} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries count\+\_\+func} )(struct \doxymbox{\hyperlink{structevent__trigger__data}{event\+\_\+trigger\+\_\+data}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtrace__buffer}{trace\+\_\+buffer}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structring__buffer__event}{ring\+\_\+buffer\+\_\+event}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevent__command_a10eb7afe2c065b14b0f67e8684a8bae7}\label{structevent__command_a10eb7afe2c065b14b0f67e8684a8bae7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structevent__trigger__data}{event\+\_\+trigger\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevent__command_a18767c450f24d9caf1026c80c9aaf17f}\label{structevent__command_a18767c450f24d9caf1026c80c9aaf17f} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries free} )(struct \doxymbox{\hyperlink{structevent__trigger__data}{event\+\_\+trigger\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structevent__command_aa49dc9af44e8e27679f67289419cea9d}\label{structevent__command_aa49dc9af44e8e27679f67289419cea9d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries print} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structevent__trigger__data}{event\+\_\+trigger\+\_\+data}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,157 @@
+\doxysection{ata\+\_\+device Struct Reference}
+\hypertarget{structata__device}{}\label{structata__device}\index{ata\_device@{ata\_device}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structata__device_aabc7677f2313347c888f09cbee9c49eb}\label{structata__device_aabc7677f2313347c888f09cbee9c49eb} 
+struct \doxymbox{\hyperlink{structata__link}{ata\+\_\+link}} \texorpdfstring{$\ast$}{*} {\bfseries link}
+\item 
+\Hypertarget{structata__device_a01abd789c93f03ec9dee0d54ff43fa58}\label{structata__device_a01abd789c93f03ec9dee0d54ff43fa58} 
+unsigned int {\bfseries devno}
+\item 
+\Hypertarget{structata__device_af8698bd8923c3c0cdc5ef88adb5bf380}\label{structata__device_af8698bd8923c3c0cdc5ef88adb5bf380} 
+unsigned int {\bfseries quirks}
+\item 
+\Hypertarget{structata__device_a8af6820259f345ea2107e39fbce3f420}\label{structata__device_a8af6820259f345ea2107e39fbce3f420} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structata__device_aaf02f58e40a55fb56290601da85e8f8a}\label{structata__device_aaf02f58e40a55fb56290601da85e8f8a} 
+struct \doxymbox{\hyperlink{structscsi__device}{scsi\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries sdev}
+\item 
+\Hypertarget{structata__device_a9e303c4b7a4b04f8e6e9b17ebcff0b75}\label{structata__device_a9e303c4b7a4b04f8e6e9b17ebcff0b75} 
+void \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+data}
+\item 
+\Hypertarget{structata__device_ad465ee95f929e997414b9e4e03e3eabb}\label{structata__device_ad465ee95f929e997414b9e4e03e3eabb} 
+union \doxymbox{\hyperlink{unionacpi__object}{acpi\+\_\+object}} \texorpdfstring{$\ast$}{*} {\bfseries gtf\+\_\+cache}
+\item 
+\Hypertarget{structata__device_a124a608d584ff67662796a79baa13ecd}\label{structata__device_a124a608d584ff67662796a79baa13ecd} 
+unsigned int {\bfseries gtf\+\_\+filter}
+\item 
+\Hypertarget{structata__device_a74bb21bcd231467e589477cb06fde959}\label{structata__device_a74bb21bcd231467e589477cb06fde959} 
+void \texorpdfstring{$\ast$}{*} {\bfseries zpodd}
+\item 
+\Hypertarget{structata__device_a0bad7ece6af2597bda144bc39b74aadf}\label{structata__device_a0bad7ece6af2597bda144bc39b74aadf} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries tdev}
+\item 
+\Hypertarget{structata__device_a105049fa0544406382401c3f9c22e4d2}\label{structata__device_a105049fa0544406382401c3f9c22e4d2} 
+u64 {\bfseries n\+\_\+sectors}
+\item 
+\Hypertarget{structata__device_ac36360c791635b294b3241e3d8dc96cb}\label{structata__device_ac36360c791635b294b3241e3d8dc96cb} 
+u64 {\bfseries n\+\_\+native\+\_\+sectors}
+\item 
+\Hypertarget{structata__device_a7e0cffc5b9ca2b60b76264ef000b06f4}\label{structata__device_a7e0cffc5b9ca2b60b76264ef000b06f4} 
+unsigned int {\bfseries class}
+\item 
+\Hypertarget{structata__device_a0980a305781ccadd17540b173c0a6486}\label{structata__device_a0980a305781ccadd17540b173c0a6486} 
+long unsigned int {\bfseries unpark\+\_\+deadline}
+\item 
+\Hypertarget{structata__device_a8a701010de991a613fd0ccc5b6a8cead}\label{structata__device_a8a701010de991a613fd0ccc5b6a8cead} 
+u8 {\bfseries pio\+\_\+mode}
+\item 
+\Hypertarget{structata__device_ae518b2a4b05c4a603a9f4162f13cdec9}\label{structata__device_ae518b2a4b05c4a603a9f4162f13cdec9} 
+u8 {\bfseries dma\+\_\+mode}
+\item 
+\Hypertarget{structata__device_aef6e78299ebc5fd8f32cf3a7ee850766}\label{structata__device_aef6e78299ebc5fd8f32cf3a7ee850766} 
+u8 {\bfseries xfer\+\_\+mode}
+\item 
+\Hypertarget{structata__device_afb80f5135e85a21dd79283fbe80ad2c5}\label{structata__device_afb80f5135e85a21dd79283fbe80ad2c5} 
+unsigned int {\bfseries xfer\+\_\+shift}
+\item 
+\Hypertarget{structata__device_a88e927f99ab58b238b474d0f374b5e8b}\label{structata__device_a88e927f99ab58b238b474d0f374b5e8b} 
+unsigned int {\bfseries multi\+\_\+count}
+\item 
+\Hypertarget{structata__device_aacb4289158e6ab2a4e70b9dc3da28c85}\label{structata__device_aacb4289158e6ab2a4e70b9dc3da28c85} 
+unsigned int {\bfseries max\+\_\+sectors}
+\item 
+\Hypertarget{structata__device_af5b6845fa0ab81fa3313d5ef5bbd2351}\label{structata__device_af5b6845fa0ab81fa3313d5ef5bbd2351} 
+unsigned int {\bfseries cdb\+\_\+len}
+\item 
+\Hypertarget{structata__device_a38d5bddb0a2b9a44d13aca32ffc45ae3}\label{structata__device_a38d5bddb0a2b9a44d13aca32ffc45ae3} 
+unsigned int {\bfseries pio\+\_\+mask}
+\item 
+\Hypertarget{structata__device_a20f43c5ef7237da1a1b83e5fc5005d6b}\label{structata__device_a20f43c5ef7237da1a1b83e5fc5005d6b} 
+unsigned int {\bfseries mwdma\+\_\+mask}
+\item 
+\Hypertarget{structata__device_a7fdf14583fc17275683a2dfa204a13eb}\label{structata__device_a7fdf14583fc17275683a2dfa204a13eb} 
+unsigned int {\bfseries udma\+\_\+mask}
+\item 
+\Hypertarget{structata__device_ab1ddf12de48441bfd8f9db586ce5b086}\label{structata__device_ab1ddf12de48441bfd8f9db586ce5b086} 
+u16 {\bfseries cylinders}
+\item 
+\Hypertarget{structata__device_afae30a791c31120b0235c252bc3e1a41}\label{structata__device_afae30a791c31120b0235c252bc3e1a41} 
+u16 {\bfseries heads}
+\item 
+\Hypertarget{structata__device_a5e3fd2885571e70fc8d6018d437d80a3}\label{structata__device_a5e3fd2885571e70fc8d6018d437d80a3} 
+u16 {\bfseries sectors}
+\item 
+\Hypertarget{structata__device_a02a967b01cb718403f26925756c94887}\label{structata__device_a02a967b01cb718403f26925756c94887} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u16 {\bfseries id} \+[256]\+\\
+\>u32 {\bfseries gscr} \+[128]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structata__device_aed466ce1290e660cba6e76aab033b901}\label{structata__device_aed466ce1290e660cba6e76aab033b901} 
+u8 {\bfseries gp\+\_\+log\+\_\+dir} \+[512]\+
+\item 
+\Hypertarget{structata__device_a158af8673a94a141d2dbbbdeb0bb9741}\label{structata__device_a158af8673a94a141d2dbbbdeb0bb9741} 
+u8 {\bfseries devslp\+\_\+timing} \+[8]\+
+\item 
+\Hypertarget{structata__device_ae7de25b9c486dbae89a0ec871d80034d}\label{structata__device_ae7de25b9c486dbae89a0ec871d80034d} 
+u8 {\bfseries ncq\+\_\+send\+\_\+recv\+\_\+cmds} \+[20]\+
+\item 
+\Hypertarget{structata__device_a35f2436926f63f55db550df4dd21620c}\label{structata__device_a35f2436926f63f55db550df4dd21620c} 
+u8 {\bfseries ncq\+\_\+non\+\_\+data\+\_\+cmds} \+[64]\+
+\item 
+\Hypertarget{structata__device_abf7704ad4dd2531aa8a1d87cc940eb09}\label{structata__device_abf7704ad4dd2531aa8a1d87cc940eb09} 
+u32 {\bfseries zac\+\_\+zoned\+\_\+cap}
+\item 
+\Hypertarget{structata__device_a17726b5e197a13c09182ca2da6657114}\label{structata__device_a17726b5e197a13c09182ca2da6657114} 
+u32 {\bfseries zac\+\_\+zones\+\_\+optimal\+\_\+open}
+\item 
+\Hypertarget{structata__device_a8b9375e4004ef8b9e821c4aa3e352b45}\label{structata__device_a8b9375e4004ef8b9e821c4aa3e352b45} 
+u32 {\bfseries zac\+\_\+zones\+\_\+optimal\+\_\+nonseq}
+\item 
+\Hypertarget{structata__device_acd02d30f828f77515d5dcb88f0d37278}\label{structata__device_acd02d30f828f77515d5dcb88f0d37278} 
+u32 {\bfseries zac\+\_\+zones\+\_\+max\+\_\+open}
+\item 
+\Hypertarget{structata__device_a33f66b355da1c3ca773b69cf9d659e36}\label{structata__device_a33f66b355da1c3ca773b69cf9d659e36} 
+struct \doxymbox{\hyperlink{structata__cpr__log}{ata\+\_\+cpr\+\_\+log}} \texorpdfstring{$\ast$}{*} {\bfseries cpr\+\_\+log}
+\item 
+\Hypertarget{structata__device_a767b640f8a8ae406937a8f79225e3021}\label{structata__device_a767b640f8a8ae406937a8f79225e3021} 
+struct \doxymbox{\hyperlink{structata__cdl}{ata\+\_\+cdl}} \texorpdfstring{$\ast$}{*} {\bfseries cdl}
+\item 
+\Hypertarget{structata__device_a54dda1ff39c0764d0b9d31bed06ee7b5}\label{structata__device_a54dda1ff39c0764d0b9d31bed06ee7b5} 
+int {\bfseries spdn\+\_\+cnt}
+\item 
+\Hypertarget{structata__device_abd6b2874dc1f1b3d00ffbaeb6d9628e5}\label{structata__device_abd6b2874dc1f1b3d00ffbaeb6d9628e5} 
+struct \doxymbox{\hyperlink{structata__ering}{ata\+\_\+ering}} {\bfseries ering}
+\item 
+\Hypertarget{structata__device_ad48fc008129902d5c6eb5eb353123ba3}\label{structata__device_ad48fc008129902d5c6eb5eb353123ba3} 
+long :\+ 64
+\item 
+\Hypertarget{structata__device_a7a3d93587bbe9772985652815ed4ec00}\label{structata__device_a7a3d93587bbe9772985652815ed4ec00} 
+long :\+ 64
+\item 
+\Hypertarget{structata__device_aa60bcf2d639fa3733e88bf598c7acad8}\label{structata__device_aa60bcf2d639fa3733e88bf598c7acad8} 
+long :\+ 64
+\item 
+\Hypertarget{structata__device_ab2e434d1e483a33d2385cd8a839bc93b}\label{structata__device_ab2e434d1e483a33d2385cd8a839bc93b} 
+long :\+ 64
+\item 
+\Hypertarget{structata__device_a9f84f6a4fcdede51ecb340b9cdac4ca0}\label{structata__device_a9f84f6a4fcdede51ecb340b9cdac4ca0} 
+long :\+ 64
+\item 
+\Hypertarget{structata__device_a3f77c69d614660c3d34d28a8e5f3944b}\label{structata__device_a3f77c69d614660c3d34d28a8e5f3944b} 
+long :\+ 64
+\item 
+\Hypertarget{structata__device_a538423a2b15d652d7d3063fdb7c1c690}\label{structata__device_a538423a2b15d652d7d3063fdb7c1c690} 
+u8 {\bfseries sector\+\_\+buf} \+[512]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

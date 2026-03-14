@@ -1,0 +1,411 @@
+\doxysection{bpf\+\_\+attr Union Reference}
+\hypertarget{unionbpf__attr}{}\label{unionbpf__attr}\index{bpf\_attr@{bpf\_attr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{unionbpf__attr_afef91147cc9e2b13a649b67e5d98a3a6}\label{unionbpf__attr_afef91147cc9e2b13a649b67e5d98a3a6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries map\_type}\\
+\>\_\_u32 {\bfseries key\_size}\\
+\>\_\_u32 {\bfseries value\_size}\\
+\>\_\_u32 {\bfseries max\_entries}\\
+\>\_\_u32 {\bfseries map\_flags}\\
+\>\_\_u32 {\bfseries inner\_map\_fd}\\
+\>\_\_u32 {\bfseries numa\_node}\\
+\>char {\bfseries map\_name} \+[16]\+\\
+\>\_\_u32 {\bfseries map\_ifindex}\\
+\>\_\_u32 {\bfseries btf\_fd}\\
+\>\_\_u32 {\bfseries btf\_key\_type\_id}\\
+\>\_\_u32 {\bfseries btf\_value\_type\_id}\\
+\>\_\_u32 {\bfseries btf\_vmlinux\_value\_type\_id}\\
+\>\_\_u64 {\bfseries map\_extra}\\
+\>\_\_s32 {\bfseries value\_type\_btf\_obj\_fd}\\
+\>\_\_s32 {\bfseries map\_token\_fd}\\
+\>\_\_u64 {\bfseries excl\_prog\_hash}\\
+\>\_\_u32 {\bfseries excl\_prog\_hash\_size}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a10231abd7cacc9adad18620fd2dfa98a}\label{unionbpf__attr_a10231abd7cacc9adad18620fd2dfa98a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries map\_fd}\\
+\>\_\_u64 {\bfseries key}\\
+\Hypertarget{structbpf__attr_1_1_0d220303335027277343035206005233174376021212317366_a4aa7714b09e7f569a071911a53b7e288}\label{structbpf__attr_1_1_0d220303335027277343035206005233174376021212317366_a4aa7714b09e7f569a071911a53b7e288} 
+\>union \{\\
+\>\>\_\_u64 {\bfseries value}\\
+\>\>\_\_u64 {\bfseries next\_key}\\
+\>\} \\
+\>\_\_u64 {\bfseries flags}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_ac6c8dbec22cad586550ad08ff1404d2c}\label{unionbpf__attr_ac6c8dbec22cad586550ad08ff1404d2c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u64 {\bfseries in\_batch}\\
+\>\_\_u64 {\bfseries out\_batch}\\
+\>\_\_u64 {\bfseries keys}\\
+\>\_\_u64 {\bfseries values}\\
+\>\_\_u32 {\bfseries count}\\
+\>\_\_u32 {\bfseries map\_fd}\\
+\>\_\_u64 {\bfseries elem\_flags}\\
+\>\_\_u64 {\bfseries flags}\\
+\} {\bfseries batch}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a8571a616362d6fc5cce27726646d8ed1}\label{unionbpf__attr_a8571a616362d6fc5cce27726646d8ed1} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries prog\_type}\\
+\>\_\_u32 {\bfseries insn\_cnt}\\
+\>\_\_u64 {\bfseries insns}\\
+\>\_\_u64 {\bfseries license}\\
+\>\_\_u32 {\bfseries log\_level}\\
+\>\_\_u32 {\bfseries log\_size}\\
+\>\_\_u64 {\bfseries log\_buf}\\
+\>\_\_u32 {\bfseries kern\_version}\\
+\>\_\_u32 {\bfseries prog\_flags}\\
+\>char {\bfseries prog\_name} \+[16]\+\\
+\>\_\_u32 {\bfseries prog\_ifindex}\\
+\>\_\_u32 {\bfseries expected\_attach\_type}\\
+\>\_\_u32 {\bfseries prog\_btf\_fd}\\
+\>\_\_u32 {\bfseries func\_info\_rec\_size}\\
+\>\_\_u64 {\bfseries func\_info}\\
+\>\_\_u32 {\bfseries func\_info\_cnt}\\
+\>\_\_u32 {\bfseries line\_info\_rec\_size}\\
+\>\_\_u64 {\bfseries line\_info}\\
+\>\_\_u32 {\bfseries line\_info\_cnt}\\
+\>\_\_u32 {\bfseries attach\_btf\_id}\\
+\Hypertarget{structbpf__attr_1_1_0d060356351100230304057072034116343036206234262034_abb63dde6c3c3c2fe661800b0a10b67eb}\label{structbpf__attr_1_1_0d060356351100230304057072034116343036206234262034_abb63dde6c3c3c2fe661800b0a10b67eb} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries attach\_prog\_fd}\\
+\>\>\_\_u32 {\bfseries attach\_btf\_obj\_fd}\\
+\>\} \\
+\>\_\_u32 {\bfseries core\_relo\_cnt}\\
+\>\_\_u64 {\bfseries fd\_array}\\
+\>\_\_u64 {\bfseries core\_relos}\\
+\>\_\_u32 {\bfseries core\_relo\_rec\_size}\\
+\>\_\_u32 {\bfseries log\_true\_size}\\
+\>\_\_s32 {\bfseries prog\_token\_fd}\\
+\>\_\_u32 {\bfseries fd\_array\_cnt}\\
+\>\_\_u64 {\bfseries signature}\\
+\>\_\_u32 {\bfseries signature\_size}\\
+\>\_\_s32 {\bfseries keyring\_id}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a54decab6c1bf35ac37864cb52dac5f33}\label{unionbpf__attr_a54decab6c1bf35ac37864cb52dac5f33} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u64 {\bfseries pathname}\\
+\>\_\_u32 {\bfseries bpf\_fd}\\
+\>\_\_u32 {\bfseries file\_flags}\\
+\>\_\_s32 {\bfseries path\_fd}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a494f6a25fa0470fb8765bb460bd8ba3c}\label{unionbpf__attr_a494f6a25fa0470fb8765bb460bd8ba3c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structbpf__attr_1_1_0d262054306165320264341373025250132022235025272327_a0536ff96cd69fc8b2bba2d2f2234ecff}\label{structbpf__attr_1_1_0d262054306165320264341373025250132022235025272327_a0536ff96cd69fc8b2bba2d2f2234ecff} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries target\_fd}\\
+\>\>\_\_u32 {\bfseries target\_ifindex}\\
+\>\} \\
+\>\_\_u32 {\bfseries attach\_bpf\_fd}\\
+\>\_\_u32 {\bfseries attach\_type}\\
+\>\_\_u32 {\bfseries attach\_flags}\\
+\>\_\_u32 {\bfseries replace\_bpf\_fd}\\
+\Hypertarget{structbpf__attr_1_1_0d262054306165320264341373025250132022235025272327_a6620f38b88123480776f167c70270f09}\label{structbpf__attr_1_1_0d262054306165320264341373025250132022235025272327_a6620f38b88123480776f167c70270f09} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries relative\_fd}\\
+\>\>\_\_u32 {\bfseries relative\_id}\\
+\>\} \\
+\>\_\_u64 {\bfseries expected\_revision}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_ac388e6e4a74b426061a2d49291282827}\label{unionbpf__attr_ac388e6e4a74b426061a2d49291282827} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries prog\_fd}\\
+\>\_\_u32 {\bfseries retval}\\
+\>\_\_u32 {\bfseries data\_size\_in}\\
+\>\_\_u32 {\bfseries data\_size\_out}\\
+\>\_\_u64 {\bfseries data\_in}\\
+\>\_\_u64 {\bfseries data\_out}\\
+\>\_\_u32 {\bfseries repeat}\\
+\>\_\_u32 {\bfseries duration}\\
+\>\_\_u32 {\bfseries ctx\_size\_in}\\
+\>\_\_u32 {\bfseries ctx\_size\_out}\\
+\>\_\_u64 {\bfseries ctx\_in}\\
+\>\_\_u64 {\bfseries ctx\_out}\\
+\>\_\_u32 {\bfseries flags}\\
+\>\_\_u32 {\bfseries cpu}\\
+\>\_\_u32 {\bfseries batch\_size}\\
+\} {\bfseries test}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a90830bfbb1ed81f1c4833e6ff7b3fc51}\label{unionbpf__attr_a90830bfbb1ed81f1c4833e6ff7b3fc51} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structbpf__attr_1_1_0d124174101103332060356223227200255054005204263213_afd401834279492414607dbe7ed41c070}\label{structbpf__attr_1_1_0d124174101103332060356223227200255054005204263213_afd401834279492414607dbe7ed41c070} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries start\_id}\\
+\>\>\_\_u32 {\bfseries prog\_id}\\
+\>\>\_\_u32 {\bfseries map\_id}\\
+\>\>\_\_u32 {\bfseries btf\_id}\\
+\>\>\_\_u32 {\bfseries link\_id}\\
+\>\} \\
+\>\_\_u32 {\bfseries next\_id}\\
+\>\_\_u32 {\bfseries open\_flags}\\
+\>\_\_s32 {\bfseries fd\_by\_id\_token\_fd}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a204fe7e249395f1a1c8636b15904d6fc}\label{unionbpf__attr_a204fe7e249395f1a1c8636b15904d6fc} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries bpf\_fd}\\
+\>\_\_u32 {\bfseries info\_len}\\
+\>\_\_u64 {\bfseries info}\\
+\} {\bfseries info}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a05217b7de17456d14f75de79166617bb}\label{unionbpf__attr_a05217b7de17456d14f75de79166617bb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structbpf__attr_1_1_0d374044225145207334372215114165036042071221021144_a2086467dd62b5c577347464108d85949}\label{structbpf__attr_1_1_0d374044225145207334372215114165036042071221021144_a2086467dd62b5c577347464108d85949} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries target\_fd}\\
+\>\>\_\_u32 {\bfseries target\_ifindex}\\
+\>\} \\
+\>\_\_u32 {\bfseries attach\_type}\\
+\>\_\_u32 {\bfseries query\_flags}\\
+\>\_\_u32 {\bfseries attach\_flags}\\
+\>\_\_u64 {\bfseries prog\_ids}\\
+\Hypertarget{structbpf__attr_1_1_0d374044225145207334372215114165036042071221021144_a5cbbf3744e20149e5274c7d1185c3813}\label{structbpf__attr_1_1_0d374044225145207334372215114165036042071221021144_a5cbbf3744e20149e5274c7d1185c3813} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries prog\_cnt}\\
+\>\>\_\_u32 {\bfseries count}\\
+\>\} \\
+\>\_\_u64 {\bfseries prog\_attach\_flags}\\
+\>\_\_u64 {\bfseries link\_ids}\\
+\>\_\_u64 {\bfseries link\_attach\_flags}\\
+\>\_\_u64 {\bfseries revision}\\
+\} {\bfseries query}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a89312a8a4e826d11e41c8e6cbb9efb2b}\label{unionbpf__attr_a89312a8a4e826d11e41c8e6cbb9efb2b} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u64 {\bfseries name}\\
+\>\_\_u32 {\bfseries prog\_fd}\\
+\>\_\_u64 {\bfseries cookie}\\
+\} {\bfseries raw\_tracepoint}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_aa809b54e0972b6b62e19375af4011d5c}\label{unionbpf__attr_aa809b54e0972b6b62e19375af4011d5c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u64 {\bfseries btf}\\
+\>\_\_u64 {\bfseries btf\_log\_buf}\\
+\>\_\_u32 {\bfseries btf\_size}\\
+\>\_\_u32 {\bfseries btf\_log\_size}\\
+\>\_\_u32 {\bfseries btf\_log\_level}\\
+\>\_\_u32 {\bfseries btf\_log\_true\_size}\\
+\>\_\_u32 {\bfseries btf\_flags}\\
+\>\_\_s32 {\bfseries btf\_token\_fd}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_ac9011ae5b51334cef5c164ca77ee2a1e}\label{unionbpf__attr_ac9011ae5b51334cef5c164ca77ee2a1e} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries pid}\\
+\>\_\_u32 {\bfseries fd}\\
+\>\_\_u32 {\bfseries flags}\\
+\>\_\_u32 {\bfseries buf\_len}\\
+\>\_\_u64 {\bfseries buf}\\
+\>\_\_u32 {\bfseries prog\_id}\\
+\>\_\_u32 {\bfseries fd\_type}\\
+\>\_\_u64 {\bfseries probe\_offset}\\
+\>\_\_u64 {\bfseries probe\_addr}\\
+\} {\bfseries task\_fd\_query}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_aa92ac76cd8f6f46265ffd1940450f8be}\label{unionbpf__attr_aa92ac76cd8f6f46265ffd1940450f8be} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\Hypertarget{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_acf844fa71e74fcbe3e8683ac756b7329}\label{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_acf844fa71e74fcbe3e8683ac756b7329} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries prog\_fd}\\
+\>\>\_\_u32 {\bfseries map\_fd}\\
+\>\} \\
+\Hypertarget{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_a273a7770ae7dcc131d77e950707ecf95}\label{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_a273a7770ae7dcc131d77e950707ecf95} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries target\_fd}\\
+\>\>\_\_u32 {\bfseries target\_ifindex}\\
+\>\} \\
+\>\_\_u32 {\bfseries attach\_type}\\
+\>\_\_u32 {\bfseries flags}\\
+\Hypertarget{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_a2fd10410ff1ccec5ea33e92c8c8ade2a}\label{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_a2fd10410ff1ccec5ea33e92c8c8ade2a} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries target\_btf\_id}\\
+\Hypertarget{unionbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_1_1_0d147066274304316013225021147357022211010131351026_a14824da7018e7271ec0df5a5a0f327f1}\label{unionbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_1_1_0d147066274304316013225021147357022211010131351026_a14824da7018e7271ec0df5a5a0f327f1} 
+\>\>struct \{\\
+\>\>\>\_\_u64 {\bfseries iter\_info}\\
+\>\>\>\_\_u32 {\bfseries iter\_info\_len}\\
+\>\>\} \\
+\>\>struct \{\\
+\>\>\>\_\_u64 {\bfseries bpf\_cookie}\\
+\>\>\} {\bfseries perf\_event}\\
+\>\>struct \{\\
+\>\>\>\_\_u32 {\bfseries flags}\\
+\>\>\>\_\_u32 {\bfseries cnt}\\
+\>\>\>\_\_u64 {\bfseries syms}\\
+\>\>\>\_\_u64 {\bfseries addrs}\\
+\>\>\>\_\_u64 {\bfseries cookies}\\
+\>\>\} {\bfseries kprobe\_multi}\\
+\>\>struct \{\\
+\>\>\>\_\_u32 {\bfseries target\_btf\_id}\\
+\>\>\>\_\_u64 {\bfseries cookie}\\
+\>\>\} {\bfseries tracing}\\
+\>\>struct \{\\
+\>\>\>\_\_u32 {\bfseries pf}\\
+\>\>\>\_\_u32 {\bfseries hooknum}\\
+\>\>\>\_\_s32 {\bfseries priority}\\
+\>\>\>\_\_u32 {\bfseries flags}\\
+\>\>\} {\bfseries netfilter}\\
+\>\>struct \{\\
+\Hypertarget{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_1_1_0d147066274304316013261a4b10d1e76efcf19fb35812eb9b039_a15e59ef3b3825d503fca7133e4eb5bfb}\label{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_1_1_0d147066274304316013261a4b10d1e76efcf19fb35812eb9b039_a15e59ef3b3825d503fca7133e4eb5bfb} 
+\>\>\>union \{\\
+\>\>\>\>\_\_u32 {\bfseries relative\_fd}\\
+\>\>\>\>\_\_u32 {\bfseries relative\_id}\\
+\>\>\>\} \\
+\>\>\>\_\_u64 {\bfseries expected\_revision}\\
+\>\>\} {\bfseries tcx}\\
+\>\>struct \{\\
+\>\>\>\_\_u64 {\bfseries path}\\
+\>\>\>\_\_u64 {\bfseries offsets}\\
+\>\>\>\_\_u64 {\bfseries ref\_ctr\_offsets}\\
+\>\>\>\_\_u64 {\bfseries cookies}\\
+\>\>\>\_\_u32 {\bfseries cnt}\\
+\>\>\>\_\_u32 {\bfseries flags}\\
+\>\>\>\_\_u32 {\bfseries pid}\\
+\>\>\} {\bfseries uprobe\_multi}\\
+\>\>struct \{\\
+\Hypertarget{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_1_1_0d14706627430431601329231606764080ffce099b17c8a9898e1_a6fd252e7b06d341d618438572846eacc}\label{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_1_1_0d14706627430431601329231606764080ffce099b17c8a9898e1_a6fd252e7b06d341d618438572846eacc} 
+\>\>\>union \{\\
+\>\>\>\>\_\_u32 {\bfseries relative\_fd}\\
+\>\>\>\>\_\_u32 {\bfseries relative\_id}\\
+\>\>\>\} \\
+\>\>\>\_\_u64 {\bfseries expected\_revision}\\
+\>\>\} {\bfseries netkit}\\
+\>\>struct \{\\
+\Hypertarget{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_1_1_0d1470662743043160132c7e6db6bbdfecafc2f3577f46203baca_a63f68245811de451add2f3d75de0b58b}\label{structbpf__attr_1_1_0d017076004277200254207034047221235137274317012152_1_1_0d1470662743043160132c7e6db6bbdfecafc2f3577f46203baca_a63f68245811de451add2f3d75de0b58b} 
+\>\>\>union \{\\
+\>\>\>\>\_\_u32 {\bfseries relative\_fd}\\
+\>\>\>\>\_\_u32 {\bfseries relative\_id}\\
+\>\>\>\} \\
+\>\>\>\_\_u64 {\bfseries expected\_revision}\\
+\>\>\} {\bfseries cgroup}\\
+\>\} \\
+\} {\bfseries link\_create}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_af06f02c61bffd0bbf59bf829a6e6f714}\label{unionbpf__attr_af06f02c61bffd0bbf59bf829a6e6f714} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries link\_fd}\\
+\Hypertarget{structbpf__attr_1_1_0d220347013155373120164357214025115217004052353120_a149045bfe94b5b4b4e23fbe75d9f4a60}\label{structbpf__attr_1_1_0d220347013155373120164357214025115217004052353120_a149045bfe94b5b4b4e23fbe75d9f4a60} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries new\_prog\_fd}\\
+\>\>\_\_u32 {\bfseries new\_map\_fd}\\
+\>\} \\
+\>\_\_u32 {\bfseries flags}\\
+\Hypertarget{structbpf__attr_1_1_0d220347013155373120164357214025115217004052353120_a34031f595e62365cb2758ddcccb89d1f}\label{structbpf__attr_1_1_0d220347013155373120164357214025115217004052353120_a34031f595e62365cb2758ddcccb89d1f} 
+\>union \{\\
+\>\>\_\_u32 {\bfseries old\_prog\_fd}\\
+\>\>\_\_u32 {\bfseries old\_map\_fd}\\
+\>\} \\
+\} {\bfseries link\_update}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a4fa7d3018f5f5057684fe0c1e6d0516f}\label{unionbpf__attr_a4fa7d3018f5f5057684fe0c1e6d0516f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries link\_fd}\\
+\} {\bfseries link\_detach}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a62ea2941fc543c9d64175048e400e717}\label{unionbpf__attr_a62ea2941fc543c9d64175048e400e717} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries type}\\
+\} {\bfseries enable\_stats}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_ad336c1268a5b6f185b81da0160567645}\label{unionbpf__attr_ad336c1268a5b6f185b81da0160567645} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries link\_fd}\\
+\>\_\_u32 {\bfseries flags}\\
+\} {\bfseries iter\_create}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_a2c096fbc7ae7236d34c296f90852c88f}\label{unionbpf__attr_a2c096fbc7ae7236d34c296f90852c88f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries prog\_fd}\\
+\>\_\_u32 {\bfseries map\_fd}\\
+\>\_\_u32 {\bfseries flags}\\
+\} {\bfseries prog\_bind\_map}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_ad5abb543c184a1f1e2cdf4638925313c}\label{unionbpf__attr_ad5abb543c184a1f1e2cdf4638925313c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u32 {\bfseries flags}\\
+\>\_\_u32 {\bfseries bpffs\_fd}\\
+\} {\bfseries token\_create}\\
+
+\end{tabbing}\item 
+\Hypertarget{unionbpf__attr_ad9423e74fb4825bf027ae3fc0d268f6d}\label{unionbpf__attr_ad9423e74fb4825bf027ae3fc0d268f6d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u64 {\bfseries stream\_buf}\\
+\>\_\_u32 {\bfseries stream\_buf\_len}\\
+\>\_\_u32 {\bfseries stream\_id}\\
+\>\_\_u32 {\bfseries prog\_fd}\\
+\} {\bfseries prog\_stream\_read}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

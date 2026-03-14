@@ -1,0 +1,35 @@
+\doxysection{mmap\+\_\+action Struct Reference}
+\hypertarget{structmmap__action}{}\label{structmmap__action}\index{mmap\_action@{mmap\_action}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmmap__action_a3f1f20e5bd8de451310f20b934995f5d}\label{structmmap__action_a3f1f20e5bd8de451310f20b934995f5d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>long unsigned int {\bfseries start}\\
+\>\>long unsigned int {\bfseries start\_pfn}\\
+\>\>long unsigned int {\bfseries size}\\
+\>\>pgprot\_t {\bfseries pgprot}\\
+\>\} {\bfseries remap}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structmmap__action_aa117f7e3c1d4a45d76fce0026b2fddda}\label{structmmap__action_aa117f7e3c1d4a45d76fce0026b2fddda} 
+enum mmap\+\_\+action\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structmmap__action_ad5f3505089532af4864ecb1664bd9cd9}\label{structmmap__action_ad5f3505089532af4864ecb1664bd9cd9} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries success\+\_\+hook} )(const struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmmap__action_ae6e867f6a110f3720a37faabde10bd84}\label{structmmap__action_ae6e867f6a110f3720a37faabde10bd84} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries error\+\_\+hook} )(int)
+\item 
+\Hypertarget{structmmap__action_ac106eea18763446b01b395ca37ef89b7}\label{structmmap__action_ac106eea18763446b01b395ca37ef89b7} 
+bool {\bfseries hide\+\_\+from\+\_\+rmap\+\_\+until\+\_\+complete}:\+ 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

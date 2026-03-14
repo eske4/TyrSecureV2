@@ -1,0 +1,46 @@
+\doxysection{fuse\+\_\+iqueue Struct Reference}
+\hypertarget{structfuse__iqueue}{}\label{structfuse__iqueue}\index{fuse\_iqueue@{fuse\_iqueue}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfuse__iqueue_a36772897a51123b88dfa7e98114af409}\label{structfuse__iqueue_a36772897a51123b88dfa7e98114af409} 
+unsigned int {\bfseries connected}
+\item 
+\Hypertarget{structfuse__iqueue_ade480d910c8cea1275d99c91dbded47c}\label{structfuse__iqueue_ade480d910c8cea1275d99c91dbded47c} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structfuse__iqueue_a6e1320312c0c84fc33005baa4fce1bd9}\label{structfuse__iqueue_a6e1320312c0c84fc33005baa4fce1bd9} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries waitq}
+\item 
+\Hypertarget{structfuse__iqueue_ae814d471759d9fc4d98ebf69d2a34f81}\label{structfuse__iqueue_ae814d471759d9fc4d98ebf69d2a34f81} 
+u64 {\bfseries reqctr}
+\item 
+\Hypertarget{structfuse__iqueue_a21b0c14cd7326c1f23c15d390f0498ee}\label{structfuse__iqueue_a21b0c14cd7326c1f23c15d390f0498ee} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pending}
+\item 
+\Hypertarget{structfuse__iqueue_a030e278e5e034e2e9ac79bac6755e806}\label{structfuse__iqueue_a030e278e5e034e2e9ac79bac6755e806} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries interrupts}
+\item 
+\Hypertarget{structfuse__iqueue_ad7cb0058ca795cc54b11f2be7eb28d7f}\label{structfuse__iqueue_ad7cb0058ca795cc54b11f2be7eb28d7f} 
+struct \doxymbox{\hyperlink{structfuse__forget__link}{fuse\+\_\+forget\+\_\+link}} {\bfseries forget\+\_\+list\+\_\+head}
+\item 
+\Hypertarget{structfuse__iqueue_a6c65925e949f083aa5e5991f326e55eb}\label{structfuse__iqueue_a6c65925e949f083aa5e5991f326e55eb} 
+struct \doxymbox{\hyperlink{structfuse__forget__link}{fuse\+\_\+forget\+\_\+link}} \texorpdfstring{$\ast$}{*} {\bfseries forget\+\_\+list\+\_\+tail}
+\item 
+\Hypertarget{structfuse__iqueue_a10c14a61497943555d974022f4cfb713}\label{structfuse__iqueue_a10c14a61497943555d974022f4cfb713} 
+int {\bfseries forget\+\_\+batch}
+\item 
+\Hypertarget{structfuse__iqueue_a543ebc0511b8a0e26323acf524d4a4ac}\label{structfuse__iqueue_a543ebc0511b8a0e26323acf524d4a4ac} 
+struct \doxymbox{\hyperlink{structfasync__struct}{fasync\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries fasync}
+\item 
+\Hypertarget{structfuse__iqueue_ae1f5311295a514463903a481531d76c6}\label{structfuse__iqueue_ae1f5311295a514463903a481531d76c6} 
+const struct \doxymbox{\hyperlink{structfuse__iqueue__ops}{fuse\+\_\+iqueue\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structfuse__iqueue_a9dff5ea9074873eb4b2e814d5508add0}\label{structfuse__iqueue_a9dff5ea9074873eb4b2e814d5508add0} 
+void \texorpdfstring{$\ast$}{*} {\bfseries priv}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

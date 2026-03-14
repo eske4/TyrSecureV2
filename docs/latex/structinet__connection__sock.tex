@@ -1,0 +1,133 @@
+\doxysection{inet\+\_\+connection\+\_\+sock Struct Reference}
+\hypertarget{structinet__connection__sock}{}\label{structinet__connection__sock}\index{inet\_connection\_sock@{inet\_connection\_sock}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinet__connection__sock_a19e4630983d687667418b76ee5d5cc2b}\label{structinet__connection__sock_a19e4630983d687667418b76ee5d5cc2b} 
+struct \doxymbox{\hyperlink{structinet__sock}{inet\+\_\+sock}} {\bfseries icsk\+\_\+inet}
+\item 
+\Hypertarget{structinet__connection__sock_a36b97428b6a03741337ad35740e6f415}\label{structinet__connection__sock_a36b97428b6a03741337ad35740e6f415} 
+struct \doxymbox{\hyperlink{structrequest__sock__queue}{request\+\_\+sock\+\_\+queue}} {\bfseries icsk\+\_\+accept\+\_\+queue}
+\item 
+\Hypertarget{structinet__connection__sock_a734bb89b33a7b8d5a365ee08e82cd078}\label{structinet__connection__sock_a734bb89b33a7b8d5a365ee08e82cd078} 
+struct \doxymbox{\hyperlink{structinet__bind__bucket}{inet\+\_\+bind\+\_\+bucket}} \texorpdfstring{$\ast$}{*} {\bfseries icsk\+\_\+bind\+\_\+hash}
+\item 
+\Hypertarget{structinet__connection__sock_aea4b18fe46c26d2399353ec433c0dff6}\label{structinet__connection__sock_aea4b18fe46c26d2399353ec433c0dff6} 
+struct \doxymbox{\hyperlink{structinet__bind2__bucket}{inet\+\_\+bind2\+\_\+bucket}} \texorpdfstring{$\ast$}{*} {\bfseries icsk\+\_\+bind2\+\_\+hash}
+\item 
+\Hypertarget{structinet__connection__sock_a6cbf238644208ec247816932bc99b0a6}\label{structinet__connection__sock_a6cbf238644208ec247816932bc99b0a6} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries icsk\+\_\+delack\+\_\+timer}
+\item 
+\Hypertarget{structinet__connection__sock_a653d5ffe64a77ad704c658b21ae01294}\label{structinet__connection__sock_a653d5ffe64a77ad704c658b21ae01294} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structtimer__list}{timer\_list}} {\bfseries icsk\_keepalive\_timer}\\
+\>struct \doxymbox{\hyperlink{structtimer__list}{timer\_list}} {\bfseries mptcp\_tout\_timer}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinet__connection__sock_a9381e90299b843e787c4112d428f92b6}\label{structinet__connection__sock_a9381e90299b843e787c4112d428f92b6} 
+\+\_\+\+\_\+u32 {\bfseries icsk\+\_\+rto}
+\item 
+\Hypertarget{structinet__connection__sock_a06b28120d34f2365129dc28df32615d6}\label{structinet__connection__sock_a06b28120d34f2365129dc28df32615d6} 
+\+\_\+\+\_\+u32 {\bfseries icsk\+\_\+rto\+\_\+min}
+\item 
+\Hypertarget{structinet__connection__sock_a1ccbf6ff71337c18c75d420572ca24b1}\label{structinet__connection__sock_a1ccbf6ff71337c18c75d420572ca24b1} 
+u32 {\bfseries icsk\+\_\+rto\+\_\+max}
+\item 
+\Hypertarget{structinet__connection__sock_a96c32188a15ec31f640cb9deb39afe3d}\label{structinet__connection__sock_a96c32188a15ec31f640cb9deb39afe3d} 
+\+\_\+\+\_\+u32 {\bfseries icsk\+\_\+delack\+\_\+max}
+\item 
+\Hypertarget{structinet__connection__sock_aac607a45200b50909660a736ed09f4a7}\label{structinet__connection__sock_aac607a45200b50909660a736ed09f4a7} 
+\+\_\+\+\_\+u32 {\bfseries icsk\+\_\+pmtu\+\_\+cookie}
+\item 
+\Hypertarget{structinet__connection__sock_a1c8871ba2c2633b71d54738da2a074d4}\label{structinet__connection__sock_a1c8871ba2c2633b71d54738da2a074d4} 
+const struct \doxymbox{\hyperlink{structtcp__congestion__ops}{tcp\+\_\+congestion\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries icsk\+\_\+ca\+\_\+ops}
+\item 
+\Hypertarget{structinet__connection__sock_a641af6c8ccd16a40a416851c35211281}\label{structinet__connection__sock_a641af6c8ccd16a40a416851c35211281} 
+const struct \doxymbox{\hyperlink{structinet__connection__sock__af__ops}{inet\+\_\+connection\+\_\+sock\+\_\+af\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries icsk\+\_\+af\+\_\+ops}
+\item 
+\Hypertarget{structinet__connection__sock_ae3ad63b06d6a12e0fcefe112cb9f2256}\label{structinet__connection__sock_ae3ad63b06d6a12e0fcefe112cb9f2256} 
+const struct \doxymbox{\hyperlink{structtcp__ulp__ops}{tcp\+\_\+ulp\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries icsk\+\_\+ulp\+\_\+ops}
+\item 
+\Hypertarget{structinet__connection__sock_a8883a6df952c2c36a347dc76ddd7c53a}\label{structinet__connection__sock_a8883a6df952c2c36a347dc76ddd7c53a} 
+void \texorpdfstring{$\ast$}{*} {\bfseries icsk\+\_\+ulp\+\_\+data}
+\item 
+\Hypertarget{structinet__connection__sock_aece006d296422aea758a2b0844eb0451}\label{structinet__connection__sock_aece006d296422aea758a2b0844eb0451} 
+unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries icsk\+\_\+sync\+\_\+mss} )(struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structinet__connection__sock_ac6d8d0b5049f74cd33e0b311b0e9e8ba}\label{structinet__connection__sock_ac6d8d0b5049f74cd33e0b311b0e9e8ba} 
+\+\_\+\+\_\+u8 {\bfseries icsk\+\_\+ca\+\_\+state}:\+ 5
+\item 
+\Hypertarget{structinet__connection__sock_a7903abe6084a28bfcba79e662238c0c5}\label{structinet__connection__sock_a7903abe6084a28bfcba79e662238c0c5} 
+\+\_\+\+\_\+u8 {\bfseries icsk\+\_\+ca\+\_\+initialized}:\+ 1
+\item 
+\Hypertarget{structinet__connection__sock_a5642552b28d83e2f495642f0ad7b72e2}\label{structinet__connection__sock_a5642552b28d83e2f495642f0ad7b72e2} 
+\+\_\+\+\_\+u8 {\bfseries icsk\+\_\+ca\+\_\+setsockopt}:\+ 1
+\item 
+\Hypertarget{structinet__connection__sock_ab76e7d7bed294d5e3d6521615ec62e37}\label{structinet__connection__sock_ab76e7d7bed294d5e3d6521615ec62e37} 
+\+\_\+\+\_\+u8 {\bfseries icsk\+\_\+ca\+\_\+dst\+\_\+locked}:\+ 1
+\item 
+\Hypertarget{structinet__connection__sock_a3cfee47582ead004e2e59911aedea9dc}\label{structinet__connection__sock_a3cfee47582ead004e2e59911aedea9dc} 
+\+\_\+\+\_\+u8 {\bfseries icsk\+\_\+retransmits}
+\item 
+\Hypertarget{structinet__connection__sock_a01f9206a07c70b83487c8ce0e64afc9f}\label{structinet__connection__sock_a01f9206a07c70b83487c8ce0e64afc9f} 
+\+\_\+\+\_\+u8 {\bfseries icsk\+\_\+pending}
+\item 
+\Hypertarget{structinet__connection__sock_a0d59bbfc464764f6d6cdd0643babf2ea}\label{structinet__connection__sock_a0d59bbfc464764f6d6cdd0643babf2ea} 
+\+\_\+\+\_\+u8 {\bfseries icsk\+\_\+backoff}
+\item 
+\Hypertarget{structinet__connection__sock_a0934c5f6c935b0d6732acd3bada8bd59}\label{structinet__connection__sock_a0934c5f6c935b0d6732acd3bada8bd59} 
+\+\_\+\+\_\+u8 {\bfseries icsk\+\_\+syn\+\_\+retries}
+\item 
+\Hypertarget{structinet__connection__sock_a3f97bfa7d6ea6ff0e73f7d06ba437570}\label{structinet__connection__sock_a3f97bfa7d6ea6ff0e73f7d06ba437570} 
+\+\_\+\+\_\+u8 {\bfseries icsk\+\_\+probes\+\_\+out}
+\item 
+\Hypertarget{structinet__connection__sock_a2cbf3fca2c1cc7bdecc84c4e6a920b9f}\label{structinet__connection__sock_a2cbf3fca2c1cc7bdecc84c4e6a920b9f} 
+\+\_\+\+\_\+u16 {\bfseries icsk\+\_\+ext\+\_\+hdr\+\_\+len}
+\item 
+\Hypertarget{structinet__connection__sock_a7c43da2fa6b256d9451fb2e4a39b76e8}\label{structinet__connection__sock_a7c43da2fa6b256d9451fb2e4a39b76e8} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\_\_u8 {\bfseries pending}\\
+\>\_\_u8 {\bfseries quick}\\
+\>\_\_u8 {\bfseries pingpong}\\
+\>\_\_u8 {\bfseries retry}\\
+\>\_\_u32 {\bfseries ato}: 8\\
+\>\_\_u32 {\bfseries lrcv\_flowlabel}: 20\\
+\>\_\_u32 {\bfseries dst\_quick\_ack}: 1\\
+\>\_\_u32 {\bfseries unused}: 3\\
+\>\_\_u32 {\bfseries lrcvtime}\\
+\>\_\_u16 {\bfseries last\_seg\_size}\\
+\>\_\_u16 {\bfseries rcv\_mss}\\
+\} {\bfseries icsk\_ack}\\
+
+\end{tabbing}\item 
+\Hypertarget{structinet__connection__sock_a7e1083734f2e45f65f92d2effb99a60c}\label{structinet__connection__sock_a7e1083734f2e45f65f92d2effb99a60c} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int {\bfseries search\_high}\\
+\>int {\bfseries search\_low}\\
+\>u32 {\bfseries probe\_size}: 31\\
+\>u32 {\bfseries enabled}: 1\\
+\>u32 {\bfseries probe\_timestamp}\\
+\} {\bfseries icsk\_mtup}\\
+
+\end{tabbing}\item 
+\Hypertarget{structinet__connection__sock_a5ec62cbea9c4eba97a7e0783297f7bf1}\label{structinet__connection__sock_a5ec62cbea9c4eba97a7e0783297f7bf1} 
+u32 {\bfseries icsk\+\_\+probes\+\_\+tstamp}
+\item 
+\Hypertarget{structinet__connection__sock_a7625447bea4c0ee536901ebd5c2720d4}\label{structinet__connection__sock_a7625447bea4c0ee536901ebd5c2720d4} 
+u32 {\bfseries icsk\+\_\+user\+\_\+timeout}
+\item 
+\Hypertarget{structinet__connection__sock_a267576571fb9e4522c65750cf704b9d5}\label{structinet__connection__sock_a267576571fb9e4522c65750cf704b9d5} 
+u64 {\bfseries icsk\+\_\+ca\+\_\+priv} \+[13]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

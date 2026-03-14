@@ -1,0 +1,43 @@
+\doxysection{bpf\+\_\+link Struct Reference}
+\hypertarget{structbpf__link}{}\label{structbpf__link}\index{bpf\_link@{bpf\_link}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__link_ae0f692aea4e5a9bb8136a445e053dd0d}\label{structbpf__link_ae0f692aea4e5a9bb8136a445e053dd0d} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries refcnt}
+\item 
+\Hypertarget{structbpf__link_a43032856b49472a625206496c9a09e2b}\label{structbpf__link_a43032856b49472a625206496c9a09e2b} 
+u32 {\bfseries id}
+\item 
+\Hypertarget{structbpf__link_abf443baa201903b39bb29fdfb9db278a}\label{structbpf__link_abf443baa201903b39bb29fdfb9db278a} 
+enum bpf\+\_\+link\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structbpf__link_a8815273cd87623c2db074f2d71391adf}\label{structbpf__link_a8815273cd87623c2db074f2d71391adf} 
+const struct \doxymbox{\hyperlink{structbpf__link__ops}{bpf\+\_\+link\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structbpf__link_aa6a10df02d7aa5facf1304983f411dea}\label{structbpf__link_aa6a10df02d7aa5facf1304983f411dea} 
+struct \doxymbox{\hyperlink{structbpf__prog}{bpf\+\_\+prog}} \texorpdfstring{$\ast$}{*} {\bfseries prog}
+\item 
+\Hypertarget{structbpf__link_ad15a30406be930ab3fb87c91a37de69d}\label{structbpf__link_ad15a30406be930ab3fb87c91a37de69d} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structbpf__link_a1f9a0e9bd64b646ab7c8d4fd1230a75d}\label{structbpf__link_a1f9a0e9bd64b646ab7c8d4fd1230a75d} 
+enum bpf\+\_\+attach\+\_\+type {\bfseries attach\+\_\+type}
+\item 
+\Hypertarget{structbpf__link_ae81e3984df9185c5ef11a6b615db2467}\label{structbpf__link_ae81e3984df9185c5ef11a6b615db2467} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries rcu}\\
+\>struct \doxymbox{\hyperlink{structwork__struct}{work\_struct}} {\bfseries work}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__link_aa469e335295d5a85c2bf8b3af07415b4}\label{structbpf__link_aa469e335295d5a85c2bf8b3af07415b4} 
+bool {\bfseries sleepable}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

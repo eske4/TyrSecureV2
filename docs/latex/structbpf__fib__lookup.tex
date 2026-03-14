@@ -1,0 +1,91 @@
+\doxysection{bpf\+\_\+fib\+\_\+lookup Struct Reference}
+\hypertarget{structbpf__fib__lookup}{}\label{structbpf__fib__lookup}\index{bpf\_fib\_lookup@{bpf\_fib\_lookup}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__fib__lookup_ae7e20130ad1325009a34a0c122a28ae5}\label{structbpf__fib__lookup_ae7e20130ad1325009a34a0c122a28ae5} 
+\+\_\+\+\_\+u8 {\bfseries family}
+\item 
+\Hypertarget{structbpf__fib__lookup_a18dd8ef677137d86193d1c17895a3e43}\label{structbpf__fib__lookup_a18dd8ef677137d86193d1c17895a3e43} 
+\+\_\+\+\_\+u8 {\bfseries l4\+\_\+protocol}
+\item 
+\Hypertarget{structbpf__fib__lookup_a2b0f3db83eadc8a5d988a984a9a7636c}\label{structbpf__fib__lookup_a2b0f3db83eadc8a5d988a984a9a7636c} 
+\+\_\+\+\_\+be16 {\bfseries sport}
+\item 
+\Hypertarget{structbpf__fib__lookup_a0198b571febb3881c023cfbc3ee6fa62}\label{structbpf__fib__lookup_a0198b571febb3881c023cfbc3ee6fa62} 
+\+\_\+\+\_\+be16 {\bfseries dport}
+\item 
+\Hypertarget{structbpf__fib__lookup_ae61abe02c5a2e2ff16d18cd299f1455a}\label{structbpf__fib__lookup_ae61abe02c5a2e2ff16d18cd299f1455a} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u16 {\bfseries tot\_len}\\
+\>\_\_u16 {\bfseries mtu\_result}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__fib__lookup_a889730fe215c743697fdb70bdd70f541}\label{structbpf__fib__lookup_a889730fe215c743697fdb70bdd70f541} 
+\+\_\+\+\_\+u32 {\bfseries ifindex}
+\item 
+\Hypertarget{structbpf__fib__lookup_a38c19107c6bdd8dba5ccb06462d41483}\label{structbpf__fib__lookup_a38c19107c6bdd8dba5ccb06462d41483} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_u8 {\bfseries tos}\\
+\>\_\_be32 {\bfseries flowinfo}\\
+\>\_\_u32 {\bfseries rt\_metric}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__fib__lookup_a1ebfc03a58463fa4886aebc9f6496677}\label{structbpf__fib__lookup_a1ebfc03a58463fa4886aebc9f6496677} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries ipv4\_src}\\
+\>\_\_u32 {\bfseries ipv6\_src} \+[4]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__fib__lookup_a10b0600db3c72aa7cf12593a3c56c05d}\label{structbpf__fib__lookup_a10b0600db3c72aa7cf12593a3c56c05d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_be32 {\bfseries ipv4\_dst}\\
+\>\_\_u32 {\bfseries ipv6\_dst} \+[4]\+\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__fib__lookup_a8ab07af535b8520aceb15f25d09cd3a6}\label{structbpf__fib__lookup_a8ab07af535b8520aceb15f25d09cd3a6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionbpf__fib__lookup_1_1_0d326205311223244156022237146151312144075254102336_aa5babd75eeed03ad0d4a16ffce4a1069}\label{unionbpf__fib__lookup_1_1_0d326205311223244156022237146151312144075254102336_aa5babd75eeed03ad0d4a16ffce4a1069} 
+\>struct \{\\
+\>\>\_\_be16 {\bfseries h\_vlan\_proto}\\
+\>\>\_\_be16 {\bfseries h\_vlan\_TCI}\\
+\>\} \\
+\>\_\_u32 {\bfseries tbid}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__fib__lookup_a0ef9807d092b1a20d2a4362a6da80011}\label{structbpf__fib__lookup_a0ef9807d092b1a20d2a4362a6da80011} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionbpf__fib__lookup_1_1_0d237201351355070163307005331360251127270030224341_a5fd97c0fb6d96c98b717b86286d2f296}\label{unionbpf__fib__lookup_1_1_0d237201351355070163307005331360251127270030224341_a5fd97c0fb6d96c98b717b86286d2f296} 
+\>struct \{\\
+\>\>\_\_u32 {\bfseries mark}\\
+\>\} \\
+\Hypertarget{unionbpf__fib__lookup_1_1_0d237201351355070163307005331360251127270030224341_a2c679e24918846c4479165870114c64e}\label{unionbpf__fib__lookup_1_1_0d237201351355070163307005331360251127270030224341_a2c679e24918846c4479165870114c64e} 
+\>struct \{\\
+\>\>\_\_u8 {\bfseries smac} \+[6]\+\\
+\>\>\_\_u8 {\bfseries dmac} \+[6]\+\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

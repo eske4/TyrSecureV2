@@ -1,0 +1,103 @@
+\doxysection{bpf\+\_\+reg\+\_\+state Struct Reference}
+\hypertarget{structbpf__reg__state}{}\label{structbpf__reg__state}\index{bpf\_reg\_state@{bpf\_reg\_state}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbpf__reg__state_a063480957f5945d1b31fd65b3b6865e7}\label{structbpf__reg__state_a063480957f5945d1b31fd65b3b6865e7} 
+enum bpf\+\_\+reg\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structbpf__reg__state_aa693e6d7494097ec9a95dc28047afe2e}\label{structbpf__reg__state_aa693e6d7494097ec9a95dc28047afe2e} 
+s32 {\bfseries off}
+\item 
+\Hypertarget{structbpf__reg__state_a11ba49ba165aaaed818bcd02c42b4545}\label{structbpf__reg__state_a11ba49ba165aaaed818bcd02c42b4545} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int {\bfseries range}\\
+\Hypertarget{unionbpf__reg__state_1_1_0d374366354027230110163214105245370326315014103130_ac4b375df695ba77f31f0111c8c75efd1}\label{unionbpf__reg__state_1_1_0d374366354027230110163214105245370326315014103130_ac4b375df695ba77f31f0111c8c75efd1} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structbpf__map}{bpf\_map}} \texorpdfstring{$\ast$}{*} {\bfseries map\_ptr}\\
+\>\>u32 {\bfseries map\_uid}\\
+\>\} \\
+\Hypertarget{unionbpf__reg__state_1_1_0d374366354027230110163214105245370326315014103130_af36c4e02d78315afd26f627ed2a2f6f8}\label{unionbpf__reg__state_1_1_0d374366354027230110163214105245370326315014103130_af36c4e02d78315afd26f627ed2a2f6f8} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structbtf}{btf}} \texorpdfstring{$\ast$}{*} {\bfseries btf}\\
+\>\>u32 {\bfseries btf\_id}\\
+\>\} \\
+\Hypertarget{unionbpf__reg__state_1_1_0d374366354027230110163214105245370326315014103130_adaa19a699639b7da2f20d5b0c7df1338}\label{unionbpf__reg__state_1_1_0d374366354027230110163214105245370326315014103130_adaa19a699639b7da2f20d5b0c7df1338} 
+\>struct \{\\
+\>\>u32 {\bfseries mem\_size}\\
+\>\>u32 {\bfseries dynptr\_id}\\
+\>\} \\
+\>struct \{\\
+\>\>enum bpf\_dynptr\_type {\bfseries type}\\
+\>\>bool {\bfseries first\_slot}\\
+\>\} {\bfseries dynptr}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structbtf}{btf}} \texorpdfstring{$\ast$}{*} {\bfseries btf}\\
+\>\>u32 {\bfseries btf\_id}\\
+\>\>enum bpf\_iter\_state {\bfseries state}: 2\\
+\>\>int {\bfseries depth}: 30\\
+\>\} {\bfseries iter}\\
+\>struct \{\\
+\Hypertarget{structbpf__reg__state_1_1_0d374366354027230110163214105245370326315014103130_1_1_0d1520173652030218bbd6b65ff0037dd7807d9d3f06afc_a78eb256c4e9946b05f93e70b27601b4b}\label{structbpf__reg__state_1_1_0d374366354027230110163214105245370326315014103130_1_1_0d1520173652030218bbd6b65ff0037dd7807d9d3f06afc_a78eb256c4e9946b05f93e70b27601b4b} 
+enum \{ {\bfseries IRQ\_NATIVE\_KFUNC} = 0
+, {\bfseries IRQ\_LOCK\_KFUNC} = 1
+ \}\\
+\>\>enum bpf\_reg\_state:: \{ ... \}  {\bfseries kfunc\_class}\\
+\>\} {\bfseries irq}\\
+\>struct \{\\
+\>\>long unsigned int {\bfseries raw1}\\
+\>\>long unsigned int {\bfseries raw2}\\
+\>\} {\bfseries raw}\\
+\>u32 {\bfseries subprogno}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbpf__reg__state_a2456a79db89f9b100e11ead83d06d34b}\label{structbpf__reg__state_a2456a79db89f9b100e11ead83d06d34b} 
+struct \doxymbox{\hyperlink{structtnum}{tnum}} {\bfseries var\+\_\+off}
+\item 
+\Hypertarget{structbpf__reg__state_a4891419397791a11139f88ab1c8072f2}\label{structbpf__reg__state_a4891419397791a11139f88ab1c8072f2} 
+s64 {\bfseries smin\+\_\+value}
+\item 
+\Hypertarget{structbpf__reg__state_a2e93a4169f328b4558a90edbf0956e97}\label{structbpf__reg__state_a2e93a4169f328b4558a90edbf0956e97} 
+s64 {\bfseries smax\+\_\+value}
+\item 
+\Hypertarget{structbpf__reg__state_a30b6f50e9b8a2ea4056999e1f0c5aa65}\label{structbpf__reg__state_a30b6f50e9b8a2ea4056999e1f0c5aa65} 
+u64 {\bfseries umin\+\_\+value}
+\item 
+\Hypertarget{structbpf__reg__state_a2fef4db11ceb9ffb5d9cfdbdd1c15828}\label{structbpf__reg__state_a2fef4db11ceb9ffb5d9cfdbdd1c15828} 
+u64 {\bfseries umax\+\_\+value}
+\item 
+\Hypertarget{structbpf__reg__state_a3d828430f8c1647c5924632200907050}\label{structbpf__reg__state_a3d828430f8c1647c5924632200907050} 
+s32 {\bfseries s32\+\_\+min\+\_\+value}
+\item 
+\Hypertarget{structbpf__reg__state_a5625e2258816e7a7eab95b109243f41c}\label{structbpf__reg__state_a5625e2258816e7a7eab95b109243f41c} 
+s32 {\bfseries s32\+\_\+max\+\_\+value}
+\item 
+\Hypertarget{structbpf__reg__state_a063e46f1b095ca3716d2b770b1738581}\label{structbpf__reg__state_a063e46f1b095ca3716d2b770b1738581} 
+u32 {\bfseries u32\+\_\+min\+\_\+value}
+\item 
+\Hypertarget{structbpf__reg__state_a159c15e0c897bfdaad013600c3fccffa}\label{structbpf__reg__state_a159c15e0c897bfdaad013600c3fccffa} 
+u32 {\bfseries u32\+\_\+max\+\_\+value}
+\item 
+\Hypertarget{structbpf__reg__state_a3f0ff75270245323eba51753e088ce85}\label{structbpf__reg__state_a3f0ff75270245323eba51753e088ce85} 
+u32 {\bfseries id}
+\item 
+\Hypertarget{structbpf__reg__state_a2455eedbb1520e27a0aea7690cae4bf6}\label{structbpf__reg__state_a2455eedbb1520e27a0aea7690cae4bf6} 
+u32 {\bfseries ref\+\_\+obj\+\_\+id}
+\item 
+\Hypertarget{structbpf__reg__state_a20e16ea3880e07ce5821523b4e2cb56c}\label{structbpf__reg__state_a20e16ea3880e07ce5821523b4e2cb56c} 
+u32 {\bfseries frameno}
+\item 
+\Hypertarget{structbpf__reg__state_a3da20b7b88693b4347e7f18b4659612d}\label{structbpf__reg__state_a3da20b7b88693b4347e7f18b4659612d} 
+s32 {\bfseries subreg\+\_\+def}
+\item 
+\Hypertarget{structbpf__reg__state_a731f6fb35fec6bbab8970e3dbe82633c}\label{structbpf__reg__state_a731f6fb35fec6bbab8970e3dbe82633c} 
+bool {\bfseries precise}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

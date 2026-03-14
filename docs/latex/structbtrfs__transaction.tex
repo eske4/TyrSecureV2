@@ -1,0 +1,91 @@
+\doxysection{btrfs\+\_\+transaction Struct Reference}
+\hypertarget{structbtrfs__transaction}{}\label{structbtrfs__transaction}\index{btrfs\_transaction@{btrfs\_transaction}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__transaction_a8591f941fa63467a36da4dc0298a40cc}\label{structbtrfs__transaction_a8591f941fa63467a36da4dc0298a40cc} 
+u64 {\bfseries transid}
+\item 
+\Hypertarget{structbtrfs__transaction_a0646391a1672b2efc65523499ddab057}\label{structbtrfs__transaction_a0646391a1672b2efc65523499ddab057} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries num\+\_\+extwriters}
+\item 
+\Hypertarget{structbtrfs__transaction_ada103b83944c6552caedab4f0c5b0306}\label{structbtrfs__transaction_ada103b83944c6552caedab4f0c5b0306} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries num\+\_\+writers}
+\item 
+\Hypertarget{structbtrfs__transaction_a143255bbad1d8bd0a9c7b63d486db009}\label{structbtrfs__transaction_a143255bbad1d8bd0a9c7b63d486db009} 
+refcount\+\_\+t {\bfseries use\+\_\+count}
+\item 
+\Hypertarget{structbtrfs__transaction_a6efc11bbe1f3277805cd8a1103b1c4e4}\label{structbtrfs__transaction_a6efc11bbe1f3277805cd8a1103b1c4e4} 
+long unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structbtrfs__transaction_ac6ef9b02551c915c1d45de306fbdf18e}\label{structbtrfs__transaction_ac6ef9b02551c915c1d45de306fbdf18e} 
+enum btrfs\+\_\+trans\+\_\+state {\bfseries state}
+\item 
+\Hypertarget{structbtrfs__transaction_ad0f02c572e5e5b9da677fc1053b3ab8b}\label{structbtrfs__transaction_ad0f02c572e5e5b9da677fc1053b3ab8b} 
+int {\bfseries aborted}
+\item 
+\Hypertarget{structbtrfs__transaction_af03dbd45f45f8c8bbf41a77838046941}\label{structbtrfs__transaction_af03dbd45f45f8c8bbf41a77838046941} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structbtrfs__transaction_a8bd83627a51e8ee4b379746f3b732eac}\label{structbtrfs__transaction_a8bd83627a51e8ee4b379746f3b732eac} 
+struct \doxymbox{\hyperlink{structextent__io__tree}{extent\+\_\+io\+\_\+tree}} {\bfseries dirty\+\_\+pages}
+\item 
+\Hypertarget{structbtrfs__transaction_accc321ed8b6695945ea2dd0b5e76d290}\label{structbtrfs__transaction_accc321ed8b6695945ea2dd0b5e76d290} 
+time64\+\_\+t {\bfseries start\+\_\+time}
+\item 
+\Hypertarget{structbtrfs__transaction_a4b7fb04f454d5d5c8fa968643450ace3}\label{structbtrfs__transaction_a4b7fb04f454d5d5c8fa968643450ace3} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries writer\+\_\+wait}
+\item 
+\Hypertarget{structbtrfs__transaction_ac5fcc91ba8f986a050f3488b09482baa}\label{structbtrfs__transaction_ac5fcc91ba8f986a050f3488b09482baa} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries commit\+\_\+wait}
+\item 
+\Hypertarget{structbtrfs__transaction_a4baa2f9cf01d3005289259941535d0dd}\label{structbtrfs__transaction_a4baa2f9cf01d3005289259941535d0dd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries pending\+\_\+snapshots}
+\item 
+\Hypertarget{structbtrfs__transaction_a4c2566c871c286db9f55135f3388ae6a}\label{structbtrfs__transaction_a4c2566c871c286db9f55135f3388ae6a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dev\+\_\+update\+\_\+list}
+\item 
+\Hypertarget{structbtrfs__transaction_aa8dd7f459ff8b6b33b4d1a43326ebcf8}\label{structbtrfs__transaction_aa8dd7f459ff8b6b33b4d1a43326ebcf8} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries switch\+\_\+commits}
+\item 
+\Hypertarget{structbtrfs__transaction_ae8a908978cfc3042b219bddb7afb52d4}\label{structbtrfs__transaction_ae8a908978cfc3042b219bddb7afb52d4} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dirty\+\_\+bgs}
+\item 
+\Hypertarget{structbtrfs__transaction_a8d0c5bfc4f3e5a62820b202ae4530830}\label{structbtrfs__transaction_a8d0c5bfc4f3e5a62820b202ae4530830} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries io\+\_\+bgs}
+\item 
+\Hypertarget{structbtrfs__transaction_aaba21552e3f90419da6b1be9eac4881f}\label{structbtrfs__transaction_aaba21552e3f90419da6b1be9eac4881f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries dropped\+\_\+roots}
+\item 
+\Hypertarget{structbtrfs__transaction_ac9d73230367c165d5e489d29803de0d0}\label{structbtrfs__transaction_ac9d73230367c165d5e489d29803de0d0} 
+struct \doxymbox{\hyperlink{structextent__io__tree}{extent\+\_\+io\+\_\+tree}} {\bfseries pinned\+\_\+extents}
+\item 
+\Hypertarget{structbtrfs__transaction_adee1d023c761956de1c4ae4433fa2453}\label{structbtrfs__transaction_adee1d023c761956de1c4ae4433fa2453} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries cache\+\_\+write\+\_\+mutex}
+\item 
+\Hypertarget{structbtrfs__transaction_ab3326485ca2e234c039d20abf1ec90b8}\label{structbtrfs__transaction_ab3326485ca2e234c039d20abf1ec90b8} 
+spinlock\+\_\+t {\bfseries dirty\+\_\+bgs\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__transaction_add1e122974e82bccd257162ab9111838}\label{structbtrfs__transaction_add1e122974e82bccd257162ab9111838} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries deleted\+\_\+bgs}
+\item 
+\Hypertarget{structbtrfs__transaction_a67ed8500c2bf1a77f17c1073b7427267}\label{structbtrfs__transaction_a67ed8500c2bf1a77f17c1073b7427267} 
+spinlock\+\_\+t {\bfseries dropped\+\_\+roots\+\_\+lock}
+\item 
+\Hypertarget{structbtrfs__transaction_ad8fd8cfe3334645d654a903ec425b184}\label{structbtrfs__transaction_ad8fd8cfe3334645d654a903ec425b184} 
+struct \doxymbox{\hyperlink{structbtrfs__delayed__ref__root}{btrfs\+\_\+delayed\+\_\+ref\+\_\+root}} {\bfseries delayed\+\_\+refs}
+\item 
+\Hypertarget{structbtrfs__transaction_a381daea1714990e5fa0c5c740959a8ee}\label{structbtrfs__transaction_a381daea1714990e5fa0c5c740959a8ee} 
+struct \doxymbox{\hyperlink{structbtrfs__fs__info}{btrfs\+\_\+fs\+\_\+info}} \texorpdfstring{$\ast$}{*} {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{structbtrfs__transaction_a6cc188629db3c9bb0d72a52dce8ec593}\label{structbtrfs__transaction_a6cc188629db3c9bb0d72a52dce8ec593} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries pending\+\_\+ordered}
+\item 
+\Hypertarget{structbtrfs__transaction_aa7f0a8ee1657a28f33b71d36d7f3be03}\label{structbtrfs__transaction_aa7f0a8ee1657a28f33b71d36d7f3be03} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries pending\+\_\+wait}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

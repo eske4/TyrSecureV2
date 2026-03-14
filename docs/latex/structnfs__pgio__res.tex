@@ -1,0 +1,40 @@
+\doxysection{nfs\+\_\+pgio\+\_\+res Struct Reference}
+\hypertarget{structnfs__pgio__res}{}\label{structnfs__pgio__res}\index{nfs\_pgio\_res@{nfs\_pgio\_res}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structnfs__pgio__res_a9be54616cda9270684098ebeb0baa467}\label{structnfs__pgio__res_a9be54616cda9270684098ebeb0baa467} 
+struct \doxymbox{\hyperlink{structnfs4__sequence__res}{nfs4\+\_\+sequence\+\_\+res}} {\bfseries seq\+\_\+res}
+\item 
+\Hypertarget{structnfs__pgio__res_a862f030181d54c3c645ad2ffd9805578}\label{structnfs__pgio__res_a862f030181d54c3c645ad2ffd9805578} 
+struct \doxymbox{\hyperlink{structnfs__fattr}{nfs\+\_\+fattr}} \texorpdfstring{$\ast$}{*} {\bfseries fattr}
+\item 
+\Hypertarget{structnfs__pgio__res_a4c0baac0b603062d39135bb5ee1549a3}\label{structnfs__pgio__res_a4c0baac0b603062d39135bb5ee1549a3} 
+\+\_\+\+\_\+u64 {\bfseries count}
+\item 
+\Hypertarget{structnfs__pgio__res_a9d5bdbbadb5592e758f50ffb3f77dda3}\label{structnfs__pgio__res_a9d5bdbbadb5592e758f50ffb3f77dda3} 
+\+\_\+\+\_\+u32 {\bfseries op\+\_\+status}
+\item 
+\Hypertarget{structnfs__pgio__res_adcc4f4b86f0afb0102b09b898706e07f}\label{structnfs__pgio__res_adcc4f4b86f0afb0102b09b898706e07f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unionnfs__pgio__res_1_1_0d330274227073376224052377156041354271366002232372_a84f8542231b4535e095f302b7f52befa}\label{unionnfs__pgio__res_1_1_0d330274227073376224052377156041354271366002232372_a84f8542231b4535e095f302b7f52befa} 
+\>struct \{\\
+\>\>unsigned int {\bfseries replen}\\
+\>\>int {\bfseries eof}\\
+\>\>void \texorpdfstring{$\ast$}{*} {\bfseries scratch}\\
+\>\} \\
+\Hypertarget{unionnfs__pgio__res_1_1_0d330274227073376224052377156041354271366002232372_a191384e22e11a2e45372facbd86f7a88}\label{unionnfs__pgio__res_1_1_0d330274227073376224052377156041354271366002232372_a191384e22e11a2e45372facbd86f7a88} 
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structnfs__writeverf}{nfs\_writeverf}} \texorpdfstring{$\ast$}{*} {\bfseries verf}\\
+\>\>const struct \doxymbox{\hyperlink{structnfs__server}{nfs\_server}} \texorpdfstring{$\ast$}{*} {\bfseries server}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+\doxysection{vm\+\_\+fault Struct Reference}
+\hypertarget{structvm__fault}{}\label{structvm__fault}\index{vm\_fault@{vm\_fault}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structvm__fault_a22daabab3593b7f318aa18e532d56d83}\label{structvm__fault_a22daabab3593b7f318aa18e532d56d83} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \doxymbox{\hyperlink{structvm__area__struct}{vm\_area\_struct}} \texorpdfstring{$\ast$}{*} {\bfseries vma}\\
+\>gfp\_t {\bfseries gfp\_mask}\\
+\>long unsigned int {\bfseries pgoff}\\
+\>long unsigned int {\bfseries address}\\
+\>long unsigned int {\bfseries real\_address}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structvm__fault_ac06e1ad68670dd83c014690558fdfd96}\label{structvm__fault_ac06e1ad68670dd83c014690558fdfd96} 
+enum fault\+\_\+flag {\bfseries flags}
+\item 
+\Hypertarget{structvm__fault_a676de20b91d60bb783353d570b327b6a}\label{structvm__fault_a676de20b91d60bb783353d570b327b6a} 
+\doxymbox{\hyperlink{structpmd__t}{pmd\+\_\+t}} \texorpdfstring{$\ast$}{*} {\bfseries pmd}
+\item 
+\Hypertarget{structvm__fault_a75607799bb02871495ca83fe444cd936}\label{structvm__fault_a75607799bb02871495ca83fe444cd936} 
+\doxymbox{\hyperlink{structpud__t}{pud\+\_\+t}} \texorpdfstring{$\ast$}{*} {\bfseries pud}
+\item 
+\Hypertarget{structvm__fault_a4e5c2e7f5400a8f285ddb056760110a3}\label{structvm__fault_a4e5c2e7f5400a8f285ddb056760110a3} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\doxymbox{\hyperlink{structpte__t}{pte\_t}} {\bfseries orig\_pte}\\
+\>\doxymbox{\hyperlink{structpmd__t}{pmd\_t}} {\bfseries orig\_pmd}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structvm__fault_a0f0304ba79bdf60929653b2ea4d18aaf}\label{structvm__fault_a0f0304ba79bdf60929653b2ea4d18aaf} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*} {\bfseries cow\+\_\+page}
+\item 
+\Hypertarget{structvm__fault_ab70fe95ed442863c84d5e9717945e55d}\label{structvm__fault_ab70fe95ed442863c84d5e9717945e55d} 
+struct \doxymbox{\hyperlink{structpage}{page}} \texorpdfstring{$\ast$}{*} {\bfseries page}
+\item 
+\Hypertarget{structvm__fault_ae4be0cba28d36b8fa29a2098a27cf515}\label{structvm__fault_ae4be0cba28d36b8fa29a2098a27cf515} 
+\doxymbox{\hyperlink{structpte__t}{pte\+\_\+t}} \texorpdfstring{$\ast$}{*} {\bfseries pte}
+\item 
+\Hypertarget{structvm__fault_aa5732510253fcca2bc720a69214d100d}\label{structvm__fault_aa5732510253fcca2bc720a69214d100d} 
+spinlock\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries ptl}
+\item 
+\Hypertarget{structvm__fault_af9308ddc137ccb877dbcc448ee000ee5}\label{structvm__fault_af9308ddc137ccb877dbcc448ee000ee5} 
+pgtable\+\_\+t {\bfseries prealloc\+\_\+pte}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

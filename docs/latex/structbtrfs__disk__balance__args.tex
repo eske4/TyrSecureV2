@@ -1,0 +1,69 @@
+\doxysection{btrfs\+\_\+disk\+\_\+balance\+\_\+args Struct Reference}
+\hypertarget{structbtrfs__disk__balance__args}{}\label{structbtrfs__disk__balance__args}\index{btrfs\_disk\_balance\_args@{btrfs\_disk\_balance\_args}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a0dfb8e903618a8e068fd57b0d99f1cd9}\label{structbtrfs__disk__balance__args_a0dfb8e903618a8e068fd57b0d99f1cd9} 
+\+\_\+\+\_\+le64 {\bfseries profiles}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a3de7f3ffc032fbea4b144afae3968628}\label{structbtrfs__disk__balance__args_a3de7f3ffc032fbea4b144afae3968628} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_le64 {\bfseries usage}\\
+\Hypertarget{unionbtrfs__disk__balance__args_1_1_0d024211107307212354311322351032171307130033205110_afdc93f19633c92032a378f260129a018}\label{unionbtrfs__disk__balance__args_1_1_0d024211107307212354311322351032171307130033205110_afdc93f19633c92032a378f260129a018} 
+\>struct \{\\
+\>\>\_\_le32 {\bfseries usage\_min}\\
+\>\>\_\_le32 {\bfseries usage\_max}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbtrfs__disk__balance__args_a6b761f29cbcc375cdddc4643ef543a45}\label{structbtrfs__disk__balance__args_a6b761f29cbcc375cdddc4643ef543a45} 
+\+\_\+\+\_\+le64 {\bfseries devid}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a502aa7eceaaeceff87b07220fb9ce6b8}\label{structbtrfs__disk__balance__args_a502aa7eceaaeceff87b07220fb9ce6b8} 
+\+\_\+\+\_\+le64 {\bfseries pstart}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_af87379100f23fc911a3021254c645753}\label{structbtrfs__disk__balance__args_af87379100f23fc911a3021254c645753} 
+\+\_\+\+\_\+le64 {\bfseries pend}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a6ae2a1734555b8d7d7c189fd72489321}\label{structbtrfs__disk__balance__args_a6ae2a1734555b8d7d7c189fd72489321} 
+\+\_\+\+\_\+le64 {\bfseries vstart}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a06196ef64c2ea366627a35b1c51d8960}\label{structbtrfs__disk__balance__args_a06196ef64c2ea366627a35b1c51d8960} 
+\+\_\+\+\_\+le64 {\bfseries vend}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a7271ac5fa0629c206ca2f4e45a74a63a}\label{structbtrfs__disk__balance__args_a7271ac5fa0629c206ca2f4e45a74a63a} 
+\+\_\+\+\_\+le64 {\bfseries target}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a12659bd4b99e0696294ea1160c3b2655}\label{structbtrfs__disk__balance__args_a12659bd4b99e0696294ea1160c3b2655} 
+\+\_\+\+\_\+le64 {\bfseries flags}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a265c64e3ca307f3c995ca99acf6ffe9f}\label{structbtrfs__disk__balance__args_a265c64e3ca307f3c995ca99acf6ffe9f} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_le64 {\bfseries limit}\\
+\Hypertarget{unionbtrfs__disk__balance__args_1_1_0d044020201321071107253014125275215366245125176361_a0f2b094e62d5faa3776b3421894f3855}\label{unionbtrfs__disk__balance__args_1_1_0d044020201321071107253014125275215366245125176361_a0f2b094e62d5faa3776b3421894f3855} 
+\>struct \{\\
+\>\>\_\_le32 {\bfseries limit\_min}\\
+\>\>\_\_le32 {\bfseries limit\_max}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structbtrfs__disk__balance__args_a1df53e79bdc570c9d8e67cdb472aba31}\label{structbtrfs__disk__balance__args_a1df53e79bdc570c9d8e67cdb472aba31} 
+\+\_\+\+\_\+le32 {\bfseries stripes\+\_\+min}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a6835c38b56592c4539da74c1dd94cea3}\label{structbtrfs__disk__balance__args_a6835c38b56592c4539da74c1dd94cea3} 
+\+\_\+\+\_\+le32 {\bfseries stripes\+\_\+max}
+\item 
+\Hypertarget{structbtrfs__disk__balance__args_a651b1ff4e815f110d1279bdbe2f9251a}\label{structbtrfs__disk__balance__args_a651b1ff4e815f110d1279bdbe2f9251a} 
+\+\_\+\+\_\+le64 {\bfseries unused} \+[6]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

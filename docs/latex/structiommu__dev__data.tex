@@ -1,0 +1,70 @@
+\doxysection{iommu\+\_\+dev\+\_\+data Struct Reference}
+\hypertarget{structiommu__dev__data}{}\label{structiommu__dev__data}\index{iommu\_dev\_data@{iommu\_dev\_data}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structiommu__dev__data_a43bdd4b9f3c945d607e90ef02a4e1a6b}\label{structiommu__dev__data_a43bdd4b9f3c945d607e90ef02a4e1a6b} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structiommu__dev__data_ac273a17305cf8d718319816f531049e0}\label{structiommu__dev__data_ac273a17305cf8d718319816f531049e0} 
+spinlock\+\_\+t {\bfseries dte\+\_\+lock}
+\item 
+\Hypertarget{structiommu__dev__data_afb9129af8b20e15f11cf83d34a1afa8c}\label{structiommu__dev__data_afb9129af8b20e15f11cf83d34a1afa8c} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structiommu__dev__data_a28a37a9939bb0f396efc5a6a82d4deb1}\label{structiommu__dev__data_a28a37a9939bb0f396efc5a6a82d4deb1} 
+struct \doxymbox{\hyperlink{structllist__node}{llist\+\_\+node}} {\bfseries dev\+\_\+data\+\_\+list}
+\item 
+\Hypertarget{structiommu__dev__data_a4e7bbec83e0bb5528810d4a286974c53}\label{structiommu__dev__data_a4e7bbec83e0bb5528810d4a286974c53} 
+struct \doxymbox{\hyperlink{structprotection__domain}{protection\+\_\+domain}} \texorpdfstring{$\ast$}{*} {\bfseries domain}
+\item 
+\Hypertarget{structiommu__dev__data_a7e1300668e86d307733e48677f139b78}\label{structiommu__dev__data_a7e1300668e86d307733e48677f139b78} 
+struct \doxymbox{\hyperlink{structgcr3__tbl__info}{gcr3\+\_\+tbl\+\_\+info}} {\bfseries gcr3\+\_\+info}
+\item 
+\Hypertarget{structiommu__dev__data_a417b17af13b03a2c01f23e2e8deed9a1}\label{structiommu__dev__data_a417b17af13b03a2c01f23e2e8deed9a1} 
+struct \doxymbox{\hyperlink{structdevice}{device}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structiommu__dev__data_aae5804bb65e49e15f66db76116eb43df}\label{structiommu__dev__data_aae5804bb65e49e15f66db76116eb43df} 
+u16 {\bfseries devid}
+\item 
+\Hypertarget{structiommu__dev__data_ab286fc5ad0174ff2f25ad29d9e9761e4}\label{structiommu__dev__data_ab286fc5ad0174ff2f25ad29d9e9761e4} 
+unsigned int {\bfseries max\+\_\+irqs}
+\item 
+\Hypertarget{structiommu__dev__data_a8c0628d0fb716a7943817e9e533a7e48}\label{structiommu__dev__data_a8c0628d0fb716a7943817e9e533a7e48} 
+u32 {\bfseries max\+\_\+pasids}
+\item 
+\Hypertarget{structiommu__dev__data_a8d129248ebb34311f47d9416686d1bbb}\label{structiommu__dev__data_a8d129248ebb34311f47d9416686d1bbb} 
+u32 {\bfseries flags}
+\item 
+\Hypertarget{structiommu__dev__data_ad13037506d4ecc88e36ca7f83e539a52}\label{structiommu__dev__data_ad13037506d4ecc88e36ca7f83e539a52} 
+int {\bfseries ats\+\_\+qdep}
+\item 
+\Hypertarget{structiommu__dev__data_ad291fc392a0fe2fdd8cd5c6e69c49963}\label{structiommu__dev__data_ad291fc392a0fe2fdd8cd5c6e69c49963} 
+u8 {\bfseries ats\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structiommu__dev__data_a7ea17eb05238ce6ee3aefd9a21286d88}\label{structiommu__dev__data_a7ea17eb05238ce6ee3aefd9a21286d88} 
+u8 {\bfseries pri\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structiommu__dev__data_a9fa2ffe569f5de59822e12eb83a28d5b}\label{structiommu__dev__data_a9fa2ffe569f5de59822e12eb83a28d5b} 
+u8 {\bfseries pasid\+\_\+enabled}:\+ 1
+\item 
+\Hypertarget{structiommu__dev__data_a8360689da62e4dc087d3ddab1fc326d3}\label{structiommu__dev__data_a8360689da62e4dc087d3ddab1fc326d3} 
+u8 {\bfseries pri\+\_\+tlp}:\+ 1
+\item 
+\Hypertarget{structiommu__dev__data_a14d90b14c0ba6a224be955fa0dbcb46c}\label{structiommu__dev__data_a14d90b14c0ba6a224be955fa0dbcb46c} 
+u8 {\bfseries ppr}:\+ 1
+\item 
+\Hypertarget{structiommu__dev__data_a1421f01caebec90fb2435a7163eee121}\label{structiommu__dev__data_a1421f01caebec90fb2435a7163eee121} 
+bool {\bfseries use\+\_\+vapic}
+\item 
+\Hypertarget{structiommu__dev__data_a8cf5561e42c22be9107c44213709a40c}\label{structiommu__dev__data_a8cf5561e42c22be9107c44213709a40c} 
+bool {\bfseries defer\+\_\+attach}
+\item 
+\Hypertarget{structiommu__dev__data_a0bec4e643ee7c29a09ee957374539a07}\label{structiommu__dev__data_a0bec4e643ee7c29a09ee957374539a07} 
+struct \doxymbox{\hyperlink{structratelimit__state}{ratelimit\+\_\+state}} {\bfseries rs}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

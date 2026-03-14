@@ -1,0 +1,52 @@
+\doxysection{Qdisc\+\_\+class\+\_\+ops Struct Reference}
+\hypertarget{structQdisc__class__ops}{}\label{structQdisc__class__ops}\index{Qdisc\_class\_ops@{Qdisc\_class\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structQdisc__class__ops_a9c6dc68eaaa2d6aed01c412186a4965f}\label{structQdisc__class__ops_a9c6dc68eaaa2d6aed01c412186a4965f} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structQdisc__class__ops_a7b38618b71bd1dce3342d381b61f6a97}\label{structQdisc__class__ops_a7b38618b71bd1dce3342d381b61f6a97} 
+struct \doxymbox{\hyperlink{structnetdev__queue}{netdev\+\_\+queue}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries select\+\_\+queue} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcmsg}{tcmsg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structQdisc__class__ops_ab2a5703fa0426c749d0166d4b2bfc027}\label{structQdisc__class__ops_ab2a5703fa0426c749d0166d4b2bfc027} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries graft} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, long unsigned int, struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structQdisc__class__ops_addfdcb713fa98450ca35ba0dbe418764}\label{structQdisc__class__ops_addfdcb713fa98450ca35ba0dbe418764} 
+struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries leaf} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structQdisc__class__ops_a366f784aa03f7dcc612d2edb6da04164}\label{structQdisc__class__ops_a366f784aa03f7dcc612d2edb6da04164} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries qlen\+\_\+notify} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structQdisc__class__ops_a4844803dc08fda5954da1d12c1be0d70}\label{structQdisc__class__ops_a4844803dc08fda5954da1d12c1be0d70} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries find} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, u32)
+\item 
+\Hypertarget{structQdisc__class__ops_a37f760b92ecb7b0ea2a4343c79e70e54}\label{structQdisc__class__ops_a37f760b92ecb7b0ea2a4343c79e70e54} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries change} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, u32, u32, struct \doxymbox{\hyperlink{structnlattr}{nlattr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, long unsigned int \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structQdisc__class__ops_aa53dde9c0186e036739bbd14b1ee3fa4}\label{structQdisc__class__ops_aa53dde9c0186e036739bbd14b1ee3fa4} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries delete} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, long unsigned int, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structQdisc__class__ops_af933c6fc1ca03497b33b843e64f270d6}\label{structQdisc__class__ops_af933c6fc1ca03497b33b843e64f270d6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries walk} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structqdisc__walker}{qdisc\+\_\+walker}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structQdisc__class__ops_a54fd9be5b04b743a9adad105e58bacce}\label{structQdisc__class__ops_a54fd9be5b04b743a9adad105e58bacce} 
+struct \doxymbox{\hyperlink{structtcf__block}{tcf\+\_\+block}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries tcf\+\_\+block} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, long unsigned int, struct \doxymbox{\hyperlink{structnetlink__ext__ack}{netlink\+\_\+ext\+\_\+ack}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structQdisc__class__ops_a38de7acaa76d752a4965680a3b6919de}\label{structQdisc__class__ops_a38de7acaa76d752a4965680a3b6919de} 
+long unsigned int(\texorpdfstring{$\ast$}{*} {\bfseries bind\+\_\+tcf} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, long unsigned int, u32)
+\item 
+\Hypertarget{structQdisc__class__ops_a521db9ad329e117b643d59bea7d8cd35}\label{structQdisc__class__ops_a521db9ad329e117b643d59bea7d8cd35} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unbind\+\_\+tcf} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, long unsigned int)
+\item 
+\Hypertarget{structQdisc__class__ops_af1249fc5a8a7825ffd3e0f2027a7c05a}\label{structQdisc__class__ops_af1249fc5a8a7825ffd3e0f2027a7c05a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dump} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, long unsigned int, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structtcmsg}{tcmsg}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structQdisc__class__ops_ae291e4d8970eb2e10b462c6fa3f3a969}\label{structQdisc__class__ops_ae291e4d8970eb2e10b462c6fa3f3a969} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries dump\+\_\+stats} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, long unsigned int, struct \doxymbox{\hyperlink{structgnet__dump}{gnet\+\_\+dump}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

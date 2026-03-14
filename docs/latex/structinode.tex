@@ -1,0 +1,207 @@
+\doxysection{inode Struct Reference}
+\hypertarget{structinode}{}\label{structinode}\index{inode@{inode}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinode_a70f5495c9469e4af4c8d0fb8a4c0ba9a}\label{structinode_a70f5495c9469e4af4c8d0fb8a4c0ba9a} 
+umode\+\_\+t {\bfseries i\+\_\+mode}
+\item 
+\Hypertarget{structinode_a9f50c35c8893e2b2fd6d431227efeae4}\label{structinode_a9f50c35c8893e2b2fd6d431227efeae4} 
+short unsigned int {\bfseries i\+\_\+opflags}
+\item 
+\Hypertarget{structinode_a9d6945c6c60d08864f0badaa8d5a1641}\label{structinode_a9d6945c6c60d08864f0badaa8d5a1641} 
+unsigned int {\bfseries i\+\_\+flags}
+\item 
+\Hypertarget{structinode_af3766d56630354de7093efb591ff48e1}\label{structinode_af3766d56630354de7093efb591ff48e1} 
+struct \doxymbox{\hyperlink{structposix__acl}{posix\+\_\+acl}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+acl}
+\item 
+\Hypertarget{structinode_ae89cd62939637802bd566d74f801cc52}\label{structinode_ae89cd62939637802bd566d74f801cc52} 
+struct \doxymbox{\hyperlink{structposix__acl}{posix\+\_\+acl}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+default\+\_\+acl}
+\item 
+\Hypertarget{structinode_a0da4dd33b5c3f854eb4b24356683cb56}\label{structinode_a0da4dd33b5c3f854eb4b24356683cb56} 
+\doxymbox{\hyperlink{structkuid__t}{kuid\+\_\+t}} {\bfseries i\+\_\+uid}
+\item 
+\Hypertarget{structinode_a17565c7ab11f33154c84454fa5ef9b12}\label{structinode_a17565c7ab11f33154c84454fa5ef9b12} 
+\doxymbox{\hyperlink{structkgid__t}{kgid\+\_\+t}} {\bfseries i\+\_\+gid}
+\item 
+\Hypertarget{structinode_a9a9beebda8c3225f25711096dcdc5b08}\label{structinode_a9a9beebda8c3225f25711096dcdc5b08} 
+const struct \doxymbox{\hyperlink{structinode__operations}{inode\+\_\+operations}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+op}
+\item 
+\Hypertarget{structinode_a8e3ca37fd8f709720380afd9f60d0e71}\label{structinode_a8e3ca37fd8f709720380afd9f60d0e71} 
+struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+sb}
+\item 
+\Hypertarget{structinode_ae328007469cc99d4f341b46480adefcf}\label{structinode_ae328007469cc99d4f341b46480adefcf} 
+struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+mapping}
+\item 
+\Hypertarget{structinode_aadacbc609335612d955df06735c72409}\label{structinode_aadacbc609335612d955df06735c72409} 
+void \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+security}
+\item 
+\Hypertarget{structinode_a40d204ae6c9f05cea1826d55bc187488}\label{structinode_a40d204ae6c9f05cea1826d55bc187488} 
+long unsigned int {\bfseries i\+\_\+ino}
+\item 
+\Hypertarget{structinode_a6524cbf6359184dead6b116cb306ed45}\label{structinode_a6524cbf6359184dead6b116cb306ed45} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const unsigned int {\bfseries i\_nlink}\\
+\>unsigned int {\bfseries \_\_i\_nlink}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinode_a060501b287941e1c5f74d981c6c0876b}\label{structinode_a060501b287941e1c5f74d981c6c0876b} 
+dev\+\_\+t {\bfseries i\+\_\+rdev}
+\item 
+\Hypertarget{structinode_a59fab1ed5859adf6c4f603eb3359d6bd}\label{structinode_a59fab1ed5859adf6c4f603eb3359d6bd} 
+loff\+\_\+t {\bfseries i\+\_\+size}
+\item 
+\Hypertarget{structinode_aac348af21fac5dbea7cc9d4958d64ef4}\label{structinode_aac348af21fac5dbea7cc9d4958d64ef4} 
+time64\+\_\+t {\bfseries i\+\_\+atime\+\_\+sec}
+\item 
+\Hypertarget{structinode_aaadec3828fb1305a91320d3815a051f8}\label{structinode_aaadec3828fb1305a91320d3815a051f8} 
+time64\+\_\+t {\bfseries i\+\_\+mtime\+\_\+sec}
+\item 
+\Hypertarget{structinode_a93542bcac486c27a9ed1e3debfe0f48f}\label{structinode_a93542bcac486c27a9ed1e3debfe0f48f} 
+time64\+\_\+t {\bfseries i\+\_\+ctime\+\_\+sec}
+\item 
+\Hypertarget{structinode_ac0cbd00918eb54ee72cd67b923156649}\label{structinode_ac0cbd00918eb54ee72cd67b923156649} 
+u32 {\bfseries i\+\_\+atime\+\_\+nsec}
+\item 
+\Hypertarget{structinode_afae7a30ce876da8498be3d9b0cb3231c}\label{structinode_afae7a30ce876da8498be3d9b0cb3231c} 
+u32 {\bfseries i\+\_\+mtime\+\_\+nsec}
+\item 
+\Hypertarget{structinode_afb86a95327b3e75e2778195541adef29}\label{structinode_afb86a95327b3e75e2778195541adef29} 
+u32 {\bfseries i\+\_\+ctime\+\_\+nsec}
+\item 
+\Hypertarget{structinode_a241dfb7508938d37c3c2254ce06c5ada}\label{structinode_a241dfb7508938d37c3c2254ce06c5ada} 
+u32 {\bfseries i\+\_\+generation}
+\item 
+\Hypertarget{structinode_a1c3ade19b3bff5b03a0af735ac51a54d}\label{structinode_a1c3ade19b3bff5b03a0af735ac51a54d} 
+spinlock\+\_\+t {\bfseries i\+\_\+lock}
+\item 
+\Hypertarget{structinode_a131767b8eba682bb67d92a8f94880147}\label{structinode_a131767b8eba682bb67d92a8f94880147} 
+short unsigned int {\bfseries i\+\_\+bytes}
+\item 
+\Hypertarget{structinode_a947b2183d9d9164c6e5e31f3e0258b82}\label{structinode_a947b2183d9d9164c6e5e31f3e0258b82} 
+u8 {\bfseries i\+\_\+blkbits}
+\item 
+\Hypertarget{structinode_a2e91924f4f1b35900c64dd6062372d54}\label{structinode_a2e91924f4f1b35900c64dd6062372d54} 
+enum rw\+\_\+hint {\bfseries i\+\_\+write\+\_\+hint}
+\item 
+\Hypertarget{structinode_ab0d132adcf650a1c9b303010fa5c5083}\label{structinode_ab0d132adcf650a1c9b303010fa5c5083} 
+blkcnt\+\_\+t {\bfseries i\+\_\+blocks}
+\item 
+\Hypertarget{structinode_aba3430cd08e1a64c3058f90ecd80a619}\label{structinode_aba3430cd08e1a64c3058f90ecd80a619} 
+struct \doxymbox{\hyperlink{structinode__state__flags}{inode\+\_\+state\+\_\+flags}} {\bfseries i\+\_\+state}
+\item 
+\Hypertarget{structinode_a2a4df97dca0be74e27b8c6f072c8c4e2}\label{structinode_a2a4df97dca0be74e27b8c6f072c8c4e2} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries i\+\_\+rwsem}
+\item 
+\Hypertarget{structinode_a38bd4348123af0d6d8ac69095173ea83}\label{structinode_a38bd4348123af0d6d8ac69095173ea83} 
+long unsigned int {\bfseries dirtied\+\_\+when}
+\item 
+\Hypertarget{structinode_a2b397ce838dbfa27e68339dd98175db1}\label{structinode_a2b397ce838dbfa27e68339dd98175db1} 
+long unsigned int {\bfseries dirtied\+\_\+time\+\_\+when}
+\item 
+\Hypertarget{structinode_a0ae9b6fb41bcbe4feb5b8a7e964d87f4}\label{structinode_a0ae9b6fb41bcbe4feb5b8a7e964d87f4} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries i\+\_\+hash}
+\item 
+\Hypertarget{structinode_aa74976fcd350a73447b3f9c9234a97cf}\label{structinode_aa74976fcd350a73447b3f9c9234a97cf} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries i\+\_\+io\+\_\+list}
+\item 
+\Hypertarget{structinode_a51ac244f2a1991d172eec4e9c3be5329}\label{structinode_a51ac244f2a1991d172eec4e9c3be5329} 
+struct \doxymbox{\hyperlink{structbdi__writeback}{bdi\+\_\+writeback}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+wb}
+\item 
+\Hypertarget{structinode_a1eef113ed7e19bf32a33f0b529bb5bb3}\label{structinode_a1eef113ed7e19bf32a33f0b529bb5bb3} 
+int {\bfseries i\+\_\+wb\+\_\+frn\+\_\+winner}
+\item 
+\Hypertarget{structinode_af3c69f4b611973d441c6477937e4eed3}\label{structinode_af3c69f4b611973d441c6477937e4eed3} 
+u16 {\bfseries i\+\_\+wb\+\_\+frn\+\_\+avg\+\_\+time}
+\item 
+\Hypertarget{structinode_a176fbc6b9160fd35d39410726e1d3b4c}\label{structinode_a176fbc6b9160fd35d39410726e1d3b4c} 
+u16 {\bfseries i\+\_\+wb\+\_\+frn\+\_\+history}
+\item 
+\Hypertarget{structinode_a79220a7013aba25b3e468d237cf8ea9a}\label{structinode_a79220a7013aba25b3e468d237cf8ea9a} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries i\+\_\+lru}
+\item 
+\Hypertarget{structinode_a9f06e3986034d848e6bfe90e800db2f9}\label{structinode_a9f06e3986034d848e6bfe90e800db2f9} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries i\+\_\+sb\+\_\+list}
+\item 
+\Hypertarget{structinode_ae56ce64bccfded20ccab5b6abea93772}\label{structinode_ae56ce64bccfded20ccab5b6abea93772} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries i\+\_\+wb\+\_\+list}
+\item 
+\Hypertarget{structinode_ae21fd244040f5446735f422e17442807}\label{structinode_ae21fd244040f5446735f422e17442807} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structhlist__head}{hlist\_head}} {\bfseries i\_dentry}\\
+\>struct \doxymbox{\hyperlink{structcallback__head}{callback\_head}} {\bfseries i\_rcu}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinode_ab213d54bda1d32c061c0524b6f990d7a}\label{structinode_ab213d54bda1d32c061c0524b6f990d7a} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries i\+\_\+version}
+\item 
+\Hypertarget{structinode_a6586378e49fc0983abd59ac2a0d5546e}\label{structinode_a6586378e49fc0983abd59ac2a0d5546e} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries i\+\_\+sequence}
+\item 
+\Hypertarget{structinode_acdca05fd469ccec646ecffff94ae65bd}\label{structinode_acdca05fd469ccec646ecffff94ae65bd} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries i\+\_\+count}
+\item 
+\Hypertarget{structinode_acd110f716648f24835fb95389a47fd1a}\label{structinode_acd110f716648f24835fb95389a47fd1a} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries i\+\_\+dio\+\_\+count}
+\item 
+\Hypertarget{structinode_a871cd518f299e219ade037ac2ea06b31}\label{structinode_a871cd518f299e219ade037ac2ea06b31} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries i\+\_\+writecount}
+\item 
+\Hypertarget{structinode_a18d13b3b220d80f83b36b2960670b281}\label{structinode_a18d13b3b220d80f83b36b2960670b281} 
+\doxymbox{\hyperlink{structatomic__t}{atomic\+\_\+t}} {\bfseries i\+\_\+readcount}
+\item 
+\Hypertarget{structinode_af8d1cc9fab3cc85e2f6f01572577430d}\label{structinode_af8d1cc9fab3cc85e2f6f01572577430d} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const struct \doxymbox{\hyperlink{structfile__operations}{file\_operations}} \texorpdfstring{$\ast$}{*} {\bfseries i\_fop}\\
+\>void(\texorpdfstring{$\ast$}{*} {\bfseries free\_inode} )(struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*})\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinode_adfef48b478b33c295f4166f29851ede7}\label{structinode_adfef48b478b33c295f4166f29851ede7} 
+struct \doxymbox{\hyperlink{structfile__lock__context}{file\+\_\+lock\+\_\+context}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+flctx}
+\item 
+\Hypertarget{structinode_adc29fa7ff53fc1852d8bc88da056c534}\label{structinode_adc29fa7ff53fc1852d8bc88da056c534} 
+struct \doxymbox{\hyperlink{structaddress__space}{address\+\_\+space}} {\bfseries i\+\_\+data}
+\item 
+\Hypertarget{structinode_a97ab65fddba6d8c4c203104aca5757f4}\label{structinode_a97ab65fddba6d8c4c203104aca5757f4} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structlist__head}{list\_head}} {\bfseries i\_devices}\\
+\>int {\bfseries i\_linklen}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinode_adcbc1ec0714feeaaeff26d528d3ef7d6}\label{structinode_adcbc1ec0714feeaaeff26d528d3ef7d6} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \doxymbox{\hyperlink{structpipe__inode__info}{pipe\_inode\_info}} \texorpdfstring{$\ast$}{*} {\bfseries i\_pipe}\\
+\>struct \doxymbox{\hyperlink{structcdev}{cdev}} \texorpdfstring{$\ast$}{*} {\bfseries i\_cdev}\\
+\>char \texorpdfstring{$\ast$}{*} {\bfseries i\_link}\\
+\>unsigned int {\bfseries i\_dir\_seq}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structinode_adacaa4d9ced8f575f0b25b35b6fc6d92}\label{structinode_adacaa4d9ced8f575f0b25b35b6fc6d92} 
+\+\_\+\+\_\+u32 {\bfseries i\+\_\+fsnotify\+\_\+mask}
+\item 
+\Hypertarget{structinode_a5a6b0ffdcf88b9b075eeb2dbc60256bc}\label{structinode_a5a6b0ffdcf88b9b075eeb2dbc60256bc} 
+struct \doxymbox{\hyperlink{structfsnotify__mark__connector}{fsnotify\+\_\+mark\+\_\+connector}} \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+fsnotify\+\_\+marks}
+\item 
+\Hypertarget{structinode_ae16deb38a894c67b7a93ac9cceeaf2bb}\label{structinode_ae16deb38a894c67b7a93ac9cceeaf2bb} 
+void \texorpdfstring{$\ast$}{*} {\bfseries i\+\_\+private}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+\doxysection{restart\+\_\+block Struct Reference}
+\hypertarget{structrestart__block}{}\label{structrestart__block}\index{restart\_block@{restart\_block}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structrestart__block_ae63b5fff9ab475dbce435e584afe36df}\label{structrestart__block_ae63b5fff9ab475dbce435e584afe36df} 
+long unsigned int {\bfseries arch\+\_\+data}
+\item 
+\Hypertarget{structrestart__block_a2f4d35601ae7665f6914d8c90cedd7c8}\label{structrestart__block_a2f4d35601ae7665f6914d8c90cedd7c8} 
+long int(\texorpdfstring{$\ast$}{*} {\bfseries fn} )(struct \doxymbox{\hyperlink{structrestart__block}{restart\+\_\+block}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structrestart__block_abce238b548915393287eda6a7a794807}\label{structrestart__block_abce238b548915393287eda6a7a794807} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>u32 \texorpdfstring{$\ast$}{*} {\bfseries uaddr}\\
+\>\>u32 {\bfseries val}\\
+\>\>u32 {\bfseries flags}\\
+\>\>u32 {\bfseries bitset}\\
+\>\>ktime\_t {\bfseries time}\\
+\>\>u32 \texorpdfstring{$\ast$}{*} {\bfseries uaddr2}\\
+\>\} {\bfseries futex}\\
+\>struct \{\\
+\>\>clockid\_t {\bfseries clockid}\\
+\>\>enum timespec\_type {\bfseries type}\\
+\Hypertarget{structrestart__block_1_1_0d276076160054211103246026052333076307055304356253_1_1_0d321132333237039b96f5983a893a4fc3c0ea1c869a1f80_af5118a7e863e1ca0dc1ec90a214d5e1a}\label{structrestart__block_1_1_0d276076160054211103246026052333076307055304356253_1_1_0d321132333237039b96f5983a893a4fc3c0ea1c869a1f80_af5118a7e863e1ca0dc1ec90a214d5e1a} 
+\>\>union \{\\
+\>\>\>struct \doxymbox{\hyperlink{struct____kernel__timespec}{\_\_kernel\_timespec}} \texorpdfstring{$\ast$}{*} {\bfseries rmtp}\\
+\>\>\>struct \doxymbox{\hyperlink{structold__timespec32}{old\_timespec32}} \texorpdfstring{$\ast$}{*} {\bfseries compat\_rmtp}\\
+\>\>\} \\
+\>\>ktime\_t {\bfseries expires}\\
+\>\} {\bfseries nanosleep}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structpollfd}{pollfd}} \texorpdfstring{$\ast$}{*} {\bfseries ufds}\\
+\>\>int {\bfseries nfds}\\
+\>\>int {\bfseries has\_timeout}\\
+\>\>long unsigned int {\bfseries tv\_sec}\\
+\>\>long unsigned int {\bfseries tv\_nsec}\\
+\>\} {\bfseries poll}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

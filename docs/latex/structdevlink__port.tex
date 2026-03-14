@@ -1,0 +1,79 @@
+\doxysection{devlink\+\_\+port Struct Reference}
+\hypertarget{structdevlink__port}{}\label{structdevlink__port}\index{devlink\_port@{devlink\_port}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdevlink__port_ac5af0b442b35e0a7a124c875dca01aea}\label{structdevlink__port_ac5af0b442b35e0a7a124c875dca01aea} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structdevlink__port_a67e76c67b6ec0954b9f003c45c4a5832}\label{structdevlink__port_a67e76c67b6ec0954b9f003c45c4a5832} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries region\+\_\+list}
+\item 
+\Hypertarget{structdevlink__port_a0b2c851e3415a6245c0e24c797c31663}\label{structdevlink__port_a0b2c851e3415a6245c0e24c797c31663} 
+struct \doxymbox{\hyperlink{structdevlink}{devlink}} \texorpdfstring{$\ast$}{*} {\bfseries devlink}
+\item 
+\Hypertarget{structdevlink__port_afd13e934f77aaf08682fbaa2570847df}\label{structdevlink__port_afd13e934f77aaf08682fbaa2570847df} 
+const struct \doxymbox{\hyperlink{structdevlink__port__ops}{devlink\+\_\+port\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structdevlink__port_a1759e88201fa5cdd2fa576e27fb4d1c6}\label{structdevlink__port_a1759e88201fa5cdd2fa576e27fb4d1c6} 
+unsigned int {\bfseries index}
+\item 
+\Hypertarget{structdevlink__port_a6edd171f8b361f7b0f28e094f53b5960}\label{structdevlink__port_a6edd171f8b361f7b0f28e094f53b5960} 
+spinlock\+\_\+t {\bfseries type\+\_\+lock}
+\item 
+\Hypertarget{structdevlink__port_a5746fe8b56581bb11fc9d2ace96a80ef}\label{structdevlink__port_a5746fe8b56581bb11fc9d2ace96a80ef} 
+enum devlink\+\_\+port\+\_\+type {\bfseries type}
+\item 
+\Hypertarget{structdevlink__port_a438990658a8f5295e3b861277c8984b4}\label{structdevlink__port_a438990658a8f5295e3b861277c8984b4} 
+enum devlink\+\_\+port\+\_\+type {\bfseries desired\+\_\+type}
+\item 
+\Hypertarget{structdevlink__port_a9bb42f3b679a4f10557d4436ebb1a5a4}\label{structdevlink__port_a9bb42f3b679a4f10557d4436ebb1a5a4} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structnet__device}{net\_device}} \texorpdfstring{$\ast$}{*} {\bfseries netdev}\\
+\>\>int {\bfseries ifindex}\\
+\>\>char {\bfseries ifname} \+[16]\+\\
+\>\} {\bfseries type\_eth}\\
+\>struct \{\\
+\>\>struct \doxymbox{\hyperlink{structib__device}{ib\_device}} \texorpdfstring{$\ast$}{*} {\bfseries ibdev}\\
+\>\} {\bfseries type\_ib}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdevlink__port_a21675fadf2f9c4cf031c62d3bdfc890a}\label{structdevlink__port_a21675fadf2f9c4cf031c62d3bdfc890a} 
+struct \doxymbox{\hyperlink{structdevlink__port__attrs}{devlink\+\_\+port\+\_\+attrs}} {\bfseries attrs}
+\item 
+\Hypertarget{structdevlink__port_aae3583c19b1b1165e3ea19461524ee06}\label{structdevlink__port_aae3583c19b1b1165e3ea19461524ee06} 
+u8 {\bfseries attrs\+\_\+set}:\+ 1
+\item 
+\Hypertarget{structdevlink__port_ade02e23b40f0f33818af06e606d71b8b}\label{structdevlink__port_ade02e23b40f0f33818af06e606d71b8b} 
+u8 {\bfseries switch\+\_\+port}:\+ 1
+\item 
+\Hypertarget{structdevlink__port_ad45f3e64e0ec6549a372b222ed31237e}\label{structdevlink__port_ad45f3e64e0ec6549a372b222ed31237e} 
+u8 {\bfseries registered}:\+ 1
+\item 
+\Hypertarget{structdevlink__port_a4ffa22cf824eaca3d59251328c104a48}\label{structdevlink__port_a4ffa22cf824eaca3d59251328c104a48} 
+u8 {\bfseries initialized}:\+ 1
+\item 
+\Hypertarget{structdevlink__port_ae2248179188a7045837d51f7d0d8a0a4}\label{structdevlink__port_ae2248179188a7045837d51f7d0d8a0a4} 
+struct \doxymbox{\hyperlink{structdelayed__work}{delayed\+\_\+work}} {\bfseries type\+\_\+warn\+\_\+dw}
+\item 
+\Hypertarget{structdevlink__port_a80367ccf3e62413b1ae2c327623afa7e}\label{structdevlink__port_a80367ccf3e62413b1ae2c327623afa7e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries reporter\+\_\+list}
+\item 
+\Hypertarget{structdevlink__port_a130a1946cf93d0d35cccb8f6c12897b6}\label{structdevlink__port_a130a1946cf93d0d35cccb8f6c12897b6} 
+struct \doxymbox{\hyperlink{structdevlink__rate}{devlink\+\_\+rate}} \texorpdfstring{$\ast$}{*} {\bfseries devlink\+\_\+rate}
+\item 
+\Hypertarget{structdevlink__port_ac2ea1123322f4366a4a9af2d45b3ee29}\label{structdevlink__port_ac2ea1123322f4366a4a9af2d45b3ee29} 
+struct \doxymbox{\hyperlink{structdevlink__linecard}{devlink\+\_\+linecard}} \texorpdfstring{$\ast$}{*} {\bfseries linecard}
+\item 
+\Hypertarget{structdevlink__port_aacd867132640d0e68bd973b53c9eb94f}\label{structdevlink__port_aacd867132640d0e68bd973b53c9eb94f} 
+u32 {\bfseries rel\+\_\+index}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

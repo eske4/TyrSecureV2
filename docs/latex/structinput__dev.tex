@@ -1,0 +1,157 @@
+\doxysection{input\+\_\+dev Struct Reference}
+\hypertarget{structinput__dev}{}\label{structinput__dev}\index{input\_dev@{input\_dev}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structinput__dev_ab0764dca62b572203654c036ec1d6fb3}\label{structinput__dev_ab0764dca62b572203654c036ec1d6fb3} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structinput__dev_a87fd8139b3f7eb28d28f9880d3513e02}\label{structinput__dev_a87fd8139b3f7eb28d28f9880d3513e02} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries phys}
+\item 
+\Hypertarget{structinput__dev_a3bc3a5e3579eb8d61d901bbcb85a1bcb}\label{structinput__dev_a3bc3a5e3579eb8d61d901bbcb85a1bcb} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries uniq}
+\item 
+\Hypertarget{structinput__dev_ad16390fbf05fee540685e870616db700}\label{structinput__dev_ad16390fbf05fee540685e870616db700} 
+struct \doxymbox{\hyperlink{structinput__id}{input\+\_\+id}} {\bfseries id}
+\item 
+\Hypertarget{structinput__dev_a1fc2f0c26ef7cf38157cfb5643a26149}\label{structinput__dev_a1fc2f0c26ef7cf38157cfb5643a26149} 
+long unsigned int {\bfseries propbit} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_ab546f8f636a1e86681cd1e724ed3a546}\label{structinput__dev_ab546f8f636a1e86681cd1e724ed3a546} 
+long unsigned int {\bfseries evbit} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_a6ef7d440f397ccc0696c6b3d4e3b5d93}\label{structinput__dev_a6ef7d440f397ccc0696c6b3d4e3b5d93} 
+long unsigned int {\bfseries keybit} \+[12]\+
+\item 
+\Hypertarget{structinput__dev_a98528e9db0a5bd8ef7579d7954e05c87}\label{structinput__dev_a98528e9db0a5bd8ef7579d7954e05c87} 
+long unsigned int {\bfseries relbit} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_a12e18d0e23590c760ae1e90c13c66ee2}\label{structinput__dev_a12e18d0e23590c760ae1e90c13c66ee2} 
+long unsigned int {\bfseries absbit} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_ab15ff48026b9592bfa06566fc2ea96b2}\label{structinput__dev_ab15ff48026b9592bfa06566fc2ea96b2} 
+long unsigned int {\bfseries mscbit} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_a8f076fa28c337d9c75f551d47f13bf36}\label{structinput__dev_a8f076fa28c337d9c75f551d47f13bf36} 
+long unsigned int {\bfseries ledbit} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_a3ae1c7bd1daadf2d18261830e2ab1ac7}\label{structinput__dev_a3ae1c7bd1daadf2d18261830e2ab1ac7} 
+long unsigned int {\bfseries sndbit} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_aae4edbeca5d93714ca8e0fde8a109b22}\label{structinput__dev_aae4edbeca5d93714ca8e0fde8a109b22} 
+long unsigned int {\bfseries ffbit} \+[2]\+
+\item 
+\Hypertarget{structinput__dev_aabe2e86e83b8710ccfa23f5a84ea745a}\label{structinput__dev_aabe2e86e83b8710ccfa23f5a84ea745a} 
+long unsigned int {\bfseries swbit} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_a95015f52b5500135406fc3a161c65cca}\label{structinput__dev_a95015f52b5500135406fc3a161c65cca} 
+unsigned int {\bfseries hint\+\_\+events\+\_\+per\+\_\+packet}
+\item 
+\Hypertarget{structinput__dev_a2e8ceea95c0297ba69d1a747c7ba3216}\label{structinput__dev_a2e8ceea95c0297ba69d1a747c7ba3216} 
+unsigned int {\bfseries keycodemax}
+\item 
+\Hypertarget{structinput__dev_aaf936f412aa2311b3cd8c4a095fd233f}\label{structinput__dev_aaf936f412aa2311b3cd8c4a095fd233f} 
+unsigned int {\bfseries keycodesize}
+\item 
+\Hypertarget{structinput__dev_a2c4403fe643f5571fc767851ba50c242}\label{structinput__dev_a2c4403fe643f5571fc767851ba50c242} 
+void \texorpdfstring{$\ast$}{*} {\bfseries keycode}
+\item 
+\Hypertarget{structinput__dev_ab64f2cb5855e17fa5d33d85651dba22a}\label{structinput__dev_ab64f2cb5855e17fa5d33d85651dba22a} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries setkeycode} )(struct \doxymbox{\hyperlink{structinput__dev}{input\+\_\+dev}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structinput__keymap__entry}{input\+\_\+keymap\+\_\+entry}} \texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinput__dev_a6cf541121390a10804dd65e0a785771c}\label{structinput__dev_a6cf541121390a10804dd65e0a785771c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries getkeycode} )(struct \doxymbox{\hyperlink{structinput__dev}{input\+\_\+dev}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structinput__keymap__entry}{input\+\_\+keymap\+\_\+entry}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinput__dev_a13f27fb7f886cb2f40b1332edb9007fd}\label{structinput__dev_a13f27fb7f886cb2f40b1332edb9007fd} 
+struct \doxymbox{\hyperlink{structff__device}{ff\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries ff}
+\item 
+\Hypertarget{structinput__dev_ab5a7b71aabfdf421cf3a68ea34e91da1}\label{structinput__dev_ab5a7b71aabfdf421cf3a68ea34e91da1} 
+struct \doxymbox{\hyperlink{structinput__dev__poller}{input\+\_\+dev\+\_\+poller}} \texorpdfstring{$\ast$}{*} {\bfseries poller}
+\item 
+\Hypertarget{structinput__dev_aed5a4c4bf50996358a056005e3bd0eb1}\label{structinput__dev_aed5a4c4bf50996358a056005e3bd0eb1} 
+unsigned int {\bfseries repeat\+\_\+key}
+\item 
+\Hypertarget{structinput__dev_a41b2eb1c12b16d31beb4823d299d6557}\label{structinput__dev_a41b2eb1c12b16d31beb4823d299d6557} 
+struct \doxymbox{\hyperlink{structtimer__list}{timer\+\_\+list}} {\bfseries timer}
+\item 
+\Hypertarget{structinput__dev_a3fb94a98f198b32d248bf9b8084bb643}\label{structinput__dev_a3fb94a98f198b32d248bf9b8084bb643} 
+int {\bfseries rep} \+[2]\+
+\item 
+\Hypertarget{structinput__dev_ada4d6b3a47e93f8ff14a4a4f2dace274}\label{structinput__dev_ada4d6b3a47e93f8ff14a4a4f2dace274} 
+struct \doxymbox{\hyperlink{structinput__mt}{input\+\_\+mt}} \texorpdfstring{$\ast$}{*} {\bfseries mt}
+\item 
+\Hypertarget{structinput__dev_afc05a0a7be8f1e437624156831456cfb}\label{structinput__dev_afc05a0a7be8f1e437624156831456cfb} 
+struct \doxymbox{\hyperlink{structinput__absinfo}{input\+\_\+absinfo}} \texorpdfstring{$\ast$}{*} {\bfseries absinfo}
+\item 
+\Hypertarget{structinput__dev_a212c72519980b0a5c91d56be90d6c0a4}\label{structinput__dev_a212c72519980b0a5c91d56be90d6c0a4} 
+long unsigned int {\bfseries key} \+[12]\+
+\item 
+\Hypertarget{structinput__dev_a047103e49a1ec6afde4efca6de2f6a51}\label{structinput__dev_a047103e49a1ec6afde4efca6de2f6a51} 
+long unsigned int {\bfseries led} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_a911af479004480f0aa4a3f6547ee1783}\label{structinput__dev_a911af479004480f0aa4a3f6547ee1783} 
+long unsigned int {\bfseries snd} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_a432ab68c3d0a80c5d6ab300daedf294a}\label{structinput__dev_a432ab68c3d0a80c5d6ab300daedf294a} 
+long unsigned int {\bfseries sw} \+[1]\+
+\item 
+\Hypertarget{structinput__dev_a6e219e9d4fd0fd9bbef27a451ce4e265}\label{structinput__dev_a6e219e9d4fd0fd9bbef27a451ce4e265} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structinput__dev}{input\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinput__dev_af83f3c02227c280665b7166c5df66be7}\label{structinput__dev_af83f3c02227c280665b7166c5df66be7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries close} )(struct \doxymbox{\hyperlink{structinput__dev}{input\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinput__dev_aad09e9ffdd29c48b6f8c3ec3e6fcf350}\label{structinput__dev_aad09e9ffdd29c48b6f8c3ec3e6fcf350} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries flush} )(struct \doxymbox{\hyperlink{structinput__dev}{input\+\_\+dev}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structfile}{file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structinput__dev_aa46488bde48b7a35c3eb31a86dcf4933}\label{structinput__dev_aa46488bde48b7a35c3eb31a86dcf4933} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries event} )(struct \doxymbox{\hyperlink{structinput__dev}{input\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int, int)
+\item 
+\Hypertarget{structinput__dev_a8b61eb35cec6fc561495a984ec4f00cf}\label{structinput__dev_a8b61eb35cec6fc561495a984ec4f00cf} 
+struct \doxymbox{\hyperlink{structinput__handle}{input\+\_\+handle}} \texorpdfstring{$\ast$}{*} {\bfseries grab}
+\item 
+\Hypertarget{structinput__dev_ab97baad53bb492005ef1cb83d491bc4f}\label{structinput__dev_ab97baad53bb492005ef1cb83d491bc4f} 
+spinlock\+\_\+t {\bfseries event\+\_\+lock}
+\item 
+\Hypertarget{structinput__dev_ac4dfc00279fba662991d936d9117874f}\label{structinput__dev_ac4dfc00279fba662991d936d9117874f} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries mutex}
+\item 
+\Hypertarget{structinput__dev_a20176e6618c872474f584bb9db9b17bf}\label{structinput__dev_a20176e6618c872474f584bb9db9b17bf} 
+unsigned int {\bfseries users}
+\item 
+\Hypertarget{structinput__dev_a364a8ca9d764e67099a3f7286fe30a84}\label{structinput__dev_a364a8ca9d764e67099a3f7286fe30a84} 
+bool {\bfseries going\+\_\+away}
+\item 
+\Hypertarget{structinput__dev_a64606f5fbf1ee928cd2cdd253ad74f54}\label{structinput__dev_a64606f5fbf1ee928cd2cdd253ad74f54} 
+struct \doxymbox{\hyperlink{structdevice}{device}} {\bfseries dev}
+\item 
+\Hypertarget{structinput__dev_a24ea69818792f010e937e3181bf8d23f}\label{structinput__dev_a24ea69818792f010e937e3181bf8d23f} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries h\+\_\+list}
+\item 
+\Hypertarget{structinput__dev_adc3765aab481f422fc1c9d917500603e}\label{structinput__dev_adc3765aab481f422fc1c9d917500603e} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries node}
+\item 
+\Hypertarget{structinput__dev_a3b45d822cc7fc9ec7f9d2825c64e8ac5}\label{structinput__dev_a3b45d822cc7fc9ec7f9d2825c64e8ac5} 
+unsigned int {\bfseries num\+\_\+vals}
+\item 
+\Hypertarget{structinput__dev_a7667fc88feedcb1c3eab70a9865aba2b}\label{structinput__dev_a7667fc88feedcb1c3eab70a9865aba2b} 
+unsigned int {\bfseries max\+\_\+vals}
+\item 
+\Hypertarget{structinput__dev_a776ce3874a1517cf8223c4096f59e7bd}\label{structinput__dev_a776ce3874a1517cf8223c4096f59e7bd} 
+struct \doxymbox{\hyperlink{structinput__value}{input\+\_\+value}} \texorpdfstring{$\ast$}{*} {\bfseries vals}
+\item 
+\Hypertarget{structinput__dev_aceb993977073d9a8f59725ffc2d18a5d}\label{structinput__dev_aceb993977073d9a8f59725ffc2d18a5d} 
+bool {\bfseries devres\+\_\+managed}
+\item 
+\Hypertarget{structinput__dev_ae30dc3f8a7fb6b9813bd756b4531e1aa}\label{structinput__dev_ae30dc3f8a7fb6b9813bd756b4531e1aa} 
+ktime\+\_\+t {\bfseries timestamp} \+[3]\+
+\item 
+\Hypertarget{structinput__dev_aa0691180aeae39bfdab4a2ac30e2d349}\label{structinput__dev_aa0691180aeae39bfdab4a2ac30e2d349} 
+bool {\bfseries inhibited}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

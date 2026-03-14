@@ -1,0 +1,154 @@
+\doxysection{Qdisc Struct Reference}
+\hypertarget{structQdisc}{}\label{structQdisc}\index{Qdisc@{Qdisc}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structQdisc_ac71389edeeac30f2fa276763e7dd8f51}\label{structQdisc_ac71389edeeac30f2fa276763e7dd8f51} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries enqueue} )(struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structQdisc_a5591d3f2e83660c66167e2481a8b3714}\label{structQdisc_a5591d3f2e83660c66167e2481a8b3714} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries dequeue} )(struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structQdisc_a523bc935ae90e8ffbc849682ce725188}\label{structQdisc_a523bc935ae90e8ffbc849682ce725188} 
+unsigned int {\bfseries flags}
+\item 
+\Hypertarget{structQdisc_abe68195f3db421aace37ddd59988e6b9}\label{structQdisc_abe68195f3db421aace37ddd59988e6b9} 
+u32 {\bfseries limit}
+\item 
+\Hypertarget{structQdisc_a13f0ab9c575c8df0f30ed6e0dfe14efa}\label{structQdisc_a13f0ab9c575c8df0f30ed6e0dfe14efa} 
+const struct \doxymbox{\hyperlink{structQdisc__ops}{Qdisc\+\_\+ops}} \texorpdfstring{$\ast$}{*} {\bfseries ops}
+\item 
+\Hypertarget{structQdisc_aa898738561a4bf26934b665e8e998383}\label{structQdisc_aa898738561a4bf26934b665e8e998383} 
+struct \doxymbox{\hyperlink{structqdisc__size__table}{qdisc\+\_\+size\+\_\+table}} \texorpdfstring{$\ast$}{*} {\bfseries stab}
+\item 
+\Hypertarget{structQdisc_a56663c4012cd1b2bddbe2521869ce5a1}\label{structQdisc_a56663c4012cd1b2bddbe2521869ce5a1} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries hash}
+\item 
+\Hypertarget{structQdisc_af981cb0f358959357bf9a85141c76f9b}\label{structQdisc_af981cb0f358959357bf9a85141c76f9b} 
+u32 {\bfseries handle}
+\item 
+\Hypertarget{structQdisc_a21e89e23ef2c06289efb185b1babb7fc}\label{structQdisc_a21e89e23ef2c06289efb185b1babb7fc} 
+u32 {\bfseries parent}
+\item 
+\Hypertarget{structQdisc_aece2ed3f4f9171b7a66a67d7c495d518}\label{structQdisc_aece2ed3f4f9171b7a66a67d7c495d518} 
+struct \doxymbox{\hyperlink{structnetdev__queue}{netdev\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries dev\+\_\+queue}
+\item 
+\Hypertarget{structQdisc_a3a91013508e895089dd9fa5b0a3ab2cb}\label{structQdisc_a3a91013508e895089dd9fa5b0a3ab2cb} 
+struct \doxymbox{\hyperlink{structnet__rate__estimator}{net\+\_\+rate\+\_\+estimator}} \texorpdfstring{$\ast$}{*} {\bfseries rate\+\_\+est}
+\item 
+\Hypertarget{structQdisc_a765d286763c92a89b299ac29d7a25dda}\label{structQdisc_a765d286763c92a89b299ac29d7a25dda} 
+struct \doxymbox{\hyperlink{structgnet__stats__basic__sync}{gnet\+\_\+stats\+\_\+basic\+\_\+sync}} \texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+bstats}
+\item 
+\Hypertarget{structQdisc_ada660ec6ff90181fa1178c311306af63}\label{structQdisc_ada660ec6ff90181fa1178c311306af63} 
+struct \doxymbox{\hyperlink{structgnet__stats__queue}{gnet\+\_\+stats\+\_\+queue}} \texorpdfstring{$\ast$}{*} {\bfseries cpu\+\_\+qstats}
+\item 
+\Hypertarget{structQdisc_a5698fea3796128789a8bdf06b2bf7916}\label{structQdisc_a5698fea3796128789a8bdf06b2bf7916} 
+int {\bfseries pad}
+\item 
+\Hypertarget{structQdisc_ad5b5fbab07a9f1d1298fc672469cc51f}\label{structQdisc_ad5b5fbab07a9f1d1298fc672469cc51f} 
+refcount\+\_\+t {\bfseries refcnt}
+\item 
+\Hypertarget{structQdisc_aed36c26ed45c313c06363afd9b6b6d0e}\label{structQdisc_aed36c26ed45c313c06363afd9b6b6d0e} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_a2f19666a06325dba55754eefc257dda9}\label{structQdisc_a2f19666a06325dba55754eefc257dda9} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_a557fa16cb9f045dbe384bf420b840627}\label{structQdisc_a557fa16cb9f045dbe384bf420b840627} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_a1f10d54437c3e2fc47da401427248729}\label{structQdisc_a1f10d54437c3e2fc47da401427248729} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+\+Qdisc\+\_\+read\+\_\+mostly} \+[0]\+
+\item 
+\Hypertarget{structQdisc_a2e5568fad83af3e02cdfec9d208cc615}\label{structQdisc_a2e5568fad83af3e02cdfec9d208cc615} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries gso\+\_\+skb}
+\item 
+\Hypertarget{structQdisc_a026e5b9dae97fb71aa970e1984a59cc1}\label{structQdisc_a026e5b9dae97fb71aa970e1984a59cc1} 
+struct \doxymbox{\hyperlink{structQdisc}{Qdisc}} \texorpdfstring{$\ast$}{*} {\bfseries next\+\_\+sched}
+\item 
+\Hypertarget{structQdisc_acd922edc87db9a0b8bd1a09f2e8546fa}\label{structQdisc_acd922edc87db9a0b8bd1a09f2e8546fa} 
+struct \doxymbox{\hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head}} {\bfseries skb\+\_\+bad\+\_\+txq}
+\item 
+\Hypertarget{structQdisc_a4751355d5ac80085c243ea0bd03c4dd4}\label{structQdisc_a4751355d5ac80085c243ea0bd03c4dd4} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+\+Qdisc\+\_\+read\+\_\+mostly} \+[0]\+
+\item 
+\Hypertarget{structQdisc_a52b5356de76abe7686768a2ff3fd1ed5}\label{structQdisc_a52b5356de76abe7686768a2ff3fd1ed5} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_a9abda51dda86403c0281e3b999240581}\label{structQdisc_a9abda51dda86403c0281e3b999240581} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+begin\+\_\+\+\_\+\+Qdisc\+\_\+write} \+[0]\+
+\item 
+\Hypertarget{structQdisc_a23683f7c48c1bca725e3091321c6278c}\label{structQdisc_a23683f7c48c1bca725e3091321c6278c} 
+struct \doxymbox{\hyperlink{structqdisc__skb__head}{qdisc\+\_\+skb\+\_\+head}} {\bfseries q}
+\item 
+\Hypertarget{structQdisc_a71707c61be92735bce0bb5182828c17d}\label{structQdisc_a71707c61be92735bce0bb5182828c17d} 
+long unsigned int {\bfseries state}
+\item 
+\Hypertarget{structQdisc_ac4c01018be4f92e2e78ea48267dd983e}\label{structQdisc_ac4c01018be4f92e2e78ea48267dd983e} 
+struct \doxymbox{\hyperlink{structgnet__stats__basic__sync}{gnet\+\_\+stats\+\_\+basic\+\_\+sync}} {\bfseries bstats}
+\item 
+\Hypertarget{structQdisc_a5233ad9bd5a643f763d02c7d851f7bbf}\label{structQdisc_a5233ad9bd5a643f763d02c7d851f7bbf} 
+bool {\bfseries running}
+\item 
+\Hypertarget{structQdisc_aaa1d0b36718f07da7d74f7700e22e224}\label{structQdisc_aaa1d0b36718f07da7d74f7700e22e224} 
+struct \doxymbox{\hyperlink{structgnet__stats__queue}{gnet\+\_\+stats\+\_\+queue}} {\bfseries qstats}
+\item 
+\Hypertarget{structQdisc_a4f7b90303640a7403bd72969d8eed938}\label{structQdisc_a4f7b90303640a7403bd72969d8eed938} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries to\+\_\+free}
+\item 
+\Hypertarget{structQdisc_a886977873af421ac088149a53d08dc60}\label{structQdisc_a886977873af421ac088149a53d08dc60} 
+\+\_\+\+\_\+u8 {\bfseries \+\_\+\+\_\+cacheline\+\_\+group\+\_\+end\+\_\+\+\_\+\+Qdisc\+\_\+write} \+[0]\+
+\item 
+\Hypertarget{structQdisc_a38de550b659374cd753a44309ecfa9ea}\label{structQdisc_a38de550b659374cd753a44309ecfa9ea} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_ab2c25003c4791bb28d553dd8ca9bdc7a}\label{structQdisc_ab2c25003c4791bb28d553dd8ca9bdc7a} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_abfe44b6afede03a0e66110ee731abbed}\label{structQdisc_abfe44b6afede03a0e66110ee731abbed} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_a0e3ca7d3b221fc977fba4980c0b99d0b}\label{structQdisc_a0e3ca7d3b221fc977fba4980c0b99d0b} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_a0f169497b5890c36b7605df157944515}\label{structQdisc_a0f169497b5890c36b7605df157944515} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_ac729e3f2b3026003ad84e8c964a076b7}\label{structQdisc_ac729e3f2b3026003ad84e8c964a076b7} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_a9fc30c7ebc7897b70e234c2df111bef6}\label{structQdisc_a9fc30c7ebc7897b70e234c2df111bef6} 
+atomic\+\_\+long\+\_\+t {\bfseries defer\+\_\+count}
+\item 
+\Hypertarget{structQdisc_a76a3266f4c4d5a10bc4b2b7cb3b14822}\label{structQdisc_a76a3266f4c4d5a10bc4b2b7cb3b14822} 
+struct \doxymbox{\hyperlink{structllist__head}{llist\+\_\+head}} {\bfseries defer\+\_\+list}
+\item 
+\Hypertarget{structQdisc_a49002d16bf93b0894c21eceff4feff5d}\label{structQdisc_a49002d16bf93b0894c21eceff4feff5d} 
+spinlock\+\_\+t {\bfseries seqlock}
+\item 
+\Hypertarget{structQdisc_ac512d352f1f4d987708326d34636b30c}\label{structQdisc_ac512d352f1f4d987708326d34636b30c} 
+struct \doxymbox{\hyperlink{structcallback__head}{callback\+\_\+head}} {\bfseries rcu}
+\item 
+\Hypertarget{structQdisc_ac22cc37a8f95931558b9c07210cf980c}\label{structQdisc_ac22cc37a8f95931558b9c07210cf980c} 
+\doxymbox{\hyperlink{structnetdevice__tracker}{netdevice\+\_\+tracker}} {\bfseries dev\+\_\+tracker}
+\item 
+\Hypertarget{structQdisc_abeb74b344c03b5514901c010a9e849cd}\label{structQdisc_abeb74b344c03b5514901c010a9e849cd} 
+struct \doxymbox{\hyperlink{structlock__class__key}{lock\+\_\+class\+\_\+key}} {\bfseries root\+\_\+lock\+\_\+key}
+\item 
+\Hypertarget{structQdisc_a8ae3ca88a2f1ca9e2b9b3b63798a537a}\label{structQdisc_a8ae3ca88a2f1ca9e2b9b3b63798a537a} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_a727282e5bdf8be1617526757e988370d}\label{structQdisc_a727282e5bdf8be1617526757e988370d} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_aaea6ebde37e898ce5b59c70d952c2a05}\label{structQdisc_aaea6ebde37e898ce5b59c70d952c2a05} 
+long :\+ 64
+\item 
+\Hypertarget{structQdisc_a679acf826fd0a14c5c4e4cca38a50a5c}\label{structQdisc_a679acf826fd0a14c5c4e4cca38a50a5c} 
+long int {\bfseries privdata} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

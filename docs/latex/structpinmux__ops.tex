@@ -1,0 +1,43 @@
+\doxysection{pinmux\+\_\+ops Struct Reference}
+\hypertarget{structpinmux__ops}{}\label{structpinmux__ops}\index{pinmux\_ops@{pinmux\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structpinmux__ops_a9b2549a1ed7dbded0fd7fc906e2e7f95}\label{structpinmux__ops_a9b2549a1ed7dbded0fd7fc906e2e7f95} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries request} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpinmux__ops_ad0a7bcf4985627b7810633c398354242}\label{structpinmux__ops_ad0a7bcf4985627b7810633c398354242} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries free} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpinmux__ops_af500e85085ed751a762816cc28cd17cb}\label{structpinmux__ops_af500e85085ed751a762816cc28cd17cb} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+functions\+\_\+count} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpinmux__ops_a37dbd17e046e59e00beb93995fd78519}\label{structpinmux__ops_a37dbd17e046e59e00beb93995fd78519} 
+const char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+function\+\_\+name} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpinmux__ops_a07a03d4f28c906f9d6c4f0addd7a3b5e}\label{structpinmux__ops_a07a03d4f28c906f9d6c4f0addd7a3b5e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+function\+\_\+groups} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int, const char \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, unsigned int \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structpinmux__ops_a57ad1fab38715ed811671a194602468c}\label{structpinmux__ops_a57ad1fab38715ed811671a194602468c} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries function\+\_\+is\+\_\+gpio} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpinmux__ops_a92ae5eaef487c5eaef10208d160ca65f}\label{structpinmux__ops_a92ae5eaef487c5eaef10208d160ca65f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries set\+\_\+mux} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*}, unsigned int, unsigned int)
+\item 
+\Hypertarget{structpinmux__ops_a8af5df6e08b8b2e81bfa4818c32d2bc7}\label{structpinmux__ops_a8af5df6e08b8b2e81bfa4818c32d2bc7} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries gpio\+\_\+request\+\_\+enable} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpinctrl__gpio__range}{pinctrl\+\_\+gpio\+\_\+range}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpinmux__ops_a8d154755dedb64329425f774401fb227}\label{structpinmux__ops_a8d154755dedb64329425f774401fb227} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries gpio\+\_\+disable\+\_\+free} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpinctrl__gpio__range}{pinctrl\+\_\+gpio\+\_\+range}} \texorpdfstring{$\ast$}{*}, unsigned int)
+\item 
+\Hypertarget{structpinmux__ops_a133d5039cc06a2b30aeea66519d41d42}\label{structpinmux__ops_a133d5039cc06a2b30aeea66519d41d42} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries gpio\+\_\+set\+\_\+direction} )(struct \doxymbox{\hyperlink{structpinctrl__dev}{pinctrl\+\_\+dev}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpinctrl__gpio__range}{pinctrl\+\_\+gpio\+\_\+range}} \texorpdfstring{$\ast$}{*}, unsigned int, bool)
+\item 
+\Hypertarget{structpinmux__ops_a05324eb7c5040689311b623a0b6bcfbc}\label{structpinmux__ops_a05324eb7c5040689311b623a0b6bcfbc} 
+bool {\bfseries strict}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

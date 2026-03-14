@@ -1,0 +1,31 @@
+\doxysection{kmem\+\_\+cache\+\_\+node Struct Reference}
+\hypertarget{structkmem__cache__node}{}\label{structkmem__cache__node}\index{kmem\_cache\_node@{kmem\_cache\_node}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkmem__cache__node_a48909995af0334d75c913fb0562c333e}\label{structkmem__cache__node_a48909995af0334d75c913fb0562c333e} 
+spinlock\+\_\+t {\bfseries list\+\_\+lock}
+\item 
+\Hypertarget{structkmem__cache__node_a83d4013e8996304758273ffe9b6be203}\label{structkmem__cache__node_a83d4013e8996304758273ffe9b6be203} 
+long unsigned int {\bfseries nr\+\_\+partial}
+\item 
+\Hypertarget{structkmem__cache__node_ac9a60f21358ee69f14e0efec2d2d9e84}\label{structkmem__cache__node_ac9a60f21358ee69f14e0efec2d2d9e84} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries partial}
+\item 
+\Hypertarget{structkmem__cache__node_afe085287bc63c6b9095a9a9e7b630b02}\label{structkmem__cache__node_afe085287bc63c6b9095a9a9e7b630b02} 
+atomic\+\_\+long\+\_\+t {\bfseries nr\+\_\+slabs}
+\item 
+\Hypertarget{structkmem__cache__node_a439be051ae6f76cad745f7f8b1db2bff}\label{structkmem__cache__node_a439be051ae6f76cad745f7f8b1db2bff} 
+atomic\+\_\+long\+\_\+t {\bfseries total\+\_\+objects}
+\item 
+\Hypertarget{structkmem__cache__node_ae37967f589eb9fe43b144e204f6163d2}\label{structkmem__cache__node_ae37967f589eb9fe43b144e204f6163d2} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries full}
+\item 
+\Hypertarget{structkmem__cache__node_a36e26349f6c5b5eb6da09839eb0666a3}\label{structkmem__cache__node_a36e26349f6c5b5eb6da09839eb0666a3} 
+struct \doxymbox{\hyperlink{structnode__barn}{node\+\_\+barn}} \texorpdfstring{$\ast$}{*} {\bfseries barn}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

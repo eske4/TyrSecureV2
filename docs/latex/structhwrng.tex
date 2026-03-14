@@ -1,0 +1,49 @@
+\doxysection{hwrng Struct Reference}
+\hypertarget{structhwrng}{}\label{structhwrng}\index{hwrng@{hwrng}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structhwrng_a1a775adb01fa1121c7d63ab43b6c0029}\label{structhwrng_a1a775adb01fa1121c7d63ab43b6c0029} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structhwrng_ae999e83585859d7f7a3a500bb3df1a7c}\label{structhwrng_ae999e83585859d7f7a3a500bb3df1a7c} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries init} )(struct \doxymbox{\hyperlink{structhwrng}{hwrng}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhwrng_a52534175b1f9d29063742c2b67bafbaf}\label{structhwrng_a52534175b1f9d29063742c2b67bafbaf} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup} )(struct \doxymbox{\hyperlink{structhwrng}{hwrng}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhwrng_a02bac4cdf88bad69c0b5942bd57d778e}\label{structhwrng_a02bac4cdf88bad69c0b5942bd57d778e} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries data\+\_\+present} )(struct \doxymbox{\hyperlink{structhwrng}{hwrng}} \texorpdfstring{$\ast$}{*}, int)
+\item 
+\Hypertarget{structhwrng_a84d256b387a976fb49c1d4c8e701f21f}\label{structhwrng_a84d256b387a976fb49c1d4c8e701f21f} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries data\+\_\+read} )(struct \doxymbox{\hyperlink{structhwrng}{hwrng}} \texorpdfstring{$\ast$}{*}, u32 \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structhwrng_ab3c5ce75111fe360a049658af5d92c2d}\label{structhwrng_ab3c5ce75111fe360a049658af5d92c2d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structhwrng}{hwrng}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, size\+\_\+t, bool)
+\item 
+\Hypertarget{structhwrng_accea9a68e0e41b1fcf75ae2d286e06ee}\label{structhwrng_accea9a68e0e41b1fcf75ae2d286e06ee} 
+long unsigned int {\bfseries priv}
+\item 
+\Hypertarget{structhwrng_a2b437be5c804eb63ba1a95de23d655f8}\label{structhwrng_a2b437be5c804eb63ba1a95de23d655f8} 
+short unsigned int {\bfseries quality}
+\item 
+\Hypertarget{structhwrng_af70fa0b92e76cd3fe20b03f6526d5441}\label{structhwrng_af70fa0b92e76cd3fe20b03f6526d5441} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structhwrng_a8ddc7a52984856ccd9a969e8ee7937fe}\label{structhwrng_a8ddc7a52984856ccd9a969e8ee7937fe} 
+struct \doxymbox{\hyperlink{structkref}{kref}} {\bfseries ref}
+\item 
+\Hypertarget{structhwrng_a63f0dceee6f0e39b68df9582996efc4b}\label{structhwrng_a63f0dceee6f0e39b68df9582996efc4b} 
+struct \doxymbox{\hyperlink{structwork__struct}{work\+\_\+struct}} {\bfseries cleanup\+\_\+work}
+\item 
+\Hypertarget{structhwrng_a5f32f5b7ba6112f4e29ac15313d1f507}\label{structhwrng_a5f32f5b7ba6112f4e29ac15313d1f507} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries cleanup\+\_\+done}
+\item 
+\Hypertarget{structhwrng_a67b5188962327c631a0f40c98a3c6fad}\label{structhwrng_a67b5188962327c631a0f40c98a3c6fad} 
+struct \doxymbox{\hyperlink{structcompletion}{completion}} {\bfseries dying}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

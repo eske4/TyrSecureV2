@@ -1,0 +1,53 @@
+\doxysection{iphdr Struct Reference}
+\hypertarget{structiphdr}{}\label{structiphdr}\index{iphdr@{iphdr}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structiphdr_abda67347a8e0b7da3998d8e9192fca14}\label{structiphdr_abda67347a8e0b7da3998d8e9192fca14} 
+\+\_\+\+\_\+u8 {\bfseries ihl}:\+ 4
+\item 
+\Hypertarget{structiphdr_a44b57956470d5621b150f309437fd15d}\label{structiphdr_a44b57956470d5621b150f309437fd15d} 
+\+\_\+\+\_\+u8 {\bfseries version}:\+ 4
+\item 
+\Hypertarget{structiphdr_a0976e0db3f25e8bcc7f787246c386658}\label{structiphdr_a0976e0db3f25e8bcc7f787246c386658} 
+\+\_\+\+\_\+u8 {\bfseries tos}
+\item 
+\Hypertarget{structiphdr_a77070d1a34396133dbd916509095d63c}\label{structiphdr_a77070d1a34396133dbd916509095d63c} 
+\+\_\+\+\_\+be16 {\bfseries tot\+\_\+len}
+\item 
+\Hypertarget{structiphdr_a7460dd23e7fd967d0c115f6a779763b8}\label{structiphdr_a7460dd23e7fd967d0c115f6a779763b8} 
+\+\_\+\+\_\+be16 {\bfseries id}
+\item 
+\Hypertarget{structiphdr_a70b572a21602f348262f5b2bbd222d3e}\label{structiphdr_a70b572a21602f348262f5b2bbd222d3e} 
+\+\_\+\+\_\+be16 {\bfseries frag\+\_\+off}
+\item 
+\Hypertarget{structiphdr_ac4e11c9f410453f5f90c4e41fcc1a51e}\label{structiphdr_ac4e11c9f410453f5f90c4e41fcc1a51e} 
+\+\_\+\+\_\+u8 {\bfseries ttl}
+\item 
+\Hypertarget{structiphdr_a133531befbe87372fcd6db8074f917f0}\label{structiphdr_a133531befbe87372fcd6db8074f917f0} 
+\+\_\+\+\_\+u8 {\bfseries protocol}
+\item 
+\Hypertarget{structiphdr_aaf95c86373c05dd864779b20336f4833}\label{structiphdr_aaf95c86373c05dd864779b20336f4833} 
+\+\_\+\+\_\+sum16 {\bfseries check}
+\item 
+\Hypertarget{structiphdr_afe503bc77f6c398492a062d040d670bb}\label{structiphdr_afe503bc77f6c398492a062d040d670bb} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\Hypertarget{unioniphdr_1_1_0d350354101077370134130074062272354136172151152034_aca7716f1e17bf590d75c18605f251ba2}\label{unioniphdr_1_1_0d350354101077370134130074062272354136172151152034_aca7716f1e17bf590d75c18605f251ba2} 
+\>struct \{\\
+\>\>\_\_be32 {\bfseries saddr}\\
+\>\>\_\_be32 {\bfseries daddr}\\
+\>\} \\
+\>struct \{\\
+\>\>\_\_be32 {\bfseries saddr}\\
+\>\>\_\_be32 {\bfseries daddr}\\
+\>\} {\bfseries addrs}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

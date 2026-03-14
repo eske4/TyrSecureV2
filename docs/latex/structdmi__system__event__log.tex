@@ -1,0 +1,57 @@
+\doxysection{dmi\+\_\+system\+\_\+event\+\_\+log Struct Reference}
+\hypertarget{structdmi__system__event__log}{}\label{structdmi__system__event__log}\index{dmi\_system\_event\_log@{dmi\_system\_event\_log}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structdmi__system__event__log_a5b04a5a5f50aec9394ffb78c95ec872e}\label{structdmi__system__event__log_a5b04a5a5f50aec9394ffb78c95ec872e} 
+struct \doxymbox{\hyperlink{structdmi__header}{dmi\+\_\+header}} {\bfseries header}
+\item 
+\Hypertarget{structdmi__system__event__log_a71f5e20e720b38bdeeb96b50f6deb1e0}\label{structdmi__system__event__log_a71f5e20e720b38bdeeb96b50f6deb1e0} 
+u16 {\bfseries area\+\_\+length}
+\item 
+\Hypertarget{structdmi__system__event__log_a717a1d96f6164eee69d92de544ba583f}\label{structdmi__system__event__log_a717a1d96f6164eee69d92de544ba583f} 
+u16 {\bfseries header\+\_\+start\+\_\+offset}
+\item 
+\Hypertarget{structdmi__system__event__log_af7dbb65170a319cf4bb80b9a666eb6cc}\label{structdmi__system__event__log_af7dbb65170a319cf4bb80b9a666eb6cc} 
+u16 {\bfseries data\+\_\+start\+\_\+offset}
+\item 
+\Hypertarget{structdmi__system__event__log_a0650ec53f1cab4a7c8a17f04c73b430e}\label{structdmi__system__event__log_a0650ec53f1cab4a7c8a17f04c73b430e} 
+u8 {\bfseries access\+\_\+method}
+\item 
+\Hypertarget{structdmi__system__event__log_a83e7fbfadb1dcf519b12e7cb4a3b27e1}\label{structdmi__system__event__log_a83e7fbfadb1dcf519b12e7cb4a3b27e1} 
+u8 {\bfseries status}
+\item 
+\Hypertarget{structdmi__system__event__log_a2c58f688144cc4a1f7741b836f0ef995}\label{structdmi__system__event__log_a2c58f688144cc4a1f7741b836f0ef995} 
+u32 {\bfseries change\+\_\+token}
+\item 
+\Hypertarget{structdmi__system__event__log_a6fd938d7b35deeed060a26a472477cab}\label{structdmi__system__event__log_a6fd938d7b35deeed060a26a472477cab} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>u16 {\bfseries index\_addr}\\
+\>\>u16 {\bfseries data\_addr}\\
+\>\} {\bfseries io}\\
+\>u32 {\bfseries phys\_addr32}\\
+\>u16 {\bfseries gpnv\_handle}\\
+\>u32 {\bfseries access\_method\_address}\\
+\}; \\
+
+\end{tabbing}\item 
+\Hypertarget{structdmi__system__event__log_aa1f513285cf549daf315a9562bd73cea}\label{structdmi__system__event__log_aa1f513285cf549daf315a9562bd73cea} 
+u8 {\bfseries header\+\_\+format}
+\item 
+\Hypertarget{structdmi__system__event__log_aaae0cfcead0a9d28e31762efa525e57f}\label{structdmi__system__event__log_aaae0cfcead0a9d28e31762efa525e57f} 
+u8 {\bfseries type\+\_\+descriptors\+\_\+supported\+\_\+count}
+\item 
+\Hypertarget{structdmi__system__event__log_afee8df2618c94f7878dee72c8068dc51}\label{structdmi__system__event__log_afee8df2618c94f7878dee72c8068dc51} 
+u8 {\bfseries per\+\_\+log\+\_\+type\+\_\+descriptor\+\_\+length}
+\item 
+\Hypertarget{structdmi__system__event__log_a7243b159ae2606ef62967baa5511ec08}\label{structdmi__system__event__log_a7243b159ae2606ef62967baa5511ec08} 
+u8 {\bfseries supported\+\_\+log\+\_\+type\+\_\+descriptos} \+[0]\+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

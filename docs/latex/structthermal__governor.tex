@@ -1,0 +1,31 @@
+\doxysection{thermal\+\_\+governor Struct Reference}
+\hypertarget{structthermal__governor}{}\label{structthermal__governor}\index{thermal\_governor@{thermal\_governor}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structthermal__governor_acfb8a1a33039a3c6715eaa2449c40197}\label{structthermal__governor_acfb8a1a33039a3c6715eaa2449c40197} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries name}
+\item 
+\Hypertarget{structthermal__governor_a6dc37059d529aec1b5120d36c807cf39}\label{structthermal__governor_a6dc37059d529aec1b5120d36c807cf39} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries bind\+\_\+to\+\_\+tz} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structthermal__governor_ac831ace88718b7bc8483f09e1284f880}\label{structthermal__governor_ac831ace88718b7bc8483f09e1284f880} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unbind\+\_\+from\+\_\+tz} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structthermal__governor_ae33584aae22976f9dbb32ef0b5aff715}\label{structthermal__governor_ae33584aae22976f9dbb32ef0b5aff715} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries trip\+\_\+crossed} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, const struct \doxymbox{\hyperlink{structthermal__trip}{thermal\+\_\+trip}} \texorpdfstring{$\ast$}{*}, bool)
+\item 
+\Hypertarget{structthermal__governor_a27682e68fb018c7e051e97ee72cdae1a}\label{structthermal__governor_a27682e68fb018c7e051e97ee72cdae1a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries manage} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structthermal__governor_a4483bc55d139808a30768658a6f44cc5}\label{structthermal__governor_a4483bc55d139808a30768658a6f44cc5} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+tz} )(struct \doxymbox{\hyperlink{structthermal__zone__device}{thermal\+\_\+zone\+\_\+device}} \texorpdfstring{$\ast$}{*}, enum thermal\+\_\+notify\+\_\+event)
+\item 
+\Hypertarget{structthermal__governor_a8a55e8f3adbd858a7a923ee4025be3cd}\label{structthermal__governor_a8a55e8f3adbd858a7a923ee4025be3cd} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries governor\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

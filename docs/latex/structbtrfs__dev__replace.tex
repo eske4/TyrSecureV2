@@ -1,0 +1,70 @@
+\doxysection{btrfs\+\_\+dev\+\_\+replace Struct Reference}
+\hypertarget{structbtrfs__dev__replace}{}\label{structbtrfs__dev__replace}\index{btrfs\_dev\_replace@{btrfs\_dev\_replace}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a35e6ba4cde9dd67d9dc9f419bc6a05f7}\label{structbtrfs__dev__replace_a35e6ba4cde9dd67d9dc9f419bc6a05f7} 
+u64 {\bfseries replace\+\_\+state}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a2bbb5271b4cdd1cb86c96419277fc600}\label{structbtrfs__dev__replace_a2bbb5271b4cdd1cb86c96419277fc600} 
+time64\+\_\+t {\bfseries time\+\_\+started}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a9dcd34a05d350f6e8eeea828564fe69f}\label{structbtrfs__dev__replace_a9dcd34a05d350f6e8eeea828564fe69f} 
+time64\+\_\+t {\bfseries time\+\_\+stopped}
+\item 
+\Hypertarget{structbtrfs__dev__replace_aec8f49a1536da481284e92e46197fd10}\label{structbtrfs__dev__replace_aec8f49a1536da481284e92e46197fd10} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries num\+\_\+write\+\_\+errors}
+\item 
+\Hypertarget{structbtrfs__dev__replace_af874f85f3aecf6c2385e97ea1fc7ec0b}\label{structbtrfs__dev__replace_af874f85f3aecf6c2385e97ea1fc7ec0b} 
+\doxymbox{\hyperlink{structatomic64__t}{atomic64\+\_\+t}} {\bfseries num\+\_\+uncorrectable\+\_\+read\+\_\+errors}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a7dab8c9269c645a2c44bf60003787d0e}\label{structbtrfs__dev__replace_a7dab8c9269c645a2c44bf60003787d0e} 
+u64 {\bfseries cursor\+\_\+left}
+\item 
+\Hypertarget{structbtrfs__dev__replace_abe29c8b57f07f4608864b48dde6e148e}\label{structbtrfs__dev__replace_abe29c8b57f07f4608864b48dde6e148e} 
+u64 {\bfseries committed\+\_\+cursor\+\_\+left}
+\item 
+\Hypertarget{structbtrfs__dev__replace_aaf9ea02e5e855d79d91a00789b8bef77}\label{structbtrfs__dev__replace_aaf9ea02e5e855d79d91a00789b8bef77} 
+u64 {\bfseries cursor\+\_\+left\+\_\+last\+\_\+write\+\_\+of\+\_\+item}
+\item 
+\Hypertarget{structbtrfs__dev__replace_ab1d0729e0fedc7457294cac29110c000}\label{structbtrfs__dev__replace_ab1d0729e0fedc7457294cac29110c000} 
+u64 {\bfseries cursor\+\_\+right}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a83806f20a801370fc01af975beb9d3af}\label{structbtrfs__dev__replace_a83806f20a801370fc01af975beb9d3af} 
+u64 {\bfseries cont\+\_\+reading\+\_\+from\+\_\+srcdev\+\_\+mode}
+\item 
+\Hypertarget{structbtrfs__dev__replace_ae5be8aad3752e4a94fddd062cbb2ff7b}\label{structbtrfs__dev__replace_ae5be8aad3752e4a94fddd062cbb2ff7b} 
+int {\bfseries is\+\_\+valid}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a7210f5b9826d7b2a1ae10addb8c9973b}\label{structbtrfs__dev__replace_a7210f5b9826d7b2a1ae10addb8c9973b} 
+int {\bfseries item\+\_\+needs\+\_\+writeback}
+\item 
+\Hypertarget{structbtrfs__dev__replace_ab840373e44c16334ae340b86c1d257ce}\label{structbtrfs__dev__replace_ab840373e44c16334ae340b86c1d257ce} 
+struct \doxymbox{\hyperlink{structbtrfs__device}{btrfs\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries srcdev}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a3001d8ac26817c0b64c5b8b7ae35a627}\label{structbtrfs__dev__replace_a3001d8ac26817c0b64c5b8b7ae35a627} 
+struct \doxymbox{\hyperlink{structbtrfs__device}{btrfs\+\_\+device}} \texorpdfstring{$\ast$}{*} {\bfseries tgtdev}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a38d4af7fd023724a19ea83abb51af4c0}\label{structbtrfs__dev__replace_a38d4af7fd023724a19ea83abb51af4c0} 
+struct \doxymbox{\hyperlink{structmutex}{mutex}} {\bfseries lock\+\_\+finishing\+\_\+cancel\+\_\+unmount}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a533ea47173c2bcbea19f2a7466a1c56a}\label{structbtrfs__dev__replace_a533ea47173c2bcbea19f2a7466a1c56a} 
+struct \doxymbox{\hyperlink{structrw__semaphore}{rw\+\_\+semaphore}} {\bfseries rwsem}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a59ba3190cc6791428f2cefa67aab4ca5}\label{structbtrfs__dev__replace_a59ba3190cc6791428f2cefa67aab4ca5} 
+struct \doxymbox{\hyperlink{structbtrfs__scrub__progress}{btrfs\+\_\+scrub\+\_\+progress}} {\bfseries scrub\+\_\+progress}
+\item 
+\Hypertarget{structbtrfs__dev__replace_ab16ba0503d67add29e2786829acbd875}\label{structbtrfs__dev__replace_ab16ba0503d67add29e2786829acbd875} 
+struct \doxymbox{\hyperlink{structpercpu__counter}{percpu\+\_\+counter}} {\bfseries bio\+\_\+counter}
+\item 
+\Hypertarget{structbtrfs__dev__replace_ad4fee62a324fb8fbe3b963f17af0c72b}\label{structbtrfs__dev__replace_ad4fee62a324fb8fbe3b963f17af0c72b} 
+wait\+\_\+queue\+\_\+head\+\_\+t {\bfseries replace\+\_\+wait}
+\item 
+\Hypertarget{structbtrfs__dev__replace_a7100375610f9cb4fbaa0a771e0fe1c8e}\label{structbtrfs__dev__replace_a7100375610f9cb4fbaa0a771e0fe1c8e} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*} {\bfseries replace\+\_\+task}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

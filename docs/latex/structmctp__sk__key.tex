@@ -1,0 +1,64 @@
+\doxysection{mctp\+\_\+sk\+\_\+key Struct Reference}
+\hypertarget{structmctp__sk__key}{}\label{structmctp__sk__key}\index{mctp\_sk\_key@{mctp\_sk\_key}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmctp__sk__key_a267efa7dfa26ad5b7a14cd0e9423d63b}\label{structmctp__sk__key_a267efa7dfa26ad5b7a14cd0e9423d63b} 
+unsigned int {\bfseries net}
+\item 
+\Hypertarget{structmctp__sk__key_a9631242ef538b062cdfb2dbfb84a735a}\label{structmctp__sk__key_a9631242ef538b062cdfb2dbfb84a735a} 
+mctp\+\_\+eid\+\_\+t {\bfseries peer\+\_\+addr}
+\item 
+\Hypertarget{structmctp__sk__key_a92d00499a5146166c406e6a894f95034}\label{structmctp__sk__key_a92d00499a5146166c406e6a894f95034} 
+mctp\+\_\+eid\+\_\+t {\bfseries local\+\_\+addr}
+\item 
+\Hypertarget{structmctp__sk__key_a9d5d3b2196b566b7a494ea6922a492ec}\label{structmctp__sk__key_a9d5d3b2196b566b7a494ea6922a492ec} 
+\+\_\+\+\_\+u8 {\bfseries tag}
+\item 
+\Hypertarget{structmctp__sk__key_a72e9a3432e12b60ec3ab03387715e06a}\label{structmctp__sk__key_a72e9a3432e12b60ec3ab03387715e06a} 
+struct \doxymbox{\hyperlink{structsock}{sock}} \texorpdfstring{$\ast$}{*} {\bfseries sk}
+\item 
+\Hypertarget{structmctp__sk__key_a579670811a14b06924a19bce3dc9853f}\label{structmctp__sk__key_a579670811a14b06924a19bce3dc9853f} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries hlist}
+\item 
+\Hypertarget{structmctp__sk__key_a429b3289d62be36eec965eca536cc759}\label{structmctp__sk__key_a429b3289d62be36eec965eca536cc759} 
+struct \doxymbox{\hyperlink{structhlist__node}{hlist\+\_\+node}} {\bfseries sklist}
+\item 
+\Hypertarget{structmctp__sk__key_a56bb7935f6ec3c9f5049d1f826872f5d}\label{structmctp__sk__key_a56bb7935f6ec3c9f5049d1f826872f5d} 
+spinlock\+\_\+t {\bfseries lock}
+\item 
+\Hypertarget{structmctp__sk__key_aca9983f2d8fa0cc5942a56e353a00357}\label{structmctp__sk__key_aca9983f2d8fa0cc5942a56e353a00357} 
+refcount\+\_\+t {\bfseries refs}
+\item 
+\Hypertarget{structmctp__sk__key_ac56d9ffe3bede16944801dc441ff578c}\label{structmctp__sk__key_ac56d9ffe3bede16944801dc441ff578c} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*} {\bfseries reasm\+\_\+head}
+\item 
+\Hypertarget{structmctp__sk__key_ada13b075b7fc590b8081c922ba00f42e}\label{structmctp__sk__key_ada13b075b7fc590b8081c922ba00f42e} 
+struct \doxymbox{\hyperlink{structsk__buff}{sk\+\_\+buff}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries reasm\+\_\+tailp}
+\item 
+\Hypertarget{structmctp__sk__key_a4b1cc229765b50814045443ca0baac36}\label{structmctp__sk__key_a4b1cc229765b50814045443ca0baac36} 
+bool {\bfseries reasm\+\_\+dead}
+\item 
+\Hypertarget{structmctp__sk__key_a16e45ab99a2f0e789ff37e27141878ae}\label{structmctp__sk__key_a16e45ab99a2f0e789ff37e27141878ae} 
+u8 {\bfseries last\+\_\+seq}
+\item 
+\Hypertarget{structmctp__sk__key_a15288210f7335298bc36f972b0a29b98}\label{structmctp__sk__key_a15288210f7335298bc36f972b0a29b98} 
+bool {\bfseries valid}
+\item 
+\Hypertarget{structmctp__sk__key_afb02ea2518515968accf0992057a67a3}\label{structmctp__sk__key_afb02ea2518515968accf0992057a67a3} 
+long unsigned int {\bfseries expiry}
+\item 
+\Hypertarget{structmctp__sk__key_a19f03181862b2d5b6f166a4de828e0ef}\label{structmctp__sk__key_a19f03181862b2d5b6f166a4de828e0ef} 
+long unsigned int {\bfseries dev\+\_\+flow\+\_\+state}
+\item 
+\Hypertarget{structmctp__sk__key_aad83d9bc1db927f55d0bd253d78b0755}\label{structmctp__sk__key_aad83d9bc1db927f55d0bd253d78b0755} 
+struct \doxymbox{\hyperlink{structmctp__dev}{mctp\+\_\+dev}} \texorpdfstring{$\ast$}{*} {\bfseries dev}
+\item 
+\Hypertarget{structmctp__sk__key_a60c43ff553484f2eccfb49b193a11b5b}\label{structmctp__sk__key_a60c43ff553484f2eccfb49b193a11b5b} 
+bool {\bfseries manual\+\_\+alloc}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

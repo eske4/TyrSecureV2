@@ -1,0 +1,49 @@
+\doxysection{kernfs\+\_\+ops Struct Reference}
+\hypertarget{structkernfs__ops}{}\label{structkernfs__ops}\index{kernfs\_ops@{kernfs\_ops}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structkernfs__ops_ae2e402742239f16f12841921fce54976}\label{structkernfs__ops_ae2e402742239f16f12841921fce54976} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries open} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkernfs__ops_aca1aa2fdbd5ac91735f0ad4b6a5370b7}\label{structkernfs__ops_aca1aa2fdbd5ac91735f0ad4b6a5370b7} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries release} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkernfs__ops_acd6fc1ce0102614d3597ae6a89202d40}\label{structkernfs__ops_acd6fc1ce0102614d3597ae6a89202d40} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries seq\+\_\+show} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkernfs__ops_abd3d2a7bc319ab47ef7d1f7492e68c78}\label{structkernfs__ops_abd3d2a7bc319ab47ef7d1f7492e68c78} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries seq\+\_\+start} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, loff\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkernfs__ops_aa3171faecd60ecfb0551447c929b00d7}\label{structkernfs__ops_aa3171faecd60ecfb0551447c929b00d7} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries seq\+\_\+next} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}, loff\+\_\+t \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkernfs__ops_a77eda44b47f5015fa5dab7f64ee3e368}\label{structkernfs__ops_a77eda44b47f5015fa5dab7f64ee3e368} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries seq\+\_\+stop} )(struct \doxymbox{\hyperlink{structseq__file}{seq\+\_\+file}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkernfs__ops_a607881b7cdd502641e069836f2e5caa6}\label{structkernfs__ops_a607881b7cdd502641e069836f2e5caa6} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries read} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, size\+\_\+t, loff\+\_\+t)
+\item 
+\Hypertarget{structkernfs__ops_aeb1583fd1d197964af3403d18e1cc175}\label{structkernfs__ops_aeb1583fd1d197964af3403d18e1cc175} 
+size\+\_\+t {\bfseries atomic\+\_\+write\+\_\+len}
+\item 
+\Hypertarget{structkernfs__ops_aad70656d45ede478705a7c79e28d1982}\label{structkernfs__ops_aad70656d45ede478705a7c79e28d1982} 
+bool {\bfseries prealloc}
+\item 
+\Hypertarget{structkernfs__ops_a69ded918e01a859715754212d7676a52}\label{structkernfs__ops_a69ded918e01a859715754212d7676a52} 
+ssize\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries write} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*}, size\+\_\+t, loff\+\_\+t)
+\item 
+\Hypertarget{structkernfs__ops_aac1c930152a6b62ce7c80afad478d44e}\label{structkernfs__ops_aac1c930152a6b62ce7c80afad478d44e} 
+\+\_\+\+\_\+poll\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries poll} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structpoll__table__struct}{poll\+\_\+table\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkernfs__ops_a26eb54e4b26a84228983692afa629b94}\label{structkernfs__ops_a26eb54e4b26a84228983692afa629b94} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries mmap} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*}, struct \doxymbox{\hyperlink{structvm__area__struct}{vm\+\_\+area\+\_\+struct}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structkernfs__ops_a57633a8f31a7b360efb1f8997e3fabeb}\label{structkernfs__ops_a57633a8f31a7b360efb1f8997e3fabeb} 
+loff\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries llseek} )(struct \doxymbox{\hyperlink{structkernfs__open__file}{kernfs\+\_\+open\+\_\+file}} \texorpdfstring{$\ast$}{*}, loff\+\_\+t, int)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\doxysection{ext4\+\_\+allocation\+\_\+context Struct Reference}
+\hypertarget{structext4__allocation__context}{}\label{structext4__allocation__context}\index{ext4\_allocation\_context@{ext4\_allocation\_context}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structext4__allocation__context_a5d4ec0afa9f67e148cd20afe34f5dd55}\label{structext4__allocation__context_a5d4ec0afa9f67e148cd20afe34f5dd55} 
+struct \doxymbox{\hyperlink{structinode}{inode}} \texorpdfstring{$\ast$}{*} {\bfseries ac\+\_\+inode}
+\item 
+\Hypertarget{structext4__allocation__context_af4ad9da30d9b6f5db49a474396b43d6c}\label{structext4__allocation__context_af4ad9da30d9b6f5db49a474396b43d6c} 
+struct \doxymbox{\hyperlink{structsuper__block}{super\+\_\+block}} \texorpdfstring{$\ast$}{*} {\bfseries ac\+\_\+sb}
+\item 
+\Hypertarget{structext4__allocation__context_af143309d043e550ade5dac9d449c4788}\label{structext4__allocation__context_af143309d043e550ade5dac9d449c4788} 
+struct \doxymbox{\hyperlink{structext4__free__extent}{ext4\+\_\+free\+\_\+extent}} {\bfseries ac\+\_\+o\+\_\+ex}
+\item 
+\Hypertarget{structext4__allocation__context_a34e63c52212a8eb106db9cd324ef6332}\label{structext4__allocation__context_a34e63c52212a8eb106db9cd324ef6332} 
+struct \doxymbox{\hyperlink{structext4__free__extent}{ext4\+\_\+free\+\_\+extent}} {\bfseries ac\+\_\+g\+\_\+ex}
+\item 
+\Hypertarget{structext4__allocation__context_a015b567783030f1d2db607dc379d24d3}\label{structext4__allocation__context_a015b567783030f1d2db607dc379d24d3} 
+struct \doxymbox{\hyperlink{structext4__free__extent}{ext4\+\_\+free\+\_\+extent}} {\bfseries ac\+\_\+b\+\_\+ex}
+\item 
+\Hypertarget{structext4__allocation__context_a9ad816e6a346d1f2cd2d85392f64e98c}\label{structext4__allocation__context_a9ad816e6a346d1f2cd2d85392f64e98c} 
+struct \doxymbox{\hyperlink{structext4__free__extent}{ext4\+\_\+free\+\_\+extent}} {\bfseries ac\+\_\+f\+\_\+ex}
+\item 
+\Hypertarget{structext4__allocation__context_a42f74b406bc76c674b1d7011044507b7}\label{structext4__allocation__context_a42f74b406bc76c674b1d7011044507b7} 
+ext4\+\_\+grpblk\+\_\+t {\bfseries ac\+\_\+orig\+\_\+goal\+\_\+len}
+\item 
+\Hypertarget{structext4__allocation__context_ae4182eb030ffb6d23419186cfbe7cd94}\label{structext4__allocation__context_ae4182eb030ffb6d23419186cfbe7cd94} 
+ext4\+\_\+group\+\_\+t {\bfseries ac\+\_\+prefetch\+\_\+grp}
+\item 
+\Hypertarget{structext4__allocation__context_a0a2020575e4846c9253e35a32eeaa45d}\label{structext4__allocation__context_a0a2020575e4846c9253e35a32eeaa45d} 
+unsigned int {\bfseries ac\+\_\+prefetch\+\_\+ios}
+\item 
+\Hypertarget{structext4__allocation__context_a0f0269f330be53b3ba95d56584f28b65}\label{structext4__allocation__context_a0f0269f330be53b3ba95d56584f28b65} 
+unsigned int {\bfseries ac\+\_\+prefetch\+\_\+nr}
+\item 
+\Hypertarget{structext4__allocation__context_ac357d7c563bf0985b73d2c38b6154257}\label{structext4__allocation__context_ac357d7c563bf0985b73d2c38b6154257} 
+int {\bfseries ac\+\_\+first\+\_\+err}
+\item 
+\Hypertarget{structext4__allocation__context_a68b487c91c7775969658c9bcc066158b}\label{structext4__allocation__context_a68b487c91c7775969658c9bcc066158b} 
+\+\_\+\+\_\+u32 {\bfseries ac\+\_\+flags}
+\item 
+\Hypertarget{structext4__allocation__context_af5805e52c063e3a41aef770c2995aa08}\label{structext4__allocation__context_af5805e52c063e3a41aef770c2995aa08} 
+\+\_\+\+\_\+u16 {\bfseries ac\+\_\+groups\+\_\+scanned}
+\item 
+\Hypertarget{structext4__allocation__context_a129dfc61646f18d6d154fae584a835bd}\label{structext4__allocation__context_a129dfc61646f18d6d154fae584a835bd} 
+\+\_\+\+\_\+u16 {\bfseries ac\+\_\+found}
+\item 
+\Hypertarget{structext4__allocation__context_ae9b6a92fc7c5378f97b007fcf0f56438}\label{structext4__allocation__context_ae9b6a92fc7c5378f97b007fcf0f56438} 
+\+\_\+\+\_\+u16 {\bfseries ac\+\_\+c\+X\+\_\+found} \+[5]\+
+\item 
+\Hypertarget{structext4__allocation__context_a7658ba442faf06f85891707e5cdc5ec7}\label{structext4__allocation__context_a7658ba442faf06f85891707e5cdc5ec7} 
+\+\_\+\+\_\+u16 {\bfseries ac\+\_\+tail}
+\item 
+\Hypertarget{structext4__allocation__context_ab2bdf2798c0187a0be3c9883b8bacef3}\label{structext4__allocation__context_ab2bdf2798c0187a0be3c9883b8bacef3} 
+\+\_\+\+\_\+u16 {\bfseries ac\+\_\+buddy}
+\item 
+\Hypertarget{structext4__allocation__context_a606f300871340a67a469baf20db77d24}\label{structext4__allocation__context_a606f300871340a67a469baf20db77d24} 
+\+\_\+\+\_\+u8 {\bfseries ac\+\_\+status}
+\item 
+\Hypertarget{structext4__allocation__context_a3a1f09142561c3b0138c67fbc03624fd}\label{structext4__allocation__context_a3a1f09142561c3b0138c67fbc03624fd} 
+\+\_\+\+\_\+u8 {\bfseries ac\+\_\+criteria}
+\item 
+\Hypertarget{structext4__allocation__context_aa51b8e54a3d69587a2f9e7ac8c34f2f2}\label{structext4__allocation__context_aa51b8e54a3d69587a2f9e7ac8c34f2f2} 
+\+\_\+\+\_\+u8 {\bfseries ac\+\_\+2order}
+\item 
+\Hypertarget{structext4__allocation__context_afb4057b5b4cc32526284d24b38f8dcbc}\label{structext4__allocation__context_afb4057b5b4cc32526284d24b38f8dcbc} 
+\+\_\+\+\_\+u8 {\bfseries ac\+\_\+op}
+\item 
+\Hypertarget{structext4__allocation__context_a1dda8e9d029bc7327c0d7145397815c8}\label{structext4__allocation__context_a1dda8e9d029bc7327c0d7145397815c8} 
+struct \doxymbox{\hyperlink{structext4__buddy}{ext4\+\_\+buddy}} \texorpdfstring{$\ast$}{*} {\bfseries ac\+\_\+e4b}
+\item 
+\Hypertarget{structext4__allocation__context_a82f41fa20b98f61f9ddaf950f9f09f61}\label{structext4__allocation__context_a82f41fa20b98f61f9ddaf950f9f09f61} 
+struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*} {\bfseries ac\+\_\+bitmap\+\_\+folio}
+\item 
+\Hypertarget{structext4__allocation__context_ab375f5f50b27fdffcc478b75c84752d9}\label{structext4__allocation__context_ab375f5f50b27fdffcc478b75c84752d9} 
+struct \doxymbox{\hyperlink{structfolio}{folio}} \texorpdfstring{$\ast$}{*} {\bfseries ac\+\_\+buddy\+\_\+folio}
+\item 
+\Hypertarget{structext4__allocation__context_a4fc8d871e825658dd2d1d3927d01f554}\label{structext4__allocation__context_a4fc8d871e825658dd2d1d3927d01f554} 
+struct \doxymbox{\hyperlink{structext4__prealloc__space}{ext4\+\_\+prealloc\+\_\+space}} \texorpdfstring{$\ast$}{*} {\bfseries ac\+\_\+pa}
+\item 
+\Hypertarget{structext4__allocation__context_a522aaa786ad5a6505c7887f22e87b90e}\label{structext4__allocation__context_a522aaa786ad5a6505c7887f22e87b90e} 
+struct \doxymbox{\hyperlink{structext4__locality__group}{ext4\+\_\+locality\+\_\+group}} \texorpdfstring{$\ast$}{*} {\bfseries ac\+\_\+lg}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}

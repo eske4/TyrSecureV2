@@ -1,0 +1,43 @@
+\doxysection{smp\+\_\+hotplug\+\_\+thread Struct Reference}
+\hypertarget{structsmp__hotplug__thread}{}\label{structsmp__hotplug__thread}\index{smp\_hotplug\_thread@{smp\_hotplug\_thread}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structsmp__hotplug__thread_a2ed88677ce33b46d333910c011a95812}\label{structsmp__hotplug__thread_a2ed88677ce33b46d333910c011a95812} 
+struct \doxymbox{\hyperlink{structtask__struct}{task\+\_\+struct}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries store}
+\item 
+\Hypertarget{structsmp__hotplug__thread_a373595f60a3d81544b8567082debcdb6}\label{structsmp__hotplug__thread_a373595f60a3d81544b8567082debcdb6} 
+struct \doxymbox{\hyperlink{structlist__head}{list\+\_\+head}} {\bfseries list}
+\item 
+\Hypertarget{structsmp__hotplug__thread_a4b0f0b8491da7fe010b697ec416991f5}\label{structsmp__hotplug__thread_a4b0f0b8491da7fe010b697ec416991f5} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries thread\+\_\+should\+\_\+run} )(unsigned int)
+\item 
+\Hypertarget{structsmp__hotplug__thread_aa36c54cc383be1320daed3b87919237e}\label{structsmp__hotplug__thread_aa36c54cc383be1320daed3b87919237e} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries thread\+\_\+fn} )(unsigned int)
+\item 
+\Hypertarget{structsmp__hotplug__thread_a220e61822c824ca3079aa2b3c9276873}\label{structsmp__hotplug__thread_a220e61822c824ca3079aa2b3c9276873} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries create} )(unsigned int)
+\item 
+\Hypertarget{structsmp__hotplug__thread_aeb7fa13fa65328ccec1ad3f1a8f32aff}\label{structsmp__hotplug__thread_aeb7fa13fa65328ccec1ad3f1a8f32aff} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries setup} )(unsigned int)
+\item 
+\Hypertarget{structsmp__hotplug__thread_abff35ee41b9ab50b5d4e48ce8d5c2066}\label{structsmp__hotplug__thread_abff35ee41b9ab50b5d4e48ce8d5c2066} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cleanup} )(unsigned int, bool)
+\item 
+\Hypertarget{structsmp__hotplug__thread_a45030ff8494baf35e8b976741856a0aa}\label{structsmp__hotplug__thread_a45030ff8494baf35e8b976741856a0aa} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries park} )(unsigned int)
+\item 
+\Hypertarget{structsmp__hotplug__thread_aa3bea1160d2e70fdb66db5b709f5d5a6}\label{structsmp__hotplug__thread_aa3bea1160d2e70fdb66db5b709f5d5a6} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries unpark} )(unsigned int)
+\item 
+\Hypertarget{structsmp__hotplug__thread_a9e80f38039346d68a3e731278318c412}\label{structsmp__hotplug__thread_a9e80f38039346d68a3e731278318c412} 
+bool {\bfseries selfparking}
+\item 
+\Hypertarget{structsmp__hotplug__thread_a8e0a5a48cf0eac13b78309a07e063590}\label{structsmp__hotplug__thread_a8e0a5a48cf0eac13b78309a07e063590} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries thread\+\_\+comm}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+/\+home/\+eske/\+\+Documents/\+git/\+\+Tyr\+Secure\+V2/\+build/\+bpfs/\+vmlinux.\+h\end{DoxyCompactItemize}
