@@ -116,7 +116,7 @@ void GLauncher::launch(const LContext &ctx) {
 }
 
 void GLauncher::start() {
-    if (this->ctx) {
+    if (this->ctx.has_value()) {
         this->launch(*this->ctx);
     }
 }
