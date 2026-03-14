@@ -1,5 +1,4 @@
 #include "CGService.hpp"
-#include "IdentityProvider.hpp"
 #include "GLauncher.hpp"
 #include <fcntl.h>
 #include <iostream>
