@@ -6,6 +6,8 @@
 #include <vector>
 #include "system/CGroup.hpp"
 
+namespace Launcher {
+
 struct LContext {
     sys::CGroup cg;
     sys::FD executable_fd;
@@ -16,3 +18,5 @@ struct LContext {
     std::vector<std::string> envp;
     std::vector<std::string> argv;
 };
+
+}
