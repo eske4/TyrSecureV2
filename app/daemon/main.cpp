@@ -49,7 +49,6 @@ int main() {
 
     std::cout << "\n[WAIT] Press ENTER to kill the session, clean up CGroup, and exit..." << std::endl;
     
-    // Reminder message moved to a single, logical spot
     std::cout << "(Note: Edit GAME_DATA_PATH and GAME_BINARY_PATH constants in main.cpp for different games)" << std::endl;
 
     std::cin.get(); 
