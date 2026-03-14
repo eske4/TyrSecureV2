@@ -1,4 +1,4 @@
-#include "CGManager.hpp"
+#include "CGService.hpp"
 #include "system/CGroup.hpp"
 
 #include <cstdint>
@@ -12,7 +12,7 @@ namespace fs = std::filesystem;
 
 namespace sys {
 
-sys::CGroup CGManager::create(std::string_view name) {
+sys::CGroup CGService::create(std::string_view name) {
     if (name.empty()) {
         return {};
     }
@@ -46,7 +46,7 @@ sys::CGroup CGManager::create(std::string_view name) {
     );
 }
 
-uint64_t CGManager::getID(const sys::FD& cg_fd) {
+uint64_t CGService::getID(const sys::FD& cg_fd) {
     struct stat targetStat;
     if (!cg_fd.isValid() || ::fstat(cg_fd.get(), &targetStat) == -1){
         return 0;
@@ -56,7 +56,7 @@ uint64_t CGManager::getID(const sys::FD& cg_fd) {
 }
   
 
-bool CGManager::writeCG(const sys::FD &cg_fd, const std::string& file_name, std::string_view value) {
+bool CGService::writeCG(const sys::FD &cg_fd, const std::string& file_name, std::string_view value) {
     if (!cg_fd.isValid() || file_name.empty()) {
         return false;
     }
@@ -75,20 +75,20 @@ bool CGManager::writeCG(const sys::FD &cg_fd, const std::string& file_name, std:
 }
 
     // Resource Limits (Stateless & Static)
-bool CGManager::setMemoryLimit(const sys::FD& cg_fd, size_t max_bytes) {
+bool CGService::setMemoryLimit(const sys::FD& cg_fd, size_t max_bytes) {
     return writeCG(cg_fd, "memory.max", std::to_string(max_bytes));
 }
 
-bool CGManager::setProcLimit(const sys::FD& cg_fd, int max_pids) {
+bool CGService::setProcLimit(const sys::FD& cg_fd, int max_pids) {
     return writeCG(cg_fd, "pids.max", std::to_string(max_pids));
 }
 
-bool CGManager::setCpuLimit(const sys::FD& cg_fd, std::string_view weight) {
+bool CGService::setCpuLimit(const sys::FD& cg_fd, std::string_view weight) {
     // weight is usually 1-10000, default 100
     return writeCG(cg_fd, "cpu.weight", weight);
 }
     
-bool CGManager::enableSubtreeControllers(const sys::FD& parent_fd) {
+bool CGService::enableSubtreeControllers(const sys::FD& parent_fd) {
     // Enable the most common controllers for children
     // Note: '+' prefix is required in subtree_control
     return writeCG(parent_fd, "cgroup.subtree_control", "+cpuset +cpu +io +memory +pids");

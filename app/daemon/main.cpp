@@ -1,4 +1,5 @@
-#include "CGManager.hpp"
+#include "CGService.hpp"
+#include "IdentityProvider.hpp"
 #include "GLauncher.hpp"
 #include <fcntl.h>
 #include <iostream>
@@ -17,7 +18,7 @@ int main() {
     std::cout << "[INFO] Initializing TyrSecure Daemon..." << std::endl;
 
     // 1. Create CGroup (Handling [[nodiscard]])
-    sys::CGroup cgroup = sys::CGManager::create(CGROUP_NAME);
+    sys::CGroup cgroup = sys::CGService::create(CGROUP_NAME);
     if (cgroup.get_fd() < 0) {
         std::cerr << "[FATAL] Failed to create CGroup: " << CGROUP_NAME << std::endl;
         return EXIT_FAILURE;

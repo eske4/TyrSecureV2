@@ -6,9 +6,9 @@
 
 namespace sys {
 
-class SessionManager {
+class IdentityProvider {
 public:
-    SessionManager() = default;
+    IdentityProvider() = default;
 
     [[nodiscard]] static uid_t getUID();
     [[nodiscard]] static gid_t getGID(uid_t uid);

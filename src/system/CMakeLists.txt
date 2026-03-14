@@ -1,6 +1,6 @@
 set(LAUNCHER_SOURCES 
-    CGManager.cpp 
-    SessionManager.cpp
+    CGService.cpp 
+    IdentityProvider.cpp
 )
 
 add_library(System ${LAUNCHER_SOURCES})

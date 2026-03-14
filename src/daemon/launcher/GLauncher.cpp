@@ -1,7 +1,7 @@
-#include "SessionManager.hpp"
+#include "IdentityProvider.hpp"
+#include "CGService.hpp"
 #include "GLauncher.hpp"
 #include "utils/StringUtil.hpp"
-#include "CGManager.hpp"
 
 // System headers
 #include <cstdint>
@@ -22,7 +22,7 @@ bool GLauncher::setup(const std::filesystem::path &bin_path,
                       const std::filesystem::path &game_working_dir_path,
                       const sys::CGroup& cgroup_parent) {
     
-    uid_t uid = sys::SessionManager::getUID();
+    uid_t uid = sys::IdentityProvider::getUID();
     
     // Open File Descriptors with O_CLOEXEC to prevent leaking to other forks
     sys::FD exec_fd(bin_path, O_PATH);
@@ -30,7 +30,7 @@ bool GLauncher::setup(const std::filesystem::path &bin_path,
     
     // Create the CGroup
     auto cgroup_name = cgroup_parent.getName() + "/game";
-    sys::CGroup cgroup = sys::CGManager::create(cgroup_name);
+    sys::CGroup cgroup = sys::CGService::create(cgroup_name);
 
     if (!exec_fd || !work_fd) {
         std::cerr << "Launcher Error: Failed to acquire directory/binary handles." << std::endl;
@@ -41,10 +41,10 @@ bool GLauncher::setup(const std::filesystem::path &bin_path,
         .cg = std::move(cgroup),
         .executable_fd = std::move(exec_fd),
         .working_dir_fd = std::move(work_fd),
-        .uid = uid,
-        .gid = sys::SessionManager::getGID(uid),
+        .uid= uid,
+        .gid = sys::IdentityProvider::getGID(uid),
         .game_name = std::filesystem::path(bin_path).filename().string(),
-        .envp = sys::SessionManager::getUserEnvironment(uid),
+        .envp = sys::IdentityProvider::getUserEnvironment(uid),
         .argv = { std::string(bin_path) }
     });
 

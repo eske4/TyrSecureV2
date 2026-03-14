@@ -1,4 +1,5 @@
-#include "SessionManager.hpp"
+#include "IdentityProvider.hpp"
+
 #include <algorithm>
 #include <charconv>
 #include <iostream>
@@ -22,7 +23,7 @@ constexpr size_t INITIAL_ENV_RESERVE = 12;
 
 namespace sys {
 
-uid_t SessionManager::getUID() {
+uid_t IdentityProvider::getUID() {
     std::ifstream loginInfo("/proc/self/loginuid");
     if (!loginInfo) {
         return INVALID_ID;
@@ -42,7 +43,7 @@ uid_t SessionManager::getUID() {
 }
 
 // Example of the thread-safe, robust lookup
-gid_t SessionManager::getGID(uid_t login_uid) {
+gid_t IdentityProvider::getGID(uid_t login_uid) {
     struct passwd pwd;
     struct passwd *result;
     char buffer[DEFAULT_PWD_BUFFER_SIZE]; 
@@ -59,7 +60,7 @@ gid_t SessionManager::getGID(uid_t login_uid) {
     return static_cast<gid_t>(-1);
 }
 
-std::vector<std::string> SessionManager::getUserEnvironment(uid_t uid) {
+std::vector<std::string> IdentityProvider::getUserEnvironment(uid_t uid) {
     struct passwd pwd;
     struct passwd *result;
     
@@ -104,7 +105,7 @@ std::vector<std::string> SessionManager::getUserEnvironment(uid_t uid) {
     return env;
 }
 
-void SessionManager::printEnvironment(std::vector<std::string> env, uid_t uid) {
+void IdentityProvider::printEnvironment(std::vector<std::string> env, uid_t uid) {
     std::cout << "--- Synthesized Environment for UID " << uid << " ---\n";
     if (env.empty()) {
         std::cout << "[Empty or Failed to fetch]\n";

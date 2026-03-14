@@ -7,7 +7,7 @@
 
 namespace sys {
 
-class CGManager {
+class CGService {
 public:
     // Creates the cgroup directory and returns a directory FD
     // This FD is what you'll pass to clone_args.cgroup
