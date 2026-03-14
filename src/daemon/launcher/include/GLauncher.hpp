@@ -1,5 +1,6 @@
 #pragma once
 
+#include "common/GameID.h"
 #include "daemon/LContext.hpp"
 
 #include <optional>
@@ -8,17 +9,6 @@
 #include <sys/types.h>
 
 namespace Launcher {
-    enum class LauncherStatus : int {
-            Success            = 0,
-            SetGroupsFailed    = 100,
-            SetGidFailed       = 101,
-            SetUidFailed       = 102,
-            ChdirFailed        = 103,
-            NoNewPrivsFailed   = 104,
-            SetDumpableFailed  = 105,
-            ExecveFailed       = 106
-    };
-    
     class GLauncher {
     public:
         GLauncher() = default;
@@ -35,8 +25,7 @@ namespace Launcher {
          * @param game_root_dir Path to the working directory.
          * @param cgroup_name The name/path for the new CGroup.
          */
-        [[nodiscard]] bool setup(const std::filesystem::path &bin_path,
-                                 const std::filesystem::path &game_working_dir_path,
+        [[nodiscard]] bool setup(const common::GameID &game_id,
                                  const sys::CGroup& cgroup_parent);
         void start();
         void stop();

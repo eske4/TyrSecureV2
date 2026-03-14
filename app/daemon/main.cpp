@@ -1,5 +1,6 @@
 #include "CGService.hpp"
 #include "GLauncher.hpp"
+#include "common/GameID.h"
 #include <fcntl.h>
 #include <iostream>
 #include <string_view>
@@ -9,8 +10,6 @@
 using GLauncher = Launcher::GLauncher;
 
 // Using constexpr to avoid "Magic Strings" and make paths easy to find
-static constexpr std::string_view GAME_DATA_PATH = "/home/eske/Downloads/AssaultCube_v1.3.0.2_LockdownEdition_RC1/";
-static constexpr std::string_view GAME_BINARY_PATH = "/home/eske/Downloads/AssaultCube_v1.3.0.2_LockdownEdition_RC1/bin_unix/linux_64_client";
 static constexpr std::string_view CGROUP_NAME = "TyrSecure";
 
 int main() {
@@ -25,7 +24,7 @@ int main() {
 
     // 2. Setup Launcher
     GLauncher launcher;
-    if (!launcher.setup(GAME_BINARY_PATH, GAME_DATA_PATH, cgroup)) {
+    if (!launcher.setup(common::GameID::AssaultCube, cgroup)) {
         std::cerr << "[ERROR] Launcher setup failed. Verify binary path, working directory, and permissions." << std::endl;
         return EXIT_FAILURE;
     }
