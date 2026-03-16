@@ -23,6 +23,8 @@ namespace Launcher {
 bool GLauncher::setup(const common::GameID &game_id,
                       const sys::CGroup& cgroup_parent) {
     
+    this->stop();
+
     std::optional<GameEntry> entry = findGame(game_id);
 
     if(!entry.has_value()) {

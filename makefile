@@ -12,8 +12,10 @@ clean:
 	@rm -rf $(BUILD_DIR)
 	@echo "Build directory cleaned." 
 
-run:
+init:
 	@sudo $(BUILD_DIR)/app/daemon/TyrSecure_daemon
+run:
+	@sudo $(BUILD_DIR)/app/launcher/TyrSecure_launcher
 
 debug:
 	@sudo cat /sys/kernel/tracing/trace_pipe

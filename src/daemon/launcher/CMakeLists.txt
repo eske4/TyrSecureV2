@@ -1,6 +1,7 @@
 set(LAUNCHER_SOURCES 
     GLauncher.cpp 
     GameWhitelist.cpp
+    LaunchRequestReceiver.cpp
 )
 
 add_library(Launcher ${LAUNCHER_SOURCES})

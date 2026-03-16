@@ -47,11 +47,15 @@ namespace sys {
             return isValid();
         }
     
-        void reset() {
+        void reset(int new_fd = -1) {
+            if (fd == new_fd){
+                return; // Prevent self assignment
+            } 
             if (fd >= 0) {
-                ::close(fd);
-                fd = -1;
+                ::close(fd); // Close the old one so we don't leak
             }
+
+            fd = new_fd;     // Take ownership of the new one
         }
     
         [[nodiscard]] int release() {

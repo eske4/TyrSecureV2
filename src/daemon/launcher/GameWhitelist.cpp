@@ -6,8 +6,8 @@ namespace {
     const std::unordered_map<common::GameID, GameEntry> g_whitelist = {
         { 
             common::GameID::AssaultCube, 
-            { "/home/eske/Downloads/AssaultCube_v1.3.0.2_LockdownEdition_RC1/bin_unix/linux_64_client",
-              "/home/eske/Downloads/AssaultCube_v1.3.0.2_LockdownEdition_RC1/" 
+            { "/home/eske/Downloads/AssaultCube_v1.2.0.2/bin_unix/linux_64_client",
+              "/home/eske/Downloads/AssaultCube_v1.2.0.2/" 
             } 
         },
         // Add more games here...

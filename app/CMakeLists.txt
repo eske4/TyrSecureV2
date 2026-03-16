@@ -1,2 +1,2 @@
 add_subdirectory(daemon)
-add_subdirectory(dummy)
+add_subdirectory(launcher)
