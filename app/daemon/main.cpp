@@ -1,6 +1,7 @@
 #include "CGService.hpp"
 #include "GLauncher.hpp"
 #include "common/GameID.hpp"
+#include "EPollManager.hpp"
 #include "LaunchRequestReceiver.hpp"
 #include <csignal>
 #include <iostream>
@@ -23,6 +24,9 @@ int main() {
     std::signal(SIGINT, handle_signal);
 
     std::cout << "[INFO] Initializing TyrSecure Daemon..." << std::endl;
+
+    auto manager_res = sys::EPollManager::create();
+    auto &epoll_manager = *manager_res;
 
     GLauncher launcher;
     LaunchRequestReceiver receiver;

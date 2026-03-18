@@ -4,11 +4,11 @@
 #include <string>
 #include <sys/types.h>
 
-namespace sys {
+namespace sys{
 
-class IdentityProvider {
+class IdentityService {
 public:
-    IdentityProvider() = default;
+    IdentityService() = default;
 
     [[nodiscard]] static uid_t getUID();
     [[nodiscard]] static gid_t getGID(uid_t uid);

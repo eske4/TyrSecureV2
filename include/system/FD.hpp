@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cstdint>
 #include <fcntl.h>
 #include <iostream>
 #include <string>
@@ -14,8 +15,21 @@ class FD {
 private:
   int fd = -1;
 
+  bool open(const char *path, int flags, mode_t mode = 0) {
+    reset();
+    fd = ::open(path, flags | O_CLOEXEC, mode);
+    return isValid();
+  }
+
+
+
 public:
-  FD() = default;
+  FD() noexcept = default;
+  
+  explicit FD(int file_descriptor){
+
+      this->reset(file_descriptor);
+  }
 
   // Direct initialization from path
   explicit FD(const std::string &path, int flags, mode_t mode = 0) {
@@ -27,7 +41,6 @@ public:
   }
 
   // Wrap an existing raw descriptor
-  explicit FD(int file_descriptor) : fd(file_descriptor) {}
 
   // Move logic using std::exchange for conciseness
   FD(FD &&other) noexcept : fd(std::exchange(other.fd, -1)) {}
@@ -45,12 +58,6 @@ public:
   FD &operator=(const FD &) = delete;
 
   ~FD() { reset(); }
-
-  [[nodiscard]] bool open(const char *path, int flags, mode_t mode = 0) {
-    reset();
-    fd = ::open(path, flags | O_CLOEXEC, mode);
-    return isValid();
-  }
 
   void reset(int new_fd = -1) {
     if (fd == new_fd) {

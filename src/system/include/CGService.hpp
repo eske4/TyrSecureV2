@@ -1,7 +1,6 @@
 #pragma once
 
 #include "system/CGroup.hpp"
-#include <cstdint>
 #include <string_view>
 #include <sys/types.h>
 

@@ -1,8 +1,8 @@
 #include "GLauncher.hpp"
 #include "CGService.hpp"
 #include "GameWhitelist.hpp"
-#include "IdentityProvider.hpp"
-#include "common/LauncherStatus.hpp"
+#include "IdentityService.hpp"
+#include "daemon/LauncherStatus.hpp"
 #include "utils/StringUtil.hpp"
 
 // System headers
@@ -37,7 +37,7 @@ bool GLauncher::setup(const common::GameID &game_id,
     return false;
   }
 
-  uid_t uid = sys::IdentityProvider::getUID();
+  uid_t uid = sys::IdentityService::getUID();
 
   // Open File Descriptors with O_CLOEXEC to prevent leaking to other forks
   sys::FD exec_fd(entry->binary, O_PATH);
@@ -58,9 +58,9 @@ bool GLauncher::setup(const common::GameID &game_id,
                .executable_fd = std::move(exec_fd),
                .working_dir_fd = std::move(work_fd),
                .uid = uid,
-               .gid = sys::IdentityProvider::getGID(uid),
+               .gid = sys::IdentityService::getGID(uid),
                .game_name = entry->binary.filename().string(),
-               .envp = sys::IdentityProvider::getUserEnvironment(uid),
+               .envp = sys::IdentityService::getUserEnvironment(uid),
                .argv = {entry->binary.string()}});
 
   return true;

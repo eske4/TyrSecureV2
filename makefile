@@ -17,5 +17,12 @@ init:
 run:
 	@sudo $(BUILD_DIR)/app/launcher/TyrSecure_launcher
 
+run2:
+	@sudo $(BUILD_DIR)/app/epoll_test/TyrSecure_epoll
+	
+
 debug:
 	@sudo cat /sys/kernel/tracing/trace_pipe
+
+test:
+	@ctest --test-dir $(BUILD_DIR) --output-on-failure

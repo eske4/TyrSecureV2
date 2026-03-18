@@ -1,0 +1,44 @@
+#include <memory>
+#include <sys/socket.h>
+#include <sys/un.h>
+#include <unistd.h>
+#include "EbpfManager.hpp"
+#include "SyscallModule.hpp"
+#include "EPollManager.hpp"
+
+int main() {
+
+    auto ebpf_manager = std::make_unique<EbpfManager>();
+    auto epoll_manager = sys::EPollManager::create().value();
+
+
+
+    if (!ebpf_manager->start()) {
+        return 1;
+    }
+    // 1. Add your modules
+    auto mod = std::make_unique<SyscallModule>();
+
+    if (!ebpf_manager->add_module(std::move(mod))) {
+        std::cerr << "Failed to load/attach BPF module" << std::endl;
+        return 1;
+    }
+
+    // 3. Setup the Epoll Binding
+    if (!ebpf_manager->create_epoll_binding()) {
+        std::cerr << "Failed to create epoll binding" << std::endl;
+        return 1;
+    }
+
+    auto bind = ebpf_manager->get_binding();
+
+    epoll_manager.subscribe(ebpf_manager->get_fd(), EPOLLIN, ebpf_manager->get_binding());
+
+    while(true) {
+        int events = epoll_manager.poll(100).value();
+
+
+    }
+
+    }
+
