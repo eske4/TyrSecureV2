@@ -13,11 +13,11 @@ namespace sys {
 
 class FD {
 private:
-  int fd = -1;
+  int m_fd = -1;
 
   bool open(const char *path, int flags, mode_t mode = 0) {
     reset();
-    fd = ::open(path, flags | O_CLOEXEC, mode);
+    m_fd = ::open(path, flags | O_CLOEXEC, mode);
     return isValid();
   }
 
@@ -43,12 +43,12 @@ public:
   // Wrap an existing raw descriptor
 
   // Move logic using std::exchange for conciseness
-  FD(FD &&other) noexcept : fd(std::exchange(other.fd, -1)) {}
+  FD(FD &&other) noexcept : m_fd(std::exchange(other.m_fd, -1)) {}
 
   FD &operator=(FD &&other) noexcept {
     if (this != &other) {
       reset();
-      fd = std::exchange(other.fd, -1);
+      m_fd = std::exchange(other.m_fd, -1);
     }
     return *this;
   }
@@ -60,39 +60,39 @@ public:
   ~FD() { reset(); }
 
   void reset(int new_fd = -1) {
-    if (fd == new_fd) {
+    if (m_fd == new_fd) {
       return; // Prevent self assignment
     }
-    if (fd >= 0) {
-      ::close(fd); // Close the old one so we don't leak
+    if (m_fd >= 0) {
+      ::close(m_fd); // Close the old one so we don't leak
     }
 
     if (new_fd >= 0 && ::fcntl(new_fd, F_GETFD) != -1) {
 
-      fd = new_fd; // Take ownership of the new one
+      m_fd = new_fd; // Take ownership of the new one
       return;
     }
-    fd = -1;
+    m_fd = -1;
   }
 
-  [[nodiscard]] int release() { return std::exchange(fd, -1); }
+  [[nodiscard]] int release() { return std::exchange(m_fd, -1); }
 
   // Accessors
   [[nodiscard]] uint64_t getID() const {
     struct stat targetStat;
     // Ensure the FD is valid and fstat succeeds
-    if (!this->isValid() || ::fstat(this->fd, &targetStat) == -1) {
+    if (!this->isValid() || ::fstat(this->m_fd, &targetStat) == -1) {
       return 0;
     }
     // Inodes (st_ino) are the standard "ID" for files/directories in Linux
     return static_cast<uint64_t>(targetStat.st_ino);
   }
 
-  [[nodiscard]] bool isValid() const { return fd >= 0; }
-  [[nodiscard]] int get() const { return fd; }
+  [[nodiscard]] bool isValid() const { return m_fd >= 0; }
+  [[nodiscard]] int get() const { return m_fd; }
 
   // Operators
-  operator int() const { return fd; }
+  operator int() const { return m_fd; }
   explicit operator bool() const { return isValid(); }
 };
 } // namespace sys

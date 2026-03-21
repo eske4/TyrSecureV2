@@ -1,8 +1,6 @@
 #pragma once
 
 #include "system/FD.hpp"
-#include "system/EPoll.hpp"
-#include <cstddef>
 #include <expected>
 #include <sys/epoll.h>
 #include <sys/types.h>
@@ -14,11 +12,20 @@ namespace sys{
 static constexpr int MAX_EVENTS = 64;
 static constexpr int MAX_RETRIES = 15;
 
+// Forward declaration!
+class EPollBinding;
+
+enum class EPollError : uint8_t {
+    Interrupted = 0,
+    SysCallFailed = 1,
+    Timeout = 2,
+    InvalidFD = 3
+};
+
 class EPollManager {
 private:
   sys::FD m_epoll_fd;
   std::unordered_map<int, EPollBinding*> m_subscriptions;
-
   explicit EPollManager(sys::FD&& file_descriptor) : m_epoll_fd(std::move(file_descriptor)) {}
 
 public:
@@ -33,7 +40,7 @@ public:
 
 
   static std::expected<EPollManager, EPollError> create();
-  bool subscribe(int file_descriptor, uint32_t event_flags, EPollBinding *binding);
+  bool subscribe(int file_descriptor, EPollBinding *binding, uint32_t flags);
   bool unsubscribe(int file_descriptor, EPollBinding* binding);
   std::expected<size_t, EPollError> poll(int timeout_ms = -1);
 };

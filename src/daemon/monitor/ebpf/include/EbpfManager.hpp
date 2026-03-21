@@ -3,7 +3,7 @@
 #include "IEbpfModule.hpp"
 #include "daemon/bpf.h"
 #include "master.skel.h"
-#include "system/EPoll.hpp"
+#include "EPollBinding.hpp"
 #include "system/FD.hpp"
 #include <array>
 #include <bpf/libbpf.h>
@@ -21,9 +21,10 @@ private:
     std::unique_ptr<struct master, decltype(&master__destroy)> m_master_skel;
     sys::FD m_shared_rb_fd; 
     struct bpf_map* m_shared_rb_map = nullptr;
-    // The shared map (Ring Buffer)
-    std::unique_ptr<EPollBinding> m_binding;
-    static int handle_event(void *ctx, void *data, size_t data_sz);
+    std::unique_ptr<sys::EPollBinding> m_binding;
+    bool m_isActive = false;
+
+    static int handleEvent(void *ctx, void* data, size_t data_sz);
 
 public:
     EbpfManager();
@@ -35,12 +36,9 @@ public:
     EbpfManager(EbpfManager&&) = default;
     EbpfManager& operator=(EbpfManager&&) = default;
 
-    bool start();
-    bool add_module(std::unique_ptr<IEbpfModule> mod);
-    bool remove_module(common::bpf_module_id_t mod_id);
-    bool create_epoll_binding();
-    int get_fd() const;
-    EPollBinding* get_binding() const;
-    
+    [[nodiscard]] bool start();
+    [[nodiscard]] bool addModule(std::unique_ptr<IEbpfModule> mod);
+    [[nodiscard]] bool removeModule(common::bpf_module_id_t mod_id);
+    [[nodiscard]] bool createEPollBinding(sys::EPollManager* manager);
 };
 

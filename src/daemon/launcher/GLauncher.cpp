@@ -28,8 +28,8 @@ bool GLauncher::setup(const common::GameID &game_id,
     return false;
   }
 
-  this->ctx.reset();
-  gpid = -1;
+  this->m_ctx.reset();
+  m_gpid = -1;
 
   std::optional<GameEntry> entry = findGame(game_id);
 
@@ -53,7 +53,7 @@ bool GLauncher::setup(const common::GameID &game_id,
     return false;
   }
 
-  this->ctx.emplace(
+  this->m_ctx.emplace(
       LContext{.cg = std::move(cgroup),
                .executable_fd = std::move(exec_fd),
                .working_dir_fd = std::move(work_fd),
@@ -136,47 +136,47 @@ void GLauncher::launch(const LContext &ctx) {
     exit_err(LauncherStatus::ExecveFailed);
   }
 
-  this->gpid = static_cast<pid_t>(result);
+  this->m_gpid = static_cast<pid_t>(result);
 }
 
 void GLauncher::start() {
-  if (this->ctx.has_value()) {
-    this->launch(*this->ctx);
+  if (this->m_ctx.has_value()) {
+    this->launch(*this->m_ctx);
   }
 }
 
 void GLauncher::stop() {
   // 1. Kill everything in the CGroup first
-  if (this->ctx.has_value() && this->ctx->cg) {
-    bool res = sys::CGService::killProcs(this->ctx->cg);
+  if (this->m_ctx.has_value() && this->m_ctx->cg) {
+    bool res = sys::CGService::killProcs(this->m_ctx->cg);
     if (!res) {
       std::cout << "Process termination on cgroup failed" << std::endl;
     }
   }
 
   // 2. Clean up the leader process tracking
-  if (this->gpid > 0) {
+  if (this->m_gpid > 0) {
     int status;
     // Even though cgroup.kill was sent, we still need to reap the
     // zombie of the process we personally forked.
-    ::waitpid(this->gpid, &status, WNOHANG);
+    ::waitpid(this->m_gpid, &status, WNOHANG);
   }
 
-  this->gpid = -1;
-  this->ctx.reset(); // Assuming this destroys/cleans up the CGroup
+  this->m_gpid = -1;
+  this->m_ctx.reset(); // Assuming this destroys/cleans up the CGroup
   std::cout << "stopped game" << std::endl;
 }
 
 bool GLauncher::canLaunch() {
-  if (gpid <= 0) {
+  if (m_gpid <= 0) {
     return true;
   }
 
   int status;
   // Non-blocking check to see if the process has changed state
-  pid_t result = ::waitpid(gpid, &status, WNOHANG);
+  pid_t result = ::waitpid(m_gpid, &status, WNOHANG);
 
-  if (result == gpid || (result == -1 && errno == ECHILD)) {
+  if (result == m_gpid || (result == -1 && errno == ECHILD)) {
     // The process is dead/reaped.
     // IMPORTANT: Trigger stop() here to wipe the rest of the CGroup!
     this->stop();
@@ -184,7 +184,7 @@ bool GLauncher::canLaunch() {
   }
 
   // Fallback: Check if it's still alive but not a child (shouldn't happen here)
-  if (::kill(gpid, 0) == -1 && errno == ESRCH) {
+  if (::kill(m_gpid, 0) == -1 && errno == ESRCH) {
     this->stop();
     return true;
   }
@@ -193,7 +193,7 @@ bool GLauncher::canLaunch() {
 }
 
 const LContext *GLauncher::getSessionInfo() const {
-  return this->ctx ? &(*this->ctx) : nullptr;
+  return this->m_ctx ? &(*this->m_ctx) : nullptr;
 }
 
 } // namespace Launcher

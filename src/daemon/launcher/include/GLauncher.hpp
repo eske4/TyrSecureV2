@@ -10,6 +10,15 @@
 
 namespace Launcher {
     class GLauncher {
+    private:
+    
+        /**
+         * @brief The internal syscall logic (clone3/fexecve).
+         * @param target_ctx The local context prepared by start().
+         */
+        void launch(const LContext &ctx);
+        std::optional<LContext> m_ctx;
+        pid_t m_gpid = -1;
     public:
         GLauncher() = default;
         ~GLauncher() { stop(); }
@@ -21,29 +30,19 @@ namespace Launcher {
     
         /**
          * @brief Prepares the environment for the launcher.
-         * @param bin_path Path to the executable.
-         * @param game_root_dir Path to the working directory.
-         * @param cgroup_name The name/path for the new CGroup.
+         * @param game_id: Path to the executable.
+         * @param cgroup: The parents cgroup.
          */
         [[nodiscard]] bool setup(const common::GameID &game_id,
                                  const sys::CGroup& cgroup_parent);
         void start();
         void stop();
     
-        [[nodiscard]] bool isActive() const { return ctx.has_value() && gpid != -1; }
-        [[nodiscard]] bool isPrepared() const { return ctx.has_value() && gpid == -1; }
+        [[nodiscard]] bool isActive() const { return m_ctx.has_value() && m_gpid != -1; }
+        [[nodiscard]] bool isPrepared() const { return m_ctx.has_value() && m_gpid == -1; }
         [[nodiscard]] bool canLaunch();
-        [[nodiscard]] pid_t getGpid() const { return gpid; }
+        [[nodiscard]] pid_t getGpid() const { return m_gpid; }
         [[nodiscard]] const LContext* getSessionInfo() const;
     
-    private:
-    
-        /**
-         * @brief The internal syscall logic (clone3/fexecve).
-         * @param target_ctx The local context prepared by start().
-         */
-        void launch(const LContext &ctx);
-        std::optional<LContext> ctx;
-        pid_t gpid = -1;
     };
 }

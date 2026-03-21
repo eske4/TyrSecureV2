@@ -1,9 +1,11 @@
 #include "EbpfManager.hpp"
+#include "EPollManager.hpp"
 #include "daemon/bpf.h"
 #include "master.skel.h"
 #include <bpf/libbpf.h>
 #include <cstdint>
 #include <memory>
+#include <stdint.h>
 #include <sys/epoll.h>
 
 EbpfManager::EbpfManager()
@@ -11,15 +13,11 @@ EbpfManager::EbpfManager()
       m_master_skel(nullptr, master__destroy) // or skel if using skeleton
 {}
 
-int EbpfManager::handle_event(void* ctx, void* data, size_t data_sz) {
+int EbpfManager::handleEvent(void* ctx, void* data, size_t data_sz) {
     auto* self = static_cast<EbpfManager*>(ctx);
-    if (self == nullptr || data == nullptr) {
+    if (self == nullptr || data == nullptr || data_sz != sizeof(common::ebpf_event)) {
         return 0;
     }
-
-    if (data_sz != sizeof(common::ebpf_event)){
-        return 0;
-    } 
 
     const auto* event = static_cast<const common::ebpf_event*>(data);
     size_t index = static_cast<size_t>(event->module_id);
@@ -31,7 +29,7 @@ int EbpfManager::handle_event(void* ctx, void* data, size_t data_sz) {
     auto& mod = self->m_modules[index];
     if (mod) {
 
-        mod->process_event(event, data_sz);
+        mod->processEvent(event, data_sz);
     }
     return 0;
 }
@@ -42,40 +40,37 @@ bool EbpfManager::start() {
         return false;
     }
 
-    if (master__load(skel) < 0) {
-        master__destroy(skel);
-        return false;
-    }
-
-    // Take ownership FIRST (RAII Safety)
     m_master_skel.reset(skel);
 
-    // Get shared ring buffer map
-    m_shared_rb_map = skel->maps.rb;
-    if(this->m_shared_rb_map == nullptr){
+    if (master__load(m_master_skel.get()) < 0) {
         return false;
     }
 
-    // Store FD once
+    m_shared_rb_map = m_master_skel->maps.rb;
+    if (m_shared_rb_map == nullptr) {
+        return false;
+    }
+
     m_shared_rb_fd = sys::FD(bpf_map__fd(m_shared_rb_map));
 
-    // Create reader
-    m_ringbuf_reader.reset(ring_buffer__new(m_shared_rb_fd.get(), handle_event, this, nullptr));
-
-
-    if(m_ringbuf_reader == nullptr) {
-        return false;
+    auto* ring_buffer = ring_buffer__new(m_shared_rb_fd.get(), handleEvent, this, nullptr);
+    if (ring_buffer == nullptr) {
+        return false; // m_isActive remains false (default from constructor)
     }
 
+    m_ringbuf_reader.reset(ring_buffer);
+    
+    // Set this ONLY when everything is guaranteed to work
+    m_isActive = true; 
     return true;
 }
 
-bool EbpfManager::add_module(std::unique_ptr<IEbpfModule> mod){
-    if(mod == nullptr){
+bool EbpfManager::addModule(std::unique_ptr<IEbpfModule> mod){
+    if(mod == nullptr || !m_isActive){
         return false;
     }
 
-    size_t index = static_cast<size_t>(mod->get_id());
+    size_t index = static_cast<size_t>(mod->getId());
 
     if (index >= m_modules.size()) {
         return false;
@@ -102,9 +97,9 @@ bool EbpfManager::add_module(std::unique_ptr<IEbpfModule> mod){
     return true;
 }
 
-bool EbpfManager::remove_module(common::bpf_module_id_t mod_id) {
+bool EbpfManager::removeModule(common::bpf_module_id_t mod_id) {
     size_t index = static_cast<size_t>(mod_id);
-    if (index >= m_modules.size() || !m_modules[index]) {
+    if (!m_isActive || index >= m_modules.size() || !m_modules[index]) {
         return false;
     }
     
@@ -112,47 +107,41 @@ bool EbpfManager::remove_module(common::bpf_module_id_t mod_id) {
     return true;
 }
 
-bool EbpfManager::create_epoll_binding() {
-    // Safety check: don't create if no ring buffer or already have a binding
-    if (m_ringbuf_reader == nullptr || m_binding != nullptr) {
+bool EbpfManager::createEPollBinding(sys::EPollManager* manager) {
+    // Safety check: don't create if no ring buffer, no initilization and already have a binding
+    if (manager == nullptr || m_ringbuf_reader == nullptr || m_binding != nullptr || !m_isActive) {
         return false;
     }
 
+    int poll_fd = ring_buffer__epoll_fd(m_ringbuf_reader.get());
+    if(poll_fd < 0) {
+        return false; // Libbpf couldn't provide a pollable file descriptor
+    }
 
-    m_binding = std::make_unique<EPollBinding>();
-    m_binding->context = this;
-    m_binding->active = true;
 
-    m_binding->on_event = [](void* ctx, uint32_t events) {
+    auto on_event = [](void* ctx, uint32_t events) {
         auto* self = static_cast<EbpfManager*>(ctx);
-        if (!self || !self->m_ringbuf_reader) {
-            return;
-        }
-
-        // EPOLLIN: New data is ready
-        // EPOLLERR/HUP: The kernel side of the buffer closed or errored
-        if (events & (EPOLLIN | EPOLLERR | EPOLLHUP)) {
-            ring_buffer__poll(self->m_ringbuf_reader.get(), 0);
+        // We only care about data being ready (EPOLLIN) 
+        // or the buffer being closed (ERR/HUP)
+        if (self && self->m_ringbuf_reader && (events & (EPOLLIN | EPOLLERR | EPOLLHUP))) {
+            // consume() is more efficient than poll() when we already 
+            // know data is there. It drains the buffer and calls handleEvent.
+            ring_buffer__consume(self->m_ringbuf_reader.get());
         }
     };
 
-    return true;
-}
 
-int EbpfManager::get_fd() const {
-    // We check if 'rb' exists because if start() hasn't been called, 
-    // or if it failed, 'rb' will be nullptr.
-    if (this->m_ringbuf_reader == nullptr) {
-        return -1;
+    m_binding = std::make_unique<sys::EPollBinding>(
+        manager, 
+        poll_fd, 
+        this, 
+        on_event
+    );
+
+    if (!manager->subscribe(poll_fd, m_binding.get(), EPOLLIN | EPOLLET)) {
+        m_binding.reset(); // Don't leave a dead binding object around
+        return false;
     }
 
-    // ring_buffer__epoll_fd is a libbpf helper that returns the 
-    // epoll-compatible FD for the buffer notification channel.
-    return ring_buffer__epoll_fd(m_ringbuf_reader.get());
+    return true;
 }
-
-EPollBinding* EbpfManager::get_binding() const {
-    return m_binding.get();
-}
-
-

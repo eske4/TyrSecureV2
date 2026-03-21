@@ -2,6 +2,7 @@ set(LAUNCHER_SOURCES
     CGService.cpp 
     IdentityService.cpp
     EPollManager.cpp
+    EPollBinding.cpp
 )
 
 add_library(System ${LAUNCHER_SOURCES})

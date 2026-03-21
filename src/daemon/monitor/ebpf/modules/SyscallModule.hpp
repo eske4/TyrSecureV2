@@ -5,8 +5,8 @@
 
 class SyscallModule : public IEbpfModule {
 private:
-    struct print_test *skel = nullptr;
-    const char* name = "SyscallMonitor";
+    struct print_test *m_skel = nullptr;
+    const char* m_name = "SyscallMonitor";
 
 public:
     SyscallModule();
@@ -18,9 +18,9 @@ public:
 
     bool attach() override;
 
-    void process_event(const common::ebpf_event* event, size_t size) override;
+    void processEvent(const common::ebpf_event* event, size_t size) override;
 
-    common::bpf_module_id_t get_id() const override;
+    common::bpf_module_id_t getId() const override { return common::bpf_module_id_t::MODULE_LSM_SHIELD; }
 
-    const char* get_name() const override;
+    const char* getName() const override { return "SyscallMonitor"; }
 };

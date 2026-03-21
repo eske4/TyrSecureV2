@@ -19,20 +19,16 @@ int main() {
     // 1. Add your modules
     auto mod = std::make_unique<SyscallModule>();
 
-    if (!ebpf_manager->add_module(std::move(mod))) {
+    if (!ebpf_manager->addModule(std::move(mod))) {
         std::cerr << "Failed to load/attach BPF module" << std::endl;
         return 1;
     }
 
     // 3. Setup the Epoll Binding
-    if (!ebpf_manager->create_epoll_binding()) {
+    if (!ebpf_manager->createEPollBinding(&epoll_manager)) {
         std::cerr << "Failed to create epoll binding" << std::endl;
         return 1;
     }
-
-    auto bind = ebpf_manager->get_binding();
-
-    epoll_manager.subscribe(ebpf_manager->get_fd(), EPOLLIN, ebpf_manager->get_binding());
 
     while(true) {
         int events = epoll_manager.poll(100).value();
