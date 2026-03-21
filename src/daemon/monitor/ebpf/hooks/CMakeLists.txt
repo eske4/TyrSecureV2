@@ -4,7 +4,7 @@ set_source_files_properties(${EBPF_PROGRAMS} PROPERTIES LANGUAGE C)
 
 # 1. Keep the library so the LSP/clangd works
 add_library(ebpf_targets OBJECT ${EBPF_PROGRAMS})
-target_include_directories(ebpf_targets PRIVATE ${GLOBAL_INCLUDE_DIR})
+target_include_directories(ebpf_targets PRIVATE ${EBPF_INTERNAL_INCLUDES})
 target_link_libraries(ebpf_targets PRIVATE bpf_headers)
 target_compile_options(
   ebpf_targets

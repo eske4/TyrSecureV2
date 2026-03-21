@@ -1,6 +1,6 @@
 #pragma once
 
-#include "daemon/bpf.h"
+#include "Ebpf.h"
 #include <bpf/libbpf.h>
 
 class IEbpfModule {

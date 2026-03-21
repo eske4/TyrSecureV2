@@ -2,7 +2,6 @@
 #include "CGService.hpp"
 #include "GameWhitelist.hpp"
 #include "IdentityService.hpp"
-#include "daemon/LauncherStatus.hpp"
 #include "utils/StringUtil.hpp"
 
 // System headers
@@ -101,7 +100,6 @@ void GLauncher::launch(const LContext &ctx) {
     ::prctl(PR_SET_PDEATHSIG, SIGKILL);
 
     // Security Lockdown
-    using LauncherStatus = common::LauncherStatus;
     auto exit_err = [](LauncherStatus code) {
       ::_exit(static_cast<int>(code));
     };

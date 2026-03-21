@@ -1,3 +1,8 @@
+set(EBPF_INTERNAL_INCLUDES
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/modules
+    ${CMAKE_BINARY_DIR}/skeletons
+)
 add_subdirectory(hooks)
 
 set(EBPF_SOURCES 
@@ -11,9 +16,7 @@ add_dependencies(Ebpf ebpf_targets)
 
 target_include_directories(Ebpf 
     PRIVATE "${GLOBAL_INCLUDE_DIR}"
-    PUBLIC ${CMAKE_BINARY_DIR}/skeletons
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/modules
+    PUBLIC ${EBPF_INTERNAL_INCLUDES}
 )
 
 target_link_libraries(Ebpf 

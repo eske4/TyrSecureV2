@@ -1,7 +1,7 @@
 #pragma once
 
 #include "common/GameID.hpp"
-#include "daemon/LContext.hpp"
+#include "LContext.hpp"
 
 #include <optional>
 #include <linux/sched.h>
@@ -9,7 +9,22 @@
 #include <sys/types.h>
 
 namespace Launcher {
+
     class GLauncher {
+
+    public:
+
+        enum class LauncherStatus : int {
+        Success            = 0,
+        SetGroupsFailed    = 100,
+        SetGidFailed       = 101,
+        SetUidFailed       = 102,
+        ChdirFailed        = 103,
+        NoNewPrivsFailed   = 104,
+        SetDumpableFailed  = 105,
+        ExecveFailed       = 106
+    };
+
     private:
     
         /**
