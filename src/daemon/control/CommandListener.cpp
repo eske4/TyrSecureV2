@@ -13,13 +13,11 @@
 
 namespace ACName::Daemon::Control {
 
-namespace sys = ACName::System;
+namespace sys    = ACName::System;
 namespace common = ACName::Common;
 
-CommandListener::CommandListener(std::string path, Validator validator,
-                                 Handler handler)
-    : m_path(std::move(path)),
-      m_validator(validator ? std::move(validator) : defaultValidator),
+CommandListener::CommandListener(std::string path, Validator validator, Handler handler)
+    : m_path(std::move(path)), m_validator(validator ? std::move(validator) : defaultValidator),
       m_handler(handler ? std::move(handler) : defaultHandler) {}
 
 CommandListener::~CommandListener() { stop(); }
@@ -51,10 +49,9 @@ bool CommandListener::start() {
 
   std::memcpy(addr.sun_path + 1, m_path.c_str(), m_path.size());
 
-  socklen_t addrLen =
-      offsetof(struct sockaddr_un, sun_path) + 1 + m_path.size();
+  socklen_t addrLen = offsetof(struct sockaddr_un, sun_path) + 1 + m_path.size();
 
-  const void *raw_ptr = &addr;
+  const void     *raw_ptr    = &addr;
   const sockaddr *socket_ptr = static_cast<const sockaddr *>(raw_ptr);
 
   if (::bind(m_serverFD.get(), socket_ptr, addrLen) < 0) {
@@ -89,9 +86,8 @@ void CommandListener::handleEvents(uint32_t events) {
 
   auto now = std::chrono::steady_clock::now();
 
-  auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(
-                     now - m_lastAcceptTime)
-                     .count();
+  auto elapsed =
+      std::chrono::duration_cast<std::chrono::milliseconds>(now - m_lastAcceptTime).count();
 
   if (elapsed < COMMAND_COOLDOWN_MS) {
     // Just return; the kernel backlog will handle the wait.
@@ -107,8 +103,7 @@ void CommandListener::handleEvents(uint32_t events) {
   }
 
   int smallBuf = sizeof(CommandPacket);
-  ::setsockopt(clientFD.get(), SOL_SOCKET, SO_RCVBUF, &smallBuf,
-               sizeof(smallBuf));
+  ::setsockopt(clientFD.get(), SOL_SOCKET, SO_RCVBUF, &smallBuf, sizeof(smallBuf));
 
   processClient(clientFD);
 }
@@ -117,8 +112,7 @@ void CommandListener::processClient(const FD &file_descriptor) {
   CommandPacket packet{};
 
   // 1. Receive the raw data from the socket
-  ssize_t bytesReceived =
-      ::recv(file_descriptor.get(), &packet, sizeof(packet), MSG_DONTWAIT);
+  ssize_t bytesReceived = ::recv(file_descriptor.get(), &packet, sizeof(packet), MSG_DONTWAIT);
 
   // 2. Validate that we received a full, complete packet
   if (bytesReceived == static_cast<ssize_t>(sizeof(packet))) {
@@ -126,7 +120,7 @@ void CommandListener::processClient(const FD &file_descriptor) {
     // 3. Convert fields from Network to Host byte order (Big Endian -> Little
     // Endian) We update the struct members directly so the callbacks receive
     // "clean" data.
-    uint32_t rawCmd = ::ntohl(static_cast<uint32_t>(packet.command_id));
+    uint32_t rawCmd    = ::ntohl(static_cast<uint32_t>(packet.command_id));
     uint32_t rawGameId = ::ntohl(static_cast<uint32_t>(packet.game_id));
 
     // 4. Boundary safety check: Ensure the received IDs are within our enum
@@ -139,7 +133,7 @@ void CommandListener::processClient(const FD &file_descriptor) {
 
     // Write the converted values back into the packet
     packet.command_id = static_cast<common::DaemonCommand>(rawCmd);
-    packet.game_id = static_cast<common::GameID>(rawGameId);
+    packet.game_id    = static_cast<common::GameID>(rawGameId);
 
     // 5. Generic Validation & Execution
     // We now pass the entire packet by reference as defined in your new header.
@@ -185,8 +179,7 @@ bool CommandListener::createEPollBinding(sys::EPollManager *manager) {
   };
 
   // Create the managed binding
-  m_binding = std::make_unique<sys::EPollBinding>(manager, m_serverFD.get(),
-                                                  this, on_event);
+  m_binding = std::make_unique<sys::EPollBinding>(manager, m_serverFD.get(), this, on_event);
 
   // Attempt to subscribe.
   // Note: Using Level Triggered (default) instead of EPOLLET

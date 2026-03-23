@@ -106,7 +106,7 @@ std::vector<std::string> IdentityService::getUserEnvironment(uid_t uid) {
   return env;
 }
 
-void IdentityService::printEnvironment(std::vector<std::string> env, uid_t uid) {
+void IdentityService::printEnvironment(const std::vector<std::string> &env, uid_t uid) {
   std::cout << "--- Synthesized Environment for UID " << uid << " ---\n";
   if (env.empty()) {
     std::cout << "[Empty or Failed to fetch]\n";
