@@ -40,3 +40,6 @@ CPM_modules/
 #doxygen
 docs/html/
 docs/latex/
+
+#Catch2
+/Testing/

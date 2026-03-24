@@ -2,11 +2,8 @@
 
 #include <cstdint>
 
-namespace common {
+namespace ACName::Common {
 
-enum GameID : uint32_t {
-    AssaultCube = 1
-};
+enum class GameID : uint32_t { AssaultCube = 0, NUM_GAMES };
 
 }
-

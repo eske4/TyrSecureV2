@@ -1,0 +1,24 @@
+---
+# Align the = signs in your 'using' and 'variable' blocks
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+
+# Align the types and variable names
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+
+# Keep your manual grouping with empty lines
+KeepEmptyLinesAtTheStartOfBlocks: true
+MaxEmptyLinesToKeep: 1
+
+# Ensure comments stay where you put them
+AlignTrailingComments: true
+
+# Modern C++ specific layout
+Standard: c++20
+ColumnLimit: 100
+---
