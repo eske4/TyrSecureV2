@@ -9,4 +9,4 @@ target_include_directories(EnvironmentValidator
     PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include"
 )
 
-target_link_libraries(EnvironmentValidator PRIVATE System)
+target_link_libraries(EnvironmentValidator PRIVATE sys_core)
