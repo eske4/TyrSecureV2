@@ -10,6 +10,8 @@ build:
 
 clean:
 	@rm -rf $(BUILD_DIR)
+	@rm -rf ebpf/include/vmlinux.h
+	@rm -rf ebpf/skeletons/
 	@echo "Build directory cleaned." 
 
 init:

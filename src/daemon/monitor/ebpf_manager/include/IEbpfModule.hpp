@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Ebpf.h"
+#include "ebpf_types.h"
 #include <bpf/libbpf.h>
 
 namespace OdinSight::Daemon::Monitor::Kernel {

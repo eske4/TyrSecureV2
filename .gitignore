@@ -43,3 +43,7 @@ docs/latex/
 
 #Catch2
 /Testing/
+
+#ebpf
+/bpf/include/vmlinux.h
+/bpf/skeleton/

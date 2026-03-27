@@ -26,12 +26,13 @@ include(BPF)
 
 set(GLOBAL_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-option(BUILD_TESTING "Build the testing suite" ON)
+add_subdirectory(ebpf)
+add_subdirectory(src)
+add_subdirectory(app)
+
+option(BUILD_TESTING "Build the testing suite" OFF)
 
 if(BUILD_TESTING)
   include(Tests)
   add_subdirectory(tests)
 endif()
-
-add_subdirectory(src)
-add_subdirectory(app)

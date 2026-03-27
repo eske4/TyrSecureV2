@@ -4,7 +4,7 @@
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 #include <errno.h>
-#include "Ebpf.h"
+#include "ebpf_types.h"
 
 char LICENSE[] SEC("license") = "GPL";
 const volatile int protected_pid = 2197677;

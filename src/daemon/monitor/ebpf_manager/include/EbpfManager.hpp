@@ -5,7 +5,6 @@
 #include <memory>
 
 #include "EPollBinding.hpp"
-#include "Ebpf.h"
 #include "IEbpfModule.hpp"
 #include "master.skel.h"
 #include "system/FD.hpp"

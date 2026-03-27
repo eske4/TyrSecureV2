@@ -1,1 +1,1 @@
-add_subdirectory(ebpf)
+add_subdirectory(ebpf_manager)
