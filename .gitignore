@@ -46,4 +46,4 @@ docs/latex/
 
 #ebpf
 /ebpf/include/vmlinux.h
-/ebpf/skeleton/
+/ebpf/skeletons/
