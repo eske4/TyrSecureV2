@@ -1,28 +1,24 @@
-# To generate what is needed for bpf setup
+# Directory to hold generated headers
+set(BPF_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/ebpf/include)
+set(VMLINUX_OUT ${BPF_INCLUDE_DIR}/vmlinux.h)
 
-# Directory paths
-set(BPF_OUT ${CMAKE_BINARY_DIR}/bpfs)
-set(VMLINUX_OUT ${CMAKE_BINARY_DIR}/bpfs/vmlinux.h)
-set(SKEL_OUT_DIR ${CMAKE_BINARY_DIR}/skeletons)
+# Ensure include directory exists
+file(MAKE_DIRECTORY ${BPF_INCLUDE_DIR})
 
-# Create output directories
-file(MAKE_DIRECTORY ${BPF_OUT})
-file(MAKE_DIRECTORY ${SKEL_OUT_DIR})
+# Check if vmlinux.h already exists
+if(NOT EXISTS ${VMLINUX_OUT})
+  message(STATUS "vmlinux.h not found, generating...")
 
-execute_process(
-  COMMAND bpftool btf dump file /sys/kernel/btf/vmlinux format c
-  OUTPUT_FILE ${VMLINUX_OUT}
-  WORKING_DIRECTORY ${BPF_OUT}
-  RESULT_VARIABLE rv)
-
-if(NOT rv EQUAL 0)
-  message(
-    FATAL_ERROR
-      "Failed to generate vmlinux.h. Is bpftool installed and do you have kernel BTF support?"
-  )
+  add_custom_command(
+    OUTPUT ${VMLINUX_OUT}
+    COMMAND bpftool btf dump file /sys/kernel/btf/vmlinux format c >
+            ${VMLINUX_OUT}
+    WORKING_DIRECTORY ${BPF_INCLUDE_DIR}
+    COMMENT "Generating vmlinux.h in ebpf/include/"
+    VERBATIM)
+else()
+  message(STATUS "vmlinux.h already exists, skipping generation")
 endif()
 
-message(STATUS "vmlinux.h generated successfully at ${VMLINUX_OUT}")
-
-add_library(bpf_headers INTERFACE)
-target_include_directories(bpf_headers INTERFACE ${BPF_OUT})
+# Target that other libraries can depend on
+add_custom_target(generate_vmlinux_h ALL DEPENDS ${VMLINUX_OUT})

@@ -2,11 +2,8 @@
 
 #include <cstdint>
 
-namespace common {
+namespace OdinSight::Common {
 
-enum GameID : uint32_t {
-    AssaultCube = 1
-};
+enum class GameID : uint32_t { Unknown = 0, AssaultCube, NUM_GAMES };
 
 }
-
