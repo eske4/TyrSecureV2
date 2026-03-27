@@ -109,8 +109,6 @@ void CommandListener::handleEvents(uint32_t events) {
 void CommandListener::processClient(const FD &file_descriptor) {
   CommandPacket packet{};
 
-  // Use MSG_WAITALL to ensure we don't get a "partial" packet 
-  // if the scheduler interrupts the transmission.
   ssize_t bytesReceived = ::recv(file_descriptor.get(), &packet, sizeof(packet), MSG_DONTWAIT);
 
   if (bytesReceived == static_cast<ssize_t>(sizeof(packet))) {
