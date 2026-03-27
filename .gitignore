@@ -40,3 +40,6 @@ CPM_modules/
 #doxygen
 docs/html/
 docs/latex/
+
+# app-test directory
+app-test/
