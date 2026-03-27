@@ -1,7 +1,7 @@
 BUILD_DIR = build
 MAKEFLAGS += --no-print-directory
 
-.PHONY: build clean run debug
+.PHONY: build clean run debug docs
 
 build:
 	@mkdir -p $(BUILD_DIR)
@@ -12,7 +12,15 @@ clean:
 	@rm -rf $(BUILD_DIR)
 	@rm -rf ebpf/include/vmlinux.h
 	@rm -rf ebpf/skeletons/
+	@rm -rf docs/html
+	@rm -rf docs/latex
 	@echo "Build directory cleaned." 
+
+docs:
+	@echo "Generating OdinSight documentation..."
+	@cd docs && doxygen Doxyfile
+	@echo "Documentation generated successfully."
+
 
 init:
 	@sudo $(BUILD_DIR)/app/daemon/OdinSight_daemon
