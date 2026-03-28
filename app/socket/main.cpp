@@ -1,7 +1,9 @@
 #include "CGroupService.hpp"
 #include "CommandListener.hpp"
 #include "EPollManager.hpp"
+#include "IdentityService.hpp"
 #include "Runner.hpp"
+#include "common/GameID.hpp"
 #include "common/Protocol.hpp"
 #include "system/CGroup.hpp"
 #include <iostream>
@@ -12,7 +14,12 @@ namespace common  = OdinSight::Common;
 
 int main() {
   //
-  auto epoll_manager = sys::EPollManager::create().value();
+  auto                                epoll_manager = sys::EPollManager::create().value();
+  sys::CGroup                         pCGroup       = sys::CGService::create("daemon");
+  OdinSight::Daemon::Launcher::Runner runner;
+
+  runner.setup(common::GameID::AssaultCube, pCGroup);
+  runner.start(epoll_manager);
 
   // 1. Define logic outside the class (no clutter, just a lambda!)
   auto validator = [](const common::CommandPacket &packet) {

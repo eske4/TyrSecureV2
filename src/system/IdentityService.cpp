@@ -21,11 +21,17 @@ constexpr uid_t INVALID_ID = static_cast<uid_t>(-1);
 // Performance hints
 constexpr size_t INITIAL_ENV_RESERVE = 12;
 
+namespace fs = std::filesystem;
+
 namespace OdinSight::System {
 
 uid_t IdentityService::getUID() {
   std::ifstream loginInfo("/proc/self/loginuid");
   if (!loginInfo) {
+    return INVALID_ID;
+  }
+
+  if (!loginInfo.is_open()) {
     return INVALID_ID;
   }
 
@@ -36,74 +42,137 @@ uid_t IdentityService::getUID() {
 
     // CRITICAL: Use &&. Only return if parsing SUCCEEDED and is not -1.
     if (err_code == std::errc() && loginuid != std::numeric_limits<uid_t>::max()) {
-      return loginuid;
+      if (loginuid != 0) {
+
+        return loginuid;
+      }
     }
   }
-  return static_cast<uid_t>(-1);
+  return INVALID_ID;
 }
 
 // Example of the thread-safe, robust lookup
 gid_t IdentityService::getGID(uid_t login_uid) {
   struct passwd  pwd;
   struct passwd *result;
-  char           buffer[DEFAULT_PWD_BUFFER_SIZE];
+
+  long   initial_size = sysconf(_SC_GETPW_R_SIZE_MAX);
+  size_t safe_size = (initial_size <= 0) ? MIN_PWD_BUFFER_SIZE : static_cast<size_t>(initial_size);
+  safe_size        = std::clamp(safe_size, MIN_PWD_BUFFER_SIZE, MAX_PWD_BUFFER_SIZE);
+
+  std::vector<char> buffer(safe_size);
 
   // getpwuid_r is reentrant and much harder to "hook" or corrupt via race
   // conditions
-  int status = getpwuid_r(login_uid, &pwd, buffer, sizeof(buffer), &result);
+  int status = getpwuid_r(login_uid, &pwd, buffer.data(), buffer.size(), &result);
 
-  if (status == 0 && result != nullptr) {
-    // Anti-cheat policy: We likely don't want to run sessions for UID 0
-    if (pwd.pw_gid != ROOT_GID) {
-      return pwd.pw_gid;
-    }
+  if (status != 0 || result == nullptr) {
+    // Log: "Identity lookup failed for UID X"
+    return INVALID_ID;
   }
-  return static_cast<gid_t>(-1);
+
+  if (pwd.pw_gid == ROOT_GID) {
+    std::cerr << "[SECURITY] Attempted to fetch GID for root-level access. Blocked." << std::endl;
+    return INVALID_ID;
+  }
+
+  return pwd.pw_gid;
 }
 
 std::vector<std::string> IdentityService::getUserEnvironment(uid_t uid) {
   struct passwd  pwd;
   struct passwd *result;
 
-  long initial_size = sysconf(_SC_GETPW_R_SIZE_MAX);
-
-  // Clamp logic
+  long   initial_size = sysconf(_SC_GETPW_R_SIZE_MAX);
   size_t safe_size = (initial_size <= 0) ? MIN_PWD_BUFFER_SIZE : static_cast<size_t>(initial_size);
   safe_size        = std::clamp(safe_size, MIN_PWD_BUFFER_SIZE, MAX_PWD_BUFFER_SIZE);
 
   std::vector<char> buffer(safe_size);
-
-  int status = getpwuid_r(uid, &pwd, buffer.data(), buffer.size(), &result);
+  int               status = getpwuid_r(uid, &pwd, buffer.data(), buffer.size(), &result);
 
   if (status != 0 || result == nullptr) {
     return {};
   }
 
   std::vector<std::string> env;
-  env.reserve(INITIAL_ENV_RESERVE);
 
-  // Note: pwd.pw_name etc. point to addresses INSIDE your 'buffer' vector.
-  // std::string() copies that data out before the buffer goes out of scope.
-  env.push_back("USER=" + std::string(pwd.pw_name));
-  env.push_back("HOME=" + std::string(pwd.pw_dir));
-  env.push_back("SHELL=" + std::string(pwd.pw_shell));
-  env.push_back("LOGNAME=" + std::string(pwd.pw_name));
-
-  env.push_back("XDG_RUNTIME_DIR=/run/user/" + std::to_string(uid));
-  env.push_back("PATH=/usr/local/bin:/usr/bin:/bin");
-  env.push_back("XDG_DATA_DIRS=/usr/local/share:/usr/share");
-
-  auto inherit_env = [&](const char *var) {
-    if (const char *val = getenv(var)) {
-      env.push_back(std::string(var) + "=" + std::string(val));
+  if (environ != nullptr) {
+    for (char **current = environ; *current != nullptr; ++current) {
+      env.push_back(std::string(*current));
     }
+  }
+
+  // 2. APPLY FORCE-OVERRIDES (Identity "Ground Truth")
+  // ensuring the child process uses the correct UID-based identity.
+  auto override_env = [&](const std::string &key, const std::string &value) {
+    // Remove existing key if it exists in the inherited 'environ'
+    env.erase(std::remove_if(env.begin(), env.end(),
+                             [&](const std::string &str) {
+                               return str.compare(0, key.length() + 1, key + "=") == 0;
+                             }),
+              env.end());
+
+    // Add the verified version
+    env.push_back(key + "=" + value);
   };
 
-  inherit_env("DISPLAY");
-  inherit_env("WAYLAND_DISPLAY");
-  inherit_env("XAUTHORITY");
+  // Critical Identity Overrides
+  override_env("USER", pwd.pw_name);
+  override_env("LOGNAME", pwd.pw_name);
+  override_env("HOME", pwd.pw_dir);
+  override_env("SHELL", pwd.pw_shell);
+  override_env("XDG_RUNTIME_DIR", "/run/user/" + std::to_string(uid));
+
+  printEnvironment(env, uid);
 
   return env;
+}
+
+std::string IdentityService::getHomeDirectory(uid_t uid) {
+  // 1. Handle Invalid UID early
+  if (uid == static_cast<uid_t>(-1)) {
+    return "";
+  }
+
+  struct passwd  pwd;
+  struct passwd *result;
+
+  // 2. Determine the required buffer size
+  long   str         = sysconf(_SC_GETPW_R_SIZE_MAX);
+  size_t buffer_size = (str <= 0) ? MIN_PWD_BUFFER_SIZE : static_cast<size_t>(str);
+  // Clamp to your predefined constants for safety
+  buffer_size        = std::clamp(buffer_size, MIN_PWD_BUFFER_SIZE, MAX_PWD_BUFFER_SIZE);
+
+  std::vector<char> buffer(buffer_size);
+
+  // 3. Query the system database
+  int status = getpwuid_r(uid, &pwd, buffer.data(), buffer.size(), &result);
+
+  // 4. Verification
+  if (status != 0 || result == nullptr) {
+    // Log the error: getpwuid_r failed or user doesn't exist
+    return "";
+  }
+
+  // 5. Explicitly copy the path out of the buffer
+  // pwd.pw_dir is a pointer into 'buffer', which will be destroyed
+  return std::string(pwd.pw_dir);
+}
+
+fs::path IdentityService::expandUserPath(const path &rawPath, uid_t uid) {
+  std::string pathStr = rawPath.string();
+
+  // Handle the tilde internally
+  if (!pathStr.empty() && pathStr[0] == '~') {
+    std::string home = getHomeDirectory(uid);
+    if (!home.empty()) {
+      // Replace '~' with home directory
+      pathStr = (pathStr.length() == 1) ? home : home + pathStr.substr(1);
+    }
+  }
+
+  // Return the absolute, normalized version directly
+  return fs::absolute(pathStr).lexically_normal();
 }
 
 void IdentityService::printEnvironment(const std::vector<std::string> &env, uid_t uid) {

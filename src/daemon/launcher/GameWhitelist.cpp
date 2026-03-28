@@ -11,8 +11,8 @@ using GameID = OdinSight::Common::GameID;
 const std::unordered_map<GameID, GameEntry> &getWhitelist() {
   static const std::unordered_map<GameID, GameEntry> whitelist = {
       {GameID::AssaultCube,
-       {"/home/eske/Downloads/AssaultCube_v1.2.0.2/bin_unix/linux_64_client",
-        "/home/eske/Downloads/AssaultCube_v1.2.0.2/"}},
+       {"~/.games/AssaultCube_v1.2.0.2/bin_unix/linux_64_client",
+        "~/.games/AssaultCube_v1.2.0.2/"}},
       // Add games here
   };
   return whitelist;

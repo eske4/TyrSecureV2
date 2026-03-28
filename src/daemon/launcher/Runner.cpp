@@ -24,9 +24,8 @@ namespace OdinSight::Daemon::Launcher {
 
 namespace sys      = OdinSight::System;
 namespace CInterop = OdinSight::Util::CInterop;
-namespace fs = std::filesystem;
+namespace fs       = std::filesystem;
 using EPollBinding = OdinSight::System::EPollBinding;
-
 
 bool Runner::setup(const GameID &game_id, const CGroup &cgroup_parent) {
   if (!this->canLaunch()) {
@@ -45,9 +44,9 @@ bool Runner::setup(const GameID &game_id, const CGroup &cgroup_parent) {
 
   uid_t uid = sys::IdentityService::getUID();
 
-  fs::path absWorkPath = fs::absolute(entry->dataDir).lexically_normal();
-  fs::path absBinPath = fs::absolute(entry->binary).lexically_normal();
-  
+  fs::path absWorkPath = sys::IdentityService::expandUserPath(entry->dataDir.string(), uid);
+  fs::path absBinPath  = sys::IdentityService::expandUserPath(entry->binary.string(), uid);
+
   if (!absWorkPath.has_filename()) {
     absWorkPath = absWorkPath.parent_path();
   }
@@ -87,12 +86,12 @@ void Runner::launch(const Context &ctx, EPollManager &manager) {
     return;
   }
 
-  uint64_t pid_fd_out = 0;
-  struct clone_args cl_args = {};
-  cl_args.exit_signal       = SIGCHLD;
-  cl_args.flags             = CLONE_INTO_CGROUP | CLONE_PIDFD;
-  cl_args.pidfd             = reinterpret_cast<uintptr_t>(&pid_fd_out);
-  cl_args.cgroup            = static_cast<uint64_t>(ctx.cg.get_fd());
+  uint64_t          pid_fd_out = 0;
+  struct clone_args cl_args    = {};
+  cl_args.exit_signal          = SIGCHLD;
+  cl_args.flags                = CLONE_INTO_CGROUP | CLONE_PIDFD;
+  cl_args.pidfd                = reinterpret_cast<uintptr_t>(&pid_fd_out);
+  cl_args.cgroup               = static_cast<uint64_t>(ctx.cg.get_fd());
 
   uid_t uid = ctx.uid;
   gid_t gid = ctx.gid;
@@ -153,13 +152,13 @@ void Runner::launch(const Context &ctx, EPollManager &manager) {
   this->m_gpid = static_cast<pid_t>(result);
 
   if (pid_fd_out > 0) {
-        this->m_fd.reset(static_cast<int>(pid_fd_out));
-        
-        // Create the binding so stop() is called automatically on exit
-        if (!this->createEPollBinding(manager)) {
-            std::cerr << "[ERROR] Failed to bind process exit event to EPoll." << std::endl;
-        }
+    this->m_fd.reset(static_cast<int>(pid_fd_out));
+
+    // Create the binding so stop() is called automatically on exit
+    if (!this->createEPollBinding(manager)) {
+      std::cerr << "[ERROR] Failed to bind process exit event to EPoll." << std::endl;
     }
+  }
 }
 
 bool Runner::createEPollBinding(EPollManager &manager) {
@@ -175,12 +174,12 @@ bool Runner::createEPollBinding(EPollManager &manager) {
 
   auto on_event = [](void *ctx, uint32_t events) {
     auto *self = static_cast<Runner *>(ctx);
-    if(self != nullptr) {
-        self->stop();
+    if (self != nullptr) {
+      self->stop();
     }
     // We only care about data being ready (EPOLLIN)
     // or the buffer being closed (ERR/HUP)
-    };
+  };
 
   m_binding = std::make_unique<EPollBinding>(&manager, m_fd.get(), this, on_event);
 
@@ -192,8 +191,6 @@ bool Runner::createEPollBinding(EPollManager &manager) {
 
   return true;
 }
-
-
 
 void Runner::start(sys::EPollManager &manager) {
   if (this->m_ctx.has_value()) {
