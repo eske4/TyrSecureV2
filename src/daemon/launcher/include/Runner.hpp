@@ -34,13 +34,13 @@ private:
   using CGroup       = OdinSight::System::CGroup;
   using EPollManager = OdinSight::System::EPollManager;
 
-  static constexpr const char* SEALED_MEMFD_NAME = "os_sealed_game";
+  static constexpr const char *SEALED_MEMFD_NAME = "os_sealed_game";
 
   /** --- Members (State) --- **/
-  std::optional<Context>                  m_ctx;
-  pid_t                                   m_gpid = -1;
-  std::unique_ptr<System::EPollBinding>   m_binding;
-  System::FD                              m_fd;
+  std::optional<Context>                m_ctx;
+  pid_t                                 m_gpid = -1;
+  std::unique_ptr<System::EPollBinding> m_binding;
+  System::FD                            m_fd;
 
 public:
   /** --- Lifecycle --- **/

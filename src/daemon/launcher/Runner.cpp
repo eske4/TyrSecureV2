@@ -9,15 +9,15 @@
 #include <cstdint>
 #include <cstring> // For strerror
 #include <fcntl.h>
-#include <sys/mman.h>
 #include <filesystem>
-#include <sys/sendfile.h>
 #include <grp.h>
 #include <iostream>
 #include <linux/prctl.h>
 #include <linux/sched.h>
 #include <signal.h>
+#include <sys/mman.h>
 #include <sys/prctl.h>
+#include <sys/sendfile.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -67,41 +67,40 @@ bool Runner::setup(const GameID &game_id, const CGroup &cgroup_parent) {
   }
 
   sys::FD final_exec_fd = std::move(exec_fd);
-// 1. Create the anonymous memfd
-sys::FD mfd(::memfd_create(SEALED_MEMFD_NAME, MFD_CLOEXEC | MFD_ALLOW_SEALING));
-if (!mfd.isValid()) {
+  // 1. Create the anonymous memfd
+  sys::FD mfd(::memfd_create(SEALED_MEMFD_NAME, MFD_CLOEXEC | MFD_ALLOW_SEALING));
+  if (!mfd.isValid()) {
     std::perror("[OdinSight] memfd_create failed");
     return false;
-}
+  }
 
-// 2. Get the size from the disk binary
-struct stat file_info;
-if (::fstat(final_exec_fd.get(), &file_info) < 0) {
+  // 2. Get the size from the disk binary
+  struct stat file_info;
+  if (::fstat(final_exec_fd.get(), &file_info) < 0) {
     std::perror("[OdinSight] fstat failed");
     return false;
-}
+  }
 
-// We move data from disk_fd to our new mfd in RAM
-if (::sendfile(mfd.get(), final_exec_fd.get(), nullptr, file_info.st_size) != file_info.st_size) {
+  // We move data from disk_fd to our new mfd in RAM
+  if (::sendfile(mfd.get(), final_exec_fd.get(), nullptr, file_info.st_size) != file_info.st_size) {
     std::perror("[OdinSight] sendfile failed or partial copy");
     return false;
-}
+  }
 
-// Tell the kernel we no longer need the disk version in the Page Cache
-// 0, 0 means "the whole file"
-if (int err = ::posix_fadvise(final_exec_fd.get(), 0, 0, POSIX_FADV_DONTNEED); err != 0) {
-    std::cerr << "[WARN] Failed to hint kernel to clear disk cache: " 
-              << std::strerror(err) << std::endl;
+  // Tell the kernel we no longer need the disk version in the Page Cache
+  // 0, 0 means "the whole file"
+  if (int err = ::posix_fadvise(final_exec_fd.get(), 0, 0, POSIX_FADV_DONTNEED); err != 0) {
+    std::cerr << "[WARN] Failed to hint kernel to clear disk cache: " << std::strerror(err)
+              << std::endl;
     // We don't return false here because the game can still run!
-}
+  }
 
-if (::fcntl(mfd.get(), F_ADD_SEALS, F_SEAL_GROW | F_SEAL_SHRINK | F_SEAL_WRITE | F_SEAL_SEAL) < 0) {
+  if (::fcntl(mfd.get(), F_ADD_SEALS, F_SEAL_GROW | F_SEAL_SHRINK | F_SEAL_WRITE | F_SEAL_SEAL) <
+      0) {
     return false;
-}
+  }
 
- final_exec_fd = std::move(mfd);
- 
-
+  final_exec_fd = std::move(mfd);
 
   // Create the CGroup
   auto        cgroup_name = cgroup_parent.getName() + "/game";
@@ -252,9 +251,9 @@ void Runner::stop() {
     // Even though cgroup.kill was sent, we still need to reap the
     // zombie of the process we personally forked.
     if (::waitid(P_PIDFD, m_fd.get(), &info, WEXITED | WNOHANG) == 0) {
-        if (info.si_pid != 0) {
-            std::clog << "[OdinSight] Game exited with status: " << info.si_status << std::endl;
-        }
+      if (info.si_pid != 0) {
+        std::clog << "[OdinSight] Game exited with status: " << info.si_status << std::endl;
+      }
     }
   }
 
@@ -273,10 +272,10 @@ bool Runner::canLaunch() {
   siginfo_t info{};
   // WNOWAIT is key here: it checks if the process is dead WITHOUT reaping it.
   // This allows the actual stop() function to do the formal reaping later.
-  int res = ::waitid(P_PIDFD, m_fd.get(), &info, WEXITED | WNOHANG | WNOWAIT);
+  int       res = ::waitid(P_PIDFD, m_fd.get(), &info, WEXITED | WNOHANG | WNOWAIT);
 
   if (res == 0 && info.si_pid != 0) {
-    // The process has exited (or was killed). 
+    // The process has exited (or was killed).
     // Trigger stop() to clean up CGroups and FDs.
     this->stop();
     return true;
