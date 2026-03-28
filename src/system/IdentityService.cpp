@@ -127,8 +127,6 @@ std::vector<std::string> IdentityService::getUserEnvironment(uid_t uid) {
   override_env("SHELL", pwd.pw_shell);
   override_env("XDG_RUNTIME_DIR", "/run/user/" + std::to_string(uid));
 
-  printEnvironment(env, uid);
-
   return env;
 }
 
