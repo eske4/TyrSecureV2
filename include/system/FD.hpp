@@ -21,6 +21,14 @@ private:
     return isValid();
   }
 
+  bool openAt(int dirfd, const char *relPath, int flags, mode_t mode = 0) {
+    reset();
+    // flags | O_CLOEXEC is already great, adding O_NOFOLLOW here 
+    // makes it even safer for security checks.
+    m_fd = ::openat(dirfd, relPath, flags | O_CLOEXEC | O_NOFOLLOW, mode);
+    return isValid();
+  }
+
 public:
   FD() noexcept = default;
 
@@ -33,6 +41,13 @@ public:
       std::cout << "[ERROR] Failed to open file descriptor in FD object" << std::endl;
     }
   }
+
+  FD(const FD& dir, const std::string& relPath, int flags, mode_t mode = 0) {
+    bool result = openAt(dir.get(), relPath.c_str(), flags, mode);
+    if (!result) {
+        std::cerr << "[ERROR] Failed openat for: " << relPath << std::endl;
+    }
+}
 
   // Wrap an existing raw descriptor
 
