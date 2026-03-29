@@ -251,7 +251,7 @@ void Runner::stop() {
     siginfo_t info{};
     // Even though cgroup.kill was sent, we still need to reap the
     // zombie of the process we personally forked.
-    if (::waitid(P_PIDFD, m_fd.get(), &info, WEXITED | WNOHANG) == 0) {
+    if (::waitid(P_PIDFD, m_fd.get(), &info, WEXITED) == 0) {
       if (info.si_pid != 0) {
         std::clog << "[OdinSight] Game exited with status: " << info.si_status << std::endl;
       }
