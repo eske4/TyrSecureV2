@@ -20,6 +20,8 @@ namespace OdinSight::System::Environment {
 
 namespace {
 
+using ProbeStatus = UnsignedKernelModuleLoadProbe::Status;
+
 constexpr char kProbeModuleName[] = "odinsight_unsigned_probe";
 
 constexpr char kProbeModuleSource[] = R"(#include <linux/init.h>
@@ -42,22 +44,7 @@ MODULE_DESCRIPTION("OdinSight unsigned kernel module probe");
 
 constexpr char kProbeMakefile[] = "obj-m += odinsight_unsigned_probe.o\n";
 
-enum class ProbeStatus {
-  kBlockedBySignaturePolicy,
-  kDeniedForOtherSecurityReason,
-  kAllowed,
-  kNotRoot,
-  kUnsupportedPlatform,
-  kKernelInfoUnavailable,
-  kKernelHeadersMissing,
-  kTempDirectoryCreationFailed,
-  kSourceWriteFailed,
-  kBuildFailed,
-  kModuleOpenFailed,
-  kUnexpectedLoadFailure
-};
-
-struct ProbeResult {
+struct ProbeExecutionResult {
   ProbeStatus status;
   int         errorCode{0};
 };
@@ -178,7 +165,7 @@ bool buildProbeModule(const fs::path &kernelBuildDir, const ProbePaths &paths) {
   });
 }
 
-ProbeResult classifyLoadFailure(int err) {
+ProbeExecutionResult classifyLoadFailure(int err) {
   switch (err) {
   case EKEYREJECTED:
   case ENOKEY:
@@ -194,7 +181,7 @@ ProbeResult classifyLoadFailure(int err) {
   }
 }
 
-ProbeResult tryLoadProbeModule(const ProbePaths &paths) {
+ProbeExecutionResult tryLoadProbeModule(const ProbePaths &paths) {
   FD moduleFd(paths.moduleFile.string(), O_RDONLY);
   if (!moduleFd) {
     return {ProbeStatus::kModuleOpenFailed, errno};
@@ -217,7 +204,7 @@ ProbeResult tryLoadProbeModule(const ProbePaths &paths) {
   return {ProbeStatus::kAllowed, 0};
 }
 
-ProbeResult runUnsignedModuleLoadProbe() {
+ProbeExecutionResult runUnsignedModuleLoadProbe() {
   if (::geteuid() != 0) {
     return {ProbeStatus::kNotRoot, 0};
   }
@@ -254,18 +241,18 @@ ProbeResult runUnsignedModuleLoadProbe() {
 #endif
 }
 
-void logProbeFailure(const ProbeResult &result) {
+void logProbeFailure(const ProbeExecutionResult &result) {
   switch (result.status) {
   case ProbeStatus::kNotRoot:
-    std::cerr << "Unsigned kernel module probe requires root privileges.\n";
+    std::cerr << "Probe info: Unsigned kernel module probe requires root privileges.\n";
     break;
 
   case ProbeStatus::kUnsupportedPlatform:
-    std::cerr << "Kernel module load probe is not supported on this platform.\n";
+    std::cerr << "Probe info: Kernel module load probe is not supported on this platform.\n";
     break;
 
   case ProbeStatus::kKernelInfoUnavailable:
-    std::cerr << "Failed to determine the running kernel release: "
+    std::cerr << "Probe info: Failed to determine the running kernel release: "
               << std::strerror(result.errorCode) << " (Code: " << result.errorCode << ")\n";
     break;
 
@@ -273,35 +260,35 @@ void logProbeFailure(const ProbeResult &result) {
     struct utsname kernelInfo{};
     if (::uname(&kernelInfo) == 0) {
       const fs::path kernelBuildDir = fs::path("/usr/lib/modules") / kernelInfo.release / "build";
-      std::cerr << "Kernel headers are missing at " << kernelBuildDir
+      std::cerr << "Probe info: Kernel headers are missing at " << kernelBuildDir
                 << "; cannot build the runtime unsigned kernel module probe.\n";
     } else {
-      std::cerr << "Kernel headers are missing; cannot build the runtime unsigned kernel "
+      std::cerr << "Probe info: Kernel headers are missing; cannot build the runtime unsigned kernel "
                    "module probe.\n";
     }
     break;
   }
 
   case ProbeStatus::kTempDirectoryCreationFailed:
-    std::cerr << "Failed to create a temporary directory for the unsigned module probe: "
+    std::cerr << "Probe info: Failed to create a temporary directory for the unsigned module probe: "
               << std::strerror(result.errorCode) << " (Code: " << result.errorCode << ")\n";
     break;
 
   case ProbeStatus::kSourceWriteFailed:
-    std::cerr << "Failed to write the unsigned module probe sources.\n";
+    std::cerr << "Probe info: Failed to write the unsigned module probe sources.\n";
     break;
 
   case ProbeStatus::kBuildFailed:
-    std::cerr << "Failed to build the unsigned kernel module probe.\n";
+    std::cerr << "Probe info: Failed to build the unsigned kernel module probe.\n";
     break;
 
   case ProbeStatus::kModuleOpenFailed:
-    std::cerr << "Failed to open built unsigned kernel module probe: "
+    std::cerr << "Probe info: Failed to open built unsigned kernel module probe: "
               << std::strerror(result.errorCode) << " (Code: " << result.errorCode << ")\n";
     break;
 
   case ProbeStatus::kUnexpectedLoadFailure:
-    std::cerr << "Unsigned kernel module probe failed for an unexpected reason: "
+    std::cerr << "Probe info: Unsigned kernel module probe failed for an unexpected reason: "
               << std::strerror(result.errorCode) << " (Code: " << result.errorCode << ")\n";
     break;
 
@@ -314,26 +301,26 @@ void logProbeFailure(const ProbeResult &result) {
 
 } // namespace
 
-bool Validator::isUnsignedKernelModuleLoadBlocked() {
-  const ProbeResult result = runUnsignedModuleLoadProbe();
+UnsignedKernelModuleLoadProbe::Result Validator::isUnsignedKernelModuleLoadBlocked() {
+  const ProbeExecutionResult result = runUnsignedModuleLoadProbe();
 
   switch (result.status) {
   case ProbeStatus::kBlockedBySignaturePolicy:
-    std::cerr << "Unsigned kernel module load was denied by signature policy: "
+    std::cerr << "Probe info: Unsigned kernel module load was denied by signature policy: "
               << std::strerror(result.errorCode) << " (Code: " << result.errorCode << ")\n";
-    return true;
+    return {true, result.status};
 
   case ProbeStatus::kDeniedForOtherSecurityReason:
-    std::cerr << "Unsigned kernel module load was denied: "
+    std::cerr << "Probe info: Unsigned kernel module load was denied: "
               << std::strerror(result.errorCode) << " (Code: " << result.errorCode << ")\n";
-    return true;
+    return {true, result.status};
 
   case ProbeStatus::kAllowed:
-    return false;
+    return {false, result.status};
 
   default:
     logProbeFailure(result);
-    return false;
+    return {false, result.status};
   }
 }
 

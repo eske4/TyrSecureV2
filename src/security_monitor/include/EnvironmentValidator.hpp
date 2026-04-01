@@ -1,6 +1,31 @@
 #pragma once
 
 namespace OdinSight::System::Environment {
+
+namespace UnsignedKernelModuleLoadProbe {
+
+enum class Status {
+  kBlockedBySignaturePolicy,
+  kDeniedForOtherSecurityReason,
+  kAllowed,
+  kNotRoot,
+  kUnsupportedPlatform,
+  kKernelInfoUnavailable,
+  kKernelHeadersMissing,
+  kTempDirectoryCreationFailed,
+  kSourceWriteFailed,
+  kBuildFailed,
+  kModuleOpenFailed,
+  kUnexpectedLoadFailure
+};
+
+struct Result {
+  bool   isBlocked;
+  Status status;
+};
+
+} // namespace UnsignedKernelModuleLoadProbe
+
 class Validator {
 private:
   /**
@@ -35,9 +60,9 @@ private:
   /**
    * Actively probes whether the running system blocks a real unsigned module load.
    *
-   * @return true if the kernel blocked the load attempt, false otherwise.
+   * @return the probe status and whether the kernel blocked the load attempt.
    */
-  static bool isUnsignedKernelModuleLoadBlocked();
+  static UnsignedKernelModuleLoadProbe::Result isUnsignedKernelModuleLoadBlocked();
 
 public:
   static bool isValid();

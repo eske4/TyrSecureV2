@@ -102,21 +102,29 @@ bool Validator::isValid() {
 
   /*Mandatory*/
   if (!secureBootEnabled) {
-    std::cout << "Error: Secure Boot disabled." << std::endl;
+    std::cout << "Error: Secure Boot - disabled." << std::endl;
   }
 
   if (!kLockdownEnabled) {
-    std::cout << "Error: Kernel lockdown(Confidential Mode) disabled." << std::endl;
+    std::cout << "Error: Kernel lockdown(Confidential Mode) - disabled." << std::endl;
   }
 
   if (!kernelModuleSignatureEnforcementEnabled) {
-    std::cout << "Error: Kernel module signature enforcement disabled." << std::endl;
+    std::cout << "Error: Kernel module signature enforcement - disabled." << std::endl;
   }
 
-  bool unsignedKernelModuleLoadBlocked = isUnsignedKernelModuleLoadBlocked();
+  const UnsignedKernelModuleLoadProbe::Result unsignedKernelModuleLoadProbeResult =
+      isUnsignedKernelModuleLoadBlocked();
 
-  if (!unsignedKernelModuleLoadBlocked) {
-    std::cout << "Error: Runtime unsigned kernel modules are allowed." << std::endl;
+  if (!unsignedKernelModuleLoadProbeResult.isBlocked) {
+    switch (unsignedKernelModuleLoadProbeResult.status) {
+    case UnsignedKernelModuleLoadProbe::Status::kAllowed:
+      std::cout << "Error: Runtime unsigned kernel modules are allowed." << std::endl;
+      break;
+    default:
+      std::cout << "Error: Unsigned Module loab probe failure" << std::endl;
+      break;
+    }
   }
 
   return true;
