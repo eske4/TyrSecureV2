@@ -8,22 +8,26 @@
 #include "system/CGroup.hpp"
 #include <iostream>
 
-namespace Control = OdinSight::Daemon::Control;
-namespace sys     = OdinSight::System;
-namespace common  = OdinSight::Common;
+namespace Daemon   = OdinSight::Daemon;
+namespace Launcher = Daemon::Launcher;
+namespace Control  = Daemon::Control;
+namespace sys      = OdinSight::System;
+namespace common   = OdinSight::Common;
 
 int main() {
   //
-  auto                                epoll_manager = sys::EPollManager::create().value();
-  auto                                pCGroup       = sys::CGroup::create("daemon");
-  OdinSight::System::CGroup           daemonGroup   = std::move(pCGroup.value());
-  OdinSight::Daemon::Launcher::Runner runner;
+  auto epoll_manager = sys::EPollManager::create();
+  auto runner        = Launcher::Runner::create();
+  auto pCGroup       = sys::CGroup::create("daemon");
 
-  auto res = runner.setup(common::GameID::AssaultCube, daemonGroup);
+  auto &epoll_mgr = epoll_manager.value();
+  auto &launcher  = runner.value();
+
+  auto res = launcher->setup(common::GameID::AssaultCube, *pCGroup);
   if (!res) {
     std::clog << res.error().message() << std::endl;
   }
-  auto res2 = runner.start(epoll_manager);
+  auto res2 = launcher->start(epoll_mgr);
   if (!res2) {
     std::clog << res2.error().message() << std::endl;
   }
@@ -41,14 +45,14 @@ int main() {
   };
 
   // 2. Initialize (Using the abstract path "ac_test_socket")
-  Control::CommandListener daemon(common::COMMAND_SOCKET_PATH, validator, handler);
+  auto daemon = Control::CommandListener::create();
 
-  if (!daemon.start()) {
+  if (!daemon.value()->start()) {
     std::cerr << "Failed to start daemon. Are you root?" << std::endl;
     return 1;
   }
 
-  daemon.createEPollBinding(epoll_manager);
+  daemon.value()->createEPollBinding(epoll_mgr);
 
   std::cout << "Daemon listening on abstract socket: \\0" << OdinSight::Common::COMMAND_SOCKET_PATH
             << std::endl;
@@ -56,9 +60,9 @@ int main() {
   // 3. Simple Manual Epoll Loop (Since we aren't using your full EPollManager
   // yet)
 
-  while (epoll_manager.isRunning()) {
+  while (epoll_mgr.isRunning()) {
     // Poll with a timeout (e.g., 100ms) so the loop can check g_keep_running
-    auto result = epoll_manager.poll(100);
+    auto result = epoll_mgr.poll(100);
     if (!result) {
 
       std::clog << "Poll failed: " << result.error().message() << "\n";

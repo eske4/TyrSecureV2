@@ -34,15 +34,17 @@ private:
   static constexpr int COMMAND_COOLDOWN_MS     = 1000;
 
   /** --- Members (State) --- **/
-  std::string                           m_path;
-  FD                                    m_serverFD;
+  std::string m_path;
+  FD          m_serverFD = FD::empty();
+  ;
   std::unique_ptr<EPollBinding>         m_binding;
   Handler                               m_handler;
   std::chrono::steady_clock::time_point m_lastAcceptTime{
       std::chrono::steady_clock::now() - std::chrono::milliseconds(COMMAND_COOLDOWN_MS)};
 
   /** --- Private Constructor (Factory Pattern) --- **/
-  explicit CommandListener(std::string path, Handler handler);
+  explicit CommandListener(std::string path, Handler handler)
+      : m_path(std::move(path)), m_handler(std::move(handler)) {}
 
 public:
   /** --- Lifecycle & Control --- **/

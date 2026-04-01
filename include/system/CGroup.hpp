@@ -21,15 +21,17 @@ class CGroup final {
   static constexpr int MAX_SLEEP_TIME     = 100;
 
 private:
-  std::string           m_name;
-  std::filesystem::path m_path;
-  FD                    m_fd;
-  uint64_t              m_id = 0;
+  std::string             m_name;
+  std::filesystem::path   m_path;
+  std::shared_ptr<CGroup> m_parent = nullptr;
+  FD                      m_fd;
+  uint64_t                m_id = 0;
 
   // Private constructor for factories
-  CGroup(std::string name, std::filesystem::path path, FD file_descriptor, uint64_t cg_id)
+  CGroup(std::string name, std::filesystem::path path, FD file_descriptor, uint64_t cg_id,
+         std::shared_ptr<CGroup> parent = nullptr)
       : m_name(std::move(name)), m_path(std::move(path)), m_fd(std::move(file_descriptor)),
-        m_id(cg_id) {}
+        m_id(cg_id), m_parent(parent) {}
 
   inline void cleanup() noexcept;
 
@@ -41,16 +43,18 @@ public:
   // Move Constructor
   CGroup(CGroup &&other) noexcept
       : m_name(std::move(other.m_name)), m_path(std::move(other.m_path)),
-        m_fd(std::move(other.m_fd)), m_id(std::exchange(other.m_id, 0)) {}
+        m_fd(std::move(other.m_fd)), m_id(std::exchange(other.m_id, 0)),
+        m_parent(std::move(other.m_parent)) {}
 
   // Move Assignment
   CGroup &operator=(CGroup &&other) noexcept {
     if (this != &other) {
       cleanup();
-      m_name = std::move(other.m_name);
-      m_path = std::move(other.m_path);
-      m_fd   = std::move(other.m_fd);
-      m_id   = std::exchange(other.m_id, 0);
+      m_name   = std::move(other.m_name);
+      m_path   = std::move(other.m_path);
+      m_parent = std::move(other.m_parent);
+      m_fd     = std::move(other.m_fd);
+      m_id     = std::exchange(other.m_id, 0);
     }
     return *this;
   }
@@ -58,11 +62,11 @@ public:
   ~CGroup() { cleanup(); }
 
   // --- Factories ---
-  [[nodiscard]] static Result<CGroup> create(std::string_view name) noexcept;
-  [[nodiscard]] static Result<CGroup> createAt(const FD                    &parent_fd,
-                                               const std::filesystem::path &parent_path,
-                                               std::string                  name) noexcept;
-  [[nodiscard]] static CGroup         empty() noexcept { return CGroup("", {}, FD::empty(), 0); };
+  [[nodiscard]] static Result<std::shared_ptr<CGroup>> create(std::string_view name) noexcept;
+  [[nodiscard]] static Result<std::shared_ptr<CGroup>> createAt(std::shared_ptr<CGroup> parent_cg,
+
+                                                                std::string name) noexcept;
+  [[nodiscard]] static Result<std::shared_ptr<CGroup>> empty() noexcept;
 
   void close() { cleanup(); }
 
@@ -112,7 +116,7 @@ inline void CGroup::cleanup() noexcept {
   }
 }
 
-inline CGroup::Result<CGroup> CGroup::create(std::string_view name) noexcept {
+inline CGroup::Result<std::shared_ptr<CGroup>> CGroup::create(std::string_view name) noexcept {
   if (name.empty()) {
     return std::unexpected(std::make_error_code(std::errc::invalid_argument));
   }
@@ -134,24 +138,32 @@ inline CGroup::Result<CGroup> CGroup::create(std::string_view name) noexcept {
     return std::unexpected(id_res.error());
   }
 
-  return CGroup(std::string(name), std::move(target_path), std::move(*fd_res), *id_res);
+  auto *ptr = new (std::nothrow)
+      CGroup(std::string(name), std::move(target_path), std::move(*fd_res), *id_res, nullptr);
+
+  if (ptr == nullptr) {
+    return std::unexpected(std::make_error_code(std::errc::not_enough_memory));
+  }
+
+  return std::shared_ptr<CGroup>(ptr);
+  ;
 }
 
-inline CGroup::Result<CGroup> CGroup::createAt(const FD                    &parent_fd,
-                                               const std::filesystem::path &parent_path,
-                                               std::string                  name) noexcept {
-  if (name.empty()) {
+inline CGroup::Result<std::shared_ptr<CGroup>> CGroup::createAt(std::shared_ptr<CGroup> parent_cg,
+                                                                std::string name) noexcept {
+  if (!parent_cg || name.empty()) {
     return std::unexpected(std::make_error_code(std::errc::invalid_argument));
   }
 
-  if (::mkdirat(parent_fd.get(), name.c_str(), 0755) < 0) {
-    const int err = errno;
-    if (err != EEXIST) {
-      return std::unexpected(std::error_code(err, std::system_category()));
+  const FD &p_fd = parent_cg->getFD();
+
+  if (::mkdirat(p_fd.get(), name.c_str(), 0755) < 0) {
+    if (errno != EEXIST) {
+      return std::unexpected(std::error_code(errno, std::system_category()));
     }
   }
 
-  auto child_fd_res = FD::openAt(parent_fd, name, O_RDONLY | O_DIRECTORY | O_CLOEXEC);
+  auto child_fd_res = FD::openAt(p_fd, name, O_RDONLY | O_DIRECTORY | O_CLOEXEC);
   if (!child_fd_res) {
     return std::unexpected(child_fd_res.error());
   }
@@ -161,9 +173,29 @@ inline CGroup::Result<CGroup> CGroup::createAt(const FD                    &pare
     return std::unexpected(id_res.error());
   }
 
-  std::filesystem::path full_path = parent_path / name;
+  std::filesystem::path full_path = parent_cg->getPath() / name;
 
-  return CGroup(std::move(name), std::move(full_path), std::move(*child_fd_res), *id_res);
+  // 4. Safe Allocation: Use std::nothrow to prevent exceptions in a noexcept function
+  auto *ptr = new (std::nothrow)
+      CGroup(std::move(name), std::move(full_path), std::move(*child_fd_res), *id_res,
+             parent_cg // This fills the m_parent slot and increments the ref count
+      );
+
+  if (ptr == nullptr) {
+    return std::unexpected(std::make_error_code(std::errc::not_enough_memory));
+  }
+
+  return std::shared_ptr<CGroup>(ptr);
+}
+
+inline CGroup::Result<std::shared_ptr<CGroup>> CGroup::empty() noexcept {
+  auto *ptr = new (std::nothrow) CGroup("", {}, FD::empty(), 0, nullptr);
+
+  if (ptr == nullptr) {
+    return std::unexpected(std::make_error_code(std::errc::not_enough_memory));
+  }
+
+  return std::shared_ptr<CGroup>(ptr);
 }
 
 } // namespace OdinSight::System

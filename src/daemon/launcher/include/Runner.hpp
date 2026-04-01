@@ -33,7 +33,7 @@ private:
   pid_t                  m_gpid = -1;
   FD                     m_fd   = FD::empty();
 
-  Runner();
+  Runner() = default;
 
 public:
   /** --- Lifecycle --- **/
@@ -48,7 +48,7 @@ public:
   static Result<std::unique_ptr<Runner>> create();
 
   /** --- Setup & Control --- **/
-  [[nodiscard]] Result<void> setup(const GameID &game_id, const CGroup &cgroup_parent);
+  [[nodiscard]] Result<void> setup(const GameID &game_id, std::shared_ptr<CGroup> &cgroup_parent);
   Result<void>               start(EPollManager &manager);
 
   /** --- Cleaning --- **/

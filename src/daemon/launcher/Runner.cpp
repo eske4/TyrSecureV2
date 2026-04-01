@@ -55,7 +55,7 @@ Result<std::unique_ptr<Runner>> Runner::create() {
   return instance;
 }
 
-Result<void> Runner::setup(const GameID &game_id, const CGroup &cgroup_parent) {
+Result<void> Runner::setup(const GameID &game_id, std::shared_ptr<CGroup> &cgroup_parent) {
   // 1. Validation & State Reset
   if (!this->canLaunch()) {
     return std::unexpected(std::make_error_code(std::errc::operation_not_permitted));
@@ -86,7 +86,7 @@ Result<void> Runner::setup(const GameID &game_id, const CGroup &cgroup_parent) {
 
   // 3. System Resource Allocation (The "Where")
   // Note: Pass just the child name "game" if createAt uses mkdirat
-  auto cgroup_res = CGroup::createAt(cgroup_parent.getFD(), cgroup_parent.getPath(), "game");
+  auto cgroup_res = CGroup::createAt(cgroup_parent, "game");
   if (!cgroup_res) {
     return std::unexpected(cgroup_res.error());
   }
@@ -210,7 +210,7 @@ Result<void> Runner::start(sys::EPollManager &manager) {
     return std::unexpected(std::make_error_code(std::errc::operation_not_permitted));
   }
 
-  const auto &cgroup_res = ctx.cg.getFD();
+  const auto &cgroup_res = ctx.cg->getFD();
   if (!cgroup_res) {
     return std::unexpected(std::make_error_code(std::errc::bad_file_descriptor));
   }
@@ -331,7 +331,7 @@ void Runner::execute_child_setup(int error_fd, const std::vector<char *> &argv,
 void Runner::stop() {
   // 1. Kill everything in the CGroup first
   if (m_ctx.has_value() && this->m_ctx->cg) {
-    auto res = CGService::killProcs(m_ctx->cg);
+    auto res = CGService::killProcs(*m_ctx->cg);
     if (!res) {
       std::clog << "[OdinSight Runner] Warning: CGroup kill failed: " << res.error().message()
                 << std::endl;
