@@ -100,7 +100,6 @@ bool Validator::isValid() {
   bool kLockdownEnabled                        = isKernelLockdownEnabled();
   bool kernelModuleSignatureEnforcementEnabled = isKernelModuleSignatureEnforcementEnabled();
 
-  /*Mandatory*/
   if (!secureBootEnabled) {
     std::cout << "Error: Secure Boot - disabled." << std::endl;
   }
@@ -113,6 +112,7 @@ bool Validator::isValid() {
     std::cout << "Error: Kernel module signature enforcement - disabled." << std::endl;
   }
 
+  // Verifying whether unsigned modules are loadable
   const UnsignedKernelModuleLoadProbe::Result unsignedKernelModuleLoadProbeResult =
       isUnsignedKernelModuleLoadBlocked();
 
