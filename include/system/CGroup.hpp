@@ -79,6 +79,7 @@ public:
   [[nodiscard]] const std::string& getName() const noexcept { return m_name; }
   [[nodiscard]] const std::filesystem::path& getPath() const noexcept { return m_path; }
   [[nodiscard]] uint64_t                     getID() const noexcept { return m_id; }
+  [[nodiscard]] std::shared_ptr<CGroup>      getParent() const noexcept { return m_parent; }
 };
 
 // =================================================================

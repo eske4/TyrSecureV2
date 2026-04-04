@@ -111,8 +111,12 @@ Odin::Result<void> StartupHandler::prepareGame(const CommandPacket& pkt) {
     return std::unexpected(Error::Logic(ctx, "prepare_game", "CGroup parent has expired"));
   }
 
+  if (auto parent = cg_ptr->getParent(); parent != nullptr) {
+    return m_runner->setup(pkt.game_id, parent);
+  }
+  return std::unexpected(Error::Logic(ctx, "prepare_game", "CGroup parent has expired"));
+
   // 3. Delegate to runner
-  return m_runner->setup(pkt.game_id, cg_ptr);
 }
 
 Odin::Result<void> StartupHandler::setupModule(Odin::Result<std::unique_ptr<IEbpfModule>> mod_res) {
