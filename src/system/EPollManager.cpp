@@ -93,9 +93,9 @@ Odin::Result<void> EPollManager::subscribe(std::unique_ptr<IEPollListener> liste
 
   // 3. Prepare epoll_event
   struct epoll_event event{};
-  event.events  = events;
+  event.events   = events;
   // CRITICAL: We store the interface pointer so poll() can call it directly
-  event.data.fd = file_descriptor.get();
+  event.data.ptr = listener.get();
 
   if (!m_epoll_fd) {
     return std::unexpected(Error::Logic(ctx, "subscribe", "Manager epoll FD is invalid"));
@@ -171,24 +171,25 @@ Odin::Result<size_t> EPollManager::poll(int timeout_ms) {
 }
 
 void EPollManager::process_event(const struct epoll_event& event, size_t& total_processed) {
-  const int file_descriptor = event.data.fd;
-
-  // 1. Skip signals (handled separately or first)
-  // 1. Internal signal check
-  if (m_sig_fd && file_descriptor == m_sig_fd.get()) {
+  // 1. Signal Check: Use the .fd member of the union.
+  // If this matches, we stop here.
+  if (m_sig_fd && event.data.fd == m_sig_fd.get()) {
     struct signalfd_siginfo fdsi;
-    // Keep reading signals until the buffer is empty
     while (::read(m_sig_fd.get(), &fdsi, sizeof(fdsi)) > 0) { m_running = false; }
-    return; // Use 'return' here since we are in a helper function
+    return;
   }
-  // 2. Skip pending removals
+
+  // 2. Listener Dispatch: Now it's safe to treat the union as a .ptr.
+  auto* listener = static_cast<IEPollListener*>(event.data.ptr);
+  if (listener == nullptr) { return; }
+
+  // 3. Pending Removal Check
+  // Get FD from the object itself to verify against the removal list
+  const int file_descriptor = listener->getFd().get();
   if (std::ranges::contains(m_pending_removal, file_descriptor)) { return; }
 
-  // 3. Dispatch to listener
-  auto iterator = m_subscriptions.find(file_descriptor);
-  if (iterator == m_subscriptions.end()) { return; }
-
-  iterator->second->onEpollEvent(event.events);
+  // 4. Execute
+  listener->onEpollEvent(event.events);
   total_processed++;
 }
 

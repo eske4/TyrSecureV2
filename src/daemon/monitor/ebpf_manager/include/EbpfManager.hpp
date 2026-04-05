@@ -4,6 +4,7 @@
 #include <bpf/libbpf.h>
 #include <memory>
 
+#include "EPollManager.hpp"
 #include "IEbpfModule.hpp"
 #include "common/Result.hpp"
 #include "ebpf_types.h"
@@ -15,7 +16,8 @@ namespace OdinSight::Daemon::Monitor::Kernel {
 class EbpfManager final {
 private:
   /** --- Private Type Aliases (Zero External Exposure) --- **/
-  using FD = OdinSight::System::FD;
+  using FD           = OdinSight::System::FD;
+  using EPollManager = OdinSight::System::EPollManager;
 
   using ModuleArray = std::array<std::unique_ptr<IEbpfModule>, EBPF_MODULES_COUNT>;
 
@@ -29,6 +31,7 @@ private:
   MasterSkelPtr m_master_skel{nullptr, master__destroy};
 
   FD              m_shared_rb_fd  = FD::empty();
+  FD              m_polling_fd    = FD::empty();
   struct bpf_map* m_shared_rb_map = nullptr;
 
   EbpfManager() = default;
@@ -54,7 +57,8 @@ public:
     return m_master_skel != nullptr && m_ringbuf_reader != nullptr;
   }
 
-  // const FD& getFd() const { return m_fd; }
+  [[nodiscard]] const FD&          getPollingFd() const { return m_polling_fd; }
+  [[nodiscard]] Odin::Result<void> consume();
 
   [[nodiscard]] bool isReady() const {
     return m_ringbuf_reader != nullptr && m_shared_rb_fd.isValid();

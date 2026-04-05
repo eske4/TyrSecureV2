@@ -45,21 +45,37 @@ Odin::Result<std::unique_ptr<EbpfManager>> EbpfManager::create() {
 
   instance->m_ringbuf_reader.reset(ring_buffer);
 
+  // 2. Get the Polling FD from the reader
+  int poll_raw_fd = ring_buffer__epoll_fd(instance->m_ringbuf_reader.get());
+  if (poll_raw_fd < 0) {
+    return std::unexpected(Error::System(name, "ring_buffer__epoll_fd", -poll_raw_fd));
+  }
+
+  // 3. Adopt it into your FD member
+  auto polling_fd = FD::adopt(poll_raw_fd);
+  if (!polling_fd) {
+    return std::unexpected(Error::Logic(name, "FD::adopt", "Failed to adopt polling FD"));
+  }
+  instance->m_polling_fd = std::move(polling_fd.value());
+
   // Set this ONLY when everything is guaranteed to work
   return instance;
 }
 
 int EbpfManager::handleEvent(void* ctx, void* data, size_t data_sz) {
   auto* self = static_cast<EbpfManager*>(ctx);
-  if (self == nullptr || data == nullptr || data_sz != sizeof(ebpf_event)) { return -1; }
+
+  // Basic sanity checks
+  if (self == nullptr || data == nullptr || data_sz < sizeof(ebpf_event)) { return 0; }
 
   const auto* event = static_cast<const ebpf_event*>(data);
   size_t      index = static_cast<size_t>(event->module_id);
 
-  if (index >= self->m_modules.size()) { return 0; }
+  // Dispatch to the specific module
+  if (index < self->m_modules.size() && self->m_modules[index]) {
+    self->m_modules[index]->processEvent(event, data_sz);
+  }
 
-  auto& mod = self->m_modules[index];
-  if (mod) { mod->processEvent(event, data_sz); }
   return 0;
 }
 
@@ -115,4 +131,23 @@ Odin::Result<void> EbpfManager::removeModule(EbpfModuleId mod_id) {
 
   return {}; // Return success
 }
+
+Odin::Result<void> EbpfManager::consume() {
+  // 1. Guard clause: Do not attempt to read if the reader isn't initialized.
+  if (!m_ringbuf_reader) {
+    return std::unexpected(
+        Odin::Error::Logic(name, "consume", "RingBuffer reader not initialized"));
+  }
+
+  // 2. Perform the actual consumption.
+  // ring_buffer__consume returns the number of events processed.
+  // If it returns a negative value, libbpf encountered an internal error.
+  int processed = ring_buffer__consume(m_ringbuf_reader.get());
+
+  if (processed < 0) { return std::unexpected(Odin::Error::System(name, "consume", processed)); }
+
+  // 3. Success: We successfully drained the available events.
+  return {};
+}
+
 } // namespace OdinSight::Daemon::Monitor::Kernel

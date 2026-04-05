@@ -1,11 +1,11 @@
-set(DAEMON_CONTROL_SOURCES CommandListener.cpp)
+set(ODIN_GATEWAY_SOURCES CommandListener.cpp)
 
-add_library(daemon_gateway ${DAEMON_CONTROL_SOURCES})
+add_library(odin_gateway ${ODIN_GATEWAY_SOURCES})
 
-target_include_directories(daemon_gateway
+target_include_directories(odin_gateway
                            PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 target_link_libraries(
-  daemon_gateway
+  odin_gateway
   PRIVATE sys_core
   PUBLIC project_headers)

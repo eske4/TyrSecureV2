@@ -1,11 +1,11 @@
-set(DAEMON_EXECUTION_SOURCES Runner.cpp GameWhitelist.cpp)
+set(ODIN_EXECUTION_SOURCES Runner.cpp GameWhitelist.cpp)
 
-add_library(daemon_execution ${DAEMON_EXECUTION_SOURCES})
+add_library(odin_execution ${ODIN_EXECUTION_SOURCES})
 
-target_include_directories(daemon_execution
+target_include_directories(odin_execution
                            PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 target_link_libraries(
-  daemon_execution
+  odin_execution
   PRIVATE sys_core
   PUBLIC project_headers)

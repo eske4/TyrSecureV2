@@ -1,12 +1,12 @@
-set(EBPF_SOURCES EbpfManager.cpp)
+set(EBPF_SOURCES EbpfManager.cpp EbpfRingbufferListener.cpp)
 
-add_library(ebpf_manager ${EBPF_SOURCES})
+add_library(odin_ebpf ${EBPF_SOURCES})
 
-target_include_directories(ebpf_manager
+target_include_directories(odin_ebpf
                            PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 target_link_libraries(
-  ebpf_manager
+  odin_ebpf
   PUBLIC ebpf_interface project_headers
   PRIVATE sys_core
   PRIVATE ${LIBBPF_LIBRARIES})

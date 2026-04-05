@@ -1,5 +1,6 @@
 #include "OdinEngine.hpp"
 #include "EPollManager.hpp"
+#include "EbpfRingBufListener.hpp"
 #include "ExitEvent.hpp"
 #include "LaunchEvent.hpp"
 #include "common/Result.hpp"
@@ -7,8 +8,9 @@
 
 namespace OdinSight::Daemon {
 
-using LaunchEvent = OdinSight::Daemon::Events::LaunchEvent;
-using ExitEvent   = OdinSight::Daemon::Events::ExitEvent;
+using LaunchEvent         = OdinSight::Daemon::Events::LaunchEvent;
+using ExitEvent           = OdinSight::Daemon::Events::ExitEvent;
+using EbpfRingBufListener = Monitor::Kernel::EbpfRingBufListener;
 
 using EbpfModuleId = OdinSight::Daemon::Monitor::Kernel::EbpfModuleId;
 
@@ -64,6 +66,15 @@ Odin::Result<void> OdinEngine::initializeManagers() {
 }
 
 Odin::Result<void> OdinEngine::initializeListeners() {
+  auto rb_listener_res = EbpfRingBufListener::create(*m_ebpf_mgr);
+  if (!rb_listener_res) {
+    return std::unexpected(Error::Enrich(ctx, "create_rb_listener", rb_listener_res.error()));
+  }
+
+  if (auto res = m_epoll_mgr->subscribe(std::move(rb_listener_res.value())); !res) {
+    return std::unexpected(Error::Enrich(ctx, "subscribe_rb_listener", res.error()));
+  }
+
   auto wait_state_res = switchToWaiting();
 
   if (!wait_state_res) { return std::unexpected(wait_state_res.error()); }
@@ -119,7 +130,7 @@ Odin::Result<void> OdinEngine::run() {
   if (!m_epoll_mgr) { return std::unexpected(Error::Logic(ctx, "run", "EPollManager missing")); }
 
   while (m_epoll_mgr->isRunning()) {
-    if (auto res = m_epoll_mgr->poll(); !res) {
+    if (auto res = m_epoll_mgr->poll(100); !res) {
       return std::unexpected(Error::Enrich(ctx, "poll_loop", res.error()));
     }
   }

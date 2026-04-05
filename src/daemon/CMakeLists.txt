@@ -8,7 +8,7 @@ add_library(odin_engine STATIC OdinEngine.cpp events/LaunchEvent.cpp
 target_link_libraries(
   odin_engine
   # These MUST be PUBLIC so main.cpp can see their headers
-  PUBLIC daemon_gateway sys_core ebpf_manager daemon_execution project_headers
+  PUBLIC odin_gateway sys_core odin_ebpf odin_execution project_headers
   PRIVATE ebpf_modules)
 
 target_include_directories(
