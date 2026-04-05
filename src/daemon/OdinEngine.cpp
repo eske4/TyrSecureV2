@@ -130,7 +130,7 @@ Odin::Result<void> OdinEngine::run() {
   if (!m_epoll_mgr) { return std::unexpected(Error::Logic(ctx, "run", "EPollManager missing")); }
 
   while (m_epoll_mgr->isRunning()) {
-    if (auto res = m_epoll_mgr->poll(100); !res) {
+    if (auto res = m_epoll_mgr->poll(); !res) {
       return std::unexpected(Error::Enrich(ctx, "poll_loop", res.error()));
     }
   }
