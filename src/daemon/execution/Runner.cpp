@@ -1,5 +1,6 @@
 #include "Runner.hpp"
 #include "CGroupService.hpp"
+#include "FDService.hpp"
 #include "GameWhitelist.hpp"
 #include "IdentityService.hpp"
 #include "common/Result.hpp"
@@ -143,30 +144,18 @@ Odin::Result<std::tuple<FD, FD, std::string>> Runner::resolve_paths(const GameEn
   }
 
   // 2. Resolve Working Directory
-  auto work_parent_res = FD::open(absWorkPath.parent_path().string(), O_PATH | O_DIRECTORY);
-  if (!work_parent_res) {
-    return std::unexpected(Error::Enrich(lctx, "open_work_parent", work_parent_res.error()));
-  }
-
-  // Pass the Result's value (the FD object) directly to openAt
-  auto work_fd_res = FD::openAt(*work_parent_res, absWorkPath.filename().string(),
-                                O_PATH | O_DIRECTORY | O_CLOEXEC);
+  // 2. Resolve Working Directory (Using Helper)
+  auto work_fd_res = sys::FDService::openDir(absWorkPath);
   if (!work_fd_res) {
     return std::unexpected(Error::Enrich(lctx, "open_work_dir", work_fd_res.error()));
   }
 
-  // 3. Resolve Binary
-  auto bin_dir_res = FD::open(absBinPath.parent_path().string(), O_PATH | O_DIRECTORY);
-  if (!bin_dir_res) {
-    return std::unexpected(Error::Enrich(lctx, "open_bin_parent", bin_dir_res.error()));
-  }
-
-  // Pass the Result's value (the FD object) directly to openAt
-  auto exec_fd_res = FD::openAt(*bin_dir_res, absBinPath.filename().string(), O_RDONLY | O_CLOEXEC);
+  // 3. Resolve Binary (Using Helper)
+  auto exec_fd_res = sys::FDService::openBin(absBinPath);
   if (!exec_fd_res) {
     return std::unexpected(Error::Enrich(lctx, "open_bin_file", exec_fd_res.error()));
   }
-
+  // 3. Resolve Binary
   // Return the verified pair
   return std::make_tuple(std::move(*work_fd_res), std::move(*exec_fd_res), absBinPath.string());
 }
