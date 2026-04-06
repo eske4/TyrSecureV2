@@ -1,6 +1,6 @@
 set(EBPF_SOURCES EbpfManager.cpp EbpfRingbufferListener.cpp)
 
-add_library(odin_ebpf ${EBPF_SOURCES})
+add_library(odin_ebpf STATIC ${EBPF_SOURCES})
 
 target_include_directories(odin_ebpf
                            PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")

@@ -1,6 +1,6 @@
 set(ODIN_GATEWAY_SOURCES CommandListener.cpp)
 
-add_library(odin_gateway ${ODIN_GATEWAY_SOURCES})
+add_library(odin_gateway STATIC ${ODIN_GATEWAY_SOURCES})
 
 target_include_directories(odin_gateway
                            PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
