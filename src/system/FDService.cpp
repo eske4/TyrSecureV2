@@ -1,14 +1,8 @@
-#pragma once
+#include "FDService.hpp"
 
-#include "common/Result.hpp"
-#include "system/FD.hpp"
-#include <expected>
-#include <fcntl.h>
-#include <filesystem>
+namespace OdinSight::System {
 
-namespace OdinSight::Util::FD {
-
-[[nodiscard]] inline Odin::Result<System::FD> openFile(std::filesystem::path path) {
+[[nodiscard]] Odin::Result<FD> FDService::openFile(std::filesystem::path path) {
   using FD     = OdinSight::System::FD;
   auto dir_val = FD::open(path.parent_path().string(), O_PATH | O_DIRECTORY | O_CLOEXEC);
 
@@ -20,5 +14,4 @@ namespace OdinSight::Util::FD {
 
   return final_fd; // Return the Result containing the FD
 }
-
-} // namespace OdinSight::Util::FD
+} // namespace OdinSight::System
