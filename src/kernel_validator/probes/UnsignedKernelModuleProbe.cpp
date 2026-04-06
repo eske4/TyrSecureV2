@@ -1,6 +1,6 @@
 #include "EnvironmentValidator.hpp"
 #include "system/FD.hpp"
-
+#include "FDService.hpp"
 #include <cerrno>
 #include <cstring>
 #include <filesystem>
@@ -208,14 +208,15 @@ Result<void> classifyLoadFailure(int err) {
 }
 
 Result<void> tryLoadProbeModule(const ProbePaths &paths) {
-  FD moduleFd(paths.moduleFile.string(), O_RDONLY);
+    Odin::Result<FD> moduleFd = OdinSight::System::FDService::openFile(paths.moduleFile.string());
+  //FD moduleFd(paths.moduleFile.string(), O_RDONLY);
   if (!moduleFd) {
     return std::unexpected(
         Odin::Error::System(errorCtx, "open built unsigned kernel module probe", errno));
   }
 
   errno             = 0;
-  const long result = ::syscall(SYS_finit_module, moduleFd.get(), "", 0);
+  const long result = ::syscall(SYS_finit_module, moduleFd->get(), "", 0);
   if (result != 0) {
     return classifyLoadFailure(errno);
   }

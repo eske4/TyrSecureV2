@@ -1,6 +1,6 @@
 #include "EnvironmentValidator.hpp"
+#include "FDService.hpp"
 #include "system/FD.hpp"
-#include "utils/FDUtil.hpp"
 #include <array>
 #include <cerrno>
 #include <cstdint>
@@ -18,10 +18,10 @@ namespace OdinSight::System::Environment {
 constexpr char errorCtx[] = "EnvironmentValidator";
 
 Result<void> Validator::isSecureBootEnabled() {
-  constexpr std::size_t secureBootVarSize      = 5;
-  constexpr uint8_t     secureBootEnabledValue = 1;
-  const std::string     dirPath                = "/sys/firmware/efi/efivars/";
-  std::string           secureBootFileName;
+  constexpr std::size_t       secureBootVarSize      = 5;
+  constexpr uint8_t           secureBootEnabledValue = 1;
+  const std::filesystem::path dirPath                = "/sys/firmware/efi/efivars/";
+  std::string                 secureBootFileName;
 
   if (!fs::exists(dirPath) || !fs::is_directory(dirPath)) {
     return std::unexpected(Odin::Error::Logic(errorCtx, "check secure boot",
@@ -42,18 +42,20 @@ Result<void> Validator::isSecureBootEnabled() {
         Odin::Error::Logic(errorCtx, "check secure boot", "SecureBoot EFI variable is missing"));
   }
 
-  FD dirFd(dirPath, O_RDONLY | O_DIRECTORY | O_NOFOLLOW);
-  if (!dirFd) {
-    return std::unexpected(Odin::Error::System(errorCtx, "open EFI variables directory", errno));
-  }
+  std::filesystem::path secureBootFullPath = dirPath / secureBootFileName;
 
-  FD secureBootFd(dirFd, secureBootFileName, O_RDONLY);
-  if (!secureBootFd) {
-    return std::unexpected(Odin::Error::System(errorCtx, "open SecureBoot EFI variable", errno));
-  }
+  // Odin::Result<FD> dirFD = OdinSight::System::FDService::openFile(dirPath);
+
+  // if (!dirFD) {
+  //   return std::unexpected(Odin::Error::System(errorCtx, "open EFI variables directory", errno));
+  // }
+
+  // std::filesystem::path secureBootFullPath = dirPath / secureBootFileName;
+
+  Odin::Result<FD> secureBootFD = OdinSight::System::FDService::openFile(secureBootFullPath);
 
   std::array<uint8_t, secureBootVarSize> data{};
-  const ssize_t bytesRead = ::read(secureBootFd.get(), data.data(), data.size());
+  const ssize_t bytesRead = ::read(secureBootFD->get(), data.data(), data.size());
   if (bytesRead < 0) {
     return std::unexpected(Odin::Error::System(errorCtx, "read SecureBoot EFI variable", errno));
   }
@@ -74,7 +76,7 @@ Result<void> Validator::isSecureBootEnabled() {
 Result<void> Validator::isKernelLockdownEnabled() {
   std::filesystem::path lockdownFilePath = "/sys/module/module/parameters/sig_enforce";
 
-    Odin::Result<FD> lockdownFd = OdinSight::Util::FD::openFile(lockdownFilePath);
+  Odin::Result<FD> lockdownFd = OdinSight::System::FDService::openFile(lockdownFilePath);
 
   if (!lockdownFd) {
     return std::unexpected(Odin::Error::System(errorCtx, "open kernel lockdown state", errno));
@@ -103,7 +105,7 @@ Result<void> Validator::isKernelModuleSignatureEnforcementEnabled() {
   //[[nodiscard]] inline Odin::Result<System::FD> openFile(std::filesystem::path path) {
   std::filesystem::path sigEnforceFilePath = "/sys/module/module/parameters/sig_enforce";
 
-  Odin::Result<FD> sigFileFD = OdinSight::Util::FD::openFile(sigEnforceFilePath);
+  Odin::Result<FD> sigFileFD = OdinSight::System::FDService::openFile(sigEnforceFilePath);
 
   if (!sigFileFD) {
     return std::unexpected(

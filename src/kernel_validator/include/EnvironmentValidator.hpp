@@ -1,6 +1,6 @@
 #pragma once
 
-#include "common/Error.hpp"
+#include "common/Result.hpp"
 
 namespace OdinSight::System::Environment {
 
