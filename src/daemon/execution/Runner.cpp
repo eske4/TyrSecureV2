@@ -25,9 +25,11 @@
 
 namespace OdinSight::Daemon::Launcher {
 
-namespace sys         = OdinSight::System;
-namespace CInterop    = OdinSight::Util::CInterop;
-namespace fs          = std::filesystem;
+namespace sys      = OdinSight::System;
+namespace CInterop = OdinSight::Util::CInterop;
+namespace fs       = std::filesystem;
+namespace Util     = OdinSight::Util;
+
 using FD              = OdinSight::System::FD;
 using IdentityService = OdinSight::System::IdentityService;
 using CGService       = OdinSight::System::CGService;

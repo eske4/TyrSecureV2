@@ -1,4 +1,5 @@
-set(SYSTEM_CORE_SOURCES CGroupService.cpp IdentityService.cpp EPollManager.cpp)
+set(SYSTEM_CORE_SOURCES CGroupService.cpp IdentityService.cpp EPollManager.cpp
+                        FDService.cpp)
 
 add_library(sys_core ${SYSTEM_CORE_SOURCES})
 
