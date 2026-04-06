@@ -1,6 +1,6 @@
 #include "EnvironmentValidator.hpp"
-#include "system/FD.hpp"
 #include "FDService.hpp"
+#include "system/FD.hpp"
 #include <cerrno>
 #include <cstring>
 #include <filesystem>
@@ -19,7 +19,7 @@ namespace OdinSight::System::Environment {
 
 namespace {
 
-constexpr char errorCtx[] = "UnsignedKernelModuleProbe";
+constexpr char errorCtx[]         = "UnsignedKernelModuleProbe";
 constexpr char kProbeModuleName[] = "odinsight_unsigned_probe";
 
 constexpr char kProbeModuleSource[] = R"(#include <linux/init.h>
@@ -54,9 +54,7 @@ public:
   explicit ScopedDirectoryCleanup(fs::path path) : path_(std::move(path)) {}
 
   ~ScopedDirectoryCleanup() {
-    if (path_.empty()) {
-      return;
-    }
+    if (path_.empty()) { return; }
 
     std::error_code ec;
     fs::remove_all(path_, ec);
@@ -65,51 +63,48 @@ public:
     }
   }
 
-  ScopedDirectoryCleanup(const ScopedDirectoryCleanup &)            = delete;
-  ScopedDirectoryCleanup &operator=(const ScopedDirectoryCleanup &) = delete;
+  ScopedDirectoryCleanup(const ScopedDirectoryCleanup&)            = delete;
+  ScopedDirectoryCleanup& operator=(const ScopedDirectoryCleanup&) = delete;
 
 private:
   fs::path path_;
 };
 
-Result<void> writeTextFile(const fs::path &path, const std::string &contents) {
+Result<void> writeTextFile(const fs::path& path, const std::string& contents) {
   std::ofstream file(path);
   if (!file) {
-    return std::unexpected(Odin::Error::Logic(
-        errorCtx,
-        "write unsigned kernel module probe source",
-        "Failed to open the unsigned kernel module probe source file"));
+    return std::unexpected(
+        Odin::Error::Logic(errorCtx, "write unsigned kernel module probe source",
+                           "Failed to open the unsigned kernel module probe source file"));
   }
 
   file << contents;
   if (!file.good()) {
-    return std::unexpected(Odin::Error::Logic(
-        errorCtx,
-        "write unsigned kernel module probe source",
-        "Failed to write the unsigned kernel module probe source file"));
+    return std::unexpected(
+        Odin::Error::Logic(errorCtx, "write unsigned kernel module probe source",
+                           "Failed to write the unsigned kernel module probe source file"));
   }
 
   return {};
 }
 
-Result<void> runCommand(const std::vector<std::string> &args) {
+Result<void> runCommand(const std::vector<std::string>& args) {
   if (args.empty()) {
-    return std::unexpected(
-        Odin::Error::Logic(errorCtx, "run unsigned kernel module probe build", "Build command is empty"));
+    return std::unexpected(Odin::Error::Logic(errorCtx, "run unsigned kernel module probe build",
+                                              "Build command is empty"));
   }
 
   const pid_t pid = ::fork();
   if (pid < 0) {
-    return std::unexpected(Odin::Error::System(errorCtx, "fork unsigned kernel module probe build", errno));
+    return std::unexpected(
+        Odin::Error::System(errorCtx, "fork unsigned kernel module probe build", errno));
   }
 
   if (pid == 0) {
-    std::vector<char *> argv;
+    std::vector<char*> argv;
     argv.reserve(args.size() + 1);
 
-    for (const auto &arg : args) {
-      argv.push_back(const_cast<char *>(arg.c_str()));
-    }
+    for (const auto& arg : args) { argv.push_back(const_cast<char*>(arg.c_str())); }
     argv.push_back(nullptr);
 
     ::execvp(argv[0], argv.data());
@@ -118,14 +113,13 @@ Result<void> runCommand(const std::vector<std::string> &args) {
 
   int status = 0;
   if (::waitpid(pid, &status, 0) < 0) {
-    return std::unexpected(Odin::Error::System(errorCtx, "wait for unsigned kernel module probe build", errno));
+    return std::unexpected(
+        Odin::Error::System(errorCtx, "wait for unsigned kernel module probe build", errno));
   }
 
   if (!WIFEXITED(status) || WEXITSTATUS(status) != 0) {
-    return std::unexpected(Odin::Error::Logic(
-        errorCtx,
-        "build unsigned kernel module probe",
-        "Failed to build the unsigned kernel module probe"));
+    return std::unexpected(Odin::Error::Logic(errorCtx, "build unsigned kernel module probe",
+                                              "Failed to build the unsigned kernel module probe"));
   }
 
   return {};
@@ -140,8 +134,7 @@ Result<fs::path> getKernelBuildDirectory() {
   const fs::path buildDir = fs::path("/usr/lib/modules") / kernelInfo.release / "build";
   if (!fs::is_directory(buildDir)) {
     return std::unexpected(Odin::Error::Logic(
-        errorCtx,
-        "locate kernel headers",
+        errorCtx, "locate kernel headers",
         "Kernel headers required for the unsigned kernel module probe are missing"));
   }
 
@@ -150,7 +143,7 @@ Result<fs::path> getKernelBuildDirectory() {
 
 Result<ProbePaths> createProbePaths() {
   char  directoryTemplate[] = "/tmp/odinsight-kmod-probe-XXXXXX";
-  char *directoryPath       = ::mkdtemp(directoryTemplate);
+  char* directoryPath       = ::mkdtemp(directoryTemplate);
   if (!directoryPath) {
     return std::unexpected(
         Odin::Error::System(errorCtx, "create unsigned kernel module probe directory", errno));
@@ -164,21 +157,17 @@ Result<ProbePaths> createProbePaths() {
   return paths;
 }
 
-Result<void> writeProbeSources(const ProbePaths &paths) {
+Result<void> writeProbeSources(const ProbePaths& paths) {
   const Result<void> sourceWriteResult = writeTextFile(paths.sourceFile, kProbeModuleSource);
-  if (!sourceWriteResult) {
-    return std::unexpected(sourceWriteResult.error());
-  }
+  if (!sourceWriteResult) { return std::unexpected(sourceWriteResult.error()); }
 
   const Result<void> makefileWriteResult = writeTextFile(paths.makefile, kProbeMakefile);
-  if (!makefileWriteResult) {
-    return std::unexpected(makefileWriteResult.error());
-  }
+  if (!makefileWriteResult) { return std::unexpected(makefileWriteResult.error()); }
 
   return {};
 }
 
-Result<void> buildProbeModule(const fs::path &kernelBuildDir, const ProbePaths &paths) {
+Result<void> buildProbeModule(const fs::path& kernelBuildDir, const ProbePaths& paths) {
   return runCommand({
       "make",
       "-s",
@@ -194,22 +183,22 @@ Result<void> classifyLoadFailure(int err) {
   case EKEYREJECTED:
   case ENOKEY:
   case EBADMSG:
-    return std::unexpected(
-        Odin::Error::System(errorCtx, "load unsigned kernel module denied by signature policy", err));
+    return std::unexpected(Odin::Error::System(
+        errorCtx, "load unsigned kernel module denied by signature policy", err));
 
   case EPERM:
   case EACCES:
-    return std::unexpected(
-        Odin::Error::System(errorCtx, "load unsigned kernel module denied by other security policy", err));
+    return std::unexpected(Odin::Error::System(
+        errorCtx, "load unsigned kernel module denied by other security policy", err));
 
   default:
     return std::unexpected(Odin::Error::System(errorCtx, "load unsigned kernel module probe", err));
   }
 }
 
-Result<void> tryLoadProbeModule(const ProbePaths &paths) {
-    Odin::Result<FD> moduleFd = OdinSight::System::FDService::openFile(paths.moduleFile.string());
-  //FD moduleFd(paths.moduleFile.string(), O_RDONLY);
+Result<void> tryLoadProbeModule(const ProbePaths& paths) {
+  Odin::Result<FD> moduleFd =
+      OdinSight::System::FDService::openFile(paths.moduleFile.string(), true);
   if (!moduleFd) {
     return std::unexpected(
         Odin::Error::System(errorCtx, "open built unsigned kernel module probe", errno));
@@ -217,9 +206,7 @@ Result<void> tryLoadProbeModule(const ProbePaths &paths) {
 
   errno             = 0;
   const long result = ::syscall(SYS_finit_module, moduleFd->get(), "", 0);
-  if (result != 0) {
-    return classifyLoadFailure(errno);
-  }
+  if (result != 0) { return classifyLoadFailure(errno); }
 
 #ifdef SYS_delete_module
   errno = 0;
@@ -234,39 +221,29 @@ Result<void> tryLoadProbeModule(const ProbePaths &paths) {
 
 Result<void> runUnsignedModuleLoadProbe() {
   if (::geteuid() != 0) {
-    return std::unexpected(Odin::Error::Logic(
-        errorCtx,
-        "load unsigned kernel module probe",
-        "Unsigned kernel module probe requires root privileges"));
+    return std::unexpected(
+        Odin::Error::Logic(errorCtx, "load unsigned kernel module probe",
+                           "Unsigned kernel module probe requires root privileges"));
   }
 
 #ifndef SYS_finit_module
-  return std::unexpected(Odin::Error::Logic(
-      errorCtx,
-      "load unsigned kernel module probe",
-      "Kernel module load probe is not supported on this platform"));
+  return std::unexpected(
+      Odin::Error::Logic(errorCtx, "load unsigned kernel module probe",
+                         "Kernel module load probe is not supported on this platform"));
 #else
   const Result<fs::path> kernelBuildDir = getKernelBuildDirectory();
-  if (!kernelBuildDir) {
-    return std::unexpected(kernelBuildDir.error());
-  }
+  if (!kernelBuildDir) { return std::unexpected(kernelBuildDir.error()); }
 
   const Result<ProbePaths> probePaths = createProbePaths();
-  if (!probePaths) {
-    return std::unexpected(probePaths.error());
-  }
+  if (!probePaths) { return std::unexpected(probePaths.error()); }
 
   ScopedDirectoryCleanup cleanup(probePaths->directory);
 
   const Result<void> probeSourcesWriteResult = writeProbeSources(*probePaths);
-  if (!probeSourcesWriteResult) {
-    return std::unexpected(probeSourcesWriteResult.error());
-  }
+  if (!probeSourcesWriteResult) { return std::unexpected(probeSourcesWriteResult.error()); }
 
   const Result<void> probeBuildResult = buildProbeModule(*kernelBuildDir, *probePaths);
-  if (!probeBuildResult) {
-    return std::unexpected(probeBuildResult.error());
-  }
+  if (!probeBuildResult) { return std::unexpected(probeBuildResult.error()); }
 
   return tryLoadProbeModule(*probePaths);
 #endif
@@ -274,8 +251,6 @@ Result<void> runUnsignedModuleLoadProbe() {
 
 } // namespace
 
-Result<void> Validator::canLoadUnsignedKernelModules() {
-  return runUnsignedModuleLoadProbe();
-}
+Result<void> Validator::canLoadUnsignedKernelModules() { return runUnsignedModuleLoadProbe(); }
 
 } // namespace OdinSight::System::Environment
