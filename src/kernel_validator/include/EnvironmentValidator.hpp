@@ -4,8 +4,6 @@
 
 namespace OdinSight::System::Environment {
 
-template <typename T> using Result = Odin::Result<T>;
-
 class Validator {
 private:
   /**
@@ -14,7 +12,7 @@ private:
    * that the EFI payload byte indicates Secure Boot is enabled.
    * @return success when Secure Boot is enabled, otherwise a structured error.
    */
-  [[nodiscard]] static Result<void> isSecureBootEnabled();
+  [[nodiscard]] static Odin::Result<void> isSecureBootEnabled();
 
   /**
    * Checks whether kernel lockdown is enabled in confidentiality mode.
@@ -22,7 +20,7 @@ private:
    * This implementation specifically treats "[confidentiality]" as enabled.
    * @return true if kernel lockdown confidentiality mode is active, false otherwise.
    */
-  [[nodiscard]] static Result<void> isKernelLockdownEnabled();
+  [[nodiscard]] static Odin::Result<void> isKernelLockdownEnabled();
 
   /**
    * Checks whether kernel module signature enforcement is enabled.
@@ -30,16 +28,16 @@ private:
    * When enabled, only properly signed kernel modules may be loaded.
    * @return true if signature enforcement is enabled, false otherwise.
    */
-  [[nodiscard]] static Result<void> isKernelModuleSignatureEnforcementEnabled();
+  [[nodiscard]] static Odin::Result<void> isKernelModuleSignatureEnforcementEnabled();
 
   /**
    * Actively probes whether the running system can load a real unsigned module.
    * @return success when an unsigned module load succeeds, otherwise a structured error that
    *         explains why the load was denied or why the probe failed.
    */
-  [[nodiscard]] static Result<void> canLoadUnsignedKernelModules();
+  [[nodiscard]] static Odin::Result<void> canLoadUnsignedKernelModules();
 
 public:
-  [[nodiscard]] static Result<void> isValid();
+  [[nodiscard]] static Odin::Result<void> isValid();
 };
 } // namespace OdinSight::System::Environment

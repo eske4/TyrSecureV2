@@ -3,10 +3,10 @@ set(LAUNCHER_SOURCES
     probes/UnsignedKernelModuleProbe.cpp
 )
 
-add_library(EnvironmentValidator ${LAUNCHER_SOURCES})
+add_library(environment_validator ${LAUNCHER_SOURCES})
 
-target_include_directories(EnvironmentValidator
+target_include_directories(environment_validator
     PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include"
 )
 
-target_link_libraries(EnvironmentValidator PRIVATE sys_core PUBLIC project_headers)
+target_link_libraries(environment_validator PRIVATE sys_core PUBLIC project_headers)
