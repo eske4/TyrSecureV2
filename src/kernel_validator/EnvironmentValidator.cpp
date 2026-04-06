@@ -1,5 +1,6 @@
 #include "EnvironmentValidator.hpp"
 #include "system/FD.hpp"
+#include "utils/FDUtil.hpp"
 #include <array>
 #include <cerrno>
 #include <cstdint>
@@ -73,7 +74,7 @@ Result<void> Validator::isSecureBootEnabled() {
 Result<void> Validator::isKernelLockdownEnabled() {
   std::filesystem::path lockdownFilePath = "/sys/module/module/parameters/sig_enforce";
 
-  Odin::Result<FD> lockdownFd = FD::open(lockdownFilePath.parent_path().string(), O_RDONLY);
+    Odin::Result<FD> lockdownFd = OdinSight::Util::FD::openFile(lockdownFilePath);
 
   if (!lockdownFd) {
     return std::unexpected(Odin::Error::System(errorCtx, "open kernel lockdown state", errno));
@@ -99,25 +100,18 @@ Result<void> Validator::isKernelLockdownEnabled() {
 }
 
 Result<void> Validator::isKernelModuleSignatureEnforcementEnabled() {
+  //[[nodiscard]] inline Odin::Result<System::FD> openFile(std::filesystem::path path) {
   std::filesystem::path sigEnforceFilePath = "/sys/module/module/parameters/sig_enforce";
 
-  Odin::Result<FD> sigFilePathFD = FD::open(sigEnforceFilePath.parent_path().string(), O_RDONLY);
+  Odin::Result<FD> sigFileFD = OdinSight::Util::FD::openFile(sigEnforceFilePath);
 
-  if (!sigFilePathFD) {
-    return std::unexpected(
-        Odin::Error::Enrich(errorCtx, "open_sig_filepath", sigFilePathFD.error()));
-  }
-
-  sigFilePathFD = FD::openAt(*sigFilePathFD, sigEnforceFilePath.filename().string(),
-                             O_PATH | O_DIRECTORY | O_CLOEXEC);
-
-  if (!sigFilePathFD) {
+  if (!sigFileFD) {
     return std::unexpected(
         Odin::Error::System(errorCtx, "open module signature enforcement state", errno));
   }
 
   std::array<char, 256> buffer{};
-  const ssize_t         bytesRead = ::read(sigFilePathFD->get(), buffer.data(), buffer.size() - 1);
+  const ssize_t         bytesRead = ::read(sigFileFD->get(), buffer.data(), buffer.size() - 1);
 
   if (bytesRead <= 0) {
     return std::unexpected(
