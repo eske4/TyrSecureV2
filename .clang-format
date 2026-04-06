@@ -1,24 +1,51 @@
 ---
-# Align the = signs in your 'using' and 'variable' blocks
+Language: Cpp
+Standard: c++20
+ColumnLimit: 100
+
+# --- THE ALIGNMENT ENGINE ---
+# This gives you that "Table" look for variables and assignments
 AlignConsecutiveAssignments:
   Enabled: true
   AcrossEmptyLines: false
   AcrossComments: true
+  AlignCompound: true # Aligns +=, -=, etc. with =
+  PadOperators: true
 
-# Align the types and variable names
 AlignConsecutiveDeclarations:
   Enabled: true
   AcrossEmptyLines: false
   AcrossComments: true
 
-# Keep your manual grouping with empty lines
-KeepEmptyLinesAtTheStartOfBlocks: true
+# Aligns parameters in function calls/definitions
+AlignAfterOpenBracket: Align
+# Aligns << operators for clean logging/printing
+AlignConsecutiveMacros: true
+AlignEscapedNewlines: Right
+
+# --- THE COMPACTNESS ENGINE ---
+# This solves your "If-statement bloat" problem.
+# It allows { return; } to stay on one line.
+AllowShortBlocksOnASingleLine: Always
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+
+# Braces stay on the same line as the 'if' to save vertical space
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: false
+  AfterFunction: false
+  BeforeElse: false
+  SplitEmptyFunction: false
+
+# --- CLEANUP & WHITESPACE ---
+# Keeps your manual logical grouping
+KeepEmptyLinesAtTheStartOfBlocks: false
 MaxEmptyLinesToKeep: 1
 
-# Ensure comments stay where you put them
+# Removes unnecessary spaces, keeps trailing comments aligned
 AlignTrailingComments: true
-
-# Modern C++ specific layout
-Standard: c++23
-ColumnLimit: 100
+PointerAlignment: Left # Modern C++ style: int* ptr;
+SpaceAfterCStyleCast: true
 ---

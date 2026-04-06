@@ -31,12 +31,9 @@ endif
 
 init:
 	@sudo $(BUILD_DIR)/app/daemon/OdinSight_daemon
-run:
-	@sudo $(BUILD_DIR)/app/launcher/OdinSight_launcher
+launch:
+	$(BUILD_DIR)/app/launcher/OdinSight_launcher
 
-run2:
-	@sudo $(BUILD_DIR)/app/epoll_test/OdinSight_epoll
-	
 
 debug:
 	@sudo cat /sys/kernel/tracing/trace_pipe

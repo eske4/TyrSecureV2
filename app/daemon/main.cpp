@@ -1,80 +1,51 @@
-#include "CGService.hpp"
-#include "EPollManager.hpp"
-#include "GLauncher.hpp"
-#include "LaunchRequestReceiver.hpp"
-#include "common/GameID.hpp"
-#include <csignal>
-#include <iostream>
-#include <string_view>
+#include "CGroupService.hpp"
+#include "OdinEngine.hpp"
+#include "system/CGroup.hpp"
+#include <cstdlib>
 
-using GLauncher = Launcher::GLauncher;
+using CGroup    = OdinSight::System::CGroup;
+using CGService = OdinSight::System::CGService;
 
-static constexpr std::string_view CGROUP_NAME = "TyrSecure";
-
-// Flag to control main loop
-volatile std::sig_atomic_t gRunning = 1;
-
-// Signal handler for Ctrl+C
-void handle_signal(int) {
-  std::cout << "\n[INFO] Ctrl+C detected. Shutting down..." << std::endl;
-  gRunning = 0;
-}
-
+using OdinEngine = OdinSight::Daemon::OdinEngine;
 int main() {
-  std::signal(SIGINT, handle_signal);
+  auto cg_res = CGroup::create("OdinSight");
 
-  std::cout << "[INFO] Initializing TyrSecure Daemon..." << std::endl;
-
-  auto manager_res = sys::EPollManager::create();
-  auto &epoll_manager = *manager_res;
-
-  GLauncher launcher;
-  LaunchRequestReceiver receiver;
-  if (!receiver.start()) {
-    std::cerr << "[ERROR] Failed to start LaunchRequestReceiver\n";
+  if (!cg_res) {
+    std::cerr << "[FATAL] Root CGroup initialization failed\n"
+              << "Reason: ";
+    cg_res.error().log();
     return EXIT_FAILURE;
   }
 
-  sys::CGroup cgroup = sys::CGService::create(CGROUP_NAME);
-  if (cgroup.get_fd() < 0) {
-    std::cerr << "[FATAL] Failed to create CGroup: " << CGROUP_NAME
-              << std::endl;
+  auto cg_root    = std::move(cg_res.value());
+  auto enable_res = OdinSight::System::CGService::enableSubtreeControllers(*cg_root);
+  if (!enable_res) { enable_res.error().log(); }
+
+  auto engine_res = OdinEngine::create(cg_root);
+
+  if (!engine_res) {
+    std::cerr << "[FATAL] Engine construction failed\n"
+              << "Trace: ";
+    engine_res.error().log();
+
     return EXIT_FAILURE;
   }
 
-  while (gRunning) {
-    common::GameID game = receiver.waitForGameID();
-    if (!gRunning)
-      break; // exit immediately on Ctrl+C
+  auto& engine = engine_res.value();
 
-    if (game == common::GameID::None)
-      continue;
-
-    std::cout << "[INFO] Launch request received for game: "
-              << static_cast<int>(game) << std::endl;
-
-    if (!launcher.setup(game, cgroup)) {
-      continue;
-    }
-
-    launcher.start();
-
-    if (!launcher.isActive()) {
-      std::cerr << "[FATAL] Process failed to transition to ACTIVE state."
-                << std::endl;
-      continue;
-    }
-
-    if (const auto *info = launcher.getSessionInfo()) {
-      std::cout << "[SUCCESS] Child started!" << std::endl;
-      std::cout << "  - PID:       " << launcher.getGpid() << std::endl;
-      std::cout << "  - Name:      " << info->game_name << std::endl;
-      std::cout << "  - CGroup ID: " << info->cg.getID() << std::endl;
-    }
+  if (auto res = engine.init(); !res) {
+    std::cerr << "[FATAL] Daemon initialization failed\n"
+              << "Trace: ";
+    res.error().log();
+    return EXIT_FAILURE;
   }
 
-  std::cout << "[INFO] TyrSecure Daemon stopped gracefully. Destructors "
-               "cleaning up..."
-            << std::endl;
+  if (auto res = engine.run(); !res) {
+    std::cerr << "[RUNTIME] Engine encountered a critical error\n"
+              << "Trace: ";
+    res.error().log();
+    return EXIT_FAILURE;
+  }
+
   return EXIT_SUCCESS;
 }

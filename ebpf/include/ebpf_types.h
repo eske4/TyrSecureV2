@@ -3,6 +3,7 @@
 #ifdef __cplusplus
 #include <cstdint>
 #include <linux/types.h>
+#include <stddef.h>
 namespace OdinSight::Daemon::Monitor::Kernel {
 // We don't use extern "C" here because C++ enums/namespaces
 // aren't compatible with C anyway. We just keep the layout identical.
@@ -12,6 +13,8 @@ enum class EbpfModuleId : uint32_t {
   MODULE_PROC_MONITOR = 2,
   MODULE_COUNT        = 3
 };
+
+static constexpr size_t EBPF_MODULES_COUNT = static_cast<size_t>(EbpfModuleId::MODULE_COUNT);
 
 struct ebpf_event {
   __u64        timestamp;

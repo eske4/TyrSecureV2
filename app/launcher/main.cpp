@@ -10,10 +10,12 @@ namespace sys    = OdinSight::System;
 namespace common = OdinSight::Common;
 
 int main() {
-  sys::FD file_descriptor;
+  auto file_descriptor = sys::FD::adopt(::socket(AF_UNIX, SOCK_STREAM, 0));
+  if (!file_descriptor) {
+    return 1;
+  }
 
-  file_descriptor.reset(::socket(AF_UNIX, SOCK_STREAM, 0));
-  if (file_descriptor.get() < 0) {
+  if (file_descriptor->get() < 0) {
     std::cerr << "[ERROR] Failed to create socket\n";
     return 1;
   }
@@ -33,7 +35,7 @@ int main() {
   socklen_t addrLen = offsetof(struct sockaddr_un, sun_path) + 1 + path.size();
 
   // 2. Attempt to connect
-  if (connect(file_descriptor.get(), reinterpret_cast<sockaddr *>(&addr), addrLen) == -1) {
+  if (connect(file_descriptor->get(), reinterpret_cast<sockaddr *>(&addr), addrLen) == -1) {
     std::cerr << "[ERROR] Could not connect to abstract socket: " << std::strerror(errno) << "\n";
     return 1;
   }
@@ -41,9 +43,9 @@ int main() {
   // 3. Prepare and Send Message (with Byte Order conversion)
   common::CommandPacket msg;
   msg.command_id = common::DaemonCommand::Launch;
-  msg.game_id = common::GameID::AssaultCube;
+  msg.game_id    = common::GameID::AssaultCube;
 
-  if (send(file_descriptor.get(), &msg, sizeof(msg), 0) == -1) {
+  if (send(file_descriptor->get(), &msg, sizeof(msg), 0) == -1) {
     std::cerr << "[ERROR] Failed to send message\n";
     return 1;
   }

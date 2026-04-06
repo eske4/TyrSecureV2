@@ -13,6 +13,6 @@ struct GameEntry {
   std::filesystem::path dataDir;
 };
 
-std::optional<GameEntry> findGame(const GameID &game_id);
+[[nodiscard]] std::optional<GameEntry> findGame(const GameID &game_id);
 
 } // namespace OdinSight::Daemon::Launcher
