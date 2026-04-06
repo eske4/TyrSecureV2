@@ -44,14 +44,6 @@ Odin::Result<void> Validator::isSecureBootEnabled() {
 
   std::filesystem::path secureBootFullPath = dirPath / secureBootFileName;
 
-  // Odin::Result<FD> dirFD = OdinSight::System::FDService::openFile(dirPath);
-
-  // if (!dirFD) {
-  //   return std::unexpected(Odin::Error::System(errorCtx, "open EFI variables directory", errno));
-  // }
-
-  // std::filesystem::path secureBootFullPath = dirPath / secureBootFileName;
-
   Odin::Result<FD> secureBootFD = OdinSight::System::FDService::openFile(secureBootFullPath);
 
   std::array<uint8_t, secureBootVarSize> data{};
@@ -102,7 +94,6 @@ Odin::Result<void> Validator::isKernelLockdownEnabled() {
 }
 
 Odin::Result<void> Validator::isKernelModuleSignatureEnforcementEnabled() {
-  //[[nodiscard]] inline Odin::Result<System::FD> openFile(std::filesystem::path path) {
   std::filesystem::path sigEnforceFilePath = "/sys/module/module/parameters/sig_enforce";
 
   Odin::Result<FD> sigFileFD = OdinSight::System::FDService::openFile(sigEnforceFilePath);
@@ -143,7 +134,7 @@ Odin::Result<void> Validator::isValid() {
   Odin::Result<void> kLockdownEnabled  = isKernelLockdownEnabled();
   Odin::Result<void> kernelModuleSignatureEnforcementEnabled =
       isKernelModuleSignatureEnforcementEnabled();
-  Odin::Result<void> unsignedKernelModuleLoadProbeResult = canLoadUnsignedKernelModules();
+  Odin::Result<void> unsignedKernelModulesAreLoadable = canLoadUnsignedKernelModules();
 
   if (!secureBootEnabled) { std::cout << "Invalid: Secure Boot - Disabled" << std::endl; }
 
@@ -153,17 +144,17 @@ Odin::Result<void> Validator::isValid() {
     std::cout << "Invalid: Kernel module signature enforcement - Disabled" << std::endl;
   }
 
-  if (unsignedKernelModuleLoadProbeResult) {
+  if (unsignedKernelModulesAreLoadable) {
     std::cout << "Invalid: Unsigned kernel module was loaded in" << std::endl;
   } else {
-    std::cout << unsignedKernelModuleLoadProbeResult.error().message() << std::endl;
+    std::cout << unsignedKernelModulesAreLoadable.error().message() << std::endl;
   }
 
     const bool valid =
       secureBootEnabled &&
       kLockdownEnabled &&
       kernelModuleSignatureEnforcementEnabled &&
-      !unsignedKernelModuleLoadProbeResult;
+      !unsignedKernelModulesAreLoadable;
 
   if (!valid) {
     return std::unexpected(Odin::Error::Logic(errorCtx, "Environment Validation", "Failed"));
