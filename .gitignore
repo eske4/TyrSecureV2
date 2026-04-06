@@ -41,6 +41,10 @@ CPM_modules/
 docs/html/
 docs/latex/
 
+
+# app-test directory
+app-test/
+
 #Catch2
 /Testing/
 
