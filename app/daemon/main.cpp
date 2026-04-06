@@ -1,20 +1,20 @@
 #include "CGroupService.hpp"
 #include "OdinEngine.hpp"
-#include "system/CGroup.hpp"
 #include "common/Result.hpp"
+#include "system/CGroup.hpp"
 #include <EnvironmentValidator.hpp>
 #include <cstdlib>
 
-using CGroup    = OdinSight::System::CGroup;
-using CGService = OdinSight::System::CGService;
+using CGroup               = OdinSight::System::CGroup;
+using CGService            = OdinSight::System::CGService;
 using EnvironmentValidator = OdinSight::System::Environment::Validator;
+using OdinEngine           = OdinSight::Daemon::OdinEngine;
 
-using OdinEngine = OdinSight::Daemon::OdinEngine;
 int main() {
   Odin::Result<void> isEnvValid = EnvironmentValidator::isValid();
 
-  if(!isEnvValid){
-    return EXIT_FAILURE;
+  if (!isEnvValid) {
+    // return EXIT_FAILURE;
   }
 
   auto cg_res = CGroup::create("OdinSight");

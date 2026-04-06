@@ -298,12 +298,11 @@ void Runner::stop() {
   }
 
   // 2. Process Reaping (Clean & Readable)
-  siginfo_t  info{};
-  const bool has_proc = m_fd.isValid();
-  const bool reaped   = has_proc && ::waitid(P_PIDFD, m_fd.get(), &info, WEXITED | WNOHANG) == 0;
-  const bool exited   = reaped && info.si_pid != 0;
-
-  if (exited) { Odin::Error::Logic("Runner", "reap", "PID exited").log(); }
+  if (m_fd.isValid()) {
+    siginfo_t info{};
+    // We don't even need the booleans if we're just performing a silent reap.
+    ::waitid(P_PIDFD, m_fd.get(), &info, WEXITED | WNOHANG);
+  }
 
   clearRuntimeState();
 }

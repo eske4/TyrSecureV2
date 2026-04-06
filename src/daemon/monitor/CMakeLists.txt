@@ -1,1 +1,2 @@
 add_subdirectory(ebpf_manager)
+add_subdirectory(kernel_validator)
