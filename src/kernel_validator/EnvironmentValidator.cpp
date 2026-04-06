@@ -17,18 +17,18 @@ namespace OdinSight::System::Environment {
 constexpr char errorCtx[] = "EnvironmentValidator";
 
 Result<void> Validator::isSecureBootEnabled() {
-  constexpr std::size_t secureBootVarSize       = 5;
-  constexpr uint8_t     secureBootEnabledValue  = 1;
-  const std::string dirPath = "/sys/firmware/efi/efivars/";
-  std::string       secureBootFileName;
+  constexpr std::size_t secureBootVarSize      = 5;
+  constexpr uint8_t     secureBootEnabledValue = 1;
+  const std::string     dirPath                = "/sys/firmware/efi/efivars/";
+  std::string           secureBootFileName;
 
   if (!fs::exists(dirPath) || !fs::is_directory(dirPath)) {
-    return std::unexpected(
-        Odin::Error::Logic(errorCtx, "check secure boot", "EFI variables directory is unavailable"));
+    return std::unexpected(Odin::Error::Logic(errorCtx, "check secure boot",
+                                              "EFI variables directory is unavailable"));
   }
 
-  for (const auto &entry : fs::directory_iterator(dirPath)) {
-    const auto &filename = entry.path().filename().string();
+  for (const auto& entry : fs::directory_iterator(dirPath)) {
+    const auto& filename = entry.path().filename().string();
 
     if (filename.rfind("SecureBoot-", 0) == 0) {
       secureBootFileName = filename;
@@ -52,17 +52,14 @@ Result<void> Validator::isSecureBootEnabled() {
   }
 
   std::array<uint8_t, secureBootVarSize> data{};
-  const ssize_t                          bytesRead =
-      ::read(secureBootFd.get(), data.data(), data.size());
+  const ssize_t bytesRead = ::read(secureBootFd.get(), data.data(), data.size());
   if (bytesRead < 0) {
     return std::unexpected(Odin::Error::System(errorCtx, "read SecureBoot EFI variable", errno));
   }
 
   if (static_cast<std::size_t>(bytesRead) != data.size()) {
-    return std::unexpected(Odin::Error::Logic(
-        errorCtx,
-        "read SecureBoot EFI variable",
-        "SecureBoot EFI variable has an unexpected format"));
+    return std::unexpected(Odin::Error::Logic(errorCtx, "read SecureBoot EFI variable",
+                                              "SecureBoot EFI variable has an unexpected format"));
   }
 
   if (data.back() != secureBootEnabledValue) {
@@ -74,14 +71,15 @@ Result<void> Validator::isSecureBootEnabled() {
 }
 
 Result<void> Validator::isKernelLockdownEnabled() {
-  const std::string lockdownFilePath = "/sys/kernel/security/lockdown";
+  std::filesystem::path lockdownFilePath = "/sys/module/module/parameters/sig_enforce";
 
-  FD lockdownFd(lockdownFilePath, O_RDONLY);
+  Odin::Result<FD> lockdownFd = FD::open(lockdownFilePath.parent_path().string(), O_RDONLY);
+
   if (!lockdownFd) {
     return std::unexpected(Odin::Error::System(errorCtx, "open kernel lockdown state", errno));
   }
   std::array<char, 256> buffer{};
-  const ssize_t         bytesRead = ::read(lockdownFd.get(), buffer.data(), buffer.size() - 1);
+  const ssize_t         bytesRead = ::read(lockdownFd->get(), buffer.data(), buffer.size() - 1);
 
   if (bytesRead <= 0) {
     return std::unexpected(Odin::Error::System(errorCtx, "read kernel lockdown state", errno));
@@ -92,27 +90,34 @@ Result<void> Validator::isKernelLockdownEnabled() {
 
   bool lockdownEnabled = lockdownStatus.find("[confidentiality]") != std::string::npos;
 
-  if (!lockdownEnabled){
+  if (!lockdownEnabled) {
     return std::unexpected(Odin::Error::Logic(
-        errorCtx,
-        "check kernel lockdown",
-        "Kernel lockdown confidentiality mode is not enabled"));
+        errorCtx, "check kernel lockdown", "Kernel lockdown confidentiality mode is not enabled"));
   }
 
   return {};
 }
 
 Result<void> Validator::isKernelModuleSignatureEnforcementEnabled() {
-  const std::string sigEnforceFilePath = "/sys/module/module/parameters/sig_enforce";
+  std::filesystem::path sigEnforceFilePath = "/sys/module/module/parameters/sig_enforce";
 
-  FD sigEnforceFd(sigEnforceFilePath, O_RDONLY);
-  if (!sigEnforceFd) {
+  Odin::Result<FD> sigFilePathFD = FD::open(sigEnforceFilePath.parent_path().string(), O_RDONLY);
+
+  if (!sigFilePathFD) {
+    return std::unexpected(
+        Odin::Error::Enrich(errorCtx, "open_sig_filepath", sigFilePathFD.error()));
+  }
+
+  sigFilePathFD = FD::openAt(*sigFilePathFD, sigEnforceFilePath.filename().string(),
+                             O_PATH | O_DIRECTORY | O_CLOEXEC);
+
+  if (!sigFilePathFD) {
     return std::unexpected(
         Odin::Error::System(errorCtx, "open module signature enforcement state", errno));
   }
 
   std::array<char, 256> buffer{};
-  const ssize_t         bytesRead = ::read(sigEnforceFd.get(), buffer.data(), buffer.size() - 1);
+  const ssize_t         bytesRead = ::read(sigFilePathFD->get(), buffer.data(), buffer.size() - 1);
 
   if (bytesRead <= 0) {
     return std::unexpected(
@@ -126,47 +131,41 @@ Result<void> Validator::isKernelModuleSignatureEnforcementEnabled() {
     sigEnforce.pop_back();
   }
 
-  bool kernelModuleSignatureEnforcementEnabled = sigEnforce == "1" || sigEnforce == "Y" || sigEnforce == "y";
+  bool kernelModuleSignatureEnforcementEnabled =
+      sigEnforce == "1" || sigEnforce == "Y" || sigEnforce == "y";
 
-  if(!kernelModuleSignatureEnforcementEnabled){
-    return std::unexpected(Odin::Error::Logic(
-        errorCtx,
-        "check module signature enforcement",
-        "Kernel module signature enforcement is disabled"));
+  if (!kernelModuleSignatureEnforcementEnabled) {
+    return std::unexpected(Odin::Error::Logic(errorCtx, "check module signature enforcement",
+                                              "Kernel module signature enforcement is disabled"));
   }
 
   return {};
 }
 
 Result<void> Validator::isValid() {
-  Result<void> secureBootEnabled                       = isSecureBootEnabled();
-  Result<void> kLockdownEnabled                        = isKernelLockdownEnabled();
-  Result<void> kernelModuleSignatureEnforcementEnabled = isKernelModuleSignatureEnforcementEnabled();
-  Result<void> unsignedKernelModuleLoadProbeResult     = canLoadUnsignedKernelModules();
+  Result<void> secureBootEnabled = isSecureBootEnabled();
+  Result<void> kLockdownEnabled  = isKernelLockdownEnabled();
+  Result<void> kernelModuleSignatureEnforcementEnabled =
+      isKernelModuleSignatureEnforcementEnabled();
+  Result<void> unsignedKernelModuleLoadProbeResult = canLoadUnsignedKernelModules();
 
-  if (!secureBootEnabled) {
-    std::cout<<"Invalid: Secure Boot - Disabled"<<std::endl;
-  }
+  if (!secureBootEnabled) { std::cout << "Invalid: Secure Boot - Disabled" << std::endl; }
 
-  if (!kLockdownEnabled) {
-    std::cout<<"Invalid: Kernel lockdown - Disabled"<<std::endl;
-  }
+  if (!kLockdownEnabled) { std::cout << "Invalid: Kernel lockdown - Disabled" << std::endl; }
 
   if (!kernelModuleSignatureEnforcementEnabled) {
-        std::cout<<"Invalid: Kernel module signature enforcement - Disabled"<<std::endl;
+    std::cout << "Invalid: Kernel module signature enforcement - Disabled" << std::endl;
   }
 
-  if(unsignedKernelModuleLoadProbeResult){
-        std::cout<<"Invalid: Unsigned kernel module was loaded in"<<std::endl;
-  }else{
-            std::cout<<unsignedKernelModuleLoadProbeResult.error().message()<<std::endl;
+  if (unsignedKernelModuleLoadProbeResult) {
+    std::cout << "Invalid: Unsigned kernel module was loaded in" << std::endl;
+  } else {
+    std::cout << unsignedKernelModuleLoadProbeResult.error().message() << std::endl;
   }
 
-  if(!(secureBootEnabled && kLockdownEnabled && kernelModuleSignatureEnforcementEnabled && unsignedKernelModuleLoadProbeResult)){
-    return std::unexpected(Odin::Error::Logic(
-        errorCtx,
-        "Environment Validation",
-        "Failed"));
+  if (!(secureBootEnabled && kLockdownEnabled && kernelModuleSignatureEnforcementEnabled &&
+        unsignedKernelModuleLoadProbeResult)) {
+    return std::unexpected(Odin::Error::Logic(errorCtx, "Environment Validation", "Failed"));
   }
 
   return {};
