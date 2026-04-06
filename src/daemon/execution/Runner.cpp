@@ -291,7 +291,6 @@ void Runner::execute_child_setup(int error_fd, const std::vector<char*>& argv,
 void Runner::stop() {
   m_ctx.reset();
 
-  // 1. CGroup Cleanup
   if (m_cg) {
     if (auto res = CGService::killProcs(*m_cg); !res) { res.error().log(); }
     if (auto res = m_cg->refresh(); !res) { res.error().log(); }
@@ -300,7 +299,6 @@ void Runner::stop() {
   // 2. Process Reaping (Clean & Readable)
   if (m_fd.isValid()) {
     siginfo_t info{};
-    // We don't even need the booleans if we're just performing a silent reap.
     ::waitid(P_PIDFD, m_fd.get(), &info, WEXITED | WNOHANG);
   }
 
