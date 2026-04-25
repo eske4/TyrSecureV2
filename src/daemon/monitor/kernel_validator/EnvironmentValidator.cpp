@@ -46,6 +46,8 @@ Odin::Result<void> Validator::isSecureBootEnabled() {
 
   Odin::Result<FD> secureBootFD = OdinSight::System::FDService::openFile(secureBootFullPath);
 
+  if (!secureBootFD) { return std::unexpected(secureBootFD.error()); }
+
   std::array<uint8_t, secureBootVarSize> data{};
   const ssize_t bytesRead = ::read(secureBootFD->get(), data.data(), data.size());
   if (bytesRead < 0) {
@@ -150,11 +152,8 @@ Odin::Result<void> Validator::isValid() {
     std::cout << unsignedKernelModulesAreLoadable.error().message() << std::endl;
   }
 
-    const bool valid =
-      secureBootEnabled &&
-      kLockdownEnabled &&
-      kernelModuleSignatureEnforcementEnabled &&
-      !unsignedKernelModulesAreLoadable;
+  const bool valid = secureBootEnabled && kLockdownEnabled &&
+                     kernelModuleSignatureEnforcementEnabled && !unsignedKernelModulesAreLoadable;
 
   if (!valid) {
     return std::unexpected(Odin::Error::Logic(errorCtx, "Environment Validation", "Failed"));
