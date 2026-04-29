@@ -14,7 +14,7 @@ Odin::Result<void> DaemonModule::open() {
   m_skel.reset(daemon_hardener__open());
   if (!m_skel) {
     // Return the specific reason open failed (e.g., file not found)
-    return std::unexpected(Error::System(ctx, "print_test__open", errno));
+    return std::unexpected(Error::System(ctx, "daemon_hardener__open", errno));
   }
 
   uint32_t current_pid = static_cast<uint32_t>(getpid());
@@ -36,7 +36,7 @@ Odin::Result<void> DaemonModule::load(int shared_rb_fd) {
 
   // 2. Load into Kernel
   if (int err = daemon_hardener__load(m_skel.get()); err < 0) {
-    return std::unexpected(Error::System(ctx, "print_test__load", -err));
+    return std::unexpected(Error::System(ctx, "daemon_hardener__load", -err));
   }
 
   return {};
@@ -46,7 +46,7 @@ Odin::Result<void> DaemonModule::attach() {
   if (!m_skel) { return std::unexpected(Error::Logic(ctx, "attach", "Skeleton not loaded")); }
 
   if (int err = daemon_hardener__attach(m_skel.get()); err < 0) {
-    return std::unexpected(Error::System(ctx, "print_test__attach", -err));
+    return std::unexpected(Error::System(ctx, "daemon_hardener__attach", -err));
   }
 
   return {}; // Success
