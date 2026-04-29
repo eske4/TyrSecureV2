@@ -15,7 +15,7 @@ class DaemonModule final : public IEbpfModule {
 private:
   SkelPtr m_skel{nullptr, daemon_hardener__destroy};
 
-  DaemonModule() : IEbpfModule(EbpfModuleId::MODULE_LSM_SHIELD, "Syscall") {}
+  DaemonModule() : IEbpfModule(EbpfModuleId::MODULE_DAEMON, "Daemon") {}
 
 public:
   ~DaemonModule() = default;
