@@ -5,7 +5,7 @@
 
 namespace OdinSight::Common {
 
-enum class DaemonCommand : uint32_t { Unknown = 0, Launch, NUM_COMMANDS };
+enum class DaemonCommand : uint32_t { Unknown = 0, Launch, Terminate, NUM_COMMANDS };
 
 #pragma pack(push, 1)
 struct CommandPacket {

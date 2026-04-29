@@ -1,4 +1,4 @@
-set(MODULE_SOURCES SyscallModule.cpp)
+set(MODULE_SOURCES DaemonModule.cpp)
 
 add_library(ebpf_modules STATIC ${MODULE_SOURCES})
 

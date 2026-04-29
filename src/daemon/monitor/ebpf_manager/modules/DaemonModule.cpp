@@ -1,4 +1,4 @@
-#include "SyscallModule.hpp"
+#include "DaemonModule.hpp"
 #include "print_test.skel.h"
 #include <iostream>
 
@@ -7,20 +7,24 @@ namespace OdinSight::Daemon::Monitor::Kernel::Modules {
 using Error  = Odin::Error;
 using Result = Odin::Result<void>;
 
-static constexpr std::string_view ctx = "SyscallModule";
+static constexpr std::string_view ctx = "DaemonModule";
 
 // Constructor body (initialization of m_skel, etc.)
 
-Odin::Result<void> SyscallModule::open() {
-  m_skel.reset(print_test__open());
+Odin::Result<void> DaemonModule::open() {
+  m_skel.reset(daemon_hardener__open());
   if (!m_skel) {
     // Return the specific reason open failed (e.g., file not found)
     return std::unexpected(Error::System(ctx, "print_test__open", errno));
   }
+
+  uint32_t current_pid = static_cast<uint32_t>(getpid());
+
+  m_skel->rodata->DAEMON_PID = current_pid;
   return {}; // Success
 }
 
-Odin::Result<void> SyscallModule::load(int shared_rb_fd) {
+Odin::Result<void> DaemonModule::load(int shared_rb_fd) {
   if (!m_skel) { return std::unexpected(Error::Logic(ctx, "load", "Skeleton not opened")); }
 
   // CRITICAL: Tell this module to use the shared Ring Buffer FD
@@ -32,24 +36,24 @@ Odin::Result<void> SyscallModule::load(int shared_rb_fd) {
   }
 
   // 2. Load into Kernel
-  if (int err = print_test__load(m_skel.get()); err < 0) {
+  if (int err = daemon_hardener__load(m_skel.get()); err < 0) {
     return std::unexpected(Error::System(ctx, "print_test__load", -err));
   }
 
   return {};
 }
 
-Odin::Result<void> SyscallModule::attach() {
+Odin::Result<void> DaemonModule::attach() {
   if (!m_skel) { return std::unexpected(Error::Logic(ctx, "attach", "Skeleton not loaded")); }
 
-  if (int err = print_test__attach(m_skel.get()); err < 0) {
+  if (int err = daemon_hardener__attach(m_skel.get()); err < 0) {
     return std::unexpected(Error::System(ctx, "print_test__attach", -err));
   }
 
   return {}; // Success
 }
 
-void SyscallModule::processEvent(const ebpf_event* event, size_t size) {
+void DaemonModule::processEvent(const ebpf_event* event, size_t size) {
   // Logic to handle the specific event type for this module
   std::cout << "[" << getName() << "] Event Type: " << event->event_type << event->timestamp
             << std::endl;

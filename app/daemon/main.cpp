@@ -4,6 +4,7 @@
 #include "system/CGroup.hpp"
 #include <EnvironmentValidator.hpp>
 #include <cstdlib>
+#include <sys/prctl.h>
 
 using CGroup               = OdinSight::System::CGroup;
 using CGService            = OdinSight::System::CGService;

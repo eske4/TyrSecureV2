@@ -1,5 +1,5 @@
 # List of BPF programs
-set(EBPF_PROGRAMS master.bpf.c print_test.bpf.c)
+set(EBPF_PROGRAMS daemon_hardener.bpf.c master.bpf.c print_test.bpf.c)
 
 # Where skeleton headers go
 set(VMLINUX_DIR ${CMAKE_SOURCE_DIR}/ebpf/include)

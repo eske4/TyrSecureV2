@@ -1,7 +1,9 @@
 #include "OdinEngine.hpp"
+#include "DaemonModule.hpp"
 #include "EPollManager.hpp"
 #include "EbpfRingBufListener.hpp"
 #include "ExitEvent.hpp"
+#include "IEbpfModule.hpp"
 #include "LaunchEvent.hpp"
 #include "common/Result.hpp"
 #include <print>
@@ -11,6 +13,8 @@ namespace OdinSight::Daemon {
 using LaunchEvent         = OdinSight::Daemon::Events::LaunchEvent;
 using ExitEvent           = OdinSight::Daemon::Events::ExitEvent;
 using EbpfRingBufListener = Monitor::Kernel::EbpfRingBufListener;
+using IEbpfModule         = Monitor::Kernel::IEbpfModule;
+using DaemonModule        = Monitor::Kernel::Modules::DaemonModule;
 
 using EbpfModuleId = OdinSight::Daemon::Monitor::Kernel::EbpfModuleId;
 
@@ -54,6 +58,21 @@ Odin::Result<OdinEngine> OdinEngine::create(std::shared_ptr<CGroup> parent_cg) {
 }
 
 Odin::Result<void> OdinEngine::initializeManagers() {
+  if (m_ebpf_mgr == nullptr) {
+    return std::unexpected(Error::Logic(ctx, "init_managers", "eBPF manager not initialized"));
+  }
+
+  auto daemonMod = IEbpfModule::create<DaemonModule>();
+
+  if (!daemonMod) {
+    return std::unexpected(Error::Enrich(ctx, "add_harden_module", daemonMod.error()));
+  }
+
+  auto add_res = m_ebpf_mgr->addModule(std::move(daemonMod.value()));
+  if (!add_res) {
+    return std::unexpected(Error::Enrich(ctx, "ebpf_add_daemon_module", add_res.error()));
+  }
+
   if (m_listener == nullptr) {
     return std::unexpected(Error::Logic(ctx, "init_managers", "Listener not initialized"));
   }
