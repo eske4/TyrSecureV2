@@ -1,5 +1,4 @@
 #include "DaemonModule.hpp"
-#include "print_test.skel.h"
 #include <iostream>
 
 namespace OdinSight::Daemon::Monitor::Kernel::Modules {
