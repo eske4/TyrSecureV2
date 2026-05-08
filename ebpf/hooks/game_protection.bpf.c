@@ -16,34 +16,32 @@ const volatile __u64 TARGET_CGROUP = 0;
 SEC("lsm/inode_permission")
 int BPF_PROG(block_proc_selective, struct inode *inode, int mask)
 {
-    // 1. Is this procfs?
-    if (BPF_CORE_READ(inode, i_sb, s_magic) != 0x9fa0) {
-        return 0;
-    }
+    // 1. Only care about ProcFS
+    if (BPF_CORE_READ(inode, i_sb, s_magic) != 0x9fa0) return 0;
 
-    // 2. Is the CALLER the game? If so, allow.
-    if (bpf_get_current_cgroup_id() == TARGET_CGROUP) {
-        return 0;
-    }
+    // 2. Fast Caller Check
+    __u64 caller_cg_id = bpf_get_current_cgroup_id();
+    if (caller_cg_id == TARGET_CGROUP) return 0;
 
-    // 3. The Modern Cast: Treat the inode as a proc_inode
-    // This replaces the "weird macro" logic.
+    // 3. Resolve PID from Inode
     struct proc_inode *ei = bpf_core_cast(inode, struct proc_inode);
-    
-    // 4. Follow the path to the task
-    struct pid *pid_struct = BPF_CORE_READ(ei, pid);
-    if (!pid_struct) return 0;
+    struct pid *pid_ptr = BPF_CORE_READ(ei, pid);
+    if (!pid_ptr) return 0;
 
-    struct task_struct *target_task = (struct task_struct *)BPF_CORE_READ(pid_struct, tasks[0].first);
+    s32 pid_nr = BPF_CORE_READ(pid_ptr, numbers[0].nr);
+    if (pid_nr <= 0) return 0;
+
+    // 4. Resolve Task from PID (The "Universal" way)
+    struct task_struct *target_task = bpf_task_from_pid(pid_nr);
     if (!target_task) return 0;
 
-    // 5. Check the Target's Cgroup
-    struct cgroup *cg = BPF_CORE_READ(target_task, cgroups, dfl_cgrp);
-    __u64 target_cg_id = BPF_CORE_READ(cg, kn, id);
+    // 5. Cgroup Check
+    __u64 target_cg_id = BPF_CORE_READ(target_task, cgroups, dfl_cgrp, kn, id);
+    bpf_task_release(target_task);
 
-    // 6. Block if target is in the group and caller is not
     if (target_cg_id == TARGET_CGROUP) {
-        return -13; // -EPERM
+        bpf_printk("BLOCK: PID %d is protected. Caller CG: %llu", pid_nr, caller_cg_id);
+        return -EACCES;
     }
 
     return 0;

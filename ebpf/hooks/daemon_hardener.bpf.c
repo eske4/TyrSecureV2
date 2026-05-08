@@ -19,7 +19,7 @@ int BPF_PROG(restrict_bpf_to_self, int cmd, union bpf_attr *attr, unsigned int s
   __u32 current_pid = bpf_get_current_pid_tgid() >> 32;
 
     if (current_pid != DAEMON_PID) {
-        return -EPERM;
+       return -EPERM;
     }
 
     return 0; 

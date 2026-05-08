@@ -110,7 +110,8 @@ Odin::Result<void> LaunchEvent::attachProtection() {
     return std::unexpected(Error::Logic(ctx, "attach_protection", "eBPF Manager missing"));
   }
 
-  if (auto res = setupModule(IEbpfModule::create<KMod::GameModule>(m_engine.getCGroup()->getID()));
+  if (auto res = setupModule(
+          IEbpfModule::create<KMod::GameModule>(m_engine.getRunner()->getCGroup()->getID()));
       !res) {
     return res;
   }
