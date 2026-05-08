@@ -7,7 +7,6 @@
 #include <fcntl.h>
 #include <memory>
 #include <optional>
-#include <print>
 #include <sys/epoll.h>
 #include <sys/socket.h>
 #include <sys/un.h>

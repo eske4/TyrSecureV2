@@ -57,6 +57,17 @@ Odin::Result<OdinEngine> OdinEngine::create(std::shared_ptr<CGroup> parent_cg) {
   return std::move(engine);
 }
 
+Odin::Result<void> OdinEngine::run() {
+  if (!m_epoll_mgr) { return std::unexpected(Error::Logic(ctx, "run", "EPollManager missing")); }
+
+  while (m_epoll_mgr->isRunning()) {
+    if (auto res = m_epoll_mgr->poll(); !res) {
+      return std::unexpected(Error::Enrich(ctx, "poll_loop", res.error()));
+    }
+  }
+  return {};
+}
+
 Odin::Result<void> OdinEngine::initializeManagers() {
   if (m_ebpf_mgr == nullptr) {
     return std::unexpected(Error::Logic(ctx, "init_managers", "eBPF manager not initialized"));
@@ -140,17 +151,6 @@ Odin::Result<void> OdinEngine::switchToWaiting() {
     return std::unexpected(Error::Enrich(ctx, "subscribe_startup", res.error()));
   }
 
-  return {};
-}
-
-Odin::Result<void> OdinEngine::run() {
-  if (!m_epoll_mgr) { return std::unexpected(Error::Logic(ctx, "run", "EPollManager missing")); }
-
-  while (m_epoll_mgr->isRunning()) {
-    if (auto res = m_epoll_mgr->poll(); !res) {
-      return std::unexpected(Error::Enrich(ctx, "poll_loop", res.error()));
-    }
-  }
   return {};
 }
 

@@ -1,6 +1,6 @@
 #include "LaunchEvent.hpp"
-#include "DaemonModule.hpp"
 #include "EPollManager.hpp"
+#include "GameModule.hpp"
 #include "common/Result.hpp"
 #include "system/FD.hpp"
 #include <optional>
@@ -110,7 +110,10 @@ Odin::Result<void> LaunchEvent::attachProtection() {
     return std::unexpected(Error::Logic(ctx, "attach_protection", "eBPF Manager missing"));
   }
 
-  if (auto res = setupModule(IEbpfModule::create<KMod::DaemonModule>()); !res) { return res; }
+  if (auto res = setupModule(IEbpfModule::create<KMod::GameModule>(m_engine.getCGroup()->getID()));
+      !res) {
+    return res;
+  }
 
   return {};
 }

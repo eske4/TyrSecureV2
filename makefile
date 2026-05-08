@@ -10,6 +10,9 @@ build:
 	@cd $(BUILD_DIR) && cmake .. && cmake --build .
 	@ln -sf "build/compile_commands.json"
 
+clean_hooks:
+	@rm -rf build/ebpf
+
 clean:
 	@rm -rf $(BUILD_DIR)
 	@rm -rf ebpf/include/vmlinux.h
