@@ -68,7 +68,7 @@ Odin::Result<void> Validator::isSecureBootEnabled() {
 }
 
 Odin::Result<void> Validator::isKernelLockdownEnabled() {
-  std::filesystem::path lockdownFilePath = "/sys/module/module/parameters/sig_enforce";
+  std::filesystem::path lockdownFilePath = "/sys/kernel/security/lockdown";
 
   Odin::Result<FD> lockdownFd = OdinSight::System::FDService::openFile(lockdownFilePath);
 
