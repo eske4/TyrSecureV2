@@ -72,20 +72,6 @@ static __always_inline int has_wx(unsigned long prot)
   return (prot & PROT_WRITE) && (prot & PROT_EXEC);
 }
 
-/*Ptrace Helpers*/
-
-#ifndef PR_SET_DUMPABLE
-#define PR_SET_DUMPABLE 4
-#endif
-
-#ifndef PR_SET_PTRACER
-#define PR_SET_PTRACER 0x59616d61
-#endif
-
-#ifndef PR_SET_PTRACER_ANY
-#define PR_SET_PTRACER_ANY ((unsigned long)-1)
-#endif
-
 /* ptrace_access_check
  * 
  * Blocks ptrace/proc-memory access to processes inside TARGET_CGROUP.
