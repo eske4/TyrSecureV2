@@ -10,6 +10,8 @@
 
 const volatile __u64 TARGET_CGROUP = 0;
 
+/* Process and Cgroup Helpers */
+
 static __always_inline __u32 current_tgid(void) {
   return (__u32) (bpf_get_current_pid_tgid() >> 32);
 }
@@ -37,11 +39,63 @@ static __always_inline __u64 task_cgroup_id(struct task_struct* task) {
   return BPF_CORE_READ(kn, id);
 }
 
-/*
- * Blocks ptrace/proc-memory style access to tasks inside TARGET_CGROUP.
+/* Memory Permission Helpers */
+
+#ifndef PROT_WRITE
+#define PROT_WRITE 0x2
+#endif
+
+#ifndef PROT_EXEC
+#define PROT_EXEC 0x4
+#endif
+
+#ifndef VM_WRITE
+#define VM_WRITE 0x00000002UL
+#endif
+
+#ifndef VM_EXEC
+#define VM_EXEC 0x00000004UL
+#endif
+
+static __always_inline int has_write(unsigned long prot)
+{
+  return (prot & PROT_WRITE) != 0;
+}
+
+static __always_inline int has_exec(unsigned long prot)
+{
+  return (prot & PROT_EXEC) != 0;
+}
+
+static __always_inline int has_wx(unsigned long prot)
+{
+  return (prot & PROT_WRITE) && (prot & PROT_EXEC);
+}
+
+/*Ptrace Helpers*/
+
+#ifndef PR_SET_DUMPABLE
+#define PR_SET_DUMPABLE 4
+#endif
+
+#ifndef PR_SET_PTRACER
+#define PR_SET_PTRACER 0x59616d61
+#endif
+
+#ifndef PR_SET_PTRACER_ANY
+#define PR_SET_PTRACER_ANY ((unsigned long)-1)
+#endif
+
+/* ptrace_access_check
+ * 
+ * Blocks ptrace/proc-memory access to processes inside TARGET_CGROUP.
  *
- * This protects all current and future PIDs moved into TARGET_CGROUP.
+ * Protects:
+ * - all current and future processes moved into TARGET_CGROUP.
+ * - allows a protected process to inspect itself.
+ * - denies ptrace access from other processes.
  */
+
 SEC("lsm/ptrace_access_check")
 int BPF_PROG(restrict_ptrace_access, struct task_struct* child, unsigned int mode, int ret) {
   __u64 current_cgid;
@@ -61,25 +115,25 @@ int BPF_PROG(restrict_ptrace_access, struct task_struct* child, unsigned int mod
 
   target_pid = BPF_CORE_READ(child, tgid);
 
-  /*
-   * Allow to inspect itself.
-   */
   if (current_pid == target_pid) return 0;
 
-  bpf_printk("Denied %s: current_pid=%u current_cgid=%llu "
-             "target_pid=%u target_cgid=%llu protected_cgid=%llu mode=%d\n",
-             "ptrace_access_check", current_pid, current_cgid, target_pid, target_cgid,
-             TARGET_CGROUP, mode);
+bpf_printk("Denied ptrace access: current_pid=%u current_cgid=%llu "
+           "target_pid=%u target_cgid=%llu protected_cgid=%llu mode=%d\n",
+           current_pid, current_cgid, target_pid, target_cgid,
+           TARGET_CGROUP, mode);
 
   return -EPERM;
 }
 
-/*
- * Blocks a protected task from being traced.
+/* lsm/ptrace_traceme
+ * 
+ * Blocks PTRACE_TRACEME for processes inside TARGET_CGROUP.
+ * 
+ * This prevents a protected process from asking its parent to trace it.
+ * The request is denied regardless of whether the parent is inside or outside the protected cgroup.
  *
- * In this hook, the protected task is the current task.
- * The parent argument is the would be the tracer.
  */
+
 SEC("lsm/ptrace_traceme")
 int BPF_PROG(restrict_ptrace_traceme, struct task_struct* parent, int ret) {
   __u64 current_cgid;
@@ -98,11 +152,139 @@ int BPF_PROG(restrict_ptrace_traceme, struct task_struct* parent, int ret) {
   parent_cgid = parent ? task_cgroup_id(parent) : 0;
   parent_pid  = parent ? BPF_CORE_READ(parent, tgid) : 0;
 
-  bpf_printk("Denied %s: current_pid=%u current_cgid=%llu "
-             "target_pid=%u target_cgid=%llu protected_cgid=%llu",
-             "ptrace_access_check", current_pid, current_cgid, parent_pid, parent_cgid,
-             TARGET_CGROUP);
+bpf_printk("Denied ptrace_traceme: current_pid=%u current_cgid=%llu "
+           "parent_pid=%u parent_cgid=%llu protected_cgid=%llu\n",
+           current_pid, current_cgid, parent_pid, parent_cgid,
+           TARGET_CGROUP);
   return -EPERM;
+}
+
+/* mmap_file
+ *
+ * Prevents executable-memory mappings in TARGET_CGROUP.
+ *
+ * Blocks:
+ * - direct W+X(writable,executable) mappings, both anonymous and file-backed
+ * - anonymous memory mappings RX(readable,executable) - not backed by file on disk
+ */
+
+SEC("lsm/mmap_file")
+int BPF_PROG(restrict_mmap_file,
+             struct file *file,
+             unsigned long reqprot,
+             unsigned long prot,
+             unsigned long flags,
+             int ret)
+{
+  __u64 current_cgid;
+  __u32 current_pid;
+
+  if (ret)
+    return ret;
+
+  if (TARGET_CGROUP == 0)
+    return 0;
+
+  current_cgid = bpf_get_current_cgroup_id();
+  if (!is_target_cgroup(current_cgid))
+    return 0;
+
+  current_pid = current_tgid();
+
+  if (has_wx(reqprot) || has_wx(prot)) {
+    bpf_printk("Denied memory mappings: pid=%u cgid=%llu protected_cgid=%llu reason=wx reqprot=%lu prot=%lu flags=%lu\n",
+               current_pid,
+               current_cgid,
+               TARGET_CGROUP,
+               reqprot,
+               prot,
+               flags);
+    return -EPERM;
+  }
+
+  if (!file && (has_exec(reqprot) || has_exec(prot))) {
+    bpf_printk("Denied memory mappings: pid=%u cgid=%llu protected_cgid=%llu reason=anonymous_exec reqprot=%lu prot=%lu flags=%lu\n",
+               current_pid,
+               current_cgid,
+               TARGET_CGROUP,
+               reqprot,
+               prot,
+               flags);
+    return -EPERM;
+  }
+
+  return 0;
+}
+
+/* file_mprotect
+ * 
+ * Prevents changes in memory permission flags inside TARGET_CGROUP.
+ *
+ * Blocks:
+ * - memory from becoming both writable and executable (W+X).
+ * - anonymous memory becoming executable (X).
+ * - writable VMA becoming executable (X).
+ */
+
+SEC("lsm/file_mprotect")
+int BPF_PROG(restrict_file_mprotect,
+             struct vm_area_struct *vma,
+             unsigned long reqprot,
+             unsigned long prot,
+             int ret)
+{
+  __u64 current_cgid;
+  __u32 current_pid;
+  struct file *backing_file;
+  unsigned long vm_flags;
+
+  if (ret)
+    return ret;
+
+  if (TARGET_CGROUP == 0 || !vma)
+    return 0;
+
+  current_cgid = bpf_get_current_cgroup_id();
+  if (!is_target_cgroup(current_cgid))
+    return 0;
+
+  current_pid = current_tgid();
+
+  if (has_wx(reqprot) || has_wx(prot)) {
+    bpf_printk("Denied memory permission change: pid=%u cgid=%llu protected_cgid=%llu reason=wx reqprot=%lu prot=%lu\n",
+               current_pid,
+               current_cgid,
+               TARGET_CGROUP,
+               reqprot,
+               prot);
+    return -EPERM;
+  }
+
+  backing_file = BPF_CORE_READ(vma, vm_file);
+  vm_flags = BPF_CORE_READ(vma, vm_flags);
+
+  if ((vm_flags & VM_WRITE) && (has_exec(reqprot) || has_exec(prot))) {
+    bpf_printk("Denied memory permission change: pid=%u cgid=%llu protected_cgid=%llu reason=writable_to_exec vm_flags=%lu reqprot=%lu prot=%lu\n",
+               current_pid,
+               current_cgid,
+               TARGET_CGROUP,
+               vm_flags,
+               reqprot,
+               prot);
+    return -EPERM;
+  }
+
+  if (!backing_file && (has_exec(reqprot) || has_exec(prot))) {
+    bpf_printk("Denied memory permission change: pid=%u cgid=%llu protected_cgid=%llu reason=anonymous_exec reqprot=%lu prot=%lu\n",
+               current_pid,
+               current_cgid,
+               TARGET_CGROUP,
+               reqprot,
+               prot);
+    return -EPERM;
+  }
+
+  return 0;
 }
 
 char _license[] SEC("license") = "GPL";
