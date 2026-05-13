@@ -1,4 +1,5 @@
 #include "vmlinux.h"
+#include "sys/mman.h"
 
 #include <errno.h>
 
@@ -9,17 +10,10 @@
 #include "ebpf_types.h"
 
 const volatile __u64 TARGET_CGROUP = 0;
-const volatile __u64 DAEMON_PID    = 0;
+const volatile __u32 DAEMON_PID = 0;
 
-/* Memory Permission Helpers */
+/* Memory Permission Definitions */
 
-#ifndef PROT_WRITE
-#define PROT_WRITE 0x2
-#endif
-
-#ifndef PROT_EXEC
-#define PROT_EXEC 0x4
-#endif
 
 #ifndef VM_WRITE
 #define VM_WRITE 0x00000002UL
@@ -29,7 +23,7 @@ const volatile __u64 DAEMON_PID    = 0;
 #define VM_EXEC 0x00000004UL
 #endif
 
-/* Process and Cgroup Helpers */
+/* Process and Cgroup Functions */
 
 static __always_inline __u32 current_tgid(void) {
   return (__u32) (bpf_get_current_pid_tgid() >> 32);
@@ -241,12 +235,13 @@ int BPF_PROG(check_inode_write, struct inode* inode, int mask, int ret) {
 
   __u64 cg_id = task_cgroup_id(task);
 
-  __u32 current_pid;
-  current_pid = current_tgid();
+  __u32 current_pid = current_tgid();
+
+  if(current_pid == DAEMON_PID) return 0;
 
   if (!is_target_cgroup(cg_id)) return 0;
 
-  bpf_printk("Deny write: task in cgroup %llu\n PID: %llu", cg_id, current_pid);
+  bpf_printk("Deny write: task in cgroup %llu PID: %llu DAEMON SAVED PID: %llu\n",cg_id, current_pid, DAEMON_PID);
   return -EPERM;
 
   return 0;
