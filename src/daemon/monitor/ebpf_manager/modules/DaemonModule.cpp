@@ -18,7 +18,7 @@ Odin::Result<void> DaemonModule::open() {
     return std::unexpected(Error::System(ctx, "daemon_hardener__open", errno));
   }
 
-  uint32_t current_pid = static_cast<uint32_t>(getpid());
+  uint32_t current_pid = static_cast<uint32_t>(::getpid());
 
   m_skel->rodata->DAEMON_PID = current_pid;
   return {}; // Success
