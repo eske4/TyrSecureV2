@@ -11,6 +11,24 @@
 const volatile __u64 TARGET_CGROUP = 0;
 const volatile __u64 DAEMON_PID    = 0;
 
+/* Memory Permission Helpers */
+
+#ifndef PROT_WRITE
+#define PROT_WRITE 0x2
+#endif
+
+#ifndef PROT_EXEC
+#define PROT_EXEC 0x4
+#endif
+
+#ifndef VM_WRITE
+#define VM_WRITE 0x00000002UL
+#endif
+
+#ifndef VM_EXEC
+#define VM_EXEC 0x00000004UL
+#endif
+
 /* Process and Cgroup Helpers */
 
 static __always_inline __u32 current_tgid(void) {
@@ -39,24 +57,6 @@ static __always_inline __u64 task_cgroup_id(struct task_struct* task) {
 
   return BPF_CORE_READ(kn, id);
 }
-
-/* Memory Permission Helpers */
-
-#ifndef PROT_WRITE
-#define PROT_WRITE 0x2
-#endif
-
-#ifndef PROT_EXEC
-#define PROT_EXEC 0x4
-#endif
-
-#ifndef VM_WRITE
-#define VM_WRITE 0x00000002UL
-#endif
-
-#ifndef VM_EXEC
-#define VM_EXEC 0x00000004UL
-#endif
 
 static __always_inline int has_write(unsigned long prot) { return (prot & PROT_WRITE) != 0; }
 
