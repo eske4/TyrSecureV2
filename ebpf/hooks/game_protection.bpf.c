@@ -273,4 +273,27 @@ int BPF_PROG(restrict_file_mprotect,
   return 0;
 }
 
+/* lsm/inode_permission */
+
+ SEC("lsm/inode_permission")
+int BPF_PROG(check_inode_write,
+             struct inode *inode,
+             int mask,
+             int ret)
+{
+    struct task_struct *task;
+    task = (struct task_struct *)bpf_get_current_task();
+
+    __u64 cg_id = task_cgroup_id(task);
+
+    __u32 current_pid;   current_pid  = current_tgid();
+
+    if (!is_target_cgroup(cg_id)) return 0;
+
+      bpf_printk("Deny write: task in cgroup %llu\n PID: %llu", cg_id,current_pid);
+      return -EPERM;
+
+    return 0;
+}
+
 char _license[] SEC("license") = "GPL";
