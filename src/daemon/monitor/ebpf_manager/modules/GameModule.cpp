@@ -23,6 +23,8 @@ Odin::Result<void> GameModule::open() {
   m_skel->rodata->TARGET_CGROUP = m_cg_id;
   m_skel->rodata->DAEMON_PID    = current_pid;
 
+  std::cout << "Daemon pid in game protection is: " << current_pid << std::endl;
+
   std::cout << "The cgroup id for game protection is: " << m_cg_id << std::endl;
   return {}; // Success
 }
