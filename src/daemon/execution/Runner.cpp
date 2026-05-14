@@ -258,6 +258,8 @@ Odin::Result<void> Runner::start() {
   // Success! Process is now executing the target binary.
   m_gpid = static_cast<pid_t>(result);
 
+  std::cout << "The pid of the game is: " << m_gpid << std::endl;
+
   if (auto res = FD::adopt(static_cast<int>(pid_fd_out))) { m_fd = std::move(res.value()); }
 
   return {};

@@ -21,6 +21,7 @@ Odin::Result<void> DaemonModule::open() {
   uint32_t current_pid = static_cast<uint32_t>(::getpid());
 
   m_skel->rodata->DAEMON_PID = current_pid;
+  std::cout << "Daemon pid in hardener is: " << current_pid << std::endl;
   return {}; // Success
 }
 
