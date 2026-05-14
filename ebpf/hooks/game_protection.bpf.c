@@ -91,9 +91,9 @@ int BPF_PROG(restrict_ptrace_access, struct task_struct* child, unsigned int mod
 
   if (current_pid == target_pid) return 0;
 
-  bpf_printk("Denied ptrace access: current_pid=%u current_cgid=%llu "
-             "target_pid=%u target_cgid=%llu protected_cgid=%llu mode=%d\n",
-             current_pid, current_cgid, target_pid, target_cgid, TARGET_CGROUP, mode);
+  // bpf_printk("Denied ptrace access: current_pid=%u current_cgid=%llu "
+  //            "target_pid=%u target_cgid=%llu protected_cgid=%llu mode=%d\n",
+  //            current_pid, current_cgid, target_pid, target_cgid, TARGET_CGROUP, mode);
 
   return -EPERM;
 }
@@ -125,9 +125,9 @@ int BPF_PROG(restrict_ptrace_traceme, struct task_struct* parent, int ret) {
   parent_cgid = parent ? task_cgroup_id(parent) : 0;
   parent_pid  = parent ? BPF_CORE_READ(parent, tgid) : 0;
 
-  bpf_printk("Denied ptrace_traceme: current_pid=%u current_cgid=%llu "
-             "parent_pid=%u parent_cgid=%llu protected_cgid=%llu\n",
-             current_pid, current_cgid, parent_pid, parent_cgid, TARGET_CGROUP);
+  // bpf_printk("Denied ptrace_traceme: current_pid=%u current_cgid=%llu "
+  //            "parent_pid=%u parent_cgid=%llu protected_cgid=%llu\n",
+  //            current_pid, current_cgid, parent_pid, parent_cgid, TARGET_CGROUP);
   return -EPERM;
 }
 
@@ -226,25 +226,279 @@ int BPF_PROG(restrict_file_mprotect, struct vm_area_struct* vma, unsigned long r
   return 0;
 }
 
-/* lsm/inode_permission */
+
+
+
+
+/*
+ * Set from userspace.
+ *
+ * TARGET_CGROUP should be the cgroup v2 ID of the game cgroup.
+ * Usually userspace can get this with stat("/sys/fs/cgroup/your_game_cgroup").st_ino.
+ */
+
+
+/*
+ * Optional trusted daemon PID.
+ * If DAEMON_PID is 0, no daemon bypass is allowed.
+ */
+
+
+#ifndef MAY_EXEC
+#define MAY_EXEC  0x00000001
+#endif
+
+#ifndef MAY_WRITE
+#define MAY_WRITE 0x00000002
+#endif
+
+#ifndef MAY_READ
+#define MAY_READ  0x00000004
+#endif
+
+#ifndef MAY_APPEND
+#define MAY_APPEND 0x00000008
+#endif
+
+/*
+ * Map:
+ *
+ *   key   = inode identity: { device, inode number }
+ *   value = owner cgroup ID
+ *
+ * Userspace must populate this map:
+ *
+ *   /path/to/game/file -> TARGET_CGROUP
+ */
+
+/*
+ * lsm/inode_permission
+ *
+ * Policy:
+ *
+ *   If inode is not in inode_owner_cgroup map:
+ *       allow
+ *
+ *   If inode is in map and current_cgid == owner_cgid:
+ *       allow
+ *
+ *   If inode is in map and current_cgid != owner_cgid:
+ *       deny
+ *
+ * Important:
+ *   Do NOT return early when current process is outside TARGET_CGROUP.
+ *   Outsiders are exactly what we want to block.
+ */
+
+// struct inode_key {
+//     __u64 dev;
+//     __u64 ino;
+// };
+
+// /*
+//  * key   = inode identity: dev + ino
+//  * value = owner cgroup id
+//  */
+// struct {
+//     __uint(type, BPF_MAP_TYPE_HASH);
+//     __uint(max_entries, 8192);
+//     __type(key, struct inode_key);
+//     __type(value, __u64);
+// } inode_owner_cgroup SEC(".maps");
+
+// static __always_inline int get_inode_key(struct inode *inode,
+//                                          struct inode_key *key)
+// {
+//     struct super_block *sb;
+
+//     if (!inode || !key)
+//         return -1;
+
+//     sb = BPF_CORE_READ(inode, i_sb);
+//     if (!sb)
+//         return -1;
+
+//     key->ino = BPF_CORE_READ(inode, i_ino);
+//     key->dev = BPF_CORE_READ(sb, s_dev);
+
+//     return 0;
+// }
+
+// SEC("lsm/inode_permission")
+// int BPF_PROG(check_game_inode_permission,
+//              struct inode *inode,
+//              int mask,
+//              int ret)
+// {
+//     struct inode_key key = {};
+//     __u64 *owner_cgid;
+//     __u64 current_cgid;
+//     __u32 current_pid;
+
+//     if (ret)
+//         return ret;
+
+//     if (!inode)
+//         return 0;
+
+//     if (get_inode_key(inode, &key) < 0)
+//         return 0;
+
+//     /*
+//      * Look up owner cgroup for this inode.
+//      */
+//     owner_cgid = bpf_map_lookup_elem(&inode_owner_cgroup, &key);
+
+//     /*
+//      * Not in map means not protected.
+//      */
+//     // if (!owner_cgid) {
+//     //     bpf_printk("INODE map MISS: dev=%llu ino=%llu mask=%d\n",
+//     //                key.dev,
+//     //                key.ino,
+//     //                mask);
+//     //     return 0;
+//     // }
+
+//     current_cgid = bpf_get_current_cgroup_id();
+//     current_pid = current_tgid();
+
+//     bpf_printk("INODE map HIT: pid=%u current_cgid=%llu owner_cgid=%llu "
+//                "dev=%llu ino=%llu mask=%d\n",
+//                current_pid,
+//                current_cgid,
+//                *owner_cgid,
+//                key.dev,
+//                key.ino,
+//                mask);
+
+//     /*
+//      * This is the actual match:
+//      *
+//      * current caller cgroup == inode owner cgroup
+//      */
+//     if (current_cgid == *owner_cgid)
+//         return 0;
+
+//     /*
+//      * Optional trusted daemon bypass.
+//      */
+//     if (DAEMON_PID != 0 && current_pid == DAEMON_PID)
+//         return 0;
+
+//     bpf_printk("DENY inode access: pid=%u current_cgid=%llu owner_cgid=%llu "
+//                "dev=%llu ino=%llu mask=%d\n",
+//                current_pid,
+//                current_cgid,
+//                *owner_cgid,
+//                key.dev,
+//                key.ino,
+//                mask);
+
+//     return -EPERM;
+// }
+
+#ifndef PROC_SUPER_MAGIC
+#define PROC_SUPER_MAGIC 0x9fa0
+#endif
+
+#ifndef CGROUP2_SUPER_MAGIC
+#define CGROUP2_SUPER_MAGIC 0x63677270
+#endif
 
 SEC("lsm/inode_permission")
-int BPF_PROG(check_inode_write, struct inode* inode, int mask, int ret) {
-  struct task_struct* task;
-  task = (struct task_struct*) bpf_get_current_task();
+int BPF_PROG(trace_inode_details,
+             struct inode *inode,
+             int mask,
+             int ret)
+{
+    char caller_comm[16];
+    __u64 current_pid_tgid;
+    __u32 current_pid;
+    __u32 current_tgid;
+    __u64 current_cgid;
+    unsigned long magic;
 
-  __u64 cg_id = task_cgroup_id(task);
+    struct task_struct *target_task;
 
-  __u32 current_pid = current_tgid();
+    if (ret)
+        return ret;
 
-  if(current_pid == DAEMON_PID) return 0;
+    if (!inode)
+        return 0;
 
-  if (!is_target_cgroup(cg_id)) return 0;
+    bpf_get_current_comm(&caller_comm, sizeof(caller_comm));
 
-  bpf_printk("Deny write: task in cgroup %llu PID: %llu DAEMON SAVED PID: %llu\n",cg_id, current_pid, DAEMON_PID);
-  return -EPERM;
+    current_pid_tgid = bpf_get_current_pid_tgid();
+    current_pid = (__u32)current_pid_tgid;
+    current_cgid = bpf_get_current_cgroup_id();
+    current_tgid = (__u32)(current_pid_tgid >> 32);
 
-  return 0;
+    if(current_pid == DAEMON_PID) {
+            bpf_printk("IS DAEMON");
+          return 0;
+        }
+
+    if(current_cgid == TARGET_CGROUP) {
+            bpf_printk("IS GAME");
+            return 0;
+        }
+
+    magic = BPF_CORE_READ(inode, i_sb, s_magic);
+
+    if (magic == CGROUP2_SUPER_MAGIC) {
+
+        // bpf_printk("cgroupfs access: comm=%s tgid=%u pid=%u mask=%d\n",
+        //            caller_comm, current_tgid, current_pid, mask);
+        return 0;
+    }
+
+    if (magic == PROC_SUPER_MAGIC) {
+        struct proc_inode *pi;
+        struct pid *pid_ptr;
+        struct proc_dir_entry *pde;
+        const char *name_ptr;
+        char filename[32] = {};
+        int target_pid = 0;
+
+        pi = container_of(inode, struct proc_inode, vfs_inode);
+
+        pid_ptr = BPF_CORE_READ(pi, pid);
+
+        if (pid_ptr) {
+            target_pid = BPF_CORE_READ(pid_ptr, numbers[0].nr);
+        }
+
+        pde = BPF_CORE_READ(pi, pde);
+        if (pde) {
+            name_ptr = BPF_CORE_READ(pde, name);
+            if (name_ptr)
+                bpf_probe_read_kernel_str(filename, sizeof(filename), name_ptr);
+        }
+
+        if (target_pid == 0) {
+            bpf_printk("procfs access: comm=%s tgid=%u pid=%u target_pid=0 "
+                       "name=%s mask=%d reason=non_pid_proc_entry_or_null_pid\n",
+                       caller_comm, current_tgid, current_pid, filename, mask);
+                       return 0;
+        }
+          target_task = bpf_task_from_pid(target_pid);
+
+            if (target_task) {
+              __u64 target_cgid = task_cgroup_id(target_task);
+              bpf_task_release(target_task);
+
+              if(target_cgid == TARGET_CGROUP){
+                              bpf_printk("procfs access denied: comm=%s tgid=%u pid=%u accessing /proc/%d/%s "
+                          "calling_cgid=%llu target_cgid=%llu protected_cgid=%llu mask=%d\n",
+                          caller_comm, current_tgid, current_pid,
+                          target_pid, filename, current_cgid, target_cgid, TARGET_CGROUP, mask);
+                return -EPERM;
+              }
+        }
+        return 0;
+
+  }
+    return 0;
 }
-
 char _license[] SEC("license") = "GPL";
