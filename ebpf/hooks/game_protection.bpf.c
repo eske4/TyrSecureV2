@@ -231,6 +231,27 @@ int BPF_PROG(restrict_file_mprotect, struct vm_area_struct* vma, unsigned long r
  *
  */
 
+#ifndef MAY_WRITE
+#define MAY_WRITE 0x00000002
+#endif
+
+#ifndef MAY_APPEND
+#define MAY_APPEND 0x00000008
+#endif
+
+#ifndef KERNFS_TYPE_MASK
+#define KERNFS_TYPE_MASK 0x000f
+#endif
+
+#ifndef KERNFS_DIR
+#define KERNFS_DIR 0x0001
+#endif
+
+static __always_inline bool is_write_attempt(int mask)
+{
+  return mask & (MAY_WRITE | MAY_APPEND);
+}
+
 SEC("lsm/inode_permission")
 int BPF_PROG(trace_inode_details, struct inode* inode, int mask, int ret) {
   char          caller_comm[16];
@@ -265,11 +286,72 @@ int BPF_PROG(trace_inode_details, struct inode* inode, int mask, int ret) {
 
   magic = BPF_CORE_READ(inode, i_sb, s_magic);
 
-  if (magic == CGROUP2_SUPER_MAGIC) {
-    // TODO
+if (magic == CGROUP2_SUPER_MAGIC) {
+  struct kernfs_node *kn;
+  struct kernfs_node *cg_kn;
+  const char         *name_ptr;
+  unsigned short     flags;
+  __u64              target_cgid = 0;
+  char               cg_name[32] = {};
+
+  kn = (struct kernfs_node *)BPF_CORE_READ(inode, i_private);
+  if (!kn)
     return 0;
+
+  name_ptr = BPF_CORE_READ(kn, name);
+  if (name_ptr)
+    bpf_probe_read_kernel_str(cg_name, sizeof(cg_name), name_ptr);
+
+  flags = BPF_CORE_READ(kn, flags);
+
+  /*
+   * Directory inode:
+   *   kn is the cgroup's kernfs node.
+   *
+   * File inode, e.g. cgroup.procs:
+   *   parent kernfs node is the cgroup directory.
+   */
+  if ((flags & KERNFS_TYPE_MASK) == KERNFS_DIR) {
+    cg_kn = kn;
+  } else {
+    cg_kn = BPF_CORE_READ(kn, __parent);
   }
 
+  if (!cg_kn)
+    return 0;
+
+  target_cgid = BPF_CORE_READ(cg_kn, id);
+  if (!target_cgid)
+    return 0;
+
+        // bpf_printk("cgroupfs logs: comm=%s tgid=%u pid=%u "
+        //        "target_cgid=%llu calling_cgid=%llu file=%s mask=%d\n",
+        //        caller_comm,
+        //        current_tgid,
+        //        current_pid,
+        //        target_cgid,
+        //        current_cgid,
+        //        cg_name,
+        //        mask);
+
+
+  if (is_protected_cgroup(target_cgid) && is_write_attempt(mask)) {
+    bpf_printk("cgroupfs access denied: comm=%s tgid=%u pid=%u "
+               "target_cgid=%llu calling_cgid=%llu file=%s mask=%d\n",
+               caller_comm,
+               current_tgid,
+               current_pid,
+               target_cgid,
+               current_cgid,
+               cg_name,
+               mask);
+
+    return -EPERM;
+  }
+}
+
+
+  // PROC filesystem access check
   if (magic == PROC_SUPER_MAGIC) {
     struct proc_inode*     pi;
     struct pid*            pid_ptr;
@@ -298,10 +380,10 @@ int BPF_PROG(trace_inode_details, struct inode* inode, int mask, int ret) {
       bpf_task_release(target_task);
 
       if (is_protected_cgroup(target_cgid)) {
-        bpf_printk("procfs access denied: comm=%s tgid=%u pid=%u accessing /proc/%d/%s "
-                   "calling_cgid=%llu target_cgid=%llu protected_cgid=%llu mask=%d\n",
-                   caller_comm, current_tgid, current_pid, target_pid, filename, current_cgid,
-                   target_cgid, TARGET_CGROUP, mask);
+        // bpf_printk("procfs access denied: comm=%s tgid=%u pid=%u accessing /proc/%d/%s "
+        //            "calling_cgid=%llu target_cgid=%llu protected_cgid=%llu mask=%d\n",
+        //            caller_comm, current_tgid, current_pid, target_pid, filename, current_cgid,
+        //            target_cgid, TARGET_CGROUP, mask);
         return -EPERM;
       }
     }
