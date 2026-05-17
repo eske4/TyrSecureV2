@@ -89,14 +89,6 @@ static __always_inline __u64 task_cgroup_id(struct task_struct* task) {
   return BPF_CORE_READ(kn, id);
 }
 
-static __always_inline int has_write(unsigned long prot) { return (prot & PROT_WRITE) != 0; }
-
-static __always_inline int has_exec(unsigned long prot) { return (prot & PROT_EXEC) != 0; }
-
-static __always_inline int has_wx(unsigned long prot) {
-  return (prot & PROT_WRITE) && (prot & PROT_EXEC);
-}
-
 /* ptrace_access_check
  *
  * Blocks ptrace/proc-memory access to processes inside TARGET_CGROUP.
@@ -174,6 +166,14 @@ int BPF_PROG(restrict_ptrace_traceme, struct task_struct* parent, int ret) {
  * - anonymous executable mappings, such as anonymous RX/RWX memory not backed by a file.
  */
 
+ static __always_inline int has_write(unsigned long prot) { return (prot & PROT_WRITE) != 0; }
+
+static __always_inline int has_exec(unsigned long prot) { return (prot & PROT_EXEC) != 0; }
+
+static __always_inline int has_wx(unsigned long prot) {
+  return (prot & PROT_WRITE) && (prot & PROT_EXEC);
+}
+
 SEC("lsm/mmap_file")
 int BPF_PROG(restrict_mmap_file, struct file* file, unsigned long reqprot, unsigned long prot,
              unsigned long flags, int ret) {
@@ -185,14 +185,21 @@ int BPF_PROG(restrict_mmap_file, struct file* file, unsigned long reqprot, unsig
 
   if (is_daemon_process(caller.pid) || !is_protected_cgroup(caller.cgid)) return 0;
 
-  if (has_wx(reqprot) || has_wx(prot)) {
+  const bool is_wx_mapping =
+    ((reqprot & PROT_WRITE) && (reqprot & PROT_EXEC)) ||
+    ((prot & PROT_WRITE) && (prot & PROT_EXEC));
+
+  const bool is_anonymous_exec =
+    !file && ((reqprot & PROT_EXEC) || (prot & PROT_EXEC));
+
+  if (is_wx_mapping) {
     bpf_printk("mmap_file denied: [caller pid=%u cgid=%llu]"
                " [reason=wx reqprot=%lu prot=%lu flags=%lu] [protected cgid=%llu]\n",
                caller.pid, caller.cgid, reqprot, prot, flags, TARGET_CGROUP);
     return -EPERM;
   }
 
-  if (!file && (has_exec(reqprot) || has_exec(prot))) {
+  if (is_anonymous_exec) {
     bpf_printk("mmap_file denied: [caller pid=%u cgid=%llu]"
                " [reason=anonymous_exec reqprot=%lu prot=%lu flags=%lu] [protected cgid=%llu]\n",
                caller.pid, caller.cgid, reqprot, prot, flags, TARGET_CGROUP);
