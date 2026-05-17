@@ -14,15 +14,12 @@
 const volatile __u32 DAEMON_PID = 0;
 
 SEC("lsm/bpf")
-int BPF_PROG(restrict_bpf_to_self, int cmd, union bpf_attr *attr, unsigned int size)
-{
+int BPF_PROG(restrict_bpf_to_self, int cmd, union bpf_attr* attr, unsigned int size) {
   __u32 current_pid = bpf_get_current_pid_tgid() >> 32;
 
-    if (current_pid != DAEMON_PID) {
-       return -EPERM;
-    }
+  if (current_pid != DAEMON_PID) { return -EPERM; }
 
-    return 0; 
+  return 0;
 }
 
 SEC("lsm/ptrace_access_check")
@@ -35,15 +32,12 @@ int BPF_PROG(ptrace_proc, struct task_struct* child, unsigned int mode) {
 }
 
 SEC("lsm/ptrace_traceme")
-int BPF_PROG(ptrace_me, struct task_struct *parent)
-{
-    __u32 current_pid = bpf_get_current_pid_tgid() >> 32;
+int BPF_PROG(ptrace_me, struct task_struct* parent) {
+  __u32 current_pid = bpf_get_current_pid_tgid() >> 32;
 
-    // Block the daemon itself from entering "trace me" mode
-    if (current_pid == DAEMON_PID) {
-        return -EPERM;
-    }
-    return 0;
+  // Block the daemon itself from entering "trace me" mode
+  if (current_pid == DAEMON_PID) { return -EPERM; }
+  return 0;
 }
 
 char _license[] SEC("license") = "GPL";
