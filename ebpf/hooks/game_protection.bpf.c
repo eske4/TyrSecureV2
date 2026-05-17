@@ -12,6 +12,14 @@
 const volatile __u64 TARGET_CGROUP = 0;
 const volatile __u32 DAEMON_PID    = 0;
 
+#ifndef MAX_ENV_SCAN
+#define MAX_ENV_SCAN 256
+#endif
+
+#ifndef MAX_ENV_LEN
+#define MAX_ENV_LEN 192
+#endif
+
 #ifndef PROC_SUPER_MAGIC
 #define PROC_SUPER_MAGIC 0x9fa0
 #endif
@@ -21,7 +29,11 @@ const volatile __u32 DAEMON_PID    = 0;
 #endif
 
 #ifndef VM_WRITE
-#define VM_WRITE 0x00000002UL
+#define VM_WRITE 0x00000002
+#endif
+
+#ifndef VM_EXEC
+#define VM_EXEC 0x00000004
 #endif
 
 #ifndef MAY_WRITE
@@ -161,11 +173,11 @@ int BPF_PROG(restrict_ptrace_traceme, struct task_struct* parent, int ret) {
 
 /* mmap_file
  *
- * Prevents executable-memory mappings in TARGET_CGROUP.
+ * Prevents malicious executable-memory mappings in TARGET_CGROUP.
  *
  * Blocks:
  * - direct W+X(writable,executable) mappings, both anonymous and file-backed
- * - anonymous memory mappings RX(readable,executable) - not backed by file on disk
+ * - anonymous executable mappings, such as anonymous RX/RWX memory not backed by a file.
  */
 
 SEC("lsm/mmap_file")
@@ -192,47 +204,19 @@ int BPF_PROG(restrict_mmap_file, struct file* file, unsigned long reqprot, unsig
                caller.pid, caller.cgid, reqprot, prot, flags, TARGET_CGROUP);
     return -EPERM;
   }
-  // remove below?      useful, but requires files allowlisting or it is too harsh and blocks assault cube for example.
-  //  (can block for dlopen("/tmp/cheat.so", RTLD_NOW);) but also many legitimate file-backed
-  //  executable mappings.
-  //
-  //  APPROACH to collect baseline of legitimate executable mappings, client decides when to freeze,
-  //  based on baseline we decide if this should be allowed/blocked... But also takes time to create
-  //  such system..
-  //
-
-  // if (file && (has_exec(reqprot) || has_exec(prot))) {
-  //   char path[256] = {};
-
-  //   int path_len = bpf_path_d_path(&file->f_path, path, sizeof(path));
-
-  //   if (path_len > 0) {
-  //     bpf_printk("mmap_file denied: [caller pid=%u cgid=%llu]"
-  //                " [reason=file_exec_map path=%s reqprot=%lu prot=%lu flags=%lu]"
-  //                " [protected cgid=%llu]\n",
-  //                caller.pid, caller.cgid,
-  //                path, reqprot, prot, flags, TARGET_CGROUP);
-  //   } else {
-  //     bpf_printk("mmap_file denied: [caller pid=%u cgid=%llu]"
-  //                " [reason=file_exec_map path=<unresolved> path_err=%d reqprot=%lu prot=%lu
-  //                flags=%lu]" " [protected cgid=%llu]\n", caller.pid, caller.cgid, path_len,
-  //                reqprot, prot, flags, TARGET_CGROUP);
-  //   }
-
-  //   return 0;
-  // }
 
   return 0;
 }
 
 /* file_mprotect
  *
- * Prevents changes in memory permission flags inside TARGET_CGROUP.
+ * Prevents dangerous memory permission changes inside TARGET_CGROUP.
  *
  * Blocks:
  * - memory from becoming both writable and executable (W+X).
- * - anonymous memory becoming executable (X).
- * - writable VMA becoming executable (X).
+ * - writable VMAs from becoming executable (W -> X).
+ * - executable VMAs from becoming writable (X -> W).
+ * - anonymous memory from becoming executable (X).
  */
 
 SEC("lsm/file_mprotect")
@@ -260,7 +244,8 @@ int BPF_PROG(restrict_file_mprotect, struct vm_area_struct* vma, unsigned long r
   backing_file = BPF_CORE_READ(vma, vm_file);
   vm_flags     = BPF_CORE_READ(vma, vm_flags);
 
-  if ((vm_flags & VM_WRITE) && (has_exec(reqprot) || has_exec(prot))) {
+  if (((vm_flags & VM_WRITE) && (has_exec(reqprot) || has_exec(prot))) ||
+      ((vm_flags & VM_EXEC) && (has_write(reqprot) || has_write(prot)))) {
     bpf_printk("file_mprotect denied: [caller pid=%u cgid=%llu]"
                " [reason=writable_to_exec vm_flags=%lu reqprot=%lu prot=%lu]"
                " [protected cgid=%llu]\n",
@@ -279,7 +264,8 @@ int BPF_PROG(restrict_file_mprotect, struct vm_area_struct* vma, unsigned long r
 }
 
 /* inode_permission
- *
+ * Prevents outside processes from modifying protected cgroupfs entries
+ * and inspecting protected cgroup processes through procfs.
  */
 
 SEC("lsm/inode_permission")
@@ -374,102 +360,120 @@ int BPF_PROG(restrict_inode_permission, struct inode* inode, int mask, int ret) 
   return 0;
 }
 
-/*
- * These hooks are cgroup-scoped mount protections.
+/* sb_mount
  *
- * They deny mount/umount/pivot_root only when the CALLER is inside TARGET_CGROUP.
+ * Prevents legacy mount(2) operations from targeting TARGET_CGROUP.
  *
- * They DO protect against:
- *   - game process mounting new filesystems
- *   - injected/helper process inside TARGET_CGROUP doing mount tricks
- *   - game process unmounting or pivot_root'ing its own namespace
- *
- * They DO NOT fully protect against:
- *   - an outside process already sharing the same mount namespace as the game
- *   - an outside process that entered the game mount namespace before this policy was active
- *   - an outside privileged process modifying shared mounts that propagate into the game namespace
- *
- * The procfs rule blocks outsiders from opening /proc/<game_pid>/ns/mnt,
- * which reduces the common setns() path into the game mount namespace.
- *
- * However, TARGET_MNT_NS would still be stronger because it lets us deny
- * mount operations based on the caller's current mount namespace, not only
- * based on caller.cgid.
- *
- * If we need that stronger protection:
- *   const volatile __u32 TARGET_MNT_NS = 0;
- *
- * Daemon can set it from:
- *   readlink /proc/<game_pid>/ns/mnt
- *
- * Also make the game mount namespace private/slave before launch to prevent
- * outside shared-mount propagation from affecting the game.
+ * Blocks:
+ * - mounting a filesystem over the protected cgroup path.
+ * - bind-mounting a directory over the protected cgroup path through legacy mount(2).
+ * - libc.mount() calls that use the protected cgroup as the mount destination.
  */
 
 SEC("lsm/sb_mount")
 int BPF_PROG(restrict_sb_mount, const char* dev_name, const struct path* path, const char* type,
              unsigned long flags, void* data, int ret) {
-  struct caller_ctx caller = {};
+  struct inode*       inode;
+  unsigned long       sb_magic;
+  struct kernfs_node* kn;
+  u64                 target_cgid = 0;
 
   if (ret) return ret;
 
-  get_caller_ctx(&caller);
+  inode = BPF_CORE_READ(path, dentry, d_inode);
+  if (!inode) return 0;
 
-  if (is_daemon_process(caller.pid) || !is_protected_cgroup(caller.cgid)) return 0;
+  sb_magic = BPF_CORE_READ(inode, i_sb, s_magic);
 
-  bpf_printk("sb_mount denied: [caller pid=%u cgid=%llu]"
-             " [flags=%lu] [protected cgid=%llu]\n",
-             caller.pid, caller.cgid, flags, TARGET_CGROUP);
+  if (sb_magic != CGROUP2_SUPER_MAGIC) return 0;
 
-  return -EPERM;
+  kn = BPF_CORE_READ(inode, i_private);
+  if (!kn) return 0;
+
+  target_cgid = BPF_CORE_READ(kn, id);
+
+  if (is_protected_cgroup(target_cgid)) {
+    bpf_printk("sb_mount denied: caller tried to target protected cgroup=%llu"
+               "flags=%lu\n",
+               target_cgid, flags);
+
+    return -EPERM;
+  }
+
+  return 0;
 }
 
-SEC("lsm/sb_umount")
-int BPF_PROG(restrict_sb_umount, struct vfsmount* mnt, int flags, int ret) {
-  struct caller_ctx caller = {};
-
-  if (ret) return ret;
-
-  get_caller_ctx(&caller);
-
-  if (is_daemon_process(caller.pid) || !is_protected_cgroup(caller.cgid)) return 0;
-
-  bpf_printk("sb_umount denied: [caller pid=%u cgid=%llu]"
-             " [flags=%d] [protected cgid=%llu]\n",
-             caller.pid, caller.cgid, flags, TARGET_CGROUP);
-
-  return -EPERM;
-}
-
-SEC("lsm/sb_pivotroot")
-int BPF_PROG(restrict_sb_pivotroot, const struct path* old_path, const struct path* new_path,
-             int ret) {
-  struct caller_ctx caller = {};
-
-  if (ret) return ret;
-
-  get_caller_ctx(&caller);
-
-  if (is_daemon_process(caller.pid) || !is_protected_cgroup(caller.cgid)) return 0;
-
-  bpf_printk("sb_pivotroot denied: [caller pid=%u cgid=%llu]"
-             " [protected cgid=%llu]\n",
-             caller.pid, caller.cgid, TARGET_CGROUP);
-
-  return -EPERM;
-}
-
-/* bprm_check_security - Prevent LD_PRELOAD
- * 
+/* move_mount
+ *
+ * Prevents move_mount(2) operations from targeting or relocating TARGET_CGROUP.
+ *
+ * Blocks:
+ * - moving or attaching mounts into the protected cgroup path.
+ * - moving mounts out of the protected cgroup path.
  */
 
-#ifndef MAX_ENV_SCAN
-#define MAX_ENV_SCAN 256
-#endif
+SEC("lsm/move_mount")
+int BPF_PROG(restrict_move_mount, const struct path* from_path, const struct path* to_path,
+             int ret) {
+  struct inode*       inode;
+  unsigned long       sb_magic;
+  struct kernfs_node* kn;
+  u64                 target_cgid = 0;
 
-#ifndef MAX_ENV_LEN
-#define MAX_ENV_LEN 192
-#endif
+  if (ret) return ret;
+
+  // --- blocks moving/attaching mounts INTO /sys/fs/cgroup/OdinSight/game---
+  inode = BPF_CORE_READ(to_path, dentry, d_inode);
+  if (inode) {
+    sb_magic = BPF_CORE_READ(inode, i_sb, s_magic);
+
+    if (sb_magic == CGROUP2_SUPER_MAGIC) {
+      kn = BPF_CORE_READ(inode, i_private);
+
+      if (kn) {
+        target_cgid = BPF_CORE_READ(kn, id);
+
+        if (is_protected_cgroup(target_cgid)) {
+          bpf_printk("move_mount denied INTO protected cgroup: target cgid=%llu\n", target_cgid);
+          return -EPERM;
+        }
+      }
+    }
+  }
+
+  // --- blocks moving mounts OUT OF /sys/fs/cgroup/OdinSight/game---
+  target_cgid = 0;
+
+  inode = BPF_CORE_READ(from_path, dentry, d_inode);
+  if (inode) {
+    sb_magic = BPF_CORE_READ(inode, i_sb, s_magic);
+
+    if (sb_magic == CGROUP2_SUPER_MAGIC) {
+      kn = BPF_CORE_READ(inode, i_private);
+
+      if (kn) {
+        target_cgid = BPF_CORE_READ(kn, id);
+
+        if (is_protected_cgroup(target_cgid)) {
+          bpf_printk("move_mount denied FROM protected cgroup: target cgid=%llu\n", target_cgid);
+          return -EPERM;
+        }
+      }
+    }
+  }
+
+  return 0;
+}
+
+/* bprm_check_security
+ *
+ * Prevents LD_PRELOAD-based library injection inside TARGET_CGROUP.
+ *
+ * Blocks:
+ * - execve() from TARGET_CGROUP when LD_PRELOAD is set.
+ * - execveat() from TARGET_CGROUP when LD_PRELOAD is set.
+ * - LD_PRELOAD-based shared library injection inside the protected cgroup.
+ */
 
 struct {
   __uint(type, BPF_MAP_TYPE_HASH);
