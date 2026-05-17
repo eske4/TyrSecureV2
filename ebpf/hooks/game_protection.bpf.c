@@ -3,6 +3,8 @@
 
 #include <errno.h>
 
+#include <linux/magic.h>
+
 #include <bpf/bpf_core_read.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
@@ -18,14 +20,6 @@ const volatile __u32 DAEMON_PID    = 0;
 
 #ifndef MAX_ENV_LEN
 #define MAX_ENV_LEN 192
-#endif
-
-#ifndef PROC_SUPER_MAGIC
-#define PROC_SUPER_MAGIC 0x9fa0
-#endif
-
-#ifndef CGROUP2_SUPER_MAGIC
-#define CGROUP2_SUPER_MAGIC 0x63677270
 #endif
 
 #ifndef VM_WRITE
